@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Events and Event lists that will be overwritten if the DLC is turned on -->
+<FTL>
+
+<!--
+-
+Sector Event Lists
+STORE_REBELSIDE
+-
+-->
+
+
+<eventList name="OVERRIDE_HOSTILE2"> <!-- это работает? bamalf на эту хрень нет линка по файлам. я хз боюсь удалять... -->
+	<event load="MARADERS1_EVENT"/>
+	<event load="REBEL_PDS"/>
+	<event load="REBEL_AUTO"/>
+	<event load="REBEL_PULSAR"/>
+	<event load="PIRATE_PULSAR"/>
+	<event load="PIRATE"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="REBEL"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SQUAT_REFUEL_STATION"/>
+	<event load="PIRATE_ASTEROID"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="PIRATE_SLAVER"/>
+	<event load="PIRATE_SUN"/>
+	<event load="AUTO_SUN"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+</eventList>
+
+
+<!--
+-
+Smaller Event Lists
+-
+-->
+
+
+<ship name="REBEL_FEDERATION_PDS" auto_blueprint="SHIPS_REBEL_ELITE">
+	<escape  chance="0.8" min="4" max="6">
+		<text>Видя, что его звено уничтожено, командир повстанцев пытается сбежать, поджав хвост.</text>
+	</escape>
+	<gotaway>
+		<text>Корабль повстанцев, совершив прыжок, скрывается из виду.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Когда угроза исчезла, вы связываетесь с форпостом Федерации. Они отвечают: «Повстанцам известны наши координаты! Берите всё, что сможете, и, пожалуйста, сопроводите выживших до ближайшей базы». Один из принятых на борт солдат изъявил желание присоединиться к вашей команде. Также форпост посылает пару ремонтных дронов к вашему кораблю.</text><!-- 1.25.1 -->
+				<crewMember amount="1"/>
+				<autoReward level="MED">scrap_only</autoReward><!-- 1.26 -->
+				<damage amount="-5"/><!-- 1.25.1 -->
+			</event>
+		</choice>
+	</gotaway>
+	<destroyed>
+		<text>Вы разбираете обломки на лом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Когда угроза исчезла, вы связываетесь с форпостом Федерации. Они отвечают: «Повстанцам известны наши координаты! Берите всё, что сможете, и, пожалуйста, сопроводите выживших до ближайшей базы». Один из принятых на борт солдат изъявил желание присоединиться к вашей команде. Также форпост посылает пару ремонтных дронов к вашему кораблю.</text><!-- 1.25.1 -->
+				<crewMember amount="1"/>
+				<autoReward level="MED">scrap_only</autoReward><!-- 1.26 -->
+				<damage amount="-5"/><!-- 1.25.1 -->
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Уничтожив экипаж, вы обшариваете корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Когда угроза исчезла, вы связываетесь с форпостом Федерации. Они отвечают: «Повстанцам известны наши координаты! Берите всё, что сможете, и, пожалуйста, сопроводите выживших до ближайшей базы». Один из принятых на борт солдат изъявил желание присоединиться к вашей команде. Также форпост посылает пару ремонтных дронов к вашему кораблю.</text><!-- 1.25.1 -->
+				<crewMember amount="1"/>
+				<autoReward level="MED">scrap_only</autoReward><!-- 1.26 -->
+				<damage amount="-5"/><!-- 1.25.1 -->
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+</FTL>

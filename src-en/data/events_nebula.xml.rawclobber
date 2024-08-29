@@ -1,0 +1,2415 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!--     ' " "
+			SUMMARY  — 
+A list of all main events to be called by lists
+	(does not include sub-events)
+	
+	
+	
+	NOTE: we need to make all lists with "NEBULA_" in it trigger the creation of a nebula
+
+	
+Structure:
+	FLEET_EASY_NEBULA
+	NEBULA_EMPTY
+	
+Hostile:
+	NEBULA_REBEL
+	NEBULA_AUTO
+	NEBULA_AUTO_WARNING
+	NEBULA_PIRATE    				NEW
+	NEBULA_MANTIS_FIGHT				NEW
+	
+Neutral:
+	NEBULA_REBEL_UNDETECTED
+	NEBULA_PIRATE_SMUGGLE
+	NEBULA_AUTO_DEFENSE_ITEM
+	NEBULA_LOST_SHIP
+	NEBULA_WEAPONS_TRADER			NEW
+	NEBULA_ROCK_RACIST				NEW
+	NEBULA_MANTIS_CHOICE			NEW
+	NEBULA_REBEL_CHASE				NEW
+	
+Boarders:
+	NEBULA_BOARDING
+
+Items:
+	NEBULA_TRADER
+
+Storm Environment:
+	STORM_AUTO
+	STORM_REBEL
+	STORM_BOARDING
+	STORM_ITEMS
+
+-->
+
+<FTL>
+<eventList name="NEBULA_HOSTILE">
+	<event load="NEBULA_REBEL"/>
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_PIRATE"/>
+	<event load="NEBULA_MANTIS_FIGHT"/>
+	<event load="NEBULA_STORM_AUTO"/> <!-- replaced "STORM_ -> "NEBULA_STORM_ (106 hits in 9 files) --> <!-- 1.27 -->
+	<event load="NEBULA_STORM_REBEL"/>
+	<event load="NEBULA_BOARDING"/>
+	<!-- <event load="PRIZRAK_SHIP_EVENT"/> --><!-- 1.21 -->
+	<!-- <event load="BOARDERS_ASTEROID_PRIZRAK"/> --><!-- 1.21 -->
+	<event load="NEBULA_DRONEQUEEN_EVENT"/>
+	<event load="NEBULA_AUTO_CLOUDER_EVENT"/><!-- 1.27 -->
+</eventList>
+
+<eventList name="NEBULA_NEUTRAL">
+	<event load="NEBULA_REBEL_UNDETECTED"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_LOST_SHIP"/>
+	<event load="NEBULA_WEAPONS_TRADER"/>
+	<event load="NEBULA_ROCK_RACIST"/>
+	<event load="NEBULA_MANTIS_CHOICE"/>
+	<event load="NEBULA_REBEL_CHASE"/>
+	<event load="NEBULA_SLUG_BURST_QUEST"/>
+	<event load="NEBULA_DEVIL_EVENT"/><!-- 1.27 -->
+	<event load="NEBULA_TASK_EVENT"/><!-- 1.31 -->
+</eventList>
+
+
+
+
+<!--
+		STRUCTURE!!!
+	Others events necessary for strucrtural stuff
+-->
+
+<event name="START_BEACON_NEBULA">
+	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
+	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula_sector" op="add" val="1"/>
+	<text load="START_BEACON_NEBULA"/>
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="AUGMENTS_ON_START_BEACON"/>
+	</choice>
+</event>
+<textList name="START_BEACON_NEBULA">
+	<text>Этот сектор когда-то был важным торговым центром. Теперь же маяки скрыла густая туманность, так что перемещаться стало затруднительно.</text>
+	<text>Туманности всегда были опасными местами. В этих облаках электроника может выйти из строя. Будьте осторожны.</text>
+	<text>Вы вошли в сектор, наполненный туманностями. Искать путь придётся на ощупь.</text>
+	<text>Вы входите в богатый туманностями сектор. Вы можете на пару световых лет увеличить расстояние до флота повстанцев, но это будет иметь смысл, только если вы сможете долететь до выхода.</text>
+	<text>Благодаря высокой плотности туманности, этот сектор не только малоизучен, но и славится слухами о том, что таится в глубинах внутри него.</text>
+	<text>Газы, образующие туманности в этом секторе, угрожают расстроить ваши системы, но вам придётся поднажать вперёд.</text>
+	<text>Вы достигли неизведанной туманности. Обстановка снаружи не столь приятна для преследующего вас флота, но не спешите радоваться — вас это также касается. Попытайтесь отыскать выход в следующую область, не имея на борту активных сенсоров.</text>
+	<text>Единственные ориентиры в этом секторе — высокочастотные электромагнитные импульсы прыжковых маяков. Кто знает, кого ещё могут привлечь эти маяки?..</text>
+	<text>В данной туманности бушует сильнейшая магнитная буря. Будет лучше отключить чувствительные сенсорные системы, иначе вы рискуете потерять их до самого конца вашей миссии.</text>
+	<text>Выход из строя электроники, отказ сенсоров — это и многое другое далее по курсу.</text>
+	<text>Этот сектор густо насыщен туманностями. Что ж, у вас есть неплохие шансы собрать побольше ресурсов. Главное, не забывать о повстанцах...</text>
+	<text>Хорошая новость — в туманности можно легко оторваться от повстанцев. Плохая — можно так же легко вляпаться в неприятности...</text>
+	<text>Едва вы попадаете в туманность, как система сенсоров выходит из строя. Радует мысль, что флоту повстанцев будет не легче, если они полетят следом. Но только и всего... Придётся постараться, чтобы найти выход отсюда.</text>
+	<text>Неизведанная туманность — вовсе не то место, где стоит надолго задерживаться. Постарайтесь как можно быстрее найти выход отсюда.</text>
+</textList>
+
+<!-- for when the fleet takes over a nebula beacon -->
+<event name="FLEET_EASY_NEBULA">
+	<text>Улучшенный охотник повстанцев легко находит ваш корабль. Вы не видите его сквозь туманность, но можно предположить, что флот уже наступает вам на пятки. Нужно бежать, и быстро.</text>
+	<ship load="LONG_FLEET" hostile="true"/>
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+
+<event name="NEBULA_STORE">
+	<text load="NEBULA_STORE"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<store/>
+</event>
+<textList name="NEBULA_STORE">
+	<text>Какие-то смелые предприниматели развернули здесь станцию для добычи элементов из туманности. Кажется, тут есть общественный док и даже гостиница.</text>
+	<text>Торговый пост, развёрнутый неподалёку от маяка, предполагает собой, что на какой-то скале поблизости есть инопланетное поселение. Вы решаете посмотреть на их товары.</text>
+	<text>Центр водородного облака — не совсем обычное место для магазина, но инжи тоже не совсем обычные существа. Взглянуть не помешает.</text>
+	<text>Грузовое судно инжи приветствует: «Предлагается взаимовыгодный обмен имуществом». Тут пахнет сделкой!</text>
+	<text>Вы обнаруживаете скопление кораблей беженцев Федерации, укрывающихся в складках туманности. «Простите, нам нечего вам дать... А для того, чтобы поддерживать двигатели на ходу, нам так нужен лом, ну просто катастрофически нужен!» Это вам кажется, или они напрашиваются на обмен?</text>
+</textList>
+
+<event name="NEBULA_EMPTY">
+	<text load="NEBULA_EMPTY_LIST"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="TALK_WITH_CREW_GHOST"/>
+	</choice>
+</event>
+<textList name="NEBULA_EMPTY_LIST">
+	<text>Вы ничего не видите сквозь плотный слой газа вокруг вашего корабля. Не зная того, что за ним находится, всё, что вы можете сделать — ожидать, пока зарядится ваш FTL.</text>
+	<text>Сенсоры ничего не могут зарегистрировать, и у вас нет другого выбора, кроме как с нехорошим предчувствием вглядываться в иллюминаторы. Вокруг как-то устрашающе тихо.</text>
+	<text>У вас появляется стойкое предчувствие, что пока заряжается FTL-привод, кто-нибудь накинется на вас из засады. Однако всё проходит гладко...</text>
+	<text>Вы чувствуете себя лёгкой добычей без работающих сенсоров. Вам кажется, что корабль повстанцев неожиданно появится из облака в любую минуту, но никого нет.</text>
+	<text>Ваш экипаж непрерывно смотрит в иллюминаторы в поисках врагов, аж подпрыгивая от любого скрипа или стона на корабле. Напряжение, висящее в воздухе, почти осязаемо...</text>
+	<text>Вы нервно посматриваете в иллюминаторы, но единственное, что вас там приветствует — ещё больше тишины и облаков.</text>
+	<text>По прибытии вы переключаетесь между широкополосными каналами. Ничего кроме шума.</text> <!-- 1.26.6 --> <!-- translate error -->
+	<text>Из-за отрубившихся сенсоров вы проводите немало времени, вглядываясь в окно. Нужно признать, здесь довольно красиво.</text>
+	<text>Здесь ничего нет, за исключением огромных газовых смерчей, отражающих свет далёкого солнца.</text>
+</textList>
+	
+
+
+<!--
+		HOSTILE!!!
+	Events that call up a fight for sure
+-->
+
+<event name="NEBULA_REBEL">
+	<text load="NEBULA_REBEL_LIST"/>
+	<ship load="REBEL" hostile="true"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+<textList name="NEBULA_REBEL_LIST">
+	<text>Вы натыкаетесь на продвинутого разведчика повстанцев, рыскающего в этой части туманности в поисках вашего корабля.</text>
+	<text>Рядом с маяком можно увидеть ожидающий корабль с расцветкой повстанцев. Они, должно быть, ждали вас, и немедленно готовятся к битве.</text>
+	<text>Повстанцы, должно быть, предвидели, что вы можете оторваться от них в туманности. Разведчик ждёт вас у маяка.</text>
+	<text>Похоже, вы не сможете избежать встречи с повстанцами, путешествуя через туманность. Корабль повстанцев ждёт вас рядом с маяком.</text>
+	<text>Вскоре после вашего прибытия вслед за вами прыгает корабль повстанцев. Похоже, сбежать от него не удастся. Приготовьтесь к бою!</text>
+	<text>Только Ньютону известно, что могло завести этот корабль повстанцев так далеко. Его капитан отвечает на приветствие, но, присмотревшись, идентифицирует ваш корабль. Они открывают огонь.</text>
+	<text>Корабль повстанцев приветствует вас, но вы решаете не рисковать в таких условиях. Вы блокируете частоту и готовитесь к сражению.</text>
+</textList>
+
+
+<event name="NEBULA_AUTO"> <!-- bug? -->
+	<text load="NEBULA_AUTO_LIST"/>
+	<ship load="REBEL_AUTO" hostile="true"/>
+	<environment type="nebula"/>
+</event>
+<textList name="NEBULA_AUTO_LIST">
+	<text>Вы натыкаетесь на продвинутого разведчика повстанцев, рыскающего в этой части туманности в поисках вашего корабля.</text>
+	<text>Вы совершаете прыжок в более спокойную часть туманности. Однако ваше спокойствие улетучивается, как только корабль повстанцев прыгает к маяку и движется в атаку.</text>
+	<text>Здесь покоятся спутанные обломки множества кораблей. Вы видите мерцание огней в куче, выглядящей как мусор. Разведчик повстанцев вырывается из обломков!</text>
+	<text>Этот беспилотник не разыскивал вас. Возможно, это авангард повстанцев, разведывающий обстановку, или, может быть, они пытаются использовать эту туманность как прикрытие. В любом случае он идентифицирует вас как угрозу.</text>
+	<text>Тревожно, что повстанцы проникли так глубоко в туманность, даже если это всего лишь беспилотный корабль. Он активирует оружейные системы, вам следует сделать то же самое.</text>
+</textList>
+
+
+<event name="NEBULA_AUTO_WARNING" unique="true">
+	<text>Похоже, что автоматизированный разведчик повстанцев был расположен в туманности, чтобы докладывать о ваших передвижениях.</text>
+	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+
+<event name="NEBULA_PIRATE">
+	<text load="NEBULA_PIRATE"/>
+	<ship load="PIRATE" hostile="true"/>
+</event>
+<textList name="NEBULA_PIRATE">	<!-- JUSTIN — ADD MORE -->
+	<text>Пока вы пробирались через туманность, неопознанное судно спикировало из облаков и село вам на хвост. Их орудия включаются.</text>
+	<text>Пиратский корабль появляется из ниоткуда и приветствует вас: «Ты знаешь, почему я люблю эту часть Галактики? Исследователи! У вас всегда много полезных вещей». Они нацеливают орудия.</text>
+	<text>Пока вы плывёте через туманность, на ваш курс ложится пиратский корабль, который быстро сокращает дистанцию. Было бы лучше сражаться на своих условиях, но выбирать не приходится.</text>
+	<text>Враждебное судно спускается к вам из туманности. Боевая тревога!</text>
+	<text>Вы пытаетесь опознать корабль в тумане впереди, но он слишком плотный, чтобы что-то разглядеть. Ответ приходит, когда корабль разворачивается с разогретыми орудиями!</text>	
+</textList>
+
+<event name="NEBULA_MANTIS_FIGHT" unique="false">   
+	<text load="NEBULA_MANTIS_FIGHT"/>
+	<ship load="MANTIS_FIGHT" hostile="true"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+<textList name="NEBULA_MANTIS_FIGHT">
+	<text>Широко распространено мнение, что туманности — излюбленное место охоты мантисов. Эта деталь запомнилась вам достаточно хорошо, чтобы не дать застигнуть себя врасплох.</text>
+	<text>Вы засекли рейдер мантисов, возвращающийся с добычей. Мантисы настроены решительно, и им плевать, враждебны вы или нет. Они открывают огонь первыми.</text>
+	<text>Корабль мантисов, потерявшийся в космическом шторме, выходит с вами на связь: «Сенсоры сдохли. Данных о ближайшей местности нет. Ваши в самый раз сгодятся!» Вы засекаете увеличение мощности в их оружейных системах.</text>
+	<text>Корабль мантисов связывается с вами сквозь шторм: «Это священные охотничьи угодья клана Ургггхтнаг. А ты — жертва». Поднять щиты!</text>
+	<text>Вы замечаете истребитель мантисов, затаившийся среди облаков кружащихся космических материалов. Он охотится на вас. Вы пытаетесь подготовиться к прыжку и идёте в атаку.</text>
+
+</textList>
+
+
+
+
+
+
+
+
+
+
+<!--
+		NEUTRAL!!!
+	Events that could have a fight
+-->
+
+<event name="NEBULA_REBEL_UNDETECTED" unique="true">  <!-- give player option to hide, -->
+	<text>Ваше судно появляется вдали от маяка. Вы видите, что корабль повстанцев ждёт поблизости, и ждёт он, несомненно, именно вас.</text>
+	<ship load="REBEL" hostile="false"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Попытаться остаться незамеченным.</text>
+		<event load="NEBULA_REBEL_UNDETECTED_LIST"/>
+	</choice>
+	<choice req="cloaking" hidden="true"> 
+		<text>(Маскировка) Активировать маскировку, чтобы оставаться незамеченными.</text>
+		<event>
+			<text>Вы используете систему маскировки, чтобы проскользнуть в туманность незамеченным.</text>
+		</event>
+	</choice>
+</event>
+<eventList name="NEBULA_REBEL_UNDETECTED_LIST">
+	<event>
+		<text>Вы незамедлительно скользнули дальше в облака, но недостаточно быстро. Повстанец заметил вас и приближается, чтобы открыть огонь!</text>
+		<choice>
+			<text>Приготовиться к бою.</text>
+			<event>
+				<ship hostile="true"/>
+			</event>
+		</choice>
+		<choice req="engines" lvl="4" hidden="true">
+			<text>(Улучшенные двигатели) Включить двигатели на полную мощность и оторваться от них.</text>
+			<event>
+				<text>Ваши мощные двигатели позволяют вам оторваться от корабля и со временем затеряться в туманности.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Вы обесточили несущественные системы и скользнули в облако. Теперь вас ни за что не заметить.</text>
+	</event>
+	<event>
+		<text>Корабль заметил вас и начал преследование. После нескольких быстрых манёвров вы смогли оторваться от ваших преследователей в облаках. Однако вы полагаете, что они предупредят флот о вашей позиции.</text>
+		<modifyPursuit amount="1"/>
+	</event>
+</eventList>
+
+
+<event name="NEBULA_PIRATE_SMUGGLE" unique="true"> <!-- 1.26 --><!-- TO DO - NEED TO MAKE A NEW PIRATE SHIP THAT ATTEMPTS TO BRIBE YOU WHEN SURRENDERING-->
+	<text>Пиратский корабль прибыл вскоре после вас. Судя по тому, что он старается избегать вашего корабля, вы предполагаете, что это контрабандист, пытающийся держаться подальше от маяков.</text>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Атаковать пиратов.</text>
+		<event>
+			<text>Вы заряжаете свои орудия и идёте на сближение.</text>
+			<ship load="PIRATE_SMUGGLE" hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Игнорировать корабль.</text>
+		<event>
+			<text>Спустя некоторое время он совершает прыжок.</text>
+		</event>
+	</choice>
+	<choice req="weapons" lvl="6" hidden="true">
+		<text>(Продвинутые орудия) Многозначительно активировать ваши грозные орудия.</text>
+		<event>
+			<text>Они приветствуют вас: «Не нужно агрессии... Возможно, это убедит вас не обращать внимания?»</text>
+			<choice>
+				<text>Принять их взятку.</text>
+				<event>
+					<autoReward level="MED">fuel</autoReward>
+				</event>
+			</choice>
+			<choice>
+				<text>Не соглашаться на подкуп и атаковать.</text>
+				<event>
+					<ship load="PIRATE_SMUGGLE" hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<event name="NEBULA_AUTO_DEFENSE_ITEM" unique="true">
+	<text>Улучшенный автоматический корабль повстанцев охраняет маленькую космическую станцию. Однако, без работающих сенсоров невозможно сказать, что находится внутри.</text>
+	<ship load="REBEL_AUTO_ITEM" hostile="false"/>  <!-- ship is in other xmls -->
+	<choice>
+		<text>Атаковать автоматический корабль, чтобы добраться до станции.</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Не провоцировать корабль.</text>
+		<event/>
+	</choice>
+	<choice req="cloaking" lvl="1" max_group="0" hidden="true">
+		<text>(Маскировка) Попытаться бесшумно проникнуть на космическую станцию.</text>
+		<event load="NEBULA_AUTO_DEFENSE_ITEM_CLOAK"/>
+	</choice>
+	<choice req="cloaking" lvl="2" max_group="0" hidden="true">
+		<text>(Улучшенная маскировка) Использовать маскировку, чтобы проникнуть на космическую станцию.</text>
+			<event>
+			<text>Вы успешно проскользнули мимо корабля и получили доступ к станции незамеченными.</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="DEFENSE_ITEM_LIST"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="hacking" lvl="1" max_group="1" hidden="false"><!--DLC-->
+		<text>(Взломщик) Попытаться взломать станцию, чтобы предотвратить тревогу.</text>
+		<event load="NEBULA_AUTO_DEFENSE_ITEM_HACK"/>
+	</choice>
+	<choice req="hacking" lvl="2" max_group="1" hidden="false"><!--DLC-->
+		<text>(Улучшенный взломщик) Взломать станцию, чтобы предотвратить тревогу.</text>
+		<event>
+			<text>Вы успешно взламываете станцию и обрываете соединение с автоматическим кораблём, оставаясь при этом абсолютно незаметным.</text>
+			<item_modify>
+				<item type="drones" min="-1" max="-1"/>
+			</item_modify>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="DEFENSE_ITEM_LIST"/>
+			</choice>
+		</event>
+	</choice>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+<eventList name="NEBULA_AUTO_DEFENSE_ITEM_CLOAK"> <!--DLC EVENTLIST-->
+	<event>
+		<text>Вы успешно проскользнули мимо корабля и получили доступ к станции незамеченными.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="DEFENSE_ITEM_LIST"/>
+		</choice>
+	</event>
+	<event>	
+		<text>Вы пытаетесь проскользнуть мимо автоматического корабля, но он быстро разворачивается и атакует!</text>
+		<ship hostile="true"/>
+	</event>
+</eventList>
+<eventList name="NEBULA_AUTO_DEFENSE_ITEM_HACK"> <!--DLC EVENTLIST-->
+	<event>
+		<text>Вы успешно взламываете станцию и обрываете соединение с автоматическим кораблём. Вы получаете доступ к станции не обнаруженным.</text>
+		<item_modify>
+			<item type="drones" min="-1" max="-1"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="DEFENSE_ITEM_LIST"/>
+		</choice>
+	</event>
+	<event>	
+		<text>Вы отправляете дрона для взлома станции, но автоматический корабль замечает вас и начинает атаковать!</text>
+		<item_modify>
+			<item type="drones" min="-1" max="-1"/>
+		</item_modify>
+		<ship hostile="true"/>
+	</event>
+</eventList>
+
+		
+		
+<event name="NEBULA_LOST_SHIP" unique="true">
+	<text>Тяжело повреждённый корабль Федерации прячется в туманности около этого маяка. Прежде чем вы успеваете вступить с ним в контакт, он исчезает в туманности.</text>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice hidden="true">
+		<text>Попытаться последовать за ними и помочь.</text>
+		<event load="NEBULA_LOST_SHIP_LIST"/>
+	</choice>
+	<choice>
+		<text>Остаться на месте, пусть сами разбираются со своими проблемами.</text>
+		<event/>
+	</choice>	
+	<choice req="teleporter" hidden="true">
+		<text>(Телепортер) Попробовать телепортировать кого-нибудь из того места, где сенсоры регистрируют признаки жизни.</text>
+		<event load="NEBULA_LOST_SHIP_LIST3"/><!-- 1.26 -->
+	</choice>
+	<choice req="ADV_SCANNERS" hidden="true">
+		<text>(Сканеры широкого охвата) Подать дополнительную энергию на ваши сенсоры и попробовать отыскать их.</text>
+		<event load="NEBULA_LOST_SHIP_LIST2"/>
+	</choice>
+</event>
+<eventList name="NEBULA_LOST_SHIP_LIST">
+	<event>
+		<text>Поиск не дал результатов. Ваши сенсоры не могут ничего засечь в туманности.</text>
+	</event>
+	<event>
+		<text>В процессе бесплодных поисков в туманности вы натыкаетесь на корабль повстанцев, от которого, по всей видимости, прятались лоялисты Федерации. Вы готовитесь к бою.</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>Вам повезло, и вы нашли их парящими неглубоко в туманности. Взволнованные, что их нашли свои, они поднимаются на борт и покидают свой разрушенный корабль.</text>
+		<crewMember amount="1"/>
+	</event>
+</eventList>
+<eventList name="NEBULA_LOST_SHIP_LIST2">
+	<event>
+		<text>Радар местности мигает, периодически показывая признаки крупного объекта в облаке рядом. Тем не менее этого достаточно, чтобы вычислить его координаты, и вы находите корабль... Точнее пустой корпус, давно лишившийся работающих компонентов.</text>
+		<autoReward level="MED">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Вы следуете за ними по быстро исчезающим следам, и находите их парящими не слишком глубоко в туманности. Взволнованные, что их нашли свои, они поднимаются на борт и покидают свой разрушенный корабль.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event><!-- 1.26.4 -->
+		<text>Вы следуете за ними по быстро исчезающим следам, и находите их парящими не слишком глубоко в туманности. Взволнованные, что их нашли свои, они поднимаются на борт и покидают свой разрушенный корабль.</text>
+		<crewMember amount="1"/>
+	</event>
+</eventList>
+<eventList name="NEBULA_LOST_SHIP_LIST3"><!-- 1.26 -->
+	<event>
+		<text>Вы переместили экипаж Федерации на борт. Один с радостью присоединился к вашему экипажу, остальные ждут высадки на следующей станции.</text>
+		<crewMember amount="1"/>
+		<autoReward level="MED">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.26.4 -->
+		<text>Вы переместили экипаж Федерации на борт. Один с радостью присоединился к вашему экипажу, остальные ждут высадки на следующей станции.</text>
+		<crewMember amount="1"/>
+		<autoReward level="MED">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Как только вы подготавливаете телепортер, сенсоры теряют сигнал, и вы снова летите в одиночестве сквозь густую туманность...</text>
+	</event>
+</eventList>
+
+<event name="NEBULA_WEAPONS_TRADER" unique="true">
+	<text>Нелегальный торговец оружием плетёт вам что-то невнятное об опасностях, таящихся в туманностях, после чего навязчиво пытается толкнуть вам свой товар.</text>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<ship load="PIRATE_NEIZ" hostile="false"/>
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.22 --> <!-- 1.25 --><!-- 1.28 -->
+		<text>Приобрести неизвестное оружие за 35 лома.</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
+	</choice>
+	<choice hidden="false" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="true"> <!-- 1.25 --><!-- 1.28 -->
+		<text>(Член экипажа слаг) Ваш слаг предвидит результат сделки...</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
+	</choice>
+	<choice>
+		<text>Игнорировать корабль.</text>
+		<event/>
+	</choice>
+	<choice req="mind" hidden="true"> <!--DLC-->
+		<text>(Контроль разума) Убедите его совершить более выгодную сделку.</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST2"/>
+	</choice>
+</event>
+<eventList name="NEBULA_WEAPONS_TRADER_LIST">
+	<event>
+		<text>Вы пересылаете лом и получаете оружие взамен. Будем надеяться, оно того стоит.</text>
+		<item_modify>
+			<item type="scrap" min="-35" max="-35"/><!-- 1.21 +below -->
+		</item_modify>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Вы пересылаете лом и получаете оружие взамен. Будем надеяться, оно того стоит.</text>
+		<item_modify>
+			<item type="scrap" min="-35" max="-35"/>
+		</item_modify>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Вы пересылаете лом, но он не соблюдает соглашение: «Я же говорил, что это опасные места!»</text>
+		<item_modify>
+			<item type="scrap" min="-35" max="-35"/>
+		</item_modify>
+		<choice>
+			<text>Атаковать корабль!</text>
+			<event>
+				<ship hostile="true"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Получив ценный урок, двинуться дальше.</text>
+			<event/>
+		</choice>
+	</event>
+</eventList>
+<eventList name="NEBULA_WEAPONS_TRADER_LIST2"> <!--DLC-->
+	<event>
+		<text>Будучи "убеждённым" в необходимости помочь, он снижает цену и описывает оружие. Однако он постепенно приходит в себя и отказывается от скидки. Он явно не может понять, почему он вообще предложил вам скидку.</text>
+		<choice>
+			<text>Купить оружие.</text>
+			<event>
+				<text>Вы покупаете оружие и благодарите его за помощь.</text>
+				<item_modify>
+					<item type="scrap" min="-35" max="-35"/>
+				</item_modify>
+				<weapon name="RANDOM"/>
+			</event>
+		</choice>
+		<choice><!-- 1.31 -->
+			<text>Мы передумали, атаковать их!</text>
+			<event>
+				<ship hostile="true"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите его за предложение и готовитесь двигаться дальше.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Будучи "убеждённым" в необходимости помочь, он рассказывает, что его предложение было враньём, а они сами собирались напасть на ваш корабль. К тому времени, как он пришёл в себя, вы уже подготовились к бою.</text>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Он соглашается сделать небольшую скидку и показывает вам оружие.</text>
+		<choice>
+			<text>Купить оружие.</text>
+			<event>
+				<text>Вы покупаете оружие и благодарите его за помощь.</text>
+				<item_modify>
+					<item type="scrap" min="-25" max="-25"/>
+				</item_modify>
+				<weapon name="RANDOM"/>
+			</event>
+		</choice>
+		<choice><!-- 1.31 -->
+			<text>Мы передумали, атаковать их!</text>
+			<event>
+				<ship hostile="true"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите его за предложение и готовитесь двигаться дальше.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<ship name="PIRATE_NEIZ" auto_blueprint="SHIPS_PIRATE">
+	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<!-- <deadCrew load="DEAD_CREW_DEFAULT"/> --><!-- 1.28 -->
+	<deadCrew>
+		<text>Вы забираете всё ценное с корабля и ищете то самое "неизвестное орудие".</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEIZ_END"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<eventList name="NEIZ_END">
+	<event>
+		<text>А нет никакого орудия, вас просто пытались обмануть.</text>
+	</event>
+	<event>
+		<text>Спустя некоторое время орудие находится, и это оказалось...</text>
+		<weapon name="RANDOM"/>
+	</event>
+</eventList>
+
+<event name="NEBULA_ROCK_RACIST" unique="true">
+	<text>Бронированный транспортник роков неподалёку от вас, похоже, потерял ориентацию в пространстве, но когда вы приветствуете их, они с подозрением отвечают: «К какой бы форме жизни вы ни принадлежали, вы нам отвратительны. Нам не нужна помощь. Уходите. Немедленно».</text>
+	<ship load="ROCK_SHIP" hostile="false"/>
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Отвратительны?! Зарядить орудия!</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Покинуть это место.</text>
+		<event/>
+	</choice>
+	<choice hidden="true" req="rock">
+		<text>(Член экипажа рок) Предложить вывести их из туманности.</text>
+		<event>
+			<text>Роки нехотя передают управление вам, и вы выводите их в менее плотную часть туманности. Они не знают, что и думать, но, тем не менее, передают вам часть своих запасов.</text>
+			<autoReward level="HIGH">standard</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true" req="orchid">
+		<text>(Член экипажа орхид) Отправить орхида для переговоров.</text>
+		<event>
+			<text>«Цветы? Для меня? Извините за невежливое поведение ранее». Вы ведёте роков к границе туманности, где облака рассеиваются. Роки впечатлены и передают вам кое-какие припасы.</text>
+			<variable name="counter_usage_orchid" op="add" val="1"/>
+			<autoReward level="HIGH">standard</autoReward>
+		</event>
+	</choice>
+</event>
+
+<event name="NEBULA_MANTIS_CHOICE" unique="true">
+	<text>Пытаясь вслепую сориентироваться в тумане, вы чуть не столкнулись корпусами с кораблём мантисов. Они выходят на связь с вами: «Ха! Мы закроем на это глаза. Туманность, очень опасно. В следующий раз все человеки умрут».</text>
+	<ship load="MANTIS_FIGHT" hostile="false"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Следующего раза не будет. Открыть огонь!</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Здесь и так достаточно опасно. Двинуться дальше.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="NEBULA_REBEL_CHASE" unique="true">
+	<text>Вы замечаете в туманности перед собой корабль повстанцев и держитесь вне их радаров. Попытаться напасть на них?</text>
+	<ship load="REBEL" hostile="false"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Приготовиться к преследованию!</text>
+		<event load="NEBULA_REBEL_CHASE_LIST"/>
+	</choice>
+	<choice>
+		<text>Оставаться незамеченными.</text>
+		<event>
+			<text>Вы пытаетесь держаться вне их взора. Вряд ли они вас видели.</text>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="3">
+		<text>(Продвинутые сенсоры) Приблизиться к ним, следуя их траектории, и одновременно приготовиться к атаке.</text>
+		<event>
+			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice req="ADV_SCANNERS" hidden="true">
+		<text>(Сканеры широкого охвата) Приблизиться к ним, следуя их траектории, и одновременно приготовиться к атаке.</text>
+		<event>
+			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice req="LIFE_SCANNER" hidden="true"><!--DLC-->
+		<text>(Сканер жизненных форм) Преследовать их, используя сканер жизненных форм.</text>
+		<event>
+			<text>Способность вашего усиления обнаруживать живые организмы оказывается крайне полезной в туманности. Вы догоняете их корабль и готовитесь к бою.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="SHIPRADAR"><!-- 1.31 -->
+		<text>(Направленный сканер) Преследовать их, используя направленный сканер.</text>
+		<event>
+			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="SHIPRADAR2"><!-- 1.31 -->
+		<text>(Анализатор морфов) Преследовать их, используя анализатор.</text>
+		<event>
+			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+<eventList name="NEBULA_REBEL_CHASE_LIST">
+	<event>
+		<text>Вы ориентируетесь по их FTL-следу и заходите на них с тыла, заряжая орудия.</text>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Без помощи сенсоров вы не можете преследовать цель. Повстанцы сбежали.</text>
+	</event>
+	<event>
+		<text>Вы затерялись в туманности и окончательно сбились с курса. Чтобы вернуться к маяку, потребовалось некоторое время. Скорее всего, за это время флот успел продвинуться ещё ближе к вам.</text>
+		<modifyPursuit amount="1"/>
+	</event>
+</eventList>
+		
+
+
+<!--
+		ITEMS!!!
+	Events that give items
+-->
+
+<event name="NEBULA_TRADER" unique="true"><!-- 1.21 -->
+	<text>Трудно понять почему, но, видимо, этот маяк является излюбленным местом для туристов. Один из кораблей на небольшой станции предлагает сделку.</text>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<ship load="JELLY" hostile="false"/>
+	<choice>
+		<text>Обмен.</text>
+		<event load="NEB_TRADER_LIST_1"/>
+	</choice>
+	<choice>
+		<text>Обмен.</text>
+		<event load="NEB_TRADER_LIST_2"/>
+	</choice>
+	<choice>
+		<text>Обмен.</text>
+		<event load="NEB_TRADER_LIST_3"/>
+	</choice>
+	<choice hidden="true">
+		<text>Атаковать их.</text>
+		<event load="NEB_TRADER_FIGHT"/>
+	</choice>
+	<choice><!-- 1.25 --> <!-- moved down -->
+		<text>Игнорировать.</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="NEB_TRADER_FIGHT">
+	<event>
+		<text>Вы решаете напасть на них и отдаёте приказ заряжать орудия. Но то ли они были готовы к нападению, то ли у них был предзажигатель орудий — вы немедленно получаете залп в борт.</text>
+		<damage amount="3" system="random" effect="random"/>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Как только вы приводите все системы в боевой режим, они делают то же самое.</text>
+		<ship hostile="true"/>
+	</event>
+	<event> <!-- 1.23 -->
+		<text>Как только вы приводите все системы в боевой режим, они делают то же самое.</text>
+		<ship hostile="true"/>
+	</event>
+</eventList>
+
+<eventList name="NEB_TRADER_LIST_1">
+	<event>
+		<text>Вы совершаете сделку.</text>
+		<item_modify>
+			<item type="drones" min="3" max="10"/>
+			<item type="fuel" min="-4" max="-1"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEB_TRADER_NEXT"/>
+		</choice>
+	</event>
+	<event>
+		<text>Вы совершаете сделку.</text>
+		<item_modify>
+			<item type="fuel" min="1" max="8"/>
+			<item type="missiles" min="-8" max="-3"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEB_TRADER_NEXT"/>
+		</choice>
+	</event>
+</eventList>
+<eventList name="NEB_TRADER_LIST_2">
+	<event>
+		<text>Вы совершаете сделку.</text>
+		<item_modify>
+			<item type="fuel" min="1" max="10"/>
+			<item type="drones" min="-5" max="-1"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEB_TRADER_NEXT"/>
+		</choice>
+	</event>
+	<event>
+		<text>Вы совершаете сделку.</text>
+		<item_modify>
+			<item type="missiles" min="4" max="12"/>
+			<item type="fuel" min="-4" max="-1"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEB_TRADER_NEXT"/>
+		</choice>
+	</event>
+</eventList>
+<eventList name="NEB_TRADER_LIST_3">
+	<event>
+		<text>Вы совершаете сделку.</text>
+		<item_modify>
+			<item type="drones" min="2" max="8"/>
+			<item type="missiles" min="-8" max="-2"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEB_TRADER_NEXT"/>
+		</choice>
+	</event>
+	<event>
+		<text>Вы совершаете сделку.</text>
+		<item_modify>
+			<item type="missiles" min="2" max="8"/>
+			<item type="drones" min="-8" max="-2"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEB_TRADER_NEXT"/>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="NEB_TRADER_NEXT">
+	<event>
+		<text>Вместе с припасами на ваш корабль был доставлен "сюрприз"! Это была ловушка, но ведь вы знали, что слаги ненадёжные торговцы...</text>
+		<ship hostile="true"/>
+		<boarders min="1" max="4" class="slug"/>
+	</event>
+	<event>
+		<text>Закончив обмен, вы готовитесь к прыжку.</text>
+	</event>
+</eventList>
+
+
+
+<!--
+		BOARDERS!!!
+	Events with boarder calls
+-->
+
+<event name="NEBULA_BOARDING" unique="true">
+	<text load="NEBULA_BOARDING_TEXT"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<boarders min="2" max="4" class="human"/>
+	<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true"><!-- 1.31 -->
+		<enemyCrew amount="0" includeClonebay="false"/>
+	</triggeredEvent>
+</event>
+<textList name="NEBULA_BOARDING_TEXT">
+	<text>Вы разглядываете небольшую станцию неподалёку, когда вдруг ощущаете дрожь от выстрелов, проносящуюся по кораблю. Без сенсоров точно не определить, но, похоже, у вас на корабле незваные гости!</text> 
+	<text>Вы прибываете в туманность и немедленно получаете сообщение от неизвестного источника: «Готовьтесь к абордажу!» Из-за статического шума в туманности невозможно понять, откуда они взялись, но вы слышите выстрелы на борту.</text>
+	<text>Вокруг маяка вы видите множество пустых кораблей. Через несколько минут раздаются характерные звуки телепортации и неистовые крики врагов — вас берут на абордаж!</text>
+</textList>
+
+
+
+
+
+
+<!--
+		STORM!!!
+	Events with storm
+-->
+
+<!-- БАГ?? -->
+
+<event name="NEBULA_STORM_AUTO" unique="true">
+	<text>Вы впрыгиваете в сектор туманности, где бушует плазменная буря. Автоматический разведчик повстанцев, ожидавший у маяка, идёт в атаку.</text>
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Приготовиться к бою.</text>
+		<event>
+			<ship load="REBEL_AUTO" hostile="true"/>
+		</event>
+	</choice>
+	<choice req="engines" lvl="3" max_group="0" hidden="true">
+		<text>(Улучшенные двигатели) Попытаться убежать.</text>
+		<event load="NEBULA_STORM_AUTO_ESCAPE"/>
+	</choice>
+	<choice req="engines" lvl="6" max_group="0" hidden="true">
+		<text>(Продвинутые двигатели) Попытаться оторваться от них.</text>
+		<event>
+			<text>Вы успешно затерялись в космическом шторме.</text>
+		</event>
+	</choice>
+	<choice req="cloaking" hidden="true">
+		<text>(Маскировка) Использовать маскировку, чтобы спастись.</text>
+		<event>
+			<text>Используя свою продвинутую систему маскировки, вы с лёгкостью затерялись от вашего преследователя в космическом шторме.</text>
+		</event>
+	</choice>
+</event>
+<eventList name="NEBULA_STORM_AUTO_ESCAPE">
+	<event>
+		<text>Вы успешно затерялись в космическом шторме.</text>
+	</event>
+	<event>
+		<text>Несмотря на то, что ваши двигатели улучшены, вам не удаётся разогнать их. Вы поворачиваете и готовитесь в битве.</text>
+		<ship load="REBEL_AUTO" hostile="true"/>
+	</event>
+</eventList>
+
+<event name="NEBULA_STORM_REBEL" unique="true">
+	<text>Вы оказываетесь в самом центре плазменной бури. Несмотря на жестокие условия, вас, похоже, ждёт разведчик повстанцев.</text>
+	<ship load="REBEL" hostile="true"/>
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+
+
+<event name="NEBULA_STORM_BOARDING" unique="true"> <!--DLC — Kinda-->
+	<text>Вы обнаруживаете неподалёку два дрейфующих повреждённых корабля. Вы начинаете собирать обломки, как вдруг внезапно раздаётся звук проникновения на ваш корабль, вслед за чем слышите крики абордажной команды.</text> 
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<boarders min="3" max="4" class="human"/>
+	<autoReward level="MED">standard</autoReward>
+</event>
+
+<event name="NEBULA_STORM_ITEMS" unique="true">
+	<text>Вы выходите из прыжка в центре плазменного шторма. Несколько недавно выведенных из строя кораблей маячат в тенях, слабо освещаемые молниями.</text>
+	<choice hidden="true">
+		<text>Вручную обыскать останки в поисках выживших и оборудования.</text>
+		<event load="NEBULA_STORM_ITEMS_LIST"/>
+	</choice>
+	<choice>
+		<text>Не рисковать и ждать зарядки FTL-привода, чтобы улететь отсюда без повреждений.</text>
+		<event/>
+	</choice>
+	<choice req="pilot" lvl="2" hidden="true" max_group="0">
+		<text>(Улучшенная рубка управления) Пусть ваш пилот осторожно исследует обломки.</text>
+		<event load="NEBULA_STORM_ITEMS_PILOTING"/>
+	</choice>
+	<choice req="pilot" lvl="3" hidden="true" max_group="0">
+		<text>(Продвинутая рубка управления) Пусть ваш пилот осторожно исследует обломки.</text>
+		<event load="NEBULA_STORM_ITEMS_PILOTING2"/>
+	</choice>
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+<eventList name="NEBULA_STORM_ITEMS_LIST">
+	<event>
+		<text>Несмотря на осторожность, нехватка сканирующего оборудования приводит к тому, что некоторые обломки врезаются в корабль, повреждая обшивку. Вы собираете всё полезное и готовитесь к прыжку, пока не случилось чего похуже.</text>
+		<damage amount="4"/>
+		<damage amount="0" system="random" effect="breach"/>  <!--DLC-->
+		<autoReward level="HIGH">stuff</autoReward>
+	</event>
+	<event>
+		<text>На кладбище кораблей вы находите один, который, похоже, в сравнительно неплохом состоянии. На борту вы обнаруживаете пассажира без сознания и переносите его на свой корабль. Как только он приходит в себя, он предлагает присоединиться к вашему экипажу в качестве благодарности.</text>	
+		<crewMember amount="1"/>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>Пока экипаж был снаружи корабля, обыскивая обломки, каркасы двух разбитых кораблей врезались друг в друга, обрывая страховочные тросы экипажа. Вы не успеваете среагировать, и кого-то далеко отбрасывает, оставляя беспомощно плыть среди газовых облаков...</text>
+		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+			<text id="continue"/>
+			<event>
+				<removeCrew>
+					<clone>true</clone>
+					<text>К счастью, ваш член экипажа был достаточно близко к кораблю для того, чтобы клон-отсек возродил его.</text>
+				</removeCrew>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+			</event>
+		</choice>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>Среди мусора вы находите чертёж дрона. Вы решаете, что этого вполне достаточно, и готовитесь к прыжку.</text>
+		<autoReward level="MED">drone</autoReward>
+	</event>
+	<event>
+		<text>Большая часть обломков даже для переработки на лом не годится, однако вам удалось обнаружить неповреждённое оружие, пригодное для установки на ваш корабль.</text>
+		<autoReward level="MED">weapon</autoReward>
+	</event>
+</eventList>
+<eventList name="NEBULA_STORM_ITEMS_PILOTING">
+	<event>
+		<text>На кладбище кораблей вы находите один, который, похоже, в сравнительно неплохом состоянии. На борту вы обнаруживаете пассажира без сознания и переносите его на свой корабль. Как только он приходит в себя, он предлагает присоединиться к вашему экипажу в качестве благодарности.</text>	
+		<crewMember amount="1"/>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>Среди мусора вы находите чертёж дрона. Вы решаете, что этого вполне достаточно, и готовитесь к прыжку.</text>
+		<autoReward level="MED">drone</autoReward>
+	</event>
+	<event>
+		<text>Большая часть обломков даже для переработки на лом не годится, однако вам удалось обнаружить неповреждённое оружие, пригодное для установки на ваш корабль.</text>
+		<autoReward level="LOW">weapon</autoReward>
+	</event>
+	<event>
+		<text>Ваш пилот осторожно исследует обломки, но шторм уже взял своё. Любой экипаж давно умер, а плавающие останки обожжены настолько, что их уже не починить.</text>
+	</event>
+</eventList>
+<eventList name="NEBULA_STORM_ITEMS_PILOTING2">
+	<event>
+		<text>На кладбище кораблей вы находите один, который, похоже, в сравнительно неплохом состоянии. На борту вы обнаруживаете пассажира без сознания и переносите его на свой корабль. Как только он приходит в себя, он предлагает присоединиться к вашему экипажу в качестве благодарности.</text>	
+		<crewMember amount="1"/>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>Среди мусора вы находите чертёж дрона. Вы решаете, что этого вполне достаточно, и готовитесь к прыжку.</text>
+		<autoReward level="MED">drone</autoReward>
+	</event>
+	<event>
+		<text>Большая часть обломков даже для переработки на лом не годится, однако вам удалось обнаружить неповреждённое оружие, пригодное для установки на ваш корабль.</text>
+		<autoReward level="LOW">weapon</autoReward>
+	</event>
+</eventList>
+
+<event name="NEBULA_TASK_EVENT" unique="true"> <!-- 1.31 -->
+	<text>Рядом с маяком в туманности совершенно ничего нет. Внезапно по каналам связи вам приходит сообщение, зашифрованное простыми методами.</text>
+	<environment type="nebula" />
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice hidden="true">
+		<text>Расшифровать загадочное сообщение.</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Игнорировать и поговорить с командой до зарядки FTL-привода.</text>
+		<event load="TALK_WITH_CREW_GHOST"/>
+	</choice>
+</event>
+<eventList name="NEBULA_TASK_EVENT_ENCRIPT"> 
+	<event load="NEBULA_TASK_EVENT_ENCRIPT00_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT01_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT02_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT03_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT04_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT05_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT06_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT07_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT08_1"/>
+	<event load="NEBULA_TASK_EVENT_ENCRIPT09_1"/>
+</eventList>
+<textList name="NEBULA_TASK_EVENT_ENCRIPT00_TEXT">
+	<text>Сообщение гласит: |={-~, }={+~, {=4, ~=2, }/|=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT00_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT00_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "3".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+<textList name="NEBULA_TASK_EVENT_ENCRIPT01_TEXT">
+	<text>Сообщение гласит: |=7, ~=7, {-|=1, }={-~x2, -}=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT01_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT01_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"> <!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "6".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT02_TEXT">
+	<text>Сообщение гласит: |+{=4-|, ~=2, }=|x~, }+{=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT02_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT02_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "4".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT03_TEXT">
+	<text>Сообщение гласит: ~=-5, |=~x19, {=|-5, }=-{/10, }=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT03_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT03_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "10".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT04_TEXT">
+	<text>Сообщение гласит: {+~+|=6, {+}+~+|=10, }x2=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT04_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT04_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "8".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT05_TEXT">
+	<text>Сообщение гласит: |+|=}, }!=24, |x5=~, ~=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT05_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT05_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "10".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT06_TEXT">
+	<text>Сообщение гласит: }x}/20=|, |+{={+{, {=5, }/2=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT06_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT06_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "5".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT07_TEXT">
+	<text>Сообщение гласит: lg(1000)=}, |=}+1, |+|=?</text> 
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT07_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT07_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "8".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+
+<textList name="NEBULA_TASK_EVENT_ENCRIPT08_TEXT">
+	<text>Сообщение гласит: cos(~-1)=|, ~=({+}x2)/4, {=2, }=1, |=?</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT08_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT08_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "1".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<!-- <textList name="NEBULA_TASK_EVENT_ENCRIPT09_TEXT">
+	<text>Сообщение гласит: ~x}x|=25, |=|x3, |>0, }=~, ~=?.</text>
+</textList> -->
+<!-- events_nebula.xml.rawclobber 1604 string -->
+<textList name="NEBULA_TASK_EVENT_ENCRIPT09_TEXT">
+	<text>Сообщение гласит: ~x}x|=25, |=|x|, ~>|>0, }=~, ~=?.</text>
+</textList>
+<event name="NEBULA_TASK_EVENT_ENCRIPT09_1">
+	<text load="NEBULA_TASK_EVENT_ENCRIPT09_TEXT" />
+	<choice hidden="true">
+		<text>Отправить "1".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "2".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "3".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "4".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "5".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
+	</choice>
+	<choice hidden="true"><!-- 1.31 -->
+		<text>Отправить "6".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "7".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "8".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "9".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice hidden="true">
+		<text>Отправить "10".</text>
+		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "5".</text>
+		<event>
+			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<item_modify>
+				<item type="scrap" min="-9999" max="-9999" />
+				<item type="missiles" min="-999" max="-999" />
+				<item type="drones" min="-999" max="-999" />
+			</item_modify>
+		</event>
+	</choice>
+</event>
+
+<eventList name="NEBULA_TASK_EVENT_ENCRIPT_WRONG"> 
+	<event>
+		<text>Вы некоторое время ждёте, но ответа нет. Похоже, ваш ответ неверен. Время улетать прочь.</text>
+	</event>
+	<event>
+		<text>Вы некоторое время ждёте, но ответа нет. Похоже, ваш ответ неверен. Время улетать прочь.</text>
+	</event>
+	<event>
+		<text>Вы некоторое время ждёте, но ответа нет. Похоже, ваш ответ неверен. Внезапно кто-то из команды подмечает, что ресурсов на корабле стало меньше! Вас обокрали!</text>
+		<item_modify steal="true">
+			<item type="scrap" min="-20" max="0" />
+			<item type="drones" min="-5" max="0" />
+			<item type="fuel" min="-5" max="0" />
+			<item type="missiles" min="-5" max="0" />
+		</item_modify>
+	</event>
+</eventList>
+<eventList name="NEBULA_TASK_EVENT_ENCRIPT_CORRECT"> 
+	<event>
+		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируется орудие.</text>
+		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<weapon name="RANDOM" />
+	</event>
+	<event>
+		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируется схема дрона.</text>
+		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<drone name="RANDOM"/>
+	</event>
+	<event>
+		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируются ценные ресурсы.</text>
+		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<autoReward level="RANDOM">standard</autoReward>
+	</event>
+	<event>
+		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируются ценные припасы.</text>
+		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<autoReward level="RANDOM">stuff</autoReward>
+	</event>
+</eventList>
+
+
+
+
+<!-- Туманность аватаров -->
+<eventList name="TUMAN_OFF_AVATAR">
+	<event load="FIND_STUFF_AVATAR"/>
+	<event load="FIND_STANDARD_AVATAR"/>
+	<event load="AVATAR_SHIPS"/>
+	<event load="AVATAR_HELP3"/><!-- 1.28.1 -->
+</eventList>
+
+<eventList name="NEBULA_ITEMS_AVATAR">
+	<event load="NEBULA_FIND_STUFF_AVATAR"/>
+	<event load="NEBULA_FIND_STANDARD_AVATAR"/>
+</eventList>
+
+<eventList name="NEBULA_HOSTILE_AVATAR">
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_STORM_AUTO"/>
+	<event load="NEBULA_STORM_REBEL"/>
+	<event load="NEBULA_BOARDING_AVATAR"/>
+	<!-- <event load="NEBULA_AI_CORE"/> -->
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AVATAR_SHIPS"/>
+	<event load="NEBULA_AUTO_CLOUDER_EVENT"/><!-- 1.27 -->
+</eventList>
+
+<eventList name="NEBULA_DISTRESS_BEACON_AVATAR"><!-- 1.22 -->
+	<event load="NEBULA_SLUG_HELP"/>
+	<event load="NEBULA_SLUG_HELP2"/>
+	<event load="NEBULA_REBEL_HELP"/>
+	<event load="NEBULA_REBEL_HELP2"/>
+	<event load="NEBULA_SLUG_DEAD"/>
+	<event load="NEBULA_AVATAR_HELP"/>
+	<event load="NEBULA_AVATAR_HELP2"/>
+	<!-- <event load="NEBULA_AVATAR_HELP3"/> --> <!-- 1.28.1 -->
+	<event load="NEBULA_AI_KILLS_CIV"/>
+</eventList>
+
+<event name="START_BEACON_AVATAR">
+	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
+	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_avatar_sector" op="add" val="1"/>
+	<text load="START_BEACON_AVATAR"/>
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="AUGMENTS_ON_START_BEACON"/>
+	</choice>
+</event>
+<textList name="START_BEACON_AVATAR">
+	<text>В этой туманности нет ни одной живой души. Но вас это почему-то не успокаивает...</text>
+	<text>Эта туманность не отличалась бы от других подобных, если бы не одна особенность — её населяют призраки...</text>
+	<text>Аватаров часто называют призраками. Возможно, их полупрозрачная сущность отпугивает корабли от этой части космоса.</text>
+	<text>Эту туманность населяют аватары — искусственный интеллект, голограммы, похожие на призраков. Даже слаги стараются не соваться в это место.</text>
+	<text>Поговаривают, что в этом месте водятся призраки. Так это или же нет, скоро вы всё узнаете сами.</text>
+	<text>Эта туманность выглядит подозрительно тихой, даже для туманности. Вам стоит быть начеку.</text>
+	<text>Вам не нравятся звуки, раздающиеся в этом месте время от времени... Команда жалуется на постоянные головные боли из-за них.</text>
+	<text>Лишь корабли слагов иногда рискуют залетать в эту туманность, слишком уж опасное это место. Повстанцев, впрочем, вряд ли это остановит.</text>
+</textList>
+
+<event name="FIND_STUFF_AVATAR">
+	<text load="FIND_STUFF_AVATAR"/>
+	<autoReward level="LOW">stuff</autoReward>
+</event>
+<textList name="FIND_STUFF_AVATAR">
+	<text>Останки небольшого корабля медленно дрейфуют рядом с маяком. Внутри вы находите немного припасов.</text>
+	<text>Вы обнаруживаете заброшенную космическую станцию, находящуюся на орбите крупного астероида. Команда находит немного припасов внутри.</text>
+	<text>Прямо перед вами плавают останки крейсера слагов. Собирая обломки, вы невольно задумываетесь об опасностях этого сектора.</text>
+	<text>Вы натыкаетесь на небольшой автоматический разведчик. Корпус его полностью разбит, видимо, он недавно попал в серьёзную передрягу. Вы разбираете его на запчасти.</text>
+</textList>
+
+<event name="NEBULA_FIND_STUFF_AVATAR">
+	<text load="NEBULA_FIND_STUFF_AVATAR"/>
+	<autoReward level="LOW">stuff</autoReward>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+<textList name="NEBULA_FIND_STUFF_AVATAR">
+	<text>Останки небольшого корабля медленно дрейфуют рядом с маяком. Внутри вы находите немного припасов.</text>
+	<text>Вы обнаруживаете заброшенную космическую станцию, находящуюся на орбите крупного астероида. Команда находит немного припасов внутри.</text>
+	<text>Прямо перед вами плавают останки крейсера слагов. Собирая обломки, вы невольно задумываетесь об опасностях этого сектора.</text>
+	<text>Из-за очередного плотного облака туманности на вас медленно плывут останки боевого крейсера слагов. Вы собираете всё полезное, что от него осталось.</text>
+	<text>Вы натыкаетесь на небольшой автоматический разведчик. Корпус его полностью разбит, видимо, он недавно попал в серьёзную передрягу. Вы разбираете его на запчасти.</text>
+</textList>
+
+<event name="NEBULA_FIND_STANDARD_AVATAR">
+	<text load="NEBULA_FIND_STUFF_AVATAR"/>
+	<autoReward level="LOW">standard</autoReward>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+
+<event name="FIND_STANDARD_AVATAR">
+	<text load="FIND_STUFF_AVATAR"/>
+	<autoReward level="LOW">standard</autoReward>
+</event>
+
+<event name="NEBULA_STORE_AVATAR">
+	<text load="NEBULA_STORE_AVATAR"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<store/>
+</event>
+<textList name="NEBULA_STORE_AVATAR">
+	<text>Кто-то оставил здесь автоматическую торговую станцию. Как ни странно, она прекрасно функционирует.</text>
+	<text>Автоматическая торговая станция, расположенная в этом облаке туманности, предлагает свои товары.</text>
+	<text>Неизвестно, кто разместил в этой туманности автоматическую торговую станцию, но она всё ещё функционирует.</text>
+	<text>Небольшое судно слагов предлагает взглянуть на их товары. Туманность аватаров — не то место, где они рискнули бы обмануть кого-то, здесь лучше всегда иметь союзников.</text>
+</textList>
+
+<event name="NEBULA_BOARDING_AVATAR" unique="true">
+	<text load="NEBULA_BOARDING_AVATAR_TEXT"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<boarders min="4" max="8" class="ghost"/>
+	<autoReward level="LOW">scrap_only</autoReward>
+</event>
+<textList name="NEBULA_BOARDING_AVATAR_TEXT">
+	<text>Вы собираете обломки небольшого космического зонда, когда на вашем корабле с ужасными звуками материализуются несколько аватаров. Команда спешно готовится к обороне.</text> 
+	<text>В этой туманности вы обнаруживаете разбитое шахтёрское судно, в его трюме ещё есть немного лома. Вернувшись с добычей, вы вдруг понимаете, что прихватили с собой нескольких аватаров!</text>
+	<text>Аватары не дали вам собрать весь болтающийся вокруг маяка металлический лом. Ваша команда в ужасе — призраки на борту корабля!</text>
+</textList>
+
+<event name="AVATAR_SHIPS">
+	<text load="AVATAR_SHIPS_LIST"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<playSound>avatar_siren</playSound><!-- 1.31 -->
+</event>
+<textList name="AVATAR_SHIPS_LIST">
+	<text>Неизвестно почему, но корабли аватаров всегда сопровождают звуки сирены. Заслышав её в очередной раз, ваша команда готовится к бою.</text>
+	<text>Жуткие звуки вдруг прерывают тишину космоса, аватары нападают на вас! Трансляция разрывающей уши сирены — их излюбленная тактика.</text>
+	<text>Прямо по курсу — боевое судно аватаров. Все попытки уладить ситуацию миром бесполезны — они не способны общаться с другими расами.</text>
+	<text>Тревожная сирена раздаётся на вашем корабле — это аватары готовятся разобрать его на запчасти. Орудия к бою!</text>
+	<text>Боевой корабль аватаров поджидает неосторожных путешественников на этом маяке. У вас нет другого выхода, кроме как готовиться к обороне.</text>
+	<text>«Опять эта чёртова сирена!» — команда в ужасе забивается по углам отсеков. Вы как можете всех успокаиваете и отдаёте приказ готовиться к бою.</text>
+	<text>Возле маяка патрулирует судно под управлением ИИ. Заметив вас, оно немедленно отправляется в атаку.</text>
+	<text>«Капитан!» — команда спешит к вам с докладом. «Мы попали под обстрел чёртовых призраков!» Вы и так уже поняли это по ужасному вою, раздающемуся по всему кораблю.</text>
+	<text>Маяк перед вами ничем не примечателен, и вы уже было отдаёте приказ покинуть его, когда корабль ИИ появляется прямо по курсу. Готовьтесь к бою!</text>
+	<text>Аватары, расположившиеся у этого маяка, уже включили свою сирену и готовятся к атаке. Команда старается не обращать внимания на оглушающие звуки.</text>
+</textList>
+
+<event name="NEBULA_AVATAR_SHIPS">
+	<text load="NEBULA_AVATAR_SHIPS_LIST"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<playSound>avatar_siren</playSound><!-- 1.31 -->
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+<textList name="NEBULA_AVATAR_SHIPS_LIST">
+	<text>Неизвестно почему, но корабли аватаров всегда сопровождают звуки сирены. Заслышав её в очередной раз, ваша команда готовится к бою.</text>
+	<text>Жуткие звуки вдруг прерывают тишину космоса, аватары нападают на вас! Трансляция разрывающей уши сирены — их излюбленная тактика.</text>
+	<text>Очередной корабль аватаров выплывает из туманности прямо в вашем направлении. Ничего не остаётся, кроме как принять бой.</text>
+	<text>Прямо по курсу — боевое судно аватаров. Все попытки уладить ситуацию миром бесполезны — они не способны общаться с другими расами.</text>
+	<text>Тревожная сирена раздаётся на вашем корабле — это аватары готовятся разобрать его на запчасти. Орудия к бою!</text>
+	<text>Боевой корабль аватаров поджидает неосторожных путешественников на этом маяке. У вас нет другого выхода, кроме как готовиться к обороне.</text>
+	<text>«Опять эта чёртова сирена!» — команда в ужасе забивается по углам отсеков. Вы как можете всех успокаиваете и отдаёте приказ готовиться к бою.</text>
+	<text>Вы прыгаете к очередному пустому маяку. Вокруг ничего интересного, и вы уже отдаёте приказ к прыжку, когда вынырнувший из туманности крейсер аватаров меняет ваши планы.</text>
+	<text>Возле маяка патрулирует судно под управлением ИИ. Заметив вас, оно немедленно отправляется в атаку.</text>
+	<text>Туманность прямо перед вами немного рассеивается, и вы видите корабль аватаров, идущий на вас в лобовую атаку.</text>
+	<text>Вы ничего не можете разобрать в туманности перед вами, когда вдруг по всему кораблю раздаётся сирена. Вы попали под удар аватаров!</text>
+	<text>«Капитан!» — команда спешит к вам с докладом. «Мы попали под обстрел чёртовых призраков!» Вы и так уже поняли это по ужасному вою, раздающемуся по всему кораблю.</text>
+	<text>Маяк перед вами ничем не примечателен, и вы уже было отдаёте приказ покинуть его, когда корабль ИИ появляется прямо по курсу. Готовьтесь к бою!</text>
+	<text>Нервы сдают у вашей команды, когда из-за очередного облака туманности на вас вылетает корабль аватаров. Ваш член экипажа со слезами на глазах убегает прочь со своего поста. Вы кое-как успокаиваете команду.</text>
+	<text>Аватары, расположившиеся у этого маяка, уже включили свою сирену и готовятся к атаке. Команда старается не обращать внимания на оглушающие звуки.</text>
+</textList>
+<ship name="SHIPS_AI_FIGHT" auto_blueprint="SHIPS_AI">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_AVATAR"/>
+	<weaponOverride count="1">
+		<name>LASER_PRISM</name>
+		<name>LASER_PRISM_2</name>
+	</weaponOverride>
+</ship>
+<eventList name="DEAD_CREW_AVATAR">
+	<event>
+		<text>На корабле не осталось ни одного аватара. Вы забираете полезные материалы.</text>
+		<autoReward level="MED">standard</autoReward>
+	</event>
+	<event>
+		<text>На корабле не осталось ни одного аватара. Вы забираете все полезные материалы.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<text>Аватары исчезли, вы можете забрать топливо из их хранилища. А также собрать весь доступный лом.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</event>
+	<event>
+		<text>Аватары исчезли, вы можете забрать всё топливо из их хранилища. А также собрать весь доступный лом.</text>
+		<autoReward level="HIGH">fuel</autoReward>
+	</event>
+	<event>
+		<text>Вы сумели расправиться с командой аватаров. Одного из них удаётся вернуть к жизни, запрограммировав его сражаться на вашей стороне.</text>
+		<crewMember amount="1" class="ghost"/>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Вы находите уникальное оружие аватаров на их корабле. Так как остановить вас некому, вы забираете его себе.</text>
+		<weapon name="WEAPONS_AI_PRISM"/>
+		<autoReward level="LOW">scrap_only</autoReward><!-- 1.26 -->
+	</event>
+</eventList>
+
+<event name="NEBULA_SLUG_HELP" unique="true">
+	<distressBeacon/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<ship load="JELLY2" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/>
+	<text>Оказалось, что сигналы бедствия передавал корабль слагов, попавший под атаку аватаров. Они говорят, что их корабль зияет дырами, и просят у вас лом на починку корпуса, сколько не жалко.</text>
+	<choice hidden="true">
+		<text>Дать им 15 лома.</text>
+		<event load="SLUG_SCRAP_HELP_15"/>
+	</choice>
+	<choice hidden="true">
+		<text>Дать им 45 лома.</text>
+		<event load="SLUG_SCRAP_HELP"/>
+	</choice>
+	<choice hidden="true">
+		<text>Добить этих неудачников.</text> 
+		<event load="SLUG_KILL_THEM"/><!-- 1.26.3 -->
+	</choice>
+	<choice hidden="true">
+		<text>Отказать и продолжить полёт.</text>
+		<event>
+			<text>Вам, конечно же, известно, что пробоины слаги чинят ремонтным гелем. В этот раз им не обдурить вас.</text>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="3" hidden="true">
+		<text>(Продвинутые сенсоры) Просканировать их корабль на наличие повреждений.</text>
+		<event>
+			<text>Сенсоры не обнаружили никаких повреждений на их корабле. Поняв, что их раскрыли, слаги переходят в атаку.</text>
+			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="SLUG_GEL"> <!-- 1.26.4 -->
+		<text>(Ремонтный гель слагов) Поделиться с ними гелем, чтобы заделать дыры в их корабле.</text>
+		<event>
+			<text>Они не хотят говорить, куда пропал их гель, но с благодарностью принимают вашу помощь.</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event>
+					<text>Вскоре их корабль снова выглядит как новый. Один из слагов хочет вступить к вам экипаж, он притаскивает на своей спине несколько топливных капсул.</text>
+					<item_modify>
+						<item type="fuel" min="2" max="4"/>
+					</item_modify>
+					<crewMember amount="1" class="slug"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+<eventList name="SLUG_KILL_THEM"><!-- 1.26.3 -->
+	<event> <!-- old event -->
+		<text>Как оказалось, их корабль не так уж сильно повреждён. Они отвечают залпом на вашу агрессию.</text>
+		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/>
+		<damage amount="1" system="random" effect="breach"/>
+		<damage amount="0" system="random" effect="breach"/>
+	</event>
+	<event>
+		<text>Как оказалось, их корабль не так уж сильно повреждён. Они заряжают свои орудия.</text>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.28 -->
+		<ship hostile="true"/>
+	</event>
+</eventList>
+
+<eventList name="SLUG_SCRAP_HELP_15">
+	<event>
+		<text>Как только вы передаёте им лом, они скрываются в ближайшем облаке туманности. Похоже, вас всё же провели.</text>
+		<item_modify>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event load="SLUG_SCRAP_HELP_2"/>
+</eventList>
+
+<eventList name="SLUG_SCRAP_HELP">
+	<event>
+		<text>Слаги принимают лом и тихо исчезают в туманности. Когда же вы научитесь не доверять им?</text>
+		<item_modify>
+			<item type="scrap" min="-45" max="-45"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="scrap" min="-45" max="-45"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля и немного топлива.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="fuel" min="1" max="5"/>
+			<item type="scrap" min="-45" max="-45"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля и немного ракет.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="missiles" min="1" max="5"/>
+			<item type="scrap" min="-45" max="-45"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля и немного деталей дронов.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="drones" min="1" max="5"/>
+			<item type="scrap" min="-45" max="-45"/>
+		</item_modify>
+	</event>
+</eventList>
+
+<eventList name="SLUG_SCRAP_HELP_2">
+	<event>
+		<text>Слаги принимают лом и тихо исчезают в туманности. Когда же вы научитесь не доверять им?</text>
+		<item_modify>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля и немного топлива.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="fuel" min="1" max="5"/>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля и немного ракет.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="missiles" min="1" max="5"/>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Они благодарят вас и передают в ответ усиление для корабля и немного деталей дронов.</text>
+		<augment name="SLUG_GEL"/>
+		<item_modify>
+			<item type="drones" min="1" max="5"/>
+			<item type="scrap" min="-15" max="-15"/>
+		</item_modify>
+	</event>
+</eventList>
+
+<event name="NEBULA_REBEL_HELP">
+	<distressBeacon/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<ship load="REBEL" hostile="true"/>
+	<text load="NEBULA_REBEL_HELP_LIST"/>
+</event>
+<textList name="NEBULA_REBEL_HELP_LIST">
+	<text>Бедствие передавал корабль повстанцев, вряд ли они рассчитывали, что их сигнал поймает кто-то из Федерации. Неизвестно, что у них произошло, но они уже заряжают орудия.</text>
+	<text>То ли этому кораблю повстанцев действительно нужна помощь, то ли это была ловушка — так или иначе, они не заслуживают ничего, кроме смерти.</text>
+	<text>Сигнал был ловушкой — крейсер повстанцев поджидал вас в этой туманности!</text>
+	<text>Сигнал бедствия передавал крейсер повстанцев, и вы прилетели прямо в его ловушку. Приготовьтесь к битве!</text>
+	<text>Не стоит отвечать на каждый сигнал бедствия — это была засада повстанцев, и они уже переходят к атаке.</text>
+</textList>
+
+<event name="NEBULA_REBEL_HELP2" unique="true">
+	<distressBeacon/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<ship load="REBEL" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/>
+	<text>Похоже, что вы угодили прямо в ловушку повстанцев — сигнал бедствия передаёт их боевой крейсер! Но тут они выходят на связь: «Пожалуйста, выведите нас отсюда! Мы заблудились в туманности, а эти проклятые призраки сводят команду с ума!»</text>
+	<choice hidden="true">
+		<text>Провести их до ближайшего безопасного маяка.</text>
+		<event load="NEBULA_REBEL_HELP22"/>
+	</choice>
+	<choice hidden="true">
+		<text>Атаковать их.</text>
+		<event>
+			<text>С повстанцами у вас разговор короткий — несколько выстрелов в их сторону заставляет их вспомнить, на чьей стороне вы сражаетесь.</text>
+			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/>
+		</event>
+	</choice>
+</event>
+
+<eventList name="NEBULA_REBEL_HELP22">
+	<event>
+		<text>Они следуют за вами до следующего маяка и благополучно выбираются из туманности. Один из них хочет присоединиться к вашей команде.</text>
+		<crewMember amount="1" class="human"/>
+	</event>
+	<event>
+		<text>Как только вы пролетаете вперёд, чтобы указать им дорогу, вам в корму прилетает залп орудий. Вероломные повстанцы вас обманули!</text>
+		<damage amount="3"/>
+		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/>
+	</event>
+	<event>
+		<text>Вы выводите их из туманности и счастливые повстанцы присылают вам вознаграждение. Вы улетаете с обещанием разнести их в клочья, если они ещё раз вам попадутся.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+</eventList>
+
+<event name="NEBULA_SLUG_HELP2" unique="true">
+	<distressBeacon/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<ship load="JELLY2" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/>
+	<text>Слаги, неизвестно как оказавшиеся здесь, застряли на этом маяке без топлива. Они обещают заплатить ломом, если вы поможете им выбраться отсюда.</text>
+	<choice hidden="true">
+		<text>Дать им 1 топливо.</text>
+		<event>
+			<text>Вы отправляете им топливо, и они тут же прыгают! В который раз вы попались на удочку слагов...</text>
+			<item_modify>
+				<item type="fuel" min="-1" max="-1"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Дать им 5 топлива.</text>
+		<event>
+			<text>Вы отправляете им топливо, а они передают вам лом.</text>
+			<item_modify>
+				<item type="fuel" min="-5" max="-5"/>
+				<item type="scrap" min="5" max="65"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Дать им 10 топлива.</text>
+		<event>
+			<text>Вы отправляете им топливо, а они передают вам лом.</text>
+			<item_modify>
+				<item type="fuel" min="-10" max="-10"/>
+				<item type="scrap" min="10" max="130"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Атаковать их.</text>
+		<event>
+			<text>«Ты ещё пожалеешшшшь об этом...» — последнее, что вы слышите, перед тем как они отключились.</text>
+			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Отказать и продолжить полёт.</text>
+		<event>
+			<text>Слаги никогда не вызывали у вас доверия, вы приказываете совершить прыжок дальше.</text>
+		</event>
+	</choice>
+</event>
+
+<event name="NEBULA_SLUG_DEAD" unique="true">
+	<distressBeacon/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<text>Пока вы прыгали к маяку, сигнал бедствия прервался. Из-за плотной туманности вокруг вы никак не можете засечь его источник.</text>
+	<choice hidden="true">
+		<text>Отправиться дальше.</text>
+		<event>
+			<text>Больше в этом месте нечего делать, и вы готовитесь к прыжку.</text><!-- 1.25 -->
+			<choice hidden="true"><!-- 1.25 -->
+				<text id="continue"/>
+				<event load="TALK_WITH_CREW_GHOST"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="2" max_group="0" hidden="true">
+		<text>(Улучшенные сенсоры) Просканировать окрестности.</text>
+		<event load="DEAD_SLUG_LOW"/>
+	</choice>
+	<choice req="sensors" lvl="3" max_group="0" hidden="true">
+		<text>(Продвинутые сенсоры) Просканировать окрестности.</text>
+		<event load="DEAD_SLUG_HIGH"/>
+	</choice>
+</event>
+
+<eventList name="DEAD_SLUG_LOW">
+	<event>
+		<text>Мощности ваших сенсоров не хватает, чтобы что-то здесь обнаружить. Ничего не остаётся, кроме как продолжить полёт.</text>
+	</event>
+	<event>
+		<text>После нескольких минут сканирования вы наконец засекаете разбившийся корабль слагов. Внутри никого нет, похоже, что тела унесло в открытый космос сквозь пробоины в корпусе. Вы забираете всё пригодное с разбитого судна.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</event>
+	<event>
+		<text>После нескольких минут сканирования вы наконец засекаете разбившийся корабль слагов. Внутри никого нет, похоже, что тела унесло в открытый космос сквозь пробоины в корпусе. Вы забираете всё пригодное с разбитого судна.</text>
+		<autoReward level="MED">standard</autoReward>
+	</event>
+</eventList>
+
+<eventList name="DEAD_SLUG_HIGH">
+	<event>
+		<text>После нескольких минут сканирования вы наконец засекаете разбившийся корабль слагов. Внутри никого нет, похоже, что тела унесло в открытый космос сквозь пробоины в корпусе. Вы забираете всё пригодное с разбитого судна.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<text>После нескольких минут сканирования вы наконец засекаете разбившийся корабль слагов. Внутри никого нет, похоже, что тела унесло в открытый космос сквозь пробоины в корпусе. Вы забираете всё пригодное с разбитого судна.</text>
+		<autoReward level="MED">standard</autoReward>
+	</event>
+	<event>
+		<text>После нескольких минут сканирования вы наконец засекаете разбившийся корабль слагов. Единственный уцелевший слаг присоединяется к вашей команде, а вы забираете всё пригодное с разбитого судна.</text>
+		<autoReward level="MED">standard</autoReward>
+		<crewMember amount="1" class="slug"/>
+	</event>
+</eventList>
+
+<event name="NEBULA_AVATAR_HELP" unique="true">
+	<distressBeacon/>
+	<ship load="SHIPS_AI_FIGHT" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<text>Удивительно, но сигнал бедствия передаёт корабль аватаров! Кажется, они не торопятся нападать, но и на ваши вызовы не отвечают.</text>
+	<choice hidden="true">
+		<text>Атаковать их!</text>
+		<event>
+			<text>Как только вы активируете орудия, корабль аватаров оживает и заряжает свои.</text>
+			<ship hostile="true"/>
+			<playSound>avatar_siren</playSound><!-- 1.31 -->
+			<status type="clear" target="enemy" system="teleporter" amount="100"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Оставить их в покое.</text>
+		<event>
+			<text>Вы решаете не нарываться на неприятности и готовитесь к отлёту.</text>
+		</event>
+	</choice>
+	<choice req="ghost" hidden="true">
+		<text>(Член экипажа аватар) Подозвать вашего аватара.</text>
+		<event load="AVATAR_HELP_REWARD"/>
+	</choice>
+</event>
+
+<eventList name="AVATAR_HELP_REWARD"><!-- 1.21 -->
+	<event>
+		<text>Хотя ваш аватар и не может общаться с вами, он всё же понимает, что от него требуется. На какое-то время он исчезает и появляется на корабле ИИ. Вы так и не поняли, что он там сделал, но они отправляют вам в качестве благодарности капсулу с орудием. Впрочем, "благодарность" может и не совсем подходящее слово по отношению к искусственному интеллекту.</text>
+		<weapon name="WEAPONS_AI_PRISM"/>
+	</event>
+	<event>
+		<text>Хотя ваш аватар и не может общаться с вами, он всё же понимает, что от него требуется. На какое-то время он исчезает и появляется на корабле ИИ. Вы так и не поняли, что он там сделал, но они отправляют вам в качестве благодарности усиление для корабля. Впрочем, "благодарность" может и не совсем подходящее слово по отношению к искусственному интеллекту.</text>
+		<augment name="ION_ARMOR"/> <!-- 1.22.2 -->
+	</event>
+</eventList>
+
+<event name="NEBULA_AVATAR_HELP2" unique="true">
+	<distressBeacon/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<playSound>avatar_siren</playSound><!-- 1.31 -->
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<text>Сигнал бедствия оказался ловушкой, вам придётся сражаться с кораблём ИИ прямо в центре плазменной бури!</text>
+</event>
+
+<event name="AVATAR_HELP3" unique="true"> <!-- 1.28.1 -->
+	<distressBeacon/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<playSound>avatar_siren</playSound><!-- 1.31 -->
+	<environment type="pulsar"/>
+	<variable name="counter_meet_pulsar" op="add" val="1"/>
+	<text>Сигнал бедствия приводит вас прямиком к пульсару, возле которого вас и поджидал корабль ИИ. Ловушка!</text>
+</event>
+
+
+
+
+
+<event name="NEBULA_AI_KILLS_CIV" unique="true">
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<distressBeacon/>
+	<text>Сигнал бедствия передавало сильно потрёпанное гражданское судно. На их торговый конвой напали призраки, и, хотя гражданским удалось сбежать, на одном из кораблей встроенная система искусственного интеллекта сошла с ума и пытается убить собственный экипаж, захватив их разум. Если вам удастся повредить ИИ корабля достаточно сильно, до того как умрёт их экипаж, вас обещают отблагодарить.</text>
+	<choice hidden="true">
+		<text>Торговый конвой в этом секторе? Это не похоже на правду, атаковать их!</text>
+		<event>
+			<text>Гражданские посылают проклятья в ваш адрес, но готовятся защищаться, несмотря на повреждения.</text>
+			<ship load="DAMAGED_CIV_EVENT" hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Отправиться к захваченному кораблю и попробовать отключить ИИ с помощью нескольких залпов.</text>
+		<event>
+			<text>При вашем приближении судно активирует вооружение, отключив при этом свои системы жизнеобеспечения! Нужно торопиться, пока на их корабле ещё есть кислород.</text>
+			<ship load="AI_CIV_EVENT" hostile="true"/>
+			<status type="limit" target="enemy" system="oxygen" amount="0"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event>
+					<text>Гражданские начинают задыхаться...</text> <!-- 1.25 -->
+					<status type="limit" target="enemy" system="medbay" amount="0"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Не вмешиваться и приготовиться улететь.</text>
+		<event>
+			<text>Захваченный искусственным интеллектом корабль вскоре совершает прыжок куда-то в туманность, а гражданские рядом с вами заваривают дыры в обшивке.</text>
+		</event>
+	</choice>
+</event>
+<ship name="AI_CIV_EVENT" auto_blueprint="SHIPS_FED_SPECIAL">
+	<surrender chance="0" min="1" max="5">
+		<text>По всей видимости, ИИ корабля отключился и потерял контроль над экипажем и системами корабля.</text>
+		<status type="clear" target="enemy" system="oxygen" amount="100"/>
+		<choice hidden="true">
+			<text>Прекратить огонь.</text>
+			<event>
+				<text>Вы вовремя останавливаетесь, а освободившиеся от контроля разума люди тут же спешат надеть кислородные маски. Приблизившись, гражданские осыпают вас благодарностями за спасённых товарищей и дают вам орудие из своих трюмов.</text>
+				<ship hostile="false"/>
+				<autoReward level="MED">weapon</autoReward>
+				<status type="clear" target="enemy" system="oxygen" amount="100"/><!-- 1.25 -->
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Продолжить огонь.</text>
+			<event>
+				<text>Разобрать их на металлолом — единственно верное решение в данной ситуации.</text>
+				<status type="clear" target="enemy" system="oxygen" amount="100"/><!-- 1.25 -->
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>Вы полностью уничтожили корабль гражданских, и благодарить за убийство своих товарищей вас явно не будут. Однако, поживиться остатками корабля никто не мешает.</text>
+		<autoReward level="LOW">stuff</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж цели мёртв, а ИИ корабля отключился, видимо, выполнив свою цель. Вы убеждаете гражданских, что сделали всё, что смогли, и те улетают прочь. А вы собираете всё ценное с захваченного корабля.</text>
+		<autoReward level="MED">stuff</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="DAMAGED_CIV_EVENT" auto_blueprint="SHIPS_FED">
+	<surrender chance="0" min="1" max="3">
+		<text>Гражданские выходят на связь: «Умоляем вас, остановитесь! Мы отдадим всё, что у нас есть!»</text>
+		<choice hidden="true">
+			<text>Прекратить огонь.</text>
+			<event>
+				<text>Они отправляют вам контейнер с грузом.</text>
+				<autoReward level="LOW">standard</autoReward>
+				<choice hidden="true">
+					<text>Этого мало, потребовать ещё.</text>
+					<event>
+						<text>Снова проклиная вас, они отправляют ещё немного лома. Похоже, что с них больше нечего взять, вы готовитесь улететь.</text>
+						<autoReward level="LOW">scrap_only</autoReward>
+						<ship hostile="false"/>
+					</event>
+				</choice>
+				<choice hidden="true">
+					<text>Добить их.</text>
+					<event>
+						<text>«Как же так, вы же обещали?!» — их капитан чуть ли не плачет. Ну а что, в эти трудные времена у вас нет другого выхода.</text>
+					</event>
+				</choice>
+				<choice hidden="true">
+					<text>Отпустить их и улететь.</text>
+					<event>
+						<ship hostile="false"/>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>Продолжить огонь.</text>
+			<event/>
+		</choice>
+	</surrender>
+	<escape timer="55" min="30" max="30">
+		<text>Также вы регистрируете, что их корабль заряжает FTL-привод.</text>
+	</escape>
+	<gotaway>
+		<text>Корабль совершил прыжок куда-то в туманность, вы не рискуете их разыскивать.</text>
+	</gotaway>
+	<destroyed>
+		<text>Корабль гражданских взрывается, и вы собираете оставшиеся от него обломки.</text>
+		<autoReward level="MED">scrap_only</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж мёртв, и вы обчищаете их трюмы.</text>
+		<autoReward level="MED">stuff</autoReward>
+	</deadCrew>
+</ship>
+
+</FTL>

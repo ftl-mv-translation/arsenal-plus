@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!--   
+			SUMMARY  — 
+A list of all main events to be called by lists
+	does not include sub-events)
+	
+
+Structure:
+	NO_FUEL_FLEET
+	
+No Beacon:    	NO_FUEL (this is a list)
+	FUEL_FLEET_DELAY
+	FUEL_NOTHING
+	FUEL_TRADER
+	FUEL_EXPLORE
+	FUEL_APPROACH
+	
+Beacon:    NO_FUEL_DISTRESS (this is a list)
+	FUEL_FLEET_DISTRESS
+	FUEL_NOTHING_DISTRESS
+	FUEL_SELLER_DISTRESS
+	FUEL_TRADER_DISTRESS
+
+Sector Specific:
+	
+-->
+
+
+
+
+
+
+<FTL>
+
+<!-- NO FUEL stuff -->
+
+<event name="NO_FUEL_FLEET">
+	<text>Флот повстанцев догнал вас. Вы обнаруживаете значительные запасы топлива в одном из ближайших кораблей и кидаетесь на него в атаку. Может быть, вам удастся его украсть.</text>
+	<ship load="REBEL_FLEET_FUEL" hostile="true"/>
+	<fleet>rebel</fleet>
+</event>
+
+<!-- <event name="NO_FUEL_FLEET_DLC">
+	<text>Ваш пилот ловко избегает артиллерийского огня со стороны окружающего флота, в то время как вы пытаетесь решить, как действовать дальше... Один из множества приближающихся кораблей попадает в ваш сектор обстрела, и сканеры обнаруживают у него излишки топлива. Может быть, вы всё ещё сможете прорваться.</text>
+	<ship load="REBEL_FLEET_FUEL" hostile="true"/>
+	<fleet>rebel</fleet>
+	<environment type="PDS" target="player"/>
+</event> -->
+<event name="NO_FUEL_FLEET_DLC"><!-- bamalf -->
+	<loadEventList seeded="false" first="false" generate="true"> <!-- bamalf тут именно нужен generate="true", иначе не рандомит как надо -->
+		<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
+		<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
+		<event name="NO_FUEL_FLEET_DLC_CLASSIC"/>
+		<event name="NO_FUEL_FLEET_DLC_BAD"/>
+	</loadEventList>
+</event>
+<event name="NO_FUEL_FLEET_DLC_CLASSIC">
+	<text load="NO_FUEL_FLEET_DLC_CLASSIC_TEXT"/>
+	<ship load="REBEL_FLEET_FUEL" hostile="true"/>
+	<fleet>rebel</fleet>
+	<environment type="PDS" target="player"/>
+</event>
+<textList name="NO_FUEL_FLEET_DLC_CLASSIC_TEXT">
+	<text>Ваш пилот ловко избегает артиллерийского огня со стороны окружающего флота, в то время как вы пытаетесь решить, как действовать дальше... Один из множества приближающихся кораблей попадает в ваш сектор обстрела, и сканеры обнаруживают у него излишки топлива. Может быть, вы всё ещё сможете прорваться.</text>
+	<text>Вы фиксируете зарядку мощных артиллерийских батарей тяжёлых кораблей повстанцев, а один из разведчиков мчится на перехват.</text>
+	<text>Флот повстанцев всё прибывает. Возможно вам удастся выбить топливо из какого-нибудь корабля, чтобы сбежать...</text>
+</textList>
+<event name="NO_FUEL_FLEET_DLC_BAD">
+	<text load="NO_FUEL_FLEET_DLC_BAD_TEXT"/>
+</event>
+<textList name="NO_FUEL_FLEET_DLC_BAD_TEXT">
+	<text>По каким-то причинам к маяку, на котором вы застряли, не прибыл ни один корабль повстанцев.</text>
+	<text>Вы удивлённо ещё раз проверяете сенсоры - повстанцев нет. Может быть они решили получше подготовиться, прежде чем взять вас?</text>
+	<text>Вблизи маяка довольно тихо, хотя вы фиксируете продвижение волны флота повстанцев. Это как минимум подозрительно...</text>
+</textList>
+	
+	
+
+
+
+
+
+<!--
+DEFAULT FUEL EVENTS
+Beacon Off.....
+-->
+<eventList name="NO_FUEL">
+	<event load="FUEL_FLEET_DELAY"/>
+	<event load="FUEL_NOTHING"/>
+	<event load="FUEL_TRADER"/>
+	<event load="FUEL_EXPLORE"/>
+	<event load="FUEL_APPROACH"/>
+	<event load="FUEL_OFF_ENGI_DUBIOUS"/>
+	<event load="FUEL_OFF_ROCK_WRECK"/>
+	<event load="NO_FUEL_REFUGEE_FRIENDLY"/> <!-- DLC — below -->
+</eventList>
+
+<eventList name="NO_FUEL_DELAYED"><!-- 1.26 -->
+	<event load="FUEL_NOTHING"/>
+	<event load="FUEL_TRADER"/>
+	<event load="FUEL_EXPLORE"/>
+	<event load="FUEL_APPROACH"/>
+	<event load="FUEL_OFF_ENGI_DUBIOUS"/>
+	<event load="FUEL_OFF_ROCK_WRECK"/>
+	<event load="NO_FUEL_REFUGEE_FRIENDLY"/> <!-- DLC — below -->
+</eventList>
+
+<event name="FUEL_FLEET_DELAY">
+	<text load="FUEL_FLEET_DELAY_LIST"/>		
+	<modifyPursuit amount="-1"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="NO_FUEL_DELAYED"/><!-- 1.26 -->
+	</choice>
+</event>
+<textList name="FUEL_FLEET_DELAY_LIST">
+	<text>Вы уверены, что если не привлекать внимания, то флот повстанцев обнаружит вас нескоро.</text>
+	<text>Так как аварийный маяк не был активирован, вы уверены, что флот повстанцев испытывает трудности в поисках вас. Это даст вам немного времени.</text>
+	<text>Сканеры дальнего действия показывают, что флот повстанцев прекратил движение в вашу сторону. Ваше решение не активировать аварийный маяк оказалось дальновидным.</text>
+	<text>Сканеры показывают, что флот повстанцев приостановил преследование. Временно.</text>
+	<text>Ваша интуиция капитана подсказывает, что повстанцы всё ещё не знают, где вас искать.</text>
+	<text>Без радиомаяка и каких-либо следов FTL-двигателей, вы уверены, что повстанцам будет сложно найти вас. Остаётся надеяться, что их замешательство продлится до того, как вы сможете найти топливо.</text>
+	<text>Флот повстанцев, кажется, не в состоянии обнаружить следы вашего корабля. Если бы вы могли достать немного топлива, то получили бы шанс увеличить дистанцию между вами и повстанцами...</text>
+</textList>
+
+<event name="FUEL_NOTHING">
+	<text load="FUEL_NOTHING_LIST"/>
+</event>
+<textList name="FUEL_NOTHING_LIST">
+	<text>В радиусе сканирования никого нет, и к маяку так никто и не прилетел.</text>
+	<text>Ваше ожидание не приводит ни к чему, кроме приближения флота...</text>
+	<text>Неожиданно совсем неподалёку оказывается транспортник. Он проходит почти вплотную к вам, игнорируя все попытки выйти на связь, и вскоре совершает прыжок куда-то дальше.</text>
+	<text>Несколько кораблей пролетают неподалёку от вас по своим делам, но на попытки установить связь никто не реагирует.</text>
+	<text>Единственным кораблём в радиусе связи оказывается небольшое гражданское судно, но и оно, обнаружив вас, незамедлительно удаляется.</text>
+	<text>Ожидание скрашивает только метеоритный поток, мягко постукивая по вашим щитам и корпусу.</text>
+	<text>Вы начинаете задумываться, стоит ли включить аварийный маяк, рискуя выдать себя. Флот медленно приближается.</text>
+	<text>Вы созерцаете безразмерную пустоту космоса.</text>
+	<text>Продолжительное ожидание в пустоте приводит к напряжению внутри команды. Вокруг по-прежнему никого нет.</text>
+	<text>У вашего экипажа начинаются приступы клаустрофобии.</text>
+	<text>Сканеры дальнего действия обнаруживают небольшое поселение, но его жители отказываются от каких-либо контактов.</text>
+</textList>
+
+<event name="FUEL_TRADER">   <!-- this continues in the DISTRESS section -->
+	<text load="FUEL_TRADER_TEXT_LIST"/>
+	<ship load="CIVILIAN_SHIP" hostile="false"/>
+	<choice>
+		<text>Охотно согласиться торговать.</text>
+		<event load="FUEL_TRADER_HIGH_LIST"/>
+	</choice>
+	<choice>
+		<text>Вежливо отказать.</text>
+		<event load="FUEL_TRADER_PT2"/>
+	</choice>
+</event>
+<textList name="FUEL_TRADER_TEXT_LIST">
+	<text>Торговое судно совершает прыжок в этот сектор, и вы сразу приветствуете их с просьбой о помощи. Они отвечают: «Возможно, мы могли бы совершить сделку...»</text>
+	<text>Некоторое количество судов проходят через этот сектор. Вы шлёте сигнал о помощи каждому, и один, наконец, отвечает. «Я не смогу помочь безвозмездно, но, возможно, мы можем совершить выгодную сделку».</text>
+	<text>Поселение неподалёку посылает небольшой корабль в вашем направлении. Он держит дистанцию и приветствует вас: «Мы можем продать вам топливо. Не поступайте опрометчиво. У нас есть телепортер на базе и отряд, готовый защищать нас».</text>
+	<text>Большой караван торговых судов проходит неподалёку от вашей позиции. Почувствовав возможность поторговать, один корабль отделяется от флота, чтобы предложить вам обмен.</text>
+	<text>Модифицированный грузовой транспортник YT-1300 совершает прыжок в область около вашего сектора. Внутреннее чувство говорит вам, что эти люди — контрабандисты, но они, кажется, настроены альтруистически и предлагают сделку.</text>
+</textList>
+	
+<event name="FUEL_EXPLORE">
+	<text>Хотя отсутствие топливных элементов не позволяет вашему кораблю совершать прыжки, вы всё ещё можете использовать ваши импульсные двигатели. Желаете ли вы потратить некоторое время, исследуя близлежащие системы?</text>
+	<choice hidden="true">
+		<text>Исследовать окрестности.</text>
+		<event load="FUEL_EXPLORE_LIST"/>  
+	</choice>
+	<choice>
+		<text>Остаться у маяка.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="FUEL_EXPLORE_LIST">
+	<event>
+		<text>Возле маяка вам попалось небольшое астероидное поле.</text>
+		<choice hidden="true">
+			<text>Приблизиться к астероидам и просканировать их.</text>
+			<event load="ASTEROID_EXPLORE_RESULTS"/>
+		</choice>
+		<choice>
+			<text>Не рисковать.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Вы натыкаетесь на небольшую перевалочную станцию для местных путешественников. FTL-приводы здесь почти никто не использует, и их запас топливных ячеек скромен, а цена высока. Но вариантов у вас нет...</text>
+		<choice hidden="true">
+			<text>Обменять 25 лома на 5 топлива.</text> <!-- 1.27.1 -->
+			<event>
+				<text>Вы с удовольствием совершаете сделку.</text>
+				<item_modify>
+					<item type="fuel" min="5" max="5"/>
+					<item type="scrap" min="-25" max="-25"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Обменять 10 лома на 2 топлива.</text>
+			<event>
+				<text>Этого топлива не хватит надолго, но вы с удовольствием совершаете сделку.</text>
+				<item_modify>
+					<item type="fuel" min="2" max="2"/>
+					<item type="scrap" min="-10" max="-10"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Обменять 5 лома на 1 топливо.</text>
+			<event>
+				<text>Этого топлива не хватит надолго, но по крайней мере вы сможете совершить прыжок к другому маяку.</text>
+				<item_modify>
+					<item type="fuel" min="1" max="1"/>
+					<item type="scrap" min="-5" max="-5"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться от обмена.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Никто не отвечает на ваши позывные, и вы не обнаруживаете ничего примечательного.</text>
+	</event>
+	<event>
+		<text>Вы оказались в радиусе сканеров небольшого автоматического разведчика повстанцев!</text>
+		<ship load="REBEL_AUTO_FUEL" hostile="true"/>
+	</event>
+</eventList>
+	
+<event name="FUEL_APPROACH">
+	<text>Приближается корабль. Они вас приветствуют и говорят: «Нужно топливо? Мы поможем, подготовьте ваш стыковочный узел».</text>
+	<choice hidden="true">
+		<text>С благодарностью принять предложение.</text>
+		<event load="FUEL_APPROACH_ACCEPT_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Запретить им приближаться.</text>
+		<event load="FUEL_APPROACH_DECLINE_LIST"/>
+	</choice>  
+	<choice hidden="true" req="sensors" lvl="3">
+		<text>(Продвинутые сенсоры) Прежде чем отвечать, провести тщательное сканирование с помощью сенсоров.</text>
+		<event load="FUEL_APPROACH_SCAN_LIST"/>
+	</choice>    
+	<choice hidden="true" req="ADV_SCANNERS">
+		<text>(Сканеры широкого охвата) Прежде чем отвечать, провести тщательное сканирование.</text>
+		<event load="FUEL_APPROACH_SCAN_LIST"/>
+	</choice>    
+</event>
+<eventList name="FUEL_APPROACH_ACCEPT_LIST">
+	<event>
+		<text>«Не растратьте снова всё топливо. Сейчас опасные времена. Кто знает, кто бы мог прилететь», — сказали они, перекачивая немного топлива.</text>
+		<ship load="CIVILIAN_SHIP" hostile="false"/>
+		<item_modify>
+			<item type="fuel" min="2" max="6"/>
+		</item_modify>
+	</event>
+	<event>   <!-- this continues in the DISTRESS section -->
+		<text>Они приближаются и стыкуются с вашим кораблём. На борту они делают вам предложение.</text>
+		<ship load="CIVILIAN_SHIP" hostile="false"/>
+		<choice>
+			<text>Охотно согласиться торговать.</text>
+			<event load="FUEL_TRADER_HIGH_LIST"/>
+		</choice>
+		<choice>
+			<text>Вежливо отказать.</text>
+			<event load="FUEL_TRADER_PT2"/>
+		</choice>
+	</event>
+	<event>
+		<text>Как только их корабль подъехал ближе к вашему, их капитан продолжил: «Да, мы безусловно поможем... Поможем избавить вас от этого хорошего корабля!» Датчики обнаруживают активацию скрытого телепорта. Вас берут на абордаж!</text>
+		<ship load="PIRATE_FUEL" hostile="true"/>
+		<boarders min="2" max="3" class="human"/>
+	</event>
+	<event>
+		<text>По мере того как они приближаются, вы обнаруживаете, что их орудия активированы. Кажется, их намерения враждебны!</text>
+		<ship load="PIRATE_FUEL" hostile="true"/><!-- 1.26 -->
+	</event>
+</eventList>
+<eventList name="FUEL_APPROACH_DECLINE_LIST">
+	<event>
+		<text>«Уверяю вас, что мы не имеем в виду ничего плохого. Видите, мы высылаем вам топливо». Небольшой корабль пристыковывается и разгружает немного топлива так, как они и сказали. Покидая вас, они добавили: «Будьте осторожны, друзья».</text>
+		<ship load="CIVILIAN_SHIP" hostile="false"/>
+		<item_modify>
+			<item type="fuel" min="1" max="4"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>«Нельзя никому доверять в это время...» Корабль совершает прыжок.</text>
+	</event>
+	<event>
+		<text>Они отвечают: «Не приближаться? А что вы нам сделаете, если всё-таки приблизимся?» Они включают орудия и летят к вам.</text>
+		<ship load="PIRATE_FUEL" hostile="true"/>
+	</event>
+</eventList>
+<eventList name="FUEL_APPROACH_SCAN_LIST">
+	<event>
+		<text>Сенсоры обнаруживают, что на их корабле нет военного снаряжения. Вы позволяете им пристыковаться, и они дают вам немного топлива, говоря при этом: «Я помню времена, когда мы не были настолько параноидальны по отношению друг к другу... Будьте осторожны».</text>
+		<item_modify>
+			<item type="fuel" min="3" max="7"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Сенсоры замечают вооружённую команду, значительно лучше вооружённую, чем допустимо по закону для судов такого размера. Это, безусловно, ловушка.</text>
+		<choice>
+			<text>Включить орудия и приготовиться к бою.</text>
+			<event>
+				<ship load="PIRATE_FUEL" hostile="true"/>
+			</event>
+		</choice>
+		<choice req="cloaking" hidden="true"> 
+			<text>(Маскировка) Замаскироваться и выйти из диапазона сканирования, прежде чем у них появится шанс взять вас на прицел.</text>
+			<event>
+				<text>Ваша высокотехнологичная система маскировки позволяет легко выйти из диапазона сканирования, так как вы были всё ещё не в зоне поражения. В конце концов их корабль совершает прыжок.</text>
+			</event>
+		</choice>
+	</event>		
+</eventList>
+
+	
+	
+
+	
+	
+	
+	
+	
+<!--
+DEFAULT FUEL EVENTS
+Beacon On!!!!
+-->
+
+
+<eventList name="NO_FUEL_DISTRESS">
+	<event load="FUEL_NOTHING_DISTRESS"/>
+	<event load="FUEL_NOTHING_DISTRESS"/>
+	<event load="FUEL_SELLER_DISTRESS"/>
+	<event load="FUEL_TRADER_DISTRESS"/>
+	<event load="FUEL_EXPLORE"/>
+	<event load="FUEL_APPROACH"/>
+	<event load="FUEL_ON_SLUG_OVERPRICED"/>
+	<event load="FUEL_ON_SLUG_CHUCKLE"/>
+	<event load="FUEL_ON_MANTIS_ATTACK"/>
+	<event load="FUEL_OFF_ROCK_WRECK"/>
+	<event load="FUEL_OFF_ROCK_CURIOUS"/>
+	<event load="FUEL_ON_REBEL_WARNING"/>
+	<event load="FUEL_ON_REBEL_ATTACK"/>
+	<event load="NO_FUEL_REFUGEE"/> <!-- DLC — below -->
+</eventList>
+
+
+
+
+
+<!-- MATT FIXME — IS THIS A REPEAT -->
+<event name="FUEL_FLEET_DISTRESS">
+	<text load="FUEL_FLEET_DISTRESS_LIST"/>		
+	<modifyPursuit amount="-1"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="NO_FUEL"/>
+	</choice>
+</event>
+<textList name="FUEL_FLEET_DISTRESS_LIST">
+	<text>Вы уверены, что если не привлекать внимания, то флот повстанцев обнаружит вас нескоро.</text>
+	<text>Так как аварийный маяк не был активирован, вы уверены, что флот повстанцев испытывает трудности, отслеживая вас. Это выиграет вам немного времени.</text>
+	<text>Сканеры дальнего действия показывают, что флот повстанцев прекратил движение в вашу сторону. Ваше решение не активировать аварийный маяк оказалось дальновидным.</text>
+	<text>Сканеры показывают, что флот повстанцев приостановил преследование. Временно.</text>
+	<text>Ваша интуиция капитана подсказывает, что повстанцы всё ещё не знают, где вас искать.</text>
+	<text>Без радиомаяка или каких-либо воздействий FTL-двигателей, вы уверены, что повстанцы попытаются найти вас. Вы можете только надеяться, что их замешательство продлится до того, как вы сможете найти топливо.</text>
+	<text>Флот повстанцев, кажется, не в состоянии обнаружить следы вашего корабля. Если бы вы могли достать немного топлива, то получили бы шанс увеличить дистанцию между вами и повстанцами...</text>
+</textList>
+
+
+
+<event name="FUEL_NOTHING_DISTRESS">
+	<text load="FUEL_NOTHING_DISTRESS_LIST"/>
+</event>
+<textList name="FUEL_NOTHING_DISTRESS_LIST">
+	<text>Как же всё-таки хорошо, что система жизнеобеспечения корабля не зависит от топливных элементов FTL.</text>
+	<text>Ничего не происходит. Ваши сообщения остаются без ответа.</text>
+	<text>Огни аварийного маяка — единственное видимое движение снаружи корабля.</text>
+	<text>Ни один корабль не совершил прыжок в этот сектор...</text>
+	<text>Несколько пролетающих мимо кораблей, кажется, не обращают внимания на ваш сигнал бедствия, игнорируя все попытки связи.</text>
+	<text>Несколько гражданских кораблей находятся в диапазоне сканирования, но никто не отвечает на ваши вызовы.</text>
+	<text>В этой области давно никто не пролетал.</text>
+</textList>
+	
+<event name="FUEL_SELLER_DISTRESS">
+	<ship load="AUTO_FUEL_SELLER" hostile="false"/>  
+	<text>Небольшое судно прибывает с сообщением: «Этот автоматизированный корабль заправляет корабли за деньги. Бесплатное топливо доступно только в чрезвычайных ситуациях».</text>
+	<choice hidden="true">
+		<text>Запросить аварийный запас топлива.</text>
+		<event load="AUTO_FUEL_SELLER_ZAPROS"/>
+	</choice>
+	<choice hidden="false">
+		<text>Купить 5 топлива за 25 лома.</text>
+		<event>
+			<text>«Автоматизированная заправка завершена».</text>
+			<item_modify>
+				<item type="fuel" min="5" max="5"/>
+				<item type="scrap" min="-25" max="-25"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Купить 2 топлива за 10 лома.</text>
+		<event>
+			<text>«Автоматизированная заправка завершена».</text>
+			<item_modify>
+				<item type="fuel" min="2" max="2"/>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Атаковать автоматизированный корабль.</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+
+<eventList name="AUTO_FUEL_SELLER_ZAPROS">
+	<event>
+		<text>«Ваш корабль зарегистрирован как уже получавший разовый запас топлива в аварийной ситуации». Автоматический корабль улетает прочь.</text>
+	</event>
+	<event>
+		<text>«Чрезвычайная ситуация подтверждена. Высылаю топливо».</text>
+		<autoReward level="LOW">fuel_only</autoReward>
+	</event>
+</eventList>
+
+
+<!-- This number of events offers the players a bad trade, then if they say no, a chance for a better trade, and if no again, a chance for just some charity. -->
+<event name="FUEL_TRADER_DISTRESS">
+	<text load="FUEL_TRADER_DISTRESS_TEXT_LIST"/>
+	<ship load="CIVILIAN_SHIP" hostile="false"/>
+	<choice>
+		<text>Охотно согласиться торговать.</text>
+		<event load="FUEL_TRADER_HIGH_LIST"/>
+	</choice>
+	<choice>
+		<text>Вежливо отказать.</text>
+		<event load="FUEL_TRADER_PT2"/>
+	</choice>
+</event>
+<textList name="FUEL_TRADER_DISTRESS_TEXT_LIST">
+	<text>Торговое судно совершает прыжок в сектор, скорее всего, в ответ на ваш сигнал бедствия. Они приветствуют вас, предлагая обмен на топливо.</text>
+	<text>Какой-то корабль прибывает к маяку. «Мы заметили ваш сигнал бедствия. Я предполагаю, что у вас кончилось топливо? У нас самих его немного, но, возможно, мы сможем совершить обмен».</text>
+	<text>Корабль, путешествующий рядом с маяком, приближается и приветствует вас. «Закончилось топливо? Это хорошая возможность для нас обоих... Интересует обмен?»</text>
+	<text>Корабль наёмников прибывает к маяку. «У нас есть немного лишнего топлива, и мы можем дать его вам... за некоторую цену».</text>
+</textList>
+<eventList name="FUEL_TRADER_HIGH_LIST">
+	<event>
+		<item_modify>
+			<item type="fuel" min="2" max="4"/>
+			<item type="drones" min="-5" max="-3"/>
+		</item_modify>
+	</event>
+	<event>
+		<item_modify>
+			<item type="fuel" min="2" max="5"/>
+			<item type="missiles" min="-10" max="-4"/>
+		</item_modify>
+	</event>
+	<event>
+		<item_modify>
+			<item type="fuel" min="2" max="5"/>
+			<item type="scrap" min="-25" max="-10"/>
+		</item_modify>
+	</event>
+</eventList>
+<eventList name="FUEL_TRADER_PT2"> <!-- this list is if the player cant afford the initial trade, he'll either give up and leave or give a second cheaper offer.-->  
+	<event>
+		<text>Они отвечают: «Учитывая то, что вы нуждаетесь, этот обмен для вас приемлем?»</text>
+		<choice>
+			<text>Принять предложение.</text>
+			<event load="FUEL_TRADER_LOW_LIST"/>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться снова.</text><!-- 1.25 -->
+			<event load="FUEL_TRADER_PT3"/>
+		</choice>
+	</event>
+	<event>
+		<text>«Я не занимаюсь благотворительностью, знаете ли», — говорит капитан. — «Это моё последнее предложение».</text>
+		<choice>
+			<text>Принять предложение.</text>
+			<event load="FUEL_TRADER_HIGH_LIST"/>
+		</choice>
+		<choice>
+			<text>Отказаться снова.</text>
+			<event>
+				<text>Их капитан отключает связь, и без лишних слов его корабль готовится к прыжку.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Прежде, чем они вас покидают, их капитан говорит: «Сожалею, но мы ничем не можем вам помочь».</text>
+	</event>
+</eventList>
+<eventList name="FUEL_TRADER_LOW_LIST">
+	<event>
+		<item_modify>
+			<item type="fuel" min="4" max="7"/>
+			<item type="drones" min="-6" max="-3"/>
+		</item_modify>
+	</event>		
+	<event>
+		<item_modify>
+			<item type="fuel" min="4" max="7"/>
+			<item type="missiles" min="-10" max="-5"/>
+		</item_modify>
+	</event>
+	<event>
+		<item_modify>
+			<item type="fuel" min="3" max="7"/>
+			<item type="scrap" min="-30" max="-10"/>
+		</item_modify>
+	</event>
+</eventList>
+<eventList name="FUEL_TRADER_PT3">
+	<event>
+		<text>Сжалившись над вами, они предлагают немного топлива бесплатно.</text>
+		<item_modify>
+			<item type="fuel" min="1" max="3"/> <!-- 1.26 -->
+		</item_modify>
+	</event>
+	<event>
+		<text>Они заканчивают разговор и готовятся совершить прыжок.</text>
+	</event>
+</eventList>
+<!--END NO_FUEL_TRADER STUFF-->	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+		Non sector specific new events
+-->
+
+
+<event name="FUEL_ON_REBEL_ATTACK">
+	<text load="FUEL_ON_REBEL_ATTACK"/>
+	<ship load="REBEL_FUEL" hostile="true"/>
+</event>
+<textList name="FUEL_ON_REBEL_ATTACK">
+	<text>Корабль повстанцев выходит с вами на связь: «Приветствую, гражданские. Мы приняли ваш сигнал бедствия, и можем помочь... Секундочку... Вы похоже... Так вы же тот самый корабль! Готовьтесь к смерти!»</text>
+	<text>Неподалёку появляется корабль повстанцев. Вы получаете сообщение: «Ха! Вообще-то я не планировал проверять этот нудный сектор, и тут на тебе! Самый разыскиваемый корабль выскакивает прямо у меня перед носом, и сам идёт мне в руки! Какой удачный день». Они заряжают орудия.</text>
+	<text>Ваш маяк бедствия должно быть сработал, потому что поблизости совершил прыжок корабль. Вы запускаете его сканирование и включаете боевую тревогу. Это истребитель повстанцев!</text>
+	<text>Корабль повстанцев совершает прыжок и выходит на связь: «Я знал, что когда-нибудь вы ошибётесь. Сдавайтесь немедленно!»</text>
+</textList>
+	
+
+<event name="FUEL_ON_REBEL_WARNING">
+	<text>Приближается корабль, принявший ваш сигнал бедствия. К сожалению, это оказался автоматизированный разведчик повстанцев. Просканировав ваш корабль, он сразу же начинает заряжать двигатели, пытаясь избежать сражения.</text>
+	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
+</event>	
+
+
+<!--
+		ENGI
+		Specific no fuel events that should eventually be tied to the engi sector
+-->
+
+<event name="FUEL_OFF_ENGI_DUBIOUS">
+	<text>Пока вы дрейфуете в космосе, мимо пролетает корабль инжи. Прослушав их коммуникационный канал, вам показалось, что они обсуждают ремонт, идущий у них на корабле.</text>
+	<ship load="FUEL_OFF_ENGI_DUBIOUS" hostile="false"/>
+	<choice hidden="true">
+		<text>Вызвать их.</text>
+		<event load="FUEL_OFF_ENGI_DUBIOUS_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Пролететь мимо.</text>
+		<event>
+			<text>Они явно заняты, поскольку совершенно не замечают вашего корабля.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="DRONES_SHIP_REPAIR">
+		<text>(Ремонтник корпуса) Предложить им помощь в починке корпуса корабля.</text>
+		<event>
+			<text>Они с радостью откликаются на ваше предложение. После того, как дрон заканчивает работу, они передают вам в качестве оплаты некоторое количество топлива.</text>
+			<item_modify>
+				<item type="drones" min="-1" max="-1"/>
+				<item type="fuel" min="4" max="6"/>
+			</item_modify>
+		</event>
+	</choice>
+</event>
+<eventList name="FUEL_OFF_ENGI_DUBIOUS_LIST">
+	<event>
+		<text>Инжи отвечают на ваш сигнал. «Идентификация: Федерация. Ошибка ввода/вывода : Федерация= [пусто]». Все дальнейшие сигналы остаются без ответа.</text>
+	</event>
+	<event>	
+		<text>Корабль инжи не отвечает, но движется на перехват. Вы засекли электромагнитные сигналы от корабля — кто-то перепрограммировал его для боя!</text>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Инжи ответили на ваш сигнал. «Вам нужно: топливо. Нам нужно: металлолом. Провести обмен?»</text>
+		<choice>
+			<text>Совершить сделку.</text>
+			<event>	
+				<text>Вы совершаете обмен, и инжи уходят без единого слова.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-5"/>
+					<item type="fuel" min="4" max="6"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться.</text>
+			<event>
+				<text>Инжи прерывают связь и продолжают полёт своим маршрутом.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Узнав о вашей нужде, инжи соглашаются поделиться запасами топлива. Удивительно, насколько альтруистичными могут быть эти полуроботы.</text>
+		<item_modify>
+			<item type="fuel" min="2" max="6"/>
+		</item_modify>
+	</event>
+</eventList>
+		
+
+		
+		
+
+<!--
+		ENGI
+		Specific no fuel events that should eventually be tied to the engi sector
+-->
+	
+<event name="FUEL_ON_MANTIS_ATTACK">
+	<text load="FUEL_ON_MANTIS_ATTACK"/>
+	<ship load="MANTIS_FUEL" hostile="true"/>
+</event>
+<textList name="FUEL_ON_MANTIS_ATTACK">
+	<text>Корабль мантисов приветствует вас: «Похоже, мы нашли бедных дураков, которым нужна помощь. Давайте, братья, "поможем" им!» Они направляются в атаку.</text>
+	<text>Вскоре рядом появляется корабль, несомненно в ответ на ваш маяк. Однако легче вам не становится — у корабля дизайн мантисов. Готовьтесь к бою.</text>
+	<text>Вы обнаружили приближающийся корабль мантисов и взломали их канал связи. Оттуда доносится: «... надеюсь они будут драться дольше, чем прошлый корабль Федерации. В тот день я был очень разочарован». Похоже, они здесь не для того, чтобы помочь.</text>
+	<text>Поблизости корабль мантисов выходит из прыжка. Сенсоры показывают наведённые орудия, и вся надежда на уход от боя исчезает.</text>
+	
+	<text>Корабль мантисов приветствует вас: «Похоже, мы нашли бедных дураков, которым нужна помощь. Давайте, братья, "поможем" им!» Они направляются в атаку.</text>
+	<text>Вскоре рядом появляется корабль, несомненно в ответ на ваш маяк. Однако легче вам не становится — у корабля дизайн мантисов. Готовьтесь к бою.</text>
+	<text>Вы обнаружили приближающийся корабль мантисов и взломали их канал связи. Оттуда доносится: «... надеюсь они будут драться дольше, чем прошлый корабль Федерации. В тот день я был очень разочарован». Похоже, они здесь не для того, чтобы помочь.</text>
+	<text>Поблизости корабль мантисов выходит из прыжка. Сенсоры показывают наведённые орудия, и вся надежда на уход от боя исчезает.</text>
+</textList>
+		
+		
+<!--
+		ROCKS
+		Specific no fuel events that should eventually be tied to the rock sector
+-->
+<event name="FUEL_OFF_ROCK_WRECK">
+	<text>В ожидании спасения или гибели, ваше внимание привлекает море мусора, дрейфующее возле правого борта. Проплывающие обломки становятся больше размером, пока перед вами не появляется корма корабля роков, уничтоженного в какой-то давней битве.</text>
+	<choice hidden="true">
+		<text>Отправить команду для исследований.</text>
+		<event>
+			<text>Возможно, на борту осталось немного топлива. Небольшая команда отправляется на борт.</text>
+			<choice hidden="true">
+				<text>Доложить о результатах!</text>
+				<event load="FUEL_OFF_ROCK_WRECK_LIST"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Пусть дрейфует.</text>
+		<event>
+			<text>Рокам не нравится, когда чужаки подбирают их имущество, невзирая на их состояние, и вы, находясь на территории роков, не желаете рисковать.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="LIFE_SCANNER"> <!--DLC-->
+		<text>(Сканер жизненных форм) Запустить дополнительное сканирование.</text>
+		<event>
+			<text>Корабль производит впечатление полностью безжизненного. Ваша команда, после недолгих поисков, находит несколько работающих топливных элементов.</text>
+			<autoReward level="MED">fuel_only</autoReward>
+		</event>
+	</choice>
+</event>			
+<eventList name="FUEL_OFF_ROCK_WRECK_LIST">
+	<event>
+		<text>Через некоторое время команда возвращается с запасом боеприпасов и лома — но топлива на борту уже давно нет.</text>
+		<autoReward level="MED">missiles</autoReward>
+	</event>
+	<event>
+		<text>Один из членов экипажа сообщает, что главный компьютер находится в этой секции и до сих пор функционирует, хотя и не полностью. Он в состоянии загрузить местную телеметрию, а также расположение резервного склада с топливом! Ваша карта была обновлена.</text>
+		<reveal_map/>
+		<autoReward level="MED">fuel_only</autoReward>
+	</event>
+	<event>
+		<text>Команда вернулась назад ощутимо раньше, нежели ожидалось. Оказывается, как только они подлетели к фрегату, его аварийная ячейка с топливом неожиданно проплыла мимо!</text>
+		<autoReward level="MED">fuel_only</autoReward>
+	</event>
+	<event>
+		<text>Команда начинает делать доклад, когда вдруг раздаются крики, и коммуникатор затихает. Когда связь возобновилась, вы слышите голос рока — единственного выжившего члена экипажа фрегата, и он совершенно обезумел. Он требует, чтобы ему заплатили выкуп ломом в обмен на жизнь члена вашего экипажа!</text>
+		<choice>
+			<text>Заплатить.</text>
+			<event>
+				<text>Несмотря на своё... нездоровое состояние, рок сдержал слово и вернул членов вашей команды, счастливых и благодарных. К сожалению, их благодарность не заправит FTL-приводы.</text>  <!-- JUSTIN — TO DO — I don't like this one since you don't know who's being ransomed -->
+				<item_modify >
+					<item type="scrap" min="-40" max="-25"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться.</text>
+			<event>
+				<text>Это непростое решение, но это нужно для Федерации и свободы всех остальных. Вы отправляетесь, пока не успели передумать.</text>
+				<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+					<text id="continue"/>
+					<event>
+						<removeCrew>
+							<clone>false</clone>
+							<text>Перед тем как совершить прыжок вы проверяете клон-отсек, но не обнаруживаете никаких признаков активности.</text>
+						</removeCrew>
+					</event>
+				</choice>
+				<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+					<text id="continue"/>
+					<event>
+						<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+					</event>
+				</choice>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<event name="FUEL_OFF_ROCK_CURIOUS">
+	<text>Любопытный корабль роков подлетел повнимательнее рассмотреть вас. Они игнорируют любые попытки приветствия.</text>
+	<choice hidden="true">
+		<text>Атаковать.</text>
+		<event>
+			<text>Роки не славятся своим великодушием. Вам нужно это топливо? Заслужите это топливо!</text>
+			<ship load="FUEL_OFF_ROCK_CURIOUS" hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Подождать и посмотреть.</text>
+		<event load="FUEL_OFF_ROCK_CURIOUS_LIST"/>	
+	</choice>
+</event>
+<eventList name="FUEL_OFF_ROCK_CURIOUS_LIST">
+	<event>
+		<text>Корабль роков кружит рядом, сканируя корабельные системы. Вы ожидаете худшего, но сканирование прерывается на топливном баке. Они, очевидно, не особо разговорчивы, но передают запасы топлива, после чего, мигнув огнями, улетают.</text>
+		<item_modify>
+			<item type="fuel" min="3" max="8"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Корабль роков кружит рядом, сканируя корабельные системы. Ваши худшие опасения подтвердились, когда они обнаружили ваши двигатели и телепортировали бомбу прямо к ним. Приготовиться к бою!</text>
+		<ship load="FUEL_OFF_ROCK_CURIOUS" hostile="true"/>	
+		<damage amount="1" system="engines" effect="fire"/>
+	</event>
+</eventList>
+<ship name="FUEL_OFF_ROCK_CURIOUS" auto_blueprint="SHIPS_ROCK">
+	<escape timer="80" min="30" max="30" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Вы пытаетесь забрать как можно больше топлива из разбитых останков корабля.</text>
+		<autoReward level="MED">fuel</autoReward>
+		<!-- <status type="clear" target="player" system="engines" amount="100"/> --><!-- 1.26 -->
+	</destroyed>
+	<deadCrew>
+		<text>Вы пытаетесь забрать как можно больше топлива из разбитых останков корабля.</text>
+		<autoReward level="HIGH">fuel</autoReward>
+		<!-- <status type="clear" target="player" system="engines" amount="100"/> --><!-- 1.26 -->
+	</deadCrew>
+</ship>
+
+
+
+
+
+
+<!--
+		SLUG
+		Specific no fuel events that should eventually be tied to the slug sector
+-->
+
+<event name="FUEL_ON_SLUG_CHUCKLE">
+	<text>Слабо вооружённый корабль слагов предлагает помощь. Их капитан, похоже, тихонько про себя посмеивается. Должно быть из-за цен, которые он предлагает.</text>
+	<ship load="JELLY" hostile="false"/>
+	<choice hidden="true">
+		<text>Заплатить 20 лома за 5 топлива.</text><!-- 1.29 -->
+		<event load="FUEL_ON_SLUG_CHUCKLE_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Игнорировать это предложение.</text>
+		<event>
+			<text>Вы знаете, что лучше не иметь дел со слагом, которому, похоже, известно то, чего не знаете вы. Он прыгнул прочь с очередным смешком.</text>
+		</event>
+	</choice>
+	<choice hidden="true"> <!-- 1.29 -->
+		<text>Атаковать их.</text>
+		<event load="FUEL_ON_SLUG_ATTACK_LIST"/>
+	</choice>
+	<choice hidden="true" req="slug">
+		<text>(Член экипажа слаг) Попросите своего слага совершить покупку.</text>
+		<event>
+			<text>Увидев слага среди членов вашего экипажа, он прекращает непрерывно посмеиваться. Обмен, судя по всему, идёт гладко, хотя вы задаётесь вопросом, какая умственная борьба происходит телепатически между двумя слагами.</text>
+			<item_modify>
+				<item type="scrap" min="-20" max="-20"/><!-- 1.29 -->
+				<item type="fuel" min="5" max="5"/>
+			</item_modify>
+		</event>
+	</choice>
+</event>
+<eventList name="FUEL_ON_SLUG_CHUCKLE_LIST">
+	<event>
+		<text>Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как заключить сделку. Однако, вы совершаете обмен без происшествий.</text>
+		<item_modify>
+			<item type="scrap" min="-20" max="-20"/><!-- 1.29 -->
+			<item type="fuel" min="5" max="5"/>
+		</item_modify>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Всё выглядит в сохранности, но внезапно исчезает много запасов! Должно быть он установил портативный телепортер в вашем грузовом отсеке. Прежде чем вы реагируете, его корабль успел скрыться.</text>
+				<item_modify steal="true">
+					<item type="scrap" min="-35" max="-20"/>
+					<item type="missiles" min="-4" max="-2"/>
+				</item_modify>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как заключить сделку. Однако, вы совершаете обмен без происшествий.</text>
+		<item_modify>
+			<item type="scrap" min="-20" max="-20"/><!-- 1.29 -->
+			<item type="fuel" min="5" max="5"/>
+		</item_modify>
+	</event>
+</eventList>
+<eventList name="FUEL_ON_SLUG_ATTACK_LIST"><!-- 1.29 -->
+	<event>
+		<text>Капитан слагов перестаёт смеяться и принимает ваш вызов.</text>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Слаги отлетают на некоторое расстояние от вас, всё так же противно хихикая. К сожалению, вы не в силах преследовать их в вашем текущем положении. Передав пару неприличных изображений на ваш коммуникатор, они уходят.</text>
+	</event>
+</eventList>
+
+<event name="FUEL_ON_SLUG_OVERPRICED">
+	<text>Мобильный топливный склад слагов попадает в радиус сканирования. «Мои цены честны, и я прошу об одном — не оскорбляйте меня их обсуждением!» Посмотрим-ка на его прайс-лист.</text>
+	<ship load="JELLY_OVERPRICED" hostile="false"/>
+	<choice hidden="false">
+		<text>Купить 5 топлива за 50 лома.</text>
+		<event>
+			<text>Торговец выглядит шокировано. Вас не покидает чувство, что это первый случай, когда у него что-то купили по такой цене.</text>
+			<item_modify>
+				<item type="scrap" min="-50" max="-50"/>
+				<item type="fuel" min="5" max="5"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Купить 10 топлива за 95 лома. (ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ!)</text>
+		<event>
+			<text>Торговец выглядит шокировано. Вас не покидает чувство, что это первый случай, когда у него что-то купили по такой цене.</text>
+			<item_modify>
+				<item type="scrap" min="-95" max="-95"/>
+				<item type="fuel" min="10" max="10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Обсудить цены.</text>
+		<event>
+			<text>Вы предлагаете более разумную цену, но слаг возмущён! Он идёт в атаку!</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+
+
+
+
+
+
+
+
+
+<!--
+
+***************************************
+		DLC!!!
+	Events added with the DLC
+***************************************
+	NO_FUEL_REFUGEE
+	NO_FUEL_REFUGEE_FRIENDLY
+	-->
+
+  
+<!-- Distress beacon on -->
+
+<eventList name="NO_FUEL_REFUGEE">  <!-- I made this one compile all 3 so they're less likely than the normal events-->
+	<event>
+		<text>Корабль беженцев, уходящий от повстанцев, входит в систему, подбирая ваш аварийный маяк. Хотя у них не так уж и много топлива, они признают, что вы — часть Федерации, и делятся с вами остатками топлива.</text>
+		<autoReward level="LOW">fuel_only</autoReward>
+	</event>
+	<event load="NO_FUEL_REFUGEE_DAMAGED"/>
+	<event load="NO_FUEL_REFUGEE_PIRATE"/>
+</eventList>
+
+<event name="NO_FUEL_REFUGEE_DAMAGED">
+	<text>Корабль беженцев, спасающийся от наступления повстанцев, прибывает в систему на сигнал вашего аварийного маяка. Хотя у них не так много топлива на обмен, они вынуждены его предложить — их корпус повреждён, и им требуется лом для ремонта.</text>
+	<choice>
+		<text>Обменять немного лома на топливо.</text>
+		<event>
+			<text>Беженцы благодарны за лом и с удовольствием передают вам столь необходимое топливо. Они желают вам удачи в вашей миссии и заявляют о своей поддержке Федерации.</text>
+			<item_modify>	
+				<item type="fuel" min="3" max="3"/>
+				<item type="scrap" min="-10" max="-10"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="engi" hidden="true">
+		<text>(Член экипажа инжи) Договориться о лучшей сделке.</text>
+		<event>
+			<text>Ваш инжи сканирует и оценивает ущерб их корпуса, считая во сколько обойдётся ремонт. Беженцы ворчат и спорят, но в конце концов признают, что ремонт им нужнее, чем топливо, и предлагают более выгодные условия сделки.</text>
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<choice>
+				<text>Принять предложение.</text>
+				<event>
+					<item_modify>
+						<item type="fuel" min="6" max="6"/>
+						<item type="scrap" min="-10" max="-10"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice>
+				<text>Отказаться.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="morph" hidden="true"><!-- 1.28 -->
+		<text>(Член экипажа морф) Договориться о лучшей сделке.</text>
+		<event>
+			<text>Ваш морф сканирует и оценивает ущерб их корпуса, считая во сколько обойдётся ремонт. Беженцы ворчат и спорят, но в конце концов признают, что ремонт им нужнее, чем топливо, и предлагают более выгодные условия сделки.</text>
+			<choice>
+				<text>Принять предложение.</text>
+				<event>
+					<item_modify>
+						<item type="fuel" min="6" max="6"/>
+						<item type="scrap" min="-10" max="-10"/>
+					</item_modify>
+				</event>
+			</choice>
+			<choice>
+				<text>Отказаться.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Отказаться от их предложения.</text>
+		<event load="NO_FUEL_REFUGEE_REFUSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Беспомощные беженцы — лёгкая добыча. Напасть на них.</text>
+		<event>
+			<text>В панике, беженцы сразу сдаются, как только активируются ваши орудия. Они передают топливо и предметы снабжения в обмен на их жизни.</text>
+			<autoReward level="MED">fuel</autoReward>
+		</event>
+	</choice>
+</event>
+
+<eventList name="NO_FUEL_REFUGEE_REFUSE">
+	<event>
+		<text>Корабль беженцев прервал связь и молча прыгнул из системы, что является общепринятым знаком негативного отношения.</text>
+	</event>
+	<event>
+		<text>Беженцы крайне расстроены вашим отказом — похоже, их корабль повреждён сильнее, чем кажется на первый взгляд. Практически умоляя, они предлагают новые, более выгодные, условия.</text>
+		<choice>
+			<text>Принять предложение.</text>
+			<event>
+				<item_modify>
+					<item type="fuel" min="6" max="6"/>
+					<item type="scrap" min="-10" max="-10"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться от их предложения снова.</text>
+			<event>
+				<text>Корабль беженцев прервал связь и молча прыгнул из системы, что является общепринятым знаком негативного отношения.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<event name="NO_FUEL_REFUGEE_PIRATE">
+	<text>Корабль беженцев, убегая от надвигающихся повстанцев, входит в систему, приняв сигнал вашего аварийного маяка. Хотя у них и самих мало горючего, они остро нуждаются в вооружении и готовы совершить соответствующий обмен.</text>
+	<choice>
+		<text>Предложить несколько ракет за топливо.</text>
+		<event load="NO_FUEL_REFUGEE_PIRATE_ACCEPT"/>
+	</choice>
+	<choice hidden="true"><!-- 1.25 -->
+		<text>Отказаться от их предложения.</text>
+		<event load="NO_FUEL_REFUGEE_PIRATE_REJECT"/>
+	</choice>
+</event>
+
+<eventList name="NO_FUEL_REFUGEE_PIRATE_ACCEPT">
+	<event>
+		<text>Корабль беженцев совершает обмен и желает вам удачи в вашей миссии.</text>
+		<item_modify>
+			<item type="fuel" min="5" max="7"/>
+			<item type="missiles" min="-7" max="-5"/> <!-- 1.25 -->
+		</item_modify>
+	</event>
+	<event>
+		<text>Во время обмена корабль внезапно перешёл в нападение — это пираты!</text>
+		<item_modify>
+			<item type="fuel" min="5" max="7"/>
+			<item type="missiles" min="-7" max="-5"/> <!-- 1.25 -->
+		</item_modify>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+</eventList>
+
+<eventList name="NO_FUEL_REFUGEE_PIRATE_REJECT">
+	<event>
+		<text>Корабль беженцев просит прощения, но им самим нужно топливо. Они желают вам всего хорошего, а затем исчезают из системы.</text>
+	</event>
+	<event>
+		<text>Чувствуя ваши сомнения, корабль беженцев, тем не менее, расстаётся с небольшим количеством топлива. Он предупреждает, чтобы вы покинули сектор как можно скорее, пока он не захвачен повстанцами, затем корабль совершает прыжок и исчезает в неизвестном направлении.</text>
+		<autoReward level="LOW">fuel_only</autoReward>
+	</event>
+	<event>
+		<text>Расценив ваше нежелание как слабость, корабль беженцев вдруг ощетинился оружием — это пиратский корабль, поверивший, что нашёл лёгкую добычу!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>Расценив ваше нежелание как слабость, корабль беженцев вдруг ощетинился оружием — это пиратский корабль, поверивший, что нашёл лёгкую добычу!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+</eventList>
+
+<!-- Distress beacon off -->
+
+<event name="NO_FUEL_REFUGEE_FRIENDLY">
+	<text>Корабль беженцев, спасающийся от наступления повстанцев, прибывает в систему. Они удивляются, увидев вас в затруднительном положении, и признаются, что следовали за вами издалека в надежде, что вы выведите их на территорию Федерации. Хотя у них и самих мало горючего, они признают вас частью Федерации и предлагают разделить остатки топлива.</text>
+	<autoReward level="MED">fuel_only</autoReward>
+</event>
+
+
+	
+</FTL>

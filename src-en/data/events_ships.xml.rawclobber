@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!--   
+			SUMMARY  — 
+A list of all main events to be called by lists
+	does not include sub-events)
+	
+Pirates
+	PIRATE
+		PIRATE_CIVILIAN
+		PIRATE_SLAVER
+		PIRATE_BRIBER
+		PIRATE_NO_ESCAPE
+		PIRATE_SMUGGLE
+		SQUAT_PIRATE_MERCENARY
+		JELLY_PIRATE_WITHBOARDERS
+		JELLY_PIRATE_MERCHANT
+
+Rebels:
+	REBEL
+		REBEL_AUTO
+		REBEL_AUTO_CIVILIAN
+		REBEL_AUTO_REFUEL
+		REBEL_AUTO_MAP
+		REBEL_AUTO_ITEM
+		REBEL_AUTO_RADAR
+		REBEL_AUTO_WARNING
+		REBEL_AUTO_BAIT
+		SQUAT_REFUEL_STATION
+		SQUAT_WARNING
+		SQUAT_TRANSPORT
+		SQUAT_STORE_RESCUE
+		AUTO_FEDERATION_BASE
+		AUTO_FEDERATION_BASE2
+		REBEL_VS_FEDERATION
+		LONG_ELITE
+		LONG_FLEET
+		REBEL_FLEET_FUEL
+
+Engi:
+	ENGI_SHIP
+		ENGI_MANTIS_CONTROLLED
+		MANTIS_ENGI_STATION
+
+Mantis:
+	MANTIS_FIGHT
+		MANTIS_CIVILIAN
+		MANTIS_NAMED_THIEF
+
+Civilian:
+	JELLY
+		CIVILIAN_SHIP
+		AUTO_FUEL_SELLER
+
+Special:
+	GHOST2_SHIP
+-->
+
+
+
+
+<!--
+
+	PIRATE SHIPS
+	
+-->
+<FTL>
+<ship name="PIRATE" auto_blueprint="SHIPS_PIRATE">
+	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="PIRATE_SLUG" auto_blueprint="SHIPS_SLUG_PIRATE">
+	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="PIRATE_FUEL" auto_blueprint="SHIPS_PIRATE">
+	<escape timer="80" min="30" max="30" > 
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<!-- <destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/> -->
+	<destroyed><!-- 1.26 -->
+        <text>Когда пиратский корабль взрывается, вы собираете всё уцелевшее в сражении топливо.</text>
+        <autoReward level="MED">fuel</autoReward>
+    </destroyed>
+    <deadCrew><!-- 1.26 -->
+        <text>Перебив всю команду пиратов, вы забираете столько топлива и лома, сколько можете унести.</text>
+        <autoReward level="HIGH">fuel</autoReward>
+    </deadCrew>
+</ship>
+
+
+
+<ship name="PIRATE_CIVILIAN" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Пиратский корабль разваливается на куски. Вы спешите связаться с гражданским судном.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с гражданским судном.</text>
+			<event load="SAVE_CIVILIAN_LIST"/>    
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>На пиратском корабле не осталось признаков жизни. Вы спешите связаться с гражданским судном.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с гражданским судном.</text>
+			<event load="SAVE_CIVILIAN_LIST"/>    
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="PIRATE_SLAVER" auto_blueprint="SHIPS_PIRATE">  <!-- NEEDS ELITE TAG -->
+	<surrender  chance="0.2" min="2" max="4">
+		<text>«Мы сдаёмся! Заберите одного из наших рабов в качестве дани. Если вы уничтожите наш корабль, они всё равно умрут!»</text>
+		<choice>
+			<text>Принять их предложение.</text>
+			<event>
+				<crewMember amount="1"/>
+				<ship hostile="false"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Капитуляция неприемлема.</text>
+			<event/>
+		</choice>
+	</surrender>
+	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed>
+		<text>Корабль работорговцев уничтожен. Они больше не смогут продолжать свою дьявольскую торговлю, но многие, возможно, погибли на том корабле.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew><!-- 1.25.2 -->
+		<text>Работорговцы мертвы, и вы обыскиваете их трюмы.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="DEAD_CREW_SLAVER"/>    
+		</choice>
+	</deadCrew>
+	<!-- <deadCrew load="DEAD_CREW_SLAVER"/> --><!-- 1.25.2 -->
+</ship>
+
+<ship name="PIRATE_BRIBER" auto_blueprint="SHIPS_PIRATE"> <!-- NEEDS ELITE TAG -->
+	<surrender  chance="0.3" min="3" max="4">
+		<text>«Хорошо! Наше предыдущее предложение было недостаточно щедрым, давайте мы сделаем его более привлекательным».</text>
+		<choice>
+			<text>Принять более щедрую взятку и улететь.</text>
+			<event>
+				<ship hostile="false"/>
+				<autoReward level="HIGH">stuff</autoReward>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться от предложения и продолжить атаку.</text>
+			<event/>
+		</choice>
+	</surrender>
+	<escape  chance="0.4" min="3" max="4">
+		<text>Вы доказали пиратам, что вы их достойны. Они включают свой FTL-двигатель и пытаются ускользнуть.</text>
+	</escape>
+	<gotaway>
+		<text>Пираты оставили попытки преследования как вас, так и их бывшей добычи. Вы пытаетесь связаться с повреждённым кораблём.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="PIRATE_BRIBER_WIN"/>
+		</choice>
+	</gotaway>
+	<destroyed>
+		<text>Пиратский корабль взорвался, оставив значительное количество полезного лома. Вы летите исследовать только что спасённый корабль.</text>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="PIRATE_BRIBER_WIN"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Все пираты умерли, оставив корабль безжизненно дрейфовать в космосе. Вы стащили с него всё, что смогли, прежде чем связаться с бывшей добычей пиратов.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="PIRATE_BRIBER_WIN"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="PIRATE_NO_ESCAPE" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>С уничтожением пиратского корабля системы вашего судна вновь заработали. Вы собрали всё, что смогли добыть из обломков.</text>
+		<autoReward level="RANDOM">fuel</autoReward>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>Как только пиратский корабль отключается, двигатели вашего судна вновь заработали. Вы собрали всё, что смогли добыть из обломков.</text>
+		<autoReward level="MED">fuel</autoReward>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+</ship>
+
+<ship name="PIRATE_SMUGGLE" auto_blueprint="SHIPS_PIRATE"> <!-- NEEDS ELITE TAG -->
+	<surrender  chance="0.5" min="2" max="4" >
+		<text>Они связываются с вашим кораблём: «Мы понимаем, что наш корабль не чета вашему. Если вы позволите нам улететь, мы отблагодарим вас».</text>
+		<choice>
+			<text>Принять их предложение.</text>
+			<event>
+				<ship hostile="false"/>
+				<autoReward level="RANDOM">stuff</autoReward>
+			</event>
+		</choice>
+		<choice>
+			<text>Игнорировать их мольбы и атаковать.</text>
+			<event/>
+		</choice>
+	</surrender>
+	<escape timer="35" min="3" max="4" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway><!-- 1.26 -->
+        <text>Контрабандисты улетели вместе со своим грузом...</text>
+    </gotaway>
+	<destroyed load="REBEL_TRANSPORT_DESTROYED"/>
+	<deadCrew load="REBEL_TRANSPORT_CAPTURED"/>
+</ship>
+
+<ship name="SQUAT_PIRATE_MERCENARY" auto_blueprint="SHIPS_PIRATE"> <!-- 1.23 -->
+	<surrender min="3" max="4">
+		<text>Они связываются с вашим кораблём: «Вы выиграли! Мы на такое не подписывались!»</text>
+		<choice>
+			<text>Забыть о своих обещаниях, они умрут!</text>
+			<event/>
+		</choice>
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 -->
+			<text>Пусть живут.</text>
+			<event load="SQUAT_PIRATE_MERCENARY_REW"/>
+		</choice>
+		<choice hidden="false" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="true"><!-- 1.28 -->
+			<text>(Член экипажа слаг) Ваш слаг знает, какую награду вам собираются предложить.</text>
+			<event load="SQUAT_PIRATE_MERCENARY_REW"/>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>С учётом того, что все несостоявшиеся пираты мертвы, вы считаете, что лучше всего не возвращаться в поселение... Вы готовитесь к прыжку.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>С учётом того, что все несостоявшиеся пираты мертвы, вы считаете, что лучше всего не возвращаться в поселение... Вы готовитесь к прыжку.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<eventList name="SQUAT_PIRATE_MERCENARY_REW">
+	<event>
+		<ship hostile="false"/>
+		<text>С пиратами, бросившими свою пиратскую карьеру, вы вернулись в поселение. «Спасибо, благодаря вам, они вернулись назад. Не думаю, что нам это ещё пригодится».</text>
+		<autoReward level="MED">weapon</autoReward>
+	</event>
+	<event>
+		<ship hostile="false"/>
+		<text>С пиратами, бросившими свою пиратскую карьеру, вы вернулись в поселение. «Спасибо, благодаря вам, они вернулись назад. Вот, возьмите это в качестве награды». Честно говоря, вы надеялись на большее...</text>
+		<autoReward level="MED">scrap_only</autoReward>
+	</event>
+</eventList>
+
+<ship name="JELLY_PIRATE_WITHBOARDERS" auto_blueprint="SHIPS_PIRATE">
+	<surrender min="0" max="5" load="PIRATE_SURRENDER"/>
+	<escape chance="0.3" min="2" max="4" timer="15" load="PIRATE_ESCAPE"/>
+	<gotaway>
+		<text>Пиратский корабль улетел на поиски более слабых целей.</text>
+	</gotaway>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="JELLY_PIRATE_MERCHANT" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Вы связываетесь с кораблём снабжения, его команда благодарна за вашу помощь. Они предлагают награду за их спасение.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы связываетесь с кораблём снабжения, его команда благодарна за вашу помощь. Они предлагают награду за их спасение.</text>
+		<autoReward level="HIGH">standard</autoReward> <!-- 1.26 -->
+	</deadCrew>
+</ship>
+
+
+
+<ship name="NEBULA_STORM_PIRATE_SUPPLY_FUEL" auto_blueprint="SHIPS_FED_TRBARREL_P"> <!-- 1.25.1 --><!-- was SHIPS_PIRATE -->
+	<escape  timer="100" min="30" max="30" load="PIRATE_ESCAPE"/> <!-- 1.25.1 -->
+	<destroyed>
+		<text>Корабль уничтожен, и только скудные контейнеры с топливом можно достать из обломков до того, как стихнет ионный шторм, и вам придётся прыгать дальше.</text>
+		<autoReward level="MED">fuel</autoReward> <!-- 1.26.1 -->
+	</destroyed>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew>
+		<text>Поскольку корабль ещё цел, есть шанс собрать большую часть топливных запасов прежде, чем утихнет ионный шторм, и наступит время лететь дальше.</text>
+		<autoReward level="HIGH">scrap_only</autoReward> <!-- 1.26.1 -->
+		<item_modify> <!-- 1.26.1 -->
+			<item type="fuel" min="5" max="7"/>
+		</item_modify>
+	</deadCrew>
+</ship>
+
+
+
+
+
+<ship name="QUEST_SLUG_PIRATE_TRAP1" auto_blueprint="SHIPS_PIRATE">
+	<surrender  chance="0" min="3" max="4">
+		<text>Корабль пиратов уже готов развалиться на части, и тут вы замечаете, что корабль слагов забирает добычу и готовится к прыжку!</text>
+		<choice hidden="true">
+			<text>Продолжить сражение с пиратским кораблём.</text>
+			<event>
+				<text>Лучше покончить с ними, но вы задаётесь вопросом, будет ли то, что перевозят пираты, ценнее того, что умыкнули слаги.</text>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Позволить пиратам сбежать и догнать корабль слагов.</text>
+			<event>
+				<text>Пираты сильно повреждены, чтобы преследовать вас. Вы догоняете корабль слагов прежде, чем они совершают прыжок. «Ах, конечно же мы никогда не оссставим вас без добычи, которую обещали». Они передают вам большую часть прибыли и тихо уходят.</text>
+				<autoReward level="HIGH">scrap_only</autoReward>
+				<ship hostile="false"/>
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>Вы сканируете обломки повреждённых пиратов на наличие чего-нибудь полезного. Корабль слагов уже давно улизнул, забрав с собой добычу.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы сканируете обломки повреждённых пиратов на наличие чего-нибудь полезного. Корабль слагов уже давно улизнул, забрав с собой добычу.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+<ship name="QUEST_SLUG_PIRATE_TRAP2" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Позаботившись о пиратах, вы снова начали искать тайник, который они защищали, но он был потерян в облаках. Вы удовлетворяетесь сбором трофеев с хорошо вооружённого пиратского корабля.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>После победы над пиратами, вы снова начали искать тайник, который они защищали, но он был потерян в облаках. Вы удовлетворяетесь сбором трофеев с хорошо вооружённого пиратского корабля.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<!--
+
+	REBEL SHIPS
+	
+-->
+
+<ship name="REBEL" auto_blueprint="SHIPS_REBEL">
+	<surrender  chance="0.5" min="2" max="3" load="REBEL_SURRENDER"/> <!-- 1.26.4 -->
+	<escape  chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
+	<gotaway> <!-- 1.25.2 -->
+		<text>Корабль совершил FTL-прыжок в неизвестном направлении...</text>
+	</gotaway>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="REBEL_AUTO" auto_blueprint="SHIPS_AUTO">
+	<surrender  chance="0" min="2" max="3" load="REBEL_AUTO_SURRENDER"/> <!-- 1.28.1 --><!-- 1.29 -->
+	<destroyed load="DESTROYED_DEFAULT_AUTO"/> <!-- 1.25.2 -->
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<eventList name="REBEL_AUTO_SURRENDER"><!-- 1.29 -->
+	<event load="REBEL_AUTO_SURRENDER_YES"/>
+	<event/>
+	<event/>
+	<event/>
+	<event/>
+	<event/>
+	<event/>
+	<event/>
+</eventList>
+<event name="REBEL_AUTO_SURRENDER_YES"><!-- 1.28.1 --><!-- 1.29 -->
+	<text load="REBEL_AUTO_SURRENDER"/>
+	<choice>
+		<text>Принять предложение беспилотника.</text>
+		<event load="REBEL_AUTO_SURRENDER_REWARD"/>
+	</choice>
+	<choice>
+		<text>Уничтожить его.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="REBEL_AUTO_SURRENDER"><!-- 1.28.1 -->
+	<text>«Это автоматическое сообщение. Оставьте меня в покое, и я отдам вам свой груз. Иначе он будет уничтожен».</text>
+	<text>«Это автоматическое сообщение. Не уничтожайте меня. Взамен вы можете взять это».</text>
+	<text>«Это автоматическое сообщение. Если вы дадите мне уйти, я кое-что оставлю вам».</text>
+	<text>«Это автоматическое сообщение. Вы позволяете мне уйти, я оставляю вам свой груз».</text>
+	<text>«Это автоматическое сообщение. Немедленно прекратите огонь. Вы будете вознаграждены».</text>
+</textList>
+<textList name="REBEL_AUTO_SURRENDER_ACCEPT"><!-- 1.28.1 -->
+	<text>Модуль связи беспилотника с повстанцами разбит, так что вы без опаски принимаете его предложение.</text>
+</textList>
+<eventList name="REBEL_AUTO_SURRENDER_REWARD"><!-- 1.28.1 -->
+	<event>
+		<text load="REBEL_AUTO_SURRENDER_ACCEPT"/>
+		<ship hostile="false"/>
+		<autoReward level="RANDOM">weapon</autoReward>
+		<item_modify>
+			<item type="fuel" min="0" max="3"/>
+			<item type="drones" min="0" max="4"/>
+			<item type="missiles" min="0" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text load="REBEL_AUTO_SURRENDER_ACCEPT"/>
+		<ship hostile="false"/>
+		<autoReward level="RANDOM">augment</autoReward>
+		<item_modify>
+			<item type="fuel" min="0" max="3"/>
+			<item type="drones" min="0" max="4"/>
+			<item type="missiles" min="0" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text load="REBEL_AUTO_SURRENDER_ACCEPT"/>
+		<ship hostile="false"/>
+		<autoReward level="RANDOM">drone</autoReward>
+		<item_modify>
+			<item type="fuel" min="0" max="3"/>
+			<item type="drones" min="0" max="4"/>
+			<item type="missiles" min="0" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text load="REBEL_AUTO_SURRENDER_ACCEPT"/>
+		<ship hostile="false"/>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<item_modify>
+			<item type="fuel" min="0" max="3"/>
+			<item type="drones" min="0" max="4"/>
+			<item type="missiles" min="0" max="5"/>
+		</item_modify>
+	</event>
+</eventList>
+
+<ship name="REBEL_AUTO_FUEL" auto_blueprint="SHIPS_AUTO"> 
+	<escape timer="80" min="30" max="30" >
+		<text>Беспилотник готовится к прыжку.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_FUEL" auto_blueprint="SHIPS_REBEL"> 
+	<escape timer="80" min="30" max="30" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text> <!-- 1.21 +same somewhere-->
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Поскольку команда мертва, ничто не мешает вам обыскать корабль.</text>
+		<autoReward level="HIGH">fuel</autoReward>
+	</deadCrew>
+</ship>
+
+
+<ship name="MANTIS_FUEL" auto_blueprint="SHIPS_MANTIS">
+	<escape timer="80" min="30" max="30" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Поскольку команда мертва, ничто не мешает вам обыскать корабль.</text>
+		<autoReward level="HIGH">fuel</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="REBEL_AUTO_HACKSHIELDS" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+</ship>
+
+<ship name="REBEL_AND_AUTO" auto_blueprint="SHPS_REBEL_AND_AUTO">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+
+<ship name="REBEL_AUTO_CIVILIAN" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Корабль взрывается. Вы спешите связаться с гражданским судном.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="SAVE_CIVILIAN_LIST"/>    
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>На пиратском корабле не осталось признаков жизни. Вы спешите связаться с гражданским судном.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>	
+			<event load="SAVE_CIVILIAN_LIST"/>    
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="REBEL_AUTO_REFUEL" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Корабль разваливается, и вы быстро собираете всё полезное, что от него осталось.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>После уничтожения разведчика аванпост приветствует вас: «Благодарим за помощь. Эти разведчики нас без конца изводили. Вот, возьмите — это за наш счёт».</text>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_AUTO_MAP" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Беззащитная станция предоставляет вам доступ к последним данным об окрестностях. Ваша карта была дополнена подробностями окружающего пространства.</text>
+		<reveal_map/>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_AUTO_ITEM" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Вы собрали всё, что смогли с разбитого корабля.</text>
+		<autoReward level="MED">scrap_only</autoReward>
+		<choice hidden="true">
+			<text>Исследовать станцию.</text>
+			<event load="DEFENSE_ITEM_LIST"/>
+		</choice>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_AUTO_RADAR" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Вы собрали всё, что можно и приблизились к станции. Она используется для передачи информации флоту повстанцев. Вы можете взломать её, чтобы отправить повстанцам ложную информацию.</text>
+		<autoReward level="MED">scrap_only</autoReward>
+		<choice>
+			<text>Попытаться взломать станцию вручную.</text>
+			<event load="DEFENSE_RADAR_LIST"/>
+		</choice>
+		<choice>
+			<text>Не рисковать. Покинуть станцию.</text>
+			<event/>
+		</choice>
+		<choice hidden="true" req="hacking">
+			<text>(Взломщик) Использовать дрона для взлома станции.</text>
+			<event>
+				<text>Вы успешно взламываете их систему и передаёте фальшивую информацию о своём местоположении. Это должно немного задержать флот. Вы также скачиваете информацию об окружающих маяках.</text>
+				<reveal_map/>
+				<modifyPursuit amount="-1"/>
+				<item_modify>
+					<item type="drones" min="-1" max="-1"/>
+				</item_modify>
+			</event>
+		</choice>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_AUTO_WARNING" auto_blueprint="SHIPS_AUTO">
+	<escape timer="40" min="22" max="22" >
+		<text>Корабль начинает заряжать свой FTL-двигатель. Если он ускользнёт, то он, вне всякого сомнения, оповестит флот о вашем местоположении.</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Разведчик улетел. Он, безусловно, проинформировал флот о вашем местонахождении. Вы должны добраться до следующего сектора как можно быстрее.</text>
+		<modifyPursuit amount="1"/>
+	</gotaway>
+	<destroyed>
+		<text>Корабль разваливается на части, и вы чувствуете облегчение, понимая, что вы, вероятно, всё ещё на шаг впереди флота.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_AUTO_BAIT" auto_blueprint="SHIPS_AUTO">
+	<escape timer="2000" min="3" max="4" >
+		<text>Осторожно! Сенсоры указывают на то, что этот автономный корабль оборудован средствами информирования флота о вашем местоположении в случае своего уничтожения. Лучше не рисковать и обойти его стороной, иначе флот быстрее обнаружит вас в этом секторе.</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Разведчик улетел. Он, безусловно, проинформировал флот о вашем местонахождении. Вы должны добраться до следующего сектора как можно быстрее.</text>
+		<modifyPursuit amount="1"/>
+	</gotaway>
+	<destroyed>
+		<text>Как только корабль распадается на осколки, вы засекаете исходящий сигнал сообщения. Должно быть флот только что оповестили о вашем местоположении.</text>
+		<autoReward level="RANDOM">standard</autoReward>
+		<modifyPursuit amount="1"/>
+	</destroyed>
+</ship>
+		
+<ship name="SQUAT_REFUEL_STATION" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>Корабль развалился, и вы быстро собрали всё полезное, что от него осталось.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Аванпост приветствует вас: «Эти напыщенные ублюдки ожидали бесплатного обслуживания только потому, что они победили Федерацию. Возьмите это за помощь».</text>
+				<autoReward level="MED">fuel</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Поскольку команда мертва, ничто не мешает вам обыскать корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Аванпост приветствует вас: «Эти напыщенные ублюдки ожидали бесплатного обслуживания только потому, что они победили Федерацию. Возьмите это за помощь».</text>
+				<autoReward level="MED">fuel</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="SQUAT_WARNING" auto_blueprint="SHIPS_REBEL">
+	<escape timer="40" min="22" max="22" >
+		<text>Они заряжают свой FTL-двигатель. Если они ускользнут, они, вне всякого сомнения, оповестят флот о вашем местоположении.</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Разведчик улетел. Он, безусловно, проинформировал флот о вашем местонахождении. Вы должны добраться до следующего сектора как можно быстрее.</text>
+		<modifyPursuit amount="1"/>
+	</gotaway>
+	<destroyed>
+		<text>Корабль развалился на части, и вы почувствовали облегчение, понимая, что вы всё ещё на шаг впереди флота.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Корабль затих, и вы почувствовали облегчение, понимая, что вы всё ещё на шаг впереди флота.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="SQUAT_TRANSPORT" auto_blueprint="SHIPS_REBEL_TRANSPORT">
+	<escape timer="60" min="14" max="14" > <!-- 1.25 -->
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+		<ship hostile="true"/>
+	</escape>
+	<destroyed load="REBEL_TRANSPORT_DESTROYED"/>
+	<deadCrew load="REBEL_TRANSPORT_CAPTURED"/>
+</ship>
+
+<ship name="SQUAT_STORE_RESCUE" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>Аванпост приветствует вас: «Спасибо вам! Я не знаю, чем мы разозлили повстанцев, но они были готовы убить нас. Я покажу вам наши товары и починю ваш корабль».</text>
+		<autoReward level="MED">scrap_only</autoReward>
+		<damage amount="-5"/>			
+		<choice hidden="true"><!-- 1.31 -->
+			<text id="continue"/>
+			<event load="JUST_STORE"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Аванпост приветствует вас: «Спасибо вам! Я не знаю, чем мы разозлили повстанцев, но они были готовы убить нас. Я покажу вам наши товары и починю ваш корабль.</text>
+		<autoReward level="MED">scrap_only</autoReward>
+		<damage amount="-5"/>			
+		<choice hidden="true"><!-- 1.31 -->
+			<text id="continue"/>
+			<event load="JUST_STORE"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="AUTO_FEDERATION_BASE" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Вы разбираете обломки на лом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Когда угроза исчезла, вы связываетесь с форпостом Федерации. Они отвечают: «Повстанцам известны наши координаты! Берите всё, что сможете, и, пожалуйста, сопроводите выживших до ближайшей базы». Один из принятых на борт солдат изъявил желание присоединиться к вашей команде.</text>
+				<crewMember amount="1"/>
+				<autoReward level="LOW">weapon</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+</ship>
+<ship name="AUTO_FEDERATION_BASE2" auto_blueprint="SHIPS_AUTO">
+	<destroyed>
+		<text>Вы разбираете обломки на лом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Уничтожив корабль повстанцев, вы связываетесь со станцией. Единственный выживший ответил: «Эта база больше не безопасна. Разрешите присоединиться к вашей команде, и я смогу подлатать ваш корабль станционными дронами».</text>
+				<crewMember amount="1"/>
+				<autoReward level="HIGH">standard</autoReward>
+				<damage amount="-7"/>
+			</event>
+		</choice>
+	</destroyed>
+</ship>
+
+<ship name="REBEL_VS_FEDERATION" auto_blueprint="SHIPS_REBEL">  <!-- fed base? -->
+	<destroyed>
+		<text>После уничтожения корабля вы быстро собрали все оставшиеся полезные ресурсы.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём Федерации.</text>
+			<event load="REBEL_VS_FEDERATION_SAVED_LIST"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Поскольку команда повстанцев мертва, ничто не мешает вам обыскать их корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём Федерации.</text>
+			<event load="REBEL_VS_FEDERATION_SAVED_LIST"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+<ship name="LONG_ELITE" auto_blueprint="SHIPS_REBEL_ELITE"> <!-- NEEDS ELITE BLUEPRINT -->
+	<destroyed>
+		<text>Вы можете добыть лом из обломков корабля.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="LONG_FLEET" auto_blueprint="SHIPS_REBEL_ELITE"> <!-- NEEDS ELITE BLUEPRINT -->
+	<destroyed>
+		<text>Нет времени на обыски обломков... Вы должны улететь прежде, чем крейсеры подойдут на расстояние огня!</text>
+		<item_modify>
+			<item type="fuel" min="1" max="1"/>
+		</item_modify>
+	</destroyed>
+	<deadCrew>
+		<text>Нет времени на обыски обломков... Вы должны улететь прежде, чем крейсеры подойдут на расстояние огня!</text>
+		<item_modify>
+			<item type="fuel" min="1" max="1"/>
+		</item_modify>
+	</deadCrew>
+</ship>
+
+
+<ship name="REBEL_FLEET_FUEL" auto_blueprint="SHIPS_REBEL_ELITE"> <!-- NEEDS ELITE BLUEPRINT -->
+	<escape timer="120" min="30" max="30" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+	</escape>
+	<gotaway>
+		<text>Корабль молча улетел. Вы предполагаете, что за подкреплением...</text>
+	</gotaway>
+	<destroyed>
+		<text>Вы можете стащить несколько так необходимых вам капсул горючего, прежде чем крейсеры повстанцев откроют огонь.</text>
+		<item_modify>
+			<item type="fuel" min="2" max="4"/>
+		</item_modify>
+	</destroyed>
+	<deadCrew>
+		<text>Вы можете стащить несколько так необходимых вам капсул горючего, прежде чем крейсеры повстанцев откроют огонь.</text>
+		<item_modify>
+			<item type="fuel" min="3" max="5"/>
+		</item_modify>
+	</deadCrew>
+</ship>
+
+
+<ship name="REBEL_ENGI_UNLOCK_2FAKE" auto_blueprint="SHIPS_REBEL">
+	<escape timer="40" min="18" max="18" >
+		<text>Как только они вас замечают, они включают двигатели, намереваясь улететь. Нужно их остановить!</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Упустив корабль, вы обыскиваете базу в поисках сведений о месте их назначения, но ничего не находите.</text>
+	</gotaway>
+	<surrender  min="4" max="4" load="ENGI_UNLOCK_2FAKE_SURRENDER"/>
+	<destroyed>
+		<text>Вы собираете из обломков всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Беглый просмотр местного журнала сообщений показывает, что искомой технологии на этой базе никогда не было... Вас направили по ложному следу! Вы собираете всё, что может пригодиться, и начинаете подготовку к прыжку.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+<ship name="REBEL_ENGI_UNLOCK_2REAL" auto_blueprint="SHIPS_REBEL">
+	<escape timer="40" min="18" max="18" >
+		<text>Как только они вас замечают, они включают двигатели, намереваясь улететь. Нужно их остановить!</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Упустив корабль, вы обыскиваете базу в поисках сведений о месте их назначения, но ничего не находите.</text>
+	</gotaway>
+	<surrender  min="5" max="5" load="ENGI_UNLOCK_2REAL_SURRENDER"/>
+	<destroyed>
+		<text>Вы собираете из обломков всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Разобравшись с командой, вы просматриваете их журнал сообщений на предмет цели. Удача! Судя по всему, корабли, подходящие под описание воров, недавно проходили неподалёку. Вы забираете всё ценное и готовитесь продолжать преследование.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<quest event="ENGI_UNLOCK_3"/>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="DISTRESS_ENGI_REBEL" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>Расправившись с повстанцами, вы забираете всё ценное и ждёте, пока маленький корабль инжи вас догонит.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="DISTRESS_ENGI_REBEL_RESULT"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Расправившись с повстанцами, вы забираете всё ценное и ждёте, пока маленький корабль инжи вас догонит.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="DISTRESS_ENGI_REBEL_RESULT"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+<!--
+
+	ENGI SHIPS
+	
+-->
+
+<ship name="ENGI_SHIP" auto_blueprint="SHIPS_CIRCLE">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+
+
+<ship name="ENGI_MANTIS_CONTROLLED" auto_blueprint="SHIPS_CIRCLE">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<crew>
+		<crewMember type="mantis" prop="1"/>
+	</crew>
+</ship>
+
+<ship name="MANTIS_ENGI_STATION" auto_blueprint="SHIPS_MANTIS">
+	<destroyed>
+		<text>Корабль мантисов разваливается на части.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.25 --><!-- 1.28 -->
+			<text>Попробовать связаться с инжи.</text>
+			<event load="SAVE_ENGI_STATION"/>    
+		</choice>
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="false"> <!-- 1.25 --><!-- 1.28 -->
+			<text>Попробовать связаться с инжи.</text>
+			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>    
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Корабль мантисов больше не подаёт признаков жизни. Вы спешите связаться с инжи.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.25 --><!-- 1.28 -->
+			<text>Попробовать связаться с инжи.</text>
+			<event load="SAVE_ENGI_STATION"/>    
+		</choice>
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="false"> <!-- 1.25 --><!-- 1.28 -->
+			<text>Попробовать связаться с инжи.</text>
+			<event load="SAVE_ENGI_STATION_WITH_SLUG"/>    
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="FUEL_OFF_ENGI_DUBIOUS" auto_blueprint="SHIPS_CIRCLE">
+	<escape timer="80" min="30" max="30" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Уничтожив враждебный корабль инжи, вы аккуратно извлекаете из обломков уцелевшее топливо.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Уничтожив враждебных инжи, вы аккуратно извлекаете из их корабля топливо.</text>
+		<autoReward level="HIGH">fuel</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<!--
+
+	ROCK SHIPS
+	
+-->
+
+<ship name="ROCK_SHIP" auto_blueprint="SHIPS_ROCK">   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<surrender  chance="0.7" min="3" max="4" load="ROCK_SHIP_SURRENDER"/>
+	<destroyed>
+		<text load="ROCK_FIGHT_DESTROYED"/>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text load="ROCK_FIGHT_CREWDEAD"/>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship> 
+
+<textList name="ROCK_FIGHT_DESTROYED">  
+	<text>Победа! Вы чудом избежали пробоины в корпусе, когда один из роков из-за взрыва отлетел прямо на ваш мостик.</text>
+	<text>Корабль роков разваливается. Сгорая, FTL-двигатель превращает его экипаж в звёздную пыль.</text>
+	<text>Вражеский корабль разваливается, приняв последний ваш залп. Теперь роки стёрты в труху.</text>
+	<text>Вы моргнули, и их больше нет: всё, что осталось от корабля роков — это наиболее крепкие куски корпуса. Возможно, что-нибудь из этого можно использовать.</text>
+	<text>Роки редко уходят без боя, но уходить приходится. Их корабль разбит в щепки, вы вольны взять всё, что можете.</text>
+</textList>
+<textList name="ROCK_FIGHT_CREWDEAD">
+	<text>Роки — крепкие существа, поэтому вы проявляете особую осторожность при абордаже. Кажется, всё тихо — вы берёте всё, что вам нужно и отчаливаете.</text>
+	<text>Датчики не регистрируют признаков жизни на вражеском корабле. Кто знал, что роки окажутся такими слабаками? Время грабить.</text>
+	<text>Роки связываются с вами, но к тому моменту, как синхронизируется видеосигнал, всё, что вы видите — это последний член их экипажа, безжизненно обмякший в кресле. Будем считать это приглашением разграбить их припасы.</text>
+</textList>
+<ship name="ROCK_PIRATE" auto_blueprint="SHIPS_ROCK_PIRATE">
+	<destroyed>
+		<text load="ROCK_FIGHT_DESTROYED"/>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text load="ROCK_FIGHT_CREWDEAD"/>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+	<crew>
+		<crewMember type="rock" prop="1"/>
+	</crew>
+</ship>
+
+
+<ship name="ROCK_UNLOCK1" auto_blueprint="ROCK_ASSAULT_ELITES">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<ship name="ROCK_UNLOCK2" auto_blueprint="ROCK_ASSAULT_ELITES">
+	<escape timer="32" min="28" max="28" > <!-- was 24-->
+		<text>Корабль роков начинает прогревать FTL-двигатель. Если мы хотим заслужить их доверие, нам придётся терпеть жар столько, сколько могут они!</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Перед прыжком они передают в вашу навигационную систему координаты. Это приглашение последовать за ними!</text>
+		<quest event="ROCK_UNLOCK3"/>
+	</gotaway>
+	<destroyed>
+		<text>Их корабль разваливается, и вы ощущаете болезненный укол вины. Повернись всё по-другому, и, возможно, они могли бы принести пользу Федерации. Вы собираете всё, что может пригодиться, и готовитесь совершить прыжок из этого пекла.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Их корабль затихает, и вы ощущаете болезненный укол вины. Повернись всё по-другому, и, возможно, они могли бы принести пользу Федерации. Вы собираете всё, что может пригодиться, и готовитесь совершить прыжок из этого пекла.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<!--
+
+	MANTIS SHIPS
+	
+-->
+
+
+<ship name="MANTIS_FIGHT" auto_blueprint="SHIPS_MANTIS">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<crew>
+		<crewMember type="mantis" prop="0.80"/>
+		<crewMember type="engi" prop="0.20"/>
+	</crew>
+</ship>
+
+
+
+<ship name="MANTIS_CIVILIAN" auto_blueprint="SHIPS_MANTIS">
+	<destroyed>
+		<text>Корабль мантисов разваливается на части.</text>
+		<autoReward level="LOW">standard</autoReward> <!-- 1.25 -->
+		<choice hidden="true">
+			<text>Попробовать связаться с гражданским кораблём.</text>
+			<event load="SAVE_CIVILIAN_LIST"/>    
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>На пиратском корабле не осталось признаков жизни. Вы спешите связаться с гражданским судном.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Попробовать связаться с гражданским кораблём.</text>
+			<event load="SAVE_CIVILIAN_LIST"/>    
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="mantis" prop="0.75"/>
+		<crewMember type="engi" prop="0.25"/>
+	</crew>
+</ship>
+
+<ship name="MANTIS_NAMED_THIEF" auto_blueprint="MANTIS_SCOUT_K_SHIPS"><!-- 1.21 -->
+	<destroyed>
+		<text>Казааакплеткилик бился до последнего, и теперь вы осматриваете останки его корабля на предмет уцелевших деталей. Чувство, что его смерть оставила какую-то великую тайну неразрешённой, не покидает вас.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew load="MANTIS_NAMED_THIEF_DEFEAT"/>
+</ship>
+
+
+
+<ship name="MANTIS_ENGI_UNLOCK_3" auto_blueprint="SHIPS_MANTIS">
+	<destroyed load="ENGI_UNLOCK_4"/>
+	<deadCrew>
+		<text>Вы собираете всё, что можете, и связываетесь с кораблём инжи.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice>
+			<text id="continue"/>
+			<event load="ENGI_UNLOCK_4"/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="human" prop="1"/>
+	</crew>
+</ship>
+
+
+<ship name="SLUG_DISTRESS_MANTIS" auto_blueprint="SHIPS_MANTIS">
+	<destroyed>
+		<text>Мантис побеждён, вы связываетесь с повреждённым кораблём слагов. «Видите ли... — начинают они. — Мы очень благодарны, но у нассс нет сейчас ликвидных сссредств, чтобы вознаградить вассс».</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Отпустить их с миром.</text>
+			<event>
+				<text>Не стоит марать руки об этих негодяев. Время набирать обороты и прыгать отсюда.</text>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Покончить с ними.</text>
+			<event load="SLUG_DISTRESS_MANTIS_SURRENDER"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Мантис побеждён, вы связываетесь с повреждённым кораблём слагов. «Видите ли... — начинают они. — Мы очень благодарны, но у нассс нет сейчас ликвидных сссредств, чтобы вознаградить вассс».</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Отпустить их с миром.</text>
+			<event>
+				<text>Не стоит марать руки об этих негодяев. Время набирать обороты и прыгать отсюда.</text>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Покончить с ними.</text>
+			<event load="SLUG_DISTRESS_MANTIS_SURRENDER"/>
+		</choice>
+	</deadCrew>
+	<crew>
+		<crewMember type="mantis" prop="0.75"/>
+		<crewMember type="engi" prop="0.25"/>
+	</crew>
+</ship>
+
+
+
+<ship name="ZOLTAN_SHIP_SAVE_MANTIS2" auto_blueprint="SHIPS_MANTIS">
+	<destroyed>
+		<text>Пока вы обирали обломки мантисов, золтанский патруль безопасности вернулся с ещё тремя кораблями. Вы быстро собираете, что можете и отправляетесь в путь, пока они не остановили вас с вопросами.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Пока вы обирали обломки мантисов, золтанский патруль безопасности вернулся с ещё тремя кораблями. Вы быстро собираете, что можете и отправляетесь в путь, пока они не остановили вас с вопросами.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+<!--
+
+	SLUG SHIPS
+	
+-->
+
+<ship name="JELLY" auto_blueprint="SHIPS_JELLY">
+	<surrender chance="0.5" min="3" max="4" load="SLUG_SURRENDER"/>
+	<escape chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<ship name="JELLY2" auto_blueprint="SHIPS_JELLY">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="JELLY_UNLOCK1" auto_blueprint="SHIPS_JELLY">
+	<surrender chance="0" min="3" max="4" load="SLUG_UNLOCK_SURRENDER"/>
+	<escape chance="0.5" min="3" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<ship name="JELLY_UNLOCK2" auto_blueprint="JELLY_TRUFFLE">  <!-- this is the hard ship defending the platform-->
+	<destroyed>
+		<text>После того, как с десантным транспортником было покончено, вы обратили внимание на строительную платформу. Однако, вы обнаружили, что она уже давно скрылась в облаках. Вы собираете, что можете, и готовитесь двигаться дальше.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>После того, как с десантным транспортником было покончено, вы обратили внимание на строительную платформу. Однако, вы обнаружили, что она уже давно скрылась в облаках. Вы собираете, что можете, и готовитесь двигаться дальше.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+<ship name="JELLY_UNLOCK3" auto_blueprint="JELLY_BUTTON">  <!-- this is the weak ship that gives you the unlock -->
+	<escape timer="35" min="22" max="22" >
+		<text>Перехватчик разогревает свой FTL-двигатель, готовясь сбежать. В этот момент вы замечаете, что крейсер делает то же самое. Должно быть они объединились! Не дайте им сбежать!</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Перехватчик улетает вместе с крейсером, использующим их FTL-след для навигации. А вы были так близко...</text>
+	</gotaway>
+	<destroyed>
+		<text>После уничтожения охраны вы победно смотрите на добычу. Но сейчас у вас есть неотложная задача, и нет времени даже на пробный полёт. Перед тем как настроить автопилот корабля на возвращение к базе Федерации, вы забираете уникальное усиление, которое позволяло слагам заращивать бреши!</text>
+		<unlockShip id="5">Крейсер слагов разблокирован и добавлен в ангар!</unlockShip>
+		<autoReward level="HIGH">standard</autoReward>
+		<augment name="SLUG_GEL"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения охраны вы победно смотрите на добычу. Но сейчас у вас есть неотложная задача, и нет времени даже на пробный полёт. Перед тем как настроить автопилот корабля на возвращение к базе Федерации, вы забираете уникальное усиление, которое позволяло слагам заращивать бреши!</text>
+		<unlockShip id="5">Крейсер слагов разблокирован и добавлен в ангар!</unlockShip>
+		<autoReward level="HIGH">standard</autoReward>
+		<augment name="SLUG_GEL"/>
+	</deadCrew>
+</ship>
+
+
+<ship name="JELLY_DISTRESS_ROCK" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>После уничтожения корабля слагов вы извлекаете из его останков немного лома и возвращаетесь к кораблю роков.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="SLUG_DISTRESS_ROCK_RESULT"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Поскольку слаги больше не представляют угрозы, вы обыскиваете их корабль и возвращаетесь к рокам.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="SLUG_DISTRESS_ROCK_RESULT"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+<ship name="SLUG_DISTRESS_MANTIS_SLUG" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Наконец, драгоценное имущество слагов ваше. Позже вы делите добычу с мантисами.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Наконец, драгоценное имущество слагов ваше. Позже вы делите добычу с мантисами.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="JELLY_OVERPRICED" auto_blueprint="SHIPS_JELLY">
+	<escape timer="80" min="30" max="30" >
+		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Вы собираете как можно больше топлива из останков.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Теперь, когда корабль слагов повержен, можно спокойно взять всё топливо, что найдётся.</text>
+		<autoReward level="HIGH">fuel</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="JELLY_STATUS_OXYGEN" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваши системы возвращаются к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваши системы возвращаются в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+	</deadCrew>
+</ship>
+<ship name="JELLY_STATUS_OXYGEN_FIRE" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваши системы возвращаются к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа их система взлома отключается, и ваши системы возвращаются в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+	<weaponOverride count="1">
+		<name>BEAM_FIRE</name>
+		<name>BOMB_FIRE</name>
+	</weaponOverride>
+</ship>
+
+<ship name="JELLY_STATUS_DOORS" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваши системы возвращаются к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="doors" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваши системы возвращаются в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="doors" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+	<weaponOverride count="1">
+		<name>BEAM_FIRE</name>
+		<name>BOMB_FIRE</name>
+	</weaponOverride>
+</ship>
+<ship name="JELLY_STATUS_ENGINES" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваши системы возвращаются к нормальному функционированию. Вы собираете всё, что можете.</text> <!-- 1.26.5 --> <!-- because hacking or engines did not work -->
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваши системы возвращаются в нормальное состояние. Вы обыскиваете корабль.</text> <!-- 1.26.5 -->
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+</ship>
+<ship name="JELLY_STATUS_SHIELDS" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваши щиты возвращаются к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="shields" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваши щиты возвращаются в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="shields" amount="100"/>
+	</deadCrew>
+</ship>
+
+<ship name="JELLY_STATUS_PILOT" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваш модуль пилотирования возвращается к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваш модуль пилотирования возвращается в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+	</deadCrew>
+</ship>
+
+<ship name="JELLY_STATUS_WEAPONS" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваша орудийная система возвращается к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваша орудийная система возвращается в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+	</deadCrew>
+</ship>
+
+<ship name="JELLY_STATUS_HACKING" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и их модуль взлома уничтожен. Вы обыскиваете корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваши системы возвращаются в нормальное состояние. Вы обыскиваете корабль.</text> <!-- 1.26 -->
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+	<weaponOverride count="1"><!-- 1.27 -->
+		<name>BEAM_FIRE</name>
+		<name>BOMB_FIRE</name>
+	</weaponOverride>
+</ship>
+
+<ship name="JELLY_STATUS_MEDBAY" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов распадается, и ваши системы возвращаются к нормальному функционированию. Вы собираете всё, что можете.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="medbay" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+		<status type="clear" target="player" system="clonebay" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>После уничтожения экипажа вы быстро отключаете их модуль взлома, и ваши системы возвращаются в нормальное состояние. Вы обыскиваете корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<status type="clear" target="player" system="medbay" amount="100"/>
+		<status type="clear" target="player" system="clonebay" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+	</deadCrew>
+</ship>
+
+
+
+
+
+
+<!--
+
+	ZOLTAN SHIPS
+	
+-->
+
+<ship name="ZOLTAN_SHIP" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<surrender  chance="0.5" min="3" max="4" load="ZOLTAN_SURRENDER"/><!-- 1.26 -->
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<ship name="ZOLTAN_SHIP_WOTP" auto_blueprint="SHIPS_ZOLTAN_WOTP"><!--- 1.27 -->
+	<surrender  chance="0.5" min="3" max="4" load="ZOLTAN_SURRENDER"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="ZOLTAN_SHIP_WITH_CLOAKING" auto_blueprint="SHIPS_ZOLTAN_WITH_CLOAKING">   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+
+<ship name="ZOLTAN_PIRATE" auto_blueprint="SHIPS_ZOLTAN_PIRATE">
+	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+
+<ship name="ZOLTAN_SCIENCE_DOCK" auto_blueprint="SHIPS_ZOLTAN_WOTP"><!--- 1.27 -->   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<surrender  chance="0.5" min="3" max="4">
+		<text>Капитан золтанцев посылает срочное сообщение: «Погодите, это была всего лишь проверка! И вы её прошли! Такой разный экипаж, и при этом работающий вместе, без сомнений вызовет восхищение даже самого хладнокровного наблюдателя. Я присоединяюсь к вашей команде!»</text>
+		<ship hostile="false"/>
+		<crewMember amount="1" class="energy"/>  
+		<autoReward level="LOW">standard</autoReward>
+	</surrender>
+	<destroyed>
+		<text>Разбирая обломки, вы задаётесь вопросом — что же могло побудить их действовать столь опрометчиво?</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Разбирая их корабль, вы задаётесь вопросом — что же могло побудить их действовать столь опрометчиво?</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="ZOLTAN_PEACE_QUEST_ATTACK1" auto_blueprint="ZOLTAN_PEACE">   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<surrender  chance="0.2" min="3" max="4">
+		<text>Они явно не хотят лезть в драку. Вы уверены, что хотите уничтожить их?</text>
+		<choice hidden="true">
+			<text>Покончить с ними.</text>
+			<event>
+				<text>Вы продолжаете атаку.</text>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Отпустить их.</text>
+			<event>
+				<text>Вы отключаете ваши орудия, и через какое-то время их корабль медленно уползает прочь. На попытки связаться они не отвечают, и вам становится даже чуточку стыдно — теперь им уже не поможешь.</text>
+				<ship hostile="false"/>
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>Вы не можете помочь, но чувствуете какую-то вину, пока обыскиваете обломки. Ведь это наверняка была ловушка... правда?</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы начинаете разбирать их корабль и не находите ничего, что могло бы свидетельствовать о враждебности их миссии. Пожалуй вы чересчур поспешили с ними.</text>
+		<autoReward level="RANDOM">standard</autoReward>
+	</deadCrew>
+</ship>
+<ship name="ZOLTAN_PEACE_QUEST_ATTACK2" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<destroyed>
+		<text>Вы разгромили вашего противника, но мирный корабль прыгнул прочь в сумятице.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Вы разгромили вашего противника, но мирный корабль прыгнул прочь в сумятице.</text>
+		<autoReward level="RANDOM">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="ZOLTAN_SHIP_SAVE_MANTIS1" auto_blueprint="SHIPS_ZOLTAN">
+	<destroyed>
+		<text>Мантисы были настолько великодушны, что взяли лишь три четверти добычи, оставив остальное вам. Как благородно!</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Мантисы были настолько великодушны, что взяли лишь половину добычи, оставив остальное вам. Как благородно!</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+<ship name="ZOLTAN_PRIMITIVES_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN">   
+	<destroyed>
+		<text>Повстанцы связались с вами: «Как мило, вы выполнили всю работу за нас! За это мы оставим вас в живых. Тем не менее я не обещаю, что флот окажется столь же снисходителен». Они улетают, и вы собираете то, что осталось от корабля золтанцев.</text>
+		<modifyPursuit amount="1"/>
+		<autoReward level="MED">standard</autoReward><!-- 1.25.1 -->
+	</destroyed>
+	<deadCrew>
+		<text>Повстанцы связались с вами: «Как мило, вы выполнили всю работу за нас! За это мы оставим вас в живых. Тем не менее я не обещаю, что флот окажется столь же снисходителен». Они улетают, и вы собираете то, что осталось от корабля золтанцев.</text>
+		<modifyPursuit amount="1"/>
+		<autoReward level="HIGH">standard</autoReward><!-- 1.25.1 -->
+	</deadCrew>
+</ship>
+
+<ship name="ZOLTAN_PRIMITIVES_REBEL" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>Дым рассеивается, и золтанец говорит: «Спасибо вам. Нас пытались убедить, что идеалы Федерации умерли вместе с самой Федерацией. Позвольте помочь вам немного в память о прошлом». Вы принимаете их вознаграждение и лом, после чего собираете кое-какие остатки от корабля повстанцев.</text>
+		<autoReward level="LOW">weapon</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Дым рассеивается, и золтанец говорит: «Спасибо вам. Нас пытались убедить, что идеалы Федерации умерли вместе с самой Федерацией. Позвольте помочь вам немного в память о прошлом». Вы принимаете их вознаграждение и лом, после чего собираете кое-какие остатки от корабля повстанцев.</text>
+		<autoReward level="MED">weapon</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="ZOLTAN_LIFERAFT" auto_blueprint="SHIPS_ZOLTAN_PIRATE">
+	<destroyed>
+		<text>Вы добыли всё, что смогли из обломков корабля.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>Золтанец выглядит крайне раздосадованным результатами сражения. И не удивительно, вы разбили его корабль! Он требует, чтобы его высадили при первой же возможности.</text>
+				<choice>
+					<text>Высадить его.</text>
+					<event/>
+				</choice>
+				<choice hidden="true">
+					<text>Предложить работу за 30 единиц лома.</text>
+					<event load="ZOLTAN_LIFERAFT_HIRE"/>
+				</choice>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Детектор признаков жизни сообщил о смерти последнего пирата на корабле, и золтанец возвращается на свой мостик: «Равноправие — краеугольный камень мирного сосуществования. Прошу, наслаждайтесь плодами своего труда».</text>
+		<autoReward level="HIGH">augment</autoReward>
+	</deadCrew>
+	<crew>
+	   <crewMember type="random" prop="1"/>
+	</crew>
+</ship>
+
+
+<ship name="ZOLTAN_RIFT_MANTIS" auto_blueprint="SHIPS_MANTIS">
+	<destroyed>
+		<text>Вы собираете лом с обломков корабля и связываетесь с мудрецом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_MANTIS"/> <!-- 1.26.3 -->
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы собираете лом с корабля и связываетесь с мудрецом.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_MANTIS"/> <!-- 1.26.3 -->
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="ZOLTAN_RIFT_SLUG" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Вы собираете лом с обломков корабля и связываетесь с мудрецом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_JELLY"/> <!-- 1.26.3 -->
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы собираете лом с корабля и связываетесь с мудрецом.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_JELLY"/> <!-- 1.26.3 -->
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="ZOLTAN_RIFT_ROCK" auto_blueprint="SHIPS_ROCK">
+	<destroyed>
+		<text>Вы собираете лом с обломков корабля и связываетесь с мудрецом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_ROCK"/> <!-- 1.26.3 -->
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы собираете лом с корабля и связываетесь с мудрецом.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_ROCK"/> <!-- 1.26.3 -->
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="CRYSTAL_RIFT_ROCK" auto_blueprint="SHIPS_CRYSTAL">
+	<destroyed>
+		<text>Вы собираете лом с обломков корабля и связываетесь с мудрецом.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_CRYSTAL"/> <!-- 1.26.3 -->
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы собираете лом с корабля и связываетесь с мудрецом.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ZOLTAN_RIFT_SUCCESS_CRYSTAL"/> <!-- 1.26.3 -->
+		</choice>
+	</deadCrew>
+</ship>
+
+
+
+
+
+<ship name="ZOLTAN_CREW_SCAN" auto_blueprint="SHIPS_ZOLTAN">   <!-- JUSTIN — MAKE A SURRENDER!!-->
+	<destroyed>
+		<text>Вы собираете всё, что можете и готовитесь к прыжку до того, как прибудут остальные стражи.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>Вы собираете всё, что можете и готовитесь к прыжку до того, как прибудут остальные стражи.</text>
+		<autoReward level="MED">standard</autoReward>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+	</deadCrew>
+</ship>
+
+
+
+
+<!--
+
+	ZOLTAN SECTOR SHIPS SHIPS
+	
+-->
+
+
+
+<ship name="PIRATE_ZOLTAN_CREW_STUDY" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Вы сходите с судна и связываетесь с исследовательской станцией.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>«Спасибо за освобождение! Они использовали нас как приманку для кораблей, что проходили мимо. Возьмите это пожалуйста».</text>
+				<autoReward level="LOW">stuff</autoReward>
+				<drone name="RANDOM"/>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы обезвреживаете корабль и связываетесь с исследовательской станцией.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event>
+				<text>«Спасибо за освобождение! Они использовали нас как приманку для кораблей, что проходили мимо. Возьмите это, пожалуйста».</text>
+				<autoReward level="LOW">stuff</autoReward>
+				<drone name="RANDOM"/>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+
+<!--
+
+	FEDERATION SHIPS SHIPS
+	
+-->
+
+<ship name="FED_SHIP" auto_blueprint="SHIPS_FED">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+
+<!--
+
+	CIVILIAN SHIPS
+	
+-->
+
+<ship name="CIVILIAN_SHIP" auto_blueprint="SHIPS_CIVILIAN">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<ship name="CIVILIAN_SHIP_NOFUEL" auto_blueprint="SHIPS_SCOUT_FED"><!-- 1.25 -->
+	<escape timer="40" min="30" max="30" ><!-- 1.26 -->
+		<text>Кажется, они не хотят сражаться и пытаются сбежать.</text>
+	</escape>
+	<gotaway><!-- 1.26 -->
+		<text>Корабль улетает в неизвестном направлении...</text>
+	</gotaway>
+	<destroyed load="DESTROYED_DEFAULT_NOFUEL"/>
+	<deadCrew load="DEAD_CREW_DEFAULT_NOFUEL"/>
+</ship>
+
+<ship name="AUTO_FUEL_SELLER" auto_blueprint="SHIPS_AUTO">
+	<escape timer="80" min="30" max="30" >
+		<text>Очевидно, этот корабль не был предназначен для битвы. Кажется, они пытаются сбежать.</text>
+	</escape>
+	<gotaway>
+		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
+	</gotaway>
+	<destroyed>
+		<text>Корабль разваливается на куски, и вы судорожно пытаетесь спасти топливо из их грузового отсека.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+</ship>
+
+
+
+
+
+
+
+<!--
+
+	CRYSTAL SHIPS
+	
+	and ships used in the crystal sector
+	
+-->
+
+<ship name="CRYSTAL_SHIP" auto_blueprint="SHIPS_CRYSTAL">   
+	<surrender  chance="0.6" min="3" max="4">
+		<text load="CRYSTAL_SHIP_SURRENDER"/>
+		<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"><!-- 1.28 -->
+			<text>Принять капитуляцию.</text>
+			<event load="CRYSTAL_SHIP_SURRENDER"/>
+		</choice>
+		<choice hidden="true">
+			<text>Проигнорировать их запрос.</text>
+			<event>
+				<text>Вы прервали связь и приготовились прикончить их.</text>
+			</event>
+		</choice>
+		<choice hidden="false" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="true"><!-- 1.28 -->
+			<text>(Член экипажа слаг) Ваш слаг знает, чем они хотят откупиться.</text>
+			<event load="CRYSTAL_SHIP_SURRENDER"/>
+		</choice>
+	</surrender>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship> 
+
+<ship name="CRYSTAL_SHIP_NO_SURRENDER" auto_blueprint="SHIPS_CRYSTAL">   
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship> 
+
+<ship name="CRYSTAL_FED" auto_blueprint="SHIPS_CRYSTAL">
+	<destroyed>
+		<text>Судно кристалинов разваливается на части, и вы подбираете с него всё, что может пригодиться.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_FED_LIST"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Команда вражеского судна была ликвидирована. Вы собираете всё, что можно.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_FED_LIST"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="CRYSTAL_CONVOY" auto_blueprint="SHIPS_CRYSTAL">
+	<surrender  chance="0" min="3" max="4">
+		<text>Их корабль выглядит изрядно потрёпанным, и, похоже, они уже передумали воевать. Может быть стоит отключить своё оружие и попытаться убедить их в мирности своих намерений?</text>
+		<choice hidden="true">
+			<text>Остановить сражение.</text>
+			<event>
+				<text>Они приняли ваши объяснения и позволили приблизиться к флоту. Оказалось, что это простые шахтёры и колонисты с периферийного поселения, бегущие в более защищённые части космоса от нападений пиратов и повстанцев.</text>
+				<ship hostile="false"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text>Они извиняются за свою необдуманную реакцию на ваше присутствие и тратят некоторое время на дозаправку и ремонт обоих кораблей.</text>
+						<autoReward level="LOW">fuel</autoReward>
+						<damage amount="-8"/>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Покончить с ними.</text>
+			<event>
+				<text>Они хотели боя, и они его получат.</text>
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>Судно кристалинов разваливается на части, и вы подбираете с него всё, что можно подобрать. За это время остаток конвоя значительно отдаляется от вас. Ничего не поделаешь, придётся прыгать дальше.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Команда вражеского судна была полностью уничтожена. Пока вы собираете лом с корабля, остаток конвоя значительно отдаляется от вас. Ничего не поделаешь, придётся прыгать дальше.</text>
+		<autoReward level="MED">standard</autoReward>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="CRYSTAL_HUNTER" auto_blueprint="SHIPS_CRYSTAL">
+	<surrender  chance="0.5" min="3" max="4">
+		<text>Охотники отправили вам сообщение: «Мы сдаёмся. Заберите один из этих мягких мешков мяса, которые мы захватили». Похоже, они имеют в виду человеческих пленников.</text>
+		<choice hidden="false">
+			<text>Принять капитуляцию.</text>
+			<event>
+				<text>Они выслали одного из пленников на ваш корабль. Он немного потрясён, и вы подозреваете, что он когда-то был повстанцем, но, похоже, он очень рад освобождению.</text>
+				<crewMember amount="1" class="human" all_skills="1"/>
+				<ship hostile="false"/> <!-- 1.21 -->
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Покончить с ними.</text>
+			<event>
+				<text>Кто знает, сколько человек будет спасено, если вы уничтожите их сейчас.</text>
+			</event>
+		</choice>
+	</surrender>
+	<destroyed>
+		<text>Судно кристалинов разваливается на части, и вы подбираете с него всё, что можно подобрать. Кто знает, сколько людей вы спасли, остановив этот корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж вражеского корабля устранён. Вы подбираете всё, что можете взять. Кто знает, сколько людей вы спасли, остановив этот корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<ship name="REBEL_CRYSTAL_REBEL_CRYSTAL" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>Корабль повстанцев уничтожен, вы подбираете останки.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_SAVED"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Корабль повстанцев захвачен, вы забираете содержимое его трюмов.</text> <!-- 1.29 -->
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_SAVED"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+
+<ship name="MANTIS_CRYSTAL" auto_blueprint="SHIPS_MANTIS">
+	<destroyed>
+		<text>Корабль взорвался, и вы взяли столько лома, сколько смогли.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_SAVED"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Их команда мертва, и вы забираете с корабля всё, что пригодится.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_SAVED"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<ship name="PIRATE_CRYSTAL" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Корабль взрывается, и вы собираете столько лома, сколько можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_SAVED"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Их команда мертва, и вы забираете с корабля всё, что пригодится.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="CRYSTAL_SAVED"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+
+
+<!--
+
+	SPECIAL SHIPS
+	
+-->
+
+
+
+<ship name="PRIZRAK_SHIP" auto_blueprint="SHIPS_JELLY_TRUFFLE_S"> <!-- 1.25 -->
+	<destroyed>
+		<text>Корабль-призрак уничтожен. Больше он не побеспокоит путешественников.</text>
+		<autoReward level="MED">standard</autoReward>
+	</destroyed>
+	<crew>
+		<crewMember type="ghost" prop="1.00"/>
+	</crew>
+	<deadCrew>
+		<text>Теперь этот корабль действительно пуст.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</deadCrew>
+</ship>
+
+<!-- 1.28 -->
+<ship name="ORCHID_SHIP" auto_blueprint="SHIPS_ORCHID"> 
+	<surrender chance="0.7" min="3" max="5" load="ORCHID_SURRENDER"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<crew>
+		<crewMember type="orchid" prop="0.7"/>
+		<crewMember type="mushroom" prop="0.1"/>
+		<crewMember type="mushroom_b" prop="0.1"/>
+		<crewMember type="mushroom_f" prop="0.1"/>
+	</crew>
+</ship>
+
+<ship name="SHELL_SHIP" auto_blueprint="SHIPS_SHELL">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_SHELL"/>
+	<weaponOverride count="2">
+		<name>BOMB_DELAY_FIRE_STUN</name>
+		<name>BOMB_DELAY_BIO</name>
+		<name>W_LASER_HULL_BASIC</name>
+		<name>W_LASER_HULL_1_UPGRADED</name>
+		<name>W_LASER_HULL_2_UPGRADED</name>
+	</weaponOverride>
+</ship>
+
+<event name="DEAD_CREW_SHELL">
+	<text load="DEAD_CREW_SHELL_TEXT"/>
+	<choice req="slug" lvl="0" hidden="true" max_group="0" blue="false">
+		<text id="continue"/>
+		<event load="DEAD_CREW_DEFAULT"/>
+	</choice>
+	<choice req="slug" lvl="1" hidden="true" max_group="0" blue="false">
+		<text id="continue"/>
+		<event load="DEAD_CREW_SHELL_WITH_SLUG"/>
+	</choice>
+</event>
+
+<textList name="DEAD_CREW_SHELL_TEXT">
+	<text>Последний раненый броненосец издаёт противный писк и умирает...</text>
+	<text>Раненый броненосец катается в муках по кораблю, и вы хладнокровно его добиваете.</text>
+	<text>Смертельно раненый капитан броненосцев отчаянно верещит, но вскоре затихает...</text>
+</textList>
+
+<eventList name="DEAD_CREW_SHELL_WITH_SLUG">
+	<event>
+		<text>Пока вы забираете полезные припасы с их корабля, ваш слаг заинтересовался панцирем одного из погибших броненосцев...</text>
+		<autoReward level="RANDOM">standard</autoReward>
+		<choice hidden="true">
+			<text>Пусть слаг возьмёт панцирь.</text>
+			<event>
+				<text>Слаг с довольным видом заползает внутрь. Теперь его хрупкое тело защищено в ближнем бою! В честь этого события слаг выбирает себе новое имя...</text>
+				<crewMember amount="-1" class="slug"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<crewMember amount="1" class="slug_armored"/>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Приказать ему бросить панцирь.</text>
+			<event>
+				<text>Слаг злобно шипит, но повинуется.</text>
+			</event>
+		</choice>
+	</event>
+	<event load="DEAD_CREW_DEFAULT"/>
+	<event load="DEAD_CREW_DEFAULT"/>
+	<event load="DEAD_CREW_DEFAULT"/>
+</eventList>
+
+</FTL>

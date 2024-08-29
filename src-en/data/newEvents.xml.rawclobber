@@ -1,0 +1,2584 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<FTL>
+<eventCounts sector="0">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="0" max="2"/>
+	<event name="HOSTILE1" min="5" max="6"/>
+	<event name="HOSTILE2" min="3" max="4"/>
+	<event name="NEBULA" min="0" max="2"/>
+	<event name="QUESTS" min="1" max="2"/>
+</eventCounts>
+<!-- Leftover events will be filled in with NEUTRAL -->
+
+<eventCounts sector="1">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="1"/>
+	<event name="HOSTILE1" min="2" max="4"/>
+	<event name="HOSTILE2" min="2" max="4"/>
+	<event name="HOSTILE_BOARDING" min="1" max="2"/>
+	<event name="QUESTS" min="0" max="1"/>
+</eventCounts>
+<!-- Leftover events will be filled in with NEUTRAL -->
+
+<!-- PLANNING FOR the 3rd Sector-->
+<eventCounts sector="2">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="1"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="3" max="7"/>
+	<event name="HOSTILE_BOARDING" min="1" max="2"/>
+	<event name="QUESTS" min="1" max="3"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</eventCounts>
+
+<eventCounts sector="3">
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="NEUTRAL2" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE2" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="4"/>
+	<event name="HOSTILE_BOARDING" min="1" max="2"/>
+	<event name="QUESTS" min="1" max="3"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+</eventCounts>
+
+
+
+
+<eventList name="NON_HOSTILE">
+	<event load="NEUTRAL"/>
+	<event load="ITEMS"/>
+</eventList>
+
+
+<eventList name="HOSTILE1"> <!-- bamalf over -->
+	<!-- <event load="MARADERS1_EVENT"/> -->
+	<event load="REBEL_PULSAR"/>
+	<event load="PIRATE_PULSAR"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="AUTO_WARNING"/>
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_HACKER"/>
+	<event load="REBEL_AUTO"/>
+	<event load="AUTO_CIVILIAN"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="REBEL"/>
+	<event load="MANTIS_HOSTILE"/>
+</eventList>
+
+<eventList name="HOSTILE111"><!-- bamalf over -->
+	<!-- <event load="MARADERS1_EVENT"/> -->
+	<!-- <event load="REBEL_PULSAR"/> -->
+	<!-- <event load="PIRATE_PULSAR"/> -->
+	<event load="SQUAT_WARNING"/>
+	<event load="AUTO_WARNING"/>
+	<!-- <event load="AUTO_ASTEROID"/> --><!-- 1.26.6 -->
+	<!-- <event load="AUTO_HACKER"/> --> <!-- 1.27 -->
+	<event load="REBEL_AUTO"/>
+	<event load="AUTO_CIVILIAN"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="REBEL"/>
+	<event load="MANTIS_HOSTILE"/>
+	<!-- 1.27 -->
+	<event load="MARADERS1_EVENT"/>
+	<event load="PIRATE"/>
+	<event load="SQUAT_REFUEL_STATION"/>
+	<event load="PIRATE_SLAVER"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+</eventList>
+
+
+<eventList name="HOSTILE_CIVILIAN">
+<!--
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_HACKER"/> -->
+	<event load="MARADERS1_EVENT"/>
+	<event load="PIRATE"/>
+	<event load="PIRATE_CHOICE"/>
+	<event load="REBEL"/>
+	<event load="SQUAT_WARNING"/>
+	<event load="SQUAT_REFUEL_STATION"/>
+	<event load="PIRATE_ASTEROID"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="PIRATE_SLAVER"/>
+	<event load="PIRATE_SUN"/>
+	<event load="AUTO_SUN"/>
+	<event load="PIRATE_NO_ESCAPE"/>
+</eventList>
+
+
+
+<eventList name="NEUTRAL">  <!-- bamalf over. This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector -->
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="MERCENARY"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="DONOR_PONY"/>
+	<event load="DONOR_PLAGUE"/>
+	<event load="CRYST_LOB"/>
+	<event load="LOTEREYA"/>
+	<event load="SKUP"/>
+	<!-- <event load="PROTOTYPE_COLLECTIONER"/> --><!-- 1.23 --><!-- 1.26.5 -->
+	<event load="PSEVDO_NOTHING"/><!-- 1.26 -->
+	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
+	<event load="EMPTY_STATION2"/>
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="WRECKAGE_EVENT"/>
+	<event load="FUELING_STATION"/>
+	<event load="PIRATE_SALESMAN"/>
+	<event load="TERRAFORMING_SCAN"/>
+	<event load="REBEL_CHECKPOINT"/>
+	<event load="REBEL_HELPERS"/>
+	<event load="ROGUE_REBEL"/>
+	<event load="SHELL_FIGHT"/>
+	<event load="SHELL_FIGHT"/>
+</eventList>
+
+
+
+<eventList name="EXIT_LIST">
+	<event load="NEUTRAL_EXIT"/>
+	<event load="ITEMS"/>
+</eventList>
+
+
+<eventList name="NEUTRAL_EXIT">  <!-- bamalf over. This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector -->
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="AUTO_REFUEL_STATION"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="DONOR_PONY"/>
+	<event load="DONOR_PLAGUE"/>
+	<event load="EMPTY_STATION2"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="REFUGEE_NO_DISTRESS"/>
+	<event load="WRECKAGE_EVENT"/>
+	<event load="FUELING_STATION"/>
+	<event load="PIRATE_SALESMAN"/>
+	<event load="REBEL_CHECKPOINT"/>
+	<event load="REBEL_HELPERS"/>
+	<event load="ROGUE_REBEL"/>
+</eventList>
+
+
+
+<eventList name="NEUTRAL_CIVILIAN">  <!-- This list is specifcially for the civilian sectors and is called before NEUTRAL is -->
+	<event load="PIRATE_CIVILIAN"/>
+	<event load="PIRATE_STATION_CROPS"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="ASTEROID_EXPLORE"/>
+	<event load="MERCENARY"/>
+	<event load="DISTRESS_BEACON"/>
+	<event load="FRIENDLY_SLAVER"/>
+	<event load="PIRATE_BRIBER"/>
+	<event load="AUTO_DEFENSE_MAP"/> 
+	<event load="AUTO_DEFENSE_ITEM"/> 
+	<event load="REBEL_STOPFLEET"/>
+	<event load="RUHLAD"/>
+	<event load="EVENT_TR_FED_MISSILES"/><!-- 1.25.1 -->
+	<event load="EVENT_TR_FED_FUEL"/><!-- 1.25.1 -->
+	<event load="PSEVDO_NOTHING"/><!-- 1.26 -->
+	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
+</eventList>
+
+
+<eventList name="NEBULA">
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_TRADER"/>
+	<event load="NEBULA_STORM_REBEL"/>
+	<event load="NEBULA_STORM_AUTO"/>
+	<event load="NEBULA_STORM_ITEMS"/>
+	<event load="NEBULA_LOST_SHIP"/>   
+	<event load="NEBULA_BOARDING"/>
+	<event load="NEBULA_STORM_BOARDING"/>    <!-- DLC re-added — was removed previously -->
+	<event load="NEBULA_MANTIS_FIGHT"/> 
+	<event load="NEBULA_WEAPONS_TRADER"/>	
+</eventList>
+
+<eventList name="NEBULA_FIRST_SECTOR"> <!-- 1.26 -->
+	<event load="NEBULA_EMPTY"/>
+	<event load="NEBULA_REBEL"/>  
+	<event load="NEBULA_AUTO"/>
+	<event load="NEBULA_AUTO_WARNING"/>
+	<event load="NEBULA_PIRATE_SMUGGLE"/>
+	<event load="NEBULA_AUTO_DEFENSE_ITEM"/>
+	<event load="NEBULA_TRADER"/>
+	<event load="NEBULA_STORM_REBEL"/>
+	<event load="NEBULA_STORM_AUTO"/>
+	<event load="NEBULA_STORM_ITEMS"/>
+	<event load="NEBULA_LOST_SHIP"/>   
+	<!-- <event load="NEBULA_BOARDING"/> -->
+	<!-- <event load="NEBULA_STORM_BOARDING"/> -->
+	<event load="NEBULA_MANTIS_FIGHT"/> 
+	<event load="NEBULA_WEAPONS_TRADER"/>	
+</eventList>
+
+
+
+<eventList name="ITEMS"> <!-- bamalf over -->
+	<event load="FIND_DRONE"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FREE_CAPSULE"/><!-- 1.31 -->
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="REFUEL_STATION"/>
+	<event load="NEW_REPAIR_STATION"/><!-- 1.26.5 -->
+	<event load="SELL_DRONES_STATION"/>
+	<event load="SELL_MISSILES_STATION"/>
+	<event load="TRADER_CIV"/>
+	<event load="TAVERN_HIRE"/>  
+	<event load="STORE_REBELSIDE"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="HELP_MINERS"/>
+</eventList>
+
+<eventList name="ITEMS_SECTORE_ONE"> <!-- bamalf over -->
+	<event load="FIND_DRONE"/>
+	<event load="FIND_WEAPON"/>
+	<event load="FREE_ITEMS"/>
+	<event load="FUEL_FOR_DRONE"/>
+	<event load="REFUEL_STATION"/>
+	<event load="NEW_REPAIR_STATION"/><!-- 1.26.5 -->
+	<event load="TRADER_CIV"/>
+	<event load="TAVERN_HIRE"/>  
+	<event load="STORE_REBELSIDE"/>
+	<event load="TRADER_UPGRADES"/>
+	<event load="TRADER_UPGRADES_EXCHANGE"/>
+	<event load="HELP_MINERS"/>
+</eventList>
+
+<eventList name="DISTRESS_BEACON">
+	<event load="FRIENDLY_BEACON"/>
+	<event load="FRIENDLY_BEACON_BAD"/> <!-- 1.25 -->
+	<event load="TRAP_BEACON"/>
+	<event load="STRANDED_BEACON"/>
+	<event load="PIRATE_CIVILIAN_BEACON"/>
+	<event load="CIVILIAN_ASTEROIDS_BEACON"/>  
+	<event load="REBEL_VS_FEDERATION"/> 
+	<event load="ESCORT_BEACON"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="ALIENS"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+	<event load="EVENT_CAPSULE_2"/> <!-- 1.31 -->
+	<event load="REFUGEE_GHOST"/><!--DLC CHRIS — down below-->
+	<event load="REFUGEE_DISTRESS"/> <!--DLC — down below-->
+</eventList>
+
+
+<eventList name="QUESTS"> <!-- bamalf over -->
+	<event load="QUEST_ESCORT"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="QUEST_MANTIS_INVASION_START"/>
+	<event load="QUEST_CREWDEAD_START"/>
+	<event load="QUEST_CONSTRUCTIONYARD"/>
+</eventList>
+
+
+<eventList name="HOSTILE_BOARDING">
+	<event load="STATION_SICK"/>
+	<event load="BOARDERS_SUN"/>
+	<event load="BOARDERS_ASTEROID"/>
+	<event load="BOARDERS"/>
+	<event load="FLOATING_CARGO"/>
+	<event load="BOARDERS_HACKING"/>
+</eventList>
+
+
+<eventList name="MANTIS_HOSTILE">
+	<event load="MANTIS_FIGHT"/>
+	<event load="MANTIS_FIGHT"/>
+</eventList>
+
+
+
+
+
+
+
+<!--    
+	  ***********
+       TEXT LISTS				  
+	  ***********		
+-->
+
+<textList name="TIPS_LIST">
+	<text>СОВЕТ: Инжектор точности — уклонение врага для оружия с этим инжектором уменьшается на 100. Используя маскировку, враг всё ещё имеет небольшой шанс уклониться.</text>
+	
+	<text>СОВЕТ: Смерть — Помните, поражение — это тоже часть веселья!... Нет, серьёзно...</text>
+	<text>СОВЕТ: Зачистка секторов — От каждого сектора стоит брать всё возможное для развития корабля, так как каждый следующий сектор сложнее предыдущего.</text>
+	<text>СОВЕТ: Выходы — Мчаться к выходу из сектора — заманчиво, но исследование — это единственный способ улучшить свой корабль. Постарайтесь выжать из каждого сектора всё, что только возможно.</text>
+	<text>СОВЕТ: Цели — Задайте приоритет целей в бою. Оружие и щиты, как правило, лучший выбор, но когда враг собирается убежать, бейте по двигателям или рубке управления для предотвращения побега.</text>
+	<text>СОВЕТ: Скрытый выбор — Когда в событии вы видите ответ, подсвеченный синим, то это специальная опция, которая стала доступна благодаря вашему оснащению. Но не всегда этот выбор является лучшим или безопасным.</text><!-- 1.25 -->
+	<text>СОВЕТ: Повреждение системы — Если из-за пожара или абордажников система выходит из строя полностью, то корпус также получает единицу повреждения.</text>
+	<text>СОВЕТ: Ячейки питания — Улучшенные системы могут быть полезны, даже если у вас не хватает энергии реактора для их использования; они всё равно поглощают 1 урона.</text>
+	<text>СОВЕТ: Орудия — Вы можете поставить выстрел в очередь до того, как орудие будет заряжено. Оно выстрелит, как только зарядится.</text>
+	<text>СОВЕТ: Маскировка — Маскировка не только позволит вам избежать урона от выстрелов врага, но и останавливает зарядку его орудий. Она также увеличивает ваше уклонение на 60.</text>
+	<text>СОВЕТ: Абордаж — Если вас берут на абордаж, сражайтесь в медицинском отсеке. Если ничего не помогает, разгерметизируйте отсеки корабля.</text>
+	<text>СОВЕТ: Кислород — Если отсек корабля окрасился красным, это значит, что вы теряете кислород. Экипаж будет получать урон, а огонь перестанет гореть в отсеках с красным уровнем кислорода.</text>
+	<text>СОВЕТ: Пробивание щита — Ракеты игнорируют щит. Используйте ракеты для повреждения системы щитов на мощных кораблях. Только помните, что защитные дроны могут сбивать ракеты!</text>
+	<text>СОВЕТ: Выбор — Каждый ваш выбор имеет несколько вариантов последствий. Вы никогда не можете быть уверены в том, что может произойти.</text>
+	<text>СОВЕТ: Авто-огонь — Автоматическое ведение огня позволит вам беспрерывно вести огонь по единожды указанной вами цели. Но обращайте внимание и на то, из чего вы ведёте огонь. Если оружие использует ракеты, то следите за их количеством.</text>
+	<text>СОВЕТ: Уклонение — Уклонение от выстрелов врага — это важно, но требует функционирующих двигателей И рубки управления. Использование кого-то из экипажа на двигателях также увеличивает уклонение.</text>
+	<text>СОВЕТ: Сенсоры — Если корабль погрузится во тьму, не паникуйте. Просто отремонтируйте подсистему сенсоров.</text>
+	<text>СОВЕТ: Дроны — Если вас атакуют вражеские дроны, то цельтесь в их систему дронов, чтобы временно отключить их.</text>
+	<text>СОВЕТ: Лучи — Лучевое оружие наносит урон, основанный на количестве отсеков, которые оно поразило. Каждый уровень щитов блокирует 1 единицу урона. Поэтому лучше всего использовать лучевое оружие, когда щит врага отключён.</text>
+	<text>СОВЕТ: Огонь — Если огонь распространяется, можно открыть шлюзы и двери, чтобы выпустить кислород из частей вашего корабля. Без кислорода огонь быстро погаснет.</text>
+	<text>СОВЕТ: Здоровье — Следите за здоровьем экипажа! Используйте медотсек, чтобы восстанавливать его.</text>
+	<text>СОВЕТ: Улучшение — Не забывайте улучшать свой корабль! Чаще всего щиты в приоритете, но не стоит недооценивать полезность подсистем.</text>
+	<text>Совет: Топливо — Каждый прыжок расходует одну единицу топлива, так что следите за своими запасами. Покупайте топливо в магазинах, чтобы не оказаться в затруднительном положении.</text>
+	<text>СОВЕТ: Звук — Отрегулировать громкость звуков и музыки можно в меню настроек.</text>
+	<text>СОВЕТ: Астероиды — Сражаться в поле астероидов опасно, но используйте это в свою пользу. Выведите из строя щиты противника и позвольте камням сделать остальное за вас.</text>
+	<text>СОВЕТ: Туманности — Попадание в туманность временно замедлит продвижение флота повстанцев, но в них есть и свои собственные уникальные опасности.</text>
+	<text>СОВЕТ: Солнечные вспышки — Солнечные вспышки повреждают корпус и поджигают. Убедитесь, что ваши щиты включены, чтобы уменьшить этот эффект.</text>
+	<text>СОВЕТ: Счёт — Ваш счёт основывается на том, сколько кораблей вы победили, количестве разведанных маяков и общем собранном ломе.</text>
+	<text>СОВЕТ: Усиления — Ваш корабль может иметь только 3 усиления. Они обеспечивают уникальные преимущества для систем, экипажа или всего корабля.</text>
+	<text>СОВЕТ: Пробоины — Если в отсеке с пробоиной нет кислорода, попробуйте открыть все окружающие двери, это сделает его менее опасным.</text>
+	<text>СОВЕТ: Флот повстанцев — Флот повстанцев (отображается красным кругом на карте) приближается ближе к вашей позиции каждый раз, когда вы делаете прыжок. Некоторые события могут замедлить или увеличить его скорость.</text>
+	<text>СОВЕТ: Ионное оружие — Ионное оружие разряжает и блокирует системы на время. Если оно попало в щит, ионизацию получает сама система щитов.</text>
+	<text>СОВЕТ: Бомбы — Бомбы телепортируются прямо на один из двух кораблей. Они обходят щиты и защитных дронов. Однако, они воздействуют только на экипаж и системы, не нанося урон корпусу.</text>
+	<text>СОВЕТ: Подсистема шлюзов — Модернизация ваших дверей позволит значительно уменьшить вероятность распространения пожара между помещениями и будет существенно замедлять движения врагов.</text>
+	<text>СОВЕТ: Диалоги с экипажем — Если сектор, в котором вы находитесь, является родным для члена экипажа, то диалог с ним на пустом маяке имеет больше шансов на успех. Для людей родными являются гражданские секторы и секторы повстанцев.</text> <!-- 1.25 -->
+	<text>СОВЕТ: Магазины — Число маяков с магазинами в секторе зависит от его цвета. В зелёных секторах находится 2-3 магазина, в красных — 1-2, в фиолетовых 1-3. В первом секторе нет магазинов.</text> <!-- 1.25 -->
+	<text>СОВЕТ: Торговый сектор — В торговом секторе находятся 5 магазинов, а количество опасных маяков меньше, чем в других секторах. Также ходят слухи о нелегальном оборудовании, продающемся там.</text>
+	<text>СОВЕТ: Прототипы — Прототипы являются самыми мощными орудиями, которые только можно получить, но им часто нужна поддержка других орудий. Чтобы найти прототипы, посещайте родные расовые секторы.</text>
+	<text>СОВЕТ: Родной мир кристалинов — Родной мир кристалинов можно встретить в 6 или 7 секторе на карте секторов. В нём встречаются только самые редкие виды орудий, а также уникальные орудия и дроны кристалинов.</text>
+	<text>СОВЕТ: Корабли ИИ — Корабли аватаров оснащены защитой от ионного оружия и уникальными призматическими лазерами, наносящими обычный и ионный урон одновременно.</text>
+	<text>СОВЕТ: Особые возможности усилений — На стартовых маяках 2-7 секторов вы можете применять особые возможности усилений корабля. Не всегда их использование будет успешным или безопасным.</text>
+	<text>СОВЕТ: Древнее оружие ланиусов — У ланиусов сохранилась информация о старом фотонном вооружении. Хоть оно и не отличается высокой точностью, оно всё ещё представляет большую угрозу.</text>
+	<text>СОВЕТ: Секторы Ордена — Пролёт сквозь секторы Ордена может привести к подгоранию вашего корабля. Убедитесь, что у вас установлена система пожаротушения.</text>
+	<text>СОВЕТ: Корабли Ордена — Корабли Ордена оснащены зажигательным вооружением и системами пожаротушения. Некоторые классы также имеют улучшенные двигатели.</text>
+	<text>СОВЕТ: Нестабильные секторы — Нестабильные секторы известны как одни из самых опасных секторов в Галактике. Здесь нашли пристанище группировки хакеров и пиратов.</text>
+	<!-- 1.21 -->
+	<text>СОВЕТ: Элитные авторазведчики — Элитные авторазведчики опаснее обычных, и встречаются только в секторах повстанцев. Они могут чинить пробоины, а их системы имеют повышенный уровень прокачки. За победу над ними можно получить случайное оружие.</text>
+	<text>СОВЕТ: Корабли HAL — Беспилотники HAL не имеют орудийной системы, зато оснащены ионной фазовой артиллерией, повреждающей экипаж. Их боевые дроны защищены с помощью генератора помех.</text>
+	<text>СОВЕТ: Бортовой компьютер HAL — При получении урона ИИ кораблей HAL включает резервные цепи питания, что позволяет увеличить мощность реактора. Однако, иногда полученный урон может быть фатальным для бортового компьютера.</text>
+	<text>СОВЕТ: Дроны HAL — Дроны HAL являются самыми быстрыми и разрушительными в Галактике. Отдельного упоминания стоит ремонтник систем HAL, способный работать даже при уничтоженной системе дронов.</text>
+	<!-- 1.23 -->
+	<text>СОВЕТ: ОЗУ — Одноразовые залповые установки встречаются в фиолетовых секторах. Они не требуют энергии, но стреляют лишь один раз в бою.</text>
+	<text>СОВЕТ: Пограничный сектор — В пограничном секторе встречаются представители всех рас. Именно здесь проходит основная линия фронта войны с повстанцами.</text>
+	<text>СОВЕТ: Система дронов — Приобретя систему дронов в магазине, вы получите в подарок случайного дрона одной из трёх категорий — атакующего, защитного либо вспомогательного.</text>
+	<!-- 1.25 -->
+	<text>СОВЕТ: Чёрное крыло — Крейсеры чёрного крыла являются передовыми крейсерами повстанцев, они оснащены неразрушимой орудийной системой и преследуют ваш корабль без прикрытия ПКБ. За их уничтожение можно получить хорошую награду.</text>
+	<text>СОВЕТ: Корабли слёрмов — Корабли слёрмов почти невозможно взять на абордаж, так как их система клонирования защищена от прямого урона. Однако, она всё ещё уязвима к огню.</text>
+	<text>СОВЕТ: Ремонтные станции инжи — В секторах инжи могут находиться ремонтные станции с 50% вероятностью. В родном мире инжи всегда есть ремонтная станция. Станции оказывают ремонтные услуги и снабжают припасами за небольшую плату.</text>
+	<text>СОВЕТ: Флагман повстанцев — Чем выше сложность, тем сильнее артиллерии флагмана. С ростом сложности ионная артиллерия перезаряжается быстрее, ракеты и лазер чаще вызывают пожары и пробоины, а луч становится длиннее. От сложности также зависит прочность корпуса флагмана и его расцветка.</text>
+	<text>СОВЕТ: Ремонт — Стоимость ремонта корабля в магазине зависит от номера сектора. С 1 по 3 сектор - это 2 ~. С 4 по 6 сектор - 3 ~. Ремонт в 7 и 8 секторе стоит 4 ~.</text>
+	<!-- 1.25.2 -->
+	<text>СОВЕТ: Авто-корабли — На некоторых беспилотниках дополнительно установлены усиления. Авто-хакеры используют парализующий модуль, авто-агрессоры — авто-перезарядчик, авто-разрушители — два авто-перезарядчика.</text><!-- 1.26 -->
+	<!-- 1.26 -->
+	<text>СОВЕТ: Инжекторы — усиления-инжекторы могут улучшить параметры ваших орудий. Используйте их на стартовых маяках секторов. Имейте в виду, что их применение одноразовое; нельзя улучшить уже улучшенное оружие или оружие, для которого данный инжектор не подходит.</text>
+	<text>СОВЕТ: Золтонские лучи — Золтонские лучи в полтора раза длиннее обычных и имеют повышенные шансы вызвать возгорание или пробоину. Для их работы необходимо иметь в трюме не менее 30 ракет, но они не тратятся с каждым выстрела луча. Лучи на враждебных кораблях могут работать и без ракет.</text>
+	<text>СОВЕТ: Золтонские ионные орудия — Золтонские ионные орудия сочетают в себе свойства тяжёлых и импульсных ионных орудий.</text>
+	<text>СОВЕТ: UWB-пушки — UWB-пушки используют контрабандисты, чтобы скрыть свои орудия, находящиеся внутри этих универсальных оболочек. Внутри UWB не могут находиться бомбы. Также UWB ускоряет перезарядку находящегося внутри оружия на 10%.</text>
+	<text>СОВЕТ: Золтонские корабли — В отличии от золтанцев, золтонцы не имеют защитного суперщита. Вместо этого их обычные щиты неуязвимы для прямого урона, но пожары и тяжёлые ионные орудия по-прежнему могут повредить их. Золтонские корабли оснащены слабым реактором и резервной батареей.</text> <!-- 1.26.2 -->
+	<text>СОВЕТ: Золтонские беспилотники — Как и пилотируемые корабли золтонцев, золтонские беспилотники имеют неуязвимые щиты, слабый реактор и резервную батарею. Они охраняют туманности золтонских секторов.</text>
+	<text>СОВЕТ: Артиллерии — Вы можете приобрести систему артиллерии в магазине. Её тип будет зависеть от класса корабля, на котором вы летите. Приобретённая артиллерия будет сразу 2-го уровня.</text>
+	<!-- 1.26.3 -->
+	<text>СОВЕТ: Универсальный инжектор — его бонус зависит от типа оружия, к которому применяется инжектор:
+	Лазеры, ионки: +50% к скорости снарядов, +15 урон по экипажу.
+	Ракеты, мины, оружие кристалинов, крушитель: +1 базовый урон.
+	Бомбы, эффекторы: +1 бомба за выстрел.
+	Оружие с разбросом: -30% радиуса разброса снарядов.
+	Длинные лучи: +25% к длине и к скорости луча.
+	Точечные лучи: +1 урон по системам.</text>
+	<!-- 1.26.4 -->
+	<text>СОВЕТ: Легендарное оружие — Легендарные орудия очень редкие, они встречаются только в уникальных, "домашних" секторах (кроме торгового, пограничного и обители слёрмов). Эти орудия невероятно мощные.</text><!-- 1.26.5 -->
+</textList>
+
+<textList name="TIPS_LIST_PC">
+	<text load="TIPS_LIST"/>
+	<text>СОВЕТ: Пауза — Для постановки игры на паузу, нажмите пробел. Во время паузы вы можете отдавать приказы и управлять системами корабля.</text>
+	<text>СОВЕТ: Торговля — Оружие, дроны и усиления могут быть проданы за 1/2 от цены в магазине. Нажмите сверху на вкладку ПРОДАТЬ.</text>
+	<text>СОВЕТ: Горячие клавиши — Вы можете запитывать или выбирать оружие, используя клавиши цифр: 1-4 на клавиатуре — слоты оружия, 5-7 — слоты дронов (изменяется в настройках).</text>
+	<text>СОВЕТ: Размер шрифта — Нажатие + / - (изменяется в настройках) позволит вам изменить размер текста событий.</text>
+	<text>СОВЕТ: Порядок оружия — Переставьте оружие или схему дрона, просто перетащив его в желаемое положение. Левый слот отключится в последнюю очередь, если система будет повреждена.</text>
+</textList>
+
+<textList name="TIPS_LIST_IPAD">
+	<text load="TIPS_LIST"/>
+	<text>СОВЕТ: Пауза — Нажмите кнопку PAUSE в любое время, чтобы приостановить игру. Вы можете отдавать приказы экипажу или управлять питанием системы во время паузы.</text>
+	<text>СОВЕТ: Торговля — Оружие, дронов и усиления можно продать за полцены в магазине. Нажмите вкладку ПРОДАТЬ вверху.</text>
+	<text>СОВЕТ: Порядок орудий — перестраивайте орудия или дронов перемещая их в нужную позицию. Самый первый слот будет выключаться последним если система повреждена.</text>
+</textList>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	OUTDATED or TESTING events
+	
+-->
+<event name="NEW" unique="true">
+	<ship load="NEW_TESTS" hostile="true"/>
+</event>
+<ship name="NEW_TESTS" auto_blueprint="REBEL_FAT"> 
+	<destroyed>
+		<text>Вы можете добыть лом из обломков корабля.</text>
+	</destroyed>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
+<event name="DEATH_TEST">
+	<text>Испытание Смерти</text>
+	<crewMember amount="-1"/>
+</event>
+
+<event name="CREW_TEST">
+	<text>Проверка экипажа</text>
+	<crewMember amount="2"/>
+</event>
+
+
+
+
+<!--
+		DEMO
+		Old events for the Original Demo
+	-->
+<!--*******Cloaking-->
+<event name="STEALTH_1">
+	<text>Это прототип корабля, который использует передовую технологию маскировки. Недостатком является отсутствие щитов или оружия. Воспользуйтесь способностью маскировки, чтобы по вам не попали вражеские выстрелы.</text>
+</event>
+<!--**********Armor/speed-->
+<event name="STEALTH_2">
+	<text>Этот корабль основан на конструкции, которая существовала до технологии экранирования и была стандартом для всех кораблей. Бронированный корпус и повышенная мобильность являются основным его достоинством.</text>
+</event>
+<!--*********Shielded-->
+<event name="STEALTH_3">
+	<text>Этот корабль Федерации предназначен для тестирования новой передовой технологии перезарядки щитов. К сожалению, вас заставили тестировать его в одиночку.</text>
+</event>
+<!--*********Boarding-->
+<event name="STEALTH_4">
+	<text>Этот корабль был предназначен для переброски войск в тыл врага. Как таковой, он не оснащён орудиями по умолчанию, но зато его экипаж — лучшие из лучших.</text>
+</event>
+<!--**********Drones — space-->
+<event name="STEALTH_5">
+	<text>Этот корабль представляет собой модифицированное горнодобывающее судно, которое содержит продвинутый ИИ для управления дронами. Он не совсем готов к битве, но будем надеяться, что дроны покроют его недостатки.</text>
+</event>
+<!--**********Drones — crew-->
+<event name="STEALTH_6">
+	<text>Ваше новое судно оснащено современными роботами и лучевым оружием. Трудно было найти полный экипаж, так как с роботами довольно страшно работать</text>
+</event>
+<!--*********Missile fun time-->
+<event name="STEALTH_7">
+	<text>Инженер который спроектировал этот корабль явно любил ракеты. Лишь немногие оппоненты будут в состоянии выдержать заградительные ракеты этого судна, но будьте уверены, что проверили ваши запасы боеприпасов</text>
+</event>
+<event name="DEMO_END">
+	<text>Поздравляем с окончанием обучения! В качестве последнего урока, вы испытаете, каково это быть уничтоженным более сильным противником. Этот пиратский корабль оснащён самыми передовыми вооружением и системами, в том числе прототипом устройства маскировки. Он собирался пришельцами, известными как лучшие инженеры Галактики. А ещё мы отключили ваши двигатели, так что нет смысла пытаться убежать.</text>
+	<status type="limit" target="player" system="engines" amount="0"/>
+	<ship load="IMPOSSIBLE_PIRATE" hostile="true"/>
+</event>
+<ship name="IMPOSSIBLE_PIRATE" auto_blueprint="IMPOSSIBLE_PIRATE">
+	<destroyed>
+		<text>Невозможно! Он должен был быть непобедимым! Даже у создателей симуляции это не получилось. Продолжай, ты это заслужил.</text>
+		<item_modify>
+			<item type="scrap" min="100" max="100"/>
+		</item_modify>
+		<status type="limit" target="player" system="engines" amount="100"/>
+	</destroyed>
+	<deadCrew>
+		<text>Это никогда не появится</text>
+	</deadCrew>
+</ship>
+
+
+
+<!--
+		SYSTEM
+	Some test/system events
+	-->
+<event name="ASTEROID_TEST">
+	<img back="BG_DARK" planet="NONE"/>
+	<text>Мы попали в поле астероидов! Придётся ждать зарядки FTL-привода, прежде чем мы сможем выбраться отсюда. Будем надеяться, что корабль выдержит.</text>
+	<environment type="asteroid"/>
+</event>
+
+<event name="CASH_IN_DRONE">
+	<text>Ваш корабль пока что не оборудован системой дронов. Вы переработали схему дрона на лом.</text>
+	<choice>
+		<text id="continue"/>
+		<event/>
+	</choice>
+</event>
+
+<event name="UNLOCK_STEALTH">
+	<text>Вы наткнулись на скрытую исследовательскую лабораторию Федерации! Они экспериментировали с некоторыми уникальными проектами кораблей. Вы скачали схемы и чертежи для использования в будущем.</text>
+</event>
+
+
+
+
+
+
+
+<!--
+
+***************************************
+		DLC!!!
+	Events added with the DLC
+***************************************
+	
+	-->
+
+
+	<!-- 
+	<<<===== ITEMS=====>>>
+	-->
+
+<event name="TAVERN_HIRE" unique="true"><!-- 1.21 -->
+	<text load="TAVERN_HIRE_TEXT"/>
+	<choice>
+		<text>Нанять члена экипажа.</text>
+		<event>
+			<crewMember amount="1"/>
+			<item_modify>
+				<item type="scrap" min="-35" max="-15"/><!-- 1.25 --><!-- 1.31 -->
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Нанять члена экипажа.</text>
+		<event>
+			<crewMember amount="1"/>
+			<item_modify>
+				<item type="scrap" min="-40" max="-20"/><!-- 1.25 --><!-- 1.31 -->
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Нанять члена экипажа.</text>
+		<event>
+			<crewMember amount="1"/>
+			<item_modify>
+				<item type="scrap" min="-50" max="-10"/><!-- 1.25 --><!-- 1.31 -->
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Не нанимать никого.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="TAVERN_HIRE_TEXT">
+	<text>Вы нашли космическую станцию, установленную для путешественников. Просматривая списки, вы находите таверну, полную наёмников. Вы ищете потенциальных членов экипажа.</text>
+	<text>Несколько кораблей расположены вокруг стоянки. Вы получаете сообщение: «Если вы ищете кого-то, чтобы нанять себе в команду, вы прибыли в правильное место!»</text>
+	<text>Кажется, этот маяк служит местом встречи для местных. Похоже, здесь вы сможете найти экипаж, готовый сражаться на вашем корабле... за определённую цену.</text>
+</textList>
+
+
+<event name="TRADER_UPGRADES_EXCHANGE" unique="true"> <!-- 1.6 -->
+	<text load="TRADER_UPGRADES_EXCHANGE_TEXT"/>
+	<choice req="reactor" max_lvl="49" blue="false">
+		<text>Согласиться на сделку.</text>
+		<event load="TRADER_UPGRADES_EXCHANGE_LIST"/>
+	</choice>
+	<choice req="reactor" max_lvl="49" blue="false">
+		<text>Вежливо отказать.</text>
+		<event>	
+			<text>Вам самим нужны ваши припасы.</text>
+		</event>
+	</choice>
+	<choice req="reactor" lvl="50" blue="false">
+		<text>В этом нет нужды, наш реактор уже максимального уровня.</text>
+		<event/>
+	</choice>
+</event>
+
+<textList name="TRADER_UPGRADES_EXCHANGE_TEXT">
+	<text>«Вы выглядите как военное судно. Мы пытаемся вернуться домой живыми. Я — инженер, и мог бы попытаться улучшить ваш реактор, если у вас есть дополнительные запасы».</text>
+	<text>Вы получили сообщение от маленького конвоя. Им нужны некоторые военные припасы, а в обмен они предлагают улучшить ваш реактор.</text>
+</textList>
+
+<eventList name="TRADER_UPGRADES_EXCHANGE_LIST">
+	<event>
+		<text>Вы произвели обмен, и их команда заходит на борт, чтобы улучшить ваш реактор.</text>
+		<item_modify>
+			<item type="missiles" min="-5" max="-3"/>
+			<item type="drones" min="-2" max="-0"/>
+		</item_modify>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>Вы произвели обмен, и их команда заходит на борт, чтобы улучшить ваш реактор.</text>
+		<item_modify>
+			<item type="missiles" min="-2" max="0"/>
+			<item type="drones" min="-3" max="-2"/>
+		</item_modify>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>Вы произвели обмен, и их команда заходит на борт, чтобы улучшить ваш реактор.</text>
+		<item_modify>
+			<item type="missiles" min="-2" max="0"/>
+			<item type="drones" min="-2" max="0"/>
+			<item type="fuel" min="-3" max="-2"/>
+		</item_modify>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+</eventList>
+	
+<event name="TRADER_UPGRADES" unique="true">
+	<text load="TRADER_UPGRADES_TEXT"/>
+	<choice hidden="true">
+		<text>Спросить об их специализации.</text>
+		<event load="TRADER_UPGRADES_LIST"/>
+	</choice>
+	<choice>
+		<text>Отказаться.</text>
+		<event>
+			<text>Вы благодарите их за их предложение, но готовитесь двигаться дальше.</text>
+		</event>
+	</choice>
+</event>
+<textList name="TRADER_UPGRADES_TEXT">
+	<text>По прибытии вас немедленно поприветствовала мобильная стыковочная платформа. «Приветствуем в магазине Дяди Джо "Почини-ка"! Нужна регулировка? Мы поможем!»</text>
+	<text>В этом округе расположено несколько частных платформ для сборки и ремонта кораблей. Вы находите свободное место в одной из них для срочного техобслуживания.</text>
+	<text>Вы принимаете автоматическое сообщение с находящейся рядом космической станции. Местные кораблестроители могут выполнять аварийные работы на военных кораблях.</text>
+	<text>Вы получили сообщение от небольшого конвоя беженцев. «Приветствуем. Мы бы рады помочь в вашей миссии, но нам почти нечего предложить. Может, если у вас есть ненужный металл, мы бы смогли работать на вашем корабле?»</text>
+</textList>
+
+<eventList name="TRADER_UPGRADES_LIST"> <!-- 1.6 -->
+	<event>
+		<text>Они предлагают улучшить вашу систему кислорода в обмен на лом.</text>
+		<choice req="oxygen" lvl="0" max_lvl="0" blue="false">
+			<text>Увидев, что у вас нет этой системы, они предлагают установить её по скидке.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-15" max="-15"/>
+				</item_modify>
+				<system name="oxygen"/>
+			</event>
+		</choice>
+		<choice req="oxygen" max_lvl="1" max_group="0" blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-15" max="-5"/>
+				</item_modify>
+				<upgrade amount="1" system="oxygen"/>
+			</event>
+		</choice>
+		<choice req="oxygen" max_lvl="2" max_group="0" blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-10"/>
+				</item_modify>
+				<upgrade amount="1" system="oxygen"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите их и готовитесь уходить.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Они предлагают улучшить вашу рубку управления в обмен на лом.</text>
+		<choice req="pilot" max_lvl="1" max_group="0"  blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-10"/>
+				</item_modify>
+				<upgrade amount="1" system="pilot"/>
+			</event>
+		</choice>
+		<choice req="pilot" max_lvl="2" max_group="0"  blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-25" max="-15"/>
+				</item_modify>
+				<upgrade amount="1" system="pilot"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите их и готовитесь уходить.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Они предлагают улучшить вашу подсистему шлюзов в обмен на лом.</text>
+		<choice req="doors" lvl="0" max_lvl="0" blue="false">
+			<text>Увидев, что у вас нет этой системы, они предлагают установить её по скидке.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-35" max="-35"/>
+				</item_modify>
+				<system name="doors"/>
+			</event>
+		</choice>
+		<choice req="doors" max_lvl="1" max_group="0"  blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-10"/>
+				</item_modify>
+				<upgrade amount="1" system="doors"/>
+			</event>
+		</choice>
+		<choice req="doors" max_lvl="2" max_group="0"  blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-25" max="-15"/>
+				</item_modify>
+				<upgrade amount="1" system="doors"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите их и готовитесь уходить.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Они предлагают улучшить вашу подсистему сенсоров в обмен на лом.</text>
+		<choice req="sensors" lvl="0" max_lvl="0" blue="false">
+			<text>Увидев, что у вас нет этой системы, они предлагают установить её по скидке.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-25" max="-25"/>
+				</item_modify>
+				<system name="sensors"/>
+			</event>
+		</choice>
+		<choice req="sensors" max_lvl="1" max_group="0"  blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-10"/>
+				</item_modify>
+				<upgrade amount="1" system="sensors"/>
+			</event>
+		</choice>
+		<choice req="sensors" max_lvl="2" max_group="0"  blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-25" max="-15"/>
+				</item_modify>
+				<upgrade amount="1" system="sensors"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите их и готовитесь уходить.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Они предлагают улучшить ваш реактор в обмен на лом.</text>
+		<choice req="reactor" max_lvl="49" blue="false">
+			<text>Согласиться на обмен.</text>
+			<event>
+				<text>Вы пускаете их бригаду на борт, и они довольно быстро завершают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-20" max="-5"/>
+				</item_modify>
+				<upgrade amount="1" system="reactor"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>Вы благодарите их и готовитесь уходить.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>	
+
+<event name="HELP_MINERS" unique="true">
+	<text>Вы пролетаете мимо шахтёрской колонии на астероиде. Они немедленно посылают сообщение, гласящее: «Приветствие. Поставки взрывчатки для добычи закончились, с тех пор как повстанцы блокировали систему. У вас есть дополнительная взрывчатка?»</text>
+	<choice hidden="true" req="WEAPONS_MISSILES_EVENTS">
+		<text>(Ракетное орудие) Предложить решить их проблему, запустив ракету.</text>
+		<event load="HELP_MINERS_RAK"/>
+	</choice>
+	<choice hidden="true" req="WEAPONS_BREACH_BOMBS"><!-- 1.22 -->
+		<text>(Бронебомба) Предложить решить их проблему, телепортировав бронебомбу.</text>
+		<event load="HELP_MINERS_BREACH"/>
+	</choice>
+	<choice hidden="true">
+		<text>Дать им требуемые 5 ракет.</text>
+		<event load="HELP_MINERS_1"/>
+	</choice>
+	<choice hidden="true">
+		<text>Дать им 15 ракет.</text>
+		<event load="HELP_MINERS_2"/>
+	</choice>
+	<choice hidden="true">
+		<text>Отказать.</text>
+		<event>
+			<text>«Я понимаю. Удачи вам. Мы постараемся обойтись тем, что у нас есть».</text>
+		</event>
+	</choice>
+</event>
+<eventList name="HELP_MINERS_RAK">
+	<event>
+		<text>«Я ценю ваш энтузиазм, но у нас есть определённые протоколы использования взрывчатки на рабочей площадке. Стрельба из военного орудия в наши шахты не совсем то, что я назвал бы "дружеской помощью"».</text>
+		<choice hidden="true">
+			<text>Дать им требуемые 5 ракет.</text>
+			<event load="HELP_MINERS_1"/>
+		</choice>
+		<choice hidden="true">
+			<text>Дать им 15 ракет.</text>
+			<event load="HELP_MINERS_2"/>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>«Я понимаю. Удачи вам. Мы постараемся обойтись тем, что у нас есть».</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Они с сомнением соглашаются, и вы отдаёте команду на ракетный залп по шахте. Когда дым рассеялся, вы с ужасом увидели, что шахту завалило осыпавшимся грунтом! Вы делаете ноги отсюда прежде, чем шахтёры вспомнили про вас.</text>
+		<item_modify>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify> 
+	</event>
+	<event>
+		<text>Они с сомнением соглашаются, и вы отдаёте команду на ракетный залп по шахте. Когда дым рассеялся, вы с ужасом увидели, что шахту завалило осыпавшимся грунтом! Вы делаете ноги отсюда прежде, чем шахтёры вспомнили про вас.</text>
+		<item_modify>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify> 
+	</event>
+	<event>
+		<text>Они с сомнением соглашаются, и вы приказываете сделать ракетный залп по шахте. К счастью, ваш план сработал как и было задумано, шахта значительно расширилась после вашей "дружеской помощи". Благодарные шахтёры отправляют вам орудие в подарок, а их инженеры улучшают реактор вашего корабля.</text>
+		<upgrade amount="1" system="reactor"/>
+		<weapon name="RANDOM"/>
+		<item_modify>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify> 
+	</event>
+</eventList>
+<eventList name="HELP_MINERS_BREACH"><!-- 1.22 -->
+	<event>
+		<text>«Я ценю ваш энтузиазм, но у нас есть определённые протоколы использования взрывчатки на рабочей площадке. Стрельба из военного орудия в наши шахты не совсем то, что я назвал бы "дружеской помощью"».</text>
+		<choice hidden="true">
+			<text>Дать им требуемые 5 ракет.</text>
+			<event load="HELP_MINERS_1"/>
+		</choice>
+		<choice hidden="true">
+			<text>Дать им 15 ракет.</text>
+			<event load="HELP_MINERS_2"/>
+		</choice>
+		<choice hidden="true">
+			<text>Отказаться.</text>
+			<event>
+				<text>«Я понимаю. Удачи вам. Мы постараемся обойтись тем, что у нас есть».</text>
+			</event>
+		</choice>
+	</event>
+	<!-- <event>
+		<text>Они с сомнением соглашаются, и вы отдаёте команду телепортировать в шахту бронебомбу. Когда дым рассеялся, вы с ужасом увидели, что шахту завалило осыпавшимся грунтом! Вы делаете ноги отсюда прежде, чем шахтёры вспомнили про вас.</text>
+		<item_modify>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify> 
+	</event> --><!-- 1.31 -->
+	<event>
+		<text>Они с сомнением соглашаются, и вы приказываете телепортировать в шахту бронебомбу. К счастью, ваш план сработал как и было задумано, шахта значительно расширилась после вашей "дружеской помощи". Благодарные шахтёры передают вам усиление для корабля в подарок, а их инженеры улучшают реактор вашего корабля.</text>
+		<upgrade amount="1" system="reactor"/>
+		<augment name="RANDOM"/>
+		<item_modify>
+			<item type="missiles" min="-1" max="-1"/>
+		</item_modify> 
+	</event>
+</eventList>
+<eventList name="HELP_MINERS_1">
+	<event>
+		<text>Они благодарят вас за вашу щедрость и предлагают немного лома взамен.</text>
+		<item_modify>
+			<item type="scrap" min="15" max="25"/>
+			<item type="missiles" min="-5" max="-5"/>
+		</item_modify> 
+	</event>
+	<event>
+		<text>Они благодарят вас и предлагают своих инженеров для починки вашего корабля.</text>
+		<damage amount="-10"/>
+		<item_modify>
+			<item type="missiles" min="-5" max="-5"/>
+		</item_modify> 
+	</event>
+	<event>
+		<text>Они благодарят вас и предлагают своих инженеров, чтобы улучшить ваш реактор.</text>
+		<upgrade amount="1" system="reactor"/>
+		<item_modify>
+			<item type="missiles" min="-5" max="-5"/>
+		</item_modify> 
+	</event>
+</eventList>
+<eventList name="HELP_MINERS_2">
+	<event>
+		<text>«Ого. Это значительно нам поможет. Дайте посмотреть, что мы можем предложить вам». Они достают немного лома, и их команда пытается отремонтировать часть повреждений корпуса корабля.</text>
+		<damage amount="-10"/>
+		<item_modify>
+			<item type="scrap" min="30" max="40"/>
+			<item type="missiles" min="-15" max="-15"/>
+		</item_modify> 
+	</event>
+	<event>
+		<text>«Ого. Это значительно нам поможет». Они предлагают своих инженеров, чтобы отремонтировать корабль и улучшить ваш реактор.</text>
+		<damage amount="-15"/>
+		<upgrade amount="1" system="reactor"/>
+		<item_modify>
+			<item type="missiles" min="-15" max="-15"/>
+		</item_modify> 
+	</event>
+	<event>
+		<text>«Ого. Это значительно нам поможет. Что же мы можем вам предложить за ваши хлопоты...» Спустя некоторое время они доставили усиление для корабля, которое вы можете установить, а их инженеры тем временем чинят корпус вашего корабля.</text>
+		<damage amount="-5"/>
+		<augment name="RANDOM"/>
+		<item_modify>
+			<item type="missiles" min="-15" max="-15"/>
+		</item_modify> 
+	</event>
+</eventList>
+		
+		
+		
+	<!-- 
+	<<<===== DISTRESS=====>>>
+	-->
+
+<event name="REFUGEE_GHOST">
+	<text>Вы натолкнулись на дрейфующий корабль беженцев. Вероятно, они бежали от повстанцев, и у них закончилось топливо. Их аварийный маяк активен, но вы не уверены, что на борту кто-то есть. Похоже, что связь отключена.</text>
+	<choice hidden="true">
+		<text>Приготовиться высадиться и исследовать.</text>
+		<event load="REFUGEE_GHOST_LIST"/>
+	</choice>
+	<choice>
+		<text>Игнорировать корабль.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>
+<eventList name="REFUGEE_GHOST_LIST">
+	<event>
+		<text>Корабль полностью заброшен. Никаких следов команды или груза. Озадаченные, вы покидаете корабль-призрак и возвращаетесь к своим делам.</text>
+	</event>
+	<event>
+		<text>Корабль полностью заброшен. Кажется, у него закончилось топливо... А у команды закончилась еда сразу после этого. Несмотря на эту ужасную сцену, вы можете забрать некоторые припасы из грузового отсека.</text>
+		<autoReward level="MED">missiles</autoReward>
+	</event>
+	<event>
+		<text>Кажется, у корабля закончилось топливо... А у команды закончилась еда сразу после этого. Несмотря на эту ужасную сцену, вы находите одного выжившего члена команды, запертого в морозилке, почти хорошо сохранившегося и, по-видимому, упущенного из вида голодающим экипажем.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event>
+		<text>Исследуя корабль, вы подверглись нападению команды, ставшими людоедами! Обезумев от нехватки еды, они стали поедать друг друга. Пробиваясь к выходу, один из вашей команды попал в лапы к нападавшим, и вы были вынуждены оставить его, чтобы не потерять весь корабль.</text>
+		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+			<text id="continue"/>
+			<event>
+				<removeCrew>
+					<clone>true</clone>
+					<text>Клон брошенного члена команды ждёт вашего возвращения на корабле и старается не задумываться о судьбе своего предшественника.</text>
+				</removeCrew>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Как только ваш корабль приблизился, стыковочный транспортёр другого корабля неожиданно включился, и теперь ваши палубы кишат беженцами-каннибалами! Обезумев от нехватки еды, они стали поедать друг друга, и теперь вы и ваша команда — следующие!</text>
+		<boarders min="2" max="4" class="human"/>
+		<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true"><!-- 1.31 -->
+			<enemyCrew amount="0" includeClonebay="false"/>
+		</triggeredEvent>
+	</event>
+</eventList>
+<!-- -->
+
+
+
+
+<!-- This main list is then copied into the different sector types — Have everything that uses it be sector specific so we don't get duplicates in one sector -->
+<event name="REFUGEE_DISTRESS">
+	<text>Вы натолкнулись на дрейфующий корабль беженцев. Похоже, они бежали от повстанцев и потерялись в пространстве. Их аварийный маяк активен, но вы не уверены, что на борту кто-то есть.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>  
+<event name="REFUGEE_NO_DISTRESS">  <!-- this is actually a NEUTRAL, I'm just leaving it here cause it's linked-->
+	<text>Ваши сенсоры засекли беженцев, дрейфующих сквозь систему. Без сомнения, это один из многих кораблей, спасающихся от продвижения повстанцев. Они, кажется, не обнаружили вас... или пытаются избежать внимания.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+</event>
+<event name="REFUGEE_TRADER">
+	<text>Корабль рад вас слышать. У них заканчиваются расходные материалы. Они предлагают сделку.</text>
+	<choice>
+		<text>Торговать с ними.</text>
+		<event load="TRADER_LIST"/>
+	</choice>
+	<choice>
+		<text>Вежливо отказаться.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST">
+	<event load="REFUGEE_TRADER"/>
+	<event load="REFUGEE_TRADER"/>
+	<event load="REFUGEE_TRADER"/>
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>Как только вы начали приветствовать судно, они выдвинули свои орудия из корпуса! Это пиратская засада!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>Как только вы приветствуете корабль беженцев, золтанский корабль внезапно прыгает в эту систему... Они утверждают, что беженцы являются преступниками, и обвиняют вас в перевозке беглецов! Прежде чем вы успели ответить, они обрывают связь и заряжают орудия!</text>
+		<ship load="ZOLTAN_REFUGEE" hostile="true"/>
+	</event>
+	<event>
+		<text>Как только вы приветствуете корабль беженцев, пиратский корабль прыгает в эту систему... Они использовали корабль беженцев в качестве приманки!</text>
+		<ship load="PIRATE_REFUGEE" hostile="true"/>
+	</event>
+	<event>
+		<text>Как только вы приветствуете корабль беженцев, корабль слагов прыгает в эту систему... Это была спортивная охота на беженцев, и теперь вы тоже в качестве добычи!</text>
+		<ship load="SLUG_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+<ship name="ZOLTAN_REFUGEE" auto_blueprint="SHIPS_ZOLTAN">
+	<destroyed>
+		<text>Золтанский корабль распадается на части, и вы забираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём беженцев.</text>
+			<event>
+				<text>Корабль беженцев благодарит вас за вашу помощь. И в качестве жеста доброй воли (и видя, как эффективно вы расправились с вражеским кораблём) предлагают вам сэкономленные припасы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Теперь безжизненный корабль золтанцев станет лёгкой добычей.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём беженцев.</text>
+			<event>
+				<text>Корабль беженцев благодарит вас за вашу помощь. И в качестве жеста доброй воли (и видя, как эффективно вы расправились с вражеским кораблём) предлагают вам сэкономленные припасы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="PIRATE_REFUGEE" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Пиратский корабль разваливается на части, вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём беженцев.</text>
+			<event>
+				<text>Корабль беженцев благодарит вас за вашу помощь. И в качестве жеста доброй воли (и видя, как эффективно вы расправились с вражеским кораблём) предлагают вам сэкономленные припасы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Теперь безжизненный корабль пиратов станет лёгкой добычей.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём беженцев.</text>
+			<event>
+				<text>Корабль беженцев преследовали пираты с тех пор, как они покинули свою родную планету. И в качестве жеста доброй воли (и видя, как эффективно вы расправились с вражеским кораблём) предлагают вам сэкономленные припасы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+<ship name="SLUG_REFUGEE" auto_blueprint="SHIPS_JELLY">
+	<destroyed>
+		<text>Корабль слагов разваливается на части, вы собираете всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём беженцев.</text>
+			<event>
+				<text>За кораблём беженцев охотились слаги с тех пор, как они покинули свою родную планету. И в качестве жеста доброй воли (и видя, как эффективно вы расправились с вражеским кораблём) предлагают вам сэкономленные припасы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Безжизненный корабль слагов стал лёгкой добычей.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с кораблём беженцев.</text>
+			<event>
+				<text>За кораблём беженцев охотились слаги с тех пор, как они покинули свою родную планету. И в качестве жеста доброй воли (и видя, как эффективно вы расправились с вражеским кораблём) предлагают вам сэкономленные припасы.</text>
+				<autoReward level="LOW">standard</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+<!-- ZOLTAN SPECIFIC VERSIONS OF THE SAME EVENTS-->
+<event name="REFUGEE_DISTRESS_ZOLTAN">
+	<text>Вы натолкнулись на дрейфующий корабль беженцев. Похоже, они бежали от повстанцев и потерялись в пространстве. Их аварийный маяк активен, но вы не уверены, что на борту кто-то есть.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST_ZOLTAN"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>  
+<event name="REFUGEE_NO_DISTRESS_ZOLTAN"> 
+	<text>Ваши сенсоры засекли беженцев, дрейфующих сквозь систему. Без сомнения, это один из многих кораблей, спасающихся от продвижения повстанцев. Они, кажется, не обнаружили вас... или пытаются избежать внимания.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST_ZOLTAN"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST_ZOLTAN">
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>Как только вы приветствуете корабль беженцев, золтанский корабль внезапно прыгает в эту систему... Они утверждают, что беженцы являются преступниками, и обвиняют вас в перевозке беглецов! Прежде чем вы успели ответить, они обрывают связь и заряжают орудия!</text>
+		<ship load="ZOLTAN_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+<!-- PIRATE SPECIFIC VERSIONS OF THE SAME EVENTS-->
+<event name="REFUGEE_DISTRESS_PIRATE">
+	<text>Вы натолкнулись на дрейфующий корабль беженцев. Похоже, они бежали от повстанцев и потерялись в пространстве. Их аварийный маяк активен, но вы не уверены, что на борту кто-то есть.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST_PIRATE"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>  
+<event name="REFUGEE_NO_DISTRESS_PIRATE"> 
+	<text>Ваши сенсоры засекли беженцев, дрейфующих сквозь систему. Без сомнения, это один из многих кораблей, спасающихся от продвижения повстанцев. Они, кажется, не обнаружили вас... или пытаются избежать внимания.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST_PIRATE"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST_PIRATE">
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>Как только вы приветствуете корабль беженцев, пиратский корабль прыгает в эту систему... Они использовали корабль беженцев в качестве приманки!</text>
+		<ship load="PIRATE_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+<!-- SLUG SPECIFIC VERSIONS OF THE SAME EVENTS-->
+<event name="REFUGEE_DISTRESS_SLUG">
+	<text>Вы натолкнулись на дрейфующий корабль беженцев. Похоже, они бежали от повстанцев и потерялись в пространстве. Их аварийный маяк активен, но вы не уверены, что на борту кто-то есть.</text>
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST_SLUG"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+	<distressBeacon/>
+</event>  
+<event name="NEBULA_REFUGEE_NO_DISTRESS_SLUG"> 
+	<text>Ваши сенсоры засекли беженцев, дрейфующих сквозь систему. Без сомнения, это один из многих кораблей, спасающихся от продвижения повстанцев. Они, кажется, не обнаружили вас... или пытаются избежать внимания.</text>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<choice>
+		<text>Вызвать их.</text>
+		<event load="REFUGEE_HAIL_LIST_SLUG"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на беженцев.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="REFUGEE_HAIL_LIST_SLUG">
+	<event load="REFUGEE_TRADER"/>
+	<event>
+		<text>Как только вы приветствуете корабль беженцев, пиратский корабль прыгает в эту систему... Они использовали корабль беженцев в качестве приманки!</text>
+		<ship load="PIRATE_REFUGEE" hostile="true"/>
+	</event>
+</eventList>
+
+
+
+
+
+	<!-- 
+	<<<===== NEUTRAL!=====>>>
+	-->
+	
+	
+<event name="EMPTY_STATION2" unique="true"> <!--Neutrals-->
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text load="EMPTY_STATION2_TEXT"/>
+	<choice hidden="true">
+		<text>Приступить к изучению станции.</text>
+		<event load="EMPTY_STATION2_LIST"/>
+	</choice>
+	<choice>
+		<text>Оставаться рядом с маяком.</text>
+		<event>
+			<text>Вы решаете, что сейчас не время для исследований.</text>
+		</event>
+	</choice>
+</event>
+<textList name="EMPTY_STATION2_TEXT">
+	<text>Вы находите маленькую космическую станцию, похоже, покинутую.</text>
+	<text>По прибытии вы обнаруживаете лунную колонию, но сканирование показывает, что она покинута. Также вы находите заброшенную станцию возле маяка.</text>
+	<text>По всей видимости, здесь недавно было сражение. Повсюду обломки кораблей, но одна станция, кажется, цела.</text>
+</textList>
+<eventList name="EMPTY_STATION2_LIST">
+	<event>
+		<text>При приближении становится ясно, что станция — просто пустая оболочка. Всё полезное было давно украдено.</text>
+	</event>
+	<event>	
+		<text>Вы осторожно приближаетесь, но не замечаете никакой опасности. Станцию покинули совсем недавно. Похоже, там была размещена небольшая гостиница. Вы бегло обыскиваете станцию и забираете всё полезное, что удаётся найти.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>При ближайшем осмотре оказывается, что большая часть её корпуса разрушена. Вы забираете оставшиеся предметы, которые можете найти.</text>
+		<autoReward level="LOW">stuff</autoReward>
+	</event>
+	<event>
+		<text>Станция разгромлена. Вы находите повреждённый отсек клонирования, но, кажется, он работает.</text>
+		<choice hidden="true" req="clonebay">
+			<text>(Клон-отсек) Поискать сохранившиеся хранилища ДНК.</text>
+			<event>
+				<text>Аппарат клонирования долго не работал, но вы находите кого-то в очереди на клонирование. Вы передаёте данные в свой отсек клонирования и через некоторое время получаете результат.</text>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="EMPTY_STATION2_CLONE"/>
+				</choice>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Сломать механизм.</text>
+			<event>
+				<text>Вы берете всё, что можете, и готовитесь двигаться дальше.</text>
+				<autoReward level="LOW">scrap_only</autoReward>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Вы пристыковались к станции, чтобы обыскать её. Но как только вы открыли воздушный шлюз, пираты ворвались к вам на корабль. В это время сканеры засекают незамеченный ранее пиратский корабль, ринувшийся в атаку!</text>
+		<boarders min="2" max="2"/>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>Вы пристыковались к станции, чтобы обыскать её. Но как только вы открыли воздушный шлюз, пираты ворвались к вам на корабль. В это время на мостике возникают множество предупредительных сигналов. Пираты активировали удалённую систему планетарной обороны, и она нацелена на ваш корабль!</text>
+		<boarders min="2" max="4"/>
+		<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true"><!-- 1.31 -->
+			<enemyCrew amount="0" includeClonebay="false"/>
+		</triggeredEvent>
+		<environment type="PDS" target="player"/>
+	</event>
+</eventList>	
+<eventList name="EMPTY_STATION2_CLONE">
+	<event>
+		<text>Клон дезориентирован, но вы приводите его в чувство. Не видя других вариантов, он просит на время принять его в команду.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event>
+		<text>Клон дезориентирован, но, собравшись, берёт себя в руки. Не видя других вариантов, он просит на время принять его в команду.</text>
+		<crewMember amount="1"/>
+	</event>
+	<event>
+		<text>Клон впадает в безумное состояние и отказывается успокоиться. У вас нет выбора, кроме как сражаться.</text>
+		<boarders min="1" max="1"/>
+	</event>
+</eventList>
+
+
+	
+
+
+<event name="WRECKAGE_EVENT">
+	<text load="WRECKAGE_TEXT"/>
+	<choice req="sensors" lvl="2" max_group="0" hidden="true">
+		<text>(Улучшенные сенсоры) Использовать сенсоры для сканирования обломков.</text>
+		<event>
+			<text>Вы просматриваете поле боя и с помощью ваших сенсоров собираете небольшое количество материалов из обломков. Затем готовитесь к прыжку.</text>
+			<autoReward level="MED">stuff</autoReward>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="3" max_group="0" hidden="true">
+		<text>(Продвинутые сенсоры) Использовать сенсоры для сканирования обломков.</text>
+		<event load="WRECKAGE_SCANNED"/>
+	</choice>
+	<choice req="SHIPRADAR" hidden="true"><!-- 1.26.3 -->
+		<text>(Направленный сканер) Использовать направленный сканер для сканирования обломков.</text>
+		<event load="WRECKAGE_SCANNED"/>
+	</choice>
+	<choice hidden="true" req="SHIPRADAR2"><!-- 1.27.1 -->
+		<text>(Анализатор морфов) Использовать анализатор для сканирования обломков.</text><!-- 1.27.1 -->
+		<event load="WRECKAGE_SCANNED"/>
+	</choice>
+	<choice hidden="true">
+		<text>Исследовать поле боя.</text>
+		<event load="WRECKAGE_INVESTIGATE"/>
+	</choice>
+	<choice>
+		<text>Не обращать внимания на обломки и продолжить полёт.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="WRECKAGE_TEXT">
+	<text>То, что поначалу кажется простой туманностью, на самом деле — скопление огромного количества обломков от жестокого сражения между несколькими кораблями. Обломки дрейфуют на ваших экранах и, падая в глубины туманности, скрываются из виду. Трудно определить без тщательного расследования, кем были соперники.</text>
+	<text>Вы прыгнули в место, где видны последствия жестокого сражения между несколькими кораблями. Обломки дрейфуют на ваших экранах, и всё ещё можно увидеть искрящиеся и разваливающиеся останки умирающих кораблей. Трудно определить без тщательного расследования, кем были соперники.</text>
+</textList>
+<eventList name="WRECKAGE_SCANNED">
+	<event>
+		<text>Вы сканируете поле боя с помощью ваших сенсоров и видите, что можете собрать большое количество материалов из обломков. Неплохо набив трюм, вы готовитесь к прыжку.</text>
+		<autoReward level="HIGH">stuff</autoReward>
+	</event>
+	<event>
+		<text>Вы сканируете поле боя и в обломках находите прототип военного корабля! Экипаж был убит, но их основное орудие осталось целым! Вы забираете его и возвращаетесь на борт.</text>
+		<autoReward level="LOW">weapon</autoReward>
+	</event>
+</eventList>
+
+<eventList name="WRECKAGE_INVESTIGATE">
+	<event>
+		<text>Вы сканируете поле боя, но здесь мало что осталось. Разочарованные, вы готовитесь к прыжку.</text>
+		<item_modify> <!-- 1.26 -->
+			<item type="scrap" min="1" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Вы сканируете поле боя, но здесь мало что осталось. Разочарованные, вы готовитесь к прыжку.</text>
+		<item_modify> <!-- 1.26 -->
+			<item type="scrap" min="1" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Вы сканируете поле боя, но здесь мало что осталось. Разочарованные, вы готовитесь к прыжку.</text>
+		<item_modify> <!-- 1.26 -->
+			<item type="scrap" min="1" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Вы сканируете поле боя, но здесь мало что осталось. Разочарованные, вы готовитесь к прыжку.</text>
+		<item_modify> <!-- 1.26 -->
+			<item type="scrap" min="1" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Вы сканируете поле боя и собираете немного полезных материалов из обломков.</text>
+		<autoReward level="MED">stuff</autoReward>
+	</event>
+	<event>
+		<text>По мере приближения к обломкам в системе доносятся крики с корабля мантисов... Они либо почувствовали добычу, либо заканчивают работу, которую начали их коллеги.</text>
+		<ship load="MANTIS_FIGHT" hostile="true"/>
+	</event>
+	<event>
+		<text>Кажется, это обломки, оставшиеся от битвы между Федерацией и крейсерами повстанцев. Похоже, корабли Федерации храбро сражались, хоть и были в меньшинстве. Когда вы начинаете более подробно исследовать обломки, в систему прибывает подкрепление повстанцев, они атакуют ваш корабль!</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>По мере приближения к обломкам рядом появляется золтанский корабль. Он ошибочно принимает вас за одного из нападавших, обвиняет вас, как враждебных агрессоров, в нарушении золтанского пространства и открывает огонь!</text>
+		<ship load="ZOLTAN_SHIP" hostile="true"/>
+	</event>
+	<event>
+		<text>По мере приближения к обломкам рядом появляется корабль слагов. Он секунду колеблется, как будто удивлён, увидев, что кто-то остался, а затем исчезает, не сказав ни слова. Вы возобновляете сканирование системы, настороженно относясь к любым другим посетителям.</text>
+	</event>
+</eventList>
+
+
+
+
+
+<event name="FUELING_STATION" unique="true">
+	<text>На орбите этого маяка находится небольшая платформа. Она выглядит как своего рода заправочная станция и весело транслирует невысокие цены в широком спектре частот и языков.</text>
+	<choice hidden="true">
+		<text>Состыковаться с заправочной платформой.</text>
+		<event load="FUELING_STATION_LIST"/>
+	</choice>
+	<choice>
+		<text>Игнорировать заправочную платформу.</text>
+		<event load="FUELING_STATION_IGNORE"/>
+	</choice>
+</event>
+<eventList name="FUELING_STATION_IGNORE">
+	<event>
+		<text>Когда вы готовитесь покинуть систему, на сканерах неожиданно появляется пиратский корабль — похоже, они использовали платформу в качестве приманки!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event/>
+	<event/>
+</eventList>
+<eventList name="FUELING_STATION_LIST">
+	<event load="FUELING_STATION_NORMAL_LIST"/>
+	<event load="FUELING_STATION_PIRATE_LIST"/>
+</eventList>
+<eventList name="FUELING_STATION_NORMAL_LIST">
+	<event>
+		<text>Платформа предлагает сделку.</text>
+		<choice>
+			<text>Принять предложение.</text>
+			<event>
+				<item_modify>
+					<item type="fuel" min="5" max="7"/> <!-- 1.25 -->
+					<item type="scrap" min="-10" max="-5"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Отказаться.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Автоматизированная платформа повреждена. Вы можете украсть столько топлива, сколько осталось.</text>
+		<choice hidden="true">
+			<text>Ограбить.</text>
+			<event>
+				<text>Если вы заберёте топливо, по крайней мере оно не попадёт в руки повстанцев. Вы нарушаете герметичность резервуаров и получаете доступ к остаткам запасов топлива.</text>
+				<item_modify>
+					<item type="fuel" min="3" max="5"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Война не оправдывает отказ от своих принципов. Вы оставляете платформу в покое.</text>
+			<event/>
+		</choice>
+	</event>
+	<event>
+		<text>Платформа, кажется, сбоит и может воспламениться в любой момент.</text>
+		<choice hidden="true">
+			<text>Быстро состыковаться и заправиться.</text>
+			<event name="FUELING_STATION_BLOW"/>
+		</choice>
+		<choice>
+			<text>Отойти от станции на безопасное расстояние.</text>
+			<event>
+				<text load="FUELING_STATION_LEAVE"/> <!-- 1.24 -->
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+<textList name="FUELING_STATION_LEAVE"> <!-- 1.24 -->
+	<text>Вы отходите от станции. Через некоторое время несколько тихих взрывов оповещают об уничтожении разгерметизированных резервуаров.</text>
+	<text>Вы отходите от станции, но, кажется, всё в порядке. Вероятно, вы могли бы бесплатно заправиться, но лишний риск сейчас ни к чему.</text>
+</textList>
+
+<eventList name="FUELING_STATION_BLOW">
+	<event>
+		<text>Вы успеете безопасно заправиться и улететь до взрыва станции.</text>
+		<item_modify>
+			<item type="fuel" min="5" max="5"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Как только вы состыковались для дозаправки, станция загорается и взрывается. Ваши запасы топлива воспламеняются, вы теряете драгоценное топливо и повреждаете корабль.</text>
+		<item_modify steal="true">
+			<item type="fuel" min="-3" max="-3"/>
+		</item_modify>
+		<damage amount="3" system="engines" effect="fire"/>
+	</event>
+</eventList>
+<eventList name="FUELING_STATION_PIRATE_LIST">
+	<event>
+		<text>Вы пристыковываетесь и даёте сигнал сотрудникам станции начать заправку топливом.</text>
+		<choice hidden="true">
+			<text>Ждать, пока они закончат.</text>
+			<event>
+				<text>Когда вы стыкуетесь с заправочной платформой, в вашем моторном отсеке происходит взрыв! На вашем корабле загораются предупреждающие сигналы, и внезапно со станции к вам на борт врывается отряд пиратов!</text>
+				<damage amount="3" system="engines"/>
+				<boarders min="2" max="4" class="random"/>
+				<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true"><!-- 1.31 -->
+					<enemyCrew amount="0" includeClonebay="false"/>
+				</triggeredEvent>
+			</event>
+		</choice>
+		<choice req="doors" lvl="2" hidden="true">
+			<text>(Укреплённые двери) Заблокировать укреплённые двери — лучше быть в безопасности, когда происходит стыковка.</text>
+			<event>
+				<text>Пираты, спрятавшиеся на станции, озадачены вашей системой защиты, и неудавшаяся засада оборачивается тесной перестрелкой. Вы захватываете станцию и забираете запасы топлива.</text>
+				<item_modify> 
+					<item type="fuel" min="5" max="8"/><!-- 1.26 -->
+				</item_modify>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Заправочная станция приглашает вас пристыковаться, но, пока вы их приветствуете, в вашем моторном отсеке происходит взрыв! Оценивая повреждения, вы засекаете быстро приближающийся пиратский корабль!</text>
+		<ship load="PIRATE" hostile="true"/>
+		<damage amount="2" system="engines"/><!-- 1.25 -->
+	</event>
+</eventList>
+
+
+
+
+
+	<!-- 
+	<<<===== NEW QUESTS!=====>>>
+	-->
+
+
+<event name="QUEST_CONSTRUCTIONYARD" unique="true"> <!-- quest only meant for DLC cause of PDS -->
+	<text>Вы приближаетесь к строящейся космической станции. Командный пост присылает вам сообщение: «Приветствую. Недавно мы потеряли контакт с грузовым судном, которое было предназначено для доставки большой партии строительных материалов. Не могли бы вы помочь нам выяснить, что с ним случилось?»</text>
+	<choice hidden="true">
+		<text>Обещать помочь им.</text>
+		<event>
+			<text>«Великолепно. Спасибо за вашу помощь. Я обозначу последние известные их координаты и пошлю вам некоторые материалы, которые помогут туда добраться».</text>
+			<item_modify>
+				<item type="missiles" min="0" max="4"/>
+				<item type="drones" min="0" max="2"/>
+				<item type="fuel" min="2" max="4"/>
+			</item_modify>
+			<quest event="QUEST_CONSTRUCTIONYARD_LIST"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Отказаться.</text>
+		<event>
+			<text>«Я понимаю». Передача прекращается.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="anaerobic">
+		<text>(Член экипажа ланиус) Предложить помощь вашего ланиуса.</text>
+		<event>
+			<text>«Интересно. Так этот металлический человек может помочь нам сделать некоторые уникальные детали из лома? Это бы очень сильно нам помогло». Ваш ланиус проверяет чертежи и быстро преобразует заготовки металла в специальные детали.</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event>
+					<text>«Восхитительно! Этот робот мог бы сохранить нам массу времени. Могу ли я купить его у вас?»</text>
+					<choice hidden="true">
+						<text>Спросить ланиуса, согласен ли он остаться на станции.</text>
+						<event>
+							<text>Как только ланиус понимает ситуацию, кажется, что ему понравилась идея содействия строительству в глубоком космосе. Это гораздо безопаснее. Взамен вам предлагают усиление для корабля.</text>
+							<autoReward level="HIGH">augment</autoReward>
+							<removeCrew class="anaerobic">
+								<clone>false</clone>
+								<text>Ваш клон-отсек, очевидно, не возрождает члена вашего экипажа, потому что он не умер.</text>
+							</removeCrew>
+						</event>
+					</choice>
+					<choice hidden="true">
+						<text>Наша команда не продаётся.</text>
+						<event>
+							<text>«Жаль. Что касается оплаты, то вот немного металлолома, в котором мы уже не нуждаемся, поскольку у нас есть все необходимые детали».</text>
+							<autoReward level="MED">scrap_only</autoReward>
+						</event>
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<eventList name="QUEST_CONSTRUCTIONYARD_LIST">
+	<event>
+		<text>Вы находите пропавшее без вести грузовое судно, состыковавшееся со станцией повстанцев. Вы отправляете им сообщение короткого диапазона и узнаёте, что они там находятся не по своей воле и вынуждены "жертвовать свои предметы снабжения для военных нужд".</text>
+		<choice hidden="true">
+			<text>Напасть на повстанцев, чтобы помочь им сбежать.</text>
+			<event>
+				<text>Вы двигаетесь в атаку на корабль повстанцев, который им угрожает. Сканеры обнаруживают нацеленное на вас оружие противокорабельной батареи. Это становится поводом для беспокойств!</text>
+				<ship load="QUEST_CONSTRUCTIONYARD_SHIP" hostile="true"/>
+				<environment type="PDS" target="player"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Покинуть это место.</text>
+			<event>
+				<text>Вы извиняетесь, но атака на повстанцев не стоит того, чтобы рисковать.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Вы находите потерянный грузовой корабль, пристыкованный к пустой космической станции. Однако его трюм пуст, и нет явных признаков, что кто-то находится внутри корабля или станции. Всё выглядит заброшенным.</text>
+		<choice hidden="true">
+			<text>Приступить к изучению станции.</text>
+			<event load="EMPTY_STATION2_LIST"/>
+		</choice>
+		<choice>
+			<text>Оставаться рядом с маяком.</text>
+			<event>
+				<text>Вы решаете, что сейчас не время для исследований.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Вы находите потерянный грузовой корабль возле маяка. «Слава богу! Мы дрейфовали здесь после того, как потратили наше последнее топливо, чтобы сбежать от пиратов».</text>
+		<choice hidden="true">
+			<text>Дать им запрошенные 4 топлива.</text>
+			<event>
+				<text>«Великолепно, спасибо вам. Вот немного металлолома для ваших нужд. Будьте осторожны».</text>
+				<autoReward level="HIGH">scrap_only</autoReward>
+				<item_modify>
+					<item type="fuel" min="-4" max="-4"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Дать им 1 топлива.</text>
+			<event>
+				<text>«Что ж, это лучше, чем ничего. Спасибо. Надеюсь мы найдём станцию у следующего маяка».</text>
+				<autoReward level="LOW">scrap_only</autoReward>
+				<item_modify>
+					<item type="fuel" min="-1" max="-1"/>
+				</item_modify>
+			</event>
+		</choice>
+		<choice>
+			<text>Не давать им ничего.</text>
+			<event>
+				<text>«Я понимаю...»</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+<ship name="QUEST_CONSTRUCTIONYARD_SHIP" auto_blueprint="SHIPS_REBEL">
+	<destroyed>
+		<text>Вы быстро забираете с корабля всё, что можете.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с грузовым судном.</text>
+			<event>
+				<text>Под обстрелом противокорабельной батареи грузовой корабль отстыковался от станции. Они сбросили немного лома по направлению к вашему кораблю, перед тем как сбежать.</text>
+				<autoReward level="MED">scrap_only</autoReward>
+			</event>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы быстро забираете с корабля всё, что можете.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<choice hidden="true">
+			<text>Связаться с грузовым судном.</text>
+			<event>
+				<text>Под обстрелом противокорабельной батареи, грузовой корабль отстыковался от станции. Они сбросили немного лома по направлению к вашему кораблю, перед тем как сбежать.</text>
+				<autoReward level="MED">scrap_only</autoReward>
+			</event>
+		</choice>
+	</deadCrew>
+</ship>
+	
+
+<!-- New Matt Events - Starting event names:
+
+ROCK_SLUG_ARGUMENT
+TERRAFORMING_SCAN
+CONFUSED_MANTIS
+PIRATE_SALESMAN
+
+-->
+
+<event name="NEBULA_ROCK_SLUG_ARGUMENT" unique="true">
+	<text>Вы обнаружили несколько кораблей, двигающихся рядом на максимальной скорости, но вы не можете разглядеть их через густую туманность.</text>
+	<choice>
+		<text>Подойти поближе.</text>
+		<event load="ROCK_SLUG_ARGUMENT"/>
+	</choice>
+	<choice>
+		<text>Пролететь мимо.</text>
+		<event/>
+	</choice>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+</event>
+
+
+<event name="ROCK_SLUG_ARGUMENT" unique="true">  <!-- in slug and rock neutrals-->
+	<text>Вы различаете крейсер слагов и корабль роков, противостоящих друг другу, оба вооружены и готовы сражаться. Вы можете вмешаться, прежде чем это выйдет из-под контроля.</text>
+	<choice>
+		<text>Поприветствовать их, чтобы выяснить, что случилось.</text>
+		<event>
+			<text>Капитан слагов объясняет, что они улучшили реактор корабля роков, а "камнеголовые" отказываются платить за работу. Капитан роков говорит, что эти "лизуны" схалтурили, и работа не стоит запрошенной цены.</text>
+			<choice>
+				<text>Согласиться погасить долг роков.</text>
+				<event>
+					<text>Вы погашаете долг. Капитан роков всё ещё раздражён тем, что слаги получили лом "незаслуженно", но, по крайней мере, ситуация остаётся мирной.</text>
+					<item_modify>
+						<item type="scrap" min="-15" max="-10"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="ROCK_SLUG_GRATEFUL"/>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Потребовать от корабля роков платить по согласованной цене.</text>
+				<event load="ROCK_SLUG_COMMAND"/>
+			</choice>
+			<choice>
+				<text>У вас есть дела поважнее, покинуть их.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Оставить их в покое.</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="ROCK_SLUG_COMMAND">
+	<event>
+		<text>Видимо, капитан роков был раздражён больше, чем вы думали. Они обрубают связь и разворачиваются к вам, "защитнику лизунов".</text>
+		<ship load="ROCK_SLUG_REACTOR_SHIP" hostile="true"/>
+	</event>
+	<event>
+		<text>С большим недовольством капитан роков всё же согласен заплатить.</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ROCK_SLUG_GRATEFUL"/>
+		</choice>
+	</event>
+	<event>
+		<text>На корабле роков происходит мощный взрыв, лишая его корпуса, и направляя его остатки прямиком на ваш корабль. Похоже, что улучшение реактора действительно было некачественным. Во время всеобщего замешательства слаги успешно используют возможность улизнуть.</text>
+		<damage amount="3"/>
+		<damage amount="1" system="random"/>
+		<damage amount="1" system="random"/>  <!--DLC-->
+	</event>
+</eventList>
+
+<ship name="ROCK_SLUG_REACTOR_SHIP" auto_blueprint="SHIPS_ROCK"> 
+	<destroyed>
+		<text>После уничтожения корабля роков тратите некоторое время, чтобы собрать немного лома.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text>Выйти на связь со слагами.</text>
+			<event load="ROCK_SLUG_GRATEFUL"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>После смерти команды роков вы забираете оставшиеся на корабле припасы.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Выйти на связь со слагами.</text>
+			<event load="ROCK_SLUG_GRATEFUL"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<eventList name="ROCK_SLUG_GRATEFUL">
+	<event>
+		<text>Слаги благодарят вас за помощь и улетают. Их истинные цели сомнительны, но, по крайней мере, вы можете продолжить свою миссию.</text>
+	</event>
+	<event>
+		<text>Капитан слагов предлагает бесплатно улучшить реактор за вашу помощь. Небольшое увеличение мощности никогда не повредит!</text>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>Капитан слагов предлагает бесплатно улучшить реактор за вашу помощь. Небольшое увеличение мощности никогда не повредит!</text>
+		<upgrade amount="1" system="reactor"/>
+	</event>
+	<event>
+		<text>Капитан слагов благодарит вас за помощь, а также предлагает улучшить ваш реактор... по "справедливой" цене.</text>
+		<choice req="reactor" max_lvl="24" blue="false">
+			<text>Согласиться с ценой.</text>
+			<event>
+				<text>Вы позволяете их команде подняться на борт, и через короткое время они заканчивают свою работу.</text>
+				<item_modify>
+					<item type="scrap" min="-15" max="-5"/>
+				</item_modify>
+				<upgrade amount="1" system="reactor"/>
+			</event>
+		</choice>
+		<choice>
+			<text>Отклонить предложение.</text>
+			<event>
+				<text>Вы прерываете связь и готовитесь двигаться дальше.</text>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+
+<event name="TERRAFORMING_SCAN"  unique="true"> <!-- in neutral only-->
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text>Вас приветствуют со станции на орбите ближайшей планеты. «Капитан, мы — отряд Федерации Терраформинг С12, и мы нуждаемся в помощи. Уделите нам немного времени?»</text>
+	<choice>
+		<text>Предложить свою помощь.</text>
+		<event load="TERRAFORMING_SCAN_CHECK_CARGO"/> <!-- 1.28 -->
+	</choice>
+	<choice>
+		<text>У вас нет на это времени.</text>
+		<event>
+			<text>«Мы понимаем. Желаем удачи в вашей миссии, сэр!»</text>
+			<choice>
+				<text>Приготовиться к прыжку.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="TERRAFORMING_SCAN_CHECK_CARGO"> <!-- 1.28 -->
+	<text>«Спасибо вам! Мы должны просканировать эту планету на наличие жизни, прежде чем мы сможем начать терраформинг, но наши датчики слишком слабы для сканирования сквозь атмосферу. Нам пригодится любая помощь, чтобы не отстать от графика, вы нам поможете?»</text>
+	<choice req="sensors" lvl="1" max_group="0" hidden="true">
+		<text>(Сенсоры) Попытаться просканировать планету.</text>
+		<event load="NORMAL_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice req="sensors" lvl="3" max_group="0" hidden="true"><!-- 1.21 -->
+		<text>(Продвинутые сенсоры) Установить сенсоры на максимум и сканировать.</text>
+		<event load="HIGH_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice req="SHIPRADAR" hidden="true"><!-- 1.21 -->
+		<text>(Направленный сканер) Использовать направленный сканер.</text>
+		<event load="HIGH_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice hidden="true" req="SHIPRADAR2"><!-- 1.27.1 -->
+		<text>(Анализатор морфов) Использовать анализатор морфов.</text><!-- 1.27.1 -->
+		<event load="HIGH_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice req="LIFE_SCANNER" hidden="true">
+		<text>(Сканер жизненных форм) Сканировать планету на наличие жизни.</text>
+		<event load="HIGH_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice req="CREW_ENERGY" hidden="true"><!-- 1.29 -->
+		<text>(Член экипажа золтанец) Отправить золтанца, чтобы разогнать их системы.</text>
+		<event load="HIGH_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice req="CREW_ENERGYX" hidden="true"><!-- 1.28 --><!-- 1.29 -->
+		<text>(Член экипажа золтонец) Отправить золтонца, чтобы разогнать их системы.</text>
+		<event load="HIGH_SCAN_TERRAFORMING"/>
+	</choice>
+	<choice>
+		<text>У нас нет подходящего оборудования.</text>
+		<event>
+		<text>«Мы понимаем. Желаем удачи в вашей миссии, сэр!»</text>
+			<choice>
+				<text>Приготовиться к прыжку.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>
+
+
+<eventList name="NORMAL_SCAN_TERRAFORMING">
+	<event>
+		<text>Кажется, ваши сенсоры слабее, чем у терраформеров. Вы извиняетесь и продолжаете свой путь.</text>
+	</event>
+	<event>
+		<text>Вы понимаете, что настроив сигнал обратной связи от ваших датчиков на нужную частоту, вы сможете через атмосферу провести полное сканирование!</text>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="HIGH_SCAN_TERRAFORMING"/>
+		</choice>
+	</event>
+</eventList>
+
+<eventList name="HIGH_SCAN_TERRAFORMING">
+	<event>
+		<text>После полного сканирования вы не обнаружили никакой жизни на планете. Отряд терраформеров благодарит вас и готов начать работать. Учёные со станции имеют уникальные навыки настройки системы жизнеобеспечения и в знак благодарности улучшают вашу систему дыхания.</text>
+		<upgrade amount="1" system="oxygen"/>
+	</event>
+	<event>
+		<text>Полное сканирование планеты не выявило каких-либо признаков жизни, кроме одного корабля на поверхности. Отряд терраформеров благодарит вас и пытается связаться с кораблём. Когда вы собираетесь прыгать, корабль взлетает и нападает — это пираты!</text>
+		<ship load="PIRATE" hostile="true"/>
+	</event>
+	<event>
+		<text>Полное сканирование планеты показывает, что на планете присутствует только простая форма жизни. Отряд терраформеров заявляет, что помешать их планам может только наличие разумных форм жизни, и они могут начать свою работу.</text>
+		<choice>
+			<text>Скажите им остановиться. Любая жизнь ценна.</text>
+			<event>
+				<text>«Но наши жизни зависят от этой работы! Кого волнует эта глупая плесень? Мы вам заплатим, если вы закроете на это глаза!»</text>
+				<choice>
+					<text>Принять взятку и улететь.</text>
+					<event>
+						<item_modify>
+							<item type="scrap" min="5" max="50"/>
+						</item_modify>
+					</event>
+				</choice>
+				<choice>
+					<text>Предложите им взятку, чтобы они, по крайней мере, подождали, пока эта плесень будет изучена.</text>
+					<event>
+						<text>Они образумились и готовы принять предложение. Учёные станции имеют уникальный талант в настройке систем жизнеобеспечения, они предлагают обновить кислородный отсек в качестве извинения за свои поступки.</text>
+						<upgrade amount="1" system="oxygen"/>
+						<item_modify>
+							<item type="scrap" min="-15" max="-5"/>
+						</item_modify>
+						<achievement silent="false">ACH_SHIP_PLESEN</achievement><!-- bamalf -->
+					</event>
+				</choice>
+				<choice>
+					<text>Зарядить орудия и потребовать, чтобы они ушли.</text>
+					<event>
+						<text>Они вырубают связь, но, кажется, начинают процедуру эвакуации.</text>
+						<achievement silent="false">ACH_SHIP_PLESEN</achievement><!-- bamalf -->
+					</event>
+				</choice>	
+			</event>
+		</choice>
+		<choice>
+			<text>Не мешать им работать и улететь.</text>
+			<event/>
+		</choice>
+	</event>
+</eventList>
+
+<event name="CONFUSED_MANTIS" unique="true"> <!-- in Engi Neutrals only-->
+	<text>Вскоре после прыжка в систему, вы получаете приветствие от гражданского корабля инжи неподалёку от вас. Их капитан появляется на вашем экране: «Странная ошибка в коде. Требуется помощь в отладке».</text>
+	<choice>
+		<text>Выслушать их проблему.</text>
+		<event>
+			<text>«Найден неисправный мантис. Считает, что он — человек. Будет получать входные данные только от человека. Оценка опасности: Чрезвычайно высокая. Обеспечьте помощь».</text>
+			<choice>
+				<text>Отправить шаттл с несколькими членами команды на помощь.</text>
+				<event load="CONFUSED_MANTIS_DEFAULT"/>
+			</choice>
+			<choice>
+				<text>Покинуть их, загнанный в угол мантис слишком опасен.</text>
+				<event/>
+			</choice>
+			<choice req="human" max_group="0" hidden="true"> <!-- 1.28 -->
+				<text>(Член экипажа человек) Пусть человек отправится на переговоры с этим мантисом.</text>
+				<event>
+					<text>Мантис радуется при виде "другого человека" и представляется Робертом Смитом. Он говорит, что он из соседней человеческой колонии, и был бы рад туда вернуться.</text>
+					<choice>
+						<text>Вернуть его домой.</text>
+						<event load="CONFUSED_MANTIS_HOME"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="CREW_ORDER_HUMAN" max_group="0" hidden="true"> <!-- 1.28 --><!-- 1.29 -->
+				<text>(Член экипажа человек) Пусть человек отправится на переговоры с этим мантисом.</text>
+				<event>
+					<text>Мантис радуется при виде "другого человека" и представляется Робертом Смитом. Он говорит, что он из соседней человеческой колонии, и был бы рад туда вернуться.</text>
+					<choice>
+						<text>Вернуть его домой.</text>
+						<event load="CONFUSED_MANTIS_HOME"/>
+					</choice>
+				</event>
+			</choice>
+			<choice req="mantis" hidden="true">
+				<text>(Член экипажа мантис) Отправить на переговоры вашего мантиса.</text>
+				<event>
+					<text>Мантис испугался при виде вашего члена экипажа. Он сразу же нападает на спасателей инжи, и ваш мантис вынужден убить его. Инжи благодарны за вашу помощь и предлагают небольшую награду.</text>
+					<autoReward level="LOW">standard</autoReward>
+				</event>
+			</choice>
+			<choice req="mind" lvl="1" hidden="true">
+				<text>(Контроль разума) Использовать систему контроля разума, чтобы успокоить его.</text>
+				<event>
+					<text>Мантис успокаивается и благодарит инжи и вас за помощь. Он просит, чтобы его отвезли на соседнюю планету в колонию людей, где он был воспитан. Они рады его возвращению и предлагают вознаграждение.</text>
+					<autoReward level="MED">standard</autoReward>
+				</event>
+			</choice>
+			<choice req="orchid" hidden="true"><!-- 1.31 -->
+				<text>(Член экипажа орхид) Орхид может успокоить его своей пыльцой.</text>
+				<event>
+					<text>Мантис успокаивается и благодарит инжи и вас за помощь. Он просит, чтобы его отвезли на соседнюю планету в колонию людей, где он был воспитан. Они рады его возвращению и предлагают вознаграждение.</text>
+					<autoReward level="MED">standard</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Объяснить, что вы не умеете программировать, и уйти.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="CONFUSED_MANTIS_HOME">
+	<text>Колония — это шахтёры, добывающие топливо для сверхсветовых полётов. Семья Роберта, ведущие инженеры, рады видеть его и очень благодарны за его возвращение. Видимо, он сбежал чтобы "присоединиться к Федерации", как его старший брат, но так и не попал на корабль.</text>
+	<choice hidden="true">
+		<text>Предложить ему работу на корабле.</text>
+		<event>
+			<text>«Всегда мечтал служить Федерации», — говорит он, любезно принимая предложение.</text>
+			<crewMember amount="1" class="mantis">Роберт Смит</crewMember>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Спросить их, не могли бы они осмотреть ваши двигатели.</text>
+		<event>
+			<text>Они с радостью проверяют двигатели и предлагают некоторые решения по их улучшению.</text>
+			<upgrade amount="1" system="engines"/>
+		</event>
+	</choice>
+</event>		
+
+<eventList name="CONFUSED_MANTIS_DEFAULT">
+	<event>
+		<text>Через час уговоров мантис, наконец, успокаивается и представляется Робертом Смитом. Он говорит, что он из соседней человеческой колонии, и был бы рад туда вернуться.</text>
+		<choice>
+			<text id="continue"/>
+			<event load="CONFUSED_MANTIS_HOME"/>
+		</choice>
+	</event>
+	<event>
+		<text>Загнанный в угол и напуганный мантис атакует, как только вы приближаетесь. Один из членов вашего экипажа был распотрошён раньше, чем успел остановить его. Инжи извиняются за вашу потерю.</text>
+		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+			<text id="continue"/>
+			<event>
+				<removeCrew>
+					<clone>true</clone>
+					<text>Клон вашего члена экипажа ждёт, когда вы вернётесь на корабль.</text>
+				</removeCrew>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Загнанный в угол и напуганный мантис атакует, как только вы приближаетесь. Вы в состоянии усмирить его и отправить в колонию мантисов в соседней системе. Он, кажется, не рад своему возвращению.</text>
+	</event>
+</eventList>
+
+
+
+<event name="PIRATE_SALESMAN" unique="true">  <!-- In NEUTRALS -->
+	<text>Корабль с заметной пиратской окраской, вращающийся вокруг соседней луны, передаёт незамысловатое сообщение, утверждая, что имеет оборудование, доступное для продажи.</text>
+	<choice>
+		<text>Приветствовать корабль.</text>
+		<event load="CONTACT_PIRATE_SALESMAN"/>
+	</choice>
+	<choice>
+		<text>Атаковать их до того, как они смогут атаковать вас.</text>
+		<event>
+			<ship load="PIRATE" hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Быстро приготовиться к прыжку.</text>
+		<event/>
+	</choice>
+</event>
+<event name="CONTACT_PIRATE_SALESMAN">
+	<text>«Да, у нас большие запасы! Поднимайтесь на борт и осмотрите наши товары!» — ответили с корабля.</text>
+	<choice>
+		<text>Пристыковаться к кораблю.</text>
+		<event load="DOCK_PIRATE_SALESMAN"/>
+	</choice>
+	<choice>
+		<text>Это выглядит опасно, уйти.</text>
+		<event>
+			<text>Как только вы разворачиваете свой корабль, пираты показывают скрывавшиеся орудия и отправляется в погоню. Вам придётся сразиться с ними, чтобы уйти!</text>
+			<ship load="PIRATE" hostile="true"/>
+		</event>
+	</choice>
+	<choice req="SLUG_AND_ARMORED_SLUG" hidden="true"><!-- 1.26 --><!-- 1.28 -->
+		<text>(Член экипажа слаг) Слаг телепатически предупреждает вас, что этот пират не терпит, когда его торговая сделка срывается...</text><!-- 1.26 -->
+		<event><!-- 1.26 -->
+			<text>Ты читер?</text>
+			<item_modify>
+				<item type="scrap" min="-999" max="-999"/>
+				<item type="fuel" min="-999" max="-999"/>
+				<item type="drones" min="-999" max="-999"/>
+				<item type="missiles" min="-999" max="-999"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="hacking" hidden="true">
+		<text>(Взломщик) Перед стыковкой отключить их орудийные системы.</text>
+		<event>
+			<text>Как только ваша система взлома закончила работу, вы получаете сообщение: «Что вы натворили!? Никогда нельзя доверять кораблям Федерации! Вот, возьмите свою "стандартную пошлину". Лучше бы я занимался делами в другом месте, сволочи».</text>
+			<autoReward level="RANDOM">scrap_only</autoReward> <!-- 1.25.1 -->
+		</event>
+	</choice>
+</event>
+<eventList name="DOCK_PIRATE_SALESMAN">
+	<event load="DOCK_BOMB_SALESMAN"/>
+	<event load="DOCK_DRONE_SALESMAN"/>
+	<event load="DOCK_WEAP_SALESMAN"/> <!-- 1.26 -->
+	<event load="DOCK_AUG_SALESMAN"/> <!-- 1.26 -->
+</eventList>
+<event name="DOCK_DRONE_SALESMAN">
+	<text>На борту вас встречает человек в изысканном костюме. «Добро пожаловать на мой корабль! Мы специализируемся на всевозможных видах дронов, чем я могу вас заинтересовать?»</text>
+	<choice>
+		<text>Купить детали дронов.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-10" max="-5"/> <!-- 1.29 -->
+				<item type="drones" min="5" max="15"/> <!-- 1.29 -->
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Купить схему дрона.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-25" max="-15"/> <!-- 1.29 -->
+			</item_modify>
+			<drone name="RANDOM"/>
+		</event>
+	</choice>
+	<!-- MATT TODO - make this work? -->
+	<choice req="drones" max_lvl="3" max_group="0" blue="false"> 
+		<text>Купить улучшение системы дронов.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-10" max="-5"/> <!-- 1.25 --><!-- 1.29 -->
+			</item_modify>
+			<upgrade system="drones" amount="1"/>
+		</event>
+	</choice>
+	<choice req="drones" min_level="4" max_lvl="5" max_group="0" blue="false"> 
+		<text>Купить улучшение системы дронов.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-25" max="-15"/> <!-- 1.25 --><!-- 1.29 -->
+			</item_modify>
+			<upgrade system="drones" amount="1"/>
+		</event>
+	</choice>
+	<choice req="drones" min_level="6" max_lvl="7" max_group="0" blue="false"> 
+		<text>Купить улучшение системы дронов.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-40" max="-30"/> <!-- 1.25 --><!-- 1.29 -->
+			</item_modify>
+			<upgrade system="drones" amount="1"/>
+		</event>
+	</choice>
+	<choice hidden="true"> <!-- 1.26 -->
+		<text>Ничего не покупать.</text>
+		<event>
+			<text>«Ах, печально слышать это! Счастливой дороги». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия! Вы получаете сообщение: «Вам не стоит тратить время людей попусту, капитан!»</text>
+			<ship load="PIRATE" hostile="true"/>
+			<damage amount="1" system="engines" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+		</event>
+	</choice>
+</event>
+<event name="DOCK_BOMB_SALESMAN">
+	<text>На борту вас встречает человек в изысканном костюме. «Добро пожаловать на мой корабль! Мы специализируемся на всевозможных видах взрывчатки, чем я могу вас заинтересовать?»</text>
+	<choice>
+		<text>Купить несколько ракет.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-10" max="-5"/> <!-- 1.29 -->
+				<item type="missiles" min="5" max="15"/> <!-- 1.29 -->
+			</item_modify>
+		</event>
+	</choice>
+	<choice>
+		<text>Купить установку для запуска бомб.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-40" max="-20"/> <!-- 1.29 -->
+			</item_modify>
+			<weapon name="WEAPONS_BOMBS_CHEAP"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Купить ракетную установку.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-45" max="-25"/> <!-- 1.29 -->
+			</item_modify>
+			<weapon name="WEAPONS_MISSILES_EXPENSIVE"/>
+		</event>
+	</choice>
+	<choice hidden="true"> <!-- 1.26 -->
+		<text>Ничего не покупать.</text>
+		<event>
+			<text>«Ах, мне очень жаль это слышать! Приятного путешествия». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия!</text>
+			<ship load="PIRATE" hostile="true"/>
+			<damage amount="1" system="engines" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+		</event>
+	</choice>
+</event>
+<event name="DOCK_WEAP_SALESMAN"> <!-- 1.26 -->
+	<text>На борту вас встречает человек в изысканном костюме. «Добро пожаловать на мой корабль! У меня есть парочка пушек на продажу, вы заинтересованы?»</text>
+	<choice hidden="false">
+		<text>Купить это орудие.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-60" max="-15"/> <!-- 1.29 -->
+			</item_modify>
+			<weapon name="RANDOM"/>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Купить это орудие.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-60" max="-15"/> <!-- 1.29 -->
+			</item_modify>
+			<weapon name="RANDOM"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ничего не покупать.</text>
+		<event>
+			<text>«Ах, мне очень жаль это слышать! Приятного путешествия». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия!</text>
+			<ship load="PIRATE" hostile="true"/>
+			<damage amount="1" system="engines" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+		</event>
+	</choice>
+</event>
+<event name="DOCK_AUG_SALESMAN">
+	<text>На борту вас встречает человек в изысканном костюме. «Добро пожаловать на мой корабль! У меня есть парочка усилений на продажу, вы заинтересованы?»</text>
+	<choice hidden="false">
+		<text>Купить это усиление.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-50" max="-20"/> <!-- 1.29 -->
+			</item_modify>
+			<augment name="RANDOM"/>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Купить это усиление.</text>
+		<event>
+			<item_modify>
+				<item type="scrap" min="-50" max="-20"/> <!-- 1.29 -->
+			</item_modify>
+			<augment name="RANDOM"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Ничего не покупать.</text>
+		<event>
+			<text>«Ах, мне очень жаль это слышать! Приятного путешествия». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия!</text>
+			<ship load="PIRATE" hostile="true"/>
+			<damage amount="1" system="engines" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+			<damage amount="1" system="room" effect="random"/>
+		</event>
+	</choice>
+</event>
+		
+
+<!-- boring neutral events 
+
+REBEL_CHECKPOINT
+REBEL_HELPERS
+ROGUE_REBEL
+
+
+-->
+
+<textList name="REBEL_CHECKPOINT_TEXT">
+	<text>Этот маяк — контрольно-пропускной пункт повстанцев. Они останавливают и обыскивают каждый пролетающий корабль, притесняют мирное население и задерживают членов Федерации. Повстанцы вас пока не замечают.</text>
+	<text>Очередной контрольный пункт повстанцев охраняет это место. Ряд гражданских судов ожидают осмотр, любой из них может быть сторонником Федерации. Повстанцы вас пока не замечают.</text>
+	<text>Космическая станция повстанцев во главе с одним истребителем следит за деятельностью Федерации на этом маяке. Ряды гражданских судов пристыкованы в порту в ожидании досмотра повстанцами и возможного задержания, если они окажутся сторонниками Федерации. Повстанцы вас пока не замечают.</text>
+	<text>Довольно большой флот гражданских судов задерживают на этом маяке. Похоже, это контрольно-пропускной пункт повстанцев. Сейчас все проверяются на возможные связи с Федерацией. Никто ещё не заметил вас.</text>
+</textList>
+<textList name="REBEL_BRIBE_TEXT">
+	<text>Перспектива разжиться лишним ломом этих повстанцев определённо обрадовала. Они отменяют досмотр и отпускают остановленные гражданские корабли.</text>
+	<text>Как и большинство повстанцев, это всего лишь люди, пытающиеся получить выгоду в суровой Галактике. Они берут ваш лом, и позволяют всем продолжить свой полёт.</text>
+	<text>Так как каждый, кто ожидает проверку, в любом случае является человеком, повстанцы отпускают их. Они берут ваш лом и велят вам поторопиться.</text>
+	<text>Они охотно берут вашу взятку, очевидно, мятежникам недоплачивают. Гражданские суда готовятся к прыжку.</text>
+</textList>
+<textList name="GENERIC_HIDE_TEXT">
+	<text>Незаметно пролететь под прикрытием луны.</text>
+	<text>Отключить все системы, кроме жизнеобеспечения, и затаиться.</text>
+	<text>Затаиться, в надежде, что они не найдут вас.</text>
+	<text>Держаться подальше и приготовиться к прыжку.</text>
+</textList>
+<event name="REBEL_CHECKPOINT">
+	<text load="REBEL_CHECKPOINT_TEXT"/>
+	<choice>
+		<text>Постоять за себя. Атаковать и бежать.</text>
+		<event>
+			<ship load="REBEL" hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Подкупить повстанцев, чтобы они освободили гражданские корабли.</text>	
+		<event>
+			<text load="REBEL_BRIBE_TEXT"/>
+			<item_modify>
+				<item type="scrap" min="-15" max="-5"/> <!-- 1.23 -->
+			</item_modify>
+			<choice hidden="true">
+				<text>Связаться с гражданскими кораблями.</text>
+				<event load="REBEL_BRIBE_RESULT"/>
+			</choice>
+		</event>
+	</choice>
+	<choice>
+		<text load="GENERIC_HIDE_TEXT"/>
+		<event/>
+	</choice>
+</event>
+<eventList name="REBEL_BRIBE_RESULT">
+	<event>
+		<text>Гражданские благодарны. Тем не менее никто из них, похоже, не стремится повторить ошибку, поддерживая Федерацию, поэтому совершают быстрый прыжок.</text>
+	</event>
+	<!-- <event>
+		<text>Некоторые из гражданских лиц приносят свои излишки лома, чтобы попытаться отплатить вам за помощь.</text>
+		<autoReward level="MED">scrap_only</autoReward>
+	</event> --> <!-- 1.23 -->
+	<event>
+		<text>Некоторые из гражданских лиц приносят свои излишки лома, чтобы попытаться отплатить вам за помощь.</text>
+		<autoReward level="HIGH">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Одно из гражданских судов тихонько телепортировало вам контейнер военных поставок Федерации.</text>
+		<autoReward level="MED">standard</autoReward>
+	</event>
+	<event>
+		<text>Одно из гражданских судов тихонько телепортировало вам большой контейнер военных поставок Федерации.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<text>Одно из гражданских судов тихонько телепортировало вам большой контейнер военных поставок Федерации.</text>
+		<autoReward level="HIGH">standard</autoReward>
+	</event>
+	<event>
+		<text>Одно из гражданских судов тихонько телепортировало вам большой контейнер военных поставок Федерации. Внутри вы находите орудие.</text>
+		<autoReward level="HIGH">weapon</autoReward> <!-- 1.23 -->
+	</event>
+	<event><!-- 1.25 -->
+		<text>Одно из гражданских судов тихонько телепортировало вам большой контейнер военных поставок Федерации. Внутри вы находите орудие.</text>
+		<autoReward level="RANDOM">weapon</autoReward> 
+	</event>
+	<!-- <event> 
+		<text>Одно из гражданских судов тихонько телепортировало вам небольшой контейнер военных поставок Федерации.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</event> --> <!-- 1.23 -->
+	<event>
+		<text>Одно из гражданских судов контактирует с вами, оказывается, они — сторонники Федерации. Повстанцы перехватывают ваши переговоры, налетают и разрушают гражданское судно, затем разворачиваются в вашу сторону!</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+</eventList>
+
+
+
+<textList name="REBEL_HELPERS_TEXT">
+	<text>Вы натыкаетесь на корабль повстанцев, распределяющий поставки в местные гражданские колонии. Среди этих припасов, скорее всего, нет ничего военного класса, но каждая мелочь может пригодиться...</text>
+	<text>Вы обнаруживаете боевой корабль повстанцев, который был переназначен судном снабжения при чрезвычайных ситуациях. Местные гражданские лица, по-видимому, нуждаются в помощи, и повстанцы оказывают её.</text>
+	<text>Повстанцы в этой системе совершают благотворительные рейсы с припасами для местных космических станций. Эти гражданские, скорее всего не получали продовольствия в течение нескольких месяцев из-за войны и находятся в отчаянном положении.</text>
+	<text>Гражданские колонисты, преданные делу повстанцев, присутствуют на соседней планете. Похоже, что они в настоящее время получают припасы. Это может быть полезно.</text>
+	<text>Из-за войны тысячи колонистов потеряли свои линии снабжения и оказались в тяжёлом положении. Кажется, в этой системе повстанцы относятся к этому с пониманием и распределяют те небольшие поставки, которые им удалось сэкономить.</text>
+</textList>
+<ship name="REBEL_HELPERS_SHIP" auto_blueprint="SHIPS_REBEL"> 
+	<destroyed>
+		<text>Уничтожив корабль повстанцев, вы тратите время, чтобы собрать немного лома. А поставку гражданским они уже сделали ранее.</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text>Украсть гражданские припасы.</text>
+			<event load="REBEL_HELPERS_SUPPLIES"/>
+		</choice>
+		<choice hidden="true">
+			<text>Оставить гражданских в покое.</text>
+			<event load="REBEL_HELPER_NO_SUPPLIES"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж повстанцев мёртв, и вы снимаете с их корабля оборудование. А поставку гражданским они уже сделали ранее.</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text>Украсть гражданские припасы.</text>
+			<event load="REBEL_HELPERS_SUPPLIES"/>
+		</choice>
+		<choice hidden="true">
+			<text>Оставить гражданских в покое.</text>
+			<event load="REBEL_HELPER_NO_SUPPLIES"/>
+		</choice>
+	</deadCrew>
+</ship>
+
+<event name="REBEL_HELPER_NO_SUPPLIES">
+	<text load="REBEL_HELPER_NO_SUPPLIES_TEXT"/>
+</event>
+
+<textList name="REBEL_HELPER_NO_SUPPLIES_TEXT">
+	<text>Вы готовитесь уйти. Один из гражданских лидеров обращается к вам: «Эти повстанцы были нашим единственным источником поставок. Вы обрекли нас всех».</text>
+	<text>Вы покидаете гражданских с припасами, хотя без повстанцев, которые работали с поставками, им вряд ли осталось жить долго.</text>
+	<text>Вы задаётесь вопросом, появятся ли ещё повстанцы, которые смогут помочь этим гражданским на краю пропасти. Ну что ж, для вас ещё несколько мёртвых повстанцев значат больше, чем жизни тысячи колонистов.</text>
+	<text>Перед зарядкой вашего FTL-привода вы получаете сообщение: «Мой сын был на этом корабле, он всего лишь помогал повстанцам, потому что они заботились о нас. Без него нам не найти припасов, и мы, скорее всего, будем забыты и умрём здесь...»</text>
+</textList>
+
+<event name="REBEL_HELPERS">
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text load="REBEL_HELPERS_TEXT"/>
+	<choice>
+		<text>Атаковать повстанцев.</text>
+		<event>
+			<ship load="REBEL_HELPERS_SHIP" hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Выбрать момент и украсть припасы у гражданских.</text>
+		<event load="REBEL_HELPERS_SUPPLIES"/>
+	</choice>
+	<choice>
+		<text>Оставить их в покое.</text>
+		<event/>
+	</choice>
+</event>
+
+<eventList name="REBEL_HELPERS_SUPPLIES">
+	<event>
+		<text>Колонисты отдают вам поставки. Похоже, что это в основном оборудование, предназначенное для автоматизированной добычи ресурсов, но вы можете использовать его. Перед тем как улететь, вы получаете сообщение: «Вот почему повстанцам всегда помогают!»</text>
+		<autoReward level="LOW">droneparts</autoReward>
+	</event>
+	<event>
+		<text>Колонисты отдают вам поставки, и вы загружаете их на свой корабль. Перед тем как прыгнуть, вы вскрываете контейнеры и не обнаруживаете ничего, кроме прививок от местной чумы.</text>
+	</event>
+	<event>
+		<text>Вы приказываете колонистам телепортировать припасы на ваш корабль. Это оказывается не больше чем обычные стройматериалы. Ну что ж, лом он и есть лом.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Колонисты с готовностью отдают свои припасы. Но как только вы прыгаете, взрыв повреждает ваш корабль. Грузом была мина-ловушка!</text>
+		<damage amount="2" system="room" effect="random"/>
+	</event>
+</eventList>
+
+
+
+<textList name="ROGUE_REBEL_TEXT">
+	<text>Вы прибываете на маяк, расположенный в гражданской звёздной системе. Ближайшая колония обращается к вам: «У нас тут корабль повстанцев, беспокоящий нашу систему. У вас есть время, чтобы найти его?»</text>
+	<text>Как только вы прибываете, вы получаете зашифрованное сообщение Федерации: «Судно повстанцев терроризирует местных граждан в этой системе, пожалуйста, найдите и уничтожьте его».</text>
+	<text>Вы начинаете заряжать свой FTL-привод и делаете быстрое сканирование ближайшей планеты. На поверхности вы находите руины недавно разрушенной колонии Федерации. В этом районе, должно быть, орудует корабль повстанцев...</text>
+	<text>Вы выпрыгиваете на поле обломков. Похоже, недавно здесь произошла битва, и проигравшим, кажется, было гражданское судно. Им удалось оставить сообщение на повторе, прежде чем их судно уничтожили: «Повстанцы атакуют, пожалуйста, пришлите помощь!» Ответственные за это повстанцы, скорее всего, по-прежнему рядом.</text>
+</textList>
+<event name="ROGUE_REBEL">
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text load="ROGUE_REBEL_TEXT"/>
+	<choice>
+		<text>Искать корабль повстанцев.</text>
+		<event load="ROGUE_REBEL_SEARCH"/>
+	</choice>
+	<choice>
+		<text>Нет времени искать, приготовиться к прыжку.</text>
+		<event/>
+	</choice>
+	<choice req="sensors" lvl="2" max_group="0">
+		<text>(Улучшенные сенсоры) Просканировать область.</text>
+		<event>
+			<text>Вы быстро находите корабль повстанцев и готовитесь к перехвату.</text>
+			<ship load="REBEL" hostile="true"/>
+		</event>
+	</choice>
+	<choice req="sensors" lvl="3" max_group="0" hidden="true">
+		<text>(Продвинутые сенсоры) Определить местонахождение повстанцев.</text>
+		<event>
+			<text>Вы обнаружили корабль повстанцев, скрывающийся за соседним астероидом. Вы можете отстрелить их двигатели, прежде чем они заметят вас.</text>
+			<ship load="REBEL" hostile="true"/>
+			<status type="limit" target="enemy" system="engines" amount="0"/>
+		</event>
+	</choice>
+</event>
+<eventList name="ROGUE_REBEL_SEARCH">
+	<event>
+		<text>Вы потратили некоторое время на поиски, но ваши сканеры не могут найти никаких следов корабля повстанцев. Вы готовитесь двигаться дальше.</text>
+	</event>
+	<event>
+		<text>После недолгих поисков вы находите корабль повстанцев. Будем надеяться, что его так же легко победить, как и найти.</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>Вы быстро отследили корабль повстанцев. Будем надеяться, что его так же легко победить, как и найти.</text>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+	<event>
+		<text>Затратив очень много времени на поиски, вы, наконец, смогли его обнаружить. Вы идёте в бой, размышляя о том, какую фору вы потеряли перед флотом повстанцев...</text>
+		<modifyPursuit amount="1"/>
+		<ship load="REBEL" hostile="true"/>
+	</event>
+</eventList>
+	
+	
+		
+
+
+
+
+
+
+	<!-- 
+	<<<===== SPECIAL!=====>>>
+	-->
+
+
+
+
+
+
+
+
+
+</FTL>

@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+<FTL>
+
+<!-- Common strings -->
+
+<text name="bullet">-\1</text>  <!-- \1: arbitrary text (used in a bulleted list) -->
+<text name="button_close">НАЗАД</text>  <!-- Text for button used to close various windows -->
+<text name="continue">Продолжить...</text>  <!-- Standard choice in events -->
+
+<!-- Main menu -->
+
+<text name="welcome">Добро пожаловать в FTL! \n\nЕсли вы новичок, мы очень советуем вам пройти обучение. Мы приложили все усилия, чтобы этот процесс был как можно короче. \n\nМы надеемся, что вам понравится наша игра. \n\n-- Subset Games</text>  <!-- Shown on first-time startup (full version) -->
+<text name="welcome_demo">Добро пожаловать в FTL! \n\nЕсли вы новичок, мы очень советуем вам пройти обучение. Мы приложили все усилия, чтобы этот процесс был как можно короче. \n\nМы надеемся, что вам понравится наша игра. \n\n-- Subset Games</text>  <!-- Shown on first-time startup (demo version) -->
+
+<text name="version">FTL v.\1</text>  <!-- \1: version number -->
+<text name="demo_version">ДЕМО версия \1</text>  <!-- \1: version number -->
+
+<text name="mainmenu_continue">ПРОДОЛЖИТЬ</text>
+<text name="mainmenu_newgame">НОВАЯ ИГРА</text>
+<text name="mainmenu_tutorial">ОБУЧЕНИЕ</text>
+<text name="mainmenu_stats">СЧЁТ</text>
+<text name="mainmenu_options">НАСТРОЙКИ</text>
+<text name="mainmenu_credits">АВТОРЫ</text>
+<text name="mainmenu_quit">ВЫХОД</text>
+
+<text name="no_load">Предыдущей игры нет</text>  <!-- Tooltip on "Continue" when no saved game is present -->
+
+<text name="new_player">Новый игрок вступил в игровой центр. Возвращение на главный экран.</text>  <!-- Shown on iPad when the Game Center login changes -->
+
+<!-- In-game menu -->
+
+<!-- 
+<text name="escape_continue">ПРОДОЛЖИТЬ</text>
+<text name="escape_mainmenu">ГЛАВНОЕ МЕНЮ</text>
+<text name="escape_hangar">АНГАР</text>
+<text name="escape_reset">ПЕРЕЗАПУСТИТЬ</text>
+<text name="escape_options">НАСТРОЙКИ</text>
+<text name="escape_controls">УПРАВЛЕНИЕ</text>
+<text name="escape_save">СОХРАНИТЬ И ВЫЙТИ</text>
+--><!-- 1.31 -->
+<text name="escape_continue">НАЗАД</text>
+<text name="escape_mainmenu">ГЛ.МЕНЮ</text>
+<text name="escape_hangar">АНГАР</text>
+<text name="escape_reset">РЕСТАРТ</text>
+<text name="escape_options">ОПЦИИ</text>
+<text name="escape_controls">КОНТРОЛЬ</text>
+<text name="escape_save">ВЫХОД</text>
+
+<text name="menu_status_difficulty">Сложность</text>
+<text name="menu_status_ae_content">AE-контент</text>
+<text name="menu_status_achievements">Достижения этого корабля</text>
+
+<text name="help_crew_title">КОМАНДА</text> <!-- bamalf -->
+<text name="help_crew_text_top">Как отдавать приказы:</text>  <!-- For all "help_X_text_Y" strings, newlines are optional, and text will auto-wrap at the appropriate size (see game for size reference) -->
+<text name="help_crew_text_pc_select">Потянуть или нажать левую кнопку, чтобы выбрать персонажа.</text>
+<text name="help_crew_text_pc_move">Правой кнопкой дать приказ двигаться выбранному персонажу.</text>
+<text name="help_crew_text_pc_bottom">Члены команды будут автоматически чинить системы и сражаться с противником в занимаемых ими помещениях.</text>
+<text name="help_crew_text_ipad_select">Tap on someone to select them\nor tap and drag to select\nmultiple crew members.</text>
+<text name="help_crew_text_ipad_move">Tap on a room to tell the selected\ncrew members to move there.</text>
+<text name="help_crew_text_ipad_bottom">Crew will automatically repair or\nfight in their current room.</text>
+<text name="help_pause_title">ОСТАНОВКА ИГРЫ</text>
+<text name="help_pause_text_pc_1">Нажмите ПРОБЕЛ для установки паузы.</text>
+<text name="help_pause_text_pc_2">Команды и приказы можно отдавать во время паузы.</text>
+<text name="help_pause_text_ipad_1">Press the Pause button on the\nlower right to pause the game.</text>
+<text name="help_pause_text_ipad_2">Commands and orders can still\nbe given while paused.</text>
+<text name="help_pause_text_ipad_auto">The game will automatically pause\nin some situations (this can be\ndisabled in the options menu).</text>
+<text name="help_power_title">ЭНЕРГИЯ</text> <!-- 1.31 -->
+<text name="help_power_text_top">Отключение и добавление энергии системам:</text>
+<text name="help_power_text_pc_add">Левой кнопкой энергия добавляется.</text>
+<text name="help_power_text_pc_remove">Правой кнопкой энергия отбирается.</text>
+<text name="help_power_text_ipad_1">Drag your finger up/down to\nincrease/decrease system power.</text>
+<text name="help_power_text_ipad_2">There must be enough reactor\npower to power the system.</text>
+<text name="help_weapons_title">ОРУДИЯ / ДРОНЫ</text>
+<text name="help_weapons_text_top">Как стрелять:</text>
+<text name="help_weapons_text_pc_power">Левой кнопкой\nзапитать\nорудие.</text>  <!-- These three strings do not auto-wrap because some lines may need to encroach onto the adjacent image's space. Insert manual line breaks where appropriate. -->
+<text name="help_weapons_text_pc_activate">Левой кнопкой ещё\n раз, чтобы\nактивировать его.</text>
+<text name="help_weapons_text_pc_target">Левой кнопкой\nпо противнику\nдля атаки.</text>
+<text name="help_weapons_text_pc_bottom1">Перетаскивайте мышкой орудия/дроны для изменения их последовательности.</text>
+<text name="help_weapons_text_pc_bottom2">Если система повреждена, то самое правое устройство будет отключено первым.</text>
+<text name="help_weapons_text_ipad_power">Tap on the\nweapon\nsystem.</text>  <!-- These three strings do not auto-wrap because some lines may need to encroach onto the adjacent image's space (as in English). Insert manual line breaks where appropriate. -->
+<text name="help_weapons_text_ipad_activate">Tap on a weapon\nto power and\nagain to activate.</text>
+<text name="help_weapons_text_ipad_target">Tap on the\ntarget room.</text>
+<text name="help_weapons_text_ipad_autofire">Tapping a weapon twice\nwill enable auto-fire\nfor that weapon.</text>
+<text name="help_weapons_text_ipad_bottom1">Tap and drag to reorder\nweapons/drones.</text>
+<text name="help_weapons_text_ipad_bottom2">If the system is damaged,\nthe highest item will be\ndepowered first.</text>
+<text name="help_tap_close">Нажмите на экран, что бы вернуться в игру.</text>  <!-- Shown on iPad at the bottom of the controls help screen -->
+<text name="help_customize">Примечание: Это пример. Вы можете изменить горячие клавиши в меню настроек.</text>  <!-- Shown on PC at the bottom of the controls help screen -->
+
+<text name="no_save_tutorial">Вы не можете сохранится и выйти, пока длится обучение.</text>  <!-- Tooltip on "Save+Quit" in in-game menu during tutorial -->
+
+<!-- Options screen -->
+
+<text name="options_tab">НАСТРОЙКИ</text>  <!-- Text for the tab on the options menu -->
+<text name="options_frame_video">ВИДЕО</text>  <!-- Window frame titles for the options menu -->
+<text name="options_frame_gameplay">ИГРА</text>
+<text name="options_frame_audio">ГРОМКОСТЬ</text>
+
+<text name="on">Вкл.</text>  <!-- Generic setting values -->
+<text name="off">Выкл.</text>
+<text name="disabled">Откл.</text>
+<text name="enabled">Вкл.</text>
+<text name="manual_override">Переопределено ручными настройками.</text>  <!-- Tooltip shown when mousing over fullscreen setting if manual override is in effect -->
+<text name="stretch_not_supported">Не поддерживается вашей системой.</text>  <!-- Tooltip shown when mousing over fullscreen setting if Fullscreen Stretch is selected and framebuffers are not supported --><!-- 1.26.6 -->
+<text name="restart_required">Требуется перезагрузка</text>  <!-- Shown above options window if a change to or from native fullscreen mode is pending -->
+<text name="restart_required_dialog">Необходимо перезапустить игру, чтобы изменение настроек видео вступило в силу.</text>  <!-- Shown when options window is closed if a change to or from native fullscreen mode is pending -->
+
+<text name="fullscreen">Полный экран: \1</text>  <!-- \1: option setting -->
+<text name="fullscreen_0">Нет</text>
+<text name="fullscreen_1">Растянуть</text>
+<text name="fullscreen_2">Чёрные края</text>
+<text name="fullscreen_3">По умолчанию</text>
+
+<text name="v_sync">Вертикальная синхронизация: \1</text>  <!-- \1: "on" or "off" -->
+<text name="frame_limit">Ограничение кадров: \1</text>  <!-- \1: "on" or "off" -->
+<text name="dynamic_back">Анимированный фон: \1</text>  <!-- \1: "on" or "off" -->
+<text name="colorblind">Режим для дальтоников: \1</text>  <!-- \1: "enabled" or "disabled" -->
+<text name="change_language">Сменить язык</text><!-- 1.26.6 -->
+
+<text name="choose_language">Выберите язык:</text>  <!-- Displayed above the language list in the language menu --><!-- 1.26.6 -->
+<text name="language_name">Русский (Arsenal +)</text>  <!-- Used to display language names in the language menu (the text for this string in each language is shown in the language list as that language's name) --><!-- 1.26.6 -->
+
+<text name="event_choice">Выбор события: \1</text>  <!-- \1: option setting -->
+<text name="event_choice_disable_hotkeys">Откл.</text>
+<text name="event_choice_no_delay">Без задержки</text>
+<text name="event_choice_brief_delay">С задержкой</text>
+
+<text name="show_paths">Показывать путь к маякам: \1</text>  <!-- \1: "enabled" or "disabled" -->
+<text name="show_paths_ipad">Show beacon paths on touch: \1</text>  <!-- \1: "enabled" or "disabled" -->
+<text name="achievement_popup">Всплывающие окна достижений: \1</text>  <!-- \1: "enabled" or "disabled" -->
+<text name="window_focus">Авто-пауза при переключении игры: \1</text>  <!-- \1: "on" or "off" -->
+<text name="touch_autopause">Touch Command Auto-Pause: \1</text>  <!-- \1: "on" or "off" -->
+<text name="configure_controls">Настройка клавиш</text>
+
+<text name="sound_volume">      Эффекты</text>
+<text name="music_volume">        Музыка</text>
+
+<text name="button_delete_profile">УДАЛИТЬ\nПРОФИЛЬ</text>
+
+<text name="configure_controls_tab">НАСТРОЙКА КЛАВИШ</text>
+
+<text name="power_note">Примечание: Shift + питание системы отключит её.</text>
+
+<text name="press_key">ВЫБРАТЬ</text>  <!-- Shown in place of key name on hotkey config screen when waiting for the user to press the new key -->
+
+<text name="button_defaults">СТАНДАРТНЫЕ</text>
+
+<!-- Hotkey names -->
+
+<text name="hotkey_crew1">Член экипажа 1</text>
+<text name="hotkey_crew2">Член экипажа 2</text>
+<text name="hotkey_crew3">Член экипажа 3</text>
+<text name="hotkey_crew4">Член экипажа 4</text>
+<text name="hotkey_crew5">Член экипажа 5</text>
+<text name="hotkey_crew6">Член экипажа 6</text>
+<text name="hotkey_crew7">Член экипажа 7</text>
+<text name="hotkey_crew8">Член экипажа 8</text>
+<text name="hotkey_crew_all">Выбрать всех</text>
+<text name="hotkey_loadPositions">Вернуть на позиции</text>
+<text name="hotkey_savePositions">Сохранить позиции</text>
+<text name="hotkey_lockdown">Секретное умение</text>
+
+<text name="hotkey_open">Открыть все двери</text>
+<text name="hotkey_close">Закрыть все двери</text>
+
+<text name="hotkey_activate_cloak">Включить маскировку</text>
+
+<text name="hotkey_send_tele">Телепорт вперёд</text>
+<text name="hotkey_ret_tele">Телепорт назад</text>
+<text name="hotkey_start_hacking">Начать взлом</text>
+<text name="hotkey_mindControl">Управление разумом</text>
+<text name="hotkey_activate_battery">Резервная батарея</text>
+
+<text name="reactor_desc_start">Начальный реактор: \1</text>
+<text name="reactor_desc_max">Максимальный реактор: \1</text>
+<text name="hangar_achievements_title_default">Достижения корабля</text> <!-- 1.31 --> <!-- Shown above the ship achievement list -->
+<text name="hangar_achievements_title_custom">Победы корабля</text>  <!-- Shown above the ship achievement list -->
+<text name="hangar_achievements_title_filter">Фильтр типов победы</text>  <!-- Shown above the ship achievement list -->
+<text name="hangar_no_ship_achievements">Отсутствуют</text>
+
+<text name="hotkey_weapon1">Оружие/дрон в слоте 1</text>
+<text name="hotkey_weapon2">Оружие/дрон в слоте 2</text>
+<text name="hotkey_weapon3">Оружие/дрон в слоте 3</text>
+<text name="hotkey_weapon4">Оружие/дрон в слоте 4</text>
+<text name="hotkey_drone1">Оружие/дрон в слоте 5</text>
+<text name="hotkey_drone2">Оружие/дрон в слоте 6</text>
+<text name="hotkey_drone3">Оружие/дрон в слоте 7</text>
+<text name="hotkey_drone4">Оружие/дрон в слоте 8</text>
+<text name="hotkey_drone5">Оружие/дрон в слоте 9</text>
+<text name="hotkey_drone6">Оружие/дрон в слоте 10</text>
+
+<text name="hotkey_autofire">Авто-огонь</text>
+
+<text name="hotkey_force_autofire">Модификатор авто-огня</text>
+
+<text name="hotkey_pause">Пауза</text>
+<text name="hotkey_jump">FTL-прыжок</text>
+<text name="hotkey_ship_info">Улучшения</text>
+<text name="hotkey_ship_inv">Оснастка</text>
+<text name="hotkey_store">Магазин</text>
+<text name="hotkey_ship_crew">Экипаж</text>
+<text name="hotkey_options">Настройки</text>
+<text name="hotkey_increase_font">Увеличить шрифт</text>
+<text name="hotkey_decrease_font">Уменьшить шрифт</text>
+
+<text name="hotkey_rightclick">Модификатор правой кнопки</text>  <!-- Only used on Mac (clicking the mouse button with this key held down acts like a right click) -->
+
+<text name="hotkey_shields">Запитать щиты</text>
+<text name="hotkey_engines">Запитать двигатели</text>
+<text name="hotkey_oxygen">Запитать кислород</text>
+<text name="hotkey_medbay">Запитать медотсек/клон-отсек</text>
+<text name="hotkey_teleporter">Запитать телепортер</text>
+<text name="hotkey_cloaking">Запитать маскировку</text>
+<text name="hotkey_mind">Запитать управление разумом</text>
+<text name="hotkey_hacking">Запитать взломщик</text>
+<text name="hotkey_artillery">Запитать артиллерию</text>
+<text name="hotkey_weapons">Запитать орудия</text>
+<text name="hotkey_drones">Запитать дроны</text>
+
+<text name="hotkey_un_shields">Отключить щиты</text>
+<text name="hotkey_un_engines">Отключить двигатели</text>
+<text name="hotkey_un_oxygen">Отключить кислород</text>
+<text name="hotkey_un_medbay">Отключить медотсек/клон-отсек</text>
+<text name="hotkey_un_teleporter">Отключить телепортер</text>
+<text name="hotkey_un_cloaking">Отключить маскировку</text>
+<text name="hotkey_un_mind">Отключить управление разумом</text>
+<text name="hotkey_un_hacking">Отключить взломщик</text>
+<text name="hotkey_un_artillery">Отключить артиллерию</text>
+<text name="hotkey_un_weapons">Отключить орудия</text>
+<text name="hotkey_un_drones">Отключить дроны</text>
+
+<text name="hotkey_power_1">Запитать систему 1</text>
+<text name="hotkey_power_2">Запитать систему 2</text>
+<text name="hotkey_power_3">Запитать систему 3</text>
+<text name="hotkey_power_4">Запитать систему 4</text>
+<text name="hotkey_power_5">Запитать систему 5</text>
+<text name="hotkey_power_6">Запитать систему 6</text>
+<text name="hotkey_power_7">Запитать систему 7</text>
+<text name="hotkey_power_8">Запитать систему 8</text>
+
+<text name="hotkey_un_power_1">Отключить систему 1</text>
+<text name="hotkey_un_power_2">Отключить систему 2</text>
+<text name="hotkey_un_power_3">Отключить систему 3</text>
+<text name="hotkey_un_power_4">Отключить систему 4</text>
+<text name="hotkey_un_power_5">Отключить систему 5</text>
+<text name="hotkey_un_power_6">Отключить систему 6</text>
+<text name="hotkey_un_power_7">Отключить систему 7</text>
+<text name="hotkey_un_power_8">Отключить систему 8</text>
+
+<!-- Keycap names -->
+
+<text name="keycap_none">НЕТ</text>  <!-- Dummy entry for unrecognized keys (not normally used) -->
+<text name="keycap_altgr">ALT GR</text>
+<text name="keycap_backspace">BACKSPACE</text>
+<text name="keycap_break">BREAK</text>
+<text name="keycap_capslock">CAPS LOCK</text>
+<text name="keycap_clear">CLEAR</text>
+<text name="keycap_compose">COMPOSE</text>
+<text name="keycap_delete">DELETE</text>
+<text name="keycap_down">DOWN</text>
+<text name="keycap_end">END</text>
+<text name="keycap_enter">ENTER</text>
+<text name="keycap_escape">ESCAPE</text>
+<text name="keycap_euro">EURO</text>
+<text name="keycap_f1">F1</text>
+<text name="keycap_f2">F2</text>
+<text name="keycap_f3">F3</text>
+<text name="keycap_f4">F4</text>
+<text name="keycap_f5">F5</text>
+<text name="keycap_f6">F6</text>
+<text name="keycap_f7">F7</text>
+<text name="keycap_f8">F8</text>
+<text name="keycap_f9">F9</text>
+<text name="keycap_f10">F10</text>
+<text name="keycap_f11">F11</text>
+<text name="keycap_f12">F12</text>
+<text name="keycap_f13">F13</text>
+<text name="keycap_f14">F14</text>
+<text name="keycap_f15">F15</text>
+<text name="keycap_help">HELP</text>
+<text name="keycap_home">HOME</text>
+<text name="keycap_insert">INSERT</text>
+<text name="keycap_kp0">KP 0</text>
+<text name="keycap_kp1">KP 1</text>
+<text name="keycap_kp2">KP 2</text>
+<text name="keycap_kp3">KP 3</text>
+<text name="keycap_kp4">KP 4</text>
+<text name="keycap_kp5">KP 5</text>
+<text name="keycap_kp6">KP 6</text>
+<text name="keycap_kp7">KP 7</text>
+<text name="keycap_kp8">KP 8</text>
+<text name="keycap_kp9">KP 9</text>
+<text name="keycap_kp_add">KP +</text>
+<text name="keycap_kp_decimal">KP .</text>
+<text name="keycap_kp_divide">KP /</text>
+<text name="keycap_kp_enter">KP ENTER</text>
+<text name="keycap_kp_equals">KP=</text>
+<text name="keycap_kp_multiply">KP *</text>
+<text name="keycap_kp_subtract">KP -</text>
+<text name="keycap_left">LEFT</text>
+<text name="keycap_leftalt">LEFT ALT</text>
+<text name="keycap_leftcontrol">LEFT CTRL</text>
+<text name="keycap_leftmeta">LEFT META</text>
+<text name="keycap_leftshift">LEFT SHIFT</text>
+<text name="keycap_leftsuper">LEFT SUPER</text>
+<text name="keycap_menu">MENU</text>
+<text name="keycap_numlock">NUM LOCK</text>
+<text name="keycap_pagedown">PAGE DOWN</text>
+<text name="keycap_pageup">PAGE UP</text>
+<text name="keycap_pause">PAUSE</text>
+<text name="keycap_power">POWER</text>
+<text name="keycap_printscreen">PRNT SCRN</text>
+<text name="keycap_right">RIGHT</text>
+<text name="keycap_rightalt">RIGHT ALT</text>
+<text name="keycap_rightcontrol">RIGHT CTRL</text>
+<text name="keycap_rightmeta">RIGHT META</text>
+<text name="keycap_rightshift">RIGHT SHIFT</text>
+<text name="keycap_rightsuper">RIGHT SUPER</text>
+<text name="keycap_scrolllock">SCROLL LOCK</text>
+<text name="keycap_space">SPACE</text>
+<text name="keycap_sysrq">SYS RQ</text>
+<text name="keycap_tab">TAB</text>
+<text name="keycap_undo">UNDO</text>
+<text name="keycap_up">UP</text>
+
+<!-- Stats screen -->
+
+<text name="stats_shipbest">ЛУЧШИЕ КОРАБЛИ</text>
+<text name="stats_topscores">ЛУЧШИЙ СЧЁТ</text>
+<text name="stats_achievements">ДОСТИЖЕНИЯ</text>
+<text name="stats_stats">СТАТИСТИКА</text>
+
+<text name="stats_ranking">#\1</text>  <!-- Place indicator in high score list. \1: place number (1 for highest score, 2 for second highest, etc.) -->
+
+<text name="defeated_stat">Побед над кораблями</text>
+<text name="beacons_stat">Маяков посещено</text>
+<text name="scrap_stat">Собрано лома</text>
+<text name="crew_stat">Нанято экипажа</text>
+<text name="most_defeated_stat">Максимум побед над кораблями</text>
+<text name="most_beacons_stat">Максимум маяков посещено</text>
+<text name="most_scrap_stat">Максимум собрано лома</text>
+<text name="most_crew_stat">Максимум нанято экипажа</text>
+<text name="total_defeated_stat">Всего побед над кораблями</text>
+<text name="total_beacons_stat">Всего маяков посещено</text>
+<text name="total_scrap_stat">Всего собрано лома</text>
+<text name="total_crew_stat">Всего нанято экипажа</text>
+
+<text name="crew_evasions">Управляемых уворотов</text>
+<text name="crew_repairs">Починок</text>
+<text name="crew_kills">Убийств в схватках</text>
+<text name="crew_jumps">Прыжков пережито</text>
+<text name="crew_masteries">Изучено навыков</text>
+<text name="most_crew_evasions">Максимум управляемых уворотов</text>
+<text name="most_crew_repairs">Максимум починок</text>
+<text name="most_crew_kills">Максимум убийств в схватках</text>
+<text name="most_crew_jumps">Максимум прыжков пережито</text>
+<text name="most_crew_masteries">Максимум изучено навыков</text>
+
+<text name="records_heading">Рекорды полётов:</text>
+<text name="crew_heading">Рекорды экипажа:</text>
+<text name="stats_heading">Статистика последнего полёта:</text>
+<text name="total_heading">Всего:</text>
+
+<text name="final_score">Общий счёт</text>
+<text name="total_games">Всего полётов</text>
+<text name="total_victories">Всего побед</text>
+
+<text name="progression_heading">Общий прогресс:</text>
+<text name="distance_heading">Достижения дальности:</text>
+<text name="skill_heading">Трюки с навыками и экипажем:</text>
+
+<text name="new_crew">Новый!</text>  <!-- Displayed on new crewmember box when ship has too many crew -->
+<text name="new_achievement">Новое!</text> <!-- 1.27 --> <!-- Displayed on achievement icon for newly earned achievements -->
+<text name="new_score">Новый!</text>  <!-- Displayed on score list when previous game makes the high score list -->
+
+<text name="type_a">Тип A</text>
+<text name="type_b">Тип B</text>
+<text name="type_c">Тип C</text>
+<text name="shipselect_type_suffix"> \1</text>  <!-- Appended to ship class in ship select screen. \1: type string ("type_a", "type_b", or "type_c") -->
+
+<text name="victory_ach_title">\1: Победа</text> <!-- 1.27 --> <!-- \1: ship class -->
+<text name="victory_ach">Победите флагман повстанцев, пилотируя \1</text>  <!-- \1: ship class -->
+<text name="quest_ach_title">\1: Задание</text> <!-- 1.27 --> <!-- \1: ship class -->
+<text name="quest_ach">Выполните специальное задание, чтобы получить \1</text>  <!-- \1: ship class -->
+
+<text name="achieved_with">Получено на \1 (\2)</text>  <!-- Shown below unlocked ship victory achievements for each type (A/B/C). \1: type string ("type_a" etc.), \2: "easy"/"normal"/"hard" -->
+
+<text name="ach_unlocked">Получено достижение!</text>  <!-- Title for regular achievement popup -->
+<text name="layout_unlocked">Открыт новый тип корабля!</text>  <!-- Title for new ship layout achievement popup -->
+<text name="ship_unlocked">Открыт новый корабль!</text>  <!-- Title for new ship class achievement popup -->
+
+<text name="ach_easy">Открыто на ЛЁГКОМ</text>  <!-- Shown below unlocked achievements -->
+<text name="ach_normal">Открыто на НОРМЕ</text>
+<text name="ach_hard">Открыто на СЛОЖНОМ</text>
+
+<text name="victory">Победа</text>
+<text name="advanced">АЕ-режим</text>
+<text name="scorelist_score">СЧЁТ     \1</text>  <!-- \1: score -->
+<text name="scorelist_sector">СЕКТОР    \1</text>  <!-- \1: sector number -->
+<text name="gameover_score">СЧЁТ: \1</text>  <!-- \1: score -->
+<text name="easy">Легко</text>
+<text name="normal">Норма</text>
+<text name="hard">Сложно</text>
+
+<text name="new_high">Новый рекорд!</text>
+
+
+<!-- 1.4 -->
+<text name="tip_beams">Совет: При проходе через каждый слой щита урон от луча уменьшается на единицу. К примеру, луч, наносящий три единицы урона при выстреле по двухслойному щиту нанесёт единицу урона в каждой комнате. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
+
+<text name="tip_fire_beams">Совет: Огненные лучи обычно не проникают сквозь щиты, поэтому даже один слой щита полностью блокирует их воздействие.</text>
+
+<text name="tip_beams_no_sp">Совет: Эти лучи не наносят урон, если у противника есть хотя бы один слой щита. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
+
+<text name="tip_ex_beams">Совет: Золтонские лучи длиннее на  своих аналогов, но они не стреляют, если в трюме меньше 30 ракет. Также они имеют повышенные шансы вызвать возгорание или пробой.</text>
+
+<text name="tip_sys_beams">Совет: Эти лучи идеально подходят для абордажа, ведь они не наносят урона корпусу корабля. Щиты полностью блокируют весь урон этих лучей. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text> 
+
+<text name="tip_beams_bio">Совет: Био-лучи не могут проникать сквозь щиты. Чтобы эффективно убивать экипаж, им нужна поддержка других орудий или дронов. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
+
+<text name="tip_missiles">Совет: Ракеты проникают сквозь щиты, но расходуют один снаряд при запуске и могут быть уничтожены вражескими защитными дронами.</text>
+
+<text name="tip_bombs">Совет: Бомбы телепортируются прямо на корабль, минуя щиты и защитных дронов. Также как и ракеты, расходуют снаряд при запуске. Не могут наносить урон обшивке, но эффективно уничтожают экипаж и системы. Их даже можно запустить по абордажной команде на вашем корабле.</text>
+
+<text name="tip_ion">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Если ионное оружие попало в щит, урон автоматически применяется к системе щитов.</text>
+
+<text name="tip_ion_fire">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Если ионное оружие попало в щит, урон автоматически применяется к щиту. Если щит был отключён, существует  шанс вызвать возгорание в отсеке.</text>
+
+<text name="tip_ion_heavy">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Тяжёлое ионное оружие не только ионизирует системы, но и повреждает их. Если ионное оружие попало в щит, урон автоматически применяется к щиту.</text>
+
+<text name="tip_ion_heavy_fire">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Тяжёлое ионное оружие не только ионизирует системы, но и повреждает их. Если ионное оружие попало в щит, урон автоматически применяется к щиту. Если щит был отключён, существует  шанс вызвать возгорание в отсеке.</text>
+
+<text name="tip_photo">Совет: Ланиусы нашли применение этому древнему фотонному оружию, хоть оно и обладает невысокой точностью.</text>
+
+<text name="tip_laser">Совет: Каждый выстрел лазера будет заблокирован щитом, независимо от его урона.</text>
+
+<text name="tip_laser_art">Совет: Артиллерийские лазеры наносят огромный урон и способны проникать сквозь 2 слоя щитов.</text>
+
+<text name="tip_rail">Совет: Рельсотрон является аналогом артиллерийских лазеров, но пробивает 2 слоя щитов, в отличии от них.</text>
+
+<text name="tip_hull">Совет: Корпусное оружие наносит двойной урон по отсекам без систем и подсистем.</text>
+
+<text name="tip_charge">Совет: Заряжающиеся орудия могут быть заряжены несколько раз, чтобы получить больше огневой мощи. Вы можете выстрелить раньше, но в результате урон будет меньше.</text>
+
+<text name="tip_chain_laser">Совет: Цепные лазеры уменьшают время на перезарядку каждый раз, когда они стреляют. Проверьте зелёный индикатор на оружии, чтобы узнать, сколько раз оно выстрелило.</text>
+
+<text name="tip_chain_ion">Совет: Цепное ионное оружие ускоряет перезарядку с каждым новым выстрелом. Проверьте зелёный индикатор на оружии, чтобы узнать, сколько раз оно выстрелило.</text> 
+
+<text name="tip_adaptive_ion">Совет: Адаптивное ионное оружие увеличивает урон с каждым новым выстрелом. Проверьте зелёный индикатор на оружии, чтобы узнать, сколько раз оно выстрелило.</text> 
+
+<text name="tip_chain_vulkan">Совет: Цепные вулканы долго разогреваются, но после этого достигают огромной скорострельности. Индикаторы на орудии показывают, сколько раз оно выстрелило.</text>
+
+<text name="tip_flak">Совет: Осколочное орудие стреляет по области. Оно менее точное, но наносит больше урона, чем лазеры.</text>
+
+<text name="tip_crystal">Совет: Кристальное оружие обладает свойствами проникать сквозь щиты.</text>
+
+<text name="tip_combat">Совет: Боевой дрон требует 1 деталь дрона для каждой новой битвы. Он будет атаковать врага, пока запитан.</text>
+
+<text name="tip_repair_combat">Совет: Этот дрон идеален для захвата вражеских кораблей целыми. Берегите от него свою абордажную команду!</text>
+
+<text name="tip_combat_hal">Совет: Боевые дроны HAL примерно на  быстрее своих обычных аналогов. Характеристики их оружия также зачастую выше.</text>
+
+<text name="tip_ham">Совет: Говорят, что существует способ сменить лучевое орудие этого дрона.</text>
+
+<text name="tip_defense">Совет: Защитный дрон требует 1 деталь дрона для каждой новой битвы. Он будет защищать ваш корабль, пока запитан.</text>
+
+<text name="tip_boarding">Совет: Абордажный дрон требует 1 деталь дрона для каждой новой битвы. Он будет атаковать экипаж врага, пока запитан.</text>
+
+<text name="tip_crew">Совет: Ремонтник систем требует 1 деталь дрона, но его не надо использовать ещё раз, пока он не уничтожен. Он остаётся на корабле и помогает вашей команде, пока запитан.</text>
+
+<text name="tip_battle">Совет: Противопехотный дрон требует 1 деталь дрона, но его не надо использовать ещё раз, пока он не уничтожен. Он остаётся на корабле и помогает вашей команде, пока запитан.</text> 
+
+<text name="tip_crew_hal">Совет: Ремонтник HAL требует 1 деталь дрона, но его не надо использовать ещё раз, пока он не уничтожен. Он остаётся на корабле и помогает вашей команде, даже если система дронов полностью разрушена. Внимание! Кнопка отключения не предусмотрена!</text>
+
+<text name="tip_remkorp">Совет: Ремонтник корпуса исчезает после ремонта, для повторного запуска понадобится дополнительная деталь дрона.</text>
+
+<text name="tip_repair_bomb">Совет: Бомбы никогда не промахиваются при наведении на ваш собственный корабль, поэтому эта бомба гарантирует полный ремонт любой вашей системы.</text>
+<text name="tip_heal_bomb">Совет: Помните, бомбы могут промахнуться мимо вражеского корабля, так что не рассчитывайте, что эта бомба гарантированно вылечит ваш экипаж при абордаже!</text>
+<text name="tip_fire_beam">Совет: Этот огненный луч не наносит урона корпусу, поэтому он не может проникать сквозь щиты.</text>
+<text name="tip_crew_beam">Совет: Этот анти-био луч не наносит урона корпусу, поэтому он не может проникать сквозь щиты. Также он не наносит урона дронам!</text>
+
+<text name="tip_uwb">Совет: Оружие, находящееся внутри универсальной орудийной установки, перезаряжается на  быстрее своего обычного аналога. Вид оружия можно определить только по его характеристикам.</text>
+
+<text name="ce_tip_beams_focus">Совет: Точечные лучи могут повреждать только один отсек, но их урон выше, чем у длинных лучей того же уровня. Каждый уровень щитов уменьшает урон от лучей на 1 единицу. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
+
+<text name="ce_tip_beams_industrial">Совет: Промышленные лучи заряжаются и стреляют очень медленно, но имеют огромную длину. Вражеские щиты с большой вероятностью могут перезарядиться и заблокировать часть урона от луча. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
+
+<text name="ce_tip_missiles_swarm">Совет: Ракетные батареи наносят пониженный урон системам и экипажу. Они игнорируют все щиты и для запуска требуют 1 ракету. Вражеские защитные дроны могут сбить их.</text> 
+
+<text name="ce_tip_mines">Совет: Мины игнорируют все вражеские щиты, но для запуска требуют 1 ракету и не могут наносить урон системам или экипажу. Вражеские защитные дроны могут сбить их.</text>
+
+<text name="ce_tip_chaff">Совет: Батарея Чафф не наносит урон, но её снаряды отвлекают на себя вражеские защитные дроны, оставляя корабль уязвимым для ракетных ударов.</text>
+
+<text name="ce_tip_laser_light">Совет: Противопехотные лазеры могут пройти сквозь слабые щиты и суперщиты, повреждая экипаж противника. Но они не могут сбивать щиты или наносить урон корпусу.</text>
+
+<text name="ce_tip_laser_light_small">Совет: Малые противопехотные лазеры не могут пройти сквозь щиты и суперщиты. Стреляют с небольшим разбросом.</text>
+
+<text name="tip_slurmgun">Совет: Эти уникальные лазеры слёрмов игнорируют все щиты, повреждают экипаж и системы. Но они не могут сбивать щиты или наносить урон корпусу.</text>
+
+<text name="ce_tip_laser_auto">Совет: Авто-лазеры могут непрерывно сбивать вражеские щиты, как некоторые боевые дроны. Каждый выстрел лазера будет заблокирован одним слоем щита.</text>
+
+<text name="ce_tip_laser_scatter">Совет: Осколочные лазеры не могут повредить системы и экипаж. Каждый выстрел лазера будет заблокирован одним слоем щита, независимо от его урона.</text>
+
+<text name="ce_tip_heavy_scatter">Совет: Тяжёлые осколочные лазеры наносят пониженный урон системам и экипажу. Каждый выстрел лазера будет заблокирован одним слоем щита, независимо от его урона.</text>
+
+<text name="ce_tip_prism">Совет: Призматические лазеры аватаров наносят ионный урон в дополнении к обычному. С небольшой вероятностью могут пробить обшивку корабля.</text>
+
+<text name="ce_tip_bombs_cluster">Совет: Разрывные бомбы телепортируют сразу несколько снарядов сквозь щиты, игнорируя защитных дронов, появляясь прямиком на корабле. Они требуют 1 ракету для запуска и не могут повредить корпус, но могут быть эффективными против экипажа и систем. При запуске их на своём корабле появится лишь одна бомба.</text>
+
+<text name="ce_tip_effector">Совет: Эффекторы игнорируют щиты и наносят ионный урон. За каждую единицу ионного урона целевая система теряет 1 единицу питания, после чего отключается на 5 секунд, предотвращая повторное включение.</text>
+
+<text name="ce_tip_missiles_tech">Совет: Техно-ракеты имеют систему маскировки и уклоняются от защитных дронов 1 уровня. Они игнорируют все вражеские щиты, но требуют 1 ракету для запуска. Защитные дроны 2 уровня по-прежнему сбивают их.</text>
+
+<text name="ce_tip_mines_tech">Совет: Техно-мины имеют систему маскировки и уклоняются от защитных дронов 1 уровня. Они игнорируют все вражеские щиты, но требуют 1 ракету для запуска и не наносят урона системам или экипажу. Защитные дроны 2 уровня по-прежнему сбивают их.</text>
+
+<text name="ce_tip_combat_stealth">Совет: Боевые стелс-дроны уклоняются от большинства выстрелов защитных дронов врага. Они требуют 1 деталь дрона для запуска в каждом бою и атакуют противника до тех пор, пока есть питание.</text>
+
+<text name="ce_tip_beam_adaptive">Совет: Адаптивные лучевые орудия увеличивают урон с каждым выстрелом. Зелёный индикатор на оружии показывает уровень усиления урона.</text>
+
+<text name="ce_tip_stungun">Совет: Парализаторы игнорируют щиты и имеют высокие шансы вывести из строя весь экипаж в определённом радиусе.</text>
+
+<text name="ce_tip_plasma">Совет: Плазменные орудия стреляют по широкой области и имеют высокий шанс начать возгорание в поражённых отсеках. Они не могут сбивать щиты, но игнорируют 1 слой щитов, а также суперщит.</text>
+
+<text name="ce_tip_chain_laser_light">Совет: Лёгкие лазеры могут пробить слабые щиты и травмировать экипаж противника. Но они не могут сбивать щиты или наносить урон по корпусу. Цепные лазеры уменьшают время на перезарядку с каждым выстрелом.</text>
+
+<text name="ce_tip_ion_pierce">Совет: Если фазовое ионное оружие попадает в щиты, ионный урон автоматически наносится системе щитов. Фазовый импульс может пройти сквозь щиты и нанести целевой системе больший урон.</text>
+
+<text name="tip_prototype">Совет: Прототипы — мощные уникальные орудия. Но им часто необходима поддержка других орудий.</text>
+
+<text name="tip_prototype2">Совет: Прототипы — мощные уникальные орудия. Но им часто необходима поддержка других орудий. Этот прототип был повреждён в бою, его характеристики снижены, но он также требует меньше энергии.</text>
+
+<text name="tip_blaster">Совет: Импульсные бластеры выводят из строя щиты и экипаж, они могут пробить корпус и поджечь отсек. Различные модификации импульсных бластеров обладают уникальными свойствами.</text>
+
+<text name="tip_no_missiles">Совет: Это орудие улучшено так, что оно больше не потребляет боеприпасы.</text>
+
+<text name="tip_laser_orden">Совет: Лазеры Ордена отличаются от обычных повышенным шансом поджога.</text>
+
+<text name="tip_speed_orden">Совет: Снаряды этого орудия летят настолько быстро, что защитные дроны не успевают их сбивать.</text>
+
+<text name="tip_tahion">Совет: Снаряды тахионных орудий невозможно сбить, они поджигают отсеки и оглушают экипаж.</text>
+
+<text name="tip_ozu">Совет: Одноразовые залповые установки готовы к использованию прямо в начале сражения. Они не требуют дополнительного питания, но стреляют только один раз за бой. Для залпа необходимо запитать любое другое орудие. Не может перезарядиться, если вы сбежали из боя.</text> 
+
+<text name="tip_smasher">Совет: Эта огромная пушка тратит по 3 ракетных снаряда за залп. Игнорирует все щиты.</text>
+<text name="tip_morph">Совет: Снаряды морф-пушек невозможно сбить, так как они летят к цели сквозь параллельное измерение. Щиты не могут их остановить.</text>
+<text name="tip_magman">Совет: Снаряды пироформера невозможно сбить, так как они летят к цели сквозь параллельное измерение. Щиты не могут их остановить.</text>
+
+
+<!-- Hangar screen -->
+
+<text name="welcome_hangar_pc">WДобро пожаловать в ангар Федерации! \n\nЗдесь вы можете выбрать ваш корабль и дать ему название, а также дать имена членам вашего экипажа. Прямо сейчас вам доступен только Kestrel, но во время игры вы можете разблокировать больше кораблей. \n\nВы можете сменить уровень сложности в правом верхнем углу. Если вы только начали играть, то для начала вы можете выбрать лёгкий режим.</text>  <!-- Shown on PC the first time the hangar is entered -->
+<text name="welcome_hangar_ipad">Добро пожаловать в Ангар Федерации! \n\nЗдесь вы можете выбрать ваш корабль и дать ему название, а также дать имена членам вашего экипажа. Прямо сейчас вам доступен только Kestrel, но во время игры вы можете разблокировать больше кораблей. \n\nВы можете сменить уровень сложности в правой стороне экрана. Если вы только начали играть, то для начала вы можете выбрать лёгкий режим.</text>  <!-- Shown on iPad the first time the hangar is entered -->
+
+<text name="tutorial_list_open">Вы открыли новый корабль! \n\nЩёлкните на СПИСОК, чтобы увидеть текущие корабли и узнать, как разблокировать остальные.</text>  <!-- Shown on the hangar screen the first time a new ship has been unlocked -->
+
+<text name="list_tutorial">Список кораблей. Здесь вы можете просмотреть все свои достижения и прогресс в открытии кораблей.</text>  <!-- Shown when opening the ship select screen for the first time, followed by one of the next three lines -->
+<text name="list_tutorial_2">Открыть новый корабль можно двумя способами: \n\nНайти и завершить специальное задание. Они часто начинаются в "родных" секторах. \n\nИли пройдите игру с предыдущем в списке кораблём, чтобы открыть следующий. \n\nНаведите курсор на корабль, чтобы получить больше информации!</text>
+<text name="list_tutorial_2_demo">As this is only the demo version of FTL, you are not able to unlock additional ships. But the full version has 10 playable ships, each with multiple unique layouts.</text>
+<text name="list_tutorial_2_ipad">To unlock a new ship, you have two options:\n\nFind and complete a unique quest within the game world. These will often start in the 'homeworld' sectors.\n\nAlternatively, beat the game with the previous ship in the list to unlock the next.\n\nTap on any ship to get more details!</text>
+
+<text name="hangar_frame_ship">КОРАБЛЬ</text>  <!-- Window frame titles for the hangar screen (WEAPONS, DRONES, and AUGMENTATIONS are taken from the equipment screen) -->
+<text name="hangar_frame_layout">ТИП КОРАБЛЯ</text>
+<text name="hangar_frame_crew">ЭКИПАЖ</text>
+
+<text name="hangar_achievements_title">Выполните 2 для типа В</text>  <!-- Shown above the ship achievement list -->
+<text name="hangar_advanced_title">Advanced Edition контент</text>  <!-- Shown above the DISABLED/ENABLED buttons -->
+
+<text name="hangar_advanced_warning">ВКЛЮЧИТЕ ADVANCED EDITION\nКОНТЕНТ ДЛЯ ДОСТУПА</text>  <!-- Displayed over ship image for AE-only ships if AE content is disabled -->
+
+<text name="start_button">СТАРТ</text>  <!-- Text for hangar screen "Start" button -->
+<text name="hangar_exit_button">ГЛАВНОЕ МЕНЮ</text>  <!-- Text for hangar screen "Main Menu" button (iPad-specific) -->
+
+<text name="easy_button">ЛЕГКО</text>  <!-- Text for hangar screen "Easy" button; also used in in-game menu -->
+<text name="easy_title">Лёгкий режим</text>  <!-- Info box for hangar screen "Easy" button -->
+<text name="easy_text">Больше лома и более лёгкие враги.</text>
+
+<text name="normal_button">НОРМА</text>  <!-- Text for hangar screen "Normal" button; also used in in-game menu -->
+<text name="normal_title">Нормальный режим</text>  <!-- Info box for hangar screen "Normal" button -->
+<text name="normal_text">Стандартный лом и враги. \n\nВы получаете 25% увеличение счёта.</text>
+
+<text name="hard_button">СЛОЖНО</text>  <!-- Text for hangar screen "Hard" button; also used in in-game menu -->
+<text name="hard_title">Сложный режим</text>  <!-- Info box for hangar screen "Hard" button -->
+<text name="hard_text">Мало лома и сложные враги. \n\nВы получаете 50% увеличение счёта.</text>
+
+<text name="advanced_on_button">ВКЛЮЧЕН</text>  <!-- Text for hangar screen "AE Content Enabled" button; also used in in-game menu -->
+<text name="advanced_on_title">Расширенное издание</text>  <!-- Info box for hangar screen "AE Content Enabled" button -->
+<text name="advanced_on_text">Новые системы, оружие, инопланетная раса, и многое другое! Рекомендуется для опытных игроков.</text>
+<text name="advanced_on_demo_text">NOT AVAILABLE IN DEMO</text>  <!-- Shown below "advanced_text" in demo builds -->
+
+<text name="advanced_off_button">ОТКЛЮЧЕН</text>  <!-- Text for hangar screen "AE Content Enabled" button; also used in in-game menu -->
+<text name="advanced_off_title">Обычный режим</text>  <!-- Info box for hangar screen "AE Content Disabled" button -->
+<text name="advanced_off_text">Стандартное издание Faster Than Light.</text>
+
+<text name="ship_rename_button">ИМЯ</text>  <!-- Text for ship rename button on the hangar screen --><!-- 1.26.6 -->
+<text name="ship_list_button">список</text>  <!-- Text for ship list button on the hangar screen -->
+<text name="ship_random_button">СЛУЧАЙНО</text>  <!-- Text for "Random Ship" button on the hangar screen -->
+
+<text name="typebutton_a">A</text>  <!-- Button titles for ship type buttons on the hangar screen; should be 1 character each -->
+<text name="typebutton_b">B</text>
+<text name="typebutton_c">C</text>
+
+<text name="ship_showrooms_button">ПЛАНИРОВКА</text>  <!-- Text for "Show Rooms" button on the hangar screen -->
+<text name="ship_hiderooms_button">ВНЕШНИЙ ВИД</text>  <!-- Text for "Hide Rooms" button on the hangar screen -->
+
+<text name="crewbox_customize">НАСТРОИТЬ</text>  <!-- Text for "Customize" button in hangar screen crew boxes -->
+<text name="crewbox_rename">ИМЯ</text>  <!-- Text for "Rename" button when customizing crew (also used on iPad in crew manifest screen) -->
+<text name="crewbox_accept">ПРИНЯТЬ</text>  <!-- Text for "Accept" button when customizing crew -->
+
+<!-- Ship select screen -->
+
+<text name="shiplist_title">ВЫБЕРИТЕ КОРАБЛЬ</text>
+
+<text name="typebutton_type_a">ТИП A</text>  <!-- Button titles for ship type buttons on the ship list screen -->
+<text name="typebutton_type_b">ТИП B</text>
+<text name="typebutton_type_c">ТИП C</text>
+
+<text name="no_type_c">Нет корабля</text>  <!-- Shown in ship select screen for Crystal and Lanius ships when type C is selected -->
+
+<text name="shiplist_accept_button">ПРИНЯТЬ</text>  <!-- Text for "Accept" button on the ship list screen -->
+
+<text name="ship_unlock_victory">Победите флагман, пилотируя \1 любого типа, чтобы открыть \2</text>  <!-- \1: required ship class, \2: unlocked ship class -->
+<text name="ship_unlock_sector5">Доберитесь до 5-го сектора, пилотируя \1,чтобы открыть \2</text>  <!-- \1: required ship class, \2: unlocked ship class -->
+
+<text name="alt_unlock">Альтернативная разблокировка: \1</text>  <!-- \1: alternate unlock condition -->
+<text name="alt_unlock_victory">Победите флагман, пилотируя \1 любого типа</text>  <!-- \1: required ship class -->
+<text name="alt_unlock_victory_locked">Победите флагман, пилотируя \1 любого типа (закрыто)</text>  <!-- Used if required ship class is locked. \1: required ship class -->
+<text name="alt_unlock_crystal">Победите флагман, используя типы А и B каждого корабля (кроме крейсера ланиусов)</text>
+
+<text name="unidentified">Неопознанный крейсер</text>  <!-- Replaces "Crystal Cruiser" on ship select screen if Crystal ship is not yet unlocked -->
+
+<!-- HUD UI elements -->
+
+<text name="status_hull">КОРПУС</text>
+<text name="status_shields">ЩИТЫ</text>  <!-- Used in combat box for enemy shield status -->
+
+<text name="button_jump">FTL</text>  <!-- Also used in beacon map on iPad --><!-- 1.26.6 -->
+<text name="ftl_drive"></text>  <!-- Displayed above JUMP button -->
+<text name="ftl_charging">ЗАРЯДКА</text>  <!-- Displayed under JUMP button while FTL drive is charging -->
+<text name="ftl_ready">ГОТОВ!</text>  <!-- Displayed under JUMP button after FTL drive is charged -->
+<text name="button_store">магазин</text>
+<text name="button_options">НАСТРОЙКИ</text>  <!-- Only used on iPad -->
+<text name="button_pause">ПАУЗА</text>  <!-- Only used on iPad -->
+
+<text name="button_autofire">АВТО-ОГОНЬ</text>
+<text name="button_autofire_ipad">АВТО\nОГОНЬ</text>  <!-- iPad version; 2 lines due to space constraints -->
+
+<text name="button_lockdown">ЗАПЕРЕТЬ</text>  <!-- Crystal crew power button -->
+
+<text name="weapons_label"></text>  <!-- Label under the weapon boxes -->
+<text name="drones_label"></text>  <!-- Label under the drone boxes -->
+<text name="subsystems_label">ПОДСИСТЕМЫ</text>  <!-- Label under the subsystem icons -->
+
+<text name="door_close_all">ЗАКРЫТЬ\nВСЁ</text>  <!-- Button labels for the door subsystem on iPad -->
+<text name="door_open_all">ОТКРЫТЬ\nВСЁ</text>
+
+<text name="miss">ПРОМАХ</text>  <!-- Displayed when a shot misses its target -->
+<text name="resist">СОПРОТИВЛЕНИЕ</text>  <!-- Displayed when a shot hits its target but the target takes no damage (Rock Plating augmentation) -->
+
+<text name="paused">ПАУЗА</text>  <!-- Displayed when the game is paused -->
+<text name="paused_text">Нажмите \1, чтобы продолжить</text>  <!-- Text below "PAUSED" on PC. \1: key name -->
+<text name="auto_paused">АВТО-ПАУЗА</text>  <!-- Displayed on iPad when the game is auto-paused -->
+<text name="auto_paused_text">Игра продолжится после завершения действия</text>  <!-- Text below "AUTO-PAUSED" -->
+<text name="paused_crew">ВЫБОР ЭКИПАЖА</text>  <!-- Displayed on iPad when selecting crew -->
+<text name="paused_crew_text">Перетащите, чтобы выбрать несколько членов экипажа</text> <!-- Text below "CREW SELECTION" -->
+<text name="paused_door">УПРАВЛЕНИЕ ШЛЮЗАМИ</text>  <!-- Displayed on iPad when opening/closing doors -->
+<text name="paused_door_text">Нажмите или перетащите, чтобы открыть и закрыть двери</text> <!-- Text below "DOOR CONTROL" -->
+<text name="paused_hacking">ВЗЛОМ</text>  <!-- Displayed on iPad when selecting a hacking target -->
+<text name="paused_hacking_text">Нажмите на комнату, чтобы отправить дрона-взломщика</text> <!-- Text below "HACKING" -->
+<text name="paused_mind">УПРАВЛЕНИЕ РАЗУМОМ</text>  <!-- Displayed on iPad when selecting a mind control target -->
+<text name="paused_mind_text">Tap on an enemy to temporarily convert them</text> <!-- Text below "MIND CONTROL" -->
+<text name="paused_room">ROOM SELECTION</text>  <!-- Displayed on iPad when choosing a room to send crew to -->
+<text name="paused_room_text">Tap on a room to select a destination</text> <!-- Text below "ROOM SELECTION" -->
+<text name="paused_targeting">TARGETING</text>  <!-- Displayed on iPad when selecting a weapon target -->
+<text name="paused_targeting_text">Tap on a room to select a target</text> <!-- Text below "TARGETING" for non-beam weapons -->
+<text name="paused_targeting_text_beam">Tap and drag to select the target area</text> <!-- Text below "TARGETING" for beam weapons -->
+<text name="paused_teleport">TELEPORTING</text>  <!-- Displayed on iPad when selecting a teleport target -->
+<text name="paused_teleport_text_in">Tap an enemy ship's room to retrieve any crew inside</text>  <!-- Text below "TELEPORTING" when retrieving crew from the enemy ship -->
+<text name="paused_teleport_text_out">Tap an enemy ship's room to send your boarding team</text> <!-- Text below "TELEPORTING" when sending crew to the enemy ship -->
+
+<!-- Warning popups -->
+
+<text name="warning_warning">ТРЕВОГА!</text>  <!-- Generic line used in multiple warning messages (usually underlined) -->
+
+<text name="warning_in_danger">В ОПАСНОСТИ</text>  <!-- Displayed under the SHIP button if the player tries to click it when in combat or at an environmental danger beacon -->
+
+<text name="warning_environment_danger">ОПАСНО!</text>  <!-- Displayed below environmental danger icons -->
+<text name="warning_pds_allies">СОЮЗНИКИ!</text>  <!-- Displayed in green below the ASB icon when friendly anti-ship batteries are present -->
+
+<text name="warning_solar_flare">СОЛНЕЧНАЯ ВСПЫШКА\nНЕИЗБЕЖНА!</text>  <!-- Displayed in star environments when a solar flare is about to occur -->
+<text name="warning_ion_pulse">ИОННЫЙ\nИМПУЛЬС\nНЕИЗБЕЖЕН!</text>  <!-- Displayed in pulsar environments when an ion pulse is about to occur -->
+<text name="warning_pds_locked">ПКБ: ЦЕЛЬ\nЗАХВАЧЕНА!</text>  <!-- Displayed in anti-ship battery environments when the ASB is about to fire -->
+<text name="warning_power_surge">ОБНАРУЖЕН СКАЧОК\nНАПРЯЖЕНИЯ</text>  <!-- Displayed when the final boss is about to use its special attack -->
+
+<text name="warning_oxygen">НИЗКИЙ\nУРОВЕНЬ О2!</text>  <!-- Displayed when the player ship's oxygen level falls below 25% -->
+<text name="warning_clone_off_1">КЛОН-ОТСЕК ОТКЛЮЧЁН</text>  <!-- Displayed along with the next string when the player ship's clone system is depowered and a dead crewmember is about to be lost forever -->
+<text name="warning_clone_off_2">ЭКИПАЖ УМИРАЕТ!</text>
+<text name="warning_engine">ДВИГАТЕЛИ\nУНИЧТОЖЕНЫ</text>  <!-- Displayed when the player ship's engine system is destroyed -->
+<text name="warning_hull_75">КОРПУС МЕНЕЕ 75%</text>  <!-- Displayed when the player ship's hull strength falls to 75% or below -->
+<text name="warning_hull_50">КОРПУС МЕНЕЕ 50%</text>  <!-- Displayed when the player ship's hull strength falls to 50% or below -->
+<text name="warning_hull_25">КОРПУС В КРИТИЧЕСКОМ\nСОСТОЯНИИ</text>  <!-- Displayed when the player ship's hull strength falls to 25% or below -->
+<text name="warning_shields">ЩИТЫ УНИЧТОЖЕНЫ</text>  <!-- Displayed when the player ship's shield system is damaged to 1 point of health or less -->
+<text name="warning_intruders">ОБНАРУЖЕНЫ\nЗАХВАТЧИКИ</text>  <!-- Displayed when enemy crew are on the player ship -->
+
+<text name="warning_no_missiles">НЕТ БОЕПРИПАСОВ</text>  <!-- Displayed when trying to use a missile weapon with no missile ammo -->
+<text name="warning_no_drones">НЕТ ДЕТАЛЕЙ ДРОНОВ</text>  <!-- Displayed when trying to launch a drone with no drone parts -->
+<text name="warning_no_enemy_ship">НЕТ\nВРАЖЕСКОГО\nКОРАБЛЯ</text>  <!-- Displayed when trying to launch a drone that targets the enemy ship (e.g. boarding drone) but no enemy ship is present -->
+<text name="warning_no_power">НЕ\nХВАТАЕТ\nЭНЕРГИИ</text>  <!-- Displayed when trying to add power to a system but no power is available -->
+<text name="warning_no_power_ipad">POWER\nTOO\nLOW</text>  <!-- iPad version of "warning_no_power"; different wording in English because of space limits -->
+<text name="warning_system_broken">СИСТЕМА\nУНИЧТОЖЕНА</text>  <!-- Displayed when trying to power a weapon or drone but the system is too damaged to support it -->
+<text name="warning_needs_upgrade">ТРЕБУЕТСЯ\nУЛУЧШЕНИЕ\nСИСТЕМЫ</text>  <!-- Displayed when trying to power a weapon or drone but the system has not been upgraded enough to support it, or when trying to add the last unit of power to a shield system at an odd-numbered upgrade level -->
+<text name="warning_no_system_power">НЕ ХВАТАЕТ\nПИТАНИЯ</text>  <!-- Displayed when trying to power a weapon or drone but the system power is already used by other weapons or drones. The difference between this and "warning_needs_upgrade" is that this is displayed if the system could power this weapon/drone on its own, but it currently can't because other items are also powered. -->
+<text name="warning_super_shield_mind">СУПЕРЩИТ\nБЛОКИРУЕТ\nУПРАВЛЕНИЕ\nРАЗУМОМ</text>  <!-- Displayed when trying to use mind control on an enemy ship with a Zoltan shield -->
+<text name="warning_super_shield_hacking">СУПЕРЩИТ\nБЛОКИРУЕТ\nВЗЛОМ</text>  <!-- Displayed when trying to use hacking on an enemy ship with a Zoltan shield -->
+<text name="warning_super_shield_teleporter">СУПЕРЩИТ\nБЛОКИРУЕТ\nТЕЛЕПОРТ</text>  <!-- Displayed when trying to use the teleporter on an enemy ship with a Zoltan shield -->
+
+<text name="warning_ftl_charging">ВРАГ ЗАРЯЖАЕТ FTL-ПРИВОД</text>  <!-- Displayed when the enemy ship is charging its FTL drive to escape -->
+<text name="warning_ftl_charging_ipad">FTL\nCHARGING</text>  <!-- Same, for the iPad -->
+<text name="warning_ftl_delayed">ЗАРЯДКА FTL ОТЛОЖЕНА</text>  <!-- Displayed when the enemy ship is trying to escape but its FTL drive is not charging -->
+<text name="warning_ftl_delayed_ipad">FTL\nDELAYED</text>  <!-- Same, for the iPad -->
+<text name="warning_ftl_imminent">ПРЫЖОК НЕИЗБЕЖЕН</text>  <!-- Displayed when the enemy ship is about to escape -->
+<text name="warning_ftl_imminent_ipad">FTL\nJUMP\nIMMINENT</text>  <!-- Same, for the iPad -->
+
+<text name="warning_boss_jump">ФЛАГМАН\nПРЫГАЕТ</text>  <!-- Displayed on the map screen when the final boss is about to jump to a new beacon -->
+
+<!-- Combat box -->
+
+<text name="target_window">ЦЕЛЬ</text>  <!-- 1.26.6 --><!-- Title of the enemy ship window -->
+
+<text name="combat_class">Класс: \1</text>  <!-- \1: ship class -->
+<text name="combat_relationship">Отношение: \1</text>  <!-- \1: "neutral" or "hostile" -->
+<text name="neutral">Нейтральное</text>
+<text name="hostile">Враждебное</text>
+
+<text name="engines_hacked">Двигатель взломан</text>
+<text name="pilot_hacked">Рубка управления взломана</text>
+<text name="current_evasion">Уклонение: \1</text>  <!-- \1: current evasion -->
+
+<text name="oxygen_hacked">Кислород взломан</text>
+<text name="current_oxygen">Кислород: \1</text>  <!-- \1: current oxygen level -->
+
+<!-- Tooltips when hovering over deployed drones -->
+
+<text name="ion_intruder">Ионный абордажник</text>
+<text name="crew_repair_drone">Ремонтник систем</text>
+<text name="anti_person_drone">Противопехотный дрон</text>
+<text name="boarder_drone">Абордажный дрон</text>
+
+<text name="hacking_tooltip">Дрон-взломщик. Наведение невозможно.</text>
+<text name="repair_tooltip">Ремонтник корпуса. Наведение невозможно.</text>
+<text name="boarding_tooltip">Абордажный дрон. Наведение невозможно.</text>
+<text name="shield_tooltip">Щитовой дрон. Наведение невозможно.</text>
+
+<text name="combat_friendly">Ваш боевой дрон: \nПериодически атакует вражеский корабль. Будет работать, пока его не уничтожат, или вы не совершите прыжок.</text>
+<text name="combat_enemy">Вражеский боевой дрон: \nПериодически атакует ваш корабль. Может быть отключён повреждением вражеской системы управления дронами.</text>
+
+<text name="defense_friendly">Ваш защитный дрон 1 уровня: \nСбивает ракеты, мины, мусор, астероиды и дрона-взломщика. Будет работать, пока не будет уничтожен, или вы не совершите прыжок.</text>
+<text name="defense_enemy">Защитный дрон 1 уровня: \nСбивает ракеты, мины, мусор, астероиды и дрона-взломщика. Может быть отключён повреждением вражеской системы управления дронами.</text>
+
+<text name="defense_2_friendly">Ваш защитный дрон 2 уровня: \nСбивает любые снаряды. Будет работать, пока его не уничтожат, или вы не совершите прыжок.</text>
+<text name="defense_2_enemy">Защитный дрон 2 уровня: \nСбивает любые снаряды. Может быть отключён повреждением вражеской системы управления дронами.</text>
+
+<text name="anti_combat_friendly">Ваш анти-боевой дрон: \nОглушает и уничтожает вражеских дронов. Будет работать, пока его не уничтожат, или вы не совершите прыжок.</text>
+<text name="anti_combat_enemy">Вражеский анти-боевой дрон: \nОглушает и уничтожает ваших дронов. Может быть отключён нанесением урона по системе управления дронами вражеского корабля.</text>
+
+<!-- Star map -->
+
+<text name="map_title">КАРТА МАЯКОВ</text>  <!-- Title for the star map -->
+<text name="map_sector">СЕКТОР</text>  <!-- Sector number label -->
+
+<text name="map_icon_base">БАЗА</text>  <!-- Map icon labels -->
+<text name="map_icon_distress">БЕДСТВИЕ</text>
+<text name="map_icon_exit">ВЫХОД</text>
+<text name="map_icon_quest">ЗАДАНИЕ</text>
+<text name="map_icon_repair">РЕМОНТ</text>
+<text name="map_icon_store">МАГАЗИН</text>
+
+<text name="button_nextsector">СЛЕДУЮЩИЙ СЕКТОР</text>  <!-- Button shown when at the sector exit -->
+<text name="button_wait">ЖДАТЬ</text>  <!-- Button shown when out of fuel or in sector 8 -->
+<text name="map_distress_beacon">МАЯК\nБЕДСТВИЯ</text>  <!-- Label for the distress beacon on/off button when out of fuel -->
+<text name="button_distress_off">выкл</text> <!-- Distress beacon toggle button -->
+<text name="button_distress_on">вкл</text>
+
+<text name="map_nofuel">НЕТ ТОПЛИВА</text>  <!-- Shown over the map if the ship cannot jump because it's out of fuel -->
+<text name="map_waiting">Ждём...</text>  <!-- Shown over the map for a short time after pressing the WAIT button -->
+
+<text name="sector_title">КАРТА СЕКТОРОВ</text> <!-- 1.27 --><!-- 1.26.6 --> <!-- Title for the sector map (shown when jumping to a new sector) -->
+<text name="sector_legend_civilian">Гражданский</text>  <!-- Sector type legend labels -->
+<text name="sector_legend_hostile">Опасный</text>
+<text name="sector_legend_nebula">Туманность</text>
+<text name="sector_civilian">Неопознанный гражданский сектор</text>  <!-- Names for unidentified sectors --> <!-- 1.31 -->
+<text name="sector_hostile">Неопознанный опасный сектор</text>
+<text name="sector_nebula">Неопознанная туманность</text>
+<text name="sector_unknown">Неопознанный особый сектор</text>
+
+<text name="boss_jumps">Прыжков до того, как база будет уничтожена</text>  <!-- Shown in sector 8 after the flagship reaches the Federation base to indicate the number of turns until the player loses the game -->
+<text name="pc_boss">Флагман уничтожит базу Федерации, если он проведёт на ней три хода подряд. \n\nКрасная вращающаяся иконка флагмана показывает его положение. Когда линия прыжка флагмана становится толстой, это означает, что он прыгнет к маяку на этом ходу. \n\nРемонтные станции бесплатно частично ремонтируют.</text>
+<text name="ipad_boss">Флагман уничтожит базу Федерации, если он проведёт на ней три хода подряд. Красная вращающаяся иконка флагмана показывает его положение. Когда линия прыжка флагмана становится сплошной, это означает, что он прыгнет к маяку на этом ходу. Ремонтные станции бесплатно частично ремонтируют.</text>
+
+<text name="final_sector_wait">Ожидать в текущей области.</text>  <!-- Text shown next to the WAIT button (replaces map_current_loc) -->
+
+<text name="map_current_loc">Ваше текущее положение.</text>  <!-- Descriptive text for various beacon types -->
+<text name="map_boss_loc">Флагман повстанцев</text>
+
+<text name="map_base_loc">Это — база Федерации.</text>
+<text name="map_exit_loc">Это маяк выхода. Летите туда, чтобы попасть в следующий сектор.</text>
+<text name="map_rebels_loc">Повстанцы захватят этот маяк в ближайшее время!</text>
+<text name="map_store_loc">Ранее вы нашли магазин в этом месте.</text>
+<text name="map_repair_loc">Ремонтная станция Федерации. Ремонтирует повреждения корпуса и обеспечивает припасами.</text>
+<text name="map_fleet_loc">Повстанцы контролируют этот маяк. Очень опасно.</text>
+<text name="map_hostile_loc">Вражеский корабль был оставлен в этом месте.</text>
+<text name="map_nothing_loc">Разведанное место. Ничего интересного.</text>
+<text name="map_distress_loc">Сигнал бедствия. Кому-то, возможно, нужна помощь.</text>
+<text name="map_ship_loc">Не посещено. Обнаружен корабль.</text>
+<text name="map_quest_loc">Не посещено. Цель задания.</text>
+<text name="map_merchant_loc">Не посещено. Расположение торговцев.</text>
+<text name="map_unvisited_loc">Непосещённое место.</text>
+
+<text name="map_nebula_fleet_loc">Флот повстанцев был готов к туманности в этом секторе, поэтому она не будет таким эффективным укрытием.</text>
+<text name="map_nebula_loc">Туманность замедлит преследование флота, но также и нарушит работу ваших сенсоров.</text>
+<text name="map_asteroid_loc">Обнаружено астероидное поле.</text>
+<text name="map_sun_loc">Координаты маяка опасно близки к звезде неподалёку.</text>
+<text name="map_ion_loc">В этом секторе туманности бушует ионный шторм.</text>
+<text name="map_pulsar_loc">В этой зоне пульсар испускает опасные электромагнитные импульсы.</text>
+
+<text name="map_pds_fleet">В этой зоне противокорабельные батареи флота откроют по вам огонь.</text>
+<text name="map_pds_loc">В этой системе обнаружена планетарная противокорабельная батарея.</text>
+
+<!-- Upgrade/crew/equipment screen -->
+
+<text name="upgrade_frame_systems">СИСТЕМЫ</text>  <!-- Window frame titles for the upgrade screen -->
+<text name="upgrade_frame_subsystems">ПОДСИСТЕМЫ</text>
+<text name="upgrade_frame_reactor">РЕАКТОР</text>
+<text name="button_accept">ПРИНЯТЬ</text>  <!-- Text for the "accept" button on the upgrade screen -->
+<text name="button_undo">ОТМЕНА</text>  <!-- Text for the "undo" button on the upgrade screen -->
+<text name="button_upgrade">UPGRADE</text>  <!-- Text for the iPad-specific confirmation button -->
+<text name="upgrade_max">МАКС.</text>  <!-- Shown instead of upgrade cost when a system is fully upgraded -->
+<text name="upgrade_reactor_power">\1 ЕД. ЭНЕРГИИ</text>  <!-- Shown in the reactor upgrade button. \1: current reactor power level -->
+
+<text name="crewbox_dismiss">ВЫГНАТЬ</text>
+<text name="rename_note">Примечание: Щёлкните на имя экипажа, чтобы изменить его.\nИзмените порядок перетаскиванием, смена страниц колёсиком мыши.</text> <!-- Displayed on the crew manifest screen -->
+
+<text name="equipment_frame_weapons">ОРУДИЯ</text>  <!-- Window frame titles for the equipment screen -->
+<text name="equipment_frame_drones">ДРОНЫ</text>
+<text name="equipment_frame_cargo">ТРЮМ</text>
+<text name="equipment_frame_augments">УСИЛЕНИЯ</text>
+<text name="equipment_no_system">СИСТЕМА НЕ УСТАНОВЛЕНА</text>  <!-- Shown if weapon or drone system is not installed; also used on hangar screen -->
+
+<text name="dismiss_box_title">DISMISSAL</text>  <!-- Only used on iPad -->
+<text name="dismiss_box_text">Drag a crew\nmember into\nthis box to\ndismiss them.</text>  <!-- Only used on iPad; line breaks optional (text will auto-wrap) -->
+<text name="overcapacity_crew_title">НЕТ\nМЕСТА</text>
+<text name="overcapacity_crew_text">Вам необходимо убрать лишнего члена команды для продолжения.</text>  <!-- Line breaks optional (text will auto-wrap) -->
+<text name="overcapacity_item_title">НЕТ\nМЕСТА</text>
+<text name="overcapacity_item_text1">Этот предмет будет оставлен после прыжка.</text>  <!-- Line breaks optional (text will auto-wrap) -->
+<text name="overcapacity_item_text2">Для смены предмета перетащите его мышкой.</text>  <!-- Line breaks optional (text will auto-wrap) -->
+<text name="overcapacity_aug_title">НЕТ\nМЕСТА</text>
+<text name="overcapacity_aug_text1">Это усиление будет оставлено после прыжка.</text>  <!-- Line breaks optional (text will auto-wrap) -->
+<text name="overcapacity_aug_text2">Для смены усиления перетащите его мышкой.</text>  <!-- Line breaks optional (text will auto-wrap) -->
+
+<!-- Store screen -->
+
+<text name="store_tab_buy">КУПИТЬ</text>
+<text name="store_tab_sell">ПРОДАТЬ</text>
+<text name="store_tab_page1">ЛИСТ 1</text>  <!-- Also used in key config screen -->
+<text name="store_tab_page2">ЛИСТ 2</text>  <!-- Also used in key config screen -->
+
+<text name="store_title_items">ПРИПАСЫ</text>  <!-- Title text for store window subframes -->
+<text name="store_title_repair">РЕМОНТ</text>
+<text name="store_title_augments">УСИЛЕНИЯ</text>
+<text name="store_title_crew">ЭКИПАЖ</text> <!-- 1.29 -->
+<text name="store_title_drones">ДРОНЫ</text>
+<text name="store_title_systems">СИСТЕМЫ</text>
+<text name="store_title_weapons">ОРУДИЯ</text>
+
+<text name="store_current_hull">ПРОЧНОСТЬ\nКОРПУСА</text>  <!-- Shown in lower left corner of store window -->
+
+<text name="button_buy">BUY</text>  <!-- "Confirm buy" button, only used on iPad -->
+<text name="button_sell">SELL</text>  <!-- "Confirm sell" button, only used on iPad -->
+
+<text name="repair_all_button">ЧИНИТЬ\nВСЁ</text>
+<text name="repair_all_title">Ремонт всего корпуса</text>
+<text name="repair_all_desc">Заплатить за починку всего корпуса.</text>
+<text name="repair_one_button">ЧИНИТЬ 1</text>
+<text name="repair_one_title">Частичный ремонт</text>
+<text name="repair_one_desc">Заплатить за починку 1 единицы корпуса.</text>
+<text name="repair_max">МАКС.</text>  <!-- Shown in repair buttons to indicate that hull is at full health -->
+
+<text name="sell_box_title">ПРОДАЖА</text>
+<text name="sell_box_text">Переместите сюда оборудование или усиление, чтобы продать его.</text>  <!-- Line breaks optional (text will auto-wrap) -->
+<text name="sell_value">ЦЕНА ПРОДАЖИ</text>
+
+<text name="max_augments">Ваш корабль может иметь только 3 улучшения одновременно.</text>
+<text name="have_augment">У вас уже есть это усиление этого типа, и их эффекты не складываются.</text> <!-- 1.28 -->
+
+<text name="max_crew">Ваш корабль полон и не может вместить больше экипажа.</text>
+<text name="max_drones">Ваш склад полон, больше дронов не поместится!</text>
+<text name="max_weapons">Ваш склад полон, больше оружия не поместится!</text>
+<text name="system_drones">Даёт питание дронам на корабле.</text>  <!-- Info text for drone system -->
+
+<text name="free_drone">Случайный дрон в подарок: \1</text>  <!-- Additional info text for drone system. \1: drone type -->
+
+<text name="sys_full">У вас уже максимальное количество систем.</text>  <!-- Tooltip shown on systems when the ship already has the maximum number of systems -->
+
+<!-- Tooltips when hovering over deployed drones -->
+
+<text name="defense_asteroid_friendly">Ваш защитный дрон:\nСбивает астероиды. Будет работать до тех пор, пока не будет уничтожен или пока вы не прыгнете.</text>
+<text name="defense_asteroid_enemy">Защитный дрон:\nСбивает астероиды. Может быть отключён путём повреждения системы дронов вражеского корабля.</text>
+
+<text name="defense_solid_friendly">Ваш защитный дрон:\nСбивает ракеты, мины, астероиды и боевые дроны. Будет работать до тех пор, пока не будет уничтожен или пока вы не прыгнете.</text>
+<text name="defense_solid_enemy">Защитный дрон:\nСбивает ракеты, мины, астероиды и боевые дроны. Может быть отключён путём повреждения системы дронов вражеского корабля.</text>
+
+<text name="defense_all_friendly">Ваш защитный дрон:\nСбивает все снаряды и дроны. Будет работать до тех пор, пока не будет уничтожен или пока вы не прыгнете.</text>
+<text name="defense_all_enemy">Защитный дрон:\nСбивает все снаряды и дроны. Может быть отключён путём повреждения системы дронов вражеского корабля.</text>
+
+<!-- System level info -->
+
+<text name="artillery_1">перезарядка 1.25x‡</text><!-- 1.26 -->
+<text name="artillery_2">перезарядка 1x‡</text><!-- 1.26 -->
+<text name="artillery_3">перезарядка 0.75x‡</text><!-- 1.26 -->
+<text name="artillery_4">перезарядка 0.5x‡</text><!-- 1.26 -->
+
+<text name="door_1">Обычные двери</text>
+<text name="door_2">Укреплённые двери</text>
+<text name="door_3">Армированные двери</text>
+<text name="door_4">Бронированные двери</text>
+
+<text name="pilot_1">Необходим пилот</text>
+<text name="pilot_2">Автопилот: 50% уворота</text>
+<text name="pilot_3">Автопилот: 80% уворота</text>
+
+<text name="sensor_1">Интерьер вашего корабля</text>
+<text name="sensor_2">Интерьер корабля врага</text>
+<text name="sensor_3">Уворот, О2 и орудия врага</text><!-- 1.31 -->
+<text name="sensor_4">Энергия корабля врага</text>
+
+<text name="cloak">Маскировка: \1 секунд</text>  <!-- \1: cloak duration -->
+
+<text name="teleporter_on">\1 сек. перезарядка</text>  <!-- \1: cooldown duration -->
+
+<text name="engine">Уворот: \1 / FTL: \2x</text>  <!-- \1: evasion rate, \2: FTL charge rate -->
+
+<text name="medbay_healing">Скорость лечения: \1x</text>  <!-- \1: healing rate -->
+
+<text name="system_power">Увеличение мощности</text>  <!-- Generic info line for weapon/drone systems -->
+
+<text name="oxygen_on">Скорость подачи О2: \1x</text>  <!-- \1: oxygen refill rate -->
+
+<text name="shields_0">1 защитный барьер</text>
+<text name="shields_1">2 защитных барьера</text>
+<text name="shields_2">3 защитных барьера</text>
+<text name="shields_3">4 защитных барьера</text>
+
+<text name="hacking_duration">\1 сек. взлома</text>  <!-- \1: hacking effect duration -->
+
+<text name="mind_1">Управляет разумом 1 цели</text><!-- 1.31 -->
+<text name="mind_2">+25 HP, +50% урон</text><!-- 1.31 -->
+<text name="mind_3">+50 HP, +100% урон, 2 цели</text><!-- 1.31 -->
+
+<text name="battery_power">Даёт \1 доп. энергии</text>
+
+<text name="clone">\1 сек. клон.</text>  <!-- \1: clone time -->
+<text name="clone_full">\1 сек. клон. + \2 хп/прыжок</text>  <!-- \1: clone time, \2: healing amount -->
+
+<text name="hotkey_temporal">Запитать манипулятор времени</text>
+<text name="hotkey_un_temporal">Отключить манипулятор времени</text>
+<text name="hotkey_temporal_speed">Манипулятор времени: ускорение</text>
+<text name="hotkey_temporal_slow">Манипулятор времени: замедление</text>
+
+<text name="tooltip_temporal">Манипулятор времени: изменяет течение времени в одном отсеке.</text>
+<text name="tooltip_temporal_enemy">Манипулятор времени: враг может использовать это, чтобы изменить течение времени в одном отсеке.</text><!-- 1.31 -->
+
+<text name="temporal">Время \1x/\4x на \3/\6 сек.</text> 
+<text name="temporal_tooltip">Время \1x/\4x на \3/\6 сек.</text>
+
+<text name="temporal_arm_super_shields">Блокировано суперщитом.</text>
+<text name="temporal_arm_speed">Ускорить всё в отсеке в \1x на \3 сек.</text>
+<text name="temporal_arm_slow">Замедлить всё в отсеке в \4x на \6 сек.</text>
+
+<text name="temporal_button_speed">Ускорить всё, что происходит в отсеке, на короткое время.\nГорячая клавиша: \1</text> <!-- key name --><!-- 1.31 -->
+<text name="temporal_button_slow">Замедлить всё, что происходит в отсеке, на короткое время.\nГорячая клавиша: \1</text> <!-- key name --><!-- 1.31 -->
+
+<text name="system_temporal_title">Манипулятор времени</text>
+<text name="system_temporal_desc">Изменяет течение времени в одном отсеке. Улучшение увеличивает продолжительность и силу течения времени.</text>
+
+<text name="crew_spawn_chance">Шанс появления экипажа: \1%</text>  <!-- \1: chance, \2 is low/medium/high -->
+
+<text name="crew_death_time">Время жизни: \1 сек.</text>
+<text name="crew_death_time_expired">Время жизни: истекло</text>
+
+<!-- <accuracyMod> to weapons -->
+<text name="accuracy_modifier">Модификатор точности: \1</text><!-- 1.5 -->
+
+<text name="erosion_effect">Эрозия: \1 (\2 сек.)</text>  <!-- \1: total damage, \2: duration, \3: damage rate --><!-- 1.31 -->
+<text name="erosion_chance">Вероятность эрозии: \1%</text>  <!-- \1: chance, \2 is low/medium/high --><!-- 1.31 -->
+<text name="room_statboost_chance">Вероятность эффекта отсека: \1%</text>  <!-- \1: chance, \2 is low/medium/high --><!-- 1.31 -->
+<text name="crew_statboost_chance">Вероятность эффекта экипажа: \1%</text>  <!-- \1: chance, \2 is low/medium/high --><!-- 1.31 -->
+
+<!--Neutral ASB text--><!-- 1.31 -->
+<text name="warning_pds_all">ОБСТРЕЛ!</text>
+<text name="tooltip_PDS_FLEET_ALL">Противокорабельные батареи флота стреляют по всем кораблям в этом районе.</text><!-- 1.31 -->
+<text name="tooltip_PDS_FLEET_ENEMY">Противокорабельные батареи флота наводятся на вашего противника.</text><!-- 1.31 -->
+
+<!-- System info boxes -->
+
+<text name="teleporter_instant">Мгновенно</text><!-- 1.5 -->
+<text name="clonebay_instant_fullheal">Мгновенное клонирование + 100% лечение при прыжке</text>
+
+<text name="upgrade_reactor">Реактор</text>  <!-- Info box title for reactor upgrades -->
+<text name="reactor_desc">Обеспечивает энергией все системы корабля. Каждая единица энергии может запитать одну из систем. Подсистемы не требуют питания от реактора.</text>
+
+<text name="reactor_desc_short">Обеспечивает энергией все системы корабля.</text>  <!-- Reactor info box text when "weak system" warning is displayed -->
+
+<text name="weak_warning">Слабая система — для улучшения необходим дополнительный лом.</text>
+
+<text name="nano_warning">Примечание: Для работы необходимо питание медотсека.</text>  <!-- Additional info text for Engi Med-bot Disperal augmentation -->
+
+<!-- System tooltips -->
+
+<text name="level">Уровень \1: \2</text>  <!-- \1: power level, \2: description -->
+<text name="manning_bonus">Управляется экипажем: \1</text>  <!-- \1: bonus description -->
+<text name="status">Состояние:</text>
+
+<text name="subsystem_manned">+1 к уровню системы</text>
+
+<text name="full_powered">Полная мощность</text>
+<text name="full_functional">Полностью функционирует</text>
+<text name="partial_powered">Пониженная мощность</text>
+<text name="partial_functional">Частично функционирует</text>
+<text name="unpowered">Выключено</text>
+
+<text name="unmanned">Автоматический режим</text>
+<text name="zoltan">Дополнительная мощность золтанца</text>
+<text name="zoltan_rearrange_weapon">Энергия золтанца: Питает в первую очередь оружие из первого слота, перетащите, чтобы изменить порядок.</text>
+<text name="zoltan_rearrange_drone">Энергия золтанца: Всегда питает дрона в первом слоте, перетащите, чтобы изменить порядок</text>
+
+<text name="destroyed">Разрушено</text>
+<text name="damaged">Повреждено</text>
+
+<text name="temp_disabled">Выведено из строя противником или средой</text>
+
+<text name="ioned">Блокировано ионным зарядом</text>
+<text name="on_fire">Горит</text>
+<text name="sabotaged">Саботируется</text>
+
+<text name="add_power">Увеличить мощность: \1</text>  <!-- \1: hotkey name -->
+<text name="remove_power">Уменьшить мощность: \1</text>  <!-- \1: hotkey name -->
+<text name="remove_power_alt">Убавить мощность: Shift + \1</text>  <!-- \1: hotkey name -->
+
+<text name="hacked">Взломано: Временно выведено из строя, двери блокированы</text>
+
+<text name="artillery_off">ВЫКЛ: Артиллерия не заряжается</text>
+<text name="doors_off">ВЫКЛ: Контроль дверей невозможен</text>
+<text name="pilot_off">ВЫКЛ: УКЛОНЕНИЕ НЕВОЗМОЖНО!</text>
+<text name="sensors_off">ВЫКЛ: Обзор ограничен</text>
+<text name="engine_off">ВЫКЛ: УКЛОНЕНИЕ НЕВОЗМОЖНО!</text>
+<text name="medbay_off">ВЫКЛ: Лечение экипажа невозможно</text>
+<text name="weapons_off">ВЫКЛ: Оружие недоступно</text>
+<text name="drones_off">ВЫКЛ: Дроны не работают</text>
+<text name="oxygen_off">ВЫКЛ: КИСЛОРОД ПАДАЕТ!</text>
+<text name="clone_off">ВЫКЛ: Смерть экипажа необратима</text>
+<text name="shields_off">ВЫКЛ: НЕТ ЩИТОВ!</text>
+
+<text name="clonebay_health">Лечит весь экипаж на \1 здоровья за прыжок.</text>  <!-- \1: healing amount -->
+<text name="clonebay_damaged"> (После починки эффект лечения усилится)</text>
+
+<!-- Crew skill descriptions -->
+
+<text name="pilot_skill">Уклонение +\1</text>  <!-- \1: evasion bonus -->
+<text name="engine_skill">Уклонение +\1</text>  <!-- \1: evasion bonus -->
+<text name="shield_skill">\1% к скорости перезарядки</text>  <!-- \1: speed bonus -->
+<text name="weapon_skill">\1% к скорости зарядки</text>  <!-- \1: speed bonus -->
+<text name="combat_0">Увеличение урона по экипажу</text>
+<text name="combat_skilled">\1% к урону по экипажу</text>  <!-- \1: damage bonus -->
+<text name="repair_0">Увеличение скорости ремонта</text>
+<text name="repair_skilled">\1% к скорости ремонта</text>  <!-- \1: speed bonus -->
+
+<!-- Crew box tooltips -->
+
+<text name="health">Здоровье: \1/\2\nИзмените порядок, удерживая правую кнопку</text> <!-- Shown in crew box. \1: current health, \2: max health -->
+
+<text name="cloning">Клонирование...</text>  <!-- Shown on crew tooltip when being cloned -->
+
+<text name="power_ready">Готово: Нажмите, чтобы блокировать комнату\nГорячая клавиша: \1</text>  <!-- Shown on crew tooltip for Crystal crew. \1: key name -->
+<text name="power_not_ready">Не готово: способность заряжается</text>  <!-- Shown on crew tooltip for Crystal crew -->
+
+<text name="power_not_ready_mind">Не готово: Под контролем разума</text>
+<text name="power_not_ready_mind_enemy">Не готово: Враг под контролем</text>
+
+<text name="pilot_skill_tooltip">Пилотирование:\n\1</text>  <!-- \1: skill description -->
+<text name="engines_skill_tooltip">Двигатели:\n\1</text>  <!-- \1: skill description -->
+<text name="shields_skill_tooltip">Зарядка щитов:\n\1</text>  <!-- \1: skill description -->
+<text name="weapons_skill_tooltip">Стрельба из орудий:\n\1</text>  <!-- \1: skill description -->
+<text name="combat_skill_tooltip">Боевые навыки:\n\1</text>  <!-- \1: skill description -->
+<text name="repair_skill_tooltip">Навык ремонта:\n\1</text>  <!-- \1: skill description -->
+
+<text name="next_level">Следующий уровень: \1/\2</text>  <!-- \1: current experience, \2: target experience -->
+
+<!-- Crew info boxes -->
+
+<text name="crew_skills">Навыки экипажа</text>
+
+<text name="pilot_skill_infobox">\1, когда управляет полётом.</text>  <!-- \1: skill description -->
+<text name="engines_skill_infobox">\1, когда следит за двигателем.</text>  <!-- \1: skill description -->
+<text name="shields_skill_infobox">\1, когда контролирует щиты.</text>  <!-- \1: skill description -->
+<text name="weapons_skill_infobox">\1, когда управляет орудиями.</text>  <!-- \1: skill description -->
+<text name="combat_skill_infobox">\1</text>  <!-- \1: skill description -->
+<text name="repair_skill_infobox">\1</text>  <!-- \1: skill description -->
+
+<!-- Weapon/drone info boxes -->
+
+<text name="tip_drone_generic">Совет: Для использования требует одну деталь дрона и постоянную энергию (по аналогии с оружием).</text>
+<text name="tip_drone_warning">Предупреждение: У вас нет системы управления дронами. Приобретите её!</text>
+<text name="tip_drone_drag">Совет: Находится в грузовом отсеке. Для использования перетащите в доступный слот дронов.</text>
+<text name="tip_weapon_drag">Совет: Находится в грузовом отсеке. Для использования или просмотра шансов поджога/пробоя перетащите в доступный слот оружия.</text>
+
+<text name="required_power">Требует энергии: \1</text>  <!-- Also used for drones. \1: required power -->
+<text name="boost_power_speed">С каждым выстрелом перезарядка быстрее</text>
+<text name="boost_power_damage">С каждым выстрелом больше урона</text>
+<text name="damage_cap">Максимальный урон: \1</text>  <!-- \1: maximum damage amount -->
+<text name="speed_cap">Минимальная перезарядка: \1 сек.</text>  <!-- \1: fastest cooldown speed -->
+
+<text name="charge_time">Время зарядки: \1 сек.</text>  <!-- \1: charge time -->
+<text name="requires_missiles">Тратит боеприпасы</text>
+<text name="shots">Выстрелов за заряд: \1</text>  <!-- \1: number of shots per charge -->
+<text name="charge">Максимум зарядов: \1</text>  <!-- \1: maximum number of charges -->
+<text name="damage_shot">Базовый урон: \1</text>  <!-- \1: damage amount -->
+<text name="damage_room">Повреждений на отсек: \1</text>  <!-- \1: damage amount -->
+<text name="shield_piercing">Пробивает щитов: \1</text>  <!-- \1: maximum shield level that can be pierced -->
+<text name="fire_chance">Шанс возгорания: \1%</text>  <!-- \1 is blueprint fireChance * 10, \2 is low/medium/high -->
+<text name="breach_chance">Шанс пробить корпус: \2%</text>  <!-- \1 is blueprint breachChance * 10, \2 is actual breachChance, \3 is low/medium/high -->
+<text name="stun_chance">Шанс оглушения: \1%</text>  <!-- \1 is blueprint stunChance * 10, \2 is low/medium/high -->
+<text name="ion_damage">Ионный урон: \1</text>  <!-- \1: damage amount -->
+<text name="stun_damage">Оглушение: \1 сек.</text>  <!-- \1: stun duration -->
+<text name="personnel_damage">Урон по экипажу: \1</text>  <!-- \1: damage amount -->
+<text name="system_damage">Урон по системам: \1</text>  <!-- \1: damage amount -->
+<text name="double_damage">2x урона по отсекам без систем.</text>
+
+<text name="chance_of">Возможные эффекты: \1</text>  <!-- \1: list of possible effects -->
+<text name="chance_of_separator">, </text>
+<text name="chance_of_fire">Возгорание</text>
+<text name="chance_of_breach">Бронебой</text>
+<text name="chance_of_stun">Оглушение</text>
+
+<text name="chance_low">Низкий</text><!-- 1.26.2 --><!-- 1.26.3 -->
+<text name="chance_medium">Средний</text><!-- 1.26.2 --><!-- 1.26.3 -->
+<text name="chance_high">Высокий</text><!-- 1.26.2 --><!-- 1.26.3 -->
+
+<text name="type_desc">Тип: \1\n\2</text>  <!-- \1: type string (1 or 2 lines), \2: effect string (0 or more lines) -->
+
+<text name="type_beam">Луч</text>
+<text name="type_bomb">Телепортирующаяся бомба</text>
+<text name="type_laser">Лазер</text>
+<text name="type_laser_chain">Цепной лазер</text>
+<text name="type_beam_chain">Цепной луч</text><!-- 1.27 -->
+<text name="type_missile_chain">Цепная ракета</text><!-- 1.28 -->
+<text name="type_bomb_chain">Цепная бомба</text><!-- 1.28.1 -->
+<text name="type_laser_charge">Зарядный лазер</text>
+<text name="type_missile">Ракета</text>
+<text name="type_crystal">Физический снаряд</text>
+<text name="type_burst">Разрывной снаряд</text>  <!-- Weapons which hit randomly in a circular area, i.e. flak weapons and Swarm Missile -->
+<text name="type_burst_chain">Цепной разрывной снаряд</text>
+<text name="type_burst_charge">Зарядный разрывной снаряд</text>
+<text name="type_ion">Ион</text>
+<text name="type_ion_chain">Цепной ион</text>
+<text name="type_ion_charge">Зарядный ион</text>
+
+<text name="type_ion_effect">Отключает и блокирует системы</text>
+<text name="type_missile_effect">Игнорирует щиты \nТратит боеприпасы</text>
+<text name="type_bomb_effect">Игнорирует щиты</text>
+<text name="type_burst_effect">Стреляет по области</text>
+<text name="type_charge_effect">Многократная зарядка</text>
+<text name="type_chain_effect">Улучшается с каждым последующим выстрелом</text>
+
+<text name="drone_required">Для запуска требуется деталь дрона</text>
+
+<!-- 1.4 -->
+<text name="hotkey_speed">Ускорение</text>
+<text name="hotkey_console">Консоль</text>
+<text name="hotkey_info">Доп. информация</text>
+
+<text name="tooltip_more_info">Доп. информация об экипаже/карте маяков\nГорячая клавиша: \1</text>
+<text name="description_stats">Характеристики:</text>
+<text name="requires_no_power">Не требует питания</text>
+<text name="provides_bonus_power">Обеспечивает доп. питание</text>
+<text name="cannot_fire">Не может стрелять</text>
+<text name="ammo_consumption">Потребляет ракет: \1</text>
+<text name="redesigned_boost_power_damage_positive">Урон увеличивается на \1 за залп</text>
+<text name="redesigned_boost_power_damage_negative">Урон уменьшается на \1 за залп</text>
+<text name="redesigned_boost_power_speed_positive">Перезарядка уменьшается на \1 за залп</text>
+<text name="redesigned_boost_power_speed_negative">Перезарядка увеличивается на \1 за залп</text>
+<text name="redesigned_damage_cap">Максимальный урон: \1 (после \2-го залпа)</text>
+<text name="redesigned_speed_cap">Минимальная перезарядка: \1 (после \2-го залпа)</text>
+<text name="shot_radius">Радиус осколков: \1</text>
+<text name="shot_radius_angular">Радиус осколков: \1 градусов</text> <!-- 1.31 -->
+<text name="beam_length">Длина луча: \1</text>
+<text name="pinpoint">Точечный луч</text> <!-- 1.31 -->
+<text name="swipe_speed">Скорость луча: \1</text>
+<text name="redesigned_double_damage">Двойной урон по отсекам без систем</text>
+<text name="redesigned_damage_room">Обычный урон по отсеку: \1 (x15 по экипажу)</text>
+<text name="redesigned_damage_shot">Обычный урон за выстрел: \1 (x15 по экипажу)</text>
+<text name="hull_damage">Урон по корпусу: \1</text>
+<text name="stun_length">сек. оглушения</text>
+<text name="weapon_lockdown">Запирает отсеки</text>
+<text name="crew_stun_time">Оглушение: \1 сек.</text>
+
+<text name="hull_damage_negative">Ремонт корпуса: \1</text>
+<text name="system_damage_negative">Ремонт систем: \1</text>
+<text name="personnel_damage_negative">Лечение экипажа: \1</text>
+
+<text name="scrap_value">Цена покупки/продажи: \1~/\2~</text>
+
+<text name="damage_word">Урон</text>
+<text name="bomb_shots">Бомб за залп: \1 (1 по своему кораблю)</text><!-- 1.31 -->
+<text name="crew_scrap_value">Стоимость найма: \1~</text>
+<text name="drone_speed">Скорость дрона: \1</text>
+
+<text name="defense_drone_reload_speed">Скорость перезарядки: \1мс</text>
+<text name="defense_drone_orbit_speed">Орбитальная скорость: \1</text>
+<text name="defense_drone_projectile_speed">Скорость снаряда: \1</text>
+<text name="defense_drone_projectile_target_all">Цель: все снаряды</text>
+<text name="defense_drone_projectile_target_solid">Цель: снаряды, кроме лазеров</text>
+<text name="defense_drone_drone_target_all">Цель: атакующие дроны</text>
+<text name="defense_drone_drone_target_solid">Цель: твёрдые дроны</text>
+<text name="defense_drone_projectile_target_unknown">Цель: неизвестно</text><!-- 1.31 -->
+<text name="defense_drone_projectile_target_asteroid">Цель: астероиды</text><!-- 1.31 -->
+<text name="defense_drone_drone_target_solid_projectiles">Цель: дроны и снаряды, кроме лазеров</text><!-- 1.31 -->
+<text name="defense_drone_drone_target_all_projectiles">Цель: дроны и все снаряды</text><!-- 1.31 -->
+<text name="drone_BOARDER_ION_desc">Пробивается сквозь корпус врага и ионизирует случайные системы.</text>
+
+<text name="store_unavailable">НЕДОСТУПНО</text> <!-- 1.4 -->
+
+<text name="no_time_sector">Посмотрев на карту, вы видите, что у вас нет на это времени, поскольку вам нужно отправиться в следующий сектор! Вы откладываете задание.</text> <!-- 1.4 -->
+
+<text name="advanced_health_tooltip">Здоровье</text> <!-- 1.4 -->
+<text name="weapon_cooldown_negative">Отключено</text> <!-- 1.4 -->
+
+<text name="free_missile_chance">Шанс не потратить боеприпас: \1%</text> <!-- 1.4 --> <!-- \1: chance -->
+
+<text name="augment_no_effect">При установке этого усиления не будут работать следующие усиления:</text>
+
+<text name="seed_prompt">Seed</text>
+<text name="seed_prompt_disabled">Seeds отключены</text> <!-- 1.31 -->
+<text name="menu_status_seed">Seed</text>
+<text name="unlocks_disabled">Разблокировки кораблей отключены</text>
+
+<text name="tooltip_crew_page_down">Пролистать вниз \n(можно использовать колёсико мыши)</text> <!-- 1.3 -->
+<text name="tooltip_crew_page_up">Пролистать вверх \n(можно использовать колёсико мыши)</text> <!-- 1.3 -->
+
+<text name="power_not_ready_player_ship">Не готово: Не на корабле игрока</text>
+<text name="power_not_ready_enemy_ship">Не готово: Не на вражеском корабле</text>
+<text name="power_not_ready_enemy_in_room">Не готово: В отсеке нет врагов</text>
+<text name="power_not_ready_friendly_in_room">Не готово: В отсеке нет союзников</text>
+<text name="power_not_ready_whitelist">Не готово: Нет разрешённого экипажа в отсеке</text> <!-- 1.5 -->
+<text name="power_not_ready_enemy_whitelist">Не готово: Нет разрешённого врага в отсеке</text> <!-- 1.5 -->
+<text name="power_not_ready_friendly_whitelist">Не готово: Нет разрешённого союзника в отсеке</text> <!-- 1.5 -->
+<text name="power_not_ready_enemy_blacklist">Не готово: Запрещённый враг в отсеке</text> <!-- 1.5 -->
+<text name="power_not_ready_friendly_blacklist">Не готово: Запрещённый союзник в отсеке</text> <!-- 1.5 -->
+<text name="power_not_ready_system_in_room">Не готово: В отсеке нет системы</text>
+<text name="power_not_ready_activated">Способность активна</text>
+<text name="power_not_ready_ai_disabled">Not Ready: Power disabled for AI (shouldn't see this)</text>
+<text name="power_not_ready_has_clonebay">Не готово: Нет клон-отсека</text>
+<text name="power_not_ready_out_of_combat">Не готово: Нельзя применить в бою</text>
+<text name="power_not_ready_in_combat">Не готово: Нет вражеского корабля</text>
+<text name="power_not_ready_system">Не готово: Нет системы (\1)</text> <!-- 1.5 -->
+<text name="power_not_ready_system_functional">Не готово: \1 не функционирует</text> <!-- 1.5 -->
+<text name="power_not_ready_min_health">Не готово: Здоровье меньше \1</text> <!-- \1 is min health req --><!-- 1.3 -->
+<text name="power_not_ready_max_health">Не готово: Здоровье больше \1</text> <!-- \1 is max health req --><!-- 1.3 -->
+<text name="power_not_ready_system_damaged">Не готово: Нет повреждённой системы в отсеке</text> <!-- 1.5 -->
+<text name="power_not_ready_teleporting">Не готово: Идёт телепортация</text> <!-- 1.4 --> <!-- 1.31 -->
+<text name="power_not_ready_charges">Не готово: Нет зарядов</text> <!-- 1.5 -->
+<text name="power_not_ready_silenced">Не готово: Немота</text> <!-- 1.31 -->
+<!-- 1.31 -->
+<text name="power_not_ready_burning">Не готово: Горит</text>
+<text name="power_not_ready_suffocating">Не готово: Задыхается</text>
+<text name="power_not_ready_mind">Не готово: Разум захвачен</text>
+<text name="power_not_ready_stunned">Не готово: Оглушён</text>
+<text name="power_not_ready_repairing">Не готово: Ремонтирует</text>
+<text name="power_not_ready_repairing_system">Не готово: Ремонтирует систему</text>
+<text name="power_not_ready_repairing_breach">Не готово: Ремонтирует пробоину</text>
+<text name="power_not_ready_fighting">Не готово: Сражается</text>
+<text name="power_not_ready_sabotaging">Не готово: Ломает систему</text>
+<text name="power_not_ready_shooting">Не готово: Стреляет</text>
+<text name="power_not_ready_moving">Не готово: Двигается</text>
+<text name="power_not_ready_idle">Не готово: Стоит на месте</text>
+<text name="power_not_ready_manning">Не готово: Управляет системой</text> <!-- 1.5 -->
+<text name="power_not_ready_firefighting">Не готово: Тушит пожар</text>
+<text name="power_not_ready_dying">Не готово: Умирает</text>
+<text name="power_not_ready_teleporting">Не готово: Телепортируется</text>
+
+<text name="power_not_ready_burning_false">Не готово: Не горит</text>
+<text name="power_not_ready_suffocating_false">Не готово: Не задыхается</text>
+<text name="power_not_ready_mind_false">Не готово: Разум не захвачен</text>
+<text name="power_not_ready_stunned_false">Не готово: Не оглушён</text>
+<text name="power_not_ready_repairing_false">Не готово: Не рементирует</text>
+<text name="power_not_ready_repairing_system_false">Не готово: Не рементирует систему</text>
+<text name="power_not_ready_repairing_breach_false">Не готово: Не рементирует пробоину</text>
+<text name="power_not_ready_fighting_false">Не готово: Не сражается</text>
+<text name="power_not_ready_sabotaging_false">Не готово: Не ломает систему</text>
+<text name="power_not_ready_shooting_false">Не готово: Не стреляет</text>
+<text name="power_not_ready_moving_false">Не готово: Не двигается</text>
+<text name="power_not_ready_idle_false">Не готово: Не стоит на месте</text>
+<text name="power_not_ready_manning_false">Не готово: Не управляет системой</text>
+<text name="power_not_ready_firefighting_false">Не готово: Не тушит пожар</text>
+<text name="power_not_ready_dying_false">Не готово: Не умирает</text>
+<text name="power_not_ready_teleporting_false">Не готово: Не телепортируется</text>
+
+<text name="power_number_charges">Заряды: \1/\2</text> <!-- 1.5 -->
+
+<text name="button_mushroom_b">СПОРЫ</text>
+<text name="power_mushroom_b_ready">Готово: Нажмите, чтобы оглушить врагов на 4 секунды в этом отсеке</text> <!-- 1.2 --> <!-- 1.3 --><!-- 1.6 -->
+
+<text name="button_mushroom">СПОРЫ</text>
+<text name="power_mushroom_ready">Готово: Нажмите, чтобы оглушить врагов на 8 секунд в этом отсеке</text> <!-- 1.3 --><!-- 1.6 -->
+
+<text name="tip_manning">Управляет системами на продвинутом уровне и даёт 1 энергию системе, в которой находится.</text> <!-- 1.4 -->
+
+<text name="tip_manning_2">Управляет системами на экспертном уровне и даёт 2 энергии системе, в которой находится.</text> <!-- 1.4 -->
+
+<text name="tip_battery">Автоматически перемещается и запитывает системы дополнительной энергией.</text> <!-- 1.4 -->
+
+<!-- Discord Integration -->
+<!-- 1.31 --> <!-- перевод на русский -->
+<text name="discord_main_menu">В главном меню</text>
+<text name="discord_hangar">В ангаре</text>
+<text name="discord_dying">Умирает</text>
+<text name="discord_exploring">Разведывает</text>
+<text name="discord_battle">В бою</text>
+<text name="discord_battle_boss">В финальном бою (Фаза \1)</text> <!-- \1 is boss phase -->
+<text name="discord_sector">\1 (\2/8)</text> <!-- \1 is sector name, \2 is sector number -->
+<text name="discord_ship">\1 Тип \2</text> <!-- \1 is ship name, \2 is ship type (A, B or C) -->
+<text name="discord_playing_modded">Играет в мод (\1)</text> <!-- \1 is discord_mod -->
+<text name="discord_playing_vanilla">Играет в ванилу</text>
+<text name="discord_victory">Победа</text>
+<text name="discord_dead">Поражение</text>
+<text name="discord_mod">Arsenal +</text>
+
+<text name="transfer_save_dialog">Похоже, вы либо впервые играете в этот мод, либо еще не создали новый файл сохранения! Хотите перенести ваш прогресс с ванилы или создать новое сохранение? Это никак не повлияет на ваш прогресс в ваниле.</text> <!-- 1.4 -->
+
+<text name="transfer_save_yes">Перенести прогресс</text>
+<text name="transfer_save_no">Начать всё заново</text>
+
+<text name="button_magman">ПОДЖОГ</text> 
+<text name="power_magman_ready">Готово: Нажмите, чтобы поджечь текущий отсек с вероятностью 50%</text><!-- 1.6 -->
+
+<text name="button_morph">ЗАМЫКАНИЕ</text> <!-- 1.3 -->
+<text name="power_morph_ready">Готово: Теряет контроль, но значительно увеличивает скорость ремонта, тушения, передвижения и урон в бою</text><!-- 1.6 -->
+
+<!-- 
+<text name="button_avatar">АПГРЕЙД</text>
+<text name="power_avatar_ready">Готово: Нажмите, чтобы полностью восстановить здоровье\nГорячая клавиша: \1</text>
+
+<text name="button_human">ЯРОСТЬ</text>
+<text name="power_human_ready">Готово: Нажмите, чтобы увеличить урон в полтора раза на 10 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_orchid">КИСЛОРОД</text>
+<text name="power_orchid_ready">Готово: Нажмите, чтобы улучшить работу кислородного отсека на 10 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_shell">ПАНЦИРЬ</text>
+<text name="power_shell_ready">Готово: Нажмите, чтобы снизить любой получаемый урон в 4 раза на 10 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_slug">ПОДРЫВ</text>
+<text name="power_slug_ready">Готово: Нажмите, чтобы нанести 1 урона вражеской системе\nГорячая клавиша: \1</text>
+
+<text name="button_energy">ВЗРЫВ</text>
+<text name="power_energy_ready">Готово: Нажмите, чтобы нанести 15 урона врагам в этом отсеке\nГорячая клавиша: \1</text>
+
+<text name="button_energyx">ПУЛЬСАР</text>
+<text name="power_energy_readyx">Готово: Нажмите, чтобы нанести 3 ионного урона вражеской системе\nГорячая клавиша: \1</text>
+
+<text name="button_engi">ЭНЕРГОЩИТ</text>
+<text name="power_engi_ready">Готово: Нажмите, чтобы включить неуязвимость на 10 секунд. В этом режиме инжи не может атаковать врагов\nГорячая клавиша: \1</text>
+
+<text name="button_mantis">САБОТАЖ</text>
+<text name="power_mantis_ready">Готово: Нажмите, чтобы наносить тройной урон вражеским системам в течение 5 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_crystal">МЕСТЬ</text>
+<text name="power_crystal_ready">Готово: Нажмите, чтобы запереть текущий отсек и увеличить урон по системам в 1.5 раза на 5 секунд.\nГорячая клавиша: \1</text>
+
+<text name="button_mantis">РЫВОК</text>
+<text name="power_mantis_ready">Готово: Нажмите, чтобы увеличить скорость передвижения рока в три раза на 5 секунд\nГорячая клавиша: \1</text>
+
+<text name="button_anaerobic">ОТКАЧКА</text>
+<text name="power_anaerobic_ready">Готово: Нажмите, чтобы создать пробоину в текущем отсеке и увеличить скорость поглощения кислорода на 10 секунд\nГорячая клавиша: \1</text> -->
+
+<!-- Hacking tooltips -->
+
+<text name="hack_potential">Подтверждение способности взлома: \1</text>  <!-- Shown when hovering over an enemy ship room when in hacking launch mode. \1: effect description (one of the "hack_*" strings below) -->
+<text name="hack_activate">Начало взлома: \1</text>  <!-- Shown on hacking button tooltip when a hacking drone is deployed. \1: effect description -->
+
+<text name="hack_no_system">Нет цели для взлома.</text>
+<text name="hack_oxygen">Временно истощает кислород вражеского корабля.</text>
+<text name="hack_doors">Временно обращает все вражеские двери в бронированные двери игрока.</text>
+<text name="hack_shields">Временно истощает мощность вражеских щитов.</text>
+<text name="hack_pilot">Временно уменьшает уклонение вражеского корабля до 0.</text>
+<text name="hack_engines">Временно уменьшает уклонение вражеского корабля до 0.</text>
+<text name="hack_sensors">Временно отключает вражеские сенсоры.</text>
+<text name="hack_medbay">Медотсек временно наносит урон вражескому экипажу внутри него.</text>
+<text name="hack_weapons">Временно истощает зарядку вражеских орудий.</text>
+<text name="hack_drones">Временно парализует вражеских дронов с вероятностью уничтожить их.</text>
+<text name="hack_teleporter">Временно взять под контроль вражеский телепортер для возвращения их экипажа на вражеский корабль.</text>
+<text name="hack_cloaking">Временно выключает вражескую маскировку.</text>
+<text name="hack_artillery">Временно снижает заряд артиллерии врага.</text>
+<text name="hack_battery">Временно снижает силу вражеского реактора на 2.</text>
+<text name="hack_clonebay">Временно выводит из строя отсек клонирования, убивая потенциальных клонов.</text>
+<text name="hack_mind">Освобождает любого человека из-под контроля и временно подчиняет разум вражеского бойца.</text>
+<text name="hack_hacking">Временно прерывает и останавливает вражеский взлом.</text>
+
+<text name="hack_oxygen_player">СИСТЕМА ВЗЛОМАНА: СТРЕМИТЕЛЬНАЯ ПОТЕРЯ КИСЛОРОДА.</text>  <!-- Added to system tooltips when the enemy hacks the player ship -->
+<text name="hack_doors_player">СИСТЕМА ВЗЛОМАНА: ДВЕРИ ЗАБЛОКИРОВАНЫ.</text>
+<text name="hack_shields_player">СИСТЕМА ВЗЛОМАНА: ЩИТЫ ТЕРЯЮТ МОЩНОСТЬ.</text>
+<text name="hack_pilot_player">СИСТЕМА ВЗЛОМАНА: УКЛОНЕНИЕ УПАЛО ДО 0.</text>
+<text name="hack_engines_player">СИСТЕМА ВЗЛОМАНА: УКЛОНЕНИЕ УПАЛО ДО 0.</text>
+<text name="hack_sensors_player">СИСТЕМА ВЗЛОМАНА: СЕНСОРЫ НЕ ФУНКЦИОНИРУЮТ.</text>
+<text name="hack_medbay_player">СИСТЕМА ВЗЛОМАНА: МЕДОТСЕК НАНОСИТ УРОН КОМАНДЕ!</text>
+<text name="hack_weapons_player">СИСТЕМА ВЗЛОМАНА: ОРУДИЯ ТЕРЯЮТ ЗАРЯДКУ.</text>
+<text name="hack_drones_player">СИСТЕМА ВЗЛОМАНА: ДРОНЫ ОГЛУШЕНЫ И МОГУТ ВЗОРВАТЬСЯ.</text>
+<text name="hack_teleporter_player">СИСТЕМА ВЗЛОМАНА: ЭКИПАЖ ВЫНУЖДЕН ТЕЛЕПОРТИРОВАТЬСЯ НАЗАД.</text>
+<text name="hack_cloaking_player">СИСТЕМА ВЗЛОМАНА: СИСТЕМА МАСКИРОВКИ ОТКЛЮЧЕНА.</text>
+<text name="hack_artillery_player">СИСТЕМА ВЗЛОМАНА: АРТИЛЛЕРИЯ БЫСТРО ТЕРЯЕТ ЗАРЯД.</text>
+<text name="hack_battery_player">СИСТЕМА ВЗЛОМАНА: МОЩНОСТЬ РЕАКТОРА СНИЗИЛАСЬ НА 2.</text>
+<text name="hack_clonebay_player">СИСТЕМА ВЗЛОМАНА: НЕВОЗМОЖНО СОЗДАТЬ КЛОНОВ, ЧЛЕНЫ ЭКИПАЖА МОГУТ УМЕРЕТЬ!</text>
+<text name="hack_mind_player">СИСТЕМА ВЗЛОМАНА: СОЮЗНИК ПОД КОНТРОЛЕМ!</text>
+<text name="hack_hacking_player">СИСТЕМА ВЗЛОМАНА: ВЗЛОМ ВРЕМЕННО НЕДОСТУПЕН.</text>
+
+<!-- Additions to event text -->
+
+<text name="distraction">Вы развернули отвлекающие маячки, дающие вам больше времени для исследования сектора, перед тем как флот догонит вас.</text>
+<text name="added_quest">Метка задания добавлена на карту!</text>
+<text name="no_time">Посмотрев на карту, вы видите, что у вас нет на это времени, поскольку вам нужно к базе Федерации! Вы откладываете задание.</text>
+<text name="added_quest_sector">Метка задания добавлена на карту следующего сектора!</text>
+
+<text name="circle_ship">Поздравляем! Добравшись до 5-го сектора, вы разблокировали крейсер инжи для последующих прохождений!</text>
+
+<text name="intruder_energy">Противнику удалось обойти суперщит, на борту захватчики!</text>
+
+<text name="event_crew_full"> [Внимание: Экипаж полон, вам придётся кого-то уволить]</text>
+
+<text name="unlock_ship_1">Секретная технология инжи была доставлена в ангар. Разблокирован стелс-крейсер!</text>
+<text name="unlock_ship_2">Крейсер мантисов был разблокирован и добавлен в ангар!</text>
+<text name="unlock_ship_4">Крейсер Федерации был разблокирован и добавлен в ангар!</text>
+<text name="unlock_ship_5">Крейсер слагов был разблокирован и добавлен в ангар!</text>
+<text name="unlock_ship_6">Рок доставил крейсер в ангар. Крейсер The Bulwark был разблокирован!</text>
+<text name="unlock_ship_7">Крейсер золтанцев был разблокирован и добавлен в ангар!</text>
+<text name="unlock_ship_8">Корабль кристалинов отправляется в ангар. Bravais разблокирован!</text>
+
+<!-- Event result text -->
+
+<text name="augment">Усиление:</text>
+
+<text name="upgrade_success">\1 получает улучшение на \2</text>  <!-- \1: system name ("the Reactor" etc.), \2: amount -->
+<text name="upgrade_fail_max">\1 уже имеет максимальный уровень</text>  <!-- \1: system name -->
+<text name="upgrade_fail_missing">\1 отсутствует на корабле, улучшение невозможно</text>  <!-- \1: system name -->
+
+<text name="oxygen">Система кислорода</text>  <!-- These are used in running text, e.g. "upgrade_success" -->
+<text name="doors">Подсистема шлюзов</text>
+<text name="shields">Система щитов</text>
+<text name="pilot">Рубка управления</text>
+<text name="engines">Система двигателей</text>
+<text name="sensors">Подсистема сенсоров</text>
+<text name="medbay">Медотсек</text>
+<text name="weapons">Система орудий</text>
+<text name="drones">Система дронов</text>
+<text name="teleporter">Телепортер</text>
+<text name="cloaking">Маскировка</text>
+<text name="artillery">Артиллерия</text>
+<text name="battery">Резервная батарея</text>
+<text name="clonebay">Клон-отсек</text>
+<text name="mind">Управление разумом</text>
+<text name="hacking">Система взлома</text>
+<text name="reactor">Реактор</text>
+
+<text name="oxygen_installed">Система кислорода установлена</text>  <!-- These "X_installed" strings are not currently used; they would appear in the same style as the "upgrade_success" string, for example -->
+<text name="doors_installed">Шлюзы установлены</text>
+<text name="shields_installed">Щиты установлены</text>
+<text name="pilot_installed">Рубка управления установлена</text>
+<text name="engines_installed">Двигатели установлены</text>
+<text name="sensors_installed">Сенсоры установлены</text>
+<text name="medbay_installed">Медотсек установлен</text>
+<text name="weapons_installed">Система управления орудиями установлена</text>
+<text name="drones_installed">Система управления дронами установлена</text>
+<text name="teleporter_installed">Телепортер установлен</text>
+<text name="cloaking_installed">Система маскировки установлена</text>
+<text name="artillery_installed">Артиллерия установлена</text>
+<text name="battery_installed">Резервная батарея установлена</text>
+<text name="clonebay_installed">Клон-отсек установлен</text>
+<text name="mind_installed">Система управления разумом установлена</text>
+<text name="hacking_installed">Система взлома установлена</text>
+<text name="reactor_installed">Реактор установлен</text>
+
+<text name="new_system_last">Внимание: Эта система займёт последний свободный слот на вашем корабле.</text>
+<text name="new_system_penultimate">Внимание: Если вы установите эту систему, у вас останется ещё один свободный слот.</text>
+<text name="new_system_update">Внимание: Если вы установите эту систему, у вас останется \1 слота под системы.</text>  <!-- \1: number of slots left -->
+<text name="new_system_clonebay">Внимание: Клон-отсек заменит медотсек.</text>
+<text name="new_system_medbay">Внимание: Медотсек заменит клон-отсек.</text>
+<text name="new_system_full">Внимание: Вы больше не можете устанавливать системы.</text>
+<text name="new_system_owned">Внимание: У вас уже есть эта система.</text>
+
+<text name="dead_crew">\1 погиб</text>  <!-- \1: crew name -->
+<text name="traitor_crew">\1 встал на сторону противника</text>  <!-- \1: crew name -->
+<text name="intruder_alert">Захватчики на борту!</text>
+<text name="item_removed">Оборудование удалено: \1</text>  <!-- \1: item name -->
+
+<text name="damage_alert">\1 ед. урона корпуса</text>  <!-- \1: damage amount -->
+
+<text name="heal_alert">\1 ед. корпуса отремонтировано</text>  <!-- \1: repair amount -->
+<text name="heal_1_alert">1 ед. корпуса восстановлена</text>
+
+<text name="fleet_delayed">Флот задержан на \1 прыжка</text>  <!-- \1: number of jumps -->
+<text name="fleet_delayed_1">Флот задержан на 1 прыжок</text>
+
+<text name="fleet_speed">Флот приблизился на \1 прыжка</text>  <!-- \1: number of jumps -->
+<text name="fleet_speed_1">Флот приблизился на 1 прыжок</text>
+
+<!-- Game-over text -->
+
+<text name="gameover_title_gameover">ПОРАЖЕНИЕ</text>
+<text name="gameover_title_victory">ПОБЕДА!</text>  <!-- Replaces "GAME OVER" when the player has won -->
+
+<text name="gameover_button_stats">СЧЁТ</text>
+<text name="gameover_button_restart">ЗАНОВО</text>
+<text name="gameover_button_hangar">АНГАР</text>
+<text name="gameover_button_mainmenu">МЕНЮ</text>
+<text name="gameover_button_quit">ВЫХОД</text>
+
+<text name="gameover_win">Поздравляем! Вы уничтожили флагман повстанцев и обеспечили победу Федерации!</text>
+<text name="gameover_win_demo">Поздравляем! Вы уничтожили невозможного пирата и прошли демо-версию!</text>
+
+<text name="gameover_crew">Экипаж мёртв. Ваш корабль будет вечно дрейфовать по просторам космоса. Или попадётся мародёрам.</text>
+<text name="gameover_blowup">И последний взрыв стал для вас роковым, разнеся ваш корабль на части.</text>
+<text name="gameover_fedbase">Корабль повстанцев уничтожил базу Федерации. Всё кончено, они выиграли.</text>
+<text name="gameover_tutorial">Каким-то образом вы погибли во время обучающих миссий. Вы можете попробовать снова, но это не сулит ничего хорошего вашей миссии.</text>
+
+<text name="tooltip_jump_noJump">Корабль противника отключил ваш FTL-привод. Выхода нет, вы должны победить вражеский корабль, если хотите выжить!</text> <!-- The enemy ship has disabled your FTL drive. There is no escape; you must defeat the enemy ship if you want to survive! --><!-- 1.6 -->
+
+<!-- Credits -->
+
+<text name="crewlist_comma">, </text>  <!-- Precedes all but the last crew name in the victory screen -->
+<text name="crewlist_and"> и </text>  <!-- Precedes the last crew name in the victory screen -->
+
+<text name="thank_ship">Благодаря подвигу:</text>
+
+<text name="thank_crew">И его доблестному экипажу:</text>
+
+<text name="credit_victory">Флагман повстанцев был уничтожен, что повергло их флот в хаос и обеспечило победу Федерации.</text>
+
+<text name="game_from">Модификация</text>
+<text name="subset_games">Arsenal +</text>
+
+<text name="created_by">Разработчики:</text>
+<text name="matthew_justin">Александр "bamalf" Алферов,\nКонстантин "KBA3u" Морозов,\n Мстислав "Al'Hazrad" Соколов</text>
+
+<text name="addition_code">Разработчики Hyperspace:</text>
+<text name="andrew_church">TheSwiftTiger, Admiral Billy, mathchamp93, laszlogasd и другие</text> <!-- 1.4 --><!-- 1.31 -->
+
+<text name="music_by">Музыка:</text>
+<text name="ben_prunty">Дмитрий "Luminis Insigne" Замотаев</text>
+
+<text name="writing_by">Музыка Ордена, HAL и кристалинов:</text>
+<text name="tom_jubert">Kieve Svetnikov</text>
+
+<text name="guest_writer">Перевод на английский язык:</text><!-- 1.26.6 -->
+<text name="chris_a">mr_easy_money</text>
+
+<text name="additional_art">Оригинальная игра:</text><!-- 1.26.6 -->
+<text name="bryan_ma">Subset Games</text>
+
+<text name="editing">Русская версия:</text>
+<text name="alison_w">Группа vk.com/ftl154</text>
+
+<text name="additional_testing">Благодарность за ценный вклад:</text><!-- Thanks for assets: --><!-- 1.26.6 -->
+<text name="family_friends">Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\side\,
+DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona и другие</text> <!-- 1.28 --><!-- 1.27 --><!-- 1.27.1 --><!-- 1.30.1 --><!-- text overflow here -->
+
+<text name="credits_loc_riotloc"></text><!-- 1.30.1 -->
+<text name="credits_loc_project"></text><!-- 1.30.1 -->
+<text name="credits_loc_project_names"></text><!-- 1.30.1 -->
+<text name="credits_loc_fr">Локализовано компанией Riotloc</text><!-- 1.30.1 -->
+<text name="credits_loc_fr_names">Владимир Коноплицкий, Александр Скаковский</text><!-- 1.30.1 -->
+<text name="credits_loc_it">Итальянская версия</text>
+<text name="credits_loc_it_names">Ален Деллепьяне, Фабио Бортолотти, Лоренцо Бертолуччи, Маттео Скарабелли</text>
+<text name="credits_loc_de">Немецкая версия</text>
+<text name="credits_loc_de_names">Ульрих Онкен, Констанц Фогль, Роланд Штрубе</text>
+<text name="credits_loc_es">Испанская версия</text>
+<text name="credits_loc_es_names">Альба Кальво, Рамон Мендес, Хуан Рамон Аседо, Фернандо Морейрас</text>
+<text name="credits_loc_pl">Польская версия</text>
+<text name="credits_loc_pl_names">Анджей Вроблевски, Марцин Серкис, Мацей Ковалик</text>
+<text name="credits_loc_pt_BR">Португальская (бразильская) версия</text>
+<text name="credits_loc_pt_BR_names">Бруно Диас, Кайо Улиана, Диего Перес, Терри Банэт</text>
+<text name="credits_loc_ru">Русская версия</text>
+<text name="credits_loc_ru_names">Группа vk.com/ftl154</text>
+
+<text name="credits_loc_ja">Japanese localization:</text>
+<text name="credits_loc_ja_84">8-4, Ltd.</text>
+<text name="credits_loc_ja_names">Kimitaka Ogawa, Hiroyuki Matsushita, Dermot Creegan, Graeme Howard, John Ricciardi</text>
+
+<text name="kickstarter">Спасибо всем нашим чрезвычайно щедрым спонсорам на Кикстартере, особая благодарность:</text>
+
+<text name="third_party">FTL использует следующие сторонние библиотеки</text>
+<text name="folder">(См. прилагаемую папку с лицензией или readme для более подробной информации)</text>
+<text name="freetype">The FreeType Project (c) 1996-2002, 2006 by David Turner, Robert Wilhelm, and Werner Lemberg</text>
+<text name="bass">BASS audio library (c) 1999-2012 Un4seen Developments Ltd</text>
+<!-- <text name="SDL">SDL - Simple DirectMedia Layer (c) 1997-2009 Sam Lantinga</text> -->
+<text name="rapidxml">RapidXML (c) 2006, 2007 Marcin Kalicinski</text>
+<!-- <text name="devil">DevIL: Developer's Image Loader (c) 2000-2009 by Denton Woods</text> -->
+
+<text name="touch_skip">Коснитесь экрана и удерживайте палец, чтобы пропустить титры.</text>
+
+<!-- Miscellaneous tooltips -->
+<text name="tip_laser_blood">Кровотечение наносит 3 ед. урона в секунду и длится 10 секунд. Длительность складывается до 4-х раз. Аватары и дроны не подвержены кровотечению.</text>
+
+<text name="autofire_tooltip_on">Автоматический огонь вкл. Оружие будет продолжать стрелять в цель. \n\nНажмите дважды, чтобы сменить режим стрельбы.</text>  <!-- Only used on iPad -->
+<text name="autofire_tooltip_off">Автоматический огонь выкл. Оружие выстрелит один раз в цель. \n\nНажмите дважды, чтобы сменить режим стрельбы.</text>  <!-- Only used on iPad -->
+
+<text name="health_tooltip">Здоровье: \1/\2</text>  <!-- Tooltip when hovering over a crewmember. \1: current health, \2: max health -->
+<text name="death_tooltip">Умирает</text>  <!-- Tooltip when hovering over a dying crewmember -->
+
+<text name="save_stations_tooltip">Сохранить текущие позиции экипажа \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="ret_stations_tooltip">Вернуть экипаж на сохранённые позиции \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+
+<text name="ship_info">Открыть информацию о корабле. Недоступно, когда корабль в опасности. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="open_store">Открыть местный магазин. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="open_options">Открыть меню настроек</text>
+
+<text name="mind_controlled_tooltip">Под контролем</text>  <!-- Shown on crew tooltip --><!-- 1.27 -->
+
+<text name="rearrange">Нажмите и перетащите, чтобы поменять местами</text>  <!-- Shown on weapon/drone tooltip -->
+
+<text name="hotkey">Горячая клавиша: \1</text>  <!-- Shown on various tooltips. \1: key name -->
+
+<text name="jump_button">Открыть звёздную карту, чтобы выбрать место для следующего прыжка. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="activate_battery">Активировать резервную батарею, дающую дополнительные ячейки питания реактора\nHotkey: \1</text>  <!-- \1: key name -->
+<text name="mind_button">Временно обращает врагов в союзников в указанном отсеке. \nГорячая клавиша: \1</text>  <!-- \1: key name --><!-- 1.31 -->
+<text name="hack_button">Запускает дрона-взломщика, требует 1 деталь дрона. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="pulse_button_broken">Взлом бесполезен, система уничтожена</text>  <!-- Hacking button tooltip shown if the hacked system is destroyed -->
+<text name="open_doors">Открыть все двери на корабле. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="close_doors">Закрыть все двери на корабле. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="tele_ret">Забрать экипаж из указанной комнаты обратно в отсек телепортера. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="tele_send">Отправить экипаж в телепортере на вражеский корабль. \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+<text name="cloak_button">Временно маскирует корабль, останавливая зарядку вражеских орудий и увеличивая уклонение на 60 \nГорячая клавиша: \1</text>  <!-- \1: key name -->
+
+<text name="powered_deployed">Подключён (Работает): Активен и выполняет свои функции.</text>  <!-- Tooltips for drone boxes -->
+<text name="unpowered_deployed">Подключён (Не работает): Не активен, но можно включить без траты детали дрона.</text>
+<text name="undeployed">Не подключён: Будет стоить одну деталь дрона при первом запуске.</text>
+<text name="rebuilding">Дрон восстанавливается после неожиданного уничтожения.</text>  <!-- Shown when a deployed drone has been destroyed (by enemy fire, for example) -->
+
+<text name="weapon_autofire_off">Одно касание для экипировки, два — для экипировки и режима непрерывной стрельбы.</text>  <!-- Weapon tooltips on iPad -->
+<text name="weapon_autofire_on">Нажмите один раз для автоматической стрельбы. Нажмите дважды для одиночной стрельбы.</text>
+
+<!-- Confirmation dialog messages -->
+
+<text name="confirm_yes">ДА</text>  <!-- Text for the "yes" button -->
+<text name="confirm_no">НЕТ</text>  <!-- Text for the "no" button -->
+
+<text name="confirm_buy_clonebay">Вы уверены?\nКлон-отсек заменит ваш медотсек.</text>  <!-- Displayed when attempting to buy a clonebay when a medbay is already installed. Note that line breaks in confirmation dialogs are optional (text will auto-wrap) and are used in English for aesthetic reasons. -->
+<text name="confirm_buy_last_system">Это последний системный слот на вашем корабле.\nВы уверены?</text>  <!-- Displayed when attempting to buy the eighth system on the ship -->
+<text name="confirm_buy_medbay">Вы уверены?\nМедотсек заменит ваш клон-отсек.</text>  <!-- Displayed when attempting to buy a medbay when a clonebay is already installed -->
+<text name="confirm_dismiss">Член экипажа\nбудет потерян\nнавсегда.\nВы уверены?</text>  <!-- Displayed after clicking the DISMISS button for a crewmember on the crew manifest -->
+<text name="confirm_end_game">Вы уверены?\nПрогресс полёта будет потерян.</text>  <!-- Displayed after clicking the HANGAR or RESTART button on the in-game menu -->
+<text name="confirm_leave_crew">Вы уверены?\nВаша команда\nвсё ещё находится\nна вражеском корабле.</text>  <!-- Displayed when attempting to jump away from an enemy ship while player crew are aboard it -->
+<text name="confirm_new_game">ВНИМАНИЕ:\nВы уверены, что хотите начать новую игру? Ваш предыдущий полёт будет потерян.</text>  <!-- Displayed when clicking "NEW GAME" on the title screen when a saved game is present -->
+<text name="confirm_reset_keys">Сбросить все\nнастройки клавиш?</text>  <!-- Displayed after clicking the "DEFAULTS" button on the key binding screen -->
+<text name="confirm_wipe_profile">Вы уверены?\nВы потеряете\nвсе открытые корабли,\nдостижения\nи статистику.</text>  <!-- Displayed after clicking the "DELETE PROFILE" button on the options screen -->
+
+<!-- Miscellaneous -->
+
+<text name="button_cancel">ОТМЕНА</text>  <!-- Text for the "cancel" button used with the "start a new game" confirmation dialog and  -->
+<text name="button_confirm">ПРИНЯТЬ</text>  <!-- Text for the "confirm" button used with the "start a new game" confirmation dialog -->
+
+<text name="tutorial_continue">ДАЛЕЕ</text>  <!-- Text for the "continue" button in the tutorial -->
+
+<text name="weapon_off">ВЫКЛ</text>  <!-- Text for the iPad-specific button to turn off individual weapons and drones -->
+
+<text name="window_title">FTL: Hyperspace Arsenal +</text>  <!-- Title of the game window --> <!-- 1.26.5 -->
+<text name="error_resolution">Примечание: FTL требует минимальное разрешение 1280x720 или выше, и, похоже, ваш компьютер не поддерживает это. Пожалуйста, свяжитесь с Subset Games на devteam@ftlgame.com, если вы считаете, что получили это сообщение по ошибке.</text>
+<text name="error_manual_resolution">К сожалению, запуск игры в выбранном вручную разрешении (\1 x \2) оказался неудачным. Автоматически возвращён оконный режим.</text>
+<text name="error_native_fullscreen">Извините, FTL не смог запуститься в полноэкранном режиме по умолчанию. Ваш монитор не поддерживает требуемое разрешение (1280 x 720). Настройки видео автоматически возвращаются в растянутый полноэкранный режим.</text>  <!-- Displayed on game start if the "native fullscreen" (1280x720) video mode was selected but the video mode couldn't be changed -->
+<text name="error_framebuffer">Ваша система не поддерживает кадровые буферы, а потому полноэкранный режим с растяжением и изменение размеров окна игры недоступны.</text>
+<text name="error_framebuffer_stretch">Ваша система не поддерживает кадровые буферы, а потому полноэкранный режим с растяжением и изменение размеров окна игры недоступны. Автоматически возвращен полноэкранный режим с рамкой.</text>
+<text name="screen_changed">Вы изменили настройки экрана. Сохранить их?\n\nИзменения автоматически отменятся через \1</text>  <!-- Displayed at startup after switching to Native Fullscreen mode. \1: either screen_changed_seconds or screen_changed_1_second -->
+<text name="screen_changed_seconds">\1 сек.</text>  <!-- \1: number of seconds remaining before restart -->
+<text name="screen_changed_1_second">1 сек.</text>
+<text name="keep_screen">Сохранить настройки экрана</text>
+<text name="revert_screen">Отменить изменения</text>
+
+<text name="mind_blocked_shield">Нельзя использовать контроль разума сквозь суперщит.</text>
+<text name="mind_blocked_blackout">Нельзя использовать контроль разума в отсеках, где вы не видите существ.</text>
+
+<text name="rename">Нажмите ENTER или ESCAPE,\nчтобы подтвердить.</text>
+
+<text name="stations_saved">Позиции сохранены!</text>
+<text name="no_stations">Позиции не сохранены!</text>  <!-- Displayed on clicking "return to stations" button if no stations have been saved (as after clicking "save stations" while all crew are on the enemy ship) -->
+<text name="return_stations">Возвращение на позиции!</text>
+
+<text name="nameless_one">Безымянный</text>  <!-- Used as crew name if player enters an empty name -->
+
+<text name="game_center">Waiting for Game Center</text>  <!-- Displayed while waiting for Game Center during startup on the iPad -->
+<text name="game_center_slow">If Game Center is not responding, you can disable it in the FTL page of the Settings app.</text>
+<text name="game_center_disabled">Note: Game Center support is disabled.</text>  <!-- Displayed on the iPad title screen if Game Center support is disabled -->
+
+<text name="default_dead_crew">Вашего члена экипажа будет не хватать.</text>  <!-- Normally unused (error-handling text) -->
+
+<text name="first_run_tip_pc">Совет: Откройте игровое меню клавишей ESCAPE. Вы сможете перезапустить игру или изменить настройки.</text>
+<text name="first_run_tip_ipad">Совет: Откройте игровое меню, нажав кнопку ОПЦИИ в правом верхнем углу экрана. Вы сможете перезапустить игру или изменить настройки.</text>
+
+<text name="demo_locked">Недоступно в демо-версии FTL</text>
+
+<text name="beam_tutorial">Лучевое оружие может поражать несколько комнат. Когда целитесь, проведите пальцем, чтобы нарисовать начальную траекторию. \n\nУгол траектории изменится, если тащить одним пальцем; используйте два пальца, чтобы сменить положение. Экспериментируйте для лучшей траектории прицеливания!</text>  <!-- Shown on iPad the first time the player targets a beam weapon -->
+
+<text name="tutorial_extra_crew_1">Том</text>  <!-- Name of 1st extra crew member in tutorial (initial crewmember's name is random) -->
+<text name="tutorial_extra_crew_2">Мона</text>  <!-- Name of 2nd extra crew member in tutorial (initial crewmember's name is random) -->
+
+<text name="loading">ЗАГРУЗКА</text>  <!-- Displayed at program startup while loading data -->
+
+<text name="save_error">Не удалось сохранить ваш прогресс.\n\nПожалуйста, выйдите из игры и проверьте, не блокирует ли ваш антивирус процесс игры.\n\nЕсли проблема повторяется, напишите нам по адресу contact@subsetgames.com</text>  <!-- Displayed during gameplay on PC systems if a save operation fails --> <!-- 1.27 -->
+
+<!-- 1.31 -->
+
+<text name="credit_victory_true_end">Флагман чёрного крыла повержен. Несомненно, вы сможете вернуться и завершить свою миссию по спасению Федерации, но это уже совсем другая история...</text>
+<!--Credits-->
+
+<text name="crewlist_more"> и другие</text>  <!-- Placed at the end of the total crew when they need to be shortened in the credits -->
+<text name="thank_ai">Управляемого точным бортовым ИИ</text>
+<text name="credits_loc_ko">Фанатский корейский перевод:</text>
+<text name="credits_loc_ko_names">H20, nedsociety</text>
+<text name="font">Шрифты 'Half-Life 1 + 2' используются с разрешения freakyfonts.de (не актуально в данной версии перевода)</text>
+<text name="font_halflife">Шрифты 'Half-Life 1 + 2' используются с разрешения freakyfonts.de (не актуально в данной версии перевода)</text>
+<text name="font_dotgothic">Шрифт 'DotGothic' используется по лицензии Fontworks Inc.</text>
+
+
+<text name="credits_hyperspace_project">Проект Hyperspace</text>
+<text name="credits_hyperspace_developed_by">Разработчики:</text>
+<text name="credits_hyperspace_developed_names">TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93,\nMr. Doom (Nasa62), Chrono Vortex</text>
+<text name="credits_hyperspace_art">Дополнительный арт:</text>
+<text name="credits_hyperspace_art_names">SaltyFriedRice</text>
+<text name="credits_hyperspace_contributors">Дополнительное сотрудничество:</text>
+<text name="credits_hyperspace_contributors_names">Arc, bamalf, BlizzArchonJ, Choosechee, codyfun, _Kilburn, Kix, kokoro, Masala, nedsociety, Paradigm, PDTM, Pepson, slowriderxcorps, The Dumb Dino, Vertaalfout,\nFTL Multiverse Team</text>
+<text name="credits_hyperspace_loc">Переводчики Hyperspace:</text>
+<text name="credits_hyperspace_loc_fr">На французский язык:</text>
+<text name="credits_hyperspace_loc_fr_names">Pepson</text>
+<text name="credits_hyperspace_loc_it">На итальянский язык:</text>
+<text name="credits_hyperspace_loc_it_names">RawToast</text>
+<text name="credits_hyperspace_loc_de">На немецкий язык:</text>
+<text name="credits_hyperspace_loc_de_names">The Dumb Dino</text>
+<text name="credits_hyperspace_loc_es">На испанский язык:</text>
+<text name="credits_hyperspace_loc_es_names">DavidRedFox, Serpy</text>
+<text name="credits_hyperspace_loc_pl">На польский язык:</text>
+<text name="credits_hyperspace_loc_pl_names">Marcinus, Palon</text>
+<text name="credits_hyperspace_loc_pt_BR">На португальский (бразильский) язык:</text>
+<text name="credits_hyperspace_loc_pt_BR_names">Gabriel Cooper</text>
+<text name="credits_hyperspace_loc_ru">На русский язык:</text>
+<text name="credits_hyperspace_loc_ru_names">aleev0_o</text>
+<text name="credits_hyperspace_loc_zn_Hans">На китайский язык:</text>
+<text name="credits_hyperspace_loc_zn_Hans_names">Mwalls</text>
+<text name="credits_hyperspace_loc_ja">На японский язык:</text>
+<text name="credits_hyperspace_loc_ja_names">ranhai</text>
+<text name="credits_hyperspace_loc_ko">На корейский язык:</text>
+<text name="credits_hyperspace_loc_ko_names">nedsociety, H20</text>
+
+</FTL>

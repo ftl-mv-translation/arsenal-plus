@@ -1,0 +1,50 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-en/data/events_special_lightspeed.xml.append:3
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"FMCORE_ATLAS_EQUIPMENT\"]/text"
+msgstr ""
+"Choose what you wish to do aboard the ship while in hyperspeed, you have "
+"several options."
+
+#: src-en/data/events_special_lightspeed.xml.append:5
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"FMCORE_ATLAS_EQUIPMENT\"]/choice[@req=\"FMCORE_CAN_USE_HS_AUG\"]/text"
+msgstr "Use a jumpspeed augment."
+
+#: src-en/data/events_special_lightspeed.xml.append:12
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"FMCORE_ATLAS_EQUIPMENT\"]/choice[@req=\"fmcore_used_hs_aug\"]/text"
+msgstr "You already used a jumpspeed augment."
+
+#: src-en/data/events_special_lightspeed.xml.append:16
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"FMCORE_ATLAS_EQUIPMENT\"]/choice[@req=\"FMCORE_CAN_CALL_CURA\"]/text"
+msgstr "View available tasks from C.U.R.A."
+
+#: src-en/data/events_special_lightspeed.xml.append:26
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"FMCORE_ATLAS_EQUIPMENT\"]/choice[@req=\"fmcore_called_cura\"]/text"
+msgstr "You already accepted a C.U.R.A. task."
+
+#: src-en/data/events_special_lightspeed.xml.append:30
+msgid ""
+"data/events_special_lightspeed.xml.append$//event[@name=\"FMCORE_ATLAS_EQUIPMENT\"]/choice[@req=\"pilot\"]/text"
+msgstr "Nevermind."
+
+#: src-en/data/events_special_lightspeed.xml.append:42
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU_NOEQUIPMENT\"]/mod:findWithChildLike/mod-"
+"overwrite:text"
+msgstr "Do something aboard the ship."
+
+#: src-en/data/events_special_lightspeed.xml.append:45
+msgid ""
+"data/events_special_lightspeed.xml.append$//mod:findName[@name=\"ATLAS_MENU_NOEQUIPMENT\"]/mod-"
+"append:choice/text"
+msgstr "Proceed to the Federation Capital."

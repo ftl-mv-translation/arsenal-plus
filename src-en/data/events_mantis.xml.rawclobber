@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+
+<!--     ' ,  " " "
+			SUMMARY  — 
+A list of all main events to be called by lists
+	does not include sub-events)
+	
+Structure:
+	START_BEACON_MANTIS
+	STORE_MANTIS
+	NOTHING_MANTIS
+	
+Items:
+	MANTIS_CAPTURE_COMMANDO			NEW!!
+	MANTIS_GAMBLE					NEW!!
+	
+Hostile:
+	MANTIS_FIGHT
+	
+Neutral:
+	MANTIS_FIGHT_CHOICE
+	MANTIS_CIVILIAN
+	MANTIS_CREW
+	
+Environment:
+						???	MANTIS_NEBULA_FIGHT
+	MANTIS_SUN_FIGHT
+	
+Boarders:
+	MANTIS_BOARDERS
+
+Special
+	MANTIS_NAMED_THIEF
+-->
+
+
+
+
+
+
+<FTL>
+
+<!--
+	MANTIS EVENTLISTS
+-->
+
+<eventList name="HOSTILE_MANTIS"> <!-- bamalf over -->
+	<event load="MANTIS_FIGHT"/>
+	<event load="MANTIS_FIGHT"/>
+	<event load="MANTIS_SUN_FIGHT"/>
+	<event load="DONOR_MANTIS_CHASE"/>
+	<event load="MANTIS_HUNTER_PIRATE_EVENT"/>
+	<event load="MANTIS_TEST_15_DEADROCK"/>
+	<event load="REBEL"/>
+	<event load="AUTO_ASTEROID"/>
+	<event load="AUTO_WARNING"/>
+	<event load="REBEL_PULSAR"/>
+	<event load="MOTILEK_EVENT"/>
+</eventList>
+
+
+<eventList name="NEUTRAL_MANTIS">
+	<event load="MANTIS_FIGHT_CHOICE"/>
+	<event load="MANTIS_CIVILIAN"/>
+	<event load="MANTIS_CREW"/>
+	<event load="REBEL_TRANSPORT"/>
+	<event load="BROKEN_REBEL_DRONE"/>
+	<event load="ALISON_MANTIS_CREW"/> <!-- new alison written event -->
+	<event load="MANTIS_CAPTURE_COMMANDO"/>
+	<event load="MANTIS_GAMBLE"/>
+	<event load="SHIPS_MANTIS_PRO_FIGHTSTATION_EVENT"/>
+	<event load="MANTIS_QUEST_HUNT_ENGI_EVENT"/>
+	<event load="MANTIS_FED_TRANSPORT_FREON"/>
+	<event load="MANTIS_X20_ON_ENGI_SHIP"/>
+	<event load="ENGI_HATER"/>
+</eventList>
+
+
+<eventList name="DISTRESS_BEACON_MANTIS">
+	<event load="ESCORT_BEACON"/>
+	<event load="FRIENDLY_BEACON"/>
+	<event load="FRIENDLY_BEACON_BAD"/> <!-- 1.25 -->
+	<event load="TRAP_BEACON"/>
+	<event load="DISTRESS_TRAPPED_MINER"/>
+	<event load="DISTRESS_INFESTATION"/>
+	<event load="DISTRESS_SATELLITE_DEFENSE"/>
+	<event load="DISTRESS_STATION_FIRE"/>
+	<event load="DISTRESS_STATION_DISEASE"/>
+</eventList>
+
+<eventList name="BOARDERS_MANTIS">
+	<event load="MANTIS_BOARDERS"/>
+	<event load="MANTIS_BOARDERS"/>
+	<event load="BOARDERS_SUN"/>
+</eventList>
+
+
+
+<!--
+		STRUCTURE!!!
+	Others events necessary for strucrtural stuff
+-->
+
+<event name="START_BEACON_MANTIS">
+	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
+	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_mantis_sector" op="add" val="1"/>
+	<text load="START_BEACON_MANTIS"/>
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="AUGMENTS_ON_START_BEACON"/>
+	</choice>
+</event>
+
+<textList name="START_BEACON_MANTIS">
+	<text>Вы прибыли в малоизученную часть космоса, которая известна как родина мантисов. Убедитесь, что обшивка вашего корпуса в хорошем состоянии, и что у вас есть достаточно топлива в баке, чтобы пройти этот сектор.</text>
+	<text>Вы прибыли в сектор мантисов. Немногие везунчики могут похвастаться тем, что выбрались отсюда без ощутимых повреждений. Постарайтесь сохранить голову на плечах.</text>
+	<text>Вы прибыли в сектор с репутацией космического бермудского треугольника. Только за прошлый цикл здесь пропала не одна сотня кораблей. Ходят слухи, что их захватывает какая-то насекомоподобная раса...</text>
+	<text>Данный сектор населён разумными мантисами, а их корабли оснащены технологиями телепортации. Вам лучше перепроверить своё медицинское оборудование и укрепить дверные системы.</text>
+	<text>Прибыв в сектор, вы слышите щёлкающе-скрипящие звуки переговоров со стороны ближайшего астероидного поля. Похоже, мантисы что-то затевают. Будьте осторожны.</text>
+	<text>Вы прибываете в сектор недружелюбно настроенной расы гигантских мантисов. Кажется, прыгать сюда было не лучшей идеей...</text>
+	<text>На стартовом маяке этого сектора вы обнаруживаете пришпиленного инжи. Кровожадность мантисов может сравниться только с их же агрессивностью.</text>
+	<text>В давней войне Федерация победила мантисов, пришло время напомнить этим тараканам, кто на кухне с тапком!</text>
+	<text>Вы прибыли в сектор мантисов. Вряд ли это можно сравнить с приятной прогулкой: о жестокости этих больших разумных насекомых ходят легенды. Не лишним будет держать все системы в боевой готовности.</text>
+	<text>Вы прибыли на территорию мантисов. Далеко не каждый капитан может похвастаться тем, что направил свой корабль в данный сектор и покинул его невредимым. Ну или хотя бы просто покинул...</text>
+	<text>Мантисы — агрессивная, быстро размножающаяся раса, которая быстро расширит свои границы, если её не остановить. Они часто порабощают инжи, чтобы компенсировать своё отсутствие технических способностей.</text><!-- 1.31 -->
+</textList>
+
+<event name="STORE_MANTIS">
+	<text load="STORE_MANTIS"/>
+	<store/>
+</event>
+<textList name="STORE_MANTIS">
+	<text>После прибытия к маяку вас поприветствовал учтивый мантис: «Приветствую, путешественник. Сейчас опасные времена. Может быть, вы нуждаетесь наших услугах?» Он, кажется, один из торговцев.</text>
+	<text>Вы сканируете окрестности маяка с некоторой опаской, не зная, чего ожидать. Но ловите лишь несколько предупреждений на широкополосных каналах вещания, запрещающих любое насилие в защищённом торговом пространстве. Возможно, вам удастся найти поблизости кое-какие товары.</text>
+	<text>Карьера торговца непопулярна среди расы мантисов, и лишь немногие выбирают эту профессию. Вы несколько удивлены, получив рекламу из соседнего космического дока. Вы решаете посмотреть на то, что они могут предложить.</text>
+	<text>Увидев впереди торговый пост мантисов, вы даёте сигналы о том, что ваше приближение не должно расцениваться как угроза. Лидер приветствует вас: «У вас есть лом? Быстрее стыкуйтесь, пока войска вас не увидели».</text>
+	<text>Грузовой корабль мантисов из последних сил направляется к этому узлу и, увидев как вы выходите из прыжка, включает то, что осталось от его щитов. Вы разогреваете орудия, чтобы показать свою мощь, и они с неохотой соглашаются отдать часть своего груза. За небольшую плату.</text>
+	<text>Повстанцы уже здесь! Экипаж готовится к столкновению, но его не следует. Сканеры сообщают, что беспилотное судно снабжения повстанцев работает со сбоями и застряло в режиме торговли — вы можете что-нибудь выбрать за небольшое количество лома.</text>
+</textList>
+
+<event name="NOTHING_MANTIS">
+	<text load="NOTHING_MANTIS"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="TALK_WITH_CREW_MANTIS"/>
+	</choice>
+</event>
+<textList name="NOTHING_MANTIS">
+	<text>Вы уже было настроились здесь на сражение с мантисами, но, похоже, что рядом с этим маяком других кораблей нет. Вы используете имеющееся время, чтобы отдышаться и дважды проверить системы корабля.</text>
+	<text>Единственное, что способен предложить этот маяк — насладиться видом глубокого космоса и получить краткую передышку в сражениях. Для некоторых это, должно быть, желанное убежище.</text>
+	<text>Поблизости находятся шахтёрские разработки мантисов, явно использующих для тяжёлой работы рабов-инжи. Вы быстро рассматриваете вариант освобождения рабов, однако вокруг слишком много мантисов. Вы решаете спрятаться.</text>
+	<text>Не так уж много мест в пространстве мантисов, не украшенных развалинами былых битв, но это место как раз одно из таких. Вы переводите дыхание и готовитесь двигаться дальше.</text>
+	<text>Здесь ничего нет, кроме космического мусора и необитаемых планетоидов.</text>
+	<text>Вам показалось, что вы увидели какое-то движение в тени маяка, но всё спокойно.</text>
+</textList>
+
+
+
+<!--
+		ITEMS!!!
+	Events that give items
+-->
+
+<event name="MANTIS_CAPTURE_COMMANDO" unique="true">
+	<text>Вы наталкиваетесь на развалившийся корабль инжи с признаками жизни на борту. Выясняется, что на корабле затаился мантис — единственный выживший из абордажной команды, которая перебила весь экипаж этого корабля. Он не в состоянии сопротивляться, и вы переносите его к себе на корабль.</text>
+	<ship load="ENGI_SHIP" hostile="false"/>
+	<choice hidden="true">
+		<text>Отпустить его.</text>
+		<event load="MANTIS_CAPTURE_COMMANDO_RELEASE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Убить его.</text>
+		<event load="MANTIS_CAPTURE_COMMANDO_KILL"/>
+	</choice>
+	<choice req="mantis" hidden="true">
+		<text>(Член экипажа мантис) Допросить его.</text>
+		<event load="MANTIS_CAPTURE_COMMANDO_TALK"/>
+	</choice>
+	<choice req="mind" hidden="true"> <!--DLC-->
+		<text>(Контроль разума) Допросить его.</text>
+		<event>
+			<text>Устройство управления разумом позволяет быстро допросить не сопротивляющегося мантиса. Как оказалось, взяв на абордаж корабль инжи, мантисы пытались украсть оружие, которое они перевозили. Однако дроны перебили всех нападающих.</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event>
+					<text>В тайнике вы обнаружили оружие и решили подлатать корабль мантиса, чтобы тот остался в живых.</text>
+					<autoReward level="LOW">weapon</autoReward>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<eventList name="MANTIS_CAPTURE_COMMANDO_RELEASE">
+	<event>
+		<text>Вы помогли мантису привести корабль инжи в рабочее состояние, но взамен взяли кое-какие припасы. Он улетел прочь, не говоря ни слова.</text>
+		<autoReward level="MED">stuff</autoReward>
+	</event>
+	<event>
+		<text>Он воспринимает ваше милосердие как признак слабости и подбрасывает вам небольшую бомбу, после чего быстро скрывается на корабле инжи.</text>
+		<damage amount="2"/>
+		<damage amount="1" system="random" effect="fire"/>  <!--DLC-->
+	</event>
+</eventList>
+<eventList name="MANTIS_CAPTURE_COMMANDO_KILL">
+	<event>
+		<text>Мантис-десантник не выказывает никакого страха, когда внутренние двери шлюза закрываются, и космос готовится принять его. Вы нажимаете на кнопку, и он пропадает, растворяясь в великой пустоте.</text>
+		<autoReward level="MED">stuff</autoReward>
+	</event>
+	<event>
+		<text>Вы снимаете с корабля инжи всё, что можете, перед тем, как приняться за мантиса. Однако, десантник мгновенно понимает ваши намерения и нападает!</text>
+		<autoReward level="MED">stuff</autoReward>
+		<boarders min="1" max="1" class="mantis"/>
+	</event>
+</eventList>
+<eventList name="MANTIS_CAPTURE_COMMANDO_TALK">
+	<event>	
+		<text>Неизвестно, что происходит между двумя мантисами за запертой дверью, но когда они появляются, десантник готов поделиться с вами данными телеметрии текущего сектора. Затем он улетает на корабле инжи. Ваша карта была обновлена.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>После короткого промежутка времени наедине с мантисом, вам сообщают, что он желает присоединиться к вам. И хотя вы удивлены готовности мантиса сменить свои взгляды, вы доверяете мнениям своей команды на его счёт.</text>
+		<crewMember amount="1" class="mantis"/>  
+		<autoReward level="MED">stuff</autoReward>
+	</event>
+</eventList>
+		
+	
+<event name="MANTIS_GAMBLE" unique="true">
+	<text>Этот маяк на данный момент является пристанищем для развлекательного корабля мантисов — места, полного борделей и боевых арен для воинов, желающих выпустить пар. Просканировав ваше имущество, они дали понять, что вам желательно поучаствовать в главной азартной игре.</text>
+	<choice hidden="true">
+		<text>Поставить 50 лома на воина в синих штанах.</text>
+		<event>
+			<text>Сквозь экран вы наблюдаете, как двое молодых мантисов сходятся друг с другом в схватке.</text>
+			<item_modify>
+				<item type="scrap" min="-50" max="-50"/>
+			</item_modify>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="MANTIS_GAMBLE_BLUE"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Поставить 50 лома на воина в красных штанах.</text>
+		<event>
+			<text>Сквозь экран вы наблюдаете, как двое молодых мантисов сходятся друг с другом в схватке.</text>
+			<item_modify>
+				<item type="scrap" min="-50" max="-50"/>
+			</item_modify>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="MANTIS_GAMBLE_RED"/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Вы не играете с шулерами. Приготовиться к прыжку.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="MANTIS_GAMBLE_BLUE">
+	<event>
+		<text>Тот, что в синем, зажат в угол. И тут, в последний момент, он набрасывается и обезглавливает своего оппонента. Вы забираете свой выигрыш!</text>
+		<achievement silent="false">ACH_SHTANI</achievement><!-- bamalf -->
+		<item_modify>
+			<item type="scrap" min="100" max="100"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Похоже, мантис в синем выигрывает, нанося множество ударов по противнику. Внезапно тот, что в красном, заканчивает бой одним точным ударом.</text>
+		<choice hidden="true">
+			<text>Заплатить то, что вы должны.</text>
+			<event>
+				<text>Вы передаёте лом, который поставили, и уходите, пока у вас ещё есть корабль, чтобы отчалить.</text>
+			</event>
+		</choice>
+		<choice hidden="true" req="clonebay" lvl="2"><!-- 1.25 -->
+			<text>(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти убитого.</text>
+			<event>
+				<text>Павший боец появляется в клон-отсеке и с благодарностью вступает в ваш экипаж.</text>
+				<crewMember amount="1" class="mantis" combat="2">Рокки</crewMember><!-- Rocky -->
+			</event>
+		</choice>
+		<choice req="engines" lvl="4" hidden="true">
+			<text>(Улучшенные двигатели) Уклониться от уплаты и завести двигатели.</text>
+			<event>
+				<text>Вы забираете обратно лом, который уже приготовили к отправке, и отходите за пределы радиуса поражения крейсера прежде, чем его команда успевает отреагировать. Тем не менее небольшой корабль прерывает патрулирование и идёт на перехват.</text>
+				<ship load="MANTIS_FIGHT" hostile="true"/>
+				<item_modify>
+					<item type="scrap" min="50" max="50"/>
+				</item_modify>
+			</event>
+		</choice>
+	</event>
+</eventList>
+<eventList name="MANTIS_GAMBLE_RED">
+	<event>
+		<text>Похоже, мантис в синем выигрывает, нанося множество ударов по противнику. Внезапно тот, что в красном, заканчивает бой одним точным ударом. Вы забираете свой выигрыш!</text>
+		<achievement silent="false">ACH_SHTANI</achievement><!-- bamalf -->
+		<item_modify>
+			<item type="scrap" min="100" max="100"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Тот, что в синем, зажат в угол. И тут, в последний момент, он набрасывается и обезглавливает своего оппонента.</text>
+		<choice hidden="true">
+			<text>Заплатить то, что вы должны.</text>
+			<event>
+				<text>Вы передаёте лом, который поставили, и уходите, пока у вас ещё есть корабль, чтобы отчалить.</text>
+			</event>
+		</choice>
+		<choice hidden="true" req="clonebay" lvl="2"><!-- 1.25 -->
+			<text>(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти убитого.</text>
+			<event>
+				<text>Павший боец появляется в клон-отсеке и с благодарностью вступает в ваш экипаж.</text>
+				<crewMember amount="1" class="mantis" combat="2">Рокки</crewMember><!-- Rocky -->
+			</event>
+		</choice>
+		<choice req="engines" lvl="4" hidden="true">
+			<text>(Улучшенные двигатели) Уклониться от уплаты и завести двигатели.</text>
+			<event>
+				<text>Вы забираете обратно лом, который уже приготовили к отправке, и отходите за пределы радиуса поражения крейсера прежде, чем его команда успевает отреагировать. Тем не менее небольшой корабль прерывает патрулирование и идёт на перехват.</text>
+				<ship load="MANTIS_FIGHT" hostile="true"/>
+				<item_modify>
+					<item type="scrap" min="50" max="50"/>
+				</item_modify>
+			</event>
+		</choice>
+	</event>
+</eventList>
+
+
+
+<!--
+		HOSTILE!!!
+	Events that call up a fight for sure
+-->
+
+<event name="MANTIS_FIGHT" unique="false">   
+	<text load="MANTIS_FIGHT"/>
+	<ship load="MANTIS_FIGHT" hostile="true"/>
+</event>
+<textList name="MANTIS_FIGHT">
+	<!-- These are the ones that I had written-->
+	<text>На радаре появляются военный корабль мантисов и останки транспортника людей. Приготовьтесь к стычке!</text>
+	<text>Военный разведчик мантисов сигналит вам: «Глупые чужие! Слишком долго вы и вам подобные подавляли наше величие! Вы проклянёте тот день, когда поддержали Федерацию!»</text>
+	<text>Небольшой крейсер мантисов передаёт повторяющееся сообщение на широкополосной частоте: «Все корабли, не принадлежащие мантисам и входящие на нашу территорию, поплатятся за это. Отключите щиты и сдавайтесь, если вы цените свою жизнь».</text>
+	<text planet="PLANET_POPULATED_SMALL">Вы обнаруживаете небольшой военный аванпост и несколько грузовых кораблей неподалёку. Эта богатая минералами планета в изолированном уголке сектора является замечательным местом для незаконного бурения мантисами. Пока вы просчитываете варианты, с аванпоста стартует корабль. Готовьтесь к битве.</text>
+	<text>Вы обнаружили ещё одну незаконную колонию мантисов. Они, не теряя времени, высказывают свои претензии. Корабль мантисов приближается к вам до того, как вы успели улететь.</text>
+	<text>Военный разведчик мантисов, кажется, только что закончил собирать трофеи с места крушения. У них нет времени рассыпаться предупреждениями, они готовятся к бою.</text>
+	<text>Небольшой военный корабль приветствует вас, и капитан-мантис появляется на приёмнике. «Все местные людские колонии наказаны за преступления Федерации. Не мешайте процессу».</text>
+	<!-- These are the ones by tom-->
+	<text>Находящийся неподалёку корабль мантисов начинает агрессивные манёвры. Вы готовитесь к худшему.</text>
+	<text>Коммуникатор передаёт поток щелчков и булькающих звуков, исходящих от враждебно настроенного разведчика мантисов. Универсальный переводчик может не справляться со своей задачей, но намерения мантиса совершенно очевидны.</text>
+	<text>Корабль мантисов рад вас видеть и разогревает свои орудия.</text>
+	<text>Вы узнаете очертания корабля мантисов на фоне черноты. К бою!</text>
+	<text>Маячит что-то красное. Это мантис.</text>
+	<text>Судно мантисов выходит на связь: «Это послание всего лишь должно отвлечь вас!» Вы замечаете, что их щиты и орудия включились.</text>
+	<text>Вы замечаете сполохи шквального лазерного огня в иллюминаторе. Мантисы прямо над вами.</text>
+	<text>Мантисы выходят на связь. Их капитан говорит: «Я присвою это судно для своего клана. Хорошей охоты, братья!»</text>
+	<text>На экране возникает изображение самки мантиса. Самки не занимают высоких постов, исключение составляют, пожалуй, лишь особо жестокие. Вы заряжаете орудия.</text>
+	<text>Корабль мантисов с опознавательными знаками воина срывается с места и атакует!</text>
+	<text>Корабль мантисов посылает вам сообщение: «Ах! Отличная добыча! Отличная добыча! Мы почтим вас нашим самым опустошающим оружием!» Вы чувствуете, что ещё есть шанс спастись, и активируете орудия.</text>
+	<text>Детям на Земле рассказывают ужасные истории о кроваво-красных кораблях вторжения мантисов (как раз таких, с каким вы сейчас имеете дело), которые однажды угрожали планете. Вы приказываете открыть огонь!</text>
+	<text>Молодо выглядящий капитан мантисов приветствует: «Ты, жертва, должна знать. Твоя смерть — последнее убийство Кааазтвака перед совершеннолетием. Кааазтвак отдаёт дань уважения». Похоже, что уважение в культуре мантисов выказывают лазерами.</text>
+</textList>
+
+
+
+
+<!--
+		NEUTRAL!!!
+	Events that could have a fight
+-->
+
+<event name="MANTIS_FIGHT_CHOICE" unique="false">
+	<text load="MANTIS_FIGHT_CHOICE"/>
+	<ship load="MANTIS_FIGHT" hostile="false"/>
+	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.25 -->
+	<choice hidden="true">
+		<text>Атаковать корабль.</text>
+		<event>
+			<text>Вы мчитесь в бой, уверенные в своей скорой победе.</text> <!-- 1.25 -->
+			<ship hostile="true"/>
+			<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
+		</event>
+	</choice>
+	<choice>
+		<text>Попытаться остаться незамеченным.</text>
+		<event load="MANTIS_FIGHT_CHOICE_AVOID"/>
+	</choice>
+	<choice hidden="true" req="cloaking" lvl="1">
+		<text>(Маскировка) Активировать маскировку, чтобы оставаться незамеченными.</text>
+		<event load="MANTIS_FIGHT_CHOICE_CLOAK"/>
+	</choice>
+</event>
+<textList name="MANTIS_FIGHT_CHOICE">
+	<text>Вам довелось стать свидетелем редкого стечения обстоятельств: корабль мантисов, который вас не заметил.</text>
+	<text>На этот раз удалось заметить мантисов прежде, чем они увидели вас.</text>
+	<text>Ваш экипаж, увидев боевой корабль мантисов в засаде по указанным вами координатам, облегчённо вздыхает, так как вы каким-то образом вышли из прыжка не у маяка.</text>
+	<text>Вы подслушиваете разговор мантисов по передатчику: «Неправда, я убил больше человеков!» Вы шумно сглатываете, но, к счастью, они вас пока не видят.</text>
+	<text>Вы слышите в своём приёмнике разговор мантисов: «Тот, что справа начинает разлагаться. Снимите его. Отрубите ему пальцы. Выкиньте его из шлюза». Они, определённо, не кажутся дружелюбными...</text>
+	<text>Вы подслушиваете разговор мантисов по передатчику: «Договорились. Следующий корабль — твой. Хорошей охоты». Они вас пока не видят.</text>
+</textList>
+<eventList name="MANTIS_FIGHT_CHOICE_AVOID">
+	<event>
+		<text>Вы отключаете вспомогательные системы и ждёте зарядки FTL-привода. Они либо не хотят сражаться, либо не заметили ваше судно — что гораздо более вероятно.</text>
+	</event>
+	<event>
+		<text>Прежде чем вам удаётся ускользнуть, корабль мантисов засекает вас и включает орудия.</text>
+		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
+	</event>
+	<event>
+		<text>Вы отключаете вспомогательные системы в попытке остаться незамеченными. Похоже, они собирались улетать, когда неожиданно развернулись и взяли курс на вас, заряжая орудия.</text>
+		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
+	</event>
+</eventList>
+<eventList name="MANTIS_FIGHT_CHOICE_CLOAK">
+	<event>
+		<text>Вы поспешно маскируете корабль и выходите из зоны сканирования. Вы ушли незамеченными.</text>
+	</event>
+	<event>
+		<text>Вы маскируетесь и выключаете вспомогательные системы. Через короткое время корабль мантисов улетает — несомненно, в поисках добычи.</text>
+	</event>
+	<event>
+		<text>Вы поспешно маскируете корабль, но недостаточно быстро. Они замечают вас и готовятся к бою.</text>
+		<ship hostile="true"/>
+		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
+	</event>
+</eventList>
+
+<event name="MANTIS_CIVILIAN" unique="false">   
+	<text load="MANTIS_CIVILIAN"/>
+	<ship load="MANTIS_CIVILIAN" hostile="false"/>
+	<choice hidden="true">
+		<text>Помочь гражданским.</text>
+		<event>
+			<text>Нахмурившись, вы заряжаете орудия и готовитесь к бою с кораблём мантисов. Только не сегодня.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Держаться от них подальше.</text>
+		<event>
+			<text load="MANTIS_CIVILIAN_AVOID"/>
+		</event>
+	</choice>
+</event>
+<textList name="MANTIS_CIVILIAN">
+	<text>Судно мантисов проносится через ваше обзорное окно, с полностью заряженными орудиями и двигателями. Крошечная точка на радаре отмечает их жертву.</text>
+	<text>Вы заметили корабль мантисов, занятый охотой на большом расстоянии от вас.</text>
+	<text>Корабль мантисов, атакующий гражданского, пытается выйти с вами на связь. Вокруг его кабины летают искры, и он кричит: «Не вмешивайся, человек! Или ты следующий!»</text>
+	<text>Локальные сенсоры засекают два корабля, схлестнувшихся в жарком бою. Похоже, что военный корабль мантисов вот-вот победит свою жертву.</text>
+	<text>Вы ловите аварийный вызов гражданского корабля. Его преследует корабль мантисов!</text>
+	
+	<text>Судно мантисов проносится через ваше обзорное окно, с полностью заряженными орудиями и двигателями. Крошечная точка на радаре отмечает их жертву.</text>
+	<text>Вы заметили корабль мантисов, занятый охотой на большом расстоянии от вас.</text>
+	<text>Корабль мантисов, атакующий гражданского, пытается выйти с вами на связь. Вокруг его кабины летают искры, и он кричит: «Не вмешивайся, человек! Или ты следующий!»</text>
+	<text>Локальные сенсоры засекают два корабля, схлестнувшихся в жарком бою. Похоже, что военный корабль мантисов вот-вот победит свою жертву.</text>
+	<text>Вы ловите аварийный вызов гражданского корабля. Его преследует корабль мантисов!</text>
+</textList>
+<textList name="MANTIS_CIVILIAN_AVOID">
+	<text>Дымясь, гражданский корабль кое-как движется дальше. Вы стараетесь не думать о его судьбе и сконцентрироваться на будущем.</text>
+	<text>Шум раскручивающегося FTL-привода почти тонет в звуках взрывов. Почти.</text>
+	<text>Вы даёте им уйти и стараетесь не думать об этом.</text>
+	
+	<text>Дымясь, гражданский корабль кое-как движется дальше. Вы стараетесь не думать о его судьбе и сконцентрироваться на будущем.</text>
+	<text>Шум раскручивающегося FTL-привода почти тонет в звуках взрывов. Почти.</text>
+	<text>Вы даёте им уйти и стараетесь не думать об этом.</text>
+</textList>
+
+<event name="MANTIS_CREW" unique="true">
+	<text>Вы обнаруживаете и вылавливаете спасательную капсулу, плавающую поблизости. Вы уже думали выкинуть её обратно в космос, как замечаете, что она принадлежит мантисам.</text>
+	<choice hidden="true">
+		<text>Полюбопытствовать, открыв.</text>
+		<event load="MANTIS_CREW_LIST"/>
+	</choice>
+	<choice>
+		<text>Выкинуть капсулу.</text>
+		<event>
+			<text>Вы запускаете капсулу обратно в космос. Вы же не идиот.</text>
+		</event>
+	</choice>
+	<choice req="LIFE_SCANNER" hidden="true"><!-- 1.21 -->
+		<text>(Сканер жизненных форм) Просканировать, что находится внутри.</text>
+		<event load="MANTIS_SCAN_CREW_LIST"/>
+	</choice>
+	<choice req="slug" hidden="true"><!-- 1.25 -->
+		<text>(Член экипажа слаг) Пусть слаг взглянет, что находится внутри.</text>
+		<event load="MANTIS_SCAN_SLUG_CREW_LIST"/>
+	</choice>
+	<choice hidden="true" req="orchid"> <!-- 1.28 -->
+		<text>(Член экипажа орхид) Заполнить отсек успокаивающим ароматом перед тем, как вскрыть капсулу.</text>
+		<event>
+			<text>Находившийся внутри мантис отдыхал. После пробуждения, он рад вдохнуть свежего воздуха и свободно двигать конечностями. Мантис предлагает присоединиться к вашему экипажу до тех пор, пока не найдёт дорогу домой.</text>
+			<variable name="counter_usage_orchid" op="add" val="1"/>
+			<crewMember amount="1" class="mantis"/>
+		</event>
+	</choice>
+</event>
+<eventList name="MANTIS_SCAN_CREW_LIST">	
+	<event>
+		<text>Сканер показал, что внутри находится мантис. Возможно, не стоит его выпускать.</text>
+		<choice hidden="true">
+			<text>Открыть капсулу.</text>
+			<event load="MANTIS_CREW_LIST_2"/>
+		</choice>
+		<choice>
+			<text>Выкинуть капсулу.</text>
+			<event>
+				<text>Вы запускаете капсулу обратно в космос. Вы же не идиот.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Сканер показал, что внутри находится мантис. Возможно, не стоит его выпускать.</text>
+		<choice hidden="true">
+			<text>Открыть капсулу.</text>
+			<event load="MANTIS_CREW_LIST_2"/>
+		</choice>
+		<choice>
+			<text>Выкинуть капсулу.</text>
+			<event>
+				<text>Вы запускаете капсулу обратно в космос. Вы же не идиот.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Сканер показывает, что внутри находится человек, и вы открываете капсулу. Пленник вырывается и с криком забивается в угол. Нечасто кто-либо способен выжить в плену у мантисов. Успокоившись, он предлагает присоединиться к вашему экипажу на время.</text>
+		<crewMember amount="1" class="human"/>
+	</event>
+</eventList>
+<eventList name="MANTIS_SCAN_SLUG_CREW_LIST">	<!-- 1.25 -->
+	<event>
+		<text>Слаг говорит, что внутри находится очень возбуждённый мантис.</text>
+		<choice hidden="true">
+			<text>Открыть капсулу.</text>
+			<event>
+				<text>Мантис внутри РАЗЪЯРЁН. Одним сильным ударом он рвёт пополам ближайшее к себе существо. Убейте его, прежде чем жертв станет больше.</text>
+				<boarders min="1" max="1" class="mantis"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<removeCrew>
+							<clone>true</clone>
+							<text>Мантис шокирован. Он увидел, как только что убитый член вашего экипажа вышел из клон-отсека.</text>
+						</removeCrew>
+					</event>
+				</choice>
+			</event>
+		</choice>
+		<choice>
+			<text>Выкинуть капсулу.</text>
+			<event>
+				<text>Вы запускаете капсулу обратно в космос. Вы же не идиот.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Слаг говорит, что внутри находится спокойный мантис.</text>
+		<choice hidden="true">
+			<text>Открыть капсулу.</text>
+			<event>
+				<text>Мантис внутри считает вас посланником божьим и просится в ваш экипаж.</text>
+				<crewMember amount="1" class="mantis"/>   
+			</event>
+		</choice>
+		<choice>
+			<text>Выкинуть капсулу.</text>
+			<event>
+				<text>Вы запускаете капсулу обратно в космос. Вы же не идиот.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Слаг говорит, что внутри находится человек, и вы открываете капсулу. Пленник вырывается и с криком забивается в угол. Нечасто кто-либо способен выжить в плену у мантисов. Успокоившись, он предлагает присоединиться к вашему экипажу на время.</text>
+		<crewMember amount="1" class="human"/>
+	</event>
+</eventList>
+<eventList name="MANTIS_CREW_LIST">	
+	<event>
+		<text>Мантис внутри РАЗЪЯРЁН. Одним сильным ударом он рвёт пополам ближайшее к себе существо. Убейте его, прежде чем жертв станет больше.</text>
+		<boarders min="1" max="1" class="mantis"/>
+		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+			<text id="continue"/>
+			<event>
+				<removeCrew>
+					<clone>true</clone>
+					<text>Мантис шокирован. Он увидел, как только что убитый член вашего экипажа вышел из клон-отсека.</text>
+				</removeCrew>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Мантис внутри считает вас посланником божьим и просится в ваш экипаж.</text>
+		<crewMember amount="1" class="mantis"/>   
+	</event>
+	<event>
+		<text>Из спасательной капсулы вырывается человек и с криком забивается в угол. Нечасто кто-либо способен выжить в плену у мантисов. Успокоившись, он предлагает присоединиться к вашему экипажу на время.</text>
+		<crewMember amount="1" class="human"/>
+	</event>
+</eventList>
+<eventList name="MANTIS_CREW_LIST_2">	
+	<event>
+		<text>Мантис внутри РАЗЪЯРЁН. Одним сильным ударом он рвёт пополам ближайшее к себе существо. Убейте его, прежде чем жертв станет больше.</text>
+		<boarders min="1" max="1" class="mantis"/>
+		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
+			<text id="continue"/>
+			<event>
+				<removeCrew>
+					<clone>true</clone>
+					<text>Мантис шокирован. Он увидел, как только что убитый член вашего экипажа вышел из клон-отсека.</text>
+				</removeCrew>
+			</event>
+		</choice>
+		<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
+			<text id="continue"/>
+			<event>
+				<text>Так как ваш корабль находится под управлением ИИ, вам не следует опасаться смерти всего экипажа.</text>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Мантис внутри считает вас посланником божьим и просится в ваш экипаж.</text>
+		<crewMember amount="1" class="mantis"/>   
+	</event>
+</eventList>
+<!--
+		ENVIRONMENT!!!
+	Events with unique environments
+-->
+
+	
+<event name="MANTIS_SUN_FIGHT" unique="false">   
+	<text>Кто знает, зачем мантис рискует, находясь так близко к солнцу. Может он ищет более сложных испытаний?</text>
+	<ship load="MANTIS_FIGHT" hostile="true"/>
+	<environment type="sun"/>
+	<variable name="counter_meet_sun" op="add" val="1"/>
+</event>
+	
+
+	
+	
+	
+<!--
+		BOARDERS!!!
+	Events with boarders
+-->
+
+<event name="MANTIS_BOARDERS" unique="true">
+	<text load="MANTIS_BOARDERS"/>
+	<boarders min="2" max="4" class="mantis"/>
+	<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true"><!-- 1.31 -->
+		<enemyCrew amount="0" includeClonebay="false"/>
+	</triggeredEvent>
+</event>
+<textList name="MANTIS_BOARDERS">
+	<text>Мимо проплывает брошенный и всё ещё дымящийся корабль мантисов. Сражение, должно быть, произошло недавно. Выжившая команда телепортировалась на ваш корабль. Приготовьтесь к бою!</text>
+	<text>Внезапно спокойное течение вашей жизни меняется. На борту корабля высадились мантисы.</text>
+	<text>Вы слышите скрежетание и мягкое пощёлкивание. Вы тянетесь к пистолету.</text>
+</textList>
+
+
+
+
+
+<!--
+		SPECIAL!!!
+	Unique events
+-->
+
+<event name="MANTIS_NAMED_THIEF" unique="true"> <!-- 1.21 -->
+	<ship load="MANTIS_NAMED_THIEF" hostile="false"/>
+	<text>Вы пересекаетесь с кораблём мантисов, имеющим дюжины дополнительных слоёв брони, нашитых, наверное, после сотни лет полётов. Его капитан — легендарный вор КазааакплетКилик. Ваш экипаж выглядит испуганным.</text>
+	<choice hidden="true" req="mantis">
+		<text>(Член экипажа мантис) Попробовать приветствовать его.</text>
+		<event>
+			<text>Ваш мантис выходит вперёд. Он и КазааакплетКилик исполняют что-то наподобие ритуального танца. В знак уважения к мантису на вашем корабле КазааакплетКилик обещает не включать орудия на полную мощность. Вы тем временем заряжаете боевые системы.</text>
+			<status type="divide" target="enemy" system="weapons" amount="2"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event>
+					<text>Вы немало удивлены подобным решением КазааакплетКилика, но готовитесь к бою.</text> <!-- 1.25 -->
+					<ship hostile="true"/>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Приготовиться к бою.</text>
+		<event>
+			<text>Вы готовитесь к битве...</text> <!-- 1.25 -->
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+<event name="MANTIS_NAMED_THIEF_DEFEAT">
+	<text>Никаких признаков жизни на борту их корабля. Похоже, вы выиграли.</text>
+	<choice hidden="true">
+		<text>Двинуться внутрь, чтобы обчистить их корабль.</text>
+		<event>
+			<text>Для такого грозного врага кажется бессмысленным умереть столь глупым образом. Вы не обращаете на это внимания и забираете всё, что возможно.</text>
+			<autoReward level="HIGH">standard</autoReward>
+		</event>
+	</choice>
+	<choice hidden="true" req="teleporter">
+		<text>(Телепортер) Быстро телепортировать экипаж и поискать выживших.</text>
+		<event>
+			<text>Вы находите умирающего КазааакплетКилика, завалившегося в углу.</text>
+			<choice hidden="true">
+				<text>Без жалости прикончить его.</text>
+				<event>
+					<text>Так и закончилась жизнь известного капитана КазааакплетКилика... Вы размышляете, какие же секреты унёс он с собой в могилу, пока тщательно обчищаете его корабль.</text>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Послушать, что он скажет.</text>
+				<event>
+					<text>На последнем издыхании он назвал координаты своего тайника. Вы размышляете, какие же ещё секреты унёс он с собой в могилу, пока тщательно обчищаете его корабль.</text>
+					<quest event="MANTIS_NAMED_THIEF_STASH"/>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true" req="medbay" lvl="2">
+				<text>(Улучшенный медотсек) Быстрее телепортировать его в медотсек.</text>
+				<event>
+					<text>Ваша поспешность сыграла на руку, и вы вернули его с того света. Когда он пришёл в себя, он сказал: «Никогда не думал, что увижу этот день, поэтому... Я хочу посвятить себя вашему делу».</text>
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
+						<text>Согласиться.</text>
+						<event load="KAZAAK"/><!-- 1.31 -->
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="clonebay" lvl="2">
+				<text>(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти его.</text>
+				<event>
+					<text>Ваша поспешность окупилась, и вы регистрируете его в базе данных клон-отсека. После того, как мантис умирает, он быстро возрождается на борту вашего корабля. Придя в сознание, он говорит: «Никогда не думал, что увижу этот день... Я готов посвятить себя вашему делу».</text>
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
+						<text>Согласиться.</text>
+						<event load="KAZAAK"/><!-- 1.31 -->
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true" req="sensors" lvl="3"> <!-- bamalf add direct scanner here -->
+		<text>(Продвинутые сенсоры) Быстро просканировать их корабль в поисках выживших.</text>
+		<event>
+			<text>Вы обнаружили умирающего в углу КазааакплетКилика.</text>
+			<choice hidden="true">
+				<text>Оставить его умирать.</text>
+				<event>
+					<text>Так и закончилась жизнь известного капитана КазааакплетКилика... Вы размышляете, какие же секреты унёс он с собой в могилу, пока тщательно обчищаете его корабль.</text>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true">
+				<text>Состыковаться и попробовать поговорить с ним.</text>
+				<event>
+					<text>На последнем издыхании он назвал координаты своего тайника. Вы размышляете, какие же ещё секреты унёс он с собой в могилу, пока тщательно обчищаете его корабль.</text>
+					<quest event="MANTIS_NAMED_THIEF_STASH"/>
+					<autoReward level="HIGH">standard</autoReward>
+				</event>
+			</choice>
+			<choice hidden="true" req="medbay" lvl="2">
+				<text>(Улучшенный медотсек) Состыковаться и быстро перенести его в медотсек.</text>
+				<event>
+					<text>Ваша поспешность сыграла на руку, и вы вернули его с того света. Когда он пришёл в себя, он сказал: «Никогда не думал, что увижу этот день, поэтому... Я хочу посвятить себя вашему делу».</text>
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
+						<text>Согласиться.</text>
+						<event load="KAZAAK"/><!-- 1.31 -->
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="clonebay" lvl="2">
+				<text>(Улучшенный клон-отсек) Быстро настроить клон-отсек и спасти его.</text>
+				<event>
+					<text>Ваша поспешность окупилась, и вы регистрируете его в базе данных клон-отсека. После того, как мантис умирает, он быстро возрождается на борту вашего корабля. Придя в сознание, он говорит: «Никогда не думал, что увижу этот день... Я готов посвятить себя вашему делу».</text>
+					<choice hidden="true">  <!-- NOTE — Add other options?-->
+						<text>Согласиться.</text>
+						<event load="KAZAAK"/><!-- 1.31 -->
+					</choice>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+								
+<event name="KAZAAK"><!-- 1.31 -->
+	<text>КазааакплетКилик присоединяется к экипажу и показывает координаты ближайшего тайника с ворованными военными припасами, а также передаёт координаты модифицированного крейсера, над которым он работал. Вы перенаправили их в Федерацию, будучи уверенным, что там об этом позаботятся.</text>
+	<achievement silent="false">ACH_MANTIS_LEGENDARY</achievement>
+	<augment name="CREW_STIMS"/>
+	<autoReward level="HIGH">scrap_only</autoReward>
+	<crewMember amount="1" class="mantis_legendary" all_skills="2">Казааак</crewMember>
+	<playSound>legendary</playSound>
+	<quest event="MANTIS_NAMED_THIEF_STASH"/>
+	<unlockShip id="2">Крейсер мантисов был разблокирован и добавлен в ангар!</unlockShip>
+</event>		
+
+
+<event name="MANTIS_NAMED_THIEF_STASH">
+	<text>Вы прибываете в небольшое поле астероидов и обнаруживаете тайник среди обломков. Вы вводите коды, которые дал вам КазааакплетКилик, и находите внутри оружие.</text>
+	<autoReward level="HIGH">weapon</autoReward>
+</event>
+
+
+
+
+
+
+</FTL>

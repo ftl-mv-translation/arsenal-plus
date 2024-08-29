@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FTL>
+	<!-- Remove Vanilla FTL texts to avoid 'doubly defined name' in FTL.log -->
+	<mod:findComposite>
+		<mod:par op="OR">
+			<mod:findLike type="text"><mod:selector name="sectorname_CRYSTAL_HOME" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_LANIUS_SECTOR" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_short_CRYSTAL_HOME" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_short_LANIUS_SECTOR" /></mod:findLike>
+		</mod:par>
+		<mod:removeTag />
+	</mod:findComposite>
+	<!-- shown on Beacon Map -->
+	<text name="sectorname_STANDARD_SPACE">Пространство Федерации</text>
+	<text name="sectorname_FINAL">Последний рубеж</text>
+	<text name="sectorname_CIVILIAN_SECTOR">Гражданский сектор</text>
+	<text name="sectorname_ENGI_SECTOR">Сектор инжи</text>
+	<text name="sectorname_ENGI_HOME">Родной мир инжи</text>
+	<text name="sectorname_MORPH_SECTOR">Сектор морфов</text><!-- 1.27 -->
+	<text name="sectorname_MORPH_HOME">Родной мир морфов</text><!-- 1.27 -->
+	<text name="sectorname_PIRATE_SECTOR">Сектор пиратов</text>
+	<text name="sectorname_REBEL_SECTOR">Сектор повстанцев</text>
+	<text name="sectorname_REBEL_SECTOR_MINIBOSS">Оплот повстанцев</text>
+	<text name="sectorname_MANTIS_SECTOR">Сектор мантисов</text>
+	<text name="sectorname_MANTIS_HOME">Родной мир мантисов</text>
+	<text name="sectorname_NEBULA_SECTOR">Неизведанная туманность</text>
+	<text name="sectorname_SLUG_SECTOR">Туманность слагов</text>
+	<text name="sectorname_SLUG_HOME">Родная туманность слагов</text>
+	<text name="sectorname_ZOLTAN_SECTOR">Сектор золтанцев</text>
+	<text name="sectorname_ZOLTAN_HOME">Родной мир золтанцев</text>
+	<text name="sectorname_ZOLTON_SECTOR">Сектор золтонцев</text> <!-- 1.26 -->
+	<text name="sectorname_ZOLTON_HOME">Родной мир золтонцев</text> <!-- 1.26 -->
+	<text name="sectorname_ROCK_SECTOR">Сектор роков</text>
+	<text name="sectorname_ROCK_HOME">Родной мир роков</text>
+	<text name="sectorname_CRYSTAL_HOME">Родной мир кристалинов</text>
+	<text name="sectorname_LANIUS_SECTOR">Сектор ланиусов</text>
+	<text name="sectorname_LANIUS_SECTOR_HOME">Родной мир ланиусов</text>
+	<text name="sectorname_TRADE_SECTOR">Торговый сектор</text>
+	<text name="sectorname_BORDER_SECTOR">Пограничный сектор</text>
+	<text name="sectorname_ORDEN_SECTOR_MINIBOSS">Оплот Ордена</text>
+	<text name="sectorname_ORDEN_SECTOR">Сектор Ордена</text>
+	<text name="sectorname_HAL_SECTOR">Система HAL</text>
+	<text name="sectorname_HAL_SECTOR_HOME">Ядро HAL</text>
+	<text name="sectorname_SLURM_SECTOR">Обитель слёрмов</text>
+	<text name="sectorname_AVATAR_SECTOR">Туманность аватаров</text>
+	<text name="sectorname_AVATAR_SECTOR_HOME">Родная туманность аватаров</text>
+	<text name="sectorname_UNSTABLE_SECTOR">Нестабильный сектор</text>
+	<text name="sectorname_ULTRA_UNSTABLE_SECTOR">Сверхнестабильный сектор</text>
+	<text name="sectorname_ORCHID_SECTOR">Сектор орхидов</text> <!-- 1.28 -->
+	<text name="sectorname_ORCHID_HOME">Родной мир орхидов</text> <!-- 1.28 -->
+	<!-- shown on Sector Map -->
+	<text name="sectorname_short_ORCHID_SECTOR">Сектор орхидов</text> <!-- 1.28 -->
+	<text name="sectorname_short_ORCHID_HOME">Родной мир орхидов</text> <!-- 1.28 -->
+	<text name="sectorname_short_STANDARD_SPACE">Пространство Федерации</text>
+	<text name="sectorname_short_FINAL">Последний рубеж</text>
+	<text name="sectorname_short_CIVILIAN_SECTOR">Гражданский сектор</text>
+	<text name="sectorname_short_ENGI_SECTOR">Сектор инжи</text>
+	<text name="sectorname_short_ENGI_HOME">Родной мир инжи</text>
+	<text name="sectorname_short_MORPH_SECTOR">Сектор морфов</text><!-- 1.27 -->
+	<text name="sectorname_short_MORPH_HOME">Родной мир морфов</text><!-- 1.27 -->
+	<text name="sectorname_short_PIRATE_SECTOR">Сектор пиратов</text>
+	<text name="sectorname_short_REBEL_SECTOR">Сектор повстанцев</text>
+	<text name="sectorname_short_REBEL_SECTOR_MINIBOSS">Оплот повстанцев</text>
+	<text name="sectorname_short_MANTIS_SECTOR">Сектор мантисов</text>
+	<text name="sectorname_short_MANTIS_HOME">Родной мир мантисов</text>
+	<text name="sectorname_short_NEBULA_SECTOR">Неизведанная туманность</text>
+	<text name="sectorname_short_SLUG_SECTOR">Туманность слагов</text>
+	<text name="sectorname_short_SLUG_HOME">Родная туманность слагов</text>
+	<text name="sectorname_short_ZOLTAN_SECTOR">Сектор золтанцев</text>
+	<text name="sectorname_short_ZOLTAN_HOME">Родной мир золтанцев</text>
+	<text name="sectorname_short_ZOLTON_SECTOR">Сектор золтонцев</text><!-- 1.26 -->
+	<text name="sectorname_short_ZOLTON_HOME">Родной мир золтонцев</text><!-- 1.26 -->
+	<text name="sectorname_short_ROCK_SECTOR">Сектор роков</text>
+	<text name="sectorname_short_ROCK_HOME">Родной мир роков</text>
+	<text name="sectorname_short_CRYSTAL_HOME">Родной мир кристалинов</text>
+	<text name="sectorname_short_LANIUS_SECTOR">Сектор ланиусов</text>
+	<text name="sectorname_short_LANIUS_SECTOR_HOME">Родной мир ланиусов</text>
+	<text name="sectorname_short_TRADE_SECTOR">Торговый сектор</text>
+	<text name="sectorname_short_BORDER_SECTOR">Пограничный сектор</text>
+	<text name="sectorname_short_ORDEN_SECTOR_MINIBOSS">Оплот Ордена</text>
+	<text name="sectorname_short_ORDEN_SECTOR">Сектор Ордена</text>
+	<text name="sectorname_short_HAL_SECTOR">Система HAL</text>
+	<text name="sectorname_short_HAL_SECTOR_HOME">Ядро HAL</text>
+	<text name="sectorname_short_SLURM_SECTOR">Обитель слёрмов</text>
+	<text name="sectorname_short_AVATAR_SECTOR">Туманность аватаров</text>
+	<text name="sectorname_short_AVATAR_SECTOR_HOME">Родная туманность аватаров</text>
+	<text name="sectorname_short_UNSTABLE_SECTOR">Нестабильный сектор</text>
+	<text name="sectorname_short_ULTRA_UNSTABLE_SECTOR">Сверхнестабильный сектор</text>
+</FTL>
