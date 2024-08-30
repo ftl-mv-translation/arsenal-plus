@@ -37,7 +37,7 @@
         "mod-appendix/metadata.xml",
     ],
     "stringSelectionXPath": [
-        // XML text extraction rules (XPath) basically from mv
+        // XML text extraction rules (XPath) basically imported from mv
 
         // vanilla achievements
         "//achievement/desc",
@@ -114,8 +114,8 @@
         "//sectorDescription/nameList/name",
 
         // metadata
-        //"/metadata/title",
-        "/metadata/description",
+        //"//metadata/title",
+        "//metadata/description",
 
         // tutorial
         "//step/default",

@@ -5,7 +5,6 @@ import re
 import json5
 from pprint import pprint
 from sys import argv
-from lxml.etree import Comment
 
 def findFilePatterns():
     pathset = set()
