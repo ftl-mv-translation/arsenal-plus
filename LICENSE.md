@@ -1,7 +1,7 @@
-# Inferno Core (`src-en/`)
+# Arsenal+ with Hyperspace (`src-ru/`)
 
-Kindly provided by julk to be used in translation processes.
+Kindly provided by bamalf to be used in translation processes.
 
 ```
-Copyright 2024 Inferno Core devs. All rights reserved.
+Copyright 2024 Arsenal+ devs. All rights reserved.
 ```

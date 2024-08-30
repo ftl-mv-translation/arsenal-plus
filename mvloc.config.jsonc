@@ -2,30 +2,131 @@
     "filePatterns": [
         // Files to translate (glob pattern)
 
-        "data/blueprints.xml.append",
-        "data/events_special_curator.xml.append",
-        "data/events_special_lightspeed.xml.append",
-        "data/events_special_main.xml.append",
-        "data/events_special_mechanical.xml.append",
-        "data/events_special_storage.xml.append",
+        "data/achievements.xml.rawclobber",
+        "data/autoBlueprints.xml.rawclobber",
+        "data/blueprints.xml.rawclobber",
+        "data/bosses.xml.rawclobber",
+        "data/dlcBlueprints.xml.rawclobber",
+        "data/dlcBlueprintsOverwrite.xml.rawclobber",
+        "data/dlcEvents.xml.rawclobber",
+        "data/dlcEventsOverwrite.xml.rawclobber",
+        "data/dlcEvents_anaerobic.xml.rawclobber",
+        "data/dlcPirateBlueprints.xml.rawclobber",
+        "data/events.xml.rawclobber",
+        "data/events_boss.xml.rawclobber",
+        "data/events_crystal.xml.rawclobber",
+        "data/events_engi.xml.rawclobber",
+        "data/events_fuel.xml.rawclobber",
+        "data/events_mantis.xml.rawclobber",
+        "data/events_nebula.xml.rawclobber",
+        "data/events_pirate.xml.rawclobber",
+        "data/events_rebel.xml.rawclobber",
+        "data/events_rock.xml.rawclobber",
+        "data/events_ships.xml.rawclobber",
+        "data/events_slug.xml.rawclobber",
+        "data/events_zoltan.xml.rawclobber",
+        "data/hyperspace.xml",
+        "data/nameEvents.xml.rawclobber",
+        "data/names.xml.rawclobber",
+        "data/newEvents.xml.rawclobber",
+        "data/text-ru.xml.append",
         "data/text_misc.xml.append",
+        "data/text_sectorname.xml.append",
+        "data/text_tooltips.xml.append",
+        "data/text_tutorial.xml.append",
         "mod-appendix/metadata.xml",
     ],
     "stringSelectionXPath": [
-        // XML text extraction rules (XPath)
+        // XML text extraction rules (XPath) basically from mv
 
+        // vanilla achievements
+        "//achievement/desc",
+
+        // blueprints
+        "//crewBlueprint/title",
+        "//crewBlueprint/short",
+        "//crewBlueprint/desc",
+        "//crewBlueprint/powerList/power",
+        "//droneBlueprint/title",
+        "//droneBlueprint/short",
+        "//droneBlueprint/desc",
+        "//systemBlueprint/title",
+        "//systemBlueprint/desc",
+        "//itemBlueprint/title",
+        "//itemBlueprint/desc",
         "//augBlueprint/title",
         "//augBlueprint/desc",
-        "//mod:findWithChildLike/mod:selector",
-        "//mod:findWithChildLike/mod-overwrite:text",
-        "//text",
-        "//metadata/title",
-        "//metadata/description",
+        "//weaponBlueprint/title",
+        "//weaponBlueprint/desc",
+        "//weaponBlueprint/short",
+        "//weaponBlueprint[starts-with(@name,'ARTILLERY_')]/tooltip",
+        "//weaponBlueprint/descriptionOverride",
+        "//weaponBlueprint/tooltipOverride",
+        "//shipBlueprint/class",
+        "//shipBlueprint/desc",
+        "//shipBlueprint/name", //in ars+, they are written in English
+
+        // additional blueprints
+        "//weaponBlueprint/flavorType",
+        "//weaponBlueprint/spawnCrew/name",
+        "//weaponBlueprint/tooltip",
+        "//shipBlueprint/unlock",
+
+        // events
+        "//*[not(starts-with(@name,'TEXT_CREW_TALK_'))]/text",
+        "//triggeredEventBox/tooltip",
+        "//unvisitedTooltip",
+        "//visitedTooltip",
+        "//undiscoveredTooltip",
+        "//crewMember",
+        "//win/@text",
+        "//lose/@text",
+        "//ship/finalBoss/@text",       
         "//eventButton/tooltip",
-        "//enentButton/inactiveTooltip"
+        "//eventButton/inactiveTooltip",
+        "//backgroundObject/tooltip",
+
+        //additional events
+        "//unlockShip",
+        "//backgroundObject/inactiveTooltip",
+
+        // hyperspace
+        "//shipIcon/tooltip",
+        "//powerEffect/buttonText",
+        "//powerEffect/tooltip",
+        "//customStore/category/customTitle",
+        "//customShip/crew/*/@name",
+        "//mod-append:customShip/crew/*/@name",
+        "//victories//name",
+        "//victories//description",
+        "//victories//secretName",
+        "//victories//secretDescription",
+        "//achievements/page/section/@text",
+        "//achievement/name", // Note: this element is shared between Hyperspace AND vanilla achievements
+        "//achievement/description",
+        "//achievement/header",
+        "//achievement/secretName",
+        "//achievement/secretDescription",
+        "//drones/drone/tooltipName",
+        "//spawnCrew/name",
+
+        // sector
+        "//sectorDescription/nameList/name",
+
+        // metadata
+        //"/metadata/title",
+        "/metadata/description",
+
+        // tutorial
+        "//step/default",
+
+        // additional misc
+        "//nameList/name",
     ],
 
     "useDummyRoot": true,
+
+    "originalLanguage": "ru",
 
     "languageSpecifics": {
         "ko": {
@@ -50,9 +151,9 @@
 
     "packaging": {
         "fullOriginal": [
-            "https://github.com/ftl-mv-translation/inferno-core/raw/inferno-core-english/Inferno-Core_1.2.3.1.zip",
+            "https://drive.usercontent.google.com/download?id=1fNXYuTpP-VzocQnckP-_GIRcLWt04x-z&export=download&confirm=xxx"
         ],
-        "prefix": "Inferno-Core",
-        "version": "1.2.3.1"
+        "prefix": "Arsenal-Plus-With-Hyperspace",
+        "version": "1.31"
     }
 }
