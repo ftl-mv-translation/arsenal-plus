@@ -1,61 +1,80 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-11-05 10:32+0000\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datadlceventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:9
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_PULSAR\"]/text"
 msgstr ""
 "Taking advantage of the last of your fuel reserves, you were able to "
 "navigate to a safe distance from the pulsar."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:13
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"PULSAR\"]/text"
 msgstr "Oh no! A pulsar!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:19
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"PDS_TEST\"]/text"
 msgstr "Oh no! This planet is friendly to the Rebels and is shooting at us!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:25
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_PDS\"]/text"
 msgstr ""
 "Using your impulse engines, you were able to pull to a safe distance from "
 "the hostile planet."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:29
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_FLEET\"]/text"
 msgstr ""
-"Your pilot deftly avoids the artillery fire from the surrounding fleet while"
-" you try to sort out exactly what your plan is...."
+"Your pilot deftly avoids the artillery fire from the surrounding fleet while "
+"you try to sort out exactly what your plan is...."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:33
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"NEWSHIP1\"]/text"
 msgstr "whatever"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:38
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"NEWSHIP2\"]/text"
 msgstr "whatever"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:44
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP1\"]/destroyed/text"
 msgstr "Yay!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:47
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP1\"]/deadCrew/text"
 msgstr "Yay!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:53
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP2\"]/destroyed/text"
 msgstr "Yay!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:56
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//ship[@name=\"NEWSHIP2\"]/deadCrew/text"
 msgstr "Yay!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:75
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/text"
 msgstr ""
 "You come across a large trade station. However, as soon as you approach a "
@@ -63,27 +82,32 @@ msgstr ""
 "Federation sympathizer. All who oppose the Rebels will be punished.\""
 
 #: src-ru/data/dlcEvents.xml.rawclobber:77
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[1]/text"
 msgstr "Search among the stores to see if someone will sell to you."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:81
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[2]/text"
 msgstr "Leave this place."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:83
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[2]/event/text"
 msgstr "You decide it's better to not push your luck and move on."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:87
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
 " and @lvl=\"1\"]/text"
 msgstr "(Mind Control) Alter the announcer's opinions."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:89
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
 " and @lvl=\"1\"]/event/text"
@@ -93,12 +117,14 @@ msgstr ""
 "before he can figure out what just happened."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:97
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
 " and @lvl=\"2\"]/text"
 msgstr "(Improved Mind Control) Alter the announcer's opinions."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:99
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
 " and @lvl=\"2\"]/event/text"
@@ -109,12 +135,14 @@ msgstr ""
 "he can figure out what just happened."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:108
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced Mind Control) Alter the announcer's opinions."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:110
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"STORE_REBELSIDE\"]/choice[@req=\"mind\""
 " and @lvl=\"3\"]/event/text"
@@ -125,6 +153,7 @@ msgstr ""
 "shop before he can figure out what just happened."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:121
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[1]/text"
 msgstr ""
@@ -133,6 +162,7 @@ msgstr ""
 "ourselves.\""
 
 #: src-ru/data/dlcEvents.xml.rawclobber:128
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[2]/text"
 msgstr ""
@@ -141,6 +171,7 @@ msgstr ""
 "the message, \"We are not all friends of the Rebel fleet. Stay strong.\""
 
 #: src-ru/data/dlcEvents.xml.rawclobber:132
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[3]/text"
 msgstr ""
@@ -148,6 +179,7 @@ msgstr ""
 "Warnings go off and you detect an automated Rebel ship moving in to attack."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:136
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//eventList[@name=\"STORE_REBELSIDE_SEARCH\"]/event[4]/text"
 msgstr ""
@@ -155,6 +187,7 @@ msgstr ""
 "Warnings go off and you detect an automated Rebel ship moving in to attack."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:156
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[1]"
 msgstr ""
@@ -163,6 +196,7 @@ msgstr ""
 "graces! Charge the weapons!\""
 
 #: src-ru/data/dlcEvents.xml.rawclobber:157
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[2]"
 msgstr ""
@@ -170,6 +204,7 @@ msgstr ""
 "react a Rebel ship spots you and moves in to attack."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:158
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[3]"
 msgstr ""
@@ -177,6 +212,7 @@ msgstr ""
 "Rebel ship happens to jump nearby. Looks like you'll have to fight."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:162
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[4]"
 msgstr ""
@@ -185,6 +221,7 @@ msgstr ""
 "graces! Charge the weapons!\""
 
 #: src-ru/data/dlcEvents.xml.rawclobber:163
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[5]"
 msgstr ""
@@ -192,6 +229,7 @@ msgstr ""
 "react a Rebel ship spots you and moves in to attack."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:164
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PULSAR_TEXT\"]/text[6]"
 msgstr ""
@@ -199,6 +237,7 @@ msgstr ""
 "Rebel ship happens to jump nearby. Looks like you'll have to fight."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:173
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[1]"
 msgstr ""
@@ -207,6 +246,7 @@ msgstr ""
 "charging. Prepare for a fight!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:174
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[2]"
 msgstr ""
@@ -215,6 +255,7 @@ msgstr ""
 "warning signals go off. It appears to be a ship in a firing trajectory!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:175
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[3]"
 msgstr ""
@@ -223,6 +264,7 @@ msgstr ""
 "scanning distance. A small combat ship launches from the station. Pirates!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:179
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[4]"
 msgstr ""
@@ -231,6 +273,7 @@ msgstr ""
 "charging. Prepare for a fight!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:180
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[5]"
 msgstr ""
@@ -239,6 +282,7 @@ msgstr ""
 "warning signals go off. It appears to be a ship in a firing trajectory!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:181
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//textList[@name=\"PIRATE_PULSAR_TEXT\"]/text[6]"
 msgstr ""
@@ -247,40 +291,46 @@ msgstr ""
 "scanning distance. A small combat ship launches from the station. Pirates!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:191
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[1]/text"
 msgstr "Prepare to fight."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:195
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"1\"]/text"
 msgstr "(Simple Hacking) Confuse the Anti-Ship Battery's targets."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:197
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"You spot a weakness in the targeting satellites. Your crew is able to launch"
-" a hacking drone to confuse the Anti-Ship Battery's targeting matrix. It "
+"You spot a weakness in the targeting satellites. Your crew is able to launch "
+"a hacking drone to confuse the Anti-Ship Battery's targeting matrix. It "
 "should also fire on the Rebel ship now."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:205
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced Hacking) Overwrite the Anti-Ship Battery's target."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:207
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"3\"]/event/text"
 msgstr ""
-"You spot a weakness in the targeting satellites. Your crew is able to launch"
-" an improved hacking drone to overwrite the Anti-Ship Battery's targeting "
+"You spot a weakness in the targeting satellites. Your crew is able to launch "
+"an improved hacking drone to overwrite the Anti-Ship Battery's targeting "
 "matrix. It will fire on the Rebel ship instead!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:216
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[1]"
 msgstr ""
 "You're shocked to discover a Rebel forward base on this planet. A patrol "
@@ -288,6 +338,7 @@ msgstr ""
 "about to fire. We've got to get out of here!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:219
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[2]"
 msgstr ""
 "You're shocked to discover a Rebel forward base on this planet. A patrol "
@@ -295,6 +346,7 @@ msgstr ""
 "about to fire. We've got to get out of here!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:220
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[3]"
 msgstr ""
 "You're shocked to discover a Rebel forward base on this planet. A patrol "
@@ -302,6 +354,7 @@ msgstr ""
 "about to fire. We've got to get out of here!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:221
+#, fuzzy
 msgid "data/dlcEvents.xml.rawclobber$//textList[@name=\"REBEL_PDS_TEXT\"]/text[4]"
 msgstr ""
 "You're shocked to discover a Rebel forward base on this planet. A patrol "
@@ -309,39 +362,44 @@ msgstr ""
 "about to fire. We've got to get out of here!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:230
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[1]/text"
 msgstr "Prepare to fight."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:234
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"1\"]/text"
 msgstr "(Simple Hacking) Confuse the Anti-Ship Battery's targets."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:236
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"You spot a weakness in the targeting satellites. Your crew is able to launch"
-" a hacking drone to periodically confuse the ASB's lock signal. It should "
+"You spot a weakness in the targeting satellites. Your crew is able to launch "
+"a hacking drone to periodically confuse the ASB's lock signal. It should "
 "sometimes fire on the Rebel ship now."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:244
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced Hacking) Override the ASB's target."
 
 #: src-ru/data/dlcEvents.xml.rawclobber:246
+#, fuzzy
 msgid ""
 "data/dlcEvents.xml.rawclobber$//event[@name=\"REBEL_AUTO_PDS\"]/choice[@req=\"hacking\""
 " and @lvl=\"3\"]/event/text"
 msgstr ""
-"You spot a weakness in the targeting satellites. Your crew is able to launch"
-" an improved hacking drone to overwrite the ASB's target locks. It will fire"
-" on the Rebel ship instead!"
+"You spot a weakness in the targeting satellites. Your crew is able to launch "
+"an improved hacking drone to overwrite the ASB's target locks. It will fire "
+"on the Rebel ship instead!"
 
 #: src-ru/data/dlcEvents.xml.rawclobber:255
 msgid ""
