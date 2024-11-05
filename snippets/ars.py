@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-BASEPATH = 'C:/Users/hulan/OneDrive/デスクトップ/ars+/'
+BASEPATH = ''
 
 SOURCES = [
     # argo's translaton. The duplicated texts will be overwriten by Blizz's one.
