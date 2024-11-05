@@ -19,7 +19,7 @@ def mass_map(glob_pattern, mapfunc, overwrite):
     stats_subject = set()
     
     for path in glob(glob_pattern):
-        dict_original, _, sourcelocation = readpo(Path(path).parent / 'en.po')
+        dict_original, _, sourcelocation = readpo(Path(path).parent / 'ru.po')
         dict_translated, _, _ = readpo(path)
 
         changed = False
