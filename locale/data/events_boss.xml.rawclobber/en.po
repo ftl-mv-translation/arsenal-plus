@@ -1,0 +1,1085 @@
+#
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src-ru/data/events_boss.xml.rawclobber:75
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"FEDERATION_BASE\"]/text"
+msgstr ""
+"You arrive near the Federation Base to find the bulk of their fleet "
+"skirmishing with Rebel forces. You hang back near the far side of the moon "
+"to avoid the conflict. There's not much you can do to help in that battle, "
+"and your mission holds the key to turn the tide of the war. You prepare to "
+"face the Flagship."
+
+#: src-ru/data/events_boss.xml.rawclobber:90
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[1]/text"
+msgstr "The moon safely hides your ship."
+
+#: src-ru/data/events_boss.xml.rawclobber:93
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[2]/text"
+msgstr "The moon safely hides your ship."
+
+#: src-ru/data/events_boss.xml.rawclobber:109
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[3]/text"
+msgstr "Rebel ships yet hunt you down! Prepare to fight!"
+
+#: src-ru/data/events_boss.xml.rawclobber:113
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[4]/text"
+msgstr "Unmanned Rebel scouts never tire in your pursuit! Prepare to fight!"
+
+#: src-ru/data/events_boss.xml.rawclobber:117
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[5]/text"
+msgstr "Elite Rebel ships still track you down! Prepare to fight!"
+
+#: src-ru/data/events_boss.xml.rawclobber:121
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[6]/text"
+msgstr ""
+"From the base a small shuttle approaches, and soon afterwards it hails: \"We"
+" know about your mission, and our captain wants to help you!\""
+
+#: src-ru/data/events_boss.xml.rawclobber:122
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[6]/crewMember"
+msgstr "Luminis"
+
+#: src-ru/data/events_boss.xml.rawclobber:125
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[7]/text"
+msgstr ""
+"From the base a small repair drone approaches your ship and repairs it, "
+"after finishing, it sends a short message: \"Now that's all that we can do "
+"to help you. Good luck! \""
+
+#: src-ru/data/events_boss.xml.rawclobber:129
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[8]/text"
+msgstr ""
+"A small shuttle from the base sends you some supplies. Now that's all they "
+"can do to help you."
+
+#: src-ru/data/events_boss.xml.rawclobber:136
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[9]/text"
+msgstr ""
+"You are approached by a transport ship from the base, and they send you "
+"additional weaponry!"
+
+#: src-ru/data/events_boss.xml.rawclobber:143
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_BASE_REBEL\"]/destroyed/text"
+msgstr "You collect the Rebel ship's wreckage and prepare to defend the base."
+
+#: src-ru/data/events_boss.xml.rawclobber:147
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_BASE_REBEL\"]/deadCrew/text"
+msgstr "You plunder the Rebel ship's holds and prepare to defend the base."
+
+#: src-ru/data/events_boss.xml.rawclobber:157
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/text"
+msgstr ""
+"You arrive at an outpost close to the Federation Base. Your access codes get"
+" you past initial security and an officer sets up a direct feed to the "
+"Federation Base's war room. Admiral Tully speaks first saying, \"What is the"
+" meaning of this?! Who are you?\""
+
+#: src-ru/data/events_boss.xml.rawclobber:201
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/text"
+msgstr "Explain your mission."
+
+#: src-ru/data/events_boss.xml.rawclobber:203
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Your explanation is met with murmurs of cynicism and disbelief among the "
+"officers. General Turzil of the Engi Brigade speaks up, \"Intel suggests "
+"potential counter to Rebel technology. Risk all or save none.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:205
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and @lvl=\"0\"]/text"
+msgstr "Explain the weakness of the enemy fleet, the Rebel flagship."
+
+#: src-ru/data/events_boss.xml.rawclobber:207
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Tully responds, \"It's settled. The Rebels will be here in a matter of "
+"moments. We will do what we can to hold off their warships but you must "
+"succeed in destroying this flagship.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:215
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and not(@lvl)]/text"
+msgstr "Inform the Admiral that you have a package for them."
+
+#: src-ru/data/events_boss.xml.rawclobber:217
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and not(@lvl)]/event/text"
+msgstr ""
+"You say that you have a container addressed to the Admiral. Admiral Tully's "
+"face doesn't express any emotions, but the Admiral tells you to leave the "
+"container on the outpost and then gives some instructions to their senior "
+"officer."
+
+#: src-ru/data/events_boss.xml.rawclobber:223
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and "
+"not(@lvl)]/event/choice/event/text"
+msgstr ""
+"After some time, Admiral Tully takes you to a hidden repair dock where your "
+"ship is thoroughly yet quickly prepared for your final goal — to defend the "
+"Federation Base at all costs."
+
+#: src-ru/data/events_boss.xml.rawclobber:240
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
+" and @lvl=\"1\"]/text"
+msgstr "Explain your mission."
+
+#: src-ru/data/events_boss.xml.rawclobber:247
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/text"
+msgstr ""
+"Your explanation is met with murmurs of cynicism and disbelief among the "
+"officers. General Turzil of the Engi Brigade speaks up, \"Intel suggests "
+"potential counter to Rebel technology. Risk all or save none.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:249
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
+" and @lvl=\"0\"]/text"
+msgstr "Explain the weakness of the enemy fleet, the Rebel flagship."
+
+#: src-ru/data/events_boss.xml.rawclobber:251
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Tully responds, \"It's settled. The Rebels will be here in a matter of "
+"moments. We will do what we can to hold off their warships but you must "
+"succeed in destroying this flagship.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:259
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
+" and not(@lvl)]/text"
+msgstr "Inform the Admiral that you have a package for them."
+
+#: src-ru/data/events_boss.xml.rawclobber:261
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
+" and not(@lvl)]/event/text"
+msgstr ""
+"You say that you have a container addressed to the Admiral. Admiral Tully's "
+"face doesn't express any emotions, but the Admiral tells you to leave the "
+"container on the outpost and then gives some instructions to their senior "
+"officer."
+
+#: src-ru/data/events_boss.xml.rawclobber:267
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"After some time, Admiral Tully takes you to a hidden repair dock where your "
+"ship is thoroughly yet quickly prepared for your final goal — to defend the "
+"Federation Base at all costs."
+
+#: src-ru/data/events_boss.xml.rawclobber:283
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/text"
+msgstr ""
+"Your explanation is met with murmurs of cynicism and disbelief among the "
+"officers. General Turzil of the Engi Brigade suddenly notices a Human on "
+"your crew — \"We must believe them. This Human did a great service to the "
+"Engi-Zoltan Confederation.\" Tully gives you back the floor and orders that "
+"a store be opened for you."
+
+#: src-ru/data/events_boss.xml.rawclobber:285
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
+" and @lvl=\"0\"]/text"
+msgstr "Explain the weakness of the enemy fleet, the Rebel flagship."
+
+#: src-ru/data/events_boss.xml.rawclobber:287
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
+" and @lvl=\"0\"]/event/text"
+msgstr ""
+"Tully responds, \"It's settled. The Rebels will be here in a matter of "
+"moments. We will do what we can to hold off their warships but you must "
+"succeed in destroying this flagship.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:295
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
+" and not(@lvl)]/text"
+msgstr "Inform the Admiral that you have a package for them."
+
+#: src-ru/data/events_boss.xml.rawclobber:297
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
+" and not(@lvl)]/event/text"
+msgstr ""
+"You say that you have a container addressed to the Admiral. Admiral Tully's "
+"face doesn't express any emotions, but the Admiral tells you to leave the "
+"container on the outpost and then gives some instructions to their senior "
+"officer."
+
+#: src-ru/data/events_boss.xml.rawclobber:303
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
+" and not(@lvl)]/event/choice/event/text"
+msgstr ""
+"After some time, Admiral Tully takes you to a hidden repair dock where your "
+"ship is thoroughly yet quickly prepared for your final goal — to defend the "
+"Federation Base at all costs."
+
+#: src-ru/data/events_boss.xml.rawclobber:325
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/text"
+msgstr ""
+"\"Your current outpost can provide some repairs or supplies, and the other "
+"repair stations can provide aid as well. Good luck.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:327
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[1]/text"
+msgstr "Ask for fuel and partial repair. [10 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:329
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[1]/event/text"
+msgstr ""
+"The outpost's engineers fill up your fuel tanks and repair damage to the "
+"hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:337
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[2]/text"
+msgstr "Request fuel and ammunition."
+
+#: src-ru/data/events_boss.xml.rawclobber:339
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[2]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of ammunition and fill up your"
+" fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:347
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[3]/text"
+msgstr "Request fuel and drone parts."
+
+#: src-ru/data/events_boss.xml.rawclobber:349
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[3]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of drone parts and fill up "
+"your fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:357
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[4]/text"
+msgstr "Request a complete repair. [30 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:359
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[4]/event/text"
+msgstr ""
+"The outpost's engineers carry out a complete repair operation on your ship's"
+" hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:366
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/text"
+msgstr ""
+"\"Your current outpost can provide some repairs or supplies, and the other "
+"repair stations can provide aid as well. Good luck.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:368
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[1]/text"
+msgstr "Request fuel and drone parts."
+
+#: src-ru/data/events_boss.xml.rawclobber:370
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[1]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of drone parts and fill up "
+"your fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:378
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[2]/text"
+msgstr "Request a complete repair. [30 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:380
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[2]/event/text"
+msgstr ""
+"The outpost's engineers carry out a complete repair operation on your ship's"
+" hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:385
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[3]/text"
+msgstr "Request scrap for ship upgrades."
+
+#: src-ru/data/events_boss.xml.rawclobber:387
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[3]/event/text"
+msgstr "The outpost gives you all the stocks of scrap that can be found."
+
+#: src-ru/data/events_boss.xml.rawclobber:394
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[4]/text"
+msgstr "Request some of each type of supply."
+
+#: src-ru/data/events_boss.xml.rawclobber:396
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[4]/event/text"
+msgstr "The outpost wishes you good luck and gives you a supply package."
+
+#: src-ru/data/events_boss.xml.rawclobber:408
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/text"
+msgstr ""
+"\"Your current outpost can provide some repairs or supplies, and the other "
+"repair stations can provide aid as well. Good luck.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:410
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[1]/text"
+msgstr "Request scrap for ship upgrades."
+
+#: src-ru/data/events_boss.xml.rawclobber:412
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[1]/event/text"
+msgstr "The outpost gives you all the stocks of scrap that can be found."
+
+#: src-ru/data/events_boss.xml.rawclobber:419
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[2]/text"
+msgstr "Request some of each type of supply."
+
+#: src-ru/data/events_boss.xml.rawclobber:421
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[2]/event/text"
+msgstr "The outpost wishes you good luck and gives you a supply package."
+
+#: src-ru/data/events_boss.xml.rawclobber:431
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[3]/text"
+msgstr "Ask for fuel and partial repair. [10 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:433
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[3]/event/text"
+msgstr ""
+"The outpost's engineers fill up your fuel tanks and repair damage to the "
+"hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:441
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[4]/text"
+msgstr "Request fuel and ammunition."
+
+#: src-ru/data/events_boss.xml.rawclobber:443
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[4]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of ammunition and fill up your"
+" fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:455
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/text"
+msgstr ""
+"\"Your current outpost can provide some repairs or supplies, and the other "
+"repair stations can provide aid as well. Good luck.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:457
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[1]/text"
+msgstr "Ask for fuel and partial repair. [10 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:459
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[1]/event/text"
+msgstr ""
+"The outpost's engineers fill up your fuel tanks and repair damage to the "
+"hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:471
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[2]/text"
+msgstr "Request fuel and ammunition."
+
+#: src-ru/data/events_boss.xml.rawclobber:473
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[2]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of ammunition and fill up your"
+" fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:485
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[3]/text"
+msgstr "Request fuel and drone parts."
+
+#: src-ru/data/events_boss.xml.rawclobber:487
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[3]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of drone parts and fill up "
+"your fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:499
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[4]/text"
+msgstr "Request a complete repair. [30 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:501
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[4]/event/text"
+msgstr ""
+"The outpost's engineers carry out a complete repair operation on your ship's"
+" hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:512
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/text"
+msgstr ""
+"\"Your current outpost can provide some repairs or supplies, and the other "
+"repair stations can provide aid as well. Good luck.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:514
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[1]/text"
+msgstr "Request fuel and drone parts."
+
+#: src-ru/data/events_boss.xml.rawclobber:516
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[1]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of drone parts and fill up "
+"your fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:528
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[2]/text"
+msgstr "Request a complete repair. [30 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:530
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[2]/event/text"
+msgstr ""
+"The outpost's engineers carry out a complete repair operation on your ship's"
+" hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:539
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[3]/text"
+msgstr "Request scrap for ship upgrades."
+
+#: src-ru/data/events_boss.xml.rawclobber:541
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[3]/event/text"
+msgstr "The outpost gives you all the stocks of scrap that can be found."
+
+#: src-ru/data/events_boss.xml.rawclobber:552
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[4]/text"
+msgstr "Request some of each type of supply."
+
+#: src-ru/data/events_boss.xml.rawclobber:554
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[4]/event/text"
+msgstr "The outpost wishes you good luck and gives you a supply package."
+
+#: src-ru/data/events_boss.xml.rawclobber:570
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/text"
+msgstr ""
+"\"Your current outpost can provide some repairs or supplies, and the other "
+"repair stations can provide aid as well. Good luck.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:572
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[1]/text"
+msgstr "Request scrap for ship upgrades."
+
+#: src-ru/data/events_boss.xml.rawclobber:574
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[1]/event/text"
+msgstr "The outpost gives you all the stocks of scrap that can be found."
+
+#: src-ru/data/events_boss.xml.rawclobber:585
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[2]/text"
+msgstr "Request some of each type of supply."
+
+#: src-ru/data/events_boss.xml.rawclobber:587
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[2]/event/text"
+msgstr "The outpost wishes you good luck and gives you a supply package."
+
+#: src-ru/data/events_boss.xml.rawclobber:601
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[3]/text"
+msgstr "Ask for fuel and partial repair. [10 $]"
+
+#: src-ru/data/events_boss.xml.rawclobber:603
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[3]/event/text"
+msgstr ""
+"The outpost's engineers fill up your fuel tanks and repair damage to the "
+"hull."
+
+#: src-ru/data/events_boss.xml.rawclobber:615
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[4]/text"
+msgstr "Request fuel and ammunition."
+
+#: src-ru/data/events_boss.xml.rawclobber:617
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[4]/event/text"
+msgstr ""
+"The outpost's engineers supply you with a kit of ammunition and fill up your"
+" fuel tanks."
+
+#: src-ru/data/events_boss.xml.rawclobber:632
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_AUTOMATED\"]/text"
+msgstr ""
+"It appears this ship is also equipped with an advanced artificial "
+"intelligence. Now that the crew is dead, it has taken control!"
+
+#: src-ru/data/events_boss.xml.rawclobber:643
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"BOSS_AUTOMATED\"]/choice/event/text"
+msgstr ""
+
+#: src-ru/data/events_boss.xml.rawclobber:652
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_DESTROYED\"]/text"
+msgstr ""
+"Its explosion rocks your ship and you shudder with relief. You did it. The "
+"Federation is saved...."
+
+#: src-ru/data/events_boss.xml.rawclobber:656
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"BOSS_DESTROYED\"]/choice/event/text"
+msgstr ""
+"Thanks for playing! Keep in mind this is still in beta and we have not "
+"created a satisfying conclusion to the game. Head to our forums to give us "
+"some feedback and let us know that you beat it. Thanks!"
+
+#: src-ru/data/events_boss.xml.rawclobber:663
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_ESCAPED\"]/text"
+msgstr ""
+"Just as you finally gain the upper hand it finds a way to make an FTL jump. "
+"You've got to keep up the assault!"
+
+#: src-ru/data/events_boss.xml.rawclobber:674
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_TEXT_1\"]/text"
+msgstr ""
+"This is it... The Rebel flagship. If you are able to destroy this "
+"monstrosity, the Federation fleet will have a chance of surviving. There's "
+"no turning back!"
+
+#: src-ru/data/events_boss.xml.rawclobber:678
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_TEXT_2\"]/text"
+msgstr ""
+"You chase down the flagship and discover it is heavily damaged from the "
+"previous fight. Scans indicate that it has redirected considerable power to "
+"its drones. Get ready for a fight."
+
+#: src-ru/data/events_boss.xml.rawclobber:682
+msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_TEXT_3\"]/text"
+msgstr ""
+"You're not certain how it's able to keep fighting with the amount of damage "
+"it has sustained. It looks like it's transferred power to the teleporter as "
+"well as... some kind of super weapon. Be prepared... this is it!"
+
+#: src-ru/data/events_boss.xml.rawclobber:688
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_REPAIR_STATION_REBEL\"]/event[1]/text"
+msgstr ""
+"There's no time to wait around — the Rebels will be here any moment! You get"
+" ready to jump."
+
+#: src-ru/data/events_boss.xml.rawclobber:692
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_REPAIR_STATION_REBEL\"]/event[2]/text"
+msgstr ""
+"You've lost so much time on repairs that the Rebels have caught up with you!"
+" You must get out of here as soon as possible! The on-site personnel are "
+"able to assist you however, firing at the enemy via Anti-Ship Battery."
+
+#: src-ru/data/events_boss.xml.rawclobber:716
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[1]"
+msgstr ""
+"There is a mobile ship construction platform stationed at this beacon. After"
+" a brief exchange they give you clearance to receive emergency repairs and "
+"military supplies."
+
+#: src-ru/data/events_boss.xml.rawclobber:717
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[2]"
+msgstr ""
+"An Engi civilian ship-yard has been converted into a military refueling "
+"station. They offer you the chance to patch up your ship and refresh some "
+"supplies."
+
+#: src-ru/data/events_boss.xml.rawclobber:718
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[3]"
+msgstr ""
+"Chatter on the comm suggests the nearby Federation base is outfitted with a "
+"repair station. When you forward your mission priority they quickly help "
+"repair your ship and give you some supplies."
+
+#: src-ru/data/events_boss.xml.rawclobber:719
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[4]"
+msgstr ""
+"A forward construction station is in the process of repairing damaged "
+"warships. Your command codes convince them to do a quick patch job on your "
+"ship."
+
+#: src-ru/data/events_boss.xml.rawclobber:720
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[5]"
+msgstr ""
+"A trade station was abandoned nearby. Some Federation engineers repurposed "
+"their shipyard to perform military repairs. They offer to help fix your "
+"ship."
+
+#: src-ru/data/events_boss.xml.rawclobber:734
+msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[1]"
+msgstr ""
+"Although this sector is still under Federation control, a small scout has "
+"slipped by the fleet. You move in to engage."
+
+#: src-ru/data/events_boss.xml.rawclobber:735
+msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[2]"
+msgstr ""
+"Long range scanners show this system is empty of any capital ships. Clearly "
+"it is not of strategic value. Wait... FTL signatures show a Rebel scout just"
+" jumped nearby!"
+
+#: src-ru/data/events_boss.xml.rawclobber:736
+msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[3]"
+msgstr ""
+"Sensors indicate that the Rebels are setting up a forward Jump Beacon behind"
+" the nearby planet's moon. More importantly, a number of ships are passing "
+"by; prepare for a fight!"
+
+#: src-ru/data/events_boss.xml.rawclobber:737
+msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[4]"
+msgstr ""
+"Federation ships are scarce in this region of space despite a number of "
+"civilian space stations. You see a small bomber squadron engaged with some "
+"Federation scouts and quickly move in to assist."
+
+#: src-ru/data/events_boss.xml.rawclobber:738
+msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[5]"
+msgstr ""
+"As soon as you arrive at the beacon, a Rebel scout turns to engage. Power up"
+" the weapons!"
+
+#: src-ru/data/events_boss.xml.rawclobber:739
+msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[6]"
+msgstr ""
+"You scan the area, finding signatures for only a small trade vessel. "
+"However, as it approaches you see the silhouette of a Rebel scout! You run "
+"the scanners again and discover their registration is fake. You move in to "
+"attack."
+
+#: src-ru/data/events_boss.xml.rawclobber:745
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/choice[1]/text"
+msgstr "Prepare to fight the Rebel ship!"
+
+#: src-ru/data/events_boss.xml.rawclobber:747
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/choice[1]/event/text"
+msgstr "You move in to intercept."
+
+#: src-ru/data/events_boss.xml.rawclobber:752
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/choice[2]/text"
+msgstr "There's no time, get ready to jump."
+
+#: src-ru/data/events_boss.xml.rawclobber:754
+msgid ""
+"data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/choice[2]/event/text"
+msgstr "You try to block out the horrors of war and focus on your mission."
+
+#: src-ru/data/events_boss.xml.rawclobber:759
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE\"]/text[1]"
+msgstr ""
+"Shots fly by your port windows followed by a Rebel scout in pursuit of a "
+"damaged cruiser. Should we move in to engage?"
+
+#: src-ru/data/events_boss.xml.rawclobber:760
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE\"]/text[2]"
+msgstr ""
+"There seems to be a small Federation colony under attack by a Rebel forward "
+"scout. Will you protect them?"
+
+#: src-ru/data/events_boss.xml.rawclobber:761
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE\"]/text[3]"
+msgstr ""
+"A number of large transports are being pursued by a Rebel bombing squadron. "
+"One bomber has managed to slip through the defensive fire, and is poised to "
+"wreak havoc among the enormous yet vulnerable transports. There's time for "
+"you to advance and take it out!"
+
+#: src-ru/data/events_boss.xml.rawclobber:762
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE\"]/text[4]"
+msgstr ""
+"A battle rages nearby between small fighters; apparently fighting over a "
+"space station. The Federation appears to be losing ships fast. Shall we "
+"assist them?"
+
+#: src-ru/data/events_boss.xml.rawclobber:763
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE\"]/text[5]"
+msgstr ""
+"A civilian ship is broadcasting a request for assistance on a secure "
+"Federation channel. They are being harassed by Rebel scouts. Will you "
+"respond?"
+
+#: src-ru/data/events_boss.xml.rawclobber:767
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[1]/text"
+msgstr ""
+"The people you rescued were primarily refugees fleeing the conflict. They "
+"offer you their sincere gratitude."
+
+#: src-ru/data/events_boss.xml.rawclobber:770
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[2]/text"
+msgstr ""
+"You are hailed, \"Thank you! It's not much but we can repair a bit of damage"
+" before you jump off into the war. Good luck!\""
+
+#: src-ru/data/events_boss.xml.rawclobber:774
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[3]/text"
+msgstr ""
+"The survivors send a message, \"Thanks for the support, I don't know how "
+"much longer we could have held on. Take some supplies, we probably won't "
+"need them at this point.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:778
+msgid ""
+"data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[4]/text"
+msgstr ""
+"You receive a message on encrypted Federation channels. It says, \"Thanks "
+"for helping us, Captain. We're installing another emergency repairs station "
+"here for you.\""
+
+#: src-ru/data/events_boss.xml.rawclobber:791
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/gotaway/text"
+msgstr ""
+"The enemy made an FTL jump, but you still managed to save their would-be "
+"victim, and so you hasten to contact them."
+
+#: src-ru/data/events_boss.xml.rawclobber:798
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/destroyed/text"
+msgstr ""
+"With the Rebel ship destroyed you are free to contact their would-be victim."
+
+#: src-ru/data/events_boss.xml.rawclobber:801
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/destroyed/choice/text"
+msgstr "Contact the survivors."
+
+#: src-ru/data/events_boss.xml.rawclobber:806
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/deadCrew/text"
+msgstr ""
+"With the Rebel ship defeated you quickly salvage what you can and move to "
+"contact their prey."
+
+#: src-ru/data/events_boss.xml.rawclobber:809
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/deadCrew/choice/text"
+msgstr "Contact the survivors."
+
+#: src-ru/data/events_boss.xml.rawclobber:831
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[1]"
+msgstr ""
+"You arrive to see a number of Federation forward-carriers and dreadnoughts. "
+"This must be a system of high importance to warrant such a fleet."
+
+#: src-ru/data/events_boss.xml.rawclobber:832
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[2]"
+msgstr ""
+"There are a few Federation fleets in the nearby area as well as a lot of "
+"wreckage. There must have been minor skirmishes in the area."
+
+#: src-ru/data/events_boss.xml.rawclobber:833
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[3]"
+msgstr ""
+"A few scattered heavy vessels are left to defend the nearby Federation "
+"settlement. They seem to be in the process of evacuation."
+
+#: src-ru/data/events_boss.xml.rawclobber:834
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[4]"
+msgstr ""
+"A large host of Federation heavy vessels are in formation around the beacon."
+" Sensors run hot with missile locks, but once you transmit your ship "
+"signature they leave you alone."
+
+#: src-ru/data/events_boss.xml.rawclobber:835
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[5]"
+msgstr ""
+"A battalion of Federation fighters are fighting around a nearby moon with "
+"their carriers waiting in the distance. They must have encountered a Rebel "
+"scout squadron."
+
+#: src-ru/data/events_boss.xml.rawclobber:837
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[6]"
+msgstr ""
+"You arrive to see a number of Federation forward-carriers and dreadnoughts. "
+"This must be a system of high importance to warrant such a fleet."
+
+#: src-ru/data/events_boss.xml.rawclobber:838
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[7]"
+msgstr ""
+"There are a few Federation fleets in the nearby area as well as a lot of "
+"wreckage. There must have been minor skirmishes in the area."
+
+#: src-ru/data/events_boss.xml.rawclobber:839
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[8]"
+msgstr ""
+"A few scattered heavy vessels are left to defend the nearby Federation "
+"settlement. They seem to be in the process of evacuation."
+
+#: src-ru/data/events_boss.xml.rawclobber:840
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[9]"
+msgstr ""
+"A large host of Federation heavy vessels are in formation around the beacon."
+" Sensors run hot with missile locks, but once you transmit your ship "
+"signature they leave you alone."
+
+#: src-ru/data/events_boss.xml.rawclobber:841
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[10]"
+msgstr ""
+"A battalion of Federation fighters are fighting around a nearby moon with "
+"their carriers waiting in the distance. They must have encountered a Rebel "
+"scout squadron."
+
+#: src-ru/data/events_boss.xml.rawclobber:851
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[1]"
+msgstr ""
+"Sensors indicate evidence of a huge battle nearby, but the immediate "
+"vicinity seems quiet. You try to lay low and keep out of the fighting."
+
+#: src-ru/data/events_boss.xml.rawclobber:852
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[2]"
+msgstr ""
+"You arrive to find two fleets crashing against each other. Sensors are "
+"tracking the extent of the carnage. You quietly wait for the FTL drive to "
+"charge, knowing that the only way you can help is by completing your "
+"mission."
+
+#: src-ru/data/events_boss.xml.rawclobber:853
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[3]"
+msgstr ""
+"A battle rages in the distance. Sensors suggest the presence of many "
+"vulnerable escape pods, but you know you cannot stop to help. The mission is"
+" paramount."
+
+#: src-ru/data/events_boss.xml.rawclobber:854
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[4]"
+msgstr ""
+"A battle rages on in the distance. As much as you would like to help in the "
+"fight, you know the importance of your mission."
+
+#: src-ru/data/events_boss.xml.rawclobber:855
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[5]"
+msgstr ""
+"You don't need advanced Sensors to tell there is a battle going on. You look"
+" out of the window quietly, waiting to jump. There's no way you can help in "
+"this fight."
+
+#: src-ru/data/events_boss.xml.rawclobber:856
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[6]"
+msgstr ""
+"Two fleets are volleying shots at each other. Luckily no one seems "
+"interested in your ship. You prepare to make another jump."
+
+#: src-ru/data/events_boss.xml.rawclobber:870
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[1]"
+msgstr ""
+"You arrive in the middle of a raging battle. Both sides are taking heavy "
+"losses. A small squadron flies past and a fighter breaks off, moving toward "
+"your position."
+
+#: src-ru/data/events_boss.xml.rawclobber:871
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[2]"
+msgstr ""
+"Two fleets fight nearby. You try to skirt around the edges of the battle and"
+" keep out of weapons range, but a Rebel scout spots you and moves in."
+
+#: src-ru/data/events_boss.xml.rawclobber:872
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[3]"
+msgstr ""
+"It's hard to tell who is winning the nearby battle. Before you have a chance"
+" to figure it out, a fighter moves in to attack."
+
+#: src-ru/data/events_boss.xml.rawclobber:873
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[4]"
+msgstr ""
+"The sheer scale of the destruction in the distance is almost breath-taking. "
+"Unfortunately, your position as an independent observer doesn't last for "
+"long!"
+
+#: src-ru/data/events_boss.xml.rawclobber:874
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[5]"
+msgstr ""
+"The destruction in the distance is almost awe-inspiring. However you're "
+"dragged back to reality as Sensors indicate you are under attack."
+
+#: src-ru/data/events_boss.xml.rawclobber:875
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[6]"
+msgstr ""
+"You don't have any time to worry about the battle in the distance. The fight"
+" is coming to you really quickly!"
+
+#: src-ru/data/events_boss.xml.rawclobber:889
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[1]"
+msgstr ""
+"Although you were expecting the Rebels, you never imagined their fleet could"
+" have grown so fast. You scanners can hardly register them all before a "
+"fighter stationed nearby moves in to attack."
+
+#: src-ru/data/events_boss.xml.rawclobber:890
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[2]"
+msgstr ""
+"This system is flooded with Rebel warships. Luckily your ship's signature is"
+" disguised as a civilian transport. Most heavy vessels ignore you but a "
+"small fighter is approaching with weapons hot!"
+
+#: src-ru/data/events_boss.xml.rawclobber:891
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[3]"
+msgstr ""
+"You arrive to find a Rebel battalion encircling a nearby planet, launching "
+"landing parties. A small scout moves toward your position. Prepare for a "
+"fight!"
+
+#: src-ru/data/events_boss.xml.rawclobber:892
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[4]"
+msgstr ""
+"As soon as you arrive you find yourself in the debris of a fierce battle. "
+"However, only Rebel warships remain and you find yourself immediately under "
+"attack."
+
+#: src-ru/data/events_boss.xml.rawclobber:893
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[5]"
+msgstr ""
+"Shots fly by and your computer registers multiple weapon locks as soon as "
+"you arrive. Evasive action!"
+
+#: src-ru/data/events_boss.xml.rawclobber:894
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[6]"
+msgstr ""
+"What was once a great series of space stations is now nothing but a small "
+"ring of debris around the nearby moon. There's no time to mourn the dead; an"
+" enemy approaches!"
+
+#: src-ru/data/events_boss.xml.rawclobber:895
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[7]"
+msgstr ""
+"The Federation seems to have put up a good fight. A number of Rebel ships "
+"lie broken or wounded. However their overwhelming numbers force the "
+"remaining Federation forces to retreat. Hopefully you can get away in time "
+"as well."
+
+#: src-ru/data/events_boss.xml.rawclobber:899
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_REBEL\"]/destroyed/text"
+msgstr ""
+"There's no time to salvage all of the wreck, the fleet is still nearby. Get "
+"ready to jump!"
+
+#: src-ru/data/events_boss.xml.rawclobber:903
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_REBEL\"]/deadCrew/text"
+msgstr ""
+"There isn't time to salvage the enemy ship but your crew made off with a few"
+" nearby materials. Prepare to jump."
+
+#: src-ru/data/events_boss.xml.rawclobber:915
+msgid ""
+"data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BLACK_REBEL\"]/text"
+msgstr ""
+"A strange colored Rebel ship intercepts you at this beacon. You notice how "
+"well it is armed... and it looks like their weapons system has reinforced "
+"titanium coating!"
+
+#: src-ru/data/events_boss.xml.rawclobber:919
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_BLACK_REBEL\"]/destroyed/text"
+msgstr "The ship breaks apart, and you quickly grab its surviving equipment."
+
+#: src-ru/data/events_boss.xml.rawclobber:923
+msgid ""
+"data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_BLACK_REBEL\"]/deadCrew/text"
+msgstr "With the ship's crew dead, you quickly grab the surviving equipment."
