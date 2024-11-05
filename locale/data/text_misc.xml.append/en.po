@@ -1,20 +1,13 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-05 10:26+0000\n"
-"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
-"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
-"datatext_miscxmlappend/en/>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.1\n"
 
 #: src-ru/data/text_misc.xml.append:7
 msgid "data/text_misc.xml.append$//text[@name=\"bullet\"]"
-msgstr ""
+msgstr "-\\1"
 
 #: src-ru/data/text_misc.xml.append:8
 #, fuzzy
@@ -23,7 +16,7 @@ msgstr "BACK"
 
 #: src-ru/data/text_misc.xml.append:9
 msgid "data/text_misc.xml.append$//text[@name=\"continue\"]"
-msgstr ""
+msgstr "Continue..."
 
 #: src-ru/data/text_misc.xml.append:13
 msgid "data/text_misc.xml.append$//text[@name=\"welcome\"]"
@@ -47,11 +40,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:20
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_newgame\"]"
-msgstr ""
+msgstr "NEW GAME"
 
 #: src-ru/data/text_misc.xml.append:21
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_tutorial\"]"
-msgstr ""
+msgstr "TUTORIAL"
 
 #: src-ru/data/text_misc.xml.append:22
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_stats\"]"
@@ -59,7 +52,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:23
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_options\"]"
-msgstr ""
+msgstr "OPTIONS"
 
 #: src-ru/data/text_misc.xml.append:24
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_credits\"]"
@@ -89,7 +82,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:44
 msgid "data/text_misc.xml.append$//text[@name=\"escape_hangar\"]"
-msgstr ""
+msgstr "HANGAR"
 
 #: src-ru/data/text_misc.xml.append:45
 msgid "data/text_misc.xml.append$//text[@name=\"escape_reset\"]"
@@ -111,7 +104,7 @@ msgstr "EXIT"
 
 #: src-ru/data/text_misc.xml.append:50
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_difficulty\"]"
-msgstr ""
+msgstr "Difficulty"
 
 #: src-ru/data/text_misc.xml.append:51
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_ae_content\"]"
@@ -127,7 +120,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:55
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_top\"]"
-msgstr ""
+msgstr "How to give orders:"
 
 #: src-ru/data/text_misc.xml.append:56
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_pc_select\"]"
@@ -269,7 +262,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:94
 msgid "data/text_misc.xml.append$//text[@name=\"options_tab\"]"
-msgstr ""
+msgstr "OPTIONS"
 
 #: src-ru/data/text_misc.xml.append:95
 msgid "data/text_misc.xml.append$//text[@name=\"options_frame_video\"]"
@@ -277,7 +270,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:96
 msgid "data/text_misc.xml.append$//text[@name=\"options_frame_gameplay\"]"
-msgstr ""
+msgstr "GAMEPLAY"
 
 #: src-ru/data/text_misc.xml.append:97
 msgid "data/text_misc.xml.append$//text[@name=\"options_frame_audio\"]"
@@ -285,7 +278,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:99
 msgid "data/text_misc.xml.append$//text[@name=\"on\"]"
-msgstr ""
+msgstr "On"
 
 #: src-ru/data/text_misc.xml.append:100
 msgid "data/text_misc.xml.append$//text[@name=\"off\"]"
@@ -297,7 +290,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:102
 msgid "data/text_misc.xml.append$//text[@name=\"enabled\"]"
-msgstr ""
+msgstr "On"
 
 #: src-ru/data/text_misc.xml.append:103
 msgid "data/text_misc.xml.append$//text[@name=\"manual_override\"]"
@@ -317,11 +310,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:108
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen\"]"
-msgstr ""
+msgstr "Fullscreen: \\1"
 
 #: src-ru/data/text_misc.xml.append:109
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen_0\"]"
-msgstr ""
+msgstr "None"
 
 #: src-ru/data/text_misc.xml.append:110
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen_1\"]"
@@ -337,7 +330,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:114
 msgid "data/text_misc.xml.append$//text[@name=\"v_sync\"]"
-msgstr ""
+msgstr "Vertical Sync: \\1"
 
 #: src-ru/data/text_misc.xml.append:115
 msgid "data/text_misc.xml.append$//text[@name=\"frame_limit\"]"
@@ -349,15 +342,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:117
 msgid "data/text_misc.xml.append$//text[@name=\"colorblind\"]"
-msgstr ""
+msgstr "Colorblind Mode: \\1"
 
 #: src-ru/data/text_misc.xml.append:118
 msgid "data/text_misc.xml.append$//text[@name=\"change_language\"]"
-msgstr ""
+msgstr "Change Language"
 
 #: src-ru/data/text_misc.xml.append:120
 msgid "data/text_misc.xml.append$//text[@name=\"choose_language\"]"
-msgstr ""
+msgstr "Choose a language:"
 
 #: src-ru/data/text_misc.xml.append:121
 msgid "data/text_misc.xml.append$//text[@name=\"language_name\"]"
@@ -409,11 +402,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:136
 msgid "data/text_misc.xml.append$//text[@name=\"music_volume\"]"
-msgstr ""
+msgstr "Music Volume"
 
 #: src-ru/data/text_misc.xml.append:138
 msgid "data/text_misc.xml.append$//text[@name=\"button_delete_profile\"]"
-msgstr ""
+msgstr "DELETE\\nPROFILE"
 
 #: src-ru/data/text_misc.xml.append:140
 msgid "data/text_misc.xml.append$//text[@name=\"configure_controls_tab\"]"
@@ -433,35 +426,35 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:150
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew1\"]"
-msgstr ""
+msgstr "Select Crew 1"
 
 #: src-ru/data/text_misc.xml.append:151
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew2\"]"
-msgstr ""
+msgstr "Select Crew 2"
 
 #: src-ru/data/text_misc.xml.append:152
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew3\"]"
-msgstr ""
+msgstr "Select Crew 3"
 
 #: src-ru/data/text_misc.xml.append:153
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew4\"]"
-msgstr ""
+msgstr "Select Crew 4"
 
 #: src-ru/data/text_misc.xml.append:154
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew5\"]"
-msgstr ""
+msgstr "Select Crew 5"
 
 #: src-ru/data/text_misc.xml.append:155
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew6\"]"
-msgstr ""
+msgstr "Select Crew 6"
 
 #: src-ru/data/text_misc.xml.append:156
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew7\"]"
-msgstr ""
+msgstr "Select Crew 7"
 
 #: src-ru/data/text_misc.xml.append:157
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew8\"]"
-msgstr ""
+msgstr "Select Crew 8"
 
 #: src-ru/data/text_misc.xml.append:158
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew_all\"]"
@@ -524,7 +517,7 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:176
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"hangar_achievements_title_default\"]"
-msgstr ""
+msgstr "Current Ship Achievements"
 
 #: src-ru/data/text_misc.xml.append:177
 msgid ""
@@ -590,7 +583,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:196
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_pause\"]"
-msgstr ""
+msgstr "Pause Game"
 
 #: src-ru/data/text_misc.xml.append:197
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_jump\"]"
@@ -782,23 +775,23 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:252
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_none\"]"
-msgstr ""
+msgstr "NO"
 
 #: src-ru/data/text_misc.xml.append:253
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_altgr\"]"
-msgstr ""
+msgstr "ALT GR"
 
 #: src-ru/data/text_misc.xml.append:254
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_backspace\"]"
-msgstr ""
+msgstr "BACKSPACE"
 
 #: src-ru/data/text_misc.xml.append:255
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_break\"]"
-msgstr ""
+msgstr "BREAK"
 
 #: src-ru/data/text_misc.xml.append:256
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_capslock\"]"
-msgstr ""
+msgstr "CAPS LOCK"
 
 #: src-ru/data/text_misc.xml.append:257
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_clear\"]"
@@ -810,7 +803,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:259
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_delete\"]"
-msgstr ""
+msgstr "DELETE"
 
 #: src-ru/data/text_misc.xml.append:260
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_down\"]"
@@ -818,79 +811,79 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:261
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_end\"]"
-msgstr ""
+msgstr "END"
 
 #: src-ru/data/text_misc.xml.append:262
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_enter\"]"
-msgstr ""
+msgstr "ENTER"
 
 #: src-ru/data/text_misc.xml.append:263
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_escape\"]"
-msgstr ""
+msgstr "ESCAPE"
 
 #: src-ru/data/text_misc.xml.append:264
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_euro\"]"
-msgstr ""
+msgstr "EURO"
 
 #: src-ru/data/text_misc.xml.append:265
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f1\"]"
-msgstr ""
+msgstr "F1"
 
 #: src-ru/data/text_misc.xml.append:266
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f2\"]"
-msgstr ""
+msgstr "F2"
 
 #: src-ru/data/text_misc.xml.append:267
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f3\"]"
-msgstr ""
+msgstr "F3"
 
 #: src-ru/data/text_misc.xml.append:268
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f4\"]"
-msgstr ""
+msgstr "F4"
 
 #: src-ru/data/text_misc.xml.append:269
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f5\"]"
-msgstr ""
+msgstr "F5"
 
 #: src-ru/data/text_misc.xml.append:270
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f6\"]"
-msgstr ""
+msgstr "F6"
 
 #: src-ru/data/text_misc.xml.append:271
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f7\"]"
-msgstr ""
+msgstr "F7"
 
 #: src-ru/data/text_misc.xml.append:272
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f8\"]"
-msgstr ""
+msgstr "F8"
 
 #: src-ru/data/text_misc.xml.append:273
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f9\"]"
-msgstr ""
+msgstr "F9"
 
 #: src-ru/data/text_misc.xml.append:274
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f10\"]"
-msgstr ""
+msgstr "F10"
 
 #: src-ru/data/text_misc.xml.append:275
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f11\"]"
-msgstr ""
+msgstr "F11"
 
 #: src-ru/data/text_misc.xml.append:276
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f12\"]"
-msgstr ""
+msgstr "F12"
 
 #: src-ru/data/text_misc.xml.append:277
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f13\"]"
-msgstr ""
+msgstr "F13"
 
 #: src-ru/data/text_misc.xml.append:278
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f14\"]"
-msgstr ""
+msgstr "F14"
 
 #: src-ru/data/text_misc.xml.append:279
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_f15\"]"
-msgstr ""
+msgstr "F15"
 
 #: src-ru/data/text_misc.xml.append:280
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_help\"]"
@@ -898,11 +891,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:281
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_home\"]"
-msgstr ""
+msgstr "HOME"
 
 #: src-ru/data/text_misc.xml.append:282
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_insert\"]"
-msgstr ""
+msgstr "INSERT"
 
 #: src-ru/data/text_misc.xml.append:283
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp0\"]"
@@ -1002,15 +995,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:307
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_numlock\"]"
-msgstr ""
+msgstr "NUM LOCK"
 
 #: src-ru/data/text_misc.xml.append:308
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_pagedown\"]"
-msgstr ""
+msgstr "PAGE DOWN"
 
 #: src-ru/data/text_misc.xml.append:309
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_pageup\"]"
-msgstr ""
+msgstr "PAGE UP"
 
 #: src-ru/data/text_misc.xml.append:310
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_pause\"]"
@@ -1018,11 +1011,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:311
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_power\"]"
-msgstr ""
+msgstr "POWER"
 
 #: src-ru/data/text_misc.xml.append:312
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_printscreen\"]"
-msgstr ""
+msgstr "PRNT SCRN"
 
 #: src-ru/data/text_misc.xml.append:313
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_right\"]"
@@ -1050,7 +1043,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:319
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_scrolllock\"]"
-msgstr ""
+msgstr "SCROLL LOCK"
 
 #: src-ru/data/text_misc.xml.append:320
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_space\"]"
@@ -1058,11 +1051,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:321
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_sysrq\"]"
-msgstr ""
+msgstr "SYS RQ"
 
 #: src-ru/data/text_misc.xml.append:322
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_tab\"]"
-msgstr ""
+msgstr "TAB"
 
 #: src-ru/data/text_misc.xml.append:323
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_undo\"]"
@@ -1082,7 +1075,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:330
 msgid "data/text_misc.xml.append$//text[@name=\"stats_achievements\"]"
-msgstr ""
+msgstr "ACHIEVEMENTS"
 
 #: src-ru/data/text_misc.xml.append:331
 msgid "data/text_misc.xml.append$//text[@name=\"stats_stats\"]"
@@ -1090,7 +1083,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:333
 msgid "data/text_misc.xml.append$//text[@name=\"stats_ranking\"]"
-msgstr ""
+msgstr "#\\1"
 
 #: src-ru/data/text_misc.xml.append:335
 msgid "data/text_misc.xml.append$//text[@name=\"defeated_stat\"]"
@@ -1102,11 +1095,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:337
 msgid "data/text_misc.xml.append$//text[@name=\"scrap_stat\"]"
-msgstr ""
+msgstr "Scrap Collected"
 
 #: src-ru/data/text_misc.xml.append:338
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stat\"]"
-msgstr ""
+msgstr "Crew Hired"
 
 #: src-ru/data/text_misc.xml.append:339
 msgid "data/text_misc.xml.append$//text[@name=\"most_defeated_stat\"]"
@@ -1186,7 +1179,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:360
 msgid "data/text_misc.xml.append$//text[@name=\"crew_heading\"]"
-msgstr ""
+msgstr "Crew Records:"
 
 #: src-ru/data/text_misc.xml.append:361
 msgid "data/text_misc.xml.append$//text[@name=\"stats_heading\"]"
@@ -1206,11 +1199,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:366
 msgid "data/text_misc.xml.append$//text[@name=\"total_victories\"]"
-msgstr ""
+msgstr "Total Victories"
 
 #: src-ru/data/text_misc.xml.append:368
 msgid "data/text_misc.xml.append$//text[@name=\"progression_heading\"]"
-msgstr ""
+msgstr "General Progression:"
 
 #: src-ru/data/text_misc.xml.append:369
 msgid "data/text_misc.xml.append$//text[@name=\"distance_heading\"]"
@@ -1222,7 +1215,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:372
 msgid "data/text_misc.xml.append$//text[@name=\"new_crew\"]"
-msgstr ""
+msgstr "New!"
 
 #: src-ru/data/text_misc.xml.append:373
 msgid "data/text_misc.xml.append$//text[@name=\"new_achievement\"]"
@@ -1230,11 +1223,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:374
 msgid "data/text_misc.xml.append$//text[@name=\"new_score\"]"
-msgstr ""
+msgstr "New!"
 
 #: src-ru/data/text_misc.xml.append:376
 msgid "data/text_misc.xml.append$//text[@name=\"type_a\"]"
-msgstr ""
+msgstr "Type A"
 
 #: src-ru/data/text_misc.xml.append:377
 msgid "data/text_misc.xml.append$//text[@name=\"type_b\"]"
@@ -1246,7 +1239,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:379
 msgid "data/text_misc.xml.append$//text[@name=\"shipselect_type_suffix\"]"
-msgstr ""
+msgstr "\\1"
 
 #: src-ru/data/text_misc.xml.append:381
 msgid "data/text_misc.xml.append$//text[@name=\"victory_ach_title\"]"
@@ -1270,7 +1263,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:388
 msgid "data/text_misc.xml.append$//text[@name=\"ach_unlocked\"]"
-msgstr ""
+msgstr "Achievement Unlocked!"
 
 #: src-ru/data/text_misc.xml.append:389
 msgid "data/text_misc.xml.append$//text[@name=\"layout_unlocked\"]"
@@ -1294,7 +1287,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:396
 msgid "data/text_misc.xml.append$//text[@name=\"victory\"]"
-msgstr ""
+msgstr "Victory"
 
 #: src-ru/data/text_misc.xml.append:397
 msgid "data/text_misc.xml.append$//text[@name=\"advanced\"]"
@@ -1306,7 +1299,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:399
 msgid "data/text_misc.xml.append$//text[@name=\"scorelist_sector\"]"
-msgstr ""
+msgstr "SECTOR    \\1"
 
 #: src-ru/data/text_misc.xml.append:400
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_score\"]"
@@ -1314,7 +1307,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:401
 msgid "data/text_misc.xml.append$//text[@name=\"easy\"]"
-msgstr ""
+msgstr "Easy"
 
 #: src-ru/data/text_misc.xml.append:402
 msgid "data/text_misc.xml.append$//text[@name=\"normal\"]"
@@ -1326,7 +1319,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:405
 msgid "data/text_misc.xml.append$//text[@name=\"new_high\"]"
-msgstr ""
+msgstr "New High Score!"
 
 #: src-ru/data/text_misc.xml.append:409
 msgid "data/text_misc.xml.append$//text[@name=\"tip_beams\"]"
@@ -1432,8 +1425,8 @@ msgstr ""
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_repair_combat\"]"
 msgstr ""
-"Tip: This drone is ideal for capturing enemy ships intact. Make sure to keep "
-"it away from your boarding party!"
+"Tip: This drone is ideal for capturing enemy ships intact. Make sure to keep"
+" it away from your boarding party!"
 
 #: src-ru/data/text_misc.xml.append:461
 msgid "data/text_misc.xml.append$//text[@name=\"tip_combat_hal\"]"
@@ -1474,9 +1467,9 @@ msgstr ""
 msgid "data/text_misc.xml.append$//text[@name=\"tip_crew_hal\"]"
 msgstr ""
 "Tip: HAL Repair Drones require 1 drone part to deploy, but will not need to "
-"be deployed again until destroyed. They stay on your ship and help your crew "
-"even if Drone Control is completely destroyed. Attention! A shutdown button "
-"is not provided!"
+"be deployed again until destroyed. They stay on your ship and help your crew"
+" even if Drone Control is completely destroyed. Attention! A shutdown button"
+" is not provided!"
 
 #: src-ru/data/text_misc.xml.append:475
 #, fuzzy
@@ -1672,7 +1665,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:561
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_frame_ship\"]"
-msgstr ""
+msgstr "SHIP"
 
 #: src-ru/data/text_misc.xml.append:562
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_frame_layout\"]"
@@ -1680,7 +1673,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:563
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_frame_crew\"]"
-msgstr ""
+msgstr "CREW"
 
 #: src-ru/data/text_misc.xml.append:565
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_achievements_title\"]"
@@ -1696,15 +1689,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:570
 msgid "data/text_misc.xml.append$//text[@name=\"start_button\"]"
-msgstr ""
+msgstr "START"
 
 #: src-ru/data/text_misc.xml.append:571
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_exit_button\"]"
-msgstr ""
+msgstr "MAIN MENU"
 
 #: src-ru/data/text_misc.xml.append:573
 msgid "data/text_misc.xml.append$//text[@name=\"easy_button\"]"
-msgstr ""
+msgstr "EASY"
 
 #: src-ru/data/text_misc.xml.append:574
 msgid "data/text_misc.xml.append$//text[@name=\"easy_title\"]"
@@ -1760,7 +1753,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:591
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_off_title\"]"
-msgstr ""
+msgstr "Normal Mode"
 
 #: src-ru/data/text_misc.xml.append:592
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_off_text\"]"
@@ -1768,7 +1761,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:594
 msgid "data/text_misc.xml.append$//text[@name=\"ship_rename_button\"]"
-msgstr ""
+msgstr "RENAME"
 
 #: src-ru/data/text_misc.xml.append:595
 msgid "data/text_misc.xml.append$//text[@name=\"ship_list_button\"]"
@@ -1776,7 +1769,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:596
 msgid "data/text_misc.xml.append$//text[@name=\"ship_random_button\"]"
-msgstr ""
+msgstr "RANDOM SHIP"
 
 #: src-ru/data/text_misc.xml.append:598
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_a\"]"
@@ -1804,11 +1797,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:606
 msgid "data/text_misc.xml.append$//text[@name=\"crewbox_rename\"]"
-msgstr ""
+msgstr "RENAME"
 
 #: src-ru/data/text_misc.xml.append:607
 msgid "data/text_misc.xml.append$//text[@name=\"crewbox_accept\"]"
-msgstr ""
+msgstr "ACCEPT"
 
 #: src-ru/data/text_misc.xml.append:611
 msgid "data/text_misc.xml.append$//text[@name=\"shiplist_title\"]"
@@ -1816,7 +1809,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:613
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_type_a\"]"
-msgstr ""
+msgstr "TYPE A"
 
 #: src-ru/data/text_misc.xml.append:614
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_type_b\"]"
@@ -1833,7 +1826,7 @@ msgstr "Нет корабля"
 
 #: src-ru/data/text_misc.xml.append:619
 msgid "data/text_misc.xml.append$//text[@name=\"shiplist_accept_button\"]"
-msgstr ""
+msgstr "ACCEPT"
 
 #: src-ru/data/text_misc.xml.append:621
 msgid "data/text_misc.xml.append$//text[@name=\"ship_unlock_victory\"]"
@@ -1861,15 +1854,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:629
 msgid "data/text_misc.xml.append$//text[@name=\"unidentified\"]"
-msgstr ""
+msgstr "Unidentified Cruiser"
 
 #: src-ru/data/text_misc.xml.append:633
 msgid "data/text_misc.xml.append$//text[@name=\"status_hull\"]"
-msgstr ""
+msgstr "HULL"
 
 #: src-ru/data/text_misc.xml.append:634
 msgid "data/text_misc.xml.append$//text[@name=\"status_shields\"]"
-msgstr ""
+msgstr "SHIELDS"
 
 #: src-ru/data/text_misc.xml.append:636
 msgid "data/text_misc.xml.append$//text[@name=\"button_jump\"]"
@@ -1877,11 +1870,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:638
 msgid "data/text_misc.xml.append$//text[@name=\"ftl_charging\"]"
-msgstr ""
+msgstr "CHARGING"
 
 #: src-ru/data/text_misc.xml.append:639
 msgid "data/text_misc.xml.append$//text[@name=\"ftl_ready\"]"
-msgstr ""
+msgstr "READY!"
 
 #: src-ru/data/text_misc.xml.append:640
 msgid "data/text_misc.xml.append$//text[@name=\"button_store\"]"
@@ -1889,11 +1882,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:641
 msgid "data/text_misc.xml.append$//text[@name=\"button_options\"]"
-msgstr ""
+msgstr "OPTIONS"
 
 #: src-ru/data/text_misc.xml.append:642
 msgid "data/text_misc.xml.append$//text[@name=\"button_pause\"]"
-msgstr ""
+msgstr "PAUSED"
 
 #: src-ru/data/text_misc.xml.append:644
 msgid "data/text_misc.xml.append$//text[@name=\"button_autofire\"]"
@@ -1901,7 +1894,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:645
 msgid "data/text_misc.xml.append$//text[@name=\"button_autofire_ipad\"]"
-msgstr ""
+msgstr "AUTO\\nFIRE"
 
 #: src-ru/data/text_misc.xml.append:647
 msgid "data/text_misc.xml.append$//text[@name=\"button_lockdown\"]"
@@ -1909,7 +1902,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:651
 msgid "data/text_misc.xml.append$//text[@name=\"subsystems_label\"]"
-msgstr ""
+msgstr "SUBSYSTEMS"
 
 #: src-ru/data/text_misc.xml.append:653
 msgid "data/text_misc.xml.append$//text[@name=\"door_close_all\"]"
@@ -1921,7 +1914,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:656
 msgid "data/text_misc.xml.append$//text[@name=\"miss\"]"
-msgstr ""
+msgstr "MISS"
 
 #: src-ru/data/text_misc.xml.append:657
 msgid "data/text_misc.xml.append$//text[@name=\"resist\"]"
@@ -1929,7 +1922,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:659
 msgid "data/text_misc.xml.append$//text[@name=\"paused\"]"
-msgstr ""
+msgstr "PAUSED"
 
 #: src-ru/data/text_misc.xml.append:660
 #, fuzzy
@@ -1946,7 +1939,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:663
 msgid "data/text_misc.xml.append$//text[@name=\"paused_crew\"]"
-msgstr ""
+msgstr "CREW SELECTION"
 
 #: src-ru/data/text_misc.xml.append:664
 msgid "data/text_misc.xml.append$//text[@name=\"paused_crew_text\"]"
@@ -1962,7 +1955,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:667
 msgid "data/text_misc.xml.append$//text[@name=\"paused_hacking\"]"
-msgstr ""
+msgstr "HACKING"
 
 #: src-ru/data/text_misc.xml.append:668
 msgid "data/text_misc.xml.append$//text[@name=\"paused_hacking_text\"]"
@@ -2010,7 +2003,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:682
 msgid "data/text_misc.xml.append$//text[@name=\"warning_warning\"]"
-msgstr ""
+msgstr "WARNING!"
 
 #: src-ru/data/text_misc.xml.append:684
 msgid "data/text_misc.xml.append$//text[@name=\"warning_in_danger\"]"
@@ -2022,7 +2015,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:687
 msgid "data/text_misc.xml.append$//text[@name=\"warning_pds_allies\"]"
-msgstr ""
+msgstr "ALLIES!"
 
 #: src-ru/data/text_misc.xml.append:689
 msgid "data/text_misc.xml.append$//text[@name=\"warning_solar_flare\"]"
@@ -2050,7 +2043,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:696
 msgid "data/text_misc.xml.append$//text[@name=\"warning_clone_off_2\"]"
-msgstr ""
+msgstr "CREW ARE DYING!"
 
 #: src-ru/data/text_misc.xml.append:697
 msgid "data/text_misc.xml.append$//text[@name=\"warning_engine\"]"
@@ -2151,15 +2144,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:727
 msgid "data/text_misc.xml.append$//text[@name=\"target_window\"]"
-msgstr ""
+msgstr "TARGET"
 
 #: src-ru/data/text_misc.xml.append:729
 msgid "data/text_misc.xml.append$//text[@name=\"combat_class\"]"
-msgstr ""
+msgstr "Class: \\1"
 
 #: src-ru/data/text_misc.xml.append:730
 msgid "data/text_misc.xml.append$//text[@name=\"combat_relationship\"]"
-msgstr ""
+msgstr "Relationship: \\1"
 
 #: src-ru/data/text_misc.xml.append:731
 msgid "data/text_misc.xml.append$//text[@name=\"neutral\"]"
@@ -2179,7 +2172,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:736
 msgid "data/text_misc.xml.append$//text[@name=\"current_evasion\"]"
-msgstr ""
+msgstr "Current Evasion: \\1"
 
 #: src-ru/data/text_misc.xml.append:738
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen_hacked\"]"
@@ -2237,65 +2230,62 @@ msgstr ""
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"defense_friendly\"]"
 msgstr ""
-"Ваш защитный дрон 1 уровня: \\n"
-"Сбивает ракеты, мины, мусор, астероиды и дрона-взломщика. Будет работать, "
-"пока не будет уничтожен, или вы не совершите прыжок."
+"Ваш защитный дрон 1 уровня: \\nСбивает ракеты, мины, мусор, астероиды и "
+"дрона-взломщика. Будет работать, пока не будет уничтожен, или вы не "
+"совершите прыжок."
 
 #: src-ru/data/text_misc.xml.append:757
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"defense_enemy\"]"
 msgstr ""
-"Защитный дрон 1 уровня: \\n"
-"Сбивает ракеты, мины, мусор, астероиды и дрона-взломщика. Может быть "
-"отключён повреждением вражеской системы управления дронами."
+"Защитный дрон 1 уровня: \\nСбивает ракеты, мины, мусор, астероиды и дрона-"
+"взломщика. Может быть отключён повреждением вражеской системы управления "
+"дронами."
 
 #: src-ru/data/text_misc.xml.append:759
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"defense_2_friendly\"]"
 msgstr ""
-"Ваш защитный дрон 2 уровня: \\n"
-"Сбивает любые снаряды. Будет работать, пока его не уничтожат, или вы не "
-"совершите прыжок."
+"Ваш защитный дрон 2 уровня: \\nСбивает любые снаряды. Будет работать, пока "
+"его не уничтожат, или вы не совершите прыжок."
 
 #: src-ru/data/text_misc.xml.append:760
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"defense_2_enemy\"]"
 msgstr ""
-"Защитный дрон 2 уровня: \\n"
-"Сбивает любые снаряды. Может быть отключён повреждением вражеской системы "
-"управления дронами."
+"Защитный дрон 2 уровня: \\nСбивает любые снаряды. Может быть отключён "
+"повреждением вражеской системы управления дронами."
 
 #: src-ru/data/text_misc.xml.append:762
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"anti_combat_friendly\"]"
 msgstr ""
-"Ваш анти-боевой дрон: \\n"
-"Оглушает и уничтожает вражеских дронов. Будет работать, пока его не "
-"уничтожат, или вы не совершите прыжок."
+"Ваш анти-боевой дрон: \\nОглушает и уничтожает вражеских дронов. Будет "
+"работать, пока его не уничтожат, или вы не совершите прыжок."
 
 #: src-ru/data/text_misc.xml.append:763
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"anti_combat_enemy\"]"
 msgstr ""
-"Вражеский анти-боевой дрон: \\n"
-"Оглушает и уничтожает ваших дронов. Может быть отключён нанесением урона по "
-"системе управления дронами вражеского корабля."
+"Вражеский анти-боевой дрон: \\nОглушает и уничтожает ваших дронов. Может "
+"быть отключён нанесением урона по системе управления дронами вражеского "
+"корабля."
 
 #: src-ru/data/text_misc.xml.append:767
 msgid "data/text_misc.xml.append$//text[@name=\"map_title\"]"
-msgstr ""
+msgstr "BEACON MAP"
 
 #: src-ru/data/text_misc.xml.append:768
 msgid "data/text_misc.xml.append$//text[@name=\"map_sector\"]"
-msgstr ""
+msgstr "SECTOR"
 
 #: src-ru/data/text_misc.xml.append:770
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_base\"]"
-msgstr ""
+msgstr "BASE"
 
 #: src-ru/data/text_misc.xml.append:771
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_distress\"]"
-msgstr ""
+msgstr "DISTRESS"
 
 #: src-ru/data/text_misc.xml.append:772
 #, fuzzy
@@ -2304,15 +2294,15 @@ msgstr "EXIT"
 
 #: src-ru/data/text_misc.xml.append:773
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_quest\"]"
-msgstr ""
+msgstr "QUEST"
 
 #: src-ru/data/text_misc.xml.append:774
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_repair\"]"
-msgstr ""
+msgstr "REPAIR"
 
 #: src-ru/data/text_misc.xml.append:775
 msgid "data/text_misc.xml.append$//text[@name=\"map_icon_store\"]"
-msgstr ""
+msgstr "STORE"
 
 #: src-ru/data/text_misc.xml.append:777
 msgid "data/text_misc.xml.append$//text[@name=\"button_nextsector\"]"
@@ -2320,7 +2310,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:778
 msgid "data/text_misc.xml.append$//text[@name=\"button_wait\"]"
-msgstr ""
+msgstr "WAIT"
 
 #: src-ru/data/text_misc.xml.append:779
 msgid "data/text_misc.xml.append$//text[@name=\"map_distress_beacon\"]"
@@ -2336,7 +2326,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:783
 msgid "data/text_misc.xml.append$//text[@name=\"map_nofuel\"]"
-msgstr ""
+msgstr "NO FUEL"
 
 #: src-ru/data/text_misc.xml.append:784
 msgid "data/text_misc.xml.append$//text[@name=\"map_waiting\"]"
@@ -2356,7 +2346,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:789
 msgid "data/text_misc.xml.append$//text[@name=\"sector_legend_nebula\"]"
-msgstr ""
+msgstr "Nebula"
 
 #: src-ru/data/text_misc.xml.append:790
 msgid "data/text_misc.xml.append$//text[@name=\"sector_civilian\"]"
@@ -2485,23 +2475,23 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:830
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_frame_systems\"]"
-msgstr ""
+msgstr "SYSTEMS"
 
 #: src-ru/data/text_misc.xml.append:831
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_frame_subsystems\"]"
-msgstr ""
+msgstr "SUBSYSTEMS"
 
 #: src-ru/data/text_misc.xml.append:832
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_frame_reactor\"]"
-msgstr ""
+msgstr "REACTOR"
 
 #: src-ru/data/text_misc.xml.append:833
 msgid "data/text_misc.xml.append$//text[@name=\"button_accept\"]"
-msgstr ""
+msgstr "ACCEPT"
 
 #: src-ru/data/text_misc.xml.append:834
 msgid "data/text_misc.xml.append$//text[@name=\"button_undo\"]"
-msgstr ""
+msgstr "CANCEL"
 
 #: src-ru/data/text_misc.xml.append:835
 msgid "data/text_misc.xml.append$//text[@name=\"button_upgrade\"]"
@@ -2509,7 +2499,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:836
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_max\"]"
-msgstr ""
+msgstr "MAX"
 
 #: src-ru/data/text_misc.xml.append:837
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_reactor_power\"]"
@@ -2529,7 +2519,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:843
 msgid "data/text_misc.xml.append$//text[@name=\"equipment_frame_drones\"]"
-msgstr ""
+msgstr "DRONES"
 
 #: src-ru/data/text_misc.xml.append:844
 msgid "data/text_misc.xml.append$//text[@name=\"equipment_frame_cargo\"]"
@@ -2541,7 +2531,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:846
 msgid "data/text_misc.xml.append$//text[@name=\"equipment_no_system\"]"
-msgstr ""
+msgstr "SYSTEM NOT INSTALLED"
 
 #: src-ru/data/text_misc.xml.append:848
 msgid "data/text_misc.xml.append$//text[@name=\"dismiss_box_title\"]"
@@ -2585,11 +2575,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:861
 msgid "data/text_misc.xml.append$//text[@name=\"store_tab_buy\"]"
-msgstr ""
+msgstr "BUY"
 
 #: src-ru/data/text_misc.xml.append:862
 msgid "data/text_misc.xml.append$//text[@name=\"store_tab_sell\"]"
-msgstr ""
+msgstr "SELL"
 
 #: src-ru/data/text_misc.xml.append:863
 msgid "data/text_misc.xml.append$//text[@name=\"store_tab_page1\"]"
@@ -2605,7 +2595,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:867
 msgid "data/text_misc.xml.append$//text[@name=\"store_title_repair\"]"
-msgstr ""
+msgstr "REPAIR"
 
 #: src-ru/data/text_misc.xml.append:868
 msgid "data/text_misc.xml.append$//text[@name=\"store_title_augments\"]"
@@ -2613,15 +2603,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:869
 msgid "data/text_misc.xml.append$//text[@name=\"store_title_crew\"]"
-msgstr ""
+msgstr "CREW"
 
 #: src-ru/data/text_misc.xml.append:870
 msgid "data/text_misc.xml.append$//text[@name=\"store_title_drones\"]"
-msgstr ""
+msgstr "DRONES"
 
 #: src-ru/data/text_misc.xml.append:871
 msgid "data/text_misc.xml.append$//text[@name=\"store_title_systems\"]"
-msgstr ""
+msgstr "SYSTEMS"
 
 #: src-ru/data/text_misc.xml.append:872
 msgid "data/text_misc.xml.append$//text[@name=\"store_title_weapons\"]"
@@ -2665,11 +2655,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:885
 msgid "data/text_misc.xml.append$//text[@name=\"repair_max\"]"
-msgstr ""
+msgstr "MAX"
 
 #: src-ru/data/text_misc.xml.append:887
 msgid "data/text_misc.xml.append$//text[@name=\"sell_box_title\"]"
-msgstr ""
+msgstr "SELL ITEM"
 
 #: src-ru/data/text_misc.xml.append:888
 msgid "data/text_misc.xml.append$//text[@name=\"sell_box_text\"]"
@@ -2677,7 +2667,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:889
 msgid "data/text_misc.xml.append$//text[@name=\"sell_value\"]"
-msgstr ""
+msgstr "SELL VALUE"
 
 #: src-ru/data/text_misc.xml.append:891
 msgid "data/text_misc.xml.append$//text[@name=\"max_augments\"]"
@@ -2758,7 +2748,7 @@ msgstr "Cooldown 0.5x‡"
 
 #: src-ru/data/text_misc.xml.append:921
 msgid "data/text_misc.xml.append$//text[@name=\"door_1\"]"
-msgstr ""
+msgstr "Normal doors"
 
 #: src-ru/data/text_misc.xml.append:922
 msgid "data/text_misc.xml.append$//text[@name=\"door_2\"]"
@@ -2774,7 +2764,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:926
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_1\"]"
-msgstr ""
+msgstr "Needs pilot to function"
 
 #: src-ru/data/text_misc.xml.append:927
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_2\"]"
@@ -3003,7 +2993,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1018
 msgid "data/text_misc.xml.append$//text[@name=\"level\"]"
-msgstr ""
+msgstr "Level \\1: \\2"
 
 #: src-ru/data/text_misc.xml.append:1019
 msgid "data/text_misc.xml.append$//text[@name=\"manning_bonus\"]"
@@ -3019,7 +3009,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1024
 msgid "data/text_misc.xml.append$//text[@name=\"full_powered\"]"
-msgstr ""
+msgstr "Fully Powered"
 
 #: src-ru/data/text_misc.xml.append:1025
 msgid "data/text_misc.xml.append$//text[@name=\"full_functional\"]"
@@ -3059,7 +3049,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1036
 msgid "data/text_misc.xml.append$//text[@name=\"damaged\"]"
-msgstr ""
+msgstr "Damaged"
 
 #: src-ru/data/text_misc.xml.append:1038
 msgid "data/text_misc.xml.append$//text[@name=\"temp_disabled\"]"
@@ -3079,7 +3069,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1044
 msgid "data/text_misc.xml.append$//text[@name=\"add_power\"]"
-msgstr ""
+msgstr "Add Power: \\1"
 
 #: src-ru/data/text_misc.xml.append:1045
 msgid "data/text_misc.xml.append$//text[@name=\"remove_power\"]"
@@ -3087,7 +3077,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1046
 msgid "data/text_misc.xml.append$//text[@name=\"remove_power_alt\"]"
-msgstr ""
+msgstr "Remove Power: Shift + \\1"
 
 #: src-ru/data/text_misc.xml.append:1048
 msgid "data/text_misc.xml.append$//text[@name=\"hacked\"]"
@@ -3148,11 +3138,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1067
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_skill\"]"
-msgstr ""
+msgstr "Evasion +\\1"
 
 #: src-ru/data/text_misc.xml.append:1068
 msgid "data/text_misc.xml.append$//text[@name=\"engine_skill\"]"
-msgstr ""
+msgstr "Evasion +\\1"
 
 #: src-ru/data/text_misc.xml.append:1069
 msgid "data/text_misc.xml.append$//text[@name=\"shield_skill\"]"
@@ -3184,7 +3174,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1080
 msgid "data/text_misc.xml.append$//text[@name=\"cloning\"]"
-msgstr ""
+msgstr "Cloning..."
 
 #: src-ru/data/text_misc.xml.append:1082
 msgid "data/text_misc.xml.append$//text[@name=\"power_ready\"]"
@@ -3204,11 +3194,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1088
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_skill_tooltip\"]"
-msgstr ""
+msgstr "Piloting Skill:\\n\\1"
 
 #: src-ru/data/text_misc.xml.append:1089
 msgid "data/text_misc.xml.append$//text[@name=\"engines_skill_tooltip\"]"
-msgstr ""
+msgstr "Engines Skill:\\n\\1"
 
 #: src-ru/data/text_misc.xml.append:1090
 msgid "data/text_misc.xml.append$//text[@name=\"shields_skill_tooltip\"]"
@@ -3252,11 +3242,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1105
 msgid "data/text_misc.xml.append$//text[@name=\"combat_skill_infobox\"]"
-msgstr ""
+msgstr "\\1"
 
 #: src-ru/data/text_misc.xml.append:1106
 msgid "data/text_misc.xml.append$//text[@name=\"repair_skill_infobox\"]"
-msgstr ""
+msgstr "\\1"
 
 #: src-ru/data/text_misc.xml.append:1110
 msgid "data/text_misc.xml.append$//text[@name=\"tip_drone_generic\"]"
@@ -3337,11 +3327,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1131
 msgid "data/text_misc.xml.append$//text[@name=\"ion_damage\"]"
-msgstr ""
+msgstr "Ion Damage: \\1"
 
 #: src-ru/data/text_misc.xml.append:1132
 msgid "data/text_misc.xml.append$//text[@name=\"stun_damage\"]"
-msgstr ""
+msgstr "Stun: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1133
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage\"]"
@@ -3374,7 +3364,7 @@ msgstr "Breach M.*"
 
 #: src-ru/data/text_misc.xml.append:1141
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_stun\"]"
-msgstr ""
+msgstr "Stun"
 
 #: src-ru/data/text_misc.xml.append:1143
 #, fuzzy
@@ -3393,11 +3383,11 @@ msgstr "High"
 
 #: src-ru/data/text_misc.xml.append:1147
 msgid "data/text_misc.xml.append$//text[@name=\"type_desc\"]"
-msgstr ""
+msgstr "Type: \\1\\n\\2"
 
 #: src-ru/data/text_misc.xml.append:1149
 msgid "data/text_misc.xml.append$//text[@name=\"type_beam\"]"
-msgstr ""
+msgstr "Beam"
 
 #: src-ru/data/text_misc.xml.append:1150
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb\"]"
@@ -3405,7 +3395,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1151
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser\"]"
-msgstr ""
+msgstr "Laser"
 
 #: src-ru/data/text_misc.xml.append:1152
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_chain\"]"
@@ -3602,7 +3592,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1203
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stun_time\"]"
-msgstr ""
+msgstr "Stun: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1205
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage_negative\"]"
@@ -4053,7 +4043,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1332
 msgid "data/text_misc.xml.append$//text[@name=\"discord_victory\"]"
-msgstr ""
+msgstr "Victory"
 
 #: src-ru/data/text_misc.xml.append:1333
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dead\"]"
@@ -4102,9 +4092,7 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1389
 #, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"hack_no_system\"]"
-msgstr ""
-"\\n"
-"Not a target for hacking."
+msgstr "\\nNot a target for hacking."
 
 #: src-ru/data/text_misc.xml.append:1390
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen\"]"
@@ -4180,7 +4168,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1409
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: SHIELDS LOSING POWER."
 
 #: src-ru/data/text_misc.xml.append:1410
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot_player\"]"
@@ -4421,11 +4409,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1475
 msgid "data/text_misc.xml.append$//text[@name=\"engines_installed\"]"
-msgstr ""
+msgstr "Engines installed"
 
 #: src-ru/data/text_misc.xml.append:1476
 msgid "data/text_misc.xml.append$//text[@name=\"sensors_installed\"]"
-msgstr ""
+msgstr "Sensor Subsystem installed"
 
 #: src-ru/data/text_misc.xml.append:1477
 msgid "data/text_misc.xml.append$//text[@name=\"medbay_installed\"]"
@@ -4437,7 +4425,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1479
 msgid "data/text_misc.xml.append$//text[@name=\"drones_installed\"]"
-msgstr ""
+msgstr "Drone System installed"
 
 #: src-ru/data/text_misc.xml.append:1480
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter_installed\"]"
@@ -4453,7 +4441,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1483
 msgid "data/text_misc.xml.append$//text[@name=\"battery_installed\"]"
-msgstr ""
+msgstr "Backup Battery installed"
 
 #: src-ru/data/text_misc.xml.append:1484
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_installed\"]"
@@ -4465,11 +4453,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1486
 msgid "data/text_misc.xml.append$//text[@name=\"hacking_installed\"]"
-msgstr ""
+msgstr "Hacking System installed"
 
 #: src-ru/data/text_misc.xml.append:1487
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_installed\"]"
-msgstr ""
+msgstr "Reactor installed"
 
 #: src-ru/data/text_misc.xml.append:1489
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_last\"]"
@@ -4534,7 +4522,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1508
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed_1\"]"
-msgstr ""
+msgstr "Fleet delayed by 1 jump"
 
 #: src-ru/data/text_misc.xml.append:1510
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed\"]"
@@ -4550,7 +4538,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1516
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_victory\"]"
-msgstr ""
+msgstr "VICTORY!"
 
 #: src-ru/data/text_misc.xml.append:1518
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_stats\"]"
@@ -4562,11 +4550,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1520
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_hangar\"]"
-msgstr ""
+msgstr "HANGAR"
 
 #: src-ru/data/text_misc.xml.append:1521
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_mainmenu\"]"
-msgstr ""
+msgstr "MENU"
 
 #: src-ru/data/text_misc.xml.append:1522
 #, fuzzy
@@ -4708,51 +4696,52 @@ msgstr "Localization by Riotloc"
 
 #: src-ru/data/text_misc.xml.append:1577
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr_names\"]"
-msgstr ""
+msgstr "Vladimir Konoplitsky, Alexander Skakovsky"
 
 #: src-ru/data/text_misc.xml.append:1578
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it\"]"
-msgstr ""
+msgstr "Italian version"
 
 #: src-ru/data/text_misc.xml.append:1579
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it_names\"]"
 msgstr ""
+"Alain Dellepiane, Fabio Bortolotti, Lorenzo Bertolucci, Matteo Scarabelli"
 
 #: src-ru/data/text_misc.xml.append:1580
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de\"]"
-msgstr ""
+msgstr "German version"
 
 #: src-ru/data/text_misc.xml.append:1581
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de_names\"]"
-msgstr ""
+msgstr "Ulrich Onken, Constanze Vogl, Roland Strube"
 
 #: src-ru/data/text_misc.xml.append:1582
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es\"]"
-msgstr ""
+msgstr "Spanish version"
 
 #: src-ru/data/text_misc.xml.append:1583
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es_names\"]"
-msgstr ""
+msgstr "Alba Calvo, Ramón Méndez, Juan Ramón Acedo, Fernando Moreiras"
 
 #: src-ru/data/text_misc.xml.append:1584
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl\"]"
-msgstr ""
+msgstr "Polish version"
 
 #: src-ru/data/text_misc.xml.append:1585
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl_names\"]"
-msgstr ""
+msgstr "Andrzej Wróblewski, Marcin Serkies, Maciej Kowalik"
 
 #: src-ru/data/text_misc.xml.append:1586
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR\"]"
-msgstr ""
+msgstr "Brazilian Portuguese version"
 
 #: src-ru/data/text_misc.xml.append:1587
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR_names\"]"
-msgstr ""
+msgstr "Bruno Dias, Caio Uliana, Diego Perez, Thierry Banhete"
 
 #: src-ru/data/text_misc.xml.append:1588
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru\"]"
-msgstr ""
+msgstr "Russian version"
 
 #: src-ru/data/text_misc.xml.append:1589
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru_names\"]"
@@ -4764,11 +4753,13 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1592
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_84\"]"
-msgstr ""
+msgstr "8-4, Ltd."
 
 #: src-ru/data/text_misc.xml.append:1593
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_names\"]"
 msgstr ""
+"Kimitaka Ogawa, Hiroyuki Matsushita, Dermot Creegan, Graeme Howard, John "
+"Ricciardi"
 
 #: src-ru/data/text_misc.xml.append:1595
 msgid "data/text_misc.xml.append$//text[@name=\"kickstarter\"]"
@@ -4785,14 +4776,16 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1599
 msgid "data/text_misc.xml.append$//text[@name=\"freetype\"]"
 msgstr ""
+"The FreeType Project (c) 1996-2002, 2006 by David Turner, Robert Wilhelm, "
+"and Werner Lemberg"
 
 #: src-ru/data/text_misc.xml.append:1600
 msgid "data/text_misc.xml.append$//text[@name=\"bass\"]"
-msgstr ""
+msgstr "BASS audio library (c) 1999-2012 Un4seen Developments Ltd"
 
 #: src-ru/data/text_misc.xml.append:1602
 msgid "data/text_misc.xml.append$//text[@name=\"rapidxml\"]"
-msgstr ""
+msgstr "RapidXML (c) 2006, 2007 Marcin Kalicinski"
 
 #: src-ru/data/text_misc.xml.append:1605
 msgid "data/text_misc.xml.append$//text[@name=\"touch_skip\"]"
@@ -4812,7 +4805,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1613
 msgid "data/text_misc.xml.append$//text[@name=\"health_tooltip\"]"
-msgstr ""
+msgstr "Health: \\1/\\2"
 
 #: src-ru/data/text_misc.xml.append:1614
 msgid "data/text_misc.xml.append$//text[@name=\"death_tooltip\"]"
@@ -4840,7 +4833,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1623
 msgid "data/text_misc.xml.append$//text[@name=\"mind_controlled_tooltip\"]"
-msgstr ""
+msgstr "Mind Controlled"
 
 #: src-ru/data/text_misc.xml.append:1625
 msgid "data/text_misc.xml.append$//text[@name=\"rearrange\"]"
@@ -4916,11 +4909,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1650
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_yes\"]"
-msgstr ""
+msgstr "YES"
 
 #: src-ru/data/text_misc.xml.append:1651
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_no\"]"
-msgstr ""
+msgstr "NO"
 
 #: src-ru/data/text_misc.xml.append:1653
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_clonebay\"]"
@@ -4960,11 +4953,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1665
 msgid "data/text_misc.xml.append$//text[@name=\"button_cancel\"]"
-msgstr ""
+msgstr "CANCEL"
 
 #: src-ru/data/text_misc.xml.append:1666
 msgid "data/text_misc.xml.append$//text[@name=\"button_confirm\"]"
-msgstr ""
+msgstr "ACCEPT"
 
 #: src-ru/data/text_misc.xml.append:1668
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_continue\"]"
@@ -4993,10 +4986,15 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1676
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer\"]"
 msgstr ""
+"Your system does not support framebuffers, so Fullscreen Stretched mode will"
+" not be available and FTL's window will not be resizable."
 
 #: src-ru/data/text_misc.xml.append:1677
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer_stretch\"]"
 msgstr ""
+"Your system does not support framebuffers, so Fullscreen Stretched mode is "
+"not available and FTL's window will not be resizable. Video settings have "
+"been automatically reverted to Windowed."
 
 #: src-ru/data/text_misc.xml.append:1678
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed\"]"
@@ -5004,15 +5002,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1679
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_seconds\"]"
-msgstr ""
+msgstr "\\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1680
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_1_second\"]"
-msgstr ""
+msgstr "1 second"
 
 #: src-ru/data/text_misc.xml.append:1681
 msgid "data/text_misc.xml.append$//text[@name=\"keep_screen\"]"
-msgstr ""
+msgstr "Keep Screen Setting"
 
 #: src-ru/data/text_misc.xml.append:1682
 msgid "data/text_misc.xml.append$//text[@name=\"revert_screen\"]"
@@ -5032,7 +5030,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1689
 msgid "data/text_misc.xml.append$//text[@name=\"stations_saved\"]"
-msgstr ""
+msgstr "Stations Saved!"
 
 #: src-ru/data/text_misc.xml.append:1690
 msgid "data/text_misc.xml.append$//text[@name=\"no_stations\"]"
@@ -5044,7 +5042,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1693
 msgid "data/text_misc.xml.append$//text[@name=\"nameless_one\"]"
-msgstr ""
+msgstr "The Nameless One"
 
 #: src-ru/data/text_misc.xml.append:1695
 msgid "data/text_misc.xml.append$//text[@name=\"game_center\"]"
@@ -5081,19 +5079,22 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1708
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_1\"]"
-msgstr ""
+msgstr "Tom"
 
 #: src-ru/data/text_misc.xml.append:1709
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_2\"]"
-msgstr ""
+msgstr "Mona"
 
 #: src-ru/data/text_misc.xml.append:1711
 msgid "data/text_misc.xml.append$//text[@name=\"loading\"]"
-msgstr ""
+msgstr "LOADING"
 
 #: src-ru/data/text_misc.xml.append:1713
 msgid "data/text_misc.xml.append$//text[@name=\"save_error\"]"
 msgstr ""
+"\"FTL: Faster Than Light\" is unable to save progress.\\n\\nPlease quit and "
+"check if your Anti-Virus software is blocking it.\\n\\nIf the problem "
+"persists email us at contact@subsetgames.com"
 
 #: src-ru/data/text_misc.xml.append:1717
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_true_end\"]"
