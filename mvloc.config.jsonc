@@ -129,6 +129,10 @@
     "originalLanguage": "ru",
 
     "languageSpecifics": {
+        "en": {
+            // Apply the translation flagged as fuzzy.
+            "applyUseFuzzy": true
+        },
         "ko": {
             "copySourceTemplate": [
                 // Aka wont-translate.
