@@ -1,18 +1,24 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-11-07 09:37+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datatext_miscxmlappend/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: src-ru/data/text_misc.xml.append:7
 msgid "data/text_misc.xml.append$//text[@name=\"bullet\"]"
 msgstr "-\\1"
 
 #: src-ru/data/text_misc.xml.append:8
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"button_close\"]"
-msgstr "BACK"
+msgstr "CLOSE"
 
 #: src-ru/data/text_misc.xml.append:9
 msgid "data/text_misc.xml.append$//text[@name=\"continue\"]"
@@ -21,22 +27,38 @@ msgstr "Continue..."
 #: src-ru/data/text_misc.xml.append:13
 msgid "data/text_misc.xml.append$//text[@name=\"welcome\"]"
 msgstr ""
+"Welcome to FTL: Faster Than Light!\\n"
+"\\n"
+"We'd highly recommend you take a moment to play the tutorial. We've done our "
+"best to make it as short and to the point as possible!\\n"
+"\\n"
+"We hope you enjoy the game.\\n"
+"\\n"
+"-- Subset Games"
 
 #: src-ru/data/text_misc.xml.append:14
 msgid "data/text_misc.xml.append$//text[@name=\"welcome_demo\"]"
 msgstr ""
+"Welcome to the FTL Demo!\\n"
+"\\n"
+"We'd highly recommend you take a moment to play the tutorial. We've done our "
+"best to make it as short and to the point as possible!\\n"
+"\\n"
+"We hope you enjoy the game.\\n"
+"\\n"
+"-- Subset Games"
 
 #: src-ru/data/text_misc.xml.append:16
 msgid "data/text_misc.xml.append$//text[@name=\"version\"]"
-msgstr ""
+msgstr "FTL v.\\1"
 
 #: src-ru/data/text_misc.xml.append:17
 msgid "data/text_misc.xml.append$//text[@name=\"demo_version\"]"
-msgstr ""
+msgstr "DEMO Version \\1"
 
 #: src-ru/data/text_misc.xml.append:19
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_continue\"]"
-msgstr ""
+msgstr "CONTINUE"
 
 #: src-ru/data/text_misc.xml.append:20
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_newgame\"]"
@@ -48,7 +70,7 @@ msgstr "TUTORIAL"
 
 #: src-ru/data/text_misc.xml.append:22
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_stats\"]"
-msgstr ""
+msgstr "STATS"
 
 #: src-ru/data/text_misc.xml.append:23
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_options\"]"
@@ -56,29 +78,28 @@ msgstr "OPTIONS"
 
 #: src-ru/data/text_misc.xml.append:24
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_credits\"]"
-msgstr ""
+msgstr "CREDITS"
 
 #: src-ru/data/text_misc.xml.append:25
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"mainmenu_quit\"]"
-msgstr "EXIT"
+msgstr "QUIT"
 
 #: src-ru/data/text_misc.xml.append:27
 msgid "data/text_misc.xml.append$//text[@name=\"no_load\"]"
-msgstr ""
+msgstr "No previous game exists"
 
 #: src-ru/data/text_misc.xml.append:29
 msgid "data/text_misc.xml.append$//text[@name=\"new_player\"]"
 msgstr ""
+"A new player has signed into the Game Center. Returning to the title screen."
 
 #: src-ru/data/text_misc.xml.append:42
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"escape_continue\"]"
 msgstr "BACK"
 
 #: src-ru/data/text_misc.xml.append:43
 msgid "data/text_misc.xml.append$//text[@name=\"escape_mainmenu\"]"
-msgstr ""
+msgstr "MAIN MENU"
 
 #: src-ru/data/text_misc.xml.append:44
 msgid "data/text_misc.xml.append$//text[@name=\"escape_hangar\"]"
@@ -86,7 +107,7 @@ msgstr "HANGAR"
 
 #: src-ru/data/text_misc.xml.append:45
 msgid "data/text_misc.xml.append$//text[@name=\"escape_reset\"]"
-msgstr ""
+msgstr "RESTART"
 
 #: src-ru/data/text_misc.xml.append:46
 #, fuzzy
@@ -95,12 +116,11 @@ msgstr "OPTIONS"
 
 #: src-ru/data/text_misc.xml.append:47
 msgid "data/text_misc.xml.append$//text[@name=\"escape_controls\"]"
-msgstr ""
+msgstr "CONTROLS"
 
 #: src-ru/data/text_misc.xml.append:48
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"escape_save\"]"
-msgstr "EXIT"
+msgstr "SAVE+QUIT"
 
 #: src-ru/data/text_misc.xml.append:50
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_difficulty\"]"
@@ -108,15 +128,15 @@ msgstr "Difficulty"
 
 #: src-ru/data/text_misc.xml.append:51
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_ae_content\"]"
-msgstr ""
+msgstr "AE Content"
 
 #: src-ru/data/text_misc.xml.append:52
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_achievements\"]"
-msgstr ""
+msgstr "Current Ship Achievements"
 
 #: src-ru/data/text_misc.xml.append:54
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_title\"]"
-msgstr ""
+msgstr "CREW CONTROL"
 
 #: src-ru/data/text_misc.xml.append:55
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_top\"]"
@@ -125,140 +145,197 @@ msgstr "How to give orders:"
 #: src-ru/data/text_misc.xml.append:56
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_pc_select\"]"
 msgstr ""
+"Left click or drag\\n"
+"to select crew."
 
 #: src-ru/data/text_misc.xml.append:57
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_pc_move\"]"
 msgstr ""
+"Right click to move\\n"
+"selected crew."
 
 #: src-ru/data/text_misc.xml.append:58
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_pc_bottom\"]"
 msgstr ""
+"Crew will automatically repair systems or\\n"
+"fight intruders in their current room."
 
 #: src-ru/data/text_misc.xml.append:59
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_ipad_select\"]"
 msgstr ""
+"Tap on someone to select them\\n"
+"or tap and drag to select\\n"
+"multiple crew members."
 
 #: src-ru/data/text_misc.xml.append:60
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_ipad_move\"]"
 msgstr ""
+"Tap on a room to tell the selected\\n"
+"crew members to move there."
 
 #: src-ru/data/text_misc.xml.append:61
 msgid "data/text_misc.xml.append$//text[@name=\"help_crew_text_ipad_bottom\"]"
 msgstr ""
+"Crew will automatically repair or\\n"
+"fight in their current room."
 
 #: src-ru/data/text_misc.xml.append:62
 msgid "data/text_misc.xml.append$//text[@name=\"help_pause_title\"]"
-msgstr ""
+msgstr "PAUSING"
 
 #: src-ru/data/text_misc.xml.append:63
 msgid "data/text_misc.xml.append$//text[@name=\"help_pause_text_pc_1\"]"
-msgstr ""
+msgstr "Press the Space Bar to pause."
 
 #: src-ru/data/text_misc.xml.append:64
 msgid "data/text_misc.xml.append$//text[@name=\"help_pause_text_pc_2\"]"
 msgstr ""
+"Commands and orders can still\\n"
+"be given while paused."
 
 #: src-ru/data/text_misc.xml.append:65
 msgid "data/text_misc.xml.append$//text[@name=\"help_pause_text_ipad_1\"]"
 msgstr ""
+"Press the Pause button on the\\n"
+"lower right to pause the game."
 
 #: src-ru/data/text_misc.xml.append:66
 msgid "data/text_misc.xml.append$//text[@name=\"help_pause_text_ipad_2\"]"
 msgstr ""
+"Commands and orders can still\\n"
+"be given while paused."
 
 #: src-ru/data/text_misc.xml.append:67
 msgid "data/text_misc.xml.append$//text[@name=\"help_pause_text_ipad_auto\"]"
 msgstr ""
+"The game will automatically pause\\n"
+"in some situations (this can be\\n"
+"disabled in the options menu)."
 
 #: src-ru/data/text_misc.xml.append:68
 msgid "data/text_misc.xml.append$//text[@name=\"help_power_title\"]"
-msgstr ""
+msgstr "POWER CONTROLS"
 
 #: src-ru/data/text_misc.xml.append:69
 msgid "data/text_misc.xml.append$//text[@name=\"help_power_text_top\"]"
-msgstr ""
+msgstr "Adding/removing power to systems:"
 
 #: src-ru/data/text_misc.xml.append:70
 msgid "data/text_misc.xml.append$//text[@name=\"help_power_text_pc_add\"]"
 msgstr ""
+"Left click to\\n"
+"add power."
 
 #: src-ru/data/text_misc.xml.append:71
 msgid "data/text_misc.xml.append$//text[@name=\"help_power_text_pc_remove\"]"
 msgstr ""
+"Right click to\\n"
+"remove power."
 
 #: src-ru/data/text_misc.xml.append:72
 msgid "data/text_misc.xml.append$//text[@name=\"help_power_text_ipad_1\"]"
 msgstr ""
+"Drag your finger up/down to\\n"
+"increase/decrease system power."
 
 #: src-ru/data/text_misc.xml.append:73
 msgid "data/text_misc.xml.append$//text[@name=\"help_power_text_ipad_2\"]"
 msgstr ""
+"There must be enough reactor\\n"
+"power to power the system."
 
 #: src-ru/data/text_misc.xml.append:74
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_title\"]"
-msgstr ""
+msgstr "WEAPONS/DRONES"
 
 #: src-ru/data/text_misc.xml.append:75
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_top\"]"
-msgstr ""
+msgstr "How to fire:"
 
 #: src-ru/data/text_misc.xml.append:76
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_pc_power\"]"
 msgstr ""
+"Left click to\\n"
+"power a weapon."
 
 #: src-ru/data/text_misc.xml.append:77
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_pc_activate\"]"
 msgstr ""
+"Left click again\\n"
+"to activate."
 
 #: src-ru/data/text_misc.xml.append:78
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_pc_target\"]"
 msgstr ""
+"Left click on\\n"
+"an enemy ship\\n"
+"to target it."
 
 #: src-ru/data/text_misc.xml.append:79
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_pc_bottom1\"]"
-msgstr ""
+msgstr "Left click and drag to reorder weapons/drones."
 
 #: src-ru/data/text_misc.xml.append:80
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_pc_bottom2\"]"
 msgstr ""
+"If the system is damaged, the\\n"
+"rightmost item will be depowered first."
 
 #: src-ru/data/text_misc.xml.append:81
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_ipad_power\"]"
 msgstr ""
+"Tap on the\\n"
+"weapon\\n"
+"system."
 
 #: src-ru/data/text_misc.xml.append:82
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"help_weapons_text_ipad_activate\"]"
 msgstr ""
+"Tap on a weapon\\n"
+"to power and\\n"
+"again to activate."
 
 #: src-ru/data/text_misc.xml.append:83
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_ipad_target\"]"
 msgstr ""
+"Tap on the\\n"
+"target room."
 
 #: src-ru/data/text_misc.xml.append:84
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"help_weapons_text_ipad_autofire\"]"
 msgstr ""
+"Tapping a weapon twice\\n"
+"will enable auto-fire\\n"
+"for that weapon."
 
 #: src-ru/data/text_misc.xml.append:85
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_ipad_bottom1\"]"
 msgstr ""
+"Tap and drag to reorder\\n"
+"weapons/drones."
 
 #: src-ru/data/text_misc.xml.append:86
 msgid "data/text_misc.xml.append$//text[@name=\"help_weapons_text_ipad_bottom2\"]"
 msgstr ""
+"If the system is damaged,\\n"
+"the highest item will be\\n"
+"depowered first."
 
 #: src-ru/data/text_misc.xml.append:87
 msgid "data/text_misc.xml.append$//text[@name=\"help_tap_close\"]"
-msgstr ""
+msgstr "Tap the screen to return to the game."
 
 #: src-ru/data/text_misc.xml.append:88
 msgid "data/text_misc.xml.append$//text[@name=\"help_customize\"]"
 msgstr ""
+"Note: This is an overview. You can customize many hotkeys in the Options "
+"menu."
 
 #: src-ru/data/text_misc.xml.append:90
 msgid "data/text_misc.xml.append$//text[@name=\"no_save_tutorial\"]"
-msgstr ""
+msgstr "Cannot save and quit during the tutorial<"
 
 #: src-ru/data/text_misc.xml.append:94
 msgid "data/text_misc.xml.append$//text[@name=\"options_tab\"]"
@@ -266,7 +343,7 @@ msgstr "OPTIONS"
 
 #: src-ru/data/text_misc.xml.append:95
 msgid "data/text_misc.xml.append$//text[@name=\"options_frame_video\"]"
-msgstr ""
+msgstr "VIDEO"
 
 #: src-ru/data/text_misc.xml.append:96
 msgid "data/text_misc.xml.append$//text[@name=\"options_frame_gameplay\"]"
@@ -274,7 +351,7 @@ msgstr "GAMEPLAY"
 
 #: src-ru/data/text_misc.xml.append:97
 msgid "data/text_misc.xml.append$//text[@name=\"options_frame_audio\"]"
-msgstr ""
+msgstr "AUDIO"
 
 #: src-ru/data/text_misc.xml.append:99
 msgid "data/text_misc.xml.append$//text[@name=\"on\"]"
@@ -282,31 +359,31 @@ msgstr "On"
 
 #: src-ru/data/text_misc.xml.append:100
 msgid "data/text_misc.xml.append$//text[@name=\"off\"]"
-msgstr ""
+msgstr "Off"
 
 #: src-ru/data/text_misc.xml.append:101
 msgid "data/text_misc.xml.append$//text[@name=\"disabled\"]"
-msgstr ""
+msgstr "Disabled"
 
 #: src-ru/data/text_misc.xml.append:102
 msgid "data/text_misc.xml.append$//text[@name=\"enabled\"]"
-msgstr "On"
+msgstr "Enabled"
 
 #: src-ru/data/text_misc.xml.append:103
 msgid "data/text_misc.xml.append$//text[@name=\"manual_override\"]"
-msgstr ""
+msgstr "Overridden by manual settings"
 
 #: src-ru/data/text_misc.xml.append:104
 msgid "data/text_misc.xml.append$//text[@name=\"stretch_not_supported\"]"
-msgstr ""
+msgstr "Not supported on this system"
 
 #: src-ru/data/text_misc.xml.append:105
 msgid "data/text_misc.xml.append$//text[@name=\"restart_required\"]"
-msgstr ""
+msgstr "Restart required"
 
 #: src-ru/data/text_misc.xml.append:106
 msgid "data/text_misc.xml.append$//text[@name=\"restart_required_dialog\"]"
-msgstr ""
+msgstr "You will need to restart FTL before the new video settings take effect."
 
 #: src-ru/data/text_misc.xml.append:108
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen\"]"
@@ -314,19 +391,19 @@ msgstr "Fullscreen: \\1"
 
 #: src-ru/data/text_misc.xml.append:109
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen_0\"]"
-msgstr "None"
+msgstr "Off"
 
 #: src-ru/data/text_misc.xml.append:110
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen_1\"]"
-msgstr ""
+msgstr "On (Stretch)"
 
 #: src-ru/data/text_misc.xml.append:111
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen_2\"]"
-msgstr ""
+msgstr "On (Borders)"
 
 #: src-ru/data/text_misc.xml.append:112
 msgid "data/text_misc.xml.append$//text[@name=\"fullscreen_3\"]"
-msgstr ""
+msgstr "On (Native)"
 
 #: src-ru/data/text_misc.xml.append:114
 msgid "data/text_misc.xml.append$//text[@name=\"v_sync\"]"
@@ -334,11 +411,11 @@ msgstr "Vertical Sync: \\1"
 
 #: src-ru/data/text_misc.xml.append:115
 msgid "data/text_misc.xml.append$//text[@name=\"frame_limit\"]"
-msgstr ""
+msgstr "Frame Limit: \\1"
 
 #: src-ru/data/text_misc.xml.append:116
 msgid "data/text_misc.xml.append$//text[@name=\"dynamic_back\"]"
-msgstr ""
+msgstr "Dynamic Backgrounds: \\1"
 
 #: src-ru/data/text_misc.xml.append:117
 msgid "data/text_misc.xml.append$//text[@name=\"colorblind\"]"
@@ -354,51 +431,51 @@ msgstr "Choose a language:"
 
 #: src-ru/data/text_misc.xml.append:121
 msgid "data/text_misc.xml.append$//text[@name=\"language_name\"]"
-msgstr ""
+msgstr "English (Arsenal +)"
 
 #: src-ru/data/text_misc.xml.append:123
 msgid "data/text_misc.xml.append$//text[@name=\"event_choice\"]"
-msgstr ""
+msgstr "Event choice selection: \\1"
 
 #: src-ru/data/text_misc.xml.append:124
 msgid "data/text_misc.xml.append$//text[@name=\"event_choice_disable_hotkeys\"]"
-msgstr ""
+msgstr "Disable hotkeys"
 
 #: src-ru/data/text_misc.xml.append:125
 msgid "data/text_misc.xml.append$//text[@name=\"event_choice_no_delay\"]"
-msgstr ""
+msgstr "No delay"
 
 #: src-ru/data/text_misc.xml.append:126
 msgid "data/text_misc.xml.append$//text[@name=\"event_choice_brief_delay\"]"
-msgstr ""
+msgstr "Brief delay"
 
 #: src-ru/data/text_misc.xml.append:128
 msgid "data/text_misc.xml.append$//text[@name=\"show_paths\"]"
-msgstr ""
+msgstr "Show beacon paths on hover: \\1"
 
 #: src-ru/data/text_misc.xml.append:129
 msgid "data/text_misc.xml.append$//text[@name=\"show_paths_ipad\"]"
-msgstr ""
+msgstr "Show beacon paths on touch: \\1"
 
 #: src-ru/data/text_misc.xml.append:130
 msgid "data/text_misc.xml.append$//text[@name=\"achievement_popup\"]"
-msgstr ""
+msgstr "Achievement Popups: \\1"
 
 #: src-ru/data/text_misc.xml.append:131
 msgid "data/text_misc.xml.append$//text[@name=\"window_focus\"]"
-msgstr ""
+msgstr "Window Focus Auto-Pause: \\1"
 
 #: src-ru/data/text_misc.xml.append:132
 msgid "data/text_misc.xml.append$//text[@name=\"touch_autopause\"]"
-msgstr ""
+msgstr "Touch Command Auto-Pause: \\1"
 
 #: src-ru/data/text_misc.xml.append:133
 msgid "data/text_misc.xml.append$//text[@name=\"configure_controls\"]"
-msgstr ""
+msgstr "Configure Keyboard Hotkeys"
 
 #: src-ru/data/text_misc.xml.append:135
 msgid "data/text_misc.xml.append$//text[@name=\"sound_volume\"]"
-msgstr ""
+msgstr "Sound Volume"
 
 #: src-ru/data/text_misc.xml.append:136
 msgid "data/text_misc.xml.append$//text[@name=\"music_volume\"]"
@@ -410,19 +487,19 @@ msgstr "DELETE\\nPROFILE"
 
 #: src-ru/data/text_misc.xml.append:140
 msgid "data/text_misc.xml.append$//text[@name=\"configure_controls_tab\"]"
-msgstr ""
+msgstr "CONFIGURE CONTROLS"
 
 #: src-ru/data/text_misc.xml.append:142
 msgid "data/text_misc.xml.append$//text[@name=\"power_note\"]"
-msgstr ""
+msgstr "Note: Shift + Power System will also de-power the system"
 
 #: src-ru/data/text_misc.xml.append:144
 msgid "data/text_misc.xml.append$//text[@name=\"press_key\"]"
-msgstr ""
+msgstr "PRESS KEY"
 
 #: src-ru/data/text_misc.xml.append:146
 msgid "data/text_misc.xml.append$//text[@name=\"button_defaults\"]"
-msgstr ""
+msgstr "DEFAULTS"
 
 #: src-ru/data/text_misc.xml.append:150
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew1\"]"
@@ -458,128 +535,126 @@ msgstr "Select Crew 8"
 
 #: src-ru/data/text_misc.xml.append:158
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_crew_all\"]"
-msgstr ""
+msgstr "Select All Crew"
 
 #: src-ru/data/text_misc.xml.append:159
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_loadPositions\"]"
-msgstr ""
+msgstr "Return to Stations"
 
 #: src-ru/data/text_misc.xml.append:160
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_savePositions\"]"
-msgstr ""
+msgstr "Save Stations"
 
 #: src-ru/data/text_misc.xml.append:161
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_lockdown\"]"
-msgstr ""
+msgstr "Secret Ability"
 
 #: src-ru/data/text_misc.xml.append:163
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_open\"]"
-msgstr ""
+msgstr "Open All Doors"
 
 #: src-ru/data/text_misc.xml.append:164
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_close\"]"
-msgstr ""
+msgstr "Close All Doors"
 
 #: src-ru/data/text_misc.xml.append:166
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_activate_cloak\"]"
-msgstr ""
+msgstr "Activate Cloaking"
 
 #: src-ru/data/text_misc.xml.append:168
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_send_tele\"]"
-msgstr ""
+msgstr "Teleport - Send"
 
 #: src-ru/data/text_misc.xml.append:169
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_ret_tele\"]"
-msgstr ""
+msgstr "Teleport - Return"
 
 #: src-ru/data/text_misc.xml.append:170
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_start_hacking\"]"
-msgstr ""
+msgstr "Start Hacking"
 
 #: src-ru/data/text_misc.xml.append:171
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_mindControl\"]"
 msgstr "Mind Control"
 
 #: src-ru/data/text_misc.xml.append:172
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_activate_battery\"]"
-msgstr "Backup Battery"
+msgstr "Activate Battery"
 
 #: src-ru/data/text_misc.xml.append:174
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_desc_start\"]"
-msgstr ""
+msgstr "Starting Reactor: \\1"
 
 #: src-ru/data/text_misc.xml.append:175
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_desc_max\"]"
-msgstr ""
+msgstr "Maximum Reactor: \\1"
 
 #: src-ru/data/text_misc.xml.append:176
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"hangar_achievements_title_default\"]"
-msgstr "Current Ship Achievements"
+msgstr "Ship Achievements"
 
 #: src-ru/data/text_misc.xml.append:177
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"hangar_achievements_title_custom\"]"
-msgstr ""
+msgstr "Ship Victories"
 
 #: src-ru/data/text_misc.xml.append:178
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"hangar_achievements_title_filter\"]"
-msgstr ""
+msgstr "Filter Victory Types"
 
 #: src-ru/data/text_misc.xml.append:179
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_no_ship_achievements\"]"
-msgstr ""
+msgstr "No Ship Achievements"
 
 #: src-ru/data/text_misc.xml.append:181
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_weapon1\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 1"
 
 #: src-ru/data/text_misc.xml.append:182
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_weapon2\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 2"
 
 #: src-ru/data/text_misc.xml.append:183
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_weapon3\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 3"
 
 #: src-ru/data/text_misc.xml.append:184
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_weapon4\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 4"
 
 #: src-ru/data/text_misc.xml.append:185
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drone1\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 5"
 
 #: src-ru/data/text_misc.xml.append:186
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drone2\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 6"
 
 #: src-ru/data/text_misc.xml.append:187
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drone3\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 7"
 
 #: src-ru/data/text_misc.xml.append:188
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drone4\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 8"
 
 #: src-ru/data/text_misc.xml.append:189
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drone5\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 9"
 
 #: src-ru/data/text_misc.xml.append:190
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drone6\"]"
-msgstr ""
+msgstr "Weapon/Drone Slot 10"
 
 #: src-ru/data/text_misc.xml.append:192
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_autofire\"]"
-msgstr ""
+msgstr "Toggle Autofire"
 
 #: src-ru/data/text_misc.xml.append:194
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_force_autofire\"]"
-msgstr ""
+msgstr "Autofire Modifier (Hold + Aim)"
 
 #: src-ru/data/text_misc.xml.append:196
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_pause\"]"
@@ -587,195 +662,195 @@ msgstr "Pause Game"
 
 #: src-ru/data/text_misc.xml.append:197
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_jump\"]"
-msgstr ""
+msgstr "FTL Jump"
 
 #: src-ru/data/text_misc.xml.append:198
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_ship_info\"]"
-msgstr ""
+msgstr "Open Upgrades"
 
 #: src-ru/data/text_misc.xml.append:199
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_ship_inv\"]"
-msgstr ""
+msgstr "Open Inventory"
 
 #: src-ru/data/text_misc.xml.append:200
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_store\"]"
-msgstr ""
+msgstr "Open Store"
 
 #: src-ru/data/text_misc.xml.append:201
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_ship_crew\"]"
-msgstr ""
+msgstr "Open Crew Manifest"
 
 #: src-ru/data/text_misc.xml.append:202
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_options\"]"
-msgstr ""
+msgstr "Open Options"
 
 #: src-ru/data/text_misc.xml.append:203
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_increase_font\"]"
-msgstr ""
+msgstr "Increase Event Font"
 
 #: src-ru/data/text_misc.xml.append:204
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_decrease_font\"]"
-msgstr ""
+msgstr "Decrease Event Font"
 
 #: src-ru/data/text_misc.xml.append:206
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_rightclick\"]"
-msgstr ""
+msgstr "Right Click Modifier"
 
 #: src-ru/data/text_misc.xml.append:208
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_shields\"]"
-msgstr ""
+msgstr "Power Shields"
 
 #: src-ru/data/text_misc.xml.append:209
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_engines\"]"
-msgstr ""
+msgstr "Power Engines"
 
 #: src-ru/data/text_misc.xml.append:210
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_oxygen\"]"
-msgstr ""
+msgstr "Power Oxygen"
 
 #: src-ru/data/text_misc.xml.append:211
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_medbay\"]"
-msgstr ""
+msgstr "Power Medbay / Clone Bay"
 
 #: src-ru/data/text_misc.xml.append:212
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_teleporter\"]"
-msgstr ""
+msgstr "Power Teleporter"
 
 #: src-ru/data/text_misc.xml.append:213
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_cloaking\"]"
-msgstr ""
+msgstr "Power Cloaking"
 
 #: src-ru/data/text_misc.xml.append:214
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_mind\"]"
-msgstr ""
+msgstr "Power Mind Control"
 
 #: src-ru/data/text_misc.xml.append:215
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_hacking\"]"
-msgstr ""
+msgstr "Power Hacking"
 
 #: src-ru/data/text_misc.xml.append:216
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_artillery\"]"
-msgstr ""
+msgstr "Power Artillery"
 
 #: src-ru/data/text_misc.xml.append:217
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_weapons\"]"
-msgstr ""
+msgstr "Power Weapons"
 
 #: src-ru/data/text_misc.xml.append:218
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_drones\"]"
-msgstr ""
+msgstr "Power Drones"
 
 #: src-ru/data/text_misc.xml.append:220
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_shields\"]"
-msgstr ""
+msgstr "De-Power Shields"
 
 #: src-ru/data/text_misc.xml.append:221
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_engines\"]"
-msgstr ""
+msgstr "De-Power Engines"
 
 #: src-ru/data/text_misc.xml.append:222
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_oxygen\"]"
-msgstr ""
+msgstr "De-Power Oxygen"
 
 #: src-ru/data/text_misc.xml.append:223
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_medbay\"]"
-msgstr ""
+msgstr "De-Power Medbay / Clone Bay"
 
 #: src-ru/data/text_misc.xml.append:224
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_teleporter\"]"
-msgstr ""
+msgstr "De-Power Teleporter"
 
 #: src-ru/data/text_misc.xml.append:225
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_cloaking\"]"
-msgstr ""
+msgstr "De-Power Cloaking"
 
 #: src-ru/data/text_misc.xml.append:226
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_mind\"]"
-msgstr ""
+msgstr "De-Power Mind Control"
 
 #: src-ru/data/text_misc.xml.append:227
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_hacking\"]"
-msgstr ""
+msgstr "De-Power Hacking"
 
 #: src-ru/data/text_misc.xml.append:228
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_artillery\"]"
-msgstr ""
+msgstr "De-Power Artillery"
 
 #: src-ru/data/text_misc.xml.append:229
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_weapons\"]"
-msgstr ""
+msgstr "De-Power Weapons"
 
 #: src-ru/data/text_misc.xml.append:230
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_drones\"]"
-msgstr ""
+msgstr "De-Power Drones"
 
 #: src-ru/data/text_misc.xml.append:232
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_1\"]"
-msgstr ""
+msgstr "Power System 1"
 
 #: src-ru/data/text_misc.xml.append:233
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_2\"]"
-msgstr ""
+msgstr "Power System 2"
 
 #: src-ru/data/text_misc.xml.append:234
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_3\"]"
-msgstr ""
+msgstr "Power System 3"
 
 #: src-ru/data/text_misc.xml.append:235
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_4\"]"
-msgstr ""
+msgstr "Power System 4"
 
 #: src-ru/data/text_misc.xml.append:236
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_5\"]"
-msgstr ""
+msgstr "Power System 5"
 
 #: src-ru/data/text_misc.xml.append:237
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_6\"]"
-msgstr ""
+msgstr "Power System 6"
 
 #: src-ru/data/text_misc.xml.append:238
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_7\"]"
-msgstr ""
+msgstr "Power System 7"
 
 #: src-ru/data/text_misc.xml.append:239
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_power_8\"]"
-msgstr ""
+msgstr "Power System 8"
 
 #: src-ru/data/text_misc.xml.append:241
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_1\"]"
-msgstr ""
+msgstr "De-Power System 1"
 
 #: src-ru/data/text_misc.xml.append:242
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_2\"]"
-msgstr ""
+msgstr "De-Power System 2"
 
 #: src-ru/data/text_misc.xml.append:243
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_3\"]"
-msgstr ""
+msgstr "De-Power System 3"
 
 #: src-ru/data/text_misc.xml.append:244
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_4\"]"
-msgstr ""
+msgstr "De-Power System 4"
 
 #: src-ru/data/text_misc.xml.append:245
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_5\"]"
-msgstr ""
+msgstr "De-Power System 5"
 
 #: src-ru/data/text_misc.xml.append:246
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_6\"]"
-msgstr ""
+msgstr "De-Power System 6"
 
 #: src-ru/data/text_misc.xml.append:247
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_7\"]"
-msgstr ""
+msgstr "De-Power System 7"
 
 #: src-ru/data/text_misc.xml.append:248
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_power_8\"]"
-msgstr ""
+msgstr "De-Power System 8"
 
 #: src-ru/data/text_misc.xml.append:252
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_none\"]"
-msgstr "NO"
+msgstr "None"
 
 #: src-ru/data/text_misc.xml.append:253
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_altgr\"]"
@@ -795,11 +870,11 @@ msgstr "CAPS LOCK"
 
 #: src-ru/data/text_misc.xml.append:257
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_clear\"]"
-msgstr ""
+msgstr "CLEAR"
 
 #: src-ru/data/text_misc.xml.append:258
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_compose\"]"
-msgstr ""
+msgstr "COMPOSE"
 
 #: src-ru/data/text_misc.xml.append:259
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_delete\"]"
@@ -807,7 +882,7 @@ msgstr "DELETE"
 
 #: src-ru/data/text_misc.xml.append:260
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_down\"]"
-msgstr ""
+msgstr "DOWN"
 
 #: src-ru/data/text_misc.xml.append:261
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_end\"]"
@@ -887,7 +962,7 @@ msgstr "F15"
 
 #: src-ru/data/text_misc.xml.append:280
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_help\"]"
-msgstr ""
+msgstr "HELP"
 
 #: src-ru/data/text_misc.xml.append:281
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_home\"]"
@@ -899,99 +974,99 @@ msgstr "INSERT"
 
 #: src-ru/data/text_misc.xml.append:283
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp0\"]"
-msgstr ""
+msgstr "KP 0"
 
 #: src-ru/data/text_misc.xml.append:284
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp1\"]"
-msgstr ""
+msgstr "KP 1"
 
 #: src-ru/data/text_misc.xml.append:285
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp2\"]"
-msgstr ""
+msgstr "KP 2"
 
 #: src-ru/data/text_misc.xml.append:286
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp3\"]"
-msgstr ""
+msgstr "KP 3"
 
 #: src-ru/data/text_misc.xml.append:287
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp4\"]"
-msgstr ""
+msgstr "KP 4"
 
 #: src-ru/data/text_misc.xml.append:288
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp5\"]"
-msgstr ""
+msgstr "KP 5"
 
 #: src-ru/data/text_misc.xml.append:289
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp6\"]"
-msgstr ""
+msgstr "KP 6"
 
 #: src-ru/data/text_misc.xml.append:290
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp7\"]"
-msgstr ""
+msgstr "KP 7"
 
 #: src-ru/data/text_misc.xml.append:291
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp8\"]"
-msgstr ""
+msgstr "KP 8"
 
 #: src-ru/data/text_misc.xml.append:292
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp9\"]"
-msgstr ""
+msgstr "KP 9"
 
 #: src-ru/data/text_misc.xml.append:293
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_add\"]"
-msgstr ""
+msgstr "KP +"
 
 #: src-ru/data/text_misc.xml.append:294
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_decimal\"]"
-msgstr ""
+msgstr "KP ."
 
 #: src-ru/data/text_misc.xml.append:295
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_divide\"]"
-msgstr ""
+msgstr "KP /"
 
 #: src-ru/data/text_misc.xml.append:296
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_enter\"]"
-msgstr ""
+msgstr "KP ENTER"
 
 #: src-ru/data/text_misc.xml.append:297
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_equals\"]"
-msgstr ""
+msgstr "KP ="
 
 #: src-ru/data/text_misc.xml.append:298
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_multiply\"]"
-msgstr ""
+msgstr "KP *"
 
 #: src-ru/data/text_misc.xml.append:299
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_kp_subtract\"]"
-msgstr ""
+msgstr "KP -"
 
 #: src-ru/data/text_misc.xml.append:300
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_left\"]"
-msgstr ""
+msgstr "LEFT"
 
 #: src-ru/data/text_misc.xml.append:301
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_leftalt\"]"
-msgstr ""
+msgstr "LEFT ALT"
 
 #: src-ru/data/text_misc.xml.append:302
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_leftcontrol\"]"
-msgstr ""
+msgstr "LEFT CTRL"
 
 #: src-ru/data/text_misc.xml.append:303
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_leftmeta\"]"
-msgstr ""
+msgstr "LEFT META"
 
 #: src-ru/data/text_misc.xml.append:304
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_leftshift\"]"
-msgstr ""
+msgstr "LEFT SHIFT"
 
 #: src-ru/data/text_misc.xml.append:305
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_leftsuper\"]"
-msgstr ""
+msgstr "LEFT SUPER"
 
 #: src-ru/data/text_misc.xml.append:306
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_menu\"]"
-msgstr ""
+msgstr "MENU"
 
 #: src-ru/data/text_misc.xml.append:307
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_numlock\"]"
@@ -1007,7 +1082,7 @@ msgstr "PAGE UP"
 
 #: src-ru/data/text_misc.xml.append:310
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_pause\"]"
-msgstr ""
+msgstr "PAUSE"
 
 #: src-ru/data/text_misc.xml.append:311
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_power\"]"
@@ -1019,27 +1094,27 @@ msgstr "PRNT SCRN"
 
 #: src-ru/data/text_misc.xml.append:313
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_right\"]"
-msgstr ""
+msgstr "RIGHT"
 
 #: src-ru/data/text_misc.xml.append:314
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_rightalt\"]"
-msgstr ""
+msgstr "RIGHT ALT"
 
 #: src-ru/data/text_misc.xml.append:315
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_rightcontrol\"]"
-msgstr ""
+msgstr "RIGHT CTRL"
 
 #: src-ru/data/text_misc.xml.append:316
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_rightmeta\"]"
-msgstr ""
+msgstr "RIGHT META"
 
 #: src-ru/data/text_misc.xml.append:317
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_rightshift\"]"
-msgstr ""
+msgstr "RIGHT SHIFT"
 
 #: src-ru/data/text_misc.xml.append:318
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_rightsuper\"]"
-msgstr ""
+msgstr "RIGHT SUPER"
 
 #: src-ru/data/text_misc.xml.append:319
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_scrolllock\"]"
@@ -1047,7 +1122,7 @@ msgstr "SCROLL LOCK"
 
 #: src-ru/data/text_misc.xml.append:320
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_space\"]"
-msgstr ""
+msgstr "SPACE"
 
 #: src-ru/data/text_misc.xml.append:321
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_sysrq\"]"
@@ -1059,19 +1134,19 @@ msgstr "TAB"
 
 #: src-ru/data/text_misc.xml.append:323
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_undo\"]"
-msgstr ""
+msgstr "UNDO"
 
 #: src-ru/data/text_misc.xml.append:324
 msgid "data/text_misc.xml.append$//text[@name=\"keycap_up\"]"
-msgstr ""
+msgstr "UP"
 
 #: src-ru/data/text_misc.xml.append:328
 msgid "data/text_misc.xml.append$//text[@name=\"stats_shipbest\"]"
-msgstr ""
+msgstr "SHIP BEST"
 
 #: src-ru/data/text_misc.xml.append:329
 msgid "data/text_misc.xml.append$//text[@name=\"stats_topscores\"]"
-msgstr ""
+msgstr "TOP SCORES"
 
 #: src-ru/data/text_misc.xml.append:330
 msgid "data/text_misc.xml.append$//text[@name=\"stats_achievements\"]"
@@ -1079,7 +1154,7 @@ msgstr "ACHIEVEMENTS"
 
 #: src-ru/data/text_misc.xml.append:331
 msgid "data/text_misc.xml.append$//text[@name=\"stats_stats\"]"
-msgstr ""
+msgstr "STATISTICS"
 
 #: src-ru/data/text_misc.xml.append:333
 msgid "data/text_misc.xml.append$//text[@name=\"stats_ranking\"]"
@@ -1087,11 +1162,11 @@ msgstr "#\\1"
 
 #: src-ru/data/text_misc.xml.append:335
 msgid "data/text_misc.xml.append$//text[@name=\"defeated_stat\"]"
-msgstr ""
+msgstr "Ships Defeated"
 
 #: src-ru/data/text_misc.xml.append:336
 msgid "data/text_misc.xml.append$//text[@name=\"beacons_stat\"]"
-msgstr ""
+msgstr "Beacons Explored"
 
 #: src-ru/data/text_misc.xml.append:337
 msgid "data/text_misc.xml.append$//text[@name=\"scrap_stat\"]"
@@ -1103,79 +1178,79 @@ msgstr "Crew Hired"
 
 #: src-ru/data/text_misc.xml.append:339
 msgid "data/text_misc.xml.append$//text[@name=\"most_defeated_stat\"]"
-msgstr ""
+msgstr "Most Ships Defeated"
 
 #: src-ru/data/text_misc.xml.append:340
 msgid "data/text_misc.xml.append$//text[@name=\"most_beacons_stat\"]"
-msgstr ""
+msgstr "Most Beacons Explored"
 
 #: src-ru/data/text_misc.xml.append:341
 msgid "data/text_misc.xml.append$//text[@name=\"most_scrap_stat\"]"
-msgstr ""
+msgstr "Most Scrap Collected"
 
 #: src-ru/data/text_misc.xml.append:342
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_stat\"]"
-msgstr ""
+msgstr "Most Crew Hired"
 
 #: src-ru/data/text_misc.xml.append:343
 msgid "data/text_misc.xml.append$//text[@name=\"total_defeated_stat\"]"
-msgstr ""
+msgstr "Total Ships Defeated"
 
 #: src-ru/data/text_misc.xml.append:344
 msgid "data/text_misc.xml.append$//text[@name=\"total_beacons_stat\"]"
-msgstr ""
+msgstr "Total Beacons Explored"
 
 #: src-ru/data/text_misc.xml.append:345
 msgid "data/text_misc.xml.append$//text[@name=\"total_scrap_stat\"]"
-msgstr ""
+msgstr "Total Scrap Collected"
 
 #: src-ru/data/text_misc.xml.append:346
 msgid "data/text_misc.xml.append$//text[@name=\"total_crew_stat\"]"
-msgstr ""
+msgstr "Total Crew Hired"
 
 #: src-ru/data/text_misc.xml.append:348
 msgid "data/text_misc.xml.append$//text[@name=\"crew_evasions\"]"
-msgstr ""
+msgstr "Piloted Evasions"
 
 #: src-ru/data/text_misc.xml.append:349
 msgid "data/text_misc.xml.append$//text[@name=\"crew_repairs\"]"
-msgstr ""
+msgstr "Repairs"
 
 #: src-ru/data/text_misc.xml.append:350
 msgid "data/text_misc.xml.append$//text[@name=\"crew_kills\"]"
-msgstr ""
+msgstr "Combat Kills"
 
 #: src-ru/data/text_misc.xml.append:351
 msgid "data/text_misc.xml.append$//text[@name=\"crew_jumps\"]"
-msgstr ""
+msgstr "Jumps Survived"
 
 #: src-ru/data/text_misc.xml.append:352
 msgid "data/text_misc.xml.append$//text[@name=\"crew_masteries\"]"
-msgstr ""
+msgstr "Skill Masteries Earned"
 
 #: src-ru/data/text_misc.xml.append:353
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_evasions\"]"
-msgstr ""
+msgstr "Most Piloted Evasions"
 
 #: src-ru/data/text_misc.xml.append:354
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_repairs\"]"
-msgstr ""
+msgstr "Most Repairs"
 
 #: src-ru/data/text_misc.xml.append:355
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_kills\"]"
-msgstr ""
+msgstr "Most Combat Kills"
 
 #: src-ru/data/text_misc.xml.append:356
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_jumps\"]"
-msgstr ""
+msgstr "Most Jumps Survived"
 
 #: src-ru/data/text_misc.xml.append:357
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_masteries\"]"
-msgstr ""
+msgstr "Most Skill Masteries Earned"
 
 #: src-ru/data/text_misc.xml.append:359
 msgid "data/text_misc.xml.append$//text[@name=\"records_heading\"]"
-msgstr ""
+msgstr "Session Records:"
 
 #: src-ru/data/text_misc.xml.append:360
 msgid "data/text_misc.xml.append$//text[@name=\"crew_heading\"]"
@@ -1183,19 +1258,19 @@ msgstr "Crew Records:"
 
 #: src-ru/data/text_misc.xml.append:361
 msgid "data/text_misc.xml.append$//text[@name=\"stats_heading\"]"
-msgstr ""
+msgstr "Session Stats:"
 
 #: src-ru/data/text_misc.xml.append:362
 msgid "data/text_misc.xml.append$//text[@name=\"total_heading\"]"
-msgstr ""
+msgstr "Totals:"
 
 #: src-ru/data/text_misc.xml.append:364
 msgid "data/text_misc.xml.append$//text[@name=\"final_score\"]"
-msgstr ""
+msgstr "Final Score"
 
 #: src-ru/data/text_misc.xml.append:365
 msgid "data/text_misc.xml.append$//text[@name=\"total_games\"]"
-msgstr ""
+msgstr "Total Games Played"
 
 #: src-ru/data/text_misc.xml.append:366
 msgid "data/text_misc.xml.append$//text[@name=\"total_victories\"]"
@@ -1207,11 +1282,11 @@ msgstr "General Progression:"
 
 #: src-ru/data/text_misc.xml.append:369
 msgid "data/text_misc.xml.append$//text[@name=\"distance_heading\"]"
-msgstr ""
+msgstr "Going the Distance:"
 
 #: src-ru/data/text_misc.xml.append:370
 msgid "data/text_misc.xml.append$//text[@name=\"skill_heading\"]"
-msgstr ""
+msgstr "Skill and Equipment Feats:"
 
 #: src-ru/data/text_misc.xml.append:372
 msgid "data/text_misc.xml.append$//text[@name=\"new_crew\"]"
@@ -1219,7 +1294,7 @@ msgstr "New!"
 
 #: src-ru/data/text_misc.xml.append:373
 msgid "data/text_misc.xml.append$//text[@name=\"new_achievement\"]"
-msgstr ""
+msgstr "New!"
 
 #: src-ru/data/text_misc.xml.append:374
 msgid "data/text_misc.xml.append$//text[@name=\"new_score\"]"
@@ -1231,35 +1306,36 @@ msgstr "Type A"
 
 #: src-ru/data/text_misc.xml.append:377
 msgid "data/text_misc.xml.append$//text[@name=\"type_b\"]"
-msgstr ""
+msgstr "Type B"
 
 #: src-ru/data/text_misc.xml.append:378
 msgid "data/text_misc.xml.append$//text[@name=\"type_c\"]"
-msgstr ""
+msgstr "Type c"
 
 #: src-ru/data/text_misc.xml.append:379
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"shipselect_type_suffix\"]"
 msgstr "\\1"
 
 #: src-ru/data/text_misc.xml.append:381
 msgid "data/text_misc.xml.append$//text[@name=\"victory_ach_title\"]"
-msgstr ""
+msgstr "\\1: Victory"
 
 #: src-ru/data/text_misc.xml.append:382
 msgid "data/text_misc.xml.append$//text[@name=\"victory_ach\"]"
-msgstr ""
+msgstr "Defeat the Flagship with any layout of the \\1"
 
 #: src-ru/data/text_misc.xml.append:383
 msgid "data/text_misc.xml.append$//text[@name=\"quest_ach_title\"]"
-msgstr ""
+msgstr "\\1: Quest"
 
 #: src-ru/data/text_misc.xml.append:384
 msgid "data/text_misc.xml.append$//text[@name=\"quest_ach\"]"
-msgstr ""
+msgstr "Complete the unlock quest for the \\1"
 
 #: src-ru/data/text_misc.xml.append:386
 msgid "data/text_misc.xml.append$//text[@name=\"achieved_with\"]"
-msgstr ""
+msgstr "Achieved with \\1 (\\2)"
 
 #: src-ru/data/text_misc.xml.append:388
 msgid "data/text_misc.xml.append$//text[@name=\"ach_unlocked\"]"
@@ -1267,23 +1343,23 @@ msgstr "Achievement Unlocked!"
 
 #: src-ru/data/text_misc.xml.append:389
 msgid "data/text_misc.xml.append$//text[@name=\"layout_unlocked\"]"
-msgstr ""
+msgstr "Layout Unlocked!"
 
 #: src-ru/data/text_misc.xml.append:390
 msgid "data/text_misc.xml.append$//text[@name=\"ship_unlocked\"]"
-msgstr ""
+msgstr "Ship Unlocked!"
 
 #: src-ru/data/text_misc.xml.append:392
 msgid "data/text_misc.xml.append$//text[@name=\"ach_easy\"]"
-msgstr ""
+msgstr "Unlocked on EASY"
 
 #: src-ru/data/text_misc.xml.append:393
 msgid "data/text_misc.xml.append$//text[@name=\"ach_normal\"]"
-msgstr ""
+msgstr "Unlocked on NORMAL"
 
 #: src-ru/data/text_misc.xml.append:394
 msgid "data/text_misc.xml.append$//text[@name=\"ach_hard\"]"
-msgstr ""
+msgstr "Unlocked on HARD"
 
 #: src-ru/data/text_misc.xml.append:396
 msgid "data/text_misc.xml.append$//text[@name=\"victory\"]"
@@ -1291,11 +1367,11 @@ msgstr "Victory"
 
 #: src-ru/data/text_misc.xml.append:397
 msgid "data/text_misc.xml.append$//text[@name=\"advanced\"]"
-msgstr ""
+msgstr "Advanced"
 
 #: src-ru/data/text_misc.xml.append:398
 msgid "data/text_misc.xml.append$//text[@name=\"scorelist_score\"]"
-msgstr ""
+msgstr "SCORE     \\1"
 
 #: src-ru/data/text_misc.xml.append:399
 msgid "data/text_misc.xml.append$//text[@name=\"scorelist_sector\"]"
@@ -1303,7 +1379,7 @@ msgstr "SECTOR    \\1"
 
 #: src-ru/data/text_misc.xml.append:400
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_score\"]"
-msgstr ""
+msgstr "SCORE: \\1"
 
 #: src-ru/data/text_misc.xml.append:401
 msgid "data/text_misc.xml.append$//text[@name=\"easy\"]"
@@ -1311,11 +1387,11 @@ msgstr "Easy"
 
 #: src-ru/data/text_misc.xml.append:402
 msgid "data/text_misc.xml.append$//text[@name=\"normal\"]"
-msgstr ""
+msgstr "Normal"
 
 #: src-ru/data/text_misc.xml.append:403
 msgid "data/text_misc.xml.append$//text[@name=\"hard\"]"
-msgstr ""
+msgstr "Hard"
 
 #: src-ru/data/text_misc.xml.append:405
 msgid "data/text_misc.xml.append$//text[@name=\"new_high\"]"
@@ -1324,116 +1400,190 @@ msgstr "New High Score!"
 #: src-ru/data/text_misc.xml.append:409
 msgid "data/text_misc.xml.append$//text[@name=\"tip_beams\"]"
 msgstr ""
+"Tip: For every shield bar on the enemy, a beam's damage is reduced by one. "
+"For example, a three damage beam against two shield bars will cause one "
+"damage in every room it hits."
 
 #: src-ru/data/text_misc.xml.append:411
 msgid "data/text_misc.xml.append$//text[@name=\"tip_fire_beams\"]"
 msgstr ""
+"Tip: Most fire beams cannot pierce shields; just one bubble will render them "
+"completely ineffectual."
 
 #: src-ru/data/text_misc.xml.append:413
 msgid "data/text_misc.xml.append$//text[@name=\"tip_beams_no_sp\"]"
 msgstr ""
+"Tip: These beams don't deal any damage if the enemy has at least one shield "
+"bubble up. The beam damages crew when it passes over the square on which "
+"they stand."
 
 #: src-ru/data/text_misc.xml.append:415
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ex_beams\"]"
 msgstr ""
+"Tip: Zolton beams are 50% longer than their regular counterparts, but they "
+"can't fire if there are less than 30 missiles in the hold. They also have an "
+"increased chance to start a fire or cause a breach."
 
 #: src-ru/data/text_misc.xml.append:417
 msgid "data/text_misc.xml.append$//text[@name=\"tip_sys_beams\"]"
 msgstr ""
+"Tip: These beams are ideal for boarding because they don't deal damage to "
+"the ship's hull. Shields completely block all damage from these beams. The "
+"beam damages crew when it passes over the square on which they stand."
 
 #: src-ru/data/text_misc.xml.append:419
 msgid "data/text_misc.xml.append$//text[@name=\"tip_beams_bio\"]"
 msgstr ""
+"Tip: For beam weapons to deal damage to enemy crew members, the beam must "
+"strike targets directly. \\n"
+"As Bio-beams cannot get through shields, they need the support of other "
+"weapons or drones to effectively kill the crew."
 
 #: src-ru/data/text_misc.xml.append:421
 msgid "data/text_misc.xml.append$//text[@name=\"tip_missiles\"]"
 msgstr ""
+"Tip: Missiles will ignore all enemy shields, but cost one missile to launch. "
+"Enemy defense drones will shoot down incoming missiles."
 
 #: src-ru/data/text_misc.xml.append:423
 msgid "data/text_misc.xml.append$//text[@name=\"tip_bombs\"]"
 msgstr ""
+"Tip: Bombs teleport past shields and defense drones to land directly on the "
+"ship. Like missiles, they cost one missile to launch. They never damage "
+"hull, but can be effective at disrupting crew and systems. You can even "
+"launch them at boarders on your own ship."
 
 #: src-ru/data/text_misc.xml.append:425
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ion\"]"
 msgstr ""
+"Tip: For every one point of ion damage, one power bar is removed from the "
+"target system and it is then locked for 5 seconds, preventing re-powering. "
+"If an ion weapon hits shields, the damage is automatically applied to the "
+"Shield System."
 
 #: src-ru/data/text_misc.xml.append:427
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ion_fire\"]"
 msgstr ""
+"Tip: For every one point of ion damage, one power bar is removed from the "
+"target system and it is then locked it for 5 seconds, preventing re-"
+"powering. If an ion weapon hits shields, the damage is automatically applied "
+"to the Shield. If the shield has been disabled, there is a 30% chance to "
+"start a fire in the room."
 
 #: src-ru/data/text_misc.xml.append:429
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ion_heavy\"]"
 msgstr ""
+"Tip: For every one point of ion damage, one power bar is removed from the "
+"target system and it is then locked it for 5 seconds, preventing re-"
+"powering. Heavy ion weapons not only ionize systems but also damage them. If "
+"an ion weapon hits shields, the damage is automatically applied to the "
+"Shield System."
 
 #: src-ru/data/text_misc.xml.append:431
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ion_heavy_fire\"]"
 msgstr ""
+"Tip: For every one point of ion damage, one power bar is removed from the "
+"target system and it is then locked it for 5 seconds, preventing re-"
+"powering. Heavy ion weapons not only ionize systems but also damage them. If "
+"an ion weapon hits shields, the damage is automatically applied to the "
+"Shield System. If the shield has been disabled, there is a 30% chance to "
+"start a fire in the room."
 
 #: src-ru/data/text_misc.xml.append:433
 msgid "data/text_misc.xml.append$//text[@name=\"tip_photo\"]"
 msgstr ""
+"Tip: The Lanius found use for this ancient photon weapon even though it "
+"isn't that accurate."
 
 #: src-ru/data/text_misc.xml.append:435
 msgid "data/text_misc.xml.append$//text[@name=\"tip_laser\"]"
 msgstr ""
+"Tip: Each laser shot will be blocked by a single shield bubble, regardless "
+"of the laser's damage."
 
 #: src-ru/data/text_misc.xml.append:437
 msgid "data/text_misc.xml.append$//text[@name=\"tip_laser_art\"]"
 msgstr ""
+"Tip: Artillery Lasers cause tremendous damage and are able to pierce two "
+"shield bubbles."
 
 #: src-ru/data/text_misc.xml.append:439
 msgid "data/text_misc.xml.append$//text[@name=\"tip_rail\"]"
 msgstr ""
+"Tip: Railguns are similar to artillery lasers but fire a faster ionized "
+"projectile and therefore are much more likely to cause a breach than start a "
+"fire."
 
 #: src-ru/data/text_misc.xml.append:441
 msgid "data/text_misc.xml.append$//text[@name=\"tip_hull\"]"
 msgstr ""
+"Tip: Hull weapons deal double damage if they hit a room that does not have a "
+"system or a subsystem."
 
 #: src-ru/data/text_misc.xml.append:443
 msgid "data/text_misc.xml.append$//text[@name=\"tip_charge\"]"
 msgstr ""
+"Tip: Charge weapons can be charged multiple times to generate more "
+"firepower. You can save time and fire the weapon prematurely but it will "
+"have fewer shots ready as a result."
 
 #: src-ru/data/text_misc.xml.append:445
 msgid "data/text_misc.xml.append$//text[@name=\"tip_chain_laser\"]"
 msgstr ""
+"Tip: Chain lasers decrease their cooldown every time they fire. Check the "
+"green lights on the weapon to see how many times it has fired."
 
 #: src-ru/data/text_misc.xml.append:447
 msgid "data/text_misc.xml.append$//text[@name=\"tip_chain_ion\"]"
 msgstr ""
+"Tip: The Chain Ion decreases its cooldown every time it fires. Check the "
+"green lights on the weapon to see how many times it has fired."
 
 #: src-ru/data/text_misc.xml.append:449
 msgid "data/text_misc.xml.append$//text[@name=\"tip_adaptive_ion\"]"
 msgstr ""
+"Tip: The Adaptive Ion increases its damage every time it fires. Check the "
+"green lights on the weapon to see how many times it has fired."
 
 #: src-ru/data/text_misc.xml.append:451
 msgid "data/text_misc.xml.append$//text[@name=\"tip_chain_vulkan\"]"
 msgstr ""
+"Tip: Chain Vulcans take a long time to warm up, but then they reach an "
+"astonishing rate of fire. Indicators on the weapon show how many times it "
+"has been fired."
 
 #: src-ru/data/text_misc.xml.append:453
 msgid "data/text_misc.xml.append$//text[@name=\"tip_flak\"]"
 msgstr ""
+"Tip: Flak weapons target an area instead of a single room. This loss of "
+"accuracy means more firepower and speed than their laser counterparts."
 
 #: src-ru/data/text_misc.xml.append:455
 msgid "data/text_misc.xml.append$//text[@name=\"tip_crystal\"]"
 msgstr ""
+"Tip: Crystal weapons pierce shields but are vulnerable to even basic defense "
+"drones."
 
 #: src-ru/data/text_misc.xml.append:457
 msgid "data/text_misc.xml.append$//text[@name=\"tip_combat\"]"
 msgstr ""
+"Tip: Combat Drones require 1 drone part to deploy for each new enemy. They "
+"will attack the enemy as long as they are powered."
 
 #: src-ru/data/text_misc.xml.append:459
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_repair_combat\"]"
 msgstr ""
-"Tip: This drone is ideal for capturing enemy ships intact. Make sure to keep"
-" it away from your boarding party!"
+"Tip: This drone is ideal for capturing enemy ships intact. Make sure to keep "
+"it away from your boarding party!"
 
 #: src-ru/data/text_misc.xml.append:461
 msgid "data/text_misc.xml.append$//text[@name=\"tip_combat_hal\"]"
 msgstr ""
+"Tip: Combat HAL Drones are approximately 20% faster than their conventional "
+"counterparts. In addition, the characteristics of their weapons are often "
+"superior."
 
 #: src-ru/data/text_misc.xml.append:463
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ham\"]"
 msgstr ""
 "Tip: It is said that there is a way to change the drone's beam weapon..."
@@ -1441,13 +1591,16 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:465
 msgid "data/text_misc.xml.append$//text[@name=\"tip_defense\"]"
 msgstr ""
+"Tip: Defense Drones require 1 drone part to deploy at every new location. "
+"They will defend your ship as long as they are powered."
 
 #: src-ru/data/text_misc.xml.append:467
 msgid "data/text_misc.xml.append$//text[@name=\"tip_boarding\"]"
 msgstr ""
+"Tip: Boarding Drones require 1 drone part to deploy for each new enemy. They "
+"will board the enemy ship and attack as long as they are powered."
 
 #: src-ru/data/text_misc.xml.append:469
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_crew\"]"
 msgstr ""
 "Tip: System Repair Drones require 1 drone part to deploy, but will not need "
@@ -1455,7 +1608,6 @@ msgstr ""
 "crew as long as they are powered."
 
 #: src-ru/data/text_misc.xml.append:471
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_battle\"]"
 msgstr ""
 "Tip: Anti-personnel drones requires 1 drone part to deploy, but will not "
@@ -1463,107 +1615,159 @@ msgstr ""
 "your crew as long as they are powered."
 
 #: src-ru/data/text_misc.xml.append:473
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_crew_hal\"]"
 msgstr ""
 "Tip: HAL Repair Drones require 1 drone part to deploy, but will not need to "
-"be deployed again until destroyed. They stay on your ship and help your crew"
-" even if Drone Control is completely destroyed. Attention! A shutdown button"
-" is not provided!"
+"be deployed again until destroyed. They stay on your ship and help your crew "
+"even if Drone Control is completely destroyed. Attention! A shutdown button "
+"is not provided!"
 
 #: src-ru/data/text_misc.xml.append:475
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_remkorp\"]"
 msgstr ""
-"Tip: The Hull Repair Drone disappears after the repair is finished, but to "
-"start it again you will need to use an another drone part."
+"Tip: The Hull Repair Drone disappears after the repair is completed. To "
+"start it up again you will need to use an another drone part."
 
 #: src-ru/data/text_misc.xml.append:477
 msgid "data/text_misc.xml.append$//text[@name=\"tip_repair_bomb\"]"
 msgstr ""
+"Tip: Bombs never miss when targeting your own ship, so this bomb is a "
+"guaranteed full heal for any of your systems."
 
 #: src-ru/data/text_misc.xml.append:478
 msgid "data/text_misc.xml.append$//text[@name=\"tip_heal_bomb\"]"
 msgstr ""
+"Tip: Remember, bombs can miss the enemy ship so don't count on this as a "
+"guaranteed heal for your boarders.\\n"
+"If used on board your own ship, then it will be a guaranteed heal as it "
+"cannot miss!"
 
 #: src-ru/data/text_misc.xml.append:479
 msgid "data/text_misc.xml.append$//text[@name=\"tip_fire_beam\"]"
 msgstr ""
+"Tip: This Fire Beam does no hull damage, so it cannot pierce any amount of "
+"shields."
 
 #: src-ru/data/text_misc.xml.append:480
 msgid "data/text_misc.xml.append$//text[@name=\"tip_crew_beam\"]"
 msgstr ""
+"Tip: This Anti-Bio Beam does no hull damage, so it cannot pierce any amount "
+"of shields. It also won't hurt drones!"
 
 #: src-ru/data/text_misc.xml.append:482
 msgid "data/text_misc.xml.append$//text[@name=\"tip_uwb\"]"
 msgstr ""
+"Tip: The weapon inside the universal weapon mount recharges 10% faster than "
+"its regular counterpart. The type of weapon can only be determined by its "
+"characteristics."
 
 #: src-ru/data/text_misc.xml.append:484
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_beams_focus\"]"
 msgstr ""
+"Tip: Point Beams can damage only one room, but the damage is higher than "
+"that of long beams of the same level. Each shield layer reduces the damage "
+"from the beams by 1."
 
 #: src-ru/data/text_misc.xml.append:486
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_beams_industrial\"]"
 msgstr ""
+"Tip: Industrial beams are extremely long, but not particularly fast. Being "
+"extremely long, these beams only find their worth against larger ships."
 
 #: src-ru/data/text_misc.xml.append:488
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_missiles_swarm\"]"
 msgstr ""
+"Tip: Missile batteries inflict reduced damage to systems and crew. They "
+"ignore all shields and require 1 missile to launch. Enemy defense drones can "
+"shoot them down."
 
 #: src-ru/data/text_misc.xml.append:490
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_mines\"]"
 msgstr ""
+"Tip: Mines move slowly to their targets and are unable to damage systems and "
+"crew. Ammunition-based, they ignore all shields, but any enemy defense drone "
+"can shoot them down."
 
 #: src-ru/data/text_misc.xml.append:492
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_chaff\"]"
 msgstr ""
+"Tip: Chaff Launchers deal no damage, but their projectiles will be targeted "
+"by enemy defense drones, opening an attack window for missile strikes."
 
 #: src-ru/data/text_misc.xml.append:494
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_laser_light\"]"
 msgstr ""
+"Tip: Anti-personnel lasers can pass through weak shields and super shields "
+"to injure enemy crew, but cannot deplete shields or deal hull damage."
 
 #: src-ru/data/text_misc.xml.append:496
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_laser_light_small\"]"
 msgstr ""
+"Tip: Small anti-personnel lasers cannot pass through shields and super "
+"shields. They fire with a bit of a spread."
 
 #: src-ru/data/text_misc.xml.append:498
 msgid "data/text_misc.xml.append$//text[@name=\"tip_slurmgun\"]"
 msgstr ""
+"Tip: These unique Slurm lasers pass through all shields to injure enemy crew "
+"and damage systems, but cannot deplete shields or deal hull damage."
 
 #: src-ru/data/text_misc.xml.append:500
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_laser_auto\"]"
 msgstr ""
+"Tip: Auto lasers can continuously suppress enemy shields, similar to certain "
+"combat drones. Each laser shot will be blocked by a single shield bubble."
 
 #: src-ru/data/text_misc.xml.append:502
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_laser_scatter\"]"
 msgstr ""
+"Tip: Scatter lasers cannot damage systems or crew. Each laser shot will be "
+"blocked by a single shield bubble, regardless of the laser's damage."
 
 #: src-ru/data/text_misc.xml.append:504
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_heavy_scatter\"]"
 msgstr ""
+"Tip: Heavy scatter lasers inflict reduced damage to systems and crew. Each "
+"laser shot will be blocked by a single shield bubble, regardless of the "
+"laser's damage."
 
 #: src-ru/data/text_misc.xml.append:506
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_prism\"]"
 msgstr ""
+"Tip: Prismatic Avatar lasers inflict ion damage in addition to normal "
+"damage, with an added chance of causing a breach."
 
 #: src-ru/data/text_misc.xml.append:508
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_bombs_cluster\"]"
 msgstr ""
+"Tip: Cluster Bombs teleport several rounds through shields, ignoring "
+"defensive drones, appearing directly on the ship. They require one missile "
+"to launch and cannot damage hull, but may be effective against crew and "
+"systems. When you use them on your own ship only one bomb will appear."
 
 #: src-ru/data/text_misc.xml.append:510
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_effector\"]"
 msgstr ""
+"Tip: Effectors bypass shields and emit ion damage directly on the targeted "
+"system. For every one point of ion damage, one power bar is removed from the "
+"target system and it is then locked it for 5 seconds, preventing re-powering."
 
 #: src-ru/data/text_misc.xml.append:512
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_missiles_tech\"]"
 msgstr ""
+"Tip: Techno-missiles contain a stealth system that allows them to bypass "
+"basic defense drones. They ignore all enemy shields, but require 1 missile "
+"to launch. Advanced defense drones can still shoot them down."
 
 #: src-ru/data/text_misc.xml.append:514
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_mines_tech\"]"
 msgstr ""
+"Tip: Techno-mines contain a stealth system that allows them to bypass basic "
+"defense drones. They move slowly to their targets and are unable to damage "
+"systems and crew. Ammunition-based, they ignore all shields, but advanced "
+"defense drones can still shoot them down."
 
 #: src-ru/data/text_misc.xml.append:516
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_combat_stealth\"]"
 msgstr ""
 "Tip: Combat Stealth Drones evade nearly every if not all shots fired from "
@@ -1574,66 +1778,107 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:518
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_beam_adaptive\"]"
 msgstr ""
+"Tip: Adaptive Beams increase their damage each time they are fired. When the "
+"beam's indicator turns green, it means that a level of damage has been "
+"gained."
 
 #: src-ru/data/text_misc.xml.append:520
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_stungun\"]"
 msgstr ""
+"Tip: Paralyzers ignore shields and have a good chance to immobilize all the "
+"crew in a given radius."
 
 #: src-ru/data/text_misc.xml.append:522
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_plasma\"]"
 msgstr ""
+"Tip: Plasma Throwers fire over a wide area and have a high chance to start a "
+"fire in the affected rooms. They cannot bring down shields, but ignore 1 "
+"shield bubble and super shields."
 
 #: src-ru/data/text_misc.xml.append:524
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_chain_laser_light\"]"
 msgstr ""
+"Tip: Light lasers can pass through weak shields and super shields to injure "
+"enemy crew, but cannot deplete shields or deal hull damage. Chain lasers "
+"decrease in cooldown each time they fire."
 
 #: src-ru/data/text_misc.xml.append:526
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_ion_pierce\"]"
 msgstr ""
+"Tip: If a phase ion weapon comes in contact with shields, its ion damage is "
+"automatically applied to the shield system. The phasing projectile will then "
+"pass through the shields and deal additional ion damage to any system it "
+"hits afterwards."
 
 #: src-ru/data/text_misc.xml.append:528
 msgid "data/text_misc.xml.append$//text[@name=\"tip_prototype\"]"
 msgstr ""
+"Tip: Prototypes are powerful and unique weapons, but they often need the "
+"support of other weaponry."
 
 #: src-ru/data/text_misc.xml.append:530
 msgid "data/text_misc.xml.append$//text[@name=\"tip_prototype2\"]"
 msgstr ""
+"Tip: Prototypes are powerful and unique weapons, but they often need the "
+"support of other weaponry. This prototype has been damaged in combat, so its "
+"performance is reduced, but it also requires less power."
 
 #: src-ru/data/text_misc.xml.append:532
 msgid "data/text_misc.xml.append$//text[@name=\"tip_blaster\"]"
 msgstr ""
+"Tip: Created by Hacker factions, pulse blasters stun crew and shields alike, "
+"and may also cause breaches or start fires. Various modifications of pulse "
+"blasters have unique properties."
 
 #: src-ru/data/text_misc.xml.append:534
 msgid "data/text_misc.xml.append$//text[@name=\"tip_no_missiles\"]"
 msgstr ""
+"Tip: This weapon uses power from your reactor to replicate its own "
+"explosives, allowing you to fire it without consuming any ammo whatsoever."
 
 #: src-ru/data/text_misc.xml.append:536
 msgid "data/text_misc.xml.append$//text[@name=\"tip_laser_orden\"]"
 msgstr ""
+"Tip: Order lasers differ from ordinary lasers because of their high chance "
+"of fire."
 
 #: src-ru/data/text_misc.xml.append:538
 msgid "data/text_misc.xml.append$//text[@name=\"tip_speed_orden\"]"
 msgstr ""
+"Tip: This weapon's projectiles fly so fast that defense drones don't even "
+"get the chance to shoot them down."
 
 #: src-ru/data/text_misc.xml.append:540
 msgid "data/text_misc.xml.append$//text[@name=\"tip_tahion\"]"
 msgstr ""
+"Tip: Projectiles from a tachyon cannon are impossible to intercept, set fire "
+"to rooms, and stun the crew."
 
 #: src-ru/data/text_misc.xml.append:542
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ozu\"]"
 msgstr ""
+"Tip: Single-Charge Installations are ready to use right at the start of a "
+"battle. They don't require any power, but can only fire once per battle. "
+"Some other weapon must be powered in order for it to fire. Unable to reload "
+"if you jump away from combat."
 
 #: src-ru/data/text_misc.xml.append:544
 msgid "data/text_misc.xml.append$//text[@name=\"tip_smasher\"]"
 msgstr ""
+"Tip: This enormous cannon expends 3 missiles every volley. Ignores all "
+"shields."
 
 #: src-ru/data/text_misc.xml.append:545
 msgid "data/text_misc.xml.append$//text[@name=\"tip_morph\"]"
 msgstr ""
+"Tip: Morph-gun projectiles can't be intercepted, as they fly towards their "
+"targets through a parallel dimension. Not even shields can stop them."
 
 #: src-ru/data/text_misc.xml.append:546
 msgid "data/text_misc.xml.append$//text[@name=\"tip_magman\"]"
 msgstr ""
+"Tip: Pyroformer projectiles can't be intercepted, as they fly towards their "
+"targets through a parallel dimension. Not even shields can stop them."
 
 #: src-ru/data/text_misc.xml.append:551
 msgid "data/text_misc.xml.append$//text[@name=\"welcome_hangar_pc\"]"
@@ -1820,9 +2065,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"typebutton_type_c\"]"
 msgstr ""
 
 #: src-ru/data/text_misc.xml.append:617
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"no_type_c\"]"
-msgstr "Нет корабля"
+msgstr "No Type C"
 
 #: src-ru/data/text_misc.xml.append:619
 msgid "data/text_misc.xml.append$//text[@name=\"shiplist_accept_button\"]"
@@ -2876,11 +3120,13 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:968
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_temporal\"]"
-msgstr ""
+msgstr "Temporal Manipulator: Changes the flow of time in one room."
 
 #: src-ru/data/text_misc.xml.append:969
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_temporal_enemy\"]"
 msgstr ""
+"Temporal manipulator: The enemy can use this to change the flow of time in "
+"one room."
 
 #: src-ru/data/text_misc.xml.append:971
 msgid "data/text_misc.xml.append$//text[@name=\"temporal\"]"
@@ -2948,7 +3194,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:995
 msgid "data/text_misc.xml.append$//text[@name=\"crew_statboost_chance\"]"
-msgstr ""
+msgstr "Crew Effect Chance: \\1%"
 
 #: src-ru/data/text_misc.xml.append:998
 msgid "data/text_misc.xml.append$//text[@name=\"warning_pds_all\"]"
@@ -2956,11 +3202,11 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:999
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_PDS_FLEET_ALL\"]"
-msgstr ""
+msgstr "The fleet's anti-ship batteries are firing at all ships in the area."
 
 #: src-ru/data/text_misc.xml.append:1000
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_PDS_FLEET_ENEMY\"]"
-msgstr ""
+msgstr "The fleet's anti-ship batteries are aimed at your enemy."
 
 #: src-ru/data/text_misc.xml.append:1004
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter_instant\"]"
