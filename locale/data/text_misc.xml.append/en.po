@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-07 09:37+0000\n"
+"PO-Revision-Date: 2024-11-09 16:37+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datatext_miscxmlappend/en/>\n"
@@ -110,7 +110,6 @@ msgid "data/text_misc.xml.append$//text[@name=\"escape_reset\"]"
 msgstr "RESTART"
 
 #: src-ru/data/text_misc.xml.append:46
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"escape_options\"]"
 msgstr "OPTIONS"
 
@@ -1313,7 +1312,6 @@ msgid "data/text_misc.xml.append$//text[@name=\"type_c\"]"
 msgstr "Type c"
 
 #: src-ru/data/text_misc.xml.append:379
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"shipselect_type_suffix\"]"
 msgstr "\\1"
 
@@ -1883,30 +1881,73 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:551
 msgid "data/text_misc.xml.append$//text[@name=\"welcome_hangar_pc\"]"
 msgstr ""
+"Welcome to the Federation Hangar!\\n"
+"\\n"
+"Here you'll be able to choose your ship, name it, and name your crew. Right "
+"now only the Kestrel is available to you, but as you play you will unlock "
+"more.\\n"
+"\\n"
+"You can change the difficulty setting in the top right. If you're new, you "
+"might want to give Easy a shot first."
 
 #: src-ru/data/text_misc.xml.append:552
 msgid "data/text_misc.xml.append$//text[@name=\"welcome_hangar_ipad\"]"
 msgstr ""
+"Welcome to the Federation Hangar!\\n"
+"\\n"
+"Here you'll be able to choose your ship, name it, and name your crew. Right "
+"now only the Kestrel is available to you, but as you play you will unlock "
+"more.\\n"
+"\\n"
+"You can change the difficulty setting on the right side of the screen. If "
+"you're new, you might want to give Easy a shot first."
 
 #: src-ru/data/text_misc.xml.append:554
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_list_open\"]"
 msgstr ""
+"You've unlocked a new ship!\\n"
+"\\n"
+"Click on the LIST button to see your current ships and find out how to "
+"unlock more."
 
 #: src-ru/data/text_misc.xml.append:556
 msgid "data/text_misc.xml.append$//text[@name=\"list_tutorial\"]"
 msgstr ""
+"This is the ship list. Here you can get a summary of all of your "
+"achievements and see your progress in unlocking all of the playable ships."
 
 #: src-ru/data/text_misc.xml.append:557
 msgid "data/text_misc.xml.append$//text[@name=\"list_tutorial_2\"]"
 msgstr ""
+"To unlock a new ship, you have two options:\\n"
+"\\n"
+"Find and complete a unique quest within the game world. These will often "
+"start in the 'homeworld' sectors.\\n"
+"\\n"
+"Alternatively, beat the game with the previous ship in the list to unlock "
+"the next.\\n"
+"\\n"
+"Hover over any ship to get more details!"
 
 #: src-ru/data/text_misc.xml.append:558
 msgid "data/text_misc.xml.append$//text[@name=\"list_tutorial_2_demo\"]"
 msgstr ""
+"As this is only the demo version of FTL, you are not able to unlock "
+"additional ships. But the full version has 10 playable ships, each with "
+"multiple unique layouts."
 
 #: src-ru/data/text_misc.xml.append:559
 msgid "data/text_misc.xml.append$//text[@name=\"list_tutorial_2_ipad\"]"
 msgstr ""
+"To unlock a new ship, you have two options:\\n"
+"\\n"
+"Find and complete a unique quest within the game world. These will often "
+"start in the 'homeworld' sectors.\\n"
+"\\n"
+"Alternatively, beat the game with the previous ship in the list to unlock "
+"the next.\\n"
+"\\n"
+"Tap on any ship to get more details!"
 
 #: src-ru/data/text_misc.xml.append:561
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_frame_ship\"]"
@@ -1922,15 +1963,17 @@ msgstr "CREW"
 
 #: src-ru/data/text_misc.xml.append:565
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_achievements_title\"]"
-msgstr ""
+msgstr "Complete 2 for Layout B"
 
 #: src-ru/data/text_misc.xml.append:566
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_advanced_title\"]"
-msgstr ""
+msgstr "Advanced Edition Content"
 
 #: src-ru/data/text_misc.xml.append:568
 msgid "data/text_misc.xml.append$//text[@name=\"hangar_advanced_warning\"]"
 msgstr ""
+"ENABLE ADVANCED EDITION\\n"
+"CONTENT TO ACCESS"
 
 #: src-ru/data/text_misc.xml.append:570
 msgid "data/text_misc.xml.append$//text[@name=\"start_button\"]"
@@ -1946,55 +1989,63 @@ msgstr "EASY"
 
 #: src-ru/data/text_misc.xml.append:574
 msgid "data/text_misc.xml.append$//text[@name=\"easy_title\"]"
-msgstr ""
+msgstr "Easy Mode"
 
 #: src-ru/data/text_misc.xml.append:575
 msgid "data/text_misc.xml.append$//text[@name=\"easy_text\"]"
-msgstr ""
+msgstr "Increased scrap rewards and easier enemy generation."
 
 #: src-ru/data/text_misc.xml.append:577
 msgid "data/text_misc.xml.append$//text[@name=\"normal_button\"]"
-msgstr ""
+msgstr "NORMAL"
 
 #: src-ru/data/text_misc.xml.append:578
 msgid "data/text_misc.xml.append$//text[@name=\"normal_title\"]"
-msgstr ""
+msgstr "Normal Mode"
 
 #: src-ru/data/text_misc.xml.append:579
 msgid "data/text_misc.xml.append$//text[@name=\"normal_text\"]"
 msgstr ""
+"Standard scrap rewards and enemies.\\n"
+"\\n"
+"Your score gets a 25% boost."
 
 #: src-ru/data/text_misc.xml.append:581
 msgid "data/text_misc.xml.append$//text[@name=\"hard_button\"]"
-msgstr ""
+msgstr "HARD"
 
 #: src-ru/data/text_misc.xml.append:582
 msgid "data/text_misc.xml.append$//text[@name=\"hard_title\"]"
-msgstr ""
+msgstr "Hard Mode"
 
 #: src-ru/data/text_misc.xml.append:583
 msgid "data/text_misc.xml.append$//text[@name=\"hard_text\"]"
 msgstr ""
+"Low scrap rewards and harder enemies.\\n"
+"\\n"
+"Your score gets a 50% boost."
 
 #: src-ru/data/text_misc.xml.append:585
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_on_button\"]"
-msgstr ""
+msgstr "ENABLED"
 
 #: src-ru/data/text_misc.xml.append:586
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_on_title\"]"
-msgstr ""
+msgstr "Advanced Content"
 
 #: src-ru/data/text_misc.xml.append:587
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_on_text\"]"
 msgstr ""
+"New systems, weapons, alien race, and more! Recommended for experienced "
+"players."
 
 #: src-ru/data/text_misc.xml.append:588
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_on_demo_text\"]"
-msgstr ""
+msgstr "NOT AVAILABLE IN DEMO"
 
 #: src-ru/data/text_misc.xml.append:590
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_off_button\"]"
-msgstr ""
+msgstr "DISABLED"
 
 #: src-ru/data/text_misc.xml.append:591
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_off_title\"]"
@@ -2002,7 +2053,7 @@ msgstr "Normal Mode"
 
 #: src-ru/data/text_misc.xml.append:592
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_off_text\"]"
-msgstr ""
+msgstr "The default Faster Than Light experience."
 
 #: src-ru/data/text_misc.xml.append:594
 msgid "data/text_misc.xml.append$//text[@name=\"ship_rename_button\"]"
@@ -2010,7 +2061,7 @@ msgstr "RENAME"
 
 #: src-ru/data/text_misc.xml.append:595
 msgid "data/text_misc.xml.append$//text[@name=\"ship_list_button\"]"
-msgstr ""
+msgstr "LIST"
 
 #: src-ru/data/text_misc.xml.append:596
 msgid "data/text_misc.xml.append$//text[@name=\"ship_random_button\"]"
@@ -2018,27 +2069,29 @@ msgstr "RANDOM SHIP"
 
 #: src-ru/data/text_misc.xml.append:598
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_a\"]"
-msgstr ""
+msgstr "A"
 
 #: src-ru/data/text_misc.xml.append:599
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_b\"]"
-msgstr ""
+msgstr "B"
 
 #: src-ru/data/text_misc.xml.append:600
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_c\"]"
-msgstr ""
+msgstr "C"
 
 #: src-ru/data/text_misc.xml.append:602
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"ship_showrooms_button\"]"
-msgstr ""
+msgstr "SHOW ROOMS"
 
 #: src-ru/data/text_misc.xml.append:603
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"ship_hiderooms_button\"]"
-msgstr ""
+msgstr "HIDE ROOMS"
 
 #: src-ru/data/text_misc.xml.append:605
 msgid "data/text_misc.xml.append$//text[@name=\"crewbox_customize\"]"
-msgstr ""
+msgstr "CUSTOMIZE"
 
 #: src-ru/data/text_misc.xml.append:606
 msgid "data/text_misc.xml.append$//text[@name=\"crewbox_rename\"]"
@@ -2050,7 +2103,7 @@ msgstr "ACCEPT"
 
 #: src-ru/data/text_misc.xml.append:611
 msgid "data/text_misc.xml.append$//text[@name=\"shiplist_title\"]"
-msgstr ""
+msgstr "CHOOSE YOUR SHIP"
 
 #: src-ru/data/text_misc.xml.append:613
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_type_a\"]"
@@ -2058,11 +2111,11 @@ msgstr "TYPE A"
 
 #: src-ru/data/text_misc.xml.append:614
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_type_b\"]"
-msgstr ""
+msgstr "TYPE B"
 
 #: src-ru/data/text_misc.xml.append:615
 msgid "data/text_misc.xml.append$//text[@name=\"typebutton_type_c\"]"
-msgstr ""
+msgstr "TYPE C"
 
 #: src-ru/data/text_misc.xml.append:617
 msgid "data/text_misc.xml.append$//text[@name=\"no_type_c\"]"
@@ -2073,8 +2126,9 @@ msgid "data/text_misc.xml.append$//text[@name=\"shiplist_accept_button\"]"
 msgstr "ACCEPT"
 
 #: src-ru/data/text_misc.xml.append:621
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"ship_unlock_victory\"]"
-msgstr ""
+msgstr "Defeat the Flagship with any layout of the \\1 to unlock the \\2"
 
 #: src-ru/data/text_misc.xml.append:622
 msgid "data/text_misc.xml.append$//text[@name=\"ship_unlock_sector5\"]"
@@ -2082,7 +2136,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:624
 msgid "data/text_misc.xml.append$//text[@name=\"alt_unlock\"]"
-msgstr ""
+msgstr "Alternative Unlock: \\1"
 
 #: src-ru/data/text_misc.xml.append:625
 msgid "data/text_misc.xml.append$//text[@name=\"alt_unlock_victory\"]"
@@ -2095,6 +2149,8 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:627
 msgid "data/text_misc.xml.append$//text[@name=\"alt_unlock_crystal\"]"
 msgstr ""
+"Defeat the Flagship with Type A and Type B of every other ship (excluding "
+"the Lanius Cruiser)"
 
 #: src-ru/data/text_misc.xml.append:629
 msgid "data/text_misc.xml.append$//text[@name=\"unidentified\"]"
@@ -2110,7 +2166,7 @@ msgstr "SHIELDS"
 
 #: src-ru/data/text_misc.xml.append:636
 msgid "data/text_misc.xml.append$//text[@name=\"button_jump\"]"
-msgstr ""
+msgstr "FTL"
 
 #: src-ru/data/text_misc.xml.append:638
 msgid "data/text_misc.xml.append$//text[@name=\"ftl_charging\"]"
@@ -2121,8 +2177,9 @@ msgid "data/text_misc.xml.append$//text[@name=\"ftl_ready\"]"
 msgstr "READY!"
 
 #: src-ru/data/text_misc.xml.append:640
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"button_store\"]"
-msgstr ""
+msgstr "STORE"
 
 #: src-ru/data/text_misc.xml.append:641
 msgid "data/text_misc.xml.append$//text[@name=\"button_options\"]"
@@ -2134,7 +2191,7 @@ msgstr "PAUSED"
 
 #: src-ru/data/text_misc.xml.append:644
 msgid "data/text_misc.xml.append$//text[@name=\"button_autofire\"]"
-msgstr ""
+msgstr "AUTOFIRE"
 
 #: src-ru/data/text_misc.xml.append:645
 msgid "data/text_misc.xml.append$//text[@name=\"button_autofire_ipad\"]"
@@ -2142,7 +2199,7 @@ msgstr "AUTO\\nFIRE"
 
 #: src-ru/data/text_misc.xml.append:647
 msgid "data/text_misc.xml.append$//text[@name=\"button_lockdown\"]"
-msgstr ""
+msgstr "LOCKDOWN"
 
 #: src-ru/data/text_misc.xml.append:651
 msgid "data/text_misc.xml.append$//text[@name=\"subsystems_label\"]"
@@ -2151,10 +2208,14 @@ msgstr "SUBSYSTEMS"
 #: src-ru/data/text_misc.xml.append:653
 msgid "data/text_misc.xml.append$//text[@name=\"door_close_all\"]"
 msgstr ""
+"CLOSE\\n"
+"ALL"
 
 #: src-ru/data/text_misc.xml.append:654
 msgid "data/text_misc.xml.append$//text[@name=\"door_open_all\"]"
 msgstr ""
+"OPEN\\n"
+"ALL"
 
 #: src-ru/data/text_misc.xml.append:656
 msgid "data/text_misc.xml.append$//text[@name=\"miss\"]"
@@ -2162,24 +2223,23 @@ msgstr "MISS"
 
 #: src-ru/data/text_misc.xml.append:657
 msgid "data/text_misc.xml.append$//text[@name=\"resist\"]"
-msgstr ""
+msgstr "RESIST"
 
 #: src-ru/data/text_misc.xml.append:659
 msgid "data/text_misc.xml.append$//text[@name=\"paused\"]"
 msgstr "PAUSED"
 
 #: src-ru/data/text_misc.xml.append:660
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"paused_text\"]"
 msgstr "Press \\1 or Middle Mouse to resume"
 
 #: src-ru/data/text_misc.xml.append:661
 msgid "data/text_misc.xml.append$//text[@name=\"auto_paused\"]"
-msgstr ""
+msgstr "AUTO-PAUSED"
 
 #: src-ru/data/text_misc.xml.append:662
 msgid "data/text_misc.xml.append$//text[@name=\"auto_paused_text\"]"
-msgstr ""
+msgstr "The game will resume after the action is complete"
 
 #: src-ru/data/text_misc.xml.append:663
 msgid "data/text_misc.xml.append$//text[@name=\"paused_crew\"]"
@@ -2187,15 +2247,15 @@ msgstr "CREW SELECTION"
 
 #: src-ru/data/text_misc.xml.append:664
 msgid "data/text_misc.xml.append$//text[@name=\"paused_crew_text\"]"
-msgstr ""
+msgstr "Drag to select multiple crew members"
 
 #: src-ru/data/text_misc.xml.append:665
 msgid "data/text_misc.xml.append$//text[@name=\"paused_door\"]"
-msgstr ""
+msgstr "DOOR CONTROL"
 
 #: src-ru/data/text_misc.xml.append:666
 msgid "data/text_misc.xml.append$//text[@name=\"paused_door_text\"]"
-msgstr ""
+msgstr "Tap or drag to open and close doors"
 
 #: src-ru/data/text_misc.xml.append:667
 msgid "data/text_misc.xml.append$//text[@name=\"paused_hacking\"]"
@@ -2203,47 +2263,47 @@ msgstr "HACKING"
 
 #: src-ru/data/text_misc.xml.append:668
 msgid "data/text_misc.xml.append$//text[@name=\"paused_hacking_text\"]"
-msgstr ""
+msgstr "Click on a room to send a hacking drone"
 
 #: src-ru/data/text_misc.xml.append:669
 msgid "data/text_misc.xml.append$//text[@name=\"paused_mind\"]"
-msgstr ""
+msgstr "MIND CONTROL"
 
 #: src-ru/data/text_misc.xml.append:670
 msgid "data/text_misc.xml.append$//text[@name=\"paused_mind_text\"]"
-msgstr ""
+msgstr "Tap on an enemy to temporarily convert them"
 
 #: src-ru/data/text_misc.xml.append:671
 msgid "data/text_misc.xml.append$//text[@name=\"paused_room\"]"
-msgstr ""
+msgstr "ROOM SELECTION"
 
 #: src-ru/data/text_misc.xml.append:672
 msgid "data/text_misc.xml.append$//text[@name=\"paused_room_text\"]"
-msgstr ""
+msgstr "Tap on a room to select a destination"
 
 #: src-ru/data/text_misc.xml.append:673
 msgid "data/text_misc.xml.append$//text[@name=\"paused_targeting\"]"
-msgstr ""
+msgstr "TARGETING"
 
 #: src-ru/data/text_misc.xml.append:674
 msgid "data/text_misc.xml.append$//text[@name=\"paused_targeting_text\"]"
-msgstr ""
+msgstr "Tap on a room to select a target"
 
 #: src-ru/data/text_misc.xml.append:675
 msgid "data/text_misc.xml.append$//text[@name=\"paused_targeting_text_beam\"]"
-msgstr ""
+msgstr "Tap and drag to select the target area"
 
 #: src-ru/data/text_misc.xml.append:676
 msgid "data/text_misc.xml.append$//text[@name=\"paused_teleport\"]"
-msgstr ""
+msgstr "TELEPORTING"
 
 #: src-ru/data/text_misc.xml.append:677
 msgid "data/text_misc.xml.append$//text[@name=\"paused_teleport_text_in\"]"
-msgstr ""
+msgstr "Tap an enemy ship's room to retrieve any crew inside"
 
 #: src-ru/data/text_misc.xml.append:678
 msgid "data/text_misc.xml.append$//text[@name=\"paused_teleport_text_out\"]"
-msgstr ""
+msgstr "Tap an enemy ship's room to send your boarding team"
 
 #: src-ru/data/text_misc.xml.append:682
 msgid "data/text_misc.xml.append$//text[@name=\"warning_warning\"]"
@@ -2251,11 +2311,11 @@ msgstr "WARNING!"
 
 #: src-ru/data/text_misc.xml.append:684
 msgid "data/text_misc.xml.append$//text[@name=\"warning_in_danger\"]"
-msgstr ""
+msgstr "IN DANGER"
 
 #: src-ru/data/text_misc.xml.append:686
 msgid "data/text_misc.xml.append$//text[@name=\"warning_environment_danger\"]"
-msgstr ""
+msgstr "DANGER!"
 
 #: src-ru/data/text_misc.xml.append:687
 msgid "data/text_misc.xml.append$//text[@name=\"warning_pds_allies\"]"
