@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-05 16:33+0000\n"
-"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
+"PO-Revision-Date: 2024-11-10 19:37+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datatext_tooltipsxmlappend/en/>\n"
 "Language: en\n"
@@ -14,58 +14,68 @@ msgstr ""
 
 #: src-ru/data/text_tooltips.xml.append:6
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_oxygen\"]"
-msgstr ""
+msgstr "Oxygen: Replenishes the ship's oxygen supply."
 
 #: src-ru/data/text_tooltips.xml.append:7
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_doors\"]"
-msgstr ""
+msgstr "Doors: Allows for remote opening/closing of doors."
 
 #: src-ru/data/text_tooltips.xml.append:8
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_doors_touch\"]"
 msgstr ""
+"Doors: Allows for remote opening/closing of doors. On your ship, tap "
+"individual doors or drag over multiple to open or close them."
 
 #: src-ru/data/text_tooltips.xml.append:9
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_shields\"]"
 msgstr ""
+"Shields: Sustains projectile-blocking shields. Manning increases shield "
+"recharge speed."
 
 #: src-ru/data/text_tooltips.xml.append:10
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_pilot\"]"
-msgstr ""
+msgstr "Piloting: Requires a crewmember to evade in combat or jump."
 
 #: src-ru/data/text_tooltips.xml.append:11
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_engines\"]"
 msgstr ""
+"Engines: Charges the FTL drive and powers evasion. Manning increases dodge "
+"chance."
 
 #: src-ru/data/text_tooltips.xml.append:12
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_sensors\"]"
-msgstr ""
+msgstr "Sensors: Enables view of all rooms and info for enemy ships."
 
 #: src-ru/data/text_tooltips.xml.append:13
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_medbay\"]"
-msgstr ""
+msgstr "Medbay: Heals crewmembers inside the Medbay."
 
 #: src-ru/data/text_tooltips.xml.append:14
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_weapons\"]"
 msgstr ""
+"Weapons: Click on a weapon to charge and fire. Manning reduces charge time."
 
 #: src-ru/data/text_tooltips.xml.append:15
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_weapons_touch\"]"
 msgstr ""
+"Weapons: Tap on a weapon to charge and fire. Manning reduces charge time."
 
 #: src-ru/data/text_tooltips.xml.append:16
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_drones\"]"
-msgstr ""
+msgstr "Drones: Power automated robots for attack and defense."
 
 #: src-ru/data/text_tooltips.xml.append:17
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_teleporter\"]"
 msgstr ""
+"Teleporter: Send crewmembers in the teleporter room to board enemy ships."
 
 #: src-ru/data/text_tooltips.xml.append:18
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_cloaking\"]"
 msgstr ""
+"Cloaking: Partially disappear into another dimension, providing +60 to dodge "
+"and temporarily stopping enemy weapon charging and aiming."
 
 #: src-ru/data/text_tooltips.xml.append:19
-#, fuzzy
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_artillery\"]"
 msgstr ""
 "Artillery: This ship's signature weapon. View its description in the "
@@ -73,177 +83,198 @@ msgstr ""
 
 #: src-ru/data/text_tooltips.xml.append:20
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_powerTotal\"]"
-msgstr ""
+msgstr "Reactor: Unused reactor energy available to power your systems."
 
 #: src-ru/data/text_tooltips.xml.append:21
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_battery\"]"
-msgstr ""
+msgstr "Battery: Activate to temporarily increase available reactor power."
 
 #: src-ru/data/text_tooltips.xml.append:22
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_clonebay\"]"
-msgstr ""
+msgstr "Clone Bay: Automatically clones any dead crewmember."
 
 #: src-ru/data/text_tooltips.xml.append:23
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_mind\"]"
-msgstr ""
+msgstr "Mind Control: Turn enemies into friendlies temporarily."
 
 #: src-ru/data/text_tooltips.xml.append:24
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_hacking\"]"
 msgstr ""
+"Hacking: Lockdown a system room while periodically disrupting the system and "
+"stunning crew."
 
 #: src-ru/data/text_tooltips.xml.append:27
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_oxygen_enemy\"]"
-msgstr ""
+msgstr "Oxygen: Replenishes the enemy ship's oxygen supply."
 
 #: src-ru/data/text_tooltips.xml.append:28
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_doors_enemy\"]"
-msgstr ""
+msgstr "Doors: Powers enemy blast doors, delaying boarder movement."
 
 #: src-ru/data/text_tooltips.xml.append:29
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_shields_enemy\"]"
-msgstr ""
+msgstr "Shields: Powers the enemy's projectile blocking shields."
 
 #: src-ru/data/text_tooltips.xml.append:30
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_pilot_enemy\"]"
 msgstr ""
+"Piloting: If functional with a crew member, the enemy can dodge your shots."
 
 #: src-ru/data/text_tooltips.xml.append:31
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_engines_enemy\"]"
-msgstr ""
+msgstr "Engines: Charges the enemy FTL drive and powers evasion."
 
 #: src-ru/data/text_tooltips.xml.append:32
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_sensors_enemy\"]"
-msgstr ""
+msgstr "Sensors: No functionality for the enemy."
 
 #: src-ru/data/text_tooltips.xml.append:33
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_medbay_enemy\"]"
-msgstr ""
+msgstr "Medbay: Heals enemy crewmembers."
 
 #: src-ru/data/text_tooltips.xml.append:34
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_weapons_enemy\"]"
-msgstr ""
+msgstr "Weapons: Powers the enemy's weapons."
 
 #: src-ru/data/text_tooltips.xml.append:35
 msgid ""
 "data/text_tooltips.xml.append$//text[@name=\"tooltip_weapons_touch_enemy\"]"
-msgstr ""
+msgstr "Weapons: Powers the enemy's weapons — destroy it to stop them firing."
 
 #: src-ru/data/text_tooltips.xml.append:36
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_drones_enemy\"]"
-msgstr ""
+msgstr "Drones: Powers the enemy's drones — destroy it to shut them down."
 
 #: src-ru/data/text_tooltips.xml.append:37
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_teleporter_enemy\"]"
-msgstr ""
+msgstr "Teleporter: The enemy uses this to teleport intruders onto your ship."
 
 #: src-ru/data/text_tooltips.xml.append:38
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_cloaking_enemy\"]"
 msgstr ""
+"Cloaking: When in use, your weapons cannot charge and the enemy evasion is "
+"increased by 60."
 
 #: src-ru/data/text_tooltips.xml.append:39
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_artillery_enemy\"]"
-msgstr ""
+msgstr "Artillery: Powers a single powerful weapon."
 
 #: src-ru/data/text_tooltips.xml.append:40
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_battery_enemy\"]"
-msgstr ""
+msgstr "Battery: Grants temporary power to the enemy."
 
 #: src-ru/data/text_tooltips.xml.append:41
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_clonebay_enemy\"]"
 msgstr ""
+"Clone Bay: Will automatically clone any crew you kill, reviving them to "
+"fight again!"
 
 #: src-ru/data/text_tooltips.xml.append:42
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_mind_enemy\"]"
 msgstr ""
+"Mind Control: Can temporarily gain control of your crew — destroy it to "
+"prevent this."
 
 #: src-ru/data/text_tooltips.xml.append:43
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_hacking_enemy\"]"
 msgstr ""
+"Hacking: Launches a hacking drone that can temporarily disable a system."
 
 #: src-ru/data/text_tooltips.xml.append:46
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_hull\"]"
-msgstr ""
+msgstr "Current hull integrity. If it drops to zero, the ship is destroyed."
 
 #: src-ru/data/text_tooltips.xml.append:47
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_droneCount\"]"
-msgstr ""
+msgstr "Number of Drone Parts. Using a Drone consumes one Drone Part."
 
 #: src-ru/data/text_tooltips.xml.append:48
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_fuelCount\"]"
-msgstr ""
+msgstr "Amount of fuel. Each jump consumes one fuel."
 
 #: src-ru/data/text_tooltips.xml.append:49
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_missileCount\"]"
-msgstr ""
+msgstr "Number of Missiles. Some weapons consume one Missile when fired."
 
 #: src-ru/data/text_tooltips.xml.append:50
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_scrapCount\"]"
-msgstr ""
+msgstr "Current scrap total."
 
 #: src-ru/data/text_tooltips.xml.append:51
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_FTLButton\"]"
-msgstr ""
+msgstr "Opens star map to choose jump location."
 
 #: src-ru/data/text_tooltips.xml.append:52
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_jump_noPiloting\"]"
-msgstr ""
+msgstr "Your Pilot System must be functioning in order to Jump."
 
 #: src-ru/data/text_tooltips.xml.append:53
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_jump_noCrew\"]"
-msgstr ""
+msgstr "You must have a crew member in the Pilot System to Jump."
 
 #: src-ru/data/text_tooltips.xml.append:54
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_jump_noEngines\"]"
-msgstr ""
+msgstr "Your Engine System must be functioning in order to Jump."
 
 #: src-ru/data/text_tooltips.xml.append:55
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_jump_noFuel\"]"
-msgstr ""
+msgstr "You cannot jump when you're out of fuel."
 
 #: src-ru/data/text_tooltips.xml.append:56
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_shieldDisplay\"]"
-msgstr ""
+msgstr "Current shield status."
 
 #: src-ru/data/text_tooltips.xml.append:57
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_evadeDisplay\"]"
 msgstr ""
+"Evasion: The percentage chance incoming shots will miss your ship. "
+"Determined by your Engine Power Level."
 
 #: src-ru/data/text_tooltips.xml.append:58
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_oxygenDisplay\"]"
 msgstr ""
+"Oxygen: The average oxygen level in your ship. Most crew need oxygen to "
+"live. Your Oxygen System will replenish this if powered."
 
 #: src-ru/data/text_tooltips.xml.append:59
 msgid ""
 "data/text_tooltips.xml.append$//text[@name=\"tooltip_energyShieldDisplay\"]"
 msgstr ""
+"Zoltan Energy Shield: Will completely block incoming damage of any weapon "
+"type."
 
 #: src-ru/data/text_tooltips.xml.append:62
-#, fuzzy
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_autofire\"]"
 msgstr ""
 "Toggle to activate/deactivate weapons automatically firing.\\n"
 "Hotkey: \\1\\n"
 "\\n"
-"\\2 + AIM can force a weapon to do the opposite of current setting"
+"\\2 + AIM can force a weapon to do the opposite of current setting."
 
 #: src-ru/data/text_tooltips.xml.append:64
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_asteroids\"]"
 msgstr ""
+"You're in an asteroid field. Periodically asteroids will strike your ship."
 
 #: src-ru/data/text_tooltips.xml.append:65
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_sun\"]"
 msgstr ""
+"You're too close to a star. Solar flares will light the ship on fire. "
+"Shields will reduce the effect."
 
 #: src-ru/data/text_tooltips.xml.append:66
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_nebula\"]"
 msgstr ""
+"You're inside a nebula. Your sensors will not function, but the Rebel fleet "
+"will advance more slowly towards you."
 
 #: src-ru/data/text_tooltips.xml.append:67
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_storm\"]"
 msgstr ""
+"This section of the nebula is experiencing a plasma storm. Your main reactor "
+"can only function at half capacity."
 
 #: src-ru/data/text_tooltips.xml.append:68
-#, fuzzy
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_pulsar\"]"
 msgstr ""
 "You're close to a pulsar. Periodic waves of electromagnetic energy will "
@@ -251,32 +282,34 @@ msgstr ""
 
 #: src-ru/data/text_tooltips.xml.append:69
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_PDS_FLEET\"]"
-msgstr ""
+msgstr "The Fleet's Anti-Ship Batteries are targeting you."
 
 #: src-ru/data/text_tooltips.xml.append:70
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_PDS_PLAYER\"]"
-msgstr ""
+msgstr "An Anti-Ship Battery on the planet is targeting you."
 
 #: src-ru/data/text_tooltips.xml.append:71
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_PDS_ENEMY\"]"
-msgstr ""
+msgstr "An Anti-Ship Battery on the planet is targeting your enemies."
 
 #: src-ru/data/text_tooltips.xml.append:72
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_PDS_ALL\"]"
-msgstr ""
+msgstr "An Anti-Ship Battery on the planet is firing on all ships in the area."
 
 #: src-ru/data/text_tooltips.xml.append:74
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_map_wait\"]"
-msgstr ""
+msgstr "Wait for help to arrive."
 
 #: src-ru/data/text_tooltips.xml.append:75
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_map_distress\"]"
 msgstr ""
+"Toggling the distress beacon might increase the chances you'll be found, but "
+"no telling who will find you first."
 
 #: src-ru/data/text_tooltips.xml.append:77
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_rename\"]"
-msgstr ""
+msgstr "Click to rename."
 
 #: src-ru/data/text_tooltips.xml.append:78
 msgid "data/text_tooltips.xml.append$//text[@name=\"tooltip_subsystems\"]"
-msgstr ""
+msgstr "Subsystems are powered for free as long as they are functional."
