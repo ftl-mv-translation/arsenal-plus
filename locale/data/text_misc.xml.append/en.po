@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-11-10 09:37+0000\n"
+"PO-Revision-Date: 2024-11-13 22:20+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datatext_miscxmlappend/en/>\n"
@@ -1419,8 +1419,8 @@ msgstr ""
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ex_beams\"]"
 msgstr ""
 "Tip: Zolton beams are 50% longer than their regular counterparts, but they "
-"can't fire if there are less than 30 missiles in the hold. They also have an "
-"increased chance to start a fire or cause a breach."
+"can't fire if there are less than 30 missiles in the hold. If the original "
+"beam had any secondary effects, they are slightly better in this beam."
 
 #: src-ru/data/text_misc.xml.append:417
 msgid "data/text_misc.xml.append$//text[@name=\"tip_sys_beams\"]"
@@ -1516,7 +1516,7 @@ msgstr ""
 msgid "data/text_misc.xml.append$//text[@name=\"tip_hull\"]"
 msgstr ""
 "Tip: Hull weapons deal double damage if they hit a room that does not have a "
-"system or a subsystem."
+"system or subsystem."
 
 #: src-ru/data/text_misc.xml.append:443
 msgid "data/text_misc.xml.append$//text[@name=\"tip_charge\"]"
@@ -2508,19 +2508,19 @@ msgstr "Boarding Drone"
 
 #: src-ru/data/text_misc.xml.append:748
 msgid "data/text_misc.xml.append$//text[@name=\"hacking_tooltip\"]"
-msgstr ""
+msgstr "Hacking drone. Cannot be targeted."
 
 #: src-ru/data/text_misc.xml.append:749
 msgid "data/text_misc.xml.append$//text[@name=\"repair_tooltip\"]"
-msgstr ""
+msgstr "Ship repair drone. Cannot be targeted."
 
 #: src-ru/data/text_misc.xml.append:750
 msgid "data/text_misc.xml.append$//text[@name=\"boarding_tooltip\"]"
-msgstr ""
+msgstr "Boarding drone. Cannot be targeted."
 
 #: src-ru/data/text_misc.xml.append:751
 msgid "data/text_misc.xml.append$//text[@name=\"shield_tooltip\"]"
-msgstr ""
+msgstr "Shield overcharger. Cannot be targeted."
 
 #: src-ru/data/text_misc.xml.append:753
 msgid "data/text_misc.xml.append$//text[@name=\"combat_friendly\"]"
@@ -3164,19 +3164,19 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:963
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_temporal\"]"
-msgstr ""
+msgstr "Power Temporal Manipulator"
 
 #: src-ru/data/text_misc.xml.append:964
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_un_temporal\"]"
-msgstr ""
+msgstr "De-Power Temporal Manipulator"
 
 #: src-ru/data/text_misc.xml.append:965
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_temporal_speed\"]"
-msgstr ""
+msgstr "Temporal Speed Up"
 
 #: src-ru/data/text_misc.xml.append:966
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_temporal_slow\"]"
-msgstr ""
+msgstr "Temporal Slow Down"
 
 #: src-ru/data/text_misc.xml.append:968
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_temporal\"]"
@@ -3185,72 +3185,78 @@ msgstr "Temporal Manipulator: Changes the flow of time in one room."
 #: src-ru/data/text_misc.xml.append:969
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_temporal_enemy\"]"
 msgstr ""
-"Temporal manipulator: The enemy can use this to change the flow of time in "
+"Temporal Manipulator: The enemy can use this to change the flow of time in "
 "one room."
 
 #: src-ru/data/text_misc.xml.append:971
 msgid "data/text_misc.xml.append$//text[@name=\"temporal\"]"
-msgstr ""
+msgstr "Temporal Manipulator"
 
 #: src-ru/data/text_misc.xml.append:972
 msgid "data/text_misc.xml.append$//text[@name=\"temporal_tooltip\"]"
-msgstr ""
+msgstr "\\1x/\\4x speed for \\3/\\6 sec"
 
 #: src-ru/data/text_misc.xml.append:974
 msgid "data/text_misc.xml.append$//text[@name=\"temporal_arm_super_shields\"]"
-msgstr ""
+msgstr "Blocked by Super Shields."
 
 #: src-ru/data/text_misc.xml.append:975
 msgid "data/text_misc.xml.append$//text[@name=\"temporal_arm_speed\"]"
-msgstr ""
+msgstr "Speed up everything in the room by \\1x for \\3 seconds."
 
 #: src-ru/data/text_misc.xml.append:976
 msgid "data/text_misc.xml.append$//text[@name=\"temporal_arm_slow\"]"
-msgstr ""
+msgstr "Slow down everything in the room by \\4x for \\6 seconds."
 
 #: src-ru/data/text_misc.xml.append:978
 msgid "data/text_misc.xml.append$//text[@name=\"temporal_button_speed\"]"
 msgstr ""
+"Speed up everything that occurs in a room for a short duration.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:979
 msgid "data/text_misc.xml.append$//text[@name=\"temporal_button_slow\"]"
 msgstr ""
+"Slow down everything that occurs in a room for a short duration.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:981
 msgid "data/text_misc.xml.append$//text[@name=\"system_temporal_title\"]"
-msgstr ""
+msgstr "Temporal Manipulator"
 
 #: src-ru/data/text_misc.xml.append:982
 msgid "data/text_misc.xml.append$//text[@name=\"system_temporal_desc\"]"
 msgstr ""
+"Changes the flow of time in one room.\\n"
+"Upgrades increase the duration and strength of the flow of time."
 
 #: src-ru/data/text_misc.xml.append:984
 msgid "data/text_misc.xml.append$//text[@name=\"crew_spawn_chance\"]"
-msgstr ""
+msgstr "Chance to Spawn Crew: \\1%"
 
 #: src-ru/data/text_misc.xml.append:986
 msgid "data/text_misc.xml.append$//text[@name=\"crew_death_time\"]"
-msgstr ""
+msgstr "Lifetime: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:987
 msgid "data/text_misc.xml.append$//text[@name=\"crew_death_time_expired\"]"
-msgstr ""
+msgstr "Lifetime: Expired"
 
 #: src-ru/data/text_misc.xml.append:990
 msgid "data/text_misc.xml.append$//text[@name=\"accuracy_modifier\"]"
-msgstr ""
+msgstr "Accuracy Modifier: \\1%"
 
 #: src-ru/data/text_misc.xml.append:992
 msgid "data/text_misc.xml.append$//text[@name=\"erosion_effect\"]"
-msgstr ""
+msgstr "Erosion: \\1 (\\2 seconds)"
 
 #: src-ru/data/text_misc.xml.append:993
 msgid "data/text_misc.xml.append$//text[@name=\"erosion_chance\"]"
-msgstr ""
+msgstr "Erosion Chance: \\1%"
 
 #: src-ru/data/text_misc.xml.append:994
 msgid "data/text_misc.xml.append$//text[@name=\"room_statboost_chance\"]"
-msgstr ""
+msgstr "Room Effect Chance: \\1%"
 
 #: src-ru/data/text_misc.xml.append:995
 msgid "data/text_misc.xml.append$//text[@name=\"crew_statboost_chance\"]"
@@ -3258,7 +3264,7 @@ msgstr "Crew Effect Chance: \\1%"
 
 #: src-ru/data/text_misc.xml.append:998
 msgid "data/text_misc.xml.append$//text[@name=\"warning_pds_all\"]"
-msgstr ""
+msgstr "FIRING!"
 
 #: src-ru/data/text_misc.xml.append:999
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_PDS_FLEET_ALL\"]"
@@ -3270,32 +3276,33 @@ msgstr "The fleet's anti-ship batteries are aimed at your enemy."
 
 #: src-ru/data/text_misc.xml.append:1004
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter_instant\"]"
-msgstr ""
+msgstr "Instantly"
 
 #: src-ru/data/text_misc.xml.append:1005
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_instant_fullheal\"]"
-msgstr ""
+msgstr "Instant clone + 100% heal on jump"
 
 #: src-ru/data/text_misc.xml.append:1007
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_reactor\"]"
-msgstr "The Reactor"
+msgstr "Reactor"
 
 #: src-ru/data/text_misc.xml.append:1008
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_desc\"]"
 msgstr ""
+"Provides power to all ship systems. Each power bar allows you to send one "
+"unit of power to a system. Subsystems do not need power from the reactor."
 
 #: src-ru/data/text_misc.xml.append:1010
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_desc_short\"]"
-msgstr ""
+msgstr "Provides power to all ship systems."
 
 #: src-ru/data/text_misc.xml.append:1012
 msgid "data/text_misc.xml.append$//text[@name=\"weak_warning\"]"
-msgstr ""
+msgstr "Weak System — Extra scrap required for initial upgrades."
 
 #: src-ru/data/text_misc.xml.append:1014
 msgid "data/text_misc.xml.append$//text[@name=\"nano_warning\"]"
-msgstr ""
+msgstr "Note: Requires powered Medbay to function."
 
 #: src-ru/data/text_misc.xml.append:1018
 msgid "data/text_misc.xml.append$//text[@name=\"level\"]"
@@ -3303,15 +3310,15 @@ msgstr "Level \\1: \\2"
 
 #: src-ru/data/text_misc.xml.append:1019
 msgid "data/text_misc.xml.append$//text[@name=\"manning_bonus\"]"
-msgstr ""
+msgstr "Manned: \\1"
 
 #: src-ru/data/text_misc.xml.append:1020
 msgid "data/text_misc.xml.append$//text[@name=\"status\"]"
-msgstr ""
+msgstr "Status:"
 
 #: src-ru/data/text_misc.xml.append:1022
 msgid "data/text_misc.xml.append$//text[@name=\"subsystem_manned\"]"
-msgstr ""
+msgstr "+1 System Level"
 
 #: src-ru/data/text_misc.xml.append:1024
 msgid "data/text_misc.xml.append$//text[@name=\"full_powered\"]"
@@ -3319,39 +3326,43 @@ msgstr "Fully Powered"
 
 #: src-ru/data/text_misc.xml.append:1025
 msgid "data/text_misc.xml.append$//text[@name=\"full_functional\"]"
-msgstr ""
+msgstr "Fully Functional"
 
 #: src-ru/data/text_misc.xml.append:1026
 msgid "data/text_misc.xml.append$//text[@name=\"partial_powered\"]"
-msgstr ""
+msgstr "Partially Powered"
 
 #: src-ru/data/text_misc.xml.append:1027
 msgid "data/text_misc.xml.append$//text[@name=\"partial_functional\"]"
-msgstr ""
+msgstr "Partially Functional"
 
 #: src-ru/data/text_misc.xml.append:1028
 msgid "data/text_misc.xml.append$//text[@name=\"unpowered\"]"
-msgstr ""
+msgstr "Unpowered"
 
 #: src-ru/data/text_misc.xml.append:1030
 msgid "data/text_misc.xml.append$//text[@name=\"unmanned\"]"
-msgstr ""
+msgstr "Automated Mode"
 
 #: src-ru/data/text_misc.xml.append:1031
 msgid "data/text_misc.xml.append$//text[@name=\"zoltan\"]"
-msgstr ""
+msgstr "Zoltan Bonus Power"
 
 #: src-ru/data/text_misc.xml.append:1032
 msgid "data/text_misc.xml.append$//text[@name=\"zoltan_rearrange_weapon\"]"
 msgstr ""
+"Zoltan Bonus Power: Always powers weapon in first slot, click and drag to "
+"rearrange weapons."
 
 #: src-ru/data/text_misc.xml.append:1033
 msgid "data/text_misc.xml.append$//text[@name=\"zoltan_rearrange_drone\"]"
 msgstr ""
+"Zoltan Bonus Power: Always powers drone in first slot, click and drag to "
+"rearrange drones"
 
 #: src-ru/data/text_misc.xml.append:1035
 msgid "data/text_misc.xml.append$//text[@name=\"destroyed\"]"
-msgstr ""
+msgstr "Destroyed"
 
 #: src-ru/data/text_misc.xml.append:1036
 msgid "data/text_misc.xml.append$//text[@name=\"damaged\"]"
@@ -3359,19 +3370,19 @@ msgstr "Damaged"
 
 #: src-ru/data/text_misc.xml.append:1038
 msgid "data/text_misc.xml.append$//text[@name=\"temp_disabled\"]"
-msgstr ""
+msgstr "Temporarily disabled by enemy or location"
 
 #: src-ru/data/text_misc.xml.append:1040
 msgid "data/text_misc.xml.append$//text[@name=\"ioned\"]"
-msgstr ""
+msgstr "Locked by Ion Effect"
 
 #: src-ru/data/text_misc.xml.append:1041
 msgid "data/text_misc.xml.append$//text[@name=\"on_fire\"]"
-msgstr ""
+msgstr "On Fire"
 
 #: src-ru/data/text_misc.xml.append:1042
 msgid "data/text_misc.xml.append$//text[@name=\"sabotaged\"]"
-msgstr ""
+msgstr "Being Sabotaged"
 
 #: src-ru/data/text_misc.xml.append:1044
 msgid "data/text_misc.xml.append$//text[@name=\"add_power\"]"
@@ -3379,7 +3390,7 @@ msgstr "Add Power: \\1"
 
 #: src-ru/data/text_misc.xml.append:1045
 msgid "data/text_misc.xml.append$//text[@name=\"remove_power\"]"
-msgstr ""
+msgstr "Remove Power: \\1"
 
 #: src-ru/data/text_misc.xml.append:1046
 msgid "data/text_misc.xml.append$//text[@name=\"remove_power_alt\"]"
@@ -3387,60 +3398,59 @@ msgstr "Remove Power: Shift + \\1"
 
 #: src-ru/data/text_misc.xml.append:1048
 msgid "data/text_misc.xml.append$//text[@name=\"hacked\"]"
-msgstr ""
+msgstr "Hacked: Experiences temporary disruption and doors are locked down"
 
 #: src-ru/data/text_misc.xml.append:1050
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_off\"]"
 msgstr "OFF: Artillery not charging"
 
 #: src-ru/data/text_misc.xml.append:1051
 msgid "data/text_misc.xml.append$//text[@name=\"doors_off\"]"
-msgstr ""
+msgstr "OFF: Cannot manipulate doors"
 
 #: src-ru/data/text_misc.xml.append:1052
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_off\"]"
-msgstr ""
+msgstr "OFF: NO DODGE!"
 
 #: src-ru/data/text_misc.xml.append:1053
 msgid "data/text_misc.xml.append$//text[@name=\"sensors_off\"]"
-msgstr ""
+msgstr "OFF: Limited vision"
 
 #: src-ru/data/text_misc.xml.append:1054
 msgid "data/text_misc.xml.append$//text[@name=\"engine_off\"]"
-msgstr ""
+msgstr "OFF: NO DODGE!"
 
 #: src-ru/data/text_misc.xml.append:1055
 msgid "data/text_misc.xml.append$//text[@name=\"medbay_off\"]"
-msgstr ""
+msgstr "OFF: Cannot heal crew"
 
 #: src-ru/data/text_misc.xml.append:1056
 msgid "data/text_misc.xml.append$//text[@name=\"weapons_off\"]"
-msgstr ""
+msgstr "OFF: Weapons not available"
 
 #: src-ru/data/text_misc.xml.append:1057
 msgid "data/text_misc.xml.append$//text[@name=\"drones_off\"]"
-msgstr ""
+msgstr "OFF: Drones not functional"
 
 #: src-ru/data/text_misc.xml.append:1058
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen_off\"]"
-msgstr ""
+msgstr "OFF: OXYGEN DRAINING!"
 
 #: src-ru/data/text_misc.xml.append:1059
 msgid "data/text_misc.xml.append$//text[@name=\"clone_off\"]"
-msgstr ""
+msgstr "OFF: Dead crew will die forever"
 
 #: src-ru/data/text_misc.xml.append:1060
 msgid "data/text_misc.xml.append$//text[@name=\"shields_off\"]"
-msgstr ""
+msgstr "OFF: SHIELDS DOWN!"
 
 #: src-ru/data/text_misc.xml.append:1062
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_health\"]"
-msgstr ""
+msgstr "Heals all crew \\1 hp every jump."
 
 #: src-ru/data/text_misc.xml.append:1063
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_damaged\"]"
-msgstr ""
+msgstr "(If repaired, it will heal more)"
 
 #: src-ru/data/text_misc.xml.append:1067
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_skill\"]"
@@ -3452,31 +3462,33 @@ msgstr "Evasion +\\1"
 
 #: src-ru/data/text_misc.xml.append:1069
 msgid "data/text_misc.xml.append$//text[@name=\"shield_skill\"]"
-msgstr ""
+msgstr "\\1% faster recharge"
 
 #: src-ru/data/text_misc.xml.append:1070
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_skill\"]"
-msgstr ""
+msgstr "\\1% faster charge"
 
 #: src-ru/data/text_misc.xml.append:1071
 msgid "data/text_misc.xml.append$//text[@name=\"combat_0\"]"
-msgstr ""
+msgstr "Increases crew damage"
 
 #: src-ru/data/text_misc.xml.append:1072
 msgid "data/text_misc.xml.append$//text[@name=\"combat_skilled\"]"
-msgstr ""
+msgstr "\\1% more crew damage"
 
 #: src-ru/data/text_misc.xml.append:1073
 msgid "data/text_misc.xml.append$//text[@name=\"repair_0\"]"
-msgstr ""
+msgstr "Increases repair speed"
 
 #: src-ru/data/text_misc.xml.append:1074
 msgid "data/text_misc.xml.append$//text[@name=\"repair_skilled\"]"
-msgstr ""
+msgstr "\\1% faster repair"
 
 #: src-ru/data/text_misc.xml.append:1078
 msgid "data/text_misc.xml.append$//text[@name=\"health\"]"
 msgstr ""
+"Health: \\1/\\2\\n"
+"Change order by holding right-click"
 
 #: src-ru/data/text_misc.xml.append:1080
 msgid "data/text_misc.xml.append$//text[@name=\"cloning\"]"
@@ -3485,18 +3497,20 @@ msgstr "Cloning..."
 #: src-ru/data/text_misc.xml.append:1082
 msgid "data/text_misc.xml.append$//text[@name=\"power_ready\"]"
 msgstr ""
+"Ready: Click to lock down room with special power\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1083
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready\"]"
-msgstr ""
+msgstr "Not Ready: Ability charging (see charge left of portrait)"
 
 #: src-ru/data/text_misc.xml.append:1085
 msgid "data/text_misc.xml.append$/dummyroot/FTL/text[780]"
-msgstr ""
+msgstr "Not ready: Mind controlled"
 
 #: src-ru/data/text_misc.xml.append:1086
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_mind_enemy\"]"
-msgstr ""
+msgstr "Not ready: Under enemy control"
 
 #: src-ru/data/text_misc.xml.append:1088
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_skill_tooltip\"]"
@@ -3509,42 +3523,50 @@ msgstr "Engines Skill:\\n\\1"
 #: src-ru/data/text_misc.xml.append:1090
 msgid "data/text_misc.xml.append$//text[@name=\"shields_skill_tooltip\"]"
 msgstr ""
+"Shields Skill:\\n"
+"\\1"
 
 #: src-ru/data/text_misc.xml.append:1091
 msgid "data/text_misc.xml.append$//text[@name=\"weapons_skill_tooltip\"]"
 msgstr ""
+"Weapons Skill:\\n"
+"\\1"
 
 #: src-ru/data/text_misc.xml.append:1092
 msgid "data/text_misc.xml.append$//text[@name=\"combat_skill_tooltip\"]"
 msgstr ""
+"Combat Skill:\\n"
+"\\1"
 
 #: src-ru/data/text_misc.xml.append:1093
 msgid "data/text_misc.xml.append$//text[@name=\"repair_skill_tooltip\"]"
 msgstr ""
+"Repair Skill:\\n"
+"\\1"
 
 #: src-ru/data/text_misc.xml.append:1095
 msgid "data/text_misc.xml.append$//text[@name=\"next_level\"]"
-msgstr ""
+msgstr "Next Level: \\1/\\2"
 
 #: src-ru/data/text_misc.xml.append:1099
 msgid "data/text_misc.xml.append$//text[@name=\"crew_skills\"]"
-msgstr ""
+msgstr "Crew Skills"
 
 #: src-ru/data/text_misc.xml.append:1101
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_skill_infobox\"]"
-msgstr ""
+msgstr "\\1 when manning Piloting."
 
 #: src-ru/data/text_misc.xml.append:1102
 msgid "data/text_misc.xml.append$//text[@name=\"engines_skill_infobox\"]"
-msgstr ""
+msgstr "\\1 when manning Engines."
 
 #: src-ru/data/text_misc.xml.append:1103
 msgid "data/text_misc.xml.append$//text[@name=\"shields_skill_infobox\"]"
-msgstr ""
+msgstr "\\1 when manning Shields."
 
 #: src-ru/data/text_misc.xml.append:1104
 msgid "data/text_misc.xml.append$//text[@name=\"weapons_skill_infobox\"]"
-msgstr ""
+msgstr "\\1 when manning Weapons."
 
 #: src-ru/data/text_misc.xml.append:1105
 msgid "data/text_misc.xml.append$//text[@name=\"combat_skill_infobox\"]"
@@ -3557,79 +3579,84 @@ msgstr "\\1"
 #: src-ru/data/text_misc.xml.append:1110
 msgid "data/text_misc.xml.append$//text[@name=\"tip_drone_generic\"]"
 msgstr ""
+"Tip: Use requires spending one drone part to activate, and then constant "
+"power (similar to weapons)."
 
 #: src-ru/data/text_misc.xml.append:1111
 msgid "data/text_misc.xml.append$//text[@name=\"tip_drone_warning\"]"
-msgstr ""
+msgstr "Warning: You do not have a Drone System. Buy one from a store!"
 
 #: src-ru/data/text_misc.xml.append:1112
 msgid "data/text_misc.xml.append$//text[@name=\"tip_drone_drag\"]"
 msgstr ""
+"Tip: Currently in cargo. Drag to an available Drone System slot to equip "
+"this drone."
 
 #: src-ru/data/text_misc.xml.append:1113
 msgid "data/text_misc.xml.append$//text[@name=\"tip_weapon_drag\"]"
 msgstr ""
+"Tip: Currently in cargo. Drag to an available Weapon System slot to equip "
+"this weapon."
 
 #: src-ru/data/text_misc.xml.append:1115
 msgid "data/text_misc.xml.append$//text[@name=\"required_power\"]"
-msgstr ""
+msgstr "Required Power: \\1"
 
 #: src-ru/data/text_misc.xml.append:1116
 msgid "data/text_misc.xml.append$//text[@name=\"boost_power_speed\"]"
-msgstr ""
+msgstr "Chain Power: Faster Charge"
 
 #: src-ru/data/text_misc.xml.append:1117
 msgid "data/text_misc.xml.append$//text[@name=\"boost_power_damage\"]"
-msgstr ""
+msgstr "Chain Power: More Damage"
 
 #: src-ru/data/text_misc.xml.append:1118
 msgid "data/text_misc.xml.append$//text[@name=\"damage_cap\"]"
-msgstr ""
+msgstr "Chain Damage Cap: \\1"
 
 #: src-ru/data/text_misc.xml.append:1119
 msgid "data/text_misc.xml.append$//text[@name=\"speed_cap\"]"
-msgstr ""
+msgstr "Chain Charge Cap: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1121
 msgid "data/text_misc.xml.append$//text[@name=\"charge_time\"]"
-msgstr ""
+msgstr "Charge Time: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1122
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"requires_missiles\"]"
 msgstr "Uses Ammunition"
 
 #: src-ru/data/text_misc.xml.append:1123
 msgid "data/text_misc.xml.append$//text[@name=\"shots\"]"
-msgstr ""
+msgstr "Shots Per Charge: \\1"
 
 #: src-ru/data/text_misc.xml.append:1124
 msgid "data/text_misc.xml.append$//text[@name=\"charge\"]"
-msgstr ""
+msgstr "Max Charge Shots: \\1"
 
 #: src-ru/data/text_misc.xml.append:1125
 msgid "data/text_misc.xml.append$//text[@name=\"damage_shot\"]"
-msgstr ""
+msgstr "Base Damage: \\1"
 
 #: src-ru/data/text_misc.xml.append:1126
 msgid "data/text_misc.xml.append$//text[@name=\"damage_room\"]"
-msgstr ""
+msgstr "Damage Per Room Hit: \\1"
 
 #: src-ru/data/text_misc.xml.append:1127
 msgid "data/text_misc.xml.append$//text[@name=\"shield_piercing\"]"
-msgstr ""
+msgstr "Shield Piercing: \\1"
 
 #: src-ru/data/text_misc.xml.append:1128
 msgid "data/text_misc.xml.append$//text[@name=\"fire_chance\"]"
-msgstr ""
+msgstr "Fire Chance: \\1%"
 
 #: src-ru/data/text_misc.xml.append:1129
 msgid "data/text_misc.xml.append$//text[@name=\"breach_chance\"]"
-msgstr ""
+msgstr "Breach Chance: \\2%"
 
 #: src-ru/data/text_misc.xml.append:1130
 msgid "data/text_misc.xml.append$//text[@name=\"stun_chance\"]"
-msgstr ""
+msgstr "Stun Chance: \\1%"
 
 #: src-ru/data/text_misc.xml.append:1131
 msgid "data/text_misc.xml.append$//text[@name=\"ion_damage\"]"
@@ -3641,49 +3668,45 @@ msgstr "Stun: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1133
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage\"]"
-msgstr ""
+msgstr "Crew Damage: \\1"
 
 #: src-ru/data/text_misc.xml.append:1134
 msgid "data/text_misc.xml.append$//text[@name=\"system_damage\"]"
-msgstr ""
+msgstr "System Damage: \\1"
 
 #: src-ru/data/text_misc.xml.append:1135
 msgid "data/text_misc.xml.append$//text[@name=\"double_damage\"]"
-msgstr ""
+msgstr "2x Damage on systemless rooms."
 
 #: src-ru/data/text_misc.xml.append:1137
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of\"]"
-msgstr ""
+msgstr "Possible Effect: \\1"
 
 #: src-ru/data/text_misc.xml.append:1138
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_separator\"]"
-msgstr ""
+msgstr ","
 
 #: src-ru/data/text_misc.xml.append:1139
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_fire\"]"
-msgstr ""
+msgstr "Fire"
 
 #: src-ru/data/text_misc.xml.append:1140
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_breach\"]"
-msgstr "Breach M.*"
+msgstr "Breach"
 
 #: src-ru/data/text_misc.xml.append:1141
 msgid "data/text_misc.xml.append$//text[@name=\"chance_of_stun\"]"
 msgstr "Stun"
 
 #: src-ru/data/text_misc.xml.append:1143
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"chance_low\"]"
 msgstr "Low"
 
 #: src-ru/data/text_misc.xml.append:1144
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"chance_medium\"]"
-msgstr "Med"
+msgstr "Medium"
 
 #: src-ru/data/text_misc.xml.append:1145
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"chance_high\"]"
 msgstr "High"
 
@@ -3697,7 +3720,7 @@ msgstr "Beam"
 
 #: src-ru/data/text_misc.xml.append:1150
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb\"]"
-msgstr ""
+msgstr "Teleporting Bomb"
 
 #: src-ru/data/text_misc.xml.append:1151
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser\"]"
@@ -3705,647 +3728,654 @@ msgstr "Laser"
 
 #: src-ru/data/text_misc.xml.append:1152
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_chain\"]"
-msgstr ""
+msgstr "Chain Laser"
 
 #: src-ru/data/text_misc.xml.append:1153
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"type_beam_chain\"]"
 msgstr "Chain Beam"
 
 #: src-ru/data/text_misc.xml.append:1154
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile_chain\"]"
 msgstr "Chain Missile"
 
 #: src-ru/data/text_misc.xml.append:1155
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb_chain\"]"
-msgstr ""
+msgstr "Chain Bomb"
 
 #: src-ru/data/text_misc.xml.append:1156
 msgid "data/text_misc.xml.append$//text[@name=\"type_laser_charge\"]"
-msgstr ""
+msgstr "Charge Laser"
 
 #: src-ru/data/text_misc.xml.append:1157
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile\"]"
 msgstr "Missile"
 
 #: src-ru/data/text_misc.xml.append:1158
 msgid "data/text_misc.xml.append$//text[@name=\"type_crystal\"]"
-msgstr ""
+msgstr "Physical Projectile"
 
 #: src-ru/data/text_misc.xml.append:1159
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst\"]"
-msgstr ""
+msgstr "Burst"
 
 #: src-ru/data/text_misc.xml.append:1160
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_chain\"]"
-msgstr ""
+msgstr "Chain Burst"
 
 #: src-ru/data/text_misc.xml.append:1161
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_charge\"]"
-msgstr ""
+msgstr "Charge Burst"
 
 #: src-ru/data/text_misc.xml.append:1162
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion\"]"
-msgstr ""
+msgstr "Ion"
 
 #: src-ru/data/text_misc.xml.append:1163
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_chain\"]"
 msgstr "Chain Ion"
 
 #: src-ru/data/text_misc.xml.append:1164
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_charge\"]"
-msgstr ""
+msgstr "Charge Ion"
 
 #: src-ru/data/text_misc.xml.append:1166
 msgid "data/text_misc.xml.append$//text[@name=\"type_ion_effect\"]"
-msgstr ""
+msgstr "Drains and Locks Systems"
 
 #: src-ru/data/text_misc.xml.append:1167
 msgid "data/text_misc.xml.append$//text[@name=\"type_missile_effect\"]"
 msgstr ""
+"Ignores Shields\\n"
+"Consumes Ammunition"
 
 #: src-ru/data/text_misc.xml.append:1168
 msgid "data/text_misc.xml.append$//text[@name=\"type_bomb_effect\"]"
-msgstr ""
+msgstr "Ignores Shields"
 
 #: src-ru/data/text_misc.xml.append:1169
 msgid "data/text_misc.xml.append$//text[@name=\"type_burst_effect\"]"
-msgstr ""
+msgstr "Area Effect Aiming"
 
 #: src-ru/data/text_misc.xml.append:1170
 msgid "data/text_misc.xml.append$//text[@name=\"type_charge_effect\"]"
-msgstr ""
+msgstr "Charge Multiple Times"
 
 #: src-ru/data/text_misc.xml.append:1171
 msgid "data/text_misc.xml.append$//text[@name=\"type_chain_effect\"]"
-msgstr ""
+msgstr "Improves With Consecutive Shots"
 
 #: src-ru/data/text_misc.xml.append:1173
 msgid "data/text_misc.xml.append$//text[@name=\"drone_required\"]"
-msgstr ""
+msgstr "Requires drone part to deploy"
 
 #: src-ru/data/text_misc.xml.append:1176
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_speed\"]"
-msgstr ""
+msgstr "Toggle Speedhack"
 
 #: src-ru/data/text_misc.xml.append:1177
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_console\"]"
-msgstr ""
+msgstr "Open Console"
 
 #: src-ru/data/text_misc.xml.append:1178
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey_info\"]"
-msgstr ""
+msgstr "Toggle Extra Info"
 
 #: src-ru/data/text_misc.xml.append:1180
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_more_info\"]"
 msgstr ""
+"Toggle extra info when viewing beacon map and hovering over crew\\n"
+"Key: \\1"
 
 #: src-ru/data/text_misc.xml.append:1181
 msgid "data/text_misc.xml.append$//text[@name=\"description_stats\"]"
-msgstr ""
+msgstr "Stats:"
 
 #: src-ru/data/text_misc.xml.append:1182
 msgid "data/text_misc.xml.append$//text[@name=\"requires_no_power\"]"
-msgstr ""
+msgstr "Does not require power"
 
 #: src-ru/data/text_misc.xml.append:1183
 msgid "data/text_misc.xml.append$//text[@name=\"provides_bonus_power\"]"
-msgstr ""
+msgstr "Provides extra power"
 
 #: src-ru/data/text_misc.xml.append:1184
 msgid "data/text_misc.xml.append$//text[@name=\"cannot_fire\"]"
-msgstr ""
+msgstr "Can't fire"
 
 #: src-ru/data/text_misc.xml.append:1185
 msgid "data/text_misc.xml.append$//text[@name=\"ammo_consumption\"]"
-msgstr ""
+msgstr "Missile Consumption: \\1"
 
 #: src-ru/data/text_misc.xml.append:1186
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_damage_positive\"]"
-msgstr ""
+msgstr "Damage increases by \\1 per volley"
 
 #: src-ru/data/text_misc.xml.append:1187
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_damage_negative\"]"
-msgstr ""
+msgstr "Damage decreases by \\1 per volley"
 
 #: src-ru/data/text_misc.xml.append:1188
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_speed_positive\"]"
-msgstr ""
+msgstr "Recharges faster by \\1 sec/volley"
 
 #: src-ru/data/text_misc.xml.append:1189
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"redesigned_boost_power_speed_negative\"]"
-msgstr ""
+msgstr "Recharges slower by \\1 sec/volley"
 
 #: src-ru/data/text_misc.xml.append:1190
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_cap\"]"
-msgstr ""
+msgstr "Max Damage: \\1 (after \\2 chains)"
 
 #: src-ru/data/text_misc.xml.append:1191
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_speed_cap\"]"
 msgstr ""
+"Fastest Charge: \\1 seconds\\n"
+"(after \\2 chains)"
 
 #: src-ru/data/text_misc.xml.append:1192
 msgid "data/text_misc.xml.append$//text[@name=\"shot_radius\"]"
-msgstr ""
+msgstr "Blast Radius: \\1"
 
 #: src-ru/data/text_misc.xml.append:1193
 msgid "data/text_misc.xml.append$//text[@name=\"shot_radius_angular\"]"
-msgstr ""
+msgstr "Blast Radius: \\1 degrees"
 
 #: src-ru/data/text_misc.xml.append:1194
 msgid "data/text_misc.xml.append$//text[@name=\"beam_length\"]"
-msgstr ""
+msgstr "Beam Length: \\1"
 
 #: src-ru/data/text_misc.xml.append:1195
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"pinpoint\"]"
-msgstr "Точечный луч"
+msgstr "Point Beam"
 
 #: src-ru/data/text_misc.xml.append:1196
 msgid "data/text_misc.xml.append$//text[@name=\"swipe_speed\"]"
-msgstr ""
+msgstr "Beam Speed: \\1"
 
 #: src-ru/data/text_misc.xml.append:1197
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_double_damage\"]"
-msgstr ""
+msgstr "Double hull damage on systemless rooms."
 
 #: src-ru/data/text_misc.xml.append:1198
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_room\"]"
-msgstr ""
+msgstr "Normal Damage Per Room: \\1 (x15 per crew)"
 
 #: src-ru/data/text_misc.xml.append:1199
 msgid "data/text_misc.xml.append$//text[@name=\"redesigned_damage_shot\"]"
-msgstr ""
+msgstr "Normal Damage Per Shot: \\1 (x15 per crew)"
 
 #: src-ru/data/text_misc.xml.append:1200
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage\"]"
-msgstr ""
+msgstr "Hull Damage: \\1"
 
 #: src-ru/data/text_misc.xml.append:1201
 msgid "data/text_misc.xml.append$//text[@name=\"stun_length\"]"
-msgstr ""
+msgstr "second stun"
 
 #: src-ru/data/text_misc.xml.append:1202
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_lockdown\"]"
-msgstr ""
+msgstr "Locks down rooms"
 
 #: src-ru/data/text_misc.xml.append:1203
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stun_time\"]"
-msgstr "Stun: \\1 seconds"
+msgstr "Stunned: \\1 seconds"
 
 #: src-ru/data/text_misc.xml.append:1205
 msgid "data/text_misc.xml.append$//text[@name=\"hull_damage_negative\"]"
-msgstr ""
+msgstr "Hull Repair: \\1"
 
 #: src-ru/data/text_misc.xml.append:1206
 msgid "data/text_misc.xml.append$//text[@name=\"system_damage_negative\"]"
-msgstr ""
+msgstr "System Repair: \\1"
 
 #: src-ru/data/text_misc.xml.append:1207
 msgid "data/text_misc.xml.append$//text[@name=\"personnel_damage_negative\"]"
-msgstr ""
+msgstr "Crew Healing: \\1"
 
 #: src-ru/data/text_misc.xml.append:1209
 msgid "data/text_misc.xml.append$//text[@name=\"scrap_value\"]"
-msgstr ""
+msgstr "Buy/Sell Price: \\1 ~/\\2 ~"
 
 #: src-ru/data/text_misc.xml.append:1211
 msgid "data/text_misc.xml.append$//text[@name=\"damage_word\"]"
-msgstr ""
+msgstr "Damage"
 
 #: src-ru/data/text_misc.xml.append:1212
 msgid "data/text_misc.xml.append$//text[@name=\"bomb_shots\"]"
-msgstr ""
+msgstr "Bombs per volley: \\1 (1 on your ship)"
 
 #: src-ru/data/text_misc.xml.append:1213
 msgid "data/text_misc.xml.append$//text[@name=\"crew_scrap_value\"]"
-msgstr ""
+msgstr "Hiring Price: \\1 ~"
 
 #: src-ru/data/text_misc.xml.append:1214
 msgid "data/text_misc.xml.append$//text[@name=\"drone_speed\"]"
-msgstr ""
+msgstr "Drone Speed: \\1"
 
 #: src-ru/data/text_misc.xml.append:1216
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_reload_speed\"]"
-msgstr ""
+msgstr "Reload Speed: \\1ms"
 
 #: src-ru/data/text_misc.xml.append:1217
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_orbit_speed\"]"
-msgstr ""
+msgstr "Orbit Speed: \\1"
 
 #: src-ru/data/text_misc.xml.append:1218
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_speed\"]"
-msgstr ""
+msgstr "Projectile Speed: \\1"
 
 #: src-ru/data/text_misc.xml.append:1219
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_all\"]"
-msgstr ""
+msgstr "Target: all projectiles"
 
 #: src-ru/data/text_misc.xml.append:1220
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_solid\"]"
-msgstr ""
+msgstr "Target: non-laser projectiles"
 
 #: src-ru/data/text_misc.xml.append:1221
 msgid "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_all\"]"
-msgstr ""
+msgstr "Target: combat drones"
 
 #: src-ru/data/text_misc.xml.append:1222
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_solid\"]"
-msgstr ""
+msgstr "Target: solid drones"
 
 #: src-ru/data/text_misc.xml.append:1223
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_unknown\"]"
-msgstr ""
+msgstr "Target: unknown"
 
 #: src-ru/data/text_misc.xml.append:1224
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_projectile_target_asteroid\"]"
-msgstr ""
+msgstr "Target: asteroids"
 
 #: src-ru/data/text_misc.xml.append:1225
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_solid_projectiles\"]"
-msgstr ""
+msgstr "Target: drones and non-laser projectiles"
 
 #: src-ru/data/text_misc.xml.append:1226
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"defense_drone_drone_target_all_projectiles\"]"
-msgstr ""
+msgstr "Target: Drones and all projectiles"
 
 #: src-ru/data/text_misc.xml.append:1227
 msgid "data/text_misc.xml.append$//text[@name=\"drone_BOARDER_ION_desc\"]"
-msgstr ""
+msgstr "Breaches through the enemy hull and randomly ionizes systems."
 
 #: src-ru/data/text_misc.xml.append:1229
 msgid "data/text_misc.xml.append$//text[@name=\"store_unavailable\"]"
-msgstr ""
+msgstr "UNAVAILABLE"
 
 #: src-ru/data/text_misc.xml.append:1231
 msgid "data/text_misc.xml.append$//text[@name=\"no_time_sector\"]"
 msgstr ""
+"Upon examining your map, you realize you just won't have time and need to "
+"get to the next sector! You leave the quest for another day."
 
 #: src-ru/data/text_misc.xml.append:1233
 msgid "data/text_misc.xml.append$//text[@name=\"advanced_health_tooltip\"]"
-msgstr ""
+msgstr "Health"
 
 #: src-ru/data/text_misc.xml.append:1234
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_cooldown_negative\"]"
-msgstr ""
+msgstr "Disabled"
 
 #: src-ru/data/text_misc.xml.append:1236
 msgid "data/text_misc.xml.append$//text[@name=\"free_missile_chance\"]"
-msgstr ""
+msgstr "Chance not to use ammunition: \\1%"
 
 #: src-ru/data/text_misc.xml.append:1238
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"augment_no_effect\"]"
-msgstr "При установке этого усиления не будут работать следующие усиления:"
+msgstr "These augmentations will have no effect with this augment installed:"
 
 #: src-ru/data/text_misc.xml.append:1240
 msgid "data/text_misc.xml.append$//text[@name=\"seed_prompt\"]"
-msgstr ""
+msgstr "Seed"
 
 #: src-ru/data/text_misc.xml.append:1241
 msgid "data/text_misc.xml.append$//text[@name=\"seed_prompt_disabled\"]"
-msgstr ""
+msgstr "Seeds Disabled"
 
 #: src-ru/data/text_misc.xml.append:1242
 msgid "data/text_misc.xml.append$//text[@name=\"menu_status_seed\"]"
-msgstr ""
+msgstr "Seed"
 
 #: src-ru/data/text_misc.xml.append:1243
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"unlocks_disabled\"]"
-msgstr "Разблокировки кораблей отключены"
+msgstr "Ship Unlocks Disabled"
 
 #: src-ru/data/text_misc.xml.append:1245
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_crew_page_down\"]"
 msgstr ""
+"Scroll down \\n"
+"(can use mouse wheel)"
 
 #: src-ru/data/text_misc.xml.append:1246
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_crew_page_up\"]"
 msgstr ""
+"Scroll up \\n"
+"(can use mouse wheel)"
 
 #: src-ru/data/text_misc.xml.append:1248
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_player_ship\"]"
-msgstr ""
+msgstr "Not ready: Not on player ship"
 
 #: src-ru/data/text_misc.xml.append:1249
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_ship\"]"
-msgstr ""
+msgstr "Not ready: Not on enemy ship"
 
 #: src-ru/data/text_misc.xml.append:1250
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_in_room\"]"
-msgstr ""
+msgstr "Not ready: No enemies in room"
 
 #: src-ru/data/text_misc.xml.append:1251
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_in_room\"]"
-msgstr ""
+msgstr "Not ready: No friendly crew in room"
 
 #: src-ru/data/text_misc.xml.append:1252
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_whitelist\"]"
-msgstr ""
+msgstr "Not ready: No applicable crew in room"
 
 #: src-ru/data/text_misc.xml.append:1253
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_whitelist\"]"
-msgstr ""
+msgstr "Not ready: No applicable enemy in room"
 
 #: src-ru/data/text_misc.xml.append:1254
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_whitelist\"]"
-msgstr ""
+msgstr "Not ready: No applicable friendly in room"
 
 #: src-ru/data/text_misc.xml.append:1255
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_enemy_blacklist\"]"
-msgstr ""
+msgstr "Not ready: Enemy in room prohibits use"
 
 #: src-ru/data/text_misc.xml.append:1256
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_friendly_blacklist\"]"
-msgstr ""
+msgstr "Not ready: Friendly in room prohibits use"
 
 #: src-ru/data/text_misc.xml.append:1257
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_in_room\"]"
-msgstr ""
+msgstr "Not ready: No system in room"
 
 #: src-ru/data/text_misc.xml.append:1258
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_activated\"]"
-msgstr "Способность активна"
+msgstr "Ability active"
 
 #: src-ru/data/text_misc.xml.append:1259
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_ai_disabled\"]"
-msgstr ""
+msgstr "Not Ready: Ability disabled for AI (shouldn't see this)"
 
 #: src-ru/data/text_misc.xml.append:1260
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_has_clonebay\"]"
-msgstr ""
+msgstr "Not ready: No clone bay"
 
 #: src-ru/data/text_misc.xml.append:1261
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_out_of_combat\"]"
-msgstr ""
+msgstr "Not ready: Not applicable in combat"
 
 #: src-ru/data/text_misc.xml.append:1262
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_in_combat\"]"
-msgstr ""
+msgstr "Not ready: No enemy ship"
 
 #: src-ru/data/text_misc.xml.append:1263
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system\"]"
-msgstr ""
+msgstr "Not ready: No system (\\1)"
 
 #: src-ru/data/text_misc.xml.append:1264
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_functional\"]"
-msgstr ""
+msgstr "Not ready: \\1 not functioning"
 
 #: src-ru/data/text_misc.xml.append:1265
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_min_health\"]"
-msgstr ""
+msgstr "Not ready: Health is below \\1"
 
 #: src-ru/data/text_misc.xml.append:1266
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_max_health\"]"
-msgstr ""
+msgstr "Not ready: Health is above \\1"
 
 #: src-ru/data/text_misc.xml.append:1267
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_system_damaged\"]"
-msgstr ""
+msgstr "Not ready: No damaged system in room"
 
 #: src-ru/data/text_misc.xml.append:1268
 msgid "data/text_misc.xml.append$/dummyroot/FTL/text[931]"
-msgstr ""
+msgstr "Not ready: Teleportation in progress"
 
 #: src-ru/data/text_misc.xml.append:1269
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_charges\"]"
-msgstr ""
+msgstr "Not ready: Out of charges"
 
 #: src-ru/data/text_misc.xml.append:1270
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_silenced\"]"
-msgstr ""
+msgstr "Not ready: Silenced"
 
 #: src-ru/data/text_misc.xml.append:1272
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_burning\"]"
-msgstr ""
+msgstr "Not ready: On fire"
 
 #: src-ru/data/text_misc.xml.append:1273
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_suffocating\"]"
-msgstr ""
+msgstr "Not ready: Suffocating"
 
 #: src-ru/data/text_misc.xml.append:1274
 msgid "data/text_misc.xml.append$/dummyroot/FTL/text[936]"
-msgstr ""
+msgstr "Not ready: Mind controlled"
 
 #: src-ru/data/text_misc.xml.append:1275
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_stunned\"]"
-msgstr ""
+msgstr "Not ready: Stunned"
 
 #: src-ru/data/text_misc.xml.append:1276
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing\"]"
-msgstr ""
+msgstr "Not ready: Repairing"
 
 #: src-ru/data/text_misc.xml.append:1277
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_system\"]"
-msgstr ""
+msgstr "Not ready: Repairing system"
 
 #: src-ru/data/text_misc.xml.append:1278
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach\"]"
-msgstr ""
+msgstr "Not ready: Repairing breach"
 
 #: src-ru/data/text_misc.xml.append:1279
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting\"]"
-msgstr ""
+msgstr "Not ready: Fighting"
 
 #: src-ru/data/text_misc.xml.append:1280
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_sabotaging\"]"
-msgstr ""
+msgstr "Not Ready: Sabotaging"
 
 #: src-ru/data/text_misc.xml.append:1281
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_shooting\"]"
-msgstr ""
+msgstr "Not ready: Shooting"
 
 #: src-ru/data/text_misc.xml.append:1282
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_moving\"]"
-msgstr ""
+msgstr "Not ready: Moving"
 
 #: src-ru/data/text_misc.xml.append:1283
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_idle\"]"
-msgstr ""
+msgstr "Not ready: Standing still"
 
 #: src-ru/data/text_misc.xml.append:1284
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_manning\"]"
-msgstr ""
+msgstr "Not ready: Manning system"
 
 #: src-ru/data/text_misc.xml.append:1285
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_firefighting\"]"
-msgstr ""
+msgstr "Not ready: Extinguishing fire"
 
 #: src-ru/data/text_misc.xml.append:1286
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_dying\"]"
-msgstr ""
+msgstr "Not ready: Dying"
 
 #: src-ru/data/text_misc.xml.append:1287
 msgid "data/text_misc.xml.append$/dummyroot/FTL/text[949]"
-msgstr ""
+msgstr "Not ready: Teleporting"
 
 #: src-ru/data/text_misc.xml.append:1289
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_burning_false\"]"
-msgstr ""
+msgstr "Not ready: Not on fire"
 
 #: src-ru/data/text_misc.xml.append:1290
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_suffocating_false\"]"
-msgstr ""
+msgstr "Not ready: Not suffocating"
 
 #: src-ru/data/text_misc.xml.append:1291
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_mind_false\"]"
-msgstr ""
+msgstr "Not ready: Not mind controlled"
 
 #: src-ru/data/text_misc.xml.append:1292
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_stunned_false\"]"
-msgstr ""
+msgstr "Not ready: Not stunned"
 
 #: src-ru/data/text_misc.xml.append:1293
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_false\"]"
-msgstr ""
+msgstr "Not ready: Not repairing"
 
 #: src-ru/data/text_misc.xml.append:1294
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_system_false\"]"
-msgstr ""
+msgstr "Not ready: Not repairing system"
 
 #: src-ru/data/text_misc.xml.append:1295
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach_false\"]"
-msgstr ""
+msgstr "Not ready: Not repairing breach"
 
 #: src-ru/data/text_misc.xml.append:1296
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting_false\"]"
-msgstr ""
+msgstr "Not ready: Not fighting"
 
 #: src-ru/data/text_misc.xml.append:1297
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_sabotaging_false\"]"
-msgstr ""
+msgstr "Not ready: Not sabotaging"
 
 #: src-ru/data/text_misc.xml.append:1298
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_shooting_false\"]"
-msgstr ""
+msgstr "Not ready: Not shooting"
 
 #: src-ru/data/text_misc.xml.append:1299
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_moving_false\"]"
-msgstr ""
+msgstr "Not ready: Not moving"
 
 #: src-ru/data/text_misc.xml.append:1300
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_idle_false\"]"
-msgstr ""
+msgstr "Not ready: Not standing still"
 
 #: src-ru/data/text_misc.xml.append:1301
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_manning_false\"]"
-msgstr ""
+msgstr "Not ready: Not manning system"
 
 #: src-ru/data/text_misc.xml.append:1302
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_firefighting_false\"]"
-msgstr ""
+msgstr "Not ready: Not extinguishing fir"
 
 #: src-ru/data/text_misc.xml.append:1303
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_dying_false\"]"
-msgstr ""
+msgstr "Not ready: Not dying"
 
 #: src-ru/data/text_misc.xml.append:1304
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_teleporting_false\"]"
-msgstr ""
+msgstr "Not ready: Not teleporting"
 
 #: src-ru/data/text_misc.xml.append:1306
 msgid "data/text_misc.xml.append$//text[@name=\"power_number_charges\"]"
-msgstr ""
+msgstr "Charges: \\1/\\2"
 
 #: src-ru/data/text_misc.xml.append:1308
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"button_mushroom_b\"]"
-msgstr "СПОРЫ"
+msgstr "SPORE"
 
 #: src-ru/data/text_misc.xml.append:1309
 msgid "data/text_misc.xml.append$//text[@name=\"power_mushroom_b_ready\"]"
-msgstr ""
+msgstr "Ready: Click to stun enemies in this room for 4 seconds"
 
 #: src-ru/data/text_misc.xml.append:1311
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"button_mushroom\"]"
-msgstr "СПОРЫ"
+msgstr "SPORE"
 
 #: src-ru/data/text_misc.xml.append:1312
 msgid "data/text_misc.xml.append$//text[@name=\"power_mushroom_ready\"]"
-msgstr ""
+msgstr "Ready: Click to stun enemies in this room for 8 seconds"
 
 #: src-ru/data/text_misc.xml.append:1314
 msgid "data/text_misc.xml.append$//text[@name=\"tip_manning\"]"
 msgstr ""
+"Tip: This drone can man systems with 1 skills and also provides 1 power to "
+"the manned system it occupies."
 
 #: src-ru/data/text_misc.xml.append:1316
 msgid "data/text_misc.xml.append$//text[@name=\"tip_manning_2\"]"
 msgstr ""
+"Tip: This drone can man systems with 2 skills and also provides 2 power to "
+"the manned system it occupies."
 
 #: src-ru/data/text_misc.xml.append:1318
 msgid "data/text_misc.xml.append$//text[@name=\"tip_battery\"]"
 msgstr ""
+"Tip: Battery Drones provide systems they occupy with non-ionizable energy."
 
 #: src-ru/data/text_misc.xml.append:1322
 msgid "data/text_misc.xml.append$//text[@name=\"discord_main_menu\"]"
-msgstr ""
+msgstr "In main menu"
 
 #: src-ru/data/text_misc.xml.append:1323
 msgid "data/text_misc.xml.append$//text[@name=\"discord_hangar\"]"
-msgstr ""
+msgstr "In the hangar"
 
 #: src-ru/data/text_misc.xml.append:1324
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dying\"]"
-msgstr ""
+msgstr "Dying"
 
 #: src-ru/data/text_misc.xml.append:1325
 msgid "data/text_misc.xml.append$//text[@name=\"discord_exploring\"]"
-msgstr ""
+msgstr "Exploring"
 
 #: src-ru/data/text_misc.xml.append:1326
 msgid "data/text_misc.xml.append$//text[@name=\"discord_battle\"]"
-msgstr ""
+msgstr "In battle"
 
 #: src-ru/data/text_misc.xml.append:1327
 msgid "data/text_misc.xml.append$//text[@name=\"discord_battle_boss\"]"
-msgstr ""
+msgstr "In final battle (Phase \\1)"
 
 #: src-ru/data/text_misc.xml.append:1328
 msgid "data/text_misc.xml.append$//text[@name=\"discord_sector\"]"
-msgstr ""
+msgstr "\\1 (\\2/8)"
 
 #: src-ru/data/text_misc.xml.append:1329
 msgid "data/text_misc.xml.append$//text[@name=\"discord_ship\"]"
-msgstr ""
+msgstr "\\1 Type \\2"
 
 #: src-ru/data/text_misc.xml.append:1330
 msgid "data/text_misc.xml.append$//text[@name=\"discord_playing_modded\"]"
-msgstr ""
+msgstr "Playing mod (\\1)"
 
 #: src-ru/data/text_misc.xml.append:1331
 msgid "data/text_misc.xml.append$//text[@name=\"discord_playing_vanilla\"]"
-msgstr ""
+msgstr "Playing vanila"
 
 #: src-ru/data/text_misc.xml.append:1332
 msgid "data/text_misc.xml.append$//text[@name=\"discord_victory\"]"
@@ -4353,124 +4383,134 @@ msgstr "Victory"
 
 #: src-ru/data/text_misc.xml.append:1333
 msgid "data/text_misc.xml.append$//text[@name=\"discord_dead\"]"
-msgstr ""
+msgstr "Defeat"
 
 #: src-ru/data/text_misc.xml.append:1334
 msgid "data/text_misc.xml.append$//text[@name=\"discord_mod\"]"
-msgstr ""
+msgstr "Arsenal +"
 
 #: src-ru/data/text_misc.xml.append:1336
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_dialog\"]"
 msgstr ""
+"It appears this is either your first time playing this mod, or have not yet "
+"set up a new save file! Would you like to transfer vanilla progress, or play "
+"with a fresh save? This will NOT influence your vanilla progress in any way."
 
 #: src-ru/data/text_misc.xml.append:1338
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_yes\"]"
-msgstr ""
+msgstr "Transfer progress"
 
 #: src-ru/data/text_misc.xml.append:1339
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_no\"]"
-msgstr ""
+msgstr "Start all over again"
 
 #: src-ru/data/text_misc.xml.append:1341
 msgid "data/text_misc.xml.append$//text[@name=\"button_magman\"]"
-msgstr ""
+msgstr "IGNITE"
 
 #: src-ru/data/text_misc.xml.append:1342
 msgid "data/text_misc.xml.append$//text[@name=\"power_magman_ready\"]"
-msgstr ""
+msgstr "Ready: Set the current room on fire (50% chance)"
 
 #: src-ru/data/text_misc.xml.append:1344
 msgid "data/text_misc.xml.append$//text[@name=\"button_morph\"]"
-msgstr ""
+msgstr "SHORT-OUT"
 
 #: src-ru/data/text_misc.xml.append:1345
 msgid "data/text_misc.xml.append$//text[@name=\"power_morph_ready\"]"
 msgstr ""
+"Ready: Lose control but significantly increase repair speed, fire "
+"extinguishing, movement and combat damage"
 
 #: src-ru/data/text_misc.xml.append:1386
 msgid "data/text_misc.xml.append$//text[@name=\"hack_potential\"]"
-msgstr ""
+msgstr "Grants disruption ability: \\1"
 
 #: src-ru/data/text_misc.xml.append:1387
 msgid "data/text_misc.xml.append$//text[@name=\"hack_activate\"]"
-msgstr ""
+msgstr "Begins disruption ability: \\1"
 
 #: src-ru/data/text_misc.xml.append:1389
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"hack_no_system\"]"
-msgstr "\\nNot a target for hacking."
+msgstr "Not a target for hacking."
 
 #: src-ru/data/text_misc.xml.append:1390
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen\"]"
-msgstr ""
+msgstr "Temporarily drain the enemy ship of oxygen."
 
 #: src-ru/data/text_misc.xml.append:1391
 msgid "data/text_misc.xml.append$//text[@name=\"hack_doors\"]"
-msgstr ""
+msgstr "Temporarily turn all enemy doors into player friendly blast doors."
 
 #: src-ru/data/text_misc.xml.append:1392
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields\"]"
-msgstr ""
+msgstr "Temporarily drain power from the enemy shields."
 
 #: src-ru/data/text_misc.xml.append:1393
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot\"]"
-msgstr ""
+msgstr "Temporarily reduce the enemy ship's evasion to 0."
 
 #: src-ru/data/text_misc.xml.append:1394
 msgid "data/text_misc.xml.append$//text[@name=\"hack_engines\"]"
-msgstr ""
+msgstr "Temporarily reduce the enemy ship's evasion to 0."
 
 #: src-ru/data/text_misc.xml.append:1395
 msgid "data/text_misc.xml.append$//text[@name=\"hack_sensors\"]"
-msgstr ""
+msgstr "Temporarily shut down the enemy sensors."
 
 #: src-ru/data/text_misc.xml.append:1396
 msgid "data/text_misc.xml.append$//text[@name=\"hack_medbay\"]"
-msgstr ""
+msgstr "Temporarily cause the medbay to damage instead of heal enemy crew."
 
 #: src-ru/data/text_misc.xml.append:1397
 msgid "data/text_misc.xml.append$//text[@name=\"hack_weapons\"]"
-msgstr ""
+msgstr "Temporarily drain charge from enemy weapons."
 
 #: src-ru/data/text_misc.xml.append:1398
 msgid "data/text_misc.xml.append$//text[@name=\"hack_drones\"]"
-msgstr ""
+msgstr "Temporarily freeze enemy drones with a chance of destroying them."
 
 #: src-ru/data/text_misc.xml.append:1399
 msgid "data/text_misc.xml.append$//text[@name=\"hack_teleporter\"]"
 msgstr ""
+"Temporarily take control of the enemy teleporter, returning crew to the "
+"enemy ship."
 
 #: src-ru/data/text_misc.xml.append:1400
 msgid "data/text_misc.xml.append$//text[@name=\"hack_cloaking\"]"
-msgstr ""
+msgstr "Temporarily shut down the enemy's ability to cloak."
 
 #: src-ru/data/text_misc.xml.append:1401
 msgid "data/text_misc.xml.append$//text[@name=\"hack_artillery\"]"
-msgstr ""
+msgstr "Temporarily reverse the enemy's artillery charge."
 
 #: src-ru/data/text_misc.xml.append:1402
 msgid "data/text_misc.xml.append$//text[@name=\"hack_battery\"]"
-msgstr ""
+msgstr "Temporarily reduce the enemy's reactor power by two."
 
 #: src-ru/data/text_misc.xml.append:1403
 msgid "data/text_misc.xml.append$//text[@name=\"hack_clonebay\"]"
 msgstr ""
+"Temporarily shut down the clone bay's functionality, killing potential "
+"clones."
 
 #: src-ru/data/text_misc.xml.append:1404
 msgid "data/text_misc.xml.append$//text[@name=\"hack_mind\"]"
 msgstr ""
+"Free any currently controlled people and temporarily mind control an enemy "
+"unit."
 
 #: src-ru/data/text_misc.xml.append:1405
 msgid "data/text_misc.xml.append$//text[@name=\"hack_hacking\"]"
-msgstr ""
+msgstr "Temporarily interrupt and shut down the enemy hacking."
 
 #: src-ru/data/text_misc.xml.append:1407
 msgid "data/text_misc.xml.append$//text[@name=\"hack_oxygen_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: LOSING OXYGEN RAPIDLY."
 
 #: src-ru/data/text_misc.xml.append:1408
 msgid "data/text_misc.xml.append$//text[@name=\"hack_doors_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: DOORS DISRUPT CREW MOVEMENT."
 
 #: src-ru/data/text_misc.xml.append:1409
 msgid "data/text_misc.xml.append$//text[@name=\"hack_shields_player\"]"
@@ -4478,83 +4518,89 @@ msgstr "SYSTEM HACKED: SHIELDS LOSING POWER."
 
 #: src-ru/data/text_misc.xml.append:1410
 msgid "data/text_misc.xml.append$//text[@name=\"hack_pilot_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: EVASION DROPPED TO 0."
 
 #: src-ru/data/text_misc.xml.append:1411
 msgid "data/text_misc.xml.append$//text[@name=\"hack_engines_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: EVASION DROPPED TO 0."
 
 #: src-ru/data/text_misc.xml.append:1412
 msgid "data/text_misc.xml.append$//text[@name=\"hack_sensors_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: SENSORS WILL NOT FUNCTION."
 
 #: src-ru/data/text_misc.xml.append:1413
 msgid "data/text_misc.xml.append$//text[@name=\"hack_medbay_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: MEDBAY DAMAGES CREW!"
 
 #: src-ru/data/text_misc.xml.append:1414
 msgid "data/text_misc.xml.append$//text[@name=\"hack_weapons_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: WEAPONS LOSING CHARGE."
 
 #: src-ru/data/text_misc.xml.append:1415
 msgid "data/text_misc.xml.append$//text[@name=\"hack_drones_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: DRONES STUNNED AND MAY EXPLODE."
 
 #: src-ru/data/text_misc.xml.append:1416
 msgid "data/text_misc.xml.append$//text[@name=\"hack_teleporter_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: FRIENDLY CREW FORCED TO TELEPORT HOME."
 
 #: src-ru/data/text_misc.xml.append:1417
 msgid "data/text_misc.xml.append$//text[@name=\"hack_cloaking_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: CLOAKING SYSTEM INTERRUPTED."
 
 #: src-ru/data/text_misc.xml.append:1418
 msgid "data/text_misc.xml.append$//text[@name=\"hack_artillery_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: ARTILLERY QUICKLY LOSING CHARGE."
 
 #: src-ru/data/text_misc.xml.append:1419
 msgid "data/text_misc.xml.append$//text[@name=\"hack_battery_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: REACTOR POWER REDUCED BY 2."
 
 #: src-ru/data/text_misc.xml.append:1420
 msgid "data/text_misc.xml.append$//text[@name=\"hack_clonebay_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: CLONES CANNOT BE MADE, CREW MAY DIE!"
 
 #: src-ru/data/text_misc.xml.append:1421
 msgid "data/text_misc.xml.append$//text[@name=\"hack_mind_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: FRIENDLY UNIT UNDER CONTROL!"
 
 #: src-ru/data/text_misc.xml.append:1422
 msgid "data/text_misc.xml.append$//text[@name=\"hack_hacking_player\"]"
-msgstr ""
+msgstr "SYSTEM HACKED: HACKING TEMPORARILY INTERRUPTED."
 
 #: src-ru/data/text_misc.xml.append:1426
 msgid "data/text_misc.xml.append$//text[@name=\"distraction\"]"
 msgstr ""
+"You deploy your Distraction Buoys, giving you more time to explore this "
+"sector before the fleet catches up."
 
 #: src-ru/data/text_misc.xml.append:1427
 msgid "data/text_misc.xml.append$//text[@name=\"added_quest\"]"
-msgstr ""
+msgstr "Added a quest marker to your map!"
 
 #: src-ru/data/text_misc.xml.append:1428
 msgid "data/text_misc.xml.append$//text[@name=\"no_time\"]"
 msgstr ""
+"Upon examining your map, you realize you just won't have time and need to "
+"get to the Federation base! You leave the quest for another day."
 
 #: src-ru/data/text_misc.xml.append:1429
 msgid "data/text_misc.xml.append$//text[@name=\"added_quest_sector\"]"
-msgstr ""
+msgstr "Added a quest marker to the next sector!"
 
 #: src-ru/data/text_misc.xml.append:1431
 msgid "data/text_misc.xml.append$//text[@name=\"circle_ship\"]"
 msgstr ""
+"Congratulations, by making it to the 5th sector you've unlocked the Engi "
+"playable ship for future playthroughs!"
 
 #: src-ru/data/text_misc.xml.append:1433
 msgid "data/text_misc.xml.append$//text[@name=\"intruder_energy\"]"
-msgstr ""
+msgstr "They must have a Super Shield bypass unit; boarders are on board!"
 
 #: src-ru/data/text_misc.xml.append:1435
 msgid "data/text_misc.xml.append$//text[@name=\"event_crew_full\"]"
-msgstr ""
+msgstr "[Warning: You will have to dismiss a crewmember, you are already full.]"
 
 #: src-ru/data/text_misc.xml.append:1437
 #, fuzzy
@@ -4564,154 +4610,130 @@ msgstr ""
 "been unlocked!"
 
 #: src-ru/data/text_misc.xml.append:1438
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_2\"]"
 msgstr "A Mantis cruiser has been unlocked and added to the hangar!"
 
 #: src-ru/data/text_misc.xml.append:1439
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_4\"]"
 msgstr "The Federation Cruiser has been unlocked and added to the hangar!"
 
 #: src-ru/data/text_misc.xml.append:1440
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_5\"]"
-msgstr ""
+msgstr "The Slug cruiser has been unlocked and added to the hangar!"
 
 #: src-ru/data/text_misc.xml.append:1441
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_6\"]"
 msgstr ""
 "The Rock deliver a cruiser to the hangar. The Bulwark has been unlocked!"
 
 #: src-ru/data/text_misc.xml.append:1442
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_7\"]"
 msgstr "A Zoltan cruiser has been unlocked and added to the hangar!"
 
 #: src-ru/data/text_misc.xml.append:1443
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"unlock_ship_8\"]"
 msgstr ""
 "The Crystalline ship is sent to the hangar. The Bravais has been unlocked!"
 
 #: src-ru/data/text_misc.xml.append:1447
 msgid "data/text_misc.xml.append$//text[@name=\"augment\"]"
-msgstr ""
+msgstr "Augment:"
 
 #: src-ru/data/text_misc.xml.append:1449
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_success\"]"
-msgstr ""
+msgstr "Upgraded \\1 by \\2"
 
 #: src-ru/data/text_misc.xml.append:1450
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_fail_max\"]"
 msgstr "\\1 is already fully upgraded."
 
 #: src-ru/data/text_misc.xml.append:1451
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"upgrade_fail_missing\"]"
 msgstr "\\1 cannot be upgraded - it isn't even installed!"
 
 #: src-ru/data/text_misc.xml.append:1453
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen\"]"
 msgstr "Oxygen"
 
 #: src-ru/data/text_misc.xml.append:1454
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"doors\"]"
 msgstr "Door Control"
 
 #: src-ru/data/text_misc.xml.append:1455
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"shields\"]"
 msgstr "Shields"
 
 #: src-ru/data/text_misc.xml.append:1456
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"pilot\"]"
 msgstr "Piloting"
 
 #: src-ru/data/text_misc.xml.append:1457
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"engines\"]"
 msgstr "Engines"
 
 #: src-ru/data/text_misc.xml.append:1458
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"sensors\"]"
 msgstr "Sensors"
 
 #: src-ru/data/text_misc.xml.append:1459
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"medbay\"]"
 msgstr "Medbay"
 
 #: src-ru/data/text_misc.xml.append:1460
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"weapons\"]"
 msgstr "Weapon Control"
 
 #: src-ru/data/text_misc.xml.append:1461
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"drones\"]"
 msgstr "Drone Control"
 
 #: src-ru/data/text_misc.xml.append:1462
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter\"]"
 msgstr "Teleporter"
 
 #: src-ru/data/text_misc.xml.append:1463
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"cloaking\"]"
 msgstr "Cloaking"
 
 #: src-ru/data/text_misc.xml.append:1464
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"artillery\"]"
 msgstr "Artillery"
 
 #: src-ru/data/text_misc.xml.append:1465
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"battery\"]"
 msgstr "Backup Battery"
 
 #: src-ru/data/text_misc.xml.append:1466
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay\"]"
-msgstr "Clonebay"
+msgstr "Clone Bay"
 
 #: src-ru/data/text_misc.xml.append:1467
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"mind\"]"
 msgstr "Mind Control"
 
 #: src-ru/data/text_misc.xml.append:1468
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"hacking\"]"
 msgstr "Hacking"
 
 #: src-ru/data/text_misc.xml.append:1469
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"reactor\"]"
 msgstr "The Reactor"
 
 #: src-ru/data/text_misc.xml.append:1471
 msgid "data/text_misc.xml.append$//text[@name=\"oxygen_installed\"]"
-msgstr ""
+msgstr "Oxygen System installed"
 
 #: src-ru/data/text_misc.xml.append:1472
 msgid "data/text_misc.xml.append$//text[@name=\"doors_installed\"]"
-msgstr ""
+msgstr "Doors installed"
 
 #: src-ru/data/text_misc.xml.append:1473
 msgid "data/text_misc.xml.append$//text[@name=\"shields_installed\"]"
-msgstr ""
+msgstr "Shields installed"
 
 #: src-ru/data/text_misc.xml.append:1474
 msgid "data/text_misc.xml.append$//text[@name=\"pilot_installed\"]"
-msgstr ""
+msgstr "Piloting installed"
 
 #: src-ru/data/text_misc.xml.append:1475
 msgid "data/text_misc.xml.append$//text[@name=\"engines_installed\"]"
@@ -4719,31 +4741,31 @@ msgstr "Engines installed"
 
 #: src-ru/data/text_misc.xml.append:1476
 msgid "data/text_misc.xml.append$//text[@name=\"sensors_installed\"]"
-msgstr "Sensor Subsystem installed"
+msgstr "Sensors installed"
 
 #: src-ru/data/text_misc.xml.append:1477
 msgid "data/text_misc.xml.append$//text[@name=\"medbay_installed\"]"
-msgstr ""
+msgstr "Medbay installed"
 
 #: src-ru/data/text_misc.xml.append:1478
 msgid "data/text_misc.xml.append$//text[@name=\"weapons_installed\"]"
-msgstr ""
+msgstr "Weapon Control installed"
 
 #: src-ru/data/text_misc.xml.append:1479
 msgid "data/text_misc.xml.append$//text[@name=\"drones_installed\"]"
-msgstr "Drone System installed"
+msgstr "Drone Control installed"
 
 #: src-ru/data/text_misc.xml.append:1480
 msgid "data/text_misc.xml.append$//text[@name=\"teleporter_installed\"]"
-msgstr ""
+msgstr "Teleporter installed"
 
 #: src-ru/data/text_misc.xml.append:1481
 msgid "data/text_misc.xml.append$//text[@name=\"cloaking_installed\"]"
-msgstr ""
+msgstr "Cloaking installed"
 
 #: src-ru/data/text_misc.xml.append:1482
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_installed\"]"
-msgstr ""
+msgstr "Artillery installed"
 
 #: src-ru/data/text_misc.xml.append:1483
 msgid "data/text_misc.xml.append$//text[@name=\"battery_installed\"]"
@@ -4751,15 +4773,15 @@ msgstr "Backup Battery installed"
 
 #: src-ru/data/text_misc.xml.append:1484
 msgid "data/text_misc.xml.append$//text[@name=\"clonebay_installed\"]"
-msgstr ""
+msgstr "Clone Bay installed"
 
 #: src-ru/data/text_misc.xml.append:1485
 msgid "data/text_misc.xml.append$//text[@name=\"mind_installed\"]"
-msgstr ""
+msgstr "Mind Control installed"
 
 #: src-ru/data/text_misc.xml.append:1486
 msgid "data/text_misc.xml.append$//text[@name=\"hacking_installed\"]"
-msgstr "Hacking System installed"
+msgstr "Hacking installed"
 
 #: src-ru/data/text_misc.xml.append:1487
 msgid "data/text_misc.xml.append$//text[@name=\"reactor_installed\"]"
@@ -4768,63 +4790,64 @@ msgstr "Reactor installed"
 #: src-ru/data/text_misc.xml.append:1489
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_last\"]"
 msgstr ""
+"Warning: If you add a new system, your ship will be full and unable to hold "
+"any more."
 
 #: src-ru/data/text_misc.xml.append:1490
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_penultimate\"]"
-msgstr ""
+msgstr "Warning: If you add a new system, you will have 1 system slot left."
 
 #: src-ru/data/text_misc.xml.append:1491
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_update\"]"
-msgstr ""
+msgstr "Warning: If you add a new system, you will have \\1 system slots left."
 
 #: src-ru/data/text_misc.xml.append:1492
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_clonebay\"]"
-msgstr ""
+msgstr "Warning: Accepting a clone bay will replace your medbay."
 
 #: src-ru/data/text_misc.xml.append:1493
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_medbay\"]"
-msgstr ""
+msgstr "Warning: Accepting a medbay will replace your clone bay."
 
 #: src-ru/data/text_misc.xml.append:1494
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_full\"]"
-msgstr ""
+msgstr "Warning: You cannot hold any more systems."
 
 #: src-ru/data/text_misc.xml.append:1495
 msgid "data/text_misc.xml.append$//text[@name=\"new_system_owned\"]"
-msgstr ""
+msgstr "Warning: You already have the offered system."
 
 #: src-ru/data/text_misc.xml.append:1497
 msgid "data/text_misc.xml.append$//text[@name=\"dead_crew\"]"
-msgstr ""
+msgstr "\\1 is gone"
 
 #: src-ru/data/text_misc.xml.append:1498
 msgid "data/text_misc.xml.append$//text[@name=\"traitor_crew\"]"
-msgstr ""
+msgstr "\\1 is now an enemy"
 
 #: src-ru/data/text_misc.xml.append:1499
 msgid "data/text_misc.xml.append$//text[@name=\"intruder_alert\"]"
-msgstr ""
+msgstr "Intruders on board!"
 
 #: src-ru/data/text_misc.xml.append:1500
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"item_removed\"]"
-msgstr "Removed '\\1'"
+msgstr "Equipment removed: \\1"
 
 #: src-ru/data/text_misc.xml.append:1502
 msgid "data/text_misc.xml.append$//text[@name=\"damage_alert\"]"
-msgstr ""
+msgstr "\\1 damage to your hull"
 
 #: src-ru/data/text_misc.xml.append:1504
 msgid "data/text_misc.xml.append$//text[@name=\"heal_alert\"]"
-msgstr ""
+msgstr "\\1 hull points repaired"
 
 #: src-ru/data/text_misc.xml.append:1505
 msgid "data/text_misc.xml.append$//text[@name=\"heal_1_alert\"]"
-msgstr ""
+msgstr "1 hull point repaired"
 
 #: src-ru/data/text_misc.xml.append:1507
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed\"]"
-msgstr ""
+msgstr "Fleet delayed by \\1 jumps"
 
 #: src-ru/data/text_misc.xml.append:1508
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_delayed_1\"]"
@@ -4832,15 +4855,15 @@ msgstr "Fleet delayed by 1 jump"
 
 #: src-ru/data/text_misc.xml.append:1510
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed\"]"
-msgstr ""
+msgstr "Fleet pursuit doubled for \\1 jumps"
 
 #: src-ru/data/text_misc.xml.append:1511
 msgid "data/text_misc.xml.append$//text[@name=\"fleet_speed_1\"]"
-msgstr ""
+msgstr "Fleet pursuit doubled for 1 jump"
 
 #: src-ru/data/text_misc.xml.append:1515
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_gameover\"]"
-msgstr ""
+msgstr "GAME OVER"
 
 #: src-ru/data/text_misc.xml.append:1516
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_title_victory\"]"
@@ -4848,11 +4871,11 @@ msgstr "VICTORY!"
 
 #: src-ru/data/text_misc.xml.append:1518
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_stats\"]"
-msgstr ""
+msgstr "STATS"
 
 #: src-ru/data/text_misc.xml.append:1519
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_restart\"]"
-msgstr ""
+msgstr "RESTART"
 
 #: src-ru/data/text_misc.xml.append:1520
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_hangar\"]"
@@ -4860,143 +4883,156 @@ msgstr "HANGAR"
 
 #: src-ru/data/text_misc.xml.append:1521
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_mainmenu\"]"
-msgstr "MENU"
+msgstr "MAIN MENU"
 
 #: src-ru/data/text_misc.xml.append:1522
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_button_quit\"]"
-msgstr "EXIT"
+msgstr "QUIT"
 
 #: src-ru/data/text_misc.xml.append:1524
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_win\"]"
 msgstr ""
+"Congratulations! You've defeated the Rebel Flagship and ensured the victory "
+"of the Federation!"
 
 #: src-ru/data/text_misc.xml.append:1525
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_win_demo\"]"
 msgstr ""
+"Congratulations! You've defeated the 'Impossible Pirate' and completed the "
+"Demo!"
 
 #: src-ru/data/text_misc.xml.append:1527
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_crew\"]"
 msgstr ""
+"All crewmembers have died. Your ship will continue to drift for eternity. Or "
+"until looters destroy it."
 
 #: src-ru/data/text_misc.xml.append:1528
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_blowup\"]"
-msgstr ""
+msgstr "One last explosion marks your fate as your ship is torn apart."
 
 #: src-ru/data/text_misc.xml.append:1529
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_fedbase\"]"
 msgstr ""
+"The Rebel Flagship has destroyed the Federation Base. All is lost, they've "
+"won."
 
 #: src-ru/data/text_misc.xml.append:1530
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_tutorial\"]"
 msgstr ""
+"Somehow you've died during the introduction training exercise. Feel free to "
+"try again but this doesn't bode well for your mission."
 
 #: src-ru/data/text_misc.xml.append:1532
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_jump_noJump\"]"
 msgstr ""
+"The enemy ship has disabled your FTL drive. There is no escape; you must "
+"defeat the enemy ship if you want to survive!"
 
 #: src-ru/data/text_misc.xml.append:1536
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_comma\"]"
-msgstr ""
+msgstr ","
 
 #: src-ru/data/text_misc.xml.append:1537
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_and\"]"
-msgstr ""
+msgstr "and"
 
 #: src-ru/data/text_misc.xml.append:1539
 msgid "data/text_misc.xml.append$//text[@name=\"thank_ship\"]"
-msgstr ""
+msgstr "Thanks to the valiant effort of:"
 
 #: src-ru/data/text_misc.xml.append:1541
 msgid "data/text_misc.xml.append$//text[@name=\"thank_crew\"]"
-msgstr ""
+msgstr "And her successful crew:"
 
 #: src-ru/data/text_misc.xml.append:1543
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory\"]"
 msgstr ""
+"The Rebel's flagship was destroyed, throwing their fleet into chaos and "
+"ensuring a Federation victory."
 
 #: src-ru/data/text_misc.xml.append:1545
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"game_from\"]"
-msgstr "'Arsenal+' created by:"
+msgstr "'Arsenal +' created by:"
 
 #: src-ru/data/text_misc.xml.append:1546
 msgid "data/text_misc.xml.append$//text[@name=\"subset_games\"]"
-msgstr ""
+msgstr "Alexander \"bamalf\" Alferov and Konstantin \"KBA3u\" Morozov"
 
 #: src-ru/data/text_misc.xml.append:1548
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"created_by\"]"
-msgstr "Разработчики:"
+msgstr "'Arsenal +' designed by:"
 
 #: src-ru/data/text_misc.xml.append:1549
 msgid "data/text_misc.xml.append$//text[@name=\"matthew_justin\"]"
-msgstr ""
+msgstr "Mstislav \"Al`Hazrad\" Sokolov"
 
 #: src-ru/data/text_misc.xml.append:1551
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"addition_code\"]"
-msgstr "Разработчики Hyperspace:"
+msgstr "English version by:"
 
 #: src-ru/data/text_misc.xml.append:1552
 msgid "data/text_misc.xml.append$//text[@name=\"andrew_church\"]"
-msgstr ""
+msgstr "Blizz/mr_easy_money"
 
 #: src-ru/data/text_misc.xml.append:1554
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"music_by\"]"
-msgstr "Original game by Subset Games"
+msgstr "Music and sound by:"
 
 #: src-ru/data/text_misc.xml.append:1555
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"ben_prunty\"]"
-msgstr "Created by Matthew Davis and Justin Ma"
+msgstr "Ben Prunty, \"Luminis Insigne\", Mushroomer, and Kieve Svetnikov"
 
 #: src-ru/data/text_misc.xml.append:1557
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"writing_by\"]"
-msgstr "With writing from:"
+msgstr "Original game by Subset Game"
 
 #: src-ru/data/text_misc.xml.append:1558
 msgid "data/text_misc.xml.append$//text[@name=\"tom_jubert\"]"
-msgstr ""
+msgstr "Created by Matthew Davis and Justin Ma"
 
 #: src-ru/data/text_misc.xml.append:1560
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"guest_writer\"]"
-msgstr "Additional art, editing, and design by:"
+msgstr "With writing from:"
 
 #: src-ru/data/text_misc.xml.append:1561
 msgid "data/text_misc.xml.append$//text[@name=\"chris_a\"]"
-msgstr ""
+msgstr "Tom Jubert and Chris Avellone"
 
 #: src-ru/data/text_misc.xml.append:1563
 msgid "data/text_misc.xml.append$//text[@name=\"additional_art\"]"
-msgstr ""
+msgstr "Additional art, editing, and design by:"
 
 #: src-ru/data/text_misc.xml.append:1564
 msgid "data/text_misc.xml.append$//text[@name=\"bryan_ma\"]"
-msgstr ""
+msgstr "Bryan Ma and Alison Waller"
 
 #: src-ru/data/text_misc.xml.append:1566
 msgid "data/text_misc.xml.append$//text[@name=\"editing\"]"
-msgstr ""
+msgstr "Additional testing, advice, and invaluable support:"
 
 #: src-ru/data/text_misc.xml.append:1567
 msgid "data/text_misc.xml.append$//text[@name=\"alison_w\"]"
 msgstr ""
+"Alison, Maria, Bryan, Matthieu, Collin, Anton, Ethan, Andy, Xia Tai Yi, our "
+"parents, and many more"
 
 #: src-ru/data/text_misc.xml.append:1569
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"additional_testing\"]"
-msgstr "Special thanks to the following:"
+msgstr "Special thanks for their contributions:"
 
 #: src-ru/data/text_misc.xml.append:1570
 msgid "data/text_misc.xml.append$//text[@name=\"family_friends\"]"
 msgstr ""
+"Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:"
+"\\side\\,\n"
+"DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, "
+"Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N ("
+"from GO BALLISTIC! 2.0 mod), Sleeper Service, TaxiService, Twinge, "
+"madhatter, slowriderxcorps, speedoflight, splette, Woona, vk.com/ftl154 "
+"group and many others"
 
 #: src-ru/data/text_misc.xml.append:1576
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr\"]"
 msgstr "Localization by Riotloc"
 
@@ -5006,56 +5042,56 @@ msgstr "Vladimir Konoplitsky, Alexander Skakovsky"
 
 #: src-ru/data/text_misc.xml.append:1578
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it\"]"
-msgstr "Italian version"
+msgstr "French version"
 
 #: src-ru/data/text_misc.xml.append:1579
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_it_names\"]"
-msgstr ""
-"Alain Dellepiane, Fabio Bortolotti, Lorenzo Bertolucci, Matteo Scarabelli"
+msgstr "Eric Holweck, Bérangère Holweck, Guillaume Pelletier"
 
 #: src-ru/data/text_misc.xml.append:1580
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de\"]"
-msgstr "German version"
+msgstr "Italian version"
 
 #: src-ru/data/text_misc.xml.append:1581
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_de_names\"]"
-msgstr "Ulrich Onken, Constanze Vogl, Roland Strube"
+msgstr ""
+"Alain Dellepiane, Fabio Bortolotti, Lorenzo Bertolucci, Matteo Scarabelli"
 
 #: src-ru/data/text_misc.xml.append:1582
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es\"]"
-msgstr "Spanish version"
+msgstr "German version"
 
 #: src-ru/data/text_misc.xml.append:1583
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_es_names\"]"
-msgstr "Alba Calvo, Ramón Méndez, Juan Ramón Acedo, Fernando Moreiras"
+msgstr "Ulrich Onken, Constanze Vogl, Roland Strube"
 
 #: src-ru/data/text_misc.xml.append:1584
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl\"]"
-msgstr "Polish version"
+msgstr "Spanish version"
 
 #: src-ru/data/text_misc.xml.append:1585
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pl_names\"]"
-msgstr "Andrzej Wróblewski, Marcin Serkies, Maciej Kowalik"
+msgstr "Alba Calvo, Ramón Méndez, Juan Ramón Acedo, Fernando Moreiras"
 
 #: src-ru/data/text_misc.xml.append:1586
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR\"]"
-msgstr "Brazilian Portuguese version"
+msgstr "Polish version"
 
 #: src-ru/data/text_misc.xml.append:1587
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_pt_BR_names\"]"
-msgstr "Bruno Dias, Caio Uliana, Diego Perez, Thierry Banhete"
+msgstr "Andrzej Wróblewski, Marcin Serkies, Maciej Kowalik"
 
 #: src-ru/data/text_misc.xml.append:1588
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru\"]"
-msgstr "Russian version"
+msgstr "Brazilian Portuguese version"
 
 #: src-ru/data/text_misc.xml.append:1589
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ru_names\"]"
-msgstr ""
+msgstr "Bruno Dias, Caio Uliana, Diego Perez, Thierry Banhete"
 
 #: src-ru/data/text_misc.xml.append:1591
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja\"]"
-msgstr ""
+msgstr "Japanese localization:"
 
 #: src-ru/data/text_misc.xml.append:1592
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_ja_84\"]"
@@ -5070,14 +5106,16 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1595
 msgid "data/text_misc.xml.append$//text[@name=\"kickstarter\"]"
 msgstr ""
+"Thank you to all of our extremely generous Kickstarter backers, with a very "
+"special thank you to:"
 
 #: src-ru/data/text_misc.xml.append:1597
 msgid "data/text_misc.xml.append$//text[@name=\"third_party\"]"
-msgstr ""
+msgstr "FTL uses the following third party libraries"
 
 #: src-ru/data/text_misc.xml.append:1598
 msgid "data/text_misc.xml.append$//text[@name=\"folder\"]"
-msgstr ""
+msgstr "(See accompanying license folder or readme for more details)"
 
 #: src-ru/data/text_misc.xml.append:1599
 msgid "data/text_misc.xml.append$//text[@name=\"freetype\"]"
@@ -5095,19 +5133,27 @@ msgstr "RapidXML (c) 2006, 2007 Marcin Kalicinski"
 
 #: src-ru/data/text_misc.xml.append:1605
 msgid "data/text_misc.xml.append$//text[@name=\"touch_skip\"]"
-msgstr ""
+msgstr "Keep finger pressed to skip the credits."
 
 #: src-ru/data/text_misc.xml.append:1608
 msgid "data/text_misc.xml.append$//text[@name=\"tip_laser_blood\"]"
 msgstr ""
+"Tip: Bleeding deals 3 damage per second and lasts for 10 seconds. Duration "
+"stacks up to 4 times. Avatars and drones cannot bleed."
 
 #: src-ru/data/text_misc.xml.append:1610
 msgid "data/text_misc.xml.append$//text[@name=\"autofire_tooltip_on\"]"
 msgstr ""
+"Autofire On. Weapons by default will continue firing at their target.\\n"
+"\\n"
+"Tap twice when arming a weapon to toggle its individual mode."
 
 #: src-ru/data/text_misc.xml.append:1611
 msgid "data/text_misc.xml.append$//text[@name=\"autofire_tooltip_off\"]"
 msgstr ""
+"Autofire Off. Weapons will only fire once at their target.\\n"
+"\\n"
+"Tap twice when arming a weapon to toggle its individual mode."
 
 #: src-ru/data/text_misc.xml.append:1613
 msgid "data/text_misc.xml.append$//text[@name=\"health_tooltip\"]"
@@ -5115,27 +5161,35 @@ msgstr "Health: \\1/\\2"
 
 #: src-ru/data/text_misc.xml.append:1614
 msgid "data/text_misc.xml.append$//text[@name=\"death_tooltip\"]"
-msgstr ""
+msgstr "Dying"
 
 #: src-ru/data/text_misc.xml.append:1616
 msgid "data/text_misc.xml.append$//text[@name=\"save_stations_tooltip\"]"
 msgstr ""
+"Save your current crew positions\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1617
 msgid "data/text_misc.xml.append$//text[@name=\"ret_stations_tooltip\"]"
 msgstr ""
+"Return crew to saved positions\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1619
 msgid "data/text_misc.xml.append$//text[@name=\"ship_info\"]"
 msgstr ""
+"Open the ship info screens. Unavailable when the ship is in danger.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1620
 msgid "data/text_misc.xml.append$//text[@name=\"open_store\"]"
 msgstr ""
+"Reopen the store at your location.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1621
 msgid "data/text_misc.xml.append$//text[@name=\"open_options\"]"
-msgstr ""
+msgstr "Open the settings menu"
 
 #: src-ru/data/text_misc.xml.append:1623
 msgid "data/text_misc.xml.append$//text[@name=\"mind_controlled_tooltip\"]"
@@ -5143,75 +5197,99 @@ msgstr "Mind Controlled"
 
 #: src-ru/data/text_misc.xml.append:1625
 msgid "data/text_misc.xml.append$//text[@name=\"rearrange\"]"
-msgstr ""
+msgstr "Click and drag to rearrange"
 
 #: src-ru/data/text_misc.xml.append:1627
 msgid "data/text_misc.xml.append$//text[@name=\"hotkey\"]"
-msgstr ""
+msgstr "Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1629
 msgid "data/text_misc.xml.append$//text[@name=\"jump_button\"]"
 msgstr ""
+"Opens star map to choose jump location.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1630
 msgid "data/text_misc.xml.append$//text[@name=\"activate_battery\"]"
 msgstr ""
+"Activate the Backup Battery, providing additional Reactor power bars\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1631
 msgid "data/text_misc.xml.append$//text[@name=\"mind_button\"]"
 msgstr ""
+"Turn enemies into allies temporarily.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1632
 msgid "data/text_misc.xml.append$//text[@name=\"hack_button\"]"
 msgstr ""
+"Launch hacking drone; costs 1 drone part.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1633
 msgid "data/text_misc.xml.append$//text[@name=\"pulse_button_broken\"]"
-msgstr ""
+msgstr "Can't disrupt system when it's destroyed"
 
 #: src-ru/data/text_misc.xml.append:1634
 msgid "data/text_misc.xml.append$//text[@name=\"open_doors\"]"
 msgstr ""
+"Open all doors on the ship.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1635
 msgid "data/text_misc.xml.append$//text[@name=\"close_doors\"]"
 msgstr ""
+"Close all doors on the ship.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1636
 msgid "data/text_misc.xml.append$//text[@name=\"tele_ret\"]"
 msgstr ""
+"Retrieve crew from targeted enemy room to player teleporter room.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1637
 msgid "data/text_misc.xml.append$//text[@name=\"tele_send\"]"
 msgstr ""
+"Send crew in player teleporter room to targeted enemy room.\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1638
 msgid "data/text_misc.xml.append$//text[@name=\"cloak_button\"]"
 msgstr ""
+"Temporarily cloak the ship, halting enemy weapon charging and increasing "
+"evasion by 60\\n"
+"Hotkey: \\1"
 
 #: src-ru/data/text_misc.xml.append:1640
 msgid "data/text_misc.xml.append$//text[@name=\"powered_deployed\"]"
-msgstr ""
+msgstr "Deployed (Powered): Active and providing its function."
 
 #: src-ru/data/text_misc.xml.append:1641
 msgid "data/text_misc.xml.append$//text[@name=\"unpowered_deployed\"]"
 msgstr ""
+"Deployed (Unpowered): Not active, but can be repowered without costing a "
+"drone part."
 
 #: src-ru/data/text_misc.xml.append:1642
 msgid "data/text_misc.xml.append$//text[@name=\"undeployed\"]"
-msgstr ""
+msgstr "Not Deployed: Will cost one drone part when first powered."
 
 #: src-ru/data/text_misc.xml.append:1643
 msgid "data/text_misc.xml.append$//text[@name=\"rebuilding\"]"
-msgstr ""
+msgstr "Drone rebuilding after unexpected destruction."
 
 #: src-ru/data/text_misc.xml.append:1645
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_autofire_off\"]"
 msgstr ""
+"Tap once to arm. Tap twice to arm and engage autofire for continuous firing."
 
 #: src-ru/data/text_misc.xml.append:1646
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_autofire_on\"]"
 msgstr ""
+"Tap once to arm with autofire. Tap twice to arm for a single shot without "
+"autofire engaged."
 
 #: src-ru/data/text_misc.xml.append:1650
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_yes\"]"
@@ -5224,38 +5302,64 @@ msgstr "NO"
 #: src-ru/data/text_misc.xml.append:1653
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_clonebay\"]"
 msgstr ""
+"Are you sure?\\n"
+"The Clone Bay will replace your Medbay."
 
 #: src-ru/data/text_misc.xml.append:1654
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_last_system\"]"
 msgstr ""
+"This is your ship's final system slot.\\n"
+"Are you sure?"
 
 #: src-ru/data/text_misc.xml.append:1655
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_medbay\"]"
 msgstr ""
+"Are you sure?\\n"
+"The Medbay will replace your Clone Bay."
 
 #: src-ru/data/text_misc.xml.append:1656
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_dismiss\"]"
 msgstr ""
+"The crew\\n"
+"will be gone\\n"
+"forever.\\n"
+"Are you sure?"
 
 #: src-ru/data/text_misc.xml.append:1657
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_end_game\"]"
 msgstr ""
+"Are you sure?\\n"
+"All progress will be lost."
 
 #: src-ru/data/text_misc.xml.append:1658
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_leave_crew\"]"
 msgstr ""
+"Are you sure?\\n"
+"Your crew is\\n"
+"still aboard\\n"
+"the enemy ship."
 
 #: src-ru/data/text_misc.xml.append:1659
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_new_game\"]"
 msgstr ""
+"WARNING:\\n"
+"Are you sure you want to start a new game? Your previous progress will be "
+"lost."
 
 #: src-ru/data/text_misc.xml.append:1660
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_reset_keys\"]"
 msgstr ""
+"Reset all\\n"
+"key bindings?"
 
 #: src-ru/data/text_misc.xml.append:1661
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_wipe_profile\"]"
 msgstr ""
+"Are you sure?\\n"
+"You will lose\\n"
+"all unlocked ships,\\n"
+"achievements,\\n"
+"and stats."
 
 #: src-ru/data/text_misc.xml.append:1665
 msgid "data/text_misc.xml.append$//text[@name=\"button_cancel\"]"
@@ -5263,48 +5367,59 @@ msgstr "CANCEL"
 
 #: src-ru/data/text_misc.xml.append:1666
 msgid "data/text_misc.xml.append$//text[@name=\"button_confirm\"]"
-msgstr "ACCEPT"
+msgstr "CONFIRM"
 
 #: src-ru/data/text_misc.xml.append:1668
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_continue\"]"
-msgstr ""
+msgstr "CONTINUE"
 
 #: src-ru/data/text_misc.xml.append:1670
 msgid "data/text_misc.xml.append$//text[@name=\"weapon_off\"]"
-msgstr ""
+msgstr "OFF"
 
 #: src-ru/data/text_misc.xml.append:1672
 msgid "data/text_misc.xml.append$//text[@name=\"window_title\"]"
-msgstr ""
+msgstr "FTL: Hyperspace Arsenal +"
 
 #: src-ru/data/text_misc.xml.append:1673
 msgid "data/text_misc.xml.append$//text[@name=\"error_resolution\"]"
 msgstr ""
+"Note: FTL requires a minimum resolution of 1280x720 or higher, and it "
+"appears your computer does not support that. Please contact Subset Games at "
+"devteam@ftlgame.com if you believe you received this message in error."
 
 #: src-ru/data/text_misc.xml.append:1674
 msgid "data/text_misc.xml.append$//text[@name=\"error_manual_resolution\"]"
 msgstr ""
+"Sorry, FTL was unable to start in the requested manual resolution (\\1 x \\2)"
+". Video settings have been automatically reverted to Windowed instead."
 
 #: src-ru/data/text_misc.xml.append:1675
 msgid "data/text_misc.xml.append$//text[@name=\"error_native_fullscreen\"]"
 msgstr ""
+"Sorry, FTL was unable to start in Native Fullscreen mode. Your monitor does "
+"not support the required resolution (1280 x 720). Video settings have been "
+"automatically reverted to Fullscreen Stretched instead."
 
 #: src-ru/data/text_misc.xml.append:1676
 msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer\"]"
-msgstr ""
-"Your system does not support framebuffers, so Fullscreen Stretched mode will"
-" not be available and FTL's window will not be resizable."
-
-#: src-ru/data/text_misc.xml.append:1677
-msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer_stretch\"]"
 msgstr ""
 "Your system does not support framebuffers, so Fullscreen Stretched mode is "
 "not available and FTL's window will not be resizable. Video settings have "
 "been automatically reverted to Windowed."
 
+#: src-ru/data/text_misc.xml.append:1677
+msgid "data/text_misc.xml.append$//text[@name=\"error_framebuffer_stretch\"]"
+msgstr ""
+"Your system does not support framebuffers, so Fullscreen Stretched mode will "
+"not be available and FTL's window will not be resizable."
+
 #: src-ru/data/text_misc.xml.append:1678
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed\"]"
 msgstr ""
+"You recently changed your screen settings. Are these acceptable?\\n"
+"\\n"
+"Will quit and auto-revert in \\1"
 
 #: src-ru/data/text_misc.xml.append:1679
 msgid "data/text_misc.xml.append$//text[@name=\"screen_changed_seconds\"]"
@@ -5320,19 +5435,19 @@ msgstr "Keep Screen Setting"
 
 #: src-ru/data/text_misc.xml.append:1682
 msgid "data/text_misc.xml.append$//text[@name=\"revert_screen\"]"
-msgstr ""
+msgstr "Revert Screen Setting and Quit"
 
 #: src-ru/data/text_misc.xml.append:1684
 msgid "data/text_misc.xml.append$//text[@name=\"mind_blocked_shield\"]"
-msgstr ""
+msgstr "Cannot mind control through Super Shields."
 
 #: src-ru/data/text_misc.xml.append:1685
 msgid "data/text_misc.xml.append$//text[@name=\"mind_blocked_blackout\"]"
-msgstr ""
+msgstr "Cannot mind control in rooms you cannot detect life in."
 
 #: src-ru/data/text_misc.xml.append:1687
 msgid "data/text_misc.xml.append$//text[@name=\"rename\"]"
-msgstr ""
+msgstr "Hit ENTER or ESCAPE to confirm name."
 
 #: src-ru/data/text_misc.xml.append:1689
 msgid "data/text_misc.xml.append$//text[@name=\"stations_saved\"]"
@@ -5340,11 +5455,11 @@ msgstr "Stations Saved!"
 
 #: src-ru/data/text_misc.xml.append:1690
 msgid "data/text_misc.xml.append$//text[@name=\"no_stations\"]"
-msgstr ""
+msgstr "No Stations Saved!"
 
 #: src-ru/data/text_misc.xml.append:1691
 msgid "data/text_misc.xml.append$//text[@name=\"return_stations\"]"
-msgstr ""
+msgstr "Return to Stations!"
 
 #: src-ru/data/text_misc.xml.append:1693
 msgid "data/text_misc.xml.append$//text[@name=\"nameless_one\"]"
@@ -5352,36 +5467,47 @@ msgstr "The Nameless One"
 
 #: src-ru/data/text_misc.xml.append:1695
 msgid "data/text_misc.xml.append$//text[@name=\"game_center\"]"
-msgstr ""
+msgstr "Waiting for Game Center"
 
 #: src-ru/data/text_misc.xml.append:1696
 msgid "data/text_misc.xml.append$//text[@name=\"game_center_slow\"]"
 msgstr ""
+"If Game Center is not responding, you can disable it in the FTL page of the "
+"Settings app."
 
 #: src-ru/data/text_misc.xml.append:1697
 msgid "data/text_misc.xml.append$//text[@name=\"game_center_disabled\"]"
-msgstr ""
+msgstr "Note: Game Center support is disabled."
 
 #: src-ru/data/text_misc.xml.append:1699
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"default_dead_crew\"]"
 msgstr "Your crew member will be missed."
 
 #: src-ru/data/text_misc.xml.append:1701
 msgid "data/text_misc.xml.append$//text[@name=\"first_run_tip_pc\"]"
 msgstr ""
+"TIP: Open the in-game menu by pressing ESCAPE. You can restart or change "
+"options from there."
 
 #: src-ru/data/text_misc.xml.append:1702
 msgid "data/text_misc.xml.append$//text[@name=\"first_run_tip_ipad\"]"
 msgstr ""
+"TIP: Open the in-game menu by tapping the OPTIONS button in the upper-right "
+"corner of the screen. You can restart or change options from there."
 
 #: src-ru/data/text_misc.xml.append:1704
 msgid "data/text_misc.xml.append$//text[@name=\"demo_locked\"]"
-msgstr ""
+msgstr "Unavailable in FTL Demo"
 
 #: src-ru/data/text_misc.xml.append:1706
 msgid "data/text_misc.xml.append$//text[@name=\"beam_tutorial\"]"
 msgstr ""
+"Beam weapons can hit multiple rooms. When aiming one, DRAG your finger to "
+"draw its initial path.\\n"
+"\\n"
+"Once drawn, if you continue to drag ONE finger the angle will change, or you "
+"can use TWO fingers to change the position. Experiment for an optimal aiming "
+"path!"
 
 #: src-ru/data/text_misc.xml.append:1708
 msgid "data/text_misc.xml.append$//text[@name=\"tutorial_extra_crew_1\"]"
@@ -5405,10 +5531,13 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1717
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_true_end\"]"
 msgstr ""
+"The Black Wing Flagship has been defeated. Of course, you'll be able to "
+"return and complete your mission to save the Federation, but that's for "
+"another day..."
 
 #: src-ru/data/text_misc.xml.append:1720
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_more\"]"
-msgstr ""
+msgstr "and more"
 
 #: src-ru/data/text_misc.xml.append:1721
 msgid "data/text_misc.xml.append$//text[@name=\"thank_ai\"]"
