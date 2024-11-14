@@ -136,8 +136,12 @@
             "applyPostprocesses": {
                 // Add one space to the beginning of the text. mvloc strips white spaces when converting texts from xmls to po files, and weblate does not allow to add a leading space to translation since original's one is stripped. Use this post process if you need a leading space.
                 "add-leading-space": [
-                    "//crewBlueprint/powerList/power",
-                    "//text[@name='shipselect_type_suffix']"
+                    "//text[@name='crewlist_and' or @name='crewlist_more' or @name='shipselect_type_suffix' or @name='clonebay_damaged' or @name='event_crew_full']",
+                    "//crewBlueprint/powerList/power"
+                ],
+                // Add one space to the end of the text. mvloc strips white spaces when converting texts from xmls to po files, and weblate does not allow to add a leading space to translation since original's one is stripped. Use this post process if you need a trailing space.
+                "add-trailing-space": [
+                    "//text[@name='crewlist_and' or @name='chance_of_separator' or @name='crewlist_comma']"
                 ]
             }
         },
