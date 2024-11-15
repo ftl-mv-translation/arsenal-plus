@@ -35,28 +35,28 @@ The repo is designed to work with [Weblate](https://weblate.org/). Following Web
    gettext PO file (monolingual)
    
    Define the monolingual base filename:
-   locale/{{ component }}/en.po
+   locale/{{ component }}/ru.po
    
    Define the base file for new translations:
-   locale/{{ component }}/en.po
+   locale/{{ component }}/ru.po
    ```
 
-### Updating the English strings
+### Updating the Russian strings
 
-1. Unzip the latest TRC into src-en/ directory
+1. Unzip the latest Arsenal+ into src-ru/ directory
 2. Update the `packaging` section of `mvloc.config.jsonc` file
 3. Run `mvloc major-update --first-pass`
 4. Push the changes to the repo, then Update -> Force Synchronization from Weblate.
 5. Run `mvloc major-update --second-pass`
 6. Push the changes to the repo, then Update -> Force Synchronization from Weblate.
 
-The command extracts localizable strings from `src-en/` and updates  `en.po` files in `locale/`.
+The command extracts localizable strings from `src-ru/` and updates  `ru.po` files in `locale/`.
 Note that the two-step is required for Weblate to automatically handle the string changes correctly.
 
 ### Changing string extraction criteria
 
 1. Edit `mvloc.config.jsonc` file
-3. Run `mvloc batch-generate --clean --update en`
+3. Run `mvloc batch-generate --clean --update ru`
 
 Unlike `major-update` command it tries to update the file without global translation memory,
 does not perform a fuzzy matching, and preserves the obsolete/fuzzy entries.
@@ -65,7 +65,7 @@ does not perform a fuzzy matching, and preserves the obsolete/fuzzy entries.
 
 Run `mvloc batch-apply <langname>` -- Example: `mvloc batch-apply ko`
 
-This command transforms XMLs in `src-en/` using translation files on `locale/`,
+This command transforms XMLs in `src-ru/` using translation files on `locale/`,
 then writes them out to `output-<langname>` directory.
 
 Add `-m` option if you use machine translation from `locale-machine/`. Machine translation is put on untranslated texts, does not replace hand translation.
@@ -79,7 +79,7 @@ Add `-m` option if you use machine translation from `locale-machine/`. Machine t
 If you used `-m` option while applying process, add `-m` option as well.
 -- Example: `mvloc package ja -m`
 
-This command automatically packages the translation. It downloads the English Multiverse, overwrites it with
+This command automatically packages the translation. It downloads the Russian Arsenal+, overwrites it with
 translated XMLs, (optionally overwrites it with contents in `auxfiles-<langname>/` if any), and zip it to create
 a package suitable for Slipstream Mod Manager.
 
@@ -93,7 +93,7 @@ XML files. This is useful when migrating from an ongoing translation project.
 
 In case where the string extraction criteria is incomplete to cover your XMLs, the unhandled changes are shown in
 the report.txt (shown as "Diff report" tasks). In that case, adjust `mvloc.config.jsonc` appropriately, follow the
-"Updating the English strings" workflow to update en.po files, and repeat this workflow again.
+"Updating the Russian strings" workflow to update ru.po files, and repeat this workflow again.
 
 > #### Bootstrapping only a subset of XML files
 >
@@ -103,7 +103,7 @@ the report.txt (shown as "Diff report" tasks). In that case, adjust `mvloc.confi
 
 ### Machine translation
 
-If you want localized MV but cant find translation for your language, you can make MT(machine translation) by yourself. Also you can join our weblate project to start hand translation, but you will soon realize how large the scale of MV is. So I recommend to make MT first, then replace it with your hand translation gradually.
+If you want localized Ars+ but cant find translation for your language, you can make MT(machine translation) by yourself. Also you can join our weblate project to start hand translation, but you will soon realize how large the scale of Ars+ is. So I recommend to make MT first, then replace it with your hand translation gradually.
 
 `mvloc machine <langname>` -- Example: `mvloc machine ja`
 
@@ -113,7 +113,7 @@ You do not have to run the script continuously because there is the autosave fun
 To implement MT in Nightly, add `bash snippets/ci-nightly-machine.sh <langname>` [HERE](https://github.com/ftl-mv-translation/ftl-mv-translation/blob/c4f2e63a98ade4d2895ea5fa16d371703769c2a9/.github/workflows/nightly.yml#L36)
 
 > If you have deepl api free, you can replace MT with deepl translation, which would be more decent quality. `mvloc deepl <langname> <deepl-api-free-key> <character-limit(optional)>`
-> Deepl api free has translation limit of 500k characters per month. MV has about 4m characters, so it may take 8 months to complete deepl translation.
+> Deepl api free has translation limit of 500k characters per month. Ars+ has about 2.5M characters, so it may take 8 months to complete deepl translation.
 
 If vanilla ftl does not support your language, you have to find fonts suitable for ftl, and make `auxfiles-<langname>/` to override existing language fonts. [Korean](https://github.com/ftl-mv-translation/ftl-mv-translation/tree/main/auxfiles-ko/fonts/zh-Hans) is a good example.
 You can also ask HS devs to add your language. 
