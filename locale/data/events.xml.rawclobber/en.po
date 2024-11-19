@@ -1,144 +1,156 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-11-19 08:20+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataeventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
 msgstr "Oh no, the ship!"
 
 #: src-ru/data/events.xml.rawclobber:34
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/choice[1]/text"
-msgstr ""
+msgstr "4 shields"
 
 #: src-ru/data/events.xml.rawclobber:38
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/choice[2]/text"
-msgstr ""
+msgstr "3 shields"
 
 #: src-ru/data/events.xml.rawclobber:43
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/choice[3]/text"
-msgstr ""
+msgstr "2 shields"
 
 #: src-ru/data/events.xml.rawclobber:48
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/choice[4]/text"
-msgstr ""
+msgstr "1 shield"
 
 #: src-ru/data/events.xml.rawclobber:53
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/choice[5]/text"
-msgstr ""
+msgstr "0 shields"
 
 #: src-ru/data/events.xml.rawclobber:69
 msgid "data/events.xml.rawclobber$//event[@name=\"OOO\"]/text"
-msgstr ""
+msgstr "test"
 
 #: src-ru/data/events.xml.rawclobber:71
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"OOO\"]/crewMember"
-msgstr ""
+msgstr "Lily Whichgun"
 
 #: src-ru/data/events.xml.rawclobber:74
 msgid "data/events.xml.rawclobber$//event[@name=\"OOOO\"]/text"
-msgstr ""
+msgstr "test"
 
 #: src-ru/data/events.xml.rawclobber:75
 msgid "data/events.xml.rawclobber$//event[@name=\"OOOO\"]/crewMember"
-msgstr ""
+msgstr "Cheapskate"
 
 #: src-ru/data/events.xml.rawclobber:104
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_DEFEATED_TEXT\"]/text[1]"
-msgstr ""
+msgstr "All boarders have been neutralized. You check their pockets."
 
 #: src-ru/data/events.xml.rawclobber:105
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_DEFEATED_TEXT\"]/text[2]"
-msgstr ""
+msgstr "The boarders are dead. You find some metal on their corpses."
 
 #: src-ru/data/events.xml.rawclobber:106
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_DEFEATED_TEXT\"]/text[3]"
 msgstr ""
+"Having dealt with the attackers, you examine their bodies and find some "
+"useful metal."
 
 #: src-ru/data/events.xml.rawclobber:107
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_DEFEATED_TEXT\"]/text[4]"
 msgstr ""
+"The intruders have been wiped out. You collect all the metal you can find "
+"from their bodies."
 
 #: src-ru/data/events.xml.rawclobber:125
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"CARGO_BUTTON\"]/tooltip"
 msgstr ""
+"Open the ship's hold to perform operations on augmentations and other "
+"equipment"
 
 #: src-ru/data/events.xml.rawclobber:134
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"DRONES_BUTTON\"]/tooltip"
-msgstr ""
+msgstr "Swap anti-boarding drones"
 
 #: src-ru/data/events.xml.rawclobber:144
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"ASTEROIDS_BUTTON\"]/tooltip"
-msgstr ""
+msgstr "Summon an asteroid field"
 
 #: src-ru/data/events.xml.rawclobber:150
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_SLOW\"]/tooltip"
-msgstr ""
+msgstr "Set the game's speed to 0.125x."
 
 #: src-ru/data/events.xml.rawclobber:151
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_SLOW\"]/inactiveTooltip"
-msgstr ""
+msgstr "The current speed is 0.125x."
 
 #: src-ru/data/events.xml.rawclobber:161
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_RESET\"]/tooltip"
-msgstr ""
+msgstr "Set the game's speed to 1.0x."
 
 #: src-ru/data/events.xml.rawclobber:162
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_RESET\"]/inactiveTooltip"
-msgstr ""
+msgstr "The current speed is 1.0x."
 
 #: src-ru/data/events.xml.rawclobber:172
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/tooltip"
-msgstr ""
+msgstr "Set the game's speed to 20.0x."
 
 #: src-ru/data/events.xml.rawclobber:173
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/inactiveTooltip"
-msgstr ""
+msgstr "The current speed is 20.0x."
 
 #: src-ru/data/events.xml.rawclobber:187
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"SELL_RESOURCES\"]/tooltip"
-msgstr ""
+msgstr "Sell supplies for half their value"
 
 #: src-ru/data/events.xml.rawclobber:211
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON\"]/choice[@req=\"TUCO_START\"]/event/text"
-msgstr ""
+msgstr "The pirates are coming on board..."
 
 #: src-ru/data/events.xml.rawclobber:216
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON\"]/choice[@req=\"TUCO_START\"]/event/choice/event/text"
-msgstr ""
+msgstr "The pirates are coming on board..."
 
 #: src-ru/data/events.xml.rawclobber:221
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON\"]/choice[@req=\"TUCO_START\"]/event/choice/event/choice/event/text"
-msgstr ""
+msgstr "The pirates are coming on board..."
 
 #: src-ru/data/events.xml.rawclobber:238
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON\"]/choice[@req=\"MEDICAL_SYSTEMS\"]/event/text"
-msgstr ""
+msgstr "The LTO addon should not be used in this version of the mod."
 
 #: src-ru/data/events.xml.rawclobber:315
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_CREATE_ASTEROIDS\"]/text"
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:426
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"REMOVAL_TEST\"]/text"
 msgstr "Oh no! Not the combat drone!"
 
@@ -153,229 +165,233 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:439
 msgid "data/events.xml.rawclobber$//event[@name=\"CHARACTER_TEST\"]/text"
 msgstr ""
+"АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ абвгдеёжзийклмнопрстуфхцчшщъыьэюя\n"
+"\tABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz\n"
+"\tÈÉÊÀÔÙÛÇ èéêàôùûç\n"
+"\t1234567890+-—\"\"«»\n"
+"\t{ топливо / fuel\n"
+"\t| дроны / drones\n"
+"\t} ракеты / missiles\n"
+"\t~ лом / scrap\n"
+"\t$ ремонт / repair\n"
+"\t\n"
+"\tтолько для justin8 / justin8 only:\n"
+"\t€ пробой / breach\n"
+"\t‰ огонь / fire\n"
+"\t† энергия / power\n"
+"\t‡ перезарядка / cooldown\n"
+"\t™ проникание / piercing\n"
+"\t^ разогрева / ready\n"
+"\t£ точность / accuracy"
 
 #: src-ru/data/events.xml.rawclobber:461
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"BOARDER_TEST\"]/text"
-msgstr "Oh no, the opponents!"
+msgstr "Oh no enemies!"
 
 #: src-ru/data/events.xml.rawclobber:466
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/text"
-msgstr "Looks good..."
+msgstr "This looks good..."
 
 #: src-ru/data/events.xml.rawclobber:470
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[1]/event/text"
-msgstr "KABOOM! Damage ship!"
+msgstr "KABOOM! Ship damage!"
 
 #: src-ru/data/events.xml.rawclobber:475
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[2]/text"
-msgstr ""
+msgstr "Get a Magman!"
 
 #: src-ru/data/events.xml.rawclobber:477
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[2]/event/text"
-msgstr ""
+msgstr "Wow!"
 
 #: src-ru/data/events.xml.rawclobber:482
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[3]/text"
-msgstr ""
+msgstr "Get an Order Fanatic!"
 
 #: src-ru/data/events.xml.rawclobber:484
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[3]/event/text"
-msgstr ""
+msgstr "Wow!"
 
 #: src-ru/data/events.xml.rawclobber:489
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[4]/text"
-msgstr ""
+msgstr "Get a Human!"
 
 #: src-ru/data/events.xml.rawclobber:491
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[4]/event/text"
-msgstr ""
+msgstr "Wow!"
 
 #: src-ru/data/events.xml.rawclobber:496
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT\"]/choice[5]/text"
-msgstr ""
+msgstr "Load event"
 
 #: src-ru/data/events.xml.rawclobber:502
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT2\"]/text"
-msgstr "Limited Systems!"
+msgstr "Limited systems!"
 
 #: src-ru/data/events.xml.rawclobber:510
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT3\"]/text"
 msgstr "Quest."
 
 #: src-ru/data/events.xml.rawclobber:515
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT4\"]/text"
 msgstr "Test death."
 
 #: src-ru/data/events.xml.rawclobber:519
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT4\"]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/text"
 msgstr "Your crew member will be missed."
 
 #: src-ru/data/events.xml.rawclobber:522
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT4\"]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
-"You go to the clonebay with hope, and to your relief, the clone of the lost "
-"crewmember is already ready for duty."
+"You take a hopeful trip to the Clone Bay, and to your relief a clone is "
+"already prepared for the lost crew member."
 
 #: src-ru/data/events.xml.rawclobber:529
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT4\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is under the control of AI, you need not fear the death of any "
+"crew."
 
 #: src-ru/data/events.xml.rawclobber:535
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT5\"]/text"
 msgstr "Test traitor."
 
 #: src-ru/data/events.xml.rawclobber:540
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/text"
-msgstr "Looks good..."
+msgstr "This looks good..."
 
 #: src-ru/data/events.xml.rawclobber:543
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/choice[1]/text"
 msgstr "-10 hp"
 
 #: src-ru/data/events.xml.rawclobber:544
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/choice[1]/event/text"
-msgstr "KABOOM! Damage ship!"
+msgstr "KABOOM! Ship damage!"
 
 #: src-ru/data/events.xml.rawclobber:547
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/choice[1]/event/choice/text"
 msgstr "+100 scrap"
 
 #: src-ru/data/events.xml.rawclobber:549
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/choice[1]/event/choice/event/text"
 msgstr "Freebie!"
 
 #: src-ru/data/events.xml.rawclobber:558
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/choice[2]/text"
 msgstr "+100 scrap"
 
 #: src-ru/data/events.xml.rawclobber:559
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT6\"]/choice[2]/event/text"
 msgstr "Freebie!"
 
 #: src-ru/data/events.xml.rawclobber:568
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"FREE_NANO\"]/text"
-msgstr "FREE NANO!"
+msgstr "FREE NANOTECHNOLOGY!"
 
 #: src-ru/data/events.xml.rawclobber:573
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"FREE_AUG\"]/text"
-msgstr "FREE AUG!"
+msgstr "FREE AUGMENT!"
 
 #: src-ru/data/events.xml.rawclobber:578
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"CRYSTAL_TEST\"]/text"
 msgstr "Testing Crystal Teleport."
 
 #: src-ru/data/events.xml.rawclobber:580
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"CRYSTAL_TEST\"]/choice/text"
 msgstr "Travel to the Crystal Sector."
 
 #: src-ru/data/events.xml.rawclobber:596
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"STALEMATE_SURRENDER\"]/text"
 msgstr ""
 "The ship suddenly disables their weapons. There's no explanation and they "
-"don't respond to hails. It seems during the battle they lost some fuel cells"
-" from their storage. Continue the fight?"
+"don't respond to hails. It seems during the battle they lost some fuel cells "
+"from their storage. Continue the fight?"
 
 #: src-ru/data/events.xml.rawclobber:598
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STALEMATE_SURRENDER\"]/choice[1]/text"
 msgstr "We can still beat them!"
 
 #: src-ru/data/events.xml.rawclobber:602
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STALEMATE_SURRENDER\"]/choice[2]/text"
 msgstr "Pick up the fuel and fly away."
 
 #: src-ru/data/events.xml.rawclobber:604
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STALEMATE_SURRENDER\"]/choice[2]/event/text"
 msgstr "You quickly pick up the fuel and fly away from the battlefield."
 
 #: src-ru/data/events.xml.rawclobber:615
 msgid "data/events.xml.rawclobber$//event[@name=\"BOSS_STALEMATE\"]/text"
-msgstr ""
+msgstr "The ship jumped away without warning. You prepare to pursue."
 
 #: src-ru/data/events.xml.rawclobber:619
 msgid "data/events.xml.rawclobber$//event[@name=\"CREW_STUCK\"]/text"
 msgstr ""
+"With your teleporter damaged and no way to fix it, you take one of the enemy "
+"ship's shuttles to return to your own ship."
 
 #: src-ru/data/events.xml.rawclobber:623
 msgid "data/events.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_SUN\"]/text"
 msgstr ""
+"While waiting for help, you drained what little power you had left to pull "
+"away to a safe distance from the sun."
 
 #: src-ru/data/events.xml.rawclobber:627
 msgid "data/events.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_STORM\"]/text"
 msgstr ""
+"The ion storm died down, leaving your ship in peace as you wait for help."
 
 #: src-ru/data/events.xml.rawclobber:631
 msgid "data/events.xml.rawclobber$//event[@name=\"FUEL_ESCAPE_ASTEROIDS\"]/text"
 msgstr ""
+"While waiting, you managed to navigate out of the asteroid field using only "
+"your impulse engines."
 
 #: src-ru/data/events.xml.rawclobber:635
 msgid "data/events.xml.rawclobber$//event[@name=\"AUGMENT_FULL\"]/text"
 msgstr ""
+"Your ship already has this augment and its effect cannot stack. You break it "
+"down into scrap."
 
 #: src-ru/data/events.xml.rawclobber:639
 msgid "data/events.xml.rawclobber$//event[@name=\"START_GAME\"]/text"
 msgstr ""
+"The data you carry is vital to the remaining Federation fleet. You'll need "
+"supplies for the journey, so make sure to explore each sector before moving "
+"on to the next. But get to the exit before the pursuing Rebel fleet can "
+"catch up!"
 
 #: src-ru/data/events.xml.rawclobber:644
 msgid "data/events.xml.rawclobber$//textList[@name=\"GAMEOVER\"]/text"
-msgstr ""
+msgstr "The last hope of the Federation dies as your ship breaks apart."
 
 #: src-ru/data/events.xml.rawclobber:649
 msgid "data/events.xml.rawclobber$//event[@name=\"DUMMY\"]/text"
-msgstr ""
+msgstr "Dummy"
 
 #: src-ru/data/events.xml.rawclobber:653
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TUTORIAL_START\"]/text"
 msgstr ""
 "Welcome to FTL! You are the captain of a Federation starship on a very "
 "important mission."
 
 #: src-ru/data/events.xml.rawclobber:657
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TUTORIAL_MISSILE\"]/text"
 msgstr ""
 "Looks like you need some more help to get through his shields! Some events "
@@ -383,15 +399,13 @@ msgstr ""
 "Launcher."
 
 #: src-ru/data/events.xml.rawclobber:663
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TUTORIAL_ENEMY\"]/text"
 msgstr ""
 "Every new location will have an event like this. You might have multiple "
-"choices available to you at an event. In this example, a weak pirate ship is"
-" trying to destroy you."
+"choices available to you at an event. In this example, a weak pirate ship is "
+"trying to destroy you."
 
 #: src-ru/data/events.xml.rawclobber:669
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TUTORIAL_ENEMY\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
@@ -399,7 +413,6 @@ msgstr ""
 "equipment. They are nearly always a good choice."
 
 #: src-ru/data/events.xml.rawclobber:677
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"TUTORIAL_PIRATE\"]/destroyed/text"
 msgstr ""
@@ -408,7 +421,6 @@ msgstr ""
 "icons correspond to your reserves along the top of the screen."
 
 #: src-ru/data/events.xml.rawclobber:686
-#, fuzzy
 msgid "data/events.xml.rawclobber$//ship[@name=\"TUTORIAL_PIRATE\"]/deadCrew/text"
 msgstr ""
 "You killed all of the pirates! As salvage, you gain (from left to right) "
@@ -416,7 +428,6 @@ msgstr ""
 "icons correspond to your reserves along the top of the screen."
 
 #: src-ru/data/events.xml.rawclobber:698
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TOO_MANY_CREW\"]/text"
 msgstr ""
 "Your ship cannot support any more active crew-members. You apologize and "
@@ -424,14 +435,12 @@ msgstr ""
 "troubles."
 
 #: src-ru/data/events.xml.rawclobber:727
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[1]"
 msgstr ""
 "Welcome to a new sector! Get to the exit beacon and jump to the next sector "
 "before the pursuing Rebels catch you!"
 
 #: src-ru/data/events.xml.rawclobber:728
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[2]"
 msgstr ""
 "You have come to a civilian sector. The Rebels have not yet had time to get "
@@ -439,7 +448,6 @@ msgstr ""
 "as useful as possible."
 
 #: src-ru/data/events.xml.rawclobber:729
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[3]"
 msgstr ""
 "There has never been a war in this sector. It is very well possible that "
@@ -447,7 +455,6 @@ msgstr ""
 "Do you really expect to get a friendly welcome?"
 
 #: src-ru/data/events.xml.rawclobber:730
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[4]"
 msgstr ""
 "The civilian sector has remained relatively peaceful so far, but with the "
@@ -455,21 +462,18 @@ msgstr ""
 "moving and do everything possible to save the Federation."
 
 #: src-ru/data/events.xml.rawclobber:731
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[5]"
 msgstr ""
-"Scattered Federation forces still remain, supporting relative safety in this"
-" sector. Perhaps one of them will help you."
+"Scattered Federation forces still remain, supporting relative safety in this "
+"sector. Perhaps one of them will help you."
 
 #: src-ru/data/events.xml.rawclobber:732
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[6]"
 msgstr ""
-"The war has avoided this place for now, and the local people would certainly"
-" like for it to continue that way..."
+"The war has avoided this place for now, and the local people would certainly "
+"like for it to continue that way..."
 
 #: src-ru/data/events.xml.rawclobber:733
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[7]"
 msgstr ""
 "You've arrived in civilian space. The Rebels have not yet reached these "
@@ -481,7 +485,6 @@ msgid "data/events.xml.rawclobber$//textList[@name=\"START_BEACON\"]/text[8]"
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:750
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON_TRADE_ITEMS\"]/text"
 msgstr ""
@@ -489,87 +492,74 @@ msgstr ""
 "reduced prices."
 
 #: src-ru/data/events.xml.rawclobber:752
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON_TRADE_ITEMS\"]/choice[1]/text"
 msgstr "Buy supplies."
 
 #: src-ru/data/events.xml.rawclobber:756
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON_TRADE_ITEMS\"]/choice[2]/text"
 msgstr "Just fly onwards."
 
 #: src-ru/data/events.xml.rawclobber:762
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/text"
 msgstr "Choose how many supplies you want."
 
 #: src-ru/data/events.xml.rawclobber:764
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[1]/text"
-msgstr "Trade."
+msgstr "Buy a few supplies."
 
 #: src-ru/data/events.xml.rawclobber:766
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[1]/event/text"
 msgstr "You make the trade deal and prepare to jump."
 
 #: src-ru/data/events.xml.rawclobber:780
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[2]/text"
-msgstr "Trade."
+msgstr "Buy some supplies."
 
 #: src-ru/data/events.xml.rawclobber:782
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[2]/event/text"
 msgstr "You make the trade deal and prepare to jump."
 
 #: src-ru/data/events.xml.rawclobber:796
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[3]/text"
-msgstr "Trade."
+msgstr "Buy a lot of supplies."
 
 #: src-ru/data/events.xml.rawclobber:798
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[3]/event/text"
 msgstr "You make the trade deal and prepare to jump."
 
 #: src-ru/data/events.xml.rawclobber:812
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TRADE_ITEMS_START\"]/choice[4]/text"
 msgstr "Don't buy anything."
 
 #: src-ru/data/events.xml.rawclobber:818
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"START_BEACON_TRADE\"]/text[1]"
 msgstr ""
-"Welcome to the commercial sector! The level of danger is minimal, but that "
+"Welcome to the trade sector! The level of danger is minimal, but that "
 "doesn't mean you should relax."
 
 #: src-ru/data/events.xml.rawclobber:819
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"START_BEACON_TRADE\"]/text[2]"
 msgstr ""
-"You arrive in the commercial sector. Local shops beckon with their "
+"You arrive in the trade sector. Local shops beckon with their "
 "advertisements, urging you to spend your accumulated scrap."
 
 #: src-ru/data/events.xml.rawclobber:820
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"START_BEACON_TRADE\"]/text[3]"
 msgstr ""
-"You arrive in the commercial sector. Although the Rebels will continue to "
-"pursue you, you can breathe a little more freely here."
+"You arrive in the trade sector. Although the Rebels will continue to pursue "
+"you, you can breathe a little more freely here."
 
 #: src-ru/data/events.xml.rawclobber:824
 #, fuzzy
@@ -579,14 +569,12 @@ msgstr ""
 "can jump to the next sector."
 
 #: src-ru/data/events.xml.rawclobber:835
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"FINISH_BEACON_NEBULA\"]/text"
 msgstr ""
 "This Long-Range Beacon is almost hidden within a nebula. When the FTL Drive "
 "is charged you can jump to the next sector."
 
 #: src-ru/data/events.xml.rawclobber:842
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[1]"
 msgstr ""
@@ -594,7 +582,6 @@ msgstr ""
 "something in this one..."
 
 #: src-ru/data/events.xml.rawclobber:843
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[2]"
 msgstr ""
@@ -602,16 +589,14 @@ msgstr ""
 "even better views..."
 
 #: src-ru/data/events.xml.rawclobber:844
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[3]"
 msgstr ""
-"Filled with all sorts of gases, nebulas often find themselves the subject of"
-" science vessels. Perhaps a scan of this particular one might reveal "
+"Filled with all sorts of gases, nebulas often find themselves the subject of "
+"science vessels. Perhaps a scan of this particular one might reveal "
 "something of interest?"
 
 #: src-ru/data/events.xml.rawclobber:845
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[4]"
 msgstr ""
@@ -619,7 +604,6 @@ msgstr ""
 "your worries..."
 
 #: src-ru/data/events.xml.rawclobber:846
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[5]"
 msgstr ""
@@ -627,7 +611,6 @@ msgstr ""
 "you just saw something else moving out there..."
 
 #: src-ru/data/events.xml.rawclobber:847
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[6]"
 msgstr ""
@@ -635,7 +618,6 @@ msgstr ""
 "cautionary scan couldn't possibly hurt..."
 
 #: src-ru/data/events.xml.rawclobber:848
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/text[7]"
 msgstr ""
@@ -644,43 +626,37 @@ msgstr ""
 "any here..."
 
 #: src-ru/data/events.xml.rawclobber:855
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/choice[@req=\"sensors\""
 " and @lvl=\"0\"]/text"
 msgstr "Reroute power to the short-range scanners."
 
 #: src-ru/data/events.xml.rawclobber:859
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/choice[@req=\"sensors\""
 " and @lvl=\"1\"]/text"
 msgstr "Reroute power to your basic sensor array."
 
 #: src-ru/data/events.xml.rawclobber:863
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/choice[@req=\"sensors\""
 " and @lvl=\"2\"]/text"
 msgstr "Reroute power to your improved sensor grid."
 
 #: src-ru/data/events.xml.rawclobber:867
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"FINISH_BEACON_NEBULA_ORIGINAL\"]/choice[@req=\"sensors\""
 " and @lvl=\"3\"]/text"
 msgstr "Reroute power to your highly advanced sensors."
 
 #: src-ru/data/events.xml.rawclobber:873
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[1]/text"
 msgstr ""
-"No one else seems to be lurking in this nebula. Relieved, you calmly prepare"
-" to jump away."
+"No one else seems to be lurking in this nebula. Relieved, you calmly prepare "
+"to jump away."
 
 #: src-ru/data/events.xml.rawclobber:876
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[2]/text"
 msgstr ""
@@ -688,7 +664,6 @@ msgstr ""
 "into the next sector."
 
 #: src-ru/data/events.xml.rawclobber:879
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[3]/text"
 msgstr ""
@@ -697,52 +672,46 @@ msgstr ""
 "give the order to jump."
 
 #: src-ru/data/events.xml.rawclobber:882
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[4]/text"
 msgstr ""
-"The sensors don't work here, so you don't see anything around. Suddenly a "
+"The scanners don't work here, so you don't see anything around. Suddenly a "
 "blow is dealt to the ship! You get ready for an attack, only to find some "
 "drifting wreckage. You manage to salvage a few supplies."
 
 #: src-ru/data/events.xml.rawclobber:887
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[5]/text"
 msgstr ""
-"You turn sensors on full power while your FTL Drive charges. By some "
+"You turn scanners on full power while your FTL Drive charges. By some "
 "miracle, they spot the remains of a ship floating by. You find a few fuel "
 "tanks aboard."
 
 #: src-ru/data/events.xml.rawclobber:891
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[6]/text"
 msgstr ""
-"You turn sensors on full power while your FTL Drive charges. By some "
+"You turn scanners on full power while your FTL Drive charges. By some "
 "miracle, they spot the remains of a ship floating by. You find a few "
 "serviceable missiles aboard."
 
 #: src-ru/data/events.xml.rawclobber:895
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[7]/text"
 msgstr ""
-"You turn sensors on full power while your FTL Drive charges. By some "
+"You turn scanners on full power while your FTL Drive charges. By some "
 "miracle, they spot the remains of a ship floating by. You find a few drone "
 "parts aboard."
 
 #: src-ru/data/events.xml.rawclobber:899
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[8]/text"
 msgstr ""
-"You turn sensors on full power while your FTL Drive charges. By some "
+"You turn scanners on full power while your FTL Drive charges. By some "
 "miracle, they spot the remains of a ship floating by. You find a few "
 "supplies aboard."
 
 #: src-ru/data/events.xml.rawclobber:903
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SCANNERS\"]/event[9]/text"
 msgstr ""
@@ -751,15 +720,13 @@ msgstr ""
 "move out of the way, and prepare to attack you."
 
 #: src-ru/data/events.xml.rawclobber:909
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[1]/text"
 msgstr ""
-"No one else seems to be lurking in this nebula. Relieved, you calmly prepare"
-" to jump away."
+"No one else seems to be lurking in this nebula. Relieved, you calmly prepare "
+"to jump away."
 
 #: src-ru/data/events.xml.rawclobber:912
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[2]/text"
 msgstr ""
@@ -767,7 +734,6 @@ msgstr ""
 "into the next sector."
 
 #: src-ru/data/events.xml.rawclobber:918
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[3]/text"
 msgstr ""
@@ -776,7 +742,6 @@ msgstr ""
 "drifting wreckage. You manage to salvage a few supplies."
 
 #: src-ru/data/events.xml.rawclobber:923
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[4]/text"
 msgstr ""
@@ -785,7 +750,6 @@ msgstr ""
 "tanks aboard."
 
 #: src-ru/data/events.xml.rawclobber:927
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[5]/text"
 msgstr ""
@@ -794,7 +758,6 @@ msgstr ""
 "serviceable missiles aboard."
 
 #: src-ru/data/events.xml.rawclobber:931
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[6]/text"
 msgstr ""
@@ -803,7 +766,6 @@ msgstr ""
 "parts aboard."
 
 #: src-ru/data/events.xml.rawclobber:935
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[7]/text"
 msgstr ""
@@ -812,7 +774,6 @@ msgstr ""
 "supplies aboard."
 
 #: src-ru/data/events.xml.rawclobber:939
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO_SENSORS\"]/event[8]/text"
 msgstr ""
@@ -821,15 +782,13 @@ msgstr ""
 "move out of the way, and prepare to attack you."
 
 #: src-ru/data/events.xml.rawclobber:945
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[1]/text"
 msgstr ""
-"No one else seems to be lurking in this nebula. Relieved, you calmly prepare"
-" to jump away."
+"No one else seems to be lurking in this nebula. Relieved, you calmly prepare "
+"to jump away."
 
 #: src-ru/data/events.xml.rawclobber:952
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[2]/text"
 msgstr ""
@@ -838,7 +797,6 @@ msgstr ""
 "drifting wreckage. You manage to salvage some supplies."
 
 #: src-ru/data/events.xml.rawclobber:957
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[3]/text"
 msgstr ""
@@ -847,7 +805,6 @@ msgstr ""
 "tanks aboard."
 
 #: src-ru/data/events.xml.rawclobber:961
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[4]/text"
 msgstr ""
@@ -856,7 +813,6 @@ msgstr ""
 "serviceable missiles aboard."
 
 #: src-ru/data/events.xml.rawclobber:965
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[5]/text"
 msgstr ""
@@ -865,16 +821,14 @@ msgstr ""
 "parts aboard."
 
 #: src-ru/data/events.xml.rawclobber:969
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[6]/text"
 msgstr ""
 "You turn sensors on full power while your FTL Drive charges. By some "
-"miracle, they spot the remains of a ship floating by. You find some supplies"
-" aboard."
+"miracle, they spot the remains of a ship floating by. You find some supplies "
+"aboard."
 
 #: src-ru/data/events.xml.rawclobber:973
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO2\"]/event[7]/text"
 msgstr ""
@@ -883,7 +837,6 @@ msgstr ""
 "move out of the way, and prepare to attack you."
 
 #: src-ru/data/events.xml.rawclobber:983
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO3\"]/event[1]/text"
 msgstr ""
@@ -892,7 +845,6 @@ msgstr ""
 "drifting wreckage. You manage to salvage a decent amount of supplies."
 
 #: src-ru/data/events.xml.rawclobber:988
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO3\"]/event[2]/text"
 msgstr ""
@@ -901,7 +853,6 @@ msgstr ""
 "fuel tanks aboard."
 
 #: src-ru/data/events.xml.rawclobber:992
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO3\"]/event[3]/text"
 msgstr ""
@@ -910,7 +861,6 @@ msgstr ""
 "serviceable missiles aboard."
 
 #: src-ru/data/events.xml.rawclobber:996
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO3\"]/event[4]/text"
 msgstr ""
@@ -919,7 +869,6 @@ msgstr ""
 "drone parts aboard."
 
 #: src-ru/data/events.xml.rawclobber:1000
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO3\"]/event[5]/text"
 msgstr ""
@@ -928,7 +877,6 @@ msgstr ""
 "supplies aboard."
 
 #: src-ru/data/events.xml.rawclobber:1004
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"NEBULA_EXIT_YO3\"]/event[6]/text"
 msgstr ""
@@ -937,21 +885,18 @@ msgstr ""
 "move out of the way, and prepare to attack you."
 
 #: src-ru/data/events.xml.rawclobber:1023
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"FLEET_EASY_OLD\"]/text"
 msgstr ""
 "The Rebel fleet has found you, and a nearby scout turns to engage. The "
 "cruisers in the distance are firing on you!"
 
 #: src-ru/data/events.xml.rawclobber:1044
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"FLEET_EASY_DLC_OLD\"]/text"
 msgstr ""
 "The Rebel fleet has found you, and a nearby scout turns to engage. The "
 "cruisers in the distance are firing on you!"
 
 #: src-ru/data/events.xml.rawclobber:1061
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ELITE_DANGEROUS_1\"]/text"
 msgstr ""
 "A strangely colored Rebel ship overtakes you. You notice how well it is "
@@ -959,14 +904,13 @@ msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:1067
 msgid "data/events.xml.rawclobber$//ship[@name=\"ELITE_X_SHIP\"]/destroyed/text"
-msgstr ""
+msgstr "The ship breaks apart..."
 
 #: src-ru/data/events.xml.rawclobber:1083
 msgid "data/events.xml.rawclobber$//ship[@name=\"ELITE_X_SHIP\"]/deadCrew/text"
-msgstr ""
+msgstr "The ship's crew is dead..."
 
 #: src-ru/data/events.xml.rawclobber:1102
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ELITE_DANGEROUS_2\"]/text"
 msgstr ""
 "A strangely colored Rebel ship overtakes you. You notice how well it is "
@@ -974,11 +918,11 @@ msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:1108
 msgid "data/events.xml.rawclobber$//ship[@name=\"ELITE_X_SHIP_2\"]/destroyed/text"
-msgstr ""
+msgstr "The ship breaks apart..."
 
 #: src-ru/data/events.xml.rawclobber:1126
 msgid "data/events.xml.rawclobber$//ship[@name=\"ELITE_X_SHIP_2\"]/deadCrew/text"
-msgstr ""
+msgstr "The ship's crew is dead..."
 
 #: src-ru/data/events.xml.rawclobber:1147
 msgid ""
@@ -1111,30 +1055,27 @@ msgstr ""
 "that's about it."
 
 #: src-ru/data/events.xml.rawclobber:1267
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1269
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1273
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1277
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1281
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1142,10 +1083,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1285
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1289
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1153,32 +1093,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1293
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1297
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1301
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1305
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:1309
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:1313
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -1186,48 +1123,47 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1317
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1321
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1325
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1329
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1333
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1337
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1341
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1345
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:1357
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:1366
 msgid "data/events.xml.rawclobber$//event[@name=\"NOTHING2_KEEPER\"]/text"
@@ -1287,30 +1223,27 @@ msgid "data/events.xml.rawclobber$//event[@name=\"AUTOSHIP_TALK\"]/choice[5]/tex
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:1441
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1443
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1447
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1451
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1455
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1318,10 +1251,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1459
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1463
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1329,32 +1261,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1467
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1471
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1475
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1479
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:1483
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:1487
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -1362,75 +1291,71 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1491
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1495
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1499
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1503
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1507
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1511
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1515
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1519
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:1527
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_HUMAN_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:1536
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1538
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1542
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1546
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1550
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1438,10 +1363,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1554
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1558
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1449,32 +1373,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1562
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1566
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1570
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1574
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:1578
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:1582
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -1482,74 +1403,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1586
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1590
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1594
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1598
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1602
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1606
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1610
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1614
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:1622
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORDER_HUMAN_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:1631
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1633
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1637
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1641
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1645
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1557,10 +1474,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1649
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1653
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1568,17 +1484,17 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1657
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1661
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1665
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1669
 #, fuzzy
@@ -1601,74 +1517,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1681
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1685
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1689
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1693
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1697
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1701
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1705
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1709
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:1717
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENGI_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:1726
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1728
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1732
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1736
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1740
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1676,10 +1588,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1744
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1748
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1687,32 +1598,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1752
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1756
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1760
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1764
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:1768
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:1772
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -1720,74 +1628,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1776
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1780
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1784
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1788
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1792
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1796
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1800
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1804
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:1812
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MORPH_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:1821
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1823
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1827
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1831
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1835
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1795,10 +1699,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1839
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1843
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1806,32 +1709,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1847
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1851
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1855
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1859
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:1863
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:1867
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -1839,75 +1739,71 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1871
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1875
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1879
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1883
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1887
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1891
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1895
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1899
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:1907
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGY_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:1916
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:1918
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1922
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:1926
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:1930
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -1915,10 +1811,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:1934
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:1938
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -1926,32 +1821,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:1942
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:1946
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:1950
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:1954
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:1958
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:1962
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -1959,74 +1851,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:1966
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:1970
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:1974
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:1978
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:1982
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1986
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1990
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:1994
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2002
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ENERGYX_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2011
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2013
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2017
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2021
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2025
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2034,10 +1922,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2029
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2033
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2045,32 +1932,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2037
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2041
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2045
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2049
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2053
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2057
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2078,74 +1962,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2061
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2065
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2069
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2073
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2077
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2081
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2085
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2089
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2097
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MANTIS_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2106
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2108
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2112
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2116
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2120
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2153,10 +2033,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2124
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2128
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2164,32 +2043,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2132
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2136
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2140
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2144
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2148
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2152
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2197,74 +2073,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2156
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2160
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2164
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2168
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2172
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2176
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2180
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2184
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2192
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLUG_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2201
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2203
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2207
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2211
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2215
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2272,10 +2144,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2219
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2223
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2283,32 +2154,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2227
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2231
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2235
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2239
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2243
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2247
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2316,74 +2184,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2251
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2255
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2259
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2263
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2267
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2271
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2275
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2279
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2287
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ROCK_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2296
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2298
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2302
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2306
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2310
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2391,10 +2255,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2314
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2318
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2402,32 +2265,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2322
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2326
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2330
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2334
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2338
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2342
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2435,74 +2295,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2346
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2350
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2354
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2358
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2362
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2366
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2370
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2374
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2382
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SLIG_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2391
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2393
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2397
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2401
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2405
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2510,10 +2366,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2409
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2413
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2521,32 +2376,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2417
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2421
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2425
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2429
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2433
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2437
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2554,74 +2406,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2441
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2445
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2449
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2453
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2457
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2461
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2465
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2469
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2477
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MAGMAN_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2486
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2488
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2492
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2496
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2500
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2629,10 +2477,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2504
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2508
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2640,32 +2487,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2512
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2516
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2520
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2524
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2528
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2532
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2673,74 +2517,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2536
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2540
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2544
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2548
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2552
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2556
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2560
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2564
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2572
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ORCHID_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2581
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2583
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2587
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2591
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2595
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2748,10 +2588,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2599
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2603
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2759,32 +2598,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2607
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2611
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2615
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2619
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2623
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2627
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2792,75 +2628,71 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2631
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2635
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2639
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2643
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2647
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2651
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2655
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2659
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2667
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_SHELL_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2676
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2678
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2682
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2686
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2690
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2868,10 +2700,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2694
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2698
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2879,32 +2710,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2702
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2706
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2710
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2714
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2718
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2722
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -2912,74 +2740,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2726
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2730
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2734
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2738
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2742
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2746
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2750
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2754
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2762
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_MUSHROOM_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2771
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2773
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2777
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2781
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2785
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -2987,10 +2811,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2789
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2793
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -2998,32 +2821,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2797
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2801
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2805
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2809
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2813
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2817
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -3031,75 +2851,71 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2821
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2825
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2829
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2833
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2837
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2841
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2845
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2849
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2857
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_KEEPER_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2866
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2868
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2872
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2876
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2880
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -3107,10 +2923,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2884
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2888
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -3118,32 +2933,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2892
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2896
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2900
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2904
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:2908
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:2912
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -3151,75 +2963,71 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:2916
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:2920
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:2924
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:2928
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:2932
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2936
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2940
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:2944
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:2952
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_ANAEROBIC_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:2961
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:2963
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2967
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:2971
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:2975
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -3227,10 +3035,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:2979
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:2983
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -3238,32 +3045,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:2987
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:2991
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:2995
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:2999
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:3003
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:3007
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -3271,74 +3075,70 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:3011
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:3015
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:3019
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:3023
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:3027
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:3031
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:3035
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:3039
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:3047
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_CRYSTAL_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:3056
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:3058
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:3062
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:3066
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:3070
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
@@ -3346,10 +3146,9 @@ msgstr "(Morph Crew Member) Talk to your Morph."
 #: src-ru/data/events.xml.rawclobber:3074
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:3078
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -3357,32 +3156,29 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:3082
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:3086
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:3090
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:3094
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:3098
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:3102
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -3390,48 +3186,47 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:3106
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:3110
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:3114
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:3118
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:3122
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:3126
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:3130
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:3134
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:3142
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TALK_WITH_CREW_GHOST_2\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:3153
 #, fuzzy
@@ -54469,71 +54264,67 @@ msgid ""
 msgstr "You also find warheads in transportable containers."
 
 #: src-ru/data/events.xml.rawclobber:43975
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/text"
 msgstr ""
-"You decide to speak with a member of your crew while the FTL Drive charges "
-"to jump to the next beacon."
+"You decide to speak with a member of your crew while you wait for the FTL "
+"Drive to charge for the jump to the next beacon."
 
 #: src-ru/data/events.xml.rawclobber:43977
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_HUMAN\"]/text"
-msgstr ""
+msgstr "(Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:43981
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ENGI\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Talk to your Engi."
 
 #: src-ru/data/events.xml.rawclobber:43985
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ENERGY\"]/text"
-msgstr ""
+msgstr "(Zoltan Crew Member) Talk to your Zoltan."
 
 #: src-ru/data/events.xml.rawclobber:43989
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_MANTIS\"]/text"
-msgstr ""
+msgstr "(Mantis Crew Member) Talk to your Mantis."
 
 #: src-ru/data/events.xml.rawclobber:43993
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\"]/text"
-msgstr ""
+msgstr "(Slug Crew Member) Talk to your Slug."
 
 #: src-ru/data/events.xml.rawclobber:43997
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ROCK\"]/text"
-msgstr ""
+msgstr "(Rock Crew Member) Talk to your Rockman."
 
 #: src-ru/data/events.xml.rawclobber:44001
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ANAEROBIC\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Talk to your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:44005
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_CRYSTAL\"]/text"
-msgstr ""
+msgstr "(Crystal Crew Member) Talk to your Crystal."
 
 #: src-ru/data/events.xml.rawclobber:44009
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_GHOST\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Talk to your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:44013
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr "(Order Crew Member) Talk to your Human Fanatic."
+msgstr "(Order Human Crew Member) Talk to your Human."
 
 #: src-ru/data/events.xml.rawclobber:44017
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_MAGMAN\"]/text"
 msgstr "(Magman Crew Member) Talk to your Magman."
 
 #: src-ru/data/events.xml.rawclobber:44021
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ORCHID\"]/text"
 msgstr "(Orchid Crew Member) Talk to your Orchid."
@@ -54541,22 +54332,19 @@ msgstr "(Orchid Crew Member) Talk to your Orchid."
 #: src-ru/data/events.xml.rawclobber:44025
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_SHELL\"]/text"
-msgstr ""
+msgstr "(Shell Crew Member) Talk to your Shell."
 
 #: src-ru/data/events.xml.rawclobber:44029
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_MORPH\"]/text"
 msgstr "(Morph Crew Member) Talk to your Morph."
 
 #: src-ru/data/events.xml.rawclobber:44033
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_SLIG\"]/text"
 msgstr "(Slig Crew Member) Talk to your Slig."
 
 #: src-ru/data/events.xml.rawclobber:44037
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ENERGYX\"]/text"
 msgstr "(Zolton Crew Member) Talk to your Zolton."
@@ -54564,46 +54352,42 @@ msgstr "(Zolton Crew Member) Talk to your Zolton."
 #: src-ru/data/events.xml.rawclobber:44041
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_MUSHROOM_F\"]/text"
-msgstr ""
+msgstr "(Young Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:44045
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_MUSHROOM_B\"]/text"
-msgstr ""
+msgstr "(Mature Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:44049
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_MUSHROOM\"]/text"
-msgstr ""
+msgstr "(Old Mushroom Crew Member) Talk to your Mushroom."
 
 #: src-ru/data/events.xml.rawclobber:44053
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_KEEPER\"]/text"
-msgstr ""
+msgstr "(Time Keeper Crew Member) Talk to your Time Keeper."
 
 #: src-ru/data/events.xml.rawclobber:44059
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"CREW_ALL\"]/event/text"
 msgstr ""
-"There's no one to talk to. However, suddenly a ship comes out of an FTL jump"
-" with clearly hostile intentions!"
+"There isn't anyone to talk to. However, suddenly a ship comes out of an FTL "
+"jump with clearly hostile intentions!"
 
 #: src-ru/data/events.xml.rawclobber:44064
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PSEVDO_TALK_WITH_CREW\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morph Analyzer) Instruct the crew to scan the surrounding area."
+msgstr "(Morph Analyzer) Instruct the crew to scan the surroundings."
 
 #: src-ru/data/events.xml.rawclobber:44105
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"PSEVDO_NOTHING_BATTLE10\"]/text"
 msgstr ""
 "...you're about to run the analyzer, when suddenly a ship comes out of an "
 "FTL jump with clearly hostile intentions!"
 
 #: src-ru/data/events.xml.rawclobber:44153
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"PSEVDO_NOTHING_BATTLE_TEXT\"]/text"
 msgstr ""
