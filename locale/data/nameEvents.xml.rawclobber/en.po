@@ -33,14 +33,14 @@ msgstr ""
 
 #: src-ru/data/nameEvents.xml.rawclobber:26
 msgid ""
-"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[@req=\"engi\"]/text"
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 "%req says %req_he has detected a flaw in their ship sensors and can exploit "
 "it, allowing the Kestrel to escape without a fight."
 
 #: src-ru/data/nameEvents.xml.rawclobber:28
 msgid ""
-"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[@req=\"engi\"]/event/text"
+"data/nameEvents.xml.rawclobber$//event[@name=\"BIG_NAME_TEST\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 "You hear a hail on all channels: \"Dammit, where did you go!? This isn't "
 "over %crew!\""
@@ -145,7 +145,7 @@ msgstr "Attempt to salvage what you can from the debris."
 
 #: src-ru/data/nameEvents.xml.rawclobber:110
 msgid ""
-"data/nameEvents.xml.rawclobber$//event[@name=\"DERELICT_TREASURE\"]/choice[@req=\"engi\"]/text"
+"data/nameEvents.xml.rawclobber$//event[@name=\"DERELICT_TREASURE\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 "(Engi Crew Member) %req isn't convinced that it's safe. %req_He asks you to "
 "give %req_him some time to run some more scans."
@@ -246,14 +246,14 @@ msgstr "They thank you repeatedly and wish you good luck on your mission."
 
 #: src-ru/data/nameEvents.xml.rawclobber:180
 msgid ""
-"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[@req=\"engi\"]/text"
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 "(Engi Crew Member) Your crewmember wants to go aboard to see if he can "
 "provide any help personally. He requests some scrap to help."
 
 #: src-ru/data/nameEvents.xml.rawclobber:182
 msgid ""
-"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[@req=\"engi\"]/event/text"
+"data/nameEvents.xml.rawclobber$//event[@name=\"ENGI_REFUGEES\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 "He returns bearing good news. He was able to improve their engines and "
 "convinced one of their crew to join your cause."
