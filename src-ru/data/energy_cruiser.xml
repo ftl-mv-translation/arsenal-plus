@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
+	<!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 
 <!-- 4 + 3-->
 <img x="-96" y="-33" w="630" h="348"/>
@@ -7,7 +7,9 @@
 	<floor x="81" y="30"/>
 	<cloak x="-10" y="-10"/>
 </offsets>
-
+<thrusters>
+	<thruster x="112" y="116">zoltan_thruster4</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="420" y="61" rotate="true" mirror="true" gib="3" slide="up" />
 	<mount x="467" y="275" rotate="true" mirror="false" gib="4" slide="down" />

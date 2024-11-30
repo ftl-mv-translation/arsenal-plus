@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-134" y="-156" w="414" h="453" />
 <offsets>
 	<floor x="128" y="150" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="195" y="323">enemy_orhid_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="319" y="224" rotate="false" mirror="false" gib="2" slide="right" />
 	<mount x="97" y="201" rotate="false" mirror="true" gib="1" slide="left" />
@@ -49,4 +51,5 @@
 		<y>189</y>
 	</gib5>
 </explosion>
+
 

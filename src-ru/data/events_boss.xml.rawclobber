@@ -73,7 +73,7 @@ Items:
 	<img back="BG_BASE_FEDER" planet="NONE"/>
 	<fleet>fed</fleet>
 	<text>Приблизившись к базе Федерации, вы видите, что основная часть флота вступила в схватку с силами повстанцев. Вы скрываетесь в тени луны, чтобы избежать конфликта. Сейчас вы мало что можете сделать, чтобы помочь в сражении, а ваша миссия — это ключ, который изменит ход войны. Вы готовитесь встретиться с вражеским флагманом лицом к лицу.</text>
-	<achievement silent="false">ACH_SHIP_FIRST_FEDBASE</achievement><!-- bamalf -->
+	<achievement silent="false">ACH_SHIP_FIRST_FEDBASE</achievement><!-- 1.31 -->
 	
 	<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_ULTRASHIELD</queueEvent>
@@ -107,15 +107,15 @@ Items:
 	</event> -->
 	<event>
 		<text>Корабль повстанцев всё же выследил вас! Приготовиться к бою!</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Беспилотный разведчик повстанцев всё же выследил вас! Приготовиться к бою!</text>
-		<ship load="REBEL_AUTO" hostile="true"/>
+		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Элитный корабль повстанцев всё же выследил вас! Приготовиться к бою!</text>
-		<ship load="BOSS_BASE_REBEL" hostile="true"/><!-- 1.26 -->
+		<ship load="BOSS_BASE_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!-- 1.26 -->
 	</event>
 	<event>
 		<text>С базы к вам приближается небольшой челнок, вскоре он выходит на связь: «Мы знаем о вашем задании, и наш капитан хочет вам помочь!»</text>
@@ -139,11 +139,11 @@ Items:
 </eventList>
 
 <ship name="BOSS_BASE_REBEL" auto_blueprint="SHIPS_REBEL_ELITE"><!-- 1.26 -->
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Вы собираете обломки корабля повстанцев и готовитесь защищать базу.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы грабите трюмы корабля повстанцев и готовитесь защищать базу.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -153,9 +153,11 @@ Items:
 <event name="LAST_STAND_START">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<text>Вы прибываете на форпост возле базы Федерации. Ваши коды доступа позволяют вам пройти начальную охрану, и офицер устанавливает прямое соединение с боевым командным центром на базе. Адмирал Тулли первым начинает разговор: «Почему такая важность?! Кто вы?»</text> <!-- 1.28 --> <!-- it was wrong translate into Russian -->
-	<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent> <!-- 1.31 -->
 	<queueEvent seeded="false">CHECKCHAIN_7_HUMAN</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_TULLY_FOOD</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_7_ENGI</queueEvent>
@@ -194,8 +196,9 @@ Items:
 	<queueEvent seeded="false">CHECKCHAIN_NECHETNI_SYS</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_TEMPORAL_ART</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_SCRAP</queueEvent>
-	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS1</queueEvent><!-- bamalf -->
-	
+	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS1</queueEvent><!-- 1.31 -->
+	<queueEvent seeded="false">CHECKCHAIN_BUDGET_BUILD</queueEvent><!-- 1.32 -->
+	<queueEvent seeded="false">CHECKCHAIN_DIPLOMATIC_MISSION</queueEvent><!-- 1.32 -->
 	
 	<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="0" max_group="1" blue="false"> <!-- 1.25.1 --> <!-- 1.28 -->
 		<text>Изложить суть вашего задания.</text>
@@ -216,7 +219,7 @@ Items:
 				<event>
 					<text>Вы говорите, что у вас есть контейнер, адресованный адмиралу. Лицо Тулли не выражает эмоций, но он велит вам оставить контейнер на форпосте и отдаёт какие-то распоряжения старшему офицеру.</text>
 					<remove name="TULLY_BOX"/>
-					<achievement silent="false">ACH_CONTAINER</achievement><!-- bamalf -->
+					<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
 					<choice hidden="true">
 						<text id="continue" />
 						<event>
@@ -260,7 +263,7 @@ Items:
 			<event>
 				<text>Вы говорите, что у вас есть контейнер, адресованный адмиралу. Лицо Тулли не выражает эмоций, но он велит вам оставить контейнер на форпосте и отдаёт какие-то распоряжения старшему офицеру.</text>
 				<remove name="TULLY_BOX"/>
-				<achievement silent="false">ACH_CONTAINER</achievement><!-- bamalf -->
+				<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
 				<choice hidden="true">
 					<text id="continue" />
 					<event>
@@ -296,7 +299,7 @@ Items:
 			<event>
 				<text>Вы говорите, что у вас есть контейнер, адресованный адмиралу. Лицо Тулли не выражает эмоций, но он велит вам оставить контейнер на форпосте и отдаёт какие-то распоряжения старшему офицеру.</text>
 				<remove name="TULLY_BOX"/>
-				<achievement silent="false">ACH_CONTAINER</achievement><!-- bamalf -->
+				<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
 				<choice hidden="true">
 					<text id="continue" />
 					<event>
@@ -634,7 +637,7 @@ Items:
 	<queueEvent seeded="false">CHECKCHAIN_LAST_SLUG</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_NO_OXYMEDCLON</queueEvent>
 	
-	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS4</queueEvent><!-- bamalf -->
+	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS4</queueEvent><!-- 1.31 -->
 	
 	<status type="limit" target="enemy" system="medbay" amount="0"/>
 	<choice hidden="true">
@@ -663,11 +666,11 @@ Items:
 	<text>Как раз в тот момент, когда вы начали брать верх, противник совершил прыжок. Расслабляться рано — нужно продолжать сражение!</text>
 	<autoReward level="HIGH">standard</autoReward>
 	<status type="clear" target="player" system="sensors" amount="100"/>
-	<achievement silent="false">ACH_SHIP_WIN_FIRST_BOSSPHASE</achievement> <!-- bamalf -->
+	<achievement silent="false">ACH_SHIP_WIN_FIRST_BOSSPHASE</achievement> <!-- 1.31 -->
 	
 	<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_TERMINATOR</queueEvent>
-	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS5</queueEvent><!-- bamalf -->
+	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS5</queueEvent><!-- 1.31 -->
 </event>
 
 <event name="BOSS_TEXT_1">
@@ -690,7 +693,7 @@ Items:
 	<event>
 		<!-- <fleet>rebel</fleet> --> <!-- 1.23 --> <!-- bug with triangle on the map after win -->
 		<text>Вы потеряли слишком много времени на ремонт, и повстанцы настигли вас! Нужно как можно скорее покинуть это место! Персонал станции как может помогает вам, обстреливая врагов из ПКБ.</text><!-- 1.23 -->
-		<ship load="LONG_FLEET" hostile="true"/>
+		<ship load="LONG_FLEET" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<environment type="PDS" target="enemy"/> <!-- 1.23 -->
 	</event>
 </eventList>
@@ -698,7 +701,7 @@ Items:
 	
 <event name="BOSS_REPAIR_STATION">  <!-- the various stations that heal you around the map-->
 	<text load="BOSS_REPAIR_STATION"/>
-	<achievement silent="false">ACH_SHIP_FINAL_REPAIR</achievement><!-- bamalf -->
+	<achievement silent="false">ACH_SHIP_FINAL_REPAIR</achievement><!-- 1.31 -->
 	<damage amount="-15"/>
 	<repair/>
 	<item_modify>
@@ -728,7 +731,7 @@ Neutral
 
 <event name="BOSS_SCOUT" unique="false"> <!-- player discovers scout attacking or scouting. basic fight -->
 	<text load="BOSS_SCOUT"/>
-	<ship load="REBEL_AND_AUTO" hostile="true"/>
+	<ship load="REBEL_AND_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="BOSS_SCOUT">
 	<text>Хотя этот сектор всё ещё находится под контролем Федерации, маленький разведчик проскользнул мимо флота. Вы атакуете его.</text>  <!--image- Fleet background-->
@@ -745,7 +748,7 @@ Neutral
 		<text>Приготовиться к бою с кораблём повстанцев!</text>
 		<event>
 			<text>Вы отправляетесь на перехват.</text>
-			<ship load="BOSS_SCOUT_RESCUE" hostile="true"/>
+			<ship load="BOSS_SCOUT_RESCUE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -787,14 +790,14 @@ Neutral
 </eventList>
 <ship name="BOSS_SCOUT_RESCUE" auto_blueprint="SHIPS_REBEL">
 	<escape  chance="0.5" min="4" max="8" load="PIRATE_ESCAPE"/>
-	<gotaway> <!-- 1.25.2 -->
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 --> <!-- 1.25.2 -->
 		<text>Противник совершил FTL-прыжок, и вы выходите на связь с его жертвой.</text>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="BOSS_SCOUT_RESCUE_LIST"/>
 		</choice>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль повстанцев уничтожен, и теперь можно связаться с его несостоявшимися жертвами.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -802,7 +805,7 @@ Neutral
 			<event load="BOSS_SCOUT_RESCUE_LIST"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Уничтожив корабль повстанцев, вы быстро собираете все возможные трофеи и выходите на связь с его жертвой.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -864,7 +867,7 @@ Fleets — some with minor fights
 <event name="BOSS_FLEETS_BOTH_FIGHT">  <!-- nodes that have ships fighting  —  also inside the /!\ symbol but can be elswhere too. -->
 	<fleet>battle</fleet>
 	<text load="BOSS_FLEETS_BOTH_FIGHT"/> <!-- 1.26 -->
-	<ship load="BOSS_FLEETS_REBEL" hostile="true"/>
+	<ship load="BOSS_FLEETS_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="BOSS_FLEETS_BOTH_FIGHT"> <!-- 1.26 -->
 	<text>Вы прибываете в центр бушующего сражения. Обе стороны несут тяжёлые потери. Мимо пролетает небольшая эскадрилья, истребитель покидает свою позицию и движется к вам.</text>
@@ -883,7 +886,7 @@ Fleets — some with minor fights
 <event name="BOSS_FLEETS_REBEL"> <!-- areas that the fleet took over (or will take over soon) have the /!\ symbol on the map-->
 	<fleet>rebel</fleet>
 	<text load="BOSS_FLEETS_REBEL"/>
-	<ship load="BOSS_FLEETS_REBEL" hostile="true"/>
+	<ship load="BOSS_FLEETS_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="BOSS_FLEETS_REBEL">
 	<text>Вы ожидали повстанцев, но не думали, что их флот может вырасти так быстро. Ваши сканеры с трудом успевают зарегистрировать их всех до того, как истребитель, находящийся неподалёку, переходит в атаку.</text>
@@ -895,11 +898,11 @@ Fleets — some with minor fights
 	<text>Федерация, кажется, дала хороший бой повстанцам. Много судов вокруг уничтожено или подбито. Однако превосходящее количество их кораблей вынуждает оставшиеся силы Федерации ускорить отступление. К счастью, вы также успеете уйти вовремя.</text>
 </textList>
 <ship name="BOSS_FLEETS_REBEL" auto_blueprint="SHIPS_REBEL">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Нет времени обыскивать все обломки, их флот всё ещё рядом. Готовьтесь к прыжку!</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Нет времени обыскивать вражеский корабль, но кое-что ваша команда таки успела забрать с собой. Готовьтесь к прыжку.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -909,17 +912,17 @@ Fleets — some with minor fights
 <!-- 1.25 -->
 <event name="BOSS_FLEETS_BLACK_REBEL">
 	<text load="BOSS_FLEETS_BLACK_REBEL"/>
-	<ship load="BOSS_FLEETS_BLACK_REBEL" hostile="true"/>
+	<ship load="BOSS_FLEETS_BLACK_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="BOSS_FLEETS_BLACK_REBEL">
 	<text>Корабль повстанцев странной окраски перехватывает вас на этом маяке. Вы замечаете, как хорошо он вооружён... Похоже, что их оружейная система имеет усиленное титановое покрытие!</text>
 </textList>
 <ship name="BOSS_FLEETS_BLACK_REBEL" auto_blueprint="REBEL_SKINNY_ELITE_X_SHIPS">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль разваливается на части, и вы спешно хватаете уцелевшее оборудование.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж корабля мёртв, и вы спешно хватаете уцелевшее оборудование.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>

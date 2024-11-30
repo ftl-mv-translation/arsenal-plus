@@ -6,6 +6,14 @@
 	<floor x="0" y="0" />
 	<cloak x="32" y="32" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="90" y="50">slug_thruster1</thruster>
+	<thruster x="67" y="79">slug_thruster1</thruster>
+	<thruster x="67" y="89">slug_thruster1</thruster>
+	<thruster x="67" y="299">slug_thruster1</thruster>
+	<thruster x="67" y="309">slug_thruster1</thruster>
+	<thruster x="90" y="338">slug_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="245" y="79" rotate="true" mirror="true" gib="3" slide="up" />
 	<mount x="246" y="325" rotate="true" mirror="false" gib="1" slide="down" />

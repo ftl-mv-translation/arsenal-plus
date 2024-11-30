@@ -6,6 +6,11 @@
 	<floor x="0" y="0" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="16" y="216">mantis_thruster1</thruster>	
+	<thruster x="13" y="147">mantis_thruster2</thruster>	
+	<thruster x="13" y="295">mantis_thruster2</thruster>	
+</thrusters>
 <weaponMounts>
 	<mount x="556" y="135" rotate="true" mirror="false" gib="2" slide="down" />
 	<mount x="556" y="322" rotate="true" mirror="true" gib="1" slide="up" />

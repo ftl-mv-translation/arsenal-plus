@@ -9,7 +9,12 @@
 <offsets>
 	<cloak x="32" y="32"/>
 </offsets>
-
+<thrusters sync="true">
+	<thruster x="51" y="263">enemy_slug_thruster1</thruster>
+	<thruster x="58" y="268">enemy_slug_thruster1</thruster>
+	<thruster x="331" y="268">enemy_slug_thruster1</thruster>
+	<thruster x="338" y="263">enemy_slug_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="153" y="51" rotate="false" mirror="true" gib="3" slide="left"/>
 	<mount x="247" y="47" rotate="false" mirror="false" gib="1" slide="right"/>

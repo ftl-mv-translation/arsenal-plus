@@ -51,7 +51,7 @@
 <text name="menu_status_ae_content">AE-контент</text>
 <text name="menu_status_achievements">Достижения этого корабля</text>
 
-<text name="help_crew_title">КОМАНДА</text> <!-- bamalf -->
+<text name="help_crew_title">КОМАНДА</text> <!-- 1.31 -->
 <text name="help_crew_text_top">Как отдавать приказы:</text>  <!-- For all "help_X_text_Y" strings, newlines are optional, and text will auto-wrap at the appropriate size (see game for size reference) -->
 <text name="help_crew_text_pc_select">Потянуть или нажать левую кнопку, чтобы выбрать персонажа.</text>
 <text name="help_crew_text_pc_move">Правой кнопкой дать приказ двигаться выбранному персонажу.</text>
@@ -896,7 +896,7 @@
 <text name="max_weapons">Ваш склад полон, больше оружия не поместится!</text>
 <text name="system_drones">Даёт питание дронам на корабле.</text>  <!-- Info text for drone system -->
 
-<text name="free_drone">Случайный дрон в подарок: \1</text>  <!-- Additional info text for drone system. \1: drone type -->
+<text name="free_drone">Случайный дрон в подарок: \1\n(Фиксированная цена продажи 30~)</text><!-- 1.32 -->  <!-- Additional info text for drone system. \1: drone type -->
 
 <text name="sys_full">У вас уже максимальное количество систем.</text>  <!-- Tooltip shown on systems when the ship already has the maximum number of systems -->
 
@@ -929,7 +929,7 @@
 
 <text name="sensor_1">Интерьер вашего корабля</text>
 <text name="sensor_2">Интерьер корабля врага</text>
-<text name="sensor_3">Уворот, О2 и орудия врага</text><!-- 1.31 -->
+<text name="sensor_3">|, }, уворот, О2 и орудия врага</text><!-- 1.31 -->
 <text name="sensor_4">Энергия корабля врага</text>
 
 <text name="cloak">Маскировка: \1 секунд</text>  <!-- \1: cloak duration -->
@@ -998,7 +998,7 @@
 <text name="warning_pds_all">ОБСТРЕЛ!</text>
 <text name="tooltip_PDS_FLEET_ALL">Противокорабельные батареи флота стреляют по всем кораблям в этом районе.</text><!-- 1.31 -->
 <text name="tooltip_PDS_FLEET_ENEMY">Противокорабельные батареи флота наводятся на вашего противника.</text><!-- 1.31 -->
-
+<text name="tooltip_purchase_limit">Количество оставшихся покупок, не считая предметов и ремонта.</text><!-- 1.32 -->
 <!-- System info boxes -->
 
 <text name="teleporter_instant">Мгновенно</text><!-- 1.5 -->
@@ -1079,7 +1079,7 @@
 
 <text name="cloning">Клонирование...</text>  <!-- Shown on crew tooltip when being cloned -->
 
-<text name="power_ready">Готово: Нажмите, чтобы блокировать комнату\nГорячая клавиша: \1</text>  <!-- Shown on crew tooltip for Crystal crew. \1: key name -->
+<text name="power_ready">Готово: Блокировать комнату. [30 ‡]\nГорячая клавиша: \1</text><!-- 1.32 -->  <!-- Shown on crew tooltip for Crystal crew. \1: key name -->
 <text name="power_not_ready">Не готово: способность заряжается</text>  <!-- Shown on crew tooltip for Crystal crew -->
 
 <text name="power_not_ready_mind">Не готово: Под контролем разума</text>
@@ -1568,7 +1568,7 @@
 
 <text name="additional_testing">Благодарность за ценный вклад:</text><!-- Thanks for assets: --><!-- 1.26.6 -->
 <text name="family_friends">Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\side\,
-DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona и другие</text> <!-- 1.28 --><!-- 1.27 --><!-- 1.27.1 --><!-- 1.30.1 --><!-- text overflow here -->
+DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod and ROGUE AI CRUISERS mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona и другие</text> <!-- 1.28 --><!-- 1.27 --><!-- 1.27.1 --><!-- 1.30.1 --><!-- 1.32 --><!-- text overflow here -->
 
 <text name="credits_loc_riotloc"></text><!-- 1.30.1 -->
 <text name="credits_loc_project"></text><!-- 1.30.1 -->
@@ -1714,7 +1714,7 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 
 <!-- 1.31 -->
 
-<text name="credit_victory_true_end">Флагман чёрного крыла повержен. Несомненно, вы сможете вернуться и завершить свою миссию по спасению Федерации, но это уже совсем другая история...</text>
+<text name="credit_victory_true_end">Вы оказываетесь прямо рядом с базой Федерации, на которую напал флагман повстанцев. Закалённые в бою с чёрным флагманом, вы уничтожаете повстанцев, даже не почувствовав их сопротивления. Федерации больше ничто не угрожает, а вас навсегда запомнят как героев.</text>
 <!--Credits-->
 
 <text name="crewlist_more"> и другие</text>  <!-- Placed at the end of the total crew when they need to be shortened in the credits -->
@@ -1728,7 +1728,7 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 
 <text name="credits_hyperspace_project">Проект Hyperspace</text>
 <text name="credits_hyperspace_developed_by">Разработчики:</text>
-<text name="credits_hyperspace_developed_names">TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93,\nMr. Doom (Nasa62), Chrono Vortex</text>
+<text name="credits_hyperspace_developed_names">TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93,\nMr. Doom (Nasa62), Chrono Vortex, Pepson</text><!-- 1.32 -->
 <text name="credits_hyperspace_art">Дополнительный арт:</text>
 <text name="credits_hyperspace_art_names">SaltyFriedRice</text>
 <text name="credits_hyperspace_contributors">Дополнительное сотрудничество:</text>

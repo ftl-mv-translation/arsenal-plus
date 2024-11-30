@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-107" y="-97" w="425" h="328" />
 <offsets>
 	<floor x="2" y="42" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="192" y="188">enemy_lanius_thruster3</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="146" y="72" rotate="false" mirror="true" gib="1" slide="up" />
 	<mount x="278" y="72" rotate="false" mirror="false" gib="1" slide="up" />
@@ -56,4 +58,5 @@
 		<y>95</y>
 	</gib6>
 </explosion>
+
 

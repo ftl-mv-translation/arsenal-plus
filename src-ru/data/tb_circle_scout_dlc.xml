@@ -2,7 +2,11 @@
 <!-- Superluminal exported file -->
 
 <img x="-42" y="-47" w="300" h="282"/>
-
+<thrusters sync="true">
+	<thruster x="48" y="226">enemy_engi_thruster1</thruster>	
+	<thruster x="84" y="226">enemy_engi_thruster1</thruster>
+	<thruster x="243" y="237">enemy_engi_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="32" y="70" rotate="false" mirror="true" gib="1" slide="left"/>
 	<mount x="226" y="70" rotate="false" mirror="false" gib="2" slide="right"/>

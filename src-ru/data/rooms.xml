@@ -503,4 +503,54 @@
 <roomLayout name="weapons_Slaver">
 	<computerGlow x="7" y="19" dir="DOWN" />
 </roomLayout>
+<!-- 1.32 -->
+<roomLayout name="engines_arsenal_ship">
+	<computerGlow x="6" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="pilot_arsenal_ship">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_arsenal_ship">
+	<computerGlow x="1" y="9" dir="LEFT" />
+</roomLayout>
+<roomLayout name="weapons_arsenal_ship">
+	<computerGlow x="1" y="42" dir="LEFT" />
+</roomLayout>
+<roomLayout name="pilot_serenity">
+	<computerGlow name="glow_pilot" x="18" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_serenity">
+	<computerGlow x="40" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="weapons_serenity">
+	<computerGlow x="42" y="1" dir="UP" />
+</roomLayout>
+<roomLayout name="engines_serenity">
+	<computerGlow x="5" y="53" dir="DOWN" />
+</roomLayout>
+<roomLayout name="engines_mushroom">
+	<computerGlow x="52" y="5" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_mushroom">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_mushroom">
+	<computerGlow x="53" y="40" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="weapons_mushroom">
+	<computerGlow x="53" y="6" dir="RIGHT" />
+</roomLayout>
+
+<roomLayout name="engines_warrior">
+	<computerGlow x="17" y="42" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="pilot_warrior">
+	<computerGlow name="glow_pilot" x="19" y="9" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="shields_warrior">
+	<computerGlow x="123" y="5" dir="RIGHT" />
+</roomLayout>
+<roomLayout name="weapons_warrior">
+	<computerGlow x="53" y="6" dir="RIGHT" />
+</roomLayout>
 </FTL>

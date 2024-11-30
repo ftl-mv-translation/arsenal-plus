@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-88" y="-59" w="362" h="400" />
 <offsets>
 	<floor x="181" y="200" />
 	<cloak x="181" y="200" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="205" y="273">enemy_slug_thruster1</thruster>
+	<thruster x="268" y="238">enemy_slug_thruster1</thruster>
+	<thruster x="280" y="238">enemy_slug_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="101" y="54" rotate="false" mirror="true" gib="1" slide="up" />
 	<mount x="173" y="56" rotate="false" mirror="false" gib="1" slide="up" />
@@ -51,4 +55,5 @@
 		<y>85</y>
 	</gib5>
 </explosion>
+
 

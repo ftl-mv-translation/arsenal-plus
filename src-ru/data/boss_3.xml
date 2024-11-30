@@ -6,7 +6,9 @@
 
 <!-- Only used for iPad -->
 <glowOffset x="25" y="25"/>
-
+<thrusters sync="true">
+	<thruster x="265" y="456">enemy_human_thruster3</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="150" y="50" rotate="false" mirror="true" gib="1" slide="up"/>
 	<mount x="264" y="50" rotate="false" mirror="false" gib="2" slide="up"/>

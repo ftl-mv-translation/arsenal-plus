@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-87" y="-111" w="410" h="410" />
 <offsets>
 	<floor x="205" y="205" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters sync="false">
+	<thruster x="98" y="325">enemy_human_thruster8</thruster>
+	<thruster x="300" y="325">enemy_human_thruster8</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="194" y="105" rotate="false" mirror="false" gib="1" slide="up" />
 	<mount x="233" y="141" rotate="false" mirror="false" gib="2" slide="up" />
@@ -42,4 +45,5 @@
 		<y>116</y>
 	</gib4>
 </explosion>
+
 

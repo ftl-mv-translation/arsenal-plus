@@ -9,7 +9,9 @@
 <offsets>
 	<cloak x="32" y="32"/>
 </offsets>
-
+<thrusters sync="true">
+	<thruster x="201" y="153">enemy_human_thruster5a</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="144" y="53" rotate="false" mirror="true" gib="1" slide="up" />
 	<mount x="263" y="53" rotate="false" mirror="false" gib="2" slide="up" />

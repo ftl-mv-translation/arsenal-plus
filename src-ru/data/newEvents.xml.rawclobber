@@ -64,7 +64,7 @@
 </eventList>
 
 
-<eventList name="HOSTILE1"> <!-- bamalf over -->
+<eventList name="HOSTILE1"> <!-- 1.31 -->
 	<!-- <event load="MARADERS1_EVENT"/> -->
 	<event load="REBEL_PULSAR"/>
 	<event load="PIRATE_PULSAR"/>
@@ -80,7 +80,7 @@
 	<event load="MANTIS_HOSTILE"/>
 </eventList>
 
-<eventList name="HOSTILE111"><!-- bamalf over -->
+<eventList name="HOSTILE111"><!-- over -->
 	<!-- <event load="MARADERS1_EVENT"/> -->
 	<!-- <event load="REBEL_PULSAR"/> -->
 	<!-- <event load="PIRATE_PULSAR"/> -->
@@ -123,7 +123,7 @@
 
 
 
-<eventList name="NEUTRAL">  <!-- bamalf over. This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector -->
+<eventList name="NEUTRAL">  <!-- over. This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector -->
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="REBEL_TRANSPORT"/>
 	<event load="AUTO_REFUEL_STATION"/>
@@ -139,7 +139,7 @@
 	<event load="LOTEREYA"/>
 	<event load="SKUP"/>
 	<!-- <event load="PROTOTYPE_COLLECTIONER"/> --><!-- 1.23 --><!-- 1.26.5 -->
-	<event load="PSEVDO_NOTHING"/><!-- 1.26 -->
+	<event load="NOTHING"/><!-- 1.26 --><!-- 1.32 -->
 	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
 	<event load="EMPTY_STATION2"/>
 	<event load="REFUGEE_NO_DISTRESS"/>
@@ -162,7 +162,7 @@
 </eventList>
 
 
-<eventList name="NEUTRAL_EXIT">  <!-- bamalf over. This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector -->
+<eventList name="NEUTRAL_EXIT">  <!-- over. This event list is hardcoded to fill out a sector if it ran out of all other calls for that sector -->
 	<event load="PIRATE_CIVILIAN"/>
 	<event load="REBEL_TRANSPORT"/>
 	<event load="AUTO_REFUEL_STATION"/>
@@ -200,8 +200,9 @@
 	<event load="RUHLAD"/>
 	<event load="EVENT_TR_FED_MISSILES"/><!-- 1.25.1 -->
 	<event load="EVENT_TR_FED_FUEL"/><!-- 1.25.1 -->
-	<event load="PSEVDO_NOTHING"/><!-- 1.26 -->
+	<event load="NOTHING"/><!-- 1.26 --><!-- 1.32 -->
 	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
+	<!-- <event load="ADAPTIVE_EVENT"/> -->
 </eventList>
 
 
@@ -243,7 +244,7 @@
 
 
 
-<eventList name="ITEMS"> <!-- bamalf over -->
+<eventList name="ITEMS"> <!-- 1.31 -->
 	<event load="FIND_DRONE"/>
 	<event load="FIND_WEAPON"/>
 	<event load="FREE_ITEMS"/>
@@ -261,7 +262,7 @@
 	<event load="HELP_MINERS"/>
 </eventList>
 
-<eventList name="ITEMS_SECTORE_ONE"> <!-- bamalf over -->
+<eventList name="ITEMS_SECTORE_ONE"> <!-- 1.31 -->
 	<event load="FIND_DRONE"/>
 	<event load="FIND_WEAPON"/>
 	<event load="FREE_ITEMS"/>
@@ -297,7 +298,7 @@
 </eventList>
 
 
-<eventList name="QUESTS"> <!-- bamalf over -->
+<eventList name="QUESTS"> <!-- 1.31 -->
 	<event load="QUEST_ESCORT"/>
 	<event load="MERCHANT_REQUEST"/>
 	<event load="FEDERATION_PLANET_SIGNAL"/>
@@ -453,10 +454,10 @@
 	
 -->
 <event name="NEW" unique="true">
-	<ship load="NEW_TESTS" hostile="true"/>
+	<ship load="NEW_TESTS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <ship name="NEW_TESTS" auto_blueprint="REBEL_FAT"> 
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Вы можете добыть лом из обломков корабля.</text>
 	</destroyed>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
@@ -510,17 +511,17 @@
 <event name="DEMO_END">
 	<text>Поздравляем с окончанием обучения! В качестве последнего урока, вы испытаете, каково это быть уничтоженным более сильным противником. Этот пиратский корабль оснащён самыми передовыми вооружением и системами, в том числе прототипом устройства маскировки. Он собирался пришельцами, известными как лучшие инженеры Галактики. А ещё мы отключили ваши двигатели, так что нет смысла пытаться убежать.</text>
 	<status type="limit" target="player" system="engines" amount="0"/>
-	<ship load="IMPOSSIBLE_PIRATE" hostile="true"/>
+	<ship load="IMPOSSIBLE_PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <ship name="IMPOSSIBLE_PIRATE" auto_blueprint="IMPOSSIBLE_PIRATE">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Невозможно! Он должен был быть непобедимым! Даже у создателей симуляции это не получилось. Продолжай, ты это заслужил.</text>
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
 		<status type="limit" target="player" system="engines" amount="100"/>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Это никогда не появится</text>
 	</deadCrew>
 </ship>
@@ -1099,23 +1100,23 @@
 	<event load="REFUGEE_TRADER"/>
 	<event>
 		<text>Как только вы начали приветствовать судно, они выдвинули свои орудия из корпуса! Это пиратская засада!</text>
-		<ship load="PIRATE" hostile="true"/>
+		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Как только вы приветствуете корабль беженцев, золтанский корабль внезапно прыгает в эту систему... Они утверждают, что беженцы являются преступниками, и обвиняют вас в перевозке беглецов! Прежде чем вы успели ответить, они обрывают связь и заряжают орудия!</text>
-		<ship load="ZOLTAN_REFUGEE" hostile="true"/>
+		<ship load="ZOLTAN_REFUGEE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Как только вы приветствуете корабль беженцев, пиратский корабль прыгает в эту систему... Они использовали корабль беженцев в качестве приманки!</text>
-		<ship load="PIRATE_REFUGEE" hostile="true"/>
+		<ship load="PIRATE_REFUGEE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Как только вы приветствуете корабль беженцев, корабль слагов прыгает в эту систему... Это была спортивная охота на беженцев, и теперь вы тоже в качестве добычи!</text>
-		<ship load="SLUG_REFUGEE" hostile="true"/>
+		<ship load="SLUG_REFUGEE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <ship name="ZOLTAN_REFUGEE" auto_blueprint="SHIPS_ZOLTAN">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Золтанский корабль распадается на части, и вы забираете всё, что можете.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1126,7 +1127,7 @@
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Теперь безжизненный корабль золтанцев станет лёгкой добычей.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1139,7 +1140,7 @@
 	</deadCrew>
 </ship>
 <ship name="PIRATE_REFUGEE" auto_blueprint="SHIPS_PIRATE">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Пиратский корабль разваливается на части, вы собираете всё, что можете.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1150,7 +1151,7 @@
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Теперь безжизненный корабль пиратов станет лёгкой добычей.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1163,7 +1164,7 @@
 	</deadCrew>
 </ship>
 <ship name="SLUG_REFUGEE" auto_blueprint="SHIPS_JELLY">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль слагов разваливается на части, вы собираете всё, что можете.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1174,7 +1175,7 @@
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Безжизненный корабль слагов стал лёгкой добычей.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1214,7 +1215,7 @@
 	<event load="REFUGEE_TRADER"/>
 	<event>
 		<text>Как только вы приветствуете корабль беженцев, золтанский корабль внезапно прыгает в эту систему... Они утверждают, что беженцы являются преступниками, и обвиняют вас в перевозке беглецов! Прежде чем вы успели ответить, они обрывают связь и заряжают орудия!</text>
-		<ship load="ZOLTAN_REFUGEE" hostile="true"/>
+		<ship load="ZOLTAN_REFUGEE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <!-- PIRATE SPECIFIC VERSIONS OF THE SAME EVENTS-->
@@ -1245,7 +1246,7 @@
 	<event load="REFUGEE_TRADER"/>
 	<event>
 		<text>Как только вы приветствуете корабль беженцев, пиратский корабль прыгает в эту систему... Они использовали корабль беженцев в качестве приманки!</text>
-		<ship load="PIRATE_REFUGEE" hostile="true"/>
+		<ship load="PIRATE_REFUGEE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <!-- SLUG SPECIFIC VERSIONS OF THE SAME EVENTS-->
@@ -1264,7 +1265,7 @@
 <event name="NEBULA_REFUGEE_NO_DISTRESS_SLUG"> 
 	<text>Ваши сенсоры засекли беженцев, дрейфующих сквозь систему. Без сомнения, это один из многих кораблей, спасающихся от продвижения повстанцев. Они, кажется, не обнаружили вас... или пытаются избежать внимания.</text>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Вызвать их.</text>
 		<event load="REFUGEE_HAIL_LIST_SLUG"/>
@@ -1278,7 +1279,7 @@
 	<event load="REFUGEE_TRADER"/>
 	<event>
 		<text>Как только вы приветствуете корабль беженцев, пиратский корабль прыгает в эту систему... Они использовали корабль беженцев в качестве приманки!</text>
-		<ship load="PIRATE_REFUGEE" hostile="true"/>
+		<ship load="PIRATE_REFUGEE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -1345,7 +1346,7 @@
 	<event>
 		<text>Вы пристыковались к станции, чтобы обыскать её. Но как только вы открыли воздушный шлюз, пираты ворвались к вам на корабль. В это время сканеры засекают незамеченный ранее пиратский корабль, ринувшийся в атаку!</text>
 		<boarders min="2" max="2"/>
-		<ship load="PIRATE" hostile="true"/>
+		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы пристыковались к станции, чтобы обыскать её. Но как только вы открыли воздушный шлюз, пираты ворвались к вам на корабль. В это время на мостике возникают множество предупредительных сигналов. Пираты активировали удалённую систему планетарной обороны, и она нацелена на ваш корабль!</text>
@@ -1451,15 +1452,15 @@
 	</event>
 	<event>
 		<text>По мере приближения к обломкам в системе доносятся крики с корабля мантисов... Они либо почувствовали добычу, либо заканчивают работу, которую начали их коллеги.</text>
-		<ship load="MANTIS_FIGHT" hostile="true"/>
+		<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Кажется, это обломки, оставшиеся от битвы между Федерацией и крейсерами повстанцев. Похоже, корабли Федерации храбро сражались, хоть и были в меньшинстве. Когда вы начинаете более подробно исследовать обломки, в систему прибывает подкрепление повстанцев, они атакуют ваш корабль!</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>По мере приближения к обломкам рядом появляется золтанский корабль. Он ошибочно принимает вас за одного из нападавших, обвиняет вас, как враждебных агрессоров, в нарушении золтанского пространства и открывает огонь!</text>
-		<ship load="ZOLTAN_SHIP" hostile="true"/>
+		<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>По мере приближения к обломкам рядом появляется корабль слагов. Он секунду колеблется, как будто удивлён, увидев, что кто-то остался, а затем исчезает, не сказав ни слова. Вы возобновляете сканирование системы, настороженно относясь к любым другим посетителям.</text>
@@ -1484,7 +1485,7 @@
 <eventList name="FUELING_STATION_IGNORE">
 	<event>
 		<text>Когда вы готовитесь покинуть систему, на сканерах неожиданно появляется пиратский корабль — похоже, они использовали платформу в качестве приманки!</text>
-		<ship load="PIRATE" hostile="true"/>
+		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event/>
 	<event/>
@@ -1587,7 +1588,7 @@
 	</event>
 	<event>
 		<text>Заправочная станция приглашает вас пристыковаться, но, пока вы их приветствуете, в вашем моторном отсеке происходит взрыв! Оценивая повреждения, вы засекаете быстро приближающийся пиратский корабль!</text>
-		<ship load="PIRATE" hostile="true"/>
+		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<damage amount="2" system="engines"/><!-- 1.25 -->
 	</event>
 </eventList>
@@ -1659,7 +1660,7 @@
 			<text>Напасть на повстанцев, чтобы помочь им сбежать.</text>
 			<event>
 				<text>Вы двигаетесь в атаку на корабль повстанцев, который им угрожает. Сканеры обнаруживают нацеленное на вас оружие противокорабельной батареи. Это становится поводом для беспокойств!</text>
-				<ship load="QUEST_CONSTRUCTIONYARD_SHIP" hostile="true"/>
+				<ship load="QUEST_CONSTRUCTIONYARD_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<environment type="PDS" target="player"/>
 			</event>
 		</choice>
@@ -1714,7 +1715,7 @@
 	</event>
 </eventList>
 <ship name="QUEST_CONSTRUCTIONYARD_SHIP" auto_blueprint="SHIPS_REBEL">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Вы быстро забираете с корабля всё, что можете.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1725,7 +1726,7 @@
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы быстро забираете с корабля всё, что можете.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1759,7 +1760,7 @@ PIRATE_SALESMAN
 		<event/>
 	</choice>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 
 
@@ -1801,7 +1802,7 @@ PIRATE_SALESMAN
 <eventList name="ROCK_SLUG_COMMAND">
 	<event>
 		<text>Видимо, капитан роков был раздражён больше, чем вы думали. Они обрубают связь и разворачиваются к вам, "защитнику лизунов".</text>
-		<ship load="ROCK_SLUG_REACTOR_SHIP" hostile="true"/>
+		<ship load="ROCK_SLUG_REACTOR_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>С большим недовольством капитан роков всё же согласен заплатить.</text>
@@ -1819,7 +1820,7 @@ PIRATE_SALESMAN
 </eventList>
 
 <ship name="ROCK_SLUG_REACTOR_SHIP" auto_blueprint="SHIPS_ROCK"> 
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>После уничтожения корабля роков тратите некоторое время, чтобы собрать немного лома.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -1827,7 +1828,7 @@ PIRATE_SALESMAN
 			<event load="ROCK_SLUG_GRATEFUL"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>После смерти команды роков вы забираете оставшиеся на корабле припасы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1952,7 +1953,7 @@ PIRATE_SALESMAN
 	</event>
 	<event>
 		<text>Полное сканирование планеты не выявило каких-либо признаков жизни, кроме одного корабля на поверхности. Отряд терраформеров благодарит вас и пытается связаться с кораблём. Когда вы собираетесь прыгать, корабль взлетает и нападает — это пираты!</text>
-		<ship load="PIRATE" hostile="true"/>
+		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Полное сканирование планеты показывает, что на планете присутствует только простая форма жизни. Отряд терраформеров заявляет, что помешать их планам может только наличие разумных форм жизни, и они могут начать свою работу.</text>
@@ -1976,14 +1977,14 @@ PIRATE_SALESMAN
 						<item_modify>
 							<item type="scrap" min="-15" max="-5"/>
 						</item_modify>
-						<achievement silent="false">ACH_SHIP_PLESEN</achievement><!-- bamalf -->
+						<achievement silent="false">ACH_SHIP_PLESEN</achievement><!-- 1.31 -->
 					</event>
 				</choice>
 				<choice>
 					<text>Зарядить орудия и потребовать, чтобы они ушли.</text>
 					<event>
 						<text>Они вырубают связь, но, кажется, начинают процедуру эвакуации.</text>
-						<achievement silent="false">ACH_SHIP_PLESEN</achievement><!-- bamalf -->
+						<achievement silent="false">ACH_SHIP_PLESEN</achievement><!-- 1.31 -->
 					</event>
 				</choice>	
 			</event>
@@ -2009,7 +2010,7 @@ PIRATE_SALESMAN
 				<text>Покинуть их, загнанный в угол мантис слишком опасен.</text>
 				<event/>
 			</choice>
-			<choice req="human" max_group="0" hidden="true"> <!-- 1.28 -->
+			<choice req="human_crew" max_group="0" hidden="true"> <!-- 1.28 -->
 				<text>(Член экипажа человек) Пусть человек отправится на переговоры с этим мантисом.</text>
 				<event>
 					<text>Мантис радуется при виде "другого человека" и представляется Робертом Смитом. Он говорит, что он из соседней человеческой колонии, и был бы рад туда вернуться.</text>
@@ -2029,7 +2030,7 @@ PIRATE_SALESMAN
 					</choice>
 				</event>
 			</choice>
-			<choice req="mantis" hidden="true">
+			<choice req="mantis_crew" hidden="true">
 				<text>(Член экипажа мантис) Отправить на переговоры вашего мантиса.</text>
 				<event>
 					<text>Мантис испугался при виде вашего члена экипажа. Он сразу же нападает на спасателей инжи, и ваш мантис вынужден убить его. Инжи благодарны за вашу помощь и предлагают небольшую награду.</text>
@@ -2043,7 +2044,7 @@ PIRATE_SALESMAN
 					<autoReward level="MED">standard</autoReward>
 				</event>
 			</choice>
-			<choice req="orchid" hidden="true"><!-- 1.31 -->
+			<choice req="orchid_crew" hidden="true"><!-- 1.31 -->
 				<text>(Член экипажа орхид) Орхид может успокоить его своей пыльцой.</text>
 				<event>
 					<text>Мантис успокаивается и благодарит инжи и вас за помощь. Он просит, чтобы его отвезли на соседнюю планету в колонию людей, где он был воспитан. Они рады его возвращению и предлагают вознаграждение.</text>
@@ -2118,7 +2119,7 @@ PIRATE_SALESMAN
 	<choice>
 		<text>Атаковать их до того, как они смогут атаковать вас.</text>
 		<event>
-			<ship load="PIRATE" hostile="true"/>
+			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -2136,7 +2137,7 @@ PIRATE_SALESMAN
 		<text>Это выглядит опасно, уйти.</text>
 		<event>
 			<text>Как только вы разворачиваете свой корабль, пираты показывают скрывавшиеся орудия и отправляется в погоню. Вам придётся сразиться с ними, чтобы уйти!</text>
-			<ship load="PIRATE" hostile="true"/>
+			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice req="SLUG_AND_ARMORED_SLUG" hidden="true"><!-- 1.26 --><!-- 1.28 -->
@@ -2217,7 +2218,7 @@ PIRATE_SALESMAN
 		<text>Ничего не покупать.</text>
 		<event>
 			<text>«Ах, печально слышать это! Счастливой дороги». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия! Вы получаете сообщение: «Вам не стоит тратить время людей попусту, капитан!»</text>
-			<ship load="PIRATE" hostile="true"/>
+			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<damage amount="1" system="engines" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
@@ -2257,7 +2258,7 @@ PIRATE_SALESMAN
 		<text>Ничего не покупать.</text>
 		<event>
 			<text>«Ах, мне очень жаль это слышать! Приятного путешествия». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия!</text>
-			<ship load="PIRATE" hostile="true"/>
+			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<damage amount="1" system="engines" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
@@ -2288,7 +2289,7 @@ PIRATE_SALESMAN
 		<text>Ничего не покупать.</text>
 		<event>
 			<text>«Ах, мне очень жаль это слышать! Приятного путешествия». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия!</text>
-			<ship load="PIRATE" hostile="true"/>
+			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<damage amount="1" system="engines" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
@@ -2319,7 +2320,7 @@ PIRATE_SALESMAN
 		<text>Ничего не покупать.</text>
 		<event>
 			<text>«Ах, мне очень жаль это слышать! Приятного путешествия». Как только вы возвращаетесь к рулю, серия взрывов сотрясает ваш корабль. Пираты зарядили свои орудия!</text>
-			<ship load="PIRATE" hostile="true"/>
+			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<damage amount="1" system="engines" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
 			<damage amount="1" system="room" effect="random"/>
@@ -2360,7 +2361,7 @@ ROGUE_REBEL
 	<choice>
 		<text>Постоять за себя. Атаковать и бежать.</text>
 		<event>
-			<ship load="REBEL" hostile="true"/>
+			<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -2419,7 +2420,7 @@ ROGUE_REBEL
 	</event> --> <!-- 1.23 -->
 	<event>
 		<text>Одно из гражданских судов контактирует с вами, оказывается, они — сторонники Федерации. Повстанцы перехватывают ваши переговоры, налетают и разрушают гражданское судно, затем разворачиваются в вашу сторону!</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -2433,7 +2434,7 @@ ROGUE_REBEL
 	<text>Из-за войны тысячи колонистов потеряли свои линии снабжения и оказались в тяжёлом положении. Кажется, в этой системе повстанцы относятся к этому с пониманием и распределяют те небольшие поставки, которые им удалось сэкономить.</text>
 </textList>
 <ship name="REBEL_HELPERS_SHIP" auto_blueprint="SHIPS_REBEL"> 
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Уничтожив корабль повстанцев, вы тратите время, чтобы собрать немного лома. А поставку гражданским они уже сделали ранее.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -2445,7 +2446,7 @@ ROGUE_REBEL
 			<event load="REBEL_HELPER_NO_SUPPLIES"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж повстанцев мёртв, и вы снимаете с их корабля оборудование. А поставку гражданским они уже сделали ранее.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -2476,7 +2477,7 @@ ROGUE_REBEL
 	<choice>
 		<text>Атаковать повстанцев.</text>
 		<event>
-			<ship load="REBEL_HELPERS_SHIP" hostile="true"/>
+			<ship load="REBEL_HELPERS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2496,6 +2497,7 @@ ROGUE_REBEL
 	</event>
 	<event>
 		<text>Колонисты отдают вам поставки, и вы загружаете их на свой корабль. Перед тем как прыгнуть, вы вскрываете контейнеры и не обнаруживаете ничего, кроме прививок от местной чумы.</text>
+		<achievement silent="false">ACH_SHIP_CHUMA</achievement><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы приказываете колонистам телепортировать припасы на ваш корабль. Это оказывается не больше чем обычные стройматериалы. Ну что ж, лом он и есть лом.</text>
@@ -2530,14 +2532,14 @@ ROGUE_REBEL
 		<text>(Улучшенные сенсоры) Просканировать область.</text>
 		<event>
 			<text>Вы быстро находите корабль повстанцев и готовитесь к перехвату.</text>
-			<ship load="REBEL" hostile="true"/>
+			<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice req="sensors" lvl="3" max_group="0" hidden="true">
 		<text>(Продвинутые сенсоры) Определить местонахождение повстанцев.</text>
 		<event>
 			<text>Вы обнаружили корабль повстанцев, скрывающийся за соседним астероидом. Вы можете отстрелить их двигатели, прежде чем они заметят вас.</text>
-			<ship load="REBEL" hostile="true"/>
+			<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="limit" target="enemy" system="engines" amount="0"/>
 		</event>
 	</choice>
@@ -2548,16 +2550,16 @@ ROGUE_REBEL
 	</event>
 	<event>
 		<text>После недолгих поисков вы находите корабль повстанцев. Будем надеяться, что его так же легко победить, как и найти.</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы быстро отследили корабль повстанцев. Будем надеяться, что его так же легко победить, как и найти.</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Затратив очень много времени на поиски, вы, наконец, смогли его обнаружить. Вы идёте в бой, размышляя о том, какую фору вы потеряли перед флотом повстанцев...</text>
 		<modifyPursuit amount="1"/>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 	

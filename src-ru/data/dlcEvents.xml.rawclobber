@@ -11,14 +11,14 @@ Events For Testing
 
 <event name="PULSAR">
 	<text>Вот чёрт! Пульсар!</text>
-	<ship load="REBEL_AUTO" hostile="true"/>
+	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="pulsar"/>
 </event>
 
 <event name="PDS_TEST">
 	<text>Вот чёрт! Эта планета в союзе с повстанцами, и они ведут по нам огонь!</text>
 	<environment type="PDS" target="all"/>
-	<ship load="REBEL_AUTO" hostile="true"/>
+	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 
 <event name="FUEL_ESCAPE_PDS">
@@ -31,28 +31,28 @@ Events For Testing
 
 <event name="NEWSHIP1">
 	<text>ладно</text>
-	<ship load="NEWSHIP1" hostile="true"/>
+	<ship load="NEWSHIP1" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 	
 <event name="NEWSHIP2">
 	<text>ладно</text>
-	<ship load="NEWSHIP2" hostile="true"/>
+	<ship load="NEWSHIP2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 	
 <ship name="NEWSHIP1" auto_blueprint="ANAEROBIC_SCOUT">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Ура!</text>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Ура!</text>
 	</deadCrew>
 </ship>
 
 <ship name="NEWSHIP2" auto_blueprint="ANAEROBIC_BOMBER">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Ура!</text>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Ура!</text>
 	</deadCrew>
 	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
@@ -130,11 +130,11 @@ New Item Events
 	</event>
 	<event>
 		<text>В поисках магазина вы явно связались не с тем, с кем надо. Включаются сигналы тревоги, а корабельные сенсоры засекают беспилотник повстанцев, идущий на перехват.</text>
-		<ship load="REBEL_AUTO" hostile="true"/>
+		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>В поисках магазина вы явно связались не с тем, с кем надо. Включаются сигналы тревоги, а корабельные сенсоры засекают беспилотник повстанцев, идущий на перехват.</text>
-		<ship load="REBEL_AUTO" hostile="true"/>
+		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -149,7 +149,7 @@ HOSTILE ENVIRONMENT!
 
 <event name="REBEL_PULSAR" unique="true">
 	<text load="REBEL_PULSAR_TEXT"/>
-	<ship load="REBEL" hostile="true"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="pulsar"/>
 </event>
 <textList name="REBEL_PULSAR_TEXT"> <!--DLC2-->
@@ -166,7 +166,7 @@ HOSTILE ENVIRONMENT!
 
 <event name="PIRATE_PULSAR" unique="true">
 	<text load="PIRATE_PULSAR_TEXT"/>
-	<ship load="PIRATE" hostile="true"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="pulsar"/>
 </event>
 <textList name="PIRATE_PULSAR_TEXT">
@@ -186,7 +186,7 @@ HOSTILE ENVIRONMENT!
 <event name="REBEL_PDS" unique="true">
 	<text load="REBEL_PDS_TEXT"/>
 	<environment type="PDS" target="player"/>
-	<ship load="REBEL" hostile="true"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<choice>
 		<text>Приготовиться к бою.</text>
 		<event/>
@@ -225,7 +225,7 @@ HOSTILE ENVIRONMENT!
 <event name="REBEL_AUTO_PDS" unique="true">
 	<text load="REBEL_AUTO_PDS_TEXT"/>
 	<environment type="PDS" target="player"/>
-	<ship load="REBEL_AUTO" hostile="true"/>
+	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<choice>
 		<text>Приготовиться к бою.</text>
 		<event/>

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-76" y="-229" w="469" h="488" />
 <offsets>
 	<floor x="234" y="244" />
 	<cloak x="234" y="244" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="109" y="367">enemy_mantis_thruster2</thruster>
+	<thruster x="173" y="447">enemy_mantis_thruster2</thruster>
+	<thruster x="282" y="447">enemy_mantis_thruster2</thruster>
+	<thruster x="346" y="367">enemy_mantis_thruster2</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="190" y="143" rotate="false" mirror="false" gib="3" slide="up" />
 	<mount x="279" y="143" rotate="false" mirror="true" gib="3" slide="up" />
@@ -49,4 +54,5 @@
 		<y>7</y>
 	</gib5>
 </explosion>
+
 

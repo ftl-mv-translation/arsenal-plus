@@ -1,15 +1,24 @@
 
 local box = Hyperspace.Resources:CreateImagePrimitiveString('statusUI/top_evade_oxygen_enemy.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local enemyX = 1242
-local enemyY = 527
-local bossX = 1235
-local bossY = 532
+local enemyX = 1238--1242
+local enemyY = 451--527
+local bossX = 1231--1235
+local bossY = 456--532
 local offsetX = 0
 local offsetY = 0
 local dragging = false
 local deltaX = 0
 local deltaY = 0
 
+local color_white = Graphics.GL_Color(1,1,1,1)
+local color_critical = Graphics.GL_Color(255 / 255, 50 / 255, 50 / 255, 1)
+local function decideCriticalColor(condition)
+    if condition then 
+        Graphics.CSurface.GL_SetColor(color_critical)
+    else 
+        Graphics.CSurface.GL_SetColor(color_white)
+    end
+end
 local function dragBegin()
     local cApp = Hyperspace.Global.GetInstance():GetCApp()
     if not cApp.world.bStartedGame or cApp.gui.menu_pause then
@@ -21,7 +30,7 @@ local function dragBegin()
         return
     end
     -- 4 is actually 3 and 3 is 4
-    if not playerShip:DoSensorsProvide(4) then
+    if not playerShip:DoSensorsProvide(4) and not (playerShip:HasAugmentation("LIFE_SCANNER") > 0) then
         return
     end
     local isBoss = cApp.gui.combatControl.boss_visual
@@ -58,7 +67,7 @@ script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, function()
         return
     end
     -- 4 is actually 3 and 3 is 4
-    if not playerShip:DoSensorsProvide(4) then
+    if not playerShip:DoSensorsProvide(4) and not (playerShip:HasAugmentation("LIFE_SCANNER") > 0) then
         return
     end
     local isBoss = cApp.gui.combatControl.boss_visual
@@ -89,8 +98,16 @@ script.on_render_event(Defines.RenderEvents.MOUSE_CONTROL, function()
     pcall(function()
         Graphics.CSurface.GL_Translate(currentX, currentY)
         Graphics.CSurface.GL_RenderPrimitiveWithAlpha(box, alpha)
-        Graphics.freetype.easy_printRightAlign(10, 35, 19, string.format("%d%%", dodge))
-        Graphics.freetype.easy_printRightAlign(10, 35, 38, string.format("%d%%", enemyShip:GetOxygenPercentage()))
+		decideCriticalColor(enemyShip:GetMissileCount()<1)
+        Graphics.freetype.easy_printRightAlign(10, 33, 54, string.format("%i", enemyShip:GetMissileCount()))
+        decideCriticalColor(enemyShip:GetDroneCount()<1)
+        Graphics.freetype.easy_printRightAlign(10, 33, 19, string.format("%i", enemyShip:GetDroneCount()))
+        decideCriticalColor(dodge<5)
+        Graphics.freetype.easy_printRightAlign(10, 37, 89, string.format("%d%%", dodge))
+        decideCriticalColor(enemyShip:GetOxygenPercentage()<5)
+        Graphics.freetype.easy_printRightAlign(10, 37, 124, string.format("%d%%", enemyShip:GetOxygenPercentage()))
+        Graphics.CSurface.GL_SetColor(color_white)
+												  
     end)
     Graphics.CSurface.GL_PopMatrix()
 end, function() end)

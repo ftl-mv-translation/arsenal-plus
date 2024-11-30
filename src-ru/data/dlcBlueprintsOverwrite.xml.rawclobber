@@ -57,6 +57,7 @@
 
 <shipBlueprint name="REBEL_FAT_DLC" layout="rebel_squat" img="rebel_squat">
 	<class>Разрушитель повстанцев</class>
+	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
 		<pilot power="1" max="2" room="0"/>
 		<oxygen power="1" max="2" room="1"/> <!--2-->
@@ -77,6 +78,7 @@
 
 <shipBlueprint name="REBEL_FAT_DLC_2" layout="rebel_fat_dlc_2" img="rebel_squat">
 	<class>Разрушитель повстанцев</class>
+	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
 		<clonebay power="1" max="3" room="2" start="false" />
 		<drones power="2" max="8" room="5" start="true" /><!-- 1.31 -->
@@ -97,6 +99,7 @@
 
 <shipBlueprint name="REBEL_FAT_DLC_3" layout="rebel_fat_dlc_3" img="rebel_squat">
 	<class>Разрушитель повстанцев</class>
+	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
 		<clonebay power="1" max="3" room="5" start="false" />
 		<drones power="2" max="8" room="4" start="true" /><!-- 1.31 -->
@@ -249,7 +252,7 @@
 		<teleporter power="1" max="3" room="4" start="false" />
 		<weapons power="5" max="10" room="2" start="true" />
 	</systemList>
-	<weaponList missiles="12" count="4" load="WEAPONS_REBEL" /> 
+	<weaponList missiles="12" count="4" load="WEAPONS_BLACK_WING" /> <!-- 1.32 -->
 	<health amount="16" />
 	<maxPower amount="16" />
 	<crewCount amount="5" max="8" class="human" />
@@ -269,7 +272,7 @@
 		<teleporter power="1" max="3" room="4" start="false" />
 		<weapons power="5" max="10" room="2" start="true" />
 	</systemList>
-	<weaponList missiles="12" count="4" load="WEAPONS_REBEL" /> 
+	<weaponList missiles="12" count="4" load="WEAPONS_BLACK_WING" /> <!-- 1.32 -->
 	<health amount="16" />
 	<maxPower amount="16" />
 	<crewCount amount="5" max="8" class="human" />
@@ -293,9 +296,9 @@
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>4</droneSlots>
-	<weaponList missiles="12" load="WEAPONS_REBEL" /> 
+	<weaponList missiles="12" load="WEAPONS_BLACK_WING" /> <!-- 1.32 -->
 	<droneList count="4" drones="4">
-		<drone name="DE_BOARDER_3"/>
+		<drone name="BOARDER_FTL_DISABLER"/>
 		<drone name="DE_BOARDER_3"/>
 		<drone name="DE_BOARDER_3"/>
 		<drone name="DE_BOARDER_3"/>
@@ -2027,6 +2030,63 @@
 	<name>MISSILES_PIRATE_BIGBIG_M_CLD</name>
 	<name>MISSILES_PIRATE_BIGBIG_M_UNI</name>
 	<name>MISSILES_PIRATE_BIGBIG_M_ACC</name>
+	<!-- 1.32 -->
+	<name>MISSILES_AREM</name>
+	<name>MISSILES_AREM_2</name>
+	<name>MISSILES_AREM_3</name>
+	<name>MISSILES_AREM_CLD</name>
+	<name>MISSILES_AREM_UNI</name>
+	<name>MISSILES_AREM_ACC</name>
+	<name>MISSILES_AREM_2_CLD</name>
+	<name>MISSILES_AREM_2_UNI</name>
+	<name>MISSILES_AREM_2_ACC</name>
+	<name>MISSILES_AREM_3_CLD</name>
+	<name>MISSILES_AREM_3_UNI</name>
+	<name>MISSILES_AREM_3_ACC</name>
+	<name>MISSILES_AREM_M_CLD</name>
+	<name>MISSILES_AREM_M_UNI</name>
+	<name>MISSILES_AREM_M_ACC</name>
+	<name>MISSILES_AREM_2_M_CLD</name>
+	<name>MISSILES_AREM_2_M_UNI</name>
+	<name>MISSILES_AREM_2_M_ACC</name>
+	<name>MISSILES_AREM_3_M_CLD</name>
+	<name>MISSILES_AREM_3_M_UNI</name>
+	<name>MISSILES_AREM_3_M_ACC</name>
+	<name>PREIGNITE_MISSILES_AREM</name>
+	<name>PREIGNITE_MISSILES_AREM_2</name>
+	<name>PREIGNITE_MISSILES_AREM_3</name>
+	<name>PREIGNITE_MISSILES_AREM_UNI</name>
+	<name>PREIGNITE_MISSILES_AREM_ACC</name>
+	<name>PREIGNITE_MISSILES_AREM_2_UNI</name>
+	<name>PREIGNITE_MISSILES_AREM_2_ACC</name>
+	<name>PREIGNITE_MISSILES_AREM_3_UNI</name>
+	<name>PREIGNITE_MISSILES_AREM_3_ACC</name>
+	<name>MISSILES_VAMPIRE</name>
+	<name>MISSILES_VAMPIRE_CLD</name>
+	<name>MISSILES_VAMPIRE_UNI</name>
+	<name>MISSILES_VAMPIRE_ACC</name>
+	<name>MISSILES_VAMPIRE_M</name>
+	<name>MISSILES_VAMPIRE_M_CLD</name>
+	<name>MISSILES_VAMPIRE_M_UNI</name>
+	<name>MISSILES_VAMPIRE_M_ACC</name>
+	<name>MISSILES_DRILL_1</name>
+	<name>MISSILES_DRILL_1_CLD</name>
+	<name>MISSILES_DRILL_1_UNI</name>
+	<name>MISSILES_DRILL_1_ACC</name>
+	<name>MISSILES_DRILL_2</name>
+	<name>MISSILES_DRILL_2_CLD</name>
+	<name>MISSILES_DRILL_2_POW</name>
+	<name>MISSILES_DRILL_2_UNI</name>
+	<name>MISSILES_DRILL_2_ACC</name>
+	<name>MISSILES_DRILL_1_M</name>
+	<name>MISSILES_DRILL_1_M_CLD</name>
+	<name>MISSILES_DRILL_1_M_UNI</name>
+	<name>MISSILES_DRILL_1_M_ACC</name>
+	<name>MISSILES_DRILL_2_M</name>
+	<name>MISSILES_DRILL_2_M_CLD</name>
+	<name>MISSILES_DRILL_2_M_POW</name>
+	<name>MISSILES_DRILL_2_M_UNI</name>
+	<name>MISSILES_DRILL_2_M_ACC</name>
 </blueprintList>
 
 <blueprintList name="WEAPONS_MISSILES_PIRAT">

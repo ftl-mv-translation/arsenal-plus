@@ -6,7 +6,9 @@
 	<floor x="0" y="0" />
 	<cloak x="18" y="17" />
 </offsets>
-
+<thrusters sync="true">
+	<thruster x="170" y="358">enemy_crystal_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="58" y="130" rotate="false" mirror="true" gib="3" slide="left"/>
 	<mount x="208" y="70" rotate="false" mirror="false" gib="2" slide="right"/>

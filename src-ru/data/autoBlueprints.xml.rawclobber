@@ -74,6 +74,7 @@
 <blueprintList name="CREW_ENERGYX"> <!-- 1.28 -->
 	<name>energyx</name>
 	<name>energyx_w</name>
+	<name>energyx_legendary</name><!-- 1.32 -->
 </blueprintList>
 <blueprintList name="CREW_MUSHROOM"> <!-- 1.28 -->
 	<name>mushroom</name>
@@ -87,10 +88,14 @@
 <blueprintList name="CREW_KEEPER"> <!-- 1.30 -->
 	<name>keeper</name>
 </blueprintList>
+<blueprintList name="CREW_BLINKER"> <!-- 1.32 -->
+	<name>blinker</name>
+</blueprintList>
 
 <blueprintList name="SLUG_AND_ARMORED_SLUG"> <!-- 1.28 --> <!-- it bad for ACH_FED_DIPLOMACY, but otherwise it will be too complex code -->
 	<name>slug</name>
 	<name>slug_armored</name>
+	<name>slug_legendary</name><!-- 1.32 -->
 </blueprintList>
 <blueprintList name="ENGI_AND_MORPH"> <!-- 1.28 -->
 	<name>morph</name>
@@ -106,6 +111,7 @@
 	<name>engi_legendary</name><!-- 1.31 --> 
 	<name>energy</name>
 	<name>energy_legendary</name>
+	<name>energyx_legendary</name><!-- 1.32 -->
 	<name>energy_w</name> <!-- 1.29 -->
 	<name>human</name>
 	<name>lady_legendary</name><!-- 1.31 --> 
@@ -133,6 +139,20 @@
 	<name>mushroom_b</name> <!-- 1.28 -->
 	<name>mushroom_f</name> <!-- 1.28 -->
 	<name>keeper</name> <!-- 1.30 -->
+	<name>blinker</name><!-- 1.32 -->
+	<name>human_m</name><!-- 1.32 -->
+	<name>human_m2</name><!-- 1.32 -->
+	<name>human_w</name><!-- 1.32 --> 
+	<name>human_z</name><!-- 1.32 --> 
+	<name>human_i</name><!-- 1.32 --> 
+	<name>human_j</name><!-- 1.32 --> 
+	<name>human_k</name><!-- 1.32 --> 
+	<name>human_s</name><!-- 1.32 --> 
+	<name>human_r</name><!-- 1.32 --> 
+	<name>human_d</name><!-- 1.32 --> 
+	<name>human_kba</name><!-- 1.32 -->
+	<name>human_bam</name><!-- 1.32 -->
+	<name>human_alh</name><!-- 1.32 -->  
 </blueprintList>
 
 <blueprintList name="mushrooms"><!-- 1.31 -->
@@ -151,6 +171,7 @@
 	<name>mantis_legendary</name>
 	<name>rock_legendary</name>
 	<name>energy_legendary</name>
+	<name>energyx_legendary</name><!-- 1.32 -->
 	<name>anaerobic_legendary</name>
 	<name>ghost10_legendary</name>
 	<name>ghost08_legendary</name>
@@ -160,6 +181,10 @@
 	<name>orchid_legendary</name> 
 	<name>lady_legendary</name>
 	<name>slug_legendary</name>
+	<name>human_r</name><!-- 1.32 -->
+	<name>human_kba</name><!-- 1.32 -->
+	<name>human_bam</name><!-- 1.32 -->
+	<name>human_alh</name><!-- 1.32 -->
 </blueprintList>
 
 <blueprintList name="COMBO_AUGS"> <!-- 1.28 -->
@@ -179,6 +204,7 @@
 	<name>DEFENSE_SCRAMBLER_HACKING_STUN</name>
 	<name>FLEET_DISTRACTION_BATTERY_BOOSTER</name>
 	<name>EXPLOSIVE_REPLICATOR_DRONE_SPEED</name>
+	<name>REPAIR_SPEED_UP_AND_DOWN</name><!-- 1.32 -->
 </blueprintList>
 
 <blueprintList name="SHELL_GASES"> <!-- 1.28 -->
@@ -344,7 +370,7 @@
 </blueprintList>
 
 
-<blueprintList name="WILD_DRONES"><!-- bamalf -->
+<blueprintList name="WILD_DRONES"><!-- 1.31 -->
 	<name>COMBAT_2W</name>
 	<name>COMBAT_BEAM_2W</name>
 	<name>DE_DRONE_HULL_1W</name>
@@ -647,7 +673,7 @@
 	<name>DE_BOARDER_4_R</name>
 </blueprintList>
 	
-<blueprintList name="DRONES_BOARDER"> <!-- bamalf over -->
+<blueprintList name="DRONES_BOARDER"> <!-- 1.31 -->
 	<name>BOARDER</name>
 	<name>DE_BOARDER_2</name>
 	<name>DE_BOARDER_3</name>
@@ -1930,7 +1956,7 @@
 	<name>ORDEN3_MISSILES_M</name>
 </blueprintList> -->
 
-<blueprintList name="WEAPONS_LIGHT_LASER"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_LIGHT_LASER"> <!-- 1.31 -->
 	<!-- <name>MPP_LASER_1</name> --> <!-- 1.28 -->
 	<!-- <name>MPP_LASER_2</name> --> <!-- 1.28 -->
 	<name>LASER_LIGHT_1</name>
@@ -3957,6 +3983,9 @@
 	<name>PREIGNITE_PLASMA_IMPULSE_1</name>
 	<name>PREIGNITE_PLASMA_IMPULSE_2</name>
 	<name>PREIGNITE_PLASMA_IMPULSE_3</name>
+	<name>PREIGNITE_MISSILES_AREM</name><!-- 1.32 -->
+	<name>PREIGNITE_MISSILES_AREM_2</name><!-- 1.32 -->
+	<name>PREIGNITE_MISSILES_AREM_3</name><!-- 1.32 -->
 </blueprintList>
 
 <blueprintList name="INJECTOR_WEAPONS"><!-- 1.31 -->
@@ -7188,6 +7217,70 @@
 	<name>MISSILES_PIRATE_BIGBIG_M_CLD</name>
 	<name>MISSILES_PIRATE_BIGBIG_M_UNI</name>
 	<name>MISSILES_PIRATE_BIGBIG_M_ACC</name>
+	<!-- 1.32 -->
+	<name>MISSILES_AREM_CLD</name>
+	<name>MISSILES_AREM_UNI</name>
+	<name>MISSILES_AREM_ACC</name>
+	<name>MISSILES_AREM_2_CLD</name>
+	<name>MISSILES_AREM_2_UNI</name>
+	<name>MISSILES_AREM_2_ACC</name>
+	<name>MISSILES_AREM_3_CLD</name>
+	<name>MISSILES_AREM_3_UNI</name>
+	<name>MISSILES_AREM_3_ACC</name>
+	<name>MISSILES_AREM_M_CLD</name>
+	<name>MISSILES_AREM_M_UNI</name>
+	<name>MISSILES_AREM_M_ACC</name>
+	<name>MISSILES_AREM_2_M_CLD</name>
+	<name>MISSILES_AREM_2_M_UNI</name>
+	<name>MISSILES_AREM_2_M_ACC</name>
+	<name>MISSILES_AREM_3_M_CLD</name>
+	<name>MISSILES_AREM_3_M_UNI</name>
+	<name>MISSILES_AREM_3_M_ACC</name>
+	<name>PREIGNITE_MISSILES_AREM_UNI</name>
+	<name>PREIGNITE_MISSILES_AREM_ACC</name>
+	<name>PREIGNITE_MISSILES_AREM_2_UNI</name>
+	<name>PREIGNITE_MISSILES_AREM_2_ACC</name>
+	<name>PREIGNITE_MISSILES_AREM_3_UNI</name>
+	<name>PREIGNITE_MISSILES_AREM_3_ACC</name>
+	<name>BEAM_ANNIHILATOR_PRC</name>
+	<name>BEAM_ANNIHILATOR_CLD</name>
+	<name>BEAM_ANNIHILATOR_POW</name>
+	<name>BEAM_ANNIHILATOR_UNI</name>
+	<name>MISSILES_VAMPIRE_CLD</name>
+	<name>MISSILES_VAMPIRE_UNI</name>
+	<name>MISSILES_VAMPIRE_ACC</name>
+	<name>MISSILES_VAMPIRE_M_CLD</name>
+	<name>MISSILES_VAMPIRE_M_UNI</name>
+	<name>MISSILES_VAMPIRE_M_ACC</name>
+	<name>RICOCHET_GUN_1_PRC</name>
+	<name>RICOCHET_GUN_1_CLD</name>
+	<name>RICOCHET_GUN_1_POW</name>
+	<name>RICOCHET_GUN_1_UNI</name>
+	<name>RICOCHET_GUN_1_ACC</name>
+	<name>RICOCHET_GUN_2_PRC</name>
+	<name>RICOCHET_GUN_2_CLD</name>
+	<name>RICOCHET_GUN_2_POW</name>
+	<name>RICOCHET_GUN_2_UNI</name>
+	<name>RICOCHET_GUN_2_ACC</name>
+	<name>RICOCHET_GUN_3_PRC</name>
+	<name>RICOCHET_GUN_3_CLD</name>
+	<name>RICOCHET_GUN_3_POW</name>
+	<name>RICOCHET_GUN_3_UNI</name>
+	<name>RICOCHET_GUN_3_ACC</name>
+	<name>MISSILES_DRILL_1_CLD</name>
+	<name>MISSILES_DRILL_1_UNI</name>
+	<name>MISSILES_DRILL_1_ACC</name>
+	<name>MISSILES_DRILL_2_CLD</name>
+	<name>MISSILES_DRILL_2_POW</name>
+	<name>MISSILES_DRILL_2_UNI</name>
+	<name>MISSILES_DRILL_2_ACC</name>	
+	<name>MISSILES_DRILL_1_M_CLD</name>
+	<name>MISSILES_DRILL_1_M_UNI</name>
+	<name>MISSILES_DRILL_1_M_ACC</name>
+	<name>MISSILES_DRILL_2_M_CLD</name>
+	<name>MISSILES_DRILL_2_M_POW</name>
+	<name>MISSILES_DRILL_2_M_UNI</name>
+	<name>MISSILES_DRILL_2_M_ACC</name>	
 </blueprintList>
 
 <blueprintList name="ZOLTAN_AUG">
@@ -7214,7 +7307,7 @@
 	<name>ADV_SCANNERS</name>
 	<name>WEAPON_PREIGNITE</name>
 	<name>FTL_BOOSTER</name>
-	<name>FTL_JUMPER</name><!-- 1.6 -->
+	<name>FTL_JUMPER_GOOD</name><!-- 1.6 --><!-- 1.32 -->
 	<name>DRONE_RECOVERY</name>
 	<name>FTL_JAMMER</name>
 	<name>SLUG_GEL</name>
@@ -7229,6 +7322,7 @@
 	<name>MIND_ORDER</name><!-- 1.6 -->
 	<name>MORPH_STABILIZER</name><!-- 1.31 -->
 	<name>CALL_STORE</name><!-- 1.31 -->
+	<name>ANTICLOAK_FIELD</name><!-- 1.32 -->
 </blueprintList>
 
 
@@ -7426,7 +7520,7 @@
 
 <!--            SHIP LISTS            -->
 
-<blueprintList name="SHIPS_FED"> <!-- bamalf over -->
+<blueprintList name="SHIPS_FED"> <!-- 1.31 -->
 	<name>FED_SCOUT</name>
 	<name>FED_SCOUT_2</name>
 	<name>FED_SCOUT_3</name>
@@ -7447,7 +7541,7 @@
 	<name>FED_SCOUT_3</name>
 </blueprintList>
 
-<blueprintList name="SHPS_REBEL_AND_AUTO"> <!-- bamalf over -->
+<blueprintList name="SHPS_REBEL_AND_AUTO"> <!-- 1.31 -->
 	<name>AUTO_BASIC</name>
 	<name>AUTO_BASIC_2</name>
 	<name>AUTO_BASIC_3</name>
@@ -7474,7 +7568,7 @@
 	<name>REBEL_SKINNY_DLC_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_REBEL"> <!-- bamalf over -->
+<blueprintList name="SHIPS_REBEL"> <!-- 1.31 -->
 	<name>REBEL_FAT</name>
 	<name>REBEL_FAT_2</name>
 	<name>REBEL_FAT_3</name>
@@ -7498,7 +7592,7 @@
 	<name>REBEL_TRANSPORT_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_REBEL_ELITE"> <!-- bamalf over -->
+<blueprintList name="SHIPS_REBEL_ELITE"> <!-- 1.31 -->
 	<name>REBEL_SKINNY_ELITE</name>
 	<name>REBEL_SKINNY_ELITE_2</name>
 	<name>REBEL_SKINNY_ELITE_3</name>
@@ -7509,7 +7603,7 @@
 
 
 
-<blueprintList name="SHIPS_AUTO"> <!-- bamalf over -->
+<blueprintList name="SHIPS_AUTO"> <!-- 1.31 -->
 	<name>AUTO_BASIC</name>
 	<name>AUTO_BASIC_2</name>
 	<name>AUTO_BASIC_3</name>
@@ -7542,7 +7636,7 @@
 	<name>AUTO_UNI_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_JELLY"> <!-- bamalf over -->
+<blueprintList name="SHIPS_JELLY"> <!-- 1.31 -->
 	<name>JELLY_BUTTON</name>
 	<name>JELLY_BUTTON_2</name>
 	<name>JELLY_BUTTON_3</name>
@@ -7579,7 +7673,7 @@
 	<name>JELLY_CROISSANT_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_MANTIS"> <!-- bamalf over -->
+<blueprintList name="SHIPS_MANTIS"> <!-- 1.31 -->
 	<name>MANTIS_SCOUT</name>
 	<name>MANTIS_SCOUT_2</name>
 	<name>MANTIS_SCOUT_3</name>
@@ -7613,7 +7707,7 @@
 	<name>BS_MANTIS_OUTPOST</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_ROCK"> <!-- bamalf over -->
+<blueprintList name="SHIPS_ROCK"> <!-- 1.31 -->
 	<name>ROCK_SCOUT</name>
 	<name>ROCK_SCOUT_2</name>
 	<name>ROCK_SCOUT_3</name>
@@ -7637,7 +7731,7 @@
 	<name>ROCK_ARTILLERY_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_ROCK_PIRATE"> <!-- bamalf over -->
+<blueprintList name="SHIPS_ROCK_PIRATE"> <!-- 1.31 -->
 	<name>ROCK_SCOUT_P</name>
 	<name>ROCK_FIGHT_P</name>
 	<name>ROCK_SCOUT_P_DLC</name>
@@ -7654,11 +7748,11 @@
 	<name>ROCK_ASSAULT_ELITE_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_ROCK_PRO"> <!-- bamalf over -->
+<blueprintList name="SHIPS_ROCK_PRO"> <!-- 1.31 -->
 	<name>BS_ROCK_OUTPOST</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_CIRCLE"> <!-- bamalf over -->
+<blueprintList name="SHIPS_CIRCLE"> <!-- 1.31 -->
 	<name>CIRCLE_SCOUT</name>
 	<name>CIRCLE_SCOUT_2</name>
 	<name>CIRCLE_SCOUT_3</name>
@@ -7677,7 +7771,7 @@
 	<name>BS_CIRCLE_EW</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_ZOLTAN"> <!-- bamalf over -->
+<blueprintList name="SHIPS_ZOLTAN"> <!-- 1.31 -->
 	<name>ZOLTAN_FIGHTER</name>
 	<name>ZOLTAN_FIGHTER_2</name>
 	<name>ZOLTAN_FIGHTER_3</name>
@@ -7698,7 +7792,7 @@
 	<name>ZOLTAN_HUNTER_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_ZOLTAN_WOTP"> <!-- bamalf over -->
+<blueprintList name="SHIPS_ZOLTAN_WOTP"> <!-- 1.31 -->
 	<name>ZOLTAN_FIGHTER</name>
 	<name>ZOLTAN_FIGHTER_2</name>
 	<name>ZOLTAN_FIGHTER_3</name>
@@ -7720,7 +7814,7 @@
 	<name>BS_ENERGY_CHECKPOINT</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_ZOLTAN_PIRATE"> <!-- bamalf over -->
+<blueprintList name="SHIPS_ZOLTAN_PIRATE"> <!-- 1.31 -->
 	<name>ZOLTAN_FIGHTER_P</name>
 	<name>ZOLTAN_BOMBER_P</name>
 	<name>ZOLTAN_FIGHTER_P_DLC</name>
@@ -7734,7 +7828,7 @@
 	<name>ZOLTAN_HUNTER_P3</name>
 </blueprintList>
  
-<blueprintList name="SHIPS_CRYSTAL"> <!-- bamalf over -->
+<blueprintList name="SHIPS_CRYSTAL"> <!-- 1.31 -->
 	<name>CRYSTAL_SCOUT</name>
 	<name>CRYSTAL_SCOUT_2</name>
 	<name>CRYSTAL_SCOUT_3</name>
@@ -7752,7 +7846,7 @@
 	<name>CRYSTAL_KEEPER_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_CIVILIAN"> <!-- bamalf over -->
+<blueprintList name="SHIPS_CIVILIAN"> <!-- 1.31 -->
 	<name>JELLY_BUTTON</name>
 	<name>JELLY_BUTTON_2</name>
 	<name>JELLY_BUTTON_3</name>
@@ -7776,7 +7870,7 @@
 	<name>CIRCLE_BOMBER_3</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_PIRATE"> <!-- bamalf over -->
+<blueprintList name="SHIPS_PIRATE"> <!-- 1.31 -->
 	<name>JELLY_BUTTON_P</name>
 	<name>JELLY_CROISSANT_P</name>
 	<name>JELLY_TRUFFLE_P</name> 
@@ -7819,7 +7913,7 @@
 	<name>MANTIS_CATCHR_3P</name>
 </blueprintList>
 
-<blueprintList name="SHIPS_SLUG_PIRATE"> <!-- bamalf over -->
+<blueprintList name="SHIPS_SLUG_PIRATE"> <!-- 1.31 -->
 	<name>JELLY_BUTTON_P</name>
 	<name>JELLY_CROISSANT_P</name>
 	<name>JELLY_TRUFFLE_P</name> 
@@ -8047,6 +8141,7 @@
 
 <shipBlueprint name="REBEL_TRANSPORT" layout="rebel_squat" img="rebel_squat">
 	<class>Транспортник повстанцев</class>
+	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
 		<pilot power="1" max="2" room="0" start="true"/> <!-- 1.29 -->
 		<oxygen power="1" max="2" room="2" start="true"/> <!-- 1.29 -->
@@ -8067,6 +8162,7 @@
 
 <shipBlueprint name="REBEL_TRANSPORT_2" layout="rebel_squat_2" img="rebel_squat">
 	<class>Транспортник повстанцев</class>
+	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
 		<doors power="1" max="3" room="5" start="false" />
 		<drones power="2" max="8" room="1" start="true" />
@@ -8087,6 +8183,7 @@
 
 <shipBlueprint name="REBEL_TRANSPORT_3" layout="rebel_squat_3" img="rebel_squat">
 	<class>Транспортник повстанцев</class>
+	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
 		<doors power="1" max="3" room="2" start="false" />
 		<drones power="2" max="8" room="1" start="true" />
@@ -9666,7 +9763,7 @@
 <!-- ОРУЖИЕ -->
 
 
-<blueprintList name="WEAPONS_ROCK"> <!-- bamalf -->
+<blueprintList name="WEAPONS_ROCK"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -9822,7 +9919,7 @@
 	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
 </blueprintList>
 
-<blueprintList name="WEAPONS_MAGMAN"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_MAGMAN"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name>
@@ -9978,7 +10075,7 @@
 
 
 
-<blueprintList name="WEAPONS_REBEL"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_REBEL"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -10162,6 +10259,206 @@
 	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
 </blueprintList>
 
+<blueprintList name="WEAPONS_BLACK_WING"><!-- 1.32-->
+	<name>LASER_CHAIN_1</name>
+	<name>LASER_CHAIN_2</name>
+	<name>LASER_CHAIN_LONG_1</name>
+	<name>LASER_CHAIN_LONG_2</name>
+	<name>LASER_CHARGEGUN_1</name>
+	<name>LASER_CHARGEGUN_2</name>
+	<name>LASER_BURST_1</name>
+	<name>LASER_HEAVY_1</name>
+	<name>LASER_STANDARD_1</name>
+	<name>LASER_STANDARD_2</name>
+	<name>LASER_DUAL_1</name>
+	<name>LASER_DUAL_2</name>
+	<name>BA_SHOTGUN_SMALL</name>
+	<name>BA_PLASMA_1</name>
+	<name>BA_LASER_AUTO_1</name>
+	<name>BA_LASER_AUTO_2</name>
+	<name>BA_LASER_BURST_SCATTER_1</name>
+	<name>BA_LASER_BURST_SCATTER_2</name>
+	<name>BA_LASER_HEAVY_SCATTER_1</name>
+	<name>BA_LASER_HEAVY_SCATTER_2</name>
+	<name>BA_LASER_HULL_SMALL</name>
+
+	<name>LASER_SUPER_HEAVY_1</name>
+	<name>LASER_AL_1</name>
+	<name>BA_LASER_WAR_1</name>
+	<name>BA_LASER_WAR_2</name>
+	<name>BA_LASER_WAR_3</name>
+	<name>LASER_PIERCE_1</name>
+	<name>LASER_PIERCE_2</name>
+	<name>SHTURM_LASER_1</name>
+	<name>SHTURM_LASER_2</name>
+	<name>LASER_HEAVY_CHAIN</name>
+	<name>LASER_AUTO_CHAIN</name>
+	<name>LASER_CHAIN_3</name>
+	<name>LASER_CHAIN_LONG_3</name>
+	<name>LASER_CHARGEGUN_3</name>
+	<name>LASER_BURST_2</name>
+	<name>LASER_HEAVY_2</name>
+	<name>LASER_HEAVY_PIERCE_1</name>
+	<name>SHOTGUN</name>
+	<name>BA_PLASMA_2</name>
+	<name>BA_LASER_AUTO_3</name>
+	<name>BA_LASER_BURST_SCATTER_3</name>
+	<name>LASER_SCATTERCHAIN</name>
+	<name>BA_LASER_ARTILLERY_1</name>
+	<name>BA_LASER_HULLCRUSHER</name>
+	<name>LASER_HULL_1</name>
+	<name>LASER_HULL_2</name>
+	<name>LASER_IMP_2</name>
+	<name>LASER_IMP_3</name>
+	<name>LASER_HULLCHAIN</name>
+	
+	<name>LASER_SUPER_HEAVY_2</name>
+	<name>LASER_AL_2</name>
+	<name>RAIL_DRIVER</name>
+	<name>RAIL_DRIVER_2</name>
+	<name>RAIL_DRIVER_3</name>
+	<name>LASER_CHAINGUN</name>
+	<name>HEAVY_MINIGUN</name>
+	<name>LASER_FIRE_CHAINGUN</name>
+	<name>LASER_HEAVY_CHARGE_1</name>
+	<name>LASER_HEAVY_CHARGE_2</name>
+	<name>LASER_CHARGEGUN_4</name>
+	<name>LASER_BURST_3</name>
+	<name>LASER_BURST_4</name>
+	<name>LASER_HEAVY_PIERCE_2</name>
+	<name>SHOTGUN_2</name>
+	<name>SHOTGUN_007</name>
+	<name>BA_SHOTGUN_SCATTER</name>
+	<name>SHTURM_FLAK</name>
+	<name>CHARGEGUN_SHOTGUN</name>
+	<name>BA_PLASMA_3</name>
+	<name>BA_LASER_ARTILLERY_2</name>
+	<name>BA_LASER_HULLCRUSHER_2</name>
+	<name>BA_LASER_HULLCRUSHER_3</name>
+	<!-- *** --><!-- 1.32 -->
+	<name>LASER_BURST_6_MIMICAL</name>
+	<name>LASER_BURST_6_MIMICAL</name>
+	<name>BLOOD_LASER_1</name>
+	<name>BLOOD_LASER_1</name>
+	<name>BLOOD_LASER_2</name>
+	<name>BLOOD_LASER_2</name>
+	<name>BLOOD_LASER_2</name>
+	<name>BLOOD_LASER_3</name>
+	<name>BLOOD_LASER_3</name>
+	<name>BLOOD_LASER_3</name>
+	<name>BLOOD_LASER_4</name>
+	<name>BLOOD_LASER_4</name>
+	<name>BLOOD_LASER_4</name>
+	<name>BLOOD_LASER_4</name>
+	<name>MISSILES_AREM</name>
+	<name>MISSILES_AREM_2</name>
+	<name>MISSILES_AREM_3</name>
+	<name>MISSILES_VAMPIRE</name>
+	<name>RICOCHET_GUN_1</name>
+	<name>RICOCHET_GUN_2</name>
+	<name>RICOCHET_GUN_3</name>
+	<name>MISSILES_DRILL_1</name>
+	<name>MISSILES_DRILL_2</name>
+	<!-- *** -->
+	<name>BEAM_1</name>
+	<name>BEAM_LONG</name>
+	<name>BA_BEAM_K2</name>
+	<name>BA_BEAM_HASTA</name>
+	<name>BA_BEAM_K1</name>
+	<name>BA_BEAM_HULL_SMALL</name>
+	<name>BA_BEAM_HULL_MINI</name>
+	<name>BA_BEAM_AUTO</name>
+	<name>BA_BEAM_ADAPTIVE_1</name>
+	<name>BA_BEAM_BARDICHE</name>
+	
+	<name>BEAM_1_2</name>
+	<name>BEAM_HULL</name>
+	<name>BA_BEAM_ADAPTIVE_2</name>
+	<name>BA_BEAM_SCYTHE</name>
+	<name>BA_BEAM_PERNACH</name>
+	<name>BEAM_FIRE</name>
+	<name>BEAM_2</name>
+	<name>BA_BEAM_POLLAXE</name>
+	<name>BEAM_SP_DAITO</name>
+	
+	<name>BEAM_FAUCHARD</name>
+	<name>BA_BEAM_ADAPTIVE_3</name>
+	<name>BA_BEAM_FLAIL_DAMAGE</name>
+	<name>BA_BEAM_NAGINATA</name>
+	<name>BA_BEAM_MAUL</name>
+	<name>BA_BEAM_FIRE_2</name>
+	<name>BEAM_FIRECHAIN</name>
+	<name>BA_BEAM_FIRE_FOCUS</name>
+	<name>BA_BEAM_FIRE_FOCUS2</name>
+	<name>BA_BEAM_HOT_1</name>
+	<name>BA_BEAM_HOT_2</name>
+	<name>BA_BEAM_HOT_3</name>
+	<name>BEAM_3</name>
+	<name>BA_BEAM_PARTISAN</name>
+	<name>BEAM_SP_KATANA</name>
+	<name>BEAM_BIOFIRE</name>
+	
+	<name>BOMB_STUN</name>
+	<name>BOMB_1</name>
+	<name>BA_BOMB_FIRE_SMALL</name>
+	<name>BOMB_BREACH_1</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY</name>
+	<name>BA_BOMB_CLUSTER_STUN_ENEMY2</name>
+	
+	<name>BOMB_FIRE</name>
+	<name>BA_BOMB_CLUSTER_BREACH</name>
+	<name>BA_BOMB_CLUSTER_1</name>
+	<name>BA_BOMB_CLUSTER_ION</name>
+	
+	<name>MISSILES_1</name>
+	<name>MISSILES_2_PLAYER</name>
+	<name>BA_MISSILE_CHARGEGUN_SMALL</name>
+	<name>MISSILES_SYS1</name>
+	<name>MISSILES_SYS2</name>
+	<name>BA_MISSILES_FOBOS</name>
+	<name>BA_MISSILES_DEIMOS</name>
+	<name>BA_MISSILES_SWARM_1</name>
+	<name>BA_MISSILES_SWARM_2</name>
+	<name>BA_MISSILES_ASTERIA</name>
+	<name>BA_MISSILES_HULL_SMALL</name>
+	<name>BA_MINES_SMALL</name>
+	
+	<name>MISSILES_3</name>
+	<name>MISSILES_BURST</name>
+	<name>MISSILE_CHARGEGUN</name>
+	<name>BA_SHOTGUN_MISSILES</name>
+	<name>BA_MISSILES_ONI</name>
+	<name>BA_MISSILES_SWARM_3</name>
+	<name>MISSILES_HULL</name>
+	<name>BA_MISSILES_PERYTON</name>
+	<name>BA_MISSILES_4</name>
+	<name>BA_MISSILES_COCKATRICE</name>
+	<name>BA_MINES_MEDIUM</name>
+	<name>BA_MINES_TECH</name>
+	<name>BA_MINES_MEDIUM_M2</name>
+	<name>BA_MINES_MEDIUM_M3</name>
+	
+	<name>ION_STUN</name>
+	<name>ION_CHAINGUN</name>
+	<name>BA_SHOTGUN_ION_1</name>
+	<name>BA_ION_2_STUN</name>
+	<name>BA_ION_BURST_1_STUN</name>
+	<name>BA_ION_PIERCE_1</name>
+	<name>BA_EFFECTOR_1</name>
+	<name>BA_ION_BURST_1</name>
+	<name>ION_HEAVY_1</name>
+	<name>ION_BLAST_1</name>
+	
+	<name>ION_CHARGEGUN</name>
+	<name>BA_ION_VULKAN</name>
+	<name>BA_SHOTGUN_ION_2</name>
+	<name>BA_ION_PIERCE_2</name>
+	<name>BA_EFFECTOR_2</name>
+	<name>BA_EFFECTOR_ADAPTIVE</name>
+	<name>BA_ION_BURST_2</name>
+	<name>ION_BLAST_3</name>
+	<name>BA_ION_CHAIN_MINI</name> 
+</blueprintList>
 
 <blueprintList name="WEAPONS_AUTO">
 	<name>LASER_CHAIN_1</name>
@@ -10341,7 +10638,7 @@
 	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
 </blueprintList>
 
-<blueprintList name="WEAPONS_JELLY"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_JELLY"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -10516,7 +10813,7 @@
 	<name>BA_ION_CHAIN_MINI</name> <!-- 1.23 -->
 </blueprintList>
 
-<blueprintList name="WEAPONS_MANTIS"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_MANTIS"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -10656,7 +10953,7 @@
 	<name>ION_BLAST_1</name>
 </blueprintList>
 
-<blueprintList name="WEAPONS_FED"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_FED"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -10955,7 +11252,7 @@
 	<name>BA_ION_CHAIN_MINI</name>
 </blueprintList>
 
-<blueprintList name="WEAPONS_CIRCLE"> <!-- bamalf -->
+<blueprintList name="WEAPONS_CIRCLE"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -11089,7 +11386,7 @@
 	<name>ION_HEAVY_3</name>
 </blueprintList>
 
-<blueprintList name="WEAPONS_ZOLTAN"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_ZOLTAN"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -11293,7 +11590,7 @@
 	<name>DE_DRONE_ANTI_CRYSTAL_HEAVY</name>
 </blueprintList>
 
-<blueprintList name="WEAPONS_AI"> <!-- bamalf over -->
+<blueprintList name="WEAPONS_AI"> <!-- 1.31 -->
 	<name>LASER_CHAIN_1</name>
 	<name>LASER_CHAIN_2</name>
 	<name>LASER_CHAIN_LONG_1</name> <!-- 1.26 -->
@@ -11633,7 +11930,7 @@
 	<name>BA_EFFECTOR_ADAPTIVE</name>
 </blueprintList>
 
-<blueprintList name="DRONES_STANDARD">  <!-- bamalf over -->
+<blueprintList name="DRONES_STANDARD">  <!-- 1.31 -->
 	<name>COMBAT_1_OLD</name>
 	<name>COMBAT_2</name>
 	<name>COMBAT_BEAM_OLD</name>	
@@ -11768,7 +12065,7 @@
    	<name>DE_DRONE_PLASMA</name>
 </blueprintList>
 
-<blueprintList name="DRONES_COMBAT">  <!-- bamalf over -->
+<blueprintList name="DRONES_COMBAT">  <!-- 1.31 -->
 	<name>COMBAT_1_OLD</name>
 	<name>COMBAT_2</name>
 	<name>COMBAT_BEAM_2</name>
@@ -11911,7 +12208,7 @@
    	<name>DE_DRONE_PLASMA</name>
 </blueprintList>
 
-<blueprintList name="DRONES_DEFENSE"> <!-- bamalf over -->
+<blueprintList name="DRONES_DEFENSE"> <!-- 1.31 -->
 	<name>DEFENSE_1_OLD</name>
 	<name>DEFENSE_2</name>
 	<name>DRONE_SHIELD</name>
@@ -12390,7 +12687,7 @@
 
 
 <!-- Беспилотник повстанцев -->
-<blueprintList name="CE_DRONES_AUTO_CONSTRUCTION"> <!-- bamalf -->
+<blueprintList name="CE_DRONES_AUTO_CONSTRUCTION"> <!-- 1.31 -->
 	<name>REPAIR_OLD</name>
 	<name>ANTI_DRONE</name>
 	<name>BOARDER_ION</name>
@@ -12408,7 +12705,7 @@
 	<name>DE_REPAIR_2</name>
 </blueprintList>
 
-<blueprintList name="CE_ZOLTAN_SHIELD"><!-- bamalf over -->
+<blueprintList name="CE_ZOLTAN_SHIELD"><!-- over -->
 	<name>DE_DRONE_DEFENSE_GAUSS</name>
 	<name>DE_DRONE_DEFENSE_HEAVY</name>
 	<name>DE_DRONE_DEFENSE_HEAVY_SMALL</name>
@@ -12870,7 +13167,7 @@
 		<doors power="2" max="3" room="3" start="true"/>
 		<shields power="4" max="10" room="4" start="true"/>
 		<medbay power="1" max="3" room="5" start="true"/>
-		<engines power="1" max="1" room="6" start="true"/>
+		<!-- <engines power="1" max="1" room="6" start="true"/> --><!-- 1.32 -->
 		<drones power="1" max="6" room="2" start="false"/>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -13566,34 +13863,14 @@
 	<name>1-CE_AI_BOMBER-5</name>
 </blueprintList>
 
-<shipBlueprint name="CE_AI_REPAIR" layout="ce_ai_repair_ship" img="ce_ai_fighter">
+<shipBlueprint name="CE_AI_REPAIR" layout="ce_ai_repair_ship" img="ce_ai_repair"><!-- 1.32 -->
 	<class>Ремонтник ИИ</class>
 	<systemList>
 		<drones power="2" max="8" room="0" start="true"/>
-		<pilot power="1" max="2" room="1" start="true">
-			<slot>
-				<direction>up</direction>
-				<number>0</number>
-			</slot>
-		</pilot>
-		<engines power="1" max="5" room="2" start="true">
-			<slot>
-				<direction>down</direction>
-				<number>1</number>
-			</slot>
-		</engines>
-		<weapons power="2" max="6" room="3" start="true">
-			<slot>
-				<direction>left</direction>
-				<number>1</number>
-			</slot>
-		</weapons>
-		<shields power="2" max="8" room="4" start="true">
-			<slot>
-				<direction>up</direction>
-				<number>1</number>
-			</slot>
-		</shields>
+		<pilot power="1" max="2" room="1" start="true"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<weapons power="2" max="6" room="3" start="true"/>
+		<shields power="2" max="8" room="4" start="true"/>
 	</systemList>
 	<weaponSlots>3</weaponSlots>
 	<droneSlots>4</droneSlots>
@@ -13606,7 +13883,7 @@
 	<aug name="DRONE_SPEED"/>
 </shipBlueprint>
 
-<shipBlueprint name="CE_AI_REPAIR_2" layout="ce_ai_repair_ship_2" img="ce_ai_fighter">
+<shipBlueprint name="CE_AI_REPAIR_2" layout="ce_ai_repair_ship_2" img="ce_ai_repair"><!-- 1.32 -->
 	<class>Ремонтник ИИ</class>
 	<systemList>
 		<drones power="2" max="8" room="0" start="true" />
@@ -13626,7 +13903,7 @@
 	<aug name="DRONE_SPEED"/>
 </shipBlueprint>
 
-<shipBlueprint name="CE_AI_REPAIR_3" layout="ce_ai_repair_ship_3" img="ce_ai_fighter">
+<shipBlueprint name="CE_AI_REPAIR_3" layout="ce_ai_repair_ship_3" img="ce_ai_repair"><!-- 1.32 -->
 	<class>Ремонтник ИИ</class>
 	<systemList>
 		<drones power="2" max="8" room="3" start="true" />
@@ -13895,7 +14172,7 @@
 	<aug name="ION_ARMOR" />
 </shipBlueprint>
 
-<shipBlueprint name="CE_AI_ASSAULT" layout="ce_ai_assault" img="ce_ai_bomber">
+<shipBlueprint name="CE_AI_ASSAULT" layout="ce_ai_assault" img="ce_ai_bomber"><!-- 1.32 -->
 	<class>Штурмовик ИИ</class>
 	<systemList>
 		<shields power="3" max="10" room="0" start="true">
@@ -14065,34 +14342,14 @@
 	<aug name="ION_ARMOR"/>
 </shipBlueprint>
 
-<shipBlueprint name="CE_AI_HACKER" layout="ce_ai_hacker" img="ce_ai_bomber"> <!-- 1.25 --> <!-- new xml -->
+<shipBlueprint name="CE_AI_HACKER" layout="ce_ai_hacker" img="ce_ai_hacker"> <!-- 1.32 --><!-- 1.25 --> <!-- new xml -->
 	<class>Взломщик ИИ</class>
 	<systemList>
 		<hacking power="1" max="3" room="0" start="true"/>
-		<pilot power="1" max="3" room="1" start="true">
-			<slot>
-				<direction>up</direction>
-				<number>0</number>
-			</slot>
-		</pilot>
-		<shields power="2" max="8" room="2" start="true">
-			<slot>
-				<direction>left</direction>
-				<number>0</number>
-			</slot>
-		</shields>
-		<weapons power="2" max="8" room="3" start="true">
-			<slot>
-				<direction>right</direction>
-				<number>1</number>
-			</slot>
-		</weapons>
-		<engines power="1" max="5" room="4" start="true">
-			<slot>
-				<direction>down</direction>
-				<number>1</number>
-			</slot>
-		</engines>
+		<pilot power="1" max="3" room="1" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<weapons power="2" max="8" room="3" start="true"/>
+		<engines power="1" max="5" room="4" start="true"/>
 		<drones power="2" max="6" room="5" start="false"/>
 		<clonebay power="1" max="3" room="6" start="false"/>
 		<doors power="1" max="3" room="7" start="false"/>
@@ -14108,7 +14365,7 @@
 	<aug name="ION_ARMOR"/>
 </shipBlueprint>
 
-<shipBlueprint name="CE_AI_HACKER_2" layout="ce_ai_hacker_2" img="ce_ai_bomber"> <!-- 1.25 --> <!-- new xml -->
+<shipBlueprint name="CE_AI_HACKER_2" layout="ce_ai_hacker_2" img="ce_ai_hacker"> <!-- 1.32 --> <!-- 1.25 --> <!-- new xml -->
 	<class>Взломщик ИИ</class>
 	<systemList>
 		<clonebay power="1" max="3" room="5" start="false" />
@@ -14131,7 +14388,7 @@
 	<aug name="ION_ARMOR"/>
 </shipBlueprint>
 
-<shipBlueprint name="CE_AI_HACKER_3" layout="ce_ai_hacker_3" img="ce_ai_bomber"> <!-- 1.25 --> <!-- new xml -->
+<shipBlueprint name="CE_AI_HACKER_3" layout="ce_ai_hacker_3" img="ce_ai_hacker"> <!-- 1.32 --> <!-- 1.25 --> <!-- new xml -->
 	<class>Взломщик ИИ</class>
 	<systemList>
 		<clonebay power="1" max="3" room="4" start="false" />
@@ -19490,7 +19747,31 @@
 	<aug name="O2_MASKS" />
 	<aug name="DRONE_SPEED"/>
 </shipBlueprint>
-
+<blueprintList name="SHIPS_FED_STATION2"> <!-- 1.32 -->
+	<name>FED_STATION2</name>
+</blueprintList>
+<shipBlueprint name="FED_STATION2" layout="fed_station" img="fed_station_new_1"> <!-- 1.32 -->
+	<class>Станция Федерации</class>
+	<systemList>
+		<doors power="3" max="3" room="2" start="true" />
+		<drones power="2" max="8" room="3" start="false" />
+		<medbay power="1" max="3" room="6" start="true" />
+		<oxygen power="1" max="3" room="14" start="true" />
+		<shields power="2" max="10" room="10" start="true" />
+		<teleporter power="1" max="3" room="8" start="false" />
+		<weapons power="2" max="10" room="7" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="7" count="4" load="WEAPONS_FED" />
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<health amount="15" />
+	<maxPower amount="17" />
+	<crewCount amount="4" max="8" class="human" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="O2_MASKS" />
+	<aug name="DRONE_SPEED"/>
+</shipBlueprint>
 
 <blueprintList name="SHIPS_ROCKSLUG">
 	<name>ROCKSLUG</name>
@@ -20654,6 +20935,24 @@
 	<health amount="8" />
 	<maxPower amount="3" /> 
 	<crewCount amount="5" max="7" class="energyx" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="BATTERY_BOOSTER" />
+</shipBlueprint>
+
+<shipBlueprint name="ENERGYX_SCOUT_SPECIAL" layout="energyx_scout_1" img="energyx_scout"><!-- 1.32 -->
+	<class>Разведчик золтонцев</class>
+	<systemList>
+		<battery power="2" max="2" room="5" start="true" />
+		<doors power="1" max="3" room="6" start="false" />
+		<engines power="2" max="8" room="7" start="true" />
+		<medbay power="1" max="3" room="4" start="false" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="5" room="1" start="true" />
+	</systemList>
+	<health amount="7" />
+	<maxPower amount="3" /> 
+	<crewCount amount="5" max="6" class="energyx" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="BATTERY_BOOSTER" />
 </shipBlueprint>
@@ -25082,8 +25381,8 @@
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="6" count="4" load="WEAPONS_MAGMAN" />
 	<droneList drones="5" count="0" />
-	<health amount="0" />
-	<maxPower amount="0" />
+	<health amount="8" /><!-- 1.32 -->
+	<maxPower amount="8" /><!-- 1.32 -->
 	<crewCount amount="1" max="1" class="magman" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="MAGMAN_EXTINGUISHERS" />
@@ -25130,8 +25429,8 @@
 	<droneSlots>3</droneSlots>
 	<weaponList missiles="6" count="4" load="WEAPONS_MAGMAN" />
 	<droneList drones="5" count="0" />
-	<health amount="0" />
-	<maxPower amount="0" />
+	<health amount="8" /><!-- 1.32 -->
+	<maxPower amount="8" /><!-- 1.32 -->
 	<crewCount amount="1" max="1" class="magman" />
 	<boardingAI>sabotage</boardingAI>
 	<aug name="MAGMAN_EXTINGUISHERS" />
@@ -25538,8 +25837,8 @@
 <shipBlueprint name="PANDEMONIUM_1" layout="pandemonium" img="pandemonium">
 	<class>Неопознанная ракета</class>
 	<systemList>
-		<engines power="5" max="5" room="4" start="true" />
-		<oxygen power="1" max="1" room="3" start="true" />
+		<engines power="5" max="5" room="3" start="true" />
+		<oxygen power="1" max="1" room="4" start="true" />
 		<pilot power="1" max="1" room="0" start="true" />
 		<shields power="2" max="2" room="1" start="true" />
 		<weapons power="10" max="10" room="2" start="true" />
@@ -25552,15 +25851,15 @@
 	<droneList drones="0" count="0" />
 	<health amount="5" />
 	<maxPower amount="10" />
-	<crewCount amount="2" max="2" class="CREW_ORDER_HUMAN" />
+	<crewCount amount="2" max="2" class="CREW_ORDER_HUMAN" />	
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 
 <shipBlueprint name="PANDEMONIUM_2" layout="pandemonium" img="pandemonium">
 	<class>Неопознанная ракета</class>
 	<systemList>
-		<engines power="5" max="5" room="4" start="true" />
-		<oxygen power="1" max="1" room="3" start="true" />
+		<engines power="5" max="5" room="3" start="true" />
+		<oxygen power="1" max="1" room="4" start="true" />
 		<pilot power="1" max="1" room="0" start="true" />
 		<cloaking power="1" max="1" room="1" start="false" />
 		<weapons power="10" max="10" room="2" start="true" />
@@ -25721,16 +26020,16 @@
 		<artillery power="1" max="4" room="12" start="true" weapon="ARTILLERY_BOSS_1_HARD2" />
 		<artillery power="1" max="4" room="13" start="true" weapon="ARTILLERY_BOSS_2_HARDLIST2" />
 		<artillery power="1" max="4" room="14" start="true" weapon="ARTILLERY_BOSS_3_HARD2" />
-		<cloaking power="1" max="2" room="2" start="true" />
+		<cloaking power="1" max="3" room="2" start="true" />
 		<clonebay power="1" max="3" room="0" start="true" />
-		<doors power="1" max="3" room="3" start="true" />
-		<!-- <drones power="3" max="8" room="1" start="true" /> -->
-		<engines power="2" max="5" room="10" start="true" />
+		<doors power="1" max="3" room="3" start="true" /><!-- 1.32 -->
+		<drones power="3" max="8" room="1" start="true" />
+		<engines power="2" max="10" room="10" start="true" /><!-- 1.32 -->
 		<hacking power="1" max="3" room="4" start="true" />
 		<mind power="1" max="3" room="5" start="true" />
 		<oxygen power="1" max="3" room="6" start="true" />
 		<pilot power="1" max="3" room="7" start="true" />
-		<shields power="4" max="10" room="9" start="true" />
+		<shields power="2" max="10" room="9" start="true" /><!-- 1.32 -->
 		<teleporter power="1" max="3" room="8" start="true" />
 	</systemList>
 	<weaponSlots>4</weaponSlots>
@@ -25873,7 +26172,7 @@
 </shipBlueprint>
 
 
-<blueprintList name="OLD_PIRATE_TRANSPORT_V_LIST"><!-- bamalf -->
+<blueprintList name="OLD_PIRATE_TRANSPORT_V_LIST"><!-- 1.31 -->
 	<name>OLD_PIRATE_TRANSPORT_V</name>
 </blueprintList>
 <shipBlueprint name="OLD_PIRATE_TRANSPORT_V" layout="old_pirate_transport_v" img="old_pirate_transport_v">
@@ -25906,8 +26205,8 @@
 <shipBlueprint name="SLURM_CRR" layout="jelly_queen_crr" img="jelly_queen_crr">
 	<class>Агрессор слёрмов</class>
 	<systemList>
-		<clonebay power="1" max="1" room="12" start="true" />
-		<artillery power="1" max="1" room="12" weapon="SLURM_SMALL" > 
+		<clonebay power="1" max="1" room="5" start="true" /><!-- 1.32 -->
+		<artillery power="1" max="1" room="5" weapon="SLURM_SMALL" > <!-- 1.32 -->
 			<slot>
 				<direction>down</direction>
 				<number>3</number> 
@@ -25930,8 +26229,638 @@
 	<crewCount amount="7" max="10" class="slug" />
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
+<!-- 1.32 -->
+<!-- набор кораблей для контры сборки игрока -->
+<blueprintList name="JELLY_TRUFFLE_AD_DEFAULT">
+	<name>JELLY_TRUFFLE_AD_DEFAULT1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_DEFAULT1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик D</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="4" start="false"/>
+		<oxygen power="1" max="3" room="7"/>
+		<medbay power="2" max="3" room="8" start="true"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<health amount="11"/>
+	<maxPower amount ="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="AUTO_COOLDOWN"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD">
+	<name>JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTITELE_NOZLTSHIELD1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AT</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="4" start="false"/>
+		<drones power="2" max="8" room="7" start="true" />
+		<hacking power="1" max="3" room="8" start="false"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="2" drones="25">
+		<drone name="BATTLE"/>
+		<drone name="DE_BATTLE_2"/>
+	</droneList>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount="0" max="0" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="DRONE_SPEED"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD">
+	<name>JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTITELE_WITHZLTSHIELD1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик ATZ</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="4" start="false"/>
+		<drones power="2" max="8" room="7" start="true" />
+		<hacking power="1" max="3" room="8" start="false"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="2" drones="25">
+		<drone name="BATTLE"/>
+		<drone name="DE_BATTLE_2"/>
+	</droneList>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount="0" max="0" class="human"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="ENERGY_SHIELD"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTIMISSILE">
+	<name>JELLY_TRUFFLE_AD_ANTIMISSILE1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIMISSILE1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AM</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<medbay power="1" max="3" room="4" start="true"/>
+		<drones power="2" max="8" room="7" start="true"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="2" drones="25" load="DRONES_DEFENSE_LIST"/>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTIION">
+	<name>JELLY_TRUFFLE_AD_ANTIION1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIION1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AI</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<medbay power="1" max="3" room="4" start="true"/>
+		<doors power="1" max="3" room="7" start="false"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="ION_ARMOR"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTILASER">
+	<name>JELLY_TRUFFLE_AD_ANTILASER1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILASER1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AL</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<medbay power="1" max="3" room="4" start="true"/>
+		<doors power="1" max="3" room="7" start="false"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="SHIELD_RECHARGE"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN">
+	<name>JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIAUTOCOOLDOWN1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AC</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<medbay power="1" max="3" room="4" start="true"/>
+		<doors power="1" max="3" room="7" start="false"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SHIELD_RECHARGE"/>
+	<aug name="SHIELD_RECHARGE"/>
+	<aug name="SHIELD_RECHARGE"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTILOWCREW">
+	<name>JELLY_TRUFFLE_AD_ANTILOWCREW1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILOWCREW1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик ALC</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<drones power="2" max="8" room="4" start="true"/>
+		<mind power="1" max="3" room="7" start="true"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="4" drones="25">
+		<drone name="BOARDER"/>
+		<drone name="BOARDER_ION"/>
+		<drone name="BOARDER"/>
+		<drone name="BOARDER_ION"/>
+	</droneList>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTILOWCREW_NOION">
+	<name>JELLY_TRUFFLE_AD_ANTILOWCREW_NOION1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILOWCREW_NOION1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик ALCNI</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<drones power="2" max="8" room="4" start="true"/>
+		<mind power="1" max="3" room="7" start="true"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="4" drones="25">
+		<drone name="BOARDER"/>
+		<drone name="BOARDER"/>
+		<drone name="BOARDER"/>
+		<drone name="BOARDER"/>
+	</droneList>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+<blueprintList name="JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS">
+	<name>JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTILOWCREW_WITHBYPASS1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик ALCWB</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<drones power="2" max="8" room="4" start="true"/>
+		<mind power="1" max="3" room="7" start="true"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="4" drones="25">
+		<drone name="BOARDER"/>
+		<drone name="BOARDER_ION"/>
+		<drone name="BOARDER"/>
+		<drone name="BOARDER_ION"/>
+	</droneList>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="ZOLTAN_BYPASS"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
 
 
 
+<blueprintList name="JELLY_TRUFFLE_AD_ANTINOSHIELD">
+	<name>JELLY_TRUFFLE_AD_ANTINOSHIELD1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTINOSHIELD1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик ANS</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<medbay power="1" max="3" room="4" start="false"/>
+		<doors power="1" max="3" room="7" start="false"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="3" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_CLASS_BEAM_LOW"/>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="AUTO_COOLDOWN"/>
+	<!-- <aug name="AUTO_COOLDOWN"/> -->
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTIFIRE">
+	<name>JELLY_TRUFFLE_AD_ANTIFIRE1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIFIRE1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AF</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<doors power="1" max="3" room="4" start="false"/>
+		<oxygen power="1" max="3" room="7"/>
+		<medbay power="3" max="3" room="8" start="true"/>
+		<shields power="2" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<health amount="12"/>
+	<maxPower amount ="11"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<aug name="FIRE_EXTINGUISHERS"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="JELLY_TRUFFLE_AD_ANTIATTACKDRONES">
+	<name>JELLY_TRUFFLE_AD_ANTIATTACKDRONES1</name>
+</blueprintList>
+<shipBlueprint name="JELLY_TRUFFLE_AD_ANTIATTACKDRONES1" layout="jelly_truffle_adaptive" img="jelly_truffle_adaptive">
+	<class>Адаптивный штурмовик AAD</class>
+	<systemList>
+		<pilot power="1" max="3" room="0"/>
+		<drones power="2" max="8" room="4" start="true"/>
+		<mind power="1" max="3" room="7" start="true"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<shields power="3" max="10" room="6"/>
+		<engines power="1" max="5" room="5"/>
+		<weapons power="2" max="10" room="1"/>
+		<cloaking power="1" max="3" room="2" start="false"/>
+	</systemList>
+	<weaponList missiles="14" load="WEAPONS_JELLY"/>
+	<droneList count="4" drones="25">
+		<drone name="ANTI_DRONE"/>
+		<drone name="ANTI_DRONE_ION"/>
+		<drone name="ANTI_DRONE"/>
+		<drone name="ANTI_DRONE_ION"/>
+	</droneList>
+	<health amount="11"/>
+	<maxPower amount="10"/>
+	<crewCount amount = "4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL"/>
+	<cloakImage>jelly_truffle</cloakImage>
+</shipBlueprint>
+
+<blueprintList name="BUILDINGSTATION1">
+	<name>BUILDINGSTATION_1</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_1" layout="building_station_1" img="building_station_1">
+	<class>Станция 1 уровня</class>
+	<systemList>
+		<drones power="2" max="3" room="2" start="true" />
+		<oxygen power="1" max="1" room="1" start="true" />
+		<pilot power="1" max="1" room="0" start="true" />
+		<shields power="2" max="4" room="3" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="5" count="4" load="WEAPONS_FED" />
+	<droneList drones="2" load="DRONES_STANDARD"/>
+	<health amount="6" />
+	<maxPower amount="20" />
+	<crewCount amount="3" max="4" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION2">
+	<name>BUILDINGSTATION_2</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_2" layout="building_station_2" img="building_station_2">
+	<class>Станция 2 уровня</class>
+	<systemList>
+		<battery power="1" max="1" room="7" start="true" />
+		<drones power="2" max="4" room="2" start="true" />
+		<oxygen power="1" max="2" room="1" start="true" />
+		<pilot power="1" max="2" room="0" start="true" />
+		<shields power="2" max="4" room="3" start="true" />
+		<teleporter power="1" max="1" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="6" count="4" load="WEAPONS_FED" />
+	<droneList drones="3" load="DRONES_STANDARD"/>
+	<health amount="7" />
+	<maxPower amount="20" />
+	<crewCount amount="3" max="5" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION3">
+	<name>BUILDINGSTATION_3</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_3" layout="building_station_3" img="building_station_3">
+	<class>Станция 3 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="8" start="true" />
+		<doors power="1" max="1" room="7" start="true" />
+		<drones power="2" max="5" room="2" start="true" />
+		<oxygen power="1" max="3" room="1" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="5" room="3" start="true" />
+		<teleporter power="1" max="2" room="6" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="7" count="4" load="WEAPONS_FED" />
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<health amount="8" />
+	<maxPower amount="20" />
+	<crewCount amount="3" max="6" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION4">
+	<name>BUILDINGSTATION_4</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_4" layout="building_station_4" img="building_station_4">
+	<class>Станция 4 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="11" start="true" />
+		<doors power="1" max="2" room="7" start="true" />
+		<drones power="2" max="6" room="2" start="true" />
+		<oxygen power="1" max="3" room="1" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="1" room="9" start="true" />
+		<shields power="2" max="6" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="3" max="4" room="10" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="8" count="4" load="WEAPONS_FED" />
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<health amount="10" />
+	<maxPower amount="20" />
+	<crewCount amount="4" max="7" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION5">
+	<name>BUILDINGSTATION_5</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_5" layout="building_station_5" img="building_station_5">
+	<class>Станция 5 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="13" start="true" />
+		<doors power="1" max="3" room="9" start="true" />
+		<drones power="2" max="7" room="2" start="true" />
+		<oxygen power="1" max="3" room="1" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="2" room="11" start="true" />
+		<shields power="2" max="7" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="3" max="5" room="12" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="9" count="4" load="WEAPONS_FED" />
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<health amount="12" />
+	<maxPower amount="20" />
+	<crewCount amount="5" max="8" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION6">
+	<name>BUILDINGSTATION_6</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_6" layout="building_station_6" img="building_station_6">
+	<class>Станция 6 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="13" start="true" />
+		<doors power="1" max="3" room="9" start="true" />
+		<drones power="2" max="8" room="2" start="true" />
+		<oxygen power="1" max="3" room="1" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="3" room="11" start="true" />
+		<shields power="2" max="8" room="3" start="true" />
+		<teleporter power="1" max="3" room="6" start="true" />
+		<weapons power="3" max="6" room="12" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="10" count="4" load="WEAPONS_FED" />
+	<droneList drones="4" load="DRONES_STANDARD"/>
+	<health amount="14" />
+	<maxPower amount="20" />
+	<crewCount amount="6" max="9" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION7">
+	<name>BUILDINGSTATION_7</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_7" layout="building_station_7" img="building_station_7">
+	<class>Станция 7 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="15" start="true" />
+		<doors power="1" max="3" room="11" start="true" />
+		<drones power="2" max="9" room="4" start="true" />
+		<medbay power="1" max="1" room="2" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="3" room="13" start="true" />
+		<shields power="2" max="9" room="5" start="true" />
+		<teleporter power="1" max="3" room="8" start="true" />
+		<weapons power="3" max="7" room="14" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="11" count="4" load="WEAPONS_FED" />
+	<droneList drones="5" load="DRONES_STANDARD"/>
+	<health amount="16" />
+	<maxPower amount="20" />
+	<crewCount amount="7" max="10" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION8">
+	<name>BUILDINGSTATION_8</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_8" layout="building_station_8" img="building_station_8">
+	<class>Станция 8 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="16" start="true" />
+		<doors power="1" max="3" room="12" start="true" />
+		<drones power="2" max="10" room="4" start="true" />
+		<medbay power="1" max="2" room="2" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="3" room="14" start="true" />
+		<shields power="2" max="10" room="5" start="true" />
+		<teleporter power="1" max="3" room="8" start="true" />
+		<weapons power="3" max="8" room="15" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="12" count="4" load="WEAPONS_FED" />
+	<droneList drones="6" load="DRONES_STANDARD"/>
+	<health amount="18" />
+	<maxPower amount="20" />
+	<crewCount amount="8" max="11" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION9">
+	<name>BUILDINGSTATION_9</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_9" layout="building_station_9" img="building_station_9">
+	<class>Станция 9 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="18" start="true" />
+		<doors power="1" max="3" room="14" start="true" />
+		<drones power="3" max="10" room="6" start="true" />
+		<medbay power="1" max="3" room="2" start="true" />
+		<mind power="1" max="1" room="5" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="3" room="16" start="true" />
+		<shields power="3" max="10" room="7" start="true" />
+		<teleporter power="1" max="3" room="10" start="true" />
+		<weapons power="4" max="9" room="17" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="13" count="4" load="WEAPONS_FED" />
+	<droneList drones="7" load="DRONES_STANDARD"/>
+	<health amount="20" />
+	<maxPower amount="20" />
+	<crewCount amount="9" max="12" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+<blueprintList name="BUILDINGSTATION10">
+	<name>BUILDINGSTATION_10</name>
+</blueprintList>
+<shipBlueprint name="BUILDINGSTATION_10" layout="building_station_10" img="building_station_10">
+	<class>Станция 10 уровня</class>
+	<systemList>
+		<battery power="1" max="2" room="21" start="true" />
+		<cloaking power="1" max="3" room="8" start="true" />
+		<doors power="1" max="3" room="17" start="true" />
+		<drones power="4" max="10" room="9" start="true" />
+		<hacking power="1" max="3" room="7" start="true" />
+		<medbay power="1" max="3" room="2" start="true" />
+		<mind power="1" max="3" room="5" start="true" />
+		<oxygen power="1" max="3" room="3" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<sensors power="1" max="3" room="19" start="true" />
+		<shields power="4" max="10" room="10" start="true" />
+		<teleporter power="1" max="3" room="13" start="true" />
+		<weapons power="5" max="10" room="20" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>4</droneSlots>
+	<weaponList missiles="14" count="4" load="WEAPONS_FED" />
+	<droneList drones="8" load="DRONES_STANDARD"/>
+	<health amount="22" />
+	<maxPower amount="20" />
+	<crewCount amount="10" max="14" class="random"/>
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<blueprintList name="PONY_MONITOR_SHIPS">
+	<name>PONY_MONITOR1</name>
+</blueprintList>
+<shipBlueprint name="PONY_MONITOR1" layout="pony_monitor" img="pony_monitor">
+	<class>Не опознан</class>
+	<systemList>
+		<cloaking power="1" max="3" room="2" start="false" />
+		<doors power="3" max="3" room="3" start="false" />
+		<engines power="1" max="3" room="8" start="true" />
+		<hacking power="1" max="3" room="4" start="false" />
+		<mind power="1" max="3" room="1" start="false" />
+		<pilot power="1" max="3" room="6" start="true" />
+		<shields power="2" max="10" room="0" start="true" />
+		<weapons power="4" max="10" room="5" start="true" />
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>0</droneSlots>
+	<weaponList missiles="20" count="4" load="WEAPONS_UWB" />
+	<droneList drones="0" count="0" />
+	<health amount="17" />
+	<maxPower amount="6" />
+	<boardingAI>sabotage</boardingAI>
+	<aug name="SLUG_GEL" />
+	<aug name="SYSTEM_CASING" />
+	<aug name="ZOLTAN_BYPASS" />
+</shipBlueprint>
 
 </FTL>

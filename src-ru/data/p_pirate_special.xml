@@ -6,6 +6,10 @@
 	<floor x="0" y="0" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="50" y="175">human_thruster4</thruster>
+	<thruster x="50" y="285">human_thruster4</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="368" y="176" rotate="true" mirror="true" gib="1" slide="up" />
 	<mount x="369" y="309" rotate="true" mirror="false" gib="4" slide="down" />

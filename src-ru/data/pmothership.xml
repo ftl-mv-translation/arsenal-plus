@@ -6,34 +6,45 @@
 	<floor x="0" y="0" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters sync="false">
+	<thruster x="6" y="81">ghost_thruster1</thruster>
+	<thruster x="33" y="96">ghost_thruster1</thruster>
+	<thruster x="17" y="112">ghost_thruster1</thruster>
+	<thruster x="4" y="133">ghost_thruster1</thruster>
+	<thruster x="24" y="147">ghost_thruster1</thruster>
+	<thruster x="-3" y="161">ghost_thruster1</thruster>
+	<thruster x="4" y="265">ghost_thruster1</thruster>
+	<thruster x="24" y="279">ghost_thruster1</thruster>
+	<thruster x="-3" y="293">ghost_thruster1</thruster>
+</thrusters>
 <weaponMounts>
-	<mount x="303" y="34" rotate="true" mirror="true" gib="1" slide="up" />
-	<mount x="337" y="352" rotate="true" mirror="false" gib="2" slide="right" />
-	<mount x="379" y="172" rotate="true" mirror="true" gib="2" slide="up" />
-	<mount x="354" y="269" rotate="true" mirror="false" gib="2" slide="down" />
-	<mount x="317" y="137" rotate="true" mirror="true" gib="-1" slide="no" />
+	<mount x="228" y="26" rotate="true" mirror="true" gib="1" slide="up" />
+	<mount x="231" y="377" rotate="true" mirror="false" gib="2" slide="down" />
+	<mount x="377" y="122" rotate="true" mirror="true" gib="2" slide="up" />
+	<mount x="336" y="319" rotate="true" mirror="false" gib="2" slide="down" />
+	<mount x="380" y="173" rotate="true" mirror="true" gib="-1" slide="no" />
 </weaponMounts>
 <explosion>
 	<gib1>
 		<velocity min="0.78" max="0.78" />
 		<direction min="-90" max="76" />
 		<angular min="-1.55" max="1.55" />
-		<x>0</x>
-		<y>0</y>
+		<x>164</x>
+		<y>133</y>
 	</gib1>
 	<gib2>
 		<velocity min="0.51" max="0.51" />
 		<direction min="186" max="270" />
 		<angular min="-1.31" max="1.31" />
-		<x>0</x>
-		<y>0</y>
+		<x>-16</x>
+		<y>171</y>
 	</gib2>
 	<gib3>
 		<velocity min="0.52" max="0.52" />
 		<direction min="101" max="204" />
 		<angular min="-2.08" max="2.08" />
-		<x>0</x>
-		<y>0</y>
+		<x>-13</x>
+		<y>16</y>
 	</gib3>
 </explosion>
 

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
 <img x="-30" y="-91" w="242" h="389" />
 <offsets>
 	<floor x="0" y="0" />
 	<cloak x="20" y="18" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="69" y="343">enemy_zoltan_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="95" y="80" rotate="false" mirror="true" gib="1" slide="left" />
 	<mount x="205" y="160" rotate="false" mirror="false" gib="3" slide="right" />
@@ -56,4 +58,5 @@
 		<y>160</y>
 	</gib6>
 </explosion>
+
 

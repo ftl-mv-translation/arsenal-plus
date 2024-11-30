@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
-<img x="-183" y="-107" w="721" h="457" />
+<img x="-143" y="-107" w="721" h="457" />
 <offsets>
-	<floor x="0" y="0" />
+	<floor x="-40" y="0" />
 	<cloak x="0" y="0" />
 </offsets>
+<thrusters>
+	<thruster x="9" y="202">rock_thruster_titanius</thruster>	
+</thrusters>
 <weaponMounts>
 	<mount x="525" y="89" rotate="true" mirror="true" gib="2" slide="up" />
 	<mount x="527" y="371" rotate="true" mirror="false" gib="1" slide="down" />
 	<mount x="633" y="160" rotate="true" mirror="true" gib="1" slide="right" />
 	<mount x="633" y="298" rotate="true" mirror="false" gib="1" slide="right" />
-	<mount x="660" y="221" rotate="true" mirror="false" gib="-1" slide="no" />
+	<mount x="660" y="228" rotate="true" mirror="false" gib="-1" slide="no" />
 </weaponMounts>
 <explosion>
 	<gib1>

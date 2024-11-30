@@ -291,7 +291,7 @@ DLC!!!
 	</systemList>
 	<weaponList count="0" missiles="10"/>
 	<droneList count="0" drones="2"/>
-	<health amount="18"/>	
+	<health amount="20"/><!-- 1.32 -->
 	<maxPower amount="45"/>
 </shipBlueprint>
 <shipBlueprint name="BOSS_2_EASY_DLC" layout="boss_2_easy" img="boss_2">
@@ -319,7 +319,7 @@ DLC!!!
 		<drone name="BOSS_DRONES_3_SLOT_EASY"/>
 		<drone name="BOSS_DRONES_4_SLOT_EASY"/>
 	</droneList>
-	<health amount="18"/>	
+	<health amount="20"/><!-- 1.32 -->
 	<maxPower amount="45"/>
 </shipBlueprint>
 <shipBlueprint name="BOSS_3_EASY_DLC" layout="boss_3_easy" img="boss_3">
@@ -341,7 +341,7 @@ DLC!!!
 		<!--<weapon name="ION_HEAVY_1"/>
 		<weapon name="BEAM_FIRE"/>
 	</weaponList>-->
-	<health amount="18"/>	
+	<health amount="20"/><!-- 1.32 -->
 	<maxPower amount="45"/>
 	<boardingAI>invasion</boardingAI>
 </shipBlueprint>
@@ -371,7 +371,7 @@ DLC!!!
 	</systemList>
 	<weaponList count="0" missiles="10"/>
 	<droneList count="0" drones="4"/>
-	<health amount="20"/>	
+	<health amount="25"/><!-- 1.32 -->	
 	<maxPower amount="45"/>
 	<!-- <aug name="FTL_JAMMER"/> --> <!-- 1.29 -->
 	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
@@ -401,7 +401,7 @@ DLC!!!
 		<drone name="BOSS_DRONES_3_SLOT_NORMAL"/>
 		<drone name="BOSS_DRONES_4_SLOT_NORMAL"/>
 	</droneList>
-	<health amount="20"/>	
+	<health amount="25"/><!-- 1.32 -->
 	<maxPower amount="45"/>
 	<!-- <aug name="FTL_JAMMER"/> --> <!-- 1.29 -->
 	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
@@ -431,7 +431,7 @@ DLC!!!
 		<!--<weapon name="ION_HEAVY_1"/>
 		<weapon name="BEAM_FIRE"/>
 	</weaponList>-->
-	<health amount="20"/>	
+	<health amount="25"/><!-- 1.32 -->	
 	<maxPower amount="45"/>
 	<boardingAI>invasion</boardingAI>
 	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
@@ -462,7 +462,7 @@ DLC!!!
 	</systemList>
 	<weaponList count="0" missiles="10"/>
 	<droneList count="0" drones="6"/>
-	<health amount="22"/>	
+	<health amount="30"/><!-- 1.32 -->	
 	<maxPower amount="45"/>
 	<!-- <aug name="FTL_JAMMER"/> --> <!-- 1.29 -->
 	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
@@ -493,7 +493,7 @@ DLC!!!
 		<drone name="BOSS_DRONES_3_SLOT_HARD"/>
 		<drone name="BOSS_DRONES_4_SLOT_HARD"/>
 	</droneList>
-	<health amount="22"/>	
+	<health amount="30"/><!-- 1.32 -->
 	<maxPower amount="45"/>
 	<!-- <aug name="FTL_JAMMER"/> --> <!-- 1.29 -->
 	<!-- <aug name="SHIELD_RECHARGE"/> --> <!-- 1.25 -->
@@ -522,7 +522,7 @@ DLC!!!
 		<drone name="BOSS_HARD_3_STAGE_LIST"/> <!-- 1.26.6 -->
 		<drone name="DE_BATTLE_3"/>
 	</droneList>
-	<health amount="22"/>	
+	<health amount="30"/><!-- 1.32 -->	
 	<maxPower amount="45"/>
 	<boardingAI>invasion</boardingAI>
 	<aug name="SLUG_GEL"/>

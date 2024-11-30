@@ -56,7 +56,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event load="REFUEL_STATION"/>
 </eventList>
 
-<eventList name="HOSTILE_ENGI"> <!-- bamalf over -->
+<eventList name="HOSTILE_ENGI"> <!-- 1.31 -->
 	<event load="ENGI_MANTIS_FIGHT"/>
 	<event load="ENGI_REBEL_FIGHT"/>
 	<event load="ENGI_PIRATE_FIGHT"/>
@@ -138,11 +138,13 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <event name="START_BEACON_ENGI">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_engi_sector" op="add" val="1"/>
 	<text load="START_BEACON_ENGI"/>
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -174,7 +176,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<text load="NOTHING_ENGI"/>
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW_ENGI"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <textList name="NOTHING_ENGI">
@@ -314,7 +316,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="ENGI_MANTIS_FIGHT">
 	<text load="ENGI_MANTIS_FIGHT"/>
-	<ship load="MANTIS_FIGHT" hostile="true"/>
+	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ENGI_MANTIS_FIGHT">
 	<text>Неоднозначные сигналы радара оказываются штурмовым кораблём мантисов, грабящим останки транспортного судна инжи. Они разворачиваются и идут в бой.</text>
@@ -325,12 +327,12 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="ENGI_REBEL_FIGHT">
 	<text>Боевой корабль повстанцев в этой области космоса свидетельствует о том, что некоторые части флота повстанцев уже добрались до владений инжи. Вы движетесь в наступление.</text>
-	<ship load="REBEL" hostile="true"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 
 <event name="ENGI_PIRATE_FIGHT">
 	<text>Здесь, наверное, было хлебное место для пиратов, но потом началась война, и бандитскую вольницу прижали. Пират, летящий вам навстречу, выглядит потрёпанным и очень злым. Придётся сражаться!</text>
-	<ship load="PIRATE" hostile="true"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 
 
@@ -355,12 +357,12 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <eventList name="ENGI_STATION_DISTRESS_LIST">
 	<event>
 		<text>Вы принимаете другое сообщение от корабля, на этот раз на экране мантис: «Глупые мягкотелые! Здесь нет никого кроме нас!» — кричит он. Сенсоры показывают, что корабль движется на перехват, а со станции телепортируются захватчики.</text>
-		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/>
+		<ship load="ENGI_MANTIS_CONTROLLED" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<boarders min="1" max="2" class="mantis"/>
 	</event>
 	<event>
 		<text>Вы приближаетесь и видите, что корабль мантисов нападает на маленькую станцию инжи. Вы готовитесь к бою!</text>
-		<ship load="MANTIS_ENGI_STATION" hostile="true"/>
+		<ship load="MANTIS_ENGI_STATION" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <eventList name="SAVE_ENGI_STATION">
@@ -385,7 +387,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Запросить дрона.</text>
 			<event load="SAVE_ENGI_STATION_ASK_DRON"/> <!-- 1.26 -->
 		</choice>
-		<choice req="engi" hidden="true">
+		<choice req="engi_crew" hidden="true">
 			<text>(Член экипажа инжи) «Угроза не устранена. Важность текущей миссии: Протокол 52.34».</text>
 			<event>
 				<text>Они отвечают: «Принято. Восстановление Федерации: высший приоритет. Передаём координаты скрытой базы. Восстанавливаем корпус и устанавливаем орудие».</text><!-- 1.25 -->
@@ -519,7 +521,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 						<autoReward level="LOW">drone</autoReward>
 					</event>
 				</choice>
-				<choice req="engi" hidden="false"><!-- 1.25 -->
+				<choice req="engi_crew" hidden="false"><!-- 1.25 -->
 					<text>(Член экипажа инжи) «Угроза не устранена. Важность текущей миссии: Протокол 52.34».</text>
 					<event>
 						<text>Они отвечают: «Принято. Восстановление Федерации: высший приоритет. Передаём координаты скрытой базы. Восстанавливаем корпус и устанавливаем орудие».</text><!-- 1.25 -->
@@ -548,7 +550,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <event name="DISTRESS_ENGI_REBEL" unique="true">
 	<text>Сигнал бедствия исходит от маленького корабля инжи, защищающегося от нападения истребителя повстанцев. Внезапно, заметив опознавательные знаки Федерации, повстанцы переключаются на вас!</text> 
 	<distressBeacon/>
-	<ship load="DISTRESS_ENGI_REBEL" hostile="true"/>
+	<ship load="DISTRESS_ENGI_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <event name="DISTRESS_ENGI_REBEL_RESULT">
 	<text>Оказывается, что корабль инжи оснащён крайне плохо: только-только, чтобы передвигаться в космосе. Они пытаются оторваться от повстанцев, и им явно требуется любая доступная помощь.</text>
@@ -792,7 +794,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Вы не можете помочь, но гадаете, что же они обсуждали, пока готовитесь к прыжку.</text>
 		</event>
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Попросить вашего инжи связаться с ними.</text>
 		<event>
 			<text>Ваш член экипажа подсоединяется к рации, чтобы общаться с ними напрямую. Вы предлагаете помощь и рассказываете цель своей миссии. Они отвечают: «Наши цели иметь схожие элементы. Тем не менее информация недоступна для раскрытия, необходимо благоразумие».</text>
@@ -820,7 +822,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </event>
 <event name="ENGI_UNLOCK_2FAKE">
 	<text>Вы прибываете на одну из баз повстанцев, о которых вам говорили инжи. Похоже, что всё заброшено, кроме одного разведывательного корабля. Может быть удастся выбить информацию из него.</text>
-	<ship load="REBEL_ENGI_UNLOCK_2FAKE" hostile="true"/>
+	<ship load="REBEL_ENGI_UNLOCK_2FAKE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <event name="ENGI_UNLOCK_2FAKE_SURRENDER">
 	<text>«Остановитесь! Я не хочу умирать здесь».</text>
@@ -831,7 +833,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<choice>
 				<text>Отпустить их.</text>
 				<event>
-					<ship hostile="false"/>
+					<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 				</event>
 			</choice>
 			<choice>
@@ -845,7 +847,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </event>
 <event name="ENGI_UNLOCK_2REAL">
 	<text>Вы прибываете к одной из баз повстанцев, о которой говорили инжи. База выглядит заброшенной, за исключением одного корабля-разведчика. Возможно, вы сможете что-нибудь у них узнать.</text>
-	<ship load="REBEL_ENGI_UNLOCK_2REAL" hostile="true"/>
+	<ship load="REBEL_ENGI_UNLOCK_2REAL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <event name="ENGI_UNLOCK_2REAL_SURRENDER">
 	<text>«Стой! Это не стоит того, чтобы погибнуть...»</text>
@@ -858,7 +860,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Отпустить их.</text>
 				<event>
 					<text>Вы составляете FTL-сообщение с координатами для отправки его инжи и готовитесь к прыжку.</text>
-					<ship hostile="false"/>
+					<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 				</event>
 			</choice><!--   REMOVED THIS TO PREVENT DOUBLE QUESTS
 			<choice>
@@ -872,9 +874,28 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </event>
 <event name="ENGI_UNLOCK_3">
 	<text>Вы наконец догнали корабли, за которыми охотились. Грузовое судно размером с ангар сопровождают несколько кораблей мантисов. Пока вы обдумываете нападение, отряд кораблей инжи с пиратскими эмблемами выходит из прыжка и помогает вам. Вы готовитесь к бою с мантисами, но сканеры показывают, что эти корабли под управлением повстанцев!</text>
-	<ship load="MANTIS_ENGI_UNLOCK_3" hostile="true"/>
+	<ship load="MANTIS_ENGI_UNLOCK_3" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
-<event name="ENGI_UNLOCK_4">
+<event name="ENGI_UNLOCK_4"><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<text>Инжи выходят победителями из боя с небольшими потерями. Они сообщают вам: «Проект Х-МЕ56 поручен отделом военных разработок Федерации. Усовершенствованный стелс-крейсер. Проект завершён во время восстания. Нет возможности связаться с военным командованием Федерации».</text>
+	<choice>
+		<text>Спросить о кораблях мантисов.</text>
+		<event>
+			<text>«Скорее всего — это уловка со стороны повстанцев, чтобы не нарушать договор о ненападении с инжи. Вероятность 97.56 процентов. Ваша миссия — помочь последнему флоту Федерации, правильно? Координаты?»</text>
+			<choice hidden="true">
+				<text>Передать координаты командования Федерации.</text>
+				<event>
+					<text>«Удовлетворительно. Передача новой технологии поможет решить проблемы Федерации. Простой благодарности недостаточно. Инициирован ремонт корабля и выдана компенсация». Их экипаж доставляет вам продвинутое усиление для установки, но вы больше рады тому, что ангар Федерации теперь пополнен новым крейсером.</text>
+					<damage amount="-20"/>
+					<autoReward level="HIGH">standard</autoReward>
+					<augment name="SYSTEM_CASING"/>
+					<unlockShip id="1">Секретная технология инжи была доставлена в ангар. Разблокирован стелс-крейсер!</unlockShip>
+				</event>
+			</choice>
+		</event>
+	</choice>
+</event>
+<event name="ENGI_UNLOCK_4_DEAD_CREW"><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<text>Инжи выходят победителями из боя с небольшими потерями. Они сообщают вам: «Проект Х-МЕ56 поручен отделом военных разработок Федерации. Усовершенствованный стелс-крейсер. Проект завершён во время восстания. Нет возможности связаться с военным командованием Федерации».</text>
 	<choice>
 		<text>Спросить о кораблях мантисов.</text>
@@ -929,7 +950,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Атаковать корабль инжи.</text>
 				<event>
 					<text>Проклятые инжи — никто не может угрожать вашему кораблю. Подготовиться к бою!</text>
-					<ship load="ENGI_VIRUS_SHIP" hostile="true"/>
+					<ship load="ENGI_VIRUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 			<choice req="hacking" lvl="1" max_group="0" hidden="false">
@@ -997,7 +1018,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 					</choice>
 				</event>
 			</choice>
-			<choice req="anaerobic" hidden="true">
+			<choice req="anaerobic_crew" hidden="true">
 				<text>(Член экипажа ланиус) Ваш ланиус отчаянно жестикулирует.</text>
 				<event>
 					<text>Удивительно, но ланиус, похоже, знает, в каком из компьютеров вирус и... начинает поглощать терминал. Происходит выброс кислорода, и корабль инжи выключает орудия, более не ощущая наличия вируса на борту. Инжи посылают запчасти для починки повреждённого компьютера, а также уникальное усиление в качестве награды за уничтожение вируса.</text>
@@ -1010,7 +1031,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<event>
 					<text>Пока инжи пытается связаться с судном и договориться, ваш член экипажа внезапно распадается в облако нанитов — вирус снова совершил убийство! Судно инжи засекло активность на вашем корабле и открывает огонь!</text>
 					<variable name="counter_usage_engi" op="add" val="1"/>
-					<ship load="ENGI_VIRUS_SHIP_ALT" hostile="true"/>
+					<ship load="ENGI_VIRUS_SHIP_ALT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 					<removeCrew class="engi">
 						<clone>false</clone>
 						<text>Похоже, что вирус нарушил функционирование вашего клон-отсека, и он не может воскресить погибшего!</text>
@@ -1025,7 +1046,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<text>Обнуление ядра двигателя и щитов оказывается бесполезным... Постепенно вы ловите вирус в оружейной системе и уже готовы его вычистить, но инжи слишком обеспокоены и начинают атаку!</text>
 		<status type="divide" target="player" system="shields" amount="2"/>
 		<status type="divide" target="player" system="engines" amount="2"/>
-		<ship load="ENGI_VIRUS_SHIP" hostile="true"/>
+		<ship load="ENGI_VIRUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Обнуление ядра двигателя и щитов позволяет вовремя локализировать угрозу. Опасное заражение предотвращено, а инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают уникальное усиление.</text>
@@ -1035,13 +1056,13 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </eventList>
 
 <ship name="ENGI_VIRUS_SHIP" auto_blueprint="SHIPS_CIRCLE">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль инжи уничтожен, а вы замечаете, что вирус покинул ваш корабль и исчез где-то в обломках систем их судна. Скорее всего, он заразит первый же корабль инжи, который пройдёт рядом, но ваша миссия слишком важна для того, чтобы рисковать повторным заражением, пытаясь его остановить.</text>
 		<autoReward level="MEDIUM">standard</autoReward>
 		<status type="clear" target="player" system="engines" amount="100"/>
 		<status type="clear" target="player" system="shields" amount="100"/>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж корабля инжи перебит, а вы замечаете, что вирус покинул ваш корабль и исчез где-то в системах их судна. Скорее всего, он заразит первый же корабль инжи, который пройдёт рядом, но ваша миссия слишком важна для того, чтобы рисковать повторным заражением, пытаясь его остановить.</text>
 		<autoReward level="MEDIUM">standard</autoReward>
 		<status type="clear" target="player" system="engines" amount="100"/>
@@ -1049,7 +1070,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</deadCrew>
 </ship>
 <ship name="ENGI_VIRUS_SHIP_ALT" auto_blueprint="SHIPS_CIRCLE">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль уничтожен, вы разбираете его на лом и готовитесь к прыжку.</text>
 		<autoReward level="MEDIUM">standard</autoReward>
 		<choice hidden="true">
@@ -1057,7 +1078,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<event load="ENGI_VIRUS_REBORN"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Все инжи мертвы, а вы забираете всё, что можете и готовитесь к прыжку.</text>
 		<autoReward level="MEDIUM">standard</autoReward>
 		<choice hidden="true">
@@ -1080,7 +1101,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<text>Узнать их расценки.</text>
 		<event load="REPAIR_ENGI_COST"/>
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Пусть инжи запросит бесплатный комплект снабжения.</text>
 		<event>
 			<text>Ваш инжи объясняет им важность вашей миссии, и они соглашаются бесплатно вам помочь.</text>
@@ -1156,9 +1177,9 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <eventList name="REPAIR_ENGI_CHOISE">
 	<event>
-		<text>Они внимательно осматривают повреждения орудия. Судя по всему, поломку можно устранить, имея подходящее оборудование. К сожалению, на этой ремонтной станции такового не имеется. Инжи говорят, что есть другая станция неподалёку отсюда, где вам могут помочь, но она скрыта поясом астероидов, и без улучшенной системы FTL-навигации туда не попасть.</text>
-		<choice req="FTL_JUMPER" hidden="true">
-			<text>(Улучшенная FTL-навигация) Попросить их записать координаты станции в вашу улучшенную систему FTL-навигации.</text>
+		<text>Они внимательно осматривают повреждения орудия. Судя по всему, поломку можно устранить, имея подходящее оборудование. К сожалению, на этой ремонтной станции такового не имеется. Инжи говорят, что есть другая станция неподалёку отсюда, где вам могут помочь, но она скрыта поясом астероидов, и без FTL-навигатора туда не попасть.</text>
+		<choice req="FTL_JUMPER_GOOD" hidden="true"><!-- 1.32 -->
+			<text>(FTL-навигатор) Попросить их записать координаты станции в вашу улучшенную систему FTL-навигации.</text>
 			<event><!-- 1.25 -->
 				<text>Они передают вам координаты станции. У вас ещё есть время воспользоваться ремонтными услугами инжи на этой станции.</text>
 				<quest event="REPAIR_ENGI_HOME"/>	<!-- 1.23 -->
@@ -1166,7 +1187,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 					<text>Узнать их расценки.</text>
 					<event load="REPAIR_ENGI_COST"/>
 				</choice>
-				<choice req="engi" hidden="true">
+				<choice req="engi_crew" hidden="true">
 					<text>(Член экипажа инжи) Пусть инжи запросит бесплатный комплект снабжения.</text>
 					<event>
 						<text>Ваш инжи объясняет им важность вашей миссии, и они соглашаются бесплатно вам помочь.</text>
@@ -1193,7 +1214,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 					<text>Узнать их расценки.</text>
 					<event load="REPAIR_ENGI_COST"/>
 				</choice>
-				<choice req="engi" hidden="true">
+				<choice req="engi_crew" hidden="true">
 					<text>(Член экипажа инжи) Пусть инжи запросит бесплатный комплект снабжения.</text>
 					<event>
 						<text>Ваш инжи объясняет им важность вашей миссии, и они соглашаются бесплатно вам помочь.</text>
@@ -1216,7 +1237,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event> <!-- 1.26 --> <!-- 1.26.2 -->
 		<text>Инжи забирают ваше оружие на диагностику.</text>
 		<remove name="SHOTGUN_3_BROKEN"/>
-		<achievement silent="false">ACH_REPAIR_SHOTGUN_3</achievement><!-- bamalf -->
+		<achievement silent="false">ACH_REPAIR_SHOTGUN_3</achievement><!-- 1.31 -->
 		<choice hidden="true">
 			<text id="continue" />
 			<event>
@@ -1234,7 +1255,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<text>Узнать их расценки.</text>
 		<event load="REPAIR_ENGI_COST"/>
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Пусть инжи запросит бесплатный комплект снабжения.</text>
 		<event>
 			<text>Ваш инжи объясняет им важность вашей миссии, и они соглашаются бесплатно вам помочь.</text>
@@ -1252,7 +1273,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<event> <!-- 1.26 --> <!-- 1.26.2 -->
 			<text>Инжи забирают ваше оружие на диагностику.</text>
 			<remove name="SHOTGUN_3_BROKEN"/>
-			<achievement silent="false">ACH_REPAIR_SHOTGUN_3</achievement><!-- bamalf -->
+			<achievement silent="false">ACH_REPAIR_SHOTGUN_3</achievement><!-- 1.31 -->
 			<choice hidden="true">
 				<text id="continue" />
 				<event>
@@ -3231,7 +3252,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event load="AUTO_DEFENSE_ITEM"/> 
 	<event load="PIRATE_BRIBER"/>
 	<event load="EVENT_TRADE_FUMIDR"/>
-	<event load="PSEVDO_NOTHING"/>
+	<event load="NOTHING"/><!-- 1.32 -->
 </eventList>
 
 <eventList name="HOSTILE_MORPH">
@@ -3297,11 +3318,13 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <event name="START_BEACON_MORPH">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_morph_sector" op="add" val="1"/>
 	<text load="START_BEACON_MORPH"/>
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -3331,7 +3354,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<text load="NOTHING_MORPH"/>
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 
@@ -3346,7 +3369,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_FIGHT" unique="false"> 
 	<text load="MENGI_FIGHT_TEXT"/>
-	<ship load="MENGI_SHIP_PARAM" hostile="true"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="MENGI_FIGHT_TEXT">
 	<text>Возле маяка вас поджидает корабль морфов. Нацеленные на вас орудия недвусмысленно намекают на предстоящее сражение.</text>
@@ -3361,26 +3384,26 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <eventList name="MENGI_EVENT_ATTACK">
 	<event>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
 		<text>Внезапно вокруг вас начинается ионный шторм! Придётся сражаться в этих условиях...</text>
 		<environment type="storm"/>
-		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-		<ship hostile="true"/>
+		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="divide" target="enemy" system="reactor" amount="2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -3392,8 +3415,8 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event>
 		<text>Внезапно вокруг вас начинается ионный шторм! Придётся сражаться в этих условиях...</text>
 		<environment type="storm"/>
-		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-		<ship hostile="true"/>
+		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="divide" target="enemy" system="reactor" amount="2"/>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -3405,14 +3428,14 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event>
 		<text>Внезапно вокруг вас начинается ионный шторм! Корабль морфов ускользает, пользуясь вашим замешательством...</text>
 		<environment type="storm"/>
-		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-		<ship hostile="false"/>
+		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	</event>
 </eventList>
 
 <event name="MENGI_CRYSTAL_EVENT" unique="true">
 	<text>Небольшой корабль морфов дрейфует вблизи маяка. Он не проявляет никакой активности, и вы решаете, что делать.</text>		
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
@@ -3428,7 +3451,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Не обращать на них внимания и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>	
 </event>
 <event name="MENGI_CRYSTAL_EVENT_NOTALK">
@@ -3439,7 +3462,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Оставить их в покое.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <event name="MENGI_CRYSTAL_EVENT_TALK">
@@ -3452,13 +3475,13 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <event name="MENGI_CRYSTAL_EVENTQ">
 	<img planet="NONE" back="CRYSTAL_CHERV"/>
 	<text>В указанных координатах вы находите червоточину. Корабль морфов на её орбите передаёт вам следущее: «Приветствие. Адресат: 00000000... ОШИБКА... ПЕРЕЗАПУСК... Цель: "Нестабильная червоточина". Свойства: "Повреждения. Гипер-переход". Значение: "101110011... ОШИБКА...»</text>
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
@@ -3470,7 +3493,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Не обращать на них внимания и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>	
 </event>
 <eventList name="MENGI_CRYSTAL_EVENTQ1"> 
@@ -3638,32 +3661,32 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </ship>
 
 <eventList name="DEAD_CREW_MENGI">
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>На корабле не осталось ни одного морфа. Однако их трюмы почти пусты.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>На корабле не осталось ни одного морфа. Вы забираете полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>На корабле не осталось ни одного морфа. Вы забираете все полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Морфы мертвы, вы можете забрать топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="MED">fuel</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Морфы мертвы, вы можете забрать всё топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы находите ремонтника морфов на их корабле. Так как остановить вас некому, вы забираете его себе.</text>
 		<drone name="MORPH_REPAIR"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы находите уникальное оружие морфов на их корабле. Так как остановить вас некому, вы забираете его себе.</text>
 		<weapon name="MORPHGUNS"/>
 		<autoReward level="LOW">scrap_only</autoReward>
@@ -3675,7 +3698,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<choice hidden="false">
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/>
+			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -3699,7 +3722,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_SYSREPTRANS_EVENT" unique="true">
 	<text>Дружелюбное судно морфов выходит на связь: «Приветствие. Адресат: Транспортое судно. Цель: Доставка... 0000010... ОШИБКА... ПЕРЕЗАПУСК... Согласие= Y/N?»</text>	
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Направить им "Y".</text>
@@ -3719,7 +3742,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_ENGI"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="MENGI_SYSREPTRANS_R1_EVENT"> 
@@ -3764,13 +3787,13 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_TIMESHIFT_EVENT" unique="true">
 	<text>Морфы выходят на связь: «Приветствие... 10010111... Тьфу. Привет! Ты не поверишь, но я — это ты из будущего. Меня засосало куда-то в сверхнестабильном секторе, как раз когда я собрал нормальную экипировку. Потом моё сознание оказалось заключено в этом сломанном инжи... ОШИБКА... ПЕРЕЗАПУСК...»</text>
-	<ship load="MENGI_TIMESHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_TIMESHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
 			<text>«...Что ты творишь?! Если я тебя... То есть себя, сейчас уничтожу, это вызовет временной парадокс... Ты же не хочешь уничтожить Вселенную???»</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -3808,7 +3831,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Атаковать их.</text>
 				<event>
 					<text>«...Что ты творишь?! Если я тебя... То есть себя, сейчас уничтожу, это вызовет временной парадокс... Ты же не хочешь уничтожить Вселенную???»</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 					<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				</event>
 			</choice>
@@ -3816,7 +3839,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать их и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>	
 </event>
 <textList name="TIMETEXT_MORPH">
@@ -3841,7 +3864,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<escape timer="28" min="30" max="30">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Загадочный корабль скрылся в неизвестном направлении.</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -3854,7 +3877,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_CODE_EVENT" unique="true">
 	<text>Одинокий корабль морфов болтается у этого маяка. Завидев вас, они выходят на связь...</text>
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -3880,7 +3903,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Игнорировать их и побеседовать с экипажем.</text>
 			<event>
 				<text>...ваш молчащий коммуникатор, похоже, разозлил морфов! Они нападают!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -3903,7 +3926,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Игнорировать их и побеседовать с экипажем.</text>
 			<event>
 				<text>...ваш молчащий коммуникатор, похоже, разозлил морфов! Они нападают!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -3926,7 +3949,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Игнорировать их и побеседовать с экипажем.</text>
 			<event>
 				<text>...ваш молчащий коммуникатор, похоже, разозлил морфов! Они нападают!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -3949,7 +3972,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Игнорировать их и побеседовать с экипажем.</text>
 			<event>
 				<text>...ваш молчащий коммуникатор, похоже, разозлил морфов! Они нападают!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -3972,7 +3995,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Игнорировать их и побеседовать с экипажем.</text>
 			<event>
 				<text>...ваш молчащий коммуникатор, похоже, разозлил морфов! Они нападают!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -3995,7 +4018,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Игнорировать их и побеседовать с экипажем.</text>
 			<event>
 				<text>...ваш молчащий коммуникатор, похоже, разозлил морфов! Они нападают!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -4014,7 +4037,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <eventList name="MENGI_CODER_LOSE"> 
 	<event>
 		<text>...морфы, получив ваш ответ, становятся агрессивными.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -4022,7 +4045,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_ANIMALS_EVENT" unique="true">
 	<text>Корабль морфов, едва завидев вас, выходит на связь. В коммуникаторе вы наблюдаете странных животных рядом с морфами.</text>
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -4072,9 +4095,9 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		</choice>
 		<choice hidden="true">
 			<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+			<event load="TALK_WITH_CREW"/>
 		</choice>
-		<choice hidden="true" req="engi">
+		<choice hidden="true" req="engi_crew">
 			<text>(Член экипажа инжи) Ваш инжи проверил свою базу данных и сообщает, что животные миролюбивые и безопасные.</text>
 			<event>
 				<text>Откуда столько ресурсов? Читы? Не надо так!</text>
@@ -4133,9 +4156,9 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		</choice>
 		<choice hidden="true">
 			<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+			<event load="TALK_WITH_CREW"/>
 		</choice>
-		<choice hidden="true" req="engi">
+		<choice hidden="true" req="engi_crew">
 			<text>(Член экипажа инжи) Ваш инжи проверил свою базу данных и сообщает, что животные крайне агрессивны и опасны.</text>
 			<event>
 				<text>Откуда столько ресурсов? Читы? Не надо так!</text>
@@ -4329,12 +4352,12 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -4345,7 +4368,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -4364,7 +4387,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -4376,12 +4399,12 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -4393,17 +4416,17 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
 		<text>Морфы замечают, что вы убиваете их животных, и атакуют ваше судно!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -4460,14 +4483,14 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<event>
 			<text>Вокруг вас начинается ионный шторм! Сквозь помехи вы получаете чей-то сигнал: «Приветствие. Цель: спасение морфов. Передача координат».</text>
 			<environment type="storm"/>
-			<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+			<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 			<choice hidden="true">
 				<text>Направиться по указанным координатам. Похоже, это где-то неподалёку.</text>
 				<event load="MENGI_STORMFIRE_EVENT2"/>
 			</choice>
 			<choice hidden="true">
 				<text>Игнорировать сообщение и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-				<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
 	</choice>
@@ -4475,7 +4498,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <eventList name="MENGI_STORMFIRE_EVENT2"> 
 	<event>
 		<text>По мере приближения к координатам корпус начинает чудовищно нагреваться, однако вам удаётся найти небольшое судно морфов. Судя по всему, они тут застряли без топлива. Что будем делать?</text>
-		<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+		<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
@@ -4511,7 +4534,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<choice hidden="true">
 			<text>Атаковать их.</text>
 			<event>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="divide" target="enemy" system="reactor" amount="2"/>
 				<choice hidden="true">
 					<text id="continue"/>
@@ -4528,7 +4551,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</event>
 	<event>
 		<text>По мере приближения к координатам корпус начинает чудовищно нагреваться, однако вам удаётся найти небольшое судно морфов. Судя по всему, они тут застряли без топлива. Что будем делать?</text>
-		<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+		<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
@@ -4563,7 +4586,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<choice hidden="true">
 			<text>Атаковать их.</text>
 			<event>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -4578,7 +4601,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_SELFDAMAGER_EVENT" unique="true">
 	<text>Морфы появляются в вашем коммуникаторе: «Приветствие. Цель: фрагменты корпуса корабля... ОШИБКА... ПЕРЕЗАПУСК... Условие: оплата ломом».</text>
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="false">
 		<text>Разобрать 5 единиц корпуса.</text>
@@ -4727,7 +4750,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Отказаться, зарядить двигатель и улететь.</text>
 			<event>
 				<text>Морфы, похоже, решают взять своё силой и заряжают орудия!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -4755,7 +4778,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Отказаться, зарядить двигатель и улететь.</text>
 			<event>
 				<text>Морфы, похоже, решают взять своё силой и заряжают орудия!</text>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -4768,7 +4791,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_SCANNING_EVENT" unique="true">
 	<text>Корабль морфов на местном маяке присылает вам сообщение: «Приветствие. Цель: сканирование сектора. Условие: перевозка анализатора морфов. Согласие= Y/N?»</text>
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Направить им "Y".</text>
@@ -4780,7 +4803,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
@@ -4789,7 +4812,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </event>
 <event name="MENGI_SCANNING_EVENT2" unique="true">
 	<text>Ожидавшие вас здесь морфы приближаются...</text>
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true" req="SHIPRADAR2">
 		<text>(Анализатор морфов) Предоставить им анализатор.</text>
@@ -4803,7 +4826,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<text id="continue"/>
 		<event>
 			<text>...Они почему-то начинают зарядку своих орудий! Похоже, что-то пошло не так!</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -4813,7 +4836,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_HUNT1_EVENT" unique="true">
 	<text>Рядом с маяком вы встречаете корабль слагов. Они предлагают вам поохотиться на корабли морфов, чтобы достать их уникальные орудия. За вашу помощь они предлагают лом.</text>
-	<ship load="SHIPS_JELLYHUNTER_PARAM" hostile="false"/>
+	<ship load="SHIPS_JELLYHUNTER_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true" req="SHIPRADAR2">
 		<text>(Анализатор морфов) Показать слагам анализатор.</text>
 		<event>
@@ -4830,7 +4853,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Отказаться.</text>
 				<event>
 					<text>...«Вы поплатитесссь за сссвою жадносссть!» Слаги заряжают орудия!</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
@@ -4848,7 +4871,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4857,11 +4880,11 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 </event>
 <eventList name="MENGI_HUNT1_EVENT_GONE"> 
-	<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
-	<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+	<event load="TALK_WITH_CREW"/>
+	<event load="TALK_WITH_CREW"/>
 	<event>
 		<text>Отправившись поговорить с экипажем, вы замечаете скрежет где-то под кораблём. Оказывается, слаги решили по-тихому слить ваше топливо! Поняв, что их раскрыли, они заряжают орудия!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<item_modify steal="true">
 			<item type="fuel" min="-5" max="-1"/>
 		</item_modify>	
@@ -4871,7 +4894,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<escape timer="45" min="30" max="30">
 		<text>Вы засекаете зарядку FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Слаги скрылись в неизвестном направлении.</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -4881,29 +4904,29 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <eventList name="MENGI_HUNT2_EVENT"> 
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
-		<ship load="MENGI_H1_PARAM" hostile="true"/>
+		<ship load="MENGI_H1_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="MENGI_H1_PARAM" hostile="true"/>
+		<ship load="MENGI_H1_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="MENGI_H1_PARAM" hostile="true"/>
+		<ship load="MENGI_H1_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="MENGI_H1_PARAM" hostile="true"/>
+		<ship load="MENGI_H1_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <ship name="MENGI_H1_PARAM" auto_blueprint="MORPH_ENGI_SHIPS">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Цель разваливается на части, и вы собираете обломки...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -4911,7 +4934,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<event load="MENGI_HUNT2R_EVENT"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Цель захвачена, и вы забираете всё ценное...</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -5050,41 +5073,41 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <eventList name="MENGI_HUNT3_EVENT"> 
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
-		<ship load="MENGI_H3_PARAM" hostile="true"/>
+		<ship load="MENGI_H3_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="MENGI_H3_PARAM" hostile="true"/>
+		<ship load="MENGI_H3_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="MENGI_H3_PARAM" hostile="true"/>
+		<ship load="MENGI_H3_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="MENGI_H3_PARAM" hostile="true"/>
+		<ship load="MENGI_H3_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="MENGI_H3_PARAM" hostile="true"/>
+		<ship load="MENGI_H3_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Рядом с маяком вы встречаете корабль морфов. Они сразу атакуют вас.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="MENGI_H3_PARAM" hostile="true"/>
+		<ship load="MENGI_H3_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <ship name="MENGI_H3_PARAM" auto_blueprint="MORPH_ENGI_SHIPS">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Цель разваливается на части, и вы собираете обломки...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -5092,7 +5115,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<event load="MENGI_HUNT3R_EVENT"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Цель захвачена, и вы забираете всё ценное...</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -5212,7 +5235,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="NO_MENGI_EVENT" unique="true"> 
 	<text>Корабль, выглядящий как обычное судно инжи, выходит на связь. «Приветствие. Цель: куски корпуса кораблей других рас. Условие: лом и схема дрона. Согласие= Y/N?».</text>
-	<ship load="NO_MENGI_PARAM" hostile="false"/>
+	<ship load="NO_MENGI_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="false">
 		<text>Направить им "Y" и получить предоплату.</text>
@@ -5227,7 +5250,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	</choice>
 	<choice hidden="true">
 		<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
@@ -5243,14 +5266,14 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 </ship>
 <event name="NO_MENGI_EVENT_2" unique="true"> 
 	<text>Вы находите корабль-цель и без лишних разговоров мчитесь в атаку.</text>
-	<ship load="NO_MENGI2_PARAM" hostile="true"/>
+	<ship load="NO_MENGI2_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <ship name="NO_MENGI2_PARAM" auto_blueprint="SHIPS_4_RACES">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль уничтожен, и вы забираете уцелевшие материалы. Вскоре сюда прилетает корабль, который вас направил, и рыскает по разлетевшимся кускам корабля.</text>
 		<autoReward level="MED">standard</autoReward><!-- 1.27.1 -->
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж корабля уничтожен, и вы обчищаете его трюмы. Вскоре сюда прилетает корабль, который вас направил, и осматривает останки корабля.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -5269,8 +5292,8 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <event name="NEBULA_MENGI_SUPERSTORM_HOSTILE" unique="false">
 	<text load="MENGI_SUPERSTORM_TEXT"/>
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="MENGI_SHIP_PARAM" hostile="true"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="MENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<choice req="reactor" lvl="1" hidden="true" max_group="1" blue="false">
 		<text id="continue"/>
 		<event>
@@ -5308,8 +5331,8 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 <event name="NEBULA_MENGI_SUPERSTORM_NEUTRAL" unique="false">
 	<text load="MENGI_SUPERSTORM_TEXT2"/>
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice req="reactor" lvl="1" hidden="true" max_group="1" blue="false">
 		<text>Атаковать их.</text>
@@ -5319,7 +5342,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<choice>
 				<text id="continue"/>
 				<event>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 					<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				</event>
 			</choice>
@@ -5334,7 +5357,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<choice>
 				<text id="continue"/>
 				<event>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 					<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				</event>
 			</choice>
@@ -5346,7 +5369,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<text>Вы не готовы сражаться в таких условиях. Может, в другой раз.</text>
 			<choice>
 				<text id="continue"/>
-				<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
 	</choice>
@@ -5360,51 +5383,16 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<text>Спросить, какие инжекторы они продают.</text>
 		<event load="MENGI_INJS_EVENT_R"/> 
 	</choice>
-	<choice req="INJECTOR_RANDOM" hidden="false">
+	<!-- <choice req="INJECTOR_RANDOM" hidden="false">
 		<text>(Инжектор) Попросить морфов применить ваш инжектор к орудию.</text>
 		<event load="MENGI_INJS_EVENT_PRIMENIT"/>
-	</choice>
+	</choice> --><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Игнорировать их и поговорить с экипажем до зарядки FTL-двигателя.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
-<event name="MENGI_INJS_EVENT_PRIMENIT" unique="true">
-	<text>Морфы принимают оплату и проводят вас к механизму ускоренной установки инжекторов.</text>
-	<item_modify><item type="scrap" min="-10" max="-5"/></item_modify>
-	<choice req="INJECTOR_PRC" hidden="true">
-		<text>(Инжектор проникновения) Применить этот инжектор.</text>
-		<event load="INJECTOR_PRC_MASSIVE"/>
-	</choice>
-	<choice req="INJECTOR_FRC" hidden="true">
-		<text>(Инжектор пламени) Применить этот инжектор.</text>
-		<event load="INJECTOR_FRC_MASSIVE"/>
-	</choice>
-	<choice req="INJECTOR_BRC" hidden="true">
-		<text>(Инжектор пробоя) Применить этот инжектор.</text>
-		<event load="INJECTOR_BRC_MASSIVE"/>
-	</choice>
-	<choice req="INJECTOR_CLD" hidden="true">
-		<text>(Инжектор перезарядки) Применить этот инжектор.</text>
-		<event load="INJECTOR_CLD_MASSIVE"/>
-	</choice>
-	<choice req="INJECTOR_POW" hidden="true">
-		<text>(Инжектор энергии) Применить этот инжектор.</text>
-		<event load="INJECTOR_POW_MASSIVE"/>
-	</choice>
-	<choice req="INJECTOR_UNI" hidden="true">
-		<text>(Универсальный инжектор) Применить этот инжектор.</text>
-		<event load="INJECTOR_UNI_MASSIVE"/>
-	</choice>
-	<choice req="INJECTOR_ACC" hidden="true"><!-- 1.30 -->
-		<text>(Инжектор точности) Применить этот инжектор.</text>
-		<event load="INJECTOR_ACC_MASSIVE"/>
-	</choice>
-	<choice hidden="true">
-		<text>Отменить операцию.</text>
-		<event/>
-	</choice>
-</event>
+
 <eventList name="MENGI_INJS_EVENT_R"> 
 	<event>
 		<text>Морфы показывают вам несколько инжекторов.</text>
@@ -5414,7 +5402,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_PRC"/>
 				<item_modify>
-					<item type="scrap" min="-50" max="-40"/>
+					<item type="scrap" min="-50" max="-20"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5432,7 +5420,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_FRC"/>
 				<item_modify>
-					<item type="scrap" min="-30" max="-20"/>
+					<item type="scrap" min="-30" max="-10"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5450,7 +5438,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_BRC"/>
 				<item_modify>
-					<item type="scrap" min="-30" max="-20"/>
+					<item type="scrap" min="-30" max="-10"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5475,7 +5463,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_CLD"/>
 				<item_modify>
-					<item type="scrap" min="-40" max="-30"/>
+					<item type="scrap" min="-40" max="-15"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5493,7 +5481,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_POW"/>
 				<item_modify>
-					<item type="scrap" min="-50" max="-40"/>
+					<item type="scrap" min="-50" max="-20"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5511,7 +5499,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_UNI"/>
 				<item_modify>
-					<item type="scrap" min="-50" max="-40"/>
+					<item type="scrap" min="-50" max="-20"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5536,7 +5524,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_PRC"/>
 				<item_modify>
-					<item type="scrap" min="-50" max="-40"/>
+					<item type="scrap" min="-50" max="-20"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5554,7 +5542,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_BRC"/>
 				<item_modify>
-					<item type="scrap" min="-30" max="-20"/>
+					<item type="scrap" min="-30" max="-10"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5572,7 +5560,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_POW"/>
 				<item_modify>
-					<item type="scrap" min="-50" max="-40"/>
+					<item type="scrap" min="-50" max="-20"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5597,7 +5585,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_FRC"/>
 				<item_modify>
-					<item type="scrap" min="-30" max="-20"/>
+					<item type="scrap" min="-30" max="-10"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5615,7 +5603,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_CLD"/>
 				<item_modify>
-					<item type="scrap" min="-40" max="-30"/>
+					<item type="scrap" min="-40" max="-15"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5633,7 +5621,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 				<text>Вы передаёте им лом и получаете инжектор.</text>
 				<augment name="INJECTOR_UNI"/>
 				<item_modify>
-					<item type="scrap" min="-50" max="-40"/>
+					<item type="scrap" min="-50" max="-20"/><!-- 1.32 -->
 				</item_modify>
 				<choice hidden="false">
 					<text>Попросить морфов применить ваш инжектор к орудию.</text>
@@ -5655,12 +5643,12 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="MENGI_MTRIGGER_EVENT" unique="true"> 
 	<text>Сразу после выхода из прыжка вам на хвост садится корабль морфов. Их агрессивные намерения не вызывают сомнений.</text>
-	<ship load="MENGI_MTRIGGER_SHIP_PARAM" hostile="true"/>
+	<ship load="MENGI_MTRIGGER_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <ship name="MENGI_MTRIGGER_SHIP_PARAM" auto_blueprint="MORPH_ENGI_SHIPS_ONLYMANTIS">
 	<surrender min="4" max="5" >
 		<text>Вы замечаете, что на ваш корабль телепортируются мантисы! Неужели это морфы их контролируют?</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<boarders min="3" max="4" class="mantis"/>
 	</surrender>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -6042,7 +6030,7 @@ Date: 03/12/18
 					</choice>
 				</event>
 			</choice>
-			<choice req="ghost" hidden="true">
+			<choice req="ghost_crew" hidden="true">
 				<text>(Аватар) Пожертвовать члена экипажа.</text>
 				<event>
 					<text>Они с недоумением смотрят на модуль передвижения вашего аватара. Очевидно, он не годится для опытов из-за отсутствия какой бы то ни было ДНК.</text>
@@ -6059,7 +6047,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Никого не отправлять, вместо этого поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="MENGI_LIFEFORM_EXPERIMENT_EVENT_END">
@@ -6082,7 +6070,7 @@ Date: 03/12/18
 
 <event name="MENGI_REBEL_CONFUSED_EVENT" unique="true">
 	<text>Корабль морфов, находящийся у маяка, ведет себя странным образом. Он двигается то вперёд, то назад, стреляет в пустоту и посылает непонятные сообщения.</text>
-	<ship load="MENGI_REBEL_CONFUSED_SHIP" hostile="false"/>
+	<ship load="MENGI_REBEL_CONFUSED_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="MENGI_REBEL_CONFUSED_LIST"/>
@@ -6091,30 +6079,30 @@ Date: 03/12/18
 <eventList name="MENGI_REBEL_CONFUSED_LIST"> 
 	<event>
 		<text>«А, вот что эта кнопка делает!» Услышав это, вы замечаете, как щиты на корабле морфов рассеиваются один за другим. Похоже, этот корабль захвачен повстанцами, которые не знают, как им управлять. Вы готовитесь к бою.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="shields" amount="0"/>
 	</event>
 	<event>
 		<text>«А, вот что эта кнопка делает!» Похоже, этот корабль морфов захвачен повстанцами. С трудом противнику удаётся повернуть корабль и открыть по вам огонь. Однако вы замечаете, что не все их орудия готовы к бою.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="divide" target="enemy" system="weapons" amount="2"/>
 	</event>
 	<event>
 		<text>«А, вот что эта кнопка делает!» Похоже, этот корабль морфов захвачен повстанцами. Противник перестаёт двигаться вперёд-назад и вместо этого начинает вращаться на месте, заряжая орудия.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="engines" amount="0"/>
 	</event>
 	<event>
 		<text>«А, вот что эта кнопка делает!» Похоже, этот корабль морфов захвачен повстанцами. Кое-как справившись с управлением, они атакуют вас.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>«А, вот что эта кнопка делает!» Похоже, этот корабль морфов захвачен повстанцами. Кое-как справившись с управлением, они атакуют вас.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>«А, вот что эта кнопка делает!» Похоже, этот корабль морфов захвачен повстанцами. Кое-как справившись с управлением, они атакуют вас.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <ship name="MENGI_REBEL_CONFUSED_SHIP" auto_blueprint="MORPH_ENGI_SHIPS">
@@ -6144,7 +6132,7 @@ Date: 03/12/18
 <eventList name="MENGI_SELL_UNKNOWN_EVENT">
 	<event>
 		<text>Морфы присылают сообщение: «Приветствие. Цель: Обмен... 1010011000110010... Предложение: 00111100 лома... ОШИБКА... ПЕРЕЗАПУСК... Согласие= Y/N?» Непонятно, что именно хотят обменять морфы.</text>
-		<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+		<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice req="CREW_ALL" hidden="true" blue="false">
 			<text>Направить им "Y".</text>
@@ -6160,12 +6148,12 @@ Date: 03/12/18
 		</choice>
 		<choice hidden="true">
 			<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+			<event load="TALK_WITH_CREW"/>
 		</choice>
 	</event>
 	<event>
 		<text>Морфы посылают сообщение: «Приветствие. Цель: Обмен... 1010011000110010... Предложение: 00101101 лома... ОШИБКА... ПЕРЕЗАПУСК... Согласие= Y/N?» Непонятно, что именно хотят обменять морфы.</text>
-		<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+		<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice req="CREW_ALL" hidden="true" blue="false">
 			<text>Направить им "Y".</text>
@@ -6181,12 +6169,12 @@ Date: 03/12/18
 		</choice>
 		<choice hidden="true">
 			<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+			<event load="TALK_WITH_CREW"/>
 		</choice>
 	</event>
 	<event>
 		<text>Морфы посылают сообщение: «Приветствие. Цель: Обмен... 1010011000110010... Предложение: 00011110 лома... ОШИБКА... ПЕРЕЗАПУСК... Согласие= Y/N?» Непонятно, что именно хотят обменять морфы.</text>
-		<ship load="MENGI_SHIP_PARAM" hostile="false"/>
+		<ship load="MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<status type="limit" target="enemy" system="teleporter" amount="0"/>
 		<choice req="CREW_ALL" hidden="true" blue="false">
 			<text>Направить им "Y".</text>
@@ -6202,7 +6190,7 @@ Date: 03/12/18
 		</choice>
 		<choice hidden="true">
 			<text>Направить им "N" и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-			<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+			<event load="TALK_WITH_CREW"/>
 		</choice>
 	</event>
 </eventList>
@@ -6455,7 +6443,7 @@ Date: 03/12/18
 <event name="MENGI_SELL_UNKNOWN_ATTACK">
 	<text>Поняв, что сделка не состоится, корабль морфов отстыковывается и нападает на вас! Часть их команды остаётся у вас на борту и начинает крушить всё подряд.</text>
 	<boarders min="2" max="4" class="morph"/>
-	<ship hostile="true"/>
+	<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<status type="clear" target="enemy" system="teleporter" amount="100"/>
 </event>
 <eventList name="MENGI_SELL_UNKNOWN_QUESTION"> 
@@ -6468,7 +6456,7 @@ Date: 03/12/18
 </eventList>
 <event name="MENGI_SELL_UNKNOWN_QUESTION_ATTACK"> 
 	<text load="MENGI_SELL_UNKNOWN_QUESTION_ATTACK_TEXT"/>
-	<ship hostile="true"/>
+	<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<status type="clear" target="enemy" system="teleporter" amount="100"/>
 </event>
 <textList name="MENGI_SELL_UNKNOWN_QUESTION_ATTACK_TEXT">
@@ -6485,8 +6473,8 @@ Date: 03/12/18
 </textList>
 <event name="MENGI_ZOND_R_EVENT" unique="true"> 
 	<text load="MENGI_ZOND_TEXT"/>
-	<ship load="MENGI_ZOND_R_PARAM" hostile="false"/>
-	<choice hidden="true" req="rock" max_group="0" blue="false">
+	<ship load="MENGI_ZOND_R_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<choice hidden="true" req="rock_crew" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>Зонд быстро сканирует ваше судно и застывает в ожидании команды.</text>	
@@ -6509,21 +6497,21 @@ Date: 03/12/18
 				<text>Атаковать зонд.</text>
 				<event>
 					<text>Вы решаете, что будет лучше уничтожить этот беспилотник.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="rock" lvl="0" max_group="0" blue="false">
+	<choice hidden="true" req="rock_crew" lvl="0" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>Зонд обнаруживает ваше появление и переключается в боевой режим.</text>	
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
 <ship name="MENGI_ZOND_R_PARAM" auto_blueprint="BCIRCLE_ZOND_R">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Зонд взрывается, и вы подбираете его обломки.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</destroyed>
@@ -6531,7 +6519,7 @@ Date: 03/12/18
 
 <event name="MENGI_ZOND_S_EVENT" unique="true"> 
 	<text load="MENGI_ZOND_TEXT"/>
-	<ship load="MENGI_ZOND_S_PARAM" hostile="false"/>
+	<ship load="MENGI_ZOND_S_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" max_group="0" blue="false"><!-- 1.28 -->
 		<text id="continue"/>
 		<event>
@@ -6555,7 +6543,7 @@ Date: 03/12/18
 				<text>Атаковать зонд.</text>
 				<event>
 					<text>Вы решаете, что будет лучше уничтожить этот беспилотник.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
@@ -6564,12 +6552,12 @@ Date: 03/12/18
 		<text id="continue"/>
 		<event>
 			<text>Зонд обнаруживает ваше появление и переключается в боевой режим.</text>	
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
 <ship name="MENGI_ZOND_S_PARAM" auto_blueprint="BCIRCLE_ZOND_S">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Зонд взрывается, и вы подбираете его обломки.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</destroyed>
@@ -6577,8 +6565,8 @@ Date: 03/12/18
 
 <event name="MENGI_ZOND_M_EVENT" unique="true"> 
 	<text load="MENGI_ZOND_TEXT"/>
-	<ship load="MENGI_ZOND_M_PARAM" hostile="false"/>
-	<choice hidden="true" req="mantis" max_group="0" blue="false">
+	<ship load="MENGI_ZOND_M_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<choice hidden="true" req="mantis_crew" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>Зонд быстро сканирует ваше судно и застывает в ожидании команды.</text>	
@@ -6601,21 +6589,21 @@ Date: 03/12/18
 				<text>Атаковать зонд.</text>
 				<event>
 					<text>Вы решаете, что будет лучше уничтожить этот беспилотник.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="mantis" lvl="0" max_group="0" blue="false">
+	<choice hidden="true" req="mantis_crew" lvl="0" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>Зонд обнаруживает ваше появление и переключается в боевой режим.</text>	
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
 <ship name="MENGI_ZOND_M_PARAM" auto_blueprint="BCIRCLE_ZOND_M">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Зонд взрывается, и вы подбираете его обломки.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</destroyed>
@@ -6623,7 +6611,7 @@ Date: 03/12/18
 
 <event name="MENGI_ZOND_Z_EVENT" unique="true"> 
 	<text load="MENGI_ZOND_TEXT"/>
-	<ship load="MENGI_ZOND_Z_PARAM" hostile="false"/>
+	<ship load="MENGI_ZOND_Z_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true" req="CREW_ENERGY" max_group="0" blue="false"><!-- 1.29 -->
 		<text id="continue"/>
 		<event>
@@ -6647,7 +6635,7 @@ Date: 03/12/18
 				<text>Атаковать зонд.</text>
 				<event>
 					<text>Вы решаете, что будет лучше уничтожить этот беспилотник.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
@@ -6656,12 +6644,12 @@ Date: 03/12/18
 		<text id="continue"/>
 		<event>
 			<text>Зонд обнаруживает ваше появление и переключается в боевой режим.</text>	
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
 <ship name="MENGI_ZOND_Z_PARAM" auto_blueprint="BCIRCLE_ZOND_Z">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Зонд взрывается, и вы подбираете его обломки.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</destroyed>
@@ -6705,9 +6693,9 @@ Date: 03/12/18
 <event name="MORPH_BAD_LANG" unique="true">
 	<text load="MORPH_BAD_LANG_T"/>
 	<distressBeacon/>
-	<ship load="MENGI_SHIP_NO_SURRENDER_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_NO_SURRENDER_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
-	<choice hidden="false" req="engi" max_group="0"> <!-- 1.28 -->
+	<choice hidden="false" req="engi_crew" max_group="0"> <!-- 1.28 -->
 		<text>(Член экипажа инжи) Инжи расшифровывает, что это просьба дать им топливо. Помочь им.</text>
 		<event>
 			<text>Вы отгружаете морфам топливо и терпеливо ждёте благодарности...</text>
@@ -6752,7 +6740,7 @@ Date: 03/12/18
 		<text>Направить им "?".</text>
 		<event>
 			<text>Похоже, что ваше сообщение лишь вызвало их раздражение. Морфы атакуют!</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -6768,7 +6756,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать морфов и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 
@@ -6781,7 +6769,7 @@ Date: 03/12/18
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<distressBeacon/>
-	<ship load="MENGI_SHIP_NO_SURRENDER_PARAM" hostile="false"/>
+	<ship load="MENGI_SHIP_NO_SURRENDER_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="shields" amount="0"/> <!-- 1.28 -->
 	<choice hidden="true">
 		<text id="continue"/>
@@ -6804,7 +6792,7 @@ Date: 03/12/18
 				<text>Не рисковать и оставить его на произвол судьбы.</text>
 				<event>
 					<text>Челнок врезается в один из астероидов и взрывается. Корабль морфов вдруг становится агрессивным. Похоже, в этот раз на разговоры с экипажем нет времени.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 					<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				</event>
 			</choice>
@@ -6814,7 +6802,7 @@ Date: 03/12/18
 <eventList name="MORPH_BRK_SHIELD_W"> 
 	<event>
 		<text>Челнок врезается в астероид и взрывается. Корабль морфов вдруг становится агрессивным.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
@@ -6856,14 +6844,14 @@ Date: 03/12/18
 <event name="SWORDFISH_OK_EVENT" unique="true">
 	<text>Прибыв на сигнал бедствия вы видите странный корабль. Настроившись на их частоту, вы ловите обрывок разговора двух людей: «Я же тебе говорил, наш план сработает! Мы получим кучу денег за этих преступников. — Да... И мы наконец сможем купить нормальную еду». Они атакуют вас!</text>
 	<distressBeacon/>
-	<ship load="SWORDFISH_SHIP_PARAM" hostile="true"/>
+	<ship load="SWORDFISH_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <ship name="SWORDFISH_SHIP_PARAM" auto_blueprint="SWORDFISH_SHIP">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль разваливается на части, и вы собираете его обломки.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Корабль захвачен, и вы обчищаете его трюм.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -6878,12 +6866,12 @@ Date: 03/12/18
 <event name="SWORDFISH_BRK_EVENT" unique="true">
 	<text>Вы находите сильно повреждённый корабль. Похоже, что он является источником сигнала о помощи.</text>
 	<distressBeacon/>
-	<ship load="SWORDFISH_BRK_SHIP_PARAM" hostile="false"/>
+	<ship load="SWORDFISH_BRK_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Осмотреть корабль и забрать всё ценное.</text>
 		<event load="SWORDFISH_R1"/>
 	</choice>
-	<choice req="slug" hidden="true">
+	<choice req="slug_crew" hidden="true">
 		<text>(Член экипажа слаг) Ваш слаг чувствует присутствие живых форм на этом корабле. Найти их и забрать всё ценное.</text> 
 		<event load="SWORDFISH_R2"/>
 	</choice>
@@ -6893,7 +6881,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать корабль и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="SWORDFISH_R1"> 
@@ -7038,7 +7026,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Ничего не трогать и просто поговорить с экипажем, пока заряжается FTL-привод.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="MORPH_SYSREPATBEACON_HUM"> 
@@ -7453,7 +7441,7 @@ Date: 03/12/18
 <event name="DISTRESSED_MENGI_FIGHT" unique="false"> 
 	<distressBeacon/>
 	<text load="DISTRESSED_MENGI_FIGHT_TEXT"/>
-	<ship load="MENGI_SHIP_PARAM" hostile="true"/>
+	<ship load="MENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="DISTRESSED_MENGI_FIGHT_TEXT">
 	<text>Возле маяка вы видите корабль морфов. Он включает и отключает сигнал бедствия, однако никаких признаков того, что им нужна помощь, нет. Завидев вас, морфы нападают.</text>
@@ -7465,7 +7453,7 @@ Date: 03/12/18
 
 <event name="NEBULA_JELLY_STEALS_MENGIWEAP" unique="true">
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Туманность перед вами выглядит абсолютно пустой, но внезапно перед вами из FTL-прыжка появляется корабль слагов...</text>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -7475,19 +7463,19 @@ Date: 03/12/18
 <eventList name="NEBULA_JELLY_STEALS_MENGIWEAP_RANDOM"> 
 	<event>
 		<text load="NEBULA_JELLY_STEALS_MENGIWEAP_TEXT"/>
-		<ship load="JELLY1_STEALSMENGI_SHIP_PARAM" hostile="true"/>
+		<ship load="JELLY1_STEALSMENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text load="NEBULA_JELLY_STEALS_MENGIWEAP_TEXT"/>
-		<ship load="JELLY2_STEALSMENGI_SHIP_PARAM" hostile="true"/>
+		<ship load="JELLY2_STEALSMENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text load="NEBULA_JELLY_STEALS_MENGIWEAP_TEXT"/>
-		<ship load="JELLY3_STEALSMENGI_SHIP_PARAM" hostile="true"/>
+		<ship load="JELLY3_STEALSMENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text load="NEBULA_JELLY_STEALS_MENGIWEAP_TEXT"/>
-		<ship load="JELLY4_STEALSMENGI_SHIP_PARAM" hostile="true"/>
+		<ship load="JELLY4_STEALSMENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <textList name="NEBULA_JELLY_STEALS_MENGIWEAP_TEXT">
@@ -7497,10 +7485,10 @@ Date: 03/12/18
 	<escape timer="60" min="30" max="30">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль слагов скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>После уничтожения корабля вы обыскиваете обломки...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -7508,7 +7496,7 @@ Date: 03/12/18
 			<event load="JELLY1_STEALS_REWARDSM"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>После захвата корабля вы обчищаете его трюм...</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<choice hidden="true">
@@ -7533,10 +7521,10 @@ Date: 03/12/18
 	<escape timer="60" min="30" max="30">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль слагов скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>После уничтожения корабля вы обыскиваете обломки...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -7544,7 +7532,7 @@ Date: 03/12/18
 			<event load="JELLY2_STEALS_REWARDSM"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>После захвата корабля вы обчищаете его трюм...</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<choice hidden="true">
@@ -7569,10 +7557,10 @@ Date: 03/12/18
 	<escape timer="60" min="30" max="30">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль слагов скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>После уничтожения корабля вы обыскиваете обломки...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -7580,7 +7568,7 @@ Date: 03/12/18
 			<event load="JELLY3_STEALS_REWARDSM"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>После захвата корабля вы обчищаете его трюм...</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<choice hidden="true">
@@ -7605,10 +7593,10 @@ Date: 03/12/18
 	<escape timer="60" min="30" max="30">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль слагов скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>После уничтожения корабля вы обыскиваете обломки...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -7616,7 +7604,7 @@ Date: 03/12/18
 			<event load="JELLY4_STEALS_REWARDSM"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>После захвата корабля вы обчищаете его трюм...</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<choice hidden="true">
@@ -7641,7 +7629,7 @@ Date: 03/12/18
 
 <event name="NEBULA_REPAIRMENGI_EVENT" unique="true"> 
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Среди грозовых облаков ионного шторма вы находите небольшую ремонтную станцию морфов. Она дружелюбна и предлагает свои услуги.</text>
 	<choice hidden="true">
 		<text>Запросить ремонт.</text>
@@ -7657,7 +7645,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать станцию и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <event name="NEBULA_REPAIRMENGI_REPAIR">
@@ -7762,7 +7750,7 @@ Date: 03/12/18
 
 <event name="NEBULA_HOME_REPAIRMENGI_EVENT" unique="true"> 
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Среди грозовых облаков ионного шторма вы находите небольшую ремонтную станцию морфов. Она дружелюбна и предлагает свои услуги.</text>
 	<choice req="WEAPONS_ADAPTIVE">
 		<text>(Адаптивное оружие) Морфы могут установить на ваше адаптивное оружие инжектор разогрева за 60 ~.</text>
@@ -7786,7 +7774,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать станцию и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <textList name="RDY_INJ_SEL_TEXT">
@@ -7863,9 +7851,9 @@ Date: 03/12/18
 
 <event name="NEBULA_ENGIMENGI_EVENT" unique="true">
 	<text>В ионном шторме перед вами летит корабль инжи...</text>
-	<ship load="ENGI_CLASSIC_SHIP_PARAM" hostile="false"/>
+	<ship load="ENGI_CLASSIC_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="NEBULA_ENGIMENGI_EVENT_R"/>
@@ -7901,7 +7889,7 @@ Date: 03/12/18
 	</event>
 	<event>
 		<text>...внезапно начинается супер-шторм! Одна из молний попадает в инжи, и они становятся агрессивными. Теперь они пытаются использовать ваш корабль для ремонта своего!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<choice req="reactor" lvl="1" hidden="true" max_group="1" blue="false">
 			<text id="continue"/>
 			<event>
@@ -7931,14 +7919,14 @@ Date: 03/12/18
 		<text>Напасть на терраформ-зонд поблизости.</text>
 		<event>
 			<text>Вы решаете помочь морфам и атакуете зонд.</text>
-			<ship load="MENGI_ZOND_VERYBAD_PARAM" hostile="true"/>
+			<ship load="MENGI_ZOND_VERYBAD_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Напасть на самих морфов.</text>
 		<event>
 			<text>Морфы готовятся защищаться.</text>
-			<ship load="MENGI_SHIP_PARAM" hostile="true"/>
+			<ship load="MENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="MENGI_EVENT_ATTACK"/>
@@ -7947,11 +7935,11 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать морфов и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <ship name="MENGI_ZOND_VERYBAD_PARAM" auto_blueprint="BCIRCLE_ZONDS">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Зонд взрывается, и вы подбираете его обломки...</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<choice hidden="true">
@@ -7967,8 +7955,8 @@ Date: 03/12/18
 
 <event name="NEBULA_MENGI_DAMAGED_EVENT" unique="true">
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="EMPTY_MENGI_SHIP_PARAM" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="EMPTY_MENGI_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<text>В туманности вы находите сильно повреждённый корабль морфов. Похоже, что он тут давно...</text>
 	<choice hidden="true">
 		<text>Забрать с корабля всё ценное.</text>
@@ -7976,7 +7964,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Не приближаться и поговорить с экипажем, пока заряжается FTL-двигатель.</text>
-		<event load="TALK_WITH_CREW_MORPH"/><!-- 1.28 -->
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="NEBULA_MENGI_DAMAGED_EVENT_R"> 
@@ -8002,7 +7990,22 @@ Date: 03/12/18
 		<text>Некоторое время спустя в команде появляется пополнение.</text>
 		<crewMember amount="1" class="engi">Морф</crewMember>
 	</event>
+	<event><!-- 1.32 -->
+		<text>Некоторое время спустя в команде появляется пополнение.</text>
+		<crewMember amount="1" class="morph">Морф</crewMember>
+	</event>
+	<event><!-- 1.32 -->
+		<text>Некоторое время спустя в команде появляется пополнение.</text>
+		<crewMember amount="1" class="morph">Инжи</crewMember>
+	</event>
+	<event><!-- 1.32 -->
+		<text>Некоторое время спустя в команде появляется пополнение.</text>
+		<crewMember amount="1" class="engi">Инжи</crewMember>
+	</event>
 	<event>
+		<text>Оказалось, что образцы ДНК повреждены сильнее, чем вы предполагали. Пора отправляться дальше.</text>
+	</event>
+	<event><!-- 1.32 -->
 		<text>Оказалось, что образцы ДНК повреждены сильнее, чем вы предполагали. Пора отправляться дальше.</text>
 	</event>
 </eventList>
@@ -8014,9 +8017,9 @@ Date: 03/12/18
 
 <event name="NEBULA_MENGI_FIGHT" unique="true"> 
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Возле маяка на вас нападает корабль морфов. Вы замечаете, что они ещё не закончили преобразование своего корабля и, вероятно, ослаблены.</text>
-	<ship load="WEAK_MENGI_SHIP_PARAM" hostile="true"/>
+	<ship load="WEAK_MENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <ship name="WEAK_MENGI_SHIP_PARAM" auto_blueprint="WEAK_MORPH_ENGI_SHIPS">
 	<surrender chance="0.3" min="3" max="4" load="MENGI_SURRENDER"/>
@@ -8029,7 +8032,7 @@ Date: 03/12/18
 
 
 <event name="NEBULA_PILESOS_EVENT" unique="true">
-	<ship load="MENGI_PILESOS_SHIP_PARAM" hostile="true"/>
+	<ship load="MENGI_PILESOS_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<text>При выходе из прыжка вы наблюдаете грандиозную картину — корабль морфов быстро втягивает остатки этой туманности в какое-то устройство на корпусе. Похоже, морфы совсем обезумели, теперь они направляют устройство на вас!</text>
 </event>
 <ship name="MENGI_PILESOS_SHIP_PARAM" auto_blueprint="MORPH_ENGI_SHIPS">
@@ -8048,7 +8051,7 @@ Date: 03/12/18
 		<text id="continue"/>
 		<event>
 			<text>...внезапно рядом выходит из прыжка корабль морфов с явно враждебными намерениями! Приготовиться к бою!</text>
-			<ship load="MENGI_SHIP_PARAM" hostile="true"/>
+			<ship load="MENGI_SHIP_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>		
 	</choice>
 	<choice hidden="true" req="hacking" lvl="1" max_group="0" blue="false">
@@ -8056,17 +8059,17 @@ Date: 03/12/18
 		<event>
 			<text>...внезапно рядом выходит из прыжка корабль морфов с явно враждебными намерениями! Похоже, что они блокируют вашего взломщика каким-то направленным излучением!</text>
 			<status type="limit" target="player" system="hacking" amount="0" />
-			<ship load="MENGI_SHIP_PARAM_NOHACK" hostile="true"/>
+			<ship load="MENGI_SHIP_PARAM_NOHACK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>		
 	</choice>
 </event>
 <ship name="MENGI_SHIP_PARAM_NOHACK" auto_blueprint="MORPH_ENGI_SHIPS">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Вы быстро собираете всё то, что уцелело после взрыва.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<status type="clear" target="player" system="hacking" amount="100" />
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<status type="clear" target="player" system="hacking" amount="100" />
@@ -8081,7 +8084,7 @@ Date: 03/12/18
 	<event load="ORCHID_FREE_ITEMS"/>
 	<event load="ORCHID_FREE_CREW"/>
 	<event load="REFUEL_STATION"/>
-	<event load="REPAIR_STATION"/>
+	<event load="NEW_REPAIR_STATION"/><!-- 1.32 -->
 	<event load="SELL_DRONES_STATION"/>
 	<event load="SELL_MISSILES_STATION"/>
 	<event load="TRADER_CIV"/>
@@ -8138,12 +8141,12 @@ Date: 03/12/18
 <!-- 1.31 -->
 <event name="UNKNOWN_SUICIDE_MISSILE" unique="true">
 	<img back="BACKGROUND" planet="green_planet"/>
-	<ship load="UNKNOWN_MISSILE_SHIP" hostile="false"/>
+	<ship load="UNKNOWN_MISSILE_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<text>Ваша система связи внезапно взрывается предупреждениями и паническими сообщениями с ближайшей планеты орхидов. Тем временем ваша команда обнаруживает какую-то необычную ракету, летящую прямо к планете. Без ПКБ вы - их единственная надежда.</text>
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="limit" target="player" system="artillery" amount="0"/> 
 			<status type="limit" target="player" system="teleporter" amount="0"/> 
 		</event>
@@ -8153,7 +8156,7 @@ Date: 03/12/18
 	<escape min="15" max="15" timer="15"> 
 		<text>Вы замечаете рост энергии в FTL-приводе этой ракеты! Тем временем ваш член экипажа обнаруживает опасную радиацию, исходящую от корабля.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Ракета совершила FTL-прыжок. Вскоре после этого гигантский взрыв разрывает поверхность планеты, и связь внезапно прекращается. Вы не можете избежать ударной волны...</text>
 		<damage amount="0" system="random" effect="random"/>
 		<damage amount="0" system="random" effect="random"/>
@@ -8168,7 +8171,7 @@ Date: 03/12/18
 		<status type="clear" target="player" system="artillery" amount="100" />
 		<status type="clear" target="player" system="teleporter" amount="100"/>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Ужасающий взрыв сотрясает пространство поблизости и повреждает ваш корабль. Однако вы чувствуете облегчение, узнав, что планета теперь спасена. Вскоре после этого орхиды в знак благодарности отправляют вам несколько ящиков с металлом.</text>
 		<item_modify>
 			<item type="scrap" min="30" max="60"/>
@@ -8181,7 +8184,7 @@ Date: 03/12/18
 		<status type="clear" target="player" system="artillery" amount="100" />
 		<status type="clear" target="player" system="teleporter" amount="100"/>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вам удаётся убить пилотов корабля. Несмотря на наличие продвинутых двигателей, они всё же управлялись пилотами вручную. Пока вы задаётесь вопросом, откуда они взялись, орхиды посылают вам оружие и лом в знак благодарности.</text>
 		<weapon name="KERNEL_2"/>
 		<autoReward level="LOW">scrap_only</autoReward>
@@ -8192,12 +8195,12 @@ Date: 03/12/18
 
 <event name="VEGGIE_SLIG" unique="true">
 	<text>По прибытии вы получаете привет от корабля орхидов странного цвета. Вы понимаете, что ситуация может быть ненормальной.</text>
-	<ship hostile="false" load="ORCHID_JELLY"/>
+	<ship load="ORCHID_JELLY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Приветствовать странный корабль орхидов.</text>
 		<event>
 			<text>Вы открываете коммуникатор, и вас приветствует жирный слёрм: «Добро пожаловать, дорогой торговец! Мы вторглисссь в этот прекрасссный сссектор, чтобы получить один из лучших ингредиентов для нашего ссслёрмоварения! Нам требуются орхиды, чтобы получить его, и мы просим вассс предоссставить сссвою команду.</text>
-			<choice hidden="true" req="orchid">
+			<choice hidden="true" req="orchid_crew">
 				<text>Вы подумываете о том, чтобы отдать своего орхида.</text>
 				<event load="ORCHID_GIVEAWAY"/>
 			</choice>
@@ -8212,32 +8215,32 @@ Date: 03/12/18
 					<crewMember amount="1" class="slig"/>
 				</event>
 			</choice>
-			<choice hidden="true" req="slug">
+			<choice hidden="true" req="slug_crew">
 				<text>Ваш слаг ощущает необычные формы жизни на их корабле.</text>
 				<event>
 					<text>В трюме корабля находятся вязанки орхидов! Странный корабль внезапно приводит в действие свои орудия. Слёрм на экране говорит: «Да, ты прав! Мы делаем бульон из орхидов, чтобы приготовить ссслёрм, и, поскольку ты узнал это, мы приготовим и тебя».</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 			<choice hidden="true" req="LIFE_SCANNER">
 				<text>Сканер жизненных форм засекает какую-то аномалию на их корабле.</text>
 				<event>
 					<text>В трюме корабля находятся вязанки орхидов! Странный корабль внезапно приводит в действие свои орудия. Слёрм на экране говорит: «Да, ты прав! Мы делаем бульон из орхидов, чтобы приготовить ссслёрм, и, поскольку ты узнал это, мы приготовим и тебя».</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Этот корабль подозрительно выглядит. Открыть огонь!</text>
 				<event>
 					<text>Вы стреляете по кораблю, и они немедленно реагируют включением оружия.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Не отвечать и поговорить с экипажем во время зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_ORCHID"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 
@@ -8247,7 +8250,7 @@ Date: 03/12/18
 	</event>
 	<event>
 		<text>Как только вы обрываете связь, их корабль включает своё вооружение. Очевидно, это было не то, что следовало сделать...</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -8276,11 +8279,11 @@ Date: 03/12/18
 </eventList>
 
 <ship name="ORCHID_JELLY" auto_blueprint="ORCHID_SLIG_ASSAULT">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль странного цвета разваливается на части. Внутри его обломков вы находите много мёртвых орхидов, и ничего полезного, кроме металлолома.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вам удаётся убить всех слёрмов и предотвратить их процесс регенерации. Внутри корабля вы находите потайное хранилище, в котором хранились вязанки орхидов. После их освобождения один орхид присоединяется к вашей команде.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<crewMember amount="1" class="orchid"/>
@@ -8289,12 +8292,12 @@ Date: 03/12/18
 
 <event name="MOTILEK_RED_EVENT" unique="true">
 	<text load="MOTILEK_RED_EVENT_TEXT"/>
-	<ship load="SHIPS_MOTILEK_RED_PARAM" hostile="false"/>
+	<ship load="SHIPS_MOTILEK_RED_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="cloaking" amount="0"/>
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
@@ -8309,10 +8312,10 @@ Date: 03/12/18
 		<text>Похоже, инсектор пытается скрыться.</text>
 		<status type="clear" target="enemy" system="cloaking" amount="100" />
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Инсектор исчез в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Мощный взрыв сотрясает область вокруг прыжкового маяка и частично выводит его из строя...</text>
 		<autoReward level="RANDOM">standard</autoReward>
 		<choice hidden="true">
@@ -8335,7 +8338,7 @@ Date: 03/12/18
 	</event>
 	<event>
 		<text>...среди обломков необычного инсектора вы находите не включённую в реестр модель дрона, происхождение которой остаётся полной загадкой. Вы можете установить его на свой корабль.</text>
-		<achievement silent="false">ACH_HAL_BATTLE</achievement><!-- bamalf -->
+		<achievement silent="false">ACH_HAL_BATTLE</achievement><!-- 1.31 -->
 		<drone name="HAL_BATTLE"/>
 		<modifyPursuit amount="-1"/>
 	</event>
@@ -8362,7 +8365,7 @@ Date: 03/12/18
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="engi">
+	<choice hidden="true" req="engi_crew">
 		<text>(Член экипажа инжи) Ваш инжи знает, как прервать программу ИИ.</text>
 		<event>
 			<text>Вы отправляете инжи в маленькой капсуле к станции. Система защиты почти поразила его, однако он благополучно добрался до места назначения.</text>
@@ -8394,7 +8397,7 @@ Date: 03/12/18
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="anaerobic">
+	<choice hidden="true" req="anaerobic_crew">
 		<text>(Член экипажа ланиус) У вашего ланиуса есть предложение, как разрешить ситуацию.</text>
 		<event>
 			<text>Ланиус движется вперёд, открывая воздушный шлюз в сторону станции. Его метаболизм не излучает тепловую сигнатуру, что делает его невидимым для защитных систем станции.</text>
@@ -8432,7 +8435,7 @@ Date: 03/12/18
         <text>Мы ничего не можем с этим поделать.</text>
         <event>
             <text>Обдумав свои варианты, вы понимаете, что ни один из них не подходит для безопасного вмешательства. Вы переключаетесь на план следующего прыжка и обсуждаете его с командой.</text>
-            <event load="TALK_WITH_CREW_ORCHID"/>
+            <event load="TALK_WITH_CREW"/>
         </event>
     </choice>
 </event>
@@ -8500,11 +8503,13 @@ Date: 03/12/18
 <event name="START_BEACON_ORCHID">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_orchid_sector" op="add" val="1"/>
 	<text load="START_BEACON_ORCHID"/><!-- 1.31 -->
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -8536,7 +8541,7 @@ Date: 03/12/18
 	<text load="NOTHING_ORCHID"/>
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW_ORCHID"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <textList name="NOTHING_ORCHID">
@@ -8592,7 +8597,7 @@ Date: 03/12/18
 <!-- DISTRESS -->
 <event name="ORCHID_DISTRESS_EMPTY_SHIP" unique="true">
 	<distressBeacon/>
-	<ship hostile="false" load="ORCHID_SHIP"/> <!-- woona -->
+	<ship load="ORCHID_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --> <!-- woona -->
 	<text>Сигнал бедствия исходит от корабля орхидов, заблудившегося далеко от обычных межзвёздных маршрутов. Вы отправляете запрос связи, но ответа нет.</text>
 	<choice hidden="true">
 		<text>Отправить команду, чтобы исследовать корабль.</text>
@@ -8614,7 +8619,7 @@ Date: 03/12/18
 	</event>
 	<event>
 		<text>Ваша команда отправилась на корабль с целью найти выживших. Через некоторое время часть команды была подвержена воздействию неизвестных веществ, вызвавших приступ ярости. Как можно быстрее все были возвращены домой, но один из членов экипажа так сильно пострадал, что сошёл с ума сразу после возвращения.</text>
-		<choice hidden="true" req="orchid">
+		<choice hidden="true" req="orchid_crew">
 			<text>(Член экипажа орхид) Пусть орхид успокоит безумного.</text>
 			<event>
 				<text>Орхид распыляет успокаивающую пыльцу, и безумец постепенно приходит в себя. Вся команда облегчённо вздыхает.</text>
@@ -8660,7 +8665,7 @@ Date: 03/12/18
 			<text>Система пожаротушения развёрнута в колонии в сжатые сроки. Она помогает сдерживать пожары в ключевых точках, пока орхиды эвакуируются. Один из орхидов настолько впечатлён, что просит присоединиться к вашей команде.</text>
 			<crewMember amount="1" class="orchid_legendary" all_skills="2">Ванда</crewMember><!-- 1.31 -->
 			<playSound>legendary</playSound><!-- 1.31 -->
-			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- bamalf -->
+			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- 1.31 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="CREW_STIMS">
@@ -8669,7 +8674,7 @@ Date: 03/12/18
 			<text>Под воздействием феромонов как ваша команда, так и орхиды двигаются намного быстрее, что существенно облегчило эвакуацию. Вся колония спасена и один из орхидов настолько впечатлён, что просит присоединиться к команде.</text>
 			<crewMember amount="1" class="orchid_legendary" all_skills="2">Ванда</crewMember><!-- 1.31 -->
 			<playSound>legendary</playSound><!-- 1.31 -->
-			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- bamalf -->
+			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- 1.31 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="crystal">
@@ -8679,7 +8684,7 @@ Date: 03/12/18
 			<variable name="counter_usage_crystal" op="add" val="1"/>
 			<crewMember amount="1" class="orchid_legendary" all_skills="2">Ванда</crewMember><!-- 1.31 -->
 			<playSound>legendary</playSound><!-- 1.31 -->
-			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- bamalf -->
+			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- 1.31 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="magman"><!-- 1.31 --> 
@@ -8695,7 +8700,7 @@ Date: 03/12/18
 			<text>С помощью бомбы удалось возвести гигантские кристаллические стены за считанные секунды. Распространение пожара удалось замедлить, и вся колония успешно эвакуировалась. Один из орхидов настолько впечатлён, что просит присоединиться к команде.</text>
 			<crewMember amount="1" class="orchid_legendary" all_skills="2">Ванда</crewMember><!-- 1.31 -->
 			<playSound>legendary</playSound><!-- 1.31 -->
-			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- bamalf -->
+			<achievement silent="false">ACH_ORCHID_LEGENDARY</achievement><!-- 1.31 -->
 			<item_modify>
 				<item max="-2" min="-2" type="missiles"/>
 			</item_modify>
@@ -8739,7 +8744,7 @@ Date: 03/12/18
 		<text>Помочь кораблю орхидов.</text>
 		<event>
 			<text>Вы делаете предупредительный выстрел, и пиратский корабль меняет курс в вашу сторону. «Этот корабль ещё больше! Пустим его на лом». Корабль орхидов останавливается на безопасном расстоянии.</text>
-			<ship hostile="true" load="ORCHID_UNDER_ATTACK_PIRATE_SHIP"/>
+			<ship load="ORCHID_UNDER_ATTACK_PIRATE_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -8748,7 +8753,7 @@ Date: 03/12/18
 	</choice>
 </event>
 <ship auto_blueprint="SHIPS_PIRATE" name="ORCHID_UNDER_ATTACK_PIRATE_SHIP">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Пиратский корабль разваливается на куски. Вы связываетесь с судном орхидов.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -8756,7 +8761,7 @@ Date: 03/12/18
 			<event load="ORCHID_SAVED_LIST"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Сенсоры не обнаруживают признаков жизни на борту пиратского корабля. Вы связываетесь с судном орхидов.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -8794,7 +8799,7 @@ Date: 03/12/18
 <eventList name="ORCHID_UNARMED_TRADER_EXTORTION">
 	<event>
 		<text>Торговое судно посылает сигнал бедствия, и военный корабль орхидов незамедлительно совершает прыжок в систему, заряжая орудия.</text>
-		<ship hostile="true" load="ORCHID_UNARMED_TRADER_EXTORTION_SHIP"/>
+		<ship load="ORCHID_UNARMED_TRADER_EXTORTION_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Корабль орхидов послал сигнал бедствия с просьбой о помощи... Но никто не пришёл. Они вынуждены отдать весь свой товар, надеясь, что тогда вы их пощадите.</text>
@@ -8802,22 +8807,22 @@ Date: 03/12/18
 	</event>
 </eventList>
 <ship auto_blueprint="SHIPS_ORCHID" name="ORCHID_UNARMED_TRADER_EXTORTION_SHIP">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Пока вы разбирались с военным кораблём орхидов, торговое судно уже покинуло систему. Вы добываете припасы из разрушенного корабля.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Пока вы разбирались с военным кораблём орхидов, торговое судно уже покинуло систему. Вы добываете припасы из захваченного корабля.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
 <event name="ORCHID_SLAVES" unique="true">
 	<text>Корабль, занимающийся незаконной торговлей, выходит на связь: «Дешёвые работники! Также могут работать как кислородные генераторы, пушечное мясо, подарки местным вождям, дрова или здоровая пища».</text>
-	<ship hostile="false" load="ORCHID_SLAVES_SHIP"/>
+	<ship load="ORCHID_SLAVES_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Спасти порабощённых орхидов!</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -8841,7 +8846,7 @@ Date: 03/12/18
 			<text>Принять предложение.</text>
 			<event>
 				<crewMember amount="1" class="orchid"/> <!-- woona -->
-				<ship hostile="false"/>
+				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 			</event>
 		</choice>
 		<choice>
@@ -8850,11 +8855,11 @@ Date: 03/12/18
 		</choice>
 	</surrender>
 	<escape chance="0.5" load="PIRATE_ESCAPE" max="4" min="2"/>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль работорговцев уничтожен. Больше они никому не причинят зла, но вместе с ними погибло немало невинных пленников.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Все надсмотрщики мертвы, и один из освобождённых рабов-орхидов принимает предложение вступить в вашу команду.</text>
 		<crewMember amount="1" class="orchid"/>
 		<autoReward level="MED">standard</autoReward>
@@ -8868,7 +8873,7 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Побеседовать с экипажем во время зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_ORCHID"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 
@@ -9041,7 +9046,7 @@ Date: 03/12/18
 			<choice hidden="true">
 				<text id="continue"/>
 				<event>
-					<text>...внезапно к вам припрыгивает молодой машрум и заявляет, что теперь вы в его команде по спасению Федерации и отказы не принимаются.</text>
+					<text>...внезапно к вам припрыгивает молодой машрум и знаками объявляет, что теперь вы в его команде по спасению Федерации и отказы не принимаются.</text><!-- 1.32 -->
 					<crewMember amount="1" class="mushroom_f"/>
 				</event>
 			</choice>
@@ -9056,7 +9061,7 @@ Date: 03/12/18
 
 <event name="ORCHID_SLUG_TAUNT" unique="true">
 	<text>Вы удивлены, увидев корабль слагов в системе, преимущественно населённой орхидами. Слаги открыли зашифрованный канал для связи и приглашают вас присоединиться.</text>
-	<ship hostile="false" load="JELLY"/>
+	<ship load="JELLY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Поговорить со слагами.</text>
 		<event>
@@ -9065,7 +9070,7 @@ Date: 03/12/18
 				<text>Открыть огонь!</text>
 				<event>
 					<text>Вы стреляете по кораблю слагов, но они ловко уклоняются. Капитан слагов посылает сообщение о бедствии на соседнюю планету орхидов, утверждая, что на него напали пираты. К вашему удивлению, орхиды открывают огонь из всех орудий планетарной обороны по вашему кораблю. Все это было частью коварного плана слагов.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 					<environment target="player" type="PDS"/>
 				</event>
 			</choice>
@@ -9077,13 +9082,13 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Отказаться и побеседовать с экипажем во время зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_ORCHID"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <!-- HOSTILE -->
 <event name="ORCHID_FIGHT" unique="false">
 	<text load="ORCHID_FIGHT"/>
-	<ship hostile="true" load="ORCHID_SHIP"/>
+	<ship load="ORCHID_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_FIGHT">
 	<text>Враждебный корабль орхидов ждёт вас у маяка. Без единого слова они открывают огонь.</text>
@@ -9097,7 +9102,7 @@ Date: 03/12/18
 	<choice>
 		<text>Принять предложение.</text>
 		<event>
-			<ship hostile="false"/>
+			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -9113,7 +9118,7 @@ Date: 03/12/18
 </textList>
 <event name="ORCHID_PIRATE_FIGHT" unique="false">
 	<text load="ORCHID_PIRATE_FIGHT"/>
-	<ship hostile="true" load="PIRATE"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_PIRATE_FIGHT">
 	<text>Орхиды прилагают колоссальные усилия для поддержания безопасности в своих мирах, но одинокий пират все же сумел пробиться даже через их оборону. Сражения не миновать.</text>
@@ -9123,7 +9128,7 @@ Date: 03/12/18
 </textList>
 <event name="ORCHID_ROCK_FIGHT" unique="false">
 	<text load="ORCHID_ROCK_FIGHT"/>
-	<ship hostile="true" load="ROCK_SHIP"/>
+	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_ROCK_FIGHT">
 	<text>Корабли роков часто встречаются в секторах орхидов. Несмотря на их неприязнь к пришельцам, роки высоко ценят орхидов. Корабль у маяка, однако, ведёт себя враждебно по отношению к вам.</text>
@@ -9132,7 +9137,7 @@ Date: 03/12/18
 </textList>
 <event name="ORCHID_MANTIS_FIGHT" unique="false">
 	<text load="ORCHID_MANTIS_FIGHT"/>
-	<ship hostile="true" load="MANTIS_FIGHT"/>
+	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_MANTIS_FIGHT">
 	<text>Воинственные мантисы отправляют свои корабли по всей Галактике для того, чтобы охотиться на другие корабли ради добычи и славы. Секторы орхидов — не исключение.</text>
@@ -9141,7 +9146,7 @@ Date: 03/12/18
 </textList>
 <event name="ORCHID_REBEL_FIGHT" unique="false">
 	<text load="ORCHID_REBEL_FIGHT"/>
-	<ship hostile="true" load="REBEL"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_REBEL_FIGHT">
 	<text>Истребитель повстанцев ожидает вас у маяка. На экране появляется изображение офицера-человека: «Мы пришли, чтобы прополоть этот сектор от инопланетян и сторонников Федерации. Начнём с вас!»</text>
@@ -9150,7 +9155,7 @@ Date: 03/12/18
 </textList>
 <event name="ORCHID_AUTO_FIGHT" unique="false">
 	<text load="ORCHID_AUTO_FIGHT"/>
-	<ship hostile="true" load="REBEL_AUTO"/>
+	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_AUTO_FIGHT">
 	<text>Узнав, что многие корабли Федерации используют родные миры орхидов в качестве укрытия, повстанцы отправили беспилотники, чтобы охотиться на всех, кто противостоит восстанию. Один из таких кораблей ждёт вас у маяка.</text>
@@ -9159,7 +9164,7 @@ Date: 03/12/18
 </textList>
 <event name="ORCHID_CAPTURED_REBEL_FIGHT" unique="false">
 	<text load="ORCHID_CAPTURED_REBEL_FIGHT"/>
-	<ship hostile="true" load="ORCHID_CAPTURED_REBEL_SHIP"/>
+	<ship load="ORCHID_CAPTURED_REBEL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="ORCHID_CAPTURED_REBEL_FIGHT">
 	<text>Вы удивлены, услышав, как экипаж корабля орхидов говорит человеческим голосом: «Сдавайтесь. Все близлежащие миры контролируются силами восстания. Сопротивление бесполезно».</text>
@@ -9178,7 +9183,7 @@ Date: 03/12/18
 <event name="ORCHID_PIRATE_FRIENDLY_ASB" unique="true">
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
 	<text>Пиратский корабль, потрёпанный в многочисленных сражениях, движется в вашу сторону из-за планеты орхидов. Может быть, пришло время проверить как хорошо орхиды следят за безопасностью своих систем?</text>
-	<ship hostile="true" load="PIRATE"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Сразиться с пиратом один на один.</text>
 		<event/>
@@ -9227,7 +9232,7 @@ Date: 03/12/18
 <!-- 1.31 -->
 <event name="ORCHID_PEACEFULL_SCIENTISTS" unique="true">
 	<text>Прилетев к маяку, вы замечаете небольшой корабль орхидов, вызывающих вас на связь: «Приветствуем судно Федерации! Наша научная команда исследует биологические растения, и мы будем рады, если вы окажете нам помощь в исследованиях».</text>
-	<ship hostile="false" load="ORCHID_PEACEFULL_SCIENTISTS_SHIP_ESCAPE_NOW" />
+	<ship load="ORCHID_PEACEFULL_SCIENTISTS_SHIP_ESCAPE_NOW" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0" />
 	<choice hidden="true">
 		<text>Спросить, что им надо.</text>
@@ -9241,7 +9246,7 @@ Date: 03/12/18
 					<quest event="ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD" />
 				</event>
 			</choice>
-			<choice hidden="true" req="orchid">
+			<choice hidden="true" req="orchid_crew">
 				<text>(Член экипажа орхид) Обыскать наш корабль на предмет ценной для орхидов флоры и предложить им всё, что удастся найти.</text>
 				<event load="ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA" />
 			</choice>
@@ -9257,18 +9262,18 @@ Date: 03/12/18
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать их и поговорить с командой до зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_ORCHID" />
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="ORCHID_PEACEFULL_SCIENTISTS_ATTACK"> 
 	<event>
 		<text>Вам нужно больше лома для вашей миссии. Вы направляетесь в бой!</text>
-		<ship hostile="true" />
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100" />
 	</event>
 	<event>
 		<text>Вам нужно больше лома для вашей миссии. Жалкие растения пожалеют, что встретились на вашем пути!</text>
-		<ship hostile="true" />
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100" />
 	</event>
 	<event>
@@ -9277,7 +9282,7 @@ Date: 03/12/18
 			<text>Уничтожить корабль орхидов.</text>
 			<event>
 				<text>Вы отключаете каналы связи и атакуете орхидов.</text>
-				<ship hostile="true" />
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				<status type="clear" target="enemy" system="teleporter" amount="100" />
 			</event>
 		</choice>
@@ -9375,7 +9380,7 @@ Date: 03/12/18
 </event>
 <event name="ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD" unique="true">
 	<text>Вблизи маяка вас встречает судно орхидов. Они спрашивают, что привело вас сюда?</text>
-	<ship hostile="false" load="ORCHID_PEACEFULL_SCIENTISTS_SHIP" />
+	<ship load="ORCHID_PEACEFULL_SCIENTISTS_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --> 
 	<status type="limit" target="enemy" system="teleporter" amount="0" />
 	<choice hidden="true" req="ORCHID_BOX">
 		<text>(Контейнер орхидов) Передать орхидам их контейнер.</text>
@@ -9397,26 +9402,26 @@ Date: 03/12/18
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы начинаете атаку, но тут же понимаете, что всё это время были на прицеле у планетарных защитных орудий!</text>
-			<ship hostile="true" />
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<environment target="player" type="PDS" />
 			<status type="clear" target="enemy" system="teleporter" amount="100" />
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать их и поговорить с командой до зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_ORCHID" />
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_NO_BOX"> 
 	<event>
 		<text>Орхиды крайне недовольны тем, что вы потеряли результаты работы их учёных за несколько циклов. Они посылают сигнал помощи на планету возле маяка и атакуют вас!</text>
-		<ship hostile="true" />
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<environment target="player" type="PDS" />
 		<status type="clear" target="enemy" system="teleporter" amount="100" />
 	</event>
 	<event>
 		<text>Орхиды недовольны тем, что вы потеряли результаты работы их учёных за несколько циклов. Они атакуют вас!</text>
-		<ship hostile="true" />
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100" />
 	</event>
 	<event>
@@ -9445,14 +9450,14 @@ Date: 03/12/18
 	<escape timer="30" min="30" max="30">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль орхидов скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль орхидов разваливается на куски. Вы собираете всё ценное.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Сенсоры не обнаруживают признаков жизни на борту корабля орхидов. Вы собираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -9461,14 +9466,14 @@ Date: 03/12/18
 	<escape timer="30" min="5" max="5">
 		<text>Вы засекаете зарядку их FTL-привода.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль орхидов скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль орхидов разваливается на куски. Вы собираете всё ценное.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Сенсоры не обнаруживают признаков жизни на борту корабля орхидов. Вы собираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>

@@ -36,7 +36,7 @@ Boarders:
 
 <FTL>
 
-<eventList name="HOSTILE_PIRATE"> <!-- bamalf over -->
+<eventList name="HOSTILE_PIRATE"> <!-- 1.31 -->
 	<event load="PIRATE"/>
 	<event load="REBEL_AUTO"/>
 	<event load="AUTO_ASTEROID"/>
@@ -55,6 +55,7 @@ Boarders:
 	<event load="DRONE_FIELD_PIRATE"/><!-- 1.31 -->
 	<event load="NANITE_FIELD_PIRATE"/><!-- 1.31 -->
 	<event load="NANITE_FIELD_PIRATE"/><!-- 1.31 -->
+	<event load="CONTR_FIGHT"/><!-- 1.32 -->
 </eventList>
 
 
@@ -73,7 +74,7 @@ Boarders:
 	<event load="REFUGEE_NO_DISTRESS_PIRATE"/>
 	<event load="PIRATE_STATION_ASTEROID"/>
 	<event load="PIRATE_CHICKEN"/>
-	<event load="PSEVDO_NOTHING"/><!-- 1.26 -->
+	<event load="NOTHING"/><!-- 1.26 --><!-- 1.32 -->
 	<event load="EVENT_TRADE_FUMIDR"/><!-- 1.26 -->
 	
 	<event load="RETRANSLATOR"/><!-- 1.27.1 -->
@@ -138,11 +139,13 @@ Boarders:
 <event name="START_BEACON_PIRATE">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_meet_pirate_sector" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="counter_meet_pirate_sector" op="add" val="1"/> <!-- 1.31 -->
 	<text load="START_BEACON_PIRATE"/>
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -200,7 +203,7 @@ Boarders:
 
 <event name="PIRATE">
 	<text load="PIRATE"/>
-	<ship load="PIRATE" hostile="true"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="PIRATE">
 	<text>Как только вы входите в систему, к вам с большой скоростью направляется пиратский корабль. На вызовы он не отвечает. Готовьтесь к бою.</text>
@@ -215,7 +218,7 @@ Boarders:
 
 <event name="PIRATE_NO_ESCAPE" unique="true">
 	<text>По прибытии на вашем экране загораются предупреждающие сигналы. Пират, оказавшийся, по всей видимости, неподалёку, разжился современными инструментами взлома, и сейчас он пытается вырубить ваш двигатель. Команда как может поддерживает его в рабочем состоянии, пока вы разбираетесь с этим "хакером"...</text>
-	<ship load="PIRATE_NO_ESCAPE" hostile="true"/>
+	<ship load="PIRATE_NO_ESCAPE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -249,7 +252,7 @@ Boarders:
 		<text>Помочь гражданским.</text>
 		<event>
 			<text>Вы включаете оружие и бросаетесь в атаку на пиратский корабль.</text>
-			<ship load="PIRATE_CIVILIAN" hostile="true"/>
+			<ship load="PIRATE_CIVILIAN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -354,7 +357,7 @@ Boarders:
 
 <event name="PIRATE_BRIBER" unique="true">
 	<text load="PIRATE_BRIBER"/>
-	<ship load="PIRATE_BRIBER" hostile="false"/>
+	<ship load="PIRATE_BRIBER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice>
 		<text>Принять взятку.</text>
 		<event>
@@ -366,7 +369,7 @@ Boarders:
 		<text>Проявить героизм, атаковав пиратов.</text>
 		<event>
 			<text>Пиратский корабль прекратил преследование и направил орудия на ваш корабль.</text> 
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
@@ -419,7 +422,7 @@ Boarders:
 <event name="PIRATE_CHOICE" unique="false">
 	<img planet="NONE"/>
 	<text>После завершения прыжка вы получаете сообщение от корабля неподалёку: «Приветствуем, добро пожаловать на наш маяк! За небольшую плату мы позволим тебе продолжить свой путь».</text>
-	<ship load="PIRATE" hostile="false"/>
+	<ship load="PIRATE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice>
 		<text>Заплатить дань.</text>
 		<event>
@@ -427,14 +430,14 @@ Boarders:
 			<item_modify>
 				<item type="scrap" min="-25" max="-15"/>
 			</item_modify>
-			<achievement silent="false">ACH_PAY_DAN</achievement><!-- bamalf -->
+			<achievement silent="false">ACH_PAY_DAN</achievement><!-- 1.31 -->
 		</event>
 	</choice>
 	<choice>
 		<text>Отклонить "предложение".</text>
 		<event>
 			<text>«Прискорбно, прискорбно. Сейчас ты пожалеешь об этом решении».</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
@@ -444,7 +447,7 @@ Boarders:
 
 <event name="PIRATE_SLAVER" unique="true">
 	<text>Хорошо вооружённый пиратский корабль подходит к вам. «Передайте нам одного из членов вашего экипажа, и тогда остальные смогут уйти в целости».</text>
-	<ship load="PIRATE_SLAVER" hostile="false"/>
+	<ship load="PIRATE_SLAVER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/><!-- 1.27.1 -->
 	<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.25 -->
 		<text>Отправить им кого-то из вашей команды, предварительно его вооружив.</text>
@@ -454,18 +457,18 @@ Boarders:
 		<text id="continue"/>
 		<event>
 			<text>Они вдруг понимают, что перед ними беспилотник, и атакуют ваш корабль.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.27.1 -->
 		</event>
 	</choice>
 	<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.25 -->
 		<text>Не рисковать и пойти в лобовую атаку.</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.27.1 -->
 		</event>
 	</choice>
-	<choice hidden="true" req="mantis">
+	<choice hidden="true" req="mantis_crew">
 		<text>(Член экипажа мантис) Отправить им вооружённого мантиса.</text>
 		<event load="PIRATE_SLAVER_MANTIS"/><!-- 1.22.2 -->
 	</choice>
@@ -513,7 +516,7 @@ Boarders:
 	</event>
 	<event>
 		<text>Вы передаёте одного из вашей команды, незаметно его вооружив, однако пираты, почуяв неладное, тщательно его досматривают. Обнаружив оружие, они казнят его на месте. Озлобленные, они атакуют ваш корабль.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.27.1 -->
 		<choice hidden="true">
 			<text id="continue"/>
@@ -541,14 +544,14 @@ Boarders:
 	</event>
 	<event><!-- 1.23 -->
 		<text>Вооружённый мантис убивает несколько пиратов и возвращается обратно на угнанной шлюпке. Обозлённые пираты атакуют вас.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.27.1 -->
 	</event>
 </eventList>
 <eventList name="PIRATE_SLAVER_RUN">
 	<event>
 		<text>Вы отдаёте приказ: «Полный вперёд!» Напрасная попытка — работорговцы быстро догоняют вас и занимают позицию для атаки.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.27.1 -->
 	</event>
 	<event>
@@ -564,7 +567,7 @@ Boarders:
 
 
 <event name="FRIENDLY_SLAVER" unique="true"> <!-- add an event if you kill the crew? -->
-	<ship load="PIRATE_SLAVER" hostile="false"/>
+	<ship load="PIRATE_SLAVER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<text>Вы узнаёте корабль известного работорговца. Он приветствует вас и предлагает вам приобрести дешёвых "работников".</text>
 	<choice>
 		<text>Купить одного из рабов, освободить его и принять в команду.</text>
@@ -587,7 +590,7 @@ Boarders:
 	<choice>
 		<text>Уничтожить рабовладельческую шваль!</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -603,16 +606,16 @@ Boarders:
 	<event>
 		<text>Вы отправляете маленькую группу. Они работают быстро — освобождают рабов и телепортируются обратно на ваш корабль. Один из пленных, похоже, годится для боя, вы кидаете ему оружие и готовитесь к битве.</text>
 		<crewMember amount="1"/>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы отсылаете команду, чтобы попытаться освободить заключённых. Им удаётся добраться до одного пленного до того, как их ловит и загоняет в угол команда неприятеля. Вы быстро телепортируете свою команду и пленника обратно на свой корабль.</text>
 		<crewMember amount="1"/>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы телепортируете команду на их корабль. Но оценка местоположения заключённых была ошибочна. К тому времени, как ваша команда добирается до их расположения, работорговцы обнаруживают её. Вы возвращаете экипаж обратно на корабль и готовитесь к бою.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -629,7 +632,7 @@ Boarders:
 <event name="PIRATE_SUN" unique="true">
 	<img back="BG_DARK"/>
 	<text>Маяк был установлен слишком близко к звезде — супер-гиганту класса М! Корабль точно перегреется, пока вы будете выбираться отсюда... Или погибнете. Пираты, наверное забывшие об опасности солнца, несутся в бой.</text>
-	<ship load="PIRATE" hostile="true"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 </event>
@@ -640,7 +643,7 @@ Boarders:
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<text>Пиратский корабль затаился в астероидном поле. Он сразу же атакует.</text>
-	<ship load="PIRATE" hostile="true"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<choice>
 		<text>Развернуться и принять бой.</text>
 		<event/>
@@ -742,7 +745,7 @@ Boarders:
 	<event>
 		<text>Притащив груз на борт, вы даже не успели его открыть, как пиратский корабль выходит из укрытия и атакует. В это же время ящики распахнулись. Захватчики на борту!</text>
 		<boarders min="2" max="4" class="human"/>
-		<ship load="JELLY_PIRATE_WITHBOARDERS" hostile="true"/>
+		<ship load="JELLY_PIRATE_WITHBOARDERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <eventList name="FLOATING_CARGO_SCAN_LIST">
@@ -762,7 +765,7 @@ Boarders:
 			<text>Уничтожить ящики, чтобы в эту засаду не попался кто-то другой.</text>
 			<event>
 				<text>Вы стреляете по ящикам, вскрывая их и разбрасывая пиратов по космосу во все стороны. Откуда-то появляется пиратский корабль и передаёт сообщение: «Ты за это заплатишь, гад!»</text>
-				<ship load="PIRATE" hostile="true"/>
+				<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			</event>
 		</choice>
 		<choice>
@@ -774,11 +777,11 @@ Boarders:
 
 <event name="CURIOSITY_EVENT" unique="true"> <!-- 1.31 -->
 	<distressBeacon/>
-	<ship load="PIRATE_CURIOSITY" hostile="true"/>
+	<ship load="PIRATE_CURIOSITY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<text>Пиратский корабль перед вами преследует гражданских. Вы получаете входящее сообщение от пиратов: «Не лезь, иначе ты следующий». Нет времени вести переговоры, к бою!</text>
 </event>
 <ship name="PIRATE_CURIOSITY" auto_blueprint="SHIPS_PIRATE">
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль пиратов уничтожен. Гражданские выходят на связь...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -786,7 +789,7 @@ Boarders:
 			<event load="CURIOSITY_REWARD"/>    
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Пираты мертвы. Гражданские выходят на связь...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -851,7 +854,7 @@ Boarders:
 <!-- 1.31 -->
 <event name="KENIX_BOSS_EVENT" unique="true">
 	<text>Рядом с маяком висит внушительный пиратский корабль. Его командир представляется Кениксом и предлагает пройти испытание в какой-то видео-игре. Что скажете?</text>
-	<ship load="KENIX_BOSS_PARAMETERS" hostile="false" />
+	<ship load="KENIX_BOSS_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Согласиться и запустить его игру.</text>
 		<event load="KENIX_BOSS_EVENT_GAME"/>
@@ -860,7 +863,7 @@ Boarders:
 		<text>Атаковать его! Никаких игр с пиратами.</text>
 		<event>
 			<text>Пират активирует вооружение в ответ. Эта битва будет легендарной...</text>
-			<ship hostile="true" />
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -878,11 +881,11 @@ Boarders:
 	</event>
 	<event>
 		<text>Кеникс говорит, что отказ не принимается, а затем активирует свои орудия.</text>
-		<ship hostile="true" />
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Кеникс говорит, что отказ не принимается, а затем активирует свои орудия.</text>
-		<ship hostile="true" />
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <textList name="KENIX_BOSS_EVENT_GAME_TEXT_PREPARE">
@@ -1217,7 +1220,7 @@ Boarders:
 	</event>
 	<event>
 		<text>Кеникс говорит, что настолько позорного полёта он давно не видел, и лучше уничтожит ваш корабль, чтобы подобное никогда не случилось в реальности. Кстати, флот повстанцев приблизился, пока вы играли.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<modifyPursuit amount="1" />
 	</event>
 </eventList>
@@ -1225,10 +1228,10 @@ Boarders:
 	<escape min="3" max="5" timer="18">
 		<text>Вы засекаете зарядку FTL-привода! Кеникс убегает!</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Пират скрылся в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль разваливается на куски. Вы осматриваете обломки в поисках ценностей.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1236,7 +1239,7 @@ Boarders:
 			<event load="KENIX_SHIP_DEAD"/>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Сенсоры не обнаруживают признаков жизни на корабле. Вы осматриваете судно в поисках ценностей.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">

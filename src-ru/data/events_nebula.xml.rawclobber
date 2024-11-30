@@ -88,11 +88,13 @@ Storm Environment:
 <event name="START_BEACON_NEBULA">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_nebula_sector" op="add" val="1"/>
 	<text load="START_BEACON_NEBULA"/>
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -118,15 +120,15 @@ Storm Environment:
 <!-- for when the fleet takes over a nebula beacon -->
 <event name="FLEET_EASY_NEBULA">
 	<text>Улучшенный охотник повстанцев легко находит ваш корабль. Вы не видите его сквозь туманность, но можно предположить, что флот уже наступает вам на пятки. Нужно бежать, и быстро.</text>
-	<ship load="LONG_FLEET" hostile="true"/>
+	<ship load="LONG_FLEET" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 
 <event name="NEBULA_STORE">
 	<text load="NEBULA_STORE"/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<store/>
 </event>
 <textList name="NEBULA_STORE">
@@ -140,10 +142,10 @@ Storm Environment:
 <event name="NEBULA_EMPTY">
 	<text load="NEBULA_EMPTY_LIST"/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW_GHOST"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <textList name="NEBULA_EMPTY_LIST">
@@ -167,9 +169,9 @@ Storm Environment:
 
 <event name="NEBULA_REBEL">
 	<text load="NEBULA_REBEL_LIST"/>
-	<ship load="REBEL" hostile="true"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 <textList name="NEBULA_REBEL_LIST">
 	<text>Вы натыкаетесь на продвинутого разведчика повстанцев, рыскающего в этой части туманности в поисках вашего корабля.</text>
@@ -184,7 +186,7 @@ Storm Environment:
 
 <event name="NEBULA_AUTO"> <!-- bug? -->
 	<text load="NEBULA_AUTO_LIST"/>
-	<ship load="REBEL_AUTO" hostile="true"/>
+	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="nebula"/>
 </event>
 <textList name="NEBULA_AUTO_LIST">
@@ -198,14 +200,14 @@ Storm Environment:
 
 <event name="NEBULA_AUTO_WARNING" unique="true">
 	<text>Похоже, что автоматизированный разведчик повстанцев был расположен в туманности, чтобы докладывать о ваших передвижениях.</text>
-	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
+	<ship load="REBEL_AUTO_WARNING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 
 <event name="NEBULA_PIRATE">
 	<text load="NEBULA_PIRATE"/>
-	<ship load="PIRATE" hostile="true"/>
+	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="NEBULA_PIRATE">	<!-- JUSTIN — ADD MORE -->
 	<text>Пока вы пробирались через туманность, неопознанное судно спикировало из облаков и село вам на хвост. Их орудия включаются.</text>
@@ -217,9 +219,9 @@ Storm Environment:
 
 <event name="NEBULA_MANTIS_FIGHT" unique="false">   
 	<text load="NEBULA_MANTIS_FIGHT"/>
-	<ship load="MANTIS_FIGHT" hostile="true"/>
+	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 <textList name="NEBULA_MANTIS_FIGHT">
 	<text>Широко распространено мнение, что туманности — излюбленное место охоты мантисов. Эта деталь запомнилась вам достаточно хорошо, чтобы не дать застигнуть себя врасплох.</text>
@@ -246,13 +248,13 @@ Storm Environment:
 
 <event name="NEBULA_REBEL_UNDETECTED" unique="true">  <!-- give player option to hide, -->
 	<text>Ваше судно появляется вдали от маяка. Вы видите, что корабль повстанцев ждёт поблизости, и ждёт он, несомненно, именно вас.</text>
-	<ship load="REBEL" hostile="false"/>
+	<ship load="REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Атаковать корабль.</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -272,7 +274,7 @@ Storm Environment:
 		<choice>
 			<text>Приготовиться к бою.</text>
 			<event>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			</event>
 		</choice>
 		<choice req="engines" lvl="4" hidden="true">
@@ -295,12 +297,12 @@ Storm Environment:
 <event name="NEBULA_PIRATE_SMUGGLE" unique="true"> <!-- 1.26 --><!-- TO DO - NEED TO MAKE A NEW PIRATE SHIP THAT ATTEMPTS TO BRIBE YOU WHEN SURRENDERING-->
 	<text>Пиратский корабль прибыл вскоре после вас. Судя по тому, что он старается избегать вашего корабля, вы предполагаете, что это контрабандист, пытающийся держаться подальше от маяков.</text>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Атаковать пиратов.</text>
 		<event>
 			<text>Вы заряжаете свои орудия и идёте на сближение.</text>
-			<ship load="PIRATE_SMUGGLE" hostile="true"/>
+			<ship load="PIRATE_SMUGGLE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -322,7 +324,7 @@ Storm Environment:
 			<choice>
 				<text>Не соглашаться на подкуп и атаковать.</text>
 				<event>
-					<ship load="PIRATE_SMUGGLE" hostile="true"/>
+					<ship load="PIRATE_SMUGGLE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 		</event>
@@ -332,11 +334,11 @@ Storm Environment:
 
 <event name="NEBULA_AUTO_DEFENSE_ITEM" unique="true">
 	<text>Улучшенный автоматический корабль повстанцев охраняет маленькую космическую станцию. Однако, без работающих сенсоров невозможно сказать, что находится внутри.</text>
-	<ship load="REBEL_AUTO_ITEM" hostile="false"/>  <!-- ship is in other xmls -->
+	<ship load="REBEL_AUTO_ITEM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->  <!-- ship is in other xmls -->
 	<choice>
 		<text>Атаковать автоматический корабль, чтобы добраться до станции.</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -375,7 +377,7 @@ Storm Environment:
 		</event>
 	</choice>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 <eventList name="NEBULA_AUTO_DEFENSE_ITEM_CLOAK"> <!--DLC EVENTLIST-->
 	<event>
@@ -387,7 +389,7 @@ Storm Environment:
 	</event>
 	<event>	
 		<text>Вы пытаетесь проскользнуть мимо автоматического корабля, но он быстро разворачивается и атакует!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 <eventList name="NEBULA_AUTO_DEFENSE_ITEM_HACK"> <!--DLC EVENTLIST-->
@@ -406,7 +408,7 @@ Storm Environment:
 		<item_modify>
 			<item type="drones" min="-1" max="-1"/>
 		</item_modify>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -415,7 +417,7 @@ Storm Environment:
 <event name="NEBULA_LOST_SHIP" unique="true">
 	<text>Тяжело повреждённый корабль Федерации прячется в туманности около этого маяка. Прежде чем вы успеваете вступить с ним в контакт, он исчезает в туманности.</text>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice hidden="true">
 		<text>Попытаться последовать за ними и помочь.</text>
 		<event load="NEBULA_LOST_SHIP_LIST"/>
@@ -439,7 +441,7 @@ Storm Environment:
 	</event>
 	<event>
 		<text>В процессе бесплодных поисков в туманности вы натыкаетесь на корабль повстанцев, от которого, по всей видимости, прятались лоялисты Федерации. Вы готовитесь к бою.</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вам повезло, и вы нашли их парящими неглубоко в туманности. Взволнованные, что их нашли свои, они поднимаются на борт и покидают свой разрушенный корабль.</text>
@@ -479,12 +481,12 @@ Storm Environment:
 <event name="NEBULA_WEAPONS_TRADER" unique="true">
 	<text>Нелегальный торговец оружием плетёт вам что-то невнятное об опасностях, таящихся в туманностях, после чего навязчиво пытается толкнуть вам свой товар.</text>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="PIRATE_NEIZ" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="PIRATE_NEIZ" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice>
 		<text>Атаковать корабль.</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.22 --> <!-- 1.25 --><!-- 1.28 -->
@@ -527,7 +529,7 @@ Storm Environment:
 		<choice>
 			<text>Атаковать корабль!</text>
 			<event>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			</event>
 		</choice>
 		<choice>
@@ -552,7 +554,7 @@ Storm Environment:
 		<choice><!-- 1.31 -->
 			<text>Мы передумали, атаковать их!</text>
 			<event>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			</event>
 		</choice>
 		<choice>
@@ -564,7 +566,7 @@ Storm Environment:
 	</event>
 	<event>
 		<text>Будучи "убеждённым" в необходимости помочь, он рассказывает, что его предложение было враньём, а они сами собирались напасть на ваш корабль. К тому времени, как он пришёл в себя, вы уже подготовились к бою.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Он соглашается сделать небольшую скидку и показывает вам оружие.</text>
@@ -581,7 +583,7 @@ Storm Environment:
 		<choice><!-- 1.31 -->
 			<text>Мы передумали, атаковать их!</text>
 			<event>
-				<ship hostile="true"/>
+				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			</event>
 		</choice>
 		<choice>
@@ -597,11 +599,11 @@ Storm Environment:
 	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
 	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Пиратский корабль совершил прыжок.</text>
 	</gotaway>
 	<!-- <deadCrew load="DEAD_CREW_DEFAULT"/> --><!-- 1.28 -->
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы забираете всё ценное с корабля и ищете то самое "неизвестное орудие".</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -623,27 +625,27 @@ Storm Environment:
 
 <event name="NEBULA_ROCK_RACIST" unique="true">
 	<text>Бронированный транспортник роков неподалёку от вас, похоже, потерял ориентацию в пространстве, но когда вы приветствуете их, они с подозрением отвечают: «К какой бы форме жизни вы ни принадлежали, вы нам отвратительны. Нам не нужна помощь. Уходите. Немедленно».</text>
-	<ship load="ROCK_SHIP" hostile="false"/>
+	<ship load="ROCK_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Отвратительны?! Зарядить орудия!</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
 		<text>Покинуть это место.</text>
 		<event/>
 	</choice>
-	<choice hidden="true" req="rock">
+	<choice hidden="true" req="rock_crew">
 		<text>(Член экипажа рок) Предложить вывести их из туманности.</text>
 		<event>
 			<text>Роки нехотя передают управление вам, и вы выводите их в менее плотную часть туманности. Они не знают, что и думать, но, тем не менее, передают вам часть своих запасов.</text>
 			<autoReward level="HIGH">standard</autoReward>
 		</event>
 	</choice>
-	<choice hidden="true" req="orchid">
+	<choice hidden="true" req="orchid_crew">
 		<text>(Член экипажа орхид) Отправить орхида для переговоров.</text>
 		<event>
 			<text>«Цветы? Для меня? Извините за невежливое поведение ранее». Вы ведёте роков к границе туманности, где облака рассеиваются. Роки впечатлены и передают вам кое-какие припасы.</text>
@@ -655,13 +657,13 @@ Storm Environment:
 
 <event name="NEBULA_MANTIS_CHOICE" unique="true">
 	<text>Пытаясь вслепую сориентироваться в тумане, вы чуть не столкнулись корпусами с кораблём мантисов. Они выходят на связь с вами: «Ха! Мы закроем на это глаза. Туманность, очень опасно. В следующий раз все человеки умрут».</text>
-	<ship load="MANTIS_FIGHT" hostile="false"/>
+	<ship load="MANTIS_FIGHT" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Следующего раза не будет. Открыть огонь!</text>
 		<event>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice>
@@ -672,9 +674,9 @@ Storm Environment:
 
 <event name="NEBULA_REBEL_CHASE" unique="true">
 	<text>Вы замечаете в туманности перед собой корабль повстанцев и держитесь вне их радаров. Попытаться напасть на них?</text>
-	<ship load="REBEL" hostile="false"/>
+	<ship load="REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Приготовиться к преследованию!</text>
 		<event load="NEBULA_REBEL_CHASE_LIST"/>
@@ -689,42 +691,42 @@ Storm Environment:
 		<text>(Продвинутые сенсоры) Приблизиться к ним, следуя их траектории, и одновременно приготовиться к атаке.</text>
 		<event>
 			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice req="ADV_SCANNERS" hidden="true">
 		<text>(Сканеры широкого охвата) Приблизиться к ним, следуя их траектории, и одновременно приготовиться к атаке.</text>
 		<event>
 			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice req="LIFE_SCANNER" hidden="true"><!--DLC-->
 		<text>(Сканер жизненных форм) Преследовать их, используя сканер жизненных форм.</text>
 		<event>
 			<text>Способность вашего усиления обнаруживать живые организмы оказывается крайне полезной в туманности. Вы догоняете их корабль и готовитесь к бою.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="SHIPRADAR"><!-- 1.31 -->
 		<text>(Направленный сканер) Преследовать их, используя направленный сканер.</text>
 		<event>
 			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true" req="SHIPRADAR2"><!-- 1.31 -->
 		<text>(Анализатор морфов) Преследовать их, используя анализатор.</text>
 		<event>
 			<text>Заметив вас, они делают ноги. Вы выжимаете всё, что можете из неисправных сенсоров и умудряетесь не потерять их, приближаясь на расстояние стрельбы.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 </event>
 <eventList name="NEBULA_REBEL_CHASE_LIST">
 	<event>
 		<text>Вы ориентируетесь по их FTL-следу и заходите на них с тыла, заряжая орудия.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Без помощи сенсоров вы не можете преследовать цель. Повстанцы сбежали.</text>
@@ -745,8 +747,8 @@ Storm Environment:
 <event name="NEBULA_TRADER" unique="true"><!-- 1.21 -->
 	<text>Трудно понять почему, но, видимо, этот маяк является излюбленным местом для туристов. Один из кораблей на небольшой станции предлагает сделку.</text>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="JELLY" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="JELLY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice>
 		<text>Обмен.</text>
 		<event load="NEB_TRADER_LIST_1"/>
@@ -773,15 +775,15 @@ Storm Environment:
 	<event>
 		<text>Вы решаете напасть на них и отдаёте приказ заряжать орудия. Но то ли они были готовы к нападению, то ли у них был предзажигатель орудий — вы немедленно получаете залп в борт.</text>
 		<damage amount="3" system="random" effect="random"/>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Как только вы приводите все системы в боевой режим, они делают то же самое.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event> <!-- 1.23 -->
 		<text>Как только вы приводите все системы в боевой режим, они делают то же самое.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -861,7 +863,7 @@ Storm Environment:
 <eventList name="NEB_TRADER_NEXT">
 	<event>
 		<text>Вместе с припасами на ваш корабль был доставлен "сюрприз"! Это была ловушка, но ведь вы знали, что слаги ненадёжные торговцы...</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<boarders min="1" max="4" class="slug"/>
 	</event>
 	<event>
@@ -879,7 +881,7 @@ Storm Environment:
 <event name="NEBULA_BOARDING" unique="true">
 	<text load="NEBULA_BOARDING_TEXT"/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<boarders min="2" max="4" class="human"/>
 	<triggeredEvent name="BOARDERS_DEFEATED" event="BOARDERS_CLEARED" enemyCrew="0" clearOnJump="true"><!-- 1.31 -->
 		<enemyCrew amount="0" includeClonebay="false"/>
@@ -906,11 +908,11 @@ Storm Environment:
 <event name="NEBULA_STORM_AUTO" unique="true">
 	<text>Вы впрыгиваете в сектор туманности, где бушует плазменная буря. Автоматический разведчик повстанцев, ожидавший у маяка, идёт в атаку.</text>
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Приготовиться к бою.</text>
 		<event>
-			<ship load="REBEL_AUTO" hostile="true"/>
+			<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice req="engines" lvl="3" max_group="0" hidden="true">
@@ -936,22 +938,22 @@ Storm Environment:
 	</event>
 	<event>
 		<text>Несмотря на то, что ваши двигатели улучшены, вам не удаётся разогнать их. Вы поворачиваете и готовитесь в битве.</text>
-		<ship load="REBEL_AUTO" hostile="true"/>
+		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
 <event name="NEBULA_STORM_REBEL" unique="true">
 	<text>Вы оказываетесь в самом центре плазменной бури. Несмотря на жестокие условия, вас, похоже, ждёт разведчик повстанцев.</text>
-	<ship load="REBEL" hostile="true"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 
 
 <event name="NEBULA_STORM_BOARDING" unique="true"> <!--DLC — Kinda-->
 	<text>Вы обнаруживаете неподалёку два дрейфующих повреждённых корабля. Вы начинаете собирать обломки, как вдруг внезапно раздаётся звук проникновения на ваш корабль, вслед за чем слышите крики абордажной команды.</text> 
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<boarders min="3" max="4" class="human"/>
 	<autoReward level="MED">standard</autoReward>
 </event>
@@ -975,7 +977,7 @@ Storm Environment:
 		<event load="NEBULA_STORM_ITEMS_PILOTING2"/>
 	</choice>
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 <eventList name="NEBULA_STORM_ITEMS_LIST">
 	<event>
@@ -1054,14 +1056,14 @@ Storm Environment:
 <event name="NEBULA_TASK_EVENT" unique="true"> <!-- 1.31 -->
 	<text>Рядом с маяком в туманности совершенно ничего нет. Внезапно по каналам связи вам приходит сообщение, зашифрованное простыми методами.</text>
 	<environment type="nebula" />
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice hidden="true">
 		<text>Расшифровать загадочное сообщение.</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT" /> 
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать и поговорить с командой до зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_GHOST"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="NEBULA_TASK_EVENT_ENCRIPT"> 
@@ -1121,7 +1123,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "3".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1179,7 +1181,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "6".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1238,7 +1240,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "4".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1297,7 +1299,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "10".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1356,7 +1358,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает вам, что правильный ответ "8".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1415,7 +1417,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_CORRECT" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "10".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1474,7 +1476,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "5".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1533,7 +1535,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "8".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1593,7 +1595,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "1".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1656,7 +1658,7 @@ Storm Environment:
 		<text>Отправить "10".</text>
 		<event load="NEBULA_TASK_EVENT_ENCRIPT_WRONG" /> 
 	</choice>
-	<choice req="engi" hidden="true">
+	<choice req="engi_crew" hidden="true">
 		<text>(Член экипажа инжи) Инжи подсказывает Вам, что правильный ответ "5".</text>
 		<event>
 			<text>FTL - не для читеров! Вы теряете часть своих нечестно заработанных припасов.</text>
@@ -1690,22 +1692,22 @@ Storm Environment:
 <eventList name="NEBULA_TASK_EVENT_ENCRIPT_CORRECT"> 
 	<event>
 		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируется орудие.</text>
-		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<achievement silent="false">ACH_MATH</achievement><!-- 1.31 -->
 		<weapon name="RANDOM" />
 	</event>
 	<event>
 		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируется схема дрона.</text>
-		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<achievement silent="false">ACH_MATH</achievement><!-- 1.31 -->
 		<drone name="RANDOM"/>
 	</event>
 	<event>
 		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируются ценные ресурсы.</text>
-		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<achievement silent="false">ACH_MATH</achievement><!-- 1.31 -->
 		<autoReward level="RANDOM">standard</autoReward>
 	</event>
 	<event>
 		<text>По каналам связи вы получаете радостную мелодию, а на корабль неизвестно откуда телепортируются ценные припасы.</text>
-		<achievement silent="false">ACH_MATH</achievement><!-- bamalf -->
+		<achievement silent="false">ACH_MATH</achievement><!-- 1.31 -->
 		<autoReward level="RANDOM">stuff</autoReward>
 	</event>
 </eventList>
@@ -1756,11 +1758,13 @@ Storm Environment:
 <event name="START_BEACON_AVATAR">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
-	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
+	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_avatar_sector" op="add" val="1"/>
 	<text load="START_BEACON_AVATAR"/>
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -1792,7 +1796,7 @@ Storm Environment:
 	<text load="NEBULA_FIND_STUFF_AVATAR"/>
 	<autoReward level="LOW">stuff</autoReward>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 <textList name="NEBULA_FIND_STUFF_AVATAR">
 	<text>Останки небольшого корабля медленно дрейфуют рядом с маяком. Внутри вы находите немного припасов.</text>
@@ -1806,7 +1810,7 @@ Storm Environment:
 	<text load="NEBULA_FIND_STUFF_AVATAR"/>
 	<autoReward level="LOW">standard</autoReward>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 
 <event name="FIND_STANDARD_AVATAR">
@@ -1817,7 +1821,7 @@ Storm Environment:
 <event name="NEBULA_STORE_AVATAR">
 	<text load="NEBULA_STORE_AVATAR"/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<store/>
 </event>
 <textList name="NEBULA_STORE_AVATAR">
@@ -1830,9 +1834,10 @@ Storm Environment:
 <event name="NEBULA_BOARDING_AVATAR" unique="true">
 	<text load="NEBULA_BOARDING_AVATAR_TEXT"/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<boarders min="4" max="8" class="ghost"/>
 	<autoReward level="LOW">scrap_only</autoReward>
+	<playSound>avatar_siren</playSound><!-- 1.32 -->
 </event>
 <textList name="NEBULA_BOARDING_AVATAR_TEXT">
 	<text>Вы собираете обломки небольшого космического зонда, когда на вашем корабле с ужасными звуками материализуются несколько аватаров. Команда спешно готовится к обороне.</text> 
@@ -1842,7 +1847,7 @@ Storm Environment:
 
 <event name="AVATAR_SHIPS">
 	<text load="AVATAR_SHIPS_LIST"/>
-	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<playSound>avatar_siren</playSound><!-- 1.31 -->
 </event>
 <textList name="AVATAR_SHIPS_LIST">
@@ -1860,10 +1865,10 @@ Storm Environment:
 
 <event name="NEBULA_AVATAR_SHIPS">
 	<text load="NEBULA_AVATAR_SHIPS_LIST"/>
-	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<playSound>avatar_siren</playSound><!-- 1.31 -->
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 <textList name="NEBULA_AVATAR_SHIPS_LIST">
 	<text>Неизвестно почему, но корабли аватаров всегда сопровождают звуки сирены. Заслышав её в очередной раз, ваша команда готовится к бою.</text>
@@ -1891,28 +1896,28 @@ Storm Environment:
 	</weaponOverride>
 </ship>
 <eventList name="DEAD_CREW_AVATAR">
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>На корабле не осталось ни одного аватара. Вы забираете полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>На корабле не осталось ни одного аватара. Вы забираете все полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Аватары исчезли, вы можете забрать топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="MED">fuel</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Аватары исчезли, вы можете забрать всё топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы сумели расправиться с командой аватаров. Одного из них удаётся вернуть к жизни, запрограммировав его сражаться на вашей стороне.</text>
 		<crewMember amount="1" class="ghost"/>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
-	<event>
+	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Вы находите уникальное оружие аватаров на их корабле. Так как остановить вас некому, вы забираете его себе.</text>
 		<weapon name="WEAPONS_AI_PRISM"/>
 		<autoReward level="LOW">scrap_only</autoReward><!-- 1.26 -->
@@ -1922,8 +1927,8 @@ Storm Environment:
 <event name="NEBULA_SLUG_HELP" unique="true">
 	<distressBeacon/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="JELLY2" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="JELLY2" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Оказалось, что сигналы бедствия передавал корабль слагов, попавший под атаку аватаров. Они говорят, что их корабль зияет дырами, и просят у вас лом на починку корпуса, сколько не жалко.</text>
 	<choice hidden="true">
@@ -1948,7 +1953,7 @@ Storm Environment:
 		<text>(Продвинутые сенсоры) Просканировать их корабль на наличие повреждений.</text>
 		<event>
 			<text>Сенсоры не обнаружили никаких повреждений на их корабле. Поняв, что их раскрыли, слаги переходят в атаку.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -1973,7 +1978,7 @@ Storm Environment:
 <eventList name="SLUG_KILL_THEM"><!-- 1.26.3 -->
 	<event> <!-- old event -->
 		<text>Как оказалось, их корабль не так уж сильно повреждён. Они отвечают залпом на вашу агрессию.</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<damage amount="1" system="random" effect="breach"/>
 		<damage amount="0" system="random" effect="breach"/>
@@ -1981,7 +1986,7 @@ Storm Environment:
 	<event>
 		<text>Как оказалось, их корабль не так уж сильно повреждён. Они заряжают свои орудия.</text>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.28 -->
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -2078,8 +2083,8 @@ Storm Environment:
 <event name="NEBULA_REBEL_HELP">
 	<distressBeacon/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="REBEL" hostile="true"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<text load="NEBULA_REBEL_HELP_LIST"/>
 </event>
 <textList name="NEBULA_REBEL_HELP_LIST">
@@ -2093,8 +2098,8 @@ Storm Environment:
 <event name="NEBULA_REBEL_HELP2" unique="true">
 	<distressBeacon/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="REBEL" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Похоже, что вы угодили прямо в ловушку повстанцев — сигнал бедствия передаёт их боевой крейсер! Но тут они выходят на связь: «Пожалуйста, выведите нас отсюда! Мы заблудились в туманности, а эти проклятые призраки сводят команду с ума!»</text>
 	<choice hidden="true">
@@ -2105,7 +2110,7 @@ Storm Environment:
 		<text>Атаковать их.</text>
 		<event>
 			<text>С повстанцами у вас разговор короткий — несколько выстрелов в их сторону заставляет их вспомнить, на чьей стороне вы сражаетесь.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -2119,7 +2124,7 @@ Storm Environment:
 	<event>
 		<text>Как только вы пролетаете вперёд, чтобы указать им дорогу, вам в корму прилетает залп орудий. Вероломные повстанцы вас обманули!</text>
 		<damage amount="3"/>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
@@ -2131,8 +2136,8 @@ Storm Environment:
 <event name="NEBULA_SLUG_HELP2" unique="true">
 	<distressBeacon/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
-	<ship load="JELLY2" hostile="false"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<ship load="JELLY2" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Слаги, неизвестно как оказавшиеся здесь, застряли на этом маяке без топлива. Они обещают заплатить ломом, если вы поможете им выбраться отсюда.</text>
 	<choice hidden="true">
@@ -2168,7 +2173,7 @@ Storm Environment:
 		<text>Атаковать их.</text>
 		<event>
 			<text>«Ты ещё пожалеешшшшь об этом...» — последнее, что вы слышите, перед тем как они отключились.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -2183,7 +2188,7 @@ Storm Environment:
 <event name="NEBULA_SLUG_DEAD" unique="true">
 	<distressBeacon/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Пока вы прыгали к маяку, сигнал бедствия прервался. Из-за плотной туманности вокруг вы никак не можете засечь его источник.</text>
 	<choice hidden="true">
 		<text>Отправиться дальше.</text>
@@ -2191,7 +2196,7 @@ Storm Environment:
 			<text>Больше в этом месте нечего делать, и вы готовитесь к прыжку.</text><!-- 1.25 -->
 			<choice hidden="true"><!-- 1.25 -->
 				<text id="continue"/>
-				<event load="TALK_WITH_CREW_GHOST"/>
+				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
 	</choice>
@@ -2237,16 +2242,16 @@ Storm Environment:
 
 <event name="NEBULA_AVATAR_HELP" unique="true">
 	<distressBeacon/>
-	<ship load="SHIPS_AI_FIGHT" hostile="false"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Удивительно, но сигнал бедствия передаёт корабль аватаров! Кажется, они не торопятся нападать, но и на ваши вызовы не отвечают.</text>
 	<choice hidden="true">
 		<text>Атаковать их!</text>
 		<event>
 			<text>Как только вы активируете орудия, корабль аватаров оживает и заряжает свои.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<playSound>avatar_siren</playSound><!-- 1.31 -->
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
@@ -2257,7 +2262,7 @@ Storm Environment:
 			<text>Вы решаете не нарываться на неприятности и готовитесь к отлёту.</text>
 		</event>
 	</choice>
-	<choice req="ghost" hidden="true">
+	<choice req="ghost_crew" hidden="true">
 		<text>(Член экипажа аватар) Подозвать вашего аватара.</text>
 		<event load="AVATAR_HELP_REWARD"/>
 	</choice>
@@ -2276,16 +2281,16 @@ Storm Environment:
 
 <event name="NEBULA_AVATAR_HELP2" unique="true">
 	<distressBeacon/>
-	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<playSound>avatar_siren</playSound><!-- 1.31 -->
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Сигнал бедствия оказался ловушкой, вам придётся сражаться с кораблём ИИ прямо в центре плазменной бури!</text>
 </event>
 
 <event name="AVATAR_HELP3" unique="true"> <!-- 1.28.1 -->
 	<distressBeacon/>
-	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	<playSound>avatar_siren</playSound><!-- 1.31 -->
 	<environment type="pulsar"/>
 	<variable name="counter_meet_pulsar" op="add" val="1"/>
@@ -2298,21 +2303,21 @@ Storm Environment:
 
 <event name="NEBULA_AI_KILLS_CIV" unique="true">
 	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<distressBeacon/>
 	<text>Сигнал бедствия передавало сильно потрёпанное гражданское судно. На их торговый конвой напали призраки, и, хотя гражданским удалось сбежать, на одном из кораблей встроенная система искусственного интеллекта сошла с ума и пытается убить собственный экипаж, захватив их разум. Если вам удастся повредить ИИ корабля достаточно сильно, до того как умрёт их экипаж, вас обещают отблагодарить.</text>
 	<choice hidden="true">
 		<text>Торговый конвой в этом секторе? Это не похоже на правду, атаковать их!</text>
 		<event>
 			<text>Гражданские посылают проклятья в ваш адрес, но готовятся защищаться, несмотря на повреждения.</text>
-			<ship load="DAMAGED_CIV_EVENT" hostile="true"/>
+			<ship load="DAMAGED_CIV_EVENT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Отправиться к захваченному кораблю и попробовать отключить ИИ с помощью нескольких залпов.</text>
 		<event>
 			<text>При вашем приближении судно активирует вооружение, отключив при этом свои системы жизнеобеспечения! Нужно торопиться, пока на их корабле ещё есть кислород.</text>
-			<ship load="AI_CIV_EVENT" hostile="true"/>
+			<ship load="AI_CIV_EVENT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 			<status type="limit" target="enemy" system="oxygen" amount="0"/>
 			<choice hidden="true">
 				<text id="continue"/>
@@ -2338,7 +2343,7 @@ Storm Environment:
 			<text>Прекратить огонь.</text>
 			<event>
 				<text>Вы вовремя останавливаетесь, а освободившиеся от контроля разума люди тут же спешат надеть кислородные маски. Приблизившись, гражданские осыпают вас благодарностями за спасённых товарищей и дают вам орудие из своих трюмов.</text>
-				<ship hostile="false"/>
+				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 				<autoReward level="MED">weapon</autoReward>
 				<status type="clear" target="enemy" system="oxygen" amount="100"/><!-- 1.25 -->
 			</event>
@@ -2351,11 +2356,11 @@ Storm Environment:
 			</event>
 		</choice>
 	</surrender>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Вы полностью уничтожили корабль гражданских, и благодарить за убийство своих товарищей вас явно не будут. Однако, поживиться остатками корабля никто не мешает.</text>
 		<autoReward level="LOW">stuff</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж цели мёртв, а ИИ корабля отключился, видимо, выполнив свою цель. Вы убеждаете гражданских, что сделали всё, что смогли, и те улетают прочь. А вы собираете всё ценное с захваченного корабля.</text>
 		<autoReward level="MED">stuff</autoReward>
 	</deadCrew>
@@ -2374,7 +2379,7 @@ Storm Environment:
 					<event>
 						<text>Снова проклиная вас, они отправляют ещё немного лома. Похоже, что с них больше нечего взять, вы готовитесь улететь.</text>
 						<autoReward level="LOW">scrap_only</autoReward>
-						<ship hostile="false"/>
+						<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 					</event>
 				</choice>
 				<choice hidden="true">
@@ -2386,7 +2391,7 @@ Storm Environment:
 				<choice hidden="true">
 					<text>Отпустить их и улететь.</text>
 					<event>
-						<ship hostile="false"/>
+						<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 					</event>
 				</choice>
 			</event>
@@ -2399,14 +2404,14 @@ Storm Environment:
 	<escape timer="55" min="30" max="30">
 		<text>Также вы регистрируете, что их корабль заряжает FTL-привод.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль совершил прыжок куда-то в туманность, вы не рискуете их разыскивать.</text>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль гражданских взрывается, и вы собираете оставшиеся от него обломки.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Экипаж мёртв, и вы обчищаете их трюмы.</text>
 		<autoReward level="MED">stuff</autoReward>
 	</deadCrew>

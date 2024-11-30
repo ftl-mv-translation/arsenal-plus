@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="windows-1252"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 <img x="-48" y="-50" w="271" h="359" />
 <!-- Only used for iPad -->
@@ -7,6 +6,10 @@
 <offsets>
 	<cloak x="32" y="32" />
 </offsets>
+<thrusters sync="true">
+	<thruster x="89" y="212">enemy_slug_thruster1</thruster>
+	<thruster x="167" y="212">enemy_slug_thruster1</thruster>
+</thrusters>
 <weaponMounts>
 	<mount x="45" y="171" rotate="false" mirror="true" gib="1" slide="left" />
 	<mount x="225" y="169" rotate="false" mirror="false" gib="3" slide="right" />
@@ -66,4 +69,5 @@
 		<y>140</y>
 	</gib6>
 </explosion>
+
 

@@ -8,12 +8,12 @@
 	<sectorList minSector="1" maxSector="2"> 
         <SECTOR_LIST_FRIENDLY chance="4"/>
 		<SECTOR_LIST_HOSTILE chance="4"/>
-		<SECTOR_LIST_NEBULA chance="3"/>
+		<SECTOR_LIST_NEBULA chance="2"/><!-- 1.32 -->
     </sectorList>
 	<sectorList minSector="3" maxSector="6">
         <SECTOR_LIST_FRIENDLY chance="4"/>
 		<SECTOR_LIST_HOSTILE chance="4"/>
-		<SECTOR_LIST_NEBULA chance="3"/>
+		<SECTOR_LIST_NEBULA chance="2"/><!-- 1.32 -->
 		<SECTOR_LIST_UNIQUE chance="2"/>
     </sectorList>
 </sectorMap>
@@ -396,7 +396,7 @@ CIVILIAN SECTORS
 
 <sectorDescription name="CIVILIAN_SECTOR" minSector="0" unique="false"> 
 	<nameList>
-		<name id="sectorname_CIVILIAN_SECTOR" short="sectorname_short_CIVILIAN_SECTOR"/>
+		<name id="sectorname_TRUE_CIVILIAN_SECTOR" short="sectorname_short_TRUE_CIVILIAN_SECTOR"/><!-- 1.32 -->
 	</nameList>
 	<trackList>
 		<track>civilian</track>
@@ -410,7 +410,7 @@ CIVILIAN SECTORS
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
 	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
-	<event name="NOTHING" min="0" max="1"/>
+	<event name="NOTHING" min="0" max="1"/> <!-- 0-1 -->
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
 	<event name="NEBULA" min="0" max="8"/>
@@ -433,6 +433,9 @@ CIVILIAN SECTORS
 		<track>milkyway</track>
 		<track>lostship</track>
 	</trackList>
+	<rarityList><!-- 1.32 -->
+		<blueprint name="DRONE_IONBEAM" rarity="1"/>
+	</rarityList>
 	<startEvent>START_BEACON_TRADE</startEvent>
 	<!-- <event name="STORE" min="4" max="4"/> --> <!-- 1.23 -->
 	<event name="SPECIAL_STORE" min="1" max="1"/>
@@ -760,6 +763,7 @@ HOSTILE SECTORS
 		<blueprint name="mushroom" rarity="3"/><!-- 1.31 -->
 		<blueprint name="mushroom_b" rarity="3"/><!-- 1.31 -->
 		<blueprint name="mushroom_f" rarity="3"/><!-- 1.31 -->
+		<blueprint name="blinker" rarity="1"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_BORDER</startEvent>
 	<event name="STORE_BORDER" min="1" max="2"/>
@@ -1077,6 +1081,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_SLURM</startEvent>
 	<event name="SLURM_BOSS_EVENT" min="1" max="1"/>
@@ -1092,7 +1099,7 @@ NEBULA SECTORS
 	<event name="NEBULA_NOTHING_SLURM" min="1" max="1"/>
 	<event name="NEBULA_HOSTILE_SLURM" min="2" max="4"/>
 	<event name="NEBULA_NEUTRAL_SLURM" min="3" max="4"/>
-	<event name="NEBULA_STORE_SLURM" min="0" max="3"/>
+	<event name="NEBULA_STORE_SLURM" min="1" max="3"/><!-- 1.32 -->
 </sectorDescription>
 
 <sectorDescription name="NEBULA_SECTOR" minSector="0" unique="false"> 
@@ -1128,11 +1135,15 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_NEBULA</startEvent>
+	<event name="META_TRADER_2" min="1" max="1"/><!-- 1.32 -->
 	<event name="STORE" min="0" max="1"/>
 	<event name="ITEMS" min="1" max="3"/>
-	<event name="NEBULA_STORE" min="1" max="1"/>
+	<event name="NEBULA_STORE" min="0" max="1"/><!-- 1.32 -->
 	<event name="NEBULA_EMPTY" min="1" max="2"/>
 	<event name="NEBULA_HOSTILE" min="5" max="6"/>
 	<event name="NEBULA_NEUTRAL" min="7" max="8"/>
@@ -1174,6 +1185,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="0"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_AVATAR</startEvent>
 	<event name="TUMAN_OFF_AVATAR" min="1" max="3"/>
@@ -1233,6 +1247,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="0"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<priorityEvent name="NEBULA_AI_CORE" min="1" max="1" priority="0" />
 	<startEvent>START_BEACON_AVATAR</startEvent>
@@ -1295,6 +1312,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<priorityEvent name="NEBULA_LEG_STORE_SLUG" min="1" max="1" priority="0" /><!-- 1.31 -->
 	<startEvent>START_BEACON_SLUG</startEvent>
@@ -1348,6 +1368,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_SLUG</startEvent>
 	<event name="STORE" min="0" max="1"/>
@@ -1399,6 +1422,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_UNSTABLE</startEvent>
 	<event name="NEBULA_STORM_STORE_UNSTABLE" min="1" max="3"/>
@@ -1460,6 +1486,9 @@ NEBULA SECTORS
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
+		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
 	<startEvent>START_BEACON_UNSTABLE</startEvent>
 	<event name="BATTLE_PIRATE_BOSS" min="1" max="1"/>
@@ -1862,6 +1891,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="energy_w" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTON</startEvent>
+	<event name="ZOLTON_PEACE" min="1" max="1"/><!-- 1.32 -->
 	<event name="ZOLTON_BOSS_EVENT" min="1" max="1"/>
 	<event name="EVENT_CON_LEADER" min="1" max="1"/>
 	<event name="STORE_ZOLTON" min="2" max="3"/>
@@ -1874,7 +1904,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 	<event name="BOARDERS_ZOLTON" min="1" max="2"/>
 	<event name="ITEM_ZOLTON" min="1" max="2"/>
 	<event name="QUESTS_ZOLTON" min="1" max="1"/>
-	<event name="NEUTRAL_ZOLTON" min="7" max="8"/><!-- 1.26.3 -->
+	<event name="NEUTRAL_ZOLTON" min="6" max="7"/><!-- 1.26.3 --><!-- 1.32 -->
 	
 	
 </sectorDescription>
@@ -2265,6 +2295,13 @@ HIDDEN SECTORS
 		<blueprint name="BLOOD_LASER_2" rarity="0"/>
 		<blueprint name="BLOOD_LASER_3" rarity="0"/>
 		<blueprint name="BLOOD_LASER_4" rarity="0"/>
+		<!-- 1.32 -->
+		<blueprint name="MISSILES_AREM" rarity="0"/>
+		<blueprint name="MISSILES_AREM_2" rarity="0"/>
+		<blueprint name="RICOCHET_GUN_1" rarity="0"/>
+		<blueprint name="RICOCHET_GUN_2" rarity="0"/>
+		<blueprint name="MISSILES_DRILL_1" rarity="0"/>
+		
 	</rarityList>
 	<startEvent>START_BEACON_CRYSTAL</startEvent>
 	<event name="STORE_CRYSTAL" min="2" max="3"/>

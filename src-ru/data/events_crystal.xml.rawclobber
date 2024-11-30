@@ -90,14 +90,16 @@ Special
 <event name="START_BEACON_CRYSTAL">
 	<img planet="NONE" back="CRYSTAL_CHERV"/>
 	<text>Вы оказываетесь в секторе, незарегистрированном ни в одном звёздном реестре. Странные кристаллические корабли видны повсюду. Интересно, как вас здесь встретят.</text> <!-- 1.21 -->
-	<achievement silent="false">ACH_CRYSTAL_SECTOR</achievement><!-- bamalf -->
+	<achievement silent="false">ACH_CRYSTAL_SECTOR</achievement><!-- 1.31 -->
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- bamalf -->
+	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_meet_crystal_sector" op="add" val="1"/>
 	<queueEvent seeded="true">CALCULATE_REAL_CREW</queueEvent>
 	<queueEvent seeded="true">CHECKCHAIN_ONLY_CRYSTAL</queueEvent>
-	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- bamalf -->
+	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
+	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -159,7 +161,7 @@ Special
 	<text load="NOTHING_CRYSTAL"/>
 	<choice hidden="true">
 		<text id="continue"/>
-		<event load="TALK_WITH_CREW_CRYSTAL"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <textList name="NOTHING_CRYSTAL">
@@ -193,7 +195,7 @@ Special
 	</choice>
 	<choice hidden="true"> <!-- 1.29 -->
 		<text>Игнорировать тайник и побеседовать с командой во время зарядки FTL-привода.</text>
-		<event load="TALK_WITH_CREW_CRYSTAL"/>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 	<choice hidden="true" req="MISSILES_BREACH_PLUS"> <!-- 1.28 -->
 		<text>(Бронебойные ракеты) Применить бронебойную ракету.</text>
@@ -355,7 +357,7 @@ Special
 <event name="CRYSTAL_FIGHT" unique="false">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text load="CRYSTAL_FIGHT"/>
-	<ship load="CRYSTAL_SHIP" hostile="true"/>
+	<ship load="CRYSTAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 <textList name="CRYSTAL_FIGHT">
 	<text>Вы появляетесь неподалёку от флотилии кристаллических кораблей, с виду гражданских или торговых. Вы задерживаетесь, чтобы просканировать один из них, но они немедленно реагируют и посылают конвоира, чтобы от вас отбиться. Готовьтесь к битве!</text>
@@ -370,25 +372,25 @@ Special
 <event name="CRYSTAL_CONVOY" unique="true">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>Похоже, через этот регион проходит большой конвой неуклюжих гражданских кораблей. Быть может, вы и не настроены враждебно, но они не оставляют вам выбора, посылая своего конвоира в атаку!</text>
-	<ship load="CRYSTAL_CONVOY" hostile="true"/>
+	<ship load="CRYSTAL_CONVOY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 
 <event name="CRYSTAL_HUNTER" unique="true">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>Как только вы выходите из прыжка, мимо вашего корабля проносятся осколки кристаллов. Вы сканируете местность в поисках агрессора и обнаруживаете корабль кристалинов, везущий людей в грузовом отсеке. Должно быть, он охотится на вторгшиеся на его территорию корабли!</text>
-	<ship load="CRYSTAL_HUNTER" hostile="true"/>
+	<ship load="CRYSTAL_HUNTER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 	
 <event name="CRYSTAL_REBEL" unique="false">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>Как только вы прибываете, корабль повстанцев появляется за вами. Судя по всему, они сидели у вас на хвосте.</text>
-	<ship load="REBEL" hostile="true"/>
+	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 
 <event name="CRYSTAL_AUTO" unique="true">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>Повстанцы, должно быть, отправили свои автоматические разведчики, чтобы вас найти. Один такой выходит из прыжка и немедленно движется атаковать вас.</text>
-	<ship load="REBEL_AUTO" hostile="true"/>
+	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 </event>
 
 
@@ -404,7 +406,7 @@ Special
 		<text>Атаковать повстанцев.</text>
 		<event>
 			<text>Вы уведомляете корабль кристалинов о своих намерениях и направляетесь на перехват судна повстанцев.</text>
-			<ship load="REBEL_CRYSTAL_REBEL_CRYSTAL" hostile="true"/>
+			<ship load="REBEL_CRYSTAL_REBEL_CRYSTAL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -412,7 +414,7 @@ Special
 		<event>
 			<text>Вы выдвигаетесь на перехват корабля кристалинов. Просканировав ваш корабль, повстанцы используют эту возможность для прыжка. У вас смутное подозрение, что они предупредят флот о вашем местоположении, но сейчас это меньшая из ваших проблем.</text>
 			<modifyPursuit amount="1"/>
-			<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="true"/>
+			<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -429,7 +431,7 @@ Special
 		<text>Атаковать мантиса.</text>
 		<event>
 			<text>Вы активируете свои импульсные двигатели и залетаете между мантисами и их жертвой, заряжая орудия. Похоже, вам удалось завладеть их вниманием.</text>
-			<ship load="MANTIS_CRYSTAL" hostile="true"/>
+			<ship load="MANTIS_CRYSTAL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -447,7 +449,7 @@ Special
 		<text>Атаковать пиратов.</text>
 		<event>
 			<text>Вы нагоняете пиратов прежде, чем они успевают напасть на гражданский корабль. Когда пираты понимают истинную угрозу, они разворачиваются навстречу вам.</text>
-			<ship load="PIRATE_CRYSTAL" hostile="true"/>
+			<ship load="PIRATE_CRYSTAL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -498,7 +500,7 @@ Special
 		<text>Заняться кораблём повстанцев.</text>
 		<event>
 			<text>Прежде чем вы успеваете вступить в бой, корабль кристалинов наносит прямое попадание и уничтожает корабль повстанцев! Они выходят на связь: «Вы! Вы такие же, как и другие пришельцы! Вы привели их сюда!» С этими словами они разворачивают орудия на вас!</text>
-			<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="true"/>
+			<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -518,7 +520,7 @@ Special
 		<text>Спасти корабль Федерации.</text>
 		<event>
 			<text>Не похоже, что корабль Федерации сможет долго выдерживать натиск. Вы залетаете к ним и перехватываете корабль кристалинов.</text>
-			<ship load="CRYSTAL_FED" hostile="true"/>
+			<ship load="CRYSTAL_FED" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -544,7 +546,7 @@ Special
 <event name="CRYSTAL_FED_DESERTER" unique="true">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>На мгновение показалось, что это глюк, но нет... Вы нашли боевой корабль Федерации! Они приветствовали вас, и после небольшой проверки оказалось, что они дезертировали из флота Федерации перед прыжком в этот сектор в поисках убежища.</text>
-	<ship load="FED_SHIP" hostile="false"/>
+	<ship load="FED_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="false">
 		<text>Предложить им припасы.</text>
 		<event>
@@ -560,7 +562,7 @@ Special
 		<text>Атаковать предателей.</text>
 		<event>
 			<text>Дезертиры не могут быть прощены. Вы открываете огонь по этим трусам, хоть вам это и не нравится. Федерации нужен каждый солдат.</text>
-			<ship hostile="true"/>
+			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -583,7 +585,7 @@ Special
 		<text>Отказаться.</text>
 		<event load="CRYSTAL_HUMAN_TESTS_REFUSE"/>
 	</choice>
-	<choice hidden="true" req="rock">
+	<choice hidden="true" req="rock_crew">
 		<text>(Член экипажа рок) Отправить рока.</text>
 		<event>
 			<text>«Аа! Мой дорогой эволюционный собрат! Это поистине удивительно! Мы имеем многочисленные исторические записи вашего вида, но нам недостаёт информации о последних нескольких сотнях лет. Мы можем так много узнать из этих исследований, мы должны проанализировать их как можно скорее! Пожалуйста, примите это».</text>
@@ -637,7 +639,7 @@ Special
 	</event>
 	<event>
 		<text>«Ну что ж, очень жаль. Однако мы не можем упустить эту возможность. Сдавайтесь, и с вами будут хорошо обращаться!» Военный корабль неподалёку отсоединяется и идёт на штурм.</text>
-		<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="true"/>
+		<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 </eventList>
 
@@ -679,7 +681,7 @@ Special
 <eventList name="CRYSTAL_CHATTY_LIST">
 	<event>
 		<text>Вы долго говорите о чём-то не очень интересном. «Ого, благодарю. Смотрите-ка, ещё корабль пришельцев! Хорошо бы они были такими же дружелюбными, как вы». Увидев знаки повстанцев, вы сомневаетесь в их дружелюбии. Они замечают вас и идут в атаку, пока гражданские кристалины прыгают прочь.</text>
-		<ship load="REBEL" hostile="true"/>
+		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы долго говорите о чём-то не очень интересном. «Ого, спасибо! Я не знаю, нужно ли это вам, но мы можем предложить вам немного припасов. Наверное, вы найдёте им применение в вашем путешествии».</text>
@@ -695,7 +697,7 @@ Special
 <event name="CRYSTAL_REQUEST" unique="true">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>В момент вашего прибытия вы замечаете по соседству корабль кристалинов, держащийся на расстоянии. Они сообщают вам: «Повстанцы, охотящиеся за вами, сеют хаос повсюду, где они проходят.</text>
-	<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="false"/>
+	<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -737,7 +739,7 @@ Special
 	</event>
 	<event>
 		<text>Они с первого взгляда понимают, что данные фальшивы. Им, очевидно, не слишком нравится быть обманутыми — они немедленно атакуют!</text>
-		<ship hostile="true"/>
+		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 		<boarders min="1" max="2" class="crystal"/>
 	</event>
 </eventList>
@@ -746,7 +748,7 @@ Special
 <event name="CRYSTAL_HELP_DIG" unique="true">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text>В пространстве у маяка дрейфует большой корабль кристалинов. Они выходят на связь: «Пришельцы?! Как интересно. Мы просим вашей помощи. Наших людей похоронило на ближайшей планете, и мы должны откопать их».</text>
-	<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="false"/>
+	<ship load="CRYSTAL_SHIP_NO_SURRENDER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	<choice hidden="true">
 		<text>Послать вашего члена экипажа на помощь.</text>
 		<event>
@@ -777,7 +779,7 @@ Special
 				<text>Забрать члена экипажа обратно.</text>
 				<event>
 					<text>Капитан кристалинов срочно связывается с вами: «Что всё это значит?! Если вы не хотели помочь, то могли просто отказаться, но ТАКОЕ... это оскорбление!» Он разворачивает свой массивный корабль к вашему, и вы готовитесь к битве не на жизнь, а на смерть.</text>
-					<ship hostile="true"/>
+					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 				</event>
 			</choice>
 			<choice>
@@ -811,7 +813,7 @@ Special
 						<text>Забрать члена экипажа обратно.</text>
 						<event>
 							<text>Капитан кристалинов срочно связывается с вами: «Что это всё значит?! Если вы не хотели помочь, то могли просто отказаться, но ТАКОЕ... это оскорбление!» Он разворачивает свой массивный корабль на ваш, и вы готовитесь к битве не на жизнь, а на смерть.</text>
-							<ship hostile="true"/>
+							<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
 						</event>
 					</choice>
 					<choice hidden="true">
@@ -882,16 +884,16 @@ Special
 <eventList name="CRYSTAL_SHIP_SURRENDER">
 	<event>
 		<text load="CRYSTAL_SHIP_SURRENDER_NOTHING"/>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text load="CRYSTAL_SHIP_SURRENDER_STUFF"/>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<autoReward level="RANDOM">stuff</autoReward>
 	</event>
 	<event>
 		<text>Кто-то, похожий на молодого солдата, проталкивается к коммуникатору: «Одновременно сильный в бою и снисходительный капитан? Я всегда хотел исследовать, что же находится за границей нашего закрытого сектора... Пожалуйста, разрешите мне присоединиться к вашему экипажу».</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<choice hidden="true">
 			<text>Да.</text>
 			<event>
@@ -909,22 +911,22 @@ Special
 	</event>
 	<event>
 		<text>Кристалины благодарят вас за пощаду и передают вам одно из своих орудий.</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<weapon name="WEAPONS_CRYSTAL"/>
 	</event>
 	<event>
 		<text>Кристалины благодарят вас за пощаду и передают вам усиление для корабля.</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<augment name="CRYSTAL_SHARDS"/>
 	</event>
 	<event>
 		<text load="CRYSTAL_SHIP_SURRENDER_STUFF"/>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<autoReward level="RANDOM">stuff</autoReward>
 	</event>
 	<event>
 		<text>Кто-то, похожий на молодого солдата, проталкивается к коммуникатору: «Одновременно сильный в бою и снисходительный капитан? Я всегда хотел исследовать, что же находится за границей нашего закрытого сектора... Пожалуйста, разрешите мне присоединиться к вашему экипажу».</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<choice hidden="true">
 			<text>Да.</text>
 			<event>
@@ -942,22 +944,22 @@ Special
 	</event>
 	<event>
 		<text>Кристалины благодарят вас за пощаду и передают вам одно из своих орудий.</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<weapon name="WEAPONS_CRYSTAL"/>
 	</event>
 	<event>
 		<text>Кристалины благодарят вас за пощаду и передают вам усиление для корабля.</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<augment name="CRYSTAL_SHARDS"/>
 	</event>
 	<event>
 		<text load="CRYSTAL_SHIP_SURRENDER_STUFF"/>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<autoReward level="RANDOM">stuff</autoReward>
 	</event>
 	<event>
 		<text>Кто-то, похожий на молодого солдата, проталкивается к коммуникатору: «Одновременно сильный в бою и снисходительный капитан? Я всегда хотел исследовать, что же находится за границей нашего закрытого сектора... Пожалуйста, разрешите мне присоединиться к вашему экипажу».</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<choice hidden="true">
 			<text>Да.</text>
 			<event>
@@ -975,12 +977,12 @@ Special
 	</event>
 	<event>
 		<text>Кристалины благодарят вас за пощаду и передают вам одно из своих орудий.</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<weapon name="WEAPONS_CRYSTAL"/>
 	</event>
 	<event>
 		<text>Кристалины благодарят вас за пощаду и передают вам усиление для корабля.</text>
-		<ship hostile="false"/>
+		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<augment name="CRYSTAL_SHARDS"/>
 	</event>
 </eventList>

@@ -84,7 +84,8 @@
 	</track>
 	<track>
 		<name>demiurge</name>
-		<explore>bp_MUS_Demiurge.ogg</explore>
+		<explore>bp_MUS_Demiurge_exp.ogg</explore><!-- 1.32 -->
+		<combat>bp_MUS_Demiurge.ogg</combat><!-- 1.32 -->
 	</track>
 	<track>
 		<name>incursor</name>
@@ -168,6 +169,19 @@
 		<name>void2</name>
 		<explore>bp_MUS_Void_EXPLORE.ogg</explore>
 		<combat>bp_MUS_Void_BATTLE.ogg</combat>
+	</track>
+	<!-- 1.32 -->
+	<track>
+		<name>pony_theme</name>
+		<explore>pony_theme.ogg</explore>
+	</track>
+	<track>
+		<name>pony_fly_theme</name>
+		<explore>pony_fly_theme.ogg</explore>
+	</track>
+	<track>
+		<name>pony_hell_theme</name>
+		<explore>pony_hell_theme.ogg</explore>
 	</track>
 </music>
 
@@ -689,4 +703,44 @@
 <Nether_ore_break2 volume="10">dlc/Nether_ore_break2.ogg</Nether_ore_break2>
 <Nether_ore_break3 volume="10">dlc/Nether_ore_break3.ogg</Nether_ore_break3>
 <Nether_ore_break4 volume="10">dlc/Nether_ore_break4.ogg</Nether_ore_break4>
+<!-- 1.32 -->
+<chest volume="10">ui/chest.ogg</chest>
+<alh_effect volume="10">ui/alh_effect.ogg</alh_effect>
+<hack_and_woosh volume="10">ui/hack_and_woosh.ogg</hack_and_woosh>
+<slurm_barrel volume="10">ui/slurm_barrel.ogg</slurm_barrel>
+<explosion_burtele volume="8">explosions/explosion_burtele.ogg</explosion_burtele>
+<clonning volume="8">dlc/clonning.ogg</clonning>
+<rico_shot volume="10">explosions/rico_shot.ogg</rico_shot>
+<under_hull_punch1 volume="8">explosions/under_hull_punch1.ogg</under_hull_punch1>
+<under_hull_punch2 volume="8">explosions/under_hull_punch2.ogg</under_hull_punch2>
+<under_hull_punch3 volume="8">explosions/under_hull_punch3.ogg</under_hull_punch3>
+<card1 volume="10">ui/card1.ogg</card1>
+<card2 volume="10">ui/card2.ogg</card2>
+
+<pony_press_button volume="7">ui/pony_press_button.ogg</pony_press_button>
+<pony_jump volume="5">ui/pony_jump.ogg</pony_jump>
+<pony_fire_jump volume="10">ui/pony_fire_jump.ogg</pony_fire_jump>
+<pony_slide volume="5">ui/pony_slide.ogg</pony_slide>
+<pony_dead volume="7">ui/pony_dead.ogg</pony_dead>
+<pony_win volume="7">ui/bp_upgrade_1.ogg</pony_win>
+<pony_run_laser volume="7">ui/pony_run_laser.ogg</pony_run_laser>
+<pony_add_o2 volume="4">ship/bp_air_woosh_1.ogg</pony_add_o2>
+<pony_bat_attack volume="8">ui/pony_bat_attack.ogg</pony_bat_attack>
+<pony_dragon_call volume="7">ui/pony_dragon_call.ogg</pony_dragon_call>
+<pony_dragon_dead volume="7">ui/pony_dragon_dead.ogg</pony_dragon_dead>
+<pony_eye_feels volume="7">ui/pony_eye_feels.ogg</pony_eye_feels>
+<pony_eye_attack volume="7">ui/pony_eye_attack.ogg</pony_eye_attack>
+<pony_missile_launch_down volume="7">ui/pony_missile_launch_down.ogg</pony_missile_launch_down>
+<pony_missile_launch_up volume="7">ui/pony_missile_launch_up.ogg</pony_missile_launch_up>
+<pony_ufo_laser volume="6">ui/pony_ufo_laser.ogg</pony_ufo_laser>
+<pony_ufo_taran volume="6">ui/pony_ufo_taran.ogg</pony_ufo_taran>
+<pony_enlaser volume="8">ui/pony_enlaser.ogg</pony_enlaser>
+<pony_enlaser_cold volume="7">ui/pony_enlaser_cold.ogg</pony_enlaser_cold>
+<wrong volume="7">ui/wrong.ogg</wrong>
+<pony_crystal_entering volume="10">ui/pony_crystal_entering.ogg</pony_crystal_entering>
+<pony_falls volume="10">ui/pony_falls.ogg</pony_falls>
+<pony_noise volume="8">ui/pony_noise.ogg</pony_noise>
+<pony_mine_falls volume="8">ui/pony_mine_falls.ogg</pony_mine_falls>
+<pony_boss_hit volume="8">ui/pony_boss_hit.ogg</pony_boss_hit>
+
 </FTL>

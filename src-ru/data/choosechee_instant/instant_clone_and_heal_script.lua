@@ -7,6 +7,10 @@ local vter = function(cvec) --Taken from Vertex
 	end
 end
 
+local function selectOne(n, ...)
+	return arg[n]
+end
+
 local function isShipStable(ship) --Check if the ship doesn't have a fire and doesn't have a destroyed oxygen system
 	return (ship.fireSpreader.count == 0 and not (ship.oxygenSystem and ship.oxygenSystem:CompletelyDestroyed()))
 end
@@ -31,7 +35,7 @@ local function getMaxRoomSize(shipGraph)
 	return maxRoomSize
 end
 
-local function getHealingOfStatBoost(statBoost, shipId)
+local function getHealingOfStatBoost(statBoost, power, shipId)
 	local healAmount = 0
 	local trueHealAmount = 0
 	local shipGraph = Hyperspace.ShipGraph.GetShipInfo(shipId)
@@ -42,35 +46,35 @@ local function getHealingOfStatBoost(statBoost, shipId)
 	or statBoost.crewTarget == Hyperspace.StatBoostDefinition.CrewTarget.ORIGINAL_ALLIES)
 	and (statBoost.droneTarget == Hyperspace.StatBoostDefinition.DroneTarget.ALL
 	or statBoost.droneTarget == Hyperspace.StatBoostDefinition.DroneTarget.CREW)
+	and (statBoost.whiteList:size() + statBoost.blackList:size()) == 0
 	then
-		if statBoost.PASSIVE_HEAL_AMOUNT then
-			healAmount = healAmount + statBoost.PASSIVE_HEAL_AMOUNT
-		end
-		if statBoost.ACTIVE_HEAL_AMOUNT then
-			healAmount = healAmount + statBoost.ACTIVE_HEAL_AMOUNT
-		end
-		if statBoost.TRUE_PASSIVE_HEAL_AMOUNT then
-			trueHealAmount = trueHealAmount + statBoost.TRUE_PASSIVE_HEAL_AMOUNT
-		end
-		if statBoost.TRUE_HEAL_AMOUNT then
-			trueHealAmount = trueHealAmount + statBoost.TRUE_HEAL_AMOUNT
-		end
-		if statBoost.HEAL_CREW_AMOUNT then
+		if statBoost.stat == Hyperspace.CrewStat.PASSIVE_HEAL_AMOUNT or statBoost.stat == Hyperspace.CrewStat.ACTIVE_HEAL_AMOUNT then
+			healAmount = healAmount + statBoost.amount
+		elseif statBoost.stat == Hyperspace.CrewStat.TRUE_PASSIVE_HEAL_AMOUNT or statBoost.stat == Hyperspace.CrewStat.TRUE_HEAL_AMOUNT then
+			trueHealAmount = trueHealAmount + statBoost.amount
+		elseif statBoost.stat == Hyperspace.CrewStat.HEAL_CREW_AMOUNT then
 			local optimalRoomMultiplier = 1
-			if statBoost.HEAL_CREW_AMOUNT > 0 then
+			if statBoost.amount > 0 then
 				optimalRoomMultiplier = getMaxRoomSize(shipGraph) - (statBoost.affectsSelf and 0 or 1)
 			end
-			healAmount = healAmount + (statBoost.HEAL_CREW_AMOUNT * optimalRoomMultiplier)
+			healAmount = healAmount + (statBoost.amount * optimalRoomMultiplier)
+		elseif statBoost.stat == Hyperspace.CrewStat.STAT_BOOST then
+			for providedStatBoost in vter(statBoost.providedStatBoosts) do
+				partialHealAmount, partialTrueHealAmount = getHealingOfStatBoost(providedStatBoost, power, shipId)
+				healAmount = healAmount + partialHealAmount
+				trueHealAmount = trueHealAmount + partialTrueHealAmount
+			end
 		end
 	elseif statBoost.crewTarget == Hyperspace.StatBoostDefinition.CrewTarget.SELF then
-		if ((statBoost.PASSIVE_HEAL_AMOUNT and  statBoost.PASSIVE_HEAL_AMOUNT < 0)
-		or (statBoost.ACTIVE_HEAL_AMOUNT and statBoost.ACTIVE_HEAL_AMOUNT < 0)
-		or (statBoost.TRUE_PASSIVE_HEAL_AMOUNT and statBoost.TRUE_PASSIVE_HEAL_AMOUNT < 0)
-		or (statBoost.TRUE_HEAL_AMOUNT and statBoost.TRUE_HEAL_AMOUNT < 0))
-		and not power.def.playerReq.minHealth.enabled then return -2147483648, -2147483648 end --for Anurak and other crew like them
+		if ((statBoost.stat == Hyperspace.CrewStat.PASSIVE_HEAL_AMOUNT
+		or statBoost.stat == Hyperspace.CrewStat.ACTIVE_HEAL_AMOUNT
+		or statBoost.stat == Hyperspace.CrewStat.TRUE_PASSIVE_HEAL_AMOUNT
+		or statBoost.stat == Hyperspace.CrewStat.TRUE_HEAL_AMOUNT)
+		and statBoost.amount < 0)
+		and not power.def.playerReq.minHealth.enabled then return -2000000000, -2000000000 end --for Anurak and other crew like them
 		
-		if statBoost.HEAL_CREW_AMOUNT then
-			healAmount = healAmount + statBoost.HEAL_CREW_AMOUNT
+		if statBoost.stat == Hyperspace.CrewStat.HEAL_CREW_AMOUNT then
+			healAmount = healAmount + statBoost.amount
 		end
 	end
 	
@@ -82,16 +86,22 @@ local function getHealingOfPower(power, shipId) --Check how much HP/s a power ca
 	local totalTrueHealAmount = 0
 	
 	totalHealAmount = totalHealAmount + power.def.tempPower.healCrewAmount.value
-	totalTrueHealAmount = totalTrueHealAmount + (power.def.crewHealth / power.powerCooldown.second)
+	totalTrueHealAmount = totalTrueHealAmount + (power.def.crewHealth / (power.powerCooldown.second + power.def.tempPower.duration))
 	
 	for statBoost in vter(power.def.statBoosts) do
-		local healAmount, trueHealAmount = getHealingOfStatBoost(statBoost, shipId)
+		local healAmount, trueHealAmount = getHealingOfStatBoost(statBoost, power, shipId)
 		totalHealAmount = totalHealAmount + healAmount
 		totalTrueHealAmount = totalTrueHealAmount + trueHealAmount
 	end
 	
 	for roomStatBoost in vter(power.def.roomStatBoosts) do
-		local healAmount, trueHealAmount = getHealingOfStatBoost(roomStatBoost, shipId)
+		local healAmount, trueHealAmount = getHealingOfStatBoost(roomStatBoost, power, shipId)
+		totalHealAmount = totalHealAmount + healAmount
+		totalTrueHealAmount = totalTrueHealAmount + trueHealAmount
+	end
+	
+	for tempStatBoost in vter(power.def.tempPower.statBoosts) do
+		local healAmount, trueHealAmount = getHealingOfStatBoost(tempStatBoost, power, shipId)
 		totalHealAmount = totalHealAmount + healAmount
 		totalTrueHealAmount = totalTrueHealAmount + trueHealAmount
 	end
@@ -99,30 +109,81 @@ local function getHealingOfPower(power, shipId) --Check how much HP/s a power ca
 	return totalHealAmount, totalTrueHealAmount
 end
 
+function printHealingOfPowers(crew)
+	if type(crew) == "string" then
+		for crewmember in vter(Hyperspace.ships.player.vCrewList) do
+			if crew == crewmember:GetName() or crew == crewmember:GetLongName() or crew == crewmember:GetSpecies() then
+				crew = crewmember
+				break
+			end
+		end
+	end
+	
+	for power in vter(crew.extend.crewPowers) do
+		print(crew:GetName())
+		print(getHealingOfPower(power, 0))
+		print("\nNormal Stat Boosts")
+		for statBoost in vter(power.def.statBoosts) do
+			print(getHealingOfStatBoost(statBoost, power, 0))
+		end
+		print("\nRoom Stat Boosts")
+		for roomStatBoost in vter(power.def.roomStatBoosts) do
+			print(getHealingOfStatBoost(roomStatBoost, power, 0))
+		end
+		print("\nTemp Stat Boosts")
+		for tempStatBoost in vter(power.def.tempPower.statBoosts) do
+			print(getHealingOfStatBoost(tempStatBoost, power, 0))
+		end
+	end
+end
+
+function printAllHealingOfPowers()
+	for crew in vter(Hyperspace.ships.player.vCrewList) do
+		printHealingOfPowers(crew)
+		print()
+	end
+end
+
+local currentHealers = {}
+
 local function getMaxHealer(ship)
 	local maxHealAmount = 0
 	local maxTrueHealAmount = 0
+	currentHealers = {}
+	currentHealers.size = 0
 	
 	if ship:HasSystem(5) and ship:GetSystem(5):GetEffectivePower() > 0 then --5 is medbay
 		maxHealAmount = 6.4 * math.max(1.5 * (ship:GetSystem(5):GetEffectivePower() - 1), 1)
+		currentHealers[ship:GetSystem(5)] = 6.4 * math.max(1.5 * (ship:GetSystem(5):GetEffectivePower() - 1), 1)
+		currentHealers.size = currentHealers.size + 1
 	end
 	
 	--Find the best healer on the ship
 	for crew in vter(ship.vCrewList) do
-		local healCrewAmount, _ = crew.extend:CalculateStat(Hyperspace.CrewStat.HEAL_CREW_AMOUNT)
-		local maxHealingOfCrew = healCrewAmount
+		local maxHealingOfCrew = 0
 		local maxTrueHealingOfCrew = 0
 		
-		local _, isSilenced = crew.extend:CalculateStat(Hyperspace.CrewStat.SILENCED)
-		if (crew:IsCrew() or crew:Functional()) and not isSilenced then --If they're not an inactive drone and they aren't silenced/afflicted by madness
-			for power in vter(crew.extend.crewPowers) do
-				if power.enabled and power.def.playerReq.minHealth.value < crew:GetIntegerHealth() then
-					local powerHealAmount, powerTrueHealAmount = getHealingOfPower(power, ship.iShipId)
-					maxHealingOfCrew = maxHealingOfCrew + powerHealAmount
-					maxTrueHealingOfCrew = maxTrueHealingOfCrew + powerTrueHealAmount
+		if (crew:IsCrew() or crew:Functional()) then --If they're not an inactive drone
+			local healCrewAmount, _ = crew.extend:CalculateStat(Hyperspace.CrewStat.HEAL_CREW_AMOUNT)
+			maxHealingOfCrew = healCrewAmount
+			
+			local _, isSilenced = crew.extend:CalculateStat(Hyperspace.CrewStat.SILENCED)
+			if not isSilenced then
+				for power in vter(crew.extend.crewPowers) do
+					if power.enabled and power.def.playerReq.minHealth.value < crew:GetIntegerHealth() then
+						local powerHealAmount, powerTrueHealAmount = getHealingOfPower(power, ship.iShipId)
+						maxHealingOfCrew = maxHealingOfCrew + powerHealAmount
+						maxTrueHealingOfCrew = maxTrueHealingOfCrew + powerTrueHealAmount
+					end
 				end
 			end
 		end
+		
+		if maxHealingOfCrew > 0 or maxTrueHealingOfCrew > 0 then
+			currentHealers[crew] = true
+			currentHealers.size = currentHealers.size + 1
+		end
+		
 		maxHealAmount = math.max(maxHealAmount, maxHealingOfCrew)
 		maxTrueHealAmount = math.max(maxTrueHealAmount, maxTrueHealingOfCrew)
 	end
@@ -188,7 +249,17 @@ script.on_internal_event(Defines.InternalEvents.SHIP_LOOP, function(ship)
 			if ((((maxHealAmount * healSpeed) + maxTrueHealAmount + getCrewDecay(crew)) > 0
 			and (((not crew.bSuffocating) and ship:GetOxygenPercentage() >= 70) or crewCanSurviveNoOxygen(crew)))
 			or (droneSystemPowered and crew:IsDrone()))
+			and ((currentHealers.size > 1
+			and (getCrewDecay(crew) == 0 or (currentHealers[ship:GetSystem(5)] and currentHealers[ship:GetSystem(5)] > math.abs(getCrewDecay(crew)))
+			or not currentHealers[crew])) or not currentHealers[crew])
 			and not crew.extend.deathTimer then
+				--[[
+				if crew.health.first ~= crew.health.second then
+					for source, value in pairs(currentHealers) do
+						print(source, value)
+					end
+				end
+				]]
 				crew:DirectModifyHealth(999)
 			end
 		end

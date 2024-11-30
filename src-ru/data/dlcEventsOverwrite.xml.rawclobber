@@ -11,7 +11,7 @@ STORE_REBELSIDE
 -->
 
 
-<eventList name="OVERRIDE_HOSTILE2"> <!-- это работает? bamalf на эту хрень нет линка по файлам. я хз боюсь удалять... -->
+<eventList name="OVERRIDE_HOSTILE2"> <!-- это работает? на эту хрень нет линка по файлам. я хз боюсь удалять... -->
 	<event load="MARADERS1_EVENT"/>
 	<event load="REBEL_PDS"/>
 	<event load="REBEL_AUTO"/>
@@ -42,7 +42,7 @@ Smaller Event Lists
 	<escape  chance="0.8" min="4" max="6">
 		<text>Видя, что его звено уничтожено, командир повстанцев пытается сбежать, поджав хвост.</text>
 	</escape>
-	<gotaway>
+	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Корабль повстанцев, совершив прыжок, скрывается из виду.</text>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -54,7 +54,7 @@ Smaller Event Lists
 			</event>
 		</choice>
 	</gotaway>
-	<destroyed>
+	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
 		<text>Вы разбираете обломки на лом.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -67,7 +67,7 @@ Smaller Event Lists
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew>
+	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
 		<text>Уничтожив экипаж, вы обшариваете корабль.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
