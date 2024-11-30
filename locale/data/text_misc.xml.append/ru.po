@@ -2907,7 +2907,7 @@ msgstr "Даёт питание дронам на корабле."
 
 #: src-ru/data/text_misc.xml.append:899
 msgid "data/text_misc.xml.append$//text[@name=\"free_drone\"]"
-msgstr "Случайный дрон в подарок: \\1"
+msgstr "Случайный дрон в подарок: \\1\\n(Фиксированная цена продажи 30~)"
 
 #: src-ru/data/text_misc.xml.append:901
 msgid "data/text_misc.xml.append$//text[@name=\"sys_full\"]"
@@ -3003,7 +3003,7 @@ msgstr "Интерьер корабля врага"
 
 #: src-ru/data/text_misc.xml.append:932
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_3\"]"
-msgstr "Уворот, О2 и орудия врага"
+msgstr "|, }, уворот, О2 и орудия врага"
 
 #: src-ru/data/text_misc.xml.append:933
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_4\"]"
@@ -3414,7 +3414,7 @@ msgstr "Клонирование..."
 
 #: src-ru/data/text_misc.xml.append:1082
 msgid "data/text_misc.xml.append$//text[@name=\"power_ready\"]"
-msgstr "Готово: Нажмите, чтобы блокировать комнату\\nГорячая клавиша: \\1"
+msgstr "Готово: Блокировать комнату. [30 ‡]\\nГорячая клавиша: \\1"
 
 #: src-ru/data/text_misc.xml.append:1083
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready\"]"
@@ -4919,7 +4919,7 @@ msgstr "Благодарность за ценный вклад:"
 msgid "data/text_misc.xml.append$//text[@name=\"family_friends\"]"
 msgstr ""
 "Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\\side\\,\n"
-"DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona и другие"
+"DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod and ROGUE AI CRUISERS mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona и другие"
 
 #: src-ru/data/text_misc.xml.append:1576
 msgid "data/text_misc.xml.append$//text[@name=\"credits_loc_fr\"]"
@@ -5384,8 +5384,10 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1717
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_true_end\"]"
 msgstr ""
-"Флагман чёрного крыла повержен. Несомненно, вы сможете вернуться и завершить"
-" свою миссию по спасению Федерации, но это уже совсем другая история..."
+"Вы оказываетесь прямо рядом с базой Федерации, на которую напал флагман "
+"повстанцев. Закалённые в бою с чёрным флагманом, вы уничтожаете повстанцев, "
+"даже не почувствовав их сопротивления. Федерации больше ничто не угрожает, а"
+" вас навсегда запомнят как героев."
 
 #: src-ru/data/text_misc.xml.append:1720
 msgid "data/text_misc.xml.append$//text[@name=\"crewlist_more\"]"
@@ -5433,7 +5435,7 @@ msgid ""
 "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_developed_names\"]"
 msgstr ""
 "TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, "
-"mathchamp93,\\nMr. Doom (Nasa62), Chrono Vortex"
+"mathchamp93,\\nMr. Doom (Nasa62), Chrono Vortex, Pepson"
 
 #: src-ru/data/text_misc.xml.append:1732
 msgid "data/text_misc.xml.append$//text[@name=\"credits_hyperspace_art\"]"
