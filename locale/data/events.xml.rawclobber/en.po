@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-11-30 09:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataeventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -86,31 +93,37 @@ msgid ""
 msgstr "Summon an asteroid field"
 
 #: src-ru/data/events.xml.rawclobber:159
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_SLOW\"]/tooltip"
 msgstr "Set the game's speed to 0.125x."
 
 #: src-ru/data/events.xml.rawclobber:164
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_SLOW\"]/inactiveTooltip"
 msgstr "The current speed is 0.125x."
 
 #: src-ru/data/events.xml.rawclobber:178
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_RESET\"]/tooltip"
 msgstr "Set the game's speed to 1.0x."
 
 #: src-ru/data/events.xml.rawclobber:183
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_RESET\"]/inactiveTooltip"
 msgstr "The current speed is 1.0x."
 
 #: src-ru/data/events.xml.rawclobber:197
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/tooltip"
 msgstr "Set the game's speed to 20.0x."
 
 #: src-ru/data/events.xml.rawclobber:202
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/inactiveTooltip"
 msgstr "The current speed is 20.0x."
@@ -267,6 +280,7 @@ msgid "data/events.xml.rawclobber$//event[@name=\"ARSENAL_START_4\"]/text"
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:502
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ARSENAL_START_4\"]/choice[1]/text"
 msgstr "Collect this augment."
@@ -277,6 +291,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:513
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ARSENAL_START_4\"]/choice[2]/text"
 msgstr "Collect this augment."
@@ -287,6 +302,7 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:524
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ARSENAL_START_4\"]/choice[3]/text"
 msgstr "Collect this augment."
@@ -4951,11 +4967,12 @@ msgstr ""
 "just wait for the next ship to come.\""
 
 #: src-ru/data/events.xml.rawclobber:4405
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ESCORT_BEACON\"]/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
 msgstr ""
-"(Advanced FTL Navigation) Have your navigation software calculate and upload"
-" route instructions to their ship."
+"(Advanced FTL Navigation) Have your navigation software calculate and upload "
+"route instructions to their ship."
 
 #: src-ru/data/events.xml.rawclobber:4407
 #, fuzzy
@@ -30209,6 +30226,7 @@ msgid ""
 msgstr "You pick up your weapon and prepare to depart."
 
 #: src-ru/data/events.xml.rawclobber:25601
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"RUHLAD_BUY_DVA\"]/choice[2]/text"
 msgstr "Choose this weapon."
@@ -31210,6 +31228,7 @@ msgstr ""
 "You kill off the last of their crew and quickly clean out the ship's holds."
 
 #: src-ru/data/events.xml.rawclobber:26465
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"SLUG_VS_LANIUS_FOTON_SHIPS_JELLY\"]/deadCrew/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
 msgstr ""
@@ -52997,6 +53016,7 @@ msgid ""
 msgstr "You quickly collect all that survives the explosion."
 
 #: src-ru/data/events.xml.rawclobber:45547
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"TR_FED_MISSILES_P\"]/destroyed/choice/event/text"
 msgstr ""
@@ -59556,6 +59576,7 @@ msgid ""
 msgstr "You decide to get out, before you get taken into slavery yourself."
 
 #: src-ru/data/events.xml.rawclobber:58441
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_PIRATE_RABSTVO_R\"]/text"
 msgstr "Before you are a few prisoners. Who do you want to buy?"
 
@@ -61147,6 +61168,7 @@ msgid ""
 msgstr "With the ship's crew dead, you inspect its holds..."
 
 #: src-ru/data/events.xml.rawclobber:59442
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"TUCO_EVENT_R\"]/event[1]/text"
 msgstr ""
@@ -61159,6 +61181,7 @@ msgid ""
 msgstr "...you notice a surviving Timer Bomb! Now that's a treat!"
 
 #: src-ru/data/events.xml.rawclobber:59454
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"TUCO_EVENT_R2\"]/event[1]/text"
 msgstr ""
@@ -64211,6 +64234,7 @@ msgid ""
 msgstr "Continue the flight."
 
 #: src-ru/data/events.xml.rawclobber:61798
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ZOLTAN_SCI_F\"]/destroyed/choice[@req=\"FTL_JUMPER_GOOD\""
 " and @lvl=\"0\"]/event/text"
@@ -64246,6 +64270,7 @@ msgid ""
 msgstr "Continue the flight."
 
 #: src-ru/data/events.xml.rawclobber:61817
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ZOLTAN_SCI_F\"]/deadCrew/choice[@req=\"FTL_JUMPER_GOOD\""
 " and @lvl=\"0\"]/event/text"
