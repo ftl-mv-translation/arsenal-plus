@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2025-03-11 23:09+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"dataeventsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -89,37 +96,67 @@ msgstr "Summon an asteroid field"
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_SLOW\"]/tooltip"
-msgstr "Set the game's speed to 0.125x."
+msgstr ""
+"Set the game's speed to 0.125x.\n"
+"\t\t\n"
+"\t\tSpeed Up: LEFT ALT (hold)\n"
+"\t\tIncrease Speed: ]\n"
+"\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:164
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_SLOW\"]/inactiveTooltip"
-msgstr "The current speed is 0.125x."
+msgstr ""
+"The current speed is 0.125x.\n"
+"\t\t\n"
+"\t\tSpeed Up: LEFT ALT (hold)\n"
+"\t\tIncrease Speed: ]\n"
+"\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:178
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_RESET\"]/tooltip"
-msgstr "Set the game's speed to 1.0x."
+msgstr ""
+"Set the game's speed to 1.0x.\n"
+"\t\t\n"
+"\t\tSpeed Up: LEFT ALT (hold)\n"
+"\t\tIncrease Speed: ]\n"
+"\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:183
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_RESET\"]/inactiveTooltip"
-msgstr "The current speed is 1.0x."
+msgstr ""
+"The current speed is 1.0x.\n"
+"\t\t\n"
+"\t\tSpeed Up: LEFT ALT (hold)\n"
+"\t\tIncrease Speed: ]\n"
+"\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:197
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/tooltip"
-msgstr "Set the game's speed to 20.0x."
+msgstr ""
+"Set the game's speed to 20.0x.\n"
+"\t\t\n"
+"\t\tSpeed Up: LEFT ALT (hold)\n"
+"\t\tIncrease Speed: ]\n"
+"\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:202
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/inactiveTooltip"
-msgstr "The current speed is 20.0x."
+msgstr ""
+"The current speed is 20.0x.\n"
+"\t\t\n"
+"\t\tSpeed Up: LEFT ALT (hold)\n"
+"\t\tIncrease Speed: ]\n"
+"\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:220
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"SELL_RESOURCES\"]/tooltip"
@@ -141,14 +178,16 @@ msgid ""
 msgstr "The pirates are coming on board..."
 
 #: src-ru/data/events.xml.rawclobber:282
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON\"]/choice[@req=\"SERENITY_AUG\"]/event/eventButton[@name=\"HID_AUG_BUTTON\"]/inactiveTooltip"
-msgstr ""
+msgstr "Built-in augmentation: Extra Cabins (adds 4 more crew slots)"
 
 #: src-ru/data/events.xml.rawclobber:299
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"START_BEACON\"]/choice[@req=\"TRICOLOR_AUG\"]/event/eventButton[@name=\"HID_AUG_BUTTON\"]/inactiveTooltip"
-msgstr ""
+msgstr "Built-in augmentation: Radar (shows sector map)"
 
 #: src-ru/data/events.xml.rawclobber:327
 msgid ""
@@ -156,9 +195,10 @@ msgid ""
 msgstr "The LTO addon should not be used in this version of the mod."
 
 #: src-ru/data/events.xml.rawclobber:382
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"MUSHROOM_REPAIR_EVENT_3\"]/loadEventList/event[8]/text"
-msgstr ""
+msgstr "Suddenly a Young Mushroom emerges from the mycelium!"
 
 #: src-ru/data/events.xml.rawclobber:392
 msgid "data/events.xml.rawclobber$//event[@name=\"ARSENAL_START\"]/text"
