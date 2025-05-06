@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-14 22:31+0000\n"
+"PO-Revision-Date: 2025-05-06 23:49+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.1\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -55181,72 +55181,75 @@ msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:47202
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/text"
-msgstr ""
+msgstr "What will you do?"
 
 #: src-ru/data/events.xml.rawclobber:47204
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/text"
-msgstr ""
+msgstr "Inject a suitable weapon."
 
 #: src-ru/data/events.xml.rawclobber:47206
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/text"
-msgstr ""
+msgstr "Which injector will you use?"
 
 #: src-ru/data/events.xml.rawclobber:47208
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_PRC\"]/text"
-msgstr ""
+msgstr "(Piercing Injector) Increase a weapon's shield piercing."
 
 #: src-ru/data/events.xml.rawclobber:47212
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_FRC\"]/text"
-msgstr ""
+msgstr "(Flame Injector) Increase a weapon's chance to start fires."
 
 #: src-ru/data/events.xml.rawclobber:47216
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_BRC\"]/text"
-msgstr ""
+msgstr "(Breach Injector) Increase a weapon's chance to cause breaches."
 
 #: src-ru/data/events.xml.rawclobber:47220
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_CLD\"]/text"
-msgstr ""
+msgstr "(Cooldown Injector) Make a weapon fire faster."
 
 #: src-ru/data/events.xml.rawclobber:47224
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_POW\"]/text"
-msgstr ""
+msgstr "(Power Injector) Reduce the power cost of a weapon."
 
 #: src-ru/data/events.xml.rawclobber:47228
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_UNI\"]/text"
-msgstr ""
+msgstr "(Universal Injector) Upgrade a weapon based on its type."
 
 #: src-ru/data/events.xml.rawclobber:47232
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[@req=\"INJECTOR_ACC\"]/text"
-msgstr ""
+msgstr "(Accuracy Injector) Increase a weapon's chance to hit."
 
 #: src-ru/data/events.xml.rawclobber:47236
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_RANDOM\"]/event/choice[8]/text"
-msgstr ""
+msgstr "Close the hold."
 
 #: src-ru/data/events.xml.rawclobber:47242
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"INJECTOR_WEAPONS\"]/text"
-msgstr ""
+msgstr "Remove an injection from a weapon (you will not get the injector back)."
 
 #: src-ru/data/events.xml.rawclobber:47246
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"CAN_BE_HIDDEN_AUGS\"]/text"
 msgstr ""
+"Integrate an augment into the ship's blueprint, freeing up a slot for other "
+"augments. Not possible for stackable augments, combined augments or "
+"upgradable augments."
 
 #: src-ru/data/events.xml.rawclobber:47248
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"CAN_BE_HIDDEN_AUGS\"]/event/text"
-msgstr ""
+msgstr "You are checking the cost of integration..."
 
 #: src-ru/data/events.xml.rawclobber:47250
 msgid ""
