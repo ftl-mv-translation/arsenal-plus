@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-15 01:22+0000\n"
+"PO-Revision-Date: 2025-05-06 06:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.1\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: src-ru/data/blueprints.xml.rawclobber:168
 msgid ""
@@ -1018,7 +1018,7 @@ msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:3677
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TRADE_BOX_2\"]/title"
-msgstr "Sublimated Food"
+msgstr "Gourmet Frozen Food"
 
 #: src-ru/data/blueprints.xml.rawclobber:3678
 #, fuzzy
@@ -1536,7 +1536,9 @@ msgstr "Mine+ II"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_MEDIUMP\"]/desc"
 msgstr ""
-"Constantly launches medium anti-hull mines towards enemy ships.\n"
+"Constantly launches medium anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
+"\n"
 "\tRequires less power and is very likely to dodge projectiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:5035
@@ -1553,7 +1555,9 @@ msgstr "Mine+ I"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_SMALLP\"]/desc"
 msgstr ""
-"Constantly launches small anti-hull mines towards enemy ships.\n"
+"Constantly launches small anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
+"\n"
 "\tRequires less power and is very likely to dodge projectiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:5053
@@ -75203,10 +75207,11 @@ msgid ""
 msgstr "Light I"
 
 #: src-ru/data/blueprints.xml.rawclobber:149875
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_LIGHT_MISSILE_STUN\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"This light drone damages and stuns enemy crew with small light grenades that "
+"pierce shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:149890
 #, fuzzy
@@ -75221,10 +75226,11 @@ msgid ""
 msgstr "Light II"
 
 #: src-ru/data/blueprints.xml.rawclobber:149892
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_LIGHT_MISSILE_STUN_2\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"This light drone damages and stuns enemy crew with small light grenades that "
+"pierce shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:149907
 #, fuzzy
@@ -75319,10 +75325,11 @@ msgid ""
 msgstr "H. Scatter"
 
 #: src-ru/data/blueprints.xml.rawclobber:149977
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_HEAVY_SCATTER\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Huge drone that constantly attacks the enemy ship with a heavy laser that "
+"deals reduced damage to systems and crew."
 
 #: src-ru/data/blueprints.xml.rawclobber:149992
 #, fuzzy
@@ -75337,10 +75344,9 @@ msgid ""
 msgstr "Heavy I"
 
 #: src-ru/data/blueprints.xml.rawclobber:149994
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_HEAVY_1\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that deals great damage with heavy lasers."
 
 #: src-ru/data/blueprints.xml.rawclobber:150009
 #, fuzzy
@@ -75355,10 +75361,11 @@ msgid ""
 msgstr "Heavy II"
 
 #: src-ru/data/blueprints.xml.rawclobber:150011
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_HEAVY_2\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Powerful drone that deals great damage with heavy lasers. Faster than its "
+"predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:150026
 #, fuzzy
@@ -75413,10 +75420,9 @@ msgid ""
 msgstr "L. Missile"
 
 #: src-ru/data/blueprints.xml.rawclobber:150062
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_LIGHT_MISSILE\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that damages enemy crew and systems with micro missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:150078
 #, fuzzy
@@ -75451,10 +75457,9 @@ msgid ""
 msgstr "Missile I"
 
 #: src-ru/data/blueprints.xml.rawclobber:150097
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_1\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:150112
 #, fuzzy
@@ -75469,10 +75474,11 @@ msgid ""
 msgstr "H. Missile"
 
 #: src-ru/data/blueprints.xml.rawclobber:150114
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_2\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Extremely slow drone that constantly attacks the enemy ship with heavy "
+"missile strikes."
 
 #: src-ru/data/blueprints.xml.rawclobber:150129
 #, fuzzy
@@ -75487,10 +75493,10 @@ msgid ""
 msgstr "Missile II"
 
 #: src-ru/data/blueprints.xml.rawclobber:150131
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_3\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Powerful drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:150146
 #, fuzzy
@@ -75505,10 +75511,11 @@ msgid ""
 msgstr "Swarm"
 
 #: src-ru/data/blueprints.xml.rawclobber:150148
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_BARRAGE\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Very slow drone that constantly attacks the enemy ship with swarm missile "
+"strikes."
 
 #: src-ru/data/blueprints.xml.rawclobber:150163
 #, fuzzy
@@ -75523,10 +75530,11 @@ msgid ""
 msgstr "Mine I"
 
 #: src-ru/data/blueprints.xml.rawclobber:150165
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_SMALL\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches small anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:150180
 #, fuzzy
@@ -75541,10 +75549,11 @@ msgid ""
 msgstr "Mine II"
 
 #: src-ru/data/blueprints.xml.rawclobber:150182
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_MEDIUM\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches medium anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:150197
 #, fuzzy
@@ -75758,10 +75767,9 @@ msgid ""
 msgstr "Heavy Ion"
 
 #: src-ru/data/blueprints.xml.rawclobber:150410
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_2\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that attacks enemy ships with its heavy ion cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:150425
 #, fuzzy
@@ -75776,10 +75784,9 @@ msgid ""
 msgstr "Ion II"
 
 #: src-ru/data/blueprints.xml.rawclobber:150427
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Advanced drone that constantly attacks enemy ships with ion blasts."
 
 #: src-ru/data/blueprints.xml.rawclobber:150441
 msgid ""
@@ -75804,10 +75811,10 @@ msgid ""
 msgstr "Ion III"
 
 #: src-ru/data/blueprints.xml.rawclobber:150479
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_ION_V3\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"This advanced drone can completely disable small ships with its ion cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:150494
 msgid ""
@@ -75898,10 +75905,11 @@ msgid ""
 msgstr "Phase Ion"
 
 #: src-ru/data/blueprints.xml.rawclobber:150632
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_PIERCE\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"An advanced drone that constantly attacks enemy shields and systems with a "
+"phase ion weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:150646
 msgid ""
@@ -76121,22 +76129,22 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:151281
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"DE_DRONE_MINES_SMALL\"]/title"
-msgstr ""
+msgstr "Small Bomb"
 
 #: src-ru/data/blueprints.xml.rawclobber:151282
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"DE_DRONE_MINES_SMALL\"]/short"
-msgstr ""
+msgstr "Small Bomb"
 
 #: src-ru/data/blueprints.xml.rawclobber:151312
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"DE_DRONE_MINES_MEDIUM\"]/title"
-msgstr ""
+msgstr "Big Mines"
 
 #: src-ru/data/blueprints.xml.rawclobber:151313
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"DE_DRONE_MINES_MEDIUM\"]/short"
-msgstr ""
+msgstr "Big Mines"
 
 #: src-ru/data/blueprints.xml.rawclobber:151343
 msgid ""
@@ -76545,10 +76553,9 @@ msgid ""
 msgstr "HAL Missile I"
 
 #: src-ru/data/blueprints.xml.rawclobber:151944
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_MISSILES_1\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:151959
 #, fuzzy
@@ -76581,10 +76588,10 @@ msgid ""
 msgstr "HAL Missile II"
 
 #: src-ru/data/blueprints.xml.rawclobber:151978
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_MISSILES_3\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Powerful drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:151993
 #, fuzzy
@@ -76599,10 +76606,11 @@ msgid ""
 msgstr "HAL Swarm"
 
 #: src-ru/data/blueprints.xml.rawclobber:151995
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_MISSILES_BARRAGE\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Very slow drone that constantly attacks the enemy ship with swarm missile "
+"strikes."
 
 #: src-ru/data/blueprints.xml.rawclobber:152010
 #, fuzzy
@@ -76617,10 +76625,9 @@ msgid ""
 msgstr "HAL Heavy I"
 
 #: src-ru/data/blueprints.xml.rawclobber:152012
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_HEAVY_1\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that inflicts great damage with heavy lasers."
 
 #: src-ru/data/blueprints.xml.rawclobber:152027
 #, fuzzy
@@ -76635,10 +76642,11 @@ msgid ""
 msgstr "HAL Heavy II"
 
 #: src-ru/data/blueprints.xml.rawclobber:152029
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_HEAVY_2\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Powerful drone that inflicts great damage with heavy lasers. Moves and fires "
+"faster than the Mark I."
 
 #: src-ru/data/blueprints.xml.rawclobber:152044
 #, fuzzy
@@ -76653,10 +76661,11 @@ msgid ""
 msgstr "HAL H-Scatter"
 
 #: src-ru/data/blueprints.xml.rawclobber:152046
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_HEAVY_SCATTER\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Huge combat drone that deals extra damage to hull with its heavy scatter "
+"laser."
 
 #: src-ru/data/blueprints.xml.rawclobber:152061
 #, fuzzy
@@ -76769,10 +76778,11 @@ msgid ""
 msgstr "HAL Mine II"
 
 #: src-ru/data/blueprints.xml.rawclobber:152148
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_MINE_MEDIUM\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches medium anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:152163
 #, fuzzy
@@ -76787,10 +76797,11 @@ msgid ""
 msgstr "HAL Mine I"
 
 #: src-ru/data/blueprints.xml.rawclobber:152165
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"HAL_DRONE_MINE_SMALL\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches anti-hull mines towards enemy ships. Though the mines "
+"move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:152184
 #, fuzzy
@@ -78277,10 +78288,11 @@ msgid ""
 msgstr "Light I"
 
 #: src-ru/data/blueprints.xml.rawclobber:154101
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_LIGHT_MISSILE_STUN_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"This lightweight drone damages and stuns enemy crew with small light "
+"grenades that penetrate shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:154115
 #, fuzzy
@@ -78295,10 +78307,11 @@ msgid ""
 msgstr "Light II"
 
 #: src-ru/data/blueprints.xml.rawclobber:154117
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_LIGHT_MISSILE_STUN_2_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"This light drone damages and stuns enemy crew with small light grenades that "
+"pierce shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:154131
 #, fuzzy
@@ -78393,10 +78406,11 @@ msgid ""
 msgstr "H. Scatter"
 
 #: src-ru/data/blueprints.xml.rawclobber:154197
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_HEAVY_SCATTER_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Huge combat drone that deals extra damage to hull with its heavy scatter "
+"laser."
 
 #: src-ru/data/blueprints.xml.rawclobber:154211
 #, fuzzy
@@ -78411,10 +78425,9 @@ msgid ""
 msgstr "Heavy I"
 
 #: src-ru/data/blueprints.xml.rawclobber:154213
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_HEAVY_1_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that deals great damage with heavy lasers."
 
 #: src-ru/data/blueprints.xml.rawclobber:154227
 #, fuzzy
@@ -78429,10 +78442,11 @@ msgid ""
 msgstr "Heavy II"
 
 #: src-ru/data/blueprints.xml.rawclobber:154229
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_HEAVY_2_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Powerful drone that deals great damage with heavy lasers. Faster than its "
+"predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:154243
 #, fuzzy
@@ -78487,10 +78501,9 @@ msgid ""
 msgstr "L. Missile"
 
 #: src-ru/data/blueprints.xml.rawclobber:154277
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_LIGHT_MISSILE_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that damages enemy crew and systems with micro missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:154292
 #, fuzzy
@@ -78525,10 +78538,9 @@ msgid ""
 msgstr "Missile I"
 
 #: src-ru/data/blueprints.xml.rawclobber:154310
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_1_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:154324
 #, fuzzy
@@ -78543,10 +78555,11 @@ msgid ""
 msgstr "H. Missile"
 
 #: src-ru/data/blueprints.xml.rawclobber:154326
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_2_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Extremely slow drone that constantly attacks the enemy ship with heavy "
+"missile strikes."
 
 #: src-ru/data/blueprints.xml.rawclobber:154340
 #, fuzzy
@@ -78561,10 +78574,10 @@ msgid ""
 msgstr "Missile II"
 
 #: src-ru/data/blueprints.xml.rawclobber:154342
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_3_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Powerful drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:154356
 #, fuzzy
@@ -78579,10 +78592,11 @@ msgid ""
 msgstr "Swarm"
 
 #: src-ru/data/blueprints.xml.rawclobber:154358
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_BARRAGE_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Very slow drone that constantly attacks the enemy ship with swarm missile "
+"strikes."
 
 #: src-ru/data/blueprints.xml.rawclobber:154372
 #, fuzzy
@@ -78597,10 +78611,11 @@ msgid ""
 msgstr "Mine I"
 
 #: src-ru/data/blueprints.xml.rawclobber:154374
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_SMALL_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches small anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:154388
 #, fuzzy
@@ -78615,10 +78630,11 @@ msgid ""
 msgstr "Mine II"
 
 #: src-ru/data/blueprints.xml.rawclobber:154390
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_MEDIUM_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches medium anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:154404
 #, fuzzy
@@ -78784,10 +78800,9 @@ msgid ""
 msgstr "Heavy Ion"
 
 #: src-ru/data/blueprints.xml.rawclobber:154536
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_2_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that attacks enemy ships with its heavy ion cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:154550
 #, fuzzy
@@ -78802,10 +78817,9 @@ msgid ""
 msgstr "Ion II"
 
 #: src-ru/data/blueprints.xml.rawclobber:154552
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Advanced drone that constantly attacks enemy ships with ion blasts."
 
 #: src-ru/data/blueprints.xml.rawclobber:154566
 #, fuzzy
@@ -78820,10 +78834,10 @@ msgid ""
 msgstr "Ion III"
 
 #: src-ru/data/blueprints.xml.rawclobber:154568
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_ION_V3_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"This advanced drone can completely disable small ships with its ion cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:154582
 #, fuzzy
@@ -78857,10 +78871,11 @@ msgid ""
 msgstr "Phase Ion"
 
 #: src-ru/data/blueprints.xml.rawclobber:154600
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_PIERCE_R\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"An advanced drone that constantly attacks enemy shields and systems with a "
+"phase ion weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:154614
 #, fuzzy
@@ -86602,10 +86617,9 @@ msgid ""
 msgstr "Missile I"
 
 #: src-ru/data/blueprints.xml.rawclobber:172335
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MISSILES_1W\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr "Slow drone that constantly attacks the enemy ship with mini-missiles."
 
 #: src-ru/data/blueprints.xml.rawclobber:172349
 #, fuzzy
@@ -86620,10 +86634,11 @@ msgid ""
 msgstr "Mine I"
 
 #: src-ru/data/blueprints.xml.rawclobber:172351
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_MINE_SMALLW\"]/desc"
-msgstr "To add a description, refer to the non-'R' version of this drone."
+msgstr ""
+"Constantly launches small anti-hull mines towards enemy ships. Though the "
+"mines move slowly, they pierce all shield layers and don't use up ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:172365
 #, fuzzy
