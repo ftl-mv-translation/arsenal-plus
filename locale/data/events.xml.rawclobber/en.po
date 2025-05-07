@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-07 05:49+0000\n"
+"PO-Revision-Date: 2025-05-07 08:49+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -55589,7 +55589,8 @@ msgstr "You install the artillery guidance system update."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"_AIMABLE_STORAGE_CHECK_SYSTEM_AIMABLE_ARTILLERIES\"]/choice[@req=\"artillery\""
 " and @lvl=\"1\"]/text"
-msgstr "This upgrade is not available. You need level 2 artillery."
+msgstr ""
+"This upgrade is not available. Your artillery system must level 2 or higher."
 
 #: src-ru/data/events.xml.rawclobber:47498
 msgid ""
@@ -55699,7 +55700,9 @@ msgstr "You install the combat drone guidance system update."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"_AIMABLE_STORAGE_CHECK_SYSTEM_AIMABLE_DRONES\"]/choice[@req=\"drones\""
 " and @lvl=\"1\"]/text"
-msgstr "This upgrade is not available. You need a level 2 drone control system."
+msgstr ""
+"This upgrade is not available. Your drone control system must be level 2 or "
+"higher."
 
 #: src-ru/data/events.xml.rawclobber:47556
 msgid ""
@@ -55707,45 +55710,50 @@ msgid ""
 msgstr "Close the hold."
 
 #: src-ru/data/events.xml.rawclobber:47563
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"INJECTOR_WEAPONS_CLEAR\"]/text"
 msgstr ""
+"Which weapon to remove the injection from? (Injector does not come back)"
 
 #: src-ru/data/events.xml.rawclobber:51746
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"INJECTOR_WEAPONS_CLEAR\"]/choice[4181]/text"
-msgstr ""
+msgstr "Close the hold."
 
 #: src-ru/data/events.xml.rawclobber:51753
+#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"WEAPONS_CLEAR\"]/text"
 msgstr ""
+"You remove the injection from your weapon. Now you can inject the weapon "
+"again."
 
 #: src-ru/data/events.xml.rawclobber:51757
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_PRC\"]/text"
-msgstr ""
+msgstr "Remove the piercing injection."
 
 #: src-ru/data/events.xml.rawclobber:51760
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_FRC\"]/text"
-msgstr ""
+msgstr "Remove the flame injection."
 
 #: src-ru/data/events.xml.rawclobber:51763
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_BRC\"]/text"
-msgstr ""
+msgstr "Remove the breach injection."
 
 #: src-ru/data/events.xml.rawclobber:51766
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_CLD\"]/text"
-msgstr ""
+msgstr "Remove the cooldown injection."
 
 #: src-ru/data/events.xml.rawclobber:51769
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_POW\"]/text"
-msgstr ""
+msgstr "Remove the power injection."
 
 #: src-ru/data/events.xml.rawclobber:51772
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_UNI\"]/text"
-msgstr ""
+msgstr "Remove the universal injection."
 
 #: src-ru/data/events.xml.rawclobber:51775
 msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT_ACC\"]/text"
-msgstr ""
+msgstr "Remove the accuracy injection."
 
 #: src-ru/data/events.xml.rawclobber:51780
 msgid "data/events.xml.rawclobber$//event[@name=\"REPAIR_KITS_EVENT\"]/text"
