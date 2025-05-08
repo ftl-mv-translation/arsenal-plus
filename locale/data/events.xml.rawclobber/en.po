@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-08 05:49+0000\n"
+"PO-Revision-Date: 2025-05-08 08:49+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -590,8 +590,8 @@ msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT4\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"As your ship is under the control of AI, you need not fear the death of any "
-"crew."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:1065
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_EVENT5\"]/text"
@@ -5125,92 +5125,79 @@ msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"NANOBOT_DEFENSE_SYSTEM\"]/event/text"
 msgstr ""
 "The nanobots quickly deal with the arachnids, and soon only small piles of "
-"dust remain."
+"dust remain. The station owners gratefully share their supplies and start "
+"cleaning up."
 
 #: src-ru/data/events.xml.rawclobber:4591
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"DRONES_BATTLE\"]/text"
 msgstr "(Anti-Personnel Drone) Send your battle drone in to help."
 
 #: src-ru/data/events.xml.rawclobber:4593
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"DRONES_BATTLE\"]/event/text"
 msgstr ""
-"You pull up alongside the station and release the drone through the airlock."
-" Within a short time the majority of the creatures are dead, with only a "
-"little collateral damage. They express their most sincere gratitude."
+"You pull up alongside the station and release the drone through the airlock. "
+"Within a short time the majority of the creatures are dead, with only a "
+"little collateral damage."
 
 #: src-ru/data/events.xml.rawclobber:4600
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"DRONES_BATTLE\"]/event/choice/event/text"
-msgstr "The station's owners express their sincere gratitude."
+msgstr "The station owners express their most sincere gratitude."
 
 #: src-ru/data/events.xml.rawclobber:4608
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"DRONES_BOARDER\"]/text"
 msgstr "(Boarding Drone) Launch a Boarding drone into the station."
 
 #: src-ru/data/events.xml.rawclobber:4610
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"DRONES_BOARDER\"]/event/text"
 msgstr ""
 "You launch the drone and it crashes through their hull, leaving a huge "
 "breach. You watch as the drone tears through the creatures while debris and "
 "dead bodies fly out of the breach. The owners of the station are less than "
-"effusive when they thank you, and offer only a meager payment. Maybe it's a "
-"good time to leave..."
+"effusive when they thank you, and offer only a meager payment."
 
 #: src-ru/data/events.xml.rawclobber:4617
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"DRONES_BOARDER\"]/event/choice/event/text"
-msgstr "Perhaps it's time to leave..."
+msgstr "Maybe it's a good time to leave..."
 
 #: src-ru/data/events.xml.rawclobber:4625
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"BEAMS_BIO\"]/text"
 msgstr "(Anti-Bio-Beam) Use the beam to pick off the spiders."
 
 #: src-ru/data/events.xml.rawclobber:4627
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"BEAMS_BIO\"]/event/text"
 msgstr ""
 "You instruct them to drop their shields and you are able to kill the "
-"creatures without damaging the station. \"The monsters just started bursting"
-" into flame as we watched. What a terrifying weapon... Here, take this for "
+"creatures without damaging the station. \"The monsters just started bursting "
+"into flame as we watched. What a terrifying weapon... Here, take this for "
 "your help, friend.\""
 
 #: src-ru/data/events.xml.rawclobber:4633
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"BA_BOMB_BIO\"]/text"
 msgstr "(Two Biological Bombs) Launch a pair of bio-bombs at the spiders."
 
 #: src-ru/data/events.xml.rawclobber:4635
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"BA_BOMB_BIO\"]/event/text"
 msgstr ""
 "You teleport two bio-bombs over to the giant spiders, and a few minutes "
 "later it's all over. \"The monsters just started bursting into flame as we "
-"watched. What a terrifying weapon... Here, take this for your help, "
-"friend.\""
+"watched. What a terrifying weapon... Here, take this for your help, friend.\""
 
 #: src-ru/data/events.xml.rawclobber:4642
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_INFESTATION\"]/choice[@req=\"BA_BOMB_BIO\"]/event/choice/event/text"
 msgstr "You accept the reward and move on."
 
 #: src-ru/data/events.xml.rawclobber:4652
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_MANTISLIST\"]/event[1]/text"
 msgstr ""
@@ -5219,7 +5206,6 @@ msgstr ""
 "for a couple of days."
 
 #: src-ru/data/events.xml.rawclobber:4655
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_MANTISLIST\"]/event[2]/text"
 msgstr ""
@@ -5228,7 +5214,6 @@ msgstr ""
 "this, but nevertheless thank you and give you some supplies."
 
 #: src-ru/data/events.xml.rawclobber:4660
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_MANTISLIST\"]/event[3]/text"
 msgstr ""
@@ -5237,7 +5222,6 @@ msgstr ""
 "this, but nevertheless thank you and give you some supplies."
 
 #: src-ru/data/events.xml.rawclobber:4667
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[1]/text"
 msgstr ""
@@ -5247,32 +5231,28 @@ msgstr ""
 "leave before accounting for all crew members. Not everybody made it back."
 
 #: src-ru/data/events.xml.rawclobber:4671
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/text"
 msgstr "Your crew member will be missed."
 
 #: src-ru/data/events.xml.rawclobber:4674
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
-"You go to the clonebay with hope, and to your relief, the clone of the lost "
-"crewmember is already ready for duty."
+"You take a hopeful trip to the Clone Bay, and to your relief a clone is "
+"already prepared for the lost crew member."
 
 #: src-ru/data/events.xml.rawclobber:4681
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:4686
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[2]/text"
 msgstr ""
@@ -5281,167 +5261,204 @@ msgstr ""
 "stays in control and before long you've beaten them back."
 
 #: src-ru/data/events.xml.rawclobber:4688
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[2]/choice/text"
 msgstr "Contact the station owners."
 
 #: src-ru/data/events.xml.rawclobber:4690
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_INFESTATION_LIST\"]/event[2]/choice/event/text"
 msgstr "They are thrilled with your success and offer you a reward."
 
 #: src-ru/data/events.xml.rawclobber:4700
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/text"
 msgstr ""
 "The distress signal is coming from a small space station orbiting an "
 "uninhabited planet. Their satellite defense system has gone haywire and "
-"their repair crew can't approach without being fired on. They're looking for"
-" help to fix or disable it."
+"their repair crew can't approach without being fired on. They're looking for "
+"help to fix or disable it."
 
 #: src-ru/data/events.xml.rawclobber:4703
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/text"
-msgstr ""
+msgstr "See if you can do anything."
 
 #: src-ru/data/events.xml.rawclobber:4705
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/text"
-msgstr ""
+msgstr "You consider your options."
 
 #: src-ru/data/events.xml.rawclobber:4707
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "Simply fire on the defense system from a distance."
 
 #: src-ru/data/events.xml.rawclobber:4711
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"WEAPONS_ION_PLUS\"]/text"
-msgstr ""
+msgstr "(Ion Weapon) Disable the defense system."
 
 #: src-ru/data/events.xml.rawclobber:4713
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"WEAPONS_ION_PLUS\"]/event/text"
 msgstr ""
+"You use your ion weaponry to disable the gun long enough for their repair "
+"crews to fix it. They message you, \"I've never seen a weapon like that "
+"before! Thanks for your help. Please accept this reward.\""
 
 #: src-ru/data/events.xml.rawclobber:4719
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"cloaking\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "(Cloaking) Use your Cloaking to disable the system."
 
 #: src-ru/data/events.xml.rawclobber:4721
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"cloaking\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
+"You use your ship's Cloaking to try to prevent the defense system from "
+"getting a lock. However before you are able to safely disable the system "
+"your cloaking gives out and you are forced to destroy the satellite. No one "
+"was harmed but they don't seem happy with your solution."
 
 #: src-ru/data/events.xml.rawclobber:4726
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"cloaking\""
 " and @lvl=\"2\"]/text"
-msgstr ""
+msgstr "(Improved Cloaking) Use your Cloaking to disable the system."
 
 #: src-ru/data/events.xml.rawclobber:4728
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"cloaking\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
+"You use your ship's Cloaking to prevent the defense system from getting a "
+"lock. Once closer, you hasten to disable the system without damaging it. It "
+"was a sloppy job but they appreciate it and offer a reward."
 
 #: src-ru/data/events.xml.rawclobber:4733
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"cloaking\""
 " and @lvl=\"3\"]/text"
-msgstr ""
+msgstr "(Advanced Cloaking) Use your Cloaking to disable the system."
 
 #: src-ru/data/events.xml.rawclobber:4735
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"cloaking\""
 " and @lvl=\"3\"]/event/text"
 msgstr ""
+"Thanks to your Advanced Cloaking, you're able to approach the defense system "
+"without an issue. Once closer, you are able to safely disable the system. "
+"They thank you for your help and offer a reward."
 
 #: src-ru/data/events.xml.rawclobber:4740
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"engi_crew\"]/text"
-msgstr ""
+msgstr "(Engi Crew Member) Remotely repair its targeting system."
 
 #: src-ru/data/events.xml.rawclobber:4742
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
+"Your Engi crewmember is able to remotely fix the glitch in the defense AI, "
+"allowing the repair crew to close in and finish the job. The station gives "
+"you its thanks along with a reward."
 
 #: src-ru/data/events.xml.rawclobber:4748
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"morph\"]/text"
-msgstr ""
+msgstr "(Morph Crew Member) Remotely repair its targeting system."
 
 #: src-ru/data/events.xml.rawclobber:4750
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"morph\"]/event/text"
 msgstr ""
+"Your Morph crewmember is able to remotely fix the glitch in the defense AI, "
+"allowing the repair crew to close in and finish the job. The station gives "
+"you its thanks along with a reward."
 
 #: src-ru/data/events.xml.rawclobber:4755
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"anaerobic_crew\"]/text"
-msgstr ""
+msgstr "(Lanius Crew Member) Your crewman offers to help."
 
 #: src-ru/data/events.xml.rawclobber:4757
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"anaerobic_crew\"]/event/text"
 msgstr ""
+"Your Lanius crewman appears to have a solution. The Lanius simply jumps out "
+"of the airlock towards the satellite. Apparently their lack of heat "
+"signatures renders them hidden from the satellite's targeting sensors. Once "
+"there they simply melt it down into scrap. You quickly pick them up and "
+"prepare to jump before the station can question your methods."
 
 #: src-ru/data/events.xml.rawclobber:4762
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"DEFENSE_SCRAMBLER\"]/text"
-msgstr ""
+msgstr "(Defense Scrambler) Scramble the defense system's targeting."
 
 #: src-ru/data/events.xml.rawclobber:4764
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"DEFENSE_SCRAMBLER\"]/event/text"
 msgstr ""
+"Your defense scrambler is able to render the system useless, allowing the "
+"repair crew to safely approach it. With the problem solved, they offer you a "
+"reward for your help."
 
 #: src-ru/data/events.xml.rawclobber:4769
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"DRONE_CHAFF\"]/text"
 msgstr ""
+"(Decoy Combat Drone) Distract the defense system using your decoy drone."
 
 #: src-ru/data/events.xml.rawclobber:4771
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"DRONE_CHAFF\"]/event/text"
 msgstr ""
+"You launch the decoy drone towards the station's defense system, and move "
+"back a bit..."
 
 #: src-ru/data/events.xml.rawclobber:4778
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"DRONE_CHAFF\"]/event/choice/event/text"
 msgstr ""
+"...while the drone distracts the defense system's weapons, you dock with the "
+"station, and the repair crew fixes the malfunction. They offer you a reward "
+"for helping them."
 
 #: src-ru/data/events.xml.rawclobber:4785
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"BOARDER_ION\"]/text"
-msgstr ""
+msgstr "(Ion Intruder) Disable the defense system with an ion intruder."
 
 #: src-ru/data/events.xml.rawclobber:4787
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"BOARDER_ION\"]/event/text"
 msgstr ""
+"You launch the ion intruder into the station's defense system, and move back "
+"a bit..."
 
 #: src-ru/data/events.xml.rawclobber:4794
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[@req=\"BOARDER_ION\"]/event/choice/event/text"
 msgstr ""
+"...while the drone ionizes the defense system's weapons, you dock with the "
+"station, and the repair crew fixes the malfunction. They offer you a reward "
+"for helping them."
 
 #: src-ru/data/events.xml.rawclobber:4801
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[12]/text"
-msgstr ""
+msgstr "Leave them alone and fly away."
 
 #: src-ru/data/events.xml.rawclobber:4803
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[1]/event/choice[12]/event/text"
 msgstr ""
+"Their defense system is too dangerous for you to risk your ship on. You "
+"promise to send them help from nearby beacons."
 
 #: src-ru/data/events.xml.rawclobber:4809
 msgid ""
@@ -5452,16 +5469,24 @@ msgstr "Leave them alone."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_SATELLITE_DEFENSE\"]/choice[2]/event/text"
 msgstr ""
+"Their defense system is too dangerous for you to risk your ship on. You "
+"promise to send them help from nearby beacons."
 
 #: src-ru/data/events.xml.rawclobber:4817
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"SATELLITE_DEFENSE_BORING\"]/event[1]/text"
 msgstr ""
+"You fire a few volleys from a distance and it is clear the defense system is "
+"no match for your weapons. However, the station does not seem happy with "
+"your 'solution'. You salvage what you can and jump before there is trouble."
 
 #: src-ru/data/events.xml.rawclobber:4821
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"SATELLITE_DEFENSE_BORING\"]/event[2]/text"
 msgstr ""
+"You fire a few volleys but aren't able to penetrate the defense system's "
+"shields. Its weapons have no trouble piercing yours though, and you take "
+"minor damage before escaping. The station will need to find help elsewhere."
 
 #: src-ru/data/events.xml.rawclobber:4829
 #, fuzzy
@@ -5757,13 +5782,12 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:4982
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:4988
 msgid ""
@@ -5784,13 +5808,12 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:5002
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:5008
 #, fuzzy
@@ -7423,13 +7446,12 @@ msgstr ""
 "command decisions that lead to his death."
 
 #: src-ru/data/events.xml.rawclobber:6126
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PRIZRAK_STAND\"]/event[3]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:6134
 #, fuzzy
@@ -10255,13 +10277,12 @@ msgstr ""
 "follow into his next life."
 
 #: src-ru/data/events.xml.rawclobber:7981
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PLAGUE_LIST\"]/event[3]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:7985
 #, fuzzy
@@ -10372,13 +10393,12 @@ msgstr ""
 "follow into his next life."
 
 #: src-ru/data/events.xml.rawclobber:8046
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PLAGUE_LIST_2\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:8050
 #, fuzzy
@@ -11082,13 +11102,12 @@ msgstr ""
 "seek revenge."
 
 #: src-ru/data/events.xml.rawclobber:8471
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ALISON_DEFECTOR_HELP\"]/event[8]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:8479
 #, fuzzy
@@ -11173,13 +11192,12 @@ msgstr ""
 "seek revenge."
 
 #: src-ru/data/events.xml.rawclobber:8531
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ALISON_DEFECTOR_HELP_2\"]/event[8]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:8539
 #, fuzzy
@@ -13494,13 +13512,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:9823
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"MARADERS1_EVENT_CRUISER\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:9828
 #, fuzzy
@@ -13569,13 +13586,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:9867
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"MARADERS1_EVENT_CRUISER_DANGER\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:9872
 #, fuzzy
@@ -13604,13 +13620,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:9886
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"MARADERS1_EVENT_CRUISER_DANGER\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:9891
 #, fuzzy
@@ -13639,13 +13654,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:9905
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"MARADERS1_EVENT_CRUISER_DANGER\"]/event[3]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:9910
 #, fuzzy
@@ -13674,13 +13688,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:9924
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"MARADERS1_EVENT_CRUISER_DANGER\"]/event[4]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:9929
 #, fuzzy
@@ -15486,13 +15499,12 @@ msgid ""
 msgstr "The deceased crewman's clone appears out of the clonebay."
 
 #: src-ru/data/events.xml.rawclobber:11292
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PLANET_ENGE_BUNKER\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:11297
 #, fuzzy
@@ -15584,13 +15596,12 @@ msgid ""
 msgstr "The deceased crewman's clone appears out of the clonebay."
 
 #: src-ru/data/events.xml.rawclobber:11351
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PLANET_ENGE_BUNKER\"]/event[3]/choice[3]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:11357
 #, fuzzy
@@ -18245,13 +18256,12 @@ msgstr ""
 " here."
 
 #: src-ru/data/events.xml.rawclobber:16341
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"FED_ALIEN_SHIP_SEARCH\"]/event[3]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:16346
 #, fuzzy
@@ -18429,13 +18439,12 @@ msgstr ""
 " here."
 
 #: src-ru/data/events.xml.rawclobber:16449
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ALIEN_FIND_MAN\"]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:16464
 #, fuzzy
@@ -18607,13 +18616,12 @@ msgstr ""
 " here."
 
 #: src-ru/data/events.xml.rawclobber:16556
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ALIEN_FIND_MAN_SCAN\"]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:16571
 #, fuzzy
@@ -18824,13 +18832,12 @@ msgstr ""
 " here."
 
 #: src-ru/data/events.xml.rawclobber:16708
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"HIDDEN_FEDERATION_BASE_HUNTING\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:16722
 #, fuzzy
@@ -25468,13 +25475,12 @@ msgid ""
 msgstr "Luckily, your clone bay is able to revive your crewmember."
 
 #: src-ru/data/events.xml.rawclobber:22125
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CREW_STIMS_LIST_VERY_BAD\"]/choice/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:22134
 #, fuzzy
@@ -27111,13 +27117,12 @@ msgstr ""
 " the burning weapons bay."
 
 #: src-ru/data/events.xml.rawclobber:23695
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"WEAPON_PREIGNITE_LIST_VERY_BAD\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:23700
 #, fuzzy
@@ -27146,13 +27151,12 @@ msgstr ""
 "clone."
 
 #: src-ru/data/events.xml.rawclobber:23715
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"WEAPON_PREIGNITE_LIST_SUPER_VERY_BAD\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:23721
 #, fuzzy
@@ -27202,13 +27206,12 @@ msgid ""
 msgstr "Fortunately, the clonebay's able to revive the dead crew member."
 
 #: src-ru/data/events.xml.rawclobber:23769
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ZOLTAN_BYPASS_LIST_VERY_BAD\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:23775
 msgid "data/events.xml.rawclobber$//event[@name=\"MORPH_STABILIZER_PREP\"]/text"
@@ -27930,13 +27933,12 @@ msgid ""
 msgstr "Fortunately, the Clonebay can resurrect your crew-member."
 
 #: src-ru/data/events.xml.rawclobber:24251
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"RETRANSLATOR_XXL\"]/choice[2]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[1]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:24257
 #, fuzzy
@@ -29462,13 +29464,12 @@ msgid ""
 msgstr "Fortunately, the Clonebay can resurrect your crew-member."
 
 #: src-ru/data/events.xml.rawclobber:25051
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"RETRANSLATOR_XXL\"]/choice[2]/event/choice[2]/event/choice[2]/event/choice[2]/event/choice[2]/event/choice[2]/event/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:25073
 msgid "data/events.xml.rawclobber$//event[@name=\"111110\"]/text"
@@ -38217,13 +38218,12 @@ msgstr ""
 "ship."
 
 #: src-ru/data/events.xml.rawclobber:30055
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_SELL\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:30060
 #, fuzzy
@@ -38252,13 +38252,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:30074
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_SELL\"]/event[3]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:30079
 #, fuzzy
@@ -38565,13 +38564,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:30230
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_PIRAMIDA_KOMANDA\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:30237
 #, fuzzy
@@ -63418,13 +63416,12 @@ msgstr ""
 " to their place."
 
 #: src-ru/data/events.xml.rawclobber:61046
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"LANIUS_X_EVENT_SENDING\"]/event[4]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:61051
 #, fuzzy
@@ -63453,13 +63450,12 @@ msgstr ""
 "revive them..."
 
 #: src-ru/data/events.xml.rawclobber:61065
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"LANIUS_X_EVENT_SENDING\"]/event[5]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:61070
 #, fuzzy
@@ -65322,13 +65318,12 @@ msgstr ""
 "crewmember is already ready for duty."
 
 #: src-ru/data/events.xml.rawclobber:62597
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PEACEFUL_MAN_RANDOM_DRINK\"]/event[6]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:62604
 #, fuzzy
@@ -68131,13 +68126,12 @@ msgid ""
 msgstr "Luckily, your clone bay is able to revive your crewmember."
 
 #: src-ru/data/events.xml.rawclobber:64389
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"LILY\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events.xml.rawclobber:64394
 msgid "data/events.xml.rawclobber$//eventList[@name=\"LILY\"]/event[2]/text"
