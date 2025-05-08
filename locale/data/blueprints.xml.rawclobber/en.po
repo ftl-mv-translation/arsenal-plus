@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-08 05:49+0000\n"
+"PO-Revision-Date: 2025-05-08 08:49+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -3837,7 +3837,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:11661
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY\"]/class"
-msgstr ""
+msgstr "Transport Ship \"Firefly\""
 
 #: src-ru/data/blueprints.xml.rawclobber:11662
 msgid ""
@@ -3877,7 +3877,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:11798
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_3\"]/class"
-msgstr ""
+msgstr "Warrior Cruiser"
 
 #: src-ru/data/blueprints.xml.rawclobber:11799
 msgid ""
@@ -3885,9 +3885,13 @@ msgid ""
 msgstr "Warriorship"
 
 #: src-ru/data/blueprints.xml.rawclobber:11800
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_3\"]/desc"
 msgstr ""
+"This cruiser is equipped with an advanced freezer, specially designed to "
+"synthesize a delicious and nutritious dish - Slurm - at temperatures close "
+"to absolute zero."
 
 #: src-ru/data/blueprints.xml.rawclobber:11801
 msgid ""
@@ -4769,33 +4773,40 @@ msgstr ""
 "impede fire and intruder movement."
 
 #: src-ru/data/blueprints.xml.rawclobber:14343
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANTICLOAK_FIELD\"]/title"
-msgstr ""
+msgstr "Anti-Cloaking Field"
 
 #: src-ru/data/blueprints.xml.rawclobber:14344
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANTICLOAK_FIELD\"]/desc"
-msgstr ""
+msgstr "Disrupts enemy ships' cloaking."
 
 #: src-ru/data/blueprints.xml.rawclobber:14353
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"POCKET_TELEPORTS\"]/title"
-msgstr ""
+msgstr "Pocket Teleporters"
 
 #: src-ru/data/blueprints.xml.rawclobber:14354
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"POCKET_TELEPORTS\"]/desc"
 msgstr ""
+"The crew now moves around the ship using handheld teleportation devices."
 
 #: src-ru/data/blueprints.xml.rawclobber:14363
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SERENITY_AUG\"]/title"
-msgstr ""
+msgstr "Extra Cabins"
 
 #: src-ru/data/blueprints.xml.rawclobber:14364
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SERENITY_AUG\"]/desc"
-msgstr ""
+msgstr "Expands the number of crew slots by 4."
 
 #: src-ru/data/blueprints.xml.rawclobber:14374
 msgid ""
@@ -5251,12 +5262,14 @@ msgstr "Boost the repair speed of your systems by 50%."
 #: src-ru/data/blueprints.xml.rawclobber:14804
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP_AND_DOWN\"]/title"
-msgstr ""
+msgstr "Repair Controller"
 
 #: src-ru/data/blueprints.xml.rawclobber:14805
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP_AND_DOWN\"]/desc"
 msgstr ""
+"This augment applies the effects of both Repair Nanobots and Anti-Repair "
+"Nanobots."
 
 #: src-ru/data/blueprints.xml.rawclobber:14814
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ORCHID_BOX\"]/title"
@@ -5386,8 +5399,9 @@ msgstr "Mycelium"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MUSHROOM_REPAIR\"]/desc"
 msgstr ""
-"Friendly crew move 25% faster and the hull repairs by 2$ every time you "
-"collect scrap. This augmentation cannot be removed from the ship."
+"Friendly crew move 25% faster and the hull repairs by 1$ every time you "
+"collect scrap. When the hull is full, a Young Mushroom can emerge from "
+"within the ship. This augmentation cannot be removed from the ship."
 
 #: src-ru/data/blueprints.xml.rawclobber:14934
 msgid ""
