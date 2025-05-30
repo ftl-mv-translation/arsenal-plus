@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-13 14:49+0000\n"
+"PO-Revision-Date: 2025-05-31 01:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src-ru/data/blueprints.xml.rawclobber:168
 msgid ""
@@ -4782,13 +4782,11 @@ msgid ""
 msgstr "Disrupts enemy ships' cloaking."
 
 #: src-ru/data/blueprints.xml.rawclobber:14353
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"POCKET_TELEPORTS\"]/title"
 msgstr "Pocket Teleporters"
 
 #: src-ru/data/blueprints.xml.rawclobber:14354
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"POCKET_TELEPORTS\"]/desc"
 msgstr ""
@@ -4960,10 +4958,10 @@ msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA\"]/title
 msgstr "Backup DNA Bank"
 
 #: src-ru/data/blueprints.xml.rawclobber:14517
-#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA\"]/desc"
 msgstr ""
-"Your crew is safe in clone storage even if the system is off or broken."
+"Your crew is safe in clone storage even if the system is off or broken. "
+"Cloning also no longer causes skill degradation."
 
 #: src-ru/data/blueprints.xml.rawclobber:14526
 msgid ""
@@ -5088,8 +5086,8 @@ msgstr "Advanced FTL-Navigation"
 #, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER\"]/desc"
 msgstr ""
-"Allows your ship to jump to any beacon in the span of a single jump. The "
-"fuel cost remains the same, except for previously visited beacons."
+"Outdated navigation system that allows your ship to jump to any previously "
+"visited beacons."
 
 #: src-ru/data/blueprints.xml.rawclobber:14642
 msgid ""
@@ -5699,12 +5697,11 @@ msgid ""
 msgstr "Morph Stabilizer"
 
 #: src-ru/data/blueprints.xml.rawclobber:15152
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MORPH_STABILIZER\"]/desc"
 msgstr ""
-"Allows you to control your Morphs when they short-circuit, and they stay in "
-"that state 3 times longer."
+"Allows you to retain control over your Morphs when they short-circuit, and "
+"they stay in that state 3 times longer."
 
 #: src-ru/data/blueprints.xml.rawclobber:15161
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"RADIOACTIVE\"]/title"
