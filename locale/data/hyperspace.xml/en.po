@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-10 07:49+0000\n"
+"PO-Revision-Date: 2025-05-31 01:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datahyperspace-xml/en/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src-ru/data/hyperspace.xml:798
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[1]/tooltip"
@@ -149,54 +149,51 @@ msgstr ""
 "back into drone parts."
 
 #: src-ru/data/hyperspace.xml:893
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[20]/tooltip"
 msgstr ""
 "Neuron Manipulator:\n"
-"\t\t\tGrants immunity to enemy Mind Control and complete control over mind-"
-"controlled enemies, including abilities. Requires power in Mind Control to "
-"work."
+"\t\t\tGrants the enemy immunity to your Mind Control and access to mind-"
+"controlled allies' abilities. Only active when their Mind Control is powered."
 
 #: src-ru/data/hyperspace.xml:898
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[21]/tooltip"
 msgstr ""
-"Defense Scrambler:\n"
-"\t\t\tPrevents your defense drones from targeting anything."
+"Advanced FTL-Navigation:\n"
+"\t\t\tIf the enemy ship were like the player ship and could reappear again "
+"in the sector, this would let them go anywhere in one jump. Not possible "
+"currently so please report this as a bug."
 
 #: src-ru/data/hyperspace.xml:903
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[22]/tooltip"
 msgstr ""
-"Battery Charger:\n"
-"\t\t\tEnemy Backup Battery cools down 4 times faster."
+"Nanobot Defenses:\n"
+"\t\t\tA grid of nanobots will constantly harm any friendly crew on board the "
+"enemy ship."
 
 #: src-ru/data/hyperspace.xml:908
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[23]/tooltip"
 msgstr ""
 "Corrosive Gas:\n"
-"\t\t\tThis harmful gas eats away at your boarding party while they are aboard the enemy ship. Efficiency: 100%"
+"\t\t\tThis harmful gas eats away at your boarding party while they are "
+"aboard the enemy ship."
 
 #: src-ru/data/hyperspace.xml:913
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[24]/tooltip"
 msgstr ""
-"Refrigerant:\n"
-"\t\t\tThis outdated fire suppression system automatically extinguishes fires on the enemy ship."
+"Morph Stabilizer:\n"
+"\t\t\tEnemy Morphs' amped up state lasts 3 times longer."
 
 #: src-ru/data/hyperspace.xml:918
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[25]/tooltip"
 msgstr ""
-"Backup Power Circuits:\n"
-"\t\t\tThis ship will activate the other half of its total reactor power later in the fight."
+"Pocket Teleporters:\n"
+"\t\t\tEnemy crew are able to teleport around their ship."
 
 #: src-ru/data/hyperspace.xml:924
 msgid ""
@@ -227,7 +224,6 @@ msgstr ""
 "\t\t\tAll ship systems have a coating that provides a 33% chance to negate damage when hit."
 
 #: src-ru/data/hyperspace.xml:944
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[30]/tooltip"
 msgstr ""
@@ -309,6 +305,9 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[41]/tooltip"
 msgstr ""
+"Onboard Drone Booster:\n"
+"\t\t\tAll enemy onboard drones move 250% faster and damage/repair 100% "
+"faster."
 
 #: src-ru/data/hyperspace.xml:1004
 msgid ""
@@ -328,6 +327,9 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[44]/tooltip"
 msgstr ""
+"Backup DNA Bank:\n"
+"\t\t\tEven if their Clone Bay is off or broken, dead enemy crew can be "
+"revived when the system is fixed again."
 
 #: src-ru/data/hyperspace.xml:1019
 msgid ""
@@ -358,20 +360,20 @@ msgstr ""
 "\t\t\tThis outdated fire suppression system automatically extinguishes fires on the enemy ship."
 
 #: src-ru/data/hyperspace.xml:1044
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[49]/tooltip"
 msgstr ""
 "Backup Power Circuits:\n"
-"\t\t\tThis ship will activate the other half of its total reactor power later in the fight."
+"\t\t\tThis ship will activate the other half of its total reactor power "
+"later in the fight."
 
 #: src-ru/data/hyperspace.xml:1049
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[50]/tooltip"
 msgstr ""
 "Slurm Queen:\n"
-"\t\t\tSpawns Sligs and stuns your crew on your ship. Cannot be damaged by weapons."
+"\t\t\tSpawns Sligs and stuns your crew on your ship. Cannot be damaged by "
+"weapons."
 
 #: src-ru/data/hyperspace.xml:1205
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_DOUBLE_TEST\"]/name"
@@ -604,10 +606,9 @@ msgid ""
 msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1417
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_UPGRADE_MEDBAY\"]/description"
-msgstr "Upgrade the Medbay with medbots, already having a level 3 Medbay."
+msgstr "Upgrade a level 3 Medbay with medbots."
 
 #: src-ru/data/hyperspace.xml:1423
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MAX_DRONE_SYS\"]/name"
@@ -651,7 +652,8 @@ msgstr "???"
 #, fuzzy
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MARSHRUT\"]/description"
 msgstr ""
-"Successfully find a sector map 3 times in 1 game with your FTL-Navigator."
+"Successfully find a sector map 3 times in 1 game with your Advanced FTL-"
+"Navigation."
 
 #: src-ru/data/hyperspace.xml:1483
 #, fuzzy
@@ -732,7 +734,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1596
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LOST_CREW_PHEROMONE\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1597
 msgid ""
@@ -746,7 +748,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1605
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LOW_WEAPON_SYS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1606
 msgid ""
@@ -761,7 +763,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1646
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_JELLY_BEGIN_SCRAP\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1647
 msgid ""
@@ -774,7 +776,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1654
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LAST_SLUG\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1655
 msgid ""
@@ -788,7 +790,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1662
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_SENSOR_SYS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1663
 msgid ""
@@ -802,7 +804,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1703
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_100_MISSILES\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1704
 msgid ""
@@ -816,7 +818,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1711
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_FIRST_FEDBASE\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1712
 msgid ""
@@ -832,7 +834,7 @@ msgstr "Safeguard System"
 #: src-ru/data/hyperspace.xml:1719
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MAX_DOORS_SENSORS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1720
 msgid ""
@@ -847,7 +849,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1762
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_GOOD_SECTOR_SCAN\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1763
 msgid ""
@@ -861,7 +863,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1773
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_NEBULA\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1774
 msgid ""
@@ -875,7 +877,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1783
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_FINAL_REPAIR\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1784
 msgid ""
@@ -890,7 +892,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1837
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_WIN_FIRST_BOSSPHASE\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1838
 msgid ""
@@ -903,7 +905,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1845
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_0_SCRAP\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1846
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_0_SCRAP\"]/description"
@@ -916,7 +918,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1853
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONE_RACE_3_SEC\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1854
 msgid ""
@@ -930,7 +932,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1907
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ULTRA_REVENGE\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1908
 msgid ""
@@ -945,7 +947,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1915
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CRYSTAL_REALHOME\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1916
 msgid ""
@@ -959,7 +961,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:1923
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_CRYSTAL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1924
 msgid ""
@@ -972,7 +974,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1947
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_1\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1948
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_1\"]/description"
@@ -984,7 +986,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1955
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_2\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1956
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_2\"]/description"
@@ -996,7 +998,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1963
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_3\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1964
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_3\"]/description"
@@ -1008,7 +1010,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1982
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_4\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1983
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_4\"]/description"
@@ -1020,7 +1022,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1990
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_5\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1991
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_5\"]/description"
@@ -1032,7 +1034,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:1998
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_6\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:1999
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_6\"]/description"
@@ -1044,7 +1046,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2017
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_7\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2018
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_7\"]/description"
@@ -1056,7 +1058,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2025
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_8\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2026
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_8\"]/description"
@@ -1068,7 +1070,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2033
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_9\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2034
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_9\"]/description"
@@ -1080,7 +1082,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2052
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_10\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2053
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_10\"]/description"
@@ -1092,7 +1094,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2060
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_11\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2061
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_11\"]/description"
@@ -1104,7 +1106,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2068
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_12\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2069
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_12\"]/description"
@@ -1116,7 +1118,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2087
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_13\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2088
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_13\"]/description"
@@ -1128,7 +1130,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2095
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_14\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2096
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_14\"]/description"
@@ -1140,7 +1142,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2103
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_15\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2104
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_15\"]/description"
@@ -1152,7 +1154,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2122
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_16\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2123
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_16\"]/description"
@@ -1164,7 +1166,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2130
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_17\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2131
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_17\"]/description"
@@ -1176,7 +1178,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2138
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_18\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2139
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_18\"]/description"
@@ -1188,7 +1190,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2157
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_19\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2158
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_19\"]/description"
@@ -1200,7 +1202,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2165
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_20\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2166
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_20\"]/description"
@@ -1212,7 +1214,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2173
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_21\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2174
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_21\"]/description"
@@ -1224,7 +1226,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2192
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_22\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2193
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_22\"]/description"
@@ -1236,7 +1238,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2200
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_23\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2201
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_23\"]/description"
@@ -1248,7 +1250,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2208
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_24\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2209
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_24\"]/description"
@@ -1260,7 +1262,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2224
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_25\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2225
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_25\"]/description"
@@ -1272,7 +1274,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2232
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_OXYGEN\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2233
 msgid ""
@@ -1285,7 +1287,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2240
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_26\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2241
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_26\"]/description"
@@ -1297,7 +1299,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2256
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_27\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2257
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_27\"]/description"
@@ -1310,7 +1312,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2264
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CHETNI_CREW\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2265
 msgid ""
@@ -1323,7 +1325,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2272
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_28\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2273
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_28\"]/description"
@@ -1335,7 +1337,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2294
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_29\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2295
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_29\"]/description"
@@ -1347,7 +1349,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2302
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_30\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2303
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_30\"]/description"
@@ -1359,7 +1361,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2310
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_31\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2311
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_31\"]/description"
@@ -1371,7 +1373,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2329
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_32\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2330
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_32\"]/description"
@@ -1383,7 +1385,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2337
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_33\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2338
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_33\"]/description"
@@ -1395,7 +1397,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2345
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_34\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2346
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_34\"]/description"
@@ -1407,7 +1409,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2364
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_35\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2365
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_35\"]/description"
@@ -1419,7 +1421,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2372
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_36\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2373
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_36\"]/description"
@@ -1431,7 +1433,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2380
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_37\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2381
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_37\"]/description"
@@ -1443,7 +1445,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2399
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_38\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2400
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_38\"]/description"
@@ -1455,7 +1457,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2407
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_39\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2408
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_39\"]/description"
@@ -1467,7 +1469,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2415
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_40\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2416
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_40\"]/description"
@@ -1479,7 +1481,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2434
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_41\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2435
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_41\"]/description"
@@ -1491,7 +1493,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2442
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_42\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2443
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_42\"]/description"
@@ -1503,7 +1505,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2450
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_43\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2451
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_43\"]/description"
@@ -1515,7 +1517,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2469
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_44\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2470
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_44\"]/description"
@@ -1527,7 +1529,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2477
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_45\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2478
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_45\"]/description"
@@ -1539,7 +1541,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2485
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_46\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2486
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_46\"]/description"
@@ -1551,7 +1553,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2504
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_47\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2505
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_47\"]/description"
@@ -1563,7 +1565,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2512
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_48\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2513
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_48\"]/description"
@@ -1575,7 +1577,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2520
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_49\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2521
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_49\"]/description"
@@ -1587,7 +1589,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2539
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_50\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2540
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_50\"]/description"
@@ -1599,7 +1601,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2547
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_51\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2548
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_51\"]/description"
@@ -1611,7 +1613,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2555
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_52\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2556
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_52\"]/description"
@@ -1623,7 +1625,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2571
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_53\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2572
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_53\"]/description"
@@ -1635,7 +1637,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2579
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_DEVILINY\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2580
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_DEVILINY\"]/description"
@@ -1647,7 +1649,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2587
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_54\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2588
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_54\"]/description"
@@ -1659,7 +1661,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2603
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_55\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2604
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_55\"]/description"
@@ -1672,7 +1674,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2611
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SUBSYS_MAX\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2612
 msgid ""
@@ -1685,7 +1687,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2619
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_56\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2620
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KILL_56\"]/description"
@@ -1698,7 +1700,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2648
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HULL_WAS_AT_1\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2649
 msgid ""
@@ -1711,7 +1713,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2656
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_KENIX_WIN\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2657
 msgid ""
@@ -1725,7 +1727,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2664
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_REPLACE_MEDCLON\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2665
 msgid ""
@@ -1740,7 +1742,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2705
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HULL_AT_30_AFTER_1\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2706
 msgid ""
@@ -1754,7 +1756,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2713
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TERMINATOR\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2714
 msgid ""
@@ -1769,7 +1771,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2721
 msgid ""
 "data/hyperspace.xml$//ship[@name=\"PLAYER_SHIP_CIRCLE_DLC3\"]/achievement[@name=\"ACH_SHIP_USAGE_ENGI\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2722
 msgid ""
@@ -1783,7 +1785,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2763
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HULL_HIGHER_14\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2764
 msgid ""
@@ -1797,7 +1799,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2771
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PIRATE_BAY\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2772
 msgid ""
@@ -1811,7 +1813,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2780
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_REPAIR_HAL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2781
 msgid ""
@@ -1825,7 +1827,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2821
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LOW_REACTOR\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2822
 msgid ""
@@ -1839,7 +1841,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2829
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ULTRASHIELD\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2830
 msgid ""
@@ -1853,7 +1855,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2837
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_USAGE_ENERGY\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2838
 msgid ""
@@ -1867,7 +1869,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2879
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CONSERVATOR\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2880
 msgid ""
@@ -1880,7 +1882,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2887
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_ENGI\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2888
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_ENGI\"]/description"
@@ -1893,7 +1895,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2895
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BOARDER_SET\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2896
 msgid ""
@@ -1906,7 +1908,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:2936
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PARALIZER\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2937
 msgid ""
@@ -1920,7 +1922,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2945
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SLURM_BARREL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2946
 msgid ""
@@ -1934,7 +1936,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2953
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_SLIGSLUG\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2954
 msgid ""
@@ -1948,7 +1950,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:2994
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_ASTEROID\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:2995
 msgid ""
@@ -1962,7 +1964,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3003
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_DOORS_SYS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3004
 msgid ""
@@ -1977,7 +1979,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3011
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ROCKFLAGMAN_HELP\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3012
 msgid ""
@@ -1990,7 +1992,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3051
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BIG_CREW\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3052
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BIG_CREW\"]/description"
@@ -2002,7 +2004,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3059
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_CREW\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3060
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_CREW\"]/description"
@@ -2015,7 +2017,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3067
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_OXYMEDCLON\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3068
 msgid ""
@@ -2029,7 +2031,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3121
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_ANAEROBIC\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3122
 msgid ""
@@ -2042,7 +2044,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3129
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HARVESTER\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3130
 msgid ""
@@ -2055,7 +2057,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3137
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SCRAP\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3138
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SCRAP\"]/description"
@@ -2068,7 +2070,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3191
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PREIGNITER\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3192
 msgid ""
@@ -2083,7 +2085,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3199
 msgid ""
 "data/hyperspace.xml$//ship[@name=\"PLAYER_SHIP_CRYSTAL_DLC3\"]/achievement[@name=\"ACH_SHIP_USAGE_ENGI\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3200
 msgid ""
@@ -2097,7 +2099,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3208
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CRYSTAL_BARREL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3209
 msgid ""
@@ -2111,7 +2113,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3248
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ANAERORCHID\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3249
 msgid ""
@@ -2125,7 +2127,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3256
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_USAGE_ORCHID\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3257
 msgid ""
@@ -2138,7 +2140,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3265
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_GOOD_REPL\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3266
 msgid ""
@@ -2153,7 +2155,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3307
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_MISSILEDRONES\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3308
 msgid ""
@@ -2166,7 +2168,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3315
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SHELL_GAS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3316
 msgid ""
@@ -2180,7 +2182,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3323
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LOW_ENGINES_SYS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3324
 msgid ""
@@ -2193,7 +2195,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3364
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MICELIUM\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3365
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MICELIUM\"]/description"
@@ -2207,7 +2209,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3373
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_TALK_WITH_MUSHROOMS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3374
 msgid ""
@@ -2222,7 +2224,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3381
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_HACK_NO_DRONES\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3382
 msgid ""
@@ -2236,7 +2238,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3422
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MAGMAN_ART\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3423
 msgid ""
@@ -2250,7 +2252,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3430
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_MAGMAN\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3431
 msgid ""
@@ -2264,7 +2266,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3438
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_FIRESTOPPER\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3439
 msgid ""
@@ -2277,7 +2279,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3479
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TIMEMAX\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3480
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TIMEMAX\"]/description"
@@ -2290,7 +2292,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3487
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NECHETNI_SYS\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3488
 msgid ""
@@ -2304,7 +2306,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3495
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TEMPORAL_ART\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3496
 msgid ""
@@ -2317,7 +2319,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3536
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_FIRE\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3537
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_FIRE\"]/description"
@@ -2330,7 +2332,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:3546
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_PULSAR\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3547
 msgid ""
@@ -2343,7 +2345,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:3555
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_CREW\"]/secretName"
-msgstr ""
+msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3556
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_CREW\"]/description"
