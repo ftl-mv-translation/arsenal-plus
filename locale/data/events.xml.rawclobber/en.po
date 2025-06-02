@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-08 08:49+0000\n"
+"PO-Revision-Date: 2025-06-02 21:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src-ru/data/events.xml.rawclobber:32
 msgid "data/events.xml.rawclobber$//event[@name=\"TEST_BATTLE\"]/text"
@@ -24333,47 +24333,45 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:20896
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"MORPH_STABILIZER\"]/text"
-msgstr ""
+msgstr "(Morph Stabilizer) Ask your Morph to make some kind of injector."
 
 #: src-ru/data/events.xml.rawclobber:20900
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"MIND_ORDER\"]/text"
 msgstr ""
+"(Neuron Manipulator) Extract useful information from one of your crew via "
+"the Neuron Manipulator."
 
 #: src-ru/data/events.xml.rawclobber:20904
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"ARMOR_SUITS\"]/text"
-msgstr ""
+msgstr "(Armored Suits) Try to improve upon the design of the armor."
 
 #: src-ru/data/events.xml.rawclobber:20908
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"HP_BOOSTERS\"]/text"
-msgstr ""
+msgstr "(Steroids) Try to improve the steroid formula."
 
 #: src-ru/data/events.xml.rawclobber:20912
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"MUSHROOM_REPAIR\"]/text"
-msgstr "(Мицелий) Проверить состояние мицелия."
+msgstr "(Mycelium) Check up on the state of the mycelium."
 
 #: src-ru/data/events.xml.rawclobber:20916
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"SHELL_GASES\"]/text"
 msgstr ""
-"(Разъедающий газ) Обработать газом детали дронов и боеприпасы, чтобы "
-"превратить их в лом."
+"(Corrosive Gas) Break down drone parts and ammunition into scrap by treating "
+"them with the gas."
 
 #: src-ru/data/events.xml.rawclobber:20920
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"NANOBOT_DEFENSE_SYSTEM\"]/text"
 msgstr ""
-"(Защитные наноботы) Настроить наноботов на переработку деталей дронов и "
-"боеприпасов на лом."
+"(Nanobot Defenses) Configure nanobots to recycle drone parts and ammunition "
+"into scrap."
 
 #: src-ru/data/events.xml.rawclobber:20924
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr "(Long-Ranged Scanners) Apply maximum power to scan the entire sector."
@@ -24406,17 +24404,17 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"ANTICLOAK_FIELD\"]/text"
 msgstr ""
+"(Anti-Cloaking Field) Upgrade your Cloaking using knowledge of the "
+"vulnerabilities in its design."
 
 #: src-ru/data/events.xml.rawclobber:20950
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"CLOAK_FIRE\"]/text"
 msgstr ""
-"(Stealth Weapons) Collect materials on the ship to create a cloaked weapon "
-"that uses missiles."
+"(Stealth Weapons) Collect materials on the ship to build a weapon that fires "
+"cloaked missiles."
 
 #: src-ru/data/events.xml.rawclobber:20954
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"CREW_STIMS\"]/text"
 msgstr ""
@@ -24492,17 +24490,19 @@ msgid ""
 msgstr "(FTL Jammer) Carry out a \"test\" of the jammer on some nearby ship."
 
 #: src-ru/data/events.xml.rawclobber:20998
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
 msgstr ""
+"(Advanced FTL Navigation) Calculate a map of the sector according to FTL "
+"Navigation databases."
 
 #: src-ru/data/events.xml.rawclobber:21002
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"HACKING_STUN\"]/text"
-msgstr ""
+msgstr "(Stun Module) Collect materials on the ship to create a stun weapon."
 
 #: src-ru/data/events.xml.rawclobber:21006
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"ION_ARMOR\"]/text"
 msgstr ""
@@ -24605,17 +24605,20 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:21062
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"CALL_STORE\"]/text"
-msgstr ""
+msgstr "(Trading Buoy) Try to request an extra merchant at this beacon."
 
 #: src-ru/data/events.xml.rawclobber:21066
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"REPAIR_SPEED_DOWN\"]/text"
 msgstr ""
+"(Anti-Repair Nanobots) Test the operation of your anti-repair nanobots on a "
+"nearby ship."
 
 #: src-ru/data/events.xml.rawclobber:21070
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"REPAIR_SPEED_UP\"]/text"
 msgstr ""
+"(Repair Nanobots) Try to assemble a repair kit using your repair nanobots."
 
 #: src-ru/data/events.xml.rawclobber:21074
 #, fuzzy
