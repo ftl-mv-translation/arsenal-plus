@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-02 21:50+0000\n"
+"PO-Revision-Date: 2025-06-05 05:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -148,11 +148,12 @@ msgstr ""
 "\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:202
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"SPEED_BUTTON_FAST\"]/inactiveTooltip"
 msgstr ""
 "The current speed is 20.0x.\n"
+"\t\tFor maximum effect, vertical synchronization and frame capping should be "
+"disabled in game and in video card settings.\n"
 "\t\t\n"
 "\t\tSpeed Up: LEFT ALT (hold)\n"
 "\t\tIncrease Speed: ]\n"
@@ -24323,12 +24324,11 @@ msgstr ""
 "vanished without a trace. Slugs..."
 
 #: src-ru/data/events.xml.rawclobber:20894
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/text"
 msgstr ""
 "With the rebels still far away, you can try to use special features of one "
-"of the augments of your ship."
+"of your ship's augments."
 
 #: src-ru/data/events.xml.rawclobber:20896
 msgid ""
@@ -24368,8 +24368,8 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"NANOBOT_DEFENSE_SYSTEM\"]/text"
 msgstr ""
-"(Nanobot Defenses) Configure nanobots to recycle drone parts and ammunition "
-"into scrap."
+"(Nanobot Defenses) Configure the nanobots to recycle drone parts and "
+"ammunition into scrap."
 
 #: src-ru/data/events.xml.rawclobber:20924
 msgid ""
@@ -24377,7 +24377,6 @@ msgid ""
 msgstr "(Long-Ranged Scanners) Apply maximum power to scan the entire sector."
 
 #: src-ru/data/events.xml.rawclobber:20928
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"AUTO_COOLDOWN\"]/text"
 msgstr ""
@@ -24385,7 +24384,6 @@ msgstr ""
 "aboard."
 
 #: src-ru/data/events.xml.rawclobber:20932
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"BACKUP_DNA\"]/text"
 msgstr ""
@@ -24393,7 +24391,6 @@ msgstr ""
 "crew from scratch."
 
 #: src-ru/data/events.xml.rawclobber:20942
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"BATTERY_BOOSTER\"]/text"
 msgstr ""
@@ -24421,14 +24418,12 @@ msgstr ""
 "(Mantis Pheromones) Increase the amount of airborne pheromones in the ship."
 
 #: src-ru/data/events.xml.rawclobber:20958
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"CRYSTAL_SHARDS\"]/text"
 msgstr ""
 "(Crystal Vengeance) Assemble a drone based on the crystalline structures."
 
 #: src-ru/data/events.xml.rawclobber:20962
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"DEFENSE_SCRAMBLER\"]/text"
 msgstr ""
@@ -24436,15 +24431,13 @@ msgstr ""
 "from drone parts."
 
 #: src-ru/data/events.xml.rawclobber:20966
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"DRONE_RECOVERY\"]/text"
 msgstr ""
-"(Drone Recovery Arm) Try to recycle the remains of the broken drone parts in"
-" the hold."
+"(Drone Recovery Arm) Try to recycle the remains of the broken drone parts in "
+"the hold."
 
 #: src-ru/data/events.xml.rawclobber:20970
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"DRONE_SPEED\"]/text"
 msgstr "(Drone Accelerator) Create a helper drone from drone parts."
@@ -24458,24 +24451,22 @@ msgstr ""
 "shield tech."
 
 #: src-ru/data/events.xml.rawclobber:20978
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"EXPLOSIVE_REPLICATOR\"]/text"
 msgstr "(Explosive Replicator) Produce extra ammunition."
 
 #: src-ru/data/events.xml.rawclobber:20982
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"FIRE_EXTINGUISHERS\"]/text"
-msgstr "(Fire Suppression) Conduct fire drills."
+msgstr "(Fire Suppression) Conduct a fire drill."
 
 #: src-ru/data/events.xml.rawclobber:20986
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"FLEET_DISTRACTION\"]/text"
 msgstr ""
-"(Distraction Buoys) Send a scattering of distraction buoys for the next "
-"beacons using drone parts."
+"(Distraction Buoys) Send a scattering of distraction buoys to nearby beacons "
+"using drone parts."
 
 #: src-ru/data/events.xml.rawclobber:20990
 #, fuzzy
@@ -24676,46 +24667,39 @@ msgid "data/events.xml.rawclobber$//textList[@name=\"INJ_CHOISE_TEXT\"]/text"
 msgstr "Choose this weapon."
 
 #: src-ru/data/events.xml.rawclobber:21219
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/text"
-msgstr "Вы проверяете запасы вашего трюма..."
+msgstr "You check your supply reserves..."
 
 #: src-ru/data/events.xml.rawclobber:21221
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/choice[1]/text"
-msgstr "Разобрать на лом 5 | и 5 }."
+msgstr "Scrap 5 | and 5 }."
 
 #: src-ru/data/events.xml.rawclobber:21223
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/choice[1]/event/text"
-msgstr "Наноботы разбирают ваши припасы на груду лома."
+msgstr "The nanobots break down your supplies into a pile of scrap."
 
 #: src-ru/data/events.xml.rawclobber:21232
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/choice[2]/text"
-msgstr "Разобрать на лом 10 | и 10 }."
+msgstr "Scrap 10 | and 10 }."
 
 #: src-ru/data/events.xml.rawclobber:21234
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/choice[2]/event/text"
-msgstr "Наноботы разбирают ваши припасы на груду лома."
+msgstr "The nanobots break down your supplies into a heap of scrap."
 
 #: src-ru/data/events.xml.rawclobber:21243
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/choice[3]/text"
-msgstr "Разобрать на лом 15 | и 15 }."
+msgstr "Scrap 15 | and 15 }."
 
 #: src-ru/data/events.xml.rawclobber:21245
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NANOBOT_DEFENSE_SYSTEM_LIST\"]/choice[3]/event/text"
-msgstr "Наноботы разбирают ваши припасы на груду лома."
+msgstr "The nanobots break down your supplies into a mountain of scrap."
 
 #: src-ru/data/events.xml.rawclobber:21254
 #, fuzzy
@@ -24724,45 +24708,38 @@ msgid ""
 msgstr "Cancel the operation."
 
 #: src-ru/data/events.xml.rawclobber:21260
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/text"
-msgstr "Вы проверяете запасы вашего трюма..."
+msgstr "You check your supply reserves..."
 
 #: src-ru/data/events.xml.rawclobber:21262
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/choice[1]/text"
-msgstr "Превратить в лом 5 | и 5 }."
+msgstr "Scrap 5 | and 5 }."
 
 #: src-ru/data/events.xml.rawclobber:21264
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/choice[1]/event/text"
-msgstr "Разъедающий яд действует грубо, но вы получаете лом."
+msgstr "The corrosive gas does a rough job, but you get some scrap."
 
 #: src-ru/data/events.xml.rawclobber:21273
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/choice[2]/text"
-msgstr "Превратить в лом 10 | и 10 }."
+msgstr "Scrap 10 | and 10 }."
 
 #: src-ru/data/events.xml.rawclobber:21275
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/choice[2]/event/text"
-msgstr "Разъедающий яд действует грубо, но вы получаете лом."
+msgstr "The corrosive gas does a rough job, but you get a bunch of scrap."
 
 #: src-ru/data/events.xml.rawclobber:21284
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/choice[3]/text"
-msgstr "Превратить в лом 15 | и 15 }."
+msgstr "Scrap 15 | and 15 }."
 
 #: src-ru/data/events.xml.rawclobber:21286
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHELL_GASES_LIST\"]/choice[3]/event/text"
-msgstr "Разъедающий яд действует грубо, но вы получаете лом."
+msgstr "The corrosive gas does a rough job, but you get a lot of scrap."
 
 #: src-ru/data/events.xml.rawclobber:21295
 #, fuzzy
@@ -24883,38 +24860,35 @@ msgid "data/events.xml.rawclobber$//textList[@name=\"HP_BOOSTER_BAD_MIN\"]/text"
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:21634
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"MUSHROOM_REPAIR_NOTHING\"]/text[1]"
 msgstr ""
-"Вы заходите в каюту, где находятся основные запасы мицелия. Грибница "
-"выглядит здоровой, но ничего необычного вы не находите."
+"You enter the room where the main stock of mycelium is located. The mycelium "
+"appears healthy, but you don't see anything else out of place."
 
 #: src-ru/data/events.xml.rawclobber:21635
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"MUSHROOM_REPAIR_NOTHING\"]/text[2]"
 msgstr ""
-"Вы проверяете запасы мицелия на своём корабле. Кажется, грибница скоро даст "
-"потомство, возможно, это случится уже к следующему сектору..."
+"You check the stock of mycelium on your ship. The mycelium is cultivating a "
+"new fungus, but it's not ready for release just yet, perhaps that will "
+"happen next sector..."
 
 #: src-ru/data/events.xml.rawclobber:21643
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"MUSHROOM_REPAIR_GOOD\"]/text[1]"
 msgstr ""
-"Вы заходите в каюту, где находятся основные запасы мицелия. Как раз в это "
-"время грибница даёт потомство — перед вами появляется ваш новый член экипажа"
-" машрум."
+"You enter the room where the main stock of mycelium is located. At that very "
+"moment the mycelium releases its newborn — a budding new Mushroom crew "
+"member stands before you!"
 
 #: src-ru/data/events.xml.rawclobber:21644
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"MUSHROOM_REPAIR_GOOD\"]/text[2]"
 msgstr ""
-"Вы проверяете запасы мицелия на своём корабле. В одном месте земля "
-"образовала небольшой холмик. Копнув там, вы достаёте молодого машрума, "
-"который готов вам служить."
+"You check the stock of mycelium on your ship. You spot a clump of it where a "
+"small mound has formed. Curious what's in there, you dig... and grab hold of "
+"something — a young Mushroom, ready to serve you!"
 
 #: src-ru/data/events.xml.rawclobber:21661
 #, fuzzy
@@ -31202,10 +31176,9 @@ msgstr ""
 "You're not yet in range of their radar."
 
 #: src-ru/data/events.xml.rawclobber:26580
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"REBEL_WITH_SCANNERS\"]/choice[1]/text"
-msgstr "Напасть на них!"
+msgstr "Attack them!"
 
 #: src-ru/data/events.xml.rawclobber:26586
 #, fuzzy
@@ -45435,124 +45408,104 @@ msgid ""
 msgstr "(Prototype) Sell your damaged Morph prototype √."
 
 #: src-ru/data/events.xml.rawclobber:35686
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_1\"]/text"
-msgstr "(Прототип) Продать прототип орхидов."
+msgstr "(Prototype) Sell your Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:35700
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_1_RDY\"]/text"
-msgstr "(Прототип) Продать прототип орхидов ^."
+msgstr "(Prototype) Sell your Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:35714
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_1_BRC\"]/text"
-msgstr "(Прототип) Продать прототип орхидов €."
+msgstr "(Prototype) Sell your Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:35728
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_1_CLD\"]/text"
-msgstr "(Прототип) Продать прототип орхидов ‡."
+msgstr "(Prototype) Sell your Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:35742
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_1_POW\"]/text"
-msgstr "(Прототип) Продать прототип орхидов †."
+msgstr "(Prototype) Sell your Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:35756
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_1_UNI\"]/text"
-msgstr "(Прототип) Продать прототип орхидов √."
+msgstr "(Prototype) Sell your Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:35770
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_2\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип орхидов."
+msgstr "(Prototype) Sell your damaged Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:35784
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_2_RDY\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип орхидов ^."
+msgstr "(Prototype) Sell your damaged Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:35798
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_2_BRC\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип орхидов €."
+msgstr "(Prototype) Sell your damaged Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:35812
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_2_CLD\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип орхидов ‡."
+msgstr "(Prototype) Sell your damaged Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:35826
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_2_POW\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип орхидов †."
+msgstr "(Prototype) Sell your damaged Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:35840
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"ORCHID_PROTOTYPE_2_UNI\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип орхидов √."
+msgstr "(Prototype) Sell your damaged Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:35854
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_1\"]/text"
-msgstr "(Прототип) Продать прототип магменов."
+msgstr "(Prototype) Sell your Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:35878
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_1_CLD\"]/text"
-msgstr "(Прототип) Продать прототип магменов ‡."
+msgstr "(Prototype) Sell your Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:35892
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_1_POW\"]/text"
-msgstr "(Прототип) Продать прототип магменов †."
+msgstr "(Prototype) Sell your Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:35906
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_1_UNI\"]/text"
-msgstr "(Прототип) Продать прототип магменов √."
+msgstr "(Prototype) Sell your Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:35920
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_2\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип магменов."
+msgstr "(Prototype) Sell your damaged Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:35944
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_2_CLD\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип магменов ‡."
+msgstr "(Prototype) Sell your damaged Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:35958
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_2_POW\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип магменов †."
+msgstr "(Prototype) Sell your damaged Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:35972
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"PROTOTYPE_COLLECTIONER_DEAL\"]/choice[@req=\"MAGMAN_PROTOTYPE_2_UNI\"]/text"
-msgstr "(Прототип) Продать повреждённый прототип магменов √."
+msgstr "(Prototype) Sell your damaged Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:35987
 #, fuzzy
@@ -45784,28 +45737,24 @@ msgid ""
 msgstr "(Prototype) Exchange your damaged Morph prototype."
 
 #: src-ru/data/events.xml.rawclobber:36404
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_1\"]/text"
-msgstr "(Прототип) Обменять прототип орхидов."
+msgstr "(Prototype) Exchange your Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:36416
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_2\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов."
+msgstr "(Prototype) Exchange your damaged Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:36428
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_1\"]/text"
-msgstr "(Прототип) Обменять прототип магменов."
+msgstr "(Prototype) Exchange your Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:36440
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_2\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов."
+msgstr "(Prototype) Exchange your damaged Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:36453
 #, fuzzy
@@ -46006,28 +45955,24 @@ msgid ""
 msgstr "(Prototype) Exchange your damaged Morph prototype."
 
 #: src-ru/data/events.xml.rawclobber:36852
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[33]/text"
-msgstr "(Прототип) Обменять прототип орхидов."
+msgstr "(Prototype) Exchange your Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:36864
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[34]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов."
+msgstr "(Prototype) Exchange your damaged Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:36876
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[35]/text"
-msgstr "(Прототип) Обменять прототип магменов."
+msgstr "(Prototype) Exchange your Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:36888
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[36]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов."
+msgstr "(Prototype) Exchange your damaged Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:36901
 #, fuzzy
@@ -46222,28 +46167,24 @@ msgid ""
 msgstr "(Prototype) Exchange your damaged Morph prototype."
 
 #: src-ru/data/events.xml.rawclobber:37287
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[69]/text"
-msgstr "(Прототип) Обменять прототип орхидов."
+msgstr "(Prototype) Exchange your Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:37299
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[70]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов."
+msgstr "(Prototype) Exchange your damaged Orchid prototype."
 
 #: src-ru/data/events.xml.rawclobber:37311
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[71]/text"
-msgstr "(Прототип) Обменять прототип магменов."
+msgstr "(Prototype) Exchange your Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:37323
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_REGULAR\"]/event[2]/choice[72]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов."
+msgstr "(Prototype) Exchange your damaged Magman prototype."
 
 #: src-ru/data/events.xml.rawclobber:37336
 #, fuzzy
@@ -47080,100 +47021,84 @@ msgid ""
 msgstr "(Prototype) Exchange your damaged Morph prototype √."
 
 #: src-ru/data/events.xml.rawclobber:39010
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_1_RDY\"]/text"
-msgstr "(Прототип) Обменять прототип орхидов ^."
+msgstr "(Prototype) Exchange your Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:39022
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_1_BRC\"]/text"
-msgstr "(Прототип) Обменять прототип орхидов €."
+msgstr "(Prototype) Exchange your Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:39034
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_1_CLD\"]/text"
-msgstr "(Прототип) Обменять прототип орхидов ‡."
+msgstr "(Prototype) Exchange your Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:39046
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_1_POW\"]/text"
-msgstr "(Прототип) Обменять прототип орхидов †."
+msgstr "(Prototype) Exchange your Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:39058
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_1_UNI\"]/text"
-msgstr "(Прототип) Обменять прототип орхидов √."
+msgstr "(Prototype) Exchange your Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:39070
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_2_RDY\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов ^."
+msgstr "(Prototype) Exchange your damaged Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:39082
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_2_BRC\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов €."
+msgstr "(Prototype) Exchange your damaged Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:39094
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_2_CLD\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов ‡."
+msgstr "(Prototype) Exchange your damaged Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:39106
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_2_POW\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов †."
+msgstr "(Prototype) Exchange your damaged Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:39118
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"ORCHID_PROTOTYPE_2_UNI\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов √."
+msgstr "(Prototype) Exchange your damaged Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:39130
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_1_CLD\"]/text"
-msgstr "(Прототип) Обменять прототип магменов ‡."
+msgstr "(Prototype) Exchange your Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:39142
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_1_POW\"]/text"
-msgstr "(Прототип) Обменять прототип магменов †."
+msgstr "(Prototype) Exchange your Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:39154
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_1_UNI\"]/text"
-msgstr "(Прототип) Обменять прототип магменов √."
+msgstr "(Prototype) Exchange your Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:39166
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_2_CLD\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов ‡."
+msgstr "(Prototype) Exchange your damaged Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:39178
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_2_POW\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов †."
+msgstr "(Prototype) Exchange your damaged Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:39190
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[1]/choice[@req=\"MAGMAN_PROTOTYPE_2_UNI\"]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов √."
+msgstr "(Prototype) Exchange your damaged Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:39203
 #, fuzzy
@@ -48010,100 +47935,84 @@ msgid ""
 msgstr "(Prototype) Exchange your damaged Morph prototype √."
 
 #: src-ru/data/events.xml.rawclobber:40875
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[139]/text"
-msgstr "(Прототип) Обменять прототип орхидов ^."
+msgstr "(Prototype) Exchange your Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:40887
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[140]/text"
-msgstr "(Прототип) Обменять прототип орхидов €."
+msgstr "(Prototype) Exchange your Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:40899
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[141]/text"
-msgstr "(Прототип) Обменять прототип орхидов ‡."
+msgstr "(Prototype) Exchange your Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:40911
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[142]/text"
-msgstr "(Прототип) Обменять прототип орхидов †."
+msgstr "(Prototype) Exchange your Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:40923
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[143]/text"
-msgstr "(Прототип) Обменять прототип орхидов √."
+msgstr "(Prototype) Exchange your Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:40935
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[144]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов ^."
+msgstr "(Prototype) Exchange your damaged Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:40947
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[145]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов €."
+msgstr "(Prototype) Exchange your damaged Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:40959
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[146]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов ‡."
+msgstr "(Prototype) Exchange your damaged Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:40971
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[147]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов †."
+msgstr "(Prototype) Exchange your damaged Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:40983
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[148]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов √."
+msgstr "(Prototype) Exchange your damaged Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:40996
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[149]/text"
-msgstr "(Прототип) Обменять прототип магменов ‡."
+msgstr "(Prototype) Exchange your Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:41008
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[150]/text"
-msgstr "(Прототип) Обменять прототип магменов †."
+msgstr "(Prototype) Exchange your Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:41020
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[151]/text"
-msgstr "(Прототип) Обменять прототип магменов √."
+msgstr "(Prototype) Exchange your Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:41032
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[152]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов ‡."
+msgstr "(Prototype) Exchange your damaged Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:41044
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[153]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов †."
+msgstr "(Prototype) Exchange your damaged Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:41056
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[154]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов √."
+msgstr "(Prototype) Exchange your damaged Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:41069
 #, fuzzy
@@ -48934,100 +48843,84 @@ msgid ""
 msgstr "(Prototype) Exchange your damaged Morph prototype √."
 
 #: src-ru/data/events.xml.rawclobber:42727
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[293]/text"
-msgstr "(Прототип) Обменять прототип орхидов ^."
+msgstr "(Prototype) Exchange your Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:42739
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[294]/text"
-msgstr "(Прототип) Обменять прототип орхидов €."
+msgstr "(Prototype) Exchange your Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:42751
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[295]/text"
-msgstr "(Прототип) Обменять прототип орхидов ‡."
+msgstr "(Prototype) Exchange your Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:42763
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[296]/text"
-msgstr "(Прототип) Обменять прототип орхидов †."
+msgstr "(Prototype) Exchange your Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:42775
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[297]/text"
-msgstr "(Прототип) Обменять прототип орхидов √."
+msgstr "(Prototype) Exchange your Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:42787
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[298]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов ^."
+msgstr "(Prototype) Exchange your damaged Orchid prototype ^."
 
 #: src-ru/data/events.xml.rawclobber:42799
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[299]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов €."
+msgstr "(Prototype) Exchange your damaged Orchid prototype €."
 
 #: src-ru/data/events.xml.rawclobber:42811
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[300]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов ‡."
+msgstr "(Prototype) Exchange your damaged Orchid prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:42823
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[301]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов †."
+msgstr "(Prototype) Exchange your damaged Orchid prototype †."
 
 #: src-ru/data/events.xml.rawclobber:42835
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[302]/text"
-msgstr "(Прототип) Обменять повреждённый прототип орхидов √."
+msgstr "(Prototype) Exchange your damaged Orchid prototype √."
 
 #: src-ru/data/events.xml.rawclobber:42847
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[303]/text"
-msgstr "(Прототип) Обменять прототип магменов ‡."
+msgstr "(Prototype) Exchange your Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:42859
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[304]/text"
-msgstr "(Прототип) Обменять прототип магменов †."
+msgstr "(Prototype) Exchange your Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:42871
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[305]/text"
-msgstr "(Прототип) Обменять прототип магменов √."
+msgstr "(Prototype) Exchange your Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:42883
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[306]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов ‡."
+msgstr "(Prototype) Exchange your damaged Magman prototype ‡."
 
 #: src-ru/data/events.xml.rawclobber:42895
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[307]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов †."
+msgstr "(Prototype) Exchange your damaged Magman prototype †."
 
 #: src-ru/data/events.xml.rawclobber:42907
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PROTOTYPE_TRADE_INJ\"]/event[2]/choice[308]/text"
-msgstr "(Прототип) Обменять повреждённый прототип магменов √."
+msgstr "(Prototype) Exchange your damaged Magman prototype √."
 
 #: src-ru/data/events.xml.rawclobber:42920
 #, fuzzy
@@ -54255,36 +54148,30 @@ msgid "data/events.xml.rawclobber$//ship[@name=\"AUTO_PARAM_WT\"]/destroyed/text
 msgstr "The ship explodes, leaving behind a mountain of useful scrap."
 
 #: src-ru/data/events.xml.rawclobber:46537
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"SHELL_FIGHT\"]/text[1]"
-msgstr "Вы натыкаетесь на один из кораблей броненосцев. Они хотят крови."
+msgstr "You come across one of the Shells' ships. They're out for blood."
 
 #: src-ru/data/events.xml.rawclobber:46538
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"SHELL_FIGHT\"]/text[2]"
 msgstr ""
-"Броненосцы никогда не отличались миролюбием, и встреченный вами корабль в "
-"очередной раз это подтверждает."
+"Shells have never been known to be peaceful, and this ship you encounter "
+"confirms this once again."
 
 #: src-ru/data/events.xml.rawclobber:46539
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"SHELL_FIGHT\"]/text[3]"
 msgstr ""
-"Корабли броненосцев красивы на столько же, на сколько и прочны. А теперь они"
-" собираются проверить на прочность вас!"
+"Shell ships are as beautiful as they are strong. They may not be able to "
+"discern your beauty, but they are going to test your strength!"
 
 #: src-ru/data/events.xml.rawclobber:46540
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"SHELL_FIGHT\"]/text[4]"
-msgstr ""
-"Вы натыкаетесь на патрульный корабль броненосцев. Завидев вас, они атакуют."
+msgstr "You come across a patrolling Shell ship. Seeing you, they attack."
 
 #: src-ru/data/events.xml.rawclobber:46541
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"SHELL_FIGHT\"]/text[5]"
 msgstr ""
-"Вы появляетесь прямо возле хорошо вооружённого корабля броненосцев. Отклоняя"
-" ваш запрос связи, они атакуют вас."
+"You appear right next to a well-armed Shell ship. Rejecting your hails, they "
+"attack you."
 
 #: src-ru/data/events.xml.rawclobber:46547
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_CAPSULE_2\"]/text"
