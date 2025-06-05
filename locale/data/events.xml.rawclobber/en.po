@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-05 08:50+0000\n"
+"PO-Revision-Date: 2025-06-05 23:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -54766,68 +54766,92 @@ msgstr "Try to escape from them."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[6]/event/text"
 msgstr ""
-"Your Mantis suddenly says that it is of the utmost importance for you to "
-"destroy these Engi. You turn the ship around, preparing for battle."
+"Your Mantis suddenly tells you that it is imperative that you destroy these "
+"Engi. You turn the ship around, preparing for battle."
 
 #: src-ru/data/events.xml.rawclobber:47039
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ENGI_HARDPOINT_HELP\"]/event[1]/text"
 msgstr ""
+"The Engi say they have spent all their resources in fighting the Rebels. You "
+"nod in understanding and prepare to jump."
 
 #: src-ru/data/events.xml.rawclobber:47042
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ENGI_HARDPOINT_HELP\"]/event[2]/text"
 msgstr ""
+"The Engi say they have spent all their resources in fighting the Rebels. Out "
+"of pity, they drop you a fuel cell for jumping to them."
 
 #: src-ru/data/events.xml.rawclobber:47048
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ENGI_HARDPOINT_HELP\"]/event[3]/text"
-msgstr ""
+msgstr "The Engi give you some useful materials and bid farewell."
 
 #: src-ru/data/events.xml.rawclobber:47054
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ENGI_HARDPOINT_HELP_ENGI\"]/event[1]/text"
 msgstr ""
+"Your crew member persuades their kin to give you some useful materials, "
+"although the Engi cannot offer you much in this difficult time."
 
 #: src-ru/data/events.xml.rawclobber:47058
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ENGI_HARDPOINT_HELP_ENGI\"]/event[2]/text"
 msgstr ""
+"Your crew member persuades their kin to give you useful materials, although "
+"the Engi cannot offer you much in this difficult time."
 
 #: src-ru/data/events.xml.rawclobber:47062
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"ENGI_HARDPOINT_HELP_ENGI\"]/event[3]/text"
 msgstr ""
+"Your crew member persuades their kin to give you an unusual drone schematic."
 
 #: src-ru/data/events.xml.rawclobber:47073
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DESTROYED_ENGI_HARDPOINT\"]/event[1]/text"
 msgstr ""
+"With the ship destroyed, you quickly gather the surviving resources while "
+"continuing to evade the ASB. Unfortunately, not one of their special defense "
+"drones survived the battle..."
 
 #: src-ru/data/events.xml.rawclobber:47077
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DESTROYED_ENGI_HARDPOINT\"]/event[2]/text"
 msgstr ""
+"With the ship destroyed, you quickly gather the surviving resources while "
+"continuing to evade the ASB. Unfortunately, not one of their special defense "
+"drones survived the battle..."
 
 #: src-ru/data/events.xml.rawclobber:47081
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DESTROYED_ENGI_HARDPOINT\"]/event[3]/text"
 msgstr ""
+"With the ship destroyed, you quickly gather the surviving resources and one "
+"unusual drone, while continuing to evade the ASB..."
 
 #: src-ru/data/events.xml.rawclobber:47089
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENGI_HARDPOINT\"]/event[1]/text"
 msgstr ""
+"With the ship captured, you quickly loot its surviving resources and one "
+"unusual drone, while continuing to evade the ASB..."
 
 #: src-ru/data/events.xml.rawclobber:47095
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENGI_HARDPOINT\"]/event[2]/text"
 msgstr ""
+"With the ship captured, you quickly loot its surviving resources and one "
+"unusual drone, while continuing to evade the ASB..."
 
 #: src-ru/data/events.xml.rawclobber:47101
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENGI_HARDPOINT\"]/event[3]/text"
 msgstr ""
+"With the ship captured, you quickly loot its surviving resources while "
+"continuing to evade the ASB. Unfortunately, not one of their special defense "
+"drones survived the battle..."
 
 #: src-ru/data/events.xml.rawclobber:47126
 msgid ""
@@ -61516,105 +61540,91 @@ msgid ""
 msgstr "Pillage the ship for supplies."
 
 #: src-ru/data/events.xml.rawclobber:59842
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ORDEN_DREDNOUT_QUEST\"]/text"
 msgstr ""
-"Right before you is the Order Flagship, armed to the teeth. Without another "
-"word, they direct all their weapons towards you."
+"Right after the jump, you find the flagship vessel of the Order of Chaos, "
+"armed to the teeth. Without further ado, they point all their weapons at you."
 
 #: src-ru/data/events.xml.rawclobber:59846
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ORDEN_DREDNOUT_FIGHT\"]/destroyed/text"
 msgstr ""
-"Флагман Ордена уничтожен. Вы собираете его обломки и среди них находите "
-"уцелевшее орудие."
+"The Order Flagship has been destroyed. You sweep the wreckage and find a "
+"surviving weapon among the remains."
 
 #: src-ru/data/events.xml.rawclobber:59853
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ORDEN_DREDNOUT_FIGHT\"]/deadCrew/text"
 msgstr ""
-"Команда флагмана Ордена уничтожена. Вы забираете всё ценное с их корабля, в "
-"том числе и уцелевшее в бою орудие."
+"The crew of the Order Flagship have been eliminated. You take everything of "
+"value from their ship, including a weapon that survived the battle."
 
 #: src-ru/data/events.xml.rawclobber:59867
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SHIP_WITH_BIG_MISSILE_EVENT\"]/text"
 msgstr ""
-"Unexpectedly, a pirate ship appears next to you, but doesn't look that "
-"dangerous, except for in one detail that makes you worry..."
+"The pirate cruiser that suddenly appears next to you doesn't look all that "
+"dangerous. Well, except for one particularly alarming detail..."
 
 #: src-ru/data/events.xml.rawclobber:59871
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BIG_MISSILE_SHIP\"]/destroyed/text"
 msgstr ""
-"The pirate ship is destroyed; they won't bother anyone else. You collect "
-"debris from the battlefield."
+"The pirate ship is destroyed; they won't bother anyone else. You scrap the "
+"wreckage from the battlefield."
 
 #: src-ru/data/events.xml.rawclobber:59877
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BIG_MISSILE_SHIP\"]/deadCrew/text"
 msgstr ""
-"All the pirates are dead; they won't bother anyone else. You clean out their"
-" holds."
+"All the pirates are dead; they won't bother anyone else. You clean out their "
+"holds."
 
 #: src-ru/data/events.xml.rawclobber:59885
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/text"
 msgstr ""
-"A small civilian ship mines metal in this asteroid field. You notice an "
-"unusual weapon they use to split large asteroids in half. The miners are so "
-"keen on mining that they don't notice you."
+"A small civilian ship is mining metal in this asteroid field. You notice an "
+"unusual weapon they use to split the larger asteroids in half. The miners "
+"are so wrapped up in their work that they don't notice you."
 
 #: src-ru/data/events.xml.rawclobber:59890
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/choice[1]/text"
 msgstr "Hail them."
 
 #: src-ru/data/events.xml.rawclobber:59894
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/choice[2]/text"
 msgstr "Attack the miners."
 
 #: src-ru/data/events.xml.rawclobber:59896
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/choice[2]/event/text"
 msgstr ""
 "You hope that no one will find traces of your crime in this dangerous place."
 
 #: src-ru/data/events.xml.rawclobber:59901
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BORDER_FED_MINER\"]/choice[3]/text"
 msgstr "Leave this place."
 
 #: src-ru/data/events.xml.rawclobber:59907
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"BORDER_FED_MINER_GREETINGS\"]/event[1]/text"
 msgstr ""
 "Upon learning that you're flying to Federation headquarters on an important "
-"mission, they give you whatever resources they can spare. You part ways with"
-" them, saying goodbye and wishing each other good luck."
+"mission, they give you whatever resources they can spare. You part ways with "
+"them, saying goodbye and wishing each other good luck."
 
 #: src-ru/data/events.xml.rawclobber:59911
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"BORDER_FED_MINER_GREETINGS\"]/event[2]/text"
 msgstr ""
 "Upon learning that you're flying to Federation headquarters on an important "
-"mission, they give you whatever resources they can spare. You part ways with"
-" them, saying goodbye and wishing each other good luck."
+"mission, they give you whatever resources they can spare. You part ways with "
+"them, saying goodbye and wishing each other good luck."
 
 #: src-ru/data/events.xml.rawclobber:59915
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"BORDER_FED_MINER_GREETINGS\"]/event[3]/text"
 msgstr ""
@@ -61623,61 +61633,52 @@ msgstr ""
 "saying goodbye and wishing each other good luck."
 
 #: src-ru/data/events.xml.rawclobber:59921
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BORDER_FED_MINER_SHIP\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
 #: src-ru/data/events.xml.rawclobber:59924
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BORDER_FED_MINER_SHIP\"]/gotaway/text"
 msgstr "Damnit, they've managed to get away!"
 
 #: src-ru/data/events.xml.rawclobber:59927
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BORDER_FED_MINER_SHIP\"]/destroyed/text"
 msgstr ""
 "The ship explodes, leaving behind a collection of useful scrap material."
 
 #: src-ru/data/events.xml.rawclobber:59937
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"BORDER_FED_MINER_SHIP\"]/deadCrew/text"
 msgstr "You take all the scrap they managed to collect."
 
 #: src-ru/data/events.xml.rawclobber:59963
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ENERGYX_BOSS_SHIP_1\"]/destroyed/text"
 msgstr "With the dreadnought destroyed, you take their prototype weapon."
 
 #: src-ru/data/events.xml.rawclobber:59970
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ENERGYX_BOSS_SHIP_1\"]/deadCrew/text"
 msgstr "With the dreadnought's crew killed, you take their prototype weapon."
 
 #: src-ru/data/events.xml.rawclobber:59984
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ENERGYX_BOSS_SHIP_2\"]/destroyed/text"
 msgstr "With the dreadnought destroyed, you take their prototype weapon."
 
 #: src-ru/data/events.xml.rawclobber:59991
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"ENERGYX_BOSS_SHIP_2\"]/deadCrew/text"
 msgstr "With the dreadnought's crew killed, you take their prototype weapon."
 
 #: src-ru/data/events.xml.rawclobber:59999
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"ZOLTON_BOSS_TEXT\"]/text"
 msgstr ""
-"Arriving at the beacon, you encounter a huge Zolton dreadnought. It seems "
-"they're not very happy about your appearance. Ignoring your attempts to "
-"establish contact, they're targeting you with their prototype."
+"Arriving at the beacon, you encounter a huge Zolton dreadnought. They don't "
+"seem very happy to see you. Ignoring your hails, they aim their prototype at "
+"you."
 
 #: src-ru/data/events.xml.rawclobber:60006
 #, fuzzy
