@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-05 05:50+0000\n"
+"PO-Revision-Date: 2025-06-05 08:50+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -54701,28 +54701,31 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:46996
+#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/text"
 msgstr ""
+"You exit the jump near a guarded Engi outpost. Their ship approaches you "
+"asking about the nature of your visit."
 
 #: src-ru/data/events.xml.rawclobber:46999
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[1]/text"
 msgstr "Attack them."
 
 #: src-ru/data/events.xml.rawclobber:47001
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[1]/event/text"
 msgstr ""
+"The Engi were ready for an attack and immediately submit a request for ASB "
+"support."
 
 #: src-ru/data/events.xml.rawclobber:47007
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[2]/text"
 msgstr "Tell them about your mission and ask for help."
 
 #: src-ru/data/events.xml.rawclobber:47011
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[3]/text"
 msgstr "Tell them about your mission and ask for help."
@@ -54731,31 +54734,40 @@ msgstr "Tell them about your mission and ask for help."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[3]/event/text"
 msgstr ""
+"While you are hailing the Engi back, your Mantis suddenly presses the button "
+"to activate your weapons. They say they did it by accident..."
 
 #: src-ru/data/events.xml.rawclobber:47019
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[@req=\"CREW_ENGI\"]/text"
 msgstr ""
+"(Engi Crew Member) Let your Engi tell them about your mission and ask for "
+"help."
 
 #: src-ru/data/events.xml.rawclobber:47023
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[5]/text"
-msgstr ""
+msgstr "Try to escape from them."
 
 #: src-ru/data/events.xml.rawclobber:47025
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[5]/event/text"
 msgstr ""
+"The Engi fly after you rather reluctantly, and then they fall behind and "
+"turn back... Seems you didn't interest them much after all."
 
 #: src-ru/data/events.xml.rawclobber:47029
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[6]/text"
-msgstr ""
+msgstr "Try to escape from them."
 
 #: src-ru/data/events.xml.rawclobber:47031
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HARDPOINT\"]/choice[6]/event/text"
 msgstr ""
+"Your Mantis suddenly says that it is of the utmost importance for you to "
+"destroy these Engi. You turn the ship around, preparing for battle."
 
 #: src-ru/data/events.xml.rawclobber:47039
 msgid ""
