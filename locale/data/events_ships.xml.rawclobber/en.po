@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-06 05:33+0000\n"
-"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
-"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
-"dataevents_shipsxmlrawclobber/en/>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
 
 #: src-ru/data/events_ships.xml.rawclobber:75
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE\"]/gotaway/text"
@@ -49,7 +42,8 @@ msgstr ""
 #: src-ru/data/events_ships.xml.rawclobber:114
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_CIVILIAN\"]/destroyed/text"
-msgstr "The pirate ship breaks apart. You hasten to contact the civilian ship."
+msgstr ""
+"The pirate ship breaks apart. You hasten to contact the civilian ship."
 
 #: src-ru/data/events_ships.xml.rawclobber:117
 msgid ""
@@ -72,8 +66,8 @@ msgstr "Contact the civilian ship."
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_SLAVER\"]/surrender/text"
 msgstr ""
-"\"We surrender! Take one of our slaves as tribute; if you destroy us they'll "
-"all die anyway!\""
+"\"We surrender! Take one of our slaves as tribute; if you destroy us they'll"
+" all die anyway!\""
 
 #: src-ru/data/events_ships.xml.rawclobber:135
 msgid ""
@@ -118,8 +112,8 @@ msgstr "Reject the offer and continue your assault."
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_BRIBER\"]/escape/text"
 msgstr ""
-"You've proved a sufficient match for the pirates; they are powering up their "
-"FTL and trying to get away."
+"You've proved a sufficient match for the pirates; they are powering up their"
+" FTL and trying to get away."
 
 #: src-ru/data/events_ships.xml.rawclobber:180
 msgid ""
@@ -132,8 +126,8 @@ msgstr ""
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_BRIBER\"]/destroyed/text"
 msgstr ""
-"The pirate explodes, leaving behind a substantial collection of useful scrap "
-"material. You go to examine the ship you just saved."
+"The pirate explodes, leaving behind a substantial collection of useful scrap"
+" material. You go to examine the ship you just saved."
 
 #: src-ru/data/events_ships.xml.rawclobber:195
 msgid ""
@@ -160,8 +154,8 @@ msgstr ""
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_SMUGGLE\"]/surrender/text"
 msgstr ""
-"They hail you, \"We realize our ship is no match for yours. If you let us go "
-"we can make it worth your while.\""
+"They hail you, \"We realize our ship is no match for yours. If you let us go"
+" we can make it worth your while.\""
 
 #: src-ru/data/events_ships.xml.rawclobber:223
 msgid ""
@@ -249,80 +243,94 @@ msgstr ""
 "You contact the delivery ship, who are grateful for your assistance. They "
 "offer you a reward for saving them."
 
-#: src-ru/data/events_ships.xml.rawclobber:300
+#: src-ru/data/events_ships.xml.rawclobber:301
+msgid ""
+"data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_PIRATE_MERCHANT\"]/destroyed/choice/event/text"
+msgstr ""
+"You contact the delivery ship, who are grateful for your assistance. They "
+"offer you a reward for saving them."
+
+#: src-ru/data/events_ships.xml.rawclobber:307
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_PIRATE_MERCHANT\"]/deadCrew/text"
 msgstr ""
 "You contact the delivery ship, who are grateful for your assistance. They "
 "offer you a reward for saving them."
 
-#: src-ru/data/events_ships.xml.rawclobber:310
+#: src-ru/data/events_ships.xml.rawclobber:312
+msgid ""
+"data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_PIRATE_MERCHANT\"]/deadCrew/choice/event/text"
+msgstr ""
+"You contact the delivery ship, who are grateful for your assistance. They "
+"offer you a reward for saving them."
+
+#: src-ru/data/events_ships.xml.rawclobber:324
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_FUEL\"]/destroyed/text"
 msgstr ""
 "The ship obliterated, only scant fuel canisters can be scavenged from the "
 "wreckage before the ion storm clears and you have to jump away."
 
-#: src-ru/data/events_ships.xml.rawclobber:314
+#: src-ru/data/events_ships.xml.rawclobber:328
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_FUEL\"]/gotaway/text"
 msgstr "The pirate jumped away."
 
-#: src-ru/data/events_ships.xml.rawclobber:317
+#: src-ru/data/events_ships.xml.rawclobber:331
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_FUEL\"]/deadCrew/text"
 msgstr ""
 "With the ship in one piece, you are able to salvage most of the fuel "
 "supplies before the ion storm clears and you have to jump away."
 
-#: src-ru/data/events_ships.xml.rawclobber:331
+#: src-ru/data/events_ships.xml.rawclobber:345
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/surrender/text"
 msgstr ""
-"When the pirate ship looks ready to break apart you notice the Slug ship has "
-"secured the loot and is preparing to jump away!"
+"When the pirate ship looks ready to break apart you notice the Slug ship has"
+" secured the loot and is preparing to jump away!"
 
-#: src-ru/data/events_ships.xml.rawclobber:333
+#: src-ru/data/events_ships.xml.rawclobber:347
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/surrender/choice[1]/text"
 msgstr "Continue fighting the pirate ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:335
+#: src-ru/data/events_ships.xml.rawclobber:349
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/surrender/choice[1]/event/text"
 msgstr ""
 "It's best you finish this — but you wonder whether what the pirate is "
 "carrying will be as valuable as what the Slugs snuck off with."
 
-#: src-ru/data/events_ships.xml.rawclobber:339
+#: src-ru/data/events_ships.xml.rawclobber:353
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/surrender/choice[2]/text"
 msgstr "Let the pirate escape and go after the Slug ship instead."
 
-#: src-ru/data/events_ships.xml.rawclobber:341
+#: src-ru/data/events_ships.xml.rawclobber:355
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/surrender/choice[2]/event/text"
 msgstr ""
 "The pirate's too badly damaged to pursue you, and you catch up to the Slugs "
 "before they jump. \"Ah, of courssse, we would never leave without providing "
-"the agreed upon ssspoils.\" They transfer over a decent chunk of the profits "
-"and set off."
+"the agreed upon ssspoils.\" They transfer over a decent chunk of the profits"
+" and set off."
 
-#: src-ru/data/events_ships.xml.rawclobber:348
+#: src-ru/data/events_ships.xml.rawclobber:362
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/destroyed/text"
 msgstr ""
 "With the pirate defeated you scan the debris for anything useful. The Slug "
 "ship is long gone, spoils from the cache in hand."
 
-#: src-ru/data/events_ships.xml.rawclobber:352
+#: src-ru/data/events_ships.xml.rawclobber:366
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP1\"]/deadCrew/text"
 msgstr ""
 "With the pirate defeated you scan the debris for anything useful. The Slug "
 "ship is long gone, spoils from the cache in hand."
 
-#: src-ru/data/events_ships.xml.rawclobber:358
+#: src-ru/data/events_ships.xml.rawclobber:372
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP2\"]/destroyed/text"
 msgstr ""
@@ -330,7 +338,7 @@ msgstr ""
 "protecting, but it's lost in the clouds. You console yourself with the "
 "salvage from the well-armed pirate ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:362
+#: src-ru/data/events_ships.xml.rawclobber:376
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"QUEST_SLUG_PIRATE_TRAP2\"]/deadCrew/text"
 msgstr ""
@@ -338,175 +346,174 @@ msgstr ""
 "but it's lost in the clouds. You console yourself with the salvage from the "
 "well-armed pirate ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:379
+#: src-ru/data/events_ships.xml.rawclobber:393
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL\"]/gotaway/text"
 msgstr "The ship made an FTL jump in an unknown direction..."
 
-#: src-ru/data/events_ships.xml.rawclobber:403
+#: src-ru/data/events_ships.xml.rawclobber:417
 msgid ""
 "data/events_ships.xml.rawclobber$//event[@name=\"REBEL_AUTO_SURRENDER_YES\"]/choice[1]/text"
 msgstr "Accept the drone's offer."
 
-#: src-ru/data/events_ships.xml.rawclobber:407
+#: src-ru/data/events_ships.xml.rawclobber:421
 msgid ""
 "data/events_ships.xml.rawclobber$//event[@name=\"REBEL_AUTO_SURRENDER_YES\"]/choice[2]/text"
 msgstr "Destroy it."
 
-#: src-ru/data/events_ships.xml.rawclobber:412
+#: src-ru/data/events_ships.xml.rawclobber:426
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"REBEL_AUTO_SURRENDER\"]/text[1]"
 msgstr ""
-"\"This is an automated message. Leave me alone and I will give you my cargo. "
-"Otherwise, it will be destroyed.\""
+"\"This is an automated message. Leave me alone and I will give you my cargo."
+" Otherwise, it will be destroyed.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:413
+#: src-ru/data/events_ships.xml.rawclobber:427
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"REBEL_AUTO_SURRENDER\"]/text[2]"
 msgstr ""
 "\"This is an automated message. Do not destroy me. Take this in exchange.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:414
+#: src-ru/data/events_ships.xml.rawclobber:428
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"REBEL_AUTO_SURRENDER\"]/text[3]"
 msgstr ""
 "\"This is an automated message. If you leave me be, I will leave you "
 "something.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:415
+#: src-ru/data/events_ships.xml.rawclobber:429
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"REBEL_AUTO_SURRENDER\"]/text[4]"
-msgstr ""
-"\"This is an automated message. You let me go, I leave my cargo to you.\""
+msgstr "\"This is an automated message. You let me go, I leave my cargo to you.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:416
+#: src-ru/data/events_ships.xml.rawclobber:430
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"REBEL_AUTO_SURRENDER\"]/text[5]"
 msgstr ""
-"\"This is an automated message. Cease fire immediately. You will be rewarded."
-"\""
+"\"This is an automated message. Cease fire immediately. You will be "
+"rewarded.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:419
+#: src-ru/data/events_ships.xml.rawclobber:433
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"REBEL_AUTO_SURRENDER_ACCEPT\"]/text"
 msgstr ""
 "The drone's comms module with the Rebels is broken, so you accept its offer "
 "without fear."
 
-#: src-ru/data/events_ships.xml.rawclobber:466
+#: src-ru/data/events_ships.xml.rawclobber:480
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_FUEL\"]/escape/text"
 msgstr "The drone is preparing to jump away."
 
-#: src-ru/data/events_ships.xml.rawclobber:469
+#: src-ru/data/events_ships.xml.rawclobber:483
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_FUEL\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You hope it didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_ships.xml.rawclobber:472
+#: src-ru/data/events_ships.xml.rawclobber:486
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_FUEL\"]/destroyed/text"
 msgstr ""
 "The ship explodes, leaving behind a collection of useful scrap material."
 
-#: src-ru/data/events_ships.xml.rawclobber:479
+#: src-ru/data/events_ships.xml.rawclobber:493
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FUEL\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_ships.xml.rawclobber:482
+#: src-ru/data/events_ships.xml.rawclobber:496
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FUEL\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You hope they didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_ships.xml.rawclobber:485
+#: src-ru/data/events_ships.xml.rawclobber:499
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FUEL\"]/destroyed/text"
 msgstr ""
 "The ship explodes, leaving behind a collection of useful scrap material."
 
-#: src-ru/data/events_ships.xml.rawclobber:489
+#: src-ru/data/events_ships.xml.rawclobber:503
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FUEL\"]/deadCrew/text"
 msgstr "With the crew dead you are free to search the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:497
+#: src-ru/data/events_ships.xml.rawclobber:511
 msgid "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_FUEL\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_ships.xml.rawclobber:500
+#: src-ru/data/events_ships.xml.rawclobber:514
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_FUEL\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You hope they didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_ships.xml.rawclobber:503
+#: src-ru/data/events_ships.xml.rawclobber:517
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_FUEL\"]/destroyed/text"
 msgstr ""
 "The ship explodes, leaving behind a collection of useful scrap material."
 
-#: src-ru/data/events_ships.xml.rawclobber:507
+#: src-ru/data/events_ships.xml.rawclobber:521
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_FUEL\"]/deadCrew/text"
 msgstr "With the crew dead you are free to search the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:514
+#: src-ru/data/events_ships.xml.rawclobber:528
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_HACKSHIELDS\"]/destroyed/text"
 msgstr ""
 "The ship explodes, leaving behind a collection of useful scrap material."
 
-#: src-ru/data/events_ships.xml.rawclobber:520
+#: src-ru/data/events_ships.xml.rawclobber:534
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_HACKSHIELDS\"]/deadCrew/text"
 msgstr ""
 "The ship explodes, leaving behind a collection of useful scrap material."
 
-#: src-ru/data/events_ships.xml.rawclobber:535
+#: src-ru/data/events_ships.xml.rawclobber:549
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_CIVILIAN\"]/destroyed/text"
 msgstr "The ship breaks apart. You hasten to contact the civilian ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:543
+#: src-ru/data/events_ships.xml.rawclobber:557
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_CIVILIAN\"]/deadCrew/text"
 msgstr ""
 "No more life signs detected on the pirate ship. You hasten to contact the "
 "civilian ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:554
+#: src-ru/data/events_ships.xml.rawclobber:568
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_REFUEL\"]/destroyed/text"
 msgstr "The ship breaks apart and you quickly salvage what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:559
+#: src-ru/data/events_ships.xml.rawclobber:573
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_REFUEL\"]/destroyed/choice/event/text"
 msgstr ""
 "The outpost hails you after the scout was destroyed, \"Thanks for the help. "
 "We've been harassed non-stop by those scouts. Take this on the house.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:568
+#: src-ru/data/events_ships.xml.rawclobber:582
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_MAP\"]/destroyed/text"
 msgstr ""
 "You access the recent scans from the unguarded station. Your map has been "
 "updated with details of the surrounding area."
 
-#: src-ru/data/events_ships.xml.rawclobber:576
+#: src-ru/data/events_ships.xml.rawclobber:590
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_ITEM\"]/destroyed/text"
 msgstr "You salvage what you can from the broken ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:579
+#: src-ru/data/events_ships.xml.rawclobber:593
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_ITEM\"]/destroyed/choice/text"
 msgstr "Investigate the station."
 
-#: src-ru/data/events_ships.xml.rawclobber:587
+#: src-ru/data/events_ships.xml.rawclobber:601
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/text"
 msgstr ""
@@ -514,258 +521,260 @@ msgstr ""
 "information to the Rebel Fleet. You could attempt to hack it to give the "
 "Rebels false information."
 
-#: src-ru/data/events_ships.xml.rawclobber:590
+#: src-ru/data/events_ships.xml.rawclobber:604
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[1]/text"
 msgstr "Attempt to manually hack into the station."
 
-#: src-ru/data/events_ships.xml.rawclobber:594
+#: src-ru/data/events_ships.xml.rawclobber:608
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[2]/text"
 msgstr "Don't risk it. Leave the station."
 
-#: src-ru/data/events_ships.xml.rawclobber:598
+#: src-ru/data/events_ships.xml.rawclobber:612
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[@req=\"hacking\"]/text"
 msgstr "(Hacking) Use a drone to hack into the station."
 
-#: src-ru/data/events_ships.xml.rawclobber:600
+#: src-ru/data/events_ships.xml.rawclobber:614
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_RADAR\"]/destroyed/choice[@req=\"hacking\"]/event/text"
 msgstr ""
-"You successfully hack into their system and transmit false information about "
-"your location. That should hold off the fleet for at least a little while. "
+"You successfully hack into their system and transmit false information about"
+" your location. That should hold off the fleet for at least a little while. "
 "You also are able to download data about the surrounding beacons."
 
-#: src-ru/data/events_ships.xml.rawclobber:613
+#: src-ru/data/events_ships.xml.rawclobber:627
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_WARNING\"]/escape/text"
 msgstr ""
-"The ship starts to power up its FTL Drive. If it gets away, it will no doubt "
-"warn the fleet of your position!"
+"The ship starts to power up its FTL Drive. If it gets away, it will no doubt"
+" warn the fleet of your position!"
 
-#: src-ru/data/events_ships.xml.rawclobber:617
+#: src-ru/data/events_ships.xml.rawclobber:631
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_WARNING\"]/gotaway/text"
 msgstr ""
 "The scout jumps away. It will certainly have informed the fleet of your "
 "position. You must get to the next sector as soon as possible!"
 
-#: src-ru/data/events_ships.xml.rawclobber:621
+#: src-ru/data/events_ships.xml.rawclobber:635
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_WARNING\"]/destroyed/text"
 msgstr ""
 "The ship breaks apart and you feel relief in the knowledge that you will "
 "hopefully still be one step ahead of the fleet."
 
-#: src-ru/data/events_ships.xml.rawclobber:628
+#: src-ru/data/events_ships.xml.rawclobber:642
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_BAIT\"]/escape/text"
 msgstr ""
 "Careful! Sensors indicate that this automated ship is rigged to inform the "
-"fleet of your location if destroyed! It is better to avoid risk and leave it "
-"alone, otherwise the fleet will find you faster within this Sector."
+"fleet of your location if destroyed! It is better to avoid risk and leave it"
+" alone, otherwise the fleet will find you faster within this Sector."
 
-#: src-ru/data/events_ships.xml.rawclobber:632
+#: src-ru/data/events_ships.xml.rawclobber:646
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_BAIT\"]/gotaway/text"
 msgstr ""
 "The scout jumps away. It will certainly have informed the fleet of your "
 "position. You must get to the next sector as soon as possible!"
 
-#: src-ru/data/events_ships.xml.rawclobber:636
+#: src-ru/data/events_ships.xml.rawclobber:650
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_AUTO_BAIT\"]/destroyed/text"
 msgstr ""
 "As the ship breaks apart, you detect the pulse of a Long-Range message. It "
 "must have informed the fleet of your position."
 
-#: src-ru/data/events_ships.xml.rawclobber:644
+#: src-ru/data/events_ships.xml.rawclobber:658
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/destroyed/text"
 msgstr "The ship breaks apart and you quickly salvage what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:649
+#: src-ru/data/events_ships.xml.rawclobber:663
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/destroyed/choice/event/text"
 msgstr ""
 "The outpost hails you, \"The pompous bastards expected free service just "
 "because they defeated the Federation. Take this for the help.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:655
+#: src-ru/data/events_ships.xml.rawclobber:669
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/deadCrew/text"
 msgstr "With the crew dead you are free to search the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:660
+#: src-ru/data/events_ships.xml.rawclobber:674
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_REFUEL_STATION\"]/deadCrew/choice/event/text"
 msgstr ""
 "The outpost hails you, \"The pompous bastards expected free service just "
 "because they defeated the Federation. Take this for the help.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:669
+#: src-ru/data/events_ships.xml.rawclobber:683
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/escape/text"
 msgstr ""
 "They are powering up their FTL! If they get away, they will no doubt warn "
 "the fleet of your position!"
 
-#: src-ru/data/events_ships.xml.rawclobber:673
+#: src-ru/data/events_ships.xml.rawclobber:687
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/gotaway/text"
 msgstr ""
 "The scout jumps away. It will certainly have informed the fleet of your "
 "position. You must get to the next sector as soon as possible!"
 
-#: src-ru/data/events_ships.xml.rawclobber:677
+#: src-ru/data/events_ships.xml.rawclobber:691
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/destroyed/text"
 msgstr ""
 "Their ship breaks apart and you are relieved to know that you are still one "
 "step ahead of the fleet."
 
-#: src-ru/data/events_ships.xml.rawclobber:681
+#: src-ru/data/events_ships.xml.rawclobber:695
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_WARNING\"]/deadCrew/text"
 msgstr ""
 "Their ship goes silent and you are relieved to know that you are still one "
 "step ahead of the fleet."
 
-#: src-ru/data/events_ships.xml.rawclobber:688
+#: src-ru/data/events_ships.xml.rawclobber:702
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_TRANSPORT\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_ships.xml.rawclobber:697
+#: src-ru/data/events_ships.xml.rawclobber:711
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_STORE_RESCUE\"]/destroyed/text"
 msgstr ""
 "The outpost hails you, \"Thank you! I don't know what we did to anger the "
-"Rebels, but they were ready to kill us. I'll show you our goods and patch up "
-"your hull.\""
+"Rebels, but they were ready to kill us. I'll show you our goods and patch up"
+" your hull.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:706
+#: src-ru/data/events_ships.xml.rawclobber:720
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SQUAT_STORE_RESCUE\"]/deadCrew/text"
 msgstr ""
 "The outpost hails you, \"Thank you! I don't know what we did to anger the "
-"Rebels, but they were ready to kill us. I'll show you our goods and patch up "
-"your hull.\""
+"Rebels, but they were ready to kill us. I'll show you our goods and patch up"
+" your hull.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:718
+#: src-ru/data/events_ships.xml.rawclobber:732
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE\"]/destroyed/text"
 msgstr "You scrap the wreckage."
 
-#: src-ru/data/events_ships.xml.rawclobber:723
+#: src-ru/data/events_ships.xml.rawclobber:737
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE\"]/destroyed/choice/event/text"
 msgstr ""
-"With the threat gone, you contact the Federation outpost. They respond, \"Our"
-" location has been compromised! Take everything you can and please drop our "
-"survivors off at the next station.\" One soldier offers to stay and fight."
+"With the threat gone, you contact the Federation outpost. They respond, "
+"\"Our location has been compromised! Take everything you can and please drop"
+" our survivors off at the next station.\" One soldier offers to stay and "
+"fight."
 
-#: src-ru/data/events_ships.xml.rawclobber:732
+#: src-ru/data/events_ships.xml.rawclobber:746
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE2\"]/destroyed/text"
 msgstr "You scrap the wreckage."
 
-#: src-ru/data/events_ships.xml.rawclobber:737
+#: src-ru/data/events_ships.xml.rawclobber:751
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FEDERATION_BASE2\"]/destroyed/choice/event/text"
 msgstr ""
 "You contact the station once the Rebel ship is destroyed. The lone survivor "
-"responds, \"This base is no longer safe. Let me join your crew and I'll have "
-"the station's drones patch up your ship.\""
+"responds, \"This base is no longer safe. Let me join your crew and I'll have"
+" the station's drones patch up your ship.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:748
+#: src-ru/data/events_ships.xml.rawclobber:762
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/destroyed/text"
 msgstr ""
 "With the ship destroyed, you quickly collect all remaining useful resources."
 
-#: src-ru/data/events_ships.xml.rawclobber:751
+#: src-ru/data/events_ships.xml.rawclobber:765
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/destroyed/choice/text"
 msgstr "Contact the Federation ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:756
+#: src-ru/data/events_ships.xml.rawclobber:770
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/deadCrew/text"
 msgstr ""
 "With the crew of the Rebel ship dead, nothing prevents you from searching "
 "their ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:759
+#: src-ru/data/events_ships.xml.rawclobber:773
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_VS_FEDERATION\"]/deadCrew/choice/text"
 msgstr "Contact the Federation ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:768
+#: src-ru/data/events_ships.xml.rawclobber:782
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"LONG_ELITE\"]/destroyed/text"
 msgstr "You are able to salvage scrap from the ship's debris."
 
-#: src-ru/data/events_ships.xml.rawclobber:776
+#: src-ru/data/events_ships.xml.rawclobber:790
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"LONG_FLEET\"]/destroyed/text"
 msgstr ""
 "There's no time to salvage the enemy ship... You must jump away before the "
 "cruisers get in firing range!"
 
-#: src-ru/data/events_ships.xml.rawclobber:782
+#: src-ru/data/events_ships.xml.rawclobber:796
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"LONG_FLEET\"]/deadCrew/text"
 msgstr ""
 "There's no time to salvage the enemy ship... You must jump away before the "
 "cruisers get in firing range!"
 
-#: src-ru/data/events_ships.xml.rawclobber:792
+#: src-ru/data/events_ships.xml.rawclobber:806
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_ships.xml.rawclobber:795
+#: src-ru/data/events_ships.xml.rawclobber:809
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You assume they just went to get "
 "reinforcements..."
 
-#: src-ru/data/events_ships.xml.rawclobber:798
+#: src-ru/data/events_ships.xml.rawclobber:812
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/destroyed/text"
 msgstr ""
 "You manage to retrieve a few precious fuel capsules. You hurry to jump away "
 "from the cruiser fire!"
 
-#: src-ru/data/events_ships.xml.rawclobber:804
+#: src-ru/data/events_ships.xml.rawclobber:818
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_FLEET_FUEL\"]/deadCrew/text"
 msgstr ""
 "You manage to retrieve a few precious fuel capsules. You hurry to jump away "
 "from the cruiser fire!"
 
-#: src-ru/data/events_ships.xml.rawclobber:814
+#: src-ru/data/events_ships.xml.rawclobber:828
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/escape/text"
 msgstr ""
-"As soon as they see you, they power up their engines to jump away. Stop them!"
+"As soon as they see you, they power up their engines to jump away. Stop "
+"them!"
 
-#: src-ru/data/events_ships.xml.rawclobber:818
+#: src-ru/data/events_ships.xml.rawclobber:832
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/gotaway/text"
 msgstr ""
 "With the ship gone you search through the abandoned base for any signs of "
 "their destination but find none."
 
-#: src-ru/data/events_ships.xml.rawclobber:822
+#: src-ru/data/events_ships.xml.rawclobber:836
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/destroyed/text"
 msgstr "You take what you can from the debris."
 
-#: src-ru/data/events_ships.xml.rawclobber:826
+#: src-ru/data/events_ships.xml.rawclobber:840
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2FAKE\"]/deadCrew/text"
 msgstr ""
@@ -773,25 +782,26 @@ msgstr ""
 "searching for never passed through this base... It must have been a decoy! "
 "You strip what you can and prepare to jump."
 
-#: src-ru/data/events_ships.xml.rawclobber:832
+#: src-ru/data/events_ships.xml.rawclobber:846
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/escape/text"
 msgstr ""
-"As soon as they see you, they power up their engines to jump away. Stop them!"
+"As soon as they see you, they power up their engines to jump away. Stop "
+"them!"
 
-#: src-ru/data/events_ships.xml.rawclobber:836
+#: src-ru/data/events_ships.xml.rawclobber:850
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/gotaway/text"
 msgstr ""
 "With the ship gone you search through the abandoned base for any signs of "
 "their destination but find none."
 
-#: src-ru/data/events_ships.xml.rawclobber:840
+#: src-ru/data/events_ships.xml.rawclobber:854
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/destroyed/text"
 msgstr "You take what you can from the debris."
 
-#: src-ru/data/events_ships.xml.rawclobber:844
+#: src-ru/data/events_ships.xml.rawclobber:858
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_ENGI_UNLOCK_2REAL\"]/deadCrew/text"
 msgstr ""
@@ -800,131 +810,132 @@ msgstr ""
 "passed through here not too long ago. You strip the ship and prepare to "
 "pursue them."
 
-#: src-ru/data/events_ships.xml.rawclobber:854
+#: src-ru/data/events_ships.xml.rawclobber:868
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"DISTRESS_ENGI_REBEL\"]/destroyed/text"
 msgstr ""
 "The Rebels destroyed, you pick the bones of their ship and wait for the "
 "small Engi ship to catch up."
 
-#: src-ru/data/events_ships.xml.rawclobber:862
+#: src-ru/data/events_ships.xml.rawclobber:876
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"DISTRESS_ENGI_REBEL\"]/deadCrew/text"
 msgstr ""
 "The Rebels destroyed, you pick the bones of their ship and wait for the "
 "small Engi ship to catch up."
 
-#: src-ru/data/events_ships.xml.rawclobber:895
+#: src-ru/data/events_ships.xml.rawclobber:909
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/destroyed/text"
 msgstr "The Mantis ship breaks apart."
 
-#: src-ru/data/events_ships.xml.rawclobber:898
+#: src-ru/data/events_ships.xml.rawclobber:912
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/destroyed/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr "Attempt to contact the Engi."
 
-#: src-ru/data/events_ships.xml.rawclobber:902
+#: src-ru/data/events_ships.xml.rawclobber:916
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/destroyed/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr "Attempt to contact the Engi."
 
-#: src-ru/data/events_ships.xml.rawclobber:907
+#: src-ru/data/events_ships.xml.rawclobber:921
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/deadCrew/text"
 msgstr ""
 "No more life signs detected on the Mantis ship. You hasten to contact the "
 "Engi."
 
-#: src-ru/data/events_ships.xml.rawclobber:910
+#: src-ru/data/events_ships.xml.rawclobber:924
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/deadCrew/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr "Attempt to contact the Engi."
 
-#: src-ru/data/events_ships.xml.rawclobber:914
+#: src-ru/data/events_ships.xml.rawclobber:928
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_STATION\"]/deadCrew/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr "Attempt to contact the Engi."
 
-#: src-ru/data/events_ships.xml.rawclobber:922
+#: src-ru/data/events_ships.xml.rawclobber:936
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_ships.xml.rawclobber:925
+#: src-ru/data/events_ships.xml.rawclobber:939
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You hope they didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_ships.xml.rawclobber:928
+#: src-ru/data/events_ships.xml.rawclobber:942
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/destroyed/text"
 msgstr ""
 "With the hostile Engi ship destroyed you carefully extract as much fuel as "
 "possible from the wreckage."
 
-#: src-ru/data/events_ships.xml.rawclobber:932
+#: src-ru/data/events_ships.xml.rawclobber:946
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/deadCrew/text"
 msgstr ""
 "With the hostile Engies subdued you carefully extract as much fuel as "
 "possible from the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:958
+#: src-ru/data/events_ships.xml.rawclobber:972
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[1]"
 msgstr ""
 "Victory! You narrowly avoid a hull breach as one of the Rock crew is "
 "propelled by the explosion straight toward your bridge."
 
-#: src-ru/data/events_ships.xml.rawclobber:959
+#: src-ru/data/events_ships.xml.rawclobber:973
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[2]"
 msgstr ""
-"The Rock ship disintegrates, and its FTL drive burns out turning its crew to "
-"stardust."
+"The Rock ship disintegrates, and its FTL drive burns out turning its crew to"
+" stardust."
 
-#: src-ru/data/events_ships.xml.rawclobber:960
+#: src-ru/data/events_ships.xml.rawclobber:974
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[3]"
 msgstr ""
-"The enemy hull is torn apart by a final volley. They're with the sandman now."
+"The enemy hull is torn apart by a final volley. They're with the sandman "
+"now."
 
-#: src-ru/data/events_ships.xml.rawclobber:961
+#: src-ru/data/events_ships.xml.rawclobber:975
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[4]"
 msgstr ""
 "You blink and they're gone: all that remains of the Rockman ship are the "
 "more sturdy pieces of hull infrastructure; might be something you can use."
 
-#: src-ru/data/events_ships.xml.rawclobber:962
+#: src-ru/data/events_ships.xml.rawclobber:976
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_DESTROYED\"]/text[5]"
 msgstr ""
 "Rockmen rarely go without a fight, but go they do. Their ship in pieces, "
 "you're free to take what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:965
+#: src-ru/data/events_ships.xml.rawclobber:979
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_CREWDEAD\"]/text[1]"
 msgstr ""
 "The Rockmen are a hardy species, though, so you take care when boarding "
 "their ship. All seems quiet — you take what you need and set off."
 
-#: src-ru/data/events_ships.xml.rawclobber:966
+#: src-ru/data/events_ships.xml.rawclobber:980
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_CREWDEAD\"]/text[2]"
 msgstr ""
 "Scanners report no lifesigns remaining on the enemy ship. Who knew Rockmen "
 "were so soft? Time to plunder."
 
-#: src-ru/data/events_ships.xml.rawclobber:967
+#: src-ru/data/events_ships.xml.rawclobber:981
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"ROCK_FIGHT_CREWDEAD\"]/text[3]"
 msgstr ""
@@ -932,21 +943,21 @@ msgstr ""
 "is the final crewman sitting slumped in their chair. Perhaps they were "
 "offering for you to ransack their supplies."
 
-#: src-ru/data/events_ships.xml.rawclobber:990
+#: src-ru/data/events_ships.xml.rawclobber:1004
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/escape/text"
 msgstr ""
 "The Rock ship starts to power up their FTL drive. If we're going to earn "
 "their trust we must endure the heat for as long as they can!"
 
-#: src-ru/data/events_ships.xml.rawclobber:994
+#: src-ru/data/events_ships.xml.rawclobber:1008
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/gotaway/text"
 msgstr ""
 "As they jump away they relay coordinates to your navigation system. They "
 "must mean for you to follow them!"
 
-#: src-ru/data/events_ships.xml.rawclobber:998
+#: src-ru/data/events_ships.xml.rawclobber:1012
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/destroyed/text"
 msgstr ""
@@ -954,7 +965,7 @@ msgstr ""
 "have helped the Federation if this had gone another way. You scrap what you "
 "can and prepare to jump out of the heat."
 
-#: src-ru/data/events_ships.xml.rawclobber:1002
+#: src-ru/data/events_ships.xml.rawclobber:1016
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ROCK_UNLOCK2\"]/deadCrew/text"
 msgstr ""
@@ -962,29 +973,29 @@ msgstr ""
 "have helped the Federation if this had gone another way. You scrap what you "
 "can and prepare to jump out of the heat."
 
-#: src-ru/data/events_ships.xml.rawclobber:1029
+#: src-ru/data/events_ships.xml.rawclobber:1043
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/destroyed/text"
 msgstr "The Mantis ship breaks apart."
 
-#: src-ru/data/events_ships.xml.rawclobber:1032
+#: src-ru/data/events_ships.xml.rawclobber:1046
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/destroyed/choice/text"
 msgstr "Attempt to contact the civilian ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1037
+#: src-ru/data/events_ships.xml.rawclobber:1051
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/deadCrew/text"
 msgstr ""
 "No more life signs detected on the pirate ship. You hasten to contact the "
 "civilian ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1040
+#: src-ru/data/events_ships.xml.rawclobber:1054
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CIVILIAN\"]/deadCrew/choice/text"
 msgstr "Attempt to contact the civilian ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1052
+#: src-ru/data/events_ships.xml.rawclobber:1066
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_NAMED_THIEF\"]/destroyed/text"
 msgstr ""
@@ -992,74 +1003,74 @@ msgstr ""
 "corpse of his ship. You sense, though, that his death has left a great "
 "mystery unresolved."
 
-#: src-ru/data/events_ships.xml.rawclobber:1063
+#: src-ru/data/events_ships.xml.rawclobber:1077
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_ENGI_UNLOCK_3\"]/deadCrew/text"
 msgstr "You strip what you can and contact the Engi ships."
 
-#: src-ru/data/events_ships.xml.rawclobber:1078
+#: src-ru/data/events_ships.xml.rawclobber:1092
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/text"
 msgstr ""
 "The Mantis defeated, you contact the weakened Slug vessel. \"You ssseee,\" "
-"they begin, \"we are most grateful, but, that isss, we do not currently have "
-"the liquid asssets to reward you at this time.\""
+"they begin, \"we are most grateful, but, that isss, we do not currently have"
+" the liquid asssets to reward you at this time.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:1081
+#: src-ru/data/events_ships.xml.rawclobber:1095
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/choice[1]/text"
 msgstr "Leave them be."
 
-#: src-ru/data/events_ships.xml.rawclobber:1083
+#: src-ru/data/events_ships.xml.rawclobber:1097
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/choice[1]/event/text"
 msgstr "These wretches aren't worth fighting. Time to spin up and jump off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1087
+#: src-ru/data/events_ships.xml.rawclobber:1101
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/destroyed/choice[2]/text"
 msgstr "Finish them off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1092
+#: src-ru/data/events_ships.xml.rawclobber:1106
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/text"
 msgstr ""
 "The Mantis defeated, you contact the weakened Slug vessel. \"You ssseee,\" "
-"they begin, \"we are most grateful, but, that isss, we do not currently have "
-"the liquid asssets to reward you at this time.\""
+"they begin, \"we are most grateful, but, that isss, we do not currently have"
+" the liquid asssets to reward you at this time.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:1095
+#: src-ru/data/events_ships.xml.rawclobber:1109
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/choice[1]/text"
 msgstr "Leave them be."
 
-#: src-ru/data/events_ships.xml.rawclobber:1097
+#: src-ru/data/events_ships.xml.rawclobber:1111
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/choice[1]/event/text"
 msgstr "These wretches aren't worth fighting. Time to spin up and jump off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1101
+#: src-ru/data/events_ships.xml.rawclobber:1115
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS\"]/deadCrew/choice[2]/text"
 msgstr "Finish them off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1115
+#: src-ru/data/events_ships.xml.rawclobber:1129
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS2\"]/destroyed/text"
 msgstr ""
-"As you're salvaging the Mantis wreck the Zoltan security patrol returns with "
-"three other ships. You quickly salvage what you can and set off before they "
-"can stop you for questioning."
+"As you're salvaging the Mantis wreck the Zoltan security patrol returns with"
+" three other ships. You quickly salvage what you can and set off before they"
+" can stop you for questioning."
 
-#: src-ru/data/events_ships.xml.rawclobber:1119
+#: src-ru/data/events_ships.xml.rawclobber:1133
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS2\"]/deadCrew/text"
 msgstr ""
-"As you're salvaging the Mantis wreck the Zoltan security patrol returns with "
-"three other ships. You quickly salvage what you can and set off before they "
-"can stop you for questioning."
+"As you're salvaging the Mantis wreck the Zoltan security patrol returns with"
+" three other ships. You quickly salvage what you can and set off before they"
+" can stop you for questioning."
 
-#: src-ru/data/events_ships.xml.rawclobber:1150
+#: src-ru/data/events_ships.xml.rawclobber:1164
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/destroyed/text"
 msgstr ""
@@ -1067,7 +1078,7 @@ msgstr ""
 "construction platform. However, you find that it has long since disappeared "
 "into the clouds. You scrap what you can and prepare to move on."
 
-#: src-ru/data/events_ships.xml.rawclobber:1154
+#: src-ru/data/events_ships.xml.rawclobber:1168
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK2\"]/deadCrew/text"
 msgstr ""
@@ -1075,22 +1086,22 @@ msgstr ""
 "construction platform. However, you find that it has long since disappeared "
 "into the clouds. You scrap what you can and prepare to move on."
 
-#: src-ru/data/events_ships.xml.rawclobber:1160
+#: src-ru/data/events_ships.xml.rawclobber:1174
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/escape/text"
 msgstr ""
 "The interceptor powers up its FTL drive in preparation to escape. At the "
-"same time, the cruiser's FTL drive does the same. They must be linked! Don't "
-"let them get away!"
+"same time, the cruiser's FTL drive does the same. They must be linked! Don't"
+" let them get away!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1164
+#: src-ru/data/events_ships.xml.rawclobber:1178
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/gotaway/text"
 msgstr ""
 "The interceptor jumps away with the cruiser linked to its FTL signatures. "
 "You were so close..."
 
-#: src-ru/data/events_ships.xml.rawclobber:1167
+#: src-ru/data/events_ships.xml.rawclobber:1181
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/destroyed/text"
 msgstr ""
@@ -1099,12 +1110,12 @@ msgstr ""
 "computer to guide it back to the main Federation hangar you discover a "
 "unique augment that duplicates the Slug's ability to heal breaches!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1168
+#: src-ru/data/events_ships.xml.rawclobber:1182
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/destroyed/unlockShip"
 msgstr "The Slug cruiser has been unlocked and added to the hangar!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1173
+#: src-ru/data/events_ships.xml.rawclobber:1187
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/deadCrew/text"
 msgstr ""
@@ -1113,252 +1124,252 @@ msgstr ""
 "computer to guide it back to the main Federation hangar you discover a "
 "unique augment that duplicates the Slug's ability to heal breaches!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1174
+#: src-ru/data/events_ships.xml.rawclobber:1188
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_UNLOCK3\"]/deadCrew/unlockShip"
 msgstr "The Slug cruiser has been unlocked and added to the hangar!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1183
+#: src-ru/data/events_ships.xml.rawclobber:1197
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_DISTRESS_ROCK\"]/destroyed/text"
 msgstr ""
-"With the Slug ship destroyed, you retrieve some scrap and return to the Rock "
-"ship."
+"With the Slug ship destroyed, you retrieve some scrap and return to the Rock"
+" ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1191
+#: src-ru/data/events_ships.xml.rawclobber:1205
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_DISTRESS_ROCK\"]/deadCrew/text"
 msgstr ""
 "With the Slugs no longer a threat, you strip the ship and return to the "
 "Rockmen."
 
-#: src-ru/data/events_ships.xml.rawclobber:1203
+#: src-ru/data/events_ships.xml.rawclobber:1217
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS_SLUG\"]/destroyed/text"
 msgstr ""
 "At last the Slugs' prized possessions are yours for the taking. After, that "
 "is, you split your takings with the Mantis."
 
-#: src-ru/data/events_ships.xml.rawclobber:1207
+#: src-ru/data/events_ships.xml.rawclobber:1221
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"SLUG_DISTRESS_MANTIS_SLUG\"]/deadCrew/text"
 msgstr ""
 "At last the Slugs' prized possessions are yours for the taking. After, that "
 "is, you split your takings with the Mantis."
 
-#: src-ru/data/events_ships.xml.rawclobber:1216
+#: src-ru/data/events_ships.xml.rawclobber:1230
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/escape/text"
 msgstr "Looks like they don't want to fight and are trying to escape."
 
-#: src-ru/data/events_ships.xml.rawclobber:1219
+#: src-ru/data/events_ships.xml.rawclobber:1233
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You hope they didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_ships.xml.rawclobber:1222
+#: src-ru/data/events_ships.xml.rawclobber:1236
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/destroyed/text"
 msgstr "You try and collect as much fuel from the wreckage as possible."
 
-#: src-ru/data/events_ships.xml.rawclobber:1226
+#: src-ru/data/events_ships.xml.rawclobber:1240
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_OVERPRICED\"]/deadCrew/text"
 msgstr ""
 "With the Slug ship subdued you are free to collect as much fuel as possible."
 
-#: src-ru/data/events_ships.xml.rawclobber:1235
+#: src-ru/data/events_ships.xml.rawclobber:1249
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your systems return to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1240
+#: src-ru/data/events_ships.xml.rawclobber:1254
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "systems return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1247
+#: src-ru/data/events_ships.xml.rawclobber:1261
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN_FIRE\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your systems return to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1253
+#: src-ru/data/events_ships.xml.rawclobber:1267
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_OXYGEN_FIRE\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, their hacking system shuts down and your systems "
 "return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1266
+#: src-ru/data/events_ships.xml.rawclobber:1280
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_DOORS\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your systems return to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1272
+#: src-ru/data/events_ships.xml.rawclobber:1286
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_DOORS\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "systems return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1284
+#: src-ru/data/events_ships.xml.rawclobber:1298
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_ENGINES\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your systems return to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1290
+#: src-ru/data/events_ships.xml.rawclobber:1304
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_ENGINES\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "systems return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1298
+#: src-ru/data/events_ships.xml.rawclobber:1312
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_SHIELDS\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your shields return to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1303
+#: src-ru/data/events_ships.xml.rawclobber:1317
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_SHIELDS\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "shields return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1311
+#: src-ru/data/events_ships.xml.rawclobber:1325
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_PILOT\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your piloting returns to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1316
+#: src-ru/data/events_ships.xml.rawclobber:1330
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_PILOT\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "piloting returns to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1324
+#: src-ru/data/events_ships.xml.rawclobber:1338
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_WEAPONS\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your weapon system returns to normal. You "
 "collect what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1329
+#: src-ru/data/events_ships.xml.rawclobber:1343
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_WEAPONS\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "weapon system returns to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1337
+#: src-ru/data/events_ships.xml.rawclobber:1351
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_HACKING\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and their hacking module is destroyed. You "
 "collect what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1342
+#: src-ru/data/events_ships.xml.rawclobber:1356
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_HACKING\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "systems return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1354
+#: src-ru/data/events_ships.xml.rawclobber:1368
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_MEDBAY\"]/destroyed/text"
 msgstr ""
 "The Slug ship breaks apart and your systems return to normal. You collect "
 "what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1361
+#: src-ru/data/events_ships.xml.rawclobber:1375
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"JELLY_STATUS_MEDBAY\"]/deadCrew/text"
 msgstr ""
 "With their crew dead, you quickly shut off their hacking module and your "
 "systems return to normal. You strip the ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1402
+#: src-ru/data/events_ships.xml.rawclobber:1416
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PIRATE\"]/gotaway/text"
 msgstr "The pirate jumped away."
 
-#: src-ru/data/events_ships.xml.rawclobber:1410
+#: src-ru/data/events_ships.xml.rawclobber:1424
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SCIENCE_DOCK\"]/surrender/text"
 msgstr ""
-"The Zoltan captain sends an urgent hail: \"Wait, this was all a test! A test "
-"that you passed! A diverse crew, working together, surely a sight to warm "
+"The Zoltan captain sends an urgent hail: \"Wait, this was all a test! A test"
+" that you passed! A diverse crew, working together, surely a sight to warm "
 "the heart of any dispassionate observer. Come, I shall join your crew!\""
 
-#: src-ru/data/events_ships.xml.rawclobber:1416
+#: src-ru/data/events_ships.xml.rawclobber:1430
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SCIENCE_DOCK\"]/destroyed/text"
 msgstr ""
-"While you search the debris, you wonder what it was that could have provoked "
-"them to act so irrationally."
+"While you search the debris, you wonder what it was that could have provoked"
+" them to act so irrationally."
 
-#: src-ru/data/events_ships.xml.rawclobber:1420
+#: src-ru/data/events_ships.xml.rawclobber:1434
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SCIENCE_DOCK\"]/deadCrew/text"
 msgstr ""
 "While you scrap their ship, you wonder what it was that could have provoked "
 "them to act so irrationally."
 
-#: src-ru/data/events_ships.xml.rawclobber:1429
+#: src-ru/data/events_ships.xml.rawclobber:1443
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/text"
 msgstr ""
 "They are clearly not putting up a fight. Are you sure you want to destroy "
 "them?"
 
-#: src-ru/data/events_ships.xml.rawclobber:1431
+#: src-ru/data/events_ships.xml.rawclobber:1445
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[1]/text"
 msgstr "Finish them off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1433
+#: src-ru/data/events_ships.xml.rawclobber:1447
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[1]/event/text"
 msgstr "You continue the assault."
 
-#: src-ru/data/events_ships.xml.rawclobber:1437
+#: src-ru/data/events_ships.xml.rawclobber:1451
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[2]/text"
 msgstr "Let them go."
 
-#: src-ru/data/events_ships.xml.rawclobber:1439
+#: src-ru/data/events_ships.xml.rawclobber:1453
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/surrender/choice[2]/event/text"
 msgstr ""
 "You power down your weapons and after a time the ship slowly limps away. "
 "They refuse all communications. You can't help but feel somewhat guilty."
 
-#: src-ru/data/events_ships.xml.rawclobber:1445
+#: src-ru/data/events_ships.xml.rawclobber:1459
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/destroyed/text"
 msgstr ""
-"You can't help but feel somewhat guilty as you search through the debris. It "
-"was probably a trap... right?"
+"You can't help but feel somewhat guilty as you search through the debris. It"
+" was probably a trap... right?"
 
-#: src-ru/data/events_ships.xml.rawclobber:1449
+#: src-ru/data/events_ships.xml.rawclobber:1463
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK1\"]/deadCrew/text"
 msgstr ""
@@ -1366,35 +1377,35 @@ msgstr ""
 "they were on anything other than a peaceful mission. Perhaps you were too "
 "hasty."
 
-#: src-ru/data/events_ships.xml.rawclobber:1455
+#: src-ru/data/events_ships.xml.rawclobber:1469
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK2\"]/destroyed/text"
 msgstr ""
 "You defeat your assailant, but the peace ship has jumped away in the "
 "commotion."
 
-#: src-ru/data/events_ships.xml.rawclobber:1459
+#: src-ru/data/events_ships.xml.rawclobber:1473
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PEACE_QUEST_ATTACK2\"]/deadCrew/text"
 msgstr ""
 "You defeat your assailant, but the peace ship has jumped away in the "
 "commotion."
 
-#: src-ru/data/events_ships.xml.rawclobber:1468
+#: src-ru/data/events_ships.xml.rawclobber:1482
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS1\"]/destroyed/text"
 msgstr ""
 "The Mantis are so grateful that they only take three quarters of the loot, "
 "leaving the rest for you. How civilized!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1472
+#: src-ru/data/events_ships.xml.rawclobber:1486
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_SHIP_SAVE_MANTIS1\"]/deadCrew/text"
 msgstr ""
-"The Mantis are so grateful that they only take half of the loot, leaving the "
-"rest for you. How civilized!"
+"The Mantis are so grateful that they only take half of the loot, leaving the"
+" rest for you. How civilized!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1480
+#: src-ru/data/events_ships.xml.rawclobber:1494
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_ZOLTAN\"]/destroyed/text"
 msgstr ""
@@ -1403,7 +1414,7 @@ msgstr ""
 "courtesy.\" They jump off. You collect what you can from the remains of the "
 "Zoltan ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1485
+#: src-ru/data/events_ships.xml.rawclobber:1499
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_ZOLTAN\"]/deadCrew/text"
 msgstr ""
@@ -1412,47 +1423,47 @@ msgstr ""
 "courtesy.\" They jump off. You collect what you can from the remains of the "
 "Zoltan ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1493
+#: src-ru/data/events_ships.xml.rawclobber:1507
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_REBEL\"]/destroyed/text"
 msgstr ""
 "The Zoltan hail once the smoke disperses. \"Thank you. We were led to "
 "believe Federation ideals died along with the Federation itself. Let us aid "
-"you a little, for old times' sake.\" You accept their reward and scrap, then "
-"collect some remains from the Rebel ship."
+"you a little, for old times' sake.\" You accept their reward and scrap, then"
+" collect some remains from the Rebel ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1497
+#: src-ru/data/events_ships.xml.rawclobber:1511
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_PRIMITIVES_REBEL\"]/deadCrew/text"
 msgstr ""
 "The Zoltan hail once the smoke disperses. \"Thank you. We were led to "
 "believe Federation ideals died along with the Federation itself. Let us aid "
-"you a little, for old times' sake.\" You accept their reward and scrap, then "
-"collect some remains from the Rebel ship."
+"you a little, for old times' sake.\" You accept their reward and scrap, then"
+" collect some remains from the Rebel ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1506
+#: src-ru/data/events_ships.xml.rawclobber:1520
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/text"
 msgstr "You salvage what you can from the ship's remains."
 
-#: src-ru/data/events_ships.xml.rawclobber:1511
+#: src-ru/data/events_ships.xml.rawclobber:1525
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/choice/event/text"
 msgstr ""
 "The Zoltan looks deeply dissatisfied with your aiming and demands to be "
 "dropped off at your earliest convenience."
 
-#: src-ru/data/events_ships.xml.rawclobber:1513
+#: src-ru/data/events_ships.xml.rawclobber:1527
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/choice/event/choice[1]/text"
 msgstr "Let him go."
 
-#: src-ru/data/events_ships.xml.rawclobber:1517
+#: src-ru/data/events_ships.xml.rawclobber:1531
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/destroyed/choice/event/choice[2]/text"
 msgstr "Offer to hire him for 30 scrap."
 
-#: src-ru/data/events_ships.xml.rawclobber:1524
+#: src-ru/data/events_ships.xml.rawclobber:1538
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_LIFERAFT\"]/deadCrew/text"
 msgstr ""
@@ -1460,147 +1471,148 @@ msgstr ""
 "\"Egalitarianism is a cornerstone of successful cohabitation. Please, enjoy "
 "the fruits of your labor.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:1535
+#: src-ru/data/events_ships.xml.rawclobber:1549
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_MANTIS\"]/destroyed/text"
 msgstr "You salvage the remains and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1543
+#: src-ru/data/events_ships.xml.rawclobber:1557
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_MANTIS\"]/deadCrew/text"
 msgstr "You salvage the ship and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1553
+#: src-ru/data/events_ships.xml.rawclobber:1567
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_SLUG\"]/destroyed/text"
 msgstr "You salvage the remains and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1561
+#: src-ru/data/events_ships.xml.rawclobber:1575
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_SLUG\"]/deadCrew/text"
 msgstr "You salvage the ship and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1571
+#: src-ru/data/events_ships.xml.rawclobber:1585
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_ROCK\"]/destroyed/text"
 msgstr "You salvage the remains and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1579
+#: src-ru/data/events_ships.xml.rawclobber:1593
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_RIFT_ROCK\"]/deadCrew/text"
 msgstr "You salvage the ship and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1589
+#: src-ru/data/events_ships.xml.rawclobber:1603
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_RIFT_ROCK\"]/destroyed/text"
 msgstr "You salvage the remains and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1597
+#: src-ru/data/events_ships.xml.rawclobber:1611
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_RIFT_ROCK\"]/deadCrew/text"
 msgstr "You salvage the ship and contact the wise man."
 
-#: src-ru/data/events_ships.xml.rawclobber:1612
+#: src-ru/data/events_ships.xml.rawclobber:1626
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_CREW_SCAN\"]/destroyed/text"
 msgstr ""
 "You scrap what you can and prepare to jump before the other guards arrive."
 
-#: src-ru/data/events_ships.xml.rawclobber:1617
+#: src-ru/data/events_ships.xml.rawclobber:1631
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"ZOLTAN_CREW_SCAN\"]/deadCrew/text"
 msgstr ""
 "You scrap what you can and prepare to jump before the other guards arrive."
 
-#: src-ru/data/events_ships.xml.rawclobber:1636
+#: src-ru/data/events_ships.xml.rawclobber:1650
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/destroyed/text"
 msgstr "You take out the ship and contact the research station."
 
-#: src-ru/data/events_ships.xml.rawclobber:1641
+#: src-ru/data/events_ships.xml.rawclobber:1655
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/destroyed/choice/event/text"
 msgstr ""
 "\"Thank you for rescuing us! They held us hostage to ambush unsuspecting "
 "passersby. Please, take this.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:1648
+#: src-ru/data/events_ships.xml.rawclobber:1662
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/deadCrew/text"
 msgstr "You disable the ship and contact the research station."
 
-#: src-ru/data/events_ships.xml.rawclobber:1653
+#: src-ru/data/events_ships.xml.rawclobber:1667
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_ZOLTAN_CREW_STUDY\"]/deadCrew/choice/event/text"
 msgstr ""
 "\"Thank you for rescuing us! They held us hostage to ambush unsuspecting "
 "passersby. Please, take this.\""
 
-#: src-ru/data/events_ships.xml.rawclobber:1688
+#: src-ru/data/events_ships.xml.rawclobber:1702
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CIVILIAN_SHIP_NOFUEL\"]/escape/text"
 msgstr "It seems they don't want to fight and are trying to flee."
 
-#: src-ru/data/events_ships.xml.rawclobber:1691
+#: src-ru/data/events_ships.xml.rawclobber:1705
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CIVILIAN_SHIP_NOFUEL\"]/gotaway/text"
 msgstr "The ship flies away in an unknown direction..."
 
-#: src-ru/data/events_ships.xml.rawclobber:1699
+#: src-ru/data/events_ships.xml.rawclobber:1713
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FUEL_SELLER\"]/escape/text"
 msgstr ""
 "It is apparent that the ship was not intended for combat. It seems to be "
 "trying to jump away."
 
-#: src-ru/data/events_ships.xml.rawclobber:1702
+#: src-ru/data/events_ships.xml.rawclobber:1716
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FUEL_SELLER\"]/gotaway/text"
 msgstr ""
 "The ship jumps away without a word. You hope they didn't leave to get "
 "reinforcements."
 
-#: src-ru/data/events_ships.xml.rawclobber:1705
+#: src-ru/data/events_ships.xml.rawclobber:1719
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"AUTO_FUEL_SELLER\"]/destroyed/text"
 msgstr ""
 "As the ship breaks apart, you frantically try to salvage the remaining fuel "
 "from its cargo."
 
-#: src-ru/data/events_ships.xml.rawclobber:1728
+#: src-ru/data/events_ships.xml.rawclobber:1742
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr "Accept their surrender."
 
-#: src-ru/data/events_ships.xml.rawclobber:1732
+#: src-ru/data/events_ships.xml.rawclobber:1746
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[2]/text"
 msgstr "Ignore them."
 
-#: src-ru/data/events_ships.xml.rawclobber:1734
+#: src-ru/data/events_ships.xml.rawclobber:1748
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[2]/event/text"
 msgstr "You cut off communications and prepare to finish them off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1738
+#: src-ru/data/events_ships.xml.rawclobber:1752
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_SHIP\"]/surrender/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr "(Slug Crew Member) Your Slug knows what they want to give you."
 
-#: src-ru/data/events_ships.xml.rawclobber:1753
+#: src-ru/data/events_ships.xml.rawclobber:1767
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_FED\"]/destroyed/text"
 msgstr ""
 "The Crystalline ship shatters and you pick what you can from the debris."
 
-#: src-ru/data/events_ships.xml.rawclobber:1761
+#: src-ru/data/events_ships.xml.rawclobber:1775
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_FED\"]/deadCrew/text"
-msgstr "The crew of the enemy ship has been eliminated. You scrap what you can."
+msgstr ""
+"The crew of the enemy ship has been eliminated. You scrap what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1772
+#: src-ru/data/events_ships.xml.rawclobber:1786
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/text"
 msgstr ""
@@ -1608,45 +1620,45 @@ msgstr ""
 "fight. Should you power down your weapons and explain that you mean no "
 "threat?"
 
-#: src-ru/data/events_ships.xml.rawclobber:1774
+#: src-ru/data/events_ships.xml.rawclobber:1788
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[1]/text"
 msgstr "Stop the fight."
 
-#: src-ru/data/events_ships.xml.rawclobber:1776
+#: src-ru/data/events_ships.xml.rawclobber:1790
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[1]/event/text"
 msgstr ""
-"They accept your explanation and allow you to approach the fleet. It appears "
-"they are miners and colonists from a fringe settlement who are fleeing to "
+"They accept your explanation and allow you to approach the fleet. It appears"
+" they are miners and colonists from a fringe settlement who are fleeing to "
 "more protected space after hearing reports of pirate and Rebel attacks."
 
-#: src-ru/data/events_ships.xml.rawclobber:1781
+#: src-ru/data/events_ships.xml.rawclobber:1795
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[1]/event/choice/event/text"
 msgstr ""
-"They apologize for their hasty response to your presence and spend some time "
-"refueling and repairing both ships."
+"They apologize for their hasty response to your presence and spend some time"
+" refueling and repairing both ships."
 
-#: src-ru/data/events_ships.xml.rawclobber:1789
+#: src-ru/data/events_ships.xml.rawclobber:1803
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[2]/text"
 msgstr "Finish them off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1791
+#: src-ru/data/events_ships.xml.rawclobber:1805
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/surrender/choice[2]/event/text"
 msgstr "They wanted to pick a fight with you so that's what they'll get."
 
-#: src-ru/data/events_ships.xml.rawclobber:1796
+#: src-ru/data/events_ships.xml.rawclobber:1810
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/destroyed/text"
 msgstr ""
-"The Crystalline ship shatters and you pick what you can from the debris. The "
-"rest of the convoy used the time to put a significant amount of distance "
+"The Crystalline ship shatters and you pick what you can from the debris. The"
+" rest of the convoy used the time to put a significant amount of distance "
 "between you and them. Nothing left to do but jump."
 
-#: src-ru/data/events_ships.xml.rawclobber:1800
+#: src-ru/data/events_ships.xml.rawclobber:1814
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_CONVOY\"]/deadCrew/text"
 msgstr ""
@@ -1654,20 +1666,19 @@ msgstr ""
 "rest of the convoy used the time to put a significant amount of distance "
 "between you and them. Nothing left to do but jump."
 
-#: src-ru/data/events_ships.xml.rawclobber:1809
+#: src-ru/data/events_ships.xml.rawclobber:1823
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/text"
 msgstr ""
-"The hunters message you, "
-"\"We surrender. Take one of these squishy meat sacks that we've captured.\" "
-"He must be referring to the human captives."
+"The hunters message you, \"We surrender. Take one of these squishy meat "
+"sacks that we've captured.\" He must be referring to the human captives."
 
-#: src-ru/data/events_ships.xml.rawclobber:1811
+#: src-ru/data/events_ships.xml.rawclobber:1825
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[1]/text"
 msgstr "Accept their surrender."
 
-#: src-ru/data/events_ships.xml.rawclobber:1813
+#: src-ru/data/events_ships.xml.rawclobber:1827
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[1]/event/text"
 msgstr ""
@@ -1675,115 +1686,117 @@ msgstr ""
 "and you suspect that they were once a Rebel, but they seem very glad to be "
 "free."
 
-#: src-ru/data/events_ships.xml.rawclobber:1819
+#: src-ru/data/events_ships.xml.rawclobber:1833
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[2]/text"
 msgstr "Finish them off."
 
-#: src-ru/data/events_ships.xml.rawclobber:1821
+#: src-ru/data/events_ships.xml.rawclobber:1835
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/surrender/choice[2]/event/text"
 msgstr "Who knows how many humans will be saved if you kill them now."
 
-#: src-ru/data/events_ships.xml.rawclobber:1826
+#: src-ru/data/events_ships.xml.rawclobber:1840
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/destroyed/text"
 msgstr ""
-"The Crystalline ship shatters and you pick what you can from the debris. Who "
-"knows how many people you've saved by stopping this ship."
+"The Crystalline ship shatters and you pick what you can from the debris. Who"
+" knows how many people you've saved by stopping this ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1830
+#: src-ru/data/events_ships.xml.rawclobber:1844
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"CRYSTAL_HUNTER\"]/deadCrew/text"
 msgstr ""
 "The crew of the enemy ship has been eliminated. You scrap what you can. Who "
 "knows how many people you've saved by stopping this ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1837
+#: src-ru/data/events_ships.xml.rawclobber:1851
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_CRYSTAL_REBEL_CRYSTAL\"]/destroyed/text"
 msgstr "The Rebels destroyed, you pick the bones of their ship."
 
-#: src-ru/data/events_ships.xml.rawclobber:1845
+#: src-ru/data/events_ships.xml.rawclobber:1859
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"REBEL_CRYSTAL_REBEL_CRYSTAL\"]/deadCrew/text"
 msgstr "The Rebel ship captured, you seize the contents of its holds."
 
-#: src-ru/data/events_ships.xml.rawclobber:1858
+#: src-ru/data/events_ships.xml.rawclobber:1872
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CRYSTAL\"]/destroyed/text"
 msgstr "The ship explodes and you scrap what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1866
+#: src-ru/data/events_ships.xml.rawclobber:1880
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"MANTIS_CRYSTAL\"]/deadCrew/text"
-msgstr "With the crew dead you take as much salvage from the ship as possible."
+msgstr ""
+"With the crew dead you take as much salvage from the ship as possible."
 
-#: src-ru/data/events_ships.xml.rawclobber:1877
+#: src-ru/data/events_ships.xml.rawclobber:1891
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_CRYSTAL\"]/destroyed/text"
 msgstr "The ship explodes and you scrap what you can."
 
-#: src-ru/data/events_ships.xml.rawclobber:1885
+#: src-ru/data/events_ships.xml.rawclobber:1899
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PIRATE_CRYSTAL\"]/deadCrew/text"
-msgstr "With the crew dead you take as much salvage from the ship as possible."
+msgstr ""
+"With the crew dead you take as much salvage from the ship as possible."
 
-#: src-ru/data/events_ships.xml.rawclobber:1906
+#: src-ru/data/events_ships.xml.rawclobber:1920
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PRIZRAK_SHIP\"]/destroyed/text"
 msgstr ""
 "The haunted ship is destroyed. It won't be able to trouble future travelers."
 
-#: src-ru/data/events_ships.xml.rawclobber:1913
+#: src-ru/data/events_ships.xml.rawclobber:1927
 msgid ""
 "data/events_ships.xml.rawclobber$//ship[@name=\"PRIZRAK_SHIP\"]/deadCrew/text"
 msgstr "Now the ship is actually empty."
 
-#: src-ru/data/events_ships.xml.rawclobber:1956
+#: src-ru/data/events_ships.xml.rawclobber:1970
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"DEAD_CREW_SHELL_TEXT\"]/text[1]"
 msgstr "The last wounded Shell makes a horrible squeak and dies..."
 
-#: src-ru/data/events_ships.xml.rawclobber:1957
+#: src-ru/data/events_ships.xml.rawclobber:1971
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"DEAD_CREW_SHELL_TEXT\"]/text[2]"
 msgstr ""
-"A wounded Shell is rolling around the ship in agony, and you finish them off "
-"in cold blood."
+"A wounded Shell is rolling around the ship in agony, and you finish them off"
+" in cold blood."
 
-#: src-ru/data/events_ships.xml.rawclobber:1958
+#: src-ru/data/events_ships.xml.rawclobber:1972
 msgid ""
 "data/events_ships.xml.rawclobber$//textList[@name=\"DEAD_CREW_SHELL_TEXT\"]/text[3]"
 msgstr ""
-"The mortally wounded Shell captain screeches desperately, but the sound soon "
-"subsides..."
+"The mortally wounded Shell captain screeches desperately, but the sound soon"
+" subsides..."
 
-#: src-ru/data/events_ships.xml.rawclobber:1963
+#: src-ru/data/events_ships.xml.rawclobber:1977
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/text"
 msgstr ""
 "While you're busy taking useful supplies from their ship, your Slug has "
 "become interested in the armor of one of the dead Shells..."
 
-#: src-ru/data/events_ships.xml.rawclobber:1966
+#: src-ru/data/events_ships.xml.rawclobber:1980
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[1]/text"
 msgstr "Let the Slug take the carapace."
 
-#: src-ru/data/events_ships.xml.rawclobber:1968
+#: src-ru/data/events_ships.xml.rawclobber:1982
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[1]/event/text"
 msgstr ""
 "The Slug slithers inside with a satisfied look. Now their fragile body is "
 "protected for close quarters combat!"
 
-#: src-ru/data/events_ships.xml.rawclobber:1973
+#: src-ru/data/events_ships.xml.rawclobber:1987
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[2]/text"
 msgstr "Order them to discard the armor."
 
-#: src-ru/data/events_ships.xml.rawclobber:1975
+#: src-ru/data/events_ships.xml.rawclobber:1989
 msgid ""
 "data/events_ships.xml.rawclobber$//eventList[@name=\"DEAD_CREW_SHELL_WITH_SLUG\"]/event[1]/choice[2]/event/text"
 msgstr "Your Slug hisses angrily, but obeys."
