@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2025-06-06 10:50+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datatext_miscxmlappend/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: src-ru/data/text_misc.xml.append:7
 msgid "data/text_misc.xml.append$//text[@name=\"bullet\"]"
@@ -1351,6 +1358,7 @@ msgstr ""
 "they stand."
 
 #: src-ru/data/text_misc.xml.append:415
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ex_beams\"]"
 msgstr ""
 "Tip: Zolton beams are 50% longer than their regular counterparts, but they "
@@ -1394,12 +1402,13 @@ msgstr ""
 "Shield System."
 
 #: src-ru/data/text_misc.xml.append:427
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ion_fire\"]"
 msgstr ""
 "Tip: For every one point of ion damage, one power bar is removed from the "
 "target system and it is then locked it for 5 seconds, preventing re-"
-"powering. If an ion weapon hits shields, the damage is automatically applied"
-" to the Shield. If the shield has been disabled, there is a 30% chance to "
+"powering. If an ion weapon hits shields, the damage is automatically applied "
+"to the Shield. If the shield has been disabled, there is a 30% chance to "
 "start a fire in the room."
 
 #: src-ru/data/text_misc.xml.append:429
@@ -1412,12 +1421,13 @@ msgstr ""
 "Shield System."
 
 #: src-ru/data/text_misc.xml.append:431
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ion_heavy_fire\"]"
 msgstr ""
 "Tip: For every one point of ion damage, one power bar is removed from the "
 "target system and it is then locked it for 5 seconds, preventing re-"
-"powering. Heavy ion weapons not only ionize systems but also damage them. If"
-" an ion weapon hits shields, the damage is automatically applied to the "
+"powering. Heavy ion weapons not only ionize systems but also damage them. If "
+"an ion weapon hits shields, the damage is automatically applied to the "
 "Shield System. If the shield has been disabled, there is a 30% chance to "
 "start a fire in the room."
 
@@ -1509,6 +1519,7 @@ msgstr ""
 " it away from your boarding party!"
 
 #: src-ru/data/text_misc.xml.append:461
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_combat_hal\"]"
 msgstr ""
 "Tip: Combat HAL Drones are approximately 20% faster than their conventional "
@@ -1590,6 +1601,7 @@ msgstr ""
 "of shields. It also won't hurt drones!"
 
 #: src-ru/data/text_misc.xml.append:484
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tip_uwb\"]"
 msgstr ""
 "Tip: The weapon inside the universal weapon mount recharges 10% faster than "
@@ -1817,13 +1829,17 @@ msgstr ""
 "targets through a parallel dimension. Not even shields can stop them."
 
 #: src-ru/data/text_misc.xml.append:553
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"welcome_hangar_pc\"]"
 msgstr ""
-"Welcome to the Federation Hangar!\\n\\nHere you'll be able to choose your "
-"ship, name it, and name your crew. Right now only the Kestrel is available "
-"to you, but as you play you will unlock more.\\n\\nYou can change the "
-"difficulty setting in the top right. If you're new, you might want to give "
-"Easy a shot first."
+"Welcome to the Federation Hangar!\\n"
+"\\n"
+"Here you'll be able to choose your ship, name it, and name your crew. Right "
+"now only the Kestrel is available to you, but as you play you will unlock "
+"more.\\n"
+"\\n"
+"You can change the difficulty setting in the top right. If you're new, you "
+"might want to give Easy a shot first."
 
 #: src-ru/data/text_misc.xml.append:554
 msgid "data/text_misc.xml.append$//text[@name=\"welcome_hangar_ipad\"]"
@@ -2907,8 +2923,11 @@ msgid "data/text_misc.xml.append$//text[@name=\"system_drones\"]"
 msgstr "Powers the ship's drones."
 
 #: src-ru/data/text_misc.xml.append:901
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"free_drone\"]"
-msgstr "Comes with a free random drone: \\1\\n(Fixed 30~ sell value)"
+msgstr ""
+"Comes with a free random drone: \\1\\n"
+"(Fixed 30~ sell value)"
 
 #: src-ru/data/text_misc.xml.append:903
 msgid "data/text_misc.xml.append$//text[@name=\"sys_full\"]"
@@ -3751,9 +3770,11 @@ msgid "data/text_misc.xml.append$//text[@name=\"hotkey_info\"]"
 msgstr "Toggle Extra Info"
 
 #: src-ru/data/text_misc.xml.append:1189
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_more_info\"]"
 msgstr ""
-"Toggle extra info when viewing beacon map and hovering over crew\\nKey: \\1"
+"Toggle extra info when viewing beacon map and hovering over crew\\n"
+"Key: \\1"
 
 #: src-ru/data/text_misc.xml.append:1190
 msgid "data/text_misc.xml.append$//text[@name=\"description_stats\"]"
@@ -4960,6 +4981,7 @@ msgid "data/text_misc.xml.append$//text[@name=\"guest_writer\"]"
 msgstr "With writing from:"
 
 #: src-ru/data/text_misc.xml.append:1584
+#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"chris_a\"]"
 msgstr "Tom Jubert and Chris Avellone"
 
