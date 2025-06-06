@@ -26,7 +26,7 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:917
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[4]/tooltip"
 msgstr ""
-"Сканер жизненных форм:\n"
+"Инфракрасный сканер:\n"
 "\t\t\tОбнаруживает любые формы жизни, даже когда сенсоры не работают."
 
 #: src-ru/data/hyperspace.xml:922
@@ -308,7 +308,7 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[45]/tooltip"
 msgstr ""
-"Исцеляющий телепорт:\n"
+"Безопасный телепорт:\n"
 "\t\t\tПолностью исцеляет команду при телепортации."
 
 #: src-ru/data/hyperspace.xml:1128
@@ -316,7 +316,7 @@ msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[46]/tooltip"
 msgstr ""
 "Генератор помех:\n"
-"\t\t\tСбивает прицел защитных дронов противника."
+"\t\t\tСбивает прицел защитных и парализует щитовых дронов противника."
 
 #: src-ru/data/hyperspace.xml:1133
 msgid ""
@@ -722,7 +722,7 @@ msgstr "Иметь в последнем секторе систему оруд�
 #: src-ru/data/hyperspace.xml:1752
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_JELLY_BEGIN_SCRAP\"]/name"
-msgstr "Рискованая тактика"
+msgstr "Рискованная тактика"
 
 #: src-ru/data/hyperspace.xml:1753
 msgid ""
@@ -818,7 +818,9 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:1870
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_GOOD_SECTOR_SCAN\"]/description"
-msgstr "За 1 игру успешно просканировать 3 сектора сканерами широкого охвата."
+msgstr ""
+"За 1 игру успешно просканировать 3 сектора сканерами широкого охвата в "
+"начале секторов."
 
 #: src-ru/data/hyperspace.xml:1879
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_NEBULA\"]/name"
@@ -1884,7 +1886,7 @@ msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BOARDER_SET\"]/description"
 msgstr ""
 "В начале любого сектора иметь телепорт 3 уровня, медотсек (или клон-отсек) 3"
-" уровня и исцеляющий телепорт."
+" уровня и безопасный телепорт."
 
 #: src-ru/data/hyperspace.xml:3042
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PARALIZER\"]/name"
@@ -2152,7 +2154,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3415
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_MISSILEDRONES\"]/description"
-msgstr "По прибытии в последний сектор не иметь ракет и частей дронов."
+msgstr "По прибытии в последний сектор не иметь ракет и деталей дронов."
 
 #: src-ru/data/hyperspace.xml:3421
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SHELL_GAS\"]/name"
@@ -2331,7 +2333,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3654
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_PULSAR\"]/description"
-msgstr "За 1 игру побывать на 10 маяках возле пульсаров."
+msgstr "За 1 игру побывать на 3 маяках возле пульсаров."
 
 #: src-ru/data/hyperspace.xml:3661
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_CREW\"]/name"
@@ -5244,7 +5246,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29708
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SLIG_LEGENDARY\"]/description"
-msgstr "Найти легендарного слага."
+msgstr "Найти легендарного слёрма."
 
 #: src-ru/data/hyperspace.xml:29714
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_INSIDE_MONSTER\"]/name"
@@ -5304,7 +5306,7 @@ msgstr "Ксеноморф"
 
 #: src-ru/data/hyperspace.xml:29747
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ALIEN\"]/description"
-msgstr "Найти человека с чужим в грудной клетке."
+msgstr "Найти хищную чужую форму жизни."
 
 #: src-ru/data/hyperspace.xml:29748
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ALIEN\"]/secretDescription"

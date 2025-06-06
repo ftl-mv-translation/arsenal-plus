@@ -86,16 +86,16 @@ msgstr ""
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"CARGO_BUTTON\"]/tooltip"
 msgstr ""
 "Открыть трюм корабля, чтобы выполнить операции с усилениями и другим "
-"оборудованием"
+"оборудованием."
 
 #: src-ru/data/events.xml.rawclobber:193
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"DRONES_BUTTON\"]/tooltip"
-msgstr "Преобразовать противоабордажных дронов"
+msgstr "Преобразовать противоабордажных дронов."
 
 #: src-ru/data/events.xml.rawclobber:203
 msgid ""
 "data/events.xml.rawclobber$//eventButton[@name=\"ASTEROIDS_BUTTON\"]/tooltip"
-msgstr "Призвать астероидное поле"
+msgstr "Призвать астероидное поле."
 
 #: src-ru/data/events.xml.rawclobber:209
 msgid ""
@@ -160,7 +160,7 @@ msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:270
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"SELL_RESOURCES\"]/tooltip"
-msgstr "Продать припасы за половину их стоимости"
+msgstr "Продать припасы за половину их стоимости."
 
 #: src-ru/data/events.xml.rawclobber:307
 msgid ""
@@ -6132,7 +6132,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:5519
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Сканер жизненных форм) Просканировать станцию на наличие жизни."
+msgstr "(Инфракрасный сканер) Просканировать станцию на наличие жизни."
 
 #: src-ru/data/events.xml.rawclobber:5525
 msgid ""
@@ -8197,8 +8197,8 @@ msgstr "Уйти, прежде чем они заметят вас."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"QUEST_MANTIS_INVASION\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Сканер жизненных форм) Использовать сканер жизненных форм для уточнения "
-"числа мантисов."
+"(Инфракрасный сканер) Использовать инфракрасный сканер для уточнения числа "
+"мантисов."
 
 #: src-ru/data/events.xml.rawclobber:7112
 msgid ""
@@ -9781,8 +9781,8 @@ msgstr "(Член экипажа аватар) Отправить на разв�
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DONOR_PLAGUE\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Сканер жизненных форм) Провести полное сканирование станции с помощью "
-"сканера жизненных форм."
+"(Инфракрасный сканер) Провести полное сканирование станции с помощью "
+"инфракрасного сканера."
 
 #: src-ru/data/events.xml.rawclobber:8279
 msgid ""
@@ -13990,7 +13990,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:11390
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PLANET_ENGE_SEVER\"]/event[1]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Сканер жизненных форм) Использовать сканеры для поиска пропавших."
+msgstr "(Инфракрасный сканер) Использовать сканеры для поиска пропавших."
 
 #: src-ru/data/events.xml.rawclobber:11392
 msgid ""
@@ -16807,7 +16807,7 @@ msgstr "Выглядит подозрительно. Лучше улететь �
 #: src-ru/data/events.xml.rawclobber:16580
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ALIENS\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Сканер жизненных форм) Проверить сканером наличие жизни на корабле."
+msgstr "(Инфракрасный сканер) Проверить сканером наличие жизни на корабле."
 
 #: src-ru/data/events.xml.rawclobber:16584
 msgid ""
@@ -16948,7 +16948,8 @@ msgstr ""
 "Во время осмотра корабля на вас нападает странное чёрное существо с кислотой"
 " вместо крови. Оно быстро убивает одного из вашей команды. Спешно отступая, "
 "вы возвращаетесь на корабль и издали расстреливаете бомбардировщик до "
-"полного уничтожения. Удаётся собрать кое-что полезное."
+"полного уничтожения. Удаётся собрать кое-что полезное, но чужой проникает на"
+" ваш корабль!"
 
 #: src-ru/data/events.xml.rawclobber:16702
 msgid ""
@@ -20706,7 +20707,7 @@ msgstr "Не трогать корабль, нам не нужны пробле�
 #: src-ru/data/events.xml.rawclobber:20086
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"REBEL_STOPFLEET\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Сканер жизненных форм) Просканировать корабль на наличие жизни."
+msgstr "(Инфракрасный сканер) Просканировать корабль на наличие жизни."
 
 #: src-ru/data/events.xml.rawclobber:20093
 msgid ""
@@ -22249,7 +22250,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Сканер жизненных форм) Просканировать окрестности маяка в поисках живых "
+"(Инфракрасный сканер) Просканировать окрестности маяка в поисках живых "
 "объектов."
 
 #: src-ru/data/events.xml.rawclobber:21393
@@ -22344,7 +22345,7 @@ msgstr "(Титановое покрытие) Укрепить двери кор
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"TELEPORT_HEAL\"]/text"
 msgstr ""
-"(Исцеляющий телепорт) Пусть ваша команда работает над оптимизацией "
+"(Безопасный телепорт) Пусть ваша команда работает над оптимизацией "
 "телепортера."
 
 #: src-ru/data/events.xml.rawclobber:21453
@@ -24294,7 +24295,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:23655
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"SOUL_MAGNIT_LIST\"]/event/choice[1]/text"
-msgstr "Разобрать 5 единиц корпуса."
+msgstr "Разобрать 5 единицы корпуса."
 
 #: src-ru/data/events.xml.rawclobber:23657
 msgid ""
@@ -24306,7 +24307,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:23668
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"SOUL_MAGNIT_LIST\"]/event/choice[2]/text"
-msgstr "Разобрать 10 единиц корпуса."
+msgstr "Разобрать 10 единицы корпуса."
 
 #: src-ru/data/events.xml.rawclobber:23670
 msgid ""
@@ -24318,7 +24319,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:23686
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"SOUL_MAGNIT_LIST\"]/event/choice[3]/text"
-msgstr "Разобрать 15 единиц корпуса."
+msgstr "Разобрать 15 единицы корпуса."
 
 #: src-ru/data/events.xml.rawclobber:23688
 msgid ""
@@ -24330,7 +24331,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:23709
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"SOUL_MAGNIT_LIST\"]/event/choice[4]/text"
-msgstr "Разобрать 3 единицы корпуса."
+msgstr "Разобрать 20 единицы корпуса."
 
 #: src-ru/data/events.xml.rawclobber:23711
 msgid ""
@@ -34187,7 +34188,7 @@ msgstr "Готовимся к отлёту."
 #: src-ru/data/events.xml.rawclobber:30525
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"MANTIS_X20_ON_ENGI_SHIP\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Сканер жизненных форм) Проверить наличие экипажа на корабле."
+msgstr "(Инфракрасный сканер) Проверить наличие экипажа на корабле."
 
 #: src-ru/data/events.xml.rawclobber:30529
 msgid ""
@@ -34239,7 +34240,7 @@ msgstr "Обследовать планету."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DONOR_PONY\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Сканер жизненных форм) Уточнить местоположение жизни на планете и затем "
+"(Инфракрасный сканер) Уточнить местоположение жизни на планете и затем "
 "спуститься на челноке."
 
 #: src-ru/data/events.xml.rawclobber:30573
@@ -36592,8 +36593,9 @@ msgstr "Ионный лучевой вулкан."
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_6_DETAILS_OK_4\"]/event/choice[4]/event/text"
 msgstr ""
-"Уилл говорит, что это совершенно не то, что нужно, и просит вас не отвлекать"
-" его больше..."
+"Уилл смотрит на вас в недоумении: «Зачем вы притащили это сюда? Это никак не"
+" поможет в данной ситуации. Не отнимайте моё время, пожалуйста». Вы уходите "
+"на корабль с новым оружием и покидаете эту планету."
 
 #: src-ru/data/events.xml.rawclobber:31674
 msgid ""
@@ -37927,7 +37929,7 @@ msgstr "Вы производите оплату, а инжи грузят то�
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CHEPOCHEM\"]/choice[@req=\"engi_crew\""
 " and @lvl=\"0\"]/event/choice[2]/text"
-msgstr "Купить сканер жизненных форм."
+msgstr "Купить инфракрасный сканер."
 
 #: src-ru/data/events.xml.rawclobber:32407
 msgid ""
@@ -38015,7 +38017,7 @@ msgstr "Вы производите оплату, а инжи грузят то�
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CHEPOCHEM\"]/choice[@req=\"engi_crew\""
 " and @lvl=\"1\"]/event/choice[2]/text"
-msgstr "Купить сканер жизненных форм."
+msgstr "Купить инфракрасный сканер."
 
 #: src-ru/data/events.xml.rawclobber:32469
 msgid ""
@@ -47512,7 +47514,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_SLUG_STEAL_FUEL\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Направленный сканер) Сканер показывает какую-то активность снаружи вашего "
+"(Инфракрасный сканер) Сканер показывает какую-то активность снаружи вашего "
 "корабля."
 
 #: src-ru/data/events.xml.rawclobber:46581
@@ -48078,22 +48080,33 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:46939
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_DEVIL_EVENT\"]/choice[1]/text"
-msgstr "Подписать тут."
+msgstr ""
+"(Пленитель душ) Использовать пленитель, чтобы захватить душу существа и "
+"забрать оружие."
 
 #: src-ru/data/events.xml.rawclobber:46941
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_DEVIL_EVENT\"]/choice[1]/event/text"
-msgstr "Вы ставите подпись, и орудие появляется на борту корабля!"
+msgstr ""
+"Пленитель выводит какую-то подпись в контракте, и это оказывается подписью "
+"самого существа! «Будь ты проклят, я ещё достану тебя!» Голос исчезает, а "
+"орудие появляется на борту. Душегуб тем временем довольно мигает своим "
+"глазом, поскольку получил несколько душ сразу."
 
 #: src-ru/data/events.xml.rawclobber:46948
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_DEVIL_EVENT\"]/choice[2]/text"
-msgstr "Подписать тут."
+msgstr ""
+"(Пленитель душ) Использовать пленитель, чтобы захватить душу существа и "
+"забрать оружие."
 
 #: src-ru/data/events.xml.rawclobber:46950
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_DEVIL_EVENT\"]/choice[2]/event/text"
-msgstr "Вы ставите подпись, и орудие появляется на борту корабля!"
+msgstr ""
+"Пленитель выводит какую-то подпись в контракте, и это оказывается подписью "
+"самого существа! «Будь ты проклят, я ещё достану тебя!» Голос исчезает, а "
+"орудие появляется на борту."
 
 #: src-ru/data/events.xml.rawclobber:46956
 msgid ""
@@ -48108,7 +48121,9 @@ msgstr "Вы ставите подпись, и орудие появляется
 #: src-ru/data/events.xml.rawclobber:46972
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_DEVIL_EVENT\"]/choice[4]/text"
-msgstr "Игнорировать голос и поговорить с командой до зарядки FTL-привода."
+msgstr ""
+"(Пленитель душ) Использовать пленитель, чтобы захватить душу существа и "
+"забрать оружие."
 
 #: src-ru/data/events.xml.rawclobber:46974
 msgid ""
@@ -49483,67 +49498,67 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:48113
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"artillery\"]/text"
-msgstr "Артиллерия"
+msgstr "Артиллерия."
 
 #: src-ru/data/events.xml.rawclobber:48121
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"hacking\"]/text"
-msgstr "Взломщик"
+msgstr "Взломщик."
 
 #: src-ru/data/events.xml.rawclobber:48129
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"oxygen\"]/text"
-msgstr "Кислородный модуль"
+msgstr "Кислородный модуль."
 
 #: src-ru/data/events.xml.rawclobber:48137
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"clonebay\"]/text"
-msgstr "Клон-отсек"
+msgstr "Клон-отсек."
 
 #: src-ru/data/events.xml.rawclobber:48145
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"mind\"]/text"
-msgstr "Контроль разума"
+msgstr "Контроль разума."
 
 #: src-ru/data/events.xml.rawclobber:48153
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"temporal\"]/text"
-msgstr "Манипулятор времени"
+msgstr "Манипулятор времени."
 
 #: src-ru/data/events.xml.rawclobber:48161
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"cloaking\"]/text"
-msgstr "Маскировка"
+msgstr "Маскировка."
 
 #: src-ru/data/events.xml.rawclobber:48169
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"medbay\"]/text"
-msgstr "Медотсек"
+msgstr "Медотсек."
 
 #: src-ru/data/events.xml.rawclobber:48177
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"battery\"]/text"
-msgstr "Резервная батарея"
+msgstr "Резервная батарея."
 
 #: src-ru/data/events.xml.rawclobber:48185
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"sensors\"]/text"
-msgstr "Сенсоры"
+msgstr "Сенсоры."
 
 #: src-ru/data/events.xml.rawclobber:48193
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"teleporter\"]/text"
-msgstr "Телепортер"
+msgstr "Телепортер."
 
 #: src-ru/data/events.xml.rawclobber:48201
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"drones\"]/text"
-msgstr "Управление дронами"
+msgstr "Управление дронами."
 
 #: src-ru/data/events.xml.rawclobber:48209
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"weapons\"]/text"
-msgstr "Управление орудиями"
+msgstr "Управление орудиями."
 
 #: src-ru/data/events.xml.rawclobber:48217
 msgid ""
@@ -50150,7 +50165,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:48892
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_TELEPORT_HEAL\"]/text"
-msgstr "Внутреннее усиление: Исцеляющий телепорт."
+msgstr "Внутреннее усиление: Безопасный телепорт."
 
 #: src-ru/data/events.xml.rawclobber:48896
 msgid ""
@@ -50161,7 +50176,7 @@ msgstr "Нельзя встроить сдвоенное усиление."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"TELEPORT_HEAL\"]/text"
 msgstr ""
-"(Исцеляющий телепорт) Встроить это усиление в конструкции корабля, освободив"
+"(Безопасный телепорт) Встроить это усиление в конструкции корабля, освободив"
 " слот усилений."
 
 #: src-ru/data/events.xml.rawclobber:48912
@@ -50235,7 +50250,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:48992
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_LIFE_SCANNER\"]/text"
-msgstr "Внутреннее усиление: Сканер жизненных форм."
+msgstr "Внутреннее усиление: Инфракрасный сканер."
 
 #: src-ru/data/events.xml.rawclobber:48996
 msgid ""
@@ -50246,8 +50261,8 @@ msgstr "Нельзя встроить сдвоенное усиление."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Сканер жизненных форм) Встроить это усиление в конструкции корабля, "
-"освободив слот усилений."
+"(Инфракрасный сканер) Встроить это усиление в конструкции корабля, освободив"
+" слот усилений."
 
 #: src-ru/data/events.xml.rawclobber:49012
 msgid ""
@@ -50624,8 +50639,8 @@ msgstr "Внутреннее усиление: Уничтожитель снар
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"PROJECTILE_EATER\"]/text"
 msgstr ""
-"(Ускоритель дронов) Встроить это усиление в конструкции корабля, освободив "
-"слот усилений."
+"(Уничтожитель снарядов) Встроить это усиление в конструкции корабля, "
+"освободив слот усилений."
 
 #: src-ru/data/events.xml.rawclobber:49468
 msgid ""
@@ -50648,7 +50663,7 @@ msgstr "Внутреннее усиление: Пленитель душ."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"SOUL_MAGNIT\"]/text"
 msgstr ""
-"(Глушитель FTL) Встроить это усиление в конструкции корабля, освободив слот "
+"(Пленитель душ) Встроить это усиление в конструкции корабля, освободив слот "
 "усилений."
 
 #: src-ru/data/events.xml.rawclobber:49500
@@ -59737,7 +59752,7 @@ msgstr "(Анализатор морфов) Просканировать ста�
 #: src-ru/data/events.xml.rawclobber:57097
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_SLUG_BURST_QUEST\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Сканер жизненных форм) Просканировать станцию."
+msgstr "(Инфракрасный сканер) Просканировать станцию."
 
 #: src-ru/data/events.xml.rawclobber:57103
 msgid ""
@@ -61124,12 +61139,16 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:61741
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"PIRATE_WITH_DRONE_CLEARING\"]/destroyed/text"
-msgstr "Корабль разваливается на части. Вы собираете уцелевшее."
+msgstr ""
+"Корабль разваливается на части. Вы собираете уцелевшее. Дикие дроны, "
+"кажется, разлетелись..."
 
 #: src-ru/data/events.xml.rawclobber:61746
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"PIRATE_WITH_DRONE_CLEARING\"]/deadCrew/text"
-msgstr "Экипаж корабля мёртв. Вы собираете уцелевшее."
+msgstr ""
+"Экипаж корабля мёртв. Вы собираете уцелевшее. Дикие дроны, кажется, "
+"разлетелись..."
 
 #: src-ru/data/events.xml.rawclobber:61752
 msgid ""
@@ -61162,12 +61181,16 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:61766
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"REBEL_WITH_DRONE_CLEARING\"]/destroyed/text"
-msgstr "Корабль разваливается на части. Вы собираете уцелевшее."
+msgstr ""
+"Корабль разваливается на части. Вы собираете уцелевшее. Дикие дроны, "
+"кажется, разлетелись..."
 
 #: src-ru/data/events.xml.rawclobber:61771
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"REBEL_WITH_DRONE_CLEARING\"]/deadCrew/text"
-msgstr "Экипаж корабля мёртв. Вы собираете уцелевшее."
+msgstr ""
+"Экипаж корабля мёртв. Вы собираете уцелевшее. Дикие дроны, кажется, "
+"разлетелись..."
 
 #: src-ru/data/events.xml.rawclobber:61777
 msgid "data/events.xml.rawclobber$//textList[@name=\"DRONE_FIELD_REBEL\"]/text[1]"
@@ -61196,7 +61219,9 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:61792
 msgid ""
 "data/events.xml.rawclobber$//ship[@name=\"HAL_WITH_DRONE_CLEARING\"]/destroyed/text"
-msgstr "Корабль разваливается, и вы собираете всё, что уцелело."
+msgstr ""
+"Корабль разваливается, и вы собираете всё, что уцелело. Дикие дроны, "
+"кажется, разлетелись..."
 
 #: src-ru/data/events.xml.rawclobber:61807
 msgid "data/events.xml.rawclobber$//eventList[@name=\"HAL_DAMAGE_2\"]/event/text"
@@ -61355,8 +61380,8 @@ msgstr "Продолжить..."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CONTR_FIGHT_REWARD\"]/loadEventList/event[1]/text"
 msgstr ""
-"Вы осматриваете то, что уцелело после боя и, среди прочего, находите то "
-"самое орудие, о котором говорила Инесса. Мир её праху."
+"Инесса снова выходит на связь: «Вы сделали это! Вот то орудие, которое вы "
+"заслужили»."
 
 #: src-ru/data/events.xml.rawclobber:62295
 msgid ""
@@ -61367,8 +61392,8 @@ msgstr "Вы забираете себе всё, что уцелело посл�
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CONTR_FIGHT_REWARD_DEAD_CREW\"]/loadEventList/event[1]/text"
 msgstr ""
-"Вы осматриваете то, что уцелело после боя и, среди прочего, находите то "
-"самое орудие, о котором говорила Инесса. Мир её праху."
+"Инесса снова выходит на связь: «Вы сделали это! Вот то орудие, которое вы "
+"заслужили»."
 
 #: src-ru/data/events.xml.rawclobber:62308
 msgid ""

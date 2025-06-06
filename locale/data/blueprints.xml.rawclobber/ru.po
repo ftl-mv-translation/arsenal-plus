@@ -1352,14 +1352,15 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_FED_BREACHER\"]/desc"
 msgstr ""
 "Питает медленный луч, пробивающий дыры в отсеках. Оглушает врагов и "
-"разрывает их на части. Проникает сквозь все щиты. [40 ‡]"
+"разрывает их на части. Не наносит вреда корпусу. Проникает сквозь все щиты. "
+"[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:4582
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_FED_BREACHER\"]/tooltip"
 msgstr ""
-"Питает медленный луч, пробивающий дыры в отсеках и экипаже противника. "
-"Проникает сквозь любое количество слоёв щита. [40 ‡]"
+"Питает медленный луч, пробивающий дыры в отсеках и экипаже противника. Не "
+"наносит вреда корпусу. Проникает сквозь любое количество слоёв щита. [40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:4612
 msgid ""
@@ -4725,7 +4726,8 @@ msgstr ""
 "Автоматически клонирует погибших членов экипажа со штрафом навыков. Каждый "
 "прыжок подлечивает экипаж микроклонированием, не требуя питания. Замедляет "
 "вражеских абордажников на вашем корабле на 11% за каждый уровень запитанного"
-" клон-отсека."
+" клон-отсека. Измените порядок очереди клонирования, удерживая правую "
+"кнопку."
 
 #: src-ru/data/blueprints.xml.rawclobber:14904
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"hacking\"]/title"
@@ -5117,12 +5119,15 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:15382
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/title"
-msgstr "Исцеляющий телепорт"
+msgstr "Безопасный телепорт"
 
 #: src-ru/data/blueprints.xml.rawclobber:15383
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/desc"
-msgstr "Полностью исцеляет команду при телепортации."
+msgstr ""
+"Полностью исцеляет команду при телепортации. Автоматически возвращает "
+"союзный экипаж с вражеского корабля в момент взрыва корабля или в случае "
+"покидания поля боя."
 
 #: src-ru/data/blueprints.xml.rawclobber:15392
 msgid ""
@@ -5142,7 +5147,7 @@ msgstr "Генератор помех"
 #: src-ru/data/blueprints.xml.rawclobber:15403
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DEFENSE_SCRAMBLER\"]/desc"
-msgstr "Сбивает прицел защитных дронов противника."
+msgstr "Сбивает прицел защитных и парализует щитовых дронов противника."
 
 #: src-ru/data/blueprints.xml.rawclobber:15412
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA\"]/title"
@@ -5169,14 +5174,15 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:15431
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/title"
-msgstr "Сканер жизненных форм"
+msgstr "Инфракрасный сканер"
 
 #: src-ru/data/blueprints.xml.rawclobber:15432
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/desc"
 msgstr ""
-"Обнаруживает любые формы жизни, даже когда сенсоры не работают. Даёт "
-"информацию о вражеском уклонении, уровне О2 и количестве оставшихся "
-"расходников."
+"Обнаруживает любые формы жизни, даже когда корабельные сенсоры слабые или "
+"отсутствуют. Даёт информацию о вражеском уклонении, уровне О2 и количестве "
+"оставшихся расходников. Позволяет корабельным сенсорам работать в "
+"туманностях."
 
 #: src-ru/data/blueprints.xml.rawclobber:15441
 msgid ""
@@ -5285,7 +5291,8 @@ msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRONE_RECOVERY\"]/desc"
 msgstr ""
 "При прыжке все летающие и абордажные неразрушенные дроны будут преобразованы"
-" обратно в детали дронов."
+" обратно в детали дронов. Также возвращает деталь за уцелевшего дрона-"
+"взломщика."
 
 #: src-ru/data/blueprints.xml.rawclobber:15547
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JAMMER\"]/title"
@@ -5294,7 +5301,8 @@ msgstr "Глушитель FTL"
 #: src-ru/data/blueprints.xml.rawclobber:15548
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JAMMER\"]/desc"
 msgstr ""
-"Увеличивает в два раза время для расчёта FTL-прыжка вражеского корабля."
+"Увеличивает в два раза время для расчёта FTL-прыжка вражеского корабля. "
+"Блокирует вражеские двигатели на 1."
 
 #: src-ru/data/blueprints.xml.rawclobber:15557
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"STASIS_POD\"]/title"
@@ -5376,7 +5384,8 @@ msgstr "Ускоритель дронов"
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRONE_SPEED\"]/desc"
 msgstr ""
 "Скорость передвижения всех пеших дронов увеличена на 250%, а их "
-"урон/скорость ремонта на 100%."
+"урон/скорость ремонта на 100%. Скорость работы внешних дронов увеличена на "
+"100% (кроме щитовых дронов)."
 
 #: src-ru/data/blueprints.xml.rawclobber:15638
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_ARM\"]/title"
@@ -5789,8 +5798,8 @@ msgstr "Продвинутый сканер"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_SCANNERS_LIFE_SCANNER\"]/desc"
 msgstr ""
-"Это усиление даёт эффект от сканеров широкого охвата и сканера жизненных "
-"форм."
+"Это усиление даёт эффект от сканеров широкого охвата и инфракрасного "
+"сканера."
 
 #: src-ru/data/blueprints.xml.rawclobber:16007
 msgid ""
@@ -5811,7 +5820,7 @@ msgstr "Модуль сохранности"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA_TELEPORT_HEAL\"]/desc"
 msgstr ""
-"Это усиление даёт эффект от резервного банка ДНК и исцеляющего телепорта."
+"Это усиление даёт эффект от резервного банка ДНК и безопасного телепорта."
 
 #: src-ru/data/blueprints.xml.rawclobber:16023
 msgid ""
@@ -6157,7 +6166,7 @@ msgstr "Слёрм"
 #: src-ru/data/blueprints.xml.rawclobber:16419
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/powerList/power[1]"
-msgstr "Скорость уменьшена до 70%"
+msgstr "Скорость уменьшена до 50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16420
 msgid ""
@@ -6619,7 +6628,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:17184
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/powerList/power[1]"
-msgstr "Усиливает работу кислородной системы"
+msgstr "Генерирует кислород"
 
 #: src-ru/data/blueprints.xml.rawclobber:17185
 msgid ""
@@ -6667,7 +6676,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:17234
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/powerList/power[1]"
-msgstr "Значительно усиливает работу кислородной системы"
+msgstr "Генерирует кислород"
 
 #: src-ru/data/blueprints.xml.rawclobber:17235
 msgid ""
@@ -7608,7 +7617,7 @@ msgstr "Не дышит"
 #: src-ru/data/blueprints.xml.rawclobber:18888
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[6]"
-msgstr "Не может драться"
+msgstr "Не может драться, но может повреждать системы"
 
 #: src-ru/data/blueprints.xml.rawclobber:18889
 msgid ""
@@ -8533,14 +8542,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_MAGMAN\"]/desc"
 msgstr ""
 "Поджигает каждый вражеский отсек с шансом 30%. Накладывает 100% уязвимость к"
-" огню на 10 секунд. Игнорирует щиты [40 ‡]"
+" огню на 10 секунд. Игнорирует щиты. Прицеливание недоступно. [40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:20319
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_MAGMAN\"]/tooltip"
 msgstr ""
 "Поджигает каждый вражеский отсек с шансом 30%. Накладывает 100% уязвимость к"
-" огню на 10 секунд. Игнорирует щиты [40 ‡]"
+" огню на 10 секунд. Игнорирует щиты. Прицеливание недоступно. [40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:20373
 msgid ""
@@ -8957,15 +8966,15 @@ msgstr "Артиллерия слагов"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_SLUG\"]/desc"
 msgstr ""
-"Довольно часто стреляет парализующими дротиками и может пробить обшивку. [4 "
-"‡]"
+"Довольно часто стреляет парализующими дротиками и может пробить обшивку. "
+"Прицеливание недоступно. [4 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:20995
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_SLUG\"]/tooltip"
 msgstr ""
-"Довольно часто стреляет парализующими дротиками и может пробить обшивку. [4 "
-"‡]"
+"Довольно часто стреляет парализующими дротиками и может пробить обшивку. "
+"Прицеливание недоступно. [4 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:21035
 msgid ""
@@ -9045,14 +9054,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURM_SMALL\"]/desc"
 msgstr ""
 "Королева повреждает и оглушает экипаж противника сквозь щиты. Быстрая "
-"перезарядка. [5 ‡]"
+"перезарядка. Прицеливание недоступно. [5 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:21134
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURM_SMALL\"]/tooltip"
 msgstr ""
 "Королева повреждает и оглушает экипаж противника сквозь щиты. Быстрая "
-"перезарядка. [5 ‡]"
+"перезарядка. Прицеливание недоступно. [5 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:21168
 msgid ""
@@ -18763,13 +18772,13 @@ msgstr "ИЛ-вулкан"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REAL_ION_VULKAN\"]/desc"
 msgstr ""
-"Это муляж орудия, сделанный из дешёвого пластика. Тщательно покрашен и "
-"внешне не отличается от оригинала."
+"Ультрасовременное ионно-лучевое орудие. Требует времени для разгона на "
+"полную мощность."
 
 #: src-ru/data/blueprints.xml.rawclobber:40609
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REAL_ION_VULKAN_PRC\"]/title"
-msgstr "Ионный лучевой вулкан"
+msgstr "Ионный лучевой вулкан ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:40610
 msgid ""
@@ -18786,7 +18795,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:40647
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REAL_ION_VULKAN_CLD\"]/title"
-msgstr "Ионный лучевой вулкан"
+msgstr "Ионный лучевой вулкан ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:40648
 msgid ""
@@ -18803,7 +18812,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:40685
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REAL_ION_VULKAN_POW\"]/title"
-msgstr "Ионный лучевой вулкан"
+msgstr "Ионный лучевой вулкан †"
 
 #: src-ru/data/blueprints.xml.rawclobber:40686
 msgid ""
@@ -18820,7 +18829,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:40723
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REAL_ION_VULKAN_UNI\"]/title"
-msgstr "Ионный лучевой вулкан"
+msgstr "Ионный лучевой вулкан √"
 
 #: src-ru/data/blueprints.xml.rawclobber:40724
 msgid ""
@@ -75198,7 +75207,7 @@ msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_SVCH\"]/desc"
 msgstr ""
 "Создаёт защитные СВЧ-поля против вражеских снарядов и дронов. Срабатывает "
-"почти непредсказуемо."
+"почти непредсказуемо. Также повышает увороты корабля на 10%."
 
 #: src-ru/data/blueprints.xml.rawclobber:154412
 msgid ""
@@ -75320,7 +75329,13 @@ msgstr "Ион. десант"
 #: src-ru/data/blueprints.xml.rawclobber:154634
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"BOARDER_ION\"]/desc"
-msgstr "Пробивается сквозь корпус врага и ионизирует случайные системы."
+msgstr ""
+"Пробивается сквозь корпус врага и ионизирует системы.\n"
+"\t\n"
+"\tКонтролируем\n"
+"\tЗдоровье: 150\n"
+"\tПерезарядка способности: 10 сек.\n"
+"\tСкорость перемещения: 80%"
 
 #: src-ru/data/blueprints.xml.rawclobber:154645
 msgid ""
@@ -75365,7 +75380,8 @@ msgstr "Щит II"
 #: src-ru/data/blueprints.xml.rawclobber:154693
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_SHIELD\"]/desc"
-msgstr "Периодически создаёт один слой суперщита. Летает быстрее, чем Мод I."
+msgstr ""
+"Периодически создаёт один слой суперщита. Работает интенсивнее, чем Мод I."
 
 #: src-ru/data/blueprints.xml.rawclobber:154756
 msgid ""
@@ -75381,8 +75397,8 @@ msgstr "Щит III"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_SHIELD_BIG\"]/desc"
 msgstr ""
-"Периодически создаёт один слой суперщита. Летает быстрее, чем Мод I и Мод "
-"II."
+"Периодически создаёт один слой суперщита. Работает интенсивнее, чем Мод I и "
+"Мод II."
 
 #: src-ru/data/blueprints.xml.rawclobber:154787
 msgid ""
@@ -75398,8 +75414,7 @@ msgstr "Щит+"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_SHIELD_PLAYER\"]/desc"
 msgstr ""
-"Периодически создаёт один слой суперщита. Эта улучшенная схема требует на 1 "
-"единицу меньше энергии."
+"Периодически создаёт два слоя суперщита. Работает со скоростью как у Мод I."
 
 #: src-ru/data/blueprints.xml.rawclobber:154817
 msgid ""
@@ -75704,6 +75719,7 @@ msgid ""
 msgstr ""
 "Этот абордажный дрон, кроме обычных действий, периодически мешает зарядке FTL-привода.\n"
 "\t\n"
+"\tНеконтролируем\n"
 "\tЗдоровье: 110\n"
 "\tУрон: 150%\n"
 "\tПерезарядка способности: 10 сек.\n"
@@ -77127,7 +77143,7 @@ msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_SVCH_R\"]/desc"
 msgstr ""
 "Создаёт защитные СВЧ-поля против вражеских снарядов и дронов. Срабатывает "
-"почти непредсказуемо."
+"почти непредсказуемо. Также повышает увороты корабля на 10%."
 
 #: src-ru/data/blueprints.xml.rawclobber:156837
 msgid ""
@@ -77283,7 +77299,8 @@ msgstr "Щит II"
 #: src-ru/data/blueprints.xml.rawclobber:157041
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_SHIELD_R\"]/desc"
-msgstr "Периодически создаёт один слой суперщита. Летает быстрее, чем Мод I."
+msgstr ""
+"Периодически создаёт один слой суперщита. Работает интенсивнее, чем Мод I."
 
 #: src-ru/data/blueprints.xml.rawclobber:157069
 msgid ""
@@ -77299,8 +77316,8 @@ msgstr "Щит III"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_SHIELD_BIG_R\"]/desc"
 msgstr ""
-"Периодически создаёт один слой суперщита. Летает быстрее, чем Мод I и Мод "
-"II."
+"Периодически создаёт один слой суперщита. Работает интенсивнее, чем Мод I и "
+"Мод II."
 
 #: src-ru/data/blueprints.xml.rawclobber:157098
 msgid ""
@@ -84598,7 +84615,7 @@ msgid ""
 msgstr ""
 "Бомба, способная перезаряжать суперщиты. Даёт 3 слоя суперщита при "
 "нацеливании на свой корабль и снимает 12 слоёв суперщита при нацеливании на "
-"вражеские корабли. Нельзя усилить инжекторами."
+"вражеские корабли. Нельзя улучшить инжекторами."
 
 #: src-ru/data/blueprints.xml.rawclobber:173330
 msgid ""
@@ -84664,7 +84681,7 @@ msgstr "Утилизатор"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RECYCLER_CORE\"]/desc"
 msgstr ""
-"При включенном питании это устройство даёт всему оружию, потребляющему "
+"При включённом питании это устройство даёт всему оружию, потребляющему "
 "боеприпасы, до 90% шанс не потреблять боеприпасы. Шансы постепенно растут от"
 " 0% до 90% во время зарядки устройства и максимальны при полной зарядке."
 
@@ -84783,8 +84800,9 @@ msgstr "Овербустер"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_SHIELD_BOOST\"]/desc"
 msgstr ""
-"Специализированный защитный дрон, который может заряжать суперщит. При "
-"включенном питании увеличивает скорость перезарядки щитов на 70%"
+"Специализированный защитный дрон, который может заряжать суперщит. Работает "
+"со скоростью как у Мод II. При включённом питании увеличивает скорость "
+"перезарядки щитов на 70%."
 
 #: src-ru/data/blueprints.xml.rawclobber:173601
 msgid ""
@@ -85217,12 +85235,12 @@ msgstr "Не дышит"
 #: src-ru/data/blueprints.xml.rawclobber:174419
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien\"]/powerList/power[3]"
-msgstr "Здоровье увеличено до 150"
+msgstr "Здоровье увеличено до 115"
 
 #: src-ru/data/blueprints.xml.rawclobber:174420
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien\"]/powerList/power[4]"
-msgstr "Передвигается со скоростью 85%"
+msgstr "Передвигается со скоростью 150%"
 
 #: src-ru/data/blueprints.xml.rawclobber:174421
 msgid ""
@@ -86406,7 +86424,6 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 15 сек.\n"
-"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -86448,7 +86465,6 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 11.25 сек.\n"
-"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -86490,7 +86506,6 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 15 сек.\n"
-"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -86532,7 +86547,6 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 15 сек.\n"
-"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -86563,13 +86577,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 1 случайную систему."
+"отскакивает внутри и наносит системный урон с пробоиной ещё одному "
+"случайному отсеку."
 
 #: src-ru/data/blueprints.xml.rawclobber:176813
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 1 случайную систему.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё одному случайному отсеку.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86585,7 +86600,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 45~/22~"
+"\tЦена покупки/продажи: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:176867
 msgid ""
@@ -86602,13 +86617,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 2 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:176872
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86624,7 +86640,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 65~/32~"
+"\tЦена покупки/продажи: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:176926
 msgid ""
@@ -86641,17 +86657,18 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 3 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:176931
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
-"\tВремя зарядки: 12 сек.\n"
+"\tВремя зарядки: 14 сек.\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -86659,7 +86676,7 @@ msgstr ""
 "\tУрон по системам: 1\n"
 "\tУрон по экипажу: 15\n"
 "\t\n"
-"\tРикошетов: 2\n"
+"\tРикошетов: 3\n"
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
@@ -86680,13 +86697,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_PRC\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 1 случайную систему."
+"отскакивает внутри и наносит системный урон с пробоиной ещё одному "
+"случайному отсеку."
 
 #: src-ru/data/blueprints.xml.rawclobber:176991
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_PRC\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 1 случайную систему.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё одному случайному отсеку.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86703,7 +86721,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 45~/22~"
+"\tЦена покупки/продажи: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177046
 msgid ""
@@ -86720,13 +86738,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_CLD\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 1 случайную систему."
+"отскакивает внутри и наносит системный урон с пробоиной ещё одному "
+"случайному отсеку."
 
 #: src-ru/data/blueprints.xml.rawclobber:177051
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_CLD\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 1 случайную систему.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё одному случайному отсеку.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86742,7 +86761,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 45~/22~"
+"\tЦена покупки/продажи: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177105
 msgid ""
@@ -86759,13 +86778,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_POW\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 1 случайную систему."
+"отскакивает внутри и наносит системный урон с пробоиной ещё одному "
+"случайному отсеку."
 
 #: src-ru/data/blueprints.xml.rawclobber:177110
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_POW\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 1 случайную систему.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё одному случайному отсеку.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
@@ -86781,7 +86801,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 45~/22~"
+"\tЦена покупки/продажи: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177164
 msgid ""
@@ -86798,13 +86818,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_UNI\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 1 случайную систему."
+"отскакивает внутри и наносит системный урон с пробоиной ещё одному "
+"случайному отсеку."
 
 #: src-ru/data/blueprints.xml.rawclobber:177169
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_UNI\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 1 случайную систему.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё одному случайному отсеку.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86820,7 +86841,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 45~/22~"
+"\tЦена покупки/продажи: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177224
 msgid ""
@@ -86837,13 +86858,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_ACC\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 1 случайную систему."
+"отскакивает внутри и наносит системный урон с пробоиной ещё одному "
+"случайному отсеку."
 
 #: src-ru/data/blueprints.xml.rawclobber:177229
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_ACC\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 1 случайную систему.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё одному случайному отсеку.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86860,7 +86882,7 @@ msgstr ""
 "\tМодификатор точности: 100\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 45~/22~"
+"\tЦена покупки/продажи: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177285
 msgid ""
@@ -86877,13 +86899,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_PRC\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 2 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177290
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_PRC\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86900,7 +86923,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 65~/32~"
+"\tЦена покупки/продажи: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177345
 msgid ""
@@ -86917,13 +86940,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_CLD\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 2 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177350
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_CLD\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -86939,7 +86963,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 65~/32~"
+"\tЦена покупки/продажи: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177404
 msgid ""
@@ -86956,13 +86980,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_POW\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 2 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177409
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_POW\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
@@ -86978,7 +87003,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 65~/32~"
+"\tЦена покупки/продажи: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177463
 msgid ""
@@ -86995,13 +87020,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_UNI\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 2 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177468
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_UNI\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -87017,7 +87043,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 65~/32~"
+"\tЦена покупки/продажи: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177523
 msgid ""
@@ -87034,13 +87060,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_ACC\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 2 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177528
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_ACC\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё двум случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -87057,7 +87084,7 @@ msgstr ""
 "\tМодификатор точности: 100\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 65~/32~"
+"\tЦена покупки/продажи: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177584
 msgid ""
@@ -87074,17 +87101,18 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_PRC\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 3 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177589
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_PRC\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
-"\tВремя зарядки: 12 сек.\n"
+"\tВремя зарядки: 14 сек.\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87093,7 +87121,7 @@ msgstr ""
 "\tУрон по экипажу: 15\n"
 "\tПробивает щитов: 1\n"
 "\t\n"
-"\tРикошетов: 2\n"
+"\tРикошетов: 3\n"
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
@@ -87114,13 +87142,14 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_CLD\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 3 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177649
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_CLD\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 3 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
@@ -87136,7 +87165,7 @@ msgstr ""
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
-"\tЦена покупки/продажи: 85~/42~"
+"\tЦена покупки/продажи: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177703
 msgid ""
@@ -87153,17 +87182,18 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_POW\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 3 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177708
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_POW\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
-"\tВремя зарядки: 12 сек.\n"
+"\tВремя зарядки: 14 сек.\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87171,7 +87201,7 @@ msgstr ""
 "\tУрон по системам: 1\n"
 "\tУрон по экипажу: 15\n"
 "\t\n"
-"\tРикошетов: 2\n"
+"\tРикошетов: 3\n"
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
@@ -87192,17 +87222,18 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_UNI\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 3 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177767
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_UNI\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
-"\tВремя зарядки: 12 сек.\n"
+"\tВремя зарядки: 14 сек.\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87210,7 +87241,7 @@ msgstr ""
 "\tУрон по системам: 1\n"
 "\tУрон по экипажу: 30\n"
 "\t\n"
-"\tРикошетов: 2\n"
+"\tРикошетов: 3\n"
 "\t\n"
 "\tШанс пробить корпус: 100%\n"
 "\t\n"
@@ -87231,17 +87262,18 @@ msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_ACC\"]/desc"
 msgstr ""
 "Выпускает упругую энергетическую сферу. После пробития корпуса цели "
-"отскакивает внутри и повреждает ещё 3 случайных системы."
+"отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным "
+"отсекам."
 
 #: src-ru/data/blueprints.xml.rawclobber:177827
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_ACC\"]/descriptionOverride"
 msgstr ""
-"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и повреждает ещё 2 случайных системы.\n"
+"Выпускает упругую энергетическую сферу. После пробития корпуса цели отскакивает внутри и наносит системный урон с пробоиной ещё трём случайным отсекам.\n"
 "\t\n"
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
-"\tВремя зарядки: 12 сек.\n"
+"\tВремя зарядки: 14 сек.\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87249,7 +87281,7 @@ msgstr ""
 "\tУрон по системам: 1\n"
 "\tУрон по экипажу: 15\n"
 "\t\n"
-"\tРикошетов: 2\n"
+"\tРикошетов: 3\n"
 "\t\n"
 "\tМодификатор точности: 100\n"
 "\tШанс пробить корпус: 100%\n"
@@ -87289,6 +87321,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 14 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87338,6 +87371,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
 "\tВремя зарядки: 12 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87385,6 +87419,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 10.5 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87432,6 +87467,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 14 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87479,6 +87515,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 14 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87529,6 +87566,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
 "\tВремя зарядки: 9 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87578,6 +87616,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 1\n"
 "\tВремя зарядки: 12 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87627,6 +87666,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
 "\tВремя зарядки: 12 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -87676,6 +87716,7 @@ msgstr ""
 "\tХарактеристики:\n"
 "\tТребует энергии: 2\n"
 "\tВремя зарядки: 12 сек.\n"
+"\tПотребляет ракет: 1\n"
 "\t\n"
 "\tВыстрелов за заряд: 1\n"
 "\t\n"
@@ -88142,7 +88183,7 @@ msgid ""
 msgstr ""
 "Это оружие меняет свой тип при попадании по циклу: Ракета-Луч-Флак.\n"
 "\tТекущий тип: РАКЕТА.\n"
-"\tМожет работать даже при разрушенной системе орудий. Нельзя усилить инжекторами."
+"\tМожет работать даже при разрушенной системе орудий. Нельзя улучшить инжекторами."
 
 #: src-ru/data/blueprints.xml.rawclobber:179110
 msgid ""
@@ -88165,7 +88206,7 @@ msgid ""
 msgstr ""
 "Это оружие меняет свой тип при попадании по циклу: Ракета-Луч-Флак.\n"
 "\tТекущий тип: ЛУЧ.\n"
-"\tМожет работать даже при разрушенной системе орудий. Нельзя усилить инжекторами."
+"\tМожет работать даже при разрушенной системе орудий. Нельзя улучшить инжекторами."
 
 #: src-ru/data/blueprints.xml.rawclobber:179155
 msgid ""
@@ -88193,7 +88234,7 @@ msgid ""
 msgstr ""
 "Это оружие меняет свой тип при попадании по циклу: Ракета-Луч-Флак.\n"
 "\tТекущий тип: ФЛАК.\n"
-"\tМожет работать даже при разрушенной системе орудий. Нельзя усилить инжекторами."
+"\tМожет работать даже при разрушенной системе орудий. Нельзя улучшить инжекторами."
 
 #: src-ru/data/blueprints.xml.rawclobber:179193
 msgid ""
@@ -88203,12 +88244,12 @@ msgstr "Точка попадания"
 #: src-ru/data/blueprints.xml.rawclobber:179239
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P\"]/title"
-msgstr "Снайперский лазер Мод I"
+msgstr "Снайперский лазер Мод I+"
 
 #: src-ru/data/blueprints.xml.rawclobber:179240
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P\"]/short"
-msgstr "Снайпер I"
+msgstr "Снайпер I+"
 
 #: src-ru/data/blueprints.xml.rawclobber:179241
 msgid ""
@@ -88218,12 +88259,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179277
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P\"]/title"
-msgstr "Снайперский лазер Мод II"
+msgstr "Снайперский лазер Мод II+"
 
 #: src-ru/data/blueprints.xml.rawclobber:179278
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P\"]/short"
-msgstr "Снайпер II"
+msgstr "Снайпер II+"
 
 #: src-ru/data/blueprints.xml.rawclobber:179279
 msgid ""
@@ -88233,12 +88274,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179315
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P\"]/title"
-msgstr "Снайперский лазер Мод III"
+msgstr "Снайперский лазер Мод III+"
 
 #: src-ru/data/blueprints.xml.rawclobber:179316
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P\"]/short"
-msgstr "Снайпер III"
+msgstr "Снайпер III+"
 
 #: src-ru/data/blueprints.xml.rawclobber:179317
 msgid ""
@@ -88248,7 +88289,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179356
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1PP\"]/title"
-msgstr "Снайперский лазер Мод I"
+msgstr "Снайперский лазер Мод I++"
 
 #: src-ru/data/blueprints.xml.rawclobber:179357
 msgid ""
@@ -88263,7 +88304,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179394
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP\"]/title"
-msgstr "Снайперский лазер Мод II"
+msgstr "Снайперский лазер Мод II++"
 
 #: src-ru/data/blueprints.xml.rawclobber:179395
 msgid ""
@@ -88278,7 +88319,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179432
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP\"]/title"
-msgstr "Снайперский лазер Мод III"
+msgstr "Снайперский лазер Мод III++"
 
 #: src-ru/data/blueprints.xml.rawclobber:179433
 msgid ""
@@ -88293,12 +88334,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179472
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_PRC\"]/title"
-msgstr "Снайперский лазер Мод I ™"
+msgstr "Снайперский лазер Мод I+ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179473
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_PRC\"]/short"
-msgstr "Снайпер I ™"
+msgstr "Снайпер I+ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179474
 msgid ""
@@ -88308,12 +88349,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179510
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_BRC\"]/title"
-msgstr "Снайперский лазер Мод I €"
+msgstr "Снайперский лазер Мод I+ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:179511
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_BRC\"]/short"
-msgstr "Снайпер I €"
+msgstr "Снайпер I+ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:179512
 msgid ""
@@ -88323,12 +88364,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179548
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_CLD\"]/title"
-msgstr "Снайперский лазер Мод I ‡"
+msgstr "Снайперский лазер Мод I+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179549
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_CLD\"]/short"
-msgstr "Снайпер I ‡"
+msgstr "Снайпер I+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179550
 msgid ""
@@ -88338,12 +88379,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179586
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_POW\"]/title"
-msgstr "Снайперский лазер Мод I †"
+msgstr "Снайперский лазер Мод I+ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179587
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_POW\"]/short"
-msgstr "Снайпер I †"
+msgstr "Снайпер I+ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179588
 msgid ""
@@ -88353,12 +88394,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179624
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_UNI\"]/title"
-msgstr "Снайперский лазер Мод I √"
+msgstr "Снайперский лазер Мод I+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:179625
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1P_UNI\"]/short"
-msgstr "Снайпер I √"
+msgstr "Снайпер I+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:179626
 msgid ""
@@ -88368,12 +88409,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179663
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_PRC\"]/title"
-msgstr "Снайперский лазер Мод II ™"
+msgstr "Снайперский лазер Мод II+ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179664
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_PRC\"]/short"
-msgstr "Снайпер II ™"
+msgstr "Снайпер II+ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179665
 msgid ""
@@ -88383,12 +88424,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179701
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_BRC\"]/title"
-msgstr "Снайперский лазер Мод II €"
+msgstr "Снайперский лазер Мод II+ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:179702
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_BRC\"]/short"
-msgstr "Снайпер II €"
+msgstr "Снайпер II+ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:179703
 msgid ""
@@ -88398,12 +88439,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179739
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_CLD\"]/title"
-msgstr "Снайперский лазер Мод II ‡"
+msgstr "Снайперский лазер Мод II+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179740
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_CLD\"]/short"
-msgstr "Снайпер II ‡"
+msgstr "Снайпер II+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179741
 msgid ""
@@ -88413,12 +88454,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179777
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_POW\"]/title"
-msgstr "Снайперский лазер Мод II †"
+msgstr "Снайперский лазер Мод II+ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179778
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_POW\"]/short"
-msgstr "Снайпер II †"
+msgstr "Снайпер II+ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179779
 msgid ""
@@ -88428,12 +88469,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179815
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_UNI\"]/title"
-msgstr "Снайперский лазер Мод II √"
+msgstr "Снайперский лазер Мод II+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:179816
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2P_UNI\"]/short"
-msgstr "Снайпер II √"
+msgstr "Снайпер II+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:179817
 msgid ""
@@ -88443,12 +88484,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179854
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_PRC\"]/title"
-msgstr "Снайперский лазер Мод III ™"
+msgstr "Снайперский лазер Мод III+ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179855
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_PRC\"]/short"
-msgstr "Снайпер III ™"
+msgstr "Снайпер III+ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179856
 msgid ""
@@ -88458,12 +88499,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179893
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_BRC\"]/title"
-msgstr "Снайперский лазер Мод III €"
+msgstr "Снайперский лазер Мод III+ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:179894
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_BRC\"]/short"
-msgstr "Снайпер III €"
+msgstr "Снайпер III+ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:179895
 msgid ""
@@ -88473,12 +88514,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179932
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_CLD\"]/title"
-msgstr "Снайперский лазер Мод III ‡"
+msgstr "Снайперский лазер Мод III+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179933
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_CLD\"]/short"
-msgstr "Снайпер III ‡"
+msgstr "Снайпер III+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179934
 msgid ""
@@ -88488,12 +88529,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:179971
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_POW\"]/title"
-msgstr "Снайперский лазер Мод III †"
+msgstr "Снайперский лазер Мод III+ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179972
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_POW\"]/short"
-msgstr "Снайпер III †"
+msgstr "Снайпер III+ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179973
 msgid ""
@@ -88503,12 +88544,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180010
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_UNI\"]/title"
-msgstr "Снайперский лазер Мод III √"
+msgstr "Снайперский лазер Мод III+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180011
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3P_UNI\"]/short"
-msgstr "Снайпер III √"
+msgstr "Снайпер III+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180012
 msgid ""
@@ -88518,7 +88559,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180050
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1PP_PRC\"]/title"
-msgstr "Снайперский лазер Мод I ™"
+msgstr "Снайперский лазер Мод I++ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:180051
 msgid ""
@@ -88533,7 +88574,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180088
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1PP_BRC\"]/title"
-msgstr "Снайперский лазер Мод I €"
+msgstr "Снайперский лазер Мод I++ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:180089
 msgid ""
@@ -88548,7 +88589,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180126
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1PP_CLD\"]/title"
-msgstr "Снайперский лазер Мод I ‡"
+msgstr "Снайперский лазер Мод I++ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:180127
 msgid ""
@@ -88563,7 +88604,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180164
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1PP_POW\"]/title"
-msgstr "Снайперский лазер Мод I †"
+msgstr "Снайперский лазер Мод I++ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:180165
 msgid ""
@@ -88578,7 +88619,7 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180202
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_1PP_UNI\"]/title"
-msgstr "Снайперский лазер Мод I √"
+msgstr "Снайперский лазер Мод I++ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180203
 msgid ""
@@ -88593,12 +88634,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180241
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_PRC\"]/title"
-msgstr "Снайперский лазер Мод II ™"
+msgstr "Снайперский лазер Мод II++ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:180242
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_PRC\"]/short"
-msgstr "Снайпер II ™"
+msgstr "Снайпер II++ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:180243
 msgid ""
@@ -88608,12 +88649,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180279
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_BRC\"]/title"
-msgstr "Снайперский лазер Мод II €"
+msgstr "Снайперский лазер Мод II++ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:180280
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_BRC\"]/short"
-msgstr "Снайпер II €"
+msgstr "Снайпер II++ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:180281
 msgid ""
@@ -88623,12 +88664,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180317
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_CLD\"]/title"
-msgstr "Снайперский лазер Мод II ‡"
+msgstr "Снайперский лазер Мод II++ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:180318
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_CLD\"]/short"
-msgstr "Снайпер II ‡"
+msgstr "Снайпер II++ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:180319
 msgid ""
@@ -88638,12 +88679,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180355
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_POW\"]/title"
-msgstr "Снайперский лазер Мод II †"
+msgstr "Снайперский лазер Мод II++ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:180356
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_POW\"]/short"
-msgstr "Снайпер II †"
+msgstr "Снайпер II++ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:180357
 msgid ""
@@ -88653,12 +88694,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180393
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_UNI\"]/title"
-msgstr "Снайперский лазер Мод II √"
+msgstr "Снайперский лазер Мод II++ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180394
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_2PP_UNI\"]/short"
-msgstr "Снайпер II √"
+msgstr "Снайпер II++ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180395
 msgid ""
@@ -88668,12 +88709,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180432
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_PRC\"]/title"
-msgstr "Снайперский лазер Мод III ™"
+msgstr "Снайперский лазер Мод III++ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:180433
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_PRC\"]/short"
-msgstr "Снайпер III ™"
+msgstr "Снайпер III++ ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:180434
 msgid ""
@@ -88683,12 +88724,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180471
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_BRC\"]/title"
-msgstr "Снайперский лазер Мод III €"
+msgstr "Снайперский лазер Мод III++ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:180472
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_BRC\"]/short"
-msgstr "Снайпер III €"
+msgstr "Снайпер III++ €"
 
 #: src-ru/data/blueprints.xml.rawclobber:180473
 msgid ""
@@ -88698,12 +88739,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180510
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_CLD\"]/title"
-msgstr "Снайперский лазер Мод III ‡"
+msgstr "Снайперский лазер Мод III++ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:180511
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_CLD\"]/short"
-msgstr "Снайпер III ‡"
+msgstr "Снайпер III++ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:180512
 msgid ""
@@ -88713,12 +88754,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180549
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_POW\"]/title"
-msgstr "Снайперский лазер Мод III †"
+msgstr "Снайперский лазер Мод III++ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:180550
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_POW\"]/short"
-msgstr "Снайпер III †"
+msgstr "Снайпер III++ †"
 
 #: src-ru/data/blueprints.xml.rawclobber:180551
 msgid ""
@@ -88728,12 +88769,12 @@ msgstr "Этот снайперский лазер никогда не пром�
 #: src-ru/data/blueprints.xml.rawclobber:180588
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_UNI\"]/title"
-msgstr "Снайперский лазер Мод III √"
+msgstr "Снайперский лазер Мод III++ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180589
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LASER_SNIPER_3PP_UNI\"]/short"
-msgstr "Снайпер III √"
+msgstr "Снайпер III++ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:180590
 msgid ""
