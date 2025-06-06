@@ -184,7 +184,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<choice>
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship hostile="false"/>
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -214,50 +214,50 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 </eventList>
 
 <eventList name="LANIUS_DESTROYED">
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя немного лома.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взорвался, от него отвалилась часть металлической обшивки. Вы собрали значительное количество лома.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 </eventList>
 
 <eventList name="LANIUS_DEAD_CREW">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>После смерти команды ланиусов вы можете забрать топливо из их хранилища. Вы также собираете весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Теперь, когда корабль ланиусов очищен от противников, вы обыскиваете его. В конце концов вы обнаруживаете заключённого, который просит вас взять его в команду.</text>
 		<choice><!-- 1.26 -->
 			<text>Принять его в команду.</text>
@@ -275,7 +275,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		</choice>
 		<autoReward level="RANDOM">scrap_only</autoReward><!-- 1.26 -->
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле вы обнаруживаете схему дрона. Никто не может вам помешать, и вы забираете её себе.</text>
 		<autoReward level="LOW">drone</autoReward>
 	</event>
@@ -338,12 +338,13 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 <event name="LANIUS_DISTRESS_FIGHT" unique="true">
 	<text>Сканирование ближайшей области — первое, что вы делаете после прибытия к маяку. Сигнал, похоже, исходит от небольшого гражданского судна, атакованного кораблём ланиусов. Не все ланиусы довольствуются обломками, оставшимися от былых сражений.</text>
 	<distressBeacon/>
-	<ship load="LANIUS_CIVILIAN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_CIVILIAN" hostile="false"/>
 	<choice hidden="true">
 		<text>Вступить в бой с кораблём ланиусов.</text>
 		<event>
 			<text>Вы пытаетесь перехватить судно. Заметив более крупную добычу, ланиусы готовятся к бою.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -367,7 +368,8 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 	<event>
 		<text>Корабль игнорирует любые запросы, даже на их родном языке. Похоже, что он полностью заброшен. Но прежде чем вы смогли отреагировать, он начал наводить на вас орудия. Приготовьтесь к бою.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 
@@ -399,7 +401,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_DISTRESS_TRAP" unique="true">
 	<text>Вы опоздали — кто бы ни отправлял сигнал бедствия из этой системы, тут остался лишь корабль ланиусов. После расправы над своей целью ланиусы обратили внимание на ваше судно.</text>
-	<ship load="LANIUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="true"/>
 	<distressBeacon/>
 </event>
 
@@ -411,7 +413,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<choice>
 		<text>Атаковать корабль ланиусов.</text>
 		<event>
-			<ship load="LANIUS_SLUG_DISTRESS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="LANIUS_SLUG_DISTRESS_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -431,7 +433,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 </eventList>
 <ship name="LANIUS_SLUG_DISTRESS_SHIP" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -439,7 +441,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_SLUG_DISTRESS_END"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -459,7 +461,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<text>Атаковать корабль ланиусов.</text>
 		<event>
 			<text>Ланиусы, кажется, вас ещё не заметили, но это вопрос времени. Вы рвётесь в атаку и нацеливаете орудия на их корабль!</text>
-			<ship load="LANIUS_MANTIS_DISTRESS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="LANIUS_MANTIS_DISTRESS_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -480,7 +482,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 </eventList>
 <ship name="LANIUS_MANTIS_DISTRESS_SHIP" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -488,7 +490,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_MANTIS_DISTRESS_END"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -507,7 +509,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<text>Атаковать корабль ланиусов.</text>
 		<event>
 			<text>Рокам нужна ваша помощь, и вы без колебаний поворачиваете орудия в сторону корабля ланиусов.</text>
-			<ship load="LANIUS_ROCK_DISTRESS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="LANIUS_ROCK_DISTRESS_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -527,7 +529,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 </eventList>
 <ship name="LANIUS_ROCK_DISTRESS_SHIP" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -535,7 +537,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_ROCK_DISTRESS_END"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -833,7 +835,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 				<text>Приобрести переводчик за 30 лома.</text>
 				<event>
 					<text>Ваш корабль пришвартовался, и вы более чем удивились, когда ланиус, с которым вы говорили, поднялся к вам на борт. Оказывается, "устройством", которое вы приобрели, было существо, выучившее ваш язык.</text>
-					<crewMember amount="1" class="anaerobic_legendary">Толмач</crewMember>
+					<crewMember amount="1" all_skills="2" class="anaerobic_legendary">Толмач</crewMember><!-- 1.33 -->
 					<playSound>legendary</playSound>
 					<item_modify>
 						<item type="scrap" min="-20" max="-20"/>
@@ -932,7 +934,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_FIGHT">
 	<text load="LANIUS_FIGHT_TEXT"/>
-	<ship load="LANIUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="true"/>
 </event>
 
 <textList name="LANIUS_FIGHT_TEXT">
@@ -957,7 +959,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_REBEL_FIGHT">
 	<text load="LANIUS_REBEL_FIGHT_TEXT"/>
-	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="LANIUS_REBEL_FIGHT_TEXT">
 	<text>По прибытии вы замечаете несколько кораблей повстанцев, пытающихся отговорить корабль-мародёр ланиусов от "приобретения" их станции. Патрульный корабль повстанцев замечает вас и приближается для перехвата.</text>
@@ -972,7 +974,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_PIRATE_FIGHT">
 	<text load="LANIUS_PIRATE_FIGHT_TEXT"/>
-	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="true"/>
 </event>
 <textList name="LANIUS_PIRATE_FIGHT_TEXT">
 	<text>Похоже, что пиратский корабль угрожает небольшому кораблю беженцев неподалёку от маяка. Заметив ваше приближение, пираты разворачиваются в вашу сторону. Гражданский корабль не теряет времени и сбегает, что только придаёт решимости пиратам.</text>
@@ -987,13 +989,13 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_FIGHT_ASTEROID" unique="true">
 	<text>Кажется, этот маяк был установлен в поле астероидов, чтобы получить доступ к горнодобывающему поселению. Но половина посёлка уже разобрана мусорщиками ланиусов. Их военный эскорт направляется к вам.</text>
-	<ship load="LANIUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="true"/>
 	<environment type="asteroid"/>
 </event>
 
 <event name="LANIUS_FIGHT_PULSAR" unique="true">
 	<text>Вы видите какую-то исследовательскую станцию около пульсара. Хотя сразу и не скажешь, что это, так как большая часть станции была расплавлена. Корабль ланиусов, который тут хозяйничал, двинулся к вам на перехват, совершенно игнорируя угрозу электромагнитных вспышек.</text>
-	<ship load="LANIUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="true"/>
 	<environment type="pulsar"/>
 </event>
 
@@ -1001,7 +1003,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<text planet="PLANET_POPULATED">По прибытии вы сразу же погрузились в полный хаос: с планеты ведётся огонь из противокорабельной батареи по кораблям ланиусов. Один из этих боевых кораблей по ошибке принимает ваш корабль за подкрепление для планетарной защиты. Битва неизбежна!</text>
 	<!--<boarders min="2" max="2" class="anaerobic"/> -->
 	<environment type="PDS" target="enemy"/>
-	<ship load="LANIUS_BOARDERS_PDS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="LANIUS_BOARDERS_PDS" hostile="true"/>
 </event>
 <eventList name="LANIUS_BOARDERS_PDS_LIST">
 	<event>
@@ -1027,7 +1029,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<text>Попытаться тоже добыть что-нибудь.</text>
 		<event>
 			<text>Пока вы пытаетесь сориентироваться в этом мусоре, вы слишком близко приближаетесь к кораблю ланиусов, и они предпринимают попытку "добыть" вас!</text>
-			<ship load="LANIUS_HARVESTER_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="LANIUS_HARVESTER_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice req="pilot" lvl="2" hidden="true" max_group="0">
@@ -1048,7 +1050,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<text>Атаковать судно.</text>
 		<event>
 			<text>Вы идёте в нападение и заряжаете орудия — немного удачи, и вскоре поле материалов будет под вашим контролем.</text>
-			<ship load="LANIUS_HARVESTER_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="LANIUS_HARVESTER_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1059,7 +1061,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</choice>
 </event>
 <ship name="LANIUS_HARVESTER_SHIP" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1067,7 +1069,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_HARVESTER_SHIP_LIST"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1114,12 +1116,13 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	
 <event name="LANIUS_CIVILIAN" unique="true">
 	<text load="LANIUS_CIVILIAN_TEXT"/>
-	<ship load="LANIUS_CIVILIAN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_CIVILIAN" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать корабль ланиусов.</text>
 		<event>
 			<text>Вы заряжаете свои орудия, тем самым быстро привлекая внимание корабля ланиусов.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -1137,12 +1140,13 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_PIRATE_CIVILIAN">
 	<text load="LANIUS_PIRATE_CIVILIAN_TEXT"/>
-	<ship load="PIRATE_CIVILIAN_LANIUS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="PIRATE_CIVILIAN_LANIUS" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать пиратов.</text>
 		<event>
 			<text>Вы заряжаете свои орудия, тем самым быстро привлекая внимание пиратского корабля.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -1160,12 +1164,12 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_SOLO_SALVAGE">
 	<text load="LANIUS_SOLO_SALVAGE_TEXT"/>
-	<ship load="LANIUS_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать корабль.</text>
 		<event>
 			<text>Вы приближаетесь и заряжаете орудия. Заметив угрозу, они прекращают делать свои дела и готовятся к бою.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -1194,7 +1198,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<text>Забрать лом силой, в атаку!</text>
 			<event>
 				<text>Вы приближаетесь и заряжаете орудия. Заметив угрозу, они прекращают делать свои дела и готовятся к бою.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice>
@@ -1210,7 +1214,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<text>Атаковать корабль.</text>
 			<event>
 				<text>Вы приближаетесь и заряжаете орудия. Заметив угрозу, они прекращают делать свои дела и готовятся к бою.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice>
@@ -1239,12 +1243,12 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_SCARED_CIVILIAN" unique="true">
 	<text>Вы прибываете к маяку, чтобы обнаружить гражданский корабль, спасающийся от судна ланиусов. Гражданские шлют вам сообщение: «Помогите! Металлические монстры хотят расплавить наш корабль!» Как ни странно, никаких признаков активных орудий не видно.</text>
-	<ship load="LANIUS_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать корабль ланиусов.</text>
 		<event>
 			<text>Гражданские в спешке улетают, в то время как вы перехватываете корабль и наводите орудия. Он разворачивается и готовится к бою.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1265,7 +1269,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 				<text>Атаковать ланиусов.</text>
 				<event>
 					<text>Вы наводите свои орудия на ланиусов. Они разворачиваются и готовятся к бою.</text>
-					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -1294,19 +1298,20 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 	<event>
 		<text>Вы спрашиваете, что они делают здесь, но у переводчика явно проблемы с переводом. Ланиусы выглядят очень агрессивно после вашего вопроса. Они обрывают связь и заряжают свои орудия. Похоже, вам всё же придётся сражаться!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 </eventList>
 			
 			
 <event name="LANIUS_AUTO_REBEL" unique="true">
 	<text>Вы столкнулись с кораблём ланиусов, поглощающим обломки автоматизированного разведчика повстанцев. Если отпугнуть ланиусов, то, вероятно, можно вынести из этого пользу.</text>
-	<ship load="LANIUS_AUTO_REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_AUTO_REBEL" hostile="false"/>
 	<choice hidden="true">
 		<text>Вступить в бой.</text>
 		<event>
 			<text>Вы заряжаете свои орудия, сразу привлекая внимание корабля.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1356,7 +1361,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 	<event>
 		<text>Вы делаете всё, что в ваших силах, стараясь объяснить ланиусам, что сюда с бесчисленным количеством автоматизированных кораблей надвигается флот повстанцев. Вы не уверены, правильно ли вас поняли, но, похоже, они смеются над вашими предостережениями. Большинство кораблей продолжают заниматься своими делами, но один из них идёт на вас в атаку.</text>
-		<ship load="LANIUS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="LANIUS_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text>Вы рассказываете им о приближении флота повстанцев с многочисленными автоматизированными разведчиками. Они благодарят вас за информацию и готовятся к прыжку в направлении маяка, который вы недавно посетили. Это должно задержать флот. Вы собираете лом, оставшийся от станции повстанцев.</text>
@@ -1368,7 +1373,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <event name="LANIUS_BEACON_EATER" unique="true">
 	<text>Вы обнаружили повреждённое судно, состыкованное с прыжковым маяком. Похоже, ланиусы поглощают металл обшивки прыжкового маяка, рискуя уничтожить его и застрять здесь.</text>
-	<ship load="LANIUS_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.28.1 -->
 	<choice hidden="true">
 		<text>Спросить, не нуждаются ли они в помощи.</text>
@@ -1453,7 +1458,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 	<event>
 		<text>Вы пытаетесь связаться с кораблём, но он быстро заряжает защитные орудия. Похоже, что он полностью функционирует и хочет сражаться!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28.1 -->
 	</event>
 </eventList>
@@ -1477,7 +1482,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<item_modify>    
 			<item type="scrap" min="-30" max="-30"/>
 		</item_modify>	
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28.1 -->
 	</event>
 </eventList>
@@ -1493,7 +1498,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</event>
 	<event>
 		<text>Вы уже готовились к прыжку, но были очень удивлены тем, что корабль ланиусов оторвался от маяка и направился к вам. Похоже, он в полном порядке!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28.1 -->
 	</event>
 </eventList>
@@ -1503,13 +1508,13 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 <!-- From Chris-->
 <event name="LANIUS_DORMANT_EVENT" unique="true">
 	<text>Вы обнаружили судно ланиусов, дрейфующее по этому сектору. Корпус не повреждён, но питание, кажется, отключено.</text>
-	<ship load="LANIUS_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.28 -->
 	<choice hidden="true">
 		<text>Просканировать корабль на наличие признаков жизни.</text>
 		<event>
 			<text>Как только вы начали сканирование, импульсы сканера вывели экипаж ланиусов из спячки. И они явно голодны!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 		</event>
 	</choice>
@@ -1525,7 +1530,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 <eventList name="LANIUS_DORMANT_WEAPONS">
 	<event>
 		<text>Вы заряжаете свои орудия, но и корабль ланиусов делает то же самое! Готовьтесь к битве.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 	</event>
 	<event>
@@ -1538,7 +1543,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<text>Уничтожить корабль и разобрать на лом.</text>
 			<event>
 				<text>Как только вы наводите орудия на их корабль, ланиусы просыпаются... Они, должно быть, были в спячке, но опасность пробудила их!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 			</event>
 		</choice>
@@ -1572,7 +1577,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 <eventList name="LANIUS_DORMANT_PILOT">
 	<event>
 		<text>Вы направляете корабль в сторону судна, но вашему пилоту не хватает мастерства для выполнения манёвра — корабль ланиусов оживает, и он жаждет металла!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.28 -->
 	</event>
 	<event>
@@ -1590,7 +1595,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 		<text>Поприветствовать станцию и попытаться связаться.</text>
 		<event>
 			<text>Из вашей коммуникационной системы доносится пронзительный визг, и трансляция резко прерывается. Вдруг платформа приходит в движение. Оказывается, это вовсе не платформа, а корабль ланиусов!</text>
-			<ship load="LANIUS_FUELING_STATION_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="LANIUS_FUELING_STATION_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1622,12 +1627,12 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 <eventList name="LANIUS_FUELING_STATION_LIST">
 	<event>
 		<text>На приборной панели внезапно загорается сигнал предупреждения о пробоине в корпусе. На платформе были ланиусы. А теперь уже и у вас на борту! Ко всему прочему из-под маскировки выходит крейсер.</text>
-		<ship load="LANIUS_FUELING_STATION_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="LANIUS_FUELING_STATION_SHIP" hostile="true"/>
 		<boarders breach="true" min="1" max="1" class="anaerobic"/>
 	</event>
 	<event>
 		<text>Короткая передышка оказалась ловушкой. Прогремел взрыв в моторном отсеке, и через секунду на радаре появился корабль ланиусов.</text>
-		<ship load="LANIUS_FUELING_STATION_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="LANIUS_FUELING_STATION_SHIP" hostile="true"/>
 		<damage amount="3" system="engines"/>
 	</event>
 	<event>
@@ -1667,7 +1672,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	</item_modify>
 </event>
 <ship name="LANIUS_FUELING_STATION_SHIP" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1675,7 +1680,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_FUELING_STATION_END"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1723,7 +1728,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 	<surrender  chance="0.2" min="3" max="4" load="LANIUS_SURRENDER"/>
 	<escape  chance="0.2" min="2" max="4" load="LANIUS_ESCAPE"/>
 	<destroyed load="LANIUS_DESTROYED"/>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль ланиусов скрылся.</text>
 	</gotaway>
 	<deadCrew load="LANIUS_DEAD_CREW"/>
@@ -1731,7 +1736,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 
 <ship name="LANIUS_CIVILIAN" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Судно ланиусов разваливается на куски. Вы спешите связаться с гражданским судном.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1739,7 +1744,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="SAVE_CIVILIAN_LIST"/>    
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле ланиусов не осталось признаков жизни. Вы спешите связаться с гражданским судном.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1751,7 +1756,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 
 <ship name="LANIUS_BOARDERS_PDS" auto_blueprint="SHIPS_LANIUS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на куски. Вы решаете собрать с него лом, как только представляется такая возможность.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1759,7 +1764,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_BOARDERS_PDS_LIST"/>    
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле ланиусов не осталось признаков жизни. Вы решаете собрать с него лом, как только представляется такая возможность.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1772,7 +1777,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 <ship name="LANIUS_AUTO_REBEL" auto_blueprint="SHIPS_LANIUS">
 	<escape  chance="0.2" min="2" max="4" load="LANIUS_ESCAPE"/>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль ланиусов разваливается на куски. Вы приближаетесь, чтобы рассмотреть, что осталось от беспилотника повстанцев.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1780,7 +1785,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_AUTO_REBEL_LIST"/>    
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле ланиусов не осталось признаков жизни. Вы приближаетесь, чтобы рассмотреть беспилотник повстанцев, который не успели поглотить ланиусы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -1788,7 +1793,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="LANIUS_AUTO_REBEL_LIST"/>    
 		</choice>
 	</deadCrew>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль ланиусов скрылся. Вы приближаетесь, чтобы рассмотреть, что же осталось от беспилотника повстанцев.</text>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -1801,7 +1806,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 
 
 <ship name="PIRATE_CIVILIAN_LANIUS" auto_blueprint="SHIPS_PIRATE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Пиратский корабль разваливается на куски. Вы спешите связаться с гражданским судном.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -1809,7 +1814,7 @@ This sector will be hostile (i think) but with lots of varied events.  Leading t
 			<event load="SAVE_CIVILIAN_LIST"/>    
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На пиратском корабле не осталось признаков жизни. Вы спешите связаться с гражданским судном.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">

@@ -227,7 +227,7 @@ shield research center — jams shields
 		<event>
 			<text>Иногда вы должны поставить на аутсайдера, даже в тех редких случаях, когда это военный корабль мантисов. Вы направляетесь в центр поля астероидов и встречаете золтанцев боем.</text>
 			<environment type="asteroid"/>
-			<ship load="ZOLTAN_SHIP_SAVE_MANTIS1" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_SHIP_SAVE_MANTIS1" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -235,7 +235,7 @@ shield research center — jams shields
 		<event>
 			<text>Вы догоняете корабль золтанцев и перехватываете вместе с ним корабль мантисов в астероидном поле. Время заводить новых друзей.</text>
 			<environment type="asteroid"/>
-			<ship load="ZOLTAN_SHIP_SAVE_MANTIS2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_SHIP_SAVE_MANTIS2" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -304,7 +304,7 @@ shield research center — jams shields
 <eventList name="ZOLTAN_TRADE_HUB_TALK">
 	<event>
 		<text>Они редко видят представителей вашего вида в этих краях, и вы выглядите как касвагарский морской слаг в плутонском рагу из креветок. Вы возвращаетесь на корабль с шайкой золтанцев на хвосте!</text>
-		<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTAN_SHIP" hostile="true"/>
 		<boarders min="2" max="4" class="energy"/>
 	</event>
 	<event>
@@ -346,14 +346,14 @@ shield research center — jams shields
 				<text>Вмешаться — сделать первый контакт с примитивными инопланетянами.</text>
 				<event>
 					<text>Местное население (пушистые, одноглазые древокожие создания) начали восторженно петь, лишь только завидев вас. Внезапно небо осветилось вспышкой лазера — золтанцы открыли огонь по вашему кораблю! Вы бросаетесь обратно в корабль и вступаете в битву.</text>
-					<ship load="ZOLTAN_PRIMITIVES_ZOLTAN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship load="ZOLTAN_PRIMITIVES_ZOLTAN" hostile="true"/>
 				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Защитить инопланетян ценой жизни — атаковать корабль повстанцев.</text>
 				<event>
 					<text>Этих существ следует оставить для развития их собственными темпами. Вы направляете все орудия на повстанцев и готовитесь открыть огонь!</text>
-					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship load="ZOLTAN_PRIMITIVES_REBEL" hostile="true"/>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -383,7 +383,7 @@ shield research center — jams shields
 <event name="ZOLTAN_FREE_MAP" unique="true">
 	<text>Золтанцы, находящиеся неподалёку от этого маяка, с радостью принимают вас и зовут в гости к себе на борт. Из формальных соображений они предоставили вам экскурсию по кораблю. В процессе вам на глаза попались некоторые звёздные карты, детали которых вы, не долго думая, запомнили визуально.</text>
 	<reveal_map/>
-	<ship load="ZOLTAN_SHIP_WOTP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --><!--- 1.27 -->
+	<ship load="ZOLTAN_SHIP_WOTP" hostile="false"/><!--- 1.27 -->
 </event>
 	
 <event name="ZOLTAN_ODD_MOON" unique="true">
@@ -471,7 +471,7 @@ shield research center — jams shields
 -->
 <event name="ZOLTAN_FIGHT">
 	<text load="ZOLTAN_FIGHT"/>
-	<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTAN_SHIP" hostile="true"/>
 </event>
 <textList name="ZOLTAN_FIGHT">
 	<text>Корабль золтанцев связывается с вами: «Природа дня циклична. Лихорадка истощает. Причина в том...» Они впали в какое-то опасное космическое помешательство. Прежде чем вы обдумали, как же помочь бедолагам, они открыли по вам огонь.</text>
@@ -487,7 +487,7 @@ shield research center — jams shields
 
 <event name="ZOLTAN_PIRATE">
 	<text load="ZOLTAN_PIRATE"/>
-	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="true"/>
 </event>
 <textList name="ZOLTAN_PIRATE">
 	<text>«Внимание, всем кораблям в округе: мы находимся под атакой!» Частота соответствует золтанскому кораблю, находящемуся где-то неподалёку. Вы начинаете отслеживать его по сигналу. Они, видимо, расценивают ваше вмешательство как сигнал к прыжку. Трусы.</text>
@@ -506,12 +506,12 @@ shield research center — jams shields
 
 <event name="ZOLTAN_MANTIS" unique="true">
 	<text>Вы приняли последнюю трансляцию с поверженного грузового корабля золтанцев: «Мантисы, они здесь, пожалуйста...» Вас прервали выстрелы в левый борт.</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
 
 <event name="ZOLTAN_ENGI" unique="true">
 	<text>Вы закончили прыжок посреди группы обломков, в которых можно узнать признаки золтанского крейсера. В довершение эскорт разбитого корабля принял вас за нападавшего и готовится к ответным мерам. Это инжи, и они отклоняют любые попытки связаться.</text>
-	<ship load="ENGI_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ENGI_SHIP" hostile="true"/>
 </event>
 
 
@@ -519,7 +519,7 @@ shield research center — jams shields
 	<text>Вы прибыли в скопление астероидов, где вас вскоре встретил охранник-золтанец. Он передаёт: «Попыткой проникнуть в закрытые области добычи ископаемых вы нарушили акт природной защиты минералов. Ваше оружие будет конфисковано для проверки». У вас нет времени на эту чепуху.</text>
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
-	<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTAN_SHIP" hostile="true"/>
 </event>
 
 
@@ -530,12 +530,12 @@ shield research center — jams shields
 
 <event name="ZOLTAN_LIFERAFT" unique="true">  <!-- ALSO A QUEST!!-->
 	<text>Вы подобрали блуждающую в космосе медицинскую спасательную шлюпку золтанцев. Её пассажир умоляет вас отобрать его корабль у пиратов, которые недавно его захватили. «Я думаю, понятно, — устало добавил он, — что нужно обезвредить их, не разнося мой корабль в пух и прах».</text>
-	<ship load="ZOLTAN_LIFERAFT" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ZOLTAN_LIFERAFT" hostile="false"/>
 	<!-- <status type="limit" target="enemy" system="teleport" amount="0"/> -->
 	<choice hidden="true">
 		<text>Заняться пиратами.</text>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<!-- <status type="limit" target="enemy" system="teleport" amount="0"/> -->
 		</event>
 	</choice>
@@ -576,7 +576,7 @@ shield research center — jams shields
 <eventList name="ZOLTAN_SCIENCE_DOCK_LIST">
 	<event>
 		<text>Вы пытаетесь подпустить их поближе... Это было безрассудством с вашей стороны: они открывают огонь.</text>
-		<ship load="ZOLTAN_SCIENCE_DOCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTAN_SCIENCE_DOCK" hostile="true"/>
 	</event>
 	<event>
 		<text>«Мы исследовали отношения между видами и решили, что "Федерация" ещё имеет потенциал быть полезной Галактике. Пожалуйста, примите этот подарок, он поможет вам в вашем полёте».</text>
@@ -591,28 +591,28 @@ shield research center — jams shields
 		<text>Мантисы.</text>
 		<event>
 			<text>«Любишь бросать вызов? Так тому и быть!» Поблизости раскрывается червоточина, злой и сбитый с толку корабль мантисов мчится к вам.</text>
-			<ship load="ZOLTAN_RIFT_MANTIS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_RIFT_MANTIS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Слаги.</text>
 		<event>
 			<text>«Даже не надейтесь, что найдёте слабое место, Федераты». Вы замечаете открывающуюся червоточину, и секундой позже корабль слагов начинает атаку с другой стороны.</text>
-			<ship load="ZOLTAN_RIFT_SLUG" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!-- 1.24 -->
+			<ship load="ZOLTAN_RIFT_SLUG" hostile="true"/><!-- 1.24 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Роки.</text>
 		<event>
 			<text>«Матёрый враг для закалённого ветерана». Вы обнаруживаете, как открывается червоточина, и появляется корабль роков с огромными орудиями. Похоже, они были в бою в то время, когда их настиг прыжок в гипер-пространство.</text>
-			<ship load="ZOLTAN_RIFT_ROCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_RIFT_ROCK" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Кристалины.</text>
 		<event>
 			<text>Старик затих на секунду, а потом прошептал: «Ты уверен? Что ж, пусть будет так». Огромная червоточина открылась, и внутри неё виднеется корабль кристалинов, готовый к битве.</text>
-			<ship load="CRYSTAL_RIFT_ROCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="CRYSTAL_RIFT_ROCK" hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -670,7 +670,7 @@ shield research center — jams shields
 		<text>У вас нет времени на подобные глупости. В атаку!</text>
 		<event>
 			<text>Предполагая ваше сопротивление, они подняли свой энергетический щит и подготовились к сражению.</text>
-			<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_SHIP" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -723,7 +723,7 @@ shield research center — jams shields
 			<text>Отказаться и вступить в сражение.</text>
 			<event>
 				<text>Вы не собираетесь никого отдавать. Вместо этого вы взлетаете с посадочной станции с вражескими охранниками на борту. К сожалению, они способны превратить ваши системы вооружения в полный хаос. Время уходить!</text>
-				<ship load="ZOLTAN_CREW_SCAN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="ZOLTAN_CREW_SCAN" hostile="true"/>
 				<boarders min="2" max="4" class="energy"/>
 				<status type="divide" target="player" system="weapons" amount="2"/>
 			</event>
@@ -741,7 +741,7 @@ shield research center — jams shields
 	<text>В туманности вы неожиданно натыкаетесь на перепуганную кучку роков, пытающихся спрятаться от пограничной полиции золтанцев. Они, по-видимому, не готовы рисковать, отпуская знающий их местоположение корабль. Намного безопаснее было бы вас уничтожить. Они открывают огонь!</text>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 
 <event name="ZOLTAN_EYE" unique="true">
@@ -770,7 +770,7 @@ shield research center — jams shields
 	</event>
 	<event>
 		<text>Вы приближаетесь к Глазу и ждёте, но ничего не происходит. Внезапно из FTL-прыжка поблизости выходит корабль золтанцев: «За незаконное нахождение на данном маяке вы будете ликвидированы».</text>
-		<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTAN_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text>Вы осторожно приближаетесь к Глазу. И он, видимо, почувствовал ваши мысли, поскольку в вашем трюме неизвестно откуда появилась куча лома!</text>
@@ -884,14 +884,14 @@ shield research center — jams shields
 		<text>Захватить корабль с топливом.</text>
 		<event>
 			<text>Вы подлетаете к кораблю с топливом и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
-			<ship load="NEBULA_STORM_PIRATE_SUPPLY_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="NEBULA_STORM_PIRATE_SUPPLY_FUEL" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Захватить корабль с боеприпасами.</text>
 		<event>
 			<text>Вы подлетаете к кораблю с боеприпасами и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
-			<ship load="NEBULA_STORM_PIRATE_SUPPLY_AMMO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="NEBULA_STORM_PIRATE_SUPPLY_AMMO" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -917,13 +917,13 @@ shield research center — jams shields
 
 <event name="ZOLTAN_BOARDERS" unique="true">
 	<text>Ещё несколько более усердных, чем обычно принято у золтанцев, таможенных проверок... Команда пограничной полиции высаживается на борт. Возникает небольшое недоразумение по поводу лицензий на оружие, которое быстро перерастает от разговоров на повышенных тонах до перестрелки!</text>
-	<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTAN_SHIP" hostile="true"/>
 	<boarders min="3" max="4" class="energy"/>
 </event>
 
 <event name="ZOLTAN_BOARDERS_MANTIS" unique="true">
 	<text>Бродяги-мантисы порой вообще не считают золтанцев серьёзными соперниками. Их разведчик атакует вас, попутно высаживая к вам на борт абордажную бригаду!</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<boarders min="2" max="3" class="mantis"/>
 </event>
 
@@ -967,22 +967,22 @@ shield research center — jams shields
 <eventList name="ZOLTAN_PEACE_QUEST_ATTACK">
 	<event>
 		<text>Вы заряжаете ваши орудия — это будет даже слишком просто...</text>
-		<ship load="ZOLTAN_PEACE_QUEST_ATTACK1" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTAN_PEACE_QUEST_ATTACK1" hostile="true"/>
 	</event>
 	<event>
 		<text>Прямо перед атакой вы обнаруживаете прыжковый след. Защитный корабль золтанцев идёт им на помощь.</text>
-		<ship load="ZOLTAN_PEACE_QUEST_ATTACK2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTAN_PEACE_QUEST_ATTACK2" hostile="true"/>
 	</event>
 </eventList>
 
 <event name="ZOLTAN_PEACE_QUEST2">
 	<text>Вы прибыли на место, указанное миролюбивыми золтанцами, но единственное, что тут есть — это корабль повстанцев, и он очень быстро приближается! «Мы нашли вас! Теперь вам не уйти!»</text>
-	<ship load="REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать.</text>
 		<event>
 			<text>Вы заряжаете орудия и готовитесь к бою.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -997,7 +997,7 @@ shield research center — jams shields
 						<text>Галактика огромна, вы можете найти место для воплощения ваших идеалов в другом месте, не прибегая к разрушению.</text>
 						<event>
 							<text>«Нет! Мы не собираемся оставаться на задворках космоса лишь потому, что мы не вписываемся в ваши "идеалы Федерации"». Они атакуют.</text>
-							<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+							<ship hostile="true"/>
 						</event>
 					</choice>
 					<choice hidden="true">
@@ -1016,14 +1016,14 @@ shield research center — jams shields
 				<text>Сдавайтесь. Ваше уничтожение неизбежно. Мы уничтожили всех повстанцев на пути сюда.</text>
 				<event>
 					<text>Они прерывают связь и сразу нападают.</text>
-					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship hostile="true"/>
 				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Ваше восстание приносит миллионы смертей. Ваши убеждения раздробляют Галактику. Единство — единственный выбор!</text>
 				<event>
 					<text>«В слабой Федерации людей считают "равными" пришельцам. Жертва МИЛЛИАРДОВ людей или пришельцев будет оправдана, если это необходимо для достижения нашего полного потенциала!» Они атакуют.</text>
-					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -1052,7 +1052,7 @@ shield research center — jams shields
 	<choice>
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship hostile="false"/>
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -1076,7 +1076,7 @@ shield research center — jams shields
 	<choice>
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship hostile="false"/>
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -1219,7 +1219,7 @@ shield research center — jams shields
 
 <event name="ZOLTON_FIGHT">
 	<text load="ZOLTON_FIGHT"/>
-	<ship load="ZOLTON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTON_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 </event>
 <textList name="ZOLTON_FIGHT">
@@ -1253,7 +1253,7 @@ shield research center — jams shields
 
 <event name="NEBULA_STORM_ZOLTON_FIGHT">
 	<text load="NEBULA_STORM_ZOLTON_FIGHT"/>
-	<ship load="ZOLTON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTON_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
@@ -1267,7 +1267,7 @@ shield research center — jams shields
 
 <event name="NEBULA_AUTO_ZOLTON_FIGHT">
 	<text load="NEBULA_AUTO_ZOLTON_FIGHT"/>
-	<ship load="AUTO_ZOLTON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="AUTO_ZOLTON_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
@@ -1288,27 +1288,27 @@ shield research center — jams shields
 	</weaponOverride>
 </ship>
 <eventList name="DESTROYED_DEFAULT_AUTO_ZOLTON">
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя небольшое количество полезного лома.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя некоторое количество полезного лома.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя некоторое количество полезного лома.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя некоторое количество полезного лома.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя значительное количество полезного лома.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Всё, что остаётся от этого беспилотника — небольшая кучка лома и уникальное оружие золтонцев.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<weapon name="WEAPONS_ZOLTON_REWARD"/>
@@ -1318,7 +1318,7 @@ shield research center — jams shields
 
 <event name="CON_FIGHT">
 	<text load="CON_FIGHT"/>
-	<ship load="CON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="CON_SHIP" hostile="true"/>
 </event>
 <textList name="CON_FIGHT">
 	<text>Вы повстречались с контрабандистами, и они без предупреждения открывают по вам огонь. Защитные манёвры!</text>
@@ -1341,7 +1341,7 @@ shield research center — jams shields
 	<choice>
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship hostile="false"/>
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -1356,7 +1356,7 @@ shield research center — jams shields
 		<choice hidden="false">
 			<text>Принять их предложение.</text>
 			<event>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 				<autoReward level="HIGH">stuff</autoReward>
 				<weapon name="WEAPONS_UWB"/>
 			</event>
@@ -1387,12 +1387,12 @@ shield research center — jams shields
 
 <event name="CON_NEUTRAL"> 
 	<text load="CON_NEUTRAL_TEXT"/>
-	<ship load="CON_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CON_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
 			<text load="CON_NEUTRAL_ATTACK_TEXT"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1423,13 +1423,13 @@ shield research center — jams shields
 
 <event name="ZOLTON_NEUTRAL"> 
 	<text load="ZOLTON_NEUTRAL_TEXT"/>
-	<ship load="ZOLTON_SHIP_WOTP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --><!--- 1.27 -->
+	<ship load="ZOLTON_SHIP_WOTP" hostile="false"/><!--- 1.27 -->
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
 			<text load="ZOLTON_NEUTRAL_ATTACK_TEXT"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1460,7 +1460,7 @@ shield research center — jams shields
 
 <event name="ZOLTON_BOARDERS" unique="true">
 	<text>Патрульный корабль золтонцев на этом маяке настаивает на досмотре ваших трюмов. Вы пускаете на борт группу золтонцев, и в груде неучтённого лома они находят запрещённое оборудование! Вам некогда объяснять им, что такое ржавый холодильник... К бою!</text>
-	<ship load="ZOLTON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTON_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<boarders min="3" max="4" class="energyx"/>
 	<autoReward level="LOW">scrap_only</autoReward>
@@ -1468,18 +1468,18 @@ shield research center — jams shields
 
 <event name="ZOLTON_BOARDERS_MANTIS" unique="true">
 	<text>Мантисы порой залетают в дальние секторы в поисках лёгкой добычи. Но вместо золтонцев этот мантис встретился с вами. Ему же хуже!</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<boarders min="2" max="3" class="mantis"/>
 </event>
 
 <event name="ZOLTON_MANTIS" unique="true">
 	<text>Мантис, ищущий лёгкую добычу, прилетел в этот сектор на охоту. К его несчастью, он встретился с вами, а не с золтонцами, у которых даже нет суперщитов...</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
 
 <event name="DISTRESS_ZOLTON_MANTIS" unique="true">
 	<text>Корабль золтонцев шлёт отчаянные сигналы бедствия: его преследуют мантисы. Вы делаете залп в их сторону, и мантисы переключаются на вас. Золтонцы, воспользовавшись моментом, спешно убегают.</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<distressBeacon/>
 </event>
 
@@ -3506,7 +3506,7 @@ shield research center — jams shields
 
 <event name="EVENT_ZOLTON_LIFE_RESEARCH" unique="true">
 	<text>Золтонское исследовательское судно вызывает вас с просьбой дать в аренду ваше жизнеобеспечивающее оборудование на корабле. Они обещают быстро провести несколько своих исследований и хорошо заплатить, если ваши медотсек и кислородный модуль достаточно улучшены.</text>
-	<ship load="ZOLTON_SHIP_WOTP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --><!--- 1.27 -->
+	<ship load="ZOLTON_SHIP_WOTP" hostile="false"/><!--- 1.27 -->
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<choice hidden="true">
 		<text>Согласиться дать своё оборудование в аренду.</text>
@@ -3524,7 +3524,7 @@ shield research center — jams shields
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы отключаете связь и готовитесь забрать у золтонцев всё ценное грубой силой.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -3887,23 +3887,23 @@ shield research center — jams shields
 	</weaponOverride>
 </ship> -->
 <eventList name="DEAD_CREW_ENERGYX">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда все полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда все полезные материалы.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Экипаж мёртв, вы можете забрать топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Теперь, когда их корабль очищен от врагов, вы обыскиваете его. В итоге вы находите заключённого, который предлагает присоединиться к вашему экипажу.</text>
 		<choice>
 			<text>Принять его в команду.</text>
@@ -3921,7 +3921,7 @@ shield research center — jams shields
 		</choice>
 		<autoReward level="RANDOM">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Вы находите уникальное оружие на их корабле. Остановить вас некому, вы можете установить его себе.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<weapon name="WEAPONS_ZOLTON_REWARD"/>
@@ -3931,7 +3931,7 @@ shield research center — jams shields
 
 <event name="CON_UWB_AND_SMASHER" unique="true">
 	<text>Вы встречаете на своём пути контрабандистов. Они предлагают вам приобрести одно из их уникальных орудий.</text>
-	<ship load="SHIP_CON_PARAM_2" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIP_CON_PARAM_2" hostile="false"/>
 	<choice hidden="false">
 		<text>Согласиться.</text>
 		<event>
@@ -3953,7 +3953,7 @@ shield research center — jams shields
 		<text>Атаковать их.</text>
 		<event>
 			<text>Контрабандисты заряжают орудия в ответ на вашу агрессию.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -3982,30 +3982,30 @@ shield research center — jams shields
 	<escape timer="35" min="40" max="40">
 		<text>Они не хотят сражаться и убегают!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль совершил FTL-прыжок в неизвестном направлении...</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_CON"/>
 </ship>
 <eventList name="DEAD_CREW_CON">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда все полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда все полезные материалы.</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Экипаж мёртв, вы можете забрать топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Теперь, когда их корабль очищен от врагов, вы обыскиваете его. В итоге вы находите заключённого, который предлагает присоединиться к вашему экипажу.</text>
 		<choice>
 			<text>Принять его в команду.</text>
@@ -4023,7 +4023,7 @@ shield research center — jams shields
 		</choice>
 		<autoReward level="RANDOM">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Вы находите уникальное оружие на их корабле. Остановить вас некому, вы можете установить его себе.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<weapon name="WEAPONS_UWB"/>
@@ -4035,7 +4035,7 @@ shield research center — jams shields
 
 <event name="EVENT_FED_DANGERSCAN_ANOMALY" unique="true">
 	<img back="BACKGROUND" planet="NONE"/>
-	<ship load="FED_DANGERSCAN_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FED_DANGERSCAN_PARAM" hostile="false"/>
 	<text>Вблизи маяка вас приветствует исследовательское судно Федерации. Они выходят на связь: «Капитан, мы нашли поблизости Малую Сингулярную Аномалию. Находиться возле неё крайне опасно, но для проведения исследований нам необходимо просканировать аномалию с малого расстояния. Ваш корабль выглядит достаточно прочным, чтобы провести эту операцию. Поможете нам? Ремонт за наш счёт!»</text>
 	<choice hidden="true">
 		<text>Согласиться помочь и направиться к аномалии.</text>
@@ -4059,7 +4059,7 @@ shield research center — jams shields
 		<text>Атаковать корабль Федерации.</text>
 		<event>
 			<text>Вы отключаете связь и начинаете зарядку орудий, несмотря на то, что это корабль Федерации...</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4073,14 +4073,14 @@ shield research center — jams shields
 	<escape timer="25" min="40" max="40">
 		<text>Вы замечаете зарядку их FTL-привода. Похоже, они пытаются сбежать!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль сделал FTL-прыжок в неизвестном направлении...</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва.</text>
 		<autoReward level="LOW">stuff</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен, и вы обчищаете трюмы.</text>
 		<autoReward level="MED">stuff</autoReward>
 	</deadCrew>
@@ -4353,7 +4353,7 @@ shield research center — jams shields
 
 
 <event name="EVENT_ENERGYX_BS" unique="true">
-	<ship load="ENERGYX_BS_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ENERGYX_BS_PARAM" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<text>Исследовательская станция золтонцев выходит на связь с вами: «Капитан, мы знаем, почему вы находитесь в нашем секторе. Учитывая сложившиеся обстоятельства, золтонцы готовы сотрудничать с вами. Мы можем улучшить ваши щиты за умеренную цену».</text>
 	<choice hidden="true" req="STASIS_POD">
@@ -4416,7 +4416,7 @@ shield research center — jams shields
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы отключаете связь и начинаете зарядку орудий. Они делают то же самое.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4740,7 +4740,7 @@ shield research center — jams shields
 
 
 <event name="EVENT_CONTRABAND" unique="true"> 
-	<ship load="SHIP_CON_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIP_CON_PARAM" hostile="false"/>
 	<text>С вами связывается судно контрабандистов: «Мы продаём отличное оружие по очень низкой цене. Будешь брать?»</text>
 	<choice req="SLUG_AND_ARMORED_SLUG" hidden="true" max_group="0" blue="true"><!-- 1.28 -->
 		<text>(Член экипажа слаг) Спросить, что именно они продают. Пусть слаг контролирует качество товара.</text>
@@ -4765,7 +4765,7 @@ shield research center — jams shields
 				<text>Атаковать их.</text>
 				<event>
 					<text>Вы решаете, что незаконные поставки оружия нужно пресекать. Контрабандистам всё равно кому его продавать, и повстанцы, связавшись с ними, станут только сильнее.</text>
-					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship hostile="true"/>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -4780,7 +4780,7 @@ shield research center — jams shields
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы решаете, что незаконные поставки оружия нужно пресекать. Контрабандистам всё равно кому его продавать, и повстанцы, связавшись с ними, станут только сильнее.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4804,7 +4804,7 @@ shield research center — jams shields
 			<text>Атаковать их.</text>
 			<event>
 				<text>Вы решаете, что незаконные поставки оружия нужно пресекать. Контрабандистам всё равно кому его продавать, и повстанцы, связавшись с ними, станут только сильнее.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -4831,7 +4831,7 @@ shield research center — jams shields
 			<text>Атаковать их.</text>
 			<event>
 				<text>Вы решаете, что незаконные поставки оружия нужно пресекать. Контрабандистам всё равно кому его продавать, и повстанцы, связавшись с ними, станут только сильнее.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -4981,7 +4981,7 @@ shield research center — jams shields
 		<weapon name="FK_BA_SHOTGUN_SMALL"/><item_modify><item type="scrap" min="-12" max="-12"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -4993,7 +4993,7 @@ shield research center — jams shields
 		<weapon name="FK_SHOTGUN_007"/><item_modify><item type="scrap" min="-25" max="-25"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5005,7 +5005,7 @@ shield research center — jams shields
 		<weapon name="FK_SHOTGUN"/><item_modify><item type="scrap" min="-22" max="-22"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5017,7 +5017,7 @@ shield research center — jams shields
 		<weapon name="FK_SHOTGUN_2"/><item_modify><item type="scrap" min="-33" max="-33"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5029,7 +5029,7 @@ shield research center — jams shields
 		<weapon name="FK_SHOTGUN_3"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5041,7 +5041,7 @@ shield research center — jams shields
 		<weapon name="FK_BA_SHOTGUN_SCATTER"/><item_modify><item type="scrap" min="-24" max="-24"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5053,7 +5053,7 @@ shield research center — jams shields
 		<weapon name="FK_BA_BEAM_NAGINATA"/><item_modify><item type="scrap" min="-32" max="-32"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5065,7 +5065,7 @@ shield research center — jams shields
 		<weapon name="FK_BEAM_GUISARME"/><item_modify><item type="scrap" min="-25" max="-25"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5077,7 +5077,7 @@ shield research center — jams shields
 		<weapon name="FK_SHTURM_LASER_1"/><item_modify><item type="scrap" min="-14" max="-14"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5089,7 +5089,7 @@ shield research center — jams shields
 		<weapon name="FK_SHTURM_LASER_2"/><item_modify><item type="scrap" min="-24" max="-24"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5101,7 +5101,7 @@ shield research center — jams shields
 		<weapon name="FK_HEAVY_MINIGUN"/><item_modify><item type="scrap" min="-42" max="-42"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5113,7 +5113,7 @@ shield research center — jams shields
 		<weapon name="FK_LASER_HULL_1"/><item_modify><item type="scrap" min="-18" max="-18"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5125,7 +5125,7 @@ shield research center — jams shields
 		<weapon name="FK_LASER_HULL_2"/><item_modify><item type="scrap" min="-29" max="-29"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5137,7 +5137,7 @@ shield research center — jams shields
 		<weapon name="FK_BA_BEAM_BARDICHE"/><item_modify><item type="scrap" min="-15" max="-15"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5149,7 +5149,7 @@ shield research center — jams shields
 		<weapon name="FK_BA_ION_PIERCE_1"/><item_modify><item type="scrap" min="-14" max="-14"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5161,7 +5161,7 @@ shield research center — jams shields
 		<weapon name="FK_BA_ION_PIERCE_2"/><item_modify><item type="scrap" min="-17" max="-17"/></item_modify>
 		<choice hidden="true">
 			<text>Атаковать их!</text>
-			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --></event>
+			<event><text>Вы полны жажды мести и идёте в атаку на корабль обманщиков.</text><ship hostile="true"/></event>
 		</choice>
 		<choice hidden="true">
 			<text>Улететь прочь от контрабандистов.</text>
@@ -5182,11 +5182,11 @@ shield research center — jams shields
 	<escape timer="35" min="40" max="40">
 		<text>Вы замечаете зарядку FTL-привода. Похоже, они пытаются удрать!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль сделал FTL-прыжок в неизвестном направлении...</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен, и вы обчищаете трюмы корабля...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="false">
@@ -5211,7 +5211,7 @@ shield research center — jams shields
 		<text id="continue"/>
 		<event>
 			<text>...внезапно из ниоткуда появляется светящийся шар! Он делает пару оборотов вокруг вашего корабля, и на экране коммуникатора начинает появляться текст...</text>
-			<ship load="ZOLTAN_BLINK_SHIPS_PARAMX" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --> <!-- this way for talk with it -->
+			<ship load="ZOLTAN_BLINK_SHIPS_PARAMX" hostile="false"/> <!-- this way for talk with it -->
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="ZOLTAN_BLINK_X2_RANDOM"/>
@@ -5222,7 +5222,7 @@ shield research center — jams shields
 		<text id="continue"/>
 		<event>
 			<text>...внезапно из ниоткуда появляется светящийся шар! Он делает пару оборотов вокруг вашего корабля, а затем атакует вас!</text>
-			<ship load="ZOLTAN_BLINK_SHIPS_PARAMX_2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_BLINK_SHIPS_PARAMX_2" hostile="true"/>
 			<status type="limit" target="player" system="drones" amount="0"/> <!-- beam drone crushed it -->
 		</event>
 	</choice>
@@ -5231,7 +5231,7 @@ shield research center — jams shields
 	<escape timer="30" min="40" max="40">
 		<text>Кажется, светящийся шар отступает!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Светящийся шар исчез в неизвестном направлении. На месте прыжка вы находите небольшое количество топлива...</text>
 		<status type="clear" target="player" system="teleporter" amount="100"/>
 		<status type="clear" target="player" system="artillery" amount="100"/>
@@ -5242,7 +5242,7 @@ shield research center — jams shields
 			<item type="fuel" min="1" max="3"/>
 		</item_modify>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 --> 
+	<destroyed> 
 		<text>Светящийся шар уничтожен. Вы находите небольшое количество топлива, там где он был...</text>
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<status type="clear" target="player" system="teleporter" amount="100"/>
@@ -5260,7 +5260,7 @@ shield research center — jams shields
 	<escape timer="30" min="40" max="40">
 		<text>Кажется, светящийся шар отступает!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Светящийся шар исчез в неизвестном направлении. На месте прыжка вы находите небольшое количество топлива...</text>
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<status type="clear" target="player" system="teleporter" amount="100"/>
@@ -5269,7 +5269,7 @@ shield research center — jams shields
 			<item type="fuel" min="1" max="3"/>
 		</item_modify>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Светящийся шар уничтожен. Вы находите небольшое количество топлива, там где он был...</text>
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<status type="clear" target="player" system="teleporter" amount="100"/>
@@ -5351,14 +5351,14 @@ shield research center — jams shields
 			<text>Показать шару боевую мощь корабля.</text>
 			<event>
 				<text>Вы показываете боевую мощь своего корабля. Светящийся шар становится ещё более агрессивным и атакует вас!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Быстро рассказать шару о нашей миссии.</text>
 			<event>
 				<text>Вы быстро рассказываете о своей миссии в коммуникатор. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5369,7 +5369,7 @@ shield research center — jams shields
 			<text>Отключить орудия корабля.</text>
 			<event>
 				<text>Вы полностью отключаете орудийную систему своего судна. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="weapons" amount="0"/>
 			</event>
 		</choice>
@@ -5377,7 +5377,7 @@ shield research center — jams shields
 			<text>Отключить двигатель корабля.</text>
 			<event>
 				<text>Вы гасите мощность работы двигателей до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="engines" amount="1"/>
 			</event>
 		</choice>
@@ -5392,14 +5392,14 @@ shield research center — jams shields
 			<text>Быстро рассказать шару о нашей миссии.</text>
 			<event>
 				<text>Вы быстро рассказываете о своей миссии в коммуникатор. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Отключить реактор корабля.</text>
 			<event>
 				<text>Вы гасите мощность ректора своего судна до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="reactor" amount="1"/>
 			</event>
 		</choice>
@@ -5407,7 +5407,7 @@ shield research center — jams shields
 			<text>Отключить орудия корабля.</text>
 			<event>
 				<text>Вы полностью отключаете орудийную систему своего судна. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="weapons" amount="0"/>
 			</event>
 		</choice>
@@ -5415,7 +5415,7 @@ shield research center — jams shields
 			<text>Отключить двигатель корабля.</text>
 			<event>
 				<text>Вы гасите мощность работы двигателей до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="engines" amount="1"/>
 			</event>
 		</choice>
@@ -5426,7 +5426,7 @@ shield research center — jams shields
 			<text>Показать шару боевую мощь корабля.</text>
 			<event>
 				<text>Вы показываете боевую мощь своего корабля. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5437,7 +5437,7 @@ shield research center — jams shields
 			<text>Отключить реактор корабля.</text>
 			<event>
 				<text>Вы гасите мощность ректора своего судна до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="reactor" amount="1"/>
 			</event>
 		</choice>
@@ -5445,7 +5445,7 @@ shield research center — jams shields
 			<text>Отключить орудия корабля.</text>
 			<event>
 				<text>Вы полностью отключаете орудийную систему своего судна. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="weapons" amount="0"/>
 			</event>
 		</choice>
@@ -5453,7 +5453,7 @@ shield research center — jams shields
 			<text>Отключить двигатель корабля.</text>
 			<event>
 				<text>Вы гасите мощность работы двигателей до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="engines" amount="1"/>
 			</event>
 		</choice>
@@ -5464,21 +5464,21 @@ shield research center — jams shields
 			<text>Показать шару боевую мощь корабля.</text>
 			<event>
 				<text>Вы показываете боевую мощь своего корабля. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Быстро рассказать шару о нашей миссии.</text>
 			<event>
 				<text>Вы быстро рассказываете о своей миссии в коммуникатор. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Отключить реактор корабля.</text>
 			<event>
 				<text>Вы гасите мощность ректора своего судна до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="reactor" amount="1"/>
 			</event>
 		</choice>
@@ -5490,7 +5490,7 @@ shield research center — jams shields
 			<text>Отключить двигатель корабля.</text>
 			<event>
 				<text>Вы гасите мощность работы двигателей до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="engines" amount="1"/>
 			</event>
 		</choice>
@@ -5501,21 +5501,21 @@ shield research center — jams shields
 			<text>Показать шару боевую мощь корабля.</text>
 			<event>
 				<text>Вы показываете боевую мощь своего корабля. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Быстро рассказать шару о нашей миссии.</text>
 			<event>
 				<text>Вы быстро рассказываете о своей миссии в коммуникатор. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>Отключить реактор корабля.</text>
 			<event>
 				<text>Вы гасите мощность ректора своего судна до минимального значения. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="reactor" amount="1"/>
 			</event>
 		</choice>
@@ -5523,7 +5523,7 @@ shield research center — jams shields
 			<text>Отключить орудия корабля.</text>
 			<event>
 				<text>Вы полностью отключаете орудийную систему своего судна. Однако светящийся шар становится агрессивным и атакует! Кажется, это была ошибка, по какой-то причине вы не можете восстановить питание!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="limit" target="player" system="weapons" amount="0"/>
 			</event>
 		</choice>
@@ -5619,7 +5619,7 @@ shield research center — jams shields
 <event name="ZOLTON_PLANET_IN_DANGER" unique="true">
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
 	<text>Перед вами корабль золтонцев. Они связываются с вами и жалуются, что один из элитных кораблей повстанцев напал на их планету неподалёку. Они обещают предоплату, если вы согласитесь помочь.</text>
-	<ship load="SHIPS_ENERGYX_PARAMETR_RUN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_ENERGYX_PARAMETR_RUN" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<choice hidden="false">
 		<text>Согласиться помочь им.</text>
@@ -5629,7 +5629,7 @@ shield research center — jams shields
 		<text>Напасть на них.</text>
 		<event>
 			<text>Вы решаете, что напасть на золтонцев сейчас — отличная идея!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -5670,7 +5670,7 @@ shield research center — jams shields
 	<escape timer="45" min="40" max="40">
 		<text>Вы замечаете зарядку FTL-привода. Похоже, золтонцы пытаются удрать!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль сделал FTL-прыжок в неизвестном направлении.</text>
 	</gotaway>
 	<surrender  chance="0.5" min="3" max="4" load="ZOLTON_SURRENDER"/><!--- 1.27 -->
@@ -5684,10 +5684,11 @@ shield research center — jams shields
 <event name="ZOLTON_PLANET_IN_DANGER2">
 	<img planet="PLANET_POPULATED"/>
 	<text>Элитный корабль повстанцев терроризирует планетарное поселение золтонцев у этого маяка. Заметив вас, он меняет цель и приближается!</text>
-	<ship load="SHIPS_REBEL_ELITE_Z" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SHIPS_REBEL_ELITE_Z" hostile="true"/>
+	<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 </event>
 <ship name="SHIPS_REBEL_ELITE_Z" auto_blueprint="SHIPS_REBEL_ELITE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Элитный корабль разваливается на части, и вы собираете несколько уцелевших обломков...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -5698,7 +5699,7 @@ shield research center — jams shields
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж корабля и собрали всё полезное с него...</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -5736,7 +5737,7 @@ shield research center — jams shields
 		<text>Вы осторожно приближаетесь к астероидному полю, но тут на вас нападает пиратский корабль!</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="ZOLTON_SCAN_ASTEROID_PIRATEP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTON_SCAN_ASTEROID_PIRATEP" hostile="true"/>
 	</event>
 </eventList>
 <event name="ZOLTON_SCAN_ASTEROID_OK">
@@ -5773,11 +5774,11 @@ shield research center — jams shields
 	</choice>
 </event>
 <ship name="ZOLTON_SCAN_ASTEROID_PIRATEP" auto_blueprint="SHIPS_PIRATE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы собираете его обломки. Нет времени заниматься сканированием астероидов, нужно отправляться дальше.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили всех пиратов и обчистили их трюм. Нет времени заниматься сканированием астероидов, нужно отправляться дальше.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -5849,8 +5850,8 @@ shield research center — jams shields
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
 	<distressBeacon/>
 	<text>Вы встречаете корабль золтонцев. Они говорят, что их кислородная система взорвалась в ходе неудачного эксперимента. Им нужно скорее добраться до своего дока, пока кислород не закончился. Можете ли вы помочь им?</text>
-	<ship load="SHIPS_ENERGYX_PARAMETR_RUN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
-	<status type="limit" target="enemy" system="oxygen" amount="0" />
+	<ship load="SHIPS_ENERGYX_PARAMETR_RUN" hostile="false"/>
+	<status type="limit" target="enemy" system="oxygen" amount="0"/>
 	<choice hidden="true" req="oxygen" lvl="0" max_group="0" blue="false"><!-- 1.27 -->
 		<text>У нас нет необходимой системы жизнеобеспечения. Отказать в помощи.</text>
 		<event>
@@ -5890,7 +5891,7 @@ shield research center — jams shields
 		<text>Напасть на них.</text>
 		<event>
 			<text>Задыхающиеся золтонцы — что может быть проще? Вы мчитесь в бой, смеясь как обезумевший.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 		</event>
 	</choice>
@@ -5911,7 +5912,7 @@ shield research center — jams shields
 </event>
 
 <event name="EVENT_CON_TRANSPORTTOPLANET" unique="true">
-	<ship load="SHIP_CON_PAREN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIP_CON_PAREN" hostile="false"/>
 	<text>Корабль контрабандистов у маяка просит вас доставить кое-какой товар на планету поблизости. Что скажете?</text>
 	<choice hidden="true">
 		<text>Поинтересоваться, что именно нужно доставить.</text>
@@ -5921,7 +5922,7 @@ shield research center — jams shields
 		<text>Атаковать контрабандистов.</text>
 		<event>
 			<text>Нет более мерзкого занятия, чем контрабанда... Вы заряжаете орудия.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>		
 	</choice>
 	<choice hidden="true">
@@ -5933,7 +5934,7 @@ shield research center — jams shields
 	<escape timer="30" min="40" max="40">
 		<text>Вы замечаете зарядку FTL-привода. Похоже, они пытаются удрать!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль сделал FTL-прыжок в неизвестном направлении...</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -5954,7 +5955,7 @@ shield research center — jams shields
 			<text>Атаковать контрабандистов.</text>
 			<event>
 				<text>Вы узнавали про "товар" чисто из-за любопытства. Вы не собираетесь поощрять подобный бизнес и готовитесь преподать этим наглецам урок.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>		
 		</choice>
 		<choice hidden="true">
@@ -5976,7 +5977,7 @@ shield research center — jams shields
 			<text>Атаковать контрабандистов.</text>
 			<event>
 				<text>Всем известно, что гигантские инопланетные пауки — не шутка. Вы готовитесь преподать этим шутникам урок.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>		
 		</choice>
 		<choice hidden="true">
@@ -5998,7 +5999,7 @@ shield research center — jams shields
 			<text>Атаковать контрабандистов.</text>
 			<event>
 				<text>Кто в здравом уме будет перевозить подобный "безопасный" груз? Точно не вы! Вы готовитесь преподать этим безумцам урок.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>		
 		</choice>
 		<choice hidden="true">
@@ -6010,7 +6011,7 @@ shield research center — jams shields
 </eventList>
 <event name="EVENT_CON_TRANSPORTTOPLANET_ZTR">
 	<img planet="PLANET_POPULATED"/>
-	<ship load="SHIPS_ENERGYX_PARAMETR22" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_ENERGYX_PARAMETR22" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<text>Капитан золтонского корабля на орбите планеты выходит на связь: «У нас есть информация о незаконных поставках запрещённых товаров. Немедленно подготовьте ваш корабль к досмотру».</text>
 	<choice hidden="true">
@@ -6029,22 +6030,26 @@ shield research center — jams shields
 <eventList name="EVENT_CON_TRANSPORTTOPLANET_ATTACK"> <!-- 1.27 -->
 	<event>
 		<text>Вы понимаете, что попались с поличным, и заряжаете орудия.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<text>Вы понимаете, что попались с поличным, и заряжаете орудия.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<text>Золтонцы были готовы к вашей агрессии и отправили к вашему кораблю замаскированную мину!</text>
 		<damage amount="3" effect="random"/> <!-- 1.28 -->
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 <eventList name="EVENT_CON_TRANSPORTTOPLANET_ESCAPE"> <!-- 1.27 -->
 	<event>
 		<text>Вы пытаетесь убежать, и золтонцы начинают преследование.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<text>Каким-то чудом вам удаётся уйти от патруля. Вы готовитесь к прыжку.</text>
@@ -6057,7 +6062,8 @@ shield research center — jams shields
 	<event>
 		<text>Золтонец-инспектор внимательно осматривает ваш корабль и уже собирается уходить, как вдруг реактор в трюме от резонанса начинает дребезжать и привлекает его внимание!</text>
 		<boarders min="1" max="1" class="energyx"/>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<text>Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего подозрительного, уходит.</text>
@@ -6074,7 +6080,7 @@ shield research center — jams shields
 
 <event name="EVENT_CON_TRANSPORTTOPLANET_GIP">
 	<img planet="PLANET_POPULATED"/>
-	<ship load="SHIPS_ENERGYX_PARAMETR22" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_ENERGYX_PARAMETR22" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<text>Капитан золтонского корабля на орбите планеты выходит на связь: «У нас есть информация о незаконных поставках запрещённых товаров. Немедленно подготовьте ваш корабль к досмотру».</text>
 	<choice hidden="true">
@@ -6093,11 +6099,13 @@ shield research center — jams shields
 <eventList name="EVENT_CON_TRANSPORTTOPLANET_GIP_RAND">
 	<event>
 		<text>Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он слишком близко подходит к клетке с гигантскими пауками и случайно наступает на лапу одному из них. Паук в ярости заливает кислотой голову золтонца, отчего тот умирает на месте! Патрульный корабль золтонцев готовится уничтожить "проклятых контрабандистов", то есть вас.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<text>Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он обнаруживает, что гигантские пауки сорвали брезент и пытаются выбраться из клетки! Золтонец тут же вызывает подкрепление и атакует вас.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		<boarders min="1" max="1" class="energyx"/>
 	</event>
 	<event>
@@ -6115,7 +6123,7 @@ shield research center — jams shields
 
 <event name="EVENT_CON_TRANSPORTTOPLANET_RUS">
 	<img planet="PLANET_POPULATED"/>
-	<ship load="SHIPS_ENERGYX_PARAMETR22" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_ENERGYX_PARAMETR22" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	<text>Капитан золтонского корабля на орбите планеты выходит на связь: «У нас есть информация о незаконных поставках запрещённых товаров. Немедленно подготовьте ваш корабль к досмотру».</text>
 	<choice hidden="true">
@@ -6135,7 +6143,8 @@ shield research center — jams shields
 <eventList name="EVENT_CON_TRANSPORTTOPLANET_RUS_RAND">
 	<event>
 		<text>Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он видит, что спрятанные урановые стержни нагрелись и вызвали возгорание! Золтонец тут же вызывает подкрепление и атакует вас.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		<damage amount="0" system="room" effect="fire"/>
 		<boarders min="1" max="1" class="energyx"/>
 	</event>
@@ -6164,7 +6173,7 @@ shield research center — jams shields
 </eventList>
 
 <ship name="SHIPS_ENERGYX_PARAMETR22" auto_blueprint="SHIPS_ENERGYX_S">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва, и направляетесь на планету.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6175,7 +6184,7 @@ shield research center — jams shields
 			</event>		
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы и направляетесь на планету.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -6195,33 +6204,33 @@ shield research center — jams shields
 		<text id="continue"/><!-- 1.26.5 -->
 		<event>
 			<text>...внезапно рядом выходит из прыжка корабль с явно враждебными намерениями! Приготовиться к бою!</text>
-			<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="PIRATE" hostile="true"/>
 		</event>		
 	</choice>
 	<choice hidden="true" req="cloaking" lvl="1" max_group="0" blue="false">
 		<text id="continue"/><!-- 1.26.5 -->
 		<event>
 			<text>...внезапно рядом выходит из прыжка золтонский корабль с явно враждебными намерениями! Без каких-либо объяснений они мчатся в атаку, а вы замечаете, что ваш отсек маскировки блокируется какими-то электромагнитными разрядами!</text>
-			<status type="limit" target="player" system="cloaking" amount="0" />
+			<status type="limit" target="player" system="cloaking" amount="0"/>
 			<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
-			<ship load="SHIPS_ENERGYX_STANDART" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="SHIPS_ENERGYX_STANDART" hostile="true"/>
 		</event>		
 	</choice>
 </event>
 <ship name="SHIPS_ENERGYX_STANDART" auto_blueprint="SHIPS_ENERGYX">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва.</text>
 		<autoReward level="LOW">standard</autoReward>
-		<status type="clear" target="player" system="cloaking" amount="100" />
+		<status type="clear" target="player" system="cloaking" amount="100"/>
 		<choice hidden="true">
 			<text id="continue"/><!-- 1.26.5 -->
 			<event load="EVENT_DONT_CLOAK_WITH_ZOLTONS_X2REW"/>		
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
-		<status type="clear" target="player" system="cloaking" amount="100" />
+		<status type="clear" target="player" system="cloaking" amount="100"/>
 		<choice hidden="true">
 			<text id="continue"/><!-- 1.26.5 -->
 			<event load="EVENT_DONT_CLOAK_WITH_ZOLTONS_X2REW"/>		
@@ -6234,6 +6243,10 @@ shield research center — jams shields
 		<item_modify>
 			<item type="scrap" min="15" max="25"/>
 		</item_modify>
+	</event>
+	<event><!-- 1.33 -->
+		<text>Также вам удаётся найти устройство, которое блокировало невидимость.</text>
+		<augment name="ANTICLOAK_FIELD"/>
 	</event>
 	<event>
 		<text>Также вам удаётся найти уцелевшее в бою золтонское оружие.</text>
@@ -6271,7 +6284,7 @@ shield research center — jams shields
 	</event>
 	<event>
 		<text>Вы приближаетесь к Глазу и ждёте, но ничего не происходит. Внезапно из FTL-прыжка поблизости выходит корабль золтонцев: «За незаконное нахождение на данном маяке вы будете ликвидированы».</text>
-		<ship load="ZOLTON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!--- 1.27 -->
+		<ship load="ZOLTON_SHIP" hostile="true"/><!--- 1.27 -->
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 	</event>
 	<event>
@@ -6716,7 +6729,8 @@ shield research center — jams shields
 		<text>Атаковать беспилотник.</text>
 		<event>
 			<text>Вы мчитесь в атаку на беспилотник, и он, оценив угрозу, переключается на вас.</text>
-			<ship load="AUTOSHIP_PARAMS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="AUTOSHIP_PARAMS" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 			<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 		</event>
 	</choice>
@@ -6724,7 +6738,8 @@ shield research center — jams shields
 		<text>Атаковать контрабандистов.</text>
 		<event>
 			<text>Вы присоединяетесь к беспилотнику и атакуете контрабандистов. Автоматический корабль, оценив свои запасы вооружения, уступает вам в этой погоне, но держится поблизости.</text>
-			<ship load="CON_PARAMS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="CON_PARAMS" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>	
@@ -6778,7 +6793,7 @@ shield research center — jams shields
 	</event>
 </eventList>
 <ship name="AUTOSHIP_PARAMS" auto_blueprint="SHIPS_ENERGYX_AUTO">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва, и ищете корабль контрабандистов...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6791,7 +6806,7 @@ shield research center — jams shields
 	<escape chance="0" timer="40" min="30" max="30" >
 		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Контрабандисты исчезли в неизвестном направлении... Вы разворачиваетесь к беспилотнику.</text>
 		<choice hidden="true">
 			<text id="continue"/><!-- 1.26.5 -->
@@ -6800,7 +6815,7 @@ shield research center — jams shields
 			</event>
 		</choice>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва, и разворачиваетесь к беспилотнику...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6808,7 +6823,7 @@ shield research center — jams shields
 			<event load="EVENT_CON_VS_AUTOSHIP_R2"/>		
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы и разворачиваетесь к беспилотнику...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6825,15 +6840,17 @@ shield research center — jams shields
 		<text>Вступить в спор на сторону золтонцев.</text>
 		<event>
 			<text>В ходе переговоров, у капитана контрабандистов сдают нервы, и он решает расстрелять вас за то, что вы всё испортили!</text>
-			<ship load="CON_PEREGOVORI_PARAMS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="CON_PEREGOVORI_PARAMS" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Вступить в спор на сторону контрабандистов.</text>
 		<event>
 			<text>В ходе переговоров, вы пытаетесь убедить золтонцев не трогать контрабандистов. Но они отключают связь и нацеливают на вас орудия.</text>
-			<ship load="ZOLTON_PEREGOVORI_PARAMS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTON_PEREGOVORI_PARAMS" hostile="true"/>
 			<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>	
@@ -6850,12 +6867,12 @@ shield research center — jams shields
 <ship name="CON_PEREGOVORI_PARAMS" auto_blueprint="SHIPS_CON">
 	<escape chance="0" timer="40" min="30" max="30" >
 		<text>Похоже, противник начал зарядку FTL-привода.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Контрабандисты исчезли в неизвестном направлении...</text>
 	</gotaway>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы и связываетесь с золтонцами...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6863,7 +6880,7 @@ shield research center — jams shields
 			<event load="EVENT_ZOLTON_VS_CON_R1"/>		
 		</choice>
 	</deadCrew>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва, и связываетесь с золтонцами...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6873,7 +6890,7 @@ shield research center — jams shields
 	</destroyed>
 </ship>
 <ship name="ZOLTON_PEREGOVORI_PARAMS" auto_blueprint="SHIPS_ENERGYX">
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы и связываетесь с контрабандистами...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6881,7 +6898,7 @@ shield research center — jams shields
 			<event load="EVENT_ZOLTON_VS_CON_R2"/>		
 		</choice>
 	</deadCrew>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва, и связываетесь с контрабандистами...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6925,7 +6942,8 @@ shield research center — jams shields
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
 	<text>Сигнал бедствия исходит от небольшой исследовательской станции на орбите необитаемой планеты. Странный беспилотный корабль кружит вокруг неё и осыпает выстрелами. Завидев вас, автоматический корабль меняет цель.</text>
 	<distressBeacon/>
-	<ship load="DISTRESS_ZOLTON_BASE_VS_AUTO_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="DISTRESS_ZOLTON_BASE_VS_AUTO_PARAM" hostile="true"/>
+	<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	<choice hidden="true"> <!-- 1.27 -->
 		<text id="continue"/>
 		<event/>
@@ -6989,7 +7007,7 @@ shield research center — jams shields
 	</event>
 </eventList>
 <ship name="DISTRESS_ZOLTON_BASE_VS_AUTO_PARAM" auto_blueprint="SHIPS_ENERGYX_AUTO_PROG">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы собираете всё, что уцелело после взрыва беспилотника...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -7007,7 +7025,7 @@ shield research center — jams shields
 <!-- this event is in other sectors in fact -->
 <event name="EVENT_TRADE_FUMIDR" unique="true">
 	<text>Небольшое судно наёмников встречает вас радостными возгласами...</text>
-	<ship load="SHIPS_PIRATE_GONEAWAY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_PIRATE_GONEAWAY" hostile="false"/>
 	<choice hidden="true">
 		<text id="continue"/> 
 		<event load="EVENT_TRADE_FUMIDR_R"/>
@@ -7034,7 +7052,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7059,7 +7077,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7086,7 +7104,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7113,7 +7131,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7139,7 +7157,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7164,7 +7182,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7191,7 +7209,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7218,7 +7236,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7244,7 +7262,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7269,7 +7287,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7296,7 +7314,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7323,7 +7341,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7349,7 +7367,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7374,7 +7392,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7401,7 +7419,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7428,7 +7446,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7454,7 +7472,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7479,7 +7497,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7506,7 +7524,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7533,7 +7551,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7559,7 +7577,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7584,7 +7602,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7611,7 +7629,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7638,7 +7656,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7664,7 +7682,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7689,7 +7707,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7716,7 +7734,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7743,7 +7761,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7769,7 +7787,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7794,7 +7812,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7821,7 +7839,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7848,7 +7866,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7874,7 +7892,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -7899,7 +7917,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7926,7 +7944,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7953,7 +7971,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -7964,7 +7982,7 @@ shield research center — jams shields
 	<escape timer="40" min="30" max="30">
 		<text>Похоже, корабль пытается скрыться!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль совершил FTL-прыжок...</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -7975,7 +7993,7 @@ shield research center — jams shields
 
 <event name="EVENT_TRADE_FUMIDRCON" unique="true"> 
 	<text>Небольшое судно контрабандистов встречает вас радостными возгласами...</text>
-	<ship load="SHIPS_CONT_GONEAWAY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_CONT_GONEAWAY" hostile="false"/>
 	<choice hidden="true">
 		<text id="continue"/> 
 		<event load="EVENT_TRADE_FUMIDRCON_R"/>
@@ -8002,7 +8020,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8027,7 +8045,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8054,7 +8072,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8081,7 +8099,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8107,7 +8125,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8132,7 +8150,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8159,7 +8177,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8186,7 +8204,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8212,7 +8230,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8237,7 +8255,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8264,7 +8282,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8291,7 +8309,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8317,7 +8335,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8342,7 +8360,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8369,7 +8387,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8396,7 +8414,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8422,7 +8440,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8447,7 +8465,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8474,7 +8492,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8501,7 +8519,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8527,7 +8545,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8552,7 +8570,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8579,7 +8597,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8606,7 +8624,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8632,7 +8650,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8657,7 +8675,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8684,7 +8702,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8711,7 +8729,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8737,7 +8755,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8762,7 +8780,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8789,7 +8807,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8816,7 +8834,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8842,7 +8860,7 @@ shield research center — jams shields
 			<text>Напасть на них.</text>
 			<event>
 				<text>Вы решаете взять своё силой...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true" max_group="0" req="human_crew"> <!-- 1.28 -->
@@ -8867,7 +8885,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8894,7 +8912,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8921,7 +8939,7 @@ shield research center — jams shields
 					<text>Напасть на них.</text>
 					<event>
 						<text>Вы решаете взять своё силой...</text>
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -8932,7 +8950,7 @@ shield research center — jams shields
 	<escape timer="40" min="30" max="30">
 		<text>Похоже, корабль пытается скрыться!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль совершил FTL-прыжок...</text>
 	</gotaway>
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -9070,7 +9088,7 @@ shield research center — jams shields
 <event name="CAPSULE_EVENT_STANDARD">
 	<text>Перед вами капсула для путешественников во времени! Обычно они используются на планетах, но эта по каким-то причинам летит в космической пустоте...</text>
 	<distressBeacon/>
-	<ship load="CAPSULE_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CAPSULE_SHIP" hostile="false"/>
 	<choice hidden="true"><!-- 1.26.5 -->
 		<text>Попробовать связаться с капсулой.</text>
 		<event load="CAPSULE_EVENT_TALK"/>
@@ -9079,7 +9097,7 @@ shield research center — jams shields
 		<text>Уничтожить капсулу.</text>
 		<event>
 			<text>Вы заряжаете орудия и направляете их на капсулу.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -9092,7 +9110,7 @@ shield research center — jams shields
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 	<distressBeacon/>
-	<ship load="CAPSULE_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CAPSULE_SHIP" hostile="false"/>
 	<choice hidden="true"><!-- 1.26.5 -->
 		<text>Попробовать связаться с капсулой.</text>
 		<event load="CAPSULE_EVENT_TALK"/>
@@ -9101,7 +9119,7 @@ shield research center — jams shields
 		<text>Уничтожить капсулу.</text>
 		<event>
 			<text>Вы заряжаете орудия и направляете их на капсулу.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -9114,7 +9132,7 @@ shield research center — jams shields
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<distressBeacon/>
-	<ship load="CAPSULE_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CAPSULE_SHIP" hostile="false"/>
 	<choice hidden="true"><!-- 1.26.5 -->
 		<text>Попробовать связаться с капсулой.</text>
 		<event load="CAPSULE_EVENT_TALK"/>
@@ -9123,7 +9141,7 @@ shield research center — jams shields
 		<text>Уничтожить капсулу.</text>
 		<event>
 			<text>Вы заряжаете орудия и направляете их на капсулу.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -9175,13 +9193,13 @@ shield research center — jams shields
 	</event>
 </eventList>
 <ship name="CAPSULE_SHIP" auto_blueprint="CAPSULE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы уничтожили временную капсулу и собрали немного обломков...</text>
 		<item_modify>
 			<item type="scrap" min="20" max="35"/>
 		</item_modify>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы убили экипаж временной капсулы и сняли с неё всё ценное.</text>
 		<item_modify>
 			<item type="fuel" min="0" max="3"/>
@@ -9198,12 +9216,12 @@ shield research center — jams shields
 
 <event name="ZOLTON_PEACE" unique="true">
 	<text>Небольшой разведчик золтонцев находится на этом маяке. Они связываются с вами: «Не спешите нападать на нас, посмотрите - мы безоружны. Вы должны сделать небольшое пожертвование, чтобы воспользоваться этим прыжковым маяком. Техническое обслуживание, знаете ли, обходится не дёшево».</text>
-	<ship load="ZOLTON_SPECIAL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ZOLTON_SPECIAL" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать наглецов.</text>
 		<event>
 			<text>Они что-то ещё пытаются вам сказать, но вы уже не слушаете...</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -9231,15 +9249,15 @@ shield research center — jams shields
 			<text>Отпустить их.</text>
 			<event>
 				<text>Вы отключаете ваши орудия, и через какое-то время их корабль медленно уползает прочь. На попытки связаться они не отвечают, и вам становится даже чуточку стыдно — теперь им уже не поможешь.</text>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 			</event>
 		</choice>
 	</surrender>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы чувствуете какую-то вину, пока обыскиваете обломки. Но ведь они сами напросились, не так ли?..</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы чувствуете какую-то вину, пока грабите их корабль. Но ведь они сами напросились, не так ли?..</text>
 		<autoReward level="RANDOM">standard</autoReward>
 	</deadCrew>

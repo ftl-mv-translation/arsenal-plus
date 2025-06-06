@@ -19,7 +19,7 @@ script.on_render_event(Defines.RenderEvents.SHIP, function() end, function()
 	local enemyShip = Hyperspace.ships.enemy
 	
 	if enemyShip and not playerShip.bJumping and Hyperspace.Global.GetInstance():GetCApp().world.bStartedGame then
-		if enemyShip.shieldSystem.shields.power.super.second ~= 0 then
+		if enemyShip.shieldSystem and enemyShip.shieldSystem.shields.power.super.second ~= 0 then
 			local currentX = enemyX
 			local currentY = enemyY
 			

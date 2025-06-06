@@ -17,12 +17,12 @@ local iconScrap = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/icon
 
 local box = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/box.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 
-local text1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderText.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+--local text1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderText.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 
-local traderName1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName1.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local traderName2 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local traderName3 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName3.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
-local traderName4 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName4.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+--local traderName1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName1.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+--local traderName2 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+--local traderName3 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName3.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
+--local traderName4 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/traderName4.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 
 local portrait1 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/trader_portrait_1.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
 local portrait2 = Hyperspace.Resources:CreateImagePrimitiveString('alhazrad/trader_portrait_2.png', 0, 0, 0, Graphics.GL_Color(1, 1, 1, 1), 1.0, false)
@@ -459,19 +459,19 @@ local function Init()
     local portrait
     if port == 1 then
        portrait = portrait1
-       traderName = traderName1
+       traderName = "Генри Кван"--traderName1
     end
     if port == 2 then
        portrait = portrait2
-       traderName = traderName2
+       traderName = "Бетани Джонс"--traderName2
     end
     if port == 3 then
        portrait = portrait3
-       traderName = traderName3
+       traderName = "Адам"--traderName3
     end
     if port == 4 then
        portrait = portrait4
-       traderName = traderName4
+       traderName = "Абэ Исаму"--traderName4
     end  
 
     local currentX = 704
@@ -498,22 +498,26 @@ local function Init()
     end)    
     Graphics.CSurface.GL_PopMatrix()
 
-     Graphics.CSurface.GL_PushMatrix()   
-        pcall(function()
-            Graphics.CSurface.GL_Translate(currentX+5, currentY+76)
-            Graphics.CSurface.GL_RenderPrimitive(traderName)
-        end)
-        Graphics.CSurface.GL_PopMatrix()
+    -- Graphics.CSurface.GL_PushMatrix()   
+    -- pcall(function()
+        -- Graphics.CSurface.GL_Translate(currentX+5, currentY+76)
+        -- Graphics.CSurface.GL_RenderPrimitive(traderName)
+    -- end)
+    -- Graphics.CSurface.GL_PopMatrix()
 
+	Graphics.CSurface.GL_SetColor(Graphics.GL_Color(0.9, 0.9, 0.9, 1))
+	Graphics.freetype.easy_print(10, currentX+7, currentY+78, traderName)
 
-
-     if enemyName ~= 'BUILDINGSTATION_10' then
-        Graphics.CSurface.GL_PushMatrix()
-        pcall(function()
-        Graphics.CSurface.GL_Translate(currentX+73, currentY+3)
-        Graphics.CSurface.GL_RenderPrimitive(text1)        
-        end)
-        Graphics.CSurface.GL_PopMatrix()
+    if enemyName ~= 'BUILDINGSTATION_10' then
+        -- Graphics.CSurface.GL_PushMatrix()
+        -- pcall(function()
+        -- Graphics.CSurface.GL_Translate(currentX+73, currentY+3)
+        -- Graphics.CSurface.GL_RenderPrimitive(text1)        
+        -- end)
+        -- Graphics.CSurface.GL_PopMatrix()
+		
+		Graphics.CSurface.GL_SetColor(Graphics.GL_Color(0.9, 0.9, 0.9, 1))
+		Graphics.freetype.easy_print(10, currentX+73, currentY+5, "внесено лома:\n\nдо пристроя:")
 
         curLVL = math.floor(tonumber(curLVL))   
         local str1 = string.format(lvl)
@@ -525,28 +529,28 @@ local function Init()
         Graphics.CSurface.GL_PushMatrix()   
         pcall(function()
             Graphics.CSurface.GL_Translate(currentX+5, currentY+76)      
-            Graphics.freetype.easy_print(9, 90, -56, string.format(score))
-            Graphics.freetype.easy_print(9, 90, -20, string.format(nextLevel))
+            Graphics.freetype.easy_print(10, 90, -55, string.format(score))-- -56
+            Graphics.freetype.easy_print(10, 90, -20, string.format(nextLevel))
             --Graphics.freetype.easy_print(9, 140, 0, str1)
         end)
         Graphics.CSurface.GL_PopMatrix()
 
         Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(currentX+78, currentY+22)
-        Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
-    end)
-    Graphics.CSurface.GL_PopMatrix()
+		pcall(function()
+			Graphics.CSurface.GL_Translate(currentX+78, currentY+22)
+			Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
+		end)
+		Graphics.CSurface.GL_PopMatrix()
 
         Graphics.CSurface.GL_PushMatrix()   
-    pcall(function()
-        Graphics.CSurface.GL_Translate(currentX+78, currentY+58)
-        Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
-    end)
-    Graphics.CSurface.GL_PopMatrix()
+		pcall(function()
+			Graphics.CSurface.GL_Translate(currentX+78, currentY+57)--78/58
+			Graphics.CSurface.GL_RenderPrimitive(iconScrap) 
+		end)
+		Graphics.CSurface.GL_PopMatrix()
 
     else
-         Graphics.CSurface.GL_PushMatrix()   
+        Graphics.CSurface.GL_PushMatrix()   
         pcall(function()
             Graphics.CSurface.GL_Translate(currentX+85, currentY+2)
             Graphics.CSurface.GL_RenderPrimitive(station)

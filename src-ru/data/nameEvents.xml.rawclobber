@@ -4,7 +4,7 @@
 <FTL>
 <event name="BIG_NAME_TEST">
 	<img back="BG_DARK" planet="NONE"/>
-	<ship load="PIRATE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="false"/>
 	<text>Корабль с пиратскими знаками вызывает вас: «Здравствуйте, мы в курсе, что у вас на борту %crew. За голову %crew_his объявлена существенная награда, передайте %crew_him нам и мы поделимся».</text>
 	<choice hidden="false">
 		<text>Награда может быть жизненно важной для нашего выживания, передать %crew.</text>
@@ -19,7 +19,7 @@
 	<choice>
 		<text>Вы не уступили требованиям пиратов. Заряжайте свои орудия и готовьтесь к бою.</text>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice req="engi_crew" lvl="1">
@@ -91,7 +91,7 @@
 		<text>В обломках вы находите множество человеческих останков. А ещё вам попалась зашифрованная система связи повстанцев. Вот и стало одним вражеским кораблём меньше.</text>
 	</event>
 	<event>
-		<ship load="REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="REBEL" hostile="false"/>
 		<text>К маяку прибывает корабль повстанцев: «Ааа! Похоже, вы сделали нашу грязную работу за нас. Уничтожили беженцев с инжи. Позвольте в благодарность отдать вам резервные запасы. Мы преследовали этих пёсиков Федерации целых 2 сектора». К счастью, они слишком признательны за помощь, чтобы обратить внимание, кто вы.</text>
 		<item_modify>
 			<item type="scrap" min="25" max="50"/>

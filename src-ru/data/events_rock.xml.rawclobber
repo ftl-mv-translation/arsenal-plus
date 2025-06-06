@@ -174,7 +174,7 @@ Environmnt:
 
 <event name="ROCK_SHIP">
 	<text load="ROCK_SHIP"/>
-	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 <textList name="ROCK_SHIP">  <!-- JUSTIN — make surrender possible-->
 	<text>Встретившись с кораблём роков, вы пытаетесь связаться с ними по торговым частотам, но они посчитали это попыткой культурного влияния на них и открывают огонь.</text>
@@ -192,7 +192,7 @@ Environmnt:
 	<choice>
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship hostile="false"/>
 			<autoReward level="RANDOM">stuff</autoReward>
 		</event>
 	</choice>
@@ -222,7 +222,7 @@ Environmnt:
 
 <event name="ROCK_PIRATE">
 	<text load="ROCK_PIRATE"/>
-	<ship load="ROCK_PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_PIRATE" hostile="true"/>
 </event>
 <textList name="ROCK_PIRATE">
 	<text>Репутация бесстрашных пиратов накрепко прикипела к расе роков: воинственные от природы, они предпочитают брать своё силой, не опускаясь до дипломатических переговоров и заключения союзов. Вы натыкаетесь на один из их кораблей, и он точно подходит под это описание.</text>
@@ -267,7 +267,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Пока вы разбирали корабль, патруль роков вышел из прыжка. Они передают: «Грязные пираты! Приготовьтесь умереть!» Вы сомневаетесь, что объяснение вашей миссии их переубедит.</text>
-		<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ROCK_SHIP" hostile="true"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
 </eventList>
@@ -280,7 +280,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>И только у вас появляется возможность уйти, как прибывает патрульный корабль роков. Вы перехватываете их болтовню: «...похоже, мы наконец нашли их. Этот кровавый пир закончится здесь!» Прежде чем вы успеваете отстоять свою невиновность, они нападают.</text>
-		<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ROCK_SHIP" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="ROCK_LOOTING_SLUG">
@@ -331,7 +331,7 @@ Environmnt:
 		<text>(Продвинутые орудия) Сделать предупредительный выстрел рядом с волнениями, возвестив о своём прибытии.</text>
 		<event>
 			<text>Вы направляете шквальный огонь на пустой дом рядом с кратером поблизости от поселения. Стрельба на поверхности стихает на то время, пока лунные силы обороны отправляются к вашей дислокации!</text>
-			<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ROCK_SHIP" hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -561,19 +561,19 @@ Environmnt:
 </event>
 <event name="ROCK_NURSERY_LOSE">
 	<text>Понимая, что их победа была омрачена вашим прибытием, выжившие немедленно отправляют корабль, чтобы вас уничтожить!</text>
-	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 
 
 
 <event name="ROCK_MANTIS_HUNTER" unique="true">  <!-- JUSTIN TO DO — test the ship status effect-->
 	<text>Корабль мантисов украшен частями тел роков! Это выглядело бы ещё более кроваво, если бы они имели внутренние органы, но сообщение достаточно ясно — это охотник очень специализированного рода.</text>
-	<ship load="MANTIS_FIGHT_ROCKER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT_ROCKER" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать!</text>
 		<event>
 			<text>Ни одно создание не заслуживает быть объектом охоты мантисов. Пора сделать Галактику немного безопаснее. В атаку!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->	
+			<ship hostile="true"/>	
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -586,7 +586,7 @@ Environmnt:
 		<text>(Обшивка корпуса роков) Протаранить ублюдков.</text>
 		<event>
 			<text>Прежде чем у них появился шанс, вы тараните их корабль своим, нанося летальный урон их двигателям. К счастью, броня вашего корабля дополнительно усилена против столкновений. Корабль мантисов дрейфует прочь, и вы атакуете его.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="limit" target="enemy" system="engines" amount="0"/>
 		</event>
 	</choice>
@@ -594,7 +594,7 @@ Environmnt:
 		<text>(Член экипажа рок) Позвать к коммуникатору рока.</text>
 		<event>
 			<text>Двое инопланетян взирают друг на друга через экран. «Пещерная каменюга! — в ярости выкрикивает капитан мантисов. — Посмотри, я разукрасил свой корабль твоими товарищами! Я раскрашу свой корабль и тобой!» Кажется, их капитан сейчас не в состоянии адекватно управлять своим кораблём, что вам только на руку.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="limit" target="enemy" system="pilot" amount="0"/>
 		</event>
 	</choice>
@@ -640,27 +640,27 @@ Environmnt:
 			<item_modify>
 				<item type="drones" min="-1" max="-1"/>
 			</item_modify>
-			<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/>
 		</event>
 	</choice>
 </event>
 <eventList name="ROCK_MANTIS_FREIGHTER_LIST">
 	<event>
 		<text>Оба корабля мантисов слишком заняты, мутузя друг друга, чтобы заметить вас. В конце концов, один из них одерживает верх, но, похоже, в горячке боя он пережёг предохранители, и его оружейная система не работает. Самое время атаковать!</text>
-		<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/>
 		<status type="loss" target="enemy" system="weapons" amount="2"/>
 	</event>
 	<event>
 		<text>Может у них и есть разногласия, но, когда рядом появляетесь вы, они мыслят как один. У меньшего корабля отказало питание, когда он двинулся в вашу сторону, зато корабль побольше, выпустив струю пламени, наступает на вас!</text>
-		<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="MANTIS_ROCK_MANTIS_FREIGHTER" hostile="true"/>
 	</event>
 </eventList>
 <ship name="MANTIS_ROCK_MANTIS_FREIGHTER" auto_blueprint="SHIPS_MANTIS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>За время, пока вы уничтожали корабль мантисов, роки, должно быть, починили свой FTL-привод и бежали. Вы собираете останки обоих судов мантисов.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>За время, пока вы уничтожали команду мантисов, роки, должно быть, починили свой FTL-привод и бежали. Вы собираете останки обоих судов мантисов.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -678,14 +678,15 @@ Environmnt:
 		<text>Остаться и защитить золтанцев.</text>
 		<event>
 			<text>Довольно... экстремальная природа верований роков широко известна, вряд ли можно винить золтанцев за попытки расширить их кругозор. Преследующий корабль роков быстро оценивает положение и решает, что два захваченных корабля пришельцев лучше одного.</text>
-			<ship load="ROCK_ZOLTAN_HELP_ROCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ROCK_ZOLTAN_HELP_ROCK" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Остаться и защитить роков.</text><!-- 1.32 -->
 		<event>
 			<text>Это территория роков, и тут действуют их законы. Золтанцы не могли не знать, во что влезают. Вам придётся вывести из строя их двигатели и управление, чтобы быть уверенными в безопасности их захвата.</text>
-			<ship load="ROCK_ZOLTAN_HELP_ZOLTAN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ROCK_ZOLTAN_HELP_ZOLTAN" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -696,7 +697,7 @@ Environmnt:
 	</choice>
 </event>
 <ship name="ROCK_ZOLTAN_HELP_ROCK" auto_blueprint="SHIPS_ROCK"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корпус корабля роков разваливается на куски. Вы собираете останки, после чего связываетесь с кораблём золтанцев.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -707,7 +708,7 @@ Environmnt:
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля мёртв, и вы утилизируете корабль, прежде чем связаться с золтанцами.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -720,11 +721,11 @@ Environmnt:
 	</deadCrew>
 </ship>
 <ship name="ROCK_ZOLTAN_HELP_ZOLTAN" auto_blueprint="SHIPS_ZOLTAN"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль роков прибывает как раз к финальным выстрелам по кораблю золтанцев. Они даже не думают благодарить, и у вас создалось впечатление, что было бы лучше улететь по-быстрому.</text>
 		<autoReward level="MED">standard</autoReward> <!-- 1.26 -->
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>К тому времени, когда корабль роков прибывает, вы уже закончили, разве что не завернули всё в подарочную упаковку. Израненные и умирающие золтанцы были с лёгкостью арестованы, и корабль роков нехотя передаёт вам что-то, являющееся, наверное, наградой за их головы.</text>
 		<autoReward level="HIGH">standard</autoReward> <!-- 1.26 -->
 	</deadCrew>
@@ -732,12 +733,12 @@ Environmnt:
 
 <event name="ROCK_ATHIEST" unique="true">
 	<text>Вы встречаете маленькое судно, идущее на минимальной тяге. Экипаж роков рассказывает вам, что их родные миры погрязли во лжи и пропаганде, призванной держать население в неведении, и что они не хотят быть частью этого.</text>
-	<ship load="ROCK_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Сказать им, что Бог привёл их сюда, чтобы присоединиться к вашему экипажу.</text>
 		<event>
 			<text load="ROCK_ATHIEST_BAD"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -779,26 +780,26 @@ Environmnt:
 		</event>
 	</choice>
 </event>
-<event name="ROCK_STARSHIP_MINE_2">  <!-- 1.28 -->
+<event name="ROCK_STARSHIP_MINE_2">  <!-- 1.28 --> 
 	<text>Радиус разворота слишком широкий, и мина цепляется к корпусу вашего корабля. Вы слышите, как она всверливается в обшивку.</text>
 	<choice hidden="true">
 		<text>Отправить кого-нибудь обезвредить её.</text>
 		<event load="ROCK_STARSHIP_MINE_DEFUSE"/>
 	</choice>
-	<choice hidden="true" max_group="0" req="human"> <!-- 1.27.1 --><!-- 1.28 -->
+	<choice hidden="true" max_group="0" req="human"> <!-- 1.27.1 --><!-- 1.28 --><!-- 1.33 --><!-- colored -->
 		<text>(Член экипажа человек) Человек говорит, что знает устройство мины этого типа.</text>
 		<event>
-			<text>Он быстро вскрывает корпус мины и одновременно перекусывает красный и синий провода...</text>
+			<text>Он быстро вскрывает корпус мины и одновременно перекусывает [style[color:ff4551]]красный[[/style]] и [style[color:5f97ff]]синий[[/style]] провода...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="ROCK_STARSHIP_MINE_DEFUSE3"/>  
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" max_group="0" req="CREW_ORDER_HUMAN"> <!-- 1.28 --><!-- 1.29 -->
+	<choice hidden="true" max_group="0" req="CREW_ORDER_HUMAN"> <!-- 1.28 --><!-- 1.29 --><!-- 1.33 --><!-- colored -->
 		<text>(Член экипажа человек) Человек говорит, что знает устройство мины этого типа.</text>
 		<event>
-			<text>Он быстро вскрывает корпус мины и одновременно перекусывает красный и синий провода...</text>
+			<text>Он быстро вскрывает корпус мины и одновременно перекусывает [style[color:ff4551]]красный[[/style]] и [style[color:5f97ff]]синий[[/style]] провода...</text>
 			<choice hidden="true">
 				<text id="continue"/>
 				<event load="ROCK_STARSHIP_MINE_DEFUSE4"/>  <!-- 1.32 -->
@@ -828,20 +829,19 @@ Environmnt:
 		</event>
 	</choice>			
 </event>
-
 <eventList name="ROCK_STARSHIP_MINE_DEFUSE">
 	<event>
 		<text>Один из экипажа надевает скафандр и отправляется в шлюз. Он быстро делает своё дело и возвращается, расслабившись. Из мины получается неплохой лом.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
 	<event>
-		<text>Один из экипажа надевает скафандр и отправляется в шлюз. Когда он вскрывает мину, то начинает паниковать. Красный провод или синий?! 3... 2... 1...</text>
+		<text>Один из экипажа надевает скафандр и отправляется в шлюз. Когда он вскрывает мину, то начинает паниковать. [style[color:ff4551]]Красный[[/style]] провод или [style[color:5f97ff]]синий[[/style]]?! 3... 2... 1...</text><!-- 1.33 --><!-- colored -->
 		<choice hidden="true">
-			<text>Красный!</text>
+			<text color="lightred">Красный!</text>
 			<event load="ROCK_STARSHIP_MINE_DEFUSE2"/>
 		</choice>
 		<choice hidden="true">
-			<text>Синий!</text>
+			<text color="blue">Синий!</text>
 			<event load="ROCK_STARSHIP_MINE_DEFUSE2"/>
 		</choice>
 	</event>
@@ -869,7 +869,6 @@ Environmnt:
 		<damage amount="1" system="room" effect="all"/>  <!--DLC--><!-- 1.27.1 -->
 	</event>
 </eventList>
-
 <eventList name="ROCK_STARSHIP_MINE_DEFUSE3"> <!-- 1.27.1 -->
 	<event load="ROCK_STARSHIP_MINE_DEFUSE4"/>
 	<event load="ROCK_STARSHIP_MINE_DEFUSE4"/>
@@ -909,7 +908,7 @@ Environmnt:
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<text load="ROCK_FIGHT_ASTEROID"/>
-	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 <textList name="ROCK_FIGHT_ASTEROID">
 	<text>Шахтёрское судно роков добывает здесь минералы из астероидов, и их разведчики восприняли ваше присутствие как агрессию. К бою!</text>
@@ -921,7 +920,7 @@ Environmnt:
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<text load="ROCK_PIRATE_ASTEROID"/>
-	<ship load="ROCK_PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_PIRATE" hostile="true"/>
 </event>
 <textList name="ROCK_PIRATE_ASTEROID">
 	<text>Ваши щиты искрят и трещат, когда ваш корабль выходит из прыжка прямо рядом с огромным астероидом. За ним следует ещё больше астероидов вместе с потерявшимся пиратским кораблём роков.</text>
@@ -933,7 +932,7 @@ Environmnt:
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 	<text load="ROCK_PIRATE_SUN"/>
-	<ship load="ROCK_PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_PIRATE" hostile="true"/>
 </event>
 <textList name="ROCK_PIRATE_SUN">
 	<text>Необычная солнечная активность в этом регионе означает, что вам нужно немедленно убираться. Пиратский корабль неподалёку, видимо, думает иначе, они направляются к вам, чтобы атаковать ваш корабль.</text>
@@ -997,15 +996,15 @@ Environmnt:
 	<achievement silent="false">ACH_ROCK_LEGENDARY</achievement>
 	<crewMember amount="1" class="rock_legendary" all_skills="2">Ариадна</crewMember> 
 	<playSound>legendary</playSound>
-	<ship load="ROCK_QUEST_MARRIAGE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_QUEST_MARRIAGE" hostile="true"/>
 </event>
 
 <ship name="ROCK_QUEST_MARRIAGE" auto_blueprint="SHIPS_ROCK">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>После того, как эскорт уничтожен, Великий Василиск отправляет за вами весь свой флот. У вас есть немного времени, чтобы разобрать останки, прежде чем вы совершите прыжок из их досягаемости.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>После того, как эскорт уничтожен, Великий Василиск отправляет за вами весь свой флот. У вас есть немного времени, чтобы разобрать останки, прежде чем вы совершите прыжок из их досягаемости.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -1025,7 +1024,7 @@ Environmnt:
 <event name="ROCK_BOARDERS_SHIP" unique="true">
 	<text load="ROCK_BOARDERS_SHIP"/>	
 	<boarders min="1" max="3" class="rock"/>
-	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 <textList name="ROCK_BOARDERS_SHIP">
 	<text>Вы попутно сканируете маленькую станцию роков рядом с маяком. Однако они не приветствуют ваше любопытство. Корабль роков отрывается от станции, и в это же время вы регистрируете приближающийся сигнал телепортера!</text>
@@ -1038,7 +1037,7 @@ Environmnt:
 	<boarders min="1" max="2" class="rock"/>
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
-	<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_SHIP" hostile="true"/>
 </event>
 <textList name="ROCK_BOARDERS_ASTEROID">
 	<text>Вы прибываете в поле астероидов и немедленно начинаете манёвры уклонения, когда громкий глухой звук отражается по кораблю. Сначала вы думаете, что это астероид попал в корпус, но оказалось, что шум издают захватчики-роки, телепортирующиеся на корабль!</text>
@@ -1071,7 +1070,7 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 
 <event name="ROCK_UNLOCK1" unique="true">
 	<text>Вам немедленно приходит сообщение от внушительно выглядящего военного судна роков: «Это ваш корабль отправили, чтобы спасти Федерацию, не так ли? И вы надеетесь выжить на этой развалюхе?»</text>
-	<ship load="ROCK_UNLOCK2" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ROCK_UNLOCK2" hostile="false"/>
 	<choice hidden="true">
 		<text>«Так или иначе, мы спасём их или погибнем».</text>
 		<event>
@@ -1095,13 +1094,13 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 </event>
 <event name="ROCK_UNLOCK2">
 	<text>Вы прибываете по координатам, данным вам, и оказываетесь в опасной близости со звездой класса М! Крейсер роков сообщает вам: «Что ж, посмотрим как долго ваш ничтожный корабль сможет выдерживать этот жар! Приготовьтесь к испытанию!»</text>
-	<ship load="ROCK_UNLOCK2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ROCK_UNLOCK2" hostile="true"/>
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>	
 </event>
 <event name="ROCK_UNLOCK3">
 	<text>Вы прибываете к внушительному доку роков и замечаете там корабль, который только что пытался вас убить. Он уже пришвартован и чинится. «Отличное сражение! Должен сказать, я не ожидал, что вы останетесь в живых».</text>
-	<ship load="ROCK_UNLOCK1" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ROCK_UNLOCK1" hostile="false"/>
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -1122,7 +1121,7 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 <!-- 1.31 -->
 <!-- MAGMAN SECTOR -->
 <eventList name="HOSTILE_MAGMAN">
-	<!-- <event load="MAGMAN_SHIP"/> -->
+	<event load="ULTRA_SUN_FIGHT"/><!-- 1.33 -->
 	<!-- <event load="MAGMAN_PIRATE"/> -->
 	<!-- <event load="MAGMAN_FIGHT_ASTEROID"/> -->
 	<!-- <event load="MAGMAN_PIRATE_ASTEROID"/> -->
@@ -1131,7 +1130,7 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 </eventList>
 
 <eventList name="NEUTRAL_MAGMAN">
-	<!-- <event load="MAGMAN_NURSERY"/> -->
+	<event load="EVENT_KESTRAL_PART"/><!-- 1.33 -->
 	<!-- <event load="MAGMAN_MANTIS_HUNTER"/> -->
 	<!-- <event load="MAGMAN_MANTIS_FREIGHTER"/> -->
 	<!-- <event load="MAGMAN_ZOLTAN_HELP"/> -->
@@ -1241,25 +1240,155 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 	<text></text>
 </textList>
 
+
+<!-- 1.33 -->
+<!-- Обломок с резервным банком ДНК -->
+<event name="EVENT_KESTRAL_PART" unique="true">
+	<text>Рядом с маяком медленно дрейфует обломок корабля. Следы ремонта видны на его обшивке, но, видимо, это не очень помогло кораблю. Что прикажете делать?</text>
+	<ship load="KESTRAL_PART_PARAMETERS" hostile="false"/>
+	<choice hidden="true">
+		<text>Выслать команду для обыска.</text>
+		<event load="EVENT_KESTRAL_PART_SEND"/>
+	</choice>
+	<choice hidden="true">
+		<text>Расстрелять обломок издали.</text>
+		<event>
+			<text>Вы решаете, что безопаснее будет атаковать этот подозрительный объект.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Не трогать обломок и поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<event name="EVENT_KESTRAL_PART_SEND">
+	<text>В ходе обыска команда находит заклинившую клон-камеру. К ней подключён резервный банк ДНК, и в очереди застряли несколько магменов.</text>
+	<choice hidden="true">
+		<text>Забрать резервный банк ДНК и то, что уцелело.</text>
+		<event load="EVENT_KESTRAL_PART_DNA"/>
+	</choice>
+	<choice hidden="true">
+		<text>Запустить очередь клонирования.</text>
+		<event load="EVENT_KESTRAL_PART_CLONES"/>
+	</choice>
+	<choice hidden="true">
+		<text>Покинуть это место и расстрелять обломок издали.</text>
+		<event>
+			<text>Вы решаете, что безопаснее будет атаковать этот странный объект.</text>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Покинут обломок и больше его не трогать.</text>
+		<event>
+			<text>Вы решаете, что безопаснее будет улететь отсюда.</text>
+		</event>
+	</choice>
+</event>
+<eventList name="EVENT_KESTRAL_PART_DNA">
+	<event>
+		<text>Вы извлекаете всё ценное, а звук сирены от умирающих магменов ещё долго эхом звучит в вашей голове...</text>
+		<augment name="BACKUP_DNA"/>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Вы извлекаете всё ценное, а звук сирены от умирающих магменов ещё долго эхом звучит в вашей голове...</text>
+		<augment name="BACKUP_DNA"/>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Похоже, что ДНК-банк повреждён. Вы забираете то немногое, что всё ещё представляет ценность, и уходите.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+</eventList>
+<eventList name="EVENT_KESTRAL_PART_CLONES">
+	<event>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Ваша команда в недоумении смотрит на это, а потом собирает уцелевшее с обломка корабля...</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако, один оказывается здоров. Вместе с вашей командой он собирает уцелевшее с обломка корабля...</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+		<crewMember amount="1" class="magman"/>
+	</event>
+	<event>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако, двое оказываются здоровыми. Вместе с вашей командой они помогают собрать уцелевшее с обломка корабля...</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+		<crewMember amount="1" class="magman"/>
+		<queueEvent>ADD_MAGMAN</queueEvent>
+	</event>
+	<event>
+		<text>Магмены из очереди клонирования почему-то сразу разваливаются. Однако, двое оказываются здоровыми. Вместе с вашей командой они помогают собрать уцелевшее с обломка корабля...</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+		<crewMember amount="1" class="magman"/>
+		<queueEvent>ADD_MAGMAN</queueEvent>
+	</event>
+	<event>
+		<text>Магмены из очереди клонирования враждебны и нападают на вас.</text>
+		<boarders min="2" max="4" class="magman"/>
+		<playSound>teleport</playSound>
+		<ship hostile="true"/>
+	</event>
+	<event>
+		<text>Магмены из очереди клонирования враждебны и нападают на вас.</text>
+		<boarders min="3" max="6" class="magman"/>
+		<playSound>teleport</playSound>
+		<ship hostile="true"/>
+	</event>
+</eventList>
+<event name="ADD_MAGMAN">
+	<crewMember amount="1" class="magman"/>
+</event>
+<ship name="KESTRAL_PART_PARAMETERS" auto_blueprint="KESTRAL_PART_SHIPS">
+	<destroyed>
+		<text>Обломок корабля уничтожен, и вы собираете всё, что уцелело.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Обломок захвачен, и вы собираете всё, что уцелело.</text>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</deadCrew>
+</ship>
+<!-- 1.33 -->
+<event name="ULTRA_SUN_FIGHT">
+	<text load="ULTRA_SUN_FIGHT_TEXT"/>
+	<!-- <triggeredEvent name="CLEAR_TRIGGERS_US_CLEAR" event="CLEAR_TRIGGERS_US" jumps="1"/>
+	<variable name="danger_ultra_sun" op="set" val="1"/>
+	<variable name="high_temperature_on_this_beacon" op="set" val="1"/> -->
+	<ship load="MAGMAN_PARAM" hostile="true"/>
+</event>
+<!-- <event name="CLEAR_TRIGGERS_US">
+	<variable name="high_temperature_on_this_beacon" op="set" val="0"/>
+</event> -->
+<textList name="ULTRA_SUN_FIGHT_TEXT">
+	<text back="ULTRA_SUN" planet="NONE">Вы оказываетесь возле маяка с чудовищными температурами за бортом, и на вас мчится корабль магменов!</text>
+	<text back="ULTRA_SUN" planet="NONE">Температура на этом маяке очень высокая. Кажется, корабль магменов поблизости ждал вас...</text>
+</textList>
+<ship name="MAGMAN_PARAM" auto_blueprint="MAGMAN_SHIPS">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+
 <event name="EVENT_CAPSULE_2_BROKEN" unique="true">
 	<text>Сигнал бедствия исходит от этой полуразрушенной временной капсулы...</text>
-	<ship load="CAPSULE_2_BROKEN_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CAPSULE_2_BROKEN_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Обстрелять капсулу.</text>
 		<event>
 			<text>Вы решаете опробовать свои орудия на этой лёгкой мишени.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Приблизиться и обыскать капсулу.</text>
-		<event load="EVENT_CAPSULE_2_BROKEN_OPEN" />
+		<event load="EVENT_CAPSULE_2_BROKEN_OPEN"/>
 	</choice>
 	<choice hidden="true">
 		<text>Игнорировать и поговорить с командой.</text>
-		<event load="TALK_WITH_CREW" />
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 	<distressBeacon/>
 </event>
@@ -1269,19 +1398,19 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 		<item_modify>
 			<item type="scrap" min="10" max="50"/>
 		</item_modify>
-		<crewMember amount="1" class="random" />
+		<crewMember amount="1" class="random"/>
 	</event>
 	<event>
 		<text>Вскрывая капсулу, кто-то из вашей команды задевает её систему защиты, и неизвестно откуда на ваш корабль телепортируется банда головорезов!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
-		<boarders min="2" max="6" class="random" />
+		<boarders min="2" max="6" class="random"/>
 	</event>
 	<event>
 		<text>Вскрывая капсулу, кто-то из вашей команды задевает её систему защиты, и неизвестно откуда на ваш корабль телепортируется отряд магменов!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
-		<boarders min="2" max="6" class="magman" />
+		<boarders min="2" max="6" class="magman"/>
 	</event>
 	<event>
 		<text>Вы вскрываете капсулу и спокойно забираете всё ценное.</text>
@@ -1290,31 +1419,31 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 	<event>
 		<text>Вы вскрываете капсулу и спокойно забираете всё ценное.</text>
 		<item_modify><item type="scrap" min="10" max="50"/></item_modify>
-		<augment name="FTL_JUMPER_GOOD" /><!-- 1.32 -->
+		<augment name="FTL_JUMPER_GOOD"/><!-- 1.32 -->
 	</event>
 	<event>
 		<text>Вы вскрываете капсулу и спокойно забираете всё ценное.</text>
 		<item_modify><item type="scrap" min="10" max="50"/></item_modify>
-		<augment name="FTL_JAMMER" />
+		<augment name="FTL_JAMMER"/>
 	</event>
 	<event>
 		<text>Вы вскрываете капсулу и спокойно забираете всё ценное.</text>
 		<item_modify><item type="scrap" min="10" max="50"/></item_modify>
-		<weapon name="BOULDERGUN" />
+		<weapon name="BOULDERGUN"/>
 	</event>
 	<event>
 		<text>Вы вскрываете капсулу и спокойно забираете всё ценное.</text>
 		<item_modify><item type="scrap" min="10" max="50"/></item_modify>
-		<weapon name="BOULDERGUN2" />
+		<weapon name="BOULDERGUN2"/>
 	</event>
 	<event>
 		<text>Вы вскрываете капсулу и спокойно забираете всё ценное.</text>
 		<item_modify><item type="scrap" min="10" max="50"/></item_modify>
-		<weapon name="BOULDERGUN_RANDOM" />
+		<weapon name="BOULDERGUN_RANDOM"/>
 	</event>
 </eventList>
 <ship name="CAPSULE_2_BROKEN_PARAMETERS" auto_blueprint="CAPSULE_2_BROKEN_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Капсула разваливается на куски. Вы собираете всё ценное.</text>
 		<item_modify><item type="scrap" min="25" max="50"/></item_modify>
 	</destroyed>

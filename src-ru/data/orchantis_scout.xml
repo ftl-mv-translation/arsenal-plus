@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Copyright (c) 2012 by Subset Games. All rights reserved.-->
+<img x="-57" y="-132" w="360" h="300" />
+<offsets>
+	<floor x="180" y="150" />
+	<cloak x="0" y="0" />
+</offsets>
+<thrusters sync="true">
+	<thruster x="172" y="288">enemy_mantis_thruster2</thruster>
+</thrusters>
+<weaponMounts>
+	<mount x="104" y="111" rotate="false" mirror="false" gib="-1" slide="up" />
+	<mount x="255" y="111" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="213" y="137" rotate="false" mirror="true" gib="-1" slide="up" />
+	<mount x="147" y="137" rotate="false" mirror="false" gib="-1" slide="up" />
+</weaponMounts>
+<explosion>
+	<gib1>
+		<velocity min="0.53" max="0.68" />
+		<direction min="116" max="133" />
+		<angular min="-0.77" max="0.77" />
+		<x>9</x>
+		<y>89</y>
+	</gib1>
+	<gib2>
+		<velocity min="0.62" max="0.75" />
+		<direction min="18" max="31" />
+		<angular min="-0.73" max="0.73" />
+		<x>7</x>
+		<y>0</y>
+	</gib2>
+	<gib3>
+		<velocity min="0.28" max="0.45" />
+		<direction min="-5" max="0" />
+		<angular min="-0.41" max="0.41" />
+		<x>93</x>
+		<y>111</y>
+	</gib3>
+	<gib4>
+		<velocity min="0.47" max="0.65" />
+		<direction min="311" max="321" />
+		<angular min="-0.69" max="0.69" />
+		<x>176</x>
+		<y>10</y>
+	</gib4>
+</explosion>
+

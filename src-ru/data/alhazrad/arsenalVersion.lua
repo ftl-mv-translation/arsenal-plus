@@ -1,4 +1,4 @@
-local version = "Arsenal+ v1.32"
+local version = "Arsenal+ v1.33"
 local function DrawGame()
     Graphics.CSurface.GL_PushMatrix()   
     pcall(function()

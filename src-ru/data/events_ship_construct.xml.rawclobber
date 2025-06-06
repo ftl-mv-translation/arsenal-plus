@@ -29,17 +29,17 @@
 		</event>
     </choice>
 	<choice hidden="true">
-        <text>Начать сборку (Лёгкий режим - 1100~).</text>
+        <text>Начать сборку (Лёгкий режим - 1500~).</text><!-- 1.33 -->
         <event>
-			<item_modify><item type="scrap" min="1100" max="1100"/></item_modify>
+			<item_modify><item type="scrap" min="1500" max="1500"/></item_modify><!-- 1.33 -->
 			<queueEvent>ARBOLER_DEAD</queueEvent>
 			<disableScrapScore/>
 		</event>
     </choice>
 	<choice hidden="true">
-        <text>Начать сборку (Нормальный режим - 800~).</text>
+        <text>Начать сборку (Нормальный режим - 1000~).</text><!-- 1.33 -->
         <event>
-			<item_modify><item type="scrap" min="800" max="800"/></item_modify>
+			<item_modify><item type="scrap" min="1000" max="1000"/></item_modify><!-- 1.33 -->
 			<queueEvent>ARBOLER_DEAD</queueEvent>
 			<disableScrapScore/>
 		</event>
@@ -73,7 +73,8 @@
 
 <event name="ARBOLER_DEAD">
 	<queueEvent>PREPARE_CAREFULLY_FOR_FTL_MAIN_MENU</queueEvent>
-	<crewMember amount="-1" class="human" />
+	<crewMember amount="-1" class="human"/>
+	<variable name="ship_assembly_added_crew" op="add" val="-1"/><!-- 1.33 -->														  
 	<text load="ARBOLER_DEAD"/>
 			<choice hidden="false">
 				<text>Выбрать.</text><event><crewMember amount="1" class="human"/><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify></event>
@@ -141,6 +142,9 @@
 			<choice hidden="false">
 				<text>Выбрать.</text><event><crewMember amount="1" class="blinker"/><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify></event>
 			</choice>
+			<choice hidden="false"><!-- 1.33 -->
+				<text>Выбрать.</text><event><crewMember amount="1" class="osa"/><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify></event>
+			</choice>
 			<choice hidden="false">
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="engi_legendary" all_skills="2">Вирус</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
 			</choice>
@@ -154,8 +158,8 @@
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="energy_legendary" all_skills="2">Посланник</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
 			</choice>
 			<choice hidden="false">
-				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="energyx_legendary" all_skills="2">Момино</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
-			</choice>			
+				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="energyx_legendary" all_skills="2">Момино</crewMember><clearTriggeredEvent name="SUPERSHIELD_PLUS_JUMPS"/><triggeredEvent name="SUPERSHIELD_PLUS_JUMPS" event="SUPERSHIELD_PLUS" seeded="false" loops="999999999" jumps="1"/><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
+			</choice>	<!-- 1.33 -->		
 			<choice hidden="false">
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="anaerobic_legendary" all_skills="2">Толмач</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
 			</choice>
@@ -166,6 +170,9 @@
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="orchid_legendary" all_skills="2">Ванда</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
 			</choice>
 			<choice hidden="false">
+				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="order_human_legendary" all_skills="2">Спаун</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
+			</choice><!-- 1.33 -->
+			<choice hidden="false">
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="lady_legendary" all_skills="2">Вичган</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
 			</choice>
 			<choice hidden="false">
@@ -174,6 +181,9 @@
 				<clearTriggeredEvent name="SCRAP_PLUS_JUMPS"/>
 				<triggeredEvent name="SCRAP_PLUS_JUMPS" event="SCRAP_PLUS" seeded="false" loops="999999999" jumps="1"/>
 				</event>
+			</choice>
+			<choice hidden="false"><!-- 1.33 -->
+				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="slig_legendary" all_skills="2">Диоген</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
 			</choice>
 			<choice hidden="false">
 				<text>Выбрать (разработчик).</text><event><crewMember amount="1" class="human_kba" all_skills="2">Квази</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify></event>
@@ -241,27 +251,27 @@
 		</event>
     </choice>
 	<choice hidden="true">
-        <text>Начать сборку (Лёгкий режим - 1100~).</text>
+        <text>Начать сборку (Лёгкий режим - 1500~).</text><!-- 1.33 -->
         <event>
-			<item_modify><item type="scrap" min="1100" max="1100"/></item_modify>
+			<item_modify><item type="scrap" min="1500" max="1500"/></item_modify><!-- 1.33 -->
 			<variable name="ship_assembly_start_hardness" op="set" val="1"/>
 			<queueEvent>PREPARE_CAREFULLY_FOR_FTL_MAIN_MENU</queueEvent>
 			<disableScrapScore/>
 		</event>
     </choice>
 	<choice hidden="true">
-        <text>Начать сборку (Нормальный режим - 800~).</text>
+        <text>Начать сборку (Нормальный режим - 1000~).</text><!-- 1.33 -->
         <event>
-			<item_modify><item type="scrap" min="800" max="800"/></item_modify>
+			<item_modify><item type="scrap" min="1000" max="1000"/></item_modify><!-- 1.33 -->
 			<variable name="ship_assembly_start_hardness" op="set" val="2"/>
 			<queueEvent>PREPARE_CAREFULLY_FOR_FTL_MAIN_MENU</queueEvent>
 			<disableScrapScore/>
 		</event>
     </choice>
 	<choice hidden="true">
-        <text>Начать сборку (Сложный режим - 500~).</text>
+        <text>Начать сборку (Сложный режим - 500~).</text><!-- 1.33 -->
         <event>
-			<item_modify><item type="scrap" min="500" max="500"/></item_modify>
+			<item_modify><item type="scrap" min="500" max="500"/></item_modify><!-- 1.33 -->
 			<variable name="ship_assembly_start_hardness" op="set" val="3"/>
 			<queueEvent>PREPARE_CAREFULLY_FOR_FTL_MAIN_MENU</queueEvent>
 			<disableScrapScore/>
@@ -271,6 +281,7 @@
 
 
 <event name="PREPARE_CAREFULLY_FOR_FTL_MAIN_MENU">
+	<variable name="ship_assembly_crew_limit" op="set" val="13"/><!-- 1.33 -->														  
 	<text>Выберите действие...</text>
 	<choice req="ship_assembly_free_mode" lvl="0" max_group="1" blue="false" hidden="true">
         <text>Установить систему...</text>
@@ -589,6 +600,9 @@
 			<choice hidden="false">
 				<text>Выбрать.</text><event><crewMember amount="1" class="blinker"/><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
 			</choice>
+			<choice hidden="false"><!-- 1.33 -->
+				<text>Выбрать.</text><event><crewMember amount="1" class="osa"/><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
+			</choice>
 			<choice hidden="false">
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="engi_legendary" all_skills="2">Вирус</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
 			</choice>
@@ -614,6 +628,9 @@
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="orchid_legendary" all_skills="2">Ванда</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
 			</choice>
 			<choice hidden="false">
+				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="order_human_legendary" all_skills="2">Спаун</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
+			</choice><!-- 1.33 -->
+			<choice hidden="false">
 				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="lady_legendary" all_skills="2">Вичган</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
 			</choice>
 			<choice hidden="false">
@@ -622,6 +639,9 @@
 				<clearTriggeredEvent name="SCRAP_PLUS_JUMPS"/>
 				<triggeredEvent name="SCRAP_PLUS_JUMPS" event="SCRAP_PLUS" seeded="false" loops="999999999" jumps="1"/>
 				</event>
+			</choice>
+			<choice hidden="false">
+				<text>Выбрать (легендарный).</text><event><crewMember amount="1" class="slig_legendary" all_skills="2">Диоген</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
 			</choice>
 			<choice hidden="false">
 				<text>Выбрать (разработчик).</text><event><crewMember amount="1" class="human_kba" all_skills="2">Квази</crewMember><variable name="ship_assembly_added_crew" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event>
@@ -671,16 +691,16 @@
 			<loadEvent>PREPARE_CAREFULLY_FOR_FTL_RASHODNIKI</loadEvent>
 		</event>
     </choice>
-	<choice req="ship_assembly_installed_weapons" lvl="4" max_group="5" blue="false" hidden="true">
-		<text>Установить орудие... (4 слота орудий уже заняты)</text>
+	<choice req="ship_assembly_installed_weapons" lvl="8" max_group="5" blue="false" hidden="true"><!-- 1.33 -->
+		<text>Установить орудие... (больше нет места для орудий)</text><!-- 1.33 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ship_assembly_installed_weapons" lvl="0" max_group="5" blue="false" hidden="true">
         <text>Установить орудия...</text>
 		<event load="PREPARE_CAREFULLY_FOR_FTL_WEAPONS"/>
     </choice>
-	<choice req="ship_assembly_installed_drones" lvl="2" max_group="6" blue="false" hidden="true">
-		<text>Установить дроны... (2 слота дронов уже заняты)</text>
+	<choice req="ship_assembly_installed_drones" lvl="4" max_group="6" blue="false" hidden="true"><!-- 1.33 -->
+		<text>Установить дроны... (больше нет места для дронов)</text><!-- 1.33 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ship_assembly_installed_drones" lvl="0" max_group="6" blue="false" hidden="true">
@@ -818,8 +838,8 @@
 	<choice hidden="false"><text>Выбрать.</text><event><augment name="SHIELD_RECHARGE"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-55" max="-55"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice hidden="false"><text>Выбрать.</text><event><augment name="STASIS_POD"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice hidden="false"><text>Выбрать.</text><event><augment name="CRYSTAL_SHARDS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_SPEED_DOWN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_SPEED_UP"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_SPEED_DOWN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_SPEED_UP"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 	<choice req="O2_MASKS" lvl="1" blue="false" max_group="2" hidden="true"><text>Выбрать [Кислородные маски - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="O2_MASKS" lvl="0" blue="false" max_group="2" hidden="false"><text>Выбрать.</text><event><augment name="O2_MASKS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-75" max="-75"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="EXPLOSIVE_REPLICATOR" lvl="1" blue="false" max_group="3" hidden="true"><text>Выбрать [Репликатор ракет - установлено].</text><event load="NOT_AVAILABLE"/></choice>
@@ -828,7 +848,7 @@
 	<choice req="FIRE_EXTINGUISHERS" lvl="0" blue="false" max_group="4" hidden="false"><text>Выбрать.</text><event><augment name="FIRE_EXTINGUISHERS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-55" max="-55"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="FLEET_DISTRACTION" lvl="1" blue="false" max_group="5" hidden="true"><text>Выбрать [Отвлекающий буй - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="FLEET_DISTRACTION" lvl="0" blue="false" max_group="5" hidden="false"><text>Выбрать.</text><event><augment name="FLEET_DISTRACTION"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="TELEPORT_HEAL" lvl="1" blue="false" max_group="6" hidden="true"><text>Выбрать [Исцеляющий телепорт - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="TELEPORT_HEAL" lvl="1" blue="false" max_group="6" hidden="true"><text>Выбрать [Безопасный телепорт - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
 	<choice req="TELEPORT_HEAL" lvl="0" blue="false" max_group="6" hidden="false"><text>Выбрать.</text><event><augment name="TELEPORT_HEAL"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="BATTERY_BOOSTER" lvl="1" blue="false" max_group="7" hidden="true"><text>Выбрать [Зарядное устройство - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="BATTERY_BOOSTER" lvl="0" blue="false" max_group="7" hidden="false"><text>Выбрать.</text><event><augment name="BATTERY_BOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-25" max="-25"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -838,7 +858,7 @@
 	<choice req="BACKUP_DNA" lvl="0" blue="false" max_group="9" hidden="false"><text>Выбрать.</text><event><augment name="BACKUP_DNA"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="HACKING_STUN" lvl="1" blue="false" max_group="10" hidden="true"><text>Выбрать [Парализующий модуль - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="HACKING_STUN" lvl="0" blue="false" max_group="10" hidden="false"><text>Выбрать.</text><event><augment name="HACKING_STUN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="LIFE_SCANNER" lvl="1" blue="false" max_group="11" hidden="true"><text>Выбрать [Сканер жизненных форм - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="LIFE_SCANNER" lvl="1" blue="false" max_group="11" hidden="true"><text>Выбрать [Инфракрасный сканер - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
 	<choice req="LIFE_SCANNER" lvl="0" blue="false" max_group="11" hidden="false"><text>Выбрать.</text><event><augment name="LIFE_SCANNER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="ZOLTAN_BYPASS" lvl="1" blue="false" max_group="12" hidden="true"><text>Выбрать [Обход суперщита - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="ZOLTAN_BYPASS" lvl="0" blue="false" max_group="12" hidden="false"><text>Выбрать.</text><event><augment name="ZOLTAN_BYPASS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-45" max="-45"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -853,7 +873,7 @@
 	<choice req="FTL_BOOSTER" lvl="1" blue="false" max_group="17" hidden="true"><text>Выбрать [Ускоритель FTL - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="FTL_BOOSTER" lvl="0" blue="false" max_group="17" hidden="false"><text>Выбрать.</text><event><augment name="FTL_BOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="FTL_JUMPER_GOOD" lvl="1" blue="false" max_group="18" hidden="true"><text>Выбрать [FTL-навигатор - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="FTL_JUMPER_GOOD" lvl="0" blue="false" max_group="18" hidden="false"><text>Выбрать.</text><event><augment name="FTL_JUMPER_GOOD"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-45" max="-45"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="FTL_JUMPER_GOOD" lvl="0" blue="false" max_group="18" hidden="false"><text>Выбрать.</text><event><augment name="FTL_JUMPER_GOOD"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 	<choice req="DRONE_RECOVERY" lvl="1" blue="false" max_group="19" hidden="true"><text>Выбрать [Механизм сбора дронов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="DRONE_RECOVERY" lvl="0" blue="false" max_group="19" hidden="false"><text>Выбрать.</text><event><augment name="DRONE_RECOVERY"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-55" max="-55"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="FTL_JAMMER" lvl="1" blue="false" max_group="20" hidden="true"><text>Выбрать [Глушитель FTL - установлено].</text><event load="NOT_AVAILABLE"/></choice>
@@ -867,77 +887,92 @@
 	<choice req="CLOAK_FIRE" lvl="1" blue="false" max_group="24" hidden="true"><text>Выбрать [Скрытые орудия - установлено].</text><event load="NOT_AVAILABLE"/></choice>
 	<choice req="CLOAK_FIRE" lvl="0" blue="false" max_group="24" hidden="false"><text>Выбрать.</text><event><augment name="CLOAK_FIRE"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice req="ANTICLOAK_FIELD" lvl="1" blue="false" max_group="25" hidden="true"><text>Выбрать [Демаскирующее поле - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ANTICLOAK_FIELD" lvl="0" blue="false" max_group="25" hidden="false"><text>Выбрать.</text><event><augment name="ANTICLOAK_FIELD"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="SYSTEM_CASING" lvl="1" blue="false" max_group="26" hidden="true"><text>Выбрать [Титановое покрытие - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="SYSTEM_CASING" lvl="0" blue="false" max_group="26" hidden="false"><text>Выбрать.</text><event><augment name="SYSTEM_CASING"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="ION_ARMOR" lvl="1" blue="false" max_group="27" hidden="true"><text>Выбрать [Инверсное ионное поле - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ION_ARMOR" lvl="0" blue="false" max_group="27" hidden="false"><text>Выбрать.</text><event><augment name="ION_ARMOR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-75" max="-75"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="DRONE_SPEED" lvl="1" blue="false" max_group="28" hidden="true"><text>Выбрать [Ускоритель дронов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="DRONE_SPEED" lvl="0" blue="false" max_group="28" hidden="false"><text>Выбрать.</text><event><augment name="DRONE_SPEED"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="REPAIR_ARM" lvl="1" blue="false" max_group="29" hidden="true"><text>Выбрать [Кран для ремонта - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="REPAIR_ARM" lvl="0" blue="false" max_group="29" hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_ARM"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="TULLY_BOX" lvl="1" blue="false" max_group="30" hidden="true"><text>Выбрать [Контейнер для Тулли - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="TULLY_BOX" lvl="0" blue="false" max_group="30" hidden="false"><text>Выбрать.</text><event><augment name="TULLY_BOX"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="CALL_STORE" lvl="1" blue="false" max_group="31" hidden="true"><text>Выбрать [Торговый буй - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="CALL_STORE" lvl="0" blue="false" max_group="31" hidden="false"><text>Выбрать.</text><event><augment name="CALL_STORE"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="ORCHID_BOX" lvl="1" blue="false" max_group="32" hidden="true"><text>Выбрать [Контейнер орхидов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ORCHID_BOX" lvl="0" blue="false" max_group="32" hidden="false"><text>Выбрать.</text><event><augment name="ORCHID_BOX"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="HP_BOOSTER" lvl="1" blue="false" max_group="33" hidden="true"><text>Выбрать [Стероиды - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="HP_BOOSTER" lvl="0" blue="false" max_group="33" hidden="false"><text>Выбрать.</text><event><augment name="HP_BOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-45" max="-45"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="ARMOR_SUIT" lvl="1" blue="false" max_group="34" hidden="true"><text>Выбрать [Бронекостюмы - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ARMOR_SUIT" lvl="0" blue="false" max_group="34" hidden="false"><text>Выбрать.</text><event><augment name="ARMOR_SUIT"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="MAGMAN_EXTINGUISHERS" lvl="1" blue="false" max_group="35" hidden="true"><text>Выбрать [Хладагент - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="MAGMAN_EXTINGUISHERS" lvl="0" blue="false" max_group="35" hidden="false"><text>Выбрать.</text><event><augment name="MAGMAN_EXTINGUISHERS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="MUSHROOM_REPAIR" lvl="1" blue="false" max_group="36" hidden="true"><text>Выбрать [Мицелий - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="MUSHROOM_REPAIR" lvl="0" blue="false" max_group="36" hidden="false"><text>Выбрать.</text><event><augment name="MUSHROOM_REPAIR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="MIND_ORDER" lvl="1" blue="false" max_group="37" hidden="true"><text>Выбрать [Нейронный манипулятор - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="MIND_ORDER" lvl="0" blue="false" max_group="37" hidden="false"><text>Выбрать.</text><event><augment name="MIND_ORDER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="NANOBOT_DEFENSE_SYSTEM" lvl="1" blue="false" max_group="38" hidden="true"><text>Выбрать [Защитные наноботы - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="NANOBOT_DEFENSE_SYSTEM" lvl="0" blue="false" max_group="38" hidden="false"><text>Выбрать.</text><event><augment name="NANOBOT_DEFENSE_SYSTEM"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="SHELL_GAS" lvl="1" blue="false" max_group="39" hidden="true"><text>Выбрать [Разъедающий газ - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="SHELL_GAS" lvl="0" blue="false" max_group="39" hidden="false"><text>Выбрать.</text><event><augment name="SHELL_GAS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="MORPH_STABILIZER" lvl="1" blue="false" max_group="40" hidden="true"><text>Выбрать [Стабилизатор морфов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="MORPH_STABILIZER" lvl="0" blue="false" max_group="40" hidden="false"><text>Выбрать.</text><event><augment name="MORPH_STABILIZER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="RADIOACTIVE" lvl="1" blue="false" max_group="41" hidden="true"><text>Выбрать [Радиоактивность - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="RADIOACTIVE" lvl="0" blue="false" max_group="41" hidden="false"><text>Выбрать.</text><event><augment name="RADIOACTIVE"/><!-- проверил - работает лол --><hiddenAug>MARKER_RADIOACTIVE</hiddenAug><triggeredEvent event="RADIOACTIVE_FIRE" seeded="false" loops="999999999" playerDamage="1"/><triggeredEvent event="RADIOACTIVE_CREW_START" seeded="false" jumps="1"/><triggeredEvent event="RADIOACTIVE_FIRE_JUMP" seeded="false" loops="999999999" jumps="1"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-80" max="-80"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="ENVIRONMENT_AMP" lvl="1" blue="false" max_group="42" hidden="true"><text>Выбрать [Разрушающее окружение - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ENVIRONMENT_AMP" lvl="0" blue="false" max_group="42" hidden="false"><text>Выбрать.</text><event><augment name="ENVIRONMENT_AMP"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="REPAIR_SPEED_UP_AND_DOWN" lvl="1" blue="false" max_group="43" hidden="true"><text>Выбрать [Ремонтный контроллер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="REPAIR_SPEED_UP_AND_DOWN" lvl="0" blue="false" max_group="43" hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_SPEED_UP_AND_DOWN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="O2_MASKS_CREW_STIMS" lvl="1" blue="false" max_group="44" hidden="true"><text>Выбрать [Снаряжение охотника - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="O2_MASKS_CREW_STIMS" lvl="0" blue="false" max_group="44" hidden="false"><text>Выбрать.</text><event><augment name="O2_MASKS_CREW_STIMS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-125" max="-125"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY" lvl="1" blue="false" max_group="45" hidden="true"><text>Выбрать [Продвинутые наноботы - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY" lvl="0" blue="false" max_group="45" hidden="false"><text>Выбрать.</text><event><augment name="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="ENERGY_SHIELD_ZOLTAN_BYPASS" lvl="1" blue="false" max_group="46" hidden="true"><text>Выбрать [Технологии золтанцев - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ENERGY_SHIELD_ZOLTAN_BYPASS" lvl="0" blue="false" max_group="46" hidden="false"><text>Выбрать.</text><event><augment name="ENERGY_SHIELD_ZOLTAN_BYPASS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-145" max="-145"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="SLUG_GEL_FIRE_EXTINGUISHERS" lvl="1" blue="false" max_group="47" hidden="true"><text>Выбрать [Система безопасности - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="SLUG_GEL_FIRE_EXTINGUISHERS" lvl="0" blue="false" max_group="47" hidden="false"><text>Выбрать.</text><event><augment name="SLUG_GEL_FIRE_EXTINGUISHERS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-115" max="-115"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="CRYSTAL_SHARDS_ROCK_ARMOR" lvl="1" blue="false" max_group="48" hidden="true"><text>Выбрать [Композитная броня - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="CRYSTAL_SHARDS_ROCK_ARMOR" lvl="0" blue="false" max_group="48" hidden="false"><text>Выбрать.</text><event><augment name="CRYSTAL_SHARDS_ROCK_ARMOR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-120" max="-120"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="SYSTEM_CASING_ION_ARMOR" lvl="1" blue="false" max_group="49" hidden="true"><text>Выбрать [Защитное поле - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="SYSTEM_CASING_ION_ARMOR" lvl="0" blue="false" max_group="49" hidden="false"><text>Выбрать.</text><event><augment name="SYSTEM_CASING_ION_ARMOR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-125" max="-125"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="FTL_JUMPER_DRONE_RECOVERY" lvl="1" blue="false" max_group="50" hidden="true"><text>Выбрать [Навигационный механизм - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="FTL_JUMPER_DRONE_RECOVERY" lvl="0" blue="false" max_group="50" hidden="false"><text>Выбрать.</text><event><augment name="FTL_JUMPER_DRONE_RECOVERY"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="FTL_BOOSTER_FTL_JAMMER" lvl="1" blue="false" max_group="51" hidden="true"><text>Выбрать [FTL-контроллер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="FTL_BOOSTER_FTL_JAMMER" lvl="0" blue="false" max_group="51" hidden="false"><text>Выбрать.</text><event><augment name="FTL_BOOSTER_FTL_JAMMER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="WEAPON_PREIGNITE_AUTO_COOLDOWN" lvl="1" blue="false" max_group="52" hidden="true"><text>Выбрать [Компенсатор перезарядки - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="WEAPON_PREIGNITE_AUTO_COOLDOWN" lvl="0" blue="false" max_group="52" hidden="false"><text>Выбрать.</text><event><augment name="WEAPON_PREIGNITE_AUTO_COOLDOWN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="SHIELD_RECHARGE_CLOAK_FIRE" lvl="1" blue="false" max_group="53" hidden="true"><text>Выбрать [Маскировочный барьер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="SHIELD_RECHARGE_CLOAK_FIRE" lvl="0" blue="false" max_group="53" hidden="false"><text>Выбрать.</text><event><augment name="SHIELD_RECHARGE_CLOAK_FIRE"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="ADV_SCANNERS_LIFE_SCANNER" lvl="1" blue="false" max_group="54" hidden="true"><text>Выбрать [Продвинутый сканер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="ADV_SCANNERS_LIFE_SCANNER" lvl="0" blue="false" max_group="54" hidden="false"><text>Выбрать.</text><event><augment name="ADV_SCANNERS_LIFE_SCANNER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="SCRAP_COLLECTOR_REPAIR_ARM" lvl="1" blue="false" max_group="55" hidden="true"><text>Выбрать [Продвинутый манипулятор - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="SCRAP_COLLECTOR_REPAIR_ARM" lvl="0" blue="false" max_group="55" hidden="false"><text>Выбрать.</text><event><augment name="SCRAP_COLLECTOR_REPAIR_ARM"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="BACKUP_DNA_TELEPORT_HEAL" lvl="1" blue="false" max_group="56" hidden="true"><text>Выбрать [Модуль сохранности - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="BACKUP_DNA_TELEPORT_HEAL" lvl="0" blue="false" max_group="56" hidden="false"><text>Выбрать.</text><event><augment name="BACKUP_DNA_TELEPORT_HEAL"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="DEFENSE_SCRAMBLER_HACKING_STUN" lvl="1" blue="false" max_group="57" hidden="true"><text>Выбрать [Снаряжение хакера - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="DEFENSE_SCRAMBLER_HACKING_STUN" lvl="0" blue="false" max_group="57" hidden="false"><text>Выбрать.</text><event><augment name="DEFENSE_SCRAMBLER_HACKING_STUN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="FLEET_DISTRACTION_BATTERY_BOOSTER" lvl="1" blue="false" max_group="58" hidden="true"><text>Выбрать [Вспомогательный модуль - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="FLEET_DISTRACTION_BATTERY_BOOSTER" lvl="0" blue="false" max_group="58" hidden="false"><text>Выбрать.</text><event><augment name="FLEET_DISTRACTION_BATTERY_BOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	<choice req="EXPLOSIVE_REPLICATOR_DRONE_SPEED" lvl="1" blue="false" max_group="59" hidden="true"><text>Выбрать [Модуль поддержки - установлено].</text><event load="NOT_AVAILABLE"/></choice>
-	<choice req="EXPLOSIVE_REPLICATOR_DRONE_SPEED" lvl="0" blue="false" max_group="59" hidden="false"><text>Выбрать.</text><event><augment name="EXPLOSIVE_REPLICATOR_DRONE_SPEED"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-	
-	
+	<choice req="ANTICLOAK_FIELD" lvl="0" blue="false" max_group="25" hidden="false"><text>Выбрать.</text><event><augment name="ANTICLOAK_FIELD"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-75" max="-75"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice req="PROJECTILE_EATER" lvl="1" blue="false" max_group="26" hidden="true"><text>Выбрать [Уничтожитель снарядов - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+	<choice req="PROJECTILE_EATER" lvl="0" blue="false" max_group="26" hidden="false"><text>Выбрать.</text><event><augment name="PROJECTILE_EATER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 --> <!-- max_group updated below -->
+	<choice req="ACCURACY_BOOST" lvl="1" blue="false" max_group="27" hidden="true"><text>Выбрать [Корректор наведения - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+	<choice req="ACCURACY_BOOST" lvl="0" blue="false" max_group="27" hidden="false"><text>Выбрать.</text><event><augment name="ACCURACY_BOOST"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-45" max="-45"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 --> 
+	<choice req="SYSTEM_CASING" lvl="1" blue="false" max_group="28" hidden="true"><text>Выбрать [Титановое покрытие - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SYSTEM_CASING" lvl="0" blue="false" max_group="28" hidden="false"><text>Выбрать.</text><event><augment name="SYSTEM_CASING"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="ION_ARMOR" lvl="1" blue="false" max_group="29" hidden="true"><text>Выбрать [Инверсное ионное поле - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="ION_ARMOR" lvl="0" blue="false" max_group="29" hidden="false"><text>Выбрать.</text><event><augment name="ION_ARMOR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-75" max="-75"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="AUTO_REPAIR" lvl="1" blue="false" max_group="30" hidden="true"><text>Выбрать [Авторемонт систем - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+	<choice req="AUTO_REPAIR" lvl="0" blue="false" max_group="30" hidden="false"><text>Выбрать.</text><event><augment name="AUTO_REPAIR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice req="DRONE_SPEED" lvl="1" blue="false" max_group="31" hidden="true"><text>Выбрать [Ускоритель дронов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="DRONE_SPEED" lvl="0" blue="false" max_group="31" hidden="false"><text>Выбрать.</text><event><augment name="DRONE_SPEED"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice req="REPAIR_ARM" lvl="1" blue="false" max_group="32" hidden="true"><text>Выбрать [Кран для ремонта - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="REPAIR_ARM" lvl="0" blue="false" max_group="32" hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_ARM"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="TULLY_BOX" lvl="1" blue="false" max_group="33" hidden="true"><text>Выбрать [Контейнер для Тулли - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="TULLY_BOX" lvl="0" blue="false" max_group="33" hidden="false"><text>Выбрать.</text><event><augment name="TULLY_BOX"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="CALL_STORE" lvl="1" blue="false" max_group="34" hidden="true"><text>Выбрать [Торговый буй - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="CALL_STORE" lvl="0" blue="false" max_group="34" hidden="false"><text>Выбрать.</text><event><augment name="CALL_STORE"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="ORCHID_BOX" lvl="1" blue="false" max_group="35" hidden="true"><text>Выбрать [Контейнер орхидов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="ORCHID_BOX" lvl="0" blue="false" max_group="35" hidden="false"><text>Выбрать.</text><event><augment name="ORCHID_BOX"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="HP_BOOSTER_3" lvl="1" blue="false" max_group="36" hidden="true"><text>Выбрать [Стероиды - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+	<choice req="HP_BOOSTER_3" lvl="0" blue="false" max_group="36" hidden="false"><text>Выбрать.</text><event><augment name="HP_BOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-45" max="-45"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice req="ARMOR_SUIT_3" lvl="1" blue="false" max_group="37" hidden="true"><text>Выбрать [Бронекостюмы - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+	<choice req="ARMOR_SUIT_3" lvl="0" blue="false" max_group="37" hidden="false"><text>Выбрать.</text><event><augment name="ARMOR_SUIT"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice req="MAGMAN_EXTINGUISHERS" lvl="1" blue="false" max_group="38" hidden="true"><text>Выбрать [Хладагент - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="MAGMAN_EXTINGUISHERS" lvl="0" blue="false" max_group="38" hidden="false"><text>Выбрать.</text><event><augment name="MAGMAN_EXTINGUISHERS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="MUSHROOM_REPAIR" lvl="1" blue="false" max_group="39" hidden="true"><text>Выбрать [Мицелий - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="MUSHROOM_REPAIR" lvl="0" blue="false" max_group="39" hidden="false"><text>Выбрать.</text><event><augment name="MUSHROOM_REPAIR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="WEAPONS_FIREBOOSTER" lvl="1" blue="false" max_group="40" hidden="true"><text>Выбрать [Разгонный термоблок - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="WEAPONS_FIREBOOSTER" lvl="0" blue="false" max_group="40" hidden="false"><text>Выбрать.</text><event><augment name="WEAPONS_FIREBOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="MIND_ORDER" lvl="1" blue="false" max_group="41" hidden="true"><text>Выбрать [Нейронный манипулятор - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="MIND_ORDER" lvl="0" blue="false" max_group="41" hidden="false"><text>Выбрать.</text><event><augment name="MIND_ORDER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="NANOBOT_DEFENSE_SYSTEM" lvl="1" blue="false" max_group="42" hidden="true"><text>Выбрать [Защитные наноботы - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="NANOBOT_DEFENSE_SYSTEM" lvl="0" blue="false" max_group="42" hidden="false"><text>Выбрать.</text><event><augment name="NANOBOT_DEFENSE_SYSTEM"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="SHELL_GAS" lvl="1" blue="false" max_group="43" hidden="true"><text>Выбрать [Разъедающий газ - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SHELL_GAS" lvl="0" blue="false" max_group="43" hidden="false"><text>Выбрать.</text><event><augment name="SHELL_GAS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="MORPH_STABILIZER" lvl="1" blue="false" max_group="44" hidden="true"><text>Выбрать [Стабилизатор морфов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="MORPH_STABILIZER" lvl="0" blue="false" max_group="44" hidden="false"><text>Выбрать.</text><event><augment name="MORPH_STABILIZER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="RADIOACTIVE" lvl="1" blue="false" max_group="45" hidden="true"><text>Выбрать [Радиоактивность - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="RADIOACTIVE" lvl="0" blue="false" max_group="45" hidden="false"><text>Выбрать.</text><event><augment name="RADIOACTIVE"/><!-- проверил - работает лол --><hiddenAug>MARKER_RADIOACTIVE</hiddenAug><triggeredEvent event="RADIOACTIVE_FIRE" seeded="false" loops="999999999" playerDamage="1"/><triggeredEvent event="RADIOACTIVE_CREW_START" seeded="false" jumps="1"/><triggeredEvent event="RADIOACTIVE_FIRE_JUMP" seeded="false" loops="999999999" jumps="1"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-80" max="-80"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="ENVIRONMENT_AMP" lvl="1" blue="false" max_group="46" hidden="true"><text>Выбрать [Разрушающее окружение - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="ENVIRONMENT_AMP" lvl="0" blue="false" max_group="46" hidden="false"><text>Выбрать.</text><event><augment name="ENVIRONMENT_AMP"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="SOUL_MAGNIT" lvl="1" blue="false" max_group="47" hidden="true"><text>Выбрать [Пленитель душ - установлено].</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+	<choice req="SOUL_MAGNIT" lvl="0" blue="false" max_group="47" hidden="false"><text>Выбрать.</text><event><augment name="SOUL_MAGNIT"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+	<choice req="REPAIR_SPEED_UP_AND_DOWN" lvl="1" blue="false" max_group="48" hidden="true"><text>Выбрать [Ремонтный контроллер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="REPAIR_SPEED_UP_AND_DOWN" lvl="0" blue="false" max_group="48" hidden="false"><text>Выбрать.</text><event><augment name="REPAIR_SPEED_UP_AND_DOWN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="O2_MASKS_CREW_STIMS" lvl="1" blue="false" max_group="49" hidden="true"><text>Выбрать [Снаряжение охотника - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="O2_MASKS_CREW_STIMS" lvl="0" blue="false" max_group="49" hidden="false"><text>Выбрать.</text><event><augment name="O2_MASKS_CREW_STIMS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-125" max="-125"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY" lvl="1" blue="false" max_group="50" hidden="true"><text>Выбрать [Продвинутые наноботы - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY" lvl="0" blue="false" max_group="50" hidden="false"><text>Выбрать.</text><event><augment name="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="ENERGY_SHIELD_ZOLTAN_BYPASS" lvl="1" blue="false" max_group="51" hidden="true"><text>Выбрать [Технологии золтанцев - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="ENERGY_SHIELD_ZOLTAN_BYPASS" lvl="0" blue="false" max_group="51" hidden="false"><text>Выбрать.</text><event><augment name="ENERGY_SHIELD_ZOLTAN_BYPASS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-145" max="-145"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="SLUG_GEL_FIRE_EXTINGUISHERS" lvl="1" blue="false" max_group="52" hidden="true"><text>Выбрать [Система безопасности - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SLUG_GEL_FIRE_EXTINGUISHERS" lvl="0" blue="false" max_group="52" hidden="false"><text>Выбрать.</text><event><augment name="SLUG_GEL_FIRE_EXTINGUISHERS"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-115" max="-115"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="CRYSTAL_SHARDS_ROCK_ARMOR" lvl="1" blue="false" max_group="53" hidden="true"><text>Выбрать [Композитная броня - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="CRYSTAL_SHARDS_ROCK_ARMOR" lvl="0" blue="false" max_group="53" hidden="false"><text>Выбрать.</text><event><augment name="CRYSTAL_SHARDS_ROCK_ARMOR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-120" max="-120"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="SYSTEM_CASING_ION_ARMOR" lvl="1" blue="false" max_group="54" hidden="true"><text>Выбрать [Защитное поле - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SYSTEM_CASING_ION_ARMOR" lvl="0" blue="false" max_group="54" hidden="false"><text>Выбрать.</text><event><augment name="SYSTEM_CASING_ION_ARMOR"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-125" max="-125"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="FTL_JUMPER_DRONE_RECOVERY" lvl="1" blue="false" max_group="55" hidden="true"><text>Выбрать [Навигационный механизм - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="FTL_JUMPER_DRONE_RECOVERY" lvl="0" blue="false" max_group="55" hidden="false"><text>Выбрать.</text><event><augment name="FTL_JUMPER_DRONE_RECOVERY"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="FTL_BOOSTER_FTL_JAMMER" lvl="1" blue="false" max_group="56" hidden="true"><text>Выбрать [FTL-контроллер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="FTL_BOOSTER_FTL_JAMMER" lvl="0" blue="false" max_group="56" hidden="false"><text>Выбрать.</text><event><augment name="FTL_BOOSTER_FTL_JAMMER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="WEAPON_PREIGNITE_AUTO_COOLDOWN" lvl="1" blue="false" max_group="57" hidden="true"><text>Выбрать [Компенсатор перезарядки - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="WEAPON_PREIGNITE_AUTO_COOLDOWN" lvl="0" blue="false" max_group="57" hidden="false"><text>Выбрать.</text><event><augment name="WEAPON_PREIGNITE_AUTO_COOLDOWN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="SHIELD_RECHARGE_CLOAK_FIRE" lvl="1" blue="false" max_group="58" hidden="true"><text>Выбрать [Маскировочный барьер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SHIELD_RECHARGE_CLOAK_FIRE" lvl="0" blue="false" max_group="58" hidden="false"><text>Выбрать.</text><event><augment name="SHIELD_RECHARGE_CLOAK_FIRE"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="ADV_SCANNERS_LIFE_SCANNER" lvl="1" blue="false" max_group="59" hidden="true"><text>Выбрать [Продвинутый сканер - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="ADV_SCANNERS_LIFE_SCANNER" lvl="0" blue="false" max_group="59" hidden="false"><text>Выбрать.</text><event><augment name="ADV_SCANNERS_LIFE_SCANNER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="SCRAP_COLLECTOR_REPAIR_ARM" lvl="1" blue="false" max_group="60" hidden="true"><text>Выбрать [Продвинутый манипулятор - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SCRAP_COLLECTOR_REPAIR_ARM" lvl="0" blue="false" max_group="60" hidden="false"><text>Выбрать.</text><event><augment name="SCRAP_COLLECTOR_REPAIR_ARM"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="BACKUP_DNA_TELEPORT_HEAL" lvl="1" blue="false" max_group="61" hidden="true"><text>Выбрать [Модуль сохранности - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="BACKUP_DNA_TELEPORT_HEAL" lvl="0" blue="false" max_group="61" hidden="false"><text>Выбрать.</text><event><augment name="BACKUP_DNA_TELEPORT_HEAL"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="DEFENSE_SCRAMBLER_HACKING_STUN" lvl="1" blue="false" max_group="62" hidden="true"><text>Выбрать [Снаряжение хакера - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="DEFENSE_SCRAMBLER_HACKING_STUN" lvl="0" blue="false" max_group="62" hidden="false"><text>Выбрать.</text><event><augment name="DEFENSE_SCRAMBLER_HACKING_STUN"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="FLEET_DISTRACTION_BATTERY_BOOSTER" lvl="1" blue="false" max_group="63" hidden="true"><text>Выбрать [Вспомогательный модуль - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="FLEET_DISTRACTION_BATTERY_BOOSTER" lvl="0" blue="false" max_group="63" hidden="false"><text>Выбрать.</text><event><augment name="FLEET_DISTRACTION_BATTERY_BOOSTER"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="EXPLOSIVE_REPLICATOR_DRONE_SPEED" lvl="1" blue="false" max_group="64" hidden="true"><text>Выбрать [Модуль поддержки - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="EXPLOSIVE_REPLICATOR_DRONE_SPEED" lvl="0" blue="false" max_group="64" hidden="false"><text>Выбрать.</text><event><augment name="EXPLOSIVE_REPLICATOR_DRONE_SPEED"/><variable name="ship_assembly_installed_aug" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<!-- 1.33 -->
+	<choice req="SECTOR_SCANNER" lvl="1" blue="false" max_group="65" hidden="true"><text>Выбрать [Сканер секторов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="SECTOR_SCANNER" lvl="0" blue="false" max_group="65" hidden="false"><text>Выбрать встроенное усиление: Сканер секторов.</text><event><hiddenAug>SECTOR_SCANNER</hiddenAug><variable name="installed_SECTOR_SCANNER" op="set" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="TRICOLOR_AUG" lvl="1" blue="false" max_group="66" hidden="true"><text>Выбрать [Сканер секторов - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="TRICOLOR_AUG" lvl="0" blue="false" max_group="66" hidden="false"><text>Выбрать встроенное усиление: Радиолокатор</text><event><hiddenAug>TRICOLOR_AUG</hiddenAug><variable name="installed_TRICOLOR_AUG" op="set" val="1"/><queueEvent seeded="false">TRICOLOR_MAP</queueEvent><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+	<choice req="HIVE" lvl="1" blue="false" max_group="67" hidden="true"><text>Выбрать [Улей - установлено].</text><event load="NOT_AVAILABLE"/></choice>
+	<choice req="HIVE" lvl="0" blue="false" max_group="67" hidden="false"><text>Выбрать встроенное усиление: Улей</text><event><hiddenAug>HIVE</hiddenAug><variable name="installed_HIVE" op="set" val="1"/><item_modify><item type="scrap" min="-10" max="-10"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 	<choice hidden="true" req="ship_assembly_free_mode" lvl="0" blue="false" max_group="100"><!-- формальное требование выполняющееся всегда. нужно чтоб подвинуть вниз этот пункт меню-->
 		<text>Назад.</text>
 		<event load="END_BUY_TRIG"/>
@@ -969,7 +1004,7 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="HEAVY_MINIGUN"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-105" max="-105"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AL_1"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AL_2"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AUTO_CHAIN"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AUTO_CHAIN"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_BURST_1"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-25" max="-25"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_BURST_2"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-80" max="-80"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_BURST_3"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -1179,7 +1214,7 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_ONI"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_IFRIT"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-70" max="-70"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_PERYTON"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_COCKATRICE"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_COCKATRICE"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_SIMURGH"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-55" max="-55"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="MISSILES_BURST"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_SWARM_1"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-25" max="-25"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -1222,7 +1257,7 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_HULL_SMALL_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_4_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_PERYTON_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_COCKATRICE_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_COCKATRICE_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_SIMURGH_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-55" max="-55"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_FIRE_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BA_MISSILES_ONI_M"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -1286,7 +1321,7 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="KERNEL_CHAIN_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AL_1_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AL_2_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AUTO_CHAIN_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_AUTO_CHAIN_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_CHAINGUN_HEAVY_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-110" max="-110"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_CHAINGUN_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-95" max="-95"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_CHAIN_1_RDY"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -1508,7 +1543,7 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_MISSILES_3"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-45" max="-45"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_4"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_ASTERIA"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-25" max="-25"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
-			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_COCKATRICE"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_COCKATRICE"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_HULL_SMALL"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_ONI"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="UWB_BA_MISSILES_PERYTON"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -1691,7 +1726,7 @@
 	</choice>
 	
 	<choice hidden="true" blue="false">
-		<text>Особые орудия</text>
+		<text>Особые орудия (осторожно, спойлеры!)</text><!-- 1.33 -->
 		<event>
 			<text>Выберите орудие для установки.</text>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="ION_BLAST_1B"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -1764,12 +1799,21 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BOULDERGUN2"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BOULDERGUN_HOT"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_BURST_6_MIMICAL"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_SNIPER_1P"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->	
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_SNIPER_2P"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-70" max="-70"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->	
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_SNIPER_3P"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-80" max="-80"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->	
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_SNIPER_1PP"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-80" max="-80"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->	
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_SNIPER_2PP"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-90" max="-90"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->	
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_SNIPER_3PP"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->			
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="CYCLED_WEAPON"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="CYCLED_WEAPON2"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="CYCLED_WEAPON3"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="LASER_ALIVE"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+			<choice req="SOULREAPER1" lvl="1" blue="false" max_group="0" hidden="true"><text>Только один Душегуб доступен.</text><event load="NOT_AVAILABLE"/></choice><!-- 1.33 -->
+			<choice req="SOULREAPER1" lvl="0" hidden="false" blue="false" max_group="0"><text>Выбрать.</text><event><weapon name="SOULREAPER1"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-100" max="-100"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->			
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><weapon name="BEAM_ANNIHILATOR"/><variable name="ship_assembly_installed_weapons" op="add" val="1"/><item_modify><item type="scrap" min="-300" max="-300"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			
-			<choice hidden="true"><text>Назад.</text><event><loadEvent>PREPARE_CAREFULLY_FOR_FTL_WEAPONS</loadEvent></event></choice>
+			<choice req="pilot" hidden="true" blue="false" max_group="100"><text>Назад.</text><event><loadEvent>PREPARE_CAREFULLY_FOR_FTL_WEAPONS</loadEvent></event></choice>
 		</event>
 	</choice>
 	
@@ -1903,6 +1947,9 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_MISSILE_STUN_2"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_1"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-30" max="-30"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_2"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_2_SMART1"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-55" max="-55"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_2_SMART2"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_2_SMART3"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_SCATTER"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-35" max="-35"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_MISSILE"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_LIGHT_MISSILE_FIRE"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -2005,7 +2052,7 @@
 		</event>
 	</choice>
 	<choice hidden="true" blue="false">
-		<text>Особые дроны</text>
+		<text>Особые дроны (осторожно, спойлеры!)</text>
 		<event>
 			<text>Выберите дрона для установки.</text>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_MINE_SMALLP"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-40" max="-40"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
@@ -2024,6 +2071,7 @@
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="COMBATDRONE_HAMELEON"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-80" max="-80"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="MAGMAN_DRONE_1"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-50" max="-50"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="MAGMAN_DRONE_2"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-70" max="-70"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
+			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="BOARDER_IONFIRE"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-90" max="-90"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice><!-- 1.33 -->
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_DEFENSE_UNIVERSAL_1"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-60" max="-60"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DE_DRONE_DEFENSE_UNIVERSAL_2"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-70" max="-70"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>
 			<choice hidden="false" blue="false"><text>Выбрать.</text><event><drone name="DRONE_UNIX"/><variable name="ship_assembly_installed_drones" op="add" val="1"/><item_modify><item type="scrap" min="-65" max="-65"/></item_modify><queueEvent>END_BUY_TRIG</queueEvent></event></choice>

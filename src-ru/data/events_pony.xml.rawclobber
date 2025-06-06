@@ -5,7 +5,7 @@
 
 <!-- PONY GAME -->
 
-<event name="PONY_GAME2">
+<event name="PONY_GAME2" unique="true"><!-- 1.33 -->
 	<text>В космосе мимо вас проплывает какой-то странный объект, похожий на гигантских размеров монитор. Внезапно монитор включается и откуда-то на вашем корабле раздаётся ностальгическая мелодия. Где-то вы её слышали...</text>
 	<choice hidden="true">
 		<text>Подлететь поближе.</text>
@@ -4444,18 +4444,18 @@
 </event>
 <event name="PONY_MONITOR_BATTLE">
 	<clearBackgroundObject/>
-	<ship load="PONY_MONITOR_SHIPS_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="PONY_MONITOR_SHIPS_PARAM" hostile="true"/>
 	<triggeredEvent name="TRG_PL_PONY" event="PONY_MONITOR_BATTLE_CYCLED_BADEVENTS1" seeded="false" minTime="25.0" maxTime="30.0"/>
 </event>
 <ship name="PONY_MONITOR_SHIPS_PARAM" auto_blueprint="PONY_MONITOR_SHIPS">
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Странный объект внезапно сбежал в неизвестном направлении...</text>
 		<queueEvent>PONY_CLEAR_TRIGGERS</queueEvent>
 		<clearTriggeredEvent name="TRG_PL_PONY"/>
 		<clearBackgroundObject/>
 		<playMusic/>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Уничтожив противника, вы собираете всё уцелевшее...</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<metaVariable name="pony_laser_on" op="set" val="0"/>
@@ -4466,7 +4466,7 @@
 		<queueEvent>PONY_ADD_REWARD</queueEvent>
 		<playMusic/>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж противника, вы собираете всё уцелевшее...</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<metaVariable name="pony_laser_on" op="set" val="0"/>
@@ -4515,7 +4515,7 @@
 					<crewMember amount="-1" class="traitor"/>
 				</event>
 				<event>
-					<instantEscape/><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+					<instantEscape/>
 				</event>
 			</loadEventList>
 		</event>

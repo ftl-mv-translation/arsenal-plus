@@ -174,7 +174,7 @@ STRUCTURE SECTORS
 <!--FINAL - The sector with the boss -->
 <sectorDescription name="FINAL" minSector="7" unique="true">
 	<nameList>
-		<name id="sectorname_FINAL" short="sectorname_short_FINAL" />
+		<name id="sectorname_FINAL" short="sectorname_short_FINAL"/>
 	</nameList>
 	<trackList>
 		<track>laststand</track>
@@ -293,6 +293,13 @@ CIVILIAN SECTORS
 		<blueprint name="BA_BOMB_FIRE_2" rarity="0"/>
 		<blueprint name="BA_BOMB_CLUSTER_FIRE" rarity="0"/>
 		<blueprint name="BOMB_HEALFIRE" rarity="0"/>
+		<!-- 1.33 -->
+		<blueprint name="MISSILES_AREM" rarity="0"/>
+		<blueprint name="MISSILES_AREM_2" rarity="0"/>
+		<blueprint name="MISSILES_AREM_3" rarity="0"/>
+		<blueprint name="MISSILES_VAMPIRE" rarity="0"/>
+		<blueprint name="MISSILES_DRILL_1" rarity="0"/>
+		<blueprint name="MISSILES_DRILL_2" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_ORCHID</startEvent>
 	<event name="STORE_ORCHID" min="2" max="3"/>
@@ -379,6 +386,13 @@ CIVILIAN SECTORS
 		<blueprint name="BA_BOMB_FIRE_2" rarity="0"/>
 		<blueprint name="BA_BOMB_CLUSTER_FIRE" rarity="0"/>
 		<blueprint name="BOMB_HEALFIRE" rarity="0"/>
+		<!-- 1.33 -->
+		<blueprint name="MISSILES_AREM" rarity="0"/>
+		<blueprint name="MISSILES_AREM_2" rarity="0"/>
+		<blueprint name="MISSILES_AREM_3" rarity="0"/>
+		<blueprint name="MISSILES_VAMPIRE" rarity="0"/>
+		<blueprint name="MISSILES_DRILL_1" rarity="0"/>
+		<blueprint name="MISSILES_DRILL_2" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_ORCHID</startEvent>
 	<event name="ORCHID_BOSS_EVENT" min="1" max="1"/>
@@ -435,6 +449,7 @@ CIVILIAN SECTORS
 	</trackList>
 	<rarityList><!-- 1.32 -->
 		<blueprint name="DRONE_IONBEAM" rarity="1"/>
+		<blueprint name="DRONE_SHIELD_PLAYER" rarity="1"/><!-- 1.33 -->
 	</rarityList>
 	<startEvent>START_BEACON_TRADE</startEvent>
 	<!-- <event name="STORE" min="4" max="4"/> --> <!-- 1.23 -->
@@ -521,7 +536,7 @@ CIVILIAN SECTORS
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
 	</rarityList>
 	<startEvent>START_BEACON_ENGI</startEvent>
-	<priorityEvent name="ENGI_VIRUS" min="1" max="1" priority="0" />
+	<priorityEvent name="ENGI_VIRUS" min="1" max="1" priority="0"/>
 	<event name="CIRCLE_PRO_EVENT" min="1" max="1"/>
 	<event name="REPAIR_ENGI_HOME" min="1" max="1"/>
 	<event name="ENGI_UNLOCK_1" min="1" max="1"/>
@@ -834,12 +849,14 @@ HOSTILE SECTORS
 		<blueprint name="magman_b" rarity="5"/><!-- 1.31 -->
 	</rarityList>
 	<startEvent>START_BEACON_ORDEN</startEvent>
+	<event name="BOARDERS_ORDEN_BOSS" min="1" max="1"/>
+	<event name="DISTRESS_BEACON_ORDEN" min="1" max="2"/>
 	<event name="ORDEN_DREDNOUT_QUEST" min="1" max="1"/>
 	<event name="ORDEN_STATION_EVENT" min="1" max="1"/>	
 	<event name="STORE_ORDEN" min="1" max="2"/>
 	<event name="ITEMS_ORDEN" min="1" max="2"/>
 	<event name="HOSTILE_ORDEN" min="6" max="8"/>
-	<event name="BOARDERS_ORDEN" min="1" max="1"/>
+	<!-- <event name="BOARDERS_ORDEN" min="1" max="1"/> --><!-- 1.33 -->
 	<event name="DISTRESS_BEACON_ORDEN" min="1" max="2"/>
 	<event name="NEBULA_ORDEN" min="0" max="5"/>
 	<event name="NOTHING_ORDEN" min="0" max="1"/>
@@ -1251,7 +1268,7 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
-	<priorityEvent name="NEBULA_AI_CORE" min="1" max="1" priority="0" />
+	<priorityEvent name="NEBULA_AI_CORE" min="1" max="1" priority="0"/>
 	<startEvent>START_BEACON_AVATAR</startEvent>
 	<event name="NEBULA_AVATAR_PRO_EVENT" min="1" max="1"/>
 	<event name="NEBULA_MOTHERSHIP" min="1" max="1"/>
@@ -1316,7 +1333,7 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
 	</rarityList>
-	<priorityEvent name="NEBULA_LEG_STORE_SLUG" min="1" max="1" priority="0" /><!-- 1.31 -->
+	<priorityEvent name="NEBULA_LEG_STORE_SLUG" min="1" max="1" priority="0"/><!-- 1.31 -->
 	<startEvent>START_BEACON_SLUG</startEvent>
 	<event name="NEBULA_JELLY_PRO_EVENT" min="1" max="1"/>
 	<event name="NEBULA_SLUG_FIGHT_UNLOCK" min="1" max="1"/>
@@ -1983,7 +2000,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 	<!--<event name="STORE" min="2" max="4"/>-->
 	
 	<startEvent>START_BEACON_ROCK</startEvent>
-	<priorityEvent name="ROCK_QUEST_MARRIAGE_START" min="1" max="1" priority="0" />
+	<priorityEvent name="ROCK_QUEST_MARRIAGE_START" min="1" max="1" priority="0"/>
 	<event name="ROCK_PRO_EVENT" min="1" max="1"/>
 	<event name="ROCK_BOSS" min="1" max="1"/> 
 	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/> <!-- CRYSTAL UNLOCK-->
@@ -2301,7 +2318,9 @@ HIDDEN SECTORS
 		<blueprint name="RICOCHET_GUN_1" rarity="0"/>
 		<blueprint name="RICOCHET_GUN_2" rarity="0"/>
 		<blueprint name="MISSILES_DRILL_1" rarity="0"/>
-		
+		<!-- 1.33 -->
+		<blueprint name="LASER_SNIPER_1" rarity="0"/>
+		<blueprint name="LASER_SNIPER_2" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_CRYSTAL</startEvent>
 	<event name="STORE_CRYSTAL" min="2" max="3"/>
@@ -2402,7 +2421,7 @@ HIDDEN SECTORS
 		<blueprint name="energy_w" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_LANIUS</startEvent>
-	<priorityEvent name="LANIUS_TRADER_TRANSLATOR" min="1" max="1" priority="0" />
+	<priorityEvent name="LANIUS_TRADER_TRANSLATOR" min="1" max="1" priority="0"/>
 	<event name="ANAEROBIC_PRO_EVENT" min="1" max="1"/>
 	<event name="ASTEROID_DREDNOUT" min="1" max="1"/><!-- 1.22 -->
 	<event name="STORE_LANIUS" min="1" max="2"/>

@@ -80,14 +80,14 @@
 	<class>Разрушитель повстанцев</class>
 	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
-		<clonebay power="1" max="3" room="2" start="false" />
-		<drones power="2" max="8" room="5" start="true" /><!-- 1.31 -->
-		<engines power="1" max="3" room="3" start="true" /><!-- 1.31 -->
-		<hacking power="1" max="1" room="4" start="false" />
-		<oxygen power="1" max="2" room="0" start="true" />
-		<pilot power="1" max="2" room="1" start="true" />
-		<shields power="2" max="8" room="6" start="true" />
-		<weapons power="1" max="6" room="7" start="true" />
+		<clonebay power="1" max="3" room="2" start="false"/>
+		<drones power="2" max="8" room="5" start="true"/><!-- 1.31 -->
+		<engines power="1" max="3" room="3" start="true"/><!-- 1.31 -->
+		<hacking power="1" max="1" room="4" start="false"/>
+		<oxygen power="1" max="2" room="0" start="true"/>
+		<pilot power="1" max="2" room="1" start="true"/>
+		<shields power="2" max="8" room="6" start="true"/>
+		<weapons power="1" max="6" room="7" start="true"/>
 	</systemList>
 	<droneList drones="4" load="DRONES_STANDARD"/>
 	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25 -->  
@@ -101,14 +101,14 @@
 	<class>Разрушитель повстанцев</class>
 	<minSector>2</minSector><!-- 1.32 -->
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="false" />
-		<drones power="2" max="8" room="4" start="true" /><!-- 1.31 -->
-		<engines power="1" max="3" room="3" start="true" /><!-- 1.31 -->
-		<hacking power="1" max="1" room="6" start="false" />
-		<oxygen power="1" max="2" room="7" start="true" />
-		<pilot power="1" max="2" room="0" start="true" />
-		<shields power="2" max="8" room="1" start="true" />
-		<weapons power="1" max="6" room="2" start="true" />
+		<clonebay power="1" max="3" room="5" start="false"/>
+		<drones power="2" max="8" room="4" start="true"/><!-- 1.31 -->
+		<engines power="1" max="3" room="3" start="true"/><!-- 1.31 -->
+		<hacking power="1" max="1" room="6" start="false"/>
+		<oxygen power="1" max="2" room="7" start="true"/>
+		<pilot power="1" max="2" room="0" start="true"/>
+		<shields power="2" max="8" room="1" start="true"/>
+		<weapons power="1" max="6" room="2" start="true"/>
 	</systemList>
 	<droneList drones="4" load="DRONES_STANDARD"/>
 	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25 -->  
@@ -139,13 +139,13 @@
 <shipBlueprint name="REBEL_SKINNY_DLC_2" layout="rebel_skinny_dlc_2" img="rebel_long">
 	<class>Захватчик повстанцев</class>
 	<systemList>
-		<clonebay power="1" max="2" room="4" start="false" />
-		<engines power="2" max="5" room="7" start="true" />
-		<oxygen power="1" max="2" room="6" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="2" start="true" />
-		<teleporter power="1" max="1" room="5" start="false" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<clonebay power="1" max="2" room="4" start="false"/>
+		<engines power="2" max="5" room="7" start="true"/>
+		<oxygen power="1" max="2" room="6" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<teleporter power="1" max="1" room="5" start="false"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25 --> 
 	<health amount="10"/>	
@@ -157,13 +157,13 @@
 <shipBlueprint name="REBEL_SKINNY_DLC_3" layout="rebel_skinny_dlc_3" img="rebel_long">
 	<class>Захватчик повстанцев</class>
 	<systemList>
-		<clonebay power="1" max="2" room="4" start="false" />
-		<engines power="2" max="5" room="2" start="true" />
-		<oxygen power="1" max="2" room="5" start="true" />
-		<pilot power="1" max="3" room="6" start="true" />
-		<shields power="2" max="8" room="0" start="true" />
-		<teleporter power="1" max="1" room="3" start="false" />
-		<weapons power="2" max="8" room="1" start="true" />
+		<clonebay power="1" max="2" room="4" start="false"/>
+		<engines power="2" max="5" room="2" start="true"/>
+		<oxygen power="1" max="2" room="5" start="true"/>
+		<pilot power="1" max="3" room="6" start="true"/>
+		<shields power="2" max="8" room="0" start="true"/>
+		<teleporter power="1" max="1" room="3" start="false"/>
+		<weapons power="2" max="8" room="1" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25 --> 
 	<health amount="10"/>	
@@ -193,13 +193,13 @@
 <shipBlueprint name="REBEL_SKINNY_ELITE_DLC_2" layout="rebel_skinny_elite_dlc_2" img="rebel_long_elite">
 	<class>Элитный штурмовик</class>
 	<systemList>
-		<clonebay power="1" max="3" room="1" start="true" />
-		<engines power="3" max="5" room="3" start="true" />
-		<oxygen power="1" max="2" room="2" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="4" max="8" room="6" start="true" />
-		<teleporter power="1" max="3" room="5" start="false" />
-		<weapons power="4" max="10" room="4" start="true" /><!-- 1.21 -->
+		<clonebay power="1" max="3" room="1" start="true"/>
+		<engines power="3" max="5" room="3" start="true"/>
+		<oxygen power="1" max="2" room="2" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="4" max="8" room="6" start="true"/>
+		<teleporter power="1" max="3" room="5" start="false"/>
+		<weapons power="4" max="10" room="4" start="true"/><!-- 1.21 -->
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25 --> 
 	<health amount="14"/>	
@@ -211,13 +211,13 @@
 <shipBlueprint name="REBEL_SKINNY_ELITE_DLC_3" layout="rebel_skinny_elite_dlc_3" img="rebel_long_elite">
 	<class>Элитный штурмовик</class>
 	<systemList>
-		<clonebay power="1" max="3" room="1" start="true" />
-		<engines power="3" max="5" room="3" start="true" />
-		<oxygen power="1" max="2" room="2" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="4" max="8" room="6" start="true" />
-		<teleporter power="1" max="3" room="5" start="false" />
-		<weapons power="4" max="10" room="4" start="true" /><!-- 1.21 -->
+		<clonebay power="1" max="3" room="1" start="true"/>
+		<engines power="3" max="5" room="3" start="true"/>
+		<oxygen power="1" max="2" room="2" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="4" max="8" room="6" start="true"/>
+		<teleporter power="1" max="3" room="5" start="false"/>
+		<weapons power="4" max="10" room="4" start="true"/><!-- 1.21 -->
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_REBEL"/><!-- 1.25 --> 
 	<health amount="14"/>	
@@ -243,19 +243,19 @@
 <shipBlueprint name="REBEL_SKINNY_ELITE_X" layout="rebel_long_elite_x" img="rebel_long_elite_x">
 	<class>Крейсер чёрного крыла</class>
 	<systemList>
-		<clonebay power="1" max="3" room="6" start="true" />
-		<doors power="1" max="3" room="7" start="true" />
-		<engines power="3" max="8" room="5" start="true" /> 
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="4" max="10" room="1" start="true" />
-		<teleporter power="1" max="3" room="4" start="false" />
-		<weapons power="5" max="10" room="2" start="true" />
+		<clonebay power="1" max="3" room="6" start="true"/>
+		<doors power="1" max="3" room="7" start="true"/>
+		<engines power="3" max="8" room="5" start="true"/> 
+		<oxygen power="1" max="3" room="3" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="4" max="10" room="1" start="true"/>
+		<teleporter power="1" max="3" room="4" start="false"/>
+		<weapons power="5" max="10" room="2" start="true"/>
 	</systemList>
-	<weaponList missiles="12" count="4" load="WEAPONS_BLACK_WING" /> <!-- 1.32 -->
-	<health amount="16" />
-	<maxPower amount="16" />
-	<crewCount amount="5" max="8" class="human" />
+	<weaponList missiles="12" count="4" load="WEAPONS_BLACK_WING"/> <!-- 1.32 -->
+	<health amount="16"/>
+	<maxPower amount="16"/>
+	<crewCount amount="5" max="8" class="human"/>
 	<aug name="FIRE_EXTINGUISHERS"/>
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
@@ -263,19 +263,19 @@
 <shipBlueprint name="REBEL_SKINNY_ELITE_X2" layout="rebel_long_elite_x" img="rebel_long_elite_x">
 	<class>Крейсер чёрного крыла</class>
 	<systemList>
-		<medbay power="1" max="3" room="6" start="true" />
-		<doors power="1" max="3" room="7" start="true" />
-		<engines power="3" max="8" room="5" start="true" /> 
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="4" max="10" room="1" start="true" />
-		<teleporter power="1" max="3" room="4" start="false" />
-		<weapons power="5" max="10" room="2" start="true" />
+		<medbay power="1" max="3" room="6" start="true"/>
+		<doors power="1" max="3" room="7" start="true"/>
+		<engines power="3" max="8" room="5" start="true"/> 
+		<oxygen power="1" max="3" room="3" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="4" max="10" room="1" start="true"/>
+		<teleporter power="1" max="3" room="4" start="false"/>
+		<weapons power="5" max="10" room="2" start="true"/>
 	</systemList>
-	<weaponList missiles="12" count="4" load="WEAPONS_BLACK_WING" /> <!-- 1.32 -->
-	<health amount="16" />
-	<maxPower amount="16" />
-	<crewCount amount="5" max="8" class="human" />
+	<weaponList missiles="12" count="4" load="WEAPONS_BLACK_WING"/> <!-- 1.32 -->
+	<health amount="16"/>
+	<maxPower amount="16"/>
+	<crewCount amount="5" max="8" class="human"/>
 	<aug name="FIRE_EXTINGUISHERS"/>
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
@@ -284,28 +284,28 @@
 	<class>Дредноут чёрного крыла</class>
 	<minSector>4</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="true" />
-		<doors power="1" max="3" room="1" start="false" />
-		<drones power="4" max="4" room="12" start="true" />
-		<engines power="1" max="8" room="3" start="true" />
-		<teleporter power="1" max="3" room="6" start="false" />
-		<oxygen power="1" max="3" room="7" start="true" />
-		<pilot power="1" max="3" room="2" start="true" />
-		<shields power="4" max="10" room="11" start="true" />
-		<weapons power="5" max="10" room="4" start="true" /> <!-- 1.31 -->
+		<clonebay power="1" max="3" room="5" start="true"/>
+		<doors power="1" max="3" room="1" start="false"/>
+		<drones power="4" max="4" room="12" start="true"/>
+		<engines power="1" max="8" room="3" start="true"/>
+		<teleporter power="1" max="3" room="6" start="false"/>
+		<oxygen power="1" max="3" room="7" start="true"/>
+		<pilot power="1" max="3" room="2" start="true"/>
+		<shields power="4" max="10" room="11" start="true"/>
+		<weapons power="5" max="10" room="4" start="true"/> <!-- 1.31 -->
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>4</droneSlots>
-	<weaponList missiles="12" load="WEAPONS_BLACK_WING" /> <!-- 1.32 -->
+	<weaponList missiles="12" load="WEAPONS_BLACK_WING"/> <!-- 1.32 -->
 	<droneList count="4" drones="4">
 		<drone name="BOARDER_FTL_DISABLER"/>
 		<drone name="DE_BOARDER_3"/>
 		<drone name="DE_BOARDER_3"/>
 		<drone name="DE_BOARDER_3"/>
 	</droneList>
-	<health amount="18" />
-	<maxPower amount="18" />
-	<crewCount amount="5" max="8" class="human" />
+	<health amount="18"/>
+	<maxPower amount="18"/>
+	<crewCount amount="5" max="8" class="human"/>
 	<aug name="FIRE_EXTINGUISHERS"/>
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
@@ -332,33 +332,33 @@
 <shipBlueprint name="AUTO_BASIC_DLC_2" layout="auto_basic_dlc_2" img="auto_basic_dlc_2"><!-- 1.25 --> <!-- new xml -->
 	<class>Авто-истребитель</class> <!-- 1.26 --> <!-- incorrect name -->
 	<systemList>
-		<engines power="2" max="8" room="0" start="true" />
-		<mind power="1" max="2" room="3" start="false" />
-		<pilot power="1" max="2" room="2" start="true" />
-		<shields power="2" max="8" room="1" start="false" />
-		<weapons power="2" max="8" room="4" start="true" />
+		<engines power="2" max="8" room="0" start="true"/>
+		<mind power="1" max="2" room="3" start="false"/>
+		<pilot power="1" max="2" room="2" start="true"/>
+		<shields power="2" max="8" room="1" start="false"/>
+		<weapons power="2" max="8" room="4" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25 --> 
-	<health amount="6" />
-	<maxPower amount="6" />
+	<health amount="6"/>
+	<maxPower amount="6"/>
 	<crewCount amount="0" max="0" class="human"/>
 </shipBlueprint>
 
 <shipBlueprint name="AUTO_BASIC_DLC_3" layout="auto_basic_dlc_3" img="auto_basic_dlc_2"><!-- 1.25 --> <!-- new xml -->
 	<class>Авто-истребитель</class> <!-- 1.26 --> <!-- incorrect name -->
 	<systemList>
-		<engines power="2" max="8" room="3" start="true" />
-		<mind power="1" max="2" room="4" start="false" />
-		<pilot power="1" max="2" room="1" start="true" />
-		<shields power="2" max="8" room="0" start="false" />
-		<weapons power="2" max="8" room="2" start="true" />
+		<engines power="2" max="8" room="3" start="true"/>
+		<mind power="1" max="2" room="4" start="false"/>
+		<pilot power="1" max="2" room="1" start="true"/>
+		<shields power="2" max="8" room="0" start="false"/>
+		<weapons power="2" max="8" room="2" start="true"/>
 	</systemList>
 	<weaponSlots>4</weaponSlots>
 	<droneSlots>2</droneSlots>
 	<weaponList missiles="6" load="WEAPONS_AUTO"/><!-- 1.25 --> 
-	<droneList drones="0" count="2" />
-	<health amount="6" />
-	<maxPower amount="6" />
+	<droneList drones="0" count="2"/>
+	<health amount="6"/>
+	<maxPower amount="6"/>
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
 
@@ -437,11 +437,11 @@
 	<class>Разведчик слагов</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<engines power="1" max="8" room="4" start="true" />
-		<oxygen power="1" max="3" room="2" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="1" start="true" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<engines power="1" max="8" room="4" start="true"/>
+		<oxygen power="1" max="3" room="2" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="1" start="true"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_JELLY"/><!-- 1.25 --> 
 	<health amount="9"/>	
@@ -455,11 +455,11 @@
 	<class>Разведчик слагов</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<engines power="1" max="8" room="4" start="true" />
-		<oxygen power="1" max="3" room="1" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="2" start="true" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<engines power="1" max="8" room="4" start="true"/>
+		<oxygen power="1" max="3" room="1" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_JELLY"/><!-- 1.25 --> 
 	<health amount="9"/>	
@@ -494,13 +494,13 @@
 	<class>Истребитель слагов</class> <!-- 1.26 --> <!-- incorrect name -->
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="6" start="false" />
-		<engines power="1" max="6" room="2" start="true" />
-		<mind power="1" max="2" room="5" start="false" />
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="10" room="9" start="true" />
-		<weapons power="2" max="7" room="7" start="true" />
+		<clonebay power="1" max="3" room="6" start="false"/>
+		<engines power="1" max="6" room="2" start="true"/>
+		<mind power="1" max="2" room="5" start="false"/>
+		<oxygen power="1" max="3" room="3" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="10" room="9" start="true"/>
+		<weapons power="2" max="7" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_JELLY"/><!-- 1.25 --> 
 	<health amount="10"/>	
@@ -514,13 +514,13 @@
 	<class>Истребитель слагов</class> <!-- 1.26 --> <!-- incorrect name -->
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="4" start="false" />
-		<engines power="1" max="6" room="1" start="true" />
-		<mind power="1" max="2" room="3" start="false" />
-		<oxygen power="1" max="3" room="2" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="10" room="8" start="true" />
-		<weapons power="2" max="7" room="7" start="true" />
+		<clonebay power="1" max="3" room="4" start="false"/>
+		<engines power="1" max="6" room="1" start="true"/>
+		<mind power="1" max="2" room="3" start="false"/>
+		<oxygen power="1" max="3" room="2" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="10" room="8" start="true"/>
+		<weapons power="2" max="7" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_JELLY"/><!-- 1.25 --> 
 	<health amount="10"/>	
@@ -555,14 +555,14 @@
 	<class>Провокатор слагов</class>
 	<minSector>4</minSector>
 	<systemList>
-		<cloaking power="1" max="1" room="1" start="false" />
-		<clonebay power="1" max="3" room="6" start="false" />
-		<engines power="1" max="5" room="2" start="true" />
-		<mind power="1" max="2" room="3" start="false" />
-		<oxygen power="1" max="3" room="5" start="true" />
-		<pilot power="1" max="3" room="7" start="true" />
-		<shields power="2" max="10" room="4" start="true" />
-		<weapons power="2" max="9" room="0" start="true" />
+		<cloaking power="1" max="1" room="1" start="false"/>
+		<clonebay power="1" max="3" room="6" start="false"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<mind power="1" max="2" room="3" start="false"/>
+		<oxygen power="1" max="3" room="5" start="true"/>
+		<pilot power="1" max="3" room="7" start="true"/>
+		<shields power="2" max="10" room="4" start="true"/>
+		<weapons power="2" max="9" room="0" start="true"/>
 	</systemList>
 	<weaponList missiles="8" load="WEAPONS_JELLY"/><!-- 1.25 --> 
 	<health amount="11"/>	
@@ -576,14 +576,14 @@
 	<class>Провокатор слагов</class>
 	<minSector>4</minSector>
 	<systemList>
-		<cloaking power="1" max="1" room="7" start="false" />
-		<clonebay power="1" max="3" room="8" start="false" />
-		<engines power="1" max="5" room="1" start="true" />
-		<mind power="1" max="2" room="9" start="false" />
-		<oxygen power="1" max="3" room="6" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="10" room="2" start="true" />
-		<weapons power="2" max="9" room="3" start="true" />
+		<cloaking power="1" max="1" room="7" start="false"/>
+		<clonebay power="1" max="3" room="8" start="false"/>
+		<engines power="1" max="5" room="1" start="true"/>
+		<mind power="1" max="2" room="9" start="false"/>
+		<oxygen power="1" max="3" room="6" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="10" room="2" start="true"/>
+		<weapons power="2" max="9" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="8" load="WEAPONS_JELLY"/><!-- 1.25 --> 
 	<health amount="11"/>	
@@ -623,13 +623,13 @@
 	<class>Исследователь роков</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="false" />
-		<engines power="1" max="5" room="2" start="true" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="1" start="true" />
-		<teleporter power="1" max="2" room="6" start="false" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<clonebay power="1" max="3" room="5" start="false"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="1" start="true"/>
+		<teleporter power="1" max="2" room="6" start="false"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_ROCK"/><!-- 1.25 --> 
 	<health amount="8"/>	
@@ -643,13 +643,13 @@
 	<class>Исследователь роков</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="false" />
-		<engines power="1" max="5" room="2" start="true" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="7" start="true" />
-		<shields power="2" max="8" room="1" start="true" />
-		<teleporter power="1" max="2" room="6" start="false" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<clonebay power="1" max="3" room="5" start="false"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="7" start="true"/>
+		<shields power="2" max="8" room="1" start="true"/>
+		<teleporter power="1" max="2" room="6" start="false"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_ROCK"/><!-- 1.25 --> 
 	<health amount="8"/>	
@@ -684,14 +684,14 @@
 	<class>Перехватчик роков</class>
 	<minSector>2</minSector>
 	<systemList>
-		<cloaking power="1" max="1" room="1" start="false" />
-		<clonebay power="1" max="3" room="0" start="false" />
-		<engines power="2" max="5" room="3" start="true" />
-		<oxygen power="1" max="3" room="6" start="true" />
-		<pilot power="1" max="3" room="5" start="true" />
-		<shields power="2" max="8" room="4" start="true" />
-		<teleporter power="1" max="2" room="2" start="false" />
-		<weapons power="2" max="8" room="7" start="true" />
+		<cloaking power="1" max="1" room="1" start="false"/>
+		<clonebay power="1" max="3" room="0" start="false"/>
+		<engines power="2" max="5" room="3" start="true"/>
+		<oxygen power="1" max="3" room="6" start="true"/>
+		<pilot power="1" max="3" room="5" start="true"/>
+		<shields power="2" max="8" room="4" start="true"/>
+		<teleporter power="1" max="2" room="2" start="false"/>
+		<weapons power="2" max="8" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25 --> 
 	<health amount="10"/>	
@@ -705,14 +705,14 @@
 	<class>Перехватчик роков</class>
 	<minSector>2</minSector>
 	<systemList>
-		<cloaking power="1" max="1" room="1" start="false" />
-		<clonebay power="1" max="3" room="0" start="false" />
-		<engines power="2" max="5" room="2" start="true" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="6" start="true" />
-		<shields power="2" max="8" room="7" start="true" />
-		<teleporter power="1" max="2" room="3" start="false" />
-		<weapons power="2" max="8" room="5" start="true" />
+		<cloaking power="1" max="1" room="1" start="false"/>
+		<clonebay power="1" max="3" room="0" start="false"/>
+		<engines power="2" max="5" room="2" start="true"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="6" start="true"/>
+		<shields power="2" max="8" room="7" start="true"/>
+		<teleporter power="1" max="2" room="3" start="false"/>
+		<weapons power="2" max="8" room="5" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25 --> 
 	<health amount="10"/>	
@@ -750,15 +750,15 @@
 	<class>Агрессор роков</class>
 	<minSector>5</minSector>
 	<systemList>
-		<cloaking power="1" max="2" room="4" start="false" />
-		<clonebay power="1" max="2" room="1" start="false" />
-		<doors power="1" max="3" room="3" start="false" />
-		<engines power="2" max="5" room="7" start="true" />
-		<oxygen power="1" max="3" room="9" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="6" start="true" />
-		<teleporter power="1" max="2" room="2" start="false" />
-		<weapons power="2" max="8" room="5" start="true" />
+		<cloaking power="1" max="2" room="4" start="false"/>
+		<clonebay power="1" max="2" room="1" start="false"/>
+		<doors power="1" max="3" room="3" start="false"/>
+		<engines power="2" max="5" room="7" start="true"/>
+		<oxygen power="1" max="3" room="9" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="6" start="true"/>
+		<teleporter power="1" max="2" room="2" start="false"/>
+		<weapons power="2" max="8" room="5" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25 --> 
 	<health amount="12"/>	
@@ -772,15 +772,15 @@
 	<class>Агрессор роков</class>
 	<minSector>5</minSector>
 	<systemList>
-		<cloaking power="1" max="2" room="4" start="false" />
-		<clonebay power="1" max="2" room="1" start="false" />
-		<doors power="1" max="3" room="3" start="false" />
-		<engines power="2" max="5" room="7" start="true" />
-		<oxygen power="1" max="3" room="9" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="6" start="true" />
-		<teleporter power="1" max="2" room="2" start="false" />
-		<weapons power="2" max="8" room="5" start="true" />
+		<cloaking power="1" max="2" room="4" start="false"/>
+		<clonebay power="1" max="2" room="1" start="false"/>
+		<doors power="1" max="3" room="3" start="false"/>
+		<engines power="2" max="5" room="7" start="true"/>
+		<oxygen power="1" max="3" room="9" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="6" start="true"/>
+		<teleporter power="1" max="2" room="2" start="false"/>
+		<weapons power="2" max="8" room="5" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ROCK"/><!-- 1.25 --> 
 	<health amount="12"/>	
@@ -820,14 +820,14 @@
 	<class>Перехватчик мантисов</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<clonebay power="1" max="2" room="2" start="false" />
-		<doors power="1" max="2" room="1" start="false" />
-		<engines power="1" max="5" room="7" start="true" />
-		<oxygen power="1" max="3" room="0" start="true" />
-		<pilot power="1" max="3" room="3" start="true" />
-		<shields power="2" max="8" room="4" start="true" />
-		<teleporter power="1" max="2" room="5" start="false" />
-		<weapons power="2" max="7" room="6" start="true" />
+		<clonebay power="1" max="2" room="2" start="false"/>
+		<doors power="1" max="2" room="1" start="false"/>
+		<engines power="1" max="5" room="7" start="true"/>
+		<oxygen power="1" max="3" room="0" start="true"/>
+		<pilot power="1" max="3" room="3" start="true"/>
+		<shields power="2" max="8" room="4" start="true"/>
+		<teleporter power="1" max="2" room="5" start="false"/>
+		<weapons power="2" max="7" room="6" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_MANTIS"/><!-- 1.25 --> 
 	<health amount="7"/>	
@@ -841,14 +841,14 @@
 	<class>Перехватчик мантисов</class>
 	<maxSector>5</maxSector>
 	<systemList>
-		<clonebay power="1" max="2" room="2" start="false" />
-		<doors power="1" max="2" room="5" start="false" />
-		<engines power="1" max="5" room="1" start="true" />
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="3" room="4" start="true" />
-		<shields power="2" max="8" room="6" start="true" />
-		<teleporter power="1" max="2" room="0" start="false" />
-		<weapons power="2" max="7" room="7" start="true" />
+		<clonebay power="1" max="2" room="2" start="false"/>
+		<doors power="1" max="2" room="5" start="false"/>
+		<engines power="1" max="5" room="1" start="true"/>
+		<oxygen power="1" max="3" room="3" start="true"/>
+		<pilot power="1" max="3" room="4" start="true"/>
+		<shields power="2" max="8" room="6" start="true"/>
+		<teleporter power="1" max="2" room="0" start="false"/>
+		<weapons power="2" max="7" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_MANTIS"/><!-- 1.25 --> 
 	<health amount="7"/>	
@@ -883,14 +883,14 @@
 	<class>Штурмовик мантисов</class>
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="1" start="true" />
-		<doors power="1" max="3" room="0" start="false" />
-		<engines power="1" max="5" room="4" start="true" />
-		<oxygen power="1" max="3" room="2" start="true" />
-		<pilot power="1" max="3" room="5" start="true" />
-		<shields power="2" max="7" room="3" start="true" />
-		<teleporter power="1" max="2" room="7" start="true" />
-		<weapons power="1" max="7" room="6" start="true" />
+		<clonebay power="1" max="3" room="1" start="true"/>
+		<doors power="1" max="3" room="0" start="false"/>
+		<engines power="1" max="5" room="4" start="true"/>
+		<oxygen power="1" max="3" room="2" start="true"/>
+		<pilot power="1" max="3" room="5" start="true"/>
+		<shields power="2" max="7" room="3" start="true"/>
+		<teleporter power="1" max="2" room="7" start="true"/>
+		<weapons power="1" max="7" room="6" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_MANTIS"/><!-- 1.25 --> 
 	<health amount="9"/>	
@@ -904,14 +904,14 @@
 	<class>Штурмовик мантисов</class>
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="7" start="true" />
-		<doors power="1" max="3" room="0" start="false" />
-		<engines power="1" max="5" room="3" start="true" />
-		<oxygen power="1" max="3" room="2" start="true" />
-		<pilot power="1" max="3" room="1" start="true" />
-		<shields power="2" max="7" room="4" start="true" />
-		<teleporter power="1" max="2" room="5" start="true" />
-		<weapons power="1" max="7" room="9" start="true" />
+		<clonebay power="1" max="3" room="7" start="true"/>
+		<doors power="1" max="3" room="0" start="false"/>
+		<engines power="1" max="5" room="3" start="true"/>
+		<oxygen power="1" max="3" room="2" start="true"/>
+		<pilot power="1" max="3" room="1" start="true"/>
+		<shields power="2" max="7" room="4" start="true"/>
+		<teleporter power="1" max="2" room="5" start="true"/>
+		<weapons power="1" max="7" room="9" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_MANTIS"/><!-- 1.25 --> 
 	<health amount="9"/>	
@@ -946,14 +946,14 @@
 	<class>Агрессор мантисов</class>
 	<minSector>4</minSector>
 	<systemList>
-		<clonebay power="1" max="1" room="0" start="false" />
-		<doors power="1" max="3" room="12" start="false" />
-		<engines power="1" max="5" room="2" start="true" />
-		<oxygen power="1" max="3" room="11" start="true" />
-		<pilot power="1" max="3" room="3" start="true" />
-		<shields power="2" max="8" room="9" start="true" />
-		<teleporter power="1" max="2" room="1" start="true" />
-		<weapons power="2" max="8" room="7" start="true" />
+		<clonebay power="1" max="1" room="0" start="false"/>
+		<doors power="1" max="3" room="12" start="false"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<oxygen power="1" max="3" room="11" start="true"/>
+		<pilot power="1" max="3" room="3" start="true"/>
+		<shields power="2" max="8" room="9" start="true"/>
+		<teleporter power="1" max="2" room="1" start="true"/>
+		<weapons power="2" max="8" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="8" load="WEAPONS_MANTIS"/><!-- 1.25 --> 
 	<health amount="11"/>	
@@ -967,14 +967,14 @@
 	<class>Агрессор мантисов</class>
 	<minSector>4</minSector>
 	<systemList>
-		<clonebay power="1" max="1" room="0" start="false" />
-		<doors power="1" max="3" room="5" start="false" />
-		<engines power="1" max="5" room="2" start="true" />
-		<oxygen power="1" max="3" room="8" start="true" />
-		<pilot power="1" max="3" room="3" start="true" />
-		<shields power="2" max="8" room="9" start="true" />
-		<teleporter power="1" max="2" room="1" start="true" />
-		<weapons power="2" max="8" room="7" start="true" />
+		<clonebay power="1" max="1" room="0" start="false"/>
+		<doors power="1" max="3" room="5" start="false"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<pilot power="1" max="3" room="3" start="true"/>
+		<shields power="2" max="8" room="9" start="true"/>
+		<teleporter power="1" max="2" room="1" start="true"/>
+		<weapons power="2" max="8" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="8" load="WEAPONS_MANTIS"/><!-- 1.25 --> 
 	<health amount="11"/>	
@@ -1011,12 +1011,12 @@
 	<class>Корабль эскорта Федерации</class>
 	<maxSector>6</maxSector>
 	<systemList>
-		<engines power="1" max="5" room="2" start="true" />
-		<hacking power="1" max="1" room="3" start="false" />
-		<oxygen power="1" max="3" room="5" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="1" start="true" />
-		<weapons power="2" max="8" room="4" start="true" />
+		<engines power="1" max="5" room="2" start="true"/>
+		<hacking power="1" max="1" room="3" start="false"/>
+		<oxygen power="1" max="3" room="5" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="1" start="true"/>
+		<weapons power="2" max="8" room="4" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25 --> 
 	<droneList drones="4"/>
@@ -1030,12 +1030,12 @@
 	<class>Корабль эскорта Федерации</class>
 	<maxSector>6</maxSector>
 	<systemList>
-		<engines power="1" max="5" room="1" start="true" />
-		<hacking power="1" max="1" room="4" start="false" />
-		<oxygen power="1" max="3" room="0" start="true" />
-		<pilot power="1" max="3" room="2" start="true" />
-		<shields power="2" max="8" room="5" start="true" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<engines power="1" max="5" room="1" start="true"/>
+		<hacking power="1" max="1" room="4" start="false"/>
+		<oxygen power="1" max="3" room="0" start="true"/>
+		<pilot power="1" max="3" room="2" start="true"/>
+		<shields power="2" max="8" room="5" start="true"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25 --> 
 	<droneList drones="4"/>
@@ -1068,13 +1068,13 @@
 	<class>Взломщик Федерации</class>
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="3" start="false" />
-		<engines power="1" max="5" room="10" start="true" />
-		<hacking power="1" max="1" room="4" start="false" />
-		<oxygen power="1" max="3" room="7" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="6" start="true" />
-		<weapons power="2" max="8" room="1" start="true" />
+		<clonebay power="1" max="3" room="3" start="false"/>
+		<engines power="1" max="5" room="10" start="true"/>
+		<hacking power="1" max="1" room="4" start="false"/>
+		<oxygen power="1" max="3" room="7" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="6" start="true"/>
+		<weapons power="2" max="8" room="1" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25 --> 
 	<droneList drones="4"/>
@@ -1087,13 +1087,13 @@
 	<class>Взломщик Федерации</class>
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="false" />
-		<engines power="1" max="5" room="4" start="true" />
-		<hacking power="1" max="1" room="3" start="false" />
-		<oxygen power="1" max="3" room="8" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="9" start="true" />
-		<weapons power="2" max="8" room="1" start="true" />
+		<clonebay power="1" max="3" room="5" start="false"/>
+		<engines power="1" max="5" room="4" start="true"/>
+		<hacking power="1" max="1" room="3" start="false"/>
+		<oxygen power="1" max="3" room="8" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="9" start="true"/>
+		<weapons power="2" max="8" room="1" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_FED"/><!-- 1.25 --> 
 	<droneList drones="4"/>
@@ -1132,14 +1132,14 @@
 	<class>Корабль эскорта инжи</class>
 	<maxSector>7</maxSector>
 	<systemList>
-		<clonebay power="1" max="3" room="5" start="false" />
-		<drones power="2" max="8" room="3" start="true" />
-		<engines power="1" max="5" room="0" start="true" />
-		<hacking power="1" max="2" room="1" start="false" />
-		<oxygen power="1" max="3" room="6" start="true" />
-		<pilot power="1" max="3" room="4" start="true" />
-		<shields power="2" max="8" room="2" start="true" />
-		<weapons power="2" max="6" room="7" start="true" />
+		<clonebay power="1" max="3" room="5" start="false"/>
+		<drones power="2" max="8" room="3" start="true"/>
+		<engines power="1" max="5" room="0" start="true"/>
+		<hacking power="1" max="2" room="1" start="false"/>
+		<oxygen power="1" max="3" room="6" start="true"/>
+		<pilot power="1" max="3" room="4" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<weapons power="2" max="6" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_CIRCLE"/><!-- 1.25 --> 
 	<droneList drones="4" load="DRONES_DEFENSE"/>
@@ -1153,14 +1153,14 @@
 	<class>Корабль эскорта инжи</class>
 	<maxSector>7</maxSector>
 	<systemList>
-		<clonebay power="1" max="3" room="4" start="false" />
-		<drones power="2" max="8" room="7" start="true" />
-		<engines power="1" max="5" room="0" start="true" />
-		<hacking power="1" max="2" room="1" start="false" />
-		<oxygen power="1" max="3" room="5" start="true" />
-		<pilot power="1" max="3" room="3" start="true" />
-		<shields power="2" max="8" room="2" start="true" />
-		<weapons power="2" max="6" room="6" start="true" />
+		<clonebay power="1" max="3" room="4" start="false"/>
+		<drones power="2" max="8" room="7" start="true"/>
+		<engines power="1" max="5" room="0" start="true"/>
+		<hacking power="1" max="2" room="1" start="false"/>
+		<oxygen power="1" max="3" room="5" start="true"/>
+		<pilot power="1" max="3" room="3" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<weapons power="2" max="6" room="6" start="true"/>
 	</systemList>
 	<weaponList missiles="4" load="WEAPONS_CIRCLE"/><!-- 1.25 --> 
 	<droneList drones="4" load="DRONES_DEFENSE"/>
@@ -1197,15 +1197,15 @@
 	<class>Взломщик инжи</class>
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="4" start="false" />
-		<doors power="1" max="3" room="2" start="false" />
-		<drones power="2" max="8" room="7" start="true" />
-		<engines power="1" max="5" room="11" start="true" />
-		<hacking power="1" max="3" room="8" start="false" />
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="3" room="1" start="true" />
-		<shields power="2" max="10" room="10" start="true" />
-		<weapons power="2" max="8" room="0" start="true" />
+		<clonebay power="1" max="3" room="4" start="false"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<drones power="2" max="8" room="7" start="true"/>
+		<engines power="1" max="5" room="11" start="true"/>
+		<hacking power="1" max="3" room="8" start="false"/>
+		<oxygen power="1" max="3" room="3" start="true"/>
+		<pilot power="1" max="3" room="1" start="true"/>
+		<shields power="2" max="10" room="10" start="true"/>
+		<weapons power="2" max="8" room="0" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_CIRCLE"/><!-- 1.25 --> 
 	<droneList drones="4" load="DRONES_DEFENSE"/>
@@ -1220,15 +1220,15 @@
 	<class>Взломщик инжи</class>
 	<minSector>1</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="4" start="false" />
-		<doors power="1" max="3" room="2" start="false" />
-		<drones power="2" max="8" room="8" start="true" />
-		<engines power="1" max="5" room="9" start="true" />
-		<hacking power="1" max="3" room="7" start="false" />
-		<oxygen power="1" max="3" room="3" start="true" />
-		<pilot power="1" max="3" room="5" start="true" />
-		<shields power="2" max="10" room="11" start="true" />
-		<weapons power="2" max="8" room="1" start="true" />
+		<clonebay power="1" max="3" room="4" start="false"/>
+		<doors power="1" max="3" room="2" start="false"/>
+		<drones power="2" max="8" room="8" start="true"/>
+		<engines power="1" max="5" room="9" start="true"/>
+		<hacking power="1" max="3" room="7" start="false"/>
+		<oxygen power="1" max="3" room="3" start="true"/>
+		<pilot power="1" max="3" room="5" start="true"/>
+		<shields power="2" max="10" room="11" start="true"/>
+		<weapons power="2" max="8" room="1" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_CIRCLE"/><!-- 1.25 --> 
 	<droneList drones="4" load="DRONES_DEFENSE"/>
@@ -1271,13 +1271,13 @@
 	<class>Провокатор золтанцев</class> <!-- 1.26 -->
 	<minSector>2</minSector><!-- 1.27 -->
 	<systemList>
-		<clonebay power="1" max="3" room="6" start="false" />
-		<engines power="1" max="5" room="5" start="true" />
-		<mind power="1" max="1" room="1" start="false" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="2" start="true" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<clonebay power="1" max="3" room="6" start="false"/>
+		<engines power="1" max="5" room="5" start="true"/>
+		<mind power="1" max="1" room="1" start="false"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25 --> 
 	<health amount="7"/>
@@ -1291,13 +1291,13 @@
 	<class>Провокатор золтанцев</class> <!-- 1.26 -->
 	<minSector>2</minSector><!-- 1.27 -->
 	<systemList>
-		<clonebay power="1" max="3" room="6" start="false" />
-		<engines power="1" max="5" room="5" start="true" />
-		<mind power="1" max="1" room="1" start="false" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="2" start="true" />
-		<weapons power="2" max="8" room="3" start="true" />
+		<clonebay power="1" max="3" room="6" start="false"/>
+		<engines power="1" max="5" room="5" start="true"/>
+		<mind power="1" max="1" room="1" start="false"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="2" start="true"/>
+		<weapons power="2" max="8" room="3" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25 --> 
 	<health amount="7"/>
@@ -1334,14 +1334,14 @@
 	<class>Взломщик золтанцев</class> <!-- 1.26 -->
 	<minSector>3</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="8" start="false" />
-		<doors power="1" max="3" room="1" start="false" />
-		<engines power="1" max="5" room="7" start="true" />
-		<hacking power="1" max="2" room="6" start="false" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="3" start="true" />
-		<weapons power="2" max="8" room="2" start="true" />
+		<clonebay power="1" max="3" room="8" start="false"/>
+		<doors power="1" max="3" room="1" start="false"/>
+		<engines power="1" max="5" room="7" start="true"/>
+		<hacking power="1" max="2" room="6" start="false"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="3" start="true"/>
+		<weapons power="2" max="8" room="2" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25 --> 
 	<droneList drones="5" load="DRONES_COMBAT"/>
@@ -1356,14 +1356,14 @@
 	<class>Взломщик золтанцев</class> <!-- 1.26 -->
 	<minSector>3</minSector>
 	<systemList>
-		<clonebay power="1" max="3" room="7" start="false" />
-		<doors power="1" max="3" room="1" start="false" />
-		<engines power="1" max="5" room="8" start="true" />
-		<hacking power="1" max="2" room="6" start="false" />
-		<oxygen power="1" max="3" room="4" start="true" />
-		<pilot power="1" max="3" room="0" start="true" />
-		<shields power="2" max="8" room="3" start="true" />
-		<weapons power="2" max="8" room="2" start="true" />
+		<clonebay power="1" max="3" room="7" start="false"/>
+		<doors power="1" max="3" room="1" start="false"/>
+		<engines power="1" max="5" room="8" start="true"/>
+		<hacking power="1" max="2" room="6" start="false"/>
+		<oxygen power="1" max="3" room="4" start="true"/>
+		<pilot power="1" max="3" room="0" start="true"/>
+		<shields power="2" max="8" room="3" start="true"/>
+		<weapons power="2" max="8" room="2" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_ZOLTAN"/><!-- 1.25 --> 
 	<droneList drones="5" load="DRONES_COMBAT"/>
@@ -1396,43 +1396,43 @@
 	<maxPower amount="9"/>
 	<crewCount amount="3" max="4" class="crystal"/><!-- 1.26.2 --> 
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+	<aug name="CRYSTAL_SHARDS"/> <!-- 1.27.1 -->
 </shipBlueprint>
 
 <shipBlueprint name="CRYSTAL_SCOUT_DLC_2" layout="crystal_scout_dlc_2" img="crystal_scout">
 	<class>Корабль эскорта кристалинов</class>
 	<systemList>
-		<clonebay power="1" max="3" room="4" start="false" />
-		<engines power="1" max="5" room="2" start="true" />
-		<oxygen power="1" max="3" room="0" start="true" />
-		<pilot power="1" max="3" room="3" start="true" />
-		<shields power="2" max="8" room="1" start="true" />
-		<weapons power="2" max="8" room="5" start="true" />
+		<clonebay power="1" max="3" room="4" start="false"/>
+		<engines power="1" max="5" room="2" start="true"/>
+		<oxygen power="1" max="3" room="0" start="true"/>
+		<pilot power="1" max="3" room="3" start="true"/>
+		<shields power="2" max="8" room="1" start="true"/>
+		<weapons power="2" max="8" room="5" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25 --> 
 	<health amount="6"/>	<!-- 1.27.1 -->
 	<maxPower amount="9"/>
 	<crewCount amount="3" max="4" class="crystal"/><!-- 1.26.2 --> 
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+	<aug name="CRYSTAL_SHARDS"/> <!-- 1.27.1 -->
 </shipBlueprint>
 
 <shipBlueprint name="CRYSTAL_SCOUT_DLC_3" layout="crystal_scout_dlc_3" img="crystal_scout">
 	<class>Корабль эскорта кристалинов</class>
 	<systemList>
-		<clonebay power="1" max="3" room="3" start="false" />
-		<engines power="1" max="5" room="1" start="true" />
-		<oxygen power="1" max="3" room="0" start="true" />
-		<pilot power="1" max="3" room="2" start="true" />
-		<shields power="2" max="8" room="5" start="true" />
-		<weapons power="2" max="8" room="4" start="true" />
+		<clonebay power="1" max="3" room="3" start="false"/>
+		<engines power="1" max="5" room="1" start="true"/>
+		<oxygen power="1" max="3" room="0" start="true"/>
+		<pilot power="1" max="3" room="2" start="true"/>
+		<shields power="2" max="8" room="5" start="true"/>
+		<weapons power="2" max="8" room="4" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25 --> 
 	<health amount="6"/>	<!-- 1.27.1 -->
 	<maxPower amount="9"/>
 	<crewCount amount="3" max="4" class="crystal"/><!-- 1.26.2 --> 
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+	<aug name="CRYSTAL_SHARDS"/> <!-- 1.27.1 -->
 </shipBlueprint>
 
 <shipBlueprint name="CRYSTAL_BOMBER_DLC" layout="crystal_bomber" img="crystal_bomber">
@@ -1453,47 +1453,47 @@
 	<maxPower amount="9"/>
 	<crewCount amount="3" max="6" class="crystal"/><!-- 1.26.2 --> 
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+	<aug name="CRYSTAL_SHARDS"/> <!-- 1.27.1 -->
 </shipBlueprint>
 
 <shipBlueprint name="CRYSTAL_BOMBER_DLC_2" layout="crystal_bomber_dlc_2" img="crystal_bomber">
 	<class>Провокатор кристалинов</class>
 	<systemList>
-		<cloaking power="1" max="2" room="1" start="true" />
-		<clonebay power="1" max="3" room="7" start="false" />
-		<doors power="1" max="3" room="6" start="false" />
-		<engines power="1" max="5" room="4" start="true" />
-		<oxygen power="1" max="3" room="9" start="true" />
-		<pilot power="1" max="3" room="2" start="true" />
-		<shields power="2" max="10" room="3" start="true" />
-		<teleporter power="1" max="2" room="0" start="true" />
-		<weapons power="2" max="10" room="5" start="true" />
+		<cloaking power="1" max="2" room="1" start="true"/>
+		<clonebay power="1" max="3" room="7" start="false"/>
+		<doors power="1" max="3" room="6" start="false"/>
+		<engines power="1" max="5" room="4" start="true"/>
+		<oxygen power="1" max="3" room="9" start="true"/>
+		<pilot power="1" max="3" room="2" start="true"/>
+		<shields power="2" max="10" room="3" start="true"/>
+		<teleporter power="1" max="2" room="0" start="true"/>
+		<weapons power="2" max="10" room="5" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25 --> 
 	<health amount="7"/>	<!-- 1.27.1 -->
 	<maxPower amount="9"/>
 	<crewCount amount="3" max="6" class="crystal"/><!-- 1.26.2 --> 
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+	<aug name="CRYSTAL_SHARDS"/> <!-- 1.27.1 -->
 </shipBlueprint>
 
 <shipBlueprint name="CRYSTAL_BOMBER_DLC_3" layout="crystal_bomber_dlc_3" img="crystal_bomber">
 	<class>Провокатор кристалинов</class>
 	<systemList>
-		<doors power="1" max="3" room="8" start="false" />
-		<engines power="1" max="5" room="5" start="true" />
-		<medbay power="1" max="3" room="0" start="false" />
-		<oxygen power="1" max="3" room="6" start="true" />
-		<pilot power="1" max="3" room="2" start="true" />
-		<shields power="2" max="10" room="4" start="true" />
-		<weapons power="2" max="10" room="7" start="true" />
+		<doors power="1" max="3" room="8" start="false"/>
+		<engines power="1" max="5" room="5" start="true"/>
+		<medbay power="1" max="3" room="0" start="false"/>
+		<oxygen power="1" max="3" room="6" start="true"/>
+		<pilot power="1" max="3" room="2" start="true"/>
+		<shields power="2" max="10" room="4" start="true"/>
+		<weapons power="2" max="10" room="7" start="true"/>
 	</systemList>
 	<weaponList missiles="6" load="WEAPONS_CRYSTAL"/><!-- 1.25 --> 
 	<health amount="7"/>	<!-- 1.27.1 -->
 	<maxPower amount="9"/>
 	<crewCount amount="3" max="6" class="crystal"/><!-- 1.26.2 --> 
 	<boardingAI>sabotage</boardingAI>
-	<aug name="CRYSTAL_SHARDS" /> <!-- 1.27.1 -->
+	<aug name="CRYSTAL_SHARDS"/> <!-- 1.27.1 -->
 </shipBlueprint>
  
 

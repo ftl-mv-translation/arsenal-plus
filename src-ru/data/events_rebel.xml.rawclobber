@@ -183,17 +183,17 @@ Environmnt:
 
 <event name="AUTO_BAIT" unique="true">
 	<text load="REBEL_AUTO"/>
-	<ship load="REBEL_AUTO_BAIT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_BAIT" hostile="true"/>
 </event>
 
 <event name="REBEL_AUTO">
 	<text load="REBEL_AUTO"/>
-	<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO" hostile="true"/>
 </event>
 
 <event name="AUTO_WARNING" unique="true">
 	<text load="REBEL_AUTO"/>
-	<ship load="REBEL_AUTO_WARNING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
 </event>
 <textList name="REBEL_AUTO">
 	<text>Вы обнаружили один из беспилотных разведчиков повстанцев. ИИ корабля разведчика незамедлительно даёт команду напасть на ваш корабль.</text>
@@ -209,7 +209,7 @@ Environmnt:
 
 <event name="AUTO_HACKER" unique="true">
 	<text>Ваше прибытие сопровождается тревожными предупреждениями компьютера. Беспилотник повстанцев пытается нарушить работу ваших систем защиты с помощью спутника, расположенного неподалёку. Есть надежда, что до уничтожения он больше не успеет ничего сделать.</text>
-	<ship load="REBEL_AUTO_HACKSHIELDS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_HACKSHIELDS" hostile="true"/>
 	<choice>
 		<text id="continue"/>
 		<event>	
@@ -227,7 +227,7 @@ Environmnt:
 
 <event name="REBEL">
 	<text load="REBEL"/>
-	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="REBEL">
 	<text>Ваш корабль принимает сообщение: «Наконец-то мы вас отыскали. Готовьтесь умереть!»</text>
@@ -244,7 +244,7 @@ Environmnt:
 
 <event name="SQUAT_WARNING" unique="true">
 	<text>Вы натыкаетесь на передового разведчика флота повстанцев.</text>
-	<ship load="SQUAT_WARNING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SQUAT_WARNING" hostile="true"/>
 </event>
 
 
@@ -266,7 +266,8 @@ Environmnt:
 		<text>Помочь гражданским.</text>
 		<event>
 			<text>Вы заряжаете оружие и летите на перехват автоматического судна.</text>
-			<ship load="REBEL_AUTO_CIVILIAN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="REBEL_AUTO_CIVILIAN" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -280,12 +281,13 @@ Environmnt:
 <event name="SQUAT_REFUEL_STATION" unique="true">  
 	<img planet="PLANET_POPULATED_SMALL"/>
 	<text>Вы засекаете разведчика повстанцев, идущего в атаку на маленький заправочный аванпост. Их орудия заряжены, но они пока не стреляют.</text>
-	<ship load="SQUAT_REFUEL_STATION" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SQUAT_REFUEL_STATION" hostile="false"/>
 	<choice>
 		<text>Вмешаться и защитить аванпост.</text>
 		<event>
 			<text>Повстанец ответил на вашу угрозу: «Я не знаю кто ты, но ты бросил вызов повстанческому флоту!» Они идут на перехват.</text> 
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -299,12 +301,13 @@ Environmnt:
 <event name="AUTO_REFUEL_STATION" unique="true">  
 	<img planet="PLANET_POPULATED_SMALL"/>
 	<text>Датчики фиксируют автоматический разведчик повстанцев, атакующий маленькую заправочную станцию.</text>
-	<ship load="REBEL_AUTO_REFUEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_REFUEL" hostile="false"/>
 	<choice>
 		<text>Вмешаться и защитить аванпост.</text>
 		<event>
 			<text>Определив приоритетную цель, автоматический корабль приближается, чтобы атаковать вас.</text> 
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -318,11 +321,12 @@ Environmnt:
 <event name="AUTO_DEFENSE_MAP" unique="true">
 	<img planet="PLANET_POPULATED"/>
 	<text>Вы обнаруживаете автоматический корабль повстанцев неподалёку. Он не атакует и, кажется, патрулирует вокруг станции обнаружения дальнего действия.</text>
-	<ship load="REBEL_AUTO_MAP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_MAP" hostile="false"/>
 	<choice>
 		<text>Атаковать автоматический корабль, чтобы пробраться к станции.</text>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -348,17 +352,19 @@ Environmnt:
 	</event>
 	<event>
 		<text>Автоматический корабль, видимо, был удалённо соединён со станцией. Как только вы попытались войти в компьютер, корабль активировался и атаковал вас.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 
 <event name="AUTO_DEFENSE_ITEM" unique="true">
 	<text>Усовершенствованный автоматический корабль повстанцев находится рядом с маленькой космической станцией. Сенсоры показывают, что это склад для хранения военного имущества.</text>
-	<ship load="REBEL_AUTO_ITEM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_ITEM" hostile="false"/>
 	<choice>
 		<text>Атаковать автоматический корабль, чтобы добраться до склада.</text>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -380,7 +386,8 @@ Environmnt:
 	</event>
 	<event>
 		<text>Прежде чем вы смогли подобраться достаточно близко, чтобы просканировать станцию, автоматический корабль засекает вас и движется в атаку.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 <eventList name="DEFENSE_ITEM_LIST">
@@ -403,12 +410,13 @@ Environmnt:
 
 <event name="AUTO_DEFENSE_RADAR" unique="true">
 	<text>Автоматический корабль неподвижно завис рядом с передовой станцией обнаружения повстанцев.</text>
-	<ship load="REBEL_AUTO_RADAR" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_RADAR" hostile="false"/>
 	<choice>
 		<text>Приблизиться к станции.</text>
 		<event>
 			<text>Корабль включается и наводится на вас.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -443,7 +451,8 @@ Environmnt:
 	</event>
 	<event>
 		<text>Прежде чем ваш дрон успел атаковать, автоматический корабль активируется и сбивает его. Затем он засекает ваш корабль и движется в вашу сторону.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
+		<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		<item_modify>
 			<item type="drones" min="-1" max="-1"/>
 		</item_modify>
@@ -473,7 +482,7 @@ Environmnt:
 
 <event name="REBEL_TRANSPORT" unique="true">
 	<img planet="NONE"/>
-	<ship load="SQUAT_TRANSPORT" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --> <!-- 1.26 -->
+	<ship load="SQUAT_TRANSPORT" hostile="false"/> <!-- 1.26 -->
 	<text>Вы замечаете небольшой корабль повстанцев поблизости. Кажется, он переоборудован для перевозки, а не для боя, и вроде бы не собирается нападать на вас и ваш корабль.</text>
 	<choice hidden="true"><!-- 1.26 -->
 		<text>Потребовать у них имущество.</text>
@@ -489,14 +498,14 @@ Environmnt:
 <eventList name="REBEL_TRANSPORT_ATTACK"><!-- 1.26 -->
 	<event>
 		<text>Вы готовитесь захватить их груз силой.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Они предлагают вам содержимое своих трюмов, чтобы вы оставили их в покое.</text>
 		<choice hidden="false">
 			<text>У них точно есть больше, в атаку!</text>
 			<event>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="false">
@@ -509,27 +518,27 @@ Environmnt:
 	</event>
 </eventList>
 <eventList name="REBEL_TRANSPORT_DESTROYED">
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Вы обыскиваете корабль и обнаруживаете, что его груз был вооружением военного класса! Оно оказалось неповреждённым после боя и может быть легко установлено на корабле.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Вы обыскиваете останки корабля, но находите только чертежи и обломки механизмов. Неприятно, но вы хотя бы собираете весь лом, какой можете добыть.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль перевозил вооружение. Вы нашли одно орудие неповреждённым, несмотря на битву.</text>
 		<autoReward level="LOW">weapon</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль, судя по всему, перевозил вооружение. К сожалению, ничего не пережило битву.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>В процессе обыска останков вы обнаруживате, что грузом были схемы дронов! Вы приносите их на борт, чтобы установить на своём корабле.</text>
 		<autoReward level="MED">drone</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Обломки указывают на то, что корабль перевозил схемы дронов, но, к сожалению, ничего не осталось. Зато вы нашли пригодные детали дронов.</text>
 		<!-- 1.26.3 -->
 		<!-- <autoReward level="MED">droneparts</autoReward> -->
@@ -538,45 +547,45 @@ Environmnt:
 			<item type="drones" min="4" max="6"/>
 		</item_modify>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Груз корабля оказался бесполезным. Но зато этот корабль, похоже, был исследовательским судном: на нём есть детализированные карты и данные разведки. Вы скачиваете всё, что можно в карту корабля.</text>
 		<reveal_map/>		
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>По внешнему виду попавшихся вам обломков можно сделать вывод, что этот корабль собирал информацию. Но все данные оказались слишком сильно повреждены.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Вы засекли слабые признаки жизни в чудом уцелевшем корабельном модуле, медленно вращающемся в открытом космосе. Они перевозили заключённых, и единственный выживший предлагает присоединиться к вашему экипажу, как первый шаг на пути к мести.</text>
 		<crewMember amount="1"/>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль, как оказалось, перевозил заключённых. К сожалению, все они были убиты в бою. Вы собираете всё, что можете.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль вёз военные запасы. Вы подбираете всё, что выглядит пригодным из обломков.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 </eventList>
 <eventList name="REBEL_TRANSPORT_CAPTURED">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Теперь, когда экипаж убит, вы обыскиваете корабль. Вы находите снаряжение военного типа и берёте то, что выглядит наиболее полезным.</text>
 		<autoReward level="MED">weapon</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Корабль не пытается сражаться, но вы всё ещё выявляете признаки жизни. Видимо, это был транспортник для заключённых. Один из выживших предлагает присоединиться к вашему экипажу в обмен на свободу остальных.</text>
 		<crewMember amount="1"/>
 		<autoReward level="HIGH">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Корабль, по-видимому, имел информацию об окружающих маяках. Вы скачиваете её в свою карту и разбираете останки на лом.</text>
 		<reveal_map/>
 		<autoReward level="MED">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>В процессе обыска останков вы обнаруживате, что грузом были схемы дронов! Вы приносите их на борт, чтобы установить на своём корабле.</text>
 		<autoReward level="MED">drone</autoReward>
 	</event>
@@ -586,7 +595,7 @@ Environmnt:
 
 <event name="BROKEN_REBEL_DRONE" unique="true">
 	<text>Вы находите автоматический разведчик повстанцев, дрейфующий рядом с маяком. Несмотря на идеальное состояние, похоже, что он деактивирован.</text>
-	<ship load="REBEL_AUTO" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO" hostile="false"/>
 	<choice hidden="true"> 
 		<text>Попытаться скачать данные разведки беспилотника, а затем разобрать его на лом.</text><!-- 1.25 -->
 		<event load="DOWNLOAD_DRONE_DATA"/>
@@ -610,7 +619,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Вы случайно задействовали ИИ судна. Его оружие сразу активировалось, готовьтесь к бою!</text>
-		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL_AUTO" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="BROKEN_REBEL_DRONE_SENSORS">
@@ -667,7 +676,7 @@ Environmnt:
 <event name="BOARDERS_REBEL_SHIP">
 	<text load="BOARDERS_REBEL_SHIP"/>
 	<boarders min="2" max="3" class="human"/>
-	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="BOARDERS_REBEL_SHIP" unique="false">
 	<text>Вы получаете сообщение с ближайшей станции повстанцев: «Признаться, вы очень мужественны, раз решили пролететь в нашем секторе», — он поворачивается, отдавая приказ. — «Убей экипаж, я хочу, чтобы корабль остался цел».</text>
@@ -833,6 +842,79 @@ Environmnt:
 	<text planet="HI_TECH_PLANET_FOR_HAOS">Вы оказываетесь вблизи гигантской прыжковой станции Ордена, и к вам телепортируется их штурмовая группа! Они забрасывают отсеки вашего корабля зажигательными смесями!</text><!-- 1.25 -->
 </textList>
 
+<event name="BOARDERS_ORDEN_BOSS"><!-- 1.33 -->
+	<ship load="ORDEN_STATION2" hostile="true"/>
+	<text planet="NONE">Сразу же после прыжка к вам телепортируется отряд головорезов со станции неподалёку. Они забрасывают отсеки вашего корабля зажигательными смесями! Их главарь смётся: «Бьюсь об заклад, что твой корабль сгорит менее, чем за одну минуту. Вперёд, парни!»</text>
+	<triggeredEvent name="BOARDERS_ORDER_TRIGGER" event="BOARDERS_ORDEN_BOSS_TIMER" time="60" thisFight="true"><!-- 1.33 -->
+		<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
+			<warning time="10.0" flash="true"/>
+			<tooltip>Фанатики рассчитывают сжечь ваш корабль за это время</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<boarders min="1" max="3" class="order_human"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+</event>
+<ship name="ORDEN_STATION2" auto_blueprint="ORDEN_STATION_SHIPS2">
+	<destroyed>
+		<text>Станция Ордена разваливается на части, и вы собираете её обломки.</text>
+		<clearTriggeredEvent name="BOARDERS_ORDER_TRIGGER"/>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+		<choice req="clonebay" hidden="true" lvl="0" max_lvl="0" blue="false">
+			<text id="continue"/>
+			<event/>
+		</choice>
+		<choice req="clonebay" hidden="true">
+			<text>Клонировать их главаря в клон-отсеке. Нам есть что обсудить.</text>
+			<event load="BOARDERS_ORDEN_LEADER_INVITE"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы победили экипаж станции и забираете весь их запас металлолома.</text>
+		<clearTriggeredEvent name="BOARDERS_ORDER_TRIGGER"/>
+		<autoReward level="HIGH">scrap_only</autoReward>
+		<choice req="clonebay" hidden="true" lvl="0" max_lvl="0" blue="false">
+			<text id="continue"/>
+			<event/>
+		</choice>
+		<choice req="clonebay" hidden="true">
+			<text>Клонировать их главаря в клон-отсеке. Нам есть что обсудить.</text>
+			<event load="BOARDERS_ORDEN_LEADER_INVITE"/>
+		</choice>
+	</deadCrew>
+</ship>
+<event name="BOARDERS_ORDEN_BOSS_TIMER"><!-- 1.33 -->
+	<text>Похоже, фанатики слегка переоценили свои силы. Они просят перемирия.</text>
+	<choice hidden="true">
+		<text>Добить их.</text>
+		<event/>
+	</choice>
+	<choice hidden="true">
+		<text>Пощадить их.</text>
+		<event load="BOARDERS_ORDEN_LEADER_INVITE2"/>
+	</choice>
+</event>
+<event name="BOARDERS_ORDEN_LEADER_INVITE"><!-- 1.33 -->
+	<text>Их главарь не слишком удивлён своему воскрешению, видимо, это уже случалось с ним. «Хорошо, возможно, ваш корабль не так уж плох. Позвольте мне отправиться с вами. Надеюсь, у вас установлен телепортер?» Вы обращаете внимание, как сильно обожжено его тело. Лучше не подпускать его близко к огню.</text>
+	<crewMember amount="1" all_skills="2" class="order_human_legendary">Спаун</crewMember>
+	<playSound>legendary</playSound>
+	<achievement silent="false">ACH_ORDER_LEGENDARY</achievement>
+</event>	
+<event name="BOARDERS_ORDEN_LEADER_INVITE2"><!-- 1.33 -->
+	<clearTriggeredEvent name="BOARDERS_ORDER_TRIGGER"/>
+	<recallBoarders ship="both" force="true"/>
+	<ship hostile="false"/>
+	<text>Их главарь благодарит вас за милосердие. «Хорошо, возможно, ваш корабль не так уж плох. Позвольте мне отправиться с вами. Надеюсь, у вас установлен телепортер?» Вы обращаете внимание, как сильно обожжено его тело. Лучше не подпускать его близко к огню.</text>
+	<crewMember amount="1" all_skills="2" class="order_human_legendary">Спаун</crewMember>
+	<playSound>legendary</playSound>
+	<achievement silent="false">ACH_ORDER_LEGENDARY</achievement>
+</event>		
+
+
 <event name="ASTEROID_BOARDERS_ORDEN">
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
@@ -851,7 +933,7 @@ Environmnt:
 <event name="BOARDERS_ORDEN_ANGRYSHIP">
 	<text load="BOARDERS_ORDEN_SHIP_TEXT"/>
 	<boarders min="2" max="3" class="order_human"/><!-- 1.28 -->
-	<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="true"/>
 </event>
 <textList name="BOARDERS_ORDEN_SHIP_TEXT">
 	<text planet="HI_TECH_PLANET_FOR_HAOS">Прямо на вас мчится один из кораблей Ордена. А с прыжковой станции поблизости вам телепортируют абордажную группу!</text>
@@ -860,7 +942,7 @@ Environmnt:
 
 <event name="ORDEN_FIGHT">
 	<text load="ORDEN_FIGHT_TEXT"/>
-	<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="true"/>
 </event>
 <textList name="ORDEN_FIGHT_TEXT">
 	<text planet="HI_TECH_PLANET_FOR_HAOS">Как только вы появляетесь у маяка, с ближайшей планеты-станции вылетает крейсер Ордена, боя не избежать!</text>
@@ -877,7 +959,7 @@ Environmnt:
 
 <event name="STORE_ORDEN_PIRATESTORE" unique="true"><!-- 1.31 -->
 	<text load="STORE_ORDEN_TEXT"/>
-	<ship load="PIRATE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="false"/>
 	<choice hidden="true">
 		<text>Согласиться.</text>
 		<event name="STORE_ORDEN_PIRATESTORE_1">
@@ -892,7 +974,7 @@ Environmnt:
 		<text>Отказаться и уничтожить пиратов.</text>
 		<event>
 			<text>Вы обрываете связь и заряжаете орудия.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -921,7 +1003,7 @@ Environmnt:
 <event name="DISTRESS_BEACON_ORDEN_ITSATRAP">
 	<distressBeacon/>
 	<text load="DISTRESS_BEACON_ORDEN_ITSATRAP_TEXT"/>
-	<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="true"/>
 </event>
 <textList name="DISTRESS_BEACON_ORDEN_ITSATRAP_TEXT">
 	<text planet="NONE">Из коммуникатора раздаётся: «Очень мило, что вы отвечаете на каждый сигнал о помощи». У летящего к вам корабля Ордена явно не добрые намерения.</text>
@@ -954,7 +1036,7 @@ Environmnt:
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 	<text load="SUN_HOSTILE_ORDEN_TEXT"/>
-	<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="true"/>
 </event>
 <textList name="SUN_HOSTILE_ORDEN_TEXT">
 	<text planet="NONE">Возле активной звезды вы замечаете корабль Ордена. А он замечает вас. Вот так встреча!</text>
@@ -988,7 +1070,7 @@ Environmnt:
 <eventList name="NEBULA_HOSTILE_ORDEN_HIDE">
 	<event>
 		<text>Не успели вы затаиться, как корабль Ордена замечает вас и идёт на сближение.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text>Вы быстро прячетесь. Сейчас не лучшее время для сражений.</text>
@@ -1003,15 +1085,15 @@ Environmnt:
 <eventList name="NEBULA_HOSTILE_ORDEN_ATTACK">
 	<event>
 		<text>Вы идёте на сближение, а корабль Ордена начинает заряжать свой богатый арсенал.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text>Вы идёте на сближение, а корабль Ордена начинает заряжать свой богатый арсенал.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text>Вы идёте на сближение, а корабль Ордена начинает заряжать свой богатый арсенал.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text>Внезапно налетевшее плотное облако газа заставляет вас сбросить скорость до минимума. Когда оно рассеивается, перед вами уже никого нет.</text>
@@ -1495,7 +1577,7 @@ Environmnt:
 		<text>(Член экипажа инжи) Инжи.</text>
 		<event load="BOOM_ENGI"/>
 	</choice>		
-	<choice hidden="true" max_group="1" req="energy_crew"> <!-- 1.29 -->
+	<choice hidden="true" max_group="1" req="energy"> <!-- 1.29 --><!-- 1.33 -->
 		<text>(Член экипажа золтанец) Золтанец.</text>
 		<event load="BOOM_ENERGY"/>
 	</choice>
@@ -1593,7 +1675,7 @@ Environmnt:
 		<event load="ORDEN_LUNA_HIGH"/>
 	</choice>
 	<choice req="LIFE_SCANNER" hidden="true">
-		<text>(Сканер жизненных форм) Просканировать луну на признаки жизни.</text>
+		<text>(Инфракрасный сканер) Просканировать луну на признаки жизни.</text><!-- 1.33 -->
 		<event load="ORDEN_LUNA_LIFE"/>
 	</choice>
 	<choice>
@@ -1616,7 +1698,7 @@ Environmnt:
 	<event load="ORDEN_CONT"/>
 	<event>
 		<text>На другой стороне луны притаился крейсер Ордена, они переходят в атаку!</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="ORDEN_LUNA_MED">
@@ -1630,7 +1712,7 @@ Environmnt:
 	<event load="ORDEN_CONT"/>
 	<event>
 		<text>На другой стороне луны притаился крейсер Ордена, они переходят в атаку!</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="ORDEN_LUNA_HIGH">
@@ -1641,7 +1723,7 @@ Environmnt:
 	<event load="ORDEN_CONT"/>
 	<event>
 		<text>На другой стороне луны притаился крейсер Ордена, они переходят в атаку!</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 </eventList>
 
@@ -1718,7 +1800,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>На другой стороне луны притаился крейсер Ордена, они переходят в атаку!</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 </eventList>
 
@@ -1781,7 +1863,7 @@ Environmnt:
 <event name="FIRETRADER" unique="true">
 	<img planet="NONE"/>
 	<text>Пиратский корабль на этом маяке предлагает не начинать бой. По их словам, у них есть оборудование, которое вам очень пригодится в этом секторе.</text>
-	<ship load="PIRATE_FIRE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="PIRATE_FIRE" hostile="false"/>
 	<choice hidden="true">
 		<text>Поверить им и поинтересоваться, что это за оборудование.</text>
 		<event load="PIRATE_ORDEN_FIRE_TRADE"/>
@@ -1790,7 +1872,7 @@ Environmnt:
 		<text>Мы не имеем дел с пиратами, в атаку!</text>
 		<event>
 			<text>Вы обрываете связь и заряжаете орудия.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1805,7 +1887,7 @@ Environmnt:
 	<event>
 		<text>Как только вы подлетаете ближе, они закидывают на ваш корабль огненную бомбу, вероломные пираты обманули вас!</text>
 		<damage amount="0" system="random" effect="fire"/>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Так как последователи Ордена любят использовать огненное вооружение на своих кораблях, система пожаротушения оказалась крайне востребованной здесь. Пираты предлагают купить её по сниженной цене.</text>
@@ -1836,7 +1918,7 @@ Environmnt:
 	<event>
 		<text>Похоже, они решили, что мирным способом не получат от вас лом. Они закидывают вам на корабль огненную бомбу!</text>
 		<damage amount="0" system="random" effect="fire"/>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Немного посовещавшись, они соглашаются снизить цену.</text>
@@ -1863,7 +1945,7 @@ Environmnt:
 	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
 	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Пиратский корабль совершил прыжок.</text>
 	</gotaway>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
@@ -1875,7 +1957,7 @@ Environmnt:
 
 <event name="ORDEN_AUTOSHIP_QUEST" unique="true">
 	<img planet="NONE"/>
-	<ship load="AUTO_SHIP_ORDEN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="AUTO_SHIP_ORDEN" hostile="false"/>
 	<text>К вам подлетает автоматический разведчик и передаёт сообщение: «Здравствуйте, капитан. Ваше нахождение здесь — ошибка. Срочно проследуйте по указанным координатам для ликвидации. Вот необходимое для этого топливо». После этого беспилотник сбрасывает в вашу сторону контейнер и переходит в режим ожидания.</text>
 	<quest event="ORDEN_AUTOSHIP_QUEST_LIST"/>
 	<item_modify>
@@ -1885,7 +1967,7 @@ Environmnt:
 		<text>Атаковать беспилотник.</text>
 		<event>
 			<text>Вы готовитесь разобрать на части этот наглый кусок металла.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1906,13 +1988,13 @@ Environmnt:
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
 		<text planet="NONE">Корабль Ордена возле горячей звезды летит прямо на вас! Видимо, это и есть тот самый "ликвидатор", о котором вещал беспилотник.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
 		<text planet="NONE">Корабль Ордена в астероидном поясе летит прямо на вас! Видимо, это и есть тот самый "ликвидатор", о котором вещал беспилотник.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 </eventList>
 
@@ -1937,7 +2019,7 @@ Environmnt:
 	<img planet="NONE"/>
 	<!-- <fleet>rebel</fleet> --> <!-- 1.23 --> <!-- bug with triangle on the map after win -->
 	<text>По прибытии вашему взору предстаёт мрачная картина: одна из передовых групп флота повстанцев вступила в крупномасштабное сражение с силами Ордена. Увидев вас, часть кораблей бросается на перехват. Артиллерийские батареи тем временем не прекращают огонь как по вам, так и по кораблям Ордена.</text>
-	<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="true"/>
 	<environment type="PDS" target="all"/>
 </event>
 
@@ -2123,7 +2205,8 @@ Environmnt:
 		<text>Помочь гражданским.</text>
 		<event>
 			<text>Вы включаете оружие и бросаетесь в атаку на фанатиков Ордена.</text>
-			<ship load="GLORY_SHIP_CIVILIAN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="GLORY_SHIP_CIVILIAN" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -2141,7 +2224,7 @@ Environmnt:
 </textList>
 
 <ship name="GLORY_SHIP_CIVILIAN" auto_blueprint="GLORY_SHIPS">   
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>После уничтожения корабля вы быстро собрали все оставшиеся полезные ресурсы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -2149,7 +2232,7 @@ Environmnt:
 			<event load="GLORY_SHIP_CIVILIAN_SAVED_LIST"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Поскольку команда еретиков Ордена мертва, ничто не мешает вам обыскать их корабль.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -2186,13 +2269,13 @@ Environmnt:
 
 <event name="NEUTRAL_ORDEN_ZOLTANSISABATTERY" unique="true"> <!-- 1.23 -->
 	<img planet="NONE"/>
-	<ship load="GLORY_SHIP_ZOLTANISABATTERY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP_ZOLTANISABATTERY" hostile="false"/>
 	<text>Корабль Ордена Хаоса выходит на связь: «Не смей вмешиваться в наши дела! Проваливай отсюда пока цел!»</text>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы не собираетесь терпеть подобное отношение. К бою!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2201,7 +2284,7 @@ Environmnt:
 	</choice>
 </event>
 <ship name="GLORY_SHIP_ZOLTANISABATTERY" auto_blueprint="GLORY_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, среди обломков вы замечаете несколько тел мёртвых золтанцев, пока собираете лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice req="clonebay" hidden="true" lvl="0" max_lvl="0" blue="false"> <!-- 1.23 -->
@@ -2216,7 +2299,7 @@ Environmnt:
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все фанатики мертвы, и вы пристыковавшись к их кораблю, полностью обчищаете трюмы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -2244,7 +2327,7 @@ Environmnt:
 					<event load="GLORY_SHIP_ZOLTANISABATTERY_SCAN_3"/>
 				</choice>
 				<choice req="LIFE_SCANNER" hidden="true">
-					<text>(Сканер жизненных форм) Просканировать отсек за стеной.</text>
+					<text>(Инфракрасный сканер) Просканировать отсек за стеной.</text><!-- 1.33 -->
 					<event load="GLORY_SHIP_ZOLTANISABATTERY_SCAN_3"/>
 				</choice>
 				<choice req="orchid_crew" hidden="true"> <!-- 1.30 -->
@@ -2256,7 +2339,7 @@ Environmnt:
 						<crewMember amount="1" class="energy"/>
 					</event>
 				</choice>
-				<choice hidden="true">
+				<choice req="pilot" hidden="true" max_group="1" blue="false"><!-- 1.33 -->
 					<text>Приготовиться улетать. Мы своё уже взяли.</text>
 					<event/>
 				</choice>
@@ -2563,7 +2646,7 @@ Environmnt:
 
 <event name="HOSTILE_ORDEN_EMPTYFUEL_PIRATE" unique="true">
 	<img planet="NONE"/>
-	<ship load="SHIP_EMPTYFUEL_PIRATE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIP_EMPTYFUEL_PIRATE" hostile="false"/>
 	<text>Пиратское судно выходит на связь: «Помогите! Мы тут застряли без топлива, и фанатики могут появиться в любой момент. Мы вас отблагодарим!»</text>
 	<choice hidden="false">
 		<text>Дать им топливо.</text>
@@ -2582,7 +2665,7 @@ Environmnt:
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы не можете позволить, чтобы ещё один пират остался в живых и нападал на мирные суда Федерации.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2597,7 +2680,7 @@ Environmnt:
 			<text>Атаковать их.</text>
 			<event>
 				<text>Пираты поплатятся за всё...</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -2621,7 +2704,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Пираты, забрав топливо, начинают зарядку своих орудий — вот она, их "благодарность".</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 </eventList>
 <eventList name="HOSTILE_ORDEN_EMPTYFUEL_PIRATE_NO_GIVE">
@@ -2630,21 +2713,21 @@ Environmnt:
 	</event>
 	<event>
 		<text>Их капитан прокашливается и говорит: «Кажется вы нас неправильно поняли. Отдать топливо — это была совсем не просьба...»</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIP_EMPTYFUEL_PIRATE" auto_blueprint="SHIPS_PIRATE">
 	<escape timer="25" min="5" max="8">
 		<text>Тем временем они начинают зарядку двигателя. То есть топливо-то у них было!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Пираты улизнули!</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль пиратов разваливается на части, и вы собираете пару обломков.</text>
 		<autoReward level="MED">scrap_only</autoReward> <!-- 1.29 -->
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все пираты мертвы, и вы полностью обчищаете их трюмы.</text>
 		<autoReward level="HIGH">scrap_only</autoReward> <!-- 1.29 -->
 	</deadCrew>
@@ -2652,12 +2735,12 @@ Environmnt:
 
 <event name="NEUTRAL_ORDEN_SHIP">
 	<text load="NEUTRAL_ORDEN_SHIP_TEXT"/>
-	<ship load="GLORY_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать их корабль.</text>
 		<event>
 			<text>Не пристало вам прятаться от еретиков, орудия к бою!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2678,7 +2761,7 @@ Environmnt:
 	<distressBeacon/>
 	<img planet="NONE"/>
 	<text>Рядом с маяком слегка повреждённый гражданский корабль выходит на связь: «Помогите! На наш конвой напали фанатики!»</text>
-	<ship load="CIV_CIVSHIPHELP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CIV_CIVSHIPHELP" hostile="false"/>
 	<choice hidden="true">
 		<text>Согласиться помочь отбить конвой.</text>
 		<event>
@@ -2693,7 +2776,7 @@ Environmnt:
 		<text>Атаковать гражданский корабль.</text>
 		<event>
 			<text>«Вы же посланник Федерации! Зачем вы это делаете?! В этом секторе все посходили с ума???»</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2705,14 +2788,14 @@ Environmnt:
 	<escape timer="40" min="30" max="30">
 		<text>Гражданские пытаются совершить прыжок подальше от вас.</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Яркая вспышка, и корабль исчезает из поля зрения.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль гражданских разваливается на части, и вы собираете пару обломков.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж мёртв, и вы полностью обчищаете их трюмы.</text>
 		<autoReward level="LOW">scrap_only</autoReward><!-- 1.25 -->
 	</deadCrew>
@@ -2721,17 +2804,19 @@ Environmnt:
 	<event>
 		<img planet="NONE"/>
 		<text>Совершив прыжок, вы становитесь свидетелем взрыва последнего гражданского корабля. А корабль Ордена выходит на связь: «Смотри-ка! Ещё один, продолжаем веселье!»</text>
-		<ship load="CIV_CIVSHIPHELP_GLORYSHIP_NEUSPEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="CIV_CIVSHIPHELP_GLORYSHIP_NEUSPEL" hostile="true"/>
 	</event>
 	<event>
 		<img planet="NONE"/>
 		<text>Совершив прыжок, вы видите погоню корабля Ордена за гражданским. Фанатики разворачиваются в вашу сторону, сочтя вас более привлекательной целью.</text>
-		<ship load="CIV_CIVSHIPHELP_GLORYSHIP_USPEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="CIV_CIVSHIPHELP_GLORYSHIP_USPEL" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<img planet="FIRE_PLANETS"/>
 		<text>Совершив прыжок, вы видите погоню корабля Ордена за гражданским. Фанатики разворачиваются в вашу сторону, сочтя вас более привлекательной целью.</text>
-		<ship load="CIV_CIVSHIPHELP_GLORYSHIP_USPEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="CIV_CIVSHIPHELP_GLORYSHIP_USPEL" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<img planet="NONE"/>
@@ -2740,17 +2825,17 @@ Environmnt:
 	</event>
 </eventList>
 <ship name="CIV_CIVSHIPHELP_GLORYSHIP_NEUSPEL" auto_blueprint="GLORY_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы уничтожаете еретиков и собираете то, что осталось после побоища...</text>
 		<autoReward level="MED">standard</autoReward><!-- 1.25.1 -->
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж Ордена мёртв, и вы обчищаете их корабль, а затем собираете всё ценное, что осталось после побоища...</text>
 		<autoReward level="HIGH">standard</autoReward><!-- 1.25.1 -->
 	</deadCrew>
 </ship>
 <ship name="CIV_CIVSHIPHELP_GLORYSHIP_USPEL" auto_blueprint="GLORY_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы уничтожаете еретиков и собираете то, что осталось после побоища. </text><!-- 1.25.1 -->
 		<autoReward level="MED">standard</autoReward><!-- 1.25.1 -->
 		<choice hidden="true"><!-- 1.25.1 -->
@@ -2761,7 +2846,7 @@ Environmnt:
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж Ордена мёртв, и вы обчищаете их корабль.</text><!-- 1.25.1 -->
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true"><!-- 1.25.1 -->
@@ -2781,7 +2866,7 @@ Environmnt:
 		<text>Атаковать роков.</text>
 		<event>
 			<text>Вы садитесь на хвост повреждённому кораблю роков, а из коммуникатора доносится: «Почему вы выбрали именно нас???»</text>
-			<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK" hostile="true"/>
 			<status type="divide" target="enemy" system="engines" amount="2"/>
 		</event>
 	</choice>
@@ -2789,7 +2874,7 @@ Environmnt:
 		<text>Атаковать корабль Ордена.</text>
 		<event>
 			<text>Вы садитесь на хвост повреждённому кораблю Ордена, а из коммуникатора доносится: «Сейчас ты пожалеешь об этом, смертный!»</text>
-			<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP" hostile="true"/>
 			<status type="divide" target="enemy" system="shields" amount="2"/>
 		</event>
 	</choice>
@@ -2799,7 +2884,7 @@ Environmnt:
 	</choice>
 </event>
 <ship name="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK" auto_blueprint="SHIPS_ROCK">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы собираете его обломки. Можно попытаться выследить второй корабль.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -2821,7 +2906,7 @@ Environmnt:
 			<event/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж мёртв, и вы полностью обчищаете их трюмы. Можно попытаться выследить второй корабль.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -2854,27 +2939,27 @@ Environmnt:
 	</event>
 	<event>
 		<text planet="NONE">Вы находите тот самый повреждённый корабль Ордена. Теперь ему не уйти от вас.</text>
-		<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_XXXXX" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_XXXXX" hostile="true"/>
 		<status type="divide" target="enemy" system="shields" amount="2"/>
 	</event>
 </eventList>
 <event name="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_FINDTHEORDEN_100">
 	<text planet="NONE">Вы находите тот самый повреждённый корабль Ордена. Теперь ему не уйти от вас.</text>
-	<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_XXXXX" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_XXXXX" hostile="true"/>
 	<status type="divide" target="enemy" system="shields" amount="2"/>
 </event>
 <ship name="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_XXXXX" auto_blueprint="GLORY_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы собираете его обломки.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж мёртв, и вы полностью обчищаете трюмы их корабля.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
 <ship name="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP" auto_blueprint="GLORY_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы собираете его обломки. Можно попытаться выследить второй корабль.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -2896,7 +2981,7 @@ Environmnt:
 			<event/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж мёртв, и вы полностью обчищаете трюмы их корабля. Также можно попытаться выследить второй корабль.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -2928,22 +3013,22 @@ Environmnt:
 		</choice>
 	</event>
 	<event>
-		<text planet="NONE">Вы находите тот самый повреждённый корабль роков. Теперь ему не уйти от вас.</text>
-		<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_XXXXX" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<text planet="NONE">Вы находите тот самый повреждённый корабль роков. Они агрессивны, несмотря на повреждения их двигателей.</text><!-- 1.33 -->
+		<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_XXXXX" hostile="true"/>
 		<status type="divide" target="enemy" system="engines" amount="2"/>
 	</event>
 </eventList>
 <event name="QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_FINDTHEROCK_100">
-	<text planet="NONE">Вы находите тот самый повреждённый корабль роков. Теперь ему не уйти от вас.</text>
-	<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_XXXXX" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<text planet="NONE">Вы находите тот самый повреждённый корабль роков. Они агрессивны, несмотря на повреждения их двигателей.</text><!-- 1.33 -->
+	<ship load="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_XXXXX" hostile="true"/>
 	<status type="divide" target="enemy" system="engines" amount="2"/>
 </event>
 <ship name="QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_XXXXX" auto_blueprint="SHIPS_ROCK">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы собираете его обломки.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж мёртв, и вы полностью обчищаете трюмы их корабля.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -2952,7 +3037,7 @@ Environmnt:
 <event name="ORDEN_QUEST_ESCORT" unique="true">
 	<img planet="NONE"/>
 	<text>Вы получаете сообщение от гражданского судна поблизости: «Здравствуйте, мы подверглись нападению и отстали от основных сил нашего конвоя. Было бы здорово, если бы вы сопроводили нас, тут очень опасно. Наши друзья могут отремонтировать ваше судно».</text>
-	<ship load="CIVILIAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CIVILIAN_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Согласиться.</text><!-- 1.25 -->
 		<event>
@@ -2964,7 +3049,7 @@ Environmnt:
 		<text>Атаковать гражданских.</text>
 		<event>
 			<text>Большинство судов для вас — лишь источник ресурсов. Вы готовитесь к атаке.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2985,12 +3070,12 @@ Environmnt:
 	<event>
 		<img planet="NONE"/>
 		<text>Вы сопроводили корабль до нужного маяка. К вашему разочарованию, вы попали прямо в ловушку Ордена! Гражданский корабль, державшийся позади вас, быстренько удирает с поля боя.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<img planet="NONE"/>
 		<text>Вы сопроводили корабль до нужного маяка. К вашему разочарованию, вы попали прямо в ловушку Ордена! Гражданский корабль, державшийся позади вас, быстренько удирает с поля боя.</text>
-		<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="GLORY_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<img  planet="CIV_CONVOY"/>
@@ -3008,7 +3093,7 @@ Environmnt:
 
 <event name="ORDEN_CRAZY_HEAL_ENGI" unique="true">
 	<img planet="NONE"/>
-	<ship load="CRAZY_HEAL_ENGI_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="CRAZY_HEAL_ENGI_SHIP" hostile="true"/>
 	<!-- <status type="limit" target="enemy" system="drones" amount="0"/> -->
 	<text>Корабль инжи прыгает к этому маяку сразу после вас: «Нет время объяснения! Федерация помощь! Быстрый отключение свой двигатель и ждать бомба!»</text>
 </event>
@@ -3016,14 +3101,14 @@ Environmnt:
 	<escape timer="17" min="30" max="30">
 		<text>Вы замечаете, что они начинают зарядку двигателя.</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Странный корабль исчез, оставив вас в недоумении...</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, а вы собираете немного лома.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все инжи мертвы, и вы, пристыковавшись к их кораблю, полностью обчищаете трюмы.</text>
 		<autoReward level="LOW">scrap_only</autoReward><!-- 1.25 -->
 		<choice hidden="true"><!-- 1.25 -->
@@ -3156,7 +3241,7 @@ Environmnt:
 
 <event name="HAL_FIGHT">
 	<text load="HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 <textList name="HAL_FIGHT_TEXT">
@@ -3173,13 +3258,13 @@ Environmnt:
 	<text>Возле этого маяка нет ничего особенного. Вы уже собираетесь побеседовать с кем-то из команды, как появляется беспилотник HAL и сразу же атакует вас.</text>
 </textList>
 <ship name="HAL_SHIP" auto_blueprint="HAL_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете всё, что уцелело.</text>
 		<autoReward level="MED">scrap_only</autoReward>
-		<item_modify>
-			<item type="drones" min="0" max="3"/>
-			<item type="missiles" min="0" max="3"/>
-			<item type="fuel" min="0" max="3"/>
+		<item_modify><!-- 1.33 -->
+			<item type="drones" min="0" max="5"/>
+			<item type="missiles" min="0" max="9"/>
+			<item type="fuel" min="0" max="5"/>
 			<!-- <item type="scrap" min="0" max="25"/> --> <!-- 1.23 --> <!-- its not worked -->
 		</item_modify>
 	</destroyed>
@@ -3225,7 +3310,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL.</text>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 		<autoReward level="RANDOM">scrap_only</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
 	</event>	
@@ -3266,7 +3351,7 @@ Environmnt:
 
 <event name="NEBULA_HAL_FIGHT">
 	<text load="NEBULA_HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
@@ -3302,13 +3387,13 @@ Environmnt:
 
 <event name="HAL_NEUTRAL_FIGHT">
 	<text load="HAL_NEUTRAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	<choice>
 		<text>Атаковать HAL.</text>
 		<event>
 			<text>Вы включаете оружие и бросаетесь в атаку на беспилотник.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -3334,13 +3419,13 @@ Environmnt:
 	<img back="HAL_BACK_PROT" planet="NONE"/>
 	<repair/>
 	<text>Вы осторожно приближаетесь к огромной ремонтной верфи HAL. Беспилотник в центре занят починкой мелких дронов. Вокруг снуют несколько беспилотников поменьше, ожидая своей очереди на ремонт.</text>
-	<ship load="HAL_BOSS_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="HAL_BOSS_SHIP" hostile="false"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	<choice hidden="true">
 		<text>Атаковать ремонтный беспилотник.</text>
 		<event>
 			<text>Вы несётесь в атаку, полагаясь на эффект неожиданности. Однако, HAL 9000 вовремя реагирует на нападение. Ожидавшие ремонт беспилотники предпочитают отлететь подальше от вашей разборки.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -3368,7 +3453,7 @@ Environmnt:
 </event>
 
 <ship name="HAL_BOSS_SHIP" auto_blueprint="HAL_BOSS_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Уничтожив корабль, вы забираете уцелевшее после взрыва орудие.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<weapon name="HAL_PROTOTYPE_RANDOM"/>
@@ -3383,7 +3468,7 @@ Environmnt:
 <eventList name="HAL_BOSS_AVATAR">
 	<event>
 		<text>HAL 9000 распознаёт ваш обман и атакует! Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>HAL 9000 опознаёт вас как слабый беспилотник и выдаёт ремонтного дрона.</text>
@@ -3414,12 +3499,12 @@ Environmnt:
 	<event>
 		<text>Как только вы включаете маскировку, в её отсеке происходит взрыв! Вероятно, на станции установлена защита от незваных гостей, и HAL 9000 незамедлительно направляется в вашу сторону. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 		<damage amount="2" system="cloaking" effect="fire"/>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Как только вы включаете маскировку, в её отсеке происходит взрыв! Вероятно, на станции установлена защита от незваных гостей, и HAL 9000 незамедлительно направляется в вашу сторону. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 		<damage amount="1" system="cloaking" effect="fire"/>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Вам удаётся подобраться к HAL 9000 на расстояние выстрела. Куда будем целиться?</text>
@@ -3428,7 +3513,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по щитам HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="shields" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3436,7 +3521,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по орудиям HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="weapons" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3444,7 +3529,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по двигателям HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="engines" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3452,7 +3537,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по системе дронов HAL 9000 и частично выводите её из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="drones" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 	</event>
@@ -3461,7 +3546,7 @@ Environmnt:
 	<event>
 		<text>Как только вы включаете маскировку, в её отсеке происходит взрыв! Вероятно, на станции установлена защита от незваных гостей, и HAL 9000 незамедлительно направляется в вашу сторону. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 		<damage amount="1" system="cloaking" effect="fire"/>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Вам удаётся подобраться к HAL 9000 на расстояние выстрела. Куда будем целиться?</text>
@@ -3470,7 +3555,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по щитам HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="shields" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3478,7 +3563,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по орудиям HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="weapons" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3486,7 +3571,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по двигателям HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="engines" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3494,7 +3579,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по системе дронов HAL 9000 и частично выводите её из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="drones" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 	</event>
@@ -3507,7 +3592,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по щитам HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="shields" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3515,7 +3600,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по орудиям HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="weapons" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3523,7 +3608,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по двигателям HAL 9000 и частично выводите их из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="engines" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -3531,7 +3616,7 @@ Environmnt:
 			<event>
 				<text>Вы делаете залп по системе дронов HAL 9000 и частично выводите её из строя. Беспилотники, ожидавшие ремонт, разлетаются прочь.</text>
 				<status type="loss" target="enemy" system="drones" amount="2"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 	</event>
@@ -3576,13 +3661,13 @@ Environmnt:
 	<event>
 		<text>Взрывная волна раскидывает кучи обломков в космос, но собрать их все вам помешал беспилотник HAL, незамедлительно появившийся на сигнал взрыва.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>
 	<event>
 		<text>Взрывная волна раскидывает кучи обломков в космос, но собрать их все вам помешал беспилотник HAL, незамедлительно появившийся на сигнал взрыва.</text>
 		<autoReward level="MED">scrap_only</autoReward>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>
 </eventList>
@@ -3599,7 +3684,7 @@ Environmnt:
 	<event>
 		<text>Вы тщательно обыскиваете весь склад и переносите содержимое на корабль. К счастью, под действием феромонов это не заняло много времени. Когда вы уже закончили, к маяку прыгает враждебный беспилотник!</text>
 		<autoReward level="HIGH">stuff</autoReward>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/>
 	</event>	
 </eventList>
@@ -3618,7 +3703,7 @@ Environmnt:
 		<text>Вы тщательно обыскиваете весь склад и переносите содержимое на корабль. Это заняло немало времени, за которое флот повстанцев нагоняет вас. Когда вы уже закончили, к маяку прыгает враждебный беспилотник!</text>
 		<autoReward level="HIGH">stuff</autoReward>
 		<modifyPursuit amount="1"/>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>	
 </eventList>
@@ -3635,7 +3720,7 @@ Environmnt:
 	<event>
 		<text>Не теряя времени, вы быстро хватаете со склада то, что кажется полезным. Когда вы уже закончили, к маяку прыгает враждебный беспилотник!</text>
 		<autoReward level="LOW">stuff</autoReward>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>	
 </eventList>
@@ -3663,14 +3748,14 @@ Environmnt:
 			<text>Преследовать беспилотник.</text>
 			<event>
 				<text>Вы начинаете преследование, которое быстро уводит вас далеко от роков.</text>
-				<ship load="HAL_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship load="HAL_SHIP" hostile="false"/>
 				<status type="loss" target="enemy" system="drones" amount="2"/>
 				<choice hidden="true">
 					<text id="continue"/>
 					<event>
 						<text>Наконец, беспилотник сбавляет скорость и разворачивается в вашу сторону. Даже если вы победите, возвращаться на поиски роков нет смысла, слишком далеко вы улетели от первоначальных координат.</text>
 						<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
-						<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+						<ship hostile="true"/>
 					</event>
 				</choice>
 			</event>
@@ -3682,19 +3767,20 @@ Environmnt:
 	</event>
 	<event>
 		<text>Вы делаете залп в сторону беспилотника, но тот уклоняется. Зависнув на несколько мгновений, ИИ HAL принимает решение сменить цель и атакует вас.</text>
-		<ship load="HAL_SHIP_ROCK_IS_DEAD" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP_ROCK_IS_DEAD" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>
 </eventList>
 
 <ship name="HAL_SHIP_ROCK_IS_DEAD" auto_blueprint="HAL_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Пока вы сражались, все роки погибли. Их корпус получил слишком много пробоин, и бедолаги задохнулись без кислорода. Вам остаётся лишь собрать припасы с обоих кораблей и отправиться дальше.</text>
 		<autoReward level="HIGH">scrap_only</autoReward> <!-- 1.25.1 -->
-		<item_modify>
-			<item type="drones" min="0" max="5"/> 
-			<item type="missiles" min="0" max="5"/>
-			<item type="fuel" min="0" max="5"/>
+		<item_modify><!-- 1.33 -->
+			<item type="drones" min="4" max="7"/> 
+			<item type="missiles" min="5" max="8"/>
+			<item type="fuel" min="3" max="5"/>
 			<!-- <item type="scrap" min="0" max="25"/> --> <!-- 1.23 --> <!-- its not worked -->
 		</item_modify>
 	</destroyed>
@@ -3741,7 +3827,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL. К сожалению, пока вы сражались, все роки погибли. Их корпус получил слишком много пробоин, и бедолаги задохнулись без кислорода. Нужно отправляться дальше...</text>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 		<autoReward level="HIGH">scrap_only</autoReward> <!-- 1.25.1 -->
 		<drone name="DRONES_COMBAT_HAL"/>
 	</event>	
@@ -3801,18 +3887,18 @@ Environmnt:
 
 <event name="HAL_ROCK_DEFEAT_ROCK">
 	<text>Вы подлетаете ближе, чтобы добить роков, но ИИ HAL меняет приоритеты и атакует вас! Вам придётся отбиваться от него, вести бой на два фронта не лучшая затея.</text>
-	<ship load="HAL_SHIP_ROCK_IS_GONE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP_ROCK_IS_GONE" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 
 <ship name="HAL_SHIP_ROCK_IS_GONE" auto_blueprint="HAL_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Пока вы сражались, роки благоразумно убрались подальше от вас. Вы собираете обломки беспилотника.</text>
 		<autoReward level="MED">scrap_only</autoReward> <!-- 1.23 -->
-		<item_modify>
-			<item type="drones" min="0" max="3"/> 
-			<item type="missiles" min="0" max="3"/>
-			<item type="fuel" min="0" max="3"/>
+		<item_modify><!-- 1.33 -->
+			<item type="drones" min="0" max="7"/> 
+			<item type="missiles" min="0" max="8"/>
+			<item type="fuel" min="0" max="5"/>
 			<!-- <item type="scrap" min="0" max="25"/> --> <!-- 1.23 --> <!-- its not worked -->
 		</item_modify>
 	</destroyed>
@@ -3859,7 +3945,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL. Роки же, воспользовавшись суматохой боя, благоразумно покинули это место.</text>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 		<autoReward level="RANDOM">scrap_only</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
 	</event>	
@@ -3868,7 +3954,7 @@ Environmnt:
 <eventList name="HAL_ROCK_DEFEAT_LOOK">
 	<event>
 		<text>HAL быстро расправляется с целью и переключается на вас. Надо было улетать, пока была возможность...</text>
-		<ship load="HAL_SHIP_ROCK_IS_LOSE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP_ROCK_IS_LOSE" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>
 	<event>
@@ -3877,7 +3963,7 @@ Environmnt:
 			<text>Не дать им уйти, уничтожить роков!</text>
 			<event>
 				<text>Вы готовитесь добить каменюг.</text>
-				<ship load="HAL_SHIP_ROCK_IS_WIN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="HAL_SHIP_ROCK_IS_WIN" hostile="true"/>
 				<status type="loss" target="enemy" system="weapons" amount="10"/>
 			</event>
 		</choice>
@@ -3885,7 +3971,7 @@ Environmnt:
 			<text>Пусть уходят, просто разобрать на части HAL.</text>
 			<event>
 				<text>Роки улетают, а вы отправляете команду обчищать трюмы беспилотника. Там они находят рабочую схему дрона HAL.</text>
-				<autoReward level="MED">stuff</autoReward>
+				<autoReward level="MED">standard</autoReward><!-- 1.33 -->
 				<drone name="DRONES_COMBAT_HAL"/>
 			</event>
 		</choice>
@@ -3896,23 +3982,23 @@ Environmnt:
 	<escape timer="20" min="30" max="30">
 		<text>Придётся действовать быстро, их привод уже наполовину заряжен.</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Роки ушли. Вы собираете скудные обломки HAL и готовитесь к прыжку.</text>
 		<autoReward level="MED">stuff</autoReward>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль роков разваливается на части, и вы обчищаете оба корабля.</text>
-		<autoReward level="HIGH">stuff</autoReward>
+		<autoReward level="HIGH">standard</autoReward><!-- 1.33 -->
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все роки мертвы, и вы обчищаете оба корабля. На корабле роков вы находите рабочее орудие.</text>
-		<autoReward level="HIGH">stuff</autoReward>
+		<autoReward level="HIGH">standard</autoReward><!-- 1.33 -->
 		<weapon name="WEAPONS_CLASS_MISSILE_MED"/>
 	</deadCrew>
 </ship>
 
 <ship name="HAL_SHIP_ROCK_IS_LOSE" auto_blueprint="HAL_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Покончив с беспилотником, вы осматриваете оба корабля. Не так уж много полезного от них осталось, но выбирать не приходится...</text>
 		<autoReward level="HIGH">stuff</autoReward>
 	</destroyed>
@@ -3959,7 +4045,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Вы собираете припасы с обоих кораблей и находите в трюме беспилотника рабочую схему дрона HAL.</text>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 		<autoReward level="HIGH">stuff</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
 	</event>
@@ -4017,7 +4103,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>...взрыв оказывается недостаточно мощным, чтобы пробить дверь. Зато ваши действия привлекают внимание беспилотника HAL, патрулирующего неподалёку!</text>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>
 </eventList>
@@ -4095,7 +4181,7 @@ Environmnt:
 	<text>Капитан корабля Федерации говорит, что после последнего прыжка у него не осталось топлива, а от этого ионного шторма сильно кружится голова. Он просит вас дать ему топливо и сопроводить до места назначения.</text>
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="HAL_I_FORGOT_YOU_MAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="HAL_I_FORGOT_YOU_MAN_SHIP" hostile="false"/>
 	<choice hidden="false">
 		<text>Согласиться.</text>
 		<event>
@@ -4118,12 +4204,12 @@ Environmnt:
 	<text>Корабль Федерации вышел из прыжка сразу после вас, но, к вашему удивлению, он заряжает орудия, сев вам на хвост!</text>
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
-	<ship load="HAL_I_FORGOT_YOU_MAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="HAL_I_FORGOT_YOU_MAN_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Сделать несколько манёвров, чтобы стряхнуть преследователя.</text>
 		<event>
 			<text>Вы ловко петляете мимо крупных астероидов, уворачиваясь от снарядов, однако преследование продолжается.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4134,7 +4220,7 @@ Environmnt:
 <eventList name="CAPTAIN_FORGOT">
 	<event>
 		<text>Капитан корабля Федерации не отвечает на ваши запросы... Видимо, он сошёл с ума.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Вы связываетесь с капитаном и объясняете, что он всё перепутал. Видимо, прыжки отрицательно влияют на его сознание. Извинившись, капитан спрашивает вас: «Чем я могу вас отблагодарить?»</text>
@@ -4162,11 +4248,11 @@ Environmnt:
 	</event>
 </eventList>
 <ship name="HAL_I_FORGOT_YOU_MAN_SHIP" auto_blueprint="SHIPS_FED_X">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Уничтожив корабль, вы собираете всё ценное.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Никого живого на корабле не осталось, и вы забираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -4176,7 +4262,7 @@ Environmnt:
 
 <event name="HAL_FIGHT_ENGIDEAD" unique="true">
 	<text load="HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	<choice req="engi" lvl="0" hidden="true" max_group="0" blue="false">
 		<text id="continue"/>
@@ -4237,7 +4323,7 @@ Environmnt:
 
 <event name="HAL_FED_NOFUEL" unique="true">
 	<text>Корабль Федерации сообщает, что застрял в этом опасном месте с пустыми баками. Теперь он просит у вас топливо и сопровождение за небольшую предоплату.</text>
-	<ship load="FED_NOFUEL_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FED_NOFUEL_SHIP" hostile="false"/>
 	<choice hidden="false">
 		<text>Дать топливо и сопроводить.</text>
 		<event>
@@ -4258,7 +4344,7 @@ Environmnt:
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<text>«Капитан, спасибо, что сопроводили нас! Однако, это не то место. Мы ошиблись маяком. Зато теперь мы разобрались, и у нас есть точные координаты! И да, кстати, у нас опять пустые баки... Что скажете?»</text>
-	<ship load="FED_NOFUEL_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FED_NOFUEL_SHIP" hostile="false"/>
 	<choice hidden="false">
 		<text>Дать им топливо ещё раз.</text>
 		<event>
@@ -4274,7 +4360,7 @@ Environmnt:
 		<text>Уничтожить их.</text>
 		<event>
 			<text>Вы решаете, что среди этих астероидов Федерация никогда не узнает о ваших методах. В атаку!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4284,22 +4370,22 @@ Environmnt:
 </event>
 <eventList name="QUEST_HAL_FED_NOFUEL2">
 	<event>
-		<ship load="FED_NOFUEL_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="FED_NOFUEL_SHIP" hostile="false"/>
 		<text>Корабль выходит из прыжка вслед за вами. «Капитан, спасибо, что спасли нас! Держите, это всё что у нас есть!»</text>
 		<autoReward level="HIGH">weapon</autoReward>
 	</event>
 	<event> <!-- 1.25 -->
-		<ship load="FED_NOFUEL_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="FED_NOFUEL_SHIP" hostile="false"/>
 		<text>Корабль выходит из прыжка вслед за вами. «Капитан, спасибо, что спасли нас! Держите, это всё что у нас есть!»</text>
 		<autoReward level="HIGH">weapon</autoReward>
 	</event>
 	<event>
 		<environment type="PDS" target="player"/>
-		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL" hostile="true"/>
 		<text>Похоже, что на этом маяке расположена база повстанцев! А корабля Федерации, в который вы заливали топливо, так и нет...</text>
 	</event>
 	<event>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 		<text>Вы выпрыгиваете прямо рядом с автоматическим кораблём HAL, который тут же атакует вас! Пока вы заняты боем, появившийся вслед за вами корабль Федерации быстро заряжает двигатели и сматывается...</text>
 	</event>
@@ -4313,7 +4399,7 @@ Environmnt:
 
 <event name="HAL_HUNTRADE" unique="true">
 	<text>Как только вы выходите из прыжка, пиратский истребитель наводит на вас свои пушки, но останавливается и выходит на связь: «Вот чёрт! Это не очередной глупый беспилотник... У нас есть парочка дронов на продажу, будешь брать?»</text>
-	<ship load="HAL_HUNTRADE_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="HAL_HUNTRADE_PARAM" hostile="false"/>
 	<choice hidden="false">
 		<text>Купить этого дрона.</text>
 		<event>
@@ -4338,13 +4424,13 @@ Environmnt:
 		<text>Отказаться.</text>
 		<event>
 			<text>«Тогда мы заберём твой лом силой, и даже не пытайся убежать».</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
 <ship name="HAL_HUNTRADE_PARAM" auto_blueprint="MANTIS_HAL_HUNTER_SHIPS">
 	<destroyed load="DESTROYED_DEFAULT"/>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>На корабле нет ничего ценного, за исключением одного уцелевшего в бою дрона.</text>
 		<drone name="DRONES_COMBAT_HAL"/>
 	</deadCrew>
@@ -4358,12 +4444,12 @@ Environmnt:
 
 <event name="HAL_LANIUS_CREW" unique="true">
 	<text>Вы выходите из прыжка рядом с неподвижным кораблём HAL. Что в нём кажется подозрительным, этот беспилотник явно не такой, как остальные...</text>
-	<ship load="HAL_LANIUS_CREW_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="HAL_LANIUS_CREW_PARAM" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать беспилотник.</text>
 		<event>
 			<text>Корабль отвечает на вашу агрессию активацией всех систем.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4381,22 +4467,22 @@ Environmnt:
 	</choice>
 </event>
 <ship name="HAL_LANIUS_CREW_PARAM" auto_blueprint="HAL_1001_LANI_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы собираете его обломки.</text>
 		<autoReward level="MED">scrap_only</autoReward> 
-		<item_modify><!-- 1.26 -->
-			<item type="fuel" min="0" max="3"/>
-			<item type="missiles" min="0" max="3"/>
-			<item type="drones" min="0" max="3"/>
+		<item_modify><!-- 1.26 --><!-- 1.33 -->
+			<item type="fuel" min="0" max="7"/>
+			<item type="missiles" min="0" max="9"/>
+			<item type="drones" min="0" max="5"/>
 		</item_modify>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж корабля и собрали всё ценное с него.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
-		<item_modify><!-- 1.26 -->
-			<item type="fuel" min="0" max="3"/>
-			<item type="missiles" min="0" max="3"/>
-			<item type="drones" min="0" max="3"/>
+		<item_modify><!-- 1.26 --><!-- 1.33 -->
+			<item type="fuel" min="0" max="7"/>
+			<item type="missiles" min="0" max="9"/>
+			<item type="drones" min="0" max="5"/>
 		</item_modify>
 	</deadCrew>
 </ship>
@@ -4410,7 +4496,7 @@ Environmnt:
 
 <event name="HAL_QUEST_ESCORT" unique="true">
 	<text>На этом маяке лишь один корабль. Его капитан вызывает вас: «Мы очень нуждаемся в помощи. Наша система FTL-навигации повреждена. Вы можете помочь нам добраться до ближайшей станции?»</text>
-	<ship load="FED_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FED_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Согласиться.</text><!-- 1.22.2 -->
 		<event>
@@ -4436,7 +4522,7 @@ Environmnt:
 <eventList name="QUEST_ESCORT_ARRIVE_HAL">
 	<event>
 		<text>Вы сопроводили корабль до нужного маяка. К вашему разочарованию, вы попали в засаду корабля HAL, который первым же залпом дронов разобрал на части следующий за вами корабль Федерации!</text>
-		<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="HAL_SHIP" hostile="true"/>
 		<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 	</event>
 	<event>
@@ -4454,7 +4540,7 @@ Environmnt:
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
 	<text load="ASTEROID_HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 <textList name="ASTEROID_HAL_FIGHT_TEXT">
@@ -4467,7 +4553,7 @@ Environmnt:
 	<environment type="pulsar"/>
 	<variable name="counter_meet_pulsar" op="add" val="1"/>
 	<text load="PULSAR_HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 <textList name="PULSAR_HAL_FIGHT_TEXT">
@@ -4480,7 +4566,7 @@ Environmnt:
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 	<text load="SUN_HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 <textList name="SUN_HAL_FIGHT_TEXT">
@@ -4491,7 +4577,7 @@ Environmnt:
 
 <event name="HAL_FIGHT_HACKME" unique="true"> <!-- 1.26 -->
 	<text load="HAL_FIGHT_TEXT"/>
-	<ship load="HAL_SHIP_HACKME" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP_HACKME" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -4501,110 +4587,110 @@ Environmnt:
 <eventList name="HAL_FIGHT_HACKME_R">
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="shields" amount="1" />
-		<status type="loss" target="player" system="drones" amount="1" />
+		<status type="loss" target="player" system="shields" amount="1"/>
+		<status type="loss" target="player" system="drones" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="artillery" amount="1" />
-		<status type="loss" target="player" system="doors" amount="1" />
+		<status type="loss" target="player" system="artillery" amount="1"/>
+		<status type="loss" target="player" system="doors" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="teleporter" amount="1" />
-		<status type="limit" target="player" system="pilot" amount="1" />
+		<status type="loss" target="player" system="teleporter" amount="1"/>
+		<status type="limit" target="player" system="pilot" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="weapons" amount="1" />
-		<status type="loss" target="player" system="sensors" amount="1" />
+		<status type="loss" target="player" system="weapons" amount="1"/>
+		<status type="loss" target="player" system="sensors" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="medbay" amount="1" />
-		<status type="loss" target="player" system="oxygen" amount="1" />
+		<status type="loss" target="player" system="medbay" amount="1"/>
+		<status type="loss" target="player" system="oxygen" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="engines" amount="1" />
-		<status type="loss" target="player" system="cloaking" amount="1" />
+		<status type="loss" target="player" system="engines" amount="1"/>
+		<status type="loss" target="player" system="cloaking" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="mind" amount="1" />
-		<status type="loss" target="player" system="hacking" amount="1" />
+		<status type="loss" target="player" system="mind" amount="1"/>
+		<status type="loss" target="player" system="hacking" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="reactor" amount="1" />
-		<status type="loss" target="player" system="clonebay" amount="1" />
+		<status type="loss" target="player" system="reactor" amount="1"/>
+		<status type="loss" target="player" system="clonebay" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="drones" amount="1" />
-		<status type="loss" target="player" system="artillery" amount="1" />
+		<status type="loss" target="player" system="drones" amount="1"/>
+		<status type="loss" target="player" system="artillery" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="doors" amount="1" />
-		<status type="loss" target="player" system="teleporter" amount="1" />
+		<status type="loss" target="player" system="doors" amount="1"/>
+		<status type="loss" target="player" system="teleporter" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="limit" target="player" system="pilot" amount="1" />
-		<status type="loss" target="player" system="weapons" amount="1" />
+		<status type="limit" target="player" system="pilot" amount="1"/>
+		<status type="loss" target="player" system="weapons" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="sensors" amount="1" />
-		<status type="loss" target="player" system="medbay" amount="1" />
+		<status type="loss" target="player" system="sensors" amount="1"/>
+		<status type="loss" target="player" system="medbay" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="oxygen" amount="1" />
-		<status type="loss" target="player" system="engines" amount="1" />
+		<status type="loss" target="player" system="oxygen" amount="1"/>
+		<status type="loss" target="player" system="engines" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="cloaking" amount="1" />
-		<status type="loss" target="player" system="mind" amount="1" />
+		<status type="loss" target="player" system="cloaking" amount="1"/>
+		<status type="loss" target="player" system="mind" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="hacking" amount="1" />
-		<status type="loss" target="player" system="reactor" amount="1" />
+		<status type="loss" target="player" system="hacking" amount="1"/>
+		<status type="loss" target="player" system="reactor" amount="1"/>
 	</event>
 	<event>
 		<text>...также команда докладывает, что обнаружен вирус HAL, взламывающий некоторые из систем вашего корабля!</text>
-		<status type="loss" target="player" system="clonebay" amount="1" />
-		<status type="loss" target="player" system="shields" amount="1" />
+		<status type="loss" target="player" system="clonebay" amount="1"/>
+		<status type="loss" target="player" system="shields" amount="1"/>
 	</event>
 </eventList>
 <ship name="HAL_SHIP_HACKME" auto_blueprint="HAL_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете всё, что уцелело, а ослабленные системы приходят в норму.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
-		<item_modify>
-			<item type="drones" min="0" max="5"/>
-			<item type="missiles" min="0" max="5"/>
-			<item type="fuel" min="0" max="5"/>
+		<item_modify><!-- 1.33 -->
+			<item type="drones" min="4" max="7"/>
+			<item type="missiles" min="5" max="9"/>
+			<item type="fuel" min="3" max="5"/>
 		</item_modify>
-		<status type="clear" target="player" system="shields" amount="100" />
-		<status type="clear" target="player" system="weapons" amount="100" />
-		<status type="clear" target="player" system="drones" amount="100" />
-		<status type="clear" target="player" system="cloaking" amount="100" />
-		<status type="clear" target="player" system="reactor" amount="100" />
-		<status type="clear" target="player" system="medbay" amount="100" />
-		<status type="clear" target="player" system="clonebay" amount="100" />
-		<status type="clear" target="player" system="doors" amount="100" />
-		<status type="clear" target="player" system="mind" amount="100" />
-		<status type="clear" target="player" system="engines" amount="100" />
-		<status type="clear" target="player" system="pilot" amount="100" />
-		<status type="clear" target="player" system="hacking" amount="100" />
-		<status type="clear" target="player" system="sensors" amount="100" />
-		<status type="clear" target="player" system="teleporter" amount="100" />
-		<status type="clear" target="player" system="oxygen" amount="100" />
-		<status type="clear" target="player" system="artillery" amount="100" />
+		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+		<status type="clear" target="player" system="drones" amount="100"/>
+		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<status type="clear" target="player" system="reactor" amount="100"/>
+		<status type="clear" target="player" system="medbay" amount="100"/>
+		<status type="clear" target="player" system="clonebay" amount="100"/>
+		<status type="clear" target="player" system="doors" amount="100"/>
+		<status type="clear" target="player" system="mind" amount="100"/>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+		<status type="clear" target="player" system="sensors" amount="100"/>
+		<status type="clear" target="player" system="teleporter" amount="100"/>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="artillery" amount="100"/>
 	</destroyed>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<surrender chance="0" min="9" max="9" load="HAL_SHIP_HACKME_DAMAGE"/>
@@ -4648,25 +4734,25 @@ Environmnt:
 	</event>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Системы вашего корабля приходят в норму, а ваша команда разбирает беспилотник на лом и находит в трюме рабочую схему дрона HAL.</text>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
-		<status type="clear" target="player" system="shields" amount="100" />
-		<status type="clear" target="player" system="weapons" amount="100" />
-		<status type="clear" target="player" system="drones" amount="100" />
-		<status type="clear" target="player" system="cloaking" amount="100" />
-		<status type="clear" target="player" system="reactor" amount="100" />
-		<status type="clear" target="player" system="medbay" amount="100" />
-		<status type="clear" target="player" system="clonebay" amount="100" />
-		<status type="clear" target="player" system="doors" amount="100" />
-		<status type="clear" target="player" system="mind" amount="100" />
-		<status type="clear" target="player" system="engines" amount="100" />
-		<status type="clear" target="player" system="pilot" amount="100" />
-		<status type="clear" target="player" system="hacking" amount="100" />
-		<status type="clear" target="player" system="sensors" amount="100" />
-		<status type="clear" target="player" system="teleporter" amount="100" />
-		<status type="clear" target="player" system="oxygen" amount="100" />
-		<status type="clear" target="player" system="artillery" amount="100" />
+		<status type="clear" target="player" system="shields" amount="100"/>
+		<status type="clear" target="player" system="weapons" amount="100"/>
+		<status type="clear" target="player" system="drones" amount="100"/>
+		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<status type="clear" target="player" system="reactor" amount="100"/>
+		<status type="clear" target="player" system="medbay" amount="100"/>
+		<status type="clear" target="player" system="clonebay" amount="100"/>
+		<status type="clear" target="player" system="doors" amount="100"/>
+		<status type="clear" target="player" system="mind" amount="100"/>
+		<status type="clear" target="player" system="engines" amount="100"/>
+		<status type="clear" target="player" system="pilot" amount="100"/>
+		<status type="clear" target="player" system="hacking" amount="100"/>
+		<status type="clear" target="player" system="sensors" amount="100"/>
+		<status type="clear" target="player" system="teleporter" amount="100"/>
+		<status type="clear" target="player" system="oxygen" amount="100"/>
+		<status type="clear" target="player" system="artillery" amount="100"/>
 	</event>	
 </eventList>
 
@@ -4674,7 +4760,8 @@ Environmnt:
 <event name="DISTRESS_HAL_FED" unique="true">
 	<distressBeacon/>
 	<text load="DISTRESS_HAL_TEXT"/>
-	<ship load="HAL_SHIP_DISTRESS_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP_DISTRESS_PARAM" hostile="true"/>
+	<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 <textList name="DISTRESS_HAL_TEXT">
@@ -4683,13 +4770,13 @@ Environmnt:
 	<text>Сигнал бедствия посылает судно Федерации. Беспилотник HAL своими дронами пытается пробиться сквозь щиты, однако ваше появление изменило его приоритеты атаки. HAL атакует вас!</text>
 </textList>
 <ship name="HAL_SHIP_DISTRESS_PARAM" auto_blueprint="HAL_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете всё, что уцелело.</text>
 		<autoReward level="MED">scrap_only</autoReward>
-		<item_modify>
-			<item type="drones" min="0" max="3"/> 
-			<item type="missiles" min="0" max="3"/>
-			<item type="fuel" min="0" max="3"/>
+		<item_modify><!-- 1.33 -->
+			<item type="drones" min="0" max="7"/> 
+			<item type="missiles" min="0" max="9"/>
+			<item type="fuel" min="0" max="5"/>
 			<!-- <item type="scrap" min="0" max="25"/> --> <!-- 1.23 --> <!-- its not worked -->
 		</item_modify>
 		<choice hidden="true">
@@ -4739,7 +4826,7 @@ Environmnt:
 	</event>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL.</text>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 		<autoReward level="RANDOM">scrap_only</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
 		<choice hidden="true">
@@ -4783,7 +4870,7 @@ Environmnt:
 <event name="DISTRESS_HAL_TRAP" unique="true">
 	<distressBeacon/>
 	<text load="DISTRESS_HAL_TRAP_TEXT"/>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.25 -->
 </event>
 <textList name="DISTRESS_HAL_TRAP_TEXT">
@@ -4808,7 +4895,7 @@ Environmnt:
 
 <event name="LANIUS_HAL" unique="true">
 	<text>Боевое судно ланиусов неподалёку занято поглощением обломков HAL. На ваше прибытие они никак не реагируют.</text>
-	<ship load="LANIUS_SHIP_HAL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP_HAL" hostile="false"/>
 	<choice hidden="true">
 		<text>Попробовать тоже собрать часть обломков.</text>
 		<event load="LANIUS_HAL_HARV"/>
@@ -4817,7 +4904,7 @@ Environmnt:
 		<text>Напасть на ланиусов.</text>
 		<event>
 			<text>Ланиусы вынуждены бросить своё занятие, чтобы защищаться.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -4835,7 +4922,7 @@ Environmnt:
 <eventList name="LANIUS_HAL_HARV">
 	<event>
 		<text>Как и следовало ожидать, ланиусы не собираются ни с кем делиться и атакуют ваш корабль.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Вы стараетесь не приближаться близко к кораблю ланиусов и собираете далеко отлетевшие обломки.</text>
@@ -4849,7 +4936,7 @@ Environmnt:
 </ship>
 
 <eventList name="LANIUS_DESTROYED_HAL">
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя немного лома.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -4857,7 +4944,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -4865,7 +4952,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -4873,7 +4960,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль взорвался, от него отвалилась часть металлической обшивки. Вы собрали значительное количество лома.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -4884,7 +4971,7 @@ Environmnt:
 </eventList>
 
 <eventList name="LANIUS_DEAD_CREW_HAL">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -4892,7 +4979,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -4900,7 +4987,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -4908,7 +4995,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -4916,7 +5003,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось никаких признаков жизни. Вы забираете оттуда полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -4924,7 +5011,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>После смерти команды ланиусов вы можете забрать топливо из их хранилища. Вы также собираете весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 		<choice hidden="true">
@@ -4932,7 +5019,7 @@ Environmnt:
 			<event load="LANIUS_HAL_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Теперь, когда корабль ланиусов очищен от противников, вы обыскиваете его. В конце концов вы обнаруживаете заключённого, который просит вас взять его в команду.</text>
 		<choice><!-- 1.26 -->
 			<text>Принять его в команду.</text>
@@ -4958,7 +5045,7 @@ Environmnt:
 		</choice>
 		<autoReward level="RANDOM">scrap_only</autoReward><!-- 1.26 -->
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле вы обнаруживаете схему дрона. Никто не может вам помешать, и вы забираете её себе.</text>
 		<autoReward level="LOW">drone</autoReward>
 		<choice hidden="true">
@@ -4982,7 +5069,7 @@ Environmnt:
 
 <event name="LANIUS_HAL_HOST" unique="true">
 	<text>Прямо перед вами корабль ланиусов занят поглощением обломков HAL. Завидев вас, они оставляют своё занятие и переходят в атаку.</text>
-	<ship load="LANIUS_SHIP_HAL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="LANIUS_SHIP_HAL" hostile="true"/>
 </event>
 
 
@@ -5000,7 +5087,7 @@ Environmnt:
 	<text load="PIRATE_HAL"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="true"/>
 </event>
 <textList name="PIRATE_HAL">
 	<text>Отчаянный пират устроил засаду в этой туманности, вы попали в его ловушку!</text>
@@ -5013,7 +5100,7 @@ Environmnt:
 
 <event name="HAL_PIRATE" unique="true">
 	<text load="HAL_PIRATE_TEXT"/>
-	<ship load="HAL_PIRATE_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_PIRATE_SHIP" hostile="true"/>
 </event>
 <textList name="HAL_PIRATE_TEXT">
 	<text>Неожиданно вы подвергаетесь атаке со стороны пиратского крейсера. Неужели они рискнули залететь в такое место?</text>
@@ -5024,7 +5111,7 @@ Environmnt:
 	<surrender  chance="0.5" min="3" max="4" load="PIRATE_HAL_SURRENDER"/>
 	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
 	<destroyed load="DESTROYED_DEFAULT"/>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Пиратский корабль совершил прыжок.</text>
 	</gotaway>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
@@ -5034,7 +5121,7 @@ Environmnt:
 	<choice>
 		<text>Принять их предложение.</text>
 		<event>
-			<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship hostile="false"/>
 			<autoReward level="RANDOM">standard</autoReward>
 		</event>
 	</choice>
@@ -5095,7 +5182,7 @@ Environmnt:
 
 <event name="BROKEN_HAL_FIGHT" unique="true">
 	<text>Перед вами пролетает покорёженный беспилотник HAL со сломанными щитами. Несмотря на повреждения, он атакует вас.</text>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="limit" target="enemy" system="shields" amount="0"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -5108,7 +5195,7 @@ Environmnt:
 
 <event name="BROKEN_HAL_FIGHT_2" unique="true">
 	<text>Мимо вас медленно дрейфует беспилотник HAL. Похоже, что его двигатели разбиты в хлам! Несмотря на повреждения, он атакует вас.</text>
-	<ship load="HAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_SHIP" hostile="true"/>
 	<status type="limit" target="enemy" system="engines" amount="0"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -5842,6 +5929,7 @@ Environmnt:
 			<text id="continue"/>
 			<event>
 				<secretSector/>
+				<variable name="counter_number_of_sector" op="add" val="-1"/> <!-- 1.33 -->
 			</event>
 		</choice>
 	</event>
@@ -5876,7 +5964,7 @@ Environmnt:
 
 <event name="HAL_ENGI_MANTIS" unique="true">
 	<text>Вы натыкаетесь на нечто трудно вообразимое: корабль инжи, управляемый мантисами и вооружённый дронами HAL! Должно быть, мантисы славно поохотились... А сейчас они нападают на вас!</text>
-	<ship load="HAL_ENGI_MANTIS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="HAL_ENGI_MANTIS_SHIP" hostile="true"/>
 </event>
 <ship name="HAL_ENGI_MANTIS_SHIP" auto_blueprint="CIRCLE_MANTIS_BOMBER">
 	<destroyed load="DESTROYED_DEFAULT"/>
@@ -6019,14 +6107,14 @@ Environmnt:
 	</event>
 	<event>
 		<text>Маяк входа контролируют повстанцы, у вас нет времени на использование усилений корабля!</text>
-		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL" hostile="true"/>
 	</event>
 	<event load="AUGMENTS_ON_START_BEACON"/>
 </eventList>
 
 <event name="ZOLTON_FIGHT_BORDER"><!-- 1.26.3 -->
 	<text load="ZOLTON_FIGHT_BORDER"/>
-	<ship load="ZOLTON_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ZOLTON_SHIP" hostile="true"/>
 	<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 </event>
 <textList name="ZOLTON_FIGHT_BORDER">
@@ -6071,7 +6159,7 @@ Environmnt:
 		<event>
 			<text>Повстанцы подходят на расстояние огня.</text>
 			<environment type="PDS" target="player"/><!-- 1.26.6 -->
-			<ship load="ANGRY_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ANGRY_REBEL_SHIPS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="engines" lvl="4" max_group="0">
@@ -6082,7 +6170,7 @@ Environmnt:
 		<text>(Продвинутые двигатели) Оторваться от ПКБ.</text><!-- 1.26.6 -->
 		<event>
 			<text>Мощности ваших двигателей достаточно, чтобы уйти от огня ПКБ. Но повстанцы всё ещё у вас на хвосте.</text><!-- 1.26.6 -->
-			<ship load="ANGRY_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!-- 1.26.6 -->
+			<ship load="ANGRY_REBEL_SHIPS" hostile="true"/><!-- 1.26.6 -->
 		</event>
 	</choice>
 </event>
@@ -6095,21 +6183,21 @@ Environmnt:
 <eventList name="BORDER_SECTOR_PDS_BAD_ESCAPE">
 	<event>
 		<text>Мощности ваших двигателей достаточно, чтобы уйти от огня ПКБ. Но повстанцы всё ещё у вас на хвосте.</text><!-- 1.26.6 -->
-		<ship load="ANGRY_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!-- 1.26.6 -->
+		<ship load="ANGRY_REBEL_SHIPS" hostile="true"/><!-- 1.26.6 -->
 	</event>
 	<event>
 		<text>Вам не удаётся достаточно быстро уйти от ПКБ, повстанцы атакуют!</text><!-- 1.26.6 -->
-		<ship load="ANGRY_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ANGRY_REBEL_SHIPS" hostile="true"/>
 		<environment type="PDS" target="player"/><!-- 1.26.6 -->
 	</event>
 </eventList>
 
 <ship name="ANGRY_REBEL_SHIPS" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы быстро собираете его обломки.</text><!-- 1.26.6 -->
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и спешно обчищаете их трюмы.</text><!-- 1.26.6 -->
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -6117,7 +6205,7 @@ Environmnt:
 
 <event name="ORDEN_BORDER_FIGHT">
 	<text load="ORDEN_BORDER_FIGHT_TEXT"/>
-	<ship load="GLORY_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="GLORY_SHIP" hostile="true"/>
 </event>
 <textList name="ORDEN_BORDER_FIGHT_TEXT">
 	<text planet="NONE">Маяк совершенно пуст, если не считать крейсера Ордена, который, едва завидев вас, тут же переходит в атаку.</text>
@@ -6130,7 +6218,7 @@ Environmnt:
 <event name="BORDER_SECTOR_PDS_CHAOS">
 	<text load="BORDER_SECTOR_PDS_CHAOS_TEXT"/>
 	<environment type="PDS" target="all"/>
-	<ship load="CHAOS_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="CHAOS_REBEL_SHIPS" hostile="true"/>
 </event>
 
 <textList name="BORDER_SECTOR_PDS_CHAOS_TEXT">
@@ -6143,19 +6231,32 @@ Environmnt:
 	<escape timer="20" min="1" max="3">
 		<text>Из коммуникатора доносится: «Проклятье! Мы скоро развалимся на части! Убираемся отсюда!»</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль повстанцев прыгнул в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом, уворачиваясь от огня с планеты.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчищаете их трюмы, уворачиваясь от огня с планеты.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
 </ship>
 
+<event name="MUSHROOM_FIGHT"><!-- 1.33 -->
+	<text>На вас нападает корабль машрумов. Команда, к бою!</text>
+	<ship load="MUSHROOM_SHIPS_PARAMETERS" hostile="true"/>
+</event>
+<ship name="MUSHROOM_SHIPS_PARAMETERS" auto_blueprint="MUSHROOM_SHIPS">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+	<crew>
+		<crewMember type="mushroom_f" prop="0.55"/>
+		<crewMember type="mushroom_b" prop="0.25"/>
+		<crewMember type="mushroom" prop="0.20"/>
+	</crew>
+</ship>
 
 <event name="BORDER_SECTOR_TWO_FLEET_FIGHT"> 
 	<environment type="PDS" target="all"/>
@@ -6165,7 +6266,7 @@ Environmnt:
 		<text>Напасть на один из кораблей повстанцев.</text>
 		<event>
 			<text>Прохлаждаться некогда, союзникам нужна помощь. В атаку!</text>
-			<ship load="TWO_FLEET_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="TWO_FLEET_REBEL_SHIPS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -6185,14 +6286,14 @@ Environmnt:
 	<escape timer="20" min="1" max="3">
 		<text>Из коммуникатора доносится: «Отступаем!»</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль повстанцев прыгнул в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -6239,7 +6340,8 @@ Environmnt:
 		<event>
 			<text>Вы не можете позволить, чтобы невинные суда пострадали в результате боевых действий. Вы летите навстречу повстанцам, разогревая орудия.</text>
 			<environment type="PDS" target="player"/>
-			<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -6264,12 +6366,14 @@ Environmnt:
 	<event>
 		<text>Вы пытаетесь не привлекать внимание разведчиков, однако их радары всё же засекли вас, и они открывают огонь.</text>
 		<environment type="PDS" target="player"/>
-		<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event>
 		<text>Вы пытаетесь не привлекать внимание разведчиков, однако их радары всё же засекли вас, и они открывают огонь.</text>
 		<environment type="PDS" target="player"/>
-		<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 
@@ -6283,12 +6387,13 @@ Environmnt:
 	<event>
 		<text>Вы пытаетесь не привлекать внимание разведчиков, однако их радары всё же засекли вас, и они открывают огонь.</text>
 		<environment type="PDS" target="player"/>
-		<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ANGRY_REBEL_SHIPS_2" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 
 <ship name="ANGRY_REBEL_SHIPS_2" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<choice hidden="true">
@@ -6299,7 +6404,7 @@ Environmnt:
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<choice hidden="true">
@@ -6316,7 +6421,8 @@ Environmnt:
 <event name="BORDER_SECTOR_PDS_FED">
 	<text load="BORDER_SECTOR_PDS_FED_TEXT"/>
 	<environment type="PDS" target="enemy"/>
-	<ship load="IDIOT_REBEL_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="IDIOT_REBEL_SHIPS" hostile="true"/>
+	<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 </event>
 <textList name="BORDER_SECTOR_PDS_FED_TEXT">
 	<text>Вы прибываете к маяку под контролем Федерации, однако сразу после вас сюда прыгает корабль повстанцев. Это довольно отчаянный манёвр с его стороны.</text>
@@ -6328,14 +6434,14 @@ Environmnt:
 	<escape timer="40" min="30" max="30">
 		<text load="IDIOT_REBEL_SHIPS_TEXT"/>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль повстанцев прыгнул в обратном направлении.</text>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="BORDER_SECTOR_PDS_FED_REWARD"/>
 		</choice>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6343,7 +6449,7 @@ Environmnt:
 			<event load="BORDER_SECTOR_PDS_FED_REWARD"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6373,12 +6479,12 @@ Environmnt:
 
 <event name="MISSILE_RADIATION_EVENT" unique="true">
 	<environment type="PDS" target="player"/>
-	<ship load="MISSILE_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --> <!-- 1.26 -->
+	<ship load="MISSILE_SHIP_PARAMETERS" hostile="false"/> <!-- 1.26 -->
 	<text>Вы замечаете рядом с маяком огромную ракету. Она явно вылетела с планеты поблизости и направляется на какой-то другой маяк. Тем временем с планеты открывают огонь в вашу сторону.</text>
 	<choice hidden="true"> <!-- 1.26 -->
 		<text id="continue"/>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="limit" target="player" system="artillery" amount="0"/> <!-- 1.26 -->
 			<status type="limit" target="player" system="teleporter" amount="0"/> <!-- 1.26 -->
 		</event>
@@ -6388,12 +6494,12 @@ Environmnt:
 	<escape min="15" max="15" timer="15"> <!-- 1.28 -->
 		<text>Вы замечаете рост энергии в FTL-двигателе этой ракеты! Кроме того, приборы регистрируют опасное излучение, исходящее от её корпуса.</text> <!-- 1.25 -->
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Ракета совершила FTL-прыжок.</text>
-		<status type="clear" target="player" system="artillery" amount="100" /><!-- 1.26 -->
+		<status type="clear" target="player" system="artillery" amount="100"/><!-- 1.26 -->
 		<status type="clear" target="player" system="teleporter" amount="100"/> <!-- 1.26 -->
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Ужасающий взрыв сотрясает близлежащее пространство и повреждает ваш корабль! Несколько обломков ракеты застревают в обшивке. Возможно, надо было позволить ракете улететь. Вы утешаете себя тем, что спасли чьи-то жизни.</text>
 		<item_modify>
 			<item type="scrap" min="20" max="65"/> <!-- 1.29 -->
@@ -6404,7 +6510,7 @@ Environmnt:
 		<damage amount="0" system="random" effect="breach"/>
 		<damage amount="1" system="random" effect="breach"/>
 		<damage amount="1" system="random"/>
-		<status type="clear" target="player" system="artillery" amount="100" /><!-- 1.26 -->
+		<status type="clear" target="player" system="artillery" amount="100"/><!-- 1.26 -->
 		<status type="clear" target="player" system="teleporter" amount="100"/> <!-- 1.26 -->
 	</destroyed>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
@@ -6414,7 +6520,7 @@ Environmnt:
 
 <event name="AVATAR_SHIPS_BORDER">
 	<text load="AVATAR_SHIPS_BORDER_LIST"/>
-	<ship load="SHIPS_AI_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SHIPS_AI_FIGHT" hostile="true"/>
 	<playSound>avatar_siren</playSound><!-- 1.31 -->
 </event>
 <textList name="AVATAR_SHIPS_BORDER_LIST">
@@ -6426,18 +6532,18 @@ Environmnt:
 
 <event name="SLURM_FIGHT_BORDER"> <!-- 1.25.1 -->
 	<text>Слёрмы редко покидают свои родные туманности, но иногда они отправляются на поиски редких ингредиентов для слёрма. На такой корабль вы и натыкаетесь, причём настроены они не дружелюбно...</text>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 </event>
 
 <event name="ENGI_SHIP_BORDER">
 	<text>В этом секторе даже инжи пытаются убить вас! Вы приказываете команде держать оборону.</text>
-	<ship load="ENGI_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="ENGI_SHIP" hostile="true"/>
 </event>
 
 <event name="CRYSTAL_FIGHT_BORDER">
 	<img planet="PLANET_CRYSTAL" back="BG_CRYSTAL"/>
 	<text load="CRYSTAL_FIGHT_BORDER"/>
-	<ship load="CRYSTAL_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="CRYSTAL_SHIP" hostile="true"/>
 </event>
 <textList name="CRYSTAL_FIGHT_BORDER">
 	<text>Вы появляетесь неподалёку от флотилии кристаллических кораблей, с виду гражданских или торговых. Вы задерживаетесь, чтобы просканировать один из них, но они немедленно реагируют и посылают конвоира, чтобы от вас отбиться. Готовьтесь к битве!</text>
@@ -6453,7 +6559,8 @@ Environmnt:
 		<text>Защитить станцию!</text>
 		<event>
 			<text>Вы спешите на помощь торговцам.</text>
-			<ship load="DISTRESS_BORDER_TRADERS_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="DISTRESS_BORDER_TRADERS_SHIP" hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -6463,7 +6570,7 @@ Environmnt:
 </event>
 
 <ship name="DISTRESS_BORDER_TRADERS_SHIP" auto_blueprint="SHIPS_REBEL"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Повстанцы уничтожены, и благодарные гражданские просят вас посетить их магазин.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true"><!-- 1.31 -->
@@ -6471,7 +6578,7 @@ Environmnt:
 			<event load="JUST_STORE"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Повстанцы уничтожены, и благодарные гражданские просят вас посетить их магазин.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true"><!-- 1.31 -->
@@ -6486,15 +6593,15 @@ Environmnt:
 	<fleet>battle</fleet>
 	<distressBeacon/>
 	<text>Прибыв на сигнал помощи, вы тут же оказываетесь в центре масштабного сражения! Кругом летают снаряды, разрываются мины, несколько кораблей взрываются прямо на ваших глазах... Вы пытаетесь держаться в стороне, но отчаянный повстанец уже нацелился на ваш корабль.</text>
-	<ship load="BORDER_DISTRESS_TWO_FLEET_FIGHT_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BORDER_DISTRESS_TWO_FLEET_FIGHT_SHIPS" hostile="true"/>
 </event>
 
 <ship name="BORDER_DISTRESS_TWO_FLEET_FIGHT_SHIPS" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете обломки и покидаете опасное место.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы быстро грабите их корабль и покидаете опасное место.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -6663,10 +6770,11 @@ Environmnt:
 
 <event name="BORDER_NEED_HELP_DOCK_QUEST">
 	<text>Вы прибываете к ремонтной верфи. Патрульный элитный крейсер повстанцев тут же атакует вас.</text>
-	<ship load="BORDER_DOCK_ELITE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BORDER_DOCK_ELITE" hostile="true"/>
+	<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 </event>
 <ship name="BORDER_DOCK_ELITE" auto_blueprint="SHIPS_REBEL_ELITE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы собираете обломки крейсера и связываетесь с персоналом верфи.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6678,7 +6786,7 @@ Environmnt:
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы обыскиваете трюмы крейсера и связываетесь с персоналом верфи.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -6694,10 +6802,11 @@ Environmnt:
 
 <event name="BORDER_NEED_HELP_TRADERS_QUEST">
 	<text>Вы прибываете к торговой станции. Патрульный элитный крейсер повстанцев тут же атакует вас.</text>
-	<ship load="BORDER_TRADERS_ELITE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BORDER_TRADERS_ELITE" hostile="true"/>
+	<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 </event>
 <ship name="BORDER_TRADERS_ELITE" auto_blueprint="SHIPS_REBEL_ELITE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы собираете обломки крейсера и связываетесь с персоналом станции.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6713,7 +6822,7 @@ Environmnt:
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы обыскиваете трюмы крейсера и связываетесь с персоналом станции.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -6733,7 +6842,7 @@ Environmnt:
 
 <event name="BORDER_ELITE_HOSTILE">
 	<text load="BORDER_ELITE_HOSTILE"/>
-	<ship load="BORDER_ELITE_HOSTILE_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BORDER_ELITE_HOSTILE_SHIP" hostile="true"/>
 </event>
 <textList name="BORDER_ELITE_HOSTILE">
 	<text>Вы неожиданно оказываетесь совсем рядом с элитным крейсером повстанцев. К бою!</text>
@@ -6744,11 +6853,11 @@ Environmnt:
 	<text>Повстанцы взяли под контроль этот маяк! Элитный крейсер уже готов вас уничтожить.</text>
 </textList>
 <ship name="BORDER_ELITE_HOSTILE_SHIP" auto_blueprint="SHIPS_REBEL_ELITE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы собираете обломки крейсера.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы обыскиваете трюмы крейсера.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -6775,11 +6884,12 @@ Environmnt:
 	<environment type="PDS" target="all"/>
 	<fleet>battle</fleet>
 	<text>Масштабное сражение в самом разгаре. Вы выбираете себе цель, попутно уклоняясь от шальных снарядов.</text>
-	<ship load="BORDER_BATTLE_HELP_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BORDER_BATTLE_HELP_SHIP" hostile="true"/>
+	<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 </event>
 
 <ship name="BORDER_BATTLE_HELP_SHIP" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6787,7 +6897,7 @@ Environmnt:
 			<event load="BORDER_BATTLE_HELP_REWARD"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6812,7 +6922,7 @@ Environmnt:
 
 <event name="BORDER_PIRATE_QUEST" unique="true">
 	<text>Перед вами появляется предприимчивый торговец: «Приветствую вас! У меня к вам особое предложение, за скромные 40 лома я достану вам любое оружие, какое пожелаете. Деньги вперёд!»</text>
-	<ship load="PIRATE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="false"/>
 	<choice hidden="false">
 		<text>Поверить и заплатить.</text>
 		<event load="BORDER_PIRATE_QUEST_CHOICE"/>
@@ -6821,7 +6931,7 @@ Environmnt:
 		<text>Да это же пират! В атаку!</text>
 		<event>
 			<text>Не в ваших правилах иметь дела с пиратами.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->	
+			<ship hostile="true"/>	
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -6888,7 +6998,7 @@ Environmnt:
 		<text>Атаковать ближайший к вам корабль.</text>
 		<event>
 			<environment type="PDS" target="player"/>
-			<ship load="BORDER_NEBULA_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="BORDER_NEBULA_SHIP" hostile="true"/>
 			<text>Вы вступаете в перестрелку с немного отставшим повстанцем, но вас начинают обстреливать скрытые в туманности повстанцы!</text>
 		</event>
 	</choice>
@@ -6900,11 +7010,11 @@ Environmnt:
 	</choice>
 </event>
 <ship name="BORDER_NEBULA_SHIP" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы быстро собираете обломки под обстрелом скрытых повстанцев. К счастью, они не рискуют выйти из укрытия.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы быстро грабите трюмы под обстрелом скрытых повстанцев. К счастью, они не рискуют выйти из укрытия.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -6929,7 +7039,7 @@ Environmnt:
 <eventList name="NEBULA_BORDER_WITH_PDS2_OK">
 	<event>
 		<environment type="PDS" target="enemy"/>
-		<ship load="BORDER_NEBULA_SHIP2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="BORDER_NEBULA_SHIP2" hostile="true"/>
 		<text>После нескольких минут слежки вы натыкаетесь на затаившихся повстанцев, и начинается перестрелка. Союзный корабль помогает вам, обстреливая повстанцев из туманности.</text>
 	</event>
 	<event>
@@ -6942,11 +7052,11 @@ Environmnt:
 </eventList>
 
 <ship name="BORDER_NEBULA_SHIP2" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы собираете обломки корабля, оставляя немного союзнику.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы грабите трюмы повстанцев, оставляя немного союзнику.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -6960,7 +7070,7 @@ Environmnt:
 		<text id="continue"/>
 		<event>
 			<environment type="PDS" target="all"/>
-			<ship load="BORDER_DISTRESS_TWO_FLEET_FIGHT_SHIPS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="BORDER_DISTRESS_TWO_FLEET_FIGHT_SHIPS" hostile="true"/>
 			<text>Вы появились слишком близко к очередному сражению Федерации и повстанцев, и один из повстанцев уже нацелил на вас свои орудия! Из туманности то и дело вылетают снаряды других кораблей.</text>
 		</event>
 	</choice>
@@ -6970,12 +7080,12 @@ Environmnt:
 	<text>Небольшой шахтёрский корабль повстанцев добывает металл в этом астероидном поле. Вы обращаете внимание на необычное орудие, которым они раскалывают крупные астероиды пополам. Шахтёры настолько увлечены добычей руды, что не замечают вас.</text>
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
-	<ship load="BORDER_REBEL_MINER_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="BORDER_REBEL_MINER_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Атаковать шахтёров.</text>
 		<event>
 			<text>Повстанцы слишком поздно вспохватились, теперь им не уйти!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -6988,10 +7098,10 @@ Environmnt:
 	<escape timer="40" min="30" max="30">
 		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Чёрт, они ушли!</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается, оставляя после себя полезный лом.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<choice hidden="true">
@@ -6999,7 +7109,7 @@ Environmnt:
 			<event load="MINER_BEEM_REWARD"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы забираете весь лом, который они успели добыть.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<choice hidden="true">
@@ -7031,7 +7141,7 @@ Environmnt:
 
 <event name="BORDER_PANIC" unique="true">
 	<text>Вы появляетесь посреди лагеря Федерации. Неожиданно дозорный корабль в панике начинает стрелять в вас изо всех орудий!</text>
-	<ship load="FED_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FED_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -7079,7 +7189,7 @@ Environmnt:
 
 <event name="BORDER_WHO_ARE_YOU" unique="true">
 	<text>Вы встречаете судно Федерации и устанавливаете с ним видеосвязь. На экране показываются капитан и его помощники, на их форме заметны следы от лазеров. «Что вы хотели? Мы спешим, нам нужно узнать расположение вражеских кораблей».</text>
-	<ship load="FED_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FED_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Дать им данные своего маршрута.</text>
 		<event load="BORDER_WHO_ARE_YOU_WISE"/>
@@ -7132,7 +7242,7 @@ Environmnt:
 <eventList name="BORDER_WHO_ARE_YOU_STUPID">
 	<event>
 		<text>Узнав, кто вы, их капитан оживляется и что-то говорит помощникам. Внезапно связь обрывается, а их орудия нацеливаются на вас. Это оказались переодетые повстанцы!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Узнав, кто вы, их капитан оживляется и что-то говорит помощникам. «Мы запросим для вас подкрепление с ближайшего аванпоста. А сейчас извините, нам пора». Они прыгают в сторону флота повстанцев, и те заметно приближаются к вашему местоположению. Вас провели переодетые повстанцы!</text>
@@ -7157,7 +7267,7 @@ Environmnt:
 <eventList name="BORDER_WHO_ARE_YOU_PASSWORD">
 	<event>
 		<text>Капитан на секунду зависает: «Эээ... Мы едины!» Поняв, какую глупость он сморозил, капитан быстро отключается. Как вы и думали, это переодетые повстанцы, и сейчас они поплатятся за свой обман!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>«Пароль? Какой пароль?» — он непонимающе на вас смотрит. Вы говорите, что это была проверка, и весь их экипаж заливается смехом. «Нужно больше доверять своим!» Они присылают вам припасы, чтобы сгладить неловкость.</text>
@@ -7168,7 +7278,7 @@ Environmnt:
 <eventList name="BORDER_WHO_ARE_YOU_SLUG">
 	<event>
 		<text>Слаг шепчет вам, что это на самом деле повстанцы, которые взяли на абордаж ваших союзников и переоделись в их форму. Этот капитан вам сразу не понравлся, приготовиться к бою!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Слаг шепчет вам, что он говорит правду. Вы спрашиваете капитана, чем вы можете ему помочь?</text>
@@ -7192,12 +7302,12 @@ Environmnt:
 
 <event name="BORDER_SECTOR_SUR" unique="true"> 
 	<text>Прямо перед вами потрёпанный корабль повстанцев, им сейчас явно не до драки. Они выходят на связь: «Возьмите этот лом, и оба сделаем вид, что этой встречи не было».</text>
-	<ship load="REBEL" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="REBEL" hostile="false"/>
 	<choice hidden="true">
 		<text>Мы не ведём переговоров с повстанцами, к бою!</text>
 		<event>
 			<text>Их капитан устало вздыхает и отключается.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="false">
@@ -7211,15 +7321,15 @@ Environmnt:
 
 <event name="BORDER_REBEL_PREIGNITE" unique="true">
 	<text>Не успели вы появиться, как в вас летит залп из ОЗУ! Откуда у повстанцев такое вооружение?!</text>
-	<ship load="BORDER_REBEL_PREIGNITE_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BORDER_REBEL_PREIGNITE_SHIP" hostile="true"/>
 </event>
 
 <ship name="BORDER_REBEL_PREIGNITE_SHIP" auto_blueprint="SHIPS_REBEL"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Взрыв уничтожает залповую установку, а жаль...</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Повстанцы мертвы, и вы обыскиваете их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">

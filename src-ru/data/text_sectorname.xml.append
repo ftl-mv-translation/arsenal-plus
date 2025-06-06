@@ -3,10 +3,10 @@
 	<!-- Remove Vanilla FTL texts to avoid 'doubly defined name' in FTL.log -->
 	<mod:findComposite>
 		<mod:par op="OR">
-			<mod:findLike type="text"><mod:selector name="sectorname_CRYSTAL_HOME" /></mod:findLike>
-			<mod:findLike type="text"><mod:selector name="sectorname_LANIUS_SECTOR" /></mod:findLike>
-			<mod:findLike type="text"><mod:selector name="sectorname_short_CRYSTAL_HOME" /></mod:findLike>
-			<mod:findLike type="text"><mod:selector name="sectorname_short_LANIUS_SECTOR" /></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_CRYSTAL_HOME"/></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_LANIUS_SECTOR"/></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_short_CRYSTAL_HOME"/></mod:findLike>
+			<mod:findLike type="text"><mod:selector name="sectorname_short_LANIUS_SECTOR"/></mod:findLike>
 		</mod:par>
 		<mod:removeTag />
 	</mod:findComposite>

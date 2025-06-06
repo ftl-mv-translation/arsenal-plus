@@ -58,6 +58,7 @@ Special
 	<event load="AUTO_WARNING"/>
 	<event load="REBEL_PULSAR"/>
 	<event load="MOTILEK_EVENT"/>
+	<event load="MANTIS_HUNTER_ENGINED_EVENT"/>	<!-- 1.33 -->
 </eventList>
 
 
@@ -171,7 +172,7 @@ Special
 
 <event name="MANTIS_CAPTURE_COMMANDO" unique="true">
 	<text>Вы наталкиваетесь на развалившийся корабль инжи с признаками жизни на борту. Выясняется, что на корабле затаился мантис — единственный выживший из абордажной команды, которая перебила весь экипаж этого корабля. Он не в состоянии сопротивляться, и вы переносите его к себе на корабль.</text>
-	<ship load="ENGI_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ENGI_SHIP" hostile="false"/>
 	<choice hidden="true">
 		<text>Отпустить его.</text>
 		<event load="MANTIS_CAPTURE_COMMANDO_RELEASE"/>
@@ -233,10 +234,10 @@ Special
 </eventList>
 		
 	
-<event name="MANTIS_GAMBLE" unique="true">
+<event name="MANTIS_GAMBLE" unique="true"><!-- 1.33 --><!-- colored -->
 	<text>Этот маяк на данный момент является пристанищем для развлекательного корабля мантисов — места, полного борделей и боевых арен для воинов, желающих выпустить пар. Просканировав ваше имущество, они дали понять, что вам желательно поучаствовать в главной азартной игре.</text>
 	<choice hidden="true">
-		<text>Поставить 50 лома на воина в синих штанах.</text>
+		<text>Поставить 50 лома на воина в [style[color:5f97ff]]синих[[/style]] штанах.</text>
 		<event>
 			<text>Сквозь экран вы наблюдаете, как двое молодых мантисов сходятся друг с другом в схватке.</text>
 			<item_modify>
@@ -249,7 +250,7 @@ Special
 		</event>
 	</choice>
 	<choice hidden="true">
-		<text>Поставить 50 лома на воина в красных штанах.</text>
+		<text>Поставить 50 лома на воина в [style[color:ff4551]]красных[[/style]] штанах.</text>
 		<event>
 			<text>Сквозь экран вы наблюдаете, как двое молодых мантисов сходятся друг с другом в схватке.</text>
 			<item_modify>
@@ -268,14 +269,14 @@ Special
 </event>
 <eventList name="MANTIS_GAMBLE_BLUE">
 	<event>
-		<text>Тот, что в синем, зажат в угол. И тут, в последний момент, он набрасывается и обезглавливает своего оппонента. Вы забираете свой выигрыш!</text>
+		<text>Тот, что в [style[color:5f97ff]]синем[[/style]], зажат в угол. И тут, в последний момент, он набрасывается и обезглавливает своего оппонента. Вы забираете свой выигрыш!</text>
 		<achievement silent="false">ACH_SHTANI</achievement><!-- 1.31 -->
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
 	</event>
 	<event>
-		<text>Похоже, мантис в синем выигрывает, нанося множество ударов по противнику. Внезапно тот, что в красном, заканчивает бой одним точным ударом.</text>
+		<text>Похоже, мантис в [style[color:5f97ff]]синем[[/style]] выигрывает, нанося множество ударов по противнику. Внезапно тот, что в [style[color:ff4551]]красном[[/style]], заканчивает бой одним точным ударом.</text>
 		<choice hidden="true">
 			<text>Заплатить то, что вы должны.</text>
 			<event>
@@ -293,7 +294,7 @@ Special
 			<text>(Улучшенные двигатели) Уклониться от уплаты и завести двигатели.</text>
 			<event>
 				<text>Вы забираете обратно лом, который уже приготовили к отправке, и отходите за пределы радиуса поражения крейсера прежде, чем его команда успевает отреагировать. Тем не менее небольшой корабль прерывает патрулирование и идёт на перехват.</text>
-				<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="MANTIS_FIGHT" hostile="true"/>
 				<item_modify>
 					<item type="scrap" min="50" max="50"/>
 				</item_modify>
@@ -303,14 +304,14 @@ Special
 </eventList>
 <eventList name="MANTIS_GAMBLE_RED">
 	<event>
-		<text>Похоже, мантис в синем выигрывает, нанося множество ударов по противнику. Внезапно тот, что в красном, заканчивает бой одним точным ударом. Вы забираете свой выигрыш!</text>
+		<text>Похоже, мантис в [style[color:5f97ff]]синем[[/style]] выигрывает, нанося множество ударов по противнику. Внезапно тот, что в [style[color:ff4551]]красном[[/style]], заканчивает бой одним точным ударом. Вы забираете свой выигрыш!</text>
 		<achievement silent="false">ACH_SHTANI</achievement><!-- 1.31 -->
 		<item_modify>
 			<item type="scrap" min="100" max="100"/>
 		</item_modify>
 	</event>
 	<event>
-		<text>Тот, что в синем, зажат в угол. И тут, в последний момент, он набрасывается и обезглавливает своего оппонента.</text>
+		<text>Тот, что в [style[color:5f97ff]]синем[[/style]], зажат в угол. И тут, в последний момент, он набрасывается и обезглавливает своего оппонента.</text>
 		<choice hidden="true">
 			<text>Заплатить то, что вы должны.</text>
 			<event>
@@ -328,7 +329,7 @@ Special
 			<text>(Улучшенные двигатели) Уклониться от уплаты и завести двигатели.</text>
 			<event>
 				<text>Вы забираете обратно лом, который уже приготовили к отправке, и отходите за пределы радиуса поражения крейсера прежде, чем его команда успевает отреагировать. Тем не менее небольшой корабль прерывает патрулирование и идёт на перехват.</text>
-				<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="MANTIS_FIGHT" hostile="true"/>
 				<item_modify>
 					<item type="scrap" min="50" max="50"/>
 				</item_modify>
@@ -346,7 +347,7 @@ Special
 
 <event name="MANTIS_FIGHT" unique="false">   
 	<text load="MANTIS_FIGHT"/>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event>
 <textList name="MANTIS_FIGHT">
 	<!-- These are the ones that I had written-->
@@ -383,13 +384,13 @@ Special
 
 <event name="MANTIS_FIGHT_CHOICE" unique="false">
 	<text load="MANTIS_FIGHT_CHOICE"/>
-	<ship load="MANTIS_FIGHT" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.25 -->
 	<choice hidden="true">
 		<text>Атаковать корабль.</text>
 		<event>
 			<text>Вы мчитесь в бой, уверенные в своей скорой победе.</text> <!-- 1.25 -->
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
 		</event>
 	</choice>
@@ -416,12 +417,12 @@ Special
 	</event>
 	<event>
 		<text>Прежде чем вам удаётся ускользнуть, корабль мантисов засекает вас и включает орудия.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
 	</event>
 	<event>
 		<text>Вы отключаете вспомогательные системы в попытке остаться незамеченными. Похоже, они собирались улетать, когда неожиданно развернулись и взяли курс на вас, заряжая орудия.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
 	</event>
 </eventList>
@@ -434,19 +435,20 @@ Special
 	</event>
 	<event>
 		<text>Вы поспешно маскируете корабль, но недостаточно быстро. Они замечают вас и готовятся к бою.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.25 -->
 	</event>
 </eventList>
 
 <event name="MANTIS_CIVILIAN" unique="false">   
 	<text load="MANTIS_CIVILIAN"/>
-	<ship load="MANTIS_CIVILIAN" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="MANTIS_CIVILIAN" hostile="false"/>
 	<choice hidden="true">
 		<text>Помочь гражданским.</text>
 		<event>
 			<text>Нахмурившись, вы заряжаете орудия и готовитесь к бою с кораблём мантисов. Только не сегодня.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice>
@@ -492,7 +494,7 @@ Special
 		</event>
 	</choice>
 	<choice req="LIFE_SCANNER" hidden="true"><!-- 1.21 -->
-		<text>(Сканер жизненных форм) Просканировать, что находится внутри.</text>
+		<text>(Инфракрасный сканер) Просканировать, что находится внутри.</text><!-- 1.33 -->
 		<event load="MANTIS_SCAN_CREW_LIST"/>
 	</choice>
 	<choice req="slug_crew" hidden="true"><!-- 1.25 -->
@@ -649,7 +651,7 @@ Special
 	
 <event name="MANTIS_SUN_FIGHT" unique="false">   
 	<text>Кто знает, зачем мантис рискует, находясь так близко к солнцу. Может он ищет более сложных испытаний?</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 </event>
@@ -686,7 +688,7 @@ Special
 -->
 
 <event name="MANTIS_NAMED_THIEF" unique="true"> <!-- 1.21 -->
-	<ship load="MANTIS_NAMED_THIEF" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="MANTIS_NAMED_THIEF" hostile="false"/>
 	<text>Вы пересекаетесь с кораблём мантисов, имеющим дюжины дополнительных слоёв брони, нашитых, наверное, после сотни лет полётов. Его капитан — легендарный вор КазааакплетКилик. Ваш экипаж выглядит испуганным.</text>
 	<choice hidden="true" req="mantis_crew">
 		<text>(Член экипажа мантис) Попробовать приветствовать его.</text>
@@ -697,7 +699,7 @@ Special
 				<text id="continue"/>
 				<event>
 					<text>Вы немало удивлены подобным решением КазааакплетКилика, но готовитесь к бою.</text> <!-- 1.25 -->
-					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -706,11 +708,11 @@ Special
 		<text>Приготовиться к бою.</text>
 		<event>
 			<text>Вы готовитесь к битве...</text> <!-- 1.25 -->
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
-<event name="MANTIS_NAMED_THIEF_DEFEAT"><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+<event name="MANTIS_NAMED_THIEF_DEFEAT">
 	<text>Никаких признаков жизни на борту их корабля. Похоже, вы выиграли.</text>
 	<choice hidden="true">
 		<text>Двинуться внутрь, чтобы обчистить их корабль.</text>

@@ -107,15 +107,15 @@ Items:
 	</event> -->
 	<event>
 		<text>Корабль повстанцев всё же выследил вас! Приготовиться к бою!</text>
-		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL" hostile="true"/>
 	</event>
 	<event>
 		<text>Беспилотный разведчик повстанцев всё же выследил вас! Приготовиться к бою!</text>
-		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL_AUTO" hostile="true"/>
 	</event>
 	<event>
 		<text>Элитный корабль повстанцев всё же выследил вас! Приготовиться к бою!</text>
-		<ship load="BOSS_BASE_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!-- 1.26 -->
+		<ship load="BOSS_BASE_REBEL" hostile="true"/><!-- 1.26 -->
 	</event>
 	<event>
 		<text>С базы к вам приближается небольшой челнок, вскоре он выходит на связь: «Мы знаем о вашем задании, и наш капитан хочет вам помочь!»</text>
@@ -139,11 +139,11 @@ Items:
 </eventList>
 
 <ship name="BOSS_BASE_REBEL" auto_blueprint="SHIPS_REBEL_ELITE"><!-- 1.26 -->
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы собираете обломки корабля повстанцев и готовитесь защищать базу.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы грабите трюмы корабля повстанцев и готовитесь защищать базу.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -199,6 +199,7 @@ Items:
 	<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS1</queueEvent><!-- 1.31 -->
 	<queueEvent seeded="false">CHECKCHAIN_BUDGET_BUILD</queueEvent><!-- 1.32 -->
 	<queueEvent seeded="false">CHECKCHAIN_DIPLOMATIC_MISSION</queueEvent><!-- 1.32 -->
+	<queueEvent seeded="false">CHECKCHAIN_DEAD_CARGO</queueEvent> <!-- 1.33 -->
 	
 	<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="0" max_group="1" blue="false"> <!-- 1.25.1 --> <!-- 1.28 -->
 		<text>Изложить суть вашего задания.</text>
@@ -221,7 +222,7 @@ Items:
 					<remove name="TULLY_BOX"/>
 					<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
 					<choice hidden="true">
-						<text id="continue" />
+						<text id="continue"/>
 						<event>
 							<text>Через некоторое время он проводит вас к скрытому ремонтному доку, где ваш корабль основательно подготавливают к вашей последней цели — любой ценой защитить базу Федерации.</text>
 							<item_modify>
@@ -265,7 +266,7 @@ Items:
 				<remove name="TULLY_BOX"/>
 				<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
 				<choice hidden="true">
-					<text id="continue" />
+					<text id="continue"/>
 					<event>
 						<text>Через некоторое время он проводит вас к скрытому ремонтному доку, где ваш корабль основательно подготавливают к вашей последней цели — любой ценой защитить базу Федерации.</text>
 						<item_modify>
@@ -301,7 +302,7 @@ Items:
 				<remove name="TULLY_BOX"/>
 				<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
 				<choice hidden="true">
-					<text id="continue" />
+					<text id="continue"/>
 					<event>
 						<text>Через некоторое время он проводит вас к скрытому ремонтному доку, где ваш корабль основательно подготавливают к вашей последней цели — любой ценой защитить базу Федерации.</text>
 						<item_modify>
@@ -646,7 +647,7 @@ Items:
 			<text>Искусственный интеллект флагмана отключает свои системы жизнеобеспечения и запускает скрытый до сих пор генератор помех, который выводит из строя ваши сенсоры и заставляет реактор корабля работать хуже!</text> <!-- 1.26 -->
 			<status type="limit" target="enemy" system="oxygen" amount="0"/>
 			<status type="limit" target="player" system="sensors" amount="0"/>
-			<status type="loss" target="player" system="reactor" amount="2" /> <!-- 1.26 -->
+			<status type="loss" target="player" system="reactor" amount="2"/> <!-- 1.26 -->
 		</event>
 	</choice>
 </event>
@@ -683,6 +684,7 @@ Items:
 
 <event name="BOSS_TEXT_3">
 	<text>Непонятно, как этот корабль может продолжать сражаться, имея такие тяжёлые повреждения. Кажется, его капитан направляет энергию в телепортер и в... какое-то супер-орудие? Готовьтесь к худшему...</text>
+	<!-- <triggeredEvent event="POBEDA" enemyHull="0"/> --><!-- 1.33 --><!-- This is a way to check if there was a win in the previous run. Another method that is applied uses Lua -->
 </event>
 
 	
@@ -693,7 +695,7 @@ Items:
 	<event>
 		<!-- <fleet>rebel</fleet> --> <!-- 1.23 --> <!-- bug with triangle on the map after win -->
 		<text>Вы потеряли слишком много времени на ремонт, и повстанцы настигли вас! Нужно как можно скорее покинуть это место! Персонал станции как может помогает вам, обстреливая врагов из ПКБ.</text><!-- 1.23 -->
-		<ship load="LONG_FLEET" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="LONG_FLEET" hostile="true"/>
 		<environment type="PDS" target="enemy"/> <!-- 1.23 -->
 	</event>
 </eventList>
@@ -731,7 +733,7 @@ Neutral
 
 <event name="BOSS_SCOUT" unique="false"> <!-- player discovers scout attacking or scouting. basic fight -->
 	<text load="BOSS_SCOUT"/>
-	<ship load="REBEL_AND_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_AND_AUTO" hostile="true"/>
 </event>
 <textList name="BOSS_SCOUT">
 	<text>Хотя этот сектор всё ещё находится под контролем Федерации, маленький разведчик проскользнул мимо флота. Вы атакуете его.</text>  <!--image- Fleet background-->
@@ -743,27 +745,51 @@ Neutral
 </textList>
 
 <event name="BOSS_SCOUT_RESCUE">  <!-- player rescues weakened fed/civilian ship from a rebel scout — fight with rescue--> <!-- bug? -->
-	<text load="BOSS_SCOUT_RESCUE"/>
-	<choice>
-		<text>Приготовиться к бою с кораблём повстанцев!</text>
+	<loadEventList seeded="true" first="false"><!-- 1.33 -->
 		<event>
-			<text>Вы отправляетесь на перехват.</text>
-			<ship load="BOSS_SCOUT_RESCUE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<text load="BOSS_SCOUT_RESCUE1"/>
+			<choice>
+				<text>Приготовиться к бою с кораблём повстанцев!</text>
+				<event>
+					<text>Вы отправляетесь на перехват.</text>
+					<ship load="BOSS_SCOUT_RESCUE" hostile="true"/>
+					<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
+				</event>
+			</choice>
+			<choice>
+				<text>Нет времени, приготовиться к прыжку.</text>
+				<event>
+					<text>Вы пытаетесь не обращать внимания на ужасы войны и сосредоточиться на боевой задаче.</text>
+				</event>
+			</choice>
 		</event>
-	</choice>
-	<choice>
-		<text>Нет времени, приготовиться к прыжку.</text>
 		<event>
-			<text>Вы пытаетесь не обращать внимания на ужасы войны и сосредоточиться на боевой задаче.</text>
+			<text load="BOSS_SCOUT_RESCUE2"/>
+			<choice>
+				<text>Приготовиться к бою с кораблём повстанцев!</text>
+				<event>
+					<text>Вы отправляетесь на перехват.</text>
+					<ship load="BOSS_SCOUT_RESCUE" hostile="true"/>
+					<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
+				</event>
+			</choice>
+			<choice>
+				<text>Нет времени, приготовиться к прыжку.</text>
+				<event>
+					<text>Вы пытаетесь не обращать внимания на ужасы войны и сосредоточиться на боевой задаче.</text>
+				</event>
+			</choice>
 		</event>
-	</choice>
+	</loadEventList>	
 </event>
-<textList name="BOSS_SCOUT_RESCUE">
+<textList name="BOSS_SCOUT_RESCUE1"><!-- 1.33 -->
 	<text>Выстрелы пролетают возле ваших иллюминаторов, а вслед за ними разведчик повстанцев, преследующий повреждённый крейсер. Должны ли мы вмешаться?</text>
-	<text>Похоже, что небольшая колония Федерации попала под огонь разведчика повстанцев. Отправитесь защитить их?</text>
 	<text>Несколько больших транспортных кораблей преследуются эскадрой бомбардировщиков повстанцев. Один бомбардировщик сумел проскользнуть сквозь заградительный огонь и готов сеять хаос среди огромных, но уязвимых транспортников. Ещё есть время, чтобы выдвинуться и уничтожить его.</text>
-	<text>Неподалёку бушует битва среди небольших истребителей. По-видимому, борьба идёт за космическую станцию. Похоже, что Федерация быстро теряет корабли. Отправимся на помощь?</text>
 	<text>Гражданское судно посылает сигналы бедствия по защищённому каналу Федерации. Их преследуют разведчики повстанцев. Будете отвечать?</text>
+</textList>
+<textList name="BOSS_SCOUT_RESCUE2"><!-- 1.33 -->
+	<text>Похоже, что небольшая колония Федерации попала под огонь разведчика повстанцев. Отправитесь защитить их?</text>
+	<text>Неподалёку бушует битва среди небольших истребителей. По-видимому, борьба идёт за космическую станцию. Похоже, что Федерация быстро теряет корабли. Отправимся на помощь?</text>
 </textList>
 <eventList name="BOSS_SCOUT_RESCUE_LIST">  <!-- what the player gets for rescuing the ship-->
 	<event>
@@ -790,14 +816,14 @@ Neutral
 </eventList>
 <ship name="BOSS_SCOUT_RESCUE" auto_blueprint="SHIPS_REBEL">
 	<escape  chance="0.5" min="4" max="8" load="PIRATE_ESCAPE"/>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 --> <!-- 1.25.2 -->
+	<gotaway> <!-- 1.25.2 -->
 		<text>Противник совершил FTL-прыжок, и вы выходите на связь с его жертвой.</text>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="BOSS_SCOUT_RESCUE_LIST"/>
 		</choice>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль повстанцев уничтожен, и теперь можно связаться с его несостоявшимися жертвами.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -805,7 +831,7 @@ Neutral
 			<event load="BOSS_SCOUT_RESCUE_LIST"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Уничтожив корабль повстанцев, вы быстро собираете все возможные трофеи и выходите на связь с его жертвой.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -867,7 +893,7 @@ Fleets — some with minor fights
 <event name="BOSS_FLEETS_BOTH_FIGHT">  <!-- nodes that have ships fighting  —  also inside the /!\ symbol but can be elswhere too. -->
 	<fleet>battle</fleet>
 	<text load="BOSS_FLEETS_BOTH_FIGHT"/> <!-- 1.26 -->
-	<ship load="BOSS_FLEETS_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BOSS_FLEETS_REBEL" hostile="true"/>
 </event>
 <textList name="BOSS_FLEETS_BOTH_FIGHT"> <!-- 1.26 -->
 	<text>Вы прибываете в центр бушующего сражения. Обе стороны несут тяжёлые потери. Мимо пролетает небольшая эскадрилья, истребитель покидает свою позицию и движется к вам.</text>
@@ -886,7 +912,7 @@ Fleets — some with minor fights
 <event name="BOSS_FLEETS_REBEL"> <!-- areas that the fleet took over (or will take over soon) have the /!\ symbol on the map-->
 	<fleet>rebel</fleet>
 	<text load="BOSS_FLEETS_REBEL"/>
-	<ship load="BOSS_FLEETS_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BOSS_FLEETS_REBEL" hostile="true"/>
 </event>
 <textList name="BOSS_FLEETS_REBEL">
 	<text>Вы ожидали повстанцев, но не думали, что их флот может вырасти так быстро. Ваши сканеры с трудом успевают зарегистрировать их всех до того, как истребитель, находящийся неподалёку, переходит в атаку.</text>
@@ -898,11 +924,11 @@ Fleets — some with minor fights
 	<text>Федерация, кажется, дала хороший бой повстанцам. Много судов вокруг уничтожено или подбито. Однако превосходящее количество их кораблей вынуждает оставшиеся силы Федерации ускорить отступление. К счастью, вы также успеете уйти вовремя.</text>
 </textList>
 <ship name="BOSS_FLEETS_REBEL" auto_blueprint="SHIPS_REBEL">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Нет времени обыскивать все обломки, их флот всё ещё рядом. Готовьтесь к прыжку!</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Нет времени обыскивать вражеский корабль, но кое-что ваша команда таки успела забрать с собой. Готовьтесь к прыжку.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -912,17 +938,17 @@ Fleets — some with minor fights
 <!-- 1.25 -->
 <event name="BOSS_FLEETS_BLACK_REBEL">
 	<text load="BOSS_FLEETS_BLACK_REBEL"/>
-	<ship load="BOSS_FLEETS_BLACK_REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="BOSS_FLEETS_BLACK_REBEL" hostile="true"/>
 </event>
 <textList name="BOSS_FLEETS_BLACK_REBEL">
 	<text>Корабль повстанцев странной окраски перехватывает вас на этом маяке. Вы замечаете, как хорошо он вооружён... Похоже, что их оружейная система имеет усиленное титановое покрытие!</text>
 </textList>
 <ship name="BOSS_FLEETS_BLACK_REBEL" auto_blueprint="REBEL_SKINNY_ELITE_X_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается на части, и вы спешно хватаете уцелевшее оборудование.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Экипаж корабля мёртв, и вы спешно хватаете уцелевшее оборудование.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>

@@ -39,7 +39,7 @@ Sector Specific:
 
 <event name="NO_FUEL_FLEET">
 	<text>Флот повстанцев догнал вас. Вы обнаруживаете значительные запасы топлива в одном из ближайших кораблей и кидаетесь на него в атаку. Может быть, вам удастся его украсть.</text>
-	<ship load="REBEL_FLEET_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_FLEET_FUEL" hostile="true"/>
 	<fleet>rebel</fleet>
 </event>
 
@@ -53,7 +53,7 @@ Sector Specific:
 </event>
 <event name="NO_FUEL_FLEET_DLC_CLASSIC">
 	<text load="NO_FUEL_FLEET_DLC_CLASSIC_TEXT"/>
-	<ship load="REBEL_FLEET_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_FLEET_FUEL" hostile="true"/>
 	<fleet>rebel</fleet>
 	<environment type="PDS" target="player"/>
 </event>
@@ -139,7 +139,7 @@ Beacon Off.....
 
 <event name="FUEL_TRADER">   <!-- this continues in the DISTRESS section -->
 	<text load="FUEL_TRADER_TEXT_LIST"/>
-	<ship load="CIVILIAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CIVILIAN_SHIP" hostile="false"/>
 	<choice>
 		<text>Охотно согласиться торговать.</text>
 		<event load="FUEL_TRADER_HIGH_LIST"/>
@@ -222,7 +222,7 @@ Beacon Off.....
 	</event>
 	<event>
 		<text>Вы оказались в радиусе сканеров небольшого автоматического разведчика повстанцев!</text>
-		<ship load="REBEL_AUTO_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL_AUTO_FUEL" hostile="true"/>
 	</event>
 </eventList>
 	
@@ -248,14 +248,14 @@ Beacon Off.....
 <eventList name="FUEL_APPROACH_ACCEPT_LIST">
 	<event>
 		<text>«Не растратьте снова всё топливо. Сейчас опасные времена. Кто знает, кто бы мог прилететь», — сказали они, перекачивая немного топлива.</text>
-		<ship load="CIVILIAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="CIVILIAN_SHIP" hostile="false"/>
 		<item_modify>
 			<item type="fuel" min="2" max="6"/>
 		</item_modify>
 	</event>
 	<event>   <!-- this continues in the DISTRESS section -->
 		<text>Они приближаются и стыкуются с вашим кораблём. На борту они делают вам предложение.</text>
-		<ship load="CIVILIAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="CIVILIAN_SHIP" hostile="false"/>
 		<choice>
 			<text>Охотно согласиться торговать.</text>
 			<event load="FUEL_TRADER_HIGH_LIST"/>
@@ -267,18 +267,18 @@ Beacon Off.....
 	</event>
 	<event>
 		<text>Как только их корабль подъехал ближе к вашему, их капитан продолжил: «Да, мы безусловно поможем... Поможем избавить вас от этого хорошего корабля!» Датчики обнаруживают активацию скрытого телепорта. Вас берут на абордаж!</text>
-		<ship load="PIRATE_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="PIRATE_FUEL" hostile="true"/>
 		<boarders min="2" max="3" class="human"/>
 	</event>
 	<event>
 		<text>По мере того как они приближаются, вы обнаруживаете, что их орудия активированы. Кажется, их намерения враждебны!</text>
-		<ship load="PIRATE_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 --><!-- 1.26 -->
+		<ship load="PIRATE_FUEL" hostile="true"/><!-- 1.26 -->
 	</event>
 </eventList>
 <eventList name="FUEL_APPROACH_DECLINE_LIST">
 	<event>
 		<text>«Уверяю вас, что мы не имеем в виду ничего плохого. Видите, мы высылаем вам топливо». Небольшой корабль пристыковывается и разгружает немного топлива так, как они и сказали. Покидая вас, они добавили: «Будьте осторожны, друзья».</text>
-		<ship load="CIVILIAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="CIVILIAN_SHIP" hostile="false"/>
 		<item_modify>
 			<item type="fuel" min="1" max="4"/>
 		</item_modify>
@@ -288,7 +288,7 @@ Beacon Off.....
 	</event>
 	<event>
 		<text>Они отвечают: «Не приближаться? А что вы нам сделаете, если всё-таки приблизимся?» Они включают орудия и летят к вам.</text>
-		<ship load="PIRATE_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="PIRATE_FUEL" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="FUEL_APPROACH_SCAN_LIST">
@@ -303,7 +303,7 @@ Beacon Off.....
 		<choice>
 			<text>Включить орудия и приготовиться к бою.</text>
 			<event>
-				<ship load="PIRATE_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="PIRATE_FUEL" hostile="true"/>
 			</event>
 		</choice>
 		<choice req="cloaking" hidden="true"> 
@@ -385,7 +385,7 @@ Beacon On!!!!
 </textList>
 	
 <event name="FUEL_SELLER_DISTRESS">
-	<ship load="AUTO_FUEL_SELLER" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->  
+	<ship load="AUTO_FUEL_SELLER" hostile="false"/>  
 	<text>Небольшое судно прибывает с сообщением: «Этот автоматизированный корабль заправляет корабли за деньги. Бесплатное топливо доступно только в чрезвычайных ситуациях».</text>
 	<choice hidden="true">
 		<text>Запросить аварийный запас топлива.</text>
@@ -414,7 +414,7 @@ Beacon On!!!!
 	<choice>
 		<text>Атаковать автоматизированный корабль.</text>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -433,7 +433,7 @@ Beacon On!!!!
 <!-- This number of events offers the players a bad trade, then if they say no, a chance for a better trade, and if no again, a chance for just some charity. -->
 <event name="FUEL_TRADER_DISTRESS">
 	<text load="FUEL_TRADER_DISTRESS_TEXT_LIST"/>
-	<ship load="CIVILIAN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CIVILIAN_SHIP" hostile="false"/>
 	<choice>
 		<text>Охотно согласиться торговать.</text>
 		<event load="FUEL_TRADER_HIGH_LIST"/>
@@ -551,7 +551,7 @@ Beacon On!!!!
 
 <event name="FUEL_ON_REBEL_ATTACK">
 	<text load="FUEL_ON_REBEL_ATTACK"/>
-	<ship load="REBEL_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_FUEL" hostile="true"/>
 </event>
 <textList name="FUEL_ON_REBEL_ATTACK">
 	<text>Корабль повстанцев выходит с вами на связь: «Приветствую, гражданские. Мы приняли ваш сигнал бедствия, и можем помочь... Секундочку... Вы похоже... Так вы же тот самый корабль! Готовьтесь к смерти!»</text>
@@ -563,7 +563,7 @@ Beacon On!!!!
 
 <event name="FUEL_ON_REBEL_WARNING">
 	<text>Приближается корабль, принявший ваш сигнал бедствия. К сожалению, это оказался автоматизированный разведчик повстанцев. Просканировав ваш корабль, он сразу же начинает заряжать двигатели, пытаясь избежать сражения.</text>
-	<ship load="REBEL_AUTO_WARNING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL_AUTO_WARNING" hostile="true"/>
 </event>	
 
 
@@ -574,7 +574,7 @@ Beacon On!!!!
 
 <event name="FUEL_OFF_ENGI_DUBIOUS">
 	<text>Пока вы дрейфуете в космосе, мимо пролетает корабль инжи. Прослушав их коммуникационный канал, вам показалось, что они обсуждают ремонт, идущий у них на корабле.</text>
-	<ship load="FUEL_OFF_ENGI_DUBIOUS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="FUEL_OFF_ENGI_DUBIOUS" hostile="false"/>
 	<choice hidden="true">
 		<text>Вызвать их.</text>
 		<event load="FUEL_OFF_ENGI_DUBIOUS_LIST"/>
@@ -602,7 +602,7 @@ Beacon On!!!!
 	</event>
 	<event>	
 		<text>Корабль инжи не отвечает, но движется на перехват. Вы засекли электромагнитные сигналы от корабля — кто-то перепрограммировал его для боя!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Инжи ответили на ваш сигнал. «Вам нужно: топливо. Нам нужно: металлолом. Провести обмен?»</text>
@@ -642,7 +642,7 @@ Beacon On!!!!
 	
 <event name="FUEL_ON_MANTIS_ATTACK">
 	<text load="FUEL_ON_MANTIS_ATTACK"/>
-	<ship load="MANTIS_FUEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FUEL" hostile="true"/>
 </event>
 <textList name="FUEL_ON_MANTIS_ATTACK">
 	<text>Корабль мантисов приветствует вас: «Похоже, мы нашли бедных дураков, которым нужна помощь. Давайте, братья, "поможем" им!» Они направляются в атаку.</text>
@@ -680,7 +680,7 @@ Beacon On!!!!
 		</event>
 	</choice>
 	<choice hidden="true" req="LIFE_SCANNER"> <!--DLC-->
-		<text>(Сканер жизненных форм) Запустить дополнительное сканирование.</text>
+		<text>(Инфракрасный сканер) Запустить дополнительное сканирование.</text><!-- 1.33 -->
 		<event>
 			<text>Корабль производит впечатление полностью безжизненного. Ваша команда, после недолгих поисков, находит несколько работающих топливных элементов.</text>
 			<autoReward level="MED">fuel_only</autoReward>
@@ -742,7 +742,7 @@ Beacon On!!!!
 		<text>Атаковать.</text>
 		<event>
 			<text>Роки не славятся своим великодушием. Вам нужно это топливо? Заслужите это топливо!</text>
-			<ship load="FUEL_OFF_ROCK_CURIOUS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="FUEL_OFF_ROCK_CURIOUS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -759,7 +759,7 @@ Beacon On!!!!
 	</event>
 	<event>
 		<text>Корабль роков кружит рядом, сканируя корабельные системы. Ваши худшие опасения подтвердились, когда они обнаружили ваши двигатели и телепортировали бомбу прямо к ним. Приготовиться к бою!</text>
-		<ship load="FUEL_OFF_ROCK_CURIOUS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->	
+		<ship load="FUEL_OFF_ROCK_CURIOUS" hostile="true"/>	
 		<damage amount="1" system="engines" effect="fire"/>
 	</event>
 </eventList>
@@ -767,15 +767,15 @@ Beacon On!!!!
 	<escape timer="80" min="30" max="30" >
 		<text>Похоже, они не хотят сражаться и пытаются скрыться.</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не за подкреплением.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы пытаетесь забрать как можно больше топлива из разбитых останков корабля.</text>
 		<autoReward level="MED">fuel</autoReward>
 		<!-- <status type="clear" target="player" system="engines" amount="100"/> --><!-- 1.26 -->
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы пытаетесь забрать как можно больше топлива из разбитых останков корабля.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 		<!-- <status type="clear" target="player" system="engines" amount="100"/> --><!-- 1.26 -->
@@ -794,7 +794,7 @@ Beacon On!!!!
 
 <event name="FUEL_ON_SLUG_CHUCKLE">
 	<text>Слабо вооружённый корабль слагов предлагает помощь. Их капитан, похоже, тихонько про себя посмеивается. Должно быть из-за цен, которые он предлагает.</text>
-	<ship load="JELLY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="JELLY" hostile="false"/>
 	<choice hidden="true">
 		<text>Заплатить 20 лома за 5 топлива.</text><!-- 1.29 -->
 		<event load="FUEL_ON_SLUG_CHUCKLE_LIST"/>
@@ -849,7 +849,7 @@ Beacon On!!!!
 <eventList name="FUEL_ON_SLUG_ATTACK_LIST"><!-- 1.29 -->
 	<event>
 		<text>Капитан слагов перестаёт смеяться и принимает ваш вызов.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 	<event>
 		<text>Слаги отлетают на некоторое расстояние от вас, всё так же противно хихикая. К сожалению, вы не в силах преследовать их в вашем текущем положении. Передав пару неприличных изображений на ваш коммуникатор, они уходят.</text>
@@ -858,7 +858,7 @@ Beacon On!!!!
 
 <event name="FUEL_ON_SLUG_OVERPRICED">
 	<text>Мобильный топливный склад слагов попадает в радиус сканирования. «Мои цены честны, и я прошу об одном — не оскорбляйте меня их обсуждением!» Посмотрим-ка на его прайс-лист.</text>
-	<ship load="JELLY_OVERPRICED" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="JELLY_OVERPRICED" hostile="false"/>
 	<choice hidden="false">
 		<text>Купить 5 топлива за 50 лома.</text>
 		<event>
@@ -883,7 +883,7 @@ Beacon On!!!!
 		<text>Обсудить цены.</text>
 		<event>
 			<text>Вы предлагаете более разумную цену, но слаг возмущён! Он идёт в атаку!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -1032,7 +1032,7 @@ Beacon On!!!!
 			<item type="fuel" min="5" max="7"/>
 			<item type="missiles" min="-7" max="-5"/> <!-- 1.25 -->
 		</item_modify>
-		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="PIRATE" hostile="true"/>
 	</event>
 </eventList>
 
@@ -1046,11 +1046,11 @@ Beacon On!!!!
 	</event>
 	<event>
 		<text>Расценив ваше нежелание как слабость, корабль беженцев вдруг ощетинился оружием — это пиратский корабль, поверивший, что нашёл лёгкую добычу!</text>
-		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="PIRATE" hostile="true"/>
 	</event>
 	<event>
 		<text>Расценив ваше нежелание как слабость, корабль беженцев вдруг ощетинился оружием — это пиратский корабль, поверивший, что нашёл лёгкую добычу!</text>
-		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="PIRATE" hostile="true"/>
 	</event>
 </eventList>
 

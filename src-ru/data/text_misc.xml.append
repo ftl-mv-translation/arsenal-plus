@@ -412,7 +412,7 @@
 
 <text name="tip_beams_no_sp">Совет: Эти лучи не наносят урон, если у противника есть хотя бы один слой щита. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
 
-<text name="tip_ex_beams">Совет: Золтонские лучи длиннее на  своих аналогов, но они не стреляют, если в трюме меньше 30 ракет. Также они имеют повышенные шансы вызвать возгорание или пробой.</text>
+<text name="tip_ex_beams">Совет: Золтонские лучи длиннее на 50% своих аналогов, но они не стреляют, если в трюме меньше 30 ракет. Также они имеют повышенные шансы вызвать возгорание или пробой.</text><!-- 1.33 -->
 
 <text name="tip_sys_beams">Совет: Эти лучи идеально подходят для абордажа, ведь они не наносят урона корпусу корабля. Щиты полностью блокируют весь урон этих лучей. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text> 
 
@@ -424,11 +424,11 @@
 
 <text name="tip_ion">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Если ионное оружие попало в щит, урон автоматически применяется к системе щитов.</text>
 
-<text name="tip_ion_fire">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Если ионное оружие попало в щит, урон автоматически применяется к щиту. Если щит был отключён, существует  шанс вызвать возгорание в отсеке.</text>
+<text name="tip_ion_fire">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Если ионное оружие попало в щит, урон автоматически применяется к щиту. Если щит был отключён, существует шанс вызвать возгорание в отсеке.</text><!-- 1.33 -->
 
 <text name="tip_ion_heavy">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Тяжёлое ионное оружие не только ионизирует системы, но и повреждает их. Если ионное оружие попало в щит, урон автоматически применяется к щиту.</text>
 
-<text name="tip_ion_heavy_fire">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Тяжёлое ионное оружие не только ионизирует системы, но и повреждает их. Если ионное оружие попало в щит, урон автоматически применяется к щиту. Если щит был отключён, существует  шанс вызвать возгорание в отсеке.</text>
+<text name="tip_ion_heavy_fire">Совет: Каждая единица ионного урона удаляет одну единицу мощности из атакованной системы и блокирует её на 5 секунд, предотвращая повторное включение. Тяжёлое ионное оружие не только ионизирует системы, но и повреждает их. Если ионное оружие попало в щит, урон автоматически применяется к щиту. Если щит был отключён, существует шанс вызвать возгорание в отсеке.</text><!-- 1.33 -->
 
 <text name="tip_photo">Совет: Ланиусы нашли применение этому древнему фотонному оружию, хоть оно и обладает невысокой точностью.</text>
 
@@ -458,11 +458,13 @@
 
 <text name="tip_repair_combat">Совет: Этот дрон идеален для захвата вражеских кораблей целыми. Берегите от него свою абордажную команду!</text>
 
-<text name="tip_combat_hal">Совет: Боевые дроны HAL примерно на  быстрее своих обычных аналогов. Характеристики их оружия также зачастую выше.</text>
+<text name="tip_combat_hal">Совет: Боевые дроны HAL примерно на 20% быстрее своих обычных аналогов. Характеристики их оружия также зачастую выше.</text><!-- 1.33 -->
 
 <text name="tip_ham">Совет: Говорят, что существует способ сменить лучевое орудие этого дрона.</text>
 
 <text name="tip_defense">Совет: Защитный дрон требует 1 деталь дрона для каждой новой битвы. Он будет защищать ваш корабль, пока запитан.</text>
+
+<text name="tip_shield">Совет: Щитовой дрон генерирует суперщит, пока запитан. Чем больше активных суперщитов имеется, тем дольше перезарядка этого дрона.</text><!-- 1.33 -->
 
 <text name="tip_boarding">Совет: Абордажный дрон требует 1 деталь дрона для каждой новой битвы. Он будет атаковать экипаж врага, пока запитан.</text>
 
@@ -479,7 +481,7 @@
 <text name="tip_fire_beam">Совет: Этот огненный луч не наносит урона корпусу, поэтому он не может проникать сквозь щиты.</text>
 <text name="tip_crew_beam">Совет: Этот анти-био луч не наносит урона корпусу, поэтому он не может проникать сквозь щиты. Также он не наносит урона дронам!</text>
 
-<text name="tip_uwb">Совет: Оружие, находящееся внутри универсальной орудийной установки, перезаряжается на  быстрее своего обычного аналога. Вид оружия можно определить только по его характеристикам.</text>
+<text name="tip_uwb">Совет: Оружие, находящееся внутри универсальной орудийной установки, перезаряжается на 10% быстрее своего обычного аналога. Оно скрыто от противника, до тех пор пока не выстрелит.</text><!-- 1.33 -->
 
 <text name="ce_tip_beams_focus">Совет: Точечные лучи могут повреждать только один отсек, но их урон выше, чем у длинных лучей того же уровня. Каждый уровень щитов уменьшает урон от лучей на 1 единицу. Луч повреждает экипаж, когда проходит по квадрату, на котором тот стоит.</text>
 
@@ -548,7 +550,7 @@
 
 <!-- Hangar screen -->
 
-<text name="welcome_hangar_pc">WДобро пожаловать в ангар Федерации! \n\nЗдесь вы можете выбрать ваш корабль и дать ему название, а также дать имена членам вашего экипажа. Прямо сейчас вам доступен только Kestrel, но во время игры вы можете разблокировать больше кораблей. \n\nВы можете сменить уровень сложности в правом верхнем углу. Если вы только начали играть, то для начала вы можете выбрать лёгкий режим.</text>  <!-- Shown on PC the first time the hangar is entered -->
+<text name="welcome_hangar_pc">Добро пожаловать в ангар Федерации! \n\nЗдесь вы можете выбрать ваш корабль и дать ему название, а также дать имена членам вашего экипажа. Прямо сейчас вам доступен только Kestrel, но во время игры вы можете разблокировать больше кораблей. \n\nВы можете сменить уровень сложности в правом верхнем углу. Если вы только начали играть, то для начала вы можете выбрать лёгкий режим.</text>  <!-- Shown on PC the first time the hangar is entered -->
 <text name="welcome_hangar_ipad">Добро пожаловать в Ангар Федерации! \n\nЗдесь вы можете выбрать ваш корабль и дать ему название, а также дать имена членам вашего экипажа. Прямо сейчас вам доступен только Kestrel, но во время игры вы можете разблокировать больше кораблей. \n\nВы можете сменить уровень сложности в правой стороне экрана. Если вы только начали играть, то для начала вы можете выбрать лёгкий режим.</text>  <!-- Shown on iPad the first time the hangar is entered -->
 
 <text name="tutorial_list_open">Вы открыли новый корабль! \n\nЩёлкните на СПИСОК, чтобы увидеть текущие корабли и узнать, как разблокировать остальные.</text>  <!-- Shown on the hangar screen the first time a new ship has been unlocked -->
@@ -896,7 +898,7 @@
 <text name="max_weapons">Ваш склад полон, больше оружия не поместится!</text>
 <text name="system_drones">Даёт питание дронам на корабле.</text>  <!-- Info text for drone system -->
 
-<text name="free_drone">Случайный дрон в подарок: \1\n(Фиксированная цена продажи 30~)</text><!-- 1.32 -->  <!-- Additional info text for drone system. \1: drone type -->
+<text name="free_drone">Случайный дрон в подарок: \1\n(Цена продажи 30~)</text><!-- 1.32 --> <!-- 1.33 -->  <!-- Additional info text for drone system. \1: drone type -->
 
 <text name="sys_full">У вас уже максимальное количество систем.</text>  <!-- Tooltip shown on systems when the ship already has the maximum number of systems -->
 
@@ -964,6 +966,10 @@
 <text name="hotkey_un_temporal">Отключить манипулятор времени</text>
 <text name="hotkey_temporal_speed">Манипулятор времени: ускорение</text>
 <text name="hotkey_temporal_slow">Манипулятор времени: замедление</text>
+<text name="hotkey_aim_artillery1">Цель артиллерии 1</text><!-- 1.33 -->
+<text name="hotkey_aim_artillery2">Цель артиллерии 2</text><!-- 1.33 -->
+<text name="hotkey_aim_artillery3">Цель артиллерии 3</text><!-- 1.33 -->
+<text name="hotkey_aim_artillery4">Цель артиллерии 4</text><!-- 1.33 -->
 
 <text name="tooltip_temporal">Манипулятор времени: изменяет течение времени в одном отсеке.</text>
 <text name="tooltip_temporal_enemy">Манипулятор времени: враг может использовать это, чтобы изменить течение времени в одном отсеке.</text><!-- 1.31 -->
@@ -977,6 +983,9 @@
 
 <text name="temporal_button_speed">Ускорить всё, что происходит в отсеке, на короткое время.\nГорячая клавиша: \1</text> <!-- key name --><!-- 1.31 -->
 <text name="temporal_button_slow">Замедлить всё, что происходит в отсеке, на короткое время.\nГорячая клавиша: \1</text> <!-- key name --><!-- 1.31 -->
+
+<text name="confirm_buy_custom">Вы уверены?\n\1 заменит \2.</text>  <!-- Displayed when attempting to buy a system that replaces another system. --><!-- 1.33 -->
+<text name="confirm_buy_last_subsystem">Это последний слот подсистем на вашем корабле.\nВы уверены?</text>  <!-- Displayed when attempting to buy the last subsystem that can fit. --><!-- 1.33 -->
 
 <text name="system_temporal_title">Манипулятор времени</text>
 <text name="system_temporal_desc">Изменяет течение времени в одном отсеке. Улучшение увеличивает продолжительность и силу течения времени.</text>
@@ -1177,7 +1186,7 @@
 <text name="hotkey_console">Консоль</text>
 <text name="hotkey_info">Доп. информация</text>
 
-<text name="tooltip_more_info">Доп. информация об экипаже/карте маяков\nГорячая клавиша: \1</text>
+<text name="tooltip_more_info">Доп. информация об экипаже/карте маяков.\nГорячая клавиша: \1</text>
 <text name="description_stats">Характеристики:</text>
 <text name="requires_no_power">Не требует питания</text>
 <text name="provides_bonus_power">Обеспечивает доп. питание</text>
@@ -1220,6 +1229,8 @@
 <text name="defense_drone_projectile_target_solid">Цель: снаряды, кроме лазеров</text>
 <text name="defense_drone_drone_target_all">Цель: атакующие дроны</text>
 <text name="defense_drone_drone_target_solid">Цель: твёрдые дроны</text>
+<text name="shield_drone_layers_per_charge">Слоёв щита за цикл: \1</text><!-- 1.33 -->
+<text name="shield_drone_cooldowns">Перезарядка: \1</text><!-- 1.33 -->
 <text name="defense_drone_projectile_target_unknown">Цель: неизвестно</text><!-- 1.31 -->
 <text name="defense_drone_projectile_target_asteroid">Цель: астероиды</text><!-- 1.31 -->
 <text name="defense_drone_drone_target_solid_projectiles">Цель: дроны и снаряды, кроме лазеров</text><!-- 1.31 -->
@@ -1332,6 +1343,18 @@
 <text name="discord_victory">Победа</text>
 <text name="discord_dead">Поражение</text>
 <text name="discord_mod">Arsenal +</text>
+
+<!-- Shield system -->
+<!-- 1.33 -->
+<text name="shields_4">5 защитных барьеров</text>
+<text name="shields_5">6 защитных барьеров</text>
+<text name="shields_6">7 защитных барьеров</text>
+<text name="shields_7">8 защитных барьеров</text>
+
+<text name="max_augments">На ваш корабль можно устанавливать только \1 усиления.</text>
+<text name="shot_limit">Лимит выстрелов из оружия: \1</text>
+<text name="shots_remaining">Выстрелов: \1</text><!-- 1.33 -->
+<text name="warning_shot_limit">ВЫСТРЕЛОВ БОЛЬШЕ НЕТ</text><!-- 1.33 -->
 
 <text name="transfer_save_dialog">Похоже, вы либо впервые играете в этот мод, либо еще не создали новый файл сохранения! Хотите перенести ваш прогресс с ванилы или создать новое сохранение? Это никак не повлияет на ваш прогресс в ваниле.</text> <!-- 1.4 -->
 
@@ -1558,7 +1581,7 @@
 <text name="tom_jubert">Kieve Svetnikov</text>
 
 <text name="guest_writer">Перевод на английский язык:</text><!-- 1.26.6 -->
-<text name="chris_a">mr_easy_money</text>
+<text name="chris_a">BlizzArchonJ</text><!-- 1.33 -->
 
 <text name="additional_art">Оригинальная игра:</text><!-- 1.26.6 -->
 <text name="bryan_ma">Subset Games</text>
@@ -1728,20 +1751,20 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 
 <text name="credits_hyperspace_project">Проект Hyperspace</text>
 <text name="credits_hyperspace_developed_by">Разработчики:</text>
-<text name="credits_hyperspace_developed_names">TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93,\nMr. Doom (Nasa62), Chrono Vortex, Pepson</text><!-- 1.32 -->
+<text name="credits_hyperspace_developed_names">TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93,\nMr. Doom (Nasa62), Chrono Vortex, Pepson, ranhai, sillysandvich</text><!-- 1.32 --><!-- 1.33 -->
 <text name="credits_hyperspace_art">Дополнительный арт:</text>
 <text name="credits_hyperspace_art_names">SaltyFriedRice</text>
 <text name="credits_hyperspace_contributors">Дополнительное сотрудничество:</text>
-<text name="credits_hyperspace_contributors_names">Arc, bamalf, BlizzArchonJ, Choosechee, codyfun, _Kilburn, Kix, kokoro, Masala, nedsociety, Paradigm, PDTM, Pepson, slowriderxcorps, The Dumb Dino, Vertaalfout,\nFTL Multiverse Team</text>
+<text name="credits_hyperspace_contributors_names">Arc, bamalf, BlizzArchonJ, Choosechee, codyfun, _Kilburn, Kix, kokoro, Masala, nedsociety, Paradigm, PDTM, slowriderxcorps, The Dumb Dino, Vertaalfout, BobThePotat0, Gabriel Cooper, Fishhh, neopryne, Alder, Julk, bibo38, DeserPrinter\nFTL Multiverse Team</text><!-- 1.33 -->
 <text name="credits_hyperspace_loc">Переводчики Hyperspace:</text>
 <text name="credits_hyperspace_loc_fr">На французский язык:</text>
 <text name="credits_hyperspace_loc_fr_names">Pepson</text>
 <text name="credits_hyperspace_loc_it">На итальянский язык:</text>
-<text name="credits_hyperspace_loc_it_names">RawToast</text>
+<text name="credits_hyperspace_loc_it_names">RawToast, Khal</text><!-- 1.33 -->
 <text name="credits_hyperspace_loc_de">На немецкий язык:</text>
 <text name="credits_hyperspace_loc_de_names">The Dumb Dino</text>
 <text name="credits_hyperspace_loc_es">На испанский язык:</text>
-<text name="credits_hyperspace_loc_es_names">DavidRedFox, Serpy</text>
+<text name="credits_hyperspace_loc_es_names">DavidRedFox, Serpy, DarkieZ</text><!-- 1.33 -->
 <text name="credits_hyperspace_loc_pl">На польский язык:</text>
 <text name="credits_hyperspace_loc_pl_names">Marcinus, Palon</text>
 <text name="credits_hyperspace_loc_pt_BR">На португальский (бразильский) язык:</text>
@@ -1753,6 +1776,7 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 <text name="credits_hyperspace_loc_ja">На японский язык:</text>
 <text name="credits_hyperspace_loc_ja_names">ranhai</text>
 <text name="credits_hyperspace_loc_ko">На корейский язык:</text>
-<text name="credits_hyperspace_loc_ko_names">nedsociety, H20</text>
+<text name="credits_hyperspace_loc_ko_names">nedsociety, H2O</text><!-- 1.33 -->
+
 
 </FTL>

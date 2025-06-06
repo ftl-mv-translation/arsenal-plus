@@ -271,17 +271,17 @@ Distress:
 
 <event name="SLUG_FIGHT" unique="true">
 	<text>Слаги редко остаются на долгое время без защиты в открытом космосе. Этот корабль, наверное, потерялся, а может просто проходил мимо... Как бы то ни было, они переходят в атаку!</text>
-	<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLY" hostile="true"/>
 </event>
 
 <event name="SLUG_MANTIS" unique="true">
 	<text>Вы случайно ловите отрывок разговора в подлетающем корабле мантисов: «Гляди-ка, похоже, этот корабль не принадлежит мягкотелым. Может хоть от этих не будет так вонять, когда мы их вскроем?» Они направляются к вам.</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 </event> 
 
 <event name="SLUG_PIRATE" unique="false">
 	<text load="SLUG_PIRATE"/>
-	<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="PIRATE" hostile="true"/>
 </event>
 <textList name="SLUG_PIRATE" unique="false">
 	<text>Кажется, поблизости есть пиратский корабль. Будьте начеку — любой, кто пытается охотиться на территории слагов, либо достаточно грозен, либо беспросветно туп, а в космосе и тот, и другой могут представлять опасность.</text>
@@ -292,7 +292,7 @@ Distress:
 
 <event name="SLUG_REBEL" unique="false">
 	<text load="SLUG_REBEL"/>
-	<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="REBEL" hostile="true"/>
 </event>
 <textList name="SLUG_REBEL" unique="false">
 	<text>Когда вы прибываете к маяку, ваши сканеры тотчас же регистрируют вражеский корабль. Вы не ожидали увидеть, что повстанцы расширили сферу своей деятельности на территорию слагов. Зарядить орудия!</text>
@@ -316,7 +316,7 @@ Distress:
 		<text>Щиты.</text>
 		<event>
 			<text>«Очень хорошо!» Питание на щитах неожиданно падает, и они наступают.</text>
-			<ship load="JELLY_STATUS_SHIELDS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_STATUS_SHIELDS" hostile="true"/>
 			<status type="divide" target="player" system="shields" amount="2"/>
 		</event>
 	</choice>
@@ -324,7 +324,7 @@ Distress:
 		<text>Кислород.</text>
 		<event>
 			<text>«Cссущество выбирает удушение? Но кто я такой, чтобы сссудить...» Система жизнеобеспечения вырубается, и они наступают.</text>
-			<ship load="JELLY_STATUS_OXYGEN" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_STATUS_OXYGEN" hostile="true"/>
 			<status type="divide" target="player" system="oxygen" amount="2"/>
 		</event>
 	</choice>
@@ -332,7 +332,7 @@ Distress:
 		<text>Орудия.</text>
 		<event>
 			<text>«Ваше согласие умереть почти восхищает... Почти». Ваша оружейная система регистрирует модуль взлома. У вас нет времени отреагировать, прежде чем они атакуют.</text>
-			<ship load="JELLY_STATUS_WEAPONS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_STATUS_WEAPONS" hostile="true"/>
 			<status type="divide" target="player" system="weapons" amount="2"/>
 		</event>
 	</choice>
@@ -349,7 +349,7 @@ Distress:
 		<text>(Взломщик) Противостоять попыткам взлома.</text>
 		<event>
 			<text>«Тишшшина не защитит вас. Я сделаю выбор сссам...Стойте. Почему это не работает?» Вы обрываете передачу и готовитесь атаковать.</text>
-			<ship load="JELLY_STATUS_HACKING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_STATUS_HACKING" hostile="true"/>
 			<status type="limit" target="player" system="hacking" amount="0"/>
 		</event>
 	</choice>
@@ -393,7 +393,7 @@ Distress:
 	</event>
 	<event>
 		<text>Как только вы пристыковались к станции, ваши датчики сошли с ума. Резонирующий звук электромагнитного взрыва раскатывается по кораблю, и ваши двигатели отрубаются. Тут появляется скрытый корабль и тихо надвигается на вас, для него вы — лёгкая добыча.</text>
-		<ship load="JELLY_STATUS_ENGINES" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY_STATUS_ENGINES" hostile="true"/>
 		<status type="limit" target="player" system="engines" amount="1"/>
 	</event>
 </eventList>
@@ -413,7 +413,7 @@ Distress:
 			<text>Это смешно!</text>
 			<event>
 				<text>«Жаль это ссслышать». Он нажимает на кнопку, и корабль содрогается от взрыва. Они подложили бомбу, пока "чинили" ваш корабль! Готовьтесь к битве!</text>
-				<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="JELLY" hostile="true"/>
 				<damage amount="4"/>
 				<damage amount="1" system="random"/>  <!--DLC-->
 			</event>
@@ -434,7 +434,7 @@ Distress:
 			<text>Давайте убираться отсюда.</text>
 			<event>
 				<text>Вы активируете маневровые двигатели и убираетесь прочь от станции. Корабль быстро движется на перехват. Вам надо поскорее выбираться отсюда. На то, чтобы привести систему управления орудиями в боевое состояние времени может и не хватить!</text>
-				<ship load="JELLY_STATUS_WEAPONS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship load="JELLY_STATUS_WEAPONS" hostile="true"/>
 				<status type="divide" target="player" system="weapons" amount="2"/> <!-- TO DO — TEST-->
 			</event>
 		</choice>
@@ -462,7 +462,7 @@ Distress:
 	</event>
 	<event>
 		<text>Прямо перед обрывом передачи вы услышали: «Они не поведутся на это. Просто убейте команду, и можем начать грабить...» Похоже, вы не уйдёте отсюда без боя.</text>
-		<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY" hostile="true"/>
 	</event>
 </eventList>
 
@@ -509,7 +509,7 @@ Distress:
 						<text>(Член экипажа слаг) Слаг ощущает кого-то на борту. Проверить корабль.</text>
 						<event>
 							<text>Похоже, что торговец пытался отвлечь вас, пока кто-то телепортировался на борт. Вы поймали его, прежде чем он закончил и вернулся обратно. Вы немедленно готовитесь к битве.</text>
-							<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+							<ship load="JELLY" hostile="true"/>
 						</event>
 					</choice>
 				</event>
@@ -530,13 +530,13 @@ Distress:
 	</event>
 	<event>
 		<text>«Пока мы тут бессседовали, мой человек позаботился о вашем вооружении, чтобы пресссечь любые затруднения в завершшшении нашей... сссделки...» Неожиданно датчики сообщают об обнаруженной опасности — на вас навелись сразу несколько орудий противника, а ваши собственные не работают. Сматываемся отсюда!</text>
-		<ship load="JELLY_STATUS_WEAPONS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY_STATUS_WEAPONS" hostile="true"/>
 		<boarders min="1" max="1" class="slug"/>
 		<status type="limit" target="player" system="weapons" amount="0"/>
 	</event>
 	<event>
 		<text>«Спасссибо вам. Могли бы вы оказать мне ещё одну уссслугу... Пожалуйста, умрите тихо». Внезапно вы слышите выстрелы на борту корабля. Он должно быть тянул время, пока слаги пробирались на корабль.</text>
-		<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY" hostile="true"/>
 		<boarders min="2" max="2" class="slug"/>
 	</event>
 </eventList>
@@ -546,7 +546,7 @@ Distress:
 	</event>
 	<event>
 		<text>Вы готовитесь уйти, но замечаете странные шумы на корабле. Похоже, что торговец пытался вас отвлечь, пока они взламывали ваши системы. Осталось совсем немного времени, чтобы объявить тревогу, прежде чем боевой корабль пролетает сквозь облака, намереваясь уничтожить вас!</text>
-		<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY" hostile="true"/>
 		<boarders min="1" max="1" class="slug"/>
 	</event>
 </eventList>
@@ -563,7 +563,7 @@ Distress:
 
 <event name="NEBULA_SLUG_FIGHT">
 	<text load="NEBULA_SLUG_FIGHT"/>
-	<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLY" hostile="true"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
@@ -583,20 +583,20 @@ Distress:
 
 <event name="NEBULA_SLUG_MANTIS" unique="true">
 	<text>Боевой корабль мантисов охотится на слагов в сердце их родины — редкое испытание чести для самых сильных экипажей мантисов. Зарядить орудия!</text>
-	<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="MANTIS_FIGHT" hostile="true"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
 
 <event name="NEBULA_SLUG_PIRATE" unique="true">
 	<text>Вы удивлены, обнаружив терпящий бедствие корабль слагов без каких-либо опознавательных знаков, но всё же немедленно выдвигаетесь на помощь. Желание помочь резко сходит на нет, когда вы замечаете пиратскую эмблему на их корпусе.</text>
-	<ship load="PIRATE_SLUG" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="PIRATE_SLUG" hostile="false"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice>
 		<text>Атаковать!</text>
 		<event>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -614,14 +614,14 @@ Distress:
 		<text id="continue"/>
 		<event>
 			<status type="limit" target="player" system="doors" amount="0"/>
-			<ship load="JELLY_STATUS_DOORS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_STATUS_DOORS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="hacking"> <!-- CHANGED — added -->
 		<text>(Взломщик) Противостоять взлому.</text>
 		<event>
 			<text>Ваша система взлома автоматически противодействует цифровой атаке, и вы устремляетесь в бой с кораблём.</text>
-			<ship load="JELLY_STATUS_HACKING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_STATUS_HACKING" hostile="true"/>
 			<status type="limit" target="player" system="hacking" amount="0"/>
 		</event>
 	</choice>
@@ -631,7 +631,7 @@ Distress:
 <event name="NEBULA_SLUG_OXYGEN" unique="true">  <!-- NEEDS CODE TO GIVE FIRE WEAPONS-->
 	<text>Слаги используют тактику, которую вы никогда не хотели бы испытать на себе: они используют спутник для взлома системы подачи кислорода, а затем заряжают зажигательные орудия — вы задохнётесь!</text>
 	<status type="limit" target="player" system="oxygen" amount="0"/>
-	<ship load="JELLY_STATUS_OXYGEN_FIRE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLY_STATUS_OXYGEN_FIRE" hostile="true"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<choice hidden="true">
@@ -657,7 +657,7 @@ Distress:
 
 <event name="NEBULA_SLUG_MEDBAY" unique="true"> 
 	<text>Корабль слагов шлёт сообщение: «Мы обнаружили опасссное радиоактивное излучение, идущее из вашшшего лечебного модуля. Вам, наверное, ссстоит взглянуть?» Вскоре после принятия сообщения ваш лечебный модуль неожиданно вырубается, и к вам на борт телепортируется команда слагов. Не похоже, чтобы это были инженеры.</text>
-	<ship load="JELLY_STATUS_MEDBAY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLY_STATUS_MEDBAY" hostile="true"/>
 	<boarders min="2" max="2" class="slug"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
@@ -698,7 +698,7 @@ Distress:
 
 <event name="NEBULA_STORM_SLUG_FIGHT">
 	<text load="NEBULA_STORM_SLUG_FIGHT"/>
-	<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLY" hostile="true"/>
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
@@ -741,11 +741,13 @@ Distress:
 	</event>
 	<event>
 		<text>Вы заряжаете орудия, и слаги быстро меняют курс, чтобы встретить вас, пока вы заряжаетесь.</text>
-		<ship load="JELLY_DISTRESS_ROCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY_DISTRESS_ROCK" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 	<event> <!-- 1.25 -->
 		<text>Вы заряжаете орудия, и слаги быстро меняют курс, чтобы встретить вас, пока вы заряжаетесь.</text>
-		<ship load="JELLY_DISTRESS_ROCK" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY_DISTRESS_ROCK" hostile="true"/>
+		<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 	</event>
 </eventList>
 <eventList name="SLUG_DISTRESS_ROCK_AVOID">
@@ -757,7 +759,7 @@ Distress:
 	</event>
 	<event>
 		<text>Пока вы размышляли, оказывать помощь или нет, корабль роков, неожиданно ожив, несколькими точными выстрелами разносит в щепки своего грабителя. Затем сообщение появляется на вашем экране: «Ничтожества! Вы либо трусы, либо союзники слагов. В любом случае вы не заслуживаете того, чтобы жить».</text>
-		<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ROCK_SHIP" hostile="true"/>
 	</event>
 </eventList>
 <eventList name="SLUG_DISTRESS_ROCK_RESULT">
@@ -905,14 +907,15 @@ Distress:
 		<text>Атаковать корабль мантисов.</text>
 		<event>
 			<text>Вы берёте корабль мантисов на прицел и нападаете.</text>
-			<ship load="SLUG_DISTRESS_MANTIS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="SLUG_DISTRESS_MANTIS" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Атаковать корабль слагов.</text>
 		<event>
 			<text>Вы направляетесь завершить то, что начали мантисы.</text>
-			<ship load="SLUG_DISTRESS_MANTIS_SLUG" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="SLUG_DISTRESS_MANTIS_SLUG" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -962,7 +965,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="NEBULA_SLUG_FIGHT_UNLOCK" unique="true"> <!-- this is the special fight that looks like the normal ones but actually gives you the unlock-->
 	<text load="NEBULA_SLUG_FIGHT"/>
-	<ship load="JELLY_UNLOCK1" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLY_UNLOCK1" hostile="true"/>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 </event>
@@ -977,7 +980,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<event>
 					<text>Это странное лучевое оружие не причиняет вреда кораблям, зато ощутимо ранит экипаж! Дьявольски жестоко!</text>
 					<weapon name="BEAM_BIO"/>
-					<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+					<ship hostile="false"/>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -985,7 +988,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<event>
 					<text>Вы спрашиваете, куда они доставляли оружие. «Расссказав вам, мы, вероятно, умрём, а может и нет... Ну да ладно». Они дают вам координаты мобильной платформы для постройки прототипа крейсера.</text>
 					<quest event="SLUG_UNLOCK_1"/>
-					<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+					<ship hostile="false"/>
 				</event>
 			</choice>
 		</event>
@@ -999,7 +1002,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<event>
 					<text>Это странное лучевое оружие не причиняет вреда кораблям, зато ощутимо ранит экипаж! Дьявольски жестоко!</text>
 					<weapon name="BEAM_BIO"/>
-					<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+					<ship hostile="false"/>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -1007,7 +1010,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<event>
 					<text>Вы спрашиваете, куда они доставляли оружие. «Расссказав вам, мы, вероятно, умрём, а может и нет... Ну да ладно». Они дают вам координаты мобильной платформы для постройки прототипа крейсера.</text>
 					<quest event="SLUG_UNLOCK_1"/>
-					<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+					<ship hostile="false"/>
 				</event>
 			</choice>
 		</event>
@@ -1025,7 +1028,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их, пока они не сбежали.</text>
 		<event>
 			<text>Когда вы сближаетесь, штурмовой корабль отделяется от платформы и ложится на траекторию перехвата. Приготовиться к бою!</text>
-			<ship load="JELLY_UNLOCK2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_UNLOCK2" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1039,7 +1042,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Лететь медленно в направлении их последней известной позиции.</text>
 		<event>
 			<text>Вы медленно продвигаетесь, как вдруг штурмовой корабль прорывается сквозь облака. Они всё-таки смогли засечь вас с помощью своей телепатии!</text>
-			<ship load="JELLY_UNLOCK2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLY_UNLOCK2" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1056,7 +1059,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<text id="continue"/>
 				<event>
 					<text>Вблизи корабля остался лишь один истребитель. Это будет просто!</text>
-					<ship load="JELLY_UNLOCK3" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship load="JELLY_UNLOCK3" hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -1069,7 +1072,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<text id="continue"/>
 				<event>
 					<text>Вблизи корабля остался лишь один истребитель. Это будет просто!</text>
-					<ship load="JELLY_UNLOCK3" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship load="JELLY_UNLOCK3" hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -1098,42 +1101,42 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event>
 		<text>«Вот! У нас есссть много топлива! Забирайте всссё!»</text>
 		<autoReward level="HIGH">fuel_only</autoReward>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>«Возьмите это и оссставьте нассс».</text>
 		<autoReward level="MED">standard</autoReward>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>Они переправляют приличное количество припасов. «Вот... теперь сссдержите сссвоё ссслово...»</text>
 		<autoReward level="HIGH">stuff</autoReward>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>Они переправляют некоторое количество припасов. «Вот... теперь сссдержите сссвоё ссслово...»</text>
 		<autoReward level="MED">stuff</autoReward>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>Они переправляют небольшое количество припасов. «Вот... теперь сссдержите сссвоё ссслово...»</text>
 		<autoReward level="LOW">stuff</autoReward>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>«Возьмите это оружие и оссставьте нассс».</text>
 		<weapon name="RANDOM"/>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>Cлаги, немного поднапрягшись, отливают вам некоторое количество своего геля.</text>
 		<augment name="SLUG_GEL"/>
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 	<event>
 		<text>Их трюмы оказываются совершенно пустыми, тогда они в качестве компенсации предлагают одного из своей команды вам в рабство. Вы принимаете его на борт, но решаете получше за ним приглядывать.</text>
 		<crewMember amount="1" class="slug">Слокрук</crewMember> 
-		<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship hostile="false"/>
 	</event>
 </eventList>
 
@@ -1203,7 +1206,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Капитан слагов приветствует вас на борту вашего корабля и преподносит флягу с чем-то склизким: «Теперь, всссемилостивейшей капитан, присссоединитесь ко мне, будьте так любезны, и выпейте этот напиток в знак закрепления нашего сссоюза!»</text>
-	<ship load="JELLY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="JELLY" hostile="false"/>
 	<choice hidden="true">
 		<text>Выпить.</text>
 		<event load="SLUG_DRINK_DRINK"/>
@@ -1212,7 +1215,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Отказаться.</text>
 		<event>
 			<text>Слаг сделал вид, что обиделся на ваш отказ, но вы чувствуете, что он уважает вашу осторожность. Впрочем, это не помешало ему вернуться на свой корабль и открыть огонь.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="rock_crew">
@@ -1247,7 +1250,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Рок смог определить в составе напитка большую дозу сильного обезболивающего, почувствовав себя слегка вялым (система пищеварения роков очень крепка). Хитрость слага раскрыта, и он немедленно возвращается на свой корабль. Через секунду он открывает огонь. Не хитростью, так силой...</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 </eventList> 
 
@@ -1283,14 +1286,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<text>Открыть огонь по пирату.</text>
 				<event>
 					<text>Тут пахнет лёгкими деньгами, а слаги чуют такое издалека. Вы переключаетесь на пирата и перехватываете его как раз перед тем, как он смог добраться до тайника.</text>
-					<ship load="QUEST_SLUG_PIRATE_TRAP1" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship load="QUEST_SLUG_PIRATE_TRAP1" hostile="true"/>
 				</event>
 			</choice>
 			<choice hidden="true">
 				<text>Взять курс на тайный склад.</text>
 				<event>
 					<text>Увидев, что вы направляетесь к тайнику, капитан слагов сообщил: «Глупые чужаки. Ради выгоды без глазззз готовы оссстаться. Всссего наилучшего вам». Они прыгают прочь, оставляя вас один на один с пиратом.</text>
-					<ship load="QUEST_SLUG_PIRATE_TRAP2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship load="QUEST_SLUG_PIRATE_TRAP2" hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -1348,7 +1351,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<distressBeacon/> <!-- 1.24 -->
-	<ship load="JELLY" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="JELLY" hostile="false"/>
 	<status type="limit" target="enemy" system="oxygen" amount="0"/><!-- 1.23 -->
 	<choice hidden="true">
 		<text>Отправить свою команду на помощь.</text>
@@ -1380,7 +1383,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <eventList name="SLUG_DISTRESS_TRICK_SCAN"><!-- 1.23 -->
 	<event>
 		<text>Сканер показал, что с их кислородным модулем всё в порядке. Поняв, что их обман раскрыт, слаги злобно шипят и переходят в атаку.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="oxygen" amount="100"/>
 	</event>
 	<event>
@@ -1392,13 +1395,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <eventList name="SLUG_DISTRESS_TRICK_LIST">
 	<event>
 		<text>Как только вы попали на борт корабля слагов, их враждебные намерения стали очевидны. Несмотря на численный перевес, ваш отряд смог преодолеть засаду слагов и пробиться обратно к шлюзу. Вы отстыковались от вражеского корабля, но нескольким слагам удалось проникнуть к вам на борт.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<boarders min="1" max="3" class="slug"/>
 		<status type="clear" target="enemy" system="oxygen" amount="100"/><!-- 1.23 -->
 	</event>
 	<event>
 		<text>Как только вы попали на борт их корабля, враждебные намерения стали очевидны. На пути назад к шлюзу один из членов вашего экипажа был убит из прицельного бластерного выстрела слагов.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="oxygen" amount="100"/><!-- 1.23 -->
 		<choice req="CREW_ALL" hidden="true" blue="false"><!-- 1.24 -->
 			<text id="continue"/>
@@ -1429,7 +1432,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<distressBeacon/> <!-- 1.24 -->
 	<status type="limit" target="player" system="engines" amount="1"/>
-	<ship load="JELLY_STATUS_ENGINES" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="JELLY_STATUS_ENGINES" hostile="false"/>
 	<choice hidden="true">
 		<text>Присягнуть на верность.</text>
 		<event load="SLUG_DISTRESS_PILOTING_SWEAR"/>
@@ -1438,14 +1441,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Никогда!</text>
 		<event>
 			<text>Слаги не впечатлены вышей бравадой и выдвигаются в атаку. С неисправными двигателями вы — лёгкая добыча. Поднять щиты!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="pilot" lvl="2">
 		<text>(Улучшенная рубка управления) Вернуть себе управление.</text>
 		<event>
 			<text>Вы быстро вернули управление двигателями, благодаря контрольному модулю в рубке. Сообразив, что вы не собираетесь соглашаться с их требованиями, они выдвинулись в атаку.</text> <!-- 1.24 -->
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="player" system="engines" amount="100"/>
 		</event>
 	</choice>
@@ -1453,7 +1456,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>(Взломщик) Противостоять взлому.</text>
 		<event>
 			<text>Ваша система взлома автоматически противодействует цифровой атаке, и вы устремляетесь в бой с кораблём.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="player" system="engines" amount="100"/>
 			<status type="limit" target="player" system="hacking" amount="0"/>
 		</event>
@@ -1478,7 +1481,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Прямо из туманности появляется необычно вооружённый корабль слагов: «Приветссствую, путешшшессственники - говорит их капитан. - Похожже, вы заинтересссованы этими замечательными орудиями. Что жж, мы можжем договоритьссся, что вы предпочитаете: жертоприношшшение, сссражение или же торговлю?»</text>
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="CLONE_JELLY_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="CLONE_JELLY_PARAMETERS" hostile="false"/>
 	<choice hidden="true">
 		<text>Жертвоприношение.</text>
 		<event load="CLONE_JELLY_SACRIFICE"/>
@@ -1488,7 +1491,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<event>
 			<text>«Ну разумеетссся! Позвольте ссделать одну вещщщь, чтобы уравнять нашши шшансссы...» Их капитан активирует какое-то устройство, и ваши щиты отключаются!</text>
 			<status type="limit" target="player" system="shields" amount="0"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1722,9 +1725,9 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </event>
 
 <ship name="CLONE_JELLY_PARAMETERS" auto_blueprint="SHIPS_CLONE_JELLY">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль слагов уничтожен. Внезапно из туманности выходит точно такой же корабль! «Вы доказали сссвоё право на награду, выбирайте...»</text>
-		<status type="clear" target="player" system="shields" amount="100" />
+		<status type="clear" target="player" system="shields" amount="100"/>
 		<choice hidden="false">
 			<text>Выбрать это оружие.</text>
 			<event>
@@ -1738,9 +1741,9 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Команда слагов уничтожена. Внезапно откуда-то появляются клоны всей убитой команды! «Вы доказали сссвоё право на награду, выбирайте...»</text>
-		<status type="clear" target="player" system="shields" amount="100" />
+		<status type="clear" target="player" system="shields" amount="100"/>
 		<choice hidden="false">
 			<text>Выбрать это оружие.</text>
 			<event>
@@ -1787,7 +1790,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</event>
 	</choice>
 	<choice req="LIFE_SCANNER" hidden="true">
-		<text>(Сканер жизненных форм) Поискать выживших с помощью сканера жизненных форм.</text>
+		<text>(Инфракрасный сканер) Поискать выживших с помощью инфракрасного сканера.</text><!-- 1.33 -->
 		<event>
 			<text>Несмотря на множество обломков, заполняющих систему, ваш сканер улавливает слабые импульсы жизни в мусоре — похоже, они прекратятся, если вскоре не придёт помощь.</text>
 			<choice>
@@ -1873,7 +1876,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<event load="SECRET_WORD_ABADOTH_CONCLUSION"/>
 	</choice>
 	<choice req="LIFE_SCANNER" hidden="true"><!--DLC-->
-		<text>(Сканер жизненных форм) Проверить наличие жизни в окрестностях с помощью сканера жизненных форм.</text>
+		<text>(Инфракрасный сканер) Проверить наличие жизни в окрестностях с помощью инфракрасного сканера.</text><!-- 1.33 -->
 		<event load="SECRET_WORD_ABADOTH_CONCLUSION"/>
 	</choice>
 	<choice hidden="true">
@@ -1894,7 +1897,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Рассказать о том, что вы нашли мёртвого члена экипажа.</text>
 		<event>
 			<text>Следует минута молчания, вдруг корабль золтанцев скрывается в маскировке — должно быть вы сказали что-то не то... Теперь вам предстоит сражаться.</text>
-			<ship load="ZOLTAN_SHIP_WITH_CLOAKING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_SHIP_WITH_CLOAKING" hostile="true"/>
 		</event>
 	</choice>
 	<choice req="engi_crew" hidden="true">
@@ -1916,7 +1919,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Сказать ANODYNE.</text>
 		<event>
 			<text>Следует минута молчания, вдруг корабль золтанцев скрывается в маскировке — должно быть вы использовали не то слово... Теперь вам предстоит сражаться.</text>
-			<ship load="ZOLTAN_SHIP_WITH_CLOAKING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_SHIP_WITH_CLOAKING" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -1930,7 +1933,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Сказать ABATODH.</text>
 		<event>
 			<text>Следует минута молчания, вдруг корабль золтанцев скрывается в маскировке — должно быть вы использовали не то слово... Теперь вам предстоит сражаться.</text>
-			<ship load="ZOLTAN_SHIP_WITH_CLOAKING" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_SHIP_WITH_CLOAKING" hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -2104,7 +2107,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Похоже, что битвы не избежать...</text>
 			<environment type="asteroid"/>
 			<variable name="counter_meet_asteroid" op="add" val="1"/>
-			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/>
 		</event>
 	</choice>	
 </event>
@@ -2144,7 +2147,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event load="DESTROYED_DEFAULT"/>
 	<event load="DESTROYED_DEFAULT"/>
 	<event load="DESTROYED_DEFAULT"/>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Среди кучи обломков корабля хакеров вы замечаете уцелевшее орудие.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<weapon name="PULSE_CANNONS"/>
@@ -2156,7 +2159,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event load="DEAD_CREW_DEFAULT"/>
 	<event load="DEAD_CREW_DEFAULT"/>
 	<event load="DEAD_CREW_DEFAULT"/>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Разбирая на лом корабль хакеров, вы находите уцелевшее в бою орудие.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<weapon name="PULSE_CANNONS"/>
@@ -2174,7 +2177,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event load="DESTROYED_DEFAULT"/>
 	<event load="DESTROYED_DEFAULT"/>
 	<event load="DESTROYED_DEFAULT"/>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Среди кучи обломков корабля хакеров вы замечаете уцелевшее орудие.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<weapon name="PULSE_CANNONS"/>
@@ -2184,7 +2187,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event load="DEAD_CREW_DEFAULT"/>
 	<event load="DEAD_CREW_DEFAULT"/>
 	<event load="DEAD_CREW_DEFAULT"/>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Разбирая на лом корабль хакеров, вы находите уцелевшее в бою орудие.</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<weapon name="PULSE_CANNONS"/>
@@ -2203,7 +2206,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Вы готовитесь дать отпор наглым склизким созданиям.</text>
 			<environment type="sun"/>
 			<variable name="counter_meet_sun" op="add" val="1"/>
-			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/>
 		</event>
 	</choice>	
 </event>
@@ -2225,7 +2228,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Внезапно мимо вас проносится автоматический корабль. Кажется, он пытался протаранить вас, но промахнулся и теперь идёт на второй заход!</text>
 			<environment type="asteroid"/>
 			<variable name="counter_meet_asteroid" op="add" val="1"/>
-			<ship load="AUTOSHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="AUTOSHIP_PARAMETERS" hostile="true"/>
 		</event>
 	</choice>	
 </event>
@@ -2238,7 +2241,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <ship name="AUTOSHIP_PARAMETERS" auto_blueprint="SHIPS_AUTO">
 	<destroyed load="DESTROYED_DEFAULT_AUTO"/> <!-- 1.25.2 -->
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы. А вообще экипажа тут нет, так что просто передаю привет маме.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -2278,14 +2281,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="ASTEROID_ROCK_MINING" unique="true"><!-- done -->
 	<environment type="asteroid"/>
 	<variable name="counter_meet_asteroid" op="add" val="1"/>
-	<ship load="ROCK_MINING_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="ROCK_MINING_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Выйдя из прыжка, вы попадаете прямиком в астероидное поле. Корабль роков рядом выходит на связь.</text>
 	<choice hidden="true" req="mantis_crew" lvl="1" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>«Проклятые насекомые! Вы и тут нас нашли! Ну держитесь теперь!»</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>	
@@ -2304,7 +2307,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их.</text>
 		<event>
 			<text>Никаких разговоров. Вы решаете разобрать их посудину на лом.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -2373,7 +2376,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Атаковать их.</text>
 			<event>
 				<text>Вы готовитесь получить их припасы силой.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.31 -->
 			</event>
 		</choice>
@@ -2388,7 +2391,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Атаковать их.</text>
 			<event>
 				<text>Вы решаете проверить лично заполненность их трюмов.</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.31 -->
 			</event>
 		</choice>
@@ -2418,7 +2421,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Внезапно из-за астероидов вылетает корабль хакеров-слагов: «Вам отсссюда не уйти! Отдайте нам всссё, и мы сссохраним вашшши жизни!»</text>
 			<environment type="asteroid"/>
 			<variable name="counter_meet_asteroid" op="add" val="1"/>
-			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="false"/>
 			<choice hidden="true">
 				<text>Сдаться им.</text>
 				<event>
@@ -2435,7 +2438,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<text>Ничего им не отдавать.</text>
 				<event>
 					<text>Слаги заряжают свои орудия.</text>
-					<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+					<ship hostile="true"/>
 				</event>
 			</choice>
 		</event>
@@ -2446,7 +2449,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="NEBULA_STORM_SLUGS_UNSTABLE_TRADER" unique="true"><!-- done -->
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="SLUG_TRADER_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLUG_TRADER_SHIP_PARAMETERS" hostile="false"/>
 	<text>Капитан корабля слагов выходит на связь и очень навязчиво предлагает вам купить у него орудие.</text>
 	<choice hidden="false">
 		<text>Купить.</text>
@@ -2462,7 +2465,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Отказаться.</text>
 		<event>
 			<text>«Ах так?! Вы потратили нашшше время, и за это поплатитесссь». Вы замечаете, как от вашего корабля в скафандре отлетает слаг с небольшим контейнером! Он что-то украл у вас!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<item_modify steal="true">
 				<item type="scrap" min="-42" max="-6"/>
 			</item_modify>
@@ -2472,7 +2475,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Отказаться.</text>
 		<event>
 			<text>«Ах так?! Вы потратили нашшше время, и за это поплатитесссь». Корабль слагов заряжает орудия, а вы замечаете слага на вашем корабле — он застрял, пытаясь незаметно вскрыть один из шлюзов.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<boarders min="1" max="1" class="slug"/>
 		</event>
 	</choice>
@@ -2481,14 +2484,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<escape timer="55" min="5" max="9">
 		<text>Похоже, они пытаются убежать!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Их корабль сделал FTL-прыжок в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -2499,7 +2502,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Вы влетаете в ионный шторм. Корабль слагов неподалёку выходит на связь: «Приветссствуем вассс, мы нашли ссстранный артефакт. Древними рунами написссано, что он преобразует душшши разумных сссуществ. Мы боимссся иссспытывать его на сссебе. Дайте нам кого-нибудь для опытов, и мы щщщедро заплатим».</text>
 	<environment type="storm"/>.
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="SLUG_CONVERTER_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLUG_CONVERTER_SHIP_PARAMETERS" hostile="false"/>
 	<choice hidden="true" req="CREW_ALL" blue="false"> <!-- 1.24.1 -->
 		<text>Выбрать члена экипажа для экспериментов.</text>
 		<event>
@@ -2778,7 +2781,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их.</text>
 		<event>
 			<text>Мы в этом секторе только ради лома. И этот корабль станет очередной добычей.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2795,7 +2798,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Слаги недовольно обрывают связь и заряжают орудия. Кажется, они не привыкли к отказам.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 	</event>
 </eventList>
 
@@ -2806,7 +2809,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Атаковать их. Мы такое не прощаем!</text>
 			<event>
 				<text>Вы начинаете зарядку своих орудий. Слаги в ответ делают то же самое!</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -2922,11 +2925,11 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </eventList>
 
 <ship name="SLUG_CONVERTER_SHIP_PARAMETERS" auto_blueprint="JELLY_FULLPACK_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль разваливается, и вы собираете лом.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вы перебили экипаж и обчистили их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -2944,7 +2947,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Согласиться.</text>
 		<event>
 			<text>Увидев первый же появившийся корабль, вы мчитесь в атаку!</text>
-			<ship load="BLACKHOLE_RANDOMSHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="BLACKHOLE_RANDOMSHIP_PARAMETERS" hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -2961,11 +2964,11 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</choice>
 </event>
 <ship name="BLACKHOLE_RANDOMSHIP_PARAMETERS" auto_blueprint="ABSOLUTLY_FULL_PACK_OF_SHIPS"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное. А слаги-наблюдатели прыгают прочь, как только кончается бой. Платить они явно не собирались.</text>
 		<autoReward level="HIGH">stuff</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж, вы забираете всё ценное. А слаги-наблюдатели прыгают прочь, как только кончается бой. Платить они явно не собирались.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -2978,7 +2981,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="ASTEROID_PULSAR_UNSTABLE_OLDPIRATE">
 	<environment type="pulsar"/>
 	<variable name="counter_meet_pulsar" op="add" val="1"/>
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="false"/>
 	<text load="ASTEROID_PULSAR_UNSTABLE_OLDPIRATE"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -2986,7 +2989,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Несколько мгновений спустя вы осознаёте, что находитесь посреди разрежённого астероидного поля!</text>
 			<environment type="asteroid"/>
 			<variable name="counter_meet_asteroid" op="add" val="1"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -2996,30 +2999,30 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Старый пиратский корабль поджидал вас возле этого маяка. Ситуацию осложняет пульсар, выводящий из строя системы корабля.</text>
 </textList>
 <ship name="OLD_PIRATE_SHIPS_PARAMETERS" auto_blueprint="OLD_PIRATE_SHIPS"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew load="DEAD_CREW_OLD_PIRATE"/>
 </ship>
 <eventList name="DEAD_CREW_OLD_PIRATE">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось ни одного пирата. Вы забираете полезные материалы.</text>
 		<autoReward level="MED">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>На корабле не осталось ни одного пирата. Вы забираете все полезные материалы.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Пираты мертвы, вы можете забрать топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="MED">fuel</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Пираты мертвы, вы можете забрать всё топливо из их хранилища. А также собрать весь доступный лом.</text>
 		<autoReward level="HIGH">fuel</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 --><!-- 1.25 -->
+	<event><!-- 1.25 -->
 		<text>Вы сумели расправиться с бандой пиратов. На их корабле вы находите пленного человека.</text>
 		<choice>
 			<text>Принять его в команду.</text>
@@ -3037,7 +3040,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</choice>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Вы находите лазерное оружие на корабле пиратов. Так как остановить вас некому, вы забираете его себе.</text>
 		<weapon name="WEAPONS_CLASS_LASER_HIGH"/>
 		<autoReward level="LOW">scrap_only</autoReward> <!-- 1.25 -->
@@ -3056,7 +3059,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Вы готовитесь преподать им урок.</text>
 			<environment type="pulsar"/>
 			<variable name="counter_meet_pulsar" op="add" val="1"/>
-			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/>
 		</event>
 	</choice>	
 </event>
@@ -3071,7 +3074,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="ASTEROID_SUN_UNSTABLE_OLDPIRATE">
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="false"/>
 	<text load="ASTEROID_SUN_UNSTABLE_OLDPIRATE"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -3079,7 +3082,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Несколько мгновений спустя вы осознаёте, что находитесь прямо посреди астероидного поля!</text>
 			<environment type="asteroid"/>
 			<variable name="counter_meet_asteroid" op="add" val="1"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -3095,7 +3098,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
 	<img back="SUN_RIDDIK"/>
-	<ship load="SHIPS_ROCK_PIRATE_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_ROCK_PIRATE_PARAMETERS" hostile="false"/>
 	<text load="ASTEROID_SUN_UNSTABLE_SHIPS_ROCK_PIRATE"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -3103,7 +3106,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Неожиданно на полном ходу вы влетаете в плотное астероидное поле!</text>
 			<environment type="asteroid"/>
 			<variable name="counter_meet_asteroid" op="add" val="1"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 </event>
@@ -3114,11 +3117,11 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Пиратский корабль роков поджидает здесь незадачливых путешественников. Горячая двойная звезда только прибавляет опасности.</text>
 </textList>
 <ship name="SHIPS_ROCK_PIRATE_PARAMETERS" auto_blueprint="SHIPS_ROCK_PIRATE"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж, вы забираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</deadCrew>
@@ -3159,7 +3162,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<distressBeacon/>
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="true"/>
 	<text load="NEBULA_STORM_DISTRESS_OLD_PIRATE"/>
 </event>
 <textList name="NEBULA_STORM_DISTRESS_OLD_PIRATE">
@@ -3173,7 +3176,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<distressBeacon/>
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/>
 	<text load="NEBULA_STORM_DISTRESS_HACKER"/>
 </event>
 <textList name="NEBULA_STORM_DISTRESS_HACKER">
@@ -3186,7 +3189,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="NEBULA_HOSTILE_OLD_PIRATE"><!-- done -->
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="true"/>
 	<text load="NEBULA_HOSTILE_OLD_PIRATE"/>
 </event>
 <textList name="NEBULA_HOSTILE_OLD_PIRATE">
@@ -3205,19 +3208,19 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="NEBULA_HOSTILE_OLD_PIRATE_SURRENDER"><!-- done -->
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER" hostile="true"/>
 	<text load="NEBULA_HOSTILE_OLD_PIRATE"/>
 </event>
 
 <event name="NEBULA_HOSTILE_OLD_PIRATE_SURRENDER2"><!-- done -->
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER2" hostile="true"/>
 	<text load="NEBULA_HOSTILE_OLD_PIRATE"/>
 </event>
 
 <event name="HOSTILE_OLD_PIRATE"><!-- done -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS" hostile="true"/>
 	<text load="HOSTILE_OLD_PIRATE"/>
 </event>
 <textList name="HOSTILE_OLD_PIRATE">
@@ -3234,16 +3237,16 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </textList>
 
 <event name="HOSTILE_OLD_PIRATE_SURRENDER"><!-- done -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER" hostile="true"/>
 	<text load="HOSTILE_OLD_PIRATE"/>
 </event>
 
 <ship name="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER" auto_blueprint="OLD_PIRATE_SHIPS"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж, вы забираете всё ценное.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -3254,7 +3257,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event>
 				<text>Вы забираете припасы и оставляете их в покое.</text>
 				<autoReward level="HIGH">standard</autoReward>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 			</event>
 		</choice>
 		<choice>
@@ -3265,16 +3268,16 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </ship>
 
 <event name="HOSTILE_OLD_PIRATE_SURRENDER2"><!-- done -->
-	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER2" hostile="true"/>
 	<text load="HOSTILE_OLD_PIRATE"/>
 </event>
 
 <ship name="OLD_PIRATE_SHIPS_PARAMETERS_SURRENDER2" auto_blueprint="OLD_PIRATE_SHIPS"> 
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж, вы забираете всё ценное.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
@@ -3285,7 +3288,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event>
 				<text>Вы забираете припасы и оставляете их в покое.</text>
 				<autoReward level="HIGH">stuff</autoReward>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 			</event>
 		</choice>
 		<choice>
@@ -3296,7 +3299,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </ship>
 
 <event name="HOSTILE_HACKER"><!-- done -->
-	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/>
 	<text load="HOSTILE_HACKER"/>
 </event>
 <textList name="HOSTILE_HACKER">
@@ -3311,7 +3314,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </textList>
 
 <event name="HOSTILE_HACKER2"><!-- done -->
-	<ship load="JELLYHACK_SHIP_PARAMETERS2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLYHACK_SHIP_PARAMETERS2" hostile="true"/>
 	<text load="HOSTILE_HACKER"/>
 </event>
 
@@ -3319,7 +3322,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<distressBeacon/>
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
-	<ship load="SHIPS_ROCK_NOFUEL_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_ROCK_NOFUEL_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text load="SUN_UNSTABLE_ROCK_NOFUEL"/>
 	<choice hidden="false">
@@ -3339,7 +3342,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их.</text>
 		<event>
 			<text>Вы решаете, что их корабль станет отличной добычей для вас. Роки готовятся к защите.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -3375,12 +3378,12 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Раз вы отказываетесь помогать по-хорошему, роки решают забрать своё силой. Готовьтесь к битве.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event>
 		<text>Раз вы отказываетесь помогать по-хорошему, роки решают забрать своё силой. Готовьтесь к битве.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -3390,13 +3393,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Сигнал бедствия передавал корабль роков, застрявший без топлива у активной звезды. Они просят вас поделиться горючим.</text>
 </textList>
 <ship name="SHIPS_ROCK_NOFUEL_PARAMETERS" auto_blueprint="SHIPS_ROCK"> <!-- 1.31 -->
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете немного лома.</text>
 		<item_modify>
 			<item type="scrap" min="15" max="30"/>
 		</item_modify>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж, вы забираете всё ценное.</text>
 		<item_modify>
 			<item type="drones" min="2" max="10"/>
@@ -3410,7 +3413,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<distressBeacon/>
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
-	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="true"/>
 	<text load="SUN_UNSTABLE_TRAP"/>
 </event>
 <textList name="SUN_UNSTABLE_TRAP">
@@ -3445,7 +3448,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <!-- tested -->
 <event name="EVENT_UNSTABLE_SLUG_INEEDTOGO" unique="true">
 	<text>Перед вами заряжает FTL-двигатель изрядно потрёпанный корабль слагов.</text>
-	<ship load="SHIPS_SLUG_INEEDTOGO_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SHIPS_SLUG_INEEDTOGO_PARAMETERS" hostile="true"/>
 	<status type="limit" target="enemy" system="weapons" amount="0"/>
 	<choice hidden="true">
 		<text id="continue"/>
@@ -3460,18 +3463,18 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Вы принимаете сообщение от них: «Нассс сссильно потрепало в ионном шшшторме. Теперь мы летим домой. Не трогайте нассс, и мы оссставим вам кое-что ценное. Нам это уже большшше не понадобитссся...»</text>
 		<status type="limit" target="enemy" system="hacking" amount="0"/> <!-- 1.26 -->
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Их корабль сделал прыжок.</text>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="SLUG_INEEDTOGO_AFTERJUMP"/>
 		</choice>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив экипаж, вы забираете всё ценное.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</deadCrew>
@@ -3499,36 +3502,36 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="storm"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Сразу по прибытии вы попадаете в сильнейшую электромагнитную бурю!..</text>
-	<status type="limit" target="player" system="shields" amount="0" />
-	<status type="limit" target="player" system="weapons" amount="0" />
-	<status type="limit" target="player" system="drones" amount="0" />
-	<status type="limit" target="player" system="cloaking" amount="0" />
-	<status type="limit" target="player" system="reactor" amount="0" />
-	<status type="limit" target="player" system="medbay" amount="0" />
-	<status type="limit" target="player" system="clonebay" amount="0" />
-	<status type="limit" target="player" system="doors" amount="0" />
-	<status type="limit" target="player" system="mind" amount="0" />
-	<status type="limit" target="player" system="engines" amount="0" />
-	<status type="limit" target="player" system="pilot" amount="0" />
-	<status type="limit" target="player" system="hacking" amount="0" />
-	<status type="limit" target="player" system="sensors" amount="0" />
-	<status type="limit" target="player" system="teleporter" amount="0" />
-	<status type="limit" target="player" system="oxygen" amount="0" />
-	<status type="limit" target="player" system="artillery" amount="0" />
+	<status type="limit" target="player" system="shields" amount="0"/>
+	<status type="limit" target="player" system="weapons" amount="0"/>
+	<status type="limit" target="player" system="drones" amount="0"/>
+	<status type="limit" target="player" system="cloaking" amount="0"/>
+	<status type="limit" target="player" system="reactor" amount="0"/>
+	<status type="limit" target="player" system="medbay" amount="0"/>
+	<status type="limit" target="player" system="clonebay" amount="0"/>
+	<status type="limit" target="player" system="doors" amount="0"/>
+	<status type="limit" target="player" system="mind" amount="0"/>
+	<status type="limit" target="player" system="engines" amount="0"/>
+	<status type="limit" target="player" system="pilot" amount="0"/>
+	<status type="limit" target="player" system="hacking" amount="0"/>
+	<status type="limit" target="player" system="sensors" amount="0"/>
+	<status type="limit" target="player" system="teleporter" amount="0"/>
+	<status type="limit" target="player" system="oxygen" amount="0"/>
+	<status type="limit" target="player" system="artillery" amount="0"/>
 	<choice hidden="true" req="ghost" lvl="0" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>...Ваша команда возится некоторое время с системами корабля и частично восстанавливает их работоспособность. Время убираться отсюда...</text>
-			<status type="clear" target="player" system="engines" amount="100" />
-			<status type="clear" target="player" system="pilot" amount="100" />
+			<status type="clear" target="player" system="engines" amount="100"/>
+			<status type="clear" target="player" system="pilot" amount="100"/>
 		</event>
 	</choice>
 	<choice hidden="true" req="ghost_crew" lvl="1" max_group="0" blue="false">
 		<text id="continue"/>
 		<event>
 			<text>...Это аномальное место губительно для аватаров. Аватар в вашей команде исчезает, и от него не остаётся ничего, кроме проектора. Вы разбираете его на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-			<status type="clear" target="player" system="engines" amount="100" />
-			<status type="clear" target="player" system="pilot" amount="100" />
+			<status type="clear" target="player" system="engines" amount="100"/>
+			<status type="clear" target="player" system="pilot" amount="100"/>
 			<crewMember amount="-1" class="ghost"/>
 			<item_modify><item type="scrap" min="25" max="25"/></item_modify><!-- 1.28 -->
 		</event>
@@ -3542,8 +3545,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 				<text id="continue"/>
 				<event>
 					<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-					<status type="clear" target="player" system="engines" amount="100" />
-					<status type="clear" target="player" system="pilot" amount="100" />
+					<status type="clear" target="player" system="engines" amount="100"/>
+					<status type="clear" target="player" system="pilot" amount="100"/>
 					<crewMember amount="-1" class="ghost"/>
 					<item_modify><item type="scrap" min="50" max="50"/></item_modify><!-- 1.28 -->
 				</event>
@@ -3564,8 +3567,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 						<text id="continue"/>
 						<event>
 							<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-							<status type="clear" target="player" system="engines" amount="100" />
-							<status type="clear" target="player" system="pilot" amount="100" />
+							<status type="clear" target="player" system="engines" amount="100"/>
+							<status type="clear" target="player" system="pilot" amount="100"/>
 							<crewMember amount="-1" class="ghost"/>
 							<item_modify><item type="scrap" min="75" max="75"/></item_modify><!-- 1.28 -->
 						</event>
@@ -3593,8 +3596,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 								<text id="continue"/>
 								<event>
 									<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-									<status type="clear" target="player" system="engines" amount="100" />
-									<status type="clear" target="player" system="pilot" amount="100" />
+									<status type="clear" target="player" system="engines" amount="100"/>
+									<status type="clear" target="player" system="pilot" amount="100"/>
 									<crewMember amount="-1" class="ghost"/>
 									<item_modify><item type="scrap" min="100" max="100"/></item_modify><!-- 1.28 -->
 								</event>
@@ -3629,8 +3632,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 										<text id="continue"/>
 										<event>
 											<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-											<status type="clear" target="player" system="engines" amount="100" />
-											<status type="clear" target="player" system="pilot" amount="100" />
+											<status type="clear" target="player" system="engines" amount="100"/>
+											<status type="clear" target="player" system="pilot" amount="100"/>
 											<crewMember amount="-1" class="ghost"/>
 											<item_modify><item type="scrap" min="125" max="125"/></item_modify><!-- 1.28 -->
 										</event>
@@ -3672,8 +3675,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 												<text id="continue"/>
 												<event>
 													<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-													<status type="clear" target="player" system="engines" amount="100" />
-													<status type="clear" target="player" system="pilot" amount="100" />
+													<status type="clear" target="player" system="engines" amount="100"/>
+													<status type="clear" target="player" system="pilot" amount="100"/>
 													<crewMember amount="-1" class="ghost"/>
 													<item_modify><item type="scrap" min="150" max="150"/></item_modify><!-- 1.28 -->
 												</event>
@@ -3722,8 +3725,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 														<text id="continue"/>
 														<event>
 															<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-															<status type="clear" target="player" system="engines" amount="100" />
-															<status type="clear" target="player" system="pilot" amount="100" />
+															<status type="clear" target="player" system="engines" amount="100"/>
+															<status type="clear" target="player" system="pilot" amount="100"/>
 															<crewMember amount="-1" class="ghost"/>
 															<item_modify><item type="scrap" min="175" max="175"/></item_modify><!-- 1.28 -->
 														</event>
@@ -3779,8 +3782,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 																<text id="continue"/>
 																<event>
 																	<text>...Все аватары в вашей команде исчезают, и от них не остаётся ничего, кроме проекторов. Вы разбираете их на лом и частично восстанавливаете работу отключённых систем. Время убираться отсюда...</text>
-																	<status type="clear" target="player" system="engines" amount="100" />
-																	<status type="clear" target="player" system="pilot" amount="100" />
+																	<status type="clear" target="player" system="engines" amount="100"/>
+																	<status type="clear" target="player" system="pilot" amount="100"/>
 																	<crewMember amount="-1" class="ghost"/>
 																	<item_modify><item type="scrap" min="200" max="200"/></item_modify><!-- 1.28 -->
 																</event>
@@ -3885,13 +3888,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 
 <event name="NEUTRAL_HACKER"><!-- done -->
-	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="JELLYHACK_SHIP_PARAMETERS" hostile="false"/>
 	<text load="NEUTRAL_HACKER"/>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
 			<text>Они готовятся защитить себя.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -3911,7 +3914,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <!-- 1.21 -->
 <event name="BATTLE_PIRATE_BOSS" unique="true">
 	<text>О, боже! Прямо на вас летит пиратский флагман!</text>
-	<ship load="PIRATE_BOSS_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="PIRATE_BOSS_PARAM" hostile="true"/>
 </event>
 
 <ship name="PIRATE_BOSS_PARAM" auto_blueprint="PIRATE_BOSS_SHIPS"> 
@@ -3922,15 +3925,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="PIRATE_RAND_ENVIRONMENTS"/>
 		</choice>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Пираты скрылись в неизвестном направлении.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Вы бегло осматриваете обломки и собираете всё ценное.</text>
 		<autoReward level="MED">standard</autoReward>
 		<weapon name="RANDOM"/>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Перебив пиратов, вы забираете всё ценное.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<weapon name="RANDOM"/>
@@ -3951,7 +3954,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Отпустить их.</text>
 			<event>
 				<text>Вы решаете, что будет лучше оставить их в покое.</text>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 			</event>
 		</choice>
 	</event>
@@ -3969,7 +3972,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Отпустить их.</text>
 			<event>
 				<text>Вы решаете, что будет лучше оставить их в покое.</text>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 			</event>
 		</choice>
 	</event>
@@ -3987,7 +3990,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Отпустить их.</text>
 			<event>
 				<text>Вы решаете, что будет лучше оставить их в покое.</text>
-				<ship hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+				<ship hostile="false"/>
 			</event>
 		</choice>
 	</event>
@@ -6163,13 +6166,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="SLURM_BOSS_EVENT">
 	<text>Вы сталкиваетесь с необычным кораблём слёрмов, построенным на спине огромного слага. Вооружён он не менее странно, но тем не менее не торопится нападать на вас. Вы пытаетесь вызвать их на связь, но слёрмы не отвечают.</text>
-	<ship load="SLURM_QUEEN_SHIP" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_QUEEN_SHIP" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/><!-- 1.25.1 -->
 	<choice hidden="true">
 		<text>Напасть первыми.</text>
 		<event>
 			<text>Легко увернувшись от вашей атаки, они наконец обращают на вас внимание. «Вы об этом пожалете, жалкие сссоздания».</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.25.1 -->
 		</event>
 	</choice>
@@ -6185,7 +6188,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>Напасть на них.</text>
 			<event>
 				<text>Легко увернувшись от вашей атаки, они наконец обращают на вас внимание. «Вы об этом пожалете, жалкие сссоздания».</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.25.1 -->
 			</event>
 		</choice>
@@ -6203,7 +6206,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event>
 				<text>Теперь слёрмы наконец обращают на вас внимание. «Это не принадлежит вам, вы будете наказаны за вашшшу дерзосссть».</text>
 				<weapon name="SLURMBARRELS"/>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/><!-- 1.25.1 -->
 			</event>
 		</choice>
@@ -6216,7 +6219,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 </eventList>
 <ship name="SLURM_QUEEN_SHIP" auto_blueprint="SHIPS_SLURM_QUEENY">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль взрывается на части, и вы собираете всё, что уцелело. Труп королевы плывёт среди обломков...</text>
 		<autoReward level="MED">scrap_only</autoReward>
 		<weapon name="WEAPONS_PROTOTYPES_SLURM"/><!-- 1.25.1 --><!-- 1.27 --><!-- come back, lol -->
@@ -6228,7 +6231,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все слёрмы мертвы, вы обыскиваете корабль и забираете их прототип. Королева в ярости хлюпает в своём отсеке, но не может ничего поделать. Вы отключаете системы её жизнеобеспечения, больше она не причинит никому вреда.</text><!-- 1.25.1 --><!-- 1.27 -->
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<weapon name="WEAPONS_PROTOTYPES_SLURM"/><!-- 1.25.1 --><!-- 1.27 -->
@@ -6253,7 +6256,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Приблизиться и выяснить в чём дело.</text>
 		<event>
 			<text>Вы выходите на низкую планетарную орбиту и замечаете светящийся шар, на огромной скорости летающий над мирными поселениями. Внезапно он начинает приближаться к вашему кораблю!</text>
-			<ship load="ZOLTAN_BLINK_SHIPS_PARAM" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_BLINK_SHIPS_PARAM" hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 			<!-- <status type="limit" target="player" system="drones" amount="0"/> --> <!-- 1.26 --><!-- there is no need here -->
 			<status type="limit" target="player" system="artillery" amount="0"/> <!-- 1.26 -->
 			<status type="limit" target="player" system="teleporter" amount="0"/> <!-- 1.26 -->
@@ -6263,7 +6267,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Приблизиться и выяснить в чём дело.</text>
 		<event>
 			<text>Вы выходите на низкую планетарную орбиту и замечаете светящийся шар, на огромной скорости летающий над мирными поселениями. Внезапно он начинает приближаться к вашему кораблю!</text>
-			<ship load="ZOLTAN_BLINK_SHIPS_PARAM_2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="ZOLTAN_BLINK_SHIPS_PARAM_2" hostile="true"/>
+			<variable name="double_reward_event_station" op="set" val="1"/><!-- 1.33 -->
 			<status type="limit" target="player" system="drones" amount="0"/> <!-- beam drone crushed it -->
 			<status type="limit" target="player" system="artillery" amount="0"/> <!-- 1.26 -->
 			<status type="limit" target="player" system="teleporter" amount="0"/> <!-- 1.26 -->
@@ -6278,7 +6283,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<escape timer="3" min="5" max="5">
 		<text>Кажется, светящийся шар отступает!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Светящийся шар исчез в неизвестном направлении. Вы связываетесь с планетарным поселением...</text>
 	<!-- 	<status type="clear" target="player" system="drones" amount="100"/> --><!-- 1.26 --><!-- there is no need here -->
 		<status type="clear" target="player" system="artillery" amount="100"/> <!-- 1.26 -->
@@ -6288,7 +6293,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="ZOLTAN_BLINK_EVENT_REWARD"/>
 		</choice>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Светящийся шар уничтожен. Вы связываетесь с планетарным поселением...</text>
 		<!-- <status type="clear" target="player" system="drones" amount="100"/> --><!-- 1.26 --><!-- there is no need here -->
 		<status type="clear" target="player" system="artillery" amount="100"/> <!-- 1.26 -->
@@ -6303,7 +6308,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<escape timer="1" min="40" max="40">
 		<text>Кажется, светящийся шар отступает!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Светящийся шар исчез в неизвестном направлении. Вы связываетесь с планетарным поселением...</text>
 		<status type="clear" target="player" system="drones" amount="100"/>
 		<status type="clear" target="player" system="artillery" amount="100"/> <!-- 1.26 -->
@@ -6313,7 +6318,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="ZOLTAN_BLINK_EVENT_REWARD"/>
 		</choice>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 --> 
+	<destroyed> 
 		<text>Светящиеся обломки шара врезаются в ваш корабль, и вы замечаете, что реактор начинает производить больше энергии. Вы связываетесь с планетарным поселением...</text><!-- 1.26 -->
 		<upgrade amount="1" system="reactor"/><!-- 1.26 -->
 		<status type="clear" target="player" system="drones" amount="100"/>
@@ -6355,7 +6360,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text load="NEBULA_SLURM_FIGHT_TEXT"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 </event>
 <textList name="NEBULA_SLURM_FIGHT_TEXT">
 	<text>Обычно слёрмы не нападают первыми, но не в этот раз... Похоже, что-то их напугало в этой туманности.</text>
@@ -6376,7 +6381,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="SLURM_FIGHT">
 	<text load="SLURM_FIGHT_TEXT"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 </event>
 <textList name="SLURM_FIGHT_TEXT"> 
 	<text>Вы появляетесь посреди битвы слёрмов с мантисами, когда подбитые мантисы включают систему мгновенного FTL-прыжка. Слёрмы принимают вас за подкрепление мантисам и не идут на контакт.</text>
@@ -6390,13 +6395,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="NEUTRAL_SLURM_FIGHT">
 	<text load="NEUTRAL_SLURM_FIGHT_TEXT"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Напасть на них.</text>
 		<event>
 			<text load="SLURM_ATTACK_TEXT"/><!-- 1.26 -->
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -6429,13 +6434,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text load="NEBULA_NEUTRAL_SLURM_FIGHT_TEXT"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Напасть на них.</text>
 		<event>
 			<text load="SLURM_ATTACK_TEXT"/><!-- 1.26 -->
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -6457,7 +6462,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </textList>
 
 <eventList name="REWARD_SLURM_1">
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя небольшое количество полезного оборудования.</text>
 		<autoReward level="LOW">stuff</autoReward>
 		<choice hidden="true">
@@ -6465,7 +6470,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя небольшое количество полезного оборудования.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6473,7 +6478,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя небольшое количество полезного оборудования.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6481,7 +6486,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя небольшое количество полезного оборудования.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6489,7 +6494,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя некоторое количество полезного оборудования.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6497,7 +6502,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя некоторое количество полезного оборудования.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6505,7 +6510,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя значительное количество полезного оборудования.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -6513,7 +6518,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="REWARD_SLURM_END"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<event>
 		<text>Корабль слёрмов взрывается, оставляя после себя некоторое количество полезного оборудования. Среди обломков вы замечаете уцелевшее орудие.</text>
 		<autoReward level="LOW">scrap_only</autoReward>
 		<weapon name="SLURMGUNS"/>
@@ -6555,10 +6560,11 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Слёрм в бочке полностью готов к употреблению, и вы аккуратно запечатываете контейнер. Торговцы дадут за него неплохую сумму ломом.</text>
 		<weapon name="SLURMBARRELS"/>
 	</event>
-	<event>
+	<!-- <event>
 		<text>Слёрм в бочке полностью готов к употреблению, и вы аккуратно запечатываете контейнер. Торговцы дадут за него неплохую сумму ломом.</text>
 		<weapon name="SLURMBARRELS"/>
-	</event>
+	</event> -->
+	<event load="OPEN_SLIG_LEGENDARY"/><!-- 1.33 -->
 	<event>
 		<text>Этот вид слёрма варили из топливных ячеек, но слизь не успела забродить. Вы достаёте из бочки уцелевшие припасы.</text>
 		<item_modify>
@@ -6585,8 +6591,23 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 </eventList>
 
+<event name="OPEN_SLIG_LEGENDARY"><!-- 1.33 -->
+	<loadEventList seeded="false" first="true">
+		<event req="slig_legendary">
+			<text>Слёрм в бочке полностью готов к употреблению, и вы аккуратно запечатываете контейнер. Торговцы дадут за него неплохую сумму ломом.</text>
+			<weapon name="SLURMBARRELS"/>
+		</event>
+		<event>
+			<text>Вы открываете бочку, и из неё вываливается жирный слёрм! Довольно слизывая с губ остатки слёрма, он произносит: «Вы весссьма вовремя, эта бочка хоть и была большой, но я ссссправилссся. Позвольте мне теперь пойти ссс вами». Похоже, из-за своего обжорства этот слёрм приобрёл необычные способности!</text>
+			<achievement silent="false">ACH_SLIG_LEGENDARY</achievement>
+			<playSound>legendary</playSound>
+			<crewMember amount="1" all_skills="2" class="slig_legendary">Диоген</crewMember>
+		</event>
+	</loadEventList>
+</event>
+
 <eventList name="REWARD_SLURM_2">
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Каким-то чудом вам удалось перебить всех слёрмов... Время грабить! Вы осматриваете трюмы в поисках слёрма и находите одну уцелевшую бочку. Так как ценность представляет только достаточно перебродивший слёрм, необходимо проверить его готовность.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -6594,7 +6615,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="OPEN_BARREL"/>
 		</choice>
 	</event>
-	<event><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<event>
 		<text>Каким-то чудом вам удалось перебить всех слёрмов... Время грабить! Вы осматриваете трюмы в поисках слёрма, но находите лишь уцелевшее орудие. Впрочем, вы не жалуетесь.</text>
 		<autoReward level="HIGH">scrap_only</autoReward>
 		<weapon name="SLURMGUNS"/>
@@ -6608,14 +6629,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Немедленно атаковать мантисов.</text>
 		<event>
 			<text>Вы мчитесь в бой, уверенные в своей скорой победе.</text>
-			<ship load="MANTIS_SLURM_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="MANTIS_SLURM_FIGHT" hostile="true"/>
+			<variable name="double_reward_event_ship" op="set" val="1"/><!-- 1.33 -->
 		</event>
 	</choice>
 	<choice hidden="true">
 		<text>Подождать пока бой завершится, а затем напасть на уцелевший корабль.</text>
 		<event>
 			<text>Исход боя был очевиден. Как только корабль слёрмов взрывается, вы нападаете на мантисов, не давая им собрать обломки.</text>
-			<ship load="MANTIS_SLURM_FIGHT2" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship load="MANTIS_SLURM_FIGHT2" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
@@ -6631,7 +6653,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </textList>
 
 <ship name="MANTIS_SLURM_FIGHT" auto_blueprint="SHIPS_MANTIS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль мантисов разваливается на части.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6639,7 +6661,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="SAVE_SLURM_LIST"/>    
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все мантисы мертвы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6665,7 +6687,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 </eventList>
 
 <ship name="MANTIS_SLURM_FIGHT2" auto_blueprint="SHIPS_MANTIS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Корабль мантисов разваливается на части.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -6673,7 +6695,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<event load="DEAD_SLURM_LIST"/>    
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Все мантисы мертвы.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -6707,13 +6729,13 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<text>Слёрмы на этом маяке просят у вас кого-нибудь из членов экипажа, чтобы сварить из него слёрм особого состава. За это они обещают дать вам 50 лома и слёрм на пробу. Вся команда явно против, но решать вам...</text>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Атаковать их.</text>
 		<event>
 			<text>Слёрмы незамедлительно реагируют на агрессию.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -7011,7 +7033,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="SLURM_4_BARRELS" unique="true">
 	<text>Поблизости находится корабль слёрмов. Они просят вас реализовать в торговой сети поблизости партию слёрма. Что скажете, капитан?</text>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Согласиться с их предложением.</text>
@@ -7046,7 +7068,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их.</text>
 		<event>
 			<text>Слёрмы незамедлительно заряжают орудия в ответ.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -7265,7 +7287,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<distressBeacon/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Корабль вблизи маяка выходит на связь: «Нашшш капитан выпил недобродивший ссслёрм, закрылся пьяным в каюте и громко поёт! На все попытки образумить его, он ссстреляет из сссвоего блассстера... А у нас важная транссспортная мисссия от королевы! Ссссможете нам помочь?» </text>
 	<choice req="CREW_ALL" hidden="true" blue="false">
@@ -7296,7 +7318,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их.</text>
 		<event>
 			<text>Капитан слёрмов в пьянющем состоянии отдаёт приказ об обороне!</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -7336,7 +7358,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Заметив приближение вашей команды к своему кораблю, капитан слёрмов в пьянющем состоянии отдаёт приказ открыть огонь! Никто не осмеливается спорить с ним...</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -7347,7 +7369,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Заметив безуспешные попытки вашей системы контроля разума, капитан слёрмов в пьянющем состоянии отдаёт приказ открыть огонь! Никто не осмеливается спорить с ним...</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -7362,7 +7384,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Заметив безуспешные попытки вашей системы контроля разума, капитан слёрмов в пьянющем состоянии отдаёт приказ открыть огонь! Никто не осмеливается спорить с ним...</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -7381,7 +7403,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Заметив безуспешные попытки вашей системы контроля разума, капитан слёрмов в пьянющем состоянии отдаёт приказ открыть огонь! Никто не осмеливается спорить с ним...</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -7400,7 +7422,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	</event>
 	<event>
 		<text>Заметив ваши выстрелы, капитан слёрмов в пьянющем состоянии отдаёт приказ открыть огонь в ответ! Никто не осмеливается спорить с ним...</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 </eventList>
@@ -7409,7 +7431,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <event name="NEBULA_SLURM_PIRATE_STEAL" unique="true">
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="SLURMPIRATE_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURMPIRATE_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Пиратский корабль выходит на связь: «Мы тут украли у глупых слёрмов партию слёрма, возьми вот это, и нашей встречи не было. По рукам?» </text>
 	<choice hidden="false">
@@ -7426,7 +7448,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<text>Атаковать их.</text>
 		<event>
 			<text>Пираты должны быть наказаны за свои незаконные действия. Вы заряжаете орудия.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>	
@@ -7435,10 +7457,10 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<escape timer="35" min="30" max="30">
 		<text>Похоже, пираты пытаются сбежать!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль совершил FTL-прыжок...</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Уничтожив корабль, вы собираете всё, что уцелело...</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -7449,7 +7471,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			</event>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Зачистив корабль, вы собираете всё, что уцелело...</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -7485,7 +7507,7 @@ TJ - Топливная ячейка.			2
 <event name="NEBULA_SLURM_RECEPT" unique="true">
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Слёрм с ближайшего корабля просит вас о помощи: «На сссоссседнем маяке живёт мой брат, нужно передать ему рецепт моей новой нассстойки ссслёрма! Берёшьссся за эту работу?»</text>
 	<choice hidden="true">
@@ -7496,7 +7518,7 @@ TJ - Топливная ячейка.			2
 		<text>Атаковать его.</text>
 		<event>
 			<text>Слёрм видит вашу агрессию и реагирует соответствующе.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -12036,7 +12058,7 @@ TJ - Топливная ячейка.			2
 	<environment type="nebula"/>
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<distressBeacon/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Согласиться.</text>
@@ -12049,7 +12071,7 @@ TJ - Топливная ячейка.			2
 		<text>Атаковать их.</text>
 		<event>
 			<text>Слёрмы незамедлительно реагируют на вашу агрессию.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -12063,47 +12085,47 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_BOARDING_1">
 	<event>
 		<text>По указанным координатам вы находите первую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите первую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите первую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите первую цель и мчитесь на захват.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите первую цель и мчитесь на захват.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите первую цель и мчитесь на захват.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_FED_RUNAWAY_F" hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIPS_FED_RUNAWAY_F" auto_blueprint="SHIPS_FED">
 	<escape timer="45" min="30" max="30">
 		<text>Похоже, этот корабль готовится к прыжку!</text>
 	</escape>
-	<gotaway><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<gotaway>
 		<text>Корабль совершил FTL-прыжок, а слёрмы расторгают ваше соглашение.</text>
 	</gotaway>
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы их собираете, но слёрмы крайне недовольны тем, что при взрыве потерян нужный биологический материал. Они отказываются дальше с вами сотрудничать.</text>
 		<autoReward level="LOW">stuff</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Пока вы собираете всё ценное, слёрмы переправляют на своё судно уцелевший биологический материал для слёрма и дают вам координаты следующей цели.</text>
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
@@ -12124,41 +12146,41 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_BOARDING_2">
 	<event>
 		<text>По указанным координатам вы находите вторую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_CIRCLE_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_CIRCLE_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите вторую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_CIRCLE_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_CIRCLE_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите вторую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_CIRCLE_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_CIRCLE_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите вторую цель и мчитесь на захват.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="SHIPS_CIRCLE_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_CIRCLE_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите вторую цель и мчитесь на захват.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="SHIPS_CIRCLE_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_CIRCLE_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите вторую цель и мчитесь на захват.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="SHIPS_CIRCLE_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_CIRCLE_F" hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIPS_CIRCLE_F" auto_blueprint="SHIPS_CIRCLE">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы их собираете, но слёрмы крайне недовольны тем, что при взрыве потеряны нужные материалы. Они отказываются дальше с вами сотрудничать.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Пока вы собираете всё ценное, слёрмы переправляют на своё судно уцелевшие материалы для слёрма и дают вам координаты следующей цели.</text>
 		<autoReward level="MED">standard</autoReward>
 		<choice hidden="true">
@@ -12179,41 +12201,41 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_BOARDING_3">
 	<event>
 		<text>По указанным координатам вы находите третью цель и мчитесь на захват.</text>
-		<ship load="SHIPS_MANTIS_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_MANTIS_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите третью цель и мчитесь на захват.</text>
-		<ship load="SHIPS_MANTIS_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_MANTIS_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите третью цель и мчитесь на захват.</text>
-		<ship load="SHIPS_MANTIS_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_MANTIS_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите третью цель и мчитесь на захват.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="SHIPS_MANTIS_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_MANTIS_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите третью цель и мчитесь на захват.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="SHIPS_MANTIS_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_MANTIS_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите третью цель и мчитесь на захват.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="SHIPS_MANTIS_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_MANTIS_F" hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIPS_MANTIS_F" auto_blueprint="SHIPS_MANTIS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы их собираете, но слёрмы крайне недовольны тем, что при взрыве потеряны нужные материалы. Они отказываются дальше с вами сотрудничать.</text>
 		<autoReward level="LOW">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Пока вы собираете всё ценное, слёрмы переправляют на своё судно уцелевшие материалы для слёрма и дают вам координаты следующей цели.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -12235,41 +12257,41 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_BOARDING_4">
 	<event>
 		<text>По указанным координатам вы находите четвёртую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_ROCK_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ROCK_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите четвёртую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_ROCK_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ROCK_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите четвёртую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_ROCK_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ROCK_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите четвёртую цель и мчитесь на захват.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="SHIPS_ROCK_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ROCK_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите четвёртую цель и мчитесь на захват.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="SHIPS_ROCK_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ROCK_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите четвёртую цель и мчитесь на захват.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="SHIPS_ROCK_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ROCK_F" hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIPS_ROCK_F" auto_blueprint="SHIPS_ROCK">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы их собираете, но слёрмы крайне недовольны тем, что при взрыве потеряны нужные материалы. Они отказываются дальше с вами сотрудничать.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Пока вы собираете всё ценное, слёрмы переправляют на своё судно уцелевшие материалы для слёрма и дают вам координаты следующей цели.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -12291,41 +12313,41 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_BOARDING_5">
 	<event>
 		<text>По указанным координатам вы находите пятую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_ZOLTAN_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ZOLTAN_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите пятую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_ZOLTAN_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ZOLTAN_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите пятую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_ZOLTAN_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ZOLTAN_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите пятую цель и мчитесь на захват.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="SHIPS_ZOLTAN_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ZOLTAN_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите пятую цель и мчитесь на захват.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="SHIPS_ZOLTAN_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ZOLTAN_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите пятую цель и мчитесь на захват.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="SHIPS_ZOLTAN_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_ZOLTAN_F" hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIPS_ZOLTAN_F" auto_blueprint="SHIPS_ZOLTAN">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы их собираете, но слёрмы крайне недовольны тем, что при взрыве потеряны нужные материалы. Они отказываются дальше с вами сотрудничать.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Пока вы собираете всё ценное, слёрмы переправляют на своё судно уцелевшие материалы для слёрма и дают вам координаты следующей цели.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -12347,41 +12369,41 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_BOARDING_6">
 	<event>
 		<text>По указанным координатам вы находите шестую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_SLUG_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_SLUG_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите шестую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_SLUG_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_SLUG_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите шестую цель и мчитесь на захват.</text>
-		<ship load="SHIPS_SLUG_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_SLUG_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите шестую цель и мчитесь на захват.</text>
 		<environment type="asteroid"/>
 		<variable name="counter_meet_asteroid" op="add" val="1"/>
-		<ship load="SHIPS_SLUG_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_SLUG_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите шестую цель и мчитесь на захват.</text>
 		<environment type="pulsar"/>
 		<variable name="counter_meet_pulsar" op="add" val="1"/>
-		<ship load="SHIPS_SLUG_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_SLUG_F" hostile="true"/>
 	</event>
 	<event>
 		<text>По указанным координатам вы находите шестую цель и мчитесь на захват.</text>
 		<environment type="sun"/>
 		<variable name="counter_meet_sun" op="add" val="1"/>
-		<ship load="SHIPS_SLUG_F" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SHIPS_SLUG_F" hostile="true"/>
 	</event>
 </eventList>
 <ship name="SHIPS_SLUG_F" auto_blueprint="SHIPS_JELLY">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы их собираете, но слёрмы крайне недовольны тем, что при взрыве потеряны нужные материалы. Они отказываются дальше с вами сотрудничать.</text>
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Пока вы собираете всё ценное, слёрмы переправляют на своё судно уцелевшие материалы для слёрма.</text>
 		<autoReward level="HIGH">standard</autoReward>
 		<choice hidden="true">
@@ -12397,7 +12419,7 @@ TJ - Топливная ячейка.			2
 <event name="EVENT_SLURM_TAMOZNA" unique="true">
 	<text>Слёрмы поблизости выходят на связь: «Здравссствуй! Пролёт через этот сссектор сссопровождаетссся таможенным досссмотром флота ссслёрмов! Предъявите вашшши документы, капитан!»</text>
 	<img planet="NONE"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice hidden="true">
 		<text>Дать им какие-нибудь документы вашего экипажа.</text>
@@ -12425,7 +12447,7 @@ TJ - Топливная ячейка.			2
 		<event>
 			<text>Слёрмы видят вашу агрессию и реагирует соответствующе. С близлежащей планеты уже вылетает первый снаряд, вы не успеваете среагировать!</text>
 			<damage amount="3" system="random" effect="breach"/>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			<environment type="PDS" target="player"/>
 		</event>
@@ -12434,7 +12456,7 @@ TJ - Топливная ячейка.			2
 		<text>Сбежать.</text>
 		<event>
 			<text>Слёрм видит вашу попытку и начинает атаку. С близлежащей планеты открывают подавляющий огонь.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			<environment type="PDS" target="player"/>
 		</event>
@@ -12443,7 +12465,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_TAMOZNA_OTKAZ">
 	<event>
 		<text>«Активировать противокорабельную батарею! У нассс нет времени разбиратьссся ссс каждым наглым чужаком».</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<environment type="PDS" target="player"/>
 	</event>
@@ -12470,7 +12492,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_TAMOZNA_OTKAZ_1">
 	<event>
 		<text>«Нассс сссовершенно не волнуют проблемы Федерации. Есть документы — путь сссвободен. Нет — зачиссстка. Активировать противокорабельную батарею!»</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<environment type="PDS" target="player"/>
 	</event>
@@ -12482,7 +12504,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_TAMOZNA_OTKAZ_2">
 	<event>
 		<text>«Расссы на вашем корабле не относссятссся к доссстаточно разумным для сссвободного перемещения в косссмосссе. Активировать противокорабельную батарею!»</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<environment type="PDS" target="player"/>
 	</event>
@@ -12494,7 +12516,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_TAMOZNA_OTKAZ_3">
 	<event>
 		<text>«Вы нассстолько сссамоуверены, капитан?! Активировать противокорабельную батарею!»</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<environment type="PDS" target="player"/>
 	</event>
@@ -12505,7 +12527,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_TAMOZNA_OTKAZ_4">
 	<event>
 		<text>«Активировать противокорабельную батарею! У нассс нет времени разбиратьссся ссс каждым наглым чужаком».</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<environment type="PDS" target="player"/>
 	</event>
@@ -12524,7 +12546,7 @@ TJ - Топливная ячейка.			2
 			<text>Отправимся к выходу из сектора.</text>
 			<event>
 				<text>«...это не есть верно! Вы сссовершенно не знаете наши законы. Активировать противокорабельную батарею!..»</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				<environment type="PDS" target="player"/>
 			</event>
@@ -12533,7 +12555,7 @@ TJ - Топливная ячейка.			2
 			<text>Останемся тут.</text>
 			<event>
 				<text>«...это не есть верно! Вы сссовершенно не знаете наши законы. Активировать противокорабельную батарею!..»</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				<environment type="PDS" target="player"/>
 			</event>
@@ -12554,7 +12576,7 @@ TJ - Топливная ячейка.			2
 			<text>Отказать им.</text>
 			<event>
 				<text>«...капитан, вам лучшшше быть более сссговорчивыми в чужих краях. Активировать противокорабельную батарею!..»</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				<environment type="PDS" target="player"/>
 			</event>
@@ -12562,7 +12584,7 @@ TJ - Топливная ячейка.			2
 	</event>
 	<event>
 		<text>Слёрмы долго рассматривают ваши документы и, наконец, заявляют: «...что это за убогая подделка?! Активировать противокорабельную батарею!..»</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<environment type="PDS" target="player"/>
 	</event>
@@ -12581,7 +12603,7 @@ TJ - Топливная ячейка.			2
 			<text>Отказать им.</text>
 			<event>
 				<text>«...капитан, вам лучшшше быть более сссговорчивыми в чужих краях. Активировать противокорабельную батарею!..»</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				<environment type="PDS" target="player"/>
 			</event>
@@ -12608,7 +12630,7 @@ TJ - Топливная ячейка.			2
 			<text>Попытаться забрать своё силой.</text>
 			<event>
 				<text>Слёрмы видят ваши намерения и отвечают: «...капитан, вам лучшшше быть более сссговорчивыми в чужих краях. Активировать противокорабельную батарею!..»</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				<environment type="PDS" target="player"/>
 			</event>
@@ -12624,7 +12646,7 @@ TJ - Топливная ячейка.			2
 			<text>Отказать им.</text>
 			<event>
 				<text>Слёрмы говорят: «...капитан, вам лучшшше быть более сссговорчивыми в чужих краях. Активировать противокорабельную батарею!..»</text>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 				<environment type="PDS" target="player"/>
 			</event>
@@ -12656,7 +12678,7 @@ TJ - Топливная ячейка.			2
 
 
 <event name="EVENT_MANTIS_WRKD" unique="true">
-	<ship load="SHIPS_MANTIS_WRKD" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SHIPS_MANTIS_WRKD" hostile="false"/>
 	<text>На данном маяке вы обнаруживаете сильно повреждённый корабль мантисов. На ваши попытки связи единственный выживший на борту мантис не реагирует.</text>
 	<choice req="CREW_ALL" hidden="true" blue="false">
 		<text>Отправить экипаж, чтобы попытаться убедить вступить в вашу команду.</text>
@@ -12666,7 +12688,7 @@ TJ - Топливная ячейка.			2
 		<text>Атаковать его.</text>
 		<event>
 			<text>Вы начинаете атаку. Это судно будет лёгкой добычей.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -12729,7 +12751,7 @@ TJ - Топливная ячейка.			2
 	</event>
 </eventList>
 <ship name="SHIPS_MANTIS_WRKD" auto_blueprint="MANTIS_WRKD_SHIPS">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Останки корабля разваливаются на части... Вы собираете всё, что уцелело.</text>
 		<item_modify>
 			<item type="fuel" min="1" max="5"/>
@@ -12737,7 +12759,7 @@ TJ - Топливная ячейка.			2
 			<item type="scrap" min="5" max="20"/>
 		</item_modify>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Вам удаётся захватить корабль. Вы собираете всё, что уцелело.</text>
 		<item_modify>
 			<item type="fuel" min="1" max="5"/>
@@ -12753,7 +12775,7 @@ TJ - Топливная ячейка.			2
 	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 	<distressBeacon/>
 	<text>Корабль слёрмов утверждает, что у них сломался котёл для варки слёрма. Чтобы начать его ремонт, нужно нырнуть в него и открыть пробку на дне котла. Кожа слёрмов слишком мягкая для подобных операций, поэтому они просят кого-то из вашего экипажа задержать дыхание и сделать это за них. За это слёрмы обещают хорошо заплатить.</text>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<choice req="CREW_ALL" hidden="true" blue="false">
 		<text>Согласиться помочь.</text>
@@ -12763,7 +12785,7 @@ TJ - Топливная ячейка.			2
 		<text>Атаковать их.</text>
 		<event>
 			<text>Слёрмы заряжают орудия в ответ.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -12789,7 +12811,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12801,7 +12823,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12813,7 +12835,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12826,7 +12848,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12838,7 +12860,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12850,7 +12872,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12862,7 +12884,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12874,7 +12896,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон слёрма просит, чтобы вы больше не заставляли его делать подобные вещи...</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12886,7 +12908,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12898,7 +12920,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12910,7 +12932,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12922,7 +12944,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12934,7 +12956,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12946,7 +12968,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12959,7 +12981,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12971,7 +12993,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12983,7 +13005,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -12996,7 +13018,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13008,7 +13030,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13020,7 +13042,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13032,7 +13054,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13044,7 +13066,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13056,7 +13078,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13069,7 +13091,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13120,7 +13142,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон слага просит, чтобы вы больше не заставляли его делать подобные вещи...</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13132,7 +13154,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон слёрма просит, чтобы вы больше не заставляли его делать подобные вещи...</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13283,7 +13305,7 @@ TJ - Топливная ячейка.			2
 					<clone>true</clone>
 					<text>Клон слага просит, чтобы вы больше не заставляли его делать подобные вещи...</text>
 				</removeCrew>
-				<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+				<ship hostile="true"/>
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
@@ -13392,7 +13414,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_RISK_NO">
 	<event>
 		<text>Вы собираетесь улетать, но слёрмы вдруг заряжают орудия с явными намерениями остановить вас.</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 	</event>
 	<event/>
@@ -13403,7 +13425,7 @@ TJ - Топливная ячейка.			2
 	<distressBeacon/>
 	<environment type="sun"/>
 	<variable name="counter_meet_sun" op="add" val="1"/>
-	<ship load="TR_SHIP_PARAM" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="TR_SHIP_PARAM" hostile="false"/>
 	<text>На маяке возле активной звезды вы обнаруживаете сильно повреждённый обломок корабля неизвестного происхождения. Экипаж на борту совсем недавно пережил ужасную атаку мантисов. Теперь уцелевшие просят вас о спасении, но постоянные вспышки звезды и летающие поблизости обломки могут быть опасны.</text>
 	<choice hidden="true">
 		<text>Пристыковаться и спасти выживших.</text>
@@ -13413,7 +13435,7 @@ TJ - Топливная ячейка.			2
 		<text>Расстрелять этот непонятный обломок корабля.</text>
 		<event>
 			<text>Вы начинаете атаку. Лом никогда не будет лишним.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 		</event>
 	</choice>
 	<choice hidden="true">
@@ -13546,31 +13568,31 @@ TJ - Топливная ячейка.			2
 <eventList name="SLURM_FIGHT_RANDOM_LIST">
 	<event>
 		<text load="SLURM_FR_TEXT_AUTO"/>
-		<ship load="REBEL_AUTO" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL_AUTO" hostile="true"/>
 	</event>
 	<event>
 		<text load="SLURM_FR_TEXT_REBEL"/>
-		<ship load="REBEL" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="REBEL" hostile="true"/>
 	</event>
 	<event>
 		<text load="SLURM_FR_TEXT_JELLY"/>
-		<ship load="JELLY" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="JELLY" hostile="true"/>
 	</event>
 	<event>
 		<text load="SLURM_FR_TEXT_MANTIS"/>
-		<ship load="MANTIS_FIGHT" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="MANTIS_FIGHT" hostile="true"/>
 	</event>
 	<event>
 		<text load="SLURM_FR_TEXT_ROCK"/>
-		<ship load="ROCK_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ROCK_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text load="SLURM_FR_TEXT_ENERGY"/>
-		<ship load="ZOLTAN_SHIP" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="ZOLTAN_SHIP" hostile="true"/>
 	</event>
 	<event>
 		<text load="SLURM_FR_TEXT_PIRATE"/>
-		<ship load="PIRATE" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="PIRATE" hostile="true"/>
 	</event>	
 </eventList>
 
@@ -13635,21 +13657,21 @@ TJ - Топливная ячейка.			2
 </eventList>
 <event name="EVENT_SLURM_STORAGE_PEREHVAT">
 	<environment type="PDS" target="player"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 	<text>Корабль слёрмов на этом маяке был поднят по тревоге после вашей попытки обчистить склад оборудования. Готовьтесь к трудной битве!</text>
 </event>
 <event name="EVENT_SLURM_STORAGE_PEREHVAT_2">
 	<environment type="PDS" target="player"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 	<text>Корабль слёрмов на этом маяке был поднят по тревоге после вашей попытки обчистить склад оборудования. Готовьтесь к трудной битве!</text>
 </event>
 <event name="EVENT_SLURM_STORAGE_PEREHVAT_3">
 	<environment type="PDS" target="player"/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 	<text>Корабль слёрмов на этом маяке был поднят по тревоге после вашей попытки обчистить склад оборудования. Готовьтесь к трудной битве!</text>
 </event>
 
-<event name="BOX_AND_BOMB" unique="true">
+<event name="BOX_AND_BOMB" unique="true"><!-- 1.33 --><!-- colored -->
 	<text>В космосе перед вами медленно дрейфует крупный контейнер. Он облеплен взрывчаткой со всех сторон, похоже, внутри находится что-то ценное.</text>
 	<choice hidden="false">
 		<text>Затащить его на свой корабль.</text>
@@ -13668,7 +13690,7 @@ TJ - Топливная ячейка.			2
 			<choice hidden="true">
 				<text>Тщательнее изучить взрывной механизм.</text>
 				<event>
-					<text>После детального осмотра бомбы становится понятно, как её обезвредить. Если жёлтых проводов нет, режьте третий. Если жёлтый провод один, режьте первый. Если жёлтых больше и если красных проводов нет, режьте последний. В остальных случаях режьте синий, а если синего нет, тогда чёрный.</text>
+					<text>После детального осмотра бомбы становится понятно, как её обезвредить. Если [style[color:f3f132]]жёлтых[[/style]] проводов нет, режьте третий. Если [style[color:f3f132]]жёлтый[[/style]] провод один, режьте первый. Если [style[color:f3f132]]жёлтых[[/style]] больше и если [style[color:ff4551]]красных[[/style]] проводов нет, режьте последний. В остальных случаях режьте [style[color:5f97ff]]синий[[/style]], а если [style[color:5f97ff]]синего[[/style]] нет, тогда [style[color:f370ff]]фиолетовый[[/style]].</text>
 					<choice req="CREW_ALL" hidden="true" blue="false">
 						<text>Приступить к разминированию бомбы.</text>
 						<event load="BOX_AND_BOMB_RAND_WIPES"/>
@@ -13789,7 +13811,7 @@ TJ - Топливная ячейка.			2
 </eventList>
 <eventList name="BOX_AND_BOMB_RAND_WIPES">
 	<event><!-- works good -->
-		<text>Перед вами следующие провода: 1 — красный, 2 — чёрный, 3 — белый, 4 — красный, 5 — белый, 6 — синий. Какой провод резать?</text>
+		<text>Перед вами следующие провода: 1 — [style[color:ff4551]]красный[[/style]], 2 — [style[color:f370ff]]фиолетовый[[/style]], 3 — [style[color:f1f1f1]]белый[[/style]], 4 — [style[color:ff4551]]красный[[/style]], 5 — [style[color:f1f1f1]]белый[[/style]], 6 — [style[color:5f97ff]]синий[[/style]]. Какой провод резать?</text>
 		<choice hidden="true">
 			<text>Первый.</text>
 			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
@@ -13816,7 +13838,7 @@ TJ - Топливная ячейка.			2
 		</choice>
 	</event>
 	<event><!-- works good -->
-		<text>Перед вами следующие провода: 1 — жёлтый, 2 — чёрный, 3 — белый, 4 — красный, 5 — синий, 6 — синий. Какой провод резать?</text>
+		<text>Перед вами следующие провода: 1 — [style[color:f3f132]]жёлтый[[/style]], 2 — [style[color:f370ff]]фиолетовый[[/style]], 3 — [style[color:f1f1f1]]белый[[/style]], 4 — [style[color:ff4551]]красный[[/style]], 5 — [style[color:5f97ff]]синий[[/style]], 6 — [style[color:5f97ff]]синий[[/style]]. Какой провод резать?</text>
 		<choice hidden="true">
 			<text>Первый.</text>
 			<event load="BOX_AND_BOMB_RAND_GOOD"/>
@@ -13843,7 +13865,7 @@ TJ - Топливная ячейка.			2
 		</choice>
 	</event>
 	<event><!-- works good -->
-		<text>Перед вами следующие провода: 1 — жёлтый, 2 — синий, 3 — красный, 4 — белый, 5 — чёрный, 6 — жёлтый. Какой провод резать?</text>
+		<text>Перед вами следующие провода: 1 — [style[color:f3f132]]жёлтый[[/style]], 2 — [style[color:5f97ff]]синий[[/style]], 3 — [style[color:ff4551]]красный[[/style]], 4 — [style[color:f1f1f1]]белый[[/style]], 5 — [style[color:f370ff]]фиолетовый[[/style]], 6 — [style[color:f3f132]]жёлтый[[/style]]. Какой провод резать?</text>
 		<choice hidden="true">
 			<text>Первый.</text>
 			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
@@ -13870,7 +13892,7 @@ TJ - Топливная ячейка.			2
 		</choice>
 	</event>
 	<event><!-- works good -->
-		<text>Перед вами следующие провода: 1 — жёлтый, 2 — белый, 3 — красный, 4 — чёрный, 5 — жёлтый, 6 — белый. Какой провод резать?</text>
+		<text>Перед вами следующие провода: 1 — [style[color:f3f132]]жёлтый[[/style]], 2 — [style[color:f1f1f1]]белый[[/style]], 3 — [style[color:ff4551]]красный[[/style]], 4 — [style[color:f370ff]]фиолетовый[[/style]], 5 — [style[color:f3f132]]жёлтый[[/style]], 6 — [style[color:f1f1f1]]белый[[/style]]. Какой провод резать?</text>
 		<choice hidden="true">
 			<text>Первый.</text>
 			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
@@ -13897,7 +13919,7 @@ TJ - Топливная ячейка.			2
 		</choice>
 	</event>
 	<event><!-- works good -->
-		<text>Перед вами следующие провода: 1 — чёрный, 2 — чёрный, 3 — жёлтый, 4 — жёлтый, 5 — синий, 6 — белый. Какой провод резать?</text>
+		<text>Перед вами следующие провода: 1 — [style[color:f370ff]]фиолетовый[[/style]], 2 — [style[color:f370ff]]фиолетовый[[/style]], 3 — [style[color:f3f132]]жёлтый[[/style]], 4 — [style[color:f3f132]]жёлтый[[/style]], 5 — [style[color:5f97ff]]синий[[/style]], 6 — [style[color:f1f1f1]]белый[[/style]]. Какой провод резать?</text>
 		<choice hidden="true">
 			<text>Первый.</text>
 			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
@@ -13924,7 +13946,7 @@ TJ - Топливная ячейка.			2
 		</choice>
 	</event>
 	<event><!-- works good -->
-		<text>Перед вами следующие провода: 1 — белый, 2 — жёлтый, 3 — жёлтый, 4 — красный, 5 — синий, 6 — чёрный. Какой провод резать?</text>
+		<text>Перед вами следующие провода: 1 — [style[color:f1f1f1]]белый[[/style]], 2 — [style[color:f3f132]]жёлтый[[/style]], 3 — [style[color:f3f132]]жёлтый[[/style]], 4 — [style[color:ff4551]]красный[[/style]], 5 — [style[color:5f97ff]]синий[[/style]], 6 — [style[color:f370ff]]фиолетовый[[/style]]. Какой провод резать?</text>
 		<choice hidden="true">
 			<text>Первый.</text>
 			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
@@ -13944,6 +13966,34 @@ TJ - Топливная ячейка.			2
 		<choice hidden="true">
 			<text>Пятый.</text>
 			<event load="BOX_AND_BOMB_RAND_GOOD"/>
+		</choice>
+		<choice hidden="true">
+			<text>Шестой.</text>
+			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
+		</choice>
+	</event>
+	<!-- added new -->
+	<event><!-- works good -->
+		<text>Перед вами следующие провода: 1 — [style[color:f1f1f1]]белый[[/style]], 2 — [style[color:86c946]]зелёный[[/style]], 3 — [style[color:f3f132]]жёлтый[[/style]], 4 — [style[color:ff4551]]красный[[/style]], 5 — [style[color:5f97ff]]синий[[/style]], 6 — [style[color:f370ff]]фиолетовый[[/style]]. Какой провод резать?</text>
+		<choice hidden="true">
+			<text>Первый.</text>
+			<event load="BOX_AND_BOMB_RAND_GOOD"/>
+		</choice>
+		<choice hidden="true">
+			<text>Второй.</text>
+			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
+		</choice>
+		<choice hidden="true">
+			<text>Третий.</text>
+			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
+		</choice>
+		<choice hidden="true">
+			<text>Четвёртый.</text>
+			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
+		</choice>
+		<choice hidden="true">
+			<text>Пятый.</text>
+			<event load="BOX_AND_BOMB_JUSTBOOOOOOOM"/>
 		</choice>
 		<choice hidden="true">
 			<text>Шестой.</text>
@@ -13955,7 +14005,7 @@ TJ - Топливная ячейка.			2
 
 <event name="EVENT_SLURM_ESCORT" unique="true">
 	<distressBeacon/>
-	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/> <!-- 1.26 -->
 	<text>Вблизи маяка вы встречаете слегка повреждённый корабль слёрмов. Они просят вас сопроводить их до местной базы.</text>
 	<choice hidden="true">
@@ -13970,7 +14020,7 @@ TJ - Топливная ячейка.			2
 		<text>Отказаться и атаковать их.</text>
 		<event>
 			<text>«Слабые слёрмы — лучшая добыча!», — решаете вы и мчитесь в атаку...</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/> <!-- 1.26 -->
 		</event>
 	</choice>
@@ -13982,25 +14032,25 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_ESCORT_POINT">
 	<event>
 		<img planet="PLANET_POPULATED"/>
-		<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="true"/>
 		<boarders min="2" max="3" class="slig"/>
 		<text>Корабль слёрмов поблизости атакует вас, а тот, что вы сопровождали, отправляет группу захватчиков-слёрмов. Это ловушка!</text>
 	</event>
 	<event>
 		<img planet="PLANET_POPULATED"/>
-		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 		<text>Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
 		<img planet="PLANET_POPULATED"/>
-		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 		<text>Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
 	<event>
 		<img planet="PLANET_POPULATED"/>
-		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+		<ship load="SLURM_SHIP_PARAMETERS" hostile="false"/>
 		<text>Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.</text>
 		<autoReward level="HIGH">standard</autoReward>
 	</event>
@@ -14805,7 +14855,7 @@ TJ - Топливная ячейка.			2
 
 
 <event name="EVENT_SLURM_HALFMEBABY" unique="true"> 
-	<ship load="SLURM_SHIP_PARAMETERS_DIVIDE" hostile="false"/><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<ship load="SLURM_SHIP_PARAMETERS_DIVIDE" hostile="false"/>
 	<status type="limit" target="enemy" system="teleporter" amount="0"/>
 	<text>Вблизи маяка находится корабль слёрмов. Они некоторое время сканируют вас и наконец пытаются выйти на связь...</text>
 	<choice req="weapons" lvl="0" hidden="true" max_group="0" blue="false">
@@ -14816,7 +14866,7 @@ TJ - Топливная ячейка.			2
 		<text>Выслушать их.</text>
 		<event load="EVENT_SLURM_HALFMEBABY_R1"/>
 	</choice>
-	<choice req="weapons" lvl="8" hidden="true" max_group="0" blue="false">
+	<choice req="weapons" lvl="16" hidden="true" max_group="0" blue="false"><!-- 1.33 -->
 		<text>Выслушать их.</text>
 		<event load="EVENT_SLURM_HALFMEBABY_R8"/>
 	</choice>
@@ -14824,7 +14874,7 @@ TJ - Топливная ячейка.			2
 		<text>Отключить связь и атаковать их.</text>
 		<event>
 			<text>Вы мчитесь в атаку, собираясь уничтожить корабль слёрмов.</text>
-			<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+			<ship hostile="true"/>
 			<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		</event>
 	</choice>
@@ -14902,7 +14952,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_HALFMEBABY_RW">
 	<event>
 		<text>Внезапно вы замечаете, что цепи питания оружейной системы оказываются повреждены, а бригада слёрмов сбежала на свой корабль! Теперь их судно идёт в атаку!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<status type="divide" target="player" system="weapons" amount="2"/>		
 	</event>
@@ -14926,7 +14976,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_HALFMEBABY_RWN">
 	<event>
 		<text>Внезапно вы замечаете, что цепи питания реактора оказываются повреждены, а бригада слёрмов сбежала на свой корабль! Теперь их судно идёт в атаку!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<status type="divide" target="player" system="reactor" amount="2"/>		
 	</event>
@@ -14950,7 +15000,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_HALFMEBABY_REPAIR">
 	<event>
 		<text>Внезапно вы замечаете, что цепи питания реактора оказываются повреждены, а бригада слёрмов сбежала на свой корабль! Теперь их судно идёт в атаку!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>
 		<status type="divide" target="player" system="reactor" amount="2"/>		
 	</event>
@@ -14974,7 +15024,7 @@ TJ - Топливная ячейка.			2
 <eventList name="EVENT_SLURM_HALFMEBABY_NOPE">
 	<event>
 		<text>Внезапно вы замечаете, что слёрмы атакуют! В бой!</text>
-		<ship hostile="true"/><variable name="enemy_state" op="set" val="2"/><!-- 1.32 -->
+		<ship hostile="true"/>
 		<status type="clear" target="enemy" system="teleporter" amount="100"/>	
 	</event>
 	<event/>
@@ -14982,19 +15032,19 @@ TJ - Топливная ячейка.			2
 </eventList>
 
 <ship name="SLURM_SHIP_PARAMETERS_DIVIDE" auto_blueprint="SHIPS_SLURM">
-	<destroyed><variable name="enemy_state" op="set" val="0"/><!-- 1.32 -->
+	<destroyed>
 		<text>Кажется, битва окончена...</text>
-		<status type="clear" target="player" system="weapons" amount="100" />
-		<status type="clear" target="player" system="reactor" amount="100" />
+		<status type="clear" target="player" system="weapons" amount="100"/>
+		<status type="clear" target="player" system="reactor" amount="100"/>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="REWARD_SLURM_1"/>
 		</choice>
 	</destroyed>
-	<deadCrew><variable name="enemy_state" op="set" val="1"/><!-- 1.32 -->
+	<deadCrew>
 		<text>Кажется, битва окончена...</text>
-		<status type="clear" target="player" system="weapons" amount="100" />
-		<status type="clear" target="player" system="reactor" amount="100" />
+		<status type="clear" target="player" system="weapons" amount="100"/>
+		<status type="clear" target="player" system="reactor" amount="100"/>
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="REWARD_SLURM_2"/>
