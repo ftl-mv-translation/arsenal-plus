@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-07-30 23:56+0000\n"
+"PO-Revision-Date: 2025-07-31 04:56+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -4998,13 +4998,15 @@ msgstr "Leaves a false signal at sector start to delay Rebels 1 jump."
 #: src-ru/data/blueprints.xml.rawclobber:15382
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/title"
-msgstr "Secure Teleport"
+msgstr "Safety Teleport"
 
 #: src-ru/data/blueprints.xml.rawclobber:15383
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/desc"
-msgstr "Teleportation completely heals crew."
+msgstr ""
+"Teleportation fully heals crew. Safely recalls any friendly crew that are "
+"normally lost when still aboard the enemy ship when it exploded or when you "
+"fled the battle."
 
 #: src-ru/data/blueprints.xml.rawclobber:15392
 msgid ""
@@ -5050,16 +5052,17 @@ msgstr ""
 "will be stunned for the duration."
 
 #: src-ru/data/blueprints.xml.rawclobber:15431
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/title"
-msgstr "Lifeform Scanner"
+msgstr "Infrared Scanner"
 
 #: src-ru/data/blueprints.xml.rawclobber:15432
-#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/desc"
 msgstr ""
-"Detects the location of any life forms, even when sensors don't function."
+"Detects the location of any life forms, even when sensors are weak or "
+"absent. Provides information about the enemy ship's evasion, O2 levels and "
+"remaining number of consumables. Also allows ship sensors to function in "
+"nebulae."
 
 #: src-ru/data/blueprints.xml.rawclobber:15441
 msgid ""
@@ -5705,11 +5708,10 @@ msgid ""
 msgstr "Advanced Scanners"
 
 #: src-ru/data/blueprints.xml.rawclobber:16000
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_SCANNERS_LIFE_SCANNER\"]/desc"
 msgstr ""
-"This augmentation combines the effects of Long-Ranged Scanners and Lifeform "
+"This augmentation combines the effects of Long-Ranged Scanners and Infrared "
 "Scanner."
 
 #: src-ru/data/blueprints.xml.rawclobber:16007
@@ -5729,11 +5731,10 @@ msgid ""
 msgstr "Preservation Module"
 
 #: src-ru/data/blueprints.xml.rawclobber:16016
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA_TELEPORT_HEAL\"]/desc"
 msgstr ""
-"This augmentation combines the effects of Backup DNA Bank and Reconstructive "
+"This augmentation combines the effects of Backup DNA Bank and Safety "
 "Teleport."
 
 #: src-ru/data/blueprints.xml.rawclobber:16023
