@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-07-31 04:56+0000\n"
+"PO-Revision-Date: 2025-08-02 22:49+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -4894,8 +4894,10 @@ msgstr "Flame Injector"
 #: src-ru/data/blueprints.xml.rawclobber:15280
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_FRC\"]/desc"
 msgstr ""
-"Single-use enhancement that increases weapon fire chance by 40%. Open the HOLD menu to use it.\n"
-"\tCannot be applied to weapons without any fire chance nor weapons with 100% fire chance."
+"Single-use enhancement that increases weapon fire chance by 40%.\n"
+"\tOpen the HOLD menu to use it.\n"
+"\tCannot be applied to weapons without any fire chance nor weapons with 100% "
+"fire chance."
 
 #: src-ru/data/blueprints.xml.rawclobber:15288
 msgid ""
@@ -5312,8 +5314,8 @@ msgstr "Trading Buoy"
 #: src-ru/data/blueprints.xml.rawclobber:15671
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CALL_STORE\"]/desc"
 msgstr ""
-"Can be used once per sector to summon an automated merchant ship. Open the "
-"HOLD menu to activate it."
+"Can be used once per sector to summon an automated merchant ship.\n"
+"\tOpen the HOLD menu to activate it."
 
 #: src-ru/data/blueprints.xml.rawclobber:15680
 msgid ""
@@ -87441,22 +87443,24 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:174575
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/title"
-msgstr ""
+msgstr "Annihilator Beam"
 
 #: src-ru/data/blueprints.xml.rawclobber:174576
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/short"
-msgstr ""
+msgstr "Annihilator"
 
 #: src-ru/data/blueprints.xml.rawclobber:174577
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/desc"
 msgstr ""
+"This weapon deals absolutely colossal damage. Each swipe inevitably deals "
+"damage to your own weapon system including hull damage."
 
 #: src-ru/data/blueprints.xml.rawclobber:174578
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/tooltip"
-msgstr ""
+msgstr "Deals 6 damage per room hit."
 
 #: src-ru/data/blueprints.xml.rawclobber:174580
 msgid ""
@@ -87466,62 +87470,68 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:174629
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P1\"]/flavorType"
-msgstr ""
+msgstr "Generator"
 
 #: src-ru/data/blueprints.xml.rawclobber:174630
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P1\"]/title"
-msgstr ""
+msgstr "Generator"
 
 #: src-ru/data/blueprints.xml.rawclobber:174631
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P1\"]/short"
-msgstr ""
+msgstr "Generator"
 
 #: src-ru/data/blueprints.xml.rawclobber:174632
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P1\"]/desc"
 msgstr ""
+"The generator of some kind of large weapon. It's useless by itself, but with "
+"all its other parts, the full weapon can be assembled in the HOLD menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:174650
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P2\"]/flavorType"
-msgstr ""
+msgstr "Basic Module"
 
 #: src-ru/data/blueprints.xml.rawclobber:174651
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P2\"]/title"
-msgstr ""
+msgstr "Basic Module"
 
 #: src-ru/data/blueprints.xml.rawclobber:174652
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P2\"]/short"
-msgstr ""
+msgstr "Basic Module"
 
 #: src-ru/data/blueprints.xml.rawclobber:174653
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P2\"]/desc"
 msgstr ""
+"The basic module of some kind of large weapon. It's useless by itself, but "
+"with all its other parts, the full weapon can be assembled in the HOLD menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:174671
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P3\"]/flavorType"
-msgstr ""
+msgstr "Centerpiece"
 
 #: src-ru/data/blueprints.xml.rawclobber:174672
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P3\"]/title"
-msgstr ""
+msgstr "Centerpiece"
 
 #: src-ru/data/blueprints.xml.rawclobber:174673
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P3\"]/short"
-msgstr ""
+msgstr "Centerpiece"
 
 #: src-ru/data/blueprints.xml.rawclobber:174674
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_P3\"]/desc"
 msgstr ""
+"The centerpiece of some kind of large weapon. It's useless by itself, but "
+"with all its other parts, the full weapon can be assembled in the HOLD menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:174693
 msgid ""
