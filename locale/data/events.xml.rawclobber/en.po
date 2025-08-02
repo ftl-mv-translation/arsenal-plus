@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-02 22:49+0000\n"
+"PO-Revision-Date: 2025-08-03 00:56+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -6285,7 +6285,7 @@ msgstr "(Anti-Personnel Drone) Use an Anti-Personnel Drone to investigate."
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Lifeform Scanner) Run advanced life scans."
+msgstr "(Infrared Scanner) Run advanced life scans."
 
 #: src-ru/data/events.xml.rawclobber:5525
 #, fuzzy
@@ -8616,7 +8616,7 @@ msgstr "Leave before they notice you."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"QUEST_MANTIS_INVASION\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Lifeform Scanner) A crewman suggests using the lifeform scanner to "
+"(Infrared Scanner) A crewman suggests using the infrared scanner to "
 "ascertain the number of Mantises."
 
 #: src-ru/data/events.xml.rawclobber:7112
@@ -10316,8 +10316,8 @@ msgstr "(Avatar Crew Member) Send your Avatar to explore the station."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DONOR_PLAGUE\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Lifeform Scanner) Carry out a complete scan of the station using the "
-"lifeform scanner."
+"(Infrared Scanner) Carry out a complete scan of the station using the "
+"infrared scanner."
 
 #: src-ru/data/events.xml.rawclobber:8279
 #, fuzzy
@@ -15163,7 +15163,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PLANET_ENGE_SEVER\"]/event[1]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Lifeform Scanner) Use the scanner to search for the missing group.."
+msgstr "(Infrared Scanner) Use the scanner to search for the missing group."
 
 #: src-ru/data/events.xml.rawclobber:11392
 #, fuzzy
@@ -18189,7 +18189,7 @@ msgstr "This looks suspicious. Better to fly away from here. "
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ALIENS\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Lifeform Scanner) Check the presence of lifeforms with your scanner."
+msgstr "(Infrared Scanner) Check the presence of lifeforms with your scanner."
 
 #: src-ru/data/events.xml.rawclobber:16584
 #, fuzzy
@@ -22720,7 +22720,7 @@ msgstr "Don't touch the ship, we don't want any trouble."
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"REBEL_STOPFLEET\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Lifeform Scanner) Scan the ship for the presence of life."
+msgstr "(Infrared Scanner) Scan the ship for the presence of life."
 
 #: src-ru/data/events.xml.rawclobber:20093
 #, fuzzy
@@ -24611,7 +24611,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Lifeform Scanner) Scan the vicinity of the beacon in search of living "
+"(Infrared Scanner) Scan the vicinity of the beacon in search of living "
 "entities."
 
 #: src-ru/data/events.xml.rawclobber:21393
@@ -24705,8 +24705,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"TELEPORT_HEAL\"]/text"
-msgstr ""
-"(Reconstructive Teleport) Let your crew work on optimizing the teleporter."
+msgstr "(Safety Teleport) Let your crew work on optimizing the teleporter."
 
 #: src-ru/data/events.xml.rawclobber:21453
 #, fuzzy
@@ -27289,8 +27288,8 @@ msgstr ""
 #, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TELEPORT_HEAL_PREPARE\"]/text"
 msgstr ""
-"You prepare to optimize the reconstructive teleporter in order to upgrade "
-"the teleporter system."
+"You prepare to optimize the safety teleporter in order to upgrade the "
+"teleporter system."
 
 #: src-ru/data/events.xml.rawclobber:24240
 #, fuzzy
@@ -27310,16 +27309,16 @@ msgstr "Without a teleporter, optimization is meaningless."
 #, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"TELEPORT_HEAL_LIST_GOOD\"]/text"
 msgstr ""
-"After optimizing the reconstructive teleporter's algorithm, your crew "
-"manages to reduce the teleporter's cooldown."
+"After optimizing the safety teleporter's algorithm, your crew manages to "
+"reduce the teleporter's cooldown."
 
 #: src-ru/data/events.xml.rawclobber:24259
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"TELEPORT_HEAL_LIST_GOOD_AND_BAD\"]/text"
 msgstr ""
-"After optimizing the reconstructive teleporter's algorithm, your crew "
-"manages to reduce the teleporter's cooldown."
+"After optimizing the safety teleporter's algorithm, your crew manages to "
+"reduce the teleporter's cooldown."
 
 #: src-ru/data/events.xml.rawclobber:24264
 #, fuzzy
@@ -38269,7 +38268,7 @@ msgstr "Prepare to leave."
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"MANTIS_X20_ON_ENGI_SHIP\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Lifeform Scanner) Check for the presence of crew aboard the ship."
+msgstr "(Infrared Scanner) Check for the presence of crew aboard the ship."
 
 #: src-ru/data/events.xml.rawclobber:30529
 #, fuzzy
@@ -38331,7 +38330,7 @@ msgstr "Survey the planet."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DONOR_PONY\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr ""
-"(Lifeform Scanner) Refine the location of life on the planet and then go "
+"(Infrared Scanner) Refine the location of life on the planet and then go "
 "down in the shuttle."
 
 #: src-ru/data/events.xml.rawclobber:30573
@@ -38360,7 +38359,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PONY_RANDOMIZER_LIFE\"]/event[7]/text"
 msgstr ""
-"The Lifeform Scanner shows that the planet is completely empty. It seems "
+"The Infrared Scanner shows that the planet is completely empty. It seems "
 "that it was a false alarm. You give the order to charge the FTL Drive."
 
 #: src-ru/data/events.xml.rawclobber:30611
@@ -42579,7 +42578,7 @@ msgstr "You pay the price and the Engi transfer the goods into your hold."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CHEPOCHEM\"]/choice[@req=\"engi_crew\""
 " and @lvl=\"0\"]/event/choice[2]/text"
-msgstr "Buy a lifeform scanner."
+msgstr "Buy an infrared scanner."
 
 #: src-ru/data/events.xml.rawclobber:32407
 #, fuzzy
@@ -42681,7 +42680,7 @@ msgstr "You pay the price and the Engi transfer the goods into your hold."
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"CHEPOCHEM\"]/choice[@req=\"engi_crew\""
 " and @lvl=\"1\"]/event/choice[2]/text"
-msgstr "Buy a lifeform scanner."
+msgstr "Buy an infrared scanner."
 
 #: src-ru/data/events.xml.rawclobber:32469
 #, fuzzy
@@ -53634,7 +53633,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_SLUG_STEAL_FUEL\"]/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr "(Lifeform Scanner) The scanner shows some activity outside your ship."
+msgstr "(Infrared Scanner) The scanner shows some activity outside your ship."
 
 #: src-ru/data/events.xml.rawclobber:46581
 #, fuzzy
