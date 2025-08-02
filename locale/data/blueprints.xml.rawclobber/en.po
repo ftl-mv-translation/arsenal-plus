@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-02 22:49+0000\n"
+"PO-Revision-Date: 2025-08-03 00:56+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -87331,16 +87331,14 @@ msgid ""
 msgstr "Cannot suffocate"
 
 #: src-ru/data/blueprints.xml.rawclobber:174419
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien\"]/powerList/power[3]"
-msgstr "Health increased to 150"
+msgstr "Health increased to 115"
 
 #: src-ru/data/blueprints.xml.rawclobber:174420
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien\"]/powerList/power[4]"
-msgstr "Moves 15% slower"
+msgstr "Moves 50% faster"
 
 #: src-ru/data/blueprints.xml.rawclobber:174421
 msgid ""
@@ -87454,8 +87452,8 @@ msgstr "Annihilator"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/desc"
 msgstr ""
-"This weapon deals absolutely colossal damage. Each swipe inevitably deals "
-"damage to your own weapon system including hull damage."
+"This weapon deals absolutely colossal damage. Each swipe inevitably damages "
+"your own weapons system and sometimes your hull."
 
 #: src-ru/data/blueprints.xml.rawclobber:174578
 msgid ""
@@ -87466,6 +87464,29 @@ msgstr "Deals 6 damage per room hit."
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/descriptionOverride"
 msgstr ""
+"This weapon deals absolutely colossal damage. Each swipe inevitably damages "
+"your own weapons system and sometimes your hull.\n"
+"\t\n"
+"\tStats:\n"
+"\tRequired Power: 4\n"
+"\tCharge Time: 27 seconds\n"
+"\t\n"
+"\tBeam Length: 19\n"
+"\tBeam Speed: 3\n"
+"\t\n"
+"\tHull Damage: 6\n"
+"\tSystem Damage: 6\n"
+"\tCrew Damage: 90\n"
+"\t\n"
+"\tDamage to Weapons Chance: 100%\n"
+"\tDamage to Weapons: 1\n"
+"\tOwn Hull Damage Chance: 50%\n"
+"\tOwn Hull Damage: 1\n"
+"\tBreach/Fire Chance in Weapons: 100%\n"
+"\t\n"
+"\tFire Chance: 100%\n"
+"\t\n"
+"\tBuy/Sell Price: 300~/150~"
 
 #: src-ru/data/blueprints.xml.rawclobber:174629
 msgid ""
