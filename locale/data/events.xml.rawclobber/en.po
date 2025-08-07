@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-03 00:56+0000\n"
+"PO-Revision-Date: 2025-08-07 06:56+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -172,9 +172,8 @@ msgstr ""
 "\t\tDecrease Speed: ["
 
 #: src-ru/data/events.xml.rawclobber:270
-#, fuzzy
 msgid "data/events.xml.rawclobber$//eventButton[@name=\"SELL_RESOURCES\"]/tooltip"
-msgstr "Sell supplies for half their value"
+msgstr "Sell supplies for half their value."
 
 #: src-ru/data/events.xml.rawclobber:307
 msgid ""
@@ -55443,7 +55442,7 @@ msgstr "Practice playing poker."
 #: src-ru/data/events.xml.rawclobber:48021
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[14]/text"
-msgstr ""
+msgstr "Dismantle a system on the ship at the cost of hull."
 
 #: src-ru/data/events.xml.rawclobber:48025
 msgid ""
@@ -55560,91 +55559,81 @@ msgstr "Close the hold."
 #: src-ru/data/events.xml.rawclobber:48111
 msgid "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/text"
 msgstr ""
+"This operation is irreversible and will deal 5 hull damage to your ship. "
+"Think very carefully before doing this. Neither Piloting nor Engines can be "
+"removed from the ship. Which system do you want to dismantle?"
 
 #: src-ru/data/events.xml.rawclobber:48113
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"artillery\"]/text"
-msgstr "Artillery"
+msgstr "Artillery."
 
 #: src-ru/data/events.xml.rawclobber:48121
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"hacking\"]/text"
-msgstr "Hacking"
+msgstr "Hacking."
 
 #: src-ru/data/events.xml.rawclobber:48129
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"oxygen\"]/text"
-msgstr "Oxygen"
+msgstr "Oxygen."
 
 #: src-ru/data/events.xml.rawclobber:48137
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"clonebay\"]/text"
-msgstr "Clone Bay"
+msgstr "Clone Bay."
 
 #: src-ru/data/events.xml.rawclobber:48145
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"mind\"]/text"
-msgstr "Mind Control"
+msgstr "Mind Control."
 
 #: src-ru/data/events.xml.rawclobber:48153
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"temporal\"]/text"
-msgstr "Temporal Manipulator"
+msgstr "Temporal Manipulator."
 
 #: src-ru/data/events.xml.rawclobber:48161
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"cloaking\"]/text"
-msgstr "Cloaking"
+msgstr "Cloaking."
 
 #: src-ru/data/events.xml.rawclobber:48169
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"medbay\"]/text"
-msgstr "Medbay"
+msgstr "Medbay."
 
 #: src-ru/data/events.xml.rawclobber:48177
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"battery\"]/text"
-msgstr ""
+msgstr "Backup Battery."
 
 #: src-ru/data/events.xml.rawclobber:48185
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"sensors\"]/text"
-msgstr "Sensors"
+msgstr "Sensors."
 
 #: src-ru/data/events.xml.rawclobber:48193
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"teleporter\"]/text"
-msgstr "Teleporter"
+msgstr "Teleporter."
 
 #: src-ru/data/events.xml.rawclobber:48201
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"drones\"]/text"
-msgstr "Drone Control"
+msgstr "Drone Control."
 
 #: src-ru/data/events.xml.rawclobber:48209
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"weapons\"]/text"
-msgstr "Weapon Control"
+msgstr "Weapon Control."
 
 #: src-ru/data/events.xml.rawclobber:48217
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"doors\"]/text"
-msgstr ""
+msgstr "Doors."
 
 #: src-ru/data/events.xml.rawclobber:48225
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SYSTEM_REMOVE\"]/choice[@req=\"shields\"]/text"
 msgstr "Shields."
@@ -56188,7 +56177,7 @@ msgstr "Integrated augment: Oxygen Masks."
 #: src-ru/data/events.xml.rawclobber:48816
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[2]/text"
-msgstr "Hunting Equipment is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Hunting Equipment."
 
 #: src-ru/data/events.xml.rawclobber:48820
 msgid ""
@@ -56205,7 +56194,7 @@ msgstr "Integrated augment: Explosive Replicator."
 #: src-ru/data/events.xml.rawclobber:48836
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[5]/text"
-msgstr "Support Module is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Support Module."
 
 #: src-ru/data/events.xml.rawclobber:48840
 msgid ""
@@ -56222,7 +56211,7 @@ msgstr "Integrated augment: Fire Suppression."
 #: src-ru/data/events.xml.rawclobber:48856
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[8]/text"
-msgstr "Safeguard System is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Safeguard System."
 
 #: src-ru/data/events.xml.rawclobber:48860
 msgid ""
@@ -56239,7 +56228,7 @@ msgstr "Integrated augment: Distraction Buoys."
 #: src-ru/data/events.xml.rawclobber:48876
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[11]/text"
-msgstr "Backup Module is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Backup Module."
 
 #: src-ru/data/events.xml.rawclobber:48880
 msgid ""
@@ -56256,7 +56245,7 @@ msgstr "Integrated augment: Safety Teleport."
 #: src-ru/data/events.xml.rawclobber:48896
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[14]/text"
-msgstr "Preservation Module is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Preservation Module."
 
 #: src-ru/data/events.xml.rawclobber:48900
 msgid ""
@@ -56273,7 +56262,7 @@ msgstr "Integrated augment: Battery Charger."
 #: src-ru/data/events.xml.rawclobber:48916
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[17]/text"
-msgstr "Backup Module is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Backup Module."
 
 #: src-ru/data/events.xml.rawclobber:48920
 msgid ""
@@ -56290,7 +56279,7 @@ msgstr "Integrated augment: Defense Scrambler."
 #: src-ru/data/events.xml.rawclobber:48936
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[20]/text"
-msgstr "Hacking Equipment is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Hacking Equipment."
 
 #: src-ru/data/events.xml.rawclobber:48940
 msgid ""
@@ -56307,7 +56296,7 @@ msgstr "Integrated augment: Backup DNA Bank."
 #: src-ru/data/events.xml.rawclobber:48956
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[23]/text"
-msgstr "Preservation Module is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Preservation Module."
 
 #: src-ru/data/events.xml.rawclobber:48960
 msgid ""
@@ -56324,7 +56313,7 @@ msgstr "Integrated augment: Stun Module."
 #: src-ru/data/events.xml.rawclobber:48976
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[26]/text"
-msgstr "Hacking Equipment is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Hacking Equipment."
 
 #: src-ru/data/events.xml.rawclobber:48980
 msgid ""
@@ -56341,7 +56330,7 @@ msgstr "Integrated augment: Infrared Scanner."
 #: src-ru/data/events.xml.rawclobber:48996
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[29]/text"
-msgstr "Advanced Scanners is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Advanced Scanners."
 
 #: src-ru/data/events.xml.rawclobber:49000
 msgid ""
@@ -56358,7 +56347,7 @@ msgstr "Integrated augment: Super Shield Bypass."
 #: src-ru/data/events.xml.rawclobber:49016
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[32]/text"
-msgstr "Zoltan Technologies is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Zoltan Technologies."
 
 #: src-ru/data/events.xml.rawclobber:49020
 msgid ""
@@ -56376,7 +56365,7 @@ msgstr "Integrated augment: Engi Med-bot Dispersal."
 #: src-ru/data/events.xml.rawclobber:49036
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[35]/text"
-msgstr "Advanced Nanobots is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Advanced Nanobots."
 
 #: src-ru/data/events.xml.rawclobber:49040
 #, fuzzy
@@ -56394,7 +56383,7 @@ msgstr "Integrated augment: Mantis Pheromones."
 #: src-ru/data/events.xml.rawclobber:49056
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[38]/text"
-msgstr "Hunting Equipment is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Hunting Equipment."
 
 #: src-ru/data/events.xml.rawclobber:49060
 msgid ""
@@ -56411,7 +56400,7 @@ msgstr "Integrated augment: Long-Ranged Scanners."
 #: src-ru/data/events.xml.rawclobber:49076
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[41]/text"
-msgstr "Advanced Scanners is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Advanced Scanners."
 
 #: src-ru/data/events.xml.rawclobber:49080
 msgid ""
@@ -56428,7 +56417,7 @@ msgstr "Integrated augment: Weapon Pre-Igniter."
 #: src-ru/data/events.xml.rawclobber:49096
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"WEAPON_PREIGNITE_AUTO_COOLDOWN\"]/text"
-msgstr "Recharge Compensator is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Recharge Compensator."
 
 #: src-ru/data/events.xml.rawclobber:49100
 msgid ""
@@ -56443,9 +56432,10 @@ msgid ""
 msgstr "Integrated augment: FTL Recharge Booster."
 
 #: src-ru/data/events.xml.rawclobber:49116
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[47]/text"
-msgstr "FTL-Manipulator is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: FTL-Manipulator."
 
 #: src-ru/data/events.xml.rawclobber:49120
 msgid ""
@@ -56463,7 +56453,7 @@ msgstr "Integrated augment: Advanced FTL-Navigation."
 #: src-ru/data/events.xml.rawclobber:49136
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[50]/text"
-msgstr "Navigation Mechanism is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Navigation Mechanism."
 
 #: src-ru/data/events.xml.rawclobber:49140
 msgid ""
@@ -56480,7 +56470,7 @@ msgstr "Integrated augment: Drone Recovery Arm."
 #: src-ru/data/events.xml.rawclobber:49156
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[53]/text"
-msgstr "Navigation Mechanism is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Navigation Mechanism."
 
 #: src-ru/data/events.xml.rawclobber:49160
 msgid ""
@@ -56495,9 +56485,10 @@ msgid ""
 msgstr "Integrated augment: FTL Jammer."
 
 #: src-ru/data/events.xml.rawclobber:49176
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[56]/text"
-msgstr "FTL-Manipulator is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: FTL-Manipulator."
 
 #: src-ru/data/events.xml.rawclobber:49180
 msgid ""
@@ -56514,7 +56505,7 @@ msgstr "Integrated augment: Slug Repair Gel."
 #: src-ru/data/events.xml.rawclobber:49196
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[59]/text"
-msgstr "Safeguard System is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Safeguard System."
 
 #: src-ru/data/events.xml.rawclobber:49200
 msgid ""
@@ -56531,7 +56522,7 @@ msgstr "Integrated augment: Rock Armor Plating."
 #: src-ru/data/events.xml.rawclobber:49216
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"CRYSTAL_SHARDS_ROCK_ARMOR\"]/text"
-msgstr "Composite Armor is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Composite Armor."
 
 #: src-ru/data/events.xml.rawclobber:49220
 msgid ""
@@ -56548,7 +56539,7 @@ msgstr "Integrated augment: Zoltan Shield."
 #: src-ru/data/events.xml.rawclobber:49236
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[65]/text"
-msgstr "Zoltan Technologies is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Zoltan Technologies."
 
 #: src-ru/data/events.xml.rawclobber:49240
 msgid ""
@@ -56565,7 +56556,7 @@ msgstr "Integrated augment: Stealth Weapons."
 #: src-ru/data/events.xml.rawclobber:49256
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"SHIELD_RECHARGE_CLOAK_FIRE\"]/text"
-msgstr "Camouflage Barrier is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Camouflage Barrier."
 
 #: src-ru/data/events.xml.rawclobber:49260
 msgid ""
@@ -56582,7 +56573,7 @@ msgstr "Integrated augment: Titanium System Casing."
 #: src-ru/data/events.xml.rawclobber:49276
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[71]/text"
-msgstr "Defensive Shielding is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Defensive Shielding."
 
 #: src-ru/data/events.xml.rawclobber:49280
 msgid ""
@@ -56599,7 +56590,7 @@ msgstr "Integrated augment: Reverse Ion Field."
 #: src-ru/data/events.xml.rawclobber:49296
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[74]/text"
-msgstr "Defensive Shielding is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Defensive Shielding."
 
 #: src-ru/data/events.xml.rawclobber:49300
 msgid ""
@@ -56616,7 +56607,7 @@ msgstr "Integrated augment: Onboard Drone Booster."
 #: src-ru/data/events.xml.rawclobber:49316
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[77]/text"
-msgstr "Support Module is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Support Module."
 
 #: src-ru/data/events.xml.rawclobber:49320
 msgid ""
@@ -56633,7 +56624,7 @@ msgstr "Integrated augment: Repair Arm."
 #: src-ru/data/events.xml.rawclobber:49336
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"SCRAP_COLLECTOR_REPAIR_ARM\"]/text"
-msgstr "Adv. Scrap Manipulator is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Adv. Scrap Manipulator."
 
 #: src-ru/data/events.xml.rawclobber:49340
 msgid ""
@@ -56650,7 +56641,7 @@ msgstr "Integrated augment: Nanobot Defenses."
 #: src-ru/data/events.xml.rawclobber:49356
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[83]/text"
-msgstr "Advanced Nanobots is a combined augment and cannot be integrated."
+msgstr "Cannot integrate combined augment: Advanced Nanobots."
 
 #: src-ru/data/events.xml.rawclobber:49360
 msgid ""
@@ -56710,47 +56701,55 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:49436
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_ACCURACY_BOOST\"]/text"
-msgstr ""
+msgstr "Integrated augment: Targeting Compensator."
 
 #: src-ru/data/events.xml.rawclobber:49440
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"ACCURACY_BOOST\"]/text"
 msgstr ""
+"(Targeting Compensator) Integrate this augment into the ship's design, "
+"freeing up an augment slot."
 
 #: src-ru/data/events.xml.rawclobber:49452
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_PROJECTILE_EATER\"]/text"
-msgstr ""
+msgstr "Integrated augment: Projectile Destroyer."
 
 #: src-ru/data/events.xml.rawclobber:49456
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"PROJECTILE_EATER\"]/text"
 msgstr ""
+"(Projectile Destroyer) Integrate this augment into the ship's design, "
+"freeing up an augment slot."
 
 #: src-ru/data/events.xml.rawclobber:49468
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_AUTO_REPAIR\"]/text"
-msgstr ""
+msgstr "Integrated augment: Autorepair System."
 
 #: src-ru/data/events.xml.rawclobber:49472
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"AUTO_REPAIR\"]/text"
 msgstr ""
+"(Autorepair System) Integrate this augment into the ship's design, freeing "
+"up an augment slot."
 
 #: src-ru/data/events.xml.rawclobber:49484
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_SOUL_MAGNIT\"]/text"
-msgstr ""
+msgstr "Integrated augment: Soul Captor."
 
 #: src-ru/data/events.xml.rawclobber:49488
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"SOUL_MAGNIT\"]/text"
 msgstr ""
+"(Soul Captor) Integrate this augment into the ship's design, freeing up an "
+"augment slot."
 
 #: src-ru/data/events.xml.rawclobber:49500
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[101]/text"
-msgstr ""
+msgstr "Close the hold and return the spent scrap."
 
 #: src-ru/data/events.xml.rawclobber:49734
 msgid ""
