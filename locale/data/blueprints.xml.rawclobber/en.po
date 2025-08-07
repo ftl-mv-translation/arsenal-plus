@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-07 04:38+0000\n"
+"PO-Revision-Date: 2025-08-07 06:56+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -4772,66 +4772,74 @@ msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:15162
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HYPERJUMP\"]/title"
-msgstr ""
+msgstr "Hyper-Jump Module"
 
 #: src-ru/data/blueprints.xml.rawclobber:15163
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HYPERJUMP\"]/desc"
 msgstr ""
+"Allows you to jump to further sectors after sector 7 but before the final "
+"sector."
 
 #: src-ru/data/blueprints.xml.rawclobber:15171
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TRICOLOR_AUG\"]/title"
-msgstr ""
+msgstr "Radar"
 
 #: src-ru/data/blueprints.xml.rawclobber:15172
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TRICOLOR_AUG\"]/desc"
-msgstr ""
+msgstr "Reveals the sector map."
 
 #: src-ru/data/blueprints.xml.rawclobber:15180
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/title"
-msgstr ""
+msgstr "Soul Captor"
 
 #: src-ru/data/blueprints.xml.rawclobber:15181
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/desc"
 msgstr ""
+"The purpose of this augment is unknown, but at least it's worth some scrap."
 
 #: src-ru/data/blueprints.xml.rawclobber:15190
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARTILLERY_ORDER\"]/title"
-msgstr ""
+msgstr "Enhanced Targeting"
 
 #: src-ru/data/blueprints.xml.rawclobber:15191
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARTILLERY_ORDER\"]/desc"
-msgstr ""
+msgstr "Allows you to manually aim artillery systems at targets."
 
 #: src-ru/data/blueprints.xml.rawclobber:15199
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SECTOR_SCANNER\"]/title"
-msgstr ""
+msgstr "Sectors Scanner"
 
 #: src-ru/data/blueprints.xml.rawclobber:15200
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SECTOR_SCANNER\"]/desc"
-msgstr ""
+msgstr "Allows you to view the exact type of every sector on the sector map."
 
 #: src-ru/data/blueprints.xml.rawclobber:15209
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_REPAIR\"]/title"
-msgstr ""
+msgstr "Autorepair System"
 
 #: src-ru/data/blueprints.xml.rawclobber:15210
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_REPAIR\"]/desc"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to automated ships. Base "
+"repair speed is 33%. Can be upgraded as well as integrated into the ship."
 
 #: src-ru/data/blueprints.xml.rawclobber:15219
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"PROJECTILE_EATER\"]/title"
-msgstr ""
+msgstr "Projectile Destroyer"
 
 #: src-ru/data/blueprints.xml.rawclobber:15220
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"PROJECTILE_EATER\"]/desc"
 msgstr ""
+"A manually activated flash capable of disintegrating all projectiles "
+"currently on the battlefield into elementary particles. Recharges after FTL "
+"jump. Can be upgraded as well as integrated."
 
 #: src-ru/data/blueprints.xml.rawclobber:15229
 msgid ""
@@ -4841,7 +4849,9 @@ msgstr "Targeting Compensator"
 #: src-ru/data/blueprints.xml.rawclobber:15230
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ACCURACY_BOOST\"]/desc"
-msgstr "Enemy evasion reduced by 15% thanks to this advanced guidance system."
+msgstr ""
+"This advanced guidance software tracks enemy movements for your weapons, "
+"reducing enemy evasion by 15%."
 
 #: src-ru/data/blueprints.xml.rawclobber:15239
 #, fuzzy
@@ -5063,8 +5073,9 @@ msgstr "Infrared Scanner"
 #: src-ru/data/blueprints.xml.rawclobber:15432
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/desc"
 msgstr ""
-"Detects the location of any life forms, even when sensors are weak or "
-"absent. Provides information about the enemy ship's evasion, O2 levels and "
+"Detects the location of any life forms, even when sensors are weak or absent."
+"\n"
+"\tProvides information about the enemy ship's evasion, O2 levels and "
 "remaining number of consumables. Also allows ship sensors to function in "
 "nebulae."
 
