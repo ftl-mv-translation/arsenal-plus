@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-07 06:56+0000\n"
+"PO-Revision-Date: 2025-08-08 01:56+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
@@ -5574,7 +5574,6 @@ msgstr ""
 "minor damage before escaping. The station will need to find help elsewhere."
 
 #: src-ru/data/events.xml.rawclobber:5137
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/text"
 msgstr ""
 "You find the source of the distress call, a small research station. It "
@@ -5582,69 +5581,59 @@ msgstr ""
 "destroy the station. Their fire suppression system is not responding."
 
 #: src-ru/data/events.xml.rawclobber:5140
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"ARMOR_SUIT_5\"]/text"
 msgstr "Send your crew in a shuttle to help put out the fire."
 
 #: src-ru/data/events.xml.rawclobber:5144
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"orchid\""
 " and @lvl=\"0\"]/text"
 msgstr "Send your crew in a shuttle to help put out the fire."
 
 #: src-ru/data/events.xml.rawclobber:5148
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"orchid\""
 " and @lvl=\"1\"]/text"
 msgstr "Send your crew in a shuttle to help put out the fire."
 
 #: src-ru/data/events.xml.rawclobber:5152
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[4]/text"
 msgstr "Dock and try to rescue the survivors."
 
 #: src-ru/data/events.xml.rawclobber:5156
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[5]/text"
 msgstr "Leave this place."
 
 #: src-ru/data/events.xml.rawclobber:5158
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[5]/event/text"
 msgstr ""
-"You cold-bloodedly disconnect the connection and prepare to leave. Your crew"
-" seems to be upset, but you assure them that nothing could be done."
+"You coldly shut off communications and prepare to leave. Your crew seems "
+"upset but you assure them that nothing could have been done."
 
 #: src-ru/data/events.xml.rawclobber:5162
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"rock_crew\"]/text"
-msgstr "(Rock Crewmember) Send in your Rock."
+msgstr "(Rock Crew Member) Send in your Rock."
 
 #: src-ru/data/events.xml.rawclobber:5164
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"rock_crew\"]/event/text"
 msgstr ""
 "Your Rock soldier tears through the airlock directly into the fire. You've "
 "never seen someone that large move that fast. It disperses as much fire "
-"suppressant as possible into the heart of the blaze and eventually the fires"
-" start to die down."
+"suppressant as possible into the heart of the blaze and eventually the fires "
+"start to die down."
 
 #: src-ru/data/events.xml.rawclobber:5166
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"rock_crew\"]/event/choice/text"
 msgstr "Contact the survivors."
 
 #: src-ru/data/events.xml.rawclobber:5168
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"rock_crew\"]/event/choice/event/text"
 msgstr ""
@@ -5655,7 +5644,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:5175
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "(Magman Crew Member) Send in your Magman."
 
 #: src-ru/data/events.xml.rawclobber:5177
 msgid ""
@@ -5663,7 +5652,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:5180
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"magman\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5676,7 +5664,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:5189
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"ghost_crew\"]/text"
-msgstr ""
+msgstr "(Avatar Crew Member) Send in your Avatar."
 
 #: src-ru/data/events.xml.rawclobber:5191
 msgid ""
@@ -5684,7 +5672,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:5193
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"ghost_crew\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5695,10 +5682,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:5202
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"engi_crew\"]/text"
-msgstr "(Engi Crew Member) Send your Engi crew member in."
+msgstr "(Engi Crew Member) Send in your Engi."
 
 #: src-ru/data/events.xml.rawclobber:5204
 #, fuzzy
@@ -5710,7 +5696,6 @@ msgstr ""
 "crisp, but fortunately, everything turned out fine."
 
 #: src-ru/data/events.xml.rawclobber:5206
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"engi_crew\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5724,10 +5709,9 @@ msgstr ""
 "engineers to improve your ship's reactor and patch up a bit of hull."
 
 #: src-ru/data/events.xml.rawclobber:5217
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"morph\"]/text"
-msgstr "(Morph Crew Member) Send your Morph crew member in."
+msgstr "(Morph Crew Member) Send in your Morph."
 
 #: src-ru/data/events.xml.rawclobber:5219
 #, fuzzy
@@ -5739,7 +5723,6 @@ msgstr ""
 "crisp, but fortunately, everything turned out fine."
 
 #: src-ru/data/events.xml.rawclobber:5221
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"morph\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5753,10 +5736,9 @@ msgstr ""
 "engineers to improve your ship's reactor and patch up a bit of hull."
 
 #: src-ru/data/events.xml.rawclobber:5231
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"anaerobic_crew\"]/text"
-msgstr "(Lanius Crewmember) Send in your Lanius."
+msgstr "(Lanius Crew Member) Send in your Lanius."
 
 #: src-ru/data/events.xml.rawclobber:5233
 #, fuzzy
@@ -5767,7 +5749,6 @@ msgstr ""
 "Soon the fire starts to die down, and then completely extinguishes."
 
 #: src-ru/data/events.xml.rawclobber:5235
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"anaerobic_crew\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5796,7 +5777,6 @@ msgstr ""
 "station."
 
 #: src-ru/data/events.xml.rawclobber:5248
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"DRONES_REPAIR_LIST\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5825,7 +5805,6 @@ msgstr ""
 "extinguishes the fire."
 
 #: src-ru/data/events.xml.rawclobber:5261
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_FIRE\"]/choice[@req=\"FIRE_EXTINGUISHERS\"]/event/choice/text"
 msgstr "Contact the survivors."
@@ -5863,6 +5842,10 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[1]/text"
 msgstr ""
+"You send your crew into the station. Unfortunately as soon as they enter the "
+"fire breaches the station's fuel cell containment. You quickly try to dock "
+"and retrieve your crew but not before an unfortunate soul is lost in the "
+"inferno."
 
 #: src-ru/data/events.xml.rawclobber:5288
 #, fuzzy
@@ -5876,6 +5859,8 @@ msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[1]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
+"With a new-found respect for flames, your crewmember's clone stumbles out of "
+"the Clone Bay."
 
 #: src-ru/data/events.xml.rawclobber:5298
 msgid ""
@@ -5889,6 +5874,10 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[2]/text"
 msgstr ""
+"You send your crew into the station. Unfortunately as soon as they enter the "
+"fire breaches the station's fuel cell containment. You quickly try to dock "
+"and retrieve your crew but not before an unfortunate soul is lost in the "
+"inferno."
 
 #: src-ru/data/events.xml.rawclobber:5308
 #, fuzzy
@@ -5902,6 +5891,8 @@ msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[2]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
+"With a new-found respect for flames, your crewmember's clone stumbles out of "
+"the Clone Bay."
 
 #: src-ru/data/events.xml.rawclobber:5318
 msgid ""
@@ -5912,7 +5903,6 @@ msgstr ""
 "of any crew."
 
 #: src-ru/data/events.xml.rawclobber:5324
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_CREW\"]/event[3]/text"
 msgstr ""
@@ -5930,18 +5920,16 @@ msgstr ""
 " fire. Grateful, they give you some supplies."
 
 #: src-ru/data/events.xml.rawclobber:5334
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_RESCUE\"]/event[1]/text"
 msgstr ""
 "You locate the highest concentration of life forms and bring the ship "
-"alongside the station. Before you can begin to offload the survivors, a huge"
-" blast splits the station apart. Your ship is thrown away and some debris "
+"alongside the station. Before you can begin to offload the survivors, a huge "
+"blast splits the station apart. Your ship is thrown away and some debris "
 "pierces your hull. You watch helplessly as the last of the survivors are "
 "consumed in the collapse of the station."
 
 #: src-ru/data/events.xml.rawclobber:5340
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_RESCUE\"]/event[2]/text"
 msgstr ""
@@ -5950,13 +5938,11 @@ msgstr ""
 "offers to join your crew and you offload the rest on a nearby station."
 
 #: src-ru/data/events.xml.rawclobber:5342
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_FIRE_RESCUE\"]/event[2]/crewMember"
 msgstr "Watson"
 
 #: src-ru/data/events.xml.rawclobber:5348
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/text"
 msgstr ""
@@ -5965,19 +5951,16 @@ msgstr ""
 "broken out."
 
 #: src-ru/data/events.xml.rawclobber:5350
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[1]/text"
 msgstr "Send in your crew to help control the crowds."
 
 #: src-ru/data/events.xml.rawclobber:5354
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[2]/text"
 msgstr "Ignore their request and move on."
 
 #: src-ru/data/events.xml.rawclobber:5356
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[2]/event/text"
 msgstr ""
@@ -5985,7 +5968,6 @@ msgstr ""
 "your crew. You prepare to move on."
 
 #: src-ru/data/events.xml.rawclobber:5360
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/text"
@@ -6006,7 +5988,6 @@ msgid ""
 msgstr "(Rock Crew Member) Send your Rock crew-member to prevent a riot."
 
 #: src-ru/data/events.xml.rawclobber:5368
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"rock_crew\"]/event/text"
 msgstr ""
@@ -6016,41 +5997,36 @@ msgstr ""
 "and assure you they will try to find a cure as soon as possible."
 
 #: src-ru/data/events.xml.rawclobber:5373
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"engi_crew\"]/text"
 msgstr "(Engi Crew Member) Send your Engi to calm down the infected."
 
 #: src-ru/data/events.xml.rawclobber:5375
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 "With no fear of catching the disease, your Engi crew member helps reassure "
-"and organize the infected humans. Calmed by its extensive knowledge of human"
-" physiology, the infected submit to the quarantine in the hopes that a cure "
+"and organize the infected humans. Calmed by its extensive knowledge of human "
+"physiology, the infected submit to the quarantine in the hopes that a cure "
 "can be found soon. The colony leaders offer a reward for helping to prevent "
 "an ugly incident."
 
 #: src-ru/data/events.xml.rawclobber:5381
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"morph\"]/text"
 msgstr "(Morph Crew Member) Send your Morph to calm down the infected."
 
 #: src-ru/data/events.xml.rawclobber:5383
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"morph\"]/event/text"
 msgstr ""
 "With no fear of catching the disease, your Morph crew member helps reassure "
-"and organize the infected humans. Calmed by its extensive knowledge of human"
-" physiology, the infected submit to the quarantine in the hopes that a cure "
+"and organize the infected humans. Calmed by its extensive knowledge of human "
+"physiology, the infected submit to the quarantine in the hopes that a cure "
 "can be found soon. The colony leaders offer a reward for helping to prevent "
 "an ugly incident."
 
 #: src-ru/data/events.xml.rawclobber:5388
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"ghost_crew\"]/text"
 msgstr "(Avatar Crew Member) Send your Avatar to calm down the infected."
@@ -6084,13 +6060,11 @@ msgstr ""
 "created to calm frightened people."
 
 #: src-ru/data/events.xml.rawclobber:5405
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"medbay\"]/text"
 msgstr "(Improved Medbay) Use your Medbay to help synthesize a cure."
 
 #: src-ru/data/events.xml.rawclobber:5407
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"medbay\"]/event/text"
 msgstr ""
@@ -6100,7 +6074,6 @@ msgstr ""
 "success in reverse engineering a cure."
 
 #: src-ru/data/events.xml.rawclobber:5411
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"medbay\"]/event/choice[@req=\"NANO_MEDBAY\""
 " and @lvl=\"0\"]/event/text"
@@ -6110,7 +6083,6 @@ msgstr ""
 "payment!\""
 
 #: src-ru/data/events.xml.rawclobber:5416
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"medbay\"]/event/choice[@req=\"NANO_MEDBAY\""
 " and not(@lvl)]/text"
@@ -6119,7 +6091,6 @@ msgstr ""
 "of the cure."
 
 #: src-ru/data/events.xml.rawclobber:5418
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"DISTRESS_STATION_DISEASE\"]/choice[@req=\"medbay\"]/event/choice[@req=\"NANO_MEDBAY\""
 " and not(@lvl)]/event/text"
@@ -6139,24 +6110,22 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:5437
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_DISEASE_LIST\"]/event[1]/text"
 msgstr ""
-"Your crew tries to keep the crowds in line but the scene quickly turns ugly."
-" Half-crazed with fear, the infected grab mining tools and push back at your"
-" crew, forcing them to retreat hastily. They barely get away without injury "
+"Your crew tries to keep the crowds in line but the scene quickly turns ugly. "
+"Half-crazed with fear, the infected grab mining tools and push back at your "
+"crew, forcing them to retreat hastily. They barely get away without injury "
 "but the same can't be said for the colony's leaders. You quickly leave."
 
 #: src-ru/data/events.xml.rawclobber:5440
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DISTRESS_STATION_DISEASE_LIST\"]/event[2]/text"
 msgstr ""
 "With the visible threat of your weapons, the infected become subdued enough "
-"for you to set up a rudimentary quarantine. However before you leave, one of"
-" your crew presents signs of infection. You have no choice but to leave them"
-" on the station in the hopes that they discover a cure quickly. You leave "
+"for you to set up a rudimentary quarantine. However before you leave, one of "
+"your crew presents signs of infection. You have no choice but to leave them "
+"on the station in the hopes that they discover a cure quickly. You leave "
 "before more crew succumb."
 
 #: src-ru/data/events.xml.rawclobber:5444
@@ -6175,7 +6144,6 @@ msgstr ""
 " journey."
 
 #: src-ru/data/events.xml.rawclobber:5470
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_TEXT\"]/text[1]"
 msgstr ""
 "What appears to be a civilian ship sends a friendly hail. As you approach "
@@ -6183,16 +6151,14 @@ msgstr ""
 "have beamed aboard!\""
 
 #: src-ru/data/events.xml.rawclobber:5471
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_TEXT\"]/text[2]"
 msgstr ""
 "A heavily damaged ship is drifting near this beacon. You receive a "
-"communication: \"Hello! Nice of you to drop by. As you can see, our ship has"
-" seen better days. Yours is looking quite nice, I think we might be taking "
-"it from you now.\" Intruders beam aboard."
+"communication: \"Hello! Nice of you to drop by. As you can see, our ship has "
+"seen better days. Yours is looking quite nice, I think we might be taking it "
+"from you now.\" Intruders beam aboard."
 
 #: src-ru/data/events.xml.rawclobber:5472
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_TEXT\"]/text[3]"
 msgstr ""
 "You detect life-signs actually on the beacon itself! A teleporter signal "
@@ -6200,7 +6166,6 @@ msgstr ""
 "and seem intent on taking it over."
 
 #: src-ru/data/events.xml.rawclobber:5473
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_TEXT\"]/text[4]"
 msgstr ""
 "Your ship detects a faint distress signal on a nearby moon. As you approach "
@@ -6208,7 +6173,6 @@ msgstr ""
 "hidden location."
 
 #: src-ru/data/events.xml.rawclobber:5474
-#, fuzzy
 msgid "data/events.xml.rawclobber$//textList[@name=\"BOARDERS_TEXT\"]/text[5]"
 msgstr ""
 "As you arrive, you become aware of a small Rebel outpost near the beacon. "
@@ -6216,7 +6180,6 @@ msgstr ""
 "your ship. They must have been expecting you..."
 
 #: src-ru/data/events.xml.rawclobber:5478
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"BOARDERS_HACKING\"]/text"
 msgstr ""
 "You catch a glimpse of a strange signal coming from a space station before "
@@ -6224,64 +6187,55 @@ msgstr ""
 "being jammed, you hear hostiles beam onto your ship."
 
 #: src-ru/data/events.xml.rawclobber:5486
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BOARDERS_HACKING\"]/choice[@req=\"hacking\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Until you are able to jump away from the hostile space station, your sensors"
-" will be disabled. You should deal with these boarders first though!"
+"Until you are able to jump away from the hostile space station, your sensors "
+"will be disabled. You should deal with these boarders first though!"
 
 #: src-ru/data/events.xml.rawclobber:5491
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BOARDERS_HACKING\"]/choice[@req=\"hacking\""
 " and not(@lvl)]/text"
 msgstr "(Hacking) Counter the remote hacking."
 
 #: src-ru/data/events.xml.rawclobber:5493
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BOARDERS_HACKING\"]/choice[@req=\"hacking\""
 " and not(@lvl)]/event/text"
 msgstr ""
-"Your hacking system automatically counters the digital assault. Your Sensors"
-" flicker back on and you prepare to fight the boarders."
+"Your hacking system automatically counters the digital assault. Your Sensors "
+"flicker back on and you prepare to fight the boarders."
 
 #: src-ru/data/events.xml.rawclobber:5500
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/text"
 msgstr ""
 "You arrive to find a small research station putting out a distress signal. "
 "There is no response to your hails."
 
 #: src-ru/data/events.xml.rawclobber:5503
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/text"
 msgstr "Dock with the station and investigate."
 
 #: src-ru/data/events.xml.rawclobber:5507
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/text"
 msgstr "Dock with the station and investigate."
 
 #: src-ru/data/events.xml.rawclobber:5511
-#, fuzzy
 msgid "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[3]/text"
 msgstr "Leave it alone."
 
 #: src-ru/data/events.xml.rawclobber:5515
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[@req=\"DRONES_BATTLE\"]/text"
 msgstr "(Anti-Personnel Drone) Use an Anti-Personnel Drone to investigate."
 
 #: src-ru/data/events.xml.rawclobber:5519
-#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STATION_SICK\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr "(Infrared Scanner) Run advanced life scans."
