@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-06-06 10:50+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-10-01 08:20+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataevents_piratexmlrawclobber/en/>\n"
 "Language: en\n"
@@ -801,35 +801,32 @@ msgstr ""
 "easier target."
 
 #: src-ru/data/events_pirate.xml.rawclobber:574
-#, fuzzy
 msgid "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/text"
 msgstr ""
-"You recognize the ship as a well-known slave trader. He hails you and offers"
-" you \"laborers\" for cheap."
+"You recognize the ship as a well-known slave trader. He hails you and offers "
+"you \"laborers\" for cheap."
 
 #: src-ru/data/events_pirate.xml.rawclobber:576
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[1]/text"
-msgstr ""
+msgstr "Buy one slave and free them to join your crew."
 
 #: src-ru/data/events_pirate.xml.rawclobber:585
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[2]/text"
-msgstr ""
+msgstr "Buy this slave."
 
 #: src-ru/data/events_pirate.xml.rawclobber:594
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[3]/text"
-msgstr ""
+msgstr "Attack the slaver scum!"
 
 #: src-ru/data/events_pirate.xml.rawclobber:600
-#, fuzzy
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[4]/text"
 msgstr "Ignore the slaver and continue on your way."
 
 #: src-ru/data/events_pirate.xml.rawclobber:604
-#, fuzzy
 msgid ""
 "data/events_pirate.xml.rawclobber$//event[@name=\"FRIENDLY_SLAVER\"]/choice[@req=\"teleporter\"]/text"
 msgstr ""
@@ -837,26 +834,23 @@ msgstr ""
 "release some of the slaves."
 
 #: src-ru/data/events_pirate.xml.rawclobber:610
-#, fuzzy
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[1]/text"
 msgstr ""
-"You beam a small team into their holds. They work quickly to free the slaves"
-" and teleport back to your ship. One of the captives seems fit for battle "
-"and you throw them a weapon in preparation for a fight."
+"You beam a small team into their holds. They work quickly to free the slaves "
+"and teleport back to your ship. One of the captives seems fit for battle and "
+"you throw them a weapon in preparation for a fight."
 
 #: src-ru/data/events_pirate.xml.rawclobber:615
-#, fuzzy
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[2]/text"
 msgstr ""
 "You teleport an away team into their hold to attempt to free their "
-"prisoners. They are able to get to one person before being caught and forced"
-" into a corner by the crew. You quickly beam the team and prisoner back to "
+"prisoners. They are able to get to one person before being caught and forced "
+"into a corner by the crew. You quickly beam the team and prisoner back to "
 "your ship."
 
 #: src-ru/data/events_pirate.xml.rawclobber:620
-#, fuzzy
 msgid ""
 "data/events_pirate.xml.rawclobber$//eventList[@name=\"FRIENDLY_SLAVER_TELEPORTER\"]/event[3]/text"
 msgstr ""
