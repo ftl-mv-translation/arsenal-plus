@@ -70,10 +70,10 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ENGI\"]/text[9]"
 msgstr ""
-"Ini - the race of robots, in which each humanoid \"unit\" consists of "
-"hundreds of trillions of nanorobots.They are the closest allies of the "
-"Federation and are very peaceful in nature.They prefer research and "
-"practical benefits to everything else."
+"The Engi are a race of robots, in which each humanoid \"unit\" consists of "
+"hundreds of trillions of nanobots. They are the Federation's closest allies "
+"and are very peaceful by nature. They prefer research and practical utility "
+"above all else."
 
 #: src-ru/data/events_engi.xml.rawclobber:170
 msgid "data/events_engi.xml.rawclobber$//textList[@name=\"STORE_ENGI\"]/text[1]"
@@ -1550,13 +1550,14 @@ msgstr "Abandon their services."
 #: src-ru/data/events_engi.xml.rawclobber:1241
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"REPAIR_ENGI_CHOISE\"]/event[2]/text"
-msgstr "Yegers take your weapon for diagnostics."
+msgstr "The Engi take your weapon for diagnostics."
 
 #: src-ru/data/events_engi.xml.rawclobber:1247
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"REPAIR_ENGI_CHOISE\"]/event[2]/choice/event/text"
 msgstr ""
-"Having fixed the malfunction, they return it back to you completely free."
+"After fixing the malfunction, they return it to you completely free of "
+"charge."
 
 #: src-ru/data/events_engi.xml.rawclobber:1256
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_HOME\"]/text"
@@ -1589,13 +1590,14 @@ msgstr "(Broken Flak Mod III) ask them if they can fix your gun."
 #: src-ru/data/events_engi.xml.rawclobber:1277
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_HOME\"]/choice[@req=\"SHOTGUN_3_BROKEN\"]/event/text"
-msgstr "Yegers take your weapon for diagnostics."
+msgstr "The Engi take your weapon for diagnostics."
 
 #: src-ru/data/events_engi.xml.rawclobber:1283
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_HOME\"]/choice[@req=\"SHOTGUN_3_BROKEN\"]/event/choice/event/text"
 msgstr ""
-"Having fixed the malfunction, they return it back to you completely free."
+"After fixing the malfunction, they return it to you completely free of "
+"charge."
 
 #: src-ru/data/events_engi.xml.rawclobber:1290
 msgid ""
@@ -1690,7 +1692,7 @@ msgstr "(Prototype of the Zoltatos √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:1513
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"PROTOTYPE_ZOLTON_MISSILE_2_ACC\"]/text"
-msgstr "(Prototype of the Zoltatos £) ask to fix this gun."
+msgstr "(Zolton Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:1530
 msgid ""
@@ -1720,7 +1722,7 @@ msgstr "(Prototype of slams √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:1615
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"SLURMS_PROTOTYPE_2_ACC\"]/text"
-msgstr "(Prototype of slams £) ask to fix this gun."
+msgstr "(Slerm Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:1632
 msgid ""
@@ -1775,7 +1777,7 @@ msgstr "(Heavy prototype of crystalins √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:1802
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"CRYSTAL_PRO_HEAVY2_ACC\"]/text"
-msgstr "(Heavy prototype of crystalins £) Ask to fix this gun."
+msgstr "(Heavy Crystal Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:1819
 msgid ""
@@ -1810,7 +1812,7 @@ msgstr "(Prototype people √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:1921
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_AEGON_ROCKET_12_ACC\"]/text"
-msgstr "(Prototype people £) ask to fix this gun."
+msgstr "(Human Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:1938
 msgid ""
@@ -1835,7 +1837,7 @@ msgstr "(Prototype Laniuses √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2006
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_TRIPLE_BLASTER_12_ACC\"]/text"
-msgstr "(Prototype Lanius £) ask to fix this gun."
+msgstr "(Lanius Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2023
 msgid ""
@@ -1865,7 +1867,7 @@ msgstr "(Prototype Rock √) Ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2108
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"SOLAR_BARRAGE_ARRAY2_ACC\"]/text"
-msgstr "(Prototype Rock £) Ask to fix this gun."
+msgstr "(Rock Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2125
 msgid ""
@@ -1890,7 +1892,7 @@ msgstr "(Engine prototype √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2210
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_IMPACT_ION_BEAM_12_ACC\"]/text"
-msgstr "(Prototype Ingo £) Ask to fix this gun."
+msgstr "(Engi Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2227
 msgid ""
@@ -1915,7 +1917,7 @@ msgstr "(Prototype avatars √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2295
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_AUTOCANNON_12_ACC\"]/text"
-msgstr "(Prototype avatars £) ask to fix this gun."
+msgstr "(Avatar Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2312
 msgid ""
@@ -1950,7 +1952,7 @@ msgstr "(Prototype of the Zoltans √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2414
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_PLASMA_RAILCANNON_12_ACC\"]/text"
-msgstr "(Prototype of the Zoltans £) ask to fix this gun."
+msgstr "(Zoltan Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2431
 msgid ""
@@ -1980,7 +1982,7 @@ msgstr "(Prototype of slices √) Ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2516
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_PERFORATOR_12_ACC\"]/text"
-msgstr "(Prototype of slica £) Ask to fix this gun."
+msgstr "(Slug Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2533
 msgid ""
@@ -2020,7 +2022,7 @@ msgstr "(Prototype mantis √) Ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2652
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"OMICRON_OMNI_CANNON2_12_ACC\"]/text"
-msgstr "(Mantisov prototype £) Ask to fix this gun."
+msgstr "(Mantis Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2669
 msgid ""
@@ -2055,7 +2057,7 @@ msgstr "(Prototype of the order √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2771
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"ORDEN_PROTOTYPE_2_ACC\"]/text"
-msgstr "(Prototype of the order £) ask to fix this gun."
+msgstr "(Order Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2788
 msgid ""
@@ -2080,7 +2082,7 @@ msgstr "(Prototype HAL √) Ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2856
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"HAL_PROTOTYPE_2_ACC\"]/text"
-msgstr "(Prototype HAL £) Ask to fix this gun."
+msgstr "(HAL Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2874
 msgid ""
@@ -2115,7 +2117,7 @@ msgstr "(Prototype morphs √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:2976
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"PROTOTYPE_MORPHGUN2_ACC\"]/text"
-msgstr "(Prototype of morphs £) Ask to fix this gun."
+msgstr "(Morph Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:2994
 msgid ""
@@ -2150,7 +2152,7 @@ msgstr "(Prototype of orchids √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:3096
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"ORCHID_PROTOTYPE_2_ACC\"]/text"
-msgstr "(Prototype of orchids £) ask to fix this gun."
+msgstr "(Orchid Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:3113
 msgid ""
@@ -2175,7 +2177,7 @@ msgstr "(Prototype Magmenens √) ask to fix this gun."
 #: src-ru/data/events_engi.xml.rawclobber:3198
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"REPAIR_ENGI_PROTOTYPES\"]/choice[@req=\"MAGMAN_PROTOTYPE_2_ACC\"]/text"
-msgstr "(Prototype of the Magmens £) Ask to fix this gun."
+msgstr "(Magmen Prototype £) Ask to repair this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:3215
 msgid ""
@@ -2222,9 +2224,9 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_MORPH\"]/text[5]"
 msgstr ""
-"Sectors of morphs are often replete with ion storms, which caused their "
-"appearance as a separate fragment of engineering.It is curious that ordinary"
-" engineering somehow find a common language with their relatives."
+"Morph sectors are often rife with ion storms, which were the cause of their "
+"emergence as a separate Engi sub-race. Curiously, regular Engi somehow find "
+"a common language with their relatives."
 
 #: src-ru/data/events_engi.xml.rawclobber:3342
 msgid ""
@@ -2726,16 +2728,15 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_SURRENDER_TEXT\"]/text[9]"
 msgstr ""
-"“Critical damage ... Error ... Purpose: A truce.Condition: Resource transfer"
-" ... Consent = Y/N? \""
+"'CRITICAL DAMAGE... ERROR... Objective: truce. Condition: transfer of "
+"resources... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3730
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MENGI_SYSREPTRANS_EVENT\"]/text"
 msgstr ""
-"The friendly ship of morphs is in touch: “Greetings.Address: transport "
-"vessel.Purpose: Delivery ... 0000010 ... Error ... Restart ... Consent = "
-"Y/N? \""
+"A friendly Morph vessel hails: 'Greeting. Addressee: Transport vessel. "
+"Objective: Delivery... 0000010... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3734
 msgid ""
@@ -3033,7 +3034,7 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:3895
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_CODER_EVENT\"]/event[1]/text"
-msgstr "... \"10010010010010010010010010010010010010010010010010_?\""
+msgstr "...'10010010010010010010010010010010010010010010010_?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3897
 msgid ""
@@ -3063,7 +3064,7 @@ msgstr "... Your silent communicator seems to have angry morphs!They attack!"
 #: src-ru/data/events_engi.xml.rawclobber:3918
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_CODER_EVENT\"]/event[2]/text"
-msgstr "... \"10100100010010101001001001010100100100101010100_?\""
+msgstr "...'10100100010010101001000100101010010001001010100_?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3920
 msgid ""
@@ -3093,7 +3094,7 @@ msgstr "... Your silent communicator seems to have angry morphs!They attack!"
 #: src-ru/data/events_engi.xml.rawclobber:3941
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_CODER_EVENT\"]/event[3]/text"
-msgstr "... \"101100111111111000011111110000011111100000011111_?\""
+msgstr "...'10110011100011110000111110000011111100000011111_?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3943
 msgid ""
@@ -3123,7 +3124,7 @@ msgstr "... Your silent communicator seems to have angry morphs!They attack!"
 #: src-ru/data/events_engi.xml.rawclobber:3964
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_CODER_EVENT\"]/event[4]/text"
-msgstr "... \"11011011011100010010011111110111111000100100100_?\""
+msgstr "...'11011011011000100100100111011011011000100100100_?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3966
 msgid ""
@@ -3153,7 +3154,7 @@ msgstr "... Your silent communicator seems to have angry morphs!They attack!"
 #: src-ru/data/events_engi.xml.rawclobber:3987
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_CODER_EVENT\"]/event[5]/text"
-msgstr "... \"000000010010011101010111111111100111010101_?\""
+msgstr "...'00000001001000110100010101100111100010011010101_?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:3989
 msgid ""
@@ -3183,7 +3184,7 @@ msgstr "... Your silent communicator seems to have angry morphs!They attack!"
 #: src-ru/data/events_engi.xml.rawclobber:4010
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_CODER_EVENT\"]/event[6]/text"
-msgstr "... \"10000001000000010000010000000100000001000000_?\""
+msgstr "...'10000000100000001000000010000000100000001000000_?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4012
 msgid ""
@@ -3773,268 +3774,267 @@ msgstr "Morphs notice that you kill their animals, and attack your ship!"
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[1]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Anjanas.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Anjanaths. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4442
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[2]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of azur.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Azures. Condition: presence of medical"
+" equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4443
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[3]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of barrose.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Barroth. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4444
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[4]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of basilgeizes.Condition: The availability"
-" of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Bazelgeuse. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4445
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[5]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of brackets.Condition: The availability of"
-" medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Behemoths. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4446
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[6]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Davis.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Deviljho. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4447
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[7]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Dadaga.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Dadagam. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4448
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[8]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of girres.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Girros. Condition: presence of medical"
+" equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4449
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[9]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of jugars.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Jagras. Condition: presence of medical"
+" equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4450
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[10]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of craftoduses.Condition: The availability"
-" of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Jyuratodus. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4451
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[11]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Kirinov.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Kirin. Condition: presence of medical "
+"equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4452
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[12]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of kulia jackets.Condition: The "
-"availability of medical equipment ... error ... Restart ... Consent = Y/N? "
-"\""
+"...'Greeting. Objective: treatment of Kulu-Ya-Ku. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4453
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[13]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Kulov.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Kulve. Condition: presence of medical "
+"equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4454
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[14]"
 msgstr ""
-"...\"Greetings.Purpose: Cuscall treatment.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Kushala. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4455
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[15]"
 msgstr ""
-"...\"Greetings.Purpose: Lavasind treatment.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Lavasioth. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4456
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[16]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Legian.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Legiana. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4457
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[17]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of nerds.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Nergigante. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4458
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[18]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Odogar.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Odogaron. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4459
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[19]"
 msgstr ""
-"...\"Greetings.Purpose: Paolum treatment.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Paolumu. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4460
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[20]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of pink ranges.Condition: The availability"
-" of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Pink Rathian. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4461
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[21]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Radoban.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Radobaan. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4462
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[22]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Theoster.Condition: The availability of"
-" medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Teostra. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4463
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[23]"
 msgstr ""
-"...\"Greetings.Purpose: Toby-kadash treatment.Condition: The availability of"
-" medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Tobi-Kadachi. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4464
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[24]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Urragan.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Uragaan. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4465
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_BAD_TEXT\"]/text[25]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Xeno-Jiva.Condition: The availability "
-"of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Xeno'jiiva. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4468
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[1]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Upeseros.Condition: The availability of"
-" medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Apceros. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4469
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[2]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of barnos.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Barnos. Condition: presence of medical"
+" equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4470
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[3]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of hazhalak.Condition: The availability of"
-" medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Gajalaka. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4471
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[4]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Gajus.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Gajau. Condition: presence of medical "
+"equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4472
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[5]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of gastodonts.Condition: The availability "
-"of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Gastodon. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4473
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[6]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Hornotaurs.Condition: The availability "
-"of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Hornetaur. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4474
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[7]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Kelby.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Kelbi. Condition: presence of medical "
+"equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4475
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[8]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Kestonds.Condition: The availability of"
-" medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Kestodon. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4476
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[9]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of measuring.Condition: The availability "
-"of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Mernos. Condition: presence of medical"
+" equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4477
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[10]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Mosvins.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Mosswine. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4478
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[11]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of chamos.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Shamos. Condition: presence of medical"
+" equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4479
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[12]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of rapinos.Condition: The availability of "
-"medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Raphinos. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4480
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MENGI_ANIM_GOOD_TEXT\"]/text[13]"
 msgstr ""
-"...\"Greetings.Purpose: Treatment of Vestopodes.Condition: The availability "
-"of medical equipment ... error ... Restart ... Consent = Y/N? \""
+"...'Greeting. Objective: treatment of Vespoid. Condition: presence of "
+"medical equipment... ERROR... RESTARTING... Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4486
 msgid ""
@@ -4270,9 +4270,8 @@ msgstr "Morphs seem to decide to take their strength and charge the guns!"
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MENGI_SCANNING_EVENT\"]/text"
 msgstr ""
-"The ship of morphs on the local lighthouse sends you a message: "
-"“Greetings.Purpose: Sector scanning.Condition: Transportation of an analyzer"
-" of morphs.Consent = y/n? \""
+"A Morph ship at the local beacon sends you a message: 'Greeting. Objective: "
+"sector scan. Condition: transport Morph analyzer. Consent = Y/N?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:4803
 msgid ""
@@ -4452,62 +4451,62 @@ msgstr "You load the gun and prepare for a jump."
 #: src-ru/data/events_engi.xml.rawclobber:4978
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[7]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:4985
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[7]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:4995
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[8]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5002
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[8]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5012
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[9]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5019
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[9]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5029
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[10]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5036
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[10]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5046
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[11]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5053
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[11]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5063
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[12]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5070
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT2R_EVENT\"]/event[12]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5081
 msgid ""
@@ -4558,69 +4557,69 @@ msgstr "The goal is captured, and you take everything valuable ..."
 #: src-ru/data/events_engi.xml.rawclobber:5140
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[1]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5147
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[1]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5157
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[2]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5164
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[2]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5174
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[3]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5181
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[3]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5191
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[4]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5198
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[4]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5208
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[5]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5215
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[5]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5225
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[6]/choice[1]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5232
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_HUNT3R_EVENT\"]/event[6]/choice[2]/text"
-msgstr "Take this gun."
+msgstr "Take this weapon."
 
 #: src-ru/data/events_engi.xml.rawclobber:5243
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"NO_MENGI_EVENT\"]/text"
 msgstr ""
-"The ship, looking like an ordinary engine, is in touch.\"Greetings.Purpose: "
-"Pieces of the hull of ships of other races.Condition: scrap and drone "
-"scheme.Consent = Y/N? \"."
+"A ship that looks like a regular Engi vessel hails. 'Greeting. Objective: "
+"hull fragments from other races' ships. Condition: scrap and a drone "
+"schematic. Consent = Y/N?'."
 
 #: src-ru/data/events_engi.xml.rawclobber:5247
 msgid ""
@@ -5202,14 +5201,14 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:5803
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MENGI_LIFEFORM_EXPERIMENT_EVENT\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"keeper\"]/text"
-msgstr "(Keeper) to sacrifice the crew member."
+msgstr "(Keeper) Sacrifice a crew member."
 
 #: src-ru/data/events_engi.xml.rawclobber:5805
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MENGI_LIFEFORM_EXPERIMENT_EVENT\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"keeper\"]/event/text"
 msgstr ""
-"Morphs are very interested in unraveling the unusual abilities of the "
-"keepers.They pay with pleasure for this opportunity."
+"The Morphs are very interested in unraveling the unusual abilities of the "
+"Keepers. They are happy to pay for this opportunity."
 
 #: src-ru/data/events_engi.xml.rawclobber:5820
 msgid ""
@@ -5501,9 +5500,9 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_SELL_UNKNOWN_EVENT\"]/event[1]/text"
 msgstr ""
-"Morphs send the message: “Greetings.Purpose: Exchange ... 1010011000110010 "
-"... Dry: 00111100 scrap ... Error ... restart ... consent = y/n? \"It is not"
-" clear what exactly the morphs want to exchange."
+"The Morphs send a message: 'Greeting. Objective: Exchange... "
+"1010011000110010... Offer: 00111100 scrap... ERROR... RESTARTING... Consent "
+"= Y/N?' It's unclear what exactly the Morphs want to trade."
 
 #: src-ru/data/events_engi.xml.rawclobber:6144
 msgid ""
@@ -5531,9 +5530,9 @@ msgstr "Direct them \"N\" and talk to the crew while the FTL engine is charged."
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_SELL_UNKNOWN_EVENT\"]/event[2]/text"
 msgstr ""
-"Morphs send the message: “Greetings.Purpose: Exchange ... 1010011000110010 "
-"... Offer: 00101101 scrap ... Error ... restart ... consent = y/n? \"It is "
-"not clear what exactly the morphs want to exchange."
+"The Morphs send a message: 'Greeting. Objective: Exchange... "
+"1010011000110010... Offer: 00101101 scrap... ERROR... RESTARTING... Consent "
+"= Y/N?' It's unclear what exactly the Morphs want to trade."
 
 #: src-ru/data/events_engi.xml.rawclobber:6165
 msgid ""
@@ -5561,9 +5560,9 @@ msgstr "Direct them \"N\" and talk to the crew while the FTL engine is charged."
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MENGI_SELL_UNKNOWN_EVENT\"]/event[3]/text"
 msgstr ""
-"Morphs send the message: “Greetings.Purpose: Exchange ... 1010011000110010 "
-"... Dry: 00011110 scrap ... Error ... restart ... consent = y/n? \"It is not"
-" clear what exactly the morphs want to exchange."
+"The Morphs send a message: 'Greeting. Objective: Exchange... "
+"1010011000110010... Offer: 00011110 scrap... ERROR... RESTARTING... Consent "
+"= Y/N?' It's unclear what exactly the Morphs want to trade."
 
 #: src-ru/data/events_engi.xml.rawclobber:6186
 msgid ""
@@ -6537,7 +6536,7 @@ msgstr "(Member of the crew of the Magman) Send Magman."
 #: src-ru/data/events_engi.xml.rawclobber:6980
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MORPH_SYSREPATBEACON\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"keeper\"]/text"
-msgstr "(Crew member of the Guardian) Send the Guardian."
+msgstr "(Guardian Crew) Send the Guardian."
 
 #: src-ru/data/events_engi.xml.rawclobber:6984
 msgid ""
@@ -6602,7 +6601,7 @@ msgstr "(Crew member of the Selurni) Send a slaughter."
 #: src-ru/data/events_engi.xml.rawclobber:7032
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MORPH_SYSREPATBEACON\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"pilot\"]/text"
-msgstr ""
+msgstr "It seems there's no volunteer on the ship for this mission."
 
 #: src-ru/data/events_engi.xml.rawclobber:7038
 msgid ""
@@ -6820,15 +6819,14 @@ msgstr "Fortunately, the clone of your crew member is already ready."
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MORPH_SYSREPATBEACON_KPR\"]/event[1]/text"
 msgstr ""
-"The keeper carefully cuts the wires, releases the repairman with warheads "
-"and loads it all in the hold."
+"The Keeper carefully cuts the wires, frees the repairman with the warheads, "
+"and loads it all into the hold."
 
 #: src-ru/data/events_engi.xml.rawclobber:7239
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MORPH_SYSREPATBEACON_KPR\"]/event[2]/text"
 msgstr ""
-"The keeper unsuccessfully cuts off some wire, and a powerful explosion is "
-"heard."
+"The Keeper accidentally cuts the wrong wire, and a massive explosion erupts."
 
 #: src-ru/data/events_engi.xml.rawclobber:7242
 msgid ""
@@ -7451,10 +7449,10 @@ msgstr "In the ion storm, an engineering ship flies in front of you ..."
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"NEBULA_ENGIMENGI_EVENT_R\"]/event[1]/text"
 msgstr ""
-"... Suddenly a super-storm begins!After that, the engine of the Engine falls"
-" into a numb, it seems that they were all hung!You reassure yourself that "
-"these are no longer cute engineering, but crazy morphs, quickly take useful "
-"supplies from their ship until they recover, and get ready to fly away."
+"...a super-storm suddenly begins! After that, the Engi ship goes into a "
+"stupor, it looks like they all froze! You reassure yourself that these are "
+"no longer cute Engi, but insane Morphs, quickly grab useful supplies from "
+"their ship before they recover, and prepare to leave."
 
 #: src-ru/data/events_engi.xml.rawclobber:7901
 msgid ""
@@ -7578,7 +7576,7 @@ msgstr "Some time later, replenishment appears in the team."
 #: src-ru/data/events_engi.xml.rawclobber:8010
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"NEBULA_MENGI_DAMAGED_EVENT_CLONE\"]/event[3]/crewMember"
-msgstr "Engineering"
+msgstr "Engi"
 
 #: src-ru/data/events_engi.xml.rawclobber:8013
 msgid ""
@@ -7588,7 +7586,7 @@ msgstr "Some time later, replenishment appears in the team."
 #: src-ru/data/events_engi.xml.rawclobber:8014
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"NEBULA_MENGI_DAMAGED_EVENT_CLONE\"]/event[4]/crewMember"
-msgstr "Engineering"
+msgstr "Engi"
 
 #: src-ru/data/events_engi.xml.rawclobber:8017
 msgid ""
@@ -7657,195 +7655,198 @@ msgstr "The crew of the ship is destroyed.You are cleaning their holds."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"UNKNOWN_SUICIDE_MISSILE\"]/text"
 msgstr ""
-"Your communication system suddenly explodes with warnings and panic messages"
-" from the nearest planet of orchids.Meanwhile, your team discovers some "
-"unusual missile flying directly to the planet.Without PKB, you are their "
-"only hope."
+"Your communication system suddenly explodes with warnings and panicked "
+"messages from a nearby Orchid planet. Meanwhile, your crew detects an "
+"unusual missile flying directly towards the planet. Without Point Defense, "
+"you are their only hope."
 
 #: src-ru/data/events_engi.xml.rawclobber:8170
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"UNKNOWN_MISSILE_SHIP\"]/escape/text"
 msgstr ""
-"You notice the growth of energy in the FTL drive of this rocket!Meanwhile, "
-"your crew member detects dangerous radiation emanating from the ship."
+"You notice an energy surge in the missile's FTL drive! Meanwhile, your crew "
+"member detects dangerous radiation emanating from the ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8173
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"UNKNOWN_MISSILE_SHIP\"]/gotaway/text"
 msgstr ""
-"The rocket made a ftl jump.Soon after, the giant explosion breaks the "
-"surface of the planet, and the connection suddenly stops.You cannot avoid "
-"shock wave ..."
+"The missile has made an FTL jump. Shortly after, a giant explosion tears "
+"apart the planet's surface, and communication suddenly ceases. You can't "
+"escape the shockwave..."
 
 #: src-ru/data/events_engi.xml.rawclobber:8188
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"UNKNOWN_MISSILE_SHIP\"]/destroyed/text"
 msgstr ""
-"A terrifying explosion shakes the space nearby and damages your "
-"ship.However, you feel relief by learning that the planet is now saved.Soon "
-"after, the orchids, in gratitude, send you several boxes of metal."
+"A terrifying explosion shakes the nearby space and damages your ship. "
+"However, you feel relieved to learn that the planet is now saved. Shortly "
+"after, the Orchids send you several crates of metal as a token of their "
+"gratitude."
 
 #: src-ru/data/events_engi.xml.rawclobber:8201
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"UNKNOWN_MISSILE_SHIP\"]/deadCrew/text"
 msgstr ""
-"You manage to kill the pilots of the ship.Despite the presence of advanced "
-"engines, they were still controlled by pilots manually.While you are "
-"wondering where they came from, orchids send you weapons and scrap as a sign"
-" of gratitude."
+"You manage to kill the ship's pilots. Despite having advanced engines, they "
+"were still manually controlled by pilots. While you wonder where they came "
+"from, the Orchids send you a weapon and scrap as a token of gratitude."
 
 #: src-ru/data/events_engi.xml.rawclobber:8210
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/text"
 msgstr ""
-"Upon arrival, you get greetings from the ship of the orchids of a strange "
-"color.You understand that the situation may be abnormal."
+"Upon arrival, you are greeted by a strangely colored Orchid ship. You "
+"realize the situation might not be normal."
 
 #: src-ru/data/events_engi.xml.rawclobber:8213
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/text"
-msgstr "Welcome a strange ship of orchids."
+msgstr "Hail the strange Orchid ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8215
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/text"
 msgstr ""
+"You open the communicator and are greeted by a fat Slerm: 'Welcome, dear "
+"merchant! We have invaded thisss beautiful sssector to obtain one of the "
+"bessst ingredientsss for our Ssslerm-brewing! We require Orchidsss to get "
+"it, and we asssk you to provide your crew.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:8217
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"orchid_crew\"]/text"
-msgstr "You are thinking about giving your orchid."
+msgstr "You consider giving up your Orchid."
 
 #: src-ru/data/events_engi.xml.rawclobber:8221
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[2]/text"
-msgstr "To tell them that we have no orchids, and leave the lighthouse."
+msgstr "Tell them you don't have any Orchids and leave the beacon."
 
 #: src-ru/data/events_engi.xml.rawclobber:8225
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"slig_crew\"]/text"
-msgstr "Your slaughter has something to say."
+msgstr "Your Slerm has something to say."
 
 #: src-ru/data/events_engi.xml.rawclobber:8227
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"slig_crew\"]/event/text"
 msgstr ""
-"A long discussion begins between your slamm and the captain of their "
-"ship.After a long period of negotiations, a capsule with a slide inside you "
-"leaves for you.The captain transfers a message to the communicator: \"For "
-"the SSSLEM!\""
+"A long discussion begins between your Slerm and their ship's captain. After "
+"a lengthy negotiation period, a capsule with a Slerm inside is sent to you. "
+"The captain transmits a message on the communicator: 'For the Ssslerm!'"
 
 #: src-ru/data/events_engi.xml.rawclobber:8232
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"slug_crew\"]/text"
-msgstr "Your glory feels unusual life forms on their ship."
+msgstr "Your Slug senses unusual life forms on their ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8234
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"slug_crew\"]/event/text"
 msgstr ""
-"In the hold of the ship there are Kubes of orchids!A strange ship suddenly "
-"drives its guns.The slot on the screen says: “Yes, you're right!We make a "
-"broth from orchids to prepare SSSLM, and, since you recognized this, we will"
-" prepare you too. ”"
+"There are bundles of Orchids in the ship's hold! The strange ship suddenly "
+"activates its weapons. The Slerm on the screen says: 'Yes, you're right! "
+"We're making a broth from Orchidsss to brew Ssslerm, and since you've found "
+"out, we'll brew you too.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:8239
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"LIFE_SCANNER\"]/text"
-msgstr ""
+msgstr "The infrared scanner detects an anomaly on their ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8241
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[@req=\"LIFE_SCANNER\"]/event/text"
 msgstr ""
-"In the hold of the ship there are Kubes of orchids!A strange ship suddenly "
-"drives its guns.The slot on the screen says: “Yes, you're right!We make a "
-"broth from orchids to prepare SSSLM, and, since you recognized this, we will"
-" prepare you too. ”"
+"There are bundles of Orchids in the ship's hold! The strange ship suddenly "
+"activates its weapons. The Slerm on the screen says: 'Yes, you're right! "
+"We're making a broth from Orchidsss to brew Ssslerm, and since you've found "
+"out, we'll brew you too.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:8246
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[6]/text"
-msgstr "This ship looks suspicious.Open fire!"
+msgstr "This ship looks suspicious. Open fire!"
 
 #: src-ru/data/events_engi.xml.rawclobber:8248
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[1]/event/choice[6]/event/text"
 msgstr ""
-"You shoot at the ship, and they immediately react with the inclusion of "
+"You fire on the ship, and they immediately react by powering up their "
 "weapons."
 
 #: src-ru/data/events_engi.xml.rawclobber:8255
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"VEGGIE_SLIG\"]/choice[2]/text"
-msgstr "Do not answer and talk to the crew during charging the FTL drive."
+msgstr "Don't respond and talk to the crew while the FTL drive charges."
 
 #: src-ru/data/events_engi.xml.rawclobber:8262
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"NOT_POLITE_DEPARTURE\"]/event[1]/text"
 msgstr ""
-"You abruptly stop the conversation.Although it was not very respectful, you "
-"feel that it is better not to continue this path ..."
+"You abruptly end the conversation. Although it wasn't very respectful, you "
+"feel it's better not to continue down this path..."
 
 #: src-ru/data/events_engi.xml.rawclobber:8265
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"NOT_POLITE_DEPARTURE\"]/event[2]/text"
 msgstr ""
-"As soon as you break off the connection, their ship includes its "
-"weapons.Obviously, this was not what should be done ..."
+"As soon as you cut the connection, their ship powers up its weapons. "
+"Obviously, that wasn't the right thing to do..."
 
 #: src-ru/data/events_engi.xml.rawclobber:8272
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_GIVEAWAY\"]/event[1]/text"
 msgstr ""
-"You convey your orchid to the tears.After a while, they tell you that the "
-"cooked slamm is unusually tasty, and in gratitude they offer you a barrel "
-"and a little scrap."
+"You hand over your Orchid to the Slerms. After a while, they tell you that "
+"the brewed Slerm is unusually tasty, and as a token of gratitude, they offer"
+" you a barrel and some scrap."
 
 #: src-ru/data/events_engi.xml.rawclobber:8279
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_GIVEAWAY\"]/event[2]/text"
 msgstr ""
-"You convey your orchid to the tears.After a while, they tell you that the "
-"cooked slamm is unusually tasty, and in gratitude they offer you a barrel "
-"and a little scrap."
+"You hand over your Orchid to the Slerms. After a while, they tell you that "
+"the brewed Slerm is unusually tasty, and as a token of gratitude, they offer"
+" you a barrel and some scrap."
 
 #: src-ru/data/events_engi.xml.rawclobber:8286
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_GIVEAWAY\"]/event[3]/text"
 msgstr ""
-"You convey your orchid to the tears.After some time, they tell you that the "
-"cooked tears are unusually tasty, and in gratitude they offer you excess "
-"weapons and a little scrap."
+"You hand over your Orchid to the Slerms. After a while, they tell you that "
+"the brewed Slerm is unusually tasty, and as a token of gratitude, they offer"
+" you a spare weapon and some scrap."
 
 #: src-ru/data/events_engi.xml.rawclobber:8296
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_JELLY\"]/destroyed/text"
 msgstr ""
-"A strange -colored ship falls apart.Inside its debris, you find many dead "
-"orchids, and nothing useful except scrap metal."
+"The strangely colored ship falls apart. Inside its wreckage, you find many "
+"dead Orchids and nothing useful but scrap metal."
 
 #: src-ru/data/events_engi.xml.rawclobber:8300
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_JELLY\"]/deadCrew/text"
 msgstr ""
-"You manage to kill all tears and prevent their regeneration process.Inside "
-"the ship you find a secret repository in which the Kombilers of orchids were"
-" stored.After their release, one orchid joins your team."
+"You manage to kill all the Slerms and prevent their regeneration process. "
+"Inside the ship, you find a hidden storage where bundles of Orchids were "
+"kept. After freeing them, one Orchid joins your crew."
 
 #: src-ru/data/events_engi.xml.rawclobber:8318
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MOTILEK_RED_EVENT_TEXT\"]/text[1]"
 msgstr ""
-"Immediately after leaving the FTL jump, a ship appears near the lighthouse, "
-"resembling an insect, with the exception of an unusually red shade.Noticing "
-"you, he activates his weapon."
+"Immediately after exiting FTL jump near the beacon, a ship resembling an "
+"insect appears, except for its unusually red hue. Upon noticing you, it "
+"activates its weapons."
 
 #: src-ru/data/events_engi.xml.rawclobber:8319
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MOTILEK_RED_EVENT_TEXT\"]/text[2]"
 msgstr ""
-"Appearing at the lighthouse, you fall under the attack of an insect -shaped "
-"ship of an unknown view.You have no choice but to fight."
+"Arriving at the beacon, you come under attack from an insectoid ship of an "
+"unknown type. You have no choice but to fight."
 
 #: src-ru/data/events_engi.xml.rawclobber:8320
 msgid ""
@@ -7858,9 +7859,9 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"MOTILEK_RED_EVENT_TEXT\"]/text[4]"
 msgstr ""
-"You have already heard about the insectors and their aggressive nature, but "
-"have never heard of the form that you encountered this time.However, he "
-"wants to destroy you ..."
+"You've heard about Insectors and their aggressive nature, but you've never "
+"heard of the kind you've encountered this time. Nevertheless, it wants to "
+"destroy you..."
 
 #: src-ru/data/events_engi.xml.rawclobber:8325
 msgid ""
@@ -7883,308 +7884,299 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MOTILEK_EVENT_R_2\"]/event[1]/text"
 msgstr ""
-"... Among the wreckage of an unusual insector, you find a drone model not "
-"included in the register, the origin of which remains a complete mystery.You"
-" can install it on your ship."
+"...among the wreckage of the unusual Insector, you find an unlisted model of"
+" a drone, whose origin remains a complete mystery. You can install it on "
+"your ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8348
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MOTILEK_EVENT_R_2\"]/event[2]/text"
 msgstr ""
-"... Among the wreckage of an unusual insector, you find a drone model not "
-"included in the register, the origin of which remains a complete mystery.You"
-" can install it on your ship."
+"...among the wreckage of the unusual Insector, you find an unlisted model of"
+" a drone, whose origin remains a complete mystery. You can install it on "
+"your ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8354
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MOTILEK_EVENT_R_2\"]/event[3]/text"
 msgstr ""
-"... Among the wreckage of an unusual insector, you find a drone model not "
-"included in the register, the origin of which remains a complete mystery.You"
-" can install it on your ship."
+"...among the wreckage of the unusual Insector, you find an unlisted model of"
+" a drone, whose origin remains a complete mystery. You can install it on "
+"your ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:8360
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MOTILEK_EVENT_R_2\"]/event[4]/text"
-msgstr "... The rebels will have to look for a bypass to catch up with you."
+msgstr "...the Rebels will have to find a detour to catch up with you."
 
 #: src-ru/data/events_engi.xml.rawclobber:8367
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/text"
 msgstr ""
-"The lighthouse is located next to the newborn star surrounded by dust "
-"clouds.In her orbit is the orchid station.Your team is sure that it is from "
-"here that the previously discovered distress signal comes from.It seems that"
-" AI of the station took control and killed the team."
+"The beacon is near a newborn star surrounded by dust clouds. An Orchid "
+"station is in its orbit. Your crew is certain that the previously detected "
+"distress signal is coming from here. It seems the station's AI has taken "
+"control and killed the crew."
 
 #: src-ru/data/events_engi.xml.rawclobber:8370
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"BOARDER_ION\"]/text"
 msgstr ""
-"(Ion board) violate the work of AI using electromagnetic drone pulses."
+"(Ion Boarder) Disrupt the AI's operation using the drone's electromagnetic "
+"pulses."
 
 #: src-ru/data/events_engi.xml.rawclobber:8372
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"BOARDER_ION\"]/event/text"
 msgstr ""
-"You run the drone towards the station.The protection system almost struck "
-"it, but your drone manages to slip away and randomly ionize the nuclei and "
-"systems of AI."
+"You launch a drone towards the station. The defense system almost hit it, "
+"but your drone manages to slip away and randomly ionize the AI's cores and "
+"systems."
 
 #: src-ru/data/events_engi.xml.rawclobber:8383
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Your engineer knows how to interrupt the AI "
-"​​program."
+msgstr "(Engi Crew) Your Engi knows how to interrupt the AI's program."
 
 #: src-ru/data/events_engi.xml.rawclobber:8385
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
-"You are sending engineers in a small capsule to the station.The defense "
-"system almost struck him, but he safely reached the destination."
+"You send an Engi in a small capsule to the station. The defense system "
+"almost hit him, but he safely reached his destination."
 
 #: src-ru/data/events_engi.xml.rawclobber:8394
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"morph\"]/text"
-msgstr ""
-"(Member of the Morph crew) Your morph knows how to interrupt the AI "
-"​​program."
+msgstr "(Morph Crew) Your Morph knows how to interrupt the AI's program."
 
 #: src-ru/data/events_engi.xml.rawclobber:8396
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"morph\"]/event/text"
 msgstr ""
-"You are sending a morph in a small capsule to the station.The defense system"
-" almost struck him, but he safely reached the destination."
+"You send a Morph in a small capsule to the station. The defense system "
+"almost hit it, but it safely reached its destination."
 
 #: src-ru/data/events_engi.xml.rawclobber:8400
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"morph\"]/event/choice/event/text"
 msgstr ""
-"Having hit on board, he easily finds the nuclei of AI, but cannot turn them "
-"off.The morph decides to quickly connect to the nuclei, destroying his mind "
-"... but also AI!"
+"Once on board, it easily finds the AI cores but can't disable them. The "
+"Morph decides to quickly connect to the cores, destroying its own mind... "
+"but also the AI!"
 
 #: src-ru/data/events_engi.xml.rawclobber:8405
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"morph\"]/event/choice/event/choice/event/text"
 msgstr ""
-"Now that the station is safe, you can inspect it in detail.You find that its"
-" inhabitants have long been dead, but you manage to find one survivor who "
-"wants to join your team.You leave, taking from the station what you think is"
-" useful."
+"Now that the station is safe, you can inspect it in detail. You find that "
+"its inhabitants have been dead for a long time, but you manage to find one "
+"survivor who wants to join your crew. You leave, taking what you deem useful"
+" from the station."
 
 #: src-ru/data/events_engi.xml.rawclobber:8415
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"anaerobic_crew\"]/text"
 msgstr ""
-"(Crew member of Lanius) Your Lanius has a proposal on how to resolve the "
-"situation."
+"(Lanius Crew) Your Lanius has a suggestion on how to resolve the situation."
 
 #: src-ru/data/events_engi.xml.rawclobber:8417
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"anaerobic_crew\"]/event/text"
 msgstr ""
-"Lanius moves forward, opening the air gateway towards the station.His "
-"metabolism does not radiate the thermal signature, which makes it invisible "
-"to the station protective systems."
+"The Lanius moves forward, opening an airlock towards the station. Its "
+"metabolism doesn't emit a heat signature, making it invisible to the "
+"station's defense systems."
 
 #: src-ru/data/events_engi.xml.rawclobber:8421
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"anaerobic_crew\"]/event/choice/event/text"
 msgstr ""
-"Having hit on board, he easily finds the nuclei of AI and begins to absorb "
-"them.During your careful search among terrible scenes, he manages to find a "
-"lonely survivor."
+"Once on board, it easily finds the AI cores and begins to consume them. "
+"During your thorough search amidst the gruesome scenes, it manages to find a"
+" lone survivor."
 
 #: src-ru/data/events_engi.xml.rawclobber:8429
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"magman\""
 " and @lvl=\"1\"]/text"
-msgstr ""
-"(Member of the crew of Magman) try to light fire at the station to distract "
-"AI."
+msgstr "(Magmen Crew) Try to start a fire on the station to distract the AI."
 
 #: src-ru/data/events_engi.xml.rawclobber:8431
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"magman\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
-"You are sending a magic in a small capsule to the station.The protection "
-"system almost struck him, but he safely gets to the destination."
+"You send a Magmen in a small capsule to the station. The defense system "
+"almost hit him, but he safely reaches his destination."
 
 #: src-ru/data/events_engi.xml.rawclobber:8439
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"magman\""
 " and @lvl=\"2\"]/text"
-msgstr ""
-"(Members of the crew of the magic) set fire to the station to distract AI."
+msgstr "(Magmen Crew) Set the station on fire to distract the AI."
 
 #: src-ru/data/events_engi.xml.rawclobber:8441
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[@req=\"magman\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
-"You are sending Magmens in a small capsule to the station.The protection "
-"system almost struck them, but they safely get to the destination."
+"You send the Magmen in a small capsule to the station. The defense system "
+"almost hit them, but they safely reach their destination."
 
 #: src-ru/data/events_engi.xml.rawclobber:8449
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[7]/text"
-msgstr "We can not do anything with it."
+msgstr "There's nothing we can do about it."
 
 #: src-ru/data/events_engi.xml.rawclobber:8451
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"MAD_ORCHID_STATION\"]/choice[7]/event/text"
 msgstr ""
-"Having considered your options, you understand that not one of them is "
-"suitable for safe intervention.You switch to the plan of the next jump and "
-"discuss it with the team."
+"After considering your options, you realize that none of them are suitable "
+"for a safe intervention. You switch to planning the next jump and discuss it"
+" with the crew."
 
 #: src-ru/data/events_engi.xml.rawclobber:8459
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ION_BOARDER_MAD_STATION\"]/event[1]/text"
 msgstr ""
-"You join with the station and discover that its inhabitants have long been "
-"dead.You leave with a small amount of useful equipment and with terrible "
-"scenes in memory."
+"You dock with the station and find that its inhabitants have been dead for a"
+" long time. You leave with a small amount of useful equipment and horrifying"
+" scenes in your memory."
 
 #: src-ru/data/events_engi.xml.rawclobber:8463
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ION_BOARDER_MAD_STATION\"]/event[2]/text"
 msgstr ""
-"You join with the station and discover that its inhabitants have long been "
-"dead.You leave with a small amount of useful equipment and with terrible "
-"scenes in memory."
+"You dock with the station and find that its inhabitants have been dead for a"
+" long time. You leave with a small amount of useful equipment and horrifying"
+" scenes in your memory."
 
 #: src-ru/data/events_engi.xml.rawclobber:8467
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ION_BOARDER_MAD_STATION\"]/event[3]/text"
 msgstr ""
-"You join with the station and discover that its inhabitants have long been "
-"dead.You leave with some useful equipment and with terrible scenes in "
-"memory."
+"You dock with the station and find that its inhabitants have been dead for a"
+" long time. You leave with some useful equipment and horrifying scenes in "
+"your memory."
 
 #: src-ru/data/events_engi.xml.rawclobber:8471
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ION_BOARDER_MAD_STATION\"]/event[4]/text"
 msgstr ""
-"You join with the station and discover that its inhabitants have long been "
-"dead.Having collected everything useful, you find a small rescue capsule in "
-"which you find the survivor."
+"You dock with the station and find that its inhabitants have been dead for a"
+" long time. After collecting everything useful, you discover a small escape "
+"pod with a survivor inside."
 
 #: src-ru/data/events_engi.xml.rawclobber:8476
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ION_BOARDER_MAD_STATION\"]/event[5]/text"
 msgstr ""
-"AI of the station sends automatic units to withstand your drone.However, "
-"this distraction allows your team to conduct a quick search, as a result of "
-"which you find the survivor."
+"The station's AI sends automated units to counter your drone. However, this "
+"distraction allows your crew to conduct a quick search, resulting in finding"
+" a survivor."
 
 #: src-ru/data/events_engi.xml.rawclobber:8483
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ENGI_ORCH_STATION\"]/event[1]/text"
 msgstr ""
-"The AI ​​protection system turned out to be more advanced than your engineer"
-" could imagine.You take him back until the situation gets out of control."
+"The AI's defense system turned out to be more advanced than your Engi could "
+"have imagined. You retrieve him before the situation gets out of control."
 
 #: src-ru/data/events_engi.xml.rawclobber:8486
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ENGI_ORCH_STATION\"]/event[2]/text"
 msgstr ""
-"Having hit on board, engineering easily finds the nuclei and quickly erases "
-"all the programs and turns off the systems.During your thorough search among"
-" terrible scenes, you manage to find a lonely survivor."
+"Once on board, the Engi easily finds the AI cores and quickly erases all "
+"programs and disables the systems. During your thorough search amidst the "
+"gruesome scenes, you manage to find a lone survivor."
 
 #: src-ru/data/events_engi.xml.rawclobber:8494
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MAGMAN_1_ORCH_STATION\"]/event[1]/text"
 msgstr ""
-"Having hit on board, Magman is trying to light a fire several times, but to "
-"no avail.He quickly leaves before being in a difficult position."
+"Once on board, the Magmen tries to start a fire several times, but fails. He"
+" quickly leaves before getting into trouble."
 
 #: src-ru/data/events_engi.xml.rawclobber:8497
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MAGMAN_1_ORCH_STATION\"]/event[2]/text"
 msgstr ""
-"Having hit on board, Magman is trying to light a fire, and after several "
-"attempts he manages to create a flame.You find that the inhabitants of the "
-"station have long been dead, but one of them survived."
+"Once on board, the Magmen tries to start a fire, and after several attempts,"
+" he succeeds in creating a flame. You find that the station's inhabitants "
+"have been dead for a long time, but one of them survived."
 
 #: src-ru/data/events_engi.xml.rawclobber:8505
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MAGMEN_2_ORCH_STATION\"]/event[1]/text"
 msgstr ""
-"Having hit on board, the magicians make a huge fire inside, the fire quickly"
-" melts all the sensors.After making sure that there is no one alive, they "
-"leave the station before it explodes."
+"Once on board, the Magmen start a huge fire inside, the flames quickly "
+"melting all the sensors. After confirming there are no survivors, they leave"
+" the station before it explodes."
 
 #: src-ru/data/events_engi.xml.rawclobber:8509
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"MAGMEN_2_ORCH_STATION\"]/event[2]/text"
 msgstr ""
-"Having hit on board, the magicians make a huge fire inside, the fire quickly"
-" melts all the sensors.They find a lonely survivor, and all together leave "
-"the station before it explodes."
+"Once on board, the Magmen start a huge fire inside, the flames quickly "
+"melting all the sensors. They find a lone survivor, and they all leave the "
+"station together before it explodes."
 
 #: src-ru/data/events_engi.xml.rawclobber:8533
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[1]"
 msgstr ""
-"Trying to break away from the rebel fleet, you jump into the orchid "
-"sector.Despite the name given by people, the orchids have little in common "
-"with earthly plants."
+"Trying to escape the Rebel fleet, you jump into an Orchid sector. Despite "
+"the name given by humans, Orchids have little in common with Earth plants."
 
 #: src-ru/data/events_engi.xml.rawclobber:8534
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[2]"
 msgstr ""
-"The first contact of earthlings with orchids occurred on their native "
-"planet, where our researcher was eaten by a giant predatory flower."
+"The first contact between humans and Orchids occurred on their home planet, "
+"where our explorer was eaten by a giant carnivorous flower."
 
 #: src-ru/data/events_engi.xml.rawclobber:8535
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[3]"
 msgstr ""
-"Orchids produce pure oxygen with a slight aroma, very similar to the aroma "
-"of earthly orchids."
+"Orchids produce pure oxygen with a light aroma, very similar to that of "
+"Earth orchids."
 
 #: src-ru/data/events_engi.xml.rawclobber:8536
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[4]"
 msgstr ""
-"Despite the general xenophobia of the rebels in relation to other races, "
-"they sometimes use orchids as domestic plants."
+"Despite the Rebels' general xenophobia towards other races, they sometimes "
+"use Orchids as houseplants."
 
 #: src-ru/data/events_engi.xml.rawclobber:8537
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[5]"
 msgstr ""
-"Orchids fly on semi -organic ships.The biologists who studied them argue "
-"that each hit in the ship of the orchids is transmitted by light pain to the"
-" crew."
+"Orchids fly semi-organic ships. Biologists who have studied them claim that "
+"every hit on an Orchid ship transmits a slight pain to the crew."
 
 #: src-ru/data/events_engi.xml.rawclobber:8538
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[6]"
 msgstr ""
-"Surprisingly, the weapons production of orchids outwardly is very similar to"
-" growing vegetables in earth's greenhouses."
+"Surprisingly, Orchid weapon production looks very similar to growing "
+"vegetables in Earth greenhouses."
 
 #: src-ru/data/events_engi.xml.rawclobber:8539
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[7]"
 msgstr ""
-"Orchids really do not like when other forms of life change their ideal "
-"temperature in rooms (28-30s)."
+"Orchids strongly dislike it when other life forms alter their ideal room "
+"temperature (28-30°C)."
 
 #: src-ru/data/events_engi.xml.rawclobber:8540
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"START_BEACON_ORCHID\"]/text[8]"
 msgstr ""
-"The main activity of orchids in the galaxy is associated with the trade and "
-"transportation of food, fertilizers and medications."
+"The main activity of Orchids in the Galaxy is related to the trade and "
+"transport of food products, fertilizers, and medical supplies."
 
 #: src-ru/data/events_engi.xml.rawclobber:8549
 msgid "data/events_engi.xml.rawclobber$//textList[@name=\"STORE_ORCHID\"]/text[1]"
@@ -8467,7 +8459,7 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:8680
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_DISTRESS_COLONY_FIRE\"]/choice[@req=\"FIRE_EXTINGUISHERS\"]/event/crewMember"
-msgstr "Wanda"
+msgstr "Vanda"
 
 #: src-ru/data/events_engi.xml.rawclobber:8686
 msgid ""
@@ -8485,7 +8477,7 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:8689
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_DISTRESS_COLONY_FIRE\"]/choice[@req=\"CREW_STIMS\"]/event/crewMember"
-msgstr "Wanda"
+msgstr "Vanda"
 
 #: src-ru/data/events_engi.xml.rawclobber:8695
 msgid ""
@@ -8503,21 +8495,21 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:8699
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_DISTRESS_COLONY_FIRE\"]/choice[@req=\"crystal\"]/event/crewMember"
-msgstr "Wanda"
+msgstr "Vanda"
 
 #: src-ru/data/events_engi.xml.rawclobber:8705
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_DISTRESS_COLONY_FIRE\"]/choice[@req=\"magman\"]/text"
-msgstr "(Member of the crew of Magman) Send the Magman to the burning forest."
+msgstr "(Magmen Crew) Send the Magmen into the burning forest."
 
 #: src-ru/data/events_engi.xml.rawclobber:8707
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_DISTRESS_COLONY_FIRE\"]/choice[@req=\"magman\"]/event/text"
 msgstr ""
-"Magmain cools the forest border with the settlement of orchids, and the fire"
-" can no longer go in this direction.Although most of the forest will burn, "
-"orchids are safe.They are impressed, but are afraid to join you because of "
-"the \"fiery person\" in your team.Instead, they offer a gift."
+"The Magmen cools the forest border with the Orchid settlement, and the fire "
+"can no longer spread in that direction. Although most of the forest will "
+"burn, the Orchids are safe. They are impressed but are afraid to join you "
+"because of the \"fire man\" in your crew. Instead, they offer a gift."
 
 #: src-ru/data/events_engi.xml.rawclobber:8712
 msgid ""
@@ -8536,7 +8528,7 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:8715
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_DISTRESS_COLONY_FIRE\"]/choice[@req=\"WEAPONS_CRYSTAL_BOMB_REQ\"]/event/crewMember"
-msgstr "Wanda"
+msgstr "Vanda"
 
 #: src-ru/data/events_engi.xml.rawclobber:8736
 msgid ""
@@ -8776,10 +8768,10 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_1\"]/choice[1]/event/choice/event/text"
 msgstr ""
-"Suddenly, a series of explosions shakes the station.The fruits of the trees "
-"burst, releasing gigantic grains in all directions.The protective sphere "
-"barely resisted exploding grains.The station-worker offers a grain as a "
-"gift."
+"Suddenly, a series of explosions shakes the station. The fruits of the trees"
+" burst, releasing giant seeds in all directions. The protective sphere "
+"barely withstood the exploding seeds. An Orchid station worker offers a "
+"grain thrower as a gift."
 
 #: src-ru/data/events_engi.xml.rawclobber:8924
 msgid ""
@@ -8790,9 +8782,9 @@ msgstr "Pay for a visit to the \"natural meadow\"."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_1\"]/choice[2]/event/text"
 msgstr ""
-"The exhibit contains a field ... grass.In appearance, this is ordinary grass"
-" from the ground, quite tall, with nondescript colors and a strangely "
-"familiar shape of the leaves.It was worth it?"
+"The exhibit contains a field of... grass. It looks like ordinary grass from "
+"Earth, quite tall, with unremarkable flowers and a strangely familiar leaf "
+"shape. Was it worth it?"
 
 #: src-ru/data/events_engi.xml.rawclobber:8933
 msgid ""
@@ -8831,60 +8823,59 @@ msgstr "Do not visit anything."
 #: src-ru/data/events_engi.xml.rawclobber:8965
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[1]/text"
-msgstr "Pay for a visit to \"Alley of Flower\"."
+msgstr "Pay to visit the \"Flower Alley\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:8967
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[1]/event/text"
 msgstr ""
-"The exhibit contains an alley with a variety of local colors.Walking along "
-"it, you yawn and fall asleep on a bench ..."
+"The exhibit contains an alley with a variety of local flowers. While walking"
+" through it, you yawn and fall asleep on a bench..."
 
 #: src-ru/data/events_engi.xml.rawclobber:8974
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[1]/event/choice/event/text"
 msgstr ""
-"... You wake up from the blows with leaves on the face of some kind of "
-"orchid!He makes it clear that he wants to join your team.You take it and "
-"leave."
+"...you wake up to an Orchid slapping you in the face with its leaves! It "
+"makes it clear that it wants to join your crew. You take it and leave."
 
 #: src-ru/data/events_engi.xml.rawclobber:8981
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[2]/text"
-msgstr "Pay for a visit to the \"organic factory\"."
+msgstr "Pay to visit the \"Organic Factory\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:8983
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[2]/event/text"
 msgstr ""
-"The exhibit is a workshop for the production of drones of orchids.The "
-"Ekskourist orchid tells how healthy juice from orginic drones is good for "
-"health, in addition to their main functions."
+"The exhibit is a workshop for the production of Orchid drone equipment. The "
+"Orchid guide explains how the juice from organic drones is good for health, "
+"in addition to their main functions."
 
 #: src-ru/data/events_engi.xml.rawclobber:8990
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[2]/event/choice/event/text"
-msgstr "When the guide is distracted, you manage to pocket the drone scheme."
+msgstr "When the guide is distracted, you manage to pocket a drone schematic."
 
 #: src-ru/data/events_engi.xml.rawclobber:8997
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[3]/text"
-msgstr "Pay for a visit to the \"Contemplation Stones\"."
+msgstr "Pay to visit the \"Stones of Contemplation\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:8999
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[3]/event/text"
 msgstr ""
-"Here is a circle of stones on which there are creatures similar to "
-"earthlygas, but with very smart muzzles.You feel that they want you to sit "
-"nearby ..."
+"Before you is a circle of stones on which sit creatures resembling Earth's "
+"meerkats, but with very intelligent faces. You feel that they want you to "
+"sit next to them..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9006
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_2\"]/choice[3]/event/choice/event/text"
 msgstr ""
-"... Sitting next to the meerkats, you get hidden knowledge about the nearest"
-" stars."
+"... after sitting next to the meerkats, you gain hidden knowledge about the "
+"nearby stars."
 
 #: src-ru/data/events_engi.xml.rawclobber:9013
 msgid ""
@@ -8894,60 +8885,63 @@ msgstr "Do not visit anything."
 #: src-ru/data/events_engi.xml.rawclobber:9020
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[1]/text"
-msgstr "Pay for a visit to a \"strange meadow.\""
+msgstr "Pay to visit the \"Strange Meadow\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:9022
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[1]/event/text"
 msgstr ""
-"The exhibit contains a clearing on which some incomprehensible manipulations"
-" of vines, trees and leaves are constantly going on ..."
+"The exhibit contains a meadow where some incomprehensible manipulations with"
+" vines, tree roots, and leaves are constantly taking place..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9029
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[1]/event/choice/event/text"
 msgstr ""
-"... You are enthusiastically observing the process, and in the end, "
-"something similar to the strengthening for the ship falls out at your "
-"feet.By the way, the rebels approached during this time."
+"...you watch the process with fascination, and eventually, something "
+"resembling a ship augment falls at your feet. By the way, the Rebels have "
+"gotten closer in the meantime."
 
 #: src-ru/data/events_engi.xml.rawclobber:9037
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[2]/text"
-msgstr "Pay for a visit to the \"nitro -bundle greenhouse.\""
+msgstr "Pay to visit the \"Nitro-cucumber Greenhouse\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:9039
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[2]/event/text"
 msgstr ""
-"You walk between ripe cucumbers and, having torn one of them, are about to "
-"bite off how one of the orchids knocks out a cucumber out of your hand and "
-"falls on the ground ..."
+"You walk among ripe cucumbers and, having picked one, are about to take a "
+"bite when an Orchid knocks the cucumber out of your hand and tackles you to "
+"the ground..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9046
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[2]/event/choice/event/text"
 msgstr ""
-"... a deafening explosion is heard!Having shut up, the orchid explains that "
-"these cucumbers are essentially biological ammunition, and gives you "
-"somewhat as a gift."
+"...a deafening explosion rings out! After dusting himself off, the Orchid "
+"explains that these cucumbers are essentially biological munitions and gives"
+" you a few as a gift."
 
 #: src-ru/data/events_engi.xml.rawclobber:9055
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[3]/text"
-msgstr "Pay for a visit to the \"mushroom cluster\"."
+msgstr "Pay to visit the \"Mushroom Cluster\"."
 
 #: src-ru/data/events_engi.xml.rawclobber:9057
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[3]/event/text"
 msgstr ""
-"You find yourself in a rather dark room, where in a dim light you see the "
-"endless rows of mushroom farms ..."
+"You enter a rather dark room where, in the dim light, you see endless rows "
+"of mushroom farms..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9064
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_BOTANICAL_GALLERY_3\"]/choice[3]/event/choice/event/text"
 msgstr ""
+"...suddenly, a young mushroom hops up to you and declares through gestures "
+"that you are now on its team to save the Federation, and refusals are not "
+"accepted."
 
 #: src-ru/data/events_engi.xml.rawclobber:9071
 msgid ""
@@ -9285,10 +9279,9 @@ msgstr ""
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/text"
 msgstr ""
-"Having arrived at the lighthouse, you notice a small ship of orchids that "
-"cause you to communicate: “Welcome the ship of the Federation!Our scientific"
-" team explores biological plants, and we will be glad if you provide us with"
-" help in research. ”"
+"Arriving at the beacon, you notice a small Orchid ship hailing you: "
+"'Greetings, Federation vessel! Our science team is studying biological "
+"plants, and we would be glad if you could assist us in our research.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9253
 msgid ""
@@ -9299,10 +9292,10 @@ msgstr "Ask what they need."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/text"
 msgstr ""
-"Orchids report: “We have collected a huge batch of biological samples and "
-"now we want to deliver a container to our native planet.However, we also "
-"need to finish research here.Can you deliver a biologically valuable load? "
-"\""
+"The Orchids report: 'We have collected a huge batch of biological samples "
+"and now want to deliver the container to our home planet. However, we also "
+"need to finish our research here. Can you deliver the biologically valuable "
+"cargo?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9257
 msgid ""
@@ -9313,20 +9306,20 @@ msgstr "Agree."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/choice[1]/event/text"
 msgstr ""
-"The orchid container hardly climbs into the ship, but everything looks "
-"reliably fixed.Orchids wish you a successful road."
+"The Orchid container barely fits on the ship, but everything seems securely "
+"fastened. The Orchids wish you a good journey."
 
 #: src-ru/data/events_engi.xml.rawclobber:9265
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/choice[@req=\"orchid_crew\"]/text"
 msgstr ""
-"(Member of the crew of the orchid) to search our ship for the flora valuable"
-" for the orchids and offer them everything that will be able to find."
+"(Orchid Crew) Search our ship for flora valuable to Orchids and offer them "
+"whatever you can find."
 
 #: src-ru/data/events_engi.xml.rawclobber:9269
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/choice[3]/text"
-msgstr "Refuse and talk with the team before charging the FTL drive."
+msgstr "Refuse and talk to the crew until the FTL drive is charged."
 
 #: src-ru/data/events_engi.xml.rawclobber:9275
 msgid ""
@@ -9336,139 +9329,139 @@ msgstr "Attack them."
 #: src-ru/data/events_engi.xml.rawclobber:9279
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[3]/text"
-msgstr "Ignore them and talk with the team before charging a FTL drive."
+msgstr "Ignore them and talk to the crew until the FTL drive is charged."
 
 #: src-ru/data/events_engi.xml.rawclobber:9285
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[1]/text"
-msgstr "You need more scrap for your mission.You are going to battle!"
+msgstr "You need more scrap for your mission. You head into battle!"
 
 #: src-ru/data/events_engi.xml.rawclobber:9290
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[2]/text"
 msgstr ""
-"You need more scrap for your mission.Miserable plants will regret that they "
-"met in your way!"
+"You need more scrap for your mission. The pathetic plants will regret "
+"crossing your path!"
 
 #: src-ru/data/events_engi.xml.rawclobber:9295
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[3]/text"
 msgstr ""
-"Do not touch us, we are not supporters of bloodship!Take our cargo in "
+"Don't touch us, we are not advocates of bloodshed! Take our cargo in "
 "exchange for our lives!"
 
 #: src-ru/data/events_engi.xml.rawclobber:9297
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[3]/choice[1]/text"
-msgstr "Destroy the ship of orchids."
+msgstr "Destroy the Orchid ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:9299
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[3]/choice[1]/event/text"
-msgstr "You disconnect the communication channels and attack the orchids."
+msgstr "You disable communication channels and attack the Orchids."
 
 #: src-ru/data/events_engi.xml.rawclobber:9305
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[3]/choice[2]/text"
-msgstr "Leave the orchids alive."
+msgstr "Leave the Orchids alive."
 
 #: src-ru/data/events_engi.xml.rawclobber:9307
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ATTACK\"]/event[3]/choice[2]/event/text"
 msgstr ""
-"You have no time to engage in miserable plants and you let them go by "
-"accepting a tribute."
+"You don't have time for pathetic plants, so you let them go after accepting "
+"their tribute."
 
 #: src-ru/data/events_engi.xml.rawclobber:9314
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[1]"
 msgstr ""
-"The orchid finds the seeds of the Martian Rosa on the ship and passes it to "
-"its relatives for the award."
+"The Orchid finds Martian rose seeds on the ship and gives them to its kin "
+"for a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9315
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[2]"
 msgstr ""
-"The orchid finds on the ship the seeds of the gold -wound and passes them to"
-" his relatives for the award."
+"The Orchid finds goldenflower seeds on the ship and gives them to its kin "
+"for a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9316
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[3]"
 msgstr ""
-"The orchid finds the seeds of fragrant moss on the ship and passes them to "
-"his relatives for the award."
+"The Orchid finds fragrant moss seeds on the ship and gives them to its kin "
+"for a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9317
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[4]"
 msgstr ""
-"The orchid finds the seeds of oxygen fern on the ship and passes them to his"
-" relatives for the award."
+"The Orchid finds oxygen fern seeds on the ship and gives them to its kin for"
+" a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9318
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[5]"
 msgstr ""
-"The orchid finds the seeds of carbohydrate hunger on the ship and passes "
-"them to his relatives for the award."
+"The Orchid finds carbohydrate-hungry seeds on the ship and gives them to its"
+" kin for a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9319
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[6]"
 msgstr ""
-"The orchid finds the seeds of a wild snag in a ship and passes them to his "
-"relatives for the award."
+"The Orchid finds wild snag-gel seeds on the ship and gives them to its kin "
+"for a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9320
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[7]"
 msgstr ""
-"The orchid finds Saturnarcissa seeds on the ship and passes it to his "
-"relatives for the award."
+"The Orchid finds Saturnian narcissus seeds on the ship and gives them to its"
+" kin for a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9321
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[8]"
 msgstr ""
-"The orchid finds Alfa-Khmeel seeds on the ship and passes it to his "
-"relatives for the award."
+"The Orchid finds alpha-hops seeds on the ship and gives them to its kin for "
+"a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9322
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[9]"
 msgstr ""
-"The orchid finds Beta-Hmele seeds on the ship and passes it to his relatives"
-" for the award."
+"The Orchid finds beta-hops seeds on the ship and gives them to its kin for a"
+" reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9323
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[10]"
 msgstr ""
-"The orchid finds the seeds of the earth's oak on the ship and passes it to "
-"his relatives for the award."
+"The Orchid finds Earth oak seeds on the ship and gives them to its kin for a"
+" reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9324
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA_TEXT\"]/text[11]"
 msgstr ""
-"The orchid finds the seeds of foggy garlic on the ship and passes it to his "
-"relatives for the award."
+"The Orchid finds fog garlic seeds on the ship and gives them to its kin for "
+"a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9373
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SEARCH_FLORA\"]/event[6]/text"
 msgstr ""
-"Your orchid rummages for a long time along the nooks of the ship, but does "
-"not find anything valuable for its race."
+"Your Orchid rummages through the nooks and crannies of the ship for a long "
+"time but finds nothing of value to its race."
 
 #: src-ru/data/events_engi.xml.rawclobber:9382
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ASK_AGAIN\"]/text"
 msgstr ""
-"Orchids again repeat the question of transporting a biological "
-"container.What do you say?"
+"The Orchids repeat their question about transporting the biological "
+"container. What do you say?"
 
 #: src-ru/data/events_engi.xml.rawclobber:9384
 msgid ""
@@ -9479,8 +9472,8 @@ msgstr "Agree."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_ASK_AGAIN\"]/choice[1]/event/text"
 msgstr ""
-"The orchid container hardly climbs into the ship, but everything looks "
-"reliably fixed.Orchids wish you a successful road."
+"The Orchid container barely fits on the ship, but everything seems securely "
+"fastened. The Orchids wish you a good journey."
 
 #: src-ru/data/events_engi.xml.rawclobber:9392
 msgid ""
@@ -9491,24 +9484,23 @@ msgstr "Refuse."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/text"
 msgstr ""
-"Near the lighthouse you are met by an orchid ship.They ask what brought you "
-"here?"
+"Near the beacon, an Orchid vessel meets you. They ask what brought you here."
 
 #: src-ru/data/events_engi.xml.rawclobber:9401
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/choice[@req=\"ORCHID_BOX\"]/text"
-msgstr "(Container of orchids) to hand over their container orchids."
+msgstr "(Orchid Container) Hand over their container to the Orchids."
 
 #: src-ru/data/events_engi.xml.rawclobber:9403
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/choice[@req=\"ORCHID_BOX\"]/event/text"
-msgstr "Orchids take their valuable load and send you a reward."
+msgstr "The Orchids take their valuable cargo and send you a reward."
 
 #: src-ru/data/events_engi.xml.rawclobber:9413
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/choice[2]/text"
 msgstr ""
-"To tell the orchids the story of a valuable biological container that you "
+"Tell the Orchids the story of the valuable biological container that you "
 "failed to deliver here."
 
 #: src-ru/data/events_engi.xml.rawclobber:9417
@@ -9520,59 +9512,56 @@ msgstr "Attack them."
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/choice[3]/event/text"
 msgstr ""
-"You start an attack, but immediately understand that all this time was on "
-"the sight of planetary protective guns!"
+"You start the attack, but immediately realize that you've been in the sights"
+" of planetary defense cannons all this time!"
 
 #: src-ru/data/events_engi.xml.rawclobber:9426
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/choice[4]/text"
-msgstr "Ignore them and talk with the team before charging a FTL drive."
+msgstr "Ignore them and talk to the crew until the FTL drive is charged."
 
 #: src-ru/data/events_engi.xml.rawclobber:9432
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_NO_BOX\"]/event[1]/text"
 msgstr ""
-"Orchids are extremely unhappy that you have lost the results of their "
-"scientists for several cycles.They send a help signal to the planet near the"
-" lighthouse and attack you!"
+"The Orchids are extremely displeased that you lost the results of their "
+"scientists' work over several cycles. They send a distress signal to the "
+"planet near the beacon and attack you!"
 
 #: src-ru/data/events_engi.xml.rawclobber:9438
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_NO_BOX\"]/event[2]/text"
 msgstr ""
-"Orchids are unhappy that you have lost the results of their scientists for "
-"several cycles.They attack you!"
+"The Orchids are displeased that you lost the results of their scientists' "
+"work over several cycles. They attack you!"
 
 #: src-ru/data/events_engi.xml.rawclobber:9443
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_NO_BOX\"]/event[3]/text"
 msgstr ""
-"Orchids out of pity give you a little useful resources: “Still, you tried to"
-" help us.This is not your fault that the container was lost. ”"
+"The Orchids, out of pity, give you some useful resources: 'Still, you tried "
+"to help us. It's not your fault the container was lost.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9449
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_ADDITIONAL_REWARD\"]/event[1]/text"
 msgstr ""
-"You are already going to fly away, but the orchids say that the load is "
-"really very valuable, and they are happy to give you additional equipment "
-"..."
+"You are about to leave, but the Orchids say that the cargo is indeed very "
+"valuable, and they are happy to give you additional equipment..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9453
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_ADDITIONAL_REWARD\"]/event[2]/text"
 msgstr ""
-"You are already going to fly away, but the orchids say that the load is "
-"really very valuable, and they are happy to give you additional equipment "
-"..."
+"You are about to leave, but the Orchids say that the cargo is indeed very "
+"valuable, and they are happy to give you additional equipment..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9457
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD_ADDITIONAL_REWARD\"]/event[3]/text"
 msgstr ""
-"You are already going to fly away, but the orchids say that the load is "
-"really very valuable, and they are happy to give you additional equipment "
-"..."
+"You are about to leave, but the Orchids say that the cargo is indeed very "
+"valuable, and they are happy to give you additional equipment..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9466
 msgid ""
@@ -9582,20 +9571,19 @@ msgstr "You are notifying the charge of their FTL drive."
 #: src-ru/data/events_engi.xml.rawclobber:9469
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SHIP_ESCAPE_NOW\"]/gotaway/text"
-msgstr "The ship of the orchids disappeared in an unknown direction."
+msgstr "The Orchid ship disappeared in an unknown direction."
 
 #: src-ru/data/events_engi.xml.rawclobber:9472
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SHIP_ESCAPE_NOW\"]/destroyed/text"
-msgstr ""
-"The ship of orchids falls apart into pieces.You collect everything valuable."
+msgstr "The Orchid ship falls apart. You collect everything of value."
 
 #: src-ru/data/events_engi.xml.rawclobber:9476
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SHIP_ESCAPE_NOW\"]/deadCrew/text"
 msgstr ""
-"Sensors do not find signs of life aboard the orchid ship.You collect "
-"everything valuable."
+"The sensors detect no life signs on board the Orchid ship. You collect "
+"everything of value."
 
 #: src-ru/data/events_engi.xml.rawclobber:9482
 msgid ""
@@ -9605,29 +9593,30 @@ msgstr "You are notifying the charge of their FTL drive."
 #: src-ru/data/events_engi.xml.rawclobber:9485
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SHIP\"]/gotaway/text"
-msgstr "The ship of the orchids disappeared in an unknown direction."
+msgstr "The Orchid ship disappeared in an unknown direction."
 
 #: src-ru/data/events_engi.xml.rawclobber:9488
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SHIP\"]/destroyed/text"
-msgstr ""
-"The ship of orchids falls apart into pieces.You collect everything valuable."
+msgstr "The Orchid ship falls apart. You collect everything of value."
 
 #: src-ru/data/events_engi.xml.rawclobber:9492
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHID_PEACEFULL_SCIENTISTS_SHIP\"]/deadCrew/text"
 msgstr ""
-"Sensors do not find signs of life aboard the orchid ship.You collect "
-"everything valuable."
+"The sensors detect no life signs on board the Orchid ship. You collect "
+"everything of value."
 
 #: src-ru/data/events_engi.xml.rawclobber:9501
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS\"]/text"
 msgstr ""
+"There is an Orchid ship near the beacon. It is not hostile to you, but "
+"something here seems suspicious..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9504
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS\"]/choice[1]/text"
-msgstr ""
+msgstr "Contact the Orchids."
 
 #: src-ru/data/events_engi.xml.rawclobber:9508
 msgid ""
@@ -9637,12 +9626,14 @@ msgstr "Attack them."
 #: src-ru/data/events_engi.xml.rawclobber:9514
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS\"]/choice[3]/text"
-msgstr ""
+msgstr "Don't make contact and talk to the crew."
 
 #: src-ru/data/events_engi.xml.rawclobber:9519
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_TALK\"]/text"
 msgstr ""
+"The captain of this ship sends you a text message without enabling the video"
+" channel: 'We have an important mission. What do you need?'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9521
 msgid ""
@@ -9652,12 +9643,12 @@ msgstr "Tell about your mission and ask for help."
 #: src-ru/data/events_engi.xml.rawclobber:9525
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_TALK\"]/choice[2]/text"
-msgstr ""
+msgstr "Ask about their mission."
 
 #: src-ru/data/events_engi.xml.rawclobber:9529
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_TALK\"]/choice[3]/text"
-msgstr ""
+msgstr "Say that you are here to stop them."
 
 #: src-ru/data/events_engi.xml.rawclobber:9533
 msgid ""
@@ -9667,17 +9658,20 @@ msgstr "Attack them."
 #: src-ru/data/events_engi.xml.rawclobber:9539
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_TALK\"]/choice[5]/text"
-msgstr ""
+msgstr "Cut the connection."
 
 #: src-ru/data/events_engi.xml.rawclobber:9545
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK1\"]/event[1]/text"
 msgstr ""
+"'We don't usually do handouts, but this is a special case. Take this and "
+"don't tell anyone you saw us here.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9549
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK1\"]/event[2]/text"
 msgstr ""
+"'We don't give charity. Fly away and remember that you saw no one here.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9551
 msgid ""
@@ -9687,12 +9681,13 @@ msgstr "Attack."
 #: src-ru/data/events_engi.xml.rawclobber:9557
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK1\"]/event[2]/choice[2]/text"
-msgstr ""
+msgstr "Cut the connection."
 
 #: src-ru/data/events_engi.xml.rawclobber:9562
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK1\"]/event[3]/text"
 msgstr ""
+"'We don't give charity. Fly away and remember that you saw no one here.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9564
 msgid ""
@@ -9702,12 +9697,12 @@ msgstr "Attack."
 #: src-ru/data/events_engi.xml.rawclobber:9570
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK1\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "Cut the connection."
 
 #: src-ru/data/events_engi.xml.rawclobber:9576
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_TALK2\"]/text"
-msgstr ""
+msgstr "'Our mission is none of your business. Fly away while you still can.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9578
 msgid ""
@@ -9717,42 +9712,46 @@ msgstr "Attack."
 #: src-ru/data/events_engi.xml.rawclobber:9584
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_TALK2\"]/choice[2]/text"
-msgstr ""
+msgstr "Cut the connection."
 
 #: src-ru/data/events_engi.xml.rawclobber:9590
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[1]/text"
 msgstr ""
+"The communicator finally transmits sound. You hear a quiet 'Kzarkht, they "
+"know...' The ship cuts the connection and activates its weapons."
 
 #: src-ru/data/events_engi.xml.rawclobber:9594
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[2]/text"
 msgstr ""
+"'Great joke! I propose - you take this, and we didn't see you, and you "
+"didn't see us.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9596
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "Take it."
 
 #: src-ru/data/events_engi.xml.rawclobber:9598
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[2]/choice[1]/event/text"
-msgstr ""
+msgstr "You take the weapon, and the ship disappears in an unknown direction."
 
 #: src-ru/data/events_engi.xml.rawclobber:9604
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[2]/choice[2]/text"
-msgstr ""
+msgstr "Attack the bribers."
 
 #: src-ru/data/events_engi.xml.rawclobber:9610
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[2]/choice[3]/text"
-msgstr ""
+msgstr "Demand more."
 
 #: src-ru/data/events_engi.xml.rawclobber:9612
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_TALK3\"]/event[2]/choice[3]/event/text"
-msgstr ""
+msgstr "'There is no more. You've left us no choice.'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9620
 msgid ""
@@ -9762,7 +9761,7 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:9624
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHANTIS_PARAMETERS\"]/gotaway/text"
-msgstr ""
+msgstr "The ship disappeared in an unknown direction."
 
 #: src-ru/data/events_engi.xml.rawclobber:9627
 msgid ""
@@ -9772,79 +9771,102 @@ msgstr "The ship is destroyed, and you collect everything that has survived."
 #: src-ru/data/events_engi.xml.rawclobber:9631
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"ORCHANTIS_PARAMETERS\"]/deadCrew/text"
-msgstr ""
+msgstr "The ship is captured, and you collect everything that survived."
 
 #: src-ru/data/events_engi.xml.rawclobber:9644
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_SEIF\"]/text"
 msgstr ""
+"...just as you're about to make an FTL jump, you catch a glimpse of a "
+"strange dark spot under the ship's bridge on the advanced sensors. Prying "
+"open the floor, you find a safe with some coordinate records."
 
 #: src-ru/data/events_engi.xml.rawclobber:9646
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_SEIF\"]/choice[1]/text"
-msgstr ""
+msgstr "Mark the coordinates on the map."
 
 #: src-ru/data/events_engi.xml.rawclobber:9648
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_SEIF\"]/choice[1]/event/text"
 msgstr ""
+"You mark a point on the map. It's probably something related to the secret "
+"mission of the captured ship's captain."
 
 #: src-ru/data/events_engi.xml.rawclobber:9653
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_SEIF\"]/choice[2]/text"
-msgstr ""
+msgstr "Throw away the records."
 
 #: src-ru/data/events_engi.xml.rawclobber:9658
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE\"]/text"
 msgstr ""
+"Arriving at the beacon, you detect a signal from the planet. Reconnaissance "
+"has shown that it is an abandoned organic warehouse of the Orchids. It's "
+"very strange that their ships avoid this place and seem to ignore the "
+"signal."
 
 #: src-ru/data/events_engi.xml.rawclobber:9660
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE\"]/choice[1]/text"
-msgstr ""
+msgstr "Take everything from the warehouse."
 
 #: src-ru/data/events_engi.xml.rawclobber:9664
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE\"]/choice[@req=\"orchid\"]/text"
 msgstr ""
+"The Orchid in your crew anxiously rustles its leaves. It makes it clear that"
+" this place is cursed and should not be touched."
 
 #: src-ru/data/events_engi.xml.rawclobber:9668
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE\"]/choice[3]/text"
-msgstr ""
+msgstr "Don't touch the warehouse and talk to the crew."
 
 #: src-ru/data/events_engi.xml.rawclobber:9673
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_1\"]/text"
 msgstr ""
+"You start looting the warehouse. There's so much stuff here that you can't "
+"possibly carry it all in one trip..."
 
 #: src-ru/data/events_engi.xml.rawclobber:9676
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_1\"]/choice[1]/text"
-msgstr ""
+msgstr "Continue."
 
 #: src-ru/data/events_engi.xml.rawclobber:9680
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_1\"]/choice[2]/text"
-msgstr ""
+msgstr "That's enough."
 
 #: src-ru/data/events_engi.xml.rawclobber:9686
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_RAND\"]/event[1]/text"
 msgstr ""
+"You haul everything aboard when a message comes through on the comm: 'You "
+"shouldn't have done that! Now you're cursed, and your weapons will no longer"
+" do harm!'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9692
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_RAND\"]/event[2]/text"
 msgstr ""
+"You haul everything aboard when a message comes through on the comm: 'You "
+"shouldn't have done that! Now you're cursed, and no one will miss you "
+"anymore!'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9698
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_RAND\"]/event[3]/text"
 msgstr ""
+"You haul everything aboard when a message comes through on the comm: 'You "
+"shouldn't have done that! Now you're cursed and will burn!'"
 
 #: src-ru/data/events_engi.xml.rawclobber:9704
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"EVENT_ORCHANTIS_BIOSTORAGE_RAND\"]/event[4]/text"
 msgstr ""
+"You haul everything aboard when you notice that some relay has transmitted "
+"information about your ship to the nearest beacons..."

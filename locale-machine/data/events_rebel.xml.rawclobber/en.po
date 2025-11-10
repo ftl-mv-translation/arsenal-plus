@@ -94,9 +94,9 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_REBEL\"]/text[12]"
 msgstr ""
-"The rebels are aggressive supporters of human superiority.They believe that "
-"the restrictions on the federation of intergalactic expansion do not allow "
-"people to completely reveal their potential."
+"The Rebels are aggressive human supremacists. They believe the Federation's "
+"restrictions on intergalactic expansion prevent humans from reaching their "
+"full potential."
 
 #: src-ru/data/events_rebel.xml.rawclobber:157
 msgid "data/events_rebel.xml.rawclobber$//textList[@name=\"STORE_REBEL\"]/text[1]"
@@ -531,7 +531,7 @@ msgstr "Keep a distance and wait until FTL is charged."
 #: src-ru/data/events_rebel.xml.rawclobber:427
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"AUTO_DEFENSE_RADAR\"]/choice[@req=\"DRONES_COMBAT_EVENTS\"]/text"
-msgstr "(Combat drone) send a drone to distract the automatic ship."
+msgstr "(Combat Drone) Send the drone to distract the automated ship."
 
 #: src-ru/data/events_rebel.xml.rawclobber:433
 msgid ""
@@ -674,8 +674,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"REBEL_TRANSPORT_DESTROYED\"]/event[5]/text"
 msgstr ""
-"In the process of searching for the remains, you will find that the driving "
-"schemes were the load!You bring them aboard to install on your ship."
+"While searching the remains, you discover the cargo was drone schematics! "
+"You bring them aboard to install on your ship."
 
 #: src-ru/data/events_rebel.xml.rawclobber:542
 msgid ""
@@ -747,8 +747,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"REBEL_TRANSPORT_CAPTURED\"]/event[4]/text"
 msgstr ""
-"In the process of searching for the remains, you will find that the driving "
-"schemes were the load!You bring them aboard to install on your ship."
+"While searching the remains, you discover the cargo was drone schematics! "
+"You bring them aboard to install on your ship."
 
 #: src-ru/data/events_rebel.xml.rawclobber:597
 msgid ""
@@ -1013,8 +1013,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"BOARDERS_ORDEN_CLEAR_TEXT\"]/text[2]"
 msgstr ""
-"Literally out of nowhere, distraught fanatics of the order appear on your "
-"ship!They throw the compartments of your ship with incendiary mixtures!"
+"Literally out of nowhere, crazed fanatics of the Order appear on your ship! "
+"They start throwing incendiary cocktails into your ship's rooms!"
 
 #: src-ru/data/events_rebel.xml.rawclobber:842
 msgid ""
@@ -1028,11 +1028,15 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_BOSS\"]/text"
 msgstr ""
+"Immediately after the jump, a squad of thugs from a nearby station teleports"
+" to you. They start throwing incendiary cocktails into your ship's rooms! "
+"Their leader laughs: 'I bet your ship will burn down in less than a minute. "
+"Let's go, boys!'"
 
 #: src-ru/data/events_rebel.xml.rawclobber:851
 msgid ""
 "data/events_rebel.xml.rawclobber$//triggeredEvent[@name=\"BOARDERS_ORDER_TRIGGER\"]/triggeredEventBox/tooltip"
-msgstr ""
+msgstr "The fanatics expect to burn your ship down in this amount of time"
 
 #: src-ru/data/events_rebel.xml.rawclobber:864
 msgid ""
@@ -1043,23 +1047,25 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"ORDEN_STATION2\"]/destroyed/choice[@req=\"clonebay\""
 " and not(@lvl)]/text"
-msgstr ""
+msgstr "Clone their leader in the Clone Bay. We have things to discuss."
 
 #: src-ru/data/events_rebel.xml.rawclobber:877
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"ORDEN_STATION2\"]/deadCrew/text"
-msgstr ""
+msgstr "You have defeated the station's crew and are taking all their scrap."
 
 #: src-ru/data/events_rebel.xml.rawclobber:885
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"ORDEN_STATION2\"]/deadCrew/choice[@req=\"clonebay\""
 " and not(@lvl)]/text"
-msgstr ""
+msgstr "Clone their leader in the Clone Bay. We have things to discuss."
 
 #: src-ru/data/events_rebel.xml.rawclobber:891
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_BOSS_TIMER\"]/text"
 msgstr ""
+"It seems the fanatics slightly overestimated their strength. They are asking"
+" for a truce."
 
 #: src-ru/data/events_rebel.xml.rawclobber:893
 msgid ""
@@ -1069,27 +1075,35 @@ msgstr "Finish them."
 #: src-ru/data/events_rebel.xml.rawclobber:897
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_BOSS_TIMER\"]/choice[2]/text"
-msgstr ""
+msgstr "Spare them."
 
 #: src-ru/data/events_rebel.xml.rawclobber:902
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_LEADER_INVITE\"]/text"
 msgstr ""
+"Their leader isn't too surprised by his resurrection; apparently, this has "
+"happened to him before. 'Alright, maybe your ship isn't so bad. Let me "
+"travel with you. I hope you have a teleporter installed?' You notice how "
+"badly burned his body is. Better not let him get too close to any fires."
 
 #: src-ru/data/events_rebel.xml.rawclobber:903
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_LEADER_INVITE\"]/crewMember"
-msgstr ""
+msgstr "Spawn"
 
 #: src-ru/data/events_rebel.xml.rawclobber:911
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_LEADER_INVITE2\"]/text"
 msgstr ""
+"Their leader thanks you for your mercy. 'Alright, maybe your ship isn't so "
+"bad. Let me travel with you. I hope you have a teleporter installed?' You "
+"notice how badly burned his body is. Better not let him get too close to any"
+" fires."
 
 #: src-ru/data/events_rebel.xml.rawclobber:912
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BOARDERS_ORDEN_LEADER_INVITE2\"]/crewMember"
-msgstr ""
+msgstr "Spawn"
 
 #: src-ru/data/events_rebel.xml.rawclobber:928
 msgid ""
@@ -1102,8 +1116,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"BOARDERS_ORDEN_ASTEROID_TEXT\"]/text[2]"
 msgstr ""
-"You register on the nearest large asteroid a surge in energy activity, and "
-"the distraught fanatics of the order are teleported to your ship!"
+"You register a burst of energy activity on a large nearby asteroid, and "
+"crazed fanatics of the Order teleport onto your ship!"
 
 #: src-ru/data/events_rebel.xml.rawclobber:930
 msgid ""
@@ -1391,9 +1405,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"DISTRESS_BEACON_ORDEN_ITSAHELP_TEXT\"]/text[8]"
 msgstr ""
-"It seems that you arrived here too late.A pile of smoking fragments is "
-"everything that remains of a civilian ship after a meeting with the forces "
-"of the Order."
+"It seems you've arrived too late. A pile of smoking wreckage is all that "
+"remains of the civilian ship after its encounter with the Order's forces."
 
 #: src-ru/data/events_rebel.xml.rawclobber:1042
 msgid ""
@@ -1723,7 +1736,7 @@ msgstr "(Member of the crew of Magman) Magman."
 #: src-ru/data/events_rebel.xml.rawclobber:1257
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"ITEM_ORDEN_BOX_FOR_HUMAN_SCAN\"]/choice[@req=\"keeper\"]/text"
-msgstr "(Crew member of the Keeper) Guardian."
+msgstr "(Keeper Crew) The Keeper."
 
 #: src-ru/data/events_rebel.xml.rawclobber:1261
 msgid ""
@@ -1893,8 +1906,8 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:1382
 msgid "data/events_rebel.xml.rawclobber$//event[@name=\"BOOM_KEEPER\"]/text"
 msgstr ""
-"The keeper touches the detector, and the drawer sensors light up in red.At "
-"the same moment, an explosion is heard, which is in shocks in shreds!"
+"The Keeper touches the detector, and the box's sensors light up red. In the "
+"same second, an explosion rings out, blowing the poor soul to bits!"
 
 #: src-ru/data/events_rebel.xml.rawclobber:1386
 msgid ""
@@ -2202,7 +2215,7 @@ msgstr "(Member of the crew of Magman) Magman."
 #: src-ru/data/events_rebel.xml.rawclobber:1617
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"ITEM_ORDEN_BOX_FOR_HUMAN_SCAN2\"]/choice[@req=\"keeper\"]/text"
-msgstr "(Crew member of the Keeper) Guardian."
+msgstr "(Keeper Crew) The Keeper."
 
 #: src-ru/data/events_rebel.xml.rawclobber:1621
 msgid ""
@@ -2658,8 +2671,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"NEBULA_ORDEN_TEXT\"]/text[1]"
 msgstr ""
-"Fanatics have not yet reached this nebula.You have a little time to take a "
-"breath."
+"The fanatics haven't reached this nebula yet. You have a little time to "
+"catch your breath."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2012
 msgid ""
@@ -3173,8 +3186,8 @@ msgstr "Light"
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"GLORY_SHIP_ZOLTANISABATTERY\"]/deadCrew/text"
 msgstr ""
-"All fanatics are dead, and you are fastened to their ship, you completely "
-"clean the holds."
+"All the fanatics are dead, and after docking with their ship, you completely"
+" clean out their holds."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2308
 msgid ""
@@ -3219,19 +3232,17 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:2334
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"GLORY_SHIP_ZOLTANISABATTERY\"]/deadCrew/choice/event/choice[@req=\"orchid_crew\"]/text"
-msgstr ""
-"(Member of the crew of orchids) fill the room with soothing disputes and "
-"open the wall."
+msgstr "(Orchid Crew) Fill the room with calming spores and breach the wall."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2336
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"GLORY_SHIP_ZOLTANISABATTERY\"]/deadCrew/choice/event/choice[@req=\"orchid_crew\"]/event/text"
 msgstr ""
-"Zoltans fall out of the opening in the wall.They are furious!Fortunately, "
-"the disputes of the orchid quickly soothe them.The Zoltans tell you that "
-"fanatics used them as additional generators for their ships.In gratitude, "
-"they improve your reactor and tell a couple of funny stories from their "
-"lives.And one of them asks to join the team."
+"Zoltans tumble out of the hole in the wall. They are furious! Fortunately, "
+"the Orchid's spores quickly calm them. The Zoltans tell you that the "
+"fanatics were using them as additional generators for their ships. In "
+"gratitude, they upgrade your reactor and tell you a couple of amusing "
+"stories. One of them asks to join your crew."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2343
 msgid ""
@@ -3242,19 +3253,19 @@ msgstr "Prepare to fly away.We have already taken our own."
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_OPEN\"]/event[1]/text"
 msgstr ""
-"Zoltans fall out of the opening in the wall.They tell you that fanatics used"
-" them as additional generators for their ships.In gratitude, they improve "
-"your reactor and tell a couple of funny stories from their lives.And one of "
-"them asks to join the team."
+"Zoltans tumble out of the hole in the wall. They tell you that the fanatics "
+"were using them as additional generators for their ships. In gratitude, they"
+" upgrade your reactor and tell you a couple of amusing stories. One of them "
+"asks to join your crew."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2357
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_OPEN\"]/event[2]/text"
 msgstr ""
-"Zoltans fall out of the opening in the wall.They tell you that fanatics used"
-" them as additional generators for their ships.In gratitude, they improve "
-"your reactor and tell a couple of funny stories from their lives.And one "
-"even sang a ballad about the heroes of the federation."
+"Zoltans tumble out of the hole in the wall. They tell you that the fanatics "
+"were using them as additional generators for their ships. In gratitude, they"
+" upgrade your reactor and tell you a couple of amusing stories. One even "
+"sang a ballad about Federation heroes."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2361
 msgid ""
@@ -3285,22 +3296,22 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_SLUG\"]/event[1]/text"
 msgstr ""
-"Slag says that there are Zoltans.They are very scared, and it will be "
-"correct to pull them out of there.You carefully break through the wall and "
-"free the captives.The Zoltans tell you that fanatics used them as additional"
-" generators for their ships.In gratitude, they improve your reactor and tell"
-" a couple of funny stories from their lives.And one of them asks to join the"
-" team."
+"The Slug says there are Zoltans in there. They are very frightened, and it "
+"would be right to get them out. You carefully breach the wall and free the "
+"prisoners. The Zoltans tell you that the fanatics were using them as "
+"additional generators for their ships. In gratitude, they upgrade your "
+"reactor and tell you a couple of amusing stories. One of them asks to join "
+"your crew."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2381
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_SLUG\"]/event[2]/text"
 msgstr ""
-"Slag says that there are Zoltans.They are very scared, and it will be "
-"correct to pull them out of there.You carefully break through the wall and "
-"free the captives.The Zoltans tell you that fanatics used them as additional"
-" generators for their ships.In gratitude, they improve your reactor and tell"
-" a couple of funny stories from their lives."
+"The Slug says there are Zoltans in there. They are very frightened, and it "
+"would be right to get them out. You carefully breach the wall and free the "
+"prisoners. The Zoltans tell you that the fanatics were using them as "
+"additional generators for their ships. In gratitude, they upgrade your "
+"reactor and tell you a couple of amusing stories."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2385
 msgid ""
@@ -3327,22 +3338,21 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_SCAN_2\"]/event[1]/text"
 msgstr ""
-"Scanners show a group of Zoltans.They are very scared and will be correctly "
-"pulled out of there.You carefully break through the wall and free the "
-"captives.The Zoltans tell you that fanatics used them as additional "
-"generators for their ships.In gratitude, they improve your reactor and tell "
-"a couple of funny stories from their lives.And one of them asks to join the "
-"team."
+"Scanners show a group of Zoltans. They are very frightened, and it would be "
+"right to get them out. You carefully breach the wall and free the prisoners."
+" The Zoltans tell you that the fanatics were using them as additional "
+"generators for their ships. In gratitude, they upgrade your reactor and tell"
+" you a couple of amusing stories. One of them asks to join your crew."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2401
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_SCAN_2\"]/event[2]/text"
 msgstr ""
-"Scanners show a group of Zoltans.They are very scared and will be correctly "
-"pulled out of there.You carefully break through the wall and free the "
-"captives.The Zoltans tell you that fanatics used them as additional "
-"generators for their ships.In gratitude, they improve your reactor and tell "
-"a couple of funny stories from their lives."
+"Scanners show a group of Zoltans. They are very frightened, and it would be "
+"right to get them out. You carefully breach the wall and free the prisoners."
+" The Zoltans tell you that the fanatics were using them as additional "
+"generators for their ships. In gratitude, they upgrade your reactor and tell"
+" you a couple of amusing stories."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2405
 msgid ""
@@ -3373,22 +3383,21 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_SCAN_3\"]/event[1]/text"
 msgstr ""
-"Scanners show a group of Zoltans.They are very scared and will be correctly "
-"pulled out of there.You carefully break through the wall and free the "
-"captives.The Zoltans tell you that fanatics used them as additional "
-"generators for their ships.In gratitude, they improve your reactor and tell "
-"a couple of funny stories from their lives.And one of them asks to join the "
-"team."
+"Scanners show a group of Zoltans. They are very frightened, and it would be "
+"right to get them out. You carefully breach the wall and free the prisoners."
+" The Zoltans tell you that the fanatics were using them as additional "
+"generators for their ships. In gratitude, they upgrade your reactor and tell"
+" you a couple of amusing stories. One of them asks to join your crew."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2423
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"GLORY_SHIP_ZOLTANISABATTERY_SCAN_3\"]/event[2]/text"
 msgstr ""
-"Scanners show a group of Zoltans.They are very scared and will be correctly "
-"pulled out of there.You carefully break through the wall and free the "
-"captives.The Zoltans tell you that fanatics used them as additional "
-"generators for their ships.In gratitude, they improve your reactor and tell "
-"a couple of funny stories from their lives."
+"Scanners show a group of Zoltans. They are very frightened, and it would be "
+"right to get them out. You carefully breach the wall and free the prisoners."
+" The Zoltans tell you that the fanatics were using them as additional "
+"generators for their ships. In gratitude, they upgrade your reactor and tell"
+" you a couple of amusing stories."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2427
 msgid ""
@@ -3775,8 +3784,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"HOSTILE_ORDEN_EMPTYFUEL_PIRATE\"]/text"
 msgstr ""
-"The pirate ship is in touch: “Help!We are stuck here without fuel, and "
-"fanatics can appear at any time.We will thank you! \""
+"A pirate vessel hails you: 'Help! We're stranded here without fuel, and the "
+"fanatics could show up at any moment. We'll reward you!'"
 
 #: src-ru/data/events_rebel.xml.rawclobber:2652
 msgid ""
@@ -4009,17 +4018,15 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"QUESTS_ORDEN_CIVSHIPHELP_COORDINATES\"]/event[2]/text"
 msgstr ""
-"Having made a jump, you see the pursuit of the ship of the Order for "
-"Civil.Fanatics unfold in your direction, considering you a more attractive "
-"goal."
+"After jumping, you see an Order ship chasing a civilian vessel. The fanatics"
+" turn towards you, deeming you a more attractive target."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2817
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"QUESTS_ORDEN_CIVSHIPHELP_COORDINATES\"]/event[3]/text"
 msgstr ""
-"Having made a jump, you see the pursuit of the ship of the Order for "
-"Civil.Fanatics unfold in your direction, considering you a more attractive "
-"goal."
+"After jumping, you see an Order ship chasing a civilian vessel. The fanatics"
+" turn towards you, deeming you a more attractive target."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2823
 msgid ""
@@ -4043,7 +4050,7 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:2839
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"CIV_CIVSHIPHELP_GLORYSHIP_USPEL\"]/destroyed/text"
-msgstr "You destroy heretics and collect what remains after the battle."
+msgstr "You destroy the heretics and collect what's left after the slaughter."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2844
 msgid ""
@@ -4116,7 +4123,7 @@ msgstr "You note on the map the alleged place of jumping of the ship."
 #: src-ru/data/events_rebel.xml.rawclobber:2898
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK\"]/destroyed/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "(FTL Navigation) Track its jump direction."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2900
 msgid ""
@@ -4148,7 +4155,7 @@ msgstr "You note on the map the alleged place of jumping of the ship."
 #: src-ru/data/events_rebel.xml.rawclobber:2920
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK\"]/deadCrew/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "(FTL Navigation) Track its jump direction."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2922
 msgid ""
@@ -4210,7 +4217,7 @@ msgstr "You note on the map the alleged place of jumping of the ship."
 #: src-ru/data/events_rebel.xml.rawclobber:2973
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP\"]/destroyed/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "(FTL Navigation) Track its jump direction."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2975
 msgid ""
@@ -4242,7 +4249,7 @@ msgstr "You note on the map the alleged place of jumping of the ship."
 #: src-ru/data/events_rebel.xml.rawclobber:2995
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP\"]/deadCrew/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "(FTL Navigation) Track its jump direction."
 
 #: src-ru/data/events_rebel.xml.rawclobber:2997
 msgid ""
@@ -4326,7 +4333,7 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:3062
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"ORDEN_QUEST_ESCORT\"]/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "(FTL Navigation) Send them the safe route data."
 
 #: src-ru/data/events_rebel.xml.rawclobber:3064
 msgid ""
@@ -5785,8 +5792,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"HAL_ANGAR_BOOM\"]/event[2]/text"
 msgstr ""
-"... The explosion makes a large hole through which you take out the found "
-"boxes with the details of the drones."
+"...the explosion creates a large breach, through which you carry out the "
+"boxes of drone parts you found."
 
 #: src-ru/data/events_rebel.xml.rawclobber:4102
 msgid ""
@@ -6302,7 +6309,7 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:4515
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"HAL_QUEST_ESCORT\"]/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "(FTL Navigation) Send them the safe route data."
 
 #: src-ru/data/events_rebel.xml.rawclobber:4517
 msgid ""
@@ -7094,7 +7101,7 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:5190
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BROKEN_HAL_FIGHT\"]/choice/event/text"
-msgstr "It must be a slight prey."
+msgstr "This should be easy prey."
 
 #: src-ru/data/events_rebel.xml.rawclobber:5197
 msgid ""
@@ -7106,7 +7113,7 @@ msgstr ""
 #: src-ru/data/events_rebel.xml.rawclobber:5203
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BROKEN_HAL_FIGHT_2\"]/choice/event/text"
-msgstr "It must be a slight prey."
+msgstr "This should be easy prey."
 
 #: src-ru/data/events_rebel.xml.rawclobber:5212
 msgid "data/events_rebel.xml.rawclobber$//event[@name=\"HAL_MONOLITH\"]/text"
@@ -7178,7 +7185,7 @@ msgstr "(Member of the crew of the Magman) Send Magman."
 #: src-ru/data/events_rebel.xml.rawclobber:5259
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"HAL_MONOLITH\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"keeper\"]/text"
-msgstr "(Crew member of the Guardian) Send the Guardian."
+msgstr "(Guardian Crew) Send the Guardian."
 
 #: src-ru/data/events_rebel.xml.rawclobber:5263
 msgid ""
@@ -8586,7 +8593,7 @@ msgstr ""
 
 #: src-ru/data/events_rebel.xml.rawclobber:6248
 msgid "data/events_rebel.xml.rawclobber$//event[@name=\"MUSHROOM_FIGHT\"]/text"
-msgstr ""
+msgstr "A Mushroom ship attacks you. Crew, to battle!"
 
 #: src-ru/data/events_rebel.xml.rawclobber:6266
 msgid ""
@@ -8601,7 +8608,7 @@ msgstr "There is no time to cool, allies need help.On the attack!"
 #: src-ru/data/events_rebel.xml.rawclobber:6273
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"BORDER_SECTOR_TWO_FLEET_FIGHT\"]/choice[2]/text"
-msgstr "Throw allies to the mercy of fate."
+msgstr "Abandon your allies to their fate."
 
 #: src-ru/data/events_rebel.xml.rawclobber:6275
 msgid ""
@@ -9270,8 +9277,8 @@ msgstr ""
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"BORDER_DOCK_ELITE\"]/destroyed/choice/event/text"
 msgstr ""
-"They thank you for liberation and repair your ship, as well as optimize the "
-"work of shields."
+"They thank you for freeing them and repair your ship, as well as optimizing "
+"your shield performance."
 
 #: src-ru/data/events_rebel.xml.rawclobber:6790
 msgid ""
@@ -9282,8 +9289,8 @@ msgstr "You search the holds of the cruiser and contact the shipyard staff."
 msgid ""
 "data/events_rebel.xml.rawclobber$//ship[@name=\"BORDER_DOCK_ELITE\"]/deadCrew/choice/event/text"
 msgstr ""
-"They thank you for liberation and repair your ship, as well as optimize the "
-"work of shields."
+"They thank you for freeing them and repair your ship, as well as optimizing "
+"your shield performance."
 
 #: src-ru/data/events_rebel.xml.rawclobber:6804
 msgid ""

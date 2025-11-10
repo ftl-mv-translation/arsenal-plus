@@ -714,15 +714,13 @@ msgstr "Attack the ship."
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
-msgstr "Buy an unknown weapon for 35 scraps."
+msgstr "Purchase an unknown weapon for 35 scrap."
 
 #: src-ru/data/events_nebula.xml.rawclobber:502
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
-msgstr ""
-"(Member of the crew of glory) Your Slag foresaw the result of the "
-"transaction ..."
+msgstr "(Slug Crew) Your Slug foresees the outcome of the deal..."
 
 #: src-ru/data/events_nebula.xml.rawclobber:506
 msgid ""
@@ -785,7 +783,7 @@ msgstr "You buy weapons and thank it for your help."
 #: src-ru/data/events_nebula.xml.rawclobber:560
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/choice[2]/text"
-msgstr "We changed our minds, attack them!"
+msgstr "We've changed our minds, attack them!"
 
 #: src-ru/data/events_nebula.xml.rawclobber:566
 msgid ""
@@ -823,7 +821,7 @@ msgstr "You buy weapons and thank it for your help."
 #: src-ru/data/events_nebula.xml.rawclobber:589
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/choice[2]/text"
-msgstr "We changed our minds, attack them!"
+msgstr "We've changed our minds, attack them!"
 
 #: src-ru/data/events_nebula.xml.rawclobber:595
 msgid ""
@@ -844,8 +842,8 @@ msgstr "A pirate ship made a jump."
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"PIRATE_NEIZ\"]/deadCrew/text"
 msgstr ""
-"You take everything valuable from the ship and look for the very \"unknown "
-"gun\"."
+"You take everything of value from the ship and search for the 'unknown "
+"weapon'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:623
 msgid ""
@@ -892,15 +890,15 @@ msgstr ""
 #: src-ru/data/events_nebula.xml.rawclobber:654
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[@req=\"orchid_crew\"]/text"
-msgstr "(Member of the crew of the orchid) Send an orchid for negotiations."
+msgstr "(Orchid Crew) Send the Orchid to negotiate."
 
 #: src-ru/data/events_nebula.xml.rawclobber:656
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[@req=\"orchid_crew\"]/event/text"
 msgstr ""
-"\"Flowers?For me?Sorry for the impolite behavior earlier. ”You lead the "
-"rocks to the border of the nebula, where the clouds are scattered.Rocks are "
-"impressed and give you some supplies."
+"'Flowers? For me? I apologize for my rude behavior earlier.' You lead the "
+"Rockmen to the edge of the nebula where the clouds dissipate. The Rockmen "
+"are impressed and give you some supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:664
 msgid ""
@@ -988,7 +986,7 @@ msgstr ""
 #: src-ru/data/events_nebula.xml.rawclobber:717
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"SHIPRADAR\"]/text"
-msgstr "(Directed scanner) pursue them using the directed scanner."
+msgstr "(Long-Range Scanners) Pursue them using your long-range scanners."
 
 #: src-ru/data/events_nebula.xml.rawclobber:719
 msgid ""
@@ -1001,7 +999,7 @@ msgstr ""
 #: src-ru/data/events_nebula.xml.rawclobber:724
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"SHIPRADAR2\"]/text"
-msgstr "(Morphs analyzer) Personed them using the analyzer."
+msgstr "(Morph Analyzer) Pursue them using the analyzer."
 
 #: src-ru/data/events_nebula.xml.rawclobber:726
 msgid ""
@@ -1354,24 +1352,24 @@ msgstr ""
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT\"]/text"
 msgstr ""
-"There is absolutely nothing next to the lighthouse in the nebula.Suddenly, "
-"through the communication channels, you receive a message encrypted with "
-"simple methods."
+"There's absolutely nothing near the beacon in the nebula. Suddenly, a "
+"message, encrypted with simple methods, comes through the communication "
+"channels."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1074
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT\"]/choice[1]/text"
-msgstr "Decipher the mysterious message."
+msgstr "Decrypt the mysterious message."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1078
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT\"]/choice[2]/text"
-msgstr "Ignore and talk with the team before charging the FTL drive."
+msgstr "Ignore it and talk to the crew while the FTL drive charges."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1095
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_TEXT\"]/text"
-msgstr "The message says: | = {-~,} = {+~, {= 4, ~ = 2,}/| =?."
+msgstr "The message reads: |={-~, }={+~, {=4, ~=2, }/|=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1100
 msgid ""
@@ -1426,19 +1424,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1140
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Inia tells you that the correct answer is 3."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '3'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1142
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1153
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_TEXT\"]/text"
-msgstr "The message says: | = 7, ~ = 7, {-| = 1,} = {-~ x2,-} =?."
+msgstr "The message reads: |=7, ~=7, {-|=1, }={-~x2, -}=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1158
 msgid ""
@@ -1493,19 +1489,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1198
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Inia tells you that the correct answer is 6."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '6'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1200
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1212
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_TEXT\"]/text"
-msgstr "The message says: |+{= 4- |, ~ = 2,} = | x ~,}+{=?."
+msgstr "The message reads: |+{=4-|, ~=2, }=|x~, }+{=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1217
 msgid ""
@@ -1560,19 +1554,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1257
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Engine tells you that the correct answer is \"4\"."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '4'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1259
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1271
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_TEXT\"]/text"
-msgstr "The message says: ~ = -5, | = ~ x19, {= | -5,} =-{/10,} =?."
+msgstr "The message reads: ~=-5, |=~x19, {=|-5, }=-{/10, }=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1276
 msgid ""
@@ -1627,19 +1619,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1316
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Inia tells you that the correct answer is \"10\"."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '10'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1318
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1330
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_TEXT\"]/text"
-msgstr "The message says: {+~+| = 6, {+}+~+| = 10,} x2 =?."
+msgstr "The message reads: {+~+|=6, {+}+~+|=10, }x2=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1335
 msgid ""
@@ -1694,19 +1684,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1375
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Engine tells you that the correct answer is 8."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '8'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1377
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1389
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_TEXT\"]/text"
-msgstr "The message says: |+| =},}! = 24, | x5 = ~, ~ =?."
+msgstr "The message reads: |+|=}, }!=24, |x5=~, ~=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1394
 msgid ""
@@ -1761,20 +1749,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1434
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Engine tells you that the correct answer is "
-"\"10\"."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '10'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1436
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1448
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_TEXT\"]/text"
-msgstr "The message says:} x}/20 = |, |+{= {+{, {= 5,}/2 =?."
+msgstr "The message reads: }x}/20=|, |+{={+{, {=5, }/2=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1453
 msgid ""
@@ -1829,19 +1814,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1493
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Inia tells you that the correct answer is \"5\"."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '5'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1495
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1507
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_TEXT\"]/text"
-msgstr "The message says: LG (1000) =}, | =}+1, |+| =?"
+msgstr "The message reads: lg(1000)=}, |=}+1, |+| =?"
 
 #: src-ru/data/events_nebula.xml.rawclobber:1512
 msgid ""
@@ -1896,19 +1879,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1552
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Engine tells you that the correct answer is \"8\"."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '8'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1554
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1567
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_TEXT\"]/text"
-msgstr "The message reads: cos (~ -1) = |, ~ = ({+} x2)/4, {= 2,} = 1, | =?"
+msgstr "The message reads: cos(~-1)=|, ~=({+}x2)/4, {=2, }=1, |=?"
 
 #: src-ru/data/events_nebula.xml.rawclobber:1572
 msgid ""
@@ -1963,19 +1944,17 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1612
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Engine tells you that the correct answer is 1."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '1'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1614
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1630
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_TEXT\"]/text"
-msgstr "The message says: ~ x} x | = 25, | = | x |, ~> |> 0,} = ~, ~ =?."
+msgstr "The message reads: ~x}x|=25, |=|x|, ~>|>0, }=~, ~=?."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1635
 msgid ""
@@ -2030,64 +2009,62 @@ msgstr "Send \"10\"."
 #: src-ru/data/events_nebula.xml.rawclobber:1675
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
-"(Member of the Ingo crew) Inia tells you that the correct answer is \"5\"."
+msgstr "(Engi Crew) The Engi suggests that the correct answer is '5'."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1677
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
-"FTL - not for cheaters!You lose some of your dishonestly earned supplies."
+msgstr "FTL is not for cheaters! You lose some of your ill-gotten supplies."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1690
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_WRONG\"]/event[1]/text"
 msgstr ""
-"You are waiting for a while, but there is no answer.It seems that your "
-"answer is incorrect.Time to fly away."
+"You wait for a while, but there's no response. It seems your answer was "
+"incorrect. Time to fly away."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1693
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_WRONG\"]/event[2]/text"
 msgstr ""
-"You are waiting for a while, but there is no answer.It seems that your "
-"answer is incorrect.Time to fly away."
+"You wait for a while, but there's no response. It seems your answer was "
+"incorrect. Time to fly away."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1696
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_WRONG\"]/event[3]/text"
 msgstr ""
-"You are waiting for a while, but there is no answer.It seems that your "
-"answer is incorrect.Suddenly, someone from the team notes that there are "
-"fewer resources on the ship!You are robbed!"
+"You wait for a while, but there's no response. It seems your answer was "
+"incorrect. Suddenly, someone on the crew notices that the ship has fewer "
+"resources! You've been robbed!"
 
 #: src-ru/data/events_nebula.xml.rawclobber:1707
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[1]/text"
 msgstr ""
-"On the communication channels you get a joyful melody, and the gun is not "
-"known from where the gun is teleported."
+"You receive a cheerful melody over the comms, and a weapon teleports onto "
+"your ship from an unknown source."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1712
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[2]/text"
 msgstr ""
-"According to the communication channels, you get a joyful melody, and the "
-"drone scheme is not known from where the ship is teleported."
+"You receive a cheerful melody over the comms, and a drone schematic "
+"teleports onto your ship from an unknown source."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1717
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[3]/text"
 msgstr ""
-"On the communication channels you get a joyful melody, and valuable "
-"resources are not known to the ship from where."
+"You receive a cheerful melody over the comms, and valuable resources "
+"teleport onto your ship from an unknown source."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1722
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[4]/text"
 msgstr ""
-"On the communication channels you get a joyful melody, and valuable supplies"
-" are not known to the ship from where."
+"You receive a cheerful melody over the comms, and valuable supplies teleport"
+" onto your ship from an unknown source."
 
 #: src-ru/data/events_nebula.xml.rawclobber:1787
 msgid ""
