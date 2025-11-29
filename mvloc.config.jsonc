@@ -143,6 +143,8 @@
             "applyUseFuzzy": true,
 
             "applyPostprocesses": {
+                //This patch changes x-position of hull numbers so that they aren't overlapping translated "HULL" text.
+                "substitute-xposition-for-hull-numbers": 80,
                 // Add one space to the beginning of the text. mvloc strips white spaces when converting texts from xmls to po files, and weblate does not allow to add a leading space to translation since original's one is stripped. Use this post process if you need a leading space.
                 "add-leading-space": [
                     "//text[@name='crewlist_and' or @name='crewlist_more' or @name='shipselect_type_suffix' or @name='clonebay_damaged' or @name='event_crew_full']",
