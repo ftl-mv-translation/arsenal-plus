@@ -244,9 +244,9 @@ msgstr ""
 #: src-ru/data/events_fuel.xml.rawclobber:169
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/text"
 msgstr ""
-"Хотя отсутствие топливных элементов не позволяет вашему кораблю совершать "
-"прыжки, вы всё ещё можете использовать ваши импульсные двигатели. Желаете ли"
-" вы потратить некоторое время, исследуя близлежащие системы?"
+"Команда предлагает использовать малые маневровые импульсные двигатели "
+"корабля, чтобы исследовать близлежащее пространство. Желаете ли вы потратить"
+" некоторое время на это?"
 
 #: src-ru/data/events_fuel.xml.rawclobber:171
 msgid ""
@@ -256,7 +256,7 @@ msgstr "Исследовать окрестности."
 #: src-ru/data/events_fuel.xml.rawclobber:175
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[2]/text"
-msgstr "Остаться у маяка."
+msgstr "Остаться у маяка и поговорить с экипажем."
 
 #: src-ru/data/events_fuel.xml.rawclobber:181
 msgid ""
@@ -271,7 +271,7 @@ msgstr "Приблизиться к астероидам и просканиро
 #: src-ru/data/events_fuel.xml.rawclobber:187
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[2]/text"
-msgstr "Не рисковать."
+msgstr "Не рисковать и поговорить с экипажем."
 
 #: src-ru/data/events_fuel.xml.rawclobber:192
 msgid ""
@@ -317,7 +317,7 @@ msgstr ""
 #: src-ru/data/events_fuel.xml.rawclobber:224
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[4]/text"
-msgstr "Отказаться от обмена."
+msgstr "Отказаться от обмена и поговорить с экипажем."
 
 #: src-ru/data/events_fuel.xml.rawclobber:229
 msgid ""
@@ -826,7 +826,7 @@ msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[1]/text"
 msgstr ""
 "Инжи отвечают на ваш сигнал. «Идентификация: Федерация. Ошибка ввода/вывода "
-": Федерация= [пусто]». Все дальнейшие сигналы остаются без ответа."
+": Федерация=[пусто]». Все дальнейшие сигналы остаются без ответа."
 
 #: src-ru/data/events_fuel.xml.rawclobber:647
 msgid ""
