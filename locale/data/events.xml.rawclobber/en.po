@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2025-12-26 12:44+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: hulanhai <hulanhai613@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataeventsxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -25718,6 +25718,7 @@ msgstr ""
 "A crewman re-wires the reactor, and you observe a small increase in power."
 
 #: src-ru/data/events.xml.rawclobber:22975
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"BATTERY_BOOSTER_GOOD\"]/text[2]"
 msgstr ""
@@ -43732,11 +43733,13 @@ msgstr ""
 "a black hole, you need extra fuel!"
 
 #: src-ru/data/events.xml.rawclobber:33679
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_START\"]/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33681
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_START\"]/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -43765,11 +43768,13 @@ msgstr ""
 "hole!"
 
 #: src-ru/data/events.xml.rawclobber:33699
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FLIGHT\"]/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33701
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FLIGHT\"]/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -43809,11 +43814,13 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events.xml.rawclobber:33729
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_SALVAGE\"]/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33731
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_SALVAGE\"]/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -43939,11 +43946,13 @@ msgid ""
 msgstr "Your Morph quickly repairs the engines."
 
 #: src-ru/data/events.xml.rawclobber:33885
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FAIL\"]/choice[@req=\"morph\"]/event/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33887
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FAIL\"]/choice[@req=\"morph\"]/event/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -43965,11 +43974,13 @@ msgid ""
 msgstr "Your repair drone quickly repairs the engines."
 
 #: src-ru/data/events.xml.rawclobber:33904
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FAIL\"]/choice[@req=\"DRONES_REPAIR_LIST\"]/event/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33906
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FAIL\"]/choice[@req=\"DRONES_REPAIR_LIST\"]/event/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -43990,11 +44001,13 @@ msgstr ""
 "The repair burst quickly brings your engines back to working condition."
 
 #: src-ru/data/events.xml.rawclobber:33923
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FAIL\"]/choice[@req=\"WEAPONS_BOMB_HEAL_SYSTEM_REQ\"]/event/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33925
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_FAIL\"]/choice[@req=\"WEAPONS_BOMB_HEAL_SYSTEM_REQ\"]/event/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -44038,11 +44051,13 @@ msgstr ""
 "rainy day.\" He gives them to you."
 
 #: src-ru/data/events.xml.rawclobber:33969
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_NOFUEL\"]/choice[@req=\"FTL_BOOSTER\"]/text"
 msgstr "(FTL Accelerator) Rapidly fly away using your accelerator."
 
 #: src-ru/data/events.xml.rawclobber:33971
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"APLUS_BLACK_HOLE_NOFUEL\"]/choice[@req=\"FTL_BOOSTER\"]/event/text"
 msgstr ""
@@ -49835,6 +49850,7 @@ msgid ""
 msgstr "(Battery Charger) Immediately turn on the battery charger."
 
 #: src-ru/data/events.xml.rawclobber:44438
+#, fuzzy
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_EVO_ENTER\"]/choice[@req=\"battery\""
 " and @lvl=\"1\"]/event/choice[@req=\"BATTERY_BOOSTER\" and "
