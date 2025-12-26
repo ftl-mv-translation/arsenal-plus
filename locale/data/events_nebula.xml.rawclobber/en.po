@@ -1,16 +1,9 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-03 00:56+0000\n"
-"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
-"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
-"dataevents_nebulaxmlrawclobber/en/>\n"
-"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
 
 #: src-ru/data/events_nebula.xml.rawclobber:104
 #, fuzzy
@@ -674,228 +667,117 @@ msgstr ""
 "You send a drone to hack the station but the automated ship notices and "
 "turns to attack!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:423
-#, fuzzy
-msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/text"
-msgstr ""
-"A heavily damaged Federation ship is hiding in the nebula at this beacon. "
-"Before you have time to make contact with them, they fade into the nebula."
-
-#: src-ru/data/events_nebula.xml.rawclobber:427
+#: src-ru/data/events_nebula.xml.rawclobber:430
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[1]/text"
-msgstr "Attempt to follow and help them."
-
-#: src-ru/data/events_nebula.xml.rawclobber:431
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[2]/text"
-msgstr "Keep your position, they can handle themselves."
-
-#: src-ru/data/events_nebula.xml.rawclobber:435
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[@req=\"teleporter\"]/text"
-msgstr "(Teleporter) Lock onto their life-signs with your teleporter."
-
-#: src-ru/data/events_nebula.xml.rawclobber:439
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[@req=\"ADV_SCANNERS\"]/text"
-msgstr ""
-"(Long-Ranged Scanners) Pump extra power into your sensors and try to track "
-"them."
-
-#: src-ru/data/events_nebula.xml.rawclobber:445
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST\"]/event[1]/text"
-msgstr ""
-"Your search is hopeless. Your sensors can't pick up anything in the nebula."
-
-#: src-ru/data/events_nebula.xml.rawclobber:448
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST\"]/event[2]/text"
-msgstr ""
-"While searching fruitlessly through the nebula, you stumble upon the Rebel "
-"ship which the Federation loyalists were likely hiding from. You prepare for"
-" a fight."
-
-#: src-ru/data/events_nebula.xml.rawclobber:452
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST\"]/event[3]/text"
-msgstr ""
-"You get lucky and find them floating not too deep into the nebula. Thrilled "
-"to be found by friendlies, they come on board and abandon their wrecked "
-"ship."
-
-#: src-ru/data/events_nebula.xml.rawclobber:458
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST2\"]/event[1]/text"
-msgstr ""
-"Your local radar flickers, periodically showing signs of a large object in "
-"the clouds nearby. However it's enough to get coordinates and you find the "
-"ship... an empty hull, long since stripped of functioning components."
-
-#: src-ru/data/events_nebula.xml.rawclobber:462
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST2\"]/event[2]/text"
-msgstr ""
-"You follow the faint signatures and find them floating not too far away into"
-" the nebula. Thrilled to be found by friendlies, they come on board and "
-"abandon their wrecked ship."
-
-#: src-ru/data/events_nebula.xml.rawclobber:466
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST2\"]/event[3]/text"
-msgstr ""
-"You follow the faint signatures and find them floating not too far away into"
-" the nebula. Thrilled to be found by friendlies, they come on board and "
-"abandon their wrecked ship."
-
-#: src-ru/data/events_nebula.xml.rawclobber:472
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST3\"]/event[1]/text"
-msgstr ""
-"You beam the Federation crew aboard. One gladly joins your crew, the rest "
-"wait to be dropped off at the next station."
-
-#: src-ru/data/events_nebula.xml.rawclobber:477
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST3\"]/event[2]/text"
-msgstr ""
-"You beam the Federation crew aboard. One gladly joins your crew, the rest "
-"wait to be dropped off at the next station."
-
-#: src-ru/data/events_nebula.xml.rawclobber:482
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST3\"]/event[3]/text"
-msgstr ""
-"As soon as you prepare the teleporter, the sensors lose the signal, and "
-"you're back to flying alone through the thick nebula..."
-
-#: src-ru/data/events_nebula.xml.rawclobber:487
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_NORMAL\"]/text"
 msgstr ""
 "A black market weapons trader spins you something unintelligible about the "
 "dangers lurking in the nebula before pushing his wares in front of you."
 
-#: src-ru/data/events_nebula.xml.rawclobber:492
+#: src-ru/data/events_nebula.xml.rawclobber:434
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[1]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_NORMAL\"]/choice[1]/text"
 msgstr "Attack the ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:498
+#: src-ru/data/events_nebula.xml.rawclobber:440
 msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_NORMAL\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:502
+#: src-ru/data/events_nebula.xml.rawclobber:444
 msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_NORMAL\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"1\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:506
+#: src-ru/data/events_nebula.xml.rawclobber:448
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[4]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_NORMAL\"]/choice[4]/text"
 msgstr "Ignore the ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:510
+#: src-ru/data/events_nebula.xml.rawclobber:452
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER\"]/choice[@req=\"mind\"]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_NORMAL\"]/choice[@req=\"mind\"]/text"
 msgstr "(Mind Control) Convince him to make it a better deal."
 
-#: src-ru/data/events_nebula.xml.rawclobber:516
+#: src-ru/data/events_nebula.xml.rawclobber:457
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST\"]/event[1]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_LIAR\"]/text"
+msgstr ""
+"A black market weapons trader spins you something unintelligible about the "
+"dangers lurking in the nebula before pushing his wares in front of you."
+
+#: src-ru/data/events_nebula.xml.rawclobber:461
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_LIAR\"]/choice[1]/text"
+msgstr "Attack the ship."
+
+#: src-ru/data/events_nebula.xml.rawclobber:467
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_LIAR\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
+" and @lvl=\"0\"]/text"
+msgstr ""
+
+#: src-ru/data/events_nebula.xml.rawclobber:471
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_LIAR\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
+" and @lvl=\"1\"]/text"
+msgstr ""
+
+#: src-ru/data/events_nebula.xml.rawclobber:475
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_LIAR\"]/choice[4]/text"
+msgstr "Ignore the ship."
+
+#: src-ru/data/events_nebula.xml.rawclobber:479
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_LIAR\"]/choice[@req=\"mind\"]/text"
+msgstr "(Mind Control) Convince him to make it a better deal."
+
+#: src-ru/data/events_nebula.xml.rawclobber:484
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_VERYGOODRES\"]/text"
+msgstr "You purchase the weapon and thank him for his help."
+
+#: src-ru/data/events_nebula.xml.rawclobber:491
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_GOODRES\"]/text"
 msgstr ""
 "You transfer the scrap and receive a weapon in return. Let's hope it was "
 "worth it."
 
-#: src-ru/data/events_nebula.xml.rawclobber:523
+#: src-ru/data/events_nebula.xml.rawclobber:498
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST\"]/event[2]/text"
-msgstr ""
-"You transfer the scrap and receive a weapon in return. Let's hope it was "
-"worth it."
-
-#: src-ru/data/events_nebula.xml.rawclobber:530
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST\"]/event[3]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BADRES\"]/text"
 msgstr ""
 "You transfer over the scrap, but he reneges on the agreement. \"I told you "
 "this was a dangerous place!\""
 
-#: src-ru/data/events_nebula.xml.rawclobber:535
+#: src-ru/data/events_nebula.xml.rawclobber:503
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST\"]/event[3]/choice[1]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BADRES\"]/choice[1]/text"
 msgstr "Attack the ship!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:541
+#: src-ru/data/events_nebula.xml.rawclobber:509
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST\"]/event[3]/choice[2]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BADRES\"]/choice[2]/text"
 msgstr "Having learned a valuable lesson, move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:548
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/text"
-msgstr ""
-"Once \"convinced\" to help he lowers the price and describes the weapon. "
-"However, he eventually comes to his senses and confusedly takes back his "
-"discount. He is clearly unsure why he offered it in the first place."
-
-#: src-ru/data/events_nebula.xml.rawclobber:550
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/choice[1]/text"
-msgstr "Buy the weapon."
-
-#: src-ru/data/events_nebula.xml.rawclobber:552
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/choice[1]/event/text"
-msgstr "You purchase the weapon and thank him for his help."
-
-#: src-ru/data/events_nebula.xml.rawclobber:560
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/choice[2]/text"
-msgstr ""
-
-#: src-ru/data/events_nebula.xml.rawclobber:566
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/choice[3]/text"
-msgstr "Decline."
-
-#: src-ru/data/events_nebula.xml.rawclobber:568
-#, fuzzy
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[1]/choice[3]/event/text"
-msgstr "You thank him for his offer and prepare to move on."
-
-#: src-ru/data/events_nebula.xml.rawclobber:573
+#: src-ru/data/events_nebula.xml.rawclobber:516
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[2]/text"
@@ -904,69 +786,207 @@ msgstr ""
 " lie and that they planned to attack your ship. By the time he returns to "
 "his senses you've already prepared your ship to fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:577
+#: src-ru/data/events_nebula.xml.rawclobber:522
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BEZSKIDKI\"]/text"
+msgstr ""
+"Once \"convinced\" to help he lowers the price and describes the weapon. "
+"However, he eventually comes to his senses and confusedly takes back his "
+"discount. He is clearly unsure why he offered it in the first place."
+
+#: src-ru/data/events_nebula.xml.rawclobber:524
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BEZSKIDKI\"]/choice[1]/text"
+msgstr "Buy the weapon."
+
+#: src-ru/data/events_nebula.xml.rawclobber:528
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BEZSKIDKI\"]/choice[2]/text"
+msgstr ""
+
+#: src-ru/data/events_nebula.xml.rawclobber:534
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BEZSKIDKI\"]/choice[3]/text"
+msgstr "Decline."
+
+#: src-ru/data/events_nebula.xml.rawclobber:536
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_BEZSKIDKI\"]/choice[3]/event/text"
+msgstr "You thank him for his offer and prepare to move on."
+
+#: src-ru/data/events_nebula.xml.rawclobber:541
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_SKIDKA\"]/text"
 msgstr ""
 "Once \"convinced\" to help he agrees to make a slight discount and shows you"
 " a weapon."
 
-#: src-ru/data/events_nebula.xml.rawclobber:579
+#: src-ru/data/events_nebula.xml.rawclobber:543
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/choice[1]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_SKIDKA\"]/choice[1]/text"
 msgstr "Buy the weapon."
 
-#: src-ru/data/events_nebula.xml.rawclobber:581
-#, fuzzy
+#: src-ru/data/events_nebula.xml.rawclobber:547
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/choice[1]/event/text"
-msgstr "You purchase the weapon and thank him for his help."
-
-#: src-ru/data/events_nebula.xml.rawclobber:589
-msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/choice[2]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_SKIDKA\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:595
+#: src-ru/data/events_nebula.xml.rawclobber:553
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/choice[3]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_SKIDKA\"]/choice[3]/text"
 msgstr "Decline."
 
-#: src-ru/data/events_nebula.xml.rawclobber:597
+#: src-ru/data/events_nebula.xml.rawclobber:555
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_WEAPONS_TRADER_LIST2\"]/event[3]/choice[3]/event/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_WEAPONS_TRADER_SKIDKA\"]/choice[3]/event/text"
 msgstr "You thank him for his offer and prepare to move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:608
+#: src-ru/data/events_nebula.xml.rawclobber:564
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"PIRATE_NEIZ\"]/gotaway/text"
 msgstr "The pirate jumped away."
 
-#: src-ru/data/events_nebula.xml.rawclobber:612
+#: src-ru/data/events_nebula.xml.rawclobber:567
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"PIRATE_NEIZ\"]/deadCrew/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:623
-#, fuzzy
+#: src-ru/data/events_nebula.xml.rawclobber:590
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEIZ_END\"]/event[1]/text"
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEIZ_END_NORMAL_DESTROYED\"]/text"
+msgstr ""
+
+#: src-ru/data/events_nebula.xml.rawclobber:593
+#, fuzzy
+msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEIZ_END_NORMAL\"]/text"
+msgstr "After a while you do find the weapon, and it turned out to be..."
+
+#: src-ru/data/events_nebula.xml.rawclobber:597
+#, fuzzy
+msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEIZ_END_LIAR\"]/text"
 msgstr ""
 "There isn't any such weapon on board; the pirate was just trying to deceive "
 "you."
 
+#: src-ru/data/events_nebula.xml.rawclobber:601
+#, fuzzy
+msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/text"
+msgstr ""
+"A heavily damaged Federation ship is hiding in the nebula at this beacon. "
+"Before you have time to make contact with them, they fade into the nebula."
+
+#: src-ru/data/events_nebula.xml.rawclobber:605
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[1]/text"
+msgstr "Attempt to follow and help them."
+
+#: src-ru/data/events_nebula.xml.rawclobber:609
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[2]/text"
+msgstr "Keep your position, they can handle themselves."
+
+#: src-ru/data/events_nebula.xml.rawclobber:613
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[@req=\"teleporter\"]/text"
+msgstr "(Teleporter) Lock onto their life-signs with your teleporter."
+
+#: src-ru/data/events_nebula.xml.rawclobber:617
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_LOST_SHIP\"]/choice[@req=\"ADV_SCANNERS\"]/text"
+msgstr ""
+"(Long-Ranged Scanners) Pump extra power into your sensors and try to track "
+"them."
+
+#: src-ru/data/events_nebula.xml.rawclobber:623
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST\"]/event[1]/text"
+msgstr ""
+"Your search is hopeless. Your sensors can't pick up anything in the nebula."
+
 #: src-ru/data/events_nebula.xml.rawclobber:626
 #, fuzzy
 msgid ""
-"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEIZ_END\"]/event[2]/text"
-msgstr "After a while you do find the weapon, and it turned out to be..."
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST\"]/event[2]/text"
+msgstr ""
+"While searching fruitlessly through the nebula, you stumble upon the Rebel "
+"ship which the Federation loyalists were likely hiding from. You prepare for"
+" a fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:632
+#: src-ru/data/events_nebula.xml.rawclobber:630
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST\"]/event[3]/text"
+msgstr ""
+"You get lucky and find them floating not too deep into the nebula. Thrilled "
+"to be found by friendlies, they come on board and abandon their wrecked "
+"ship."
+
+#: src-ru/data/events_nebula.xml.rawclobber:636
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST2\"]/event[1]/text"
+msgstr ""
+"Your local radar flickers, periodically showing signs of a large object in "
+"the clouds nearby. However it's enough to get coordinates and you find the "
+"ship... an empty hull, long since stripped of functioning components."
+
+#: src-ru/data/events_nebula.xml.rawclobber:640
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST2\"]/event[2]/text"
+msgstr ""
+"You follow the faint signatures and find them floating not too far away into"
+" the nebula. Thrilled to be found by friendlies, they come on board and "
+"abandon their wrecked ship."
+
+#: src-ru/data/events_nebula.xml.rawclobber:644
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST2\"]/event[3]/text"
+msgstr ""
+"You follow the faint signatures and find them floating not too far away into"
+" the nebula. Thrilled to be found by friendlies, they come on board and "
+"abandon their wrecked ship."
+
+#: src-ru/data/events_nebula.xml.rawclobber:650
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST3\"]/event[1]/text"
+msgstr ""
+"You beam the Federation crew aboard. One gladly joins your crew, the rest "
+"wait to be dropped off at the next station."
+
+#: src-ru/data/events_nebula.xml.rawclobber:655
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST3\"]/event[2]/text"
+msgstr ""
+"You beam the Federation crew aboard. One gladly joins your crew, the rest "
+"wait to be dropped off at the next station."
+
+#: src-ru/data/events_nebula.xml.rawclobber:660
+#, fuzzy
+msgid ""
+"data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_LOST_SHIP_LIST3\"]/event[3]/text"
+msgstr ""
+"As soon as you prepare the teleporter, the sensors lose the signal, and "
+"you're back to flying alone through the thick nebula..."
+
+#: src-ru/data/events_nebula.xml.rawclobber:666
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/text"
@@ -975,25 +995,25 @@ msgstr ""
 "you hail they grow suspicious: \"Whatever life-form you are, we find you "
 "repugnant. We seek no aid. Leave. Now.\""
 
-#: src-ru/data/events_nebula.xml.rawclobber:637
+#: src-ru/data/events_nebula.xml.rawclobber:671
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[1]/text"
 msgstr "Repugnant?! Arm the weapons!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:643
+#: src-ru/data/events_nebula.xml.rawclobber:677
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[2]/text"
 msgstr "Leave this place."
 
-#: src-ru/data/events_nebula.xml.rawclobber:647
+#: src-ru/data/events_nebula.xml.rawclobber:681
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[@req=\"rock_crew\"]/text"
 msgstr "(Rock Crewmember) Offer to lead them out of the nebula."
 
-#: src-ru/data/events_nebula.xml.rawclobber:649
+#: src-ru/data/events_nebula.xml.rawclobber:683
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[@req=\"rock_crew\"]/event/text"
@@ -1002,17 +1022,17 @@ msgstr ""
 " to a thinner part of the nebula. They're not sure what to think, but "
 "transfer over some supplies all the same."
 
-#: src-ru/data/events_nebula.xml.rawclobber:654
+#: src-ru/data/events_nebula.xml.rawclobber:688
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[@req=\"orchid_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:656
+#: src-ru/data/events_nebula.xml.rawclobber:690
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_ROCK_RACIST\"]/choice[@req=\"orchid_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:664
+#: src-ru/data/events_nebula.xml.rawclobber:698
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_MANTIS_CHOICE\"]/text"
@@ -1021,19 +1041,19 @@ msgstr ""
 "They hail you: \"Pah! This transgression will be overlooked. Nebula, very "
 "dangerous. Next time, humans all die.\""
 
-#: src-ru/data/events_nebula.xml.rawclobber:669
+#: src-ru/data/events_nebula.xml.rawclobber:703
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_MANTIS_CHOICE\"]/choice[1]/text"
 msgstr "There won't be a next time. Open fire!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:675
+#: src-ru/data/events_nebula.xml.rawclobber:709
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_MANTIS_CHOICE\"]/choice[2]/text"
 msgstr "This place is dangerous enough. Move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:681
+#: src-ru/data/events_nebula.xml.rawclobber:715
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/text"
@@ -1041,31 +1061,31 @@ msgstr ""
 "You spot a Rebel ship in the nebula ahead and stay off their radar. Try to "
 "engage?"
 
-#: src-ru/data/events_nebula.xml.rawclobber:686
+#: src-ru/data/events_nebula.xml.rawclobber:720
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[1]/text"
 msgstr "Prepare to chase them!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:690
+#: src-ru/data/events_nebula.xml.rawclobber:724
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[2]/text"
 msgstr "Stay hidden."
 
-#: src-ru/data/events_nebula.xml.rawclobber:692
+#: src-ru/data/events_nebula.xml.rawclobber:726
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[2]/event/text"
 msgstr "You try and stay out of sight. You doubt they saw you."
 
-#: src-ru/data/events_nebula.xml.rawclobber:696
+#: src-ru/data/events_nebula.xml.rawclobber:730
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"sensors\"]/text"
 msgstr "(Advanced Sensors) Try to track them as you move to engage."
 
-#: src-ru/data/events_nebula.xml.rawclobber:698
+#: src-ru/data/events_nebula.xml.rawclobber:732
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"sensors\"]/event/text"
@@ -1074,13 +1094,13 @@ msgstr ""
 " of the malfunctioning sensors and are able to keep track of them long "
 "enough to get in firing range."
 
-#: src-ru/data/events_nebula.xml.rawclobber:703
+#: src-ru/data/events_nebula.xml.rawclobber:737
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr "(Long-Ranged Scanners) Try to track them as you move to engage."
 
-#: src-ru/data/events_nebula.xml.rawclobber:705
+#: src-ru/data/events_nebula.xml.rawclobber:739
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"ADV_SCANNERS\"]/event/text"
@@ -1089,13 +1109,13 @@ msgstr ""
 " of the malfunctioning sensors and are able to keep track of them long "
 "enough to get in firing range."
 
-#: src-ru/data/events_nebula.xml.rawclobber:710
+#: src-ru/data/events_nebula.xml.rawclobber:744
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr "(Infared Scanner) Use their life signatures to follow."
 
-#: src-ru/data/events_nebula.xml.rawclobber:712
+#: src-ru/data/events_nebula.xml.rawclobber:746
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"LIFE_SCANNER\"]/event/text"
@@ -1103,12 +1123,12 @@ msgstr ""
 "Your augment's ability to keep track of their life signatures within the "
 "nebula proves useful. You catch up to the ship and prepare for a fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:717
+#: src-ru/data/events_nebula.xml.rawclobber:751
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"SHIPRADAR\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:719
+#: src-ru/data/events_nebula.xml.rawclobber:753
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"SHIPRADAR\"]/event/text"
@@ -1117,12 +1137,12 @@ msgstr ""
 " of the malfunctioning sensors and are able to keep track of them long "
 "enough to get in firing range."
 
-#: src-ru/data/events_nebula.xml.rawclobber:724
+#: src-ru/data/events_nebula.xml.rawclobber:758
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"SHIPRADAR2\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:726
+#: src-ru/data/events_nebula.xml.rawclobber:760
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_CHASE\"]/choice[@req=\"SHIPRADAR2\"]/event/text"
@@ -1131,21 +1151,21 @@ msgstr ""
 " of the malfunctioning sensors and are able to keep track of them long "
 "enough to get in firing range."
 
-#: src-ru/data/events_nebula.xml.rawclobber:733
+#: src-ru/data/events_nebula.xml.rawclobber:767
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_REBEL_CHASE_LIST\"]/event[1]/text"
 msgstr ""
 "You follow their vapour trails and surf onto their six o'clock, weapons hot."
 
-#: src-ru/data/events_nebula.xml.rawclobber:737
+#: src-ru/data/events_nebula.xml.rawclobber:771
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_REBEL_CHASE_LIST\"]/event[2]/text"
 msgstr ""
 "Without sensors you can't maintain a lock for long. The Rebels slip away."
 
-#: src-ru/data/events_nebula.xml.rawclobber:740
+#: src-ru/data/events_nebula.xml.rawclobber:774
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_REBEL_CHASE_LIST\"]/event[3]/text"
@@ -1154,44 +1174,44 @@ msgstr ""
 "takes some time to get back to the beacon. It's likely the fleet has had "
 "time to advance closer to your position."
 
-#: src-ru/data/events_nebula.xml.rawclobber:753
+#: src-ru/data/events_nebula.xml.rawclobber:787
 #, fuzzy
 msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TRADER\"]/text"
 msgstr ""
 "It's hard to see why, but this beacon is apparently a tourist destination. "
 "One of the ships at the small station is offering a deal."
 
-#: src-ru/data/events_nebula.xml.rawclobber:758
+#: src-ru/data/events_nebula.xml.rawclobber:792
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TRADER\"]/choice[1]/text"
 msgstr "Trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:762
+#: src-ru/data/events_nebula.xml.rawclobber:796
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TRADER\"]/choice[2]/text"
 msgstr "Trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:766
+#: src-ru/data/events_nebula.xml.rawclobber:800
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TRADER\"]/choice[3]/text"
 msgstr "Trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:770
+#: src-ru/data/events_nebula.xml.rawclobber:804
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TRADER\"]/choice[4]/text"
 msgstr "Attack them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:774
+#: src-ru/data/events_nebula.xml.rawclobber:808
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TRADER\"]/choice[5]/text"
 msgstr "Ignore."
 
-#: src-ru/data/events_nebula.xml.rawclobber:788
+#: src-ru/data/events_nebula.xml.rawclobber:822
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_FIGHT\"]/event/text"
@@ -1200,37 +1220,37 @@ msgstr ""
 "whether or not they were ready to attack, they had their weapons pre-ignited"
 " — you immediately receive their volley battering your ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:805
+#: src-ru/data/events_nebula.xml.rawclobber:839
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_LIST_1\"]/event[1]/text"
 msgstr "You make the trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:816
+#: src-ru/data/events_nebula.xml.rawclobber:850
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_LIST_1\"]/event[2]/text"
 msgstr "You make the trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:829
+#: src-ru/data/events_nebula.xml.rawclobber:863
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_LIST_2\"]/event[1]/text"
 msgstr "You make the trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:840
+#: src-ru/data/events_nebula.xml.rawclobber:874
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_LIST_2\"]/event[2]/text"
 msgstr "You make the trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:853
+#: src-ru/data/events_nebula.xml.rawclobber:887
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_LIST_3\"]/event[1]/text"
 msgstr "You make the trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:864
+#: src-ru/data/events_nebula.xml.rawclobber:898
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_LIST_3\"]/event[2]/text"
 msgstr "You make the trade."
 
-#: src-ru/data/events_nebula.xml.rawclobber:878
+#: src-ru/data/events_nebula.xml.rawclobber:912
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_NEXT\"]/event[1]/text"
@@ -1238,13 +1258,13 @@ msgstr ""
 "Together with the supplies on your ship a \"Surprise\" was also delivered! "
 "It was a trap, but you know that the Slugs are untrustworthy traders..."
 
-#: src-ru/data/events_nebula.xml.rawclobber:883
+#: src-ru/data/events_nebula.xml.rawclobber:917
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEB_TRADER_NEXT\"]/event[2]/text"
 msgstr "Having finished the exchange, you prepare to jump."
 
-#: src-ru/data/events_nebula.xml.rawclobber:904
+#: src-ru/data/events_nebula.xml.rawclobber:938
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_BOARDING_TEXT\"]/text[1]"
@@ -1253,7 +1273,7 @@ msgstr ""
 " the ship. You can't be sure without sensors, but it seems there may be "
 "intruders on the ship!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:905
+#: src-ru/data/events_nebula.xml.rawclobber:939
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_BOARDING_TEXT\"]/text[2]"
@@ -1263,7 +1283,7 @@ msgstr ""
 "no way to tell where they came from, but you hear shots fired on board the "
 "ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:906
+#: src-ru/data/events_nebula.xml.rawclobber:940
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_BOARDING_TEXT\"]/text[3]"
@@ -1272,7 +1292,7 @@ msgstr ""
 "hear the tell-tale sounds of a teleporter and shouts coming from within the "
 "ship. You've been boarded!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:922
+#: src-ru/data/events_nebula.xml.rawclobber:956
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/text"
@@ -1280,40 +1300,40 @@ msgstr ""
 "You jump into a sector of the nebula beset by a plasma storm. An automated "
 "Rebel scout stationed at the beacon moves in to attack."
 
-#: src-ru/data/events_nebula.xml.rawclobber:926
+#: src-ru/data/events_nebula.xml.rawclobber:960
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/choice[1]/text"
 msgstr "Prepare to fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:932
+#: src-ru/data/events_nebula.xml.rawclobber:966
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/choice[@req=\"engines\""
 " and @lvl=\"3\"]/text"
 msgstr "(Improved Engines) Attempt to out-run it."
 
-#: src-ru/data/events_nebula.xml.rawclobber:936
+#: src-ru/data/events_nebula.xml.rawclobber:970
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/text"
 msgstr "(Advanced Engines) Attempt to out-run it."
 
-#: src-ru/data/events_nebula.xml.rawclobber:938
+#: src-ru/data/events_nebula.xml.rawclobber:972
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/choice[@req=\"engines\""
 " and @lvl=\"6\"]/event/text"
 msgstr "You successfully lose the ship in the storm."
 
-#: src-ru/data/events_nebula.xml.rawclobber:942
+#: src-ru/data/events_nebula.xml.rawclobber:976
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/choice[@req=\"cloaking\"]/text"
 msgstr "(Cloaking) Use your cloaking to escape."
 
-#: src-ru/data/events_nebula.xml.rawclobber:944
+#: src-ru/data/events_nebula.xml.rawclobber:978
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_AUTO\"]/choice[@req=\"cloaking\"]/event/text"
@@ -1321,13 +1341,13 @@ msgstr ""
 "By using your advanced cloaking system you easily lose your pursuer in the "
 "storm."
 
-#: src-ru/data/events_nebula.xml.rawclobber:950
+#: src-ru/data/events_nebula.xml.rawclobber:984
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_AUTO_ESCAPE\"]/event[1]/text"
 msgstr "You successfully lose the ship in the storm."
 
-#: src-ru/data/events_nebula.xml.rawclobber:953
+#: src-ru/data/events_nebula.xml.rawclobber:987
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_AUTO_ESCAPE\"]/event[2]/text"
@@ -1335,7 +1355,7 @@ msgstr ""
 "Despite your improved engines you are unable to shake them; you turn and "
 "prepare for a fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:959
+#: src-ru/data/events_nebula.xml.rawclobber:993
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_REBEL\"]/text"
@@ -1343,7 +1363,7 @@ msgstr ""
 "You arrive in the middle of a plasma storm. Despite the harsh conditions, a "
 "Rebel scout seems to be waiting for you."
 
-#: src-ru/data/events_nebula.xml.rawclobber:967
+#: src-ru/data/events_nebula.xml.rawclobber:1001
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_BOARDING\"]/text"
@@ -1352,7 +1372,7 @@ msgstr ""
 " You begin to harvest some usable debris when you hear the sounds of someone"
 " beaming aboard followed by the shouts of a boarding party."
 
-#: src-ru/data/events_nebula.xml.rawclobber:975
+#: src-ru/data/events_nebula.xml.rawclobber:1009
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_ITEMS\"]/text"
@@ -1360,33 +1380,33 @@ msgstr ""
 "You jump into the middle of a plasma storm. Multiple recently incapacitated "
 "ships loom in the shadows, briefly illuminated by the lightning."
 
-#: src-ru/data/events_nebula.xml.rawclobber:977
+#: src-ru/data/events_nebula.xml.rawclobber:1011
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_ITEMS\"]/choice[1]/text"
 msgstr "Manually search the wreckage for survivors and equipment."
 
-#: src-ru/data/events_nebula.xml.rawclobber:981
+#: src-ru/data/events_nebula.xml.rawclobber:1015
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_ITEMS\"]/choice[2]/text"
 msgstr "Avoid the risk and wait to jump away unscathed."
 
-#: src-ru/data/events_nebula.xml.rawclobber:985
+#: src-ru/data/events_nebula.xml.rawclobber:1019
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_ITEMS\"]/choice[@req=\"pilot\""
 " and @lvl=\"2\"]/text"
 msgstr "(Improved Piloting) Have your pilot carefully explore the debris."
 
-#: src-ru/data/events_nebula.xml.rawclobber:989
+#: src-ru/data/events_nebula.xml.rawclobber:1023
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_STORM_ITEMS\"]/choice[@req=\"pilot\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced Piloting) Have your pilot carefully explore the debris."
 
-#: src-ru/data/events_nebula.xml.rawclobber:997
+#: src-ru/data/events_nebula.xml.rawclobber:1031
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[1]/text"
@@ -1395,7 +1415,7 @@ msgstr ""
 " into your ship, damaging the hull. You salvage what you can and prepare to "
 "jump before anything worse happens."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1003
+#: src-ru/data/events_nebula.xml.rawclobber:1037
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[2]/text"
@@ -1404,7 +1424,7 @@ msgstr ""
 " On board you find an unconscious passenger and take him back to the ship. "
 "Once awake they offer to join your crew in thanks."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1008
+#: src-ru/data/events_nebula.xml.rawclobber:1042
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[3]/text"
@@ -1413,7 +1433,7 @@ msgstr ""
 " into each other breaking the crew's tethers. You have no time to react as "
 "someone is knocked away, floating helplessly into the gaseous clouds..."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1014
+#: src-ru/data/events_nebula.xml.rawclobber:1048
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[3]/choice[@req=\"CREW_ALL\""
@@ -1422,7 +1442,7 @@ msgstr ""
 "Fortunately, your crewmember was close enough to the ship for the Clone Bay "
 "to revive them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1021
+#: src-ru/data/events_nebula.xml.rawclobber:1055
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[3]/choice[@req=\"CREW_ALL\""
@@ -1431,7 +1451,7 @@ msgstr ""
 "Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
 "смерти всего экипажа."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1027
+#: src-ru/data/events_nebula.xml.rawclobber:1061
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[4]/text"
@@ -1439,7 +1459,7 @@ msgstr ""
 "Among the junk and scrap you find a salvageable drone schematic. You decide "
 "to quit while ahead and prepare to jump with your recent find."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1031
+#: src-ru/data/events_nebula.xml.rawclobber:1065
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_LIST\"]/event[5]/text"
@@ -1447,7 +1467,7 @@ msgstr ""
 "Most of the debris is hardly even usable as scrap. However, you eventually "
 "find an intact weapon that can be mounted on your ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1037
+#: src-ru/data/events_nebula.xml.rawclobber:1071
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING\"]/event[1]/text"
@@ -1456,7 +1476,7 @@ msgstr ""
 " On board you find an unconscious passenger and take him back to the ship. "
 "Once awake they offer to join your crew in thanks."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1042
+#: src-ru/data/events_nebula.xml.rawclobber:1076
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING\"]/event[2]/text"
@@ -1464,7 +1484,7 @@ msgstr ""
 "Among the junk and scrap you find a salvageable drone schematic. You decide "
 "to quit while ahead and prepare to jump with your recent find."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1046
+#: src-ru/data/events_nebula.xml.rawclobber:1080
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING\"]/event[3]/text"
@@ -1472,7 +1492,7 @@ msgstr ""
 "Most of the debris is hardly even usable as scrap. However, you eventually "
 "find an intact weapon that can be mounted on your ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1050
+#: src-ru/data/events_nebula.xml.rawclobber:1084
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING\"]/event[4]/text"
@@ -1481,7 +1501,7 @@ msgstr ""
 "Any crew are long-since dead and the floating debris has been scorched "
 "beyond repair."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1055
+#: src-ru/data/events_nebula.xml.rawclobber:1089
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING2\"]/event[1]/text"
@@ -1490,7 +1510,7 @@ msgstr ""
 " On board you find an unconscious passenger and take him back to the ship. "
 "Once awake they offer to join your crew in thanks."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1060
+#: src-ru/data/events_nebula.xml.rawclobber:1094
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING2\"]/event[2]/text"
@@ -1498,7 +1518,7 @@ msgstr ""
 "Among the junk and scrap you find a salvageable drone schematic. You decide "
 "to quit while ahead and prepare to jump with your recent find."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1064
+#: src-ru/data/events_nebula.xml.rawclobber:1098
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ITEMS_PILOTING2\"]/event[3]/text"
@@ -1506,707 +1526,707 @@ msgstr ""
 "Most of the debris is hardly even usable as scrap. However, you eventually "
 "find an intact weapon that can be mounted on your ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1070
+#: src-ru/data/events_nebula.xml.rawclobber:1104
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1074
+#: src-ru/data/events_nebula.xml.rawclobber:1108
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1078
+#: src-ru/data/events_nebula.xml.rawclobber:1112
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1095
+#: src-ru/data/events_nebula.xml.rawclobber:1129
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1100
+#: src-ru/data/events_nebula.xml.rawclobber:1134
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1104
+#: src-ru/data/events_nebula.xml.rawclobber:1138
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1108
+#: src-ru/data/events_nebula.xml.rawclobber:1142
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1112
+#: src-ru/data/events_nebula.xml.rawclobber:1146
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1116
+#: src-ru/data/events_nebula.xml.rawclobber:1150
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1120
+#: src-ru/data/events_nebula.xml.rawclobber:1154
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1124
+#: src-ru/data/events_nebula.xml.rawclobber:1158
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1128
+#: src-ru/data/events_nebula.xml.rawclobber:1162
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1132
+#: src-ru/data/events_nebula.xml.rawclobber:1166
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1136
+#: src-ru/data/events_nebula.xml.rawclobber:1170
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1140
+#: src-ru/data/events_nebula.xml.rawclobber:1174
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1142
+#: src-ru/data/events_nebula.xml.rawclobber:1176
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT00_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1153
+#: src-ru/data/events_nebula.xml.rawclobber:1187
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1158
+#: src-ru/data/events_nebula.xml.rawclobber:1192
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1162
+#: src-ru/data/events_nebula.xml.rawclobber:1196
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1166
+#: src-ru/data/events_nebula.xml.rawclobber:1200
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1170
+#: src-ru/data/events_nebula.xml.rawclobber:1204
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1174
+#: src-ru/data/events_nebula.xml.rawclobber:1208
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1178
+#: src-ru/data/events_nebula.xml.rawclobber:1212
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1182
+#: src-ru/data/events_nebula.xml.rawclobber:1216
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1186
+#: src-ru/data/events_nebula.xml.rawclobber:1220
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1190
+#: src-ru/data/events_nebula.xml.rawclobber:1224
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1194
+#: src-ru/data/events_nebula.xml.rawclobber:1228
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1198
+#: src-ru/data/events_nebula.xml.rawclobber:1232
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1200
+#: src-ru/data/events_nebula.xml.rawclobber:1234
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT01_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1212
+#: src-ru/data/events_nebula.xml.rawclobber:1246
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1217
+#: src-ru/data/events_nebula.xml.rawclobber:1251
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1221
+#: src-ru/data/events_nebula.xml.rawclobber:1255
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1225
+#: src-ru/data/events_nebula.xml.rawclobber:1259
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1229
+#: src-ru/data/events_nebula.xml.rawclobber:1263
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1233
+#: src-ru/data/events_nebula.xml.rawclobber:1267
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1237
+#: src-ru/data/events_nebula.xml.rawclobber:1271
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1241
+#: src-ru/data/events_nebula.xml.rawclobber:1275
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1245
+#: src-ru/data/events_nebula.xml.rawclobber:1279
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1249
+#: src-ru/data/events_nebula.xml.rawclobber:1283
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1253
+#: src-ru/data/events_nebula.xml.rawclobber:1287
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1257
+#: src-ru/data/events_nebula.xml.rawclobber:1291
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1259
+#: src-ru/data/events_nebula.xml.rawclobber:1293
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT02_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1271
+#: src-ru/data/events_nebula.xml.rawclobber:1305
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1276
+#: src-ru/data/events_nebula.xml.rawclobber:1310
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1280
+#: src-ru/data/events_nebula.xml.rawclobber:1314
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1284
+#: src-ru/data/events_nebula.xml.rawclobber:1318
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1288
+#: src-ru/data/events_nebula.xml.rawclobber:1322
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1292
+#: src-ru/data/events_nebula.xml.rawclobber:1326
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1296
+#: src-ru/data/events_nebula.xml.rawclobber:1330
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1300
+#: src-ru/data/events_nebula.xml.rawclobber:1334
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1304
+#: src-ru/data/events_nebula.xml.rawclobber:1338
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1308
+#: src-ru/data/events_nebula.xml.rawclobber:1342
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1312
+#: src-ru/data/events_nebula.xml.rawclobber:1346
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1316
+#: src-ru/data/events_nebula.xml.rawclobber:1350
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1318
+#: src-ru/data/events_nebula.xml.rawclobber:1352
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT03_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1330
+#: src-ru/data/events_nebula.xml.rawclobber:1364
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1335
+#: src-ru/data/events_nebula.xml.rawclobber:1369
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1339
+#: src-ru/data/events_nebula.xml.rawclobber:1373
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1343
+#: src-ru/data/events_nebula.xml.rawclobber:1377
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1347
+#: src-ru/data/events_nebula.xml.rawclobber:1381
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1351
+#: src-ru/data/events_nebula.xml.rawclobber:1385
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1355
+#: src-ru/data/events_nebula.xml.rawclobber:1389
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1359
+#: src-ru/data/events_nebula.xml.rawclobber:1393
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1363
+#: src-ru/data/events_nebula.xml.rawclobber:1397
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1367
+#: src-ru/data/events_nebula.xml.rawclobber:1401
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1371
+#: src-ru/data/events_nebula.xml.rawclobber:1405
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1375
+#: src-ru/data/events_nebula.xml.rawclobber:1409
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1377
+#: src-ru/data/events_nebula.xml.rawclobber:1411
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT04_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1389
+#: src-ru/data/events_nebula.xml.rawclobber:1423
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1394
+#: src-ru/data/events_nebula.xml.rawclobber:1428
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1398
+#: src-ru/data/events_nebula.xml.rawclobber:1432
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1402
+#: src-ru/data/events_nebula.xml.rawclobber:1436
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1406
+#: src-ru/data/events_nebula.xml.rawclobber:1440
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1410
+#: src-ru/data/events_nebula.xml.rawclobber:1444
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1414
+#: src-ru/data/events_nebula.xml.rawclobber:1448
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1418
+#: src-ru/data/events_nebula.xml.rawclobber:1452
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1422
+#: src-ru/data/events_nebula.xml.rawclobber:1456
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1426
+#: src-ru/data/events_nebula.xml.rawclobber:1460
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1430
+#: src-ru/data/events_nebula.xml.rawclobber:1464
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1434
+#: src-ru/data/events_nebula.xml.rawclobber:1468
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1436
+#: src-ru/data/events_nebula.xml.rawclobber:1470
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT05_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1448
+#: src-ru/data/events_nebula.xml.rawclobber:1482
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1453
+#: src-ru/data/events_nebula.xml.rawclobber:1487
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1457
+#: src-ru/data/events_nebula.xml.rawclobber:1491
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1461
+#: src-ru/data/events_nebula.xml.rawclobber:1495
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1465
+#: src-ru/data/events_nebula.xml.rawclobber:1499
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1469
+#: src-ru/data/events_nebula.xml.rawclobber:1503
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1473
+#: src-ru/data/events_nebula.xml.rawclobber:1507
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1477
+#: src-ru/data/events_nebula.xml.rawclobber:1511
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1481
+#: src-ru/data/events_nebula.xml.rawclobber:1515
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1485
+#: src-ru/data/events_nebula.xml.rawclobber:1519
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1489
+#: src-ru/data/events_nebula.xml.rawclobber:1523
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1493
+#: src-ru/data/events_nebula.xml.rawclobber:1527
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1495
+#: src-ru/data/events_nebula.xml.rawclobber:1529
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT06_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1507
+#: src-ru/data/events_nebula.xml.rawclobber:1541
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1512
+#: src-ru/data/events_nebula.xml.rawclobber:1546
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1516
+#: src-ru/data/events_nebula.xml.rawclobber:1550
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1520
+#: src-ru/data/events_nebula.xml.rawclobber:1554
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1524
+#: src-ru/data/events_nebula.xml.rawclobber:1558
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1528
+#: src-ru/data/events_nebula.xml.rawclobber:1562
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1532
+#: src-ru/data/events_nebula.xml.rawclobber:1566
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1536
+#: src-ru/data/events_nebula.xml.rawclobber:1570
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1540
+#: src-ru/data/events_nebula.xml.rawclobber:1574
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1544
+#: src-ru/data/events_nebula.xml.rawclobber:1578
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1548
+#: src-ru/data/events_nebula.xml.rawclobber:1582
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1552
+#: src-ru/data/events_nebula.xml.rawclobber:1586
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1554
+#: src-ru/data/events_nebula.xml.rawclobber:1588
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT07_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1567
+#: src-ru/data/events_nebula.xml.rawclobber:1601
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1572
+#: src-ru/data/events_nebula.xml.rawclobber:1606
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1576
+#: src-ru/data/events_nebula.xml.rawclobber:1610
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1580
+#: src-ru/data/events_nebula.xml.rawclobber:1614
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1584
+#: src-ru/data/events_nebula.xml.rawclobber:1618
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1588
+#: src-ru/data/events_nebula.xml.rawclobber:1622
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1592
+#: src-ru/data/events_nebula.xml.rawclobber:1626
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1596
+#: src-ru/data/events_nebula.xml.rawclobber:1630
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1600
+#: src-ru/data/events_nebula.xml.rawclobber:1634
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1604
+#: src-ru/data/events_nebula.xml.rawclobber:1638
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1608
+#: src-ru/data/events_nebula.xml.rawclobber:1642
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1612
+#: src-ru/data/events_nebula.xml.rawclobber:1646
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1614
+#: src-ru/data/events_nebula.xml.rawclobber:1648
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT08_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1630
+#: src-ru/data/events_nebula.xml.rawclobber:1664
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_TEXT\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1635
+#: src-ru/data/events_nebula.xml.rawclobber:1669
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1639
+#: src-ru/data/events_nebula.xml.rawclobber:1673
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1643
+#: src-ru/data/events_nebula.xml.rawclobber:1677
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1647
+#: src-ru/data/events_nebula.xml.rawclobber:1681
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1651
+#: src-ru/data/events_nebula.xml.rawclobber:1685
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[5]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1655
+#: src-ru/data/events_nebula.xml.rawclobber:1689
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[6]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1659
+#: src-ru/data/events_nebula.xml.rawclobber:1693
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[7]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1663
+#: src-ru/data/events_nebula.xml.rawclobber:1697
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[8]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1667
+#: src-ru/data/events_nebula.xml.rawclobber:1701
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[9]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1671
+#: src-ru/data/events_nebula.xml.rawclobber:1705
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[10]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1675
+#: src-ru/data/events_nebula.xml.rawclobber:1709
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[@req=\"engi_crew\"]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1677
+#: src-ru/data/events_nebula.xml.rawclobber:1711
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_TASK_EVENT_ENCRIPT09_1\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1690
+#: src-ru/data/events_nebula.xml.rawclobber:1724
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_WRONG\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1693
+#: src-ru/data/events_nebula.xml.rawclobber:1727
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_WRONG\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1696
+#: src-ru/data/events_nebula.xml.rawclobber:1730
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_WRONG\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1707
+#: src-ru/data/events_nebula.xml.rawclobber:1741
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[1]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1712
+#: src-ru/data/events_nebula.xml.rawclobber:1746
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[2]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1717
+#: src-ru/data/events_nebula.xml.rawclobber:1751
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[3]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1722
+#: src-ru/data/events_nebula.xml.rawclobber:1756
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_TASK_EVENT_ENCRIPT_CORRECT\"]/event[4]/text"
 msgstr ""
 
-#: src-ru/data/events_nebula.xml.rawclobber:1787
+#: src-ru/data/events_nebula.xml.rawclobber:1821
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[1]"
@@ -2214,7 +2234,7 @@ msgstr ""
 "There isn't a single living soul in this nebula, but for some reason that "
 "doesn't calm your nerves down at all..."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1788
+#: src-ru/data/events_nebula.xml.rawclobber:1822
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[2]"
@@ -2222,7 +2242,7 @@ msgstr ""
 "This nebula would not be different from other similar ones, were it not for "
 "one feature — it is inhabited by ghosts..."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1789
+#: src-ru/data/events_nebula.xml.rawclobber:1823
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[3]"
@@ -2230,7 +2250,7 @@ msgstr ""
 "Avatars are often called ghosts. Perhaps their translucent nature frightens "
 "off ships from this part of the cosmos."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1790
+#: src-ru/data/events_nebula.xml.rawclobber:1824
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[4]"
@@ -2238,7 +2258,7 @@ msgstr ""
 "Avatars inhabit this nebula — artificial intelligence, holograms similar to "
 "ghosts. Even Slugs dare not venture into this place."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1791
+#: src-ru/data/events_nebula.xml.rawclobber:1825
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[5]"
@@ -2246,14 +2266,14 @@ msgstr ""
 "Rumors suggest that ghosts inhabit these parts. Like it or not, soon you'll "
 "find out for yourself."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1792
+#: src-ru/data/events_nebula.xml.rawclobber:1826
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[6]"
 msgstr ""
 "This nebula seems suspiciously quiet, even for a nebula. Keep your guard up."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1793
+#: src-ru/data/events_nebula.xml.rawclobber:1827
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[7]"
@@ -2261,7 +2281,7 @@ msgstr ""
 "You don't like the sounds that are heard in this place from time to time... "
 "a crewman complains of constant headaches because of them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1794
+#: src-ru/data/events_nebula.xml.rawclobber:1828
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"START_BEACON_AVATAR\"]/text[8]"
@@ -2269,7 +2289,7 @@ msgstr ""
 "Only Slug ships sometimes run the risk of flying into this dangerous of a "
 "nebula. The Rebels however, will stop at nothing."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1802
+#: src-ru/data/events_nebula.xml.rawclobber:1836
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"FIND_STUFF_AVATAR\"]/text[1]"
@@ -2277,7 +2297,7 @@ msgstr ""
 "The remains of a small ship slowly drift alongside the beacon. Inside you "
 "find some supplies."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1803
+#: src-ru/data/events_nebula.xml.rawclobber:1837
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"FIND_STUFF_AVATAR\"]/text[2]"
@@ -2285,7 +2305,7 @@ msgstr ""
 "You find an abandoned space station in orbit of a large asteroid. Your crew "
 "find some supplies inside."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1804
+#: src-ru/data/events_nebula.xml.rawclobber:1838
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"FIND_STUFF_AVATAR\"]/text[3]"
@@ -2293,7 +2313,7 @@ msgstr ""
 "Right before you are the remains of a Slug cruiser. Collecting debris, you "
 "involuntarily think about the dangers of this sector."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1805
+#: src-ru/data/events_nebula.xml.rawclobber:1839
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"FIND_STUFF_AVATAR\"]/text[4]"
@@ -2302,7 +2322,7 @@ msgstr ""
 "shattered. Apparently, it must've gotten into a serious mess. You dismantle "
 "it for spare parts."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1815
+#: src-ru/data/events_nebula.xml.rawclobber:1849
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_FIND_STUFF_AVATAR\"]/text[1]"
@@ -2310,7 +2330,7 @@ msgstr ""
 "The remains of a small ship slowly drift alongside the beacon. Inside you "
 "find some supplies."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1816
+#: src-ru/data/events_nebula.xml.rawclobber:1850
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_FIND_STUFF_AVATAR\"]/text[2]"
@@ -2318,7 +2338,7 @@ msgstr ""
 "You find an abandoned space station in orbit of a large asteroid. Your crew "
 "find some supplies inside."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1817
+#: src-ru/data/events_nebula.xml.rawclobber:1851
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_FIND_STUFF_AVATAR\"]/text[3]"
@@ -2326,7 +2346,7 @@ msgstr ""
 "Right before you are the remains of a Slug cruiser. Collecting debris, you "
 "involuntarily think about the dangers of this sector."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1818
+#: src-ru/data/events_nebula.xml.rawclobber:1852
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_FIND_STUFF_AVATAR\"]/text[4]"
@@ -2334,7 +2354,7 @@ msgstr ""
 "Because of a dense cloud of nebula, the remains of a Slug cruiser slowly "
 "drift by. You collect all that's left of it."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1819
+#: src-ru/data/events_nebula.xml.rawclobber:1853
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_FIND_STUFF_AVATAR\"]/text[5]"
@@ -2343,7 +2363,7 @@ msgstr ""
 "shattered. Apparently, it must've gotten into a serious mess. You dismantle "
 "it for spare parts."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1841
+#: src-ru/data/events_nebula.xml.rawclobber:1875
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_STORE_AVATAR\"]/text[1]"
@@ -2351,7 +2371,7 @@ msgstr ""
 "Someone left an automated trade station here. Oddly enough, it functions "
 "without fault."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1842
+#: src-ru/data/events_nebula.xml.rawclobber:1876
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_STORE_AVATAR\"]/text[2]"
@@ -2359,7 +2379,7 @@ msgstr ""
 "An automated trade station located in this cloud of the nebula offers its "
 "goods."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1843
+#: src-ru/data/events_nebula.xml.rawclobber:1877
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_STORE_AVATAR\"]/text[3]"
@@ -2367,7 +2387,7 @@ msgstr ""
 "It's unknown who placed the automated trade station in this nebula, but it "
 "still works."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1844
+#: src-ru/data/events_nebula.xml.rawclobber:1878
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_STORE_AVATAR\"]/text[4]"
@@ -2376,7 +2396,7 @@ msgstr ""
 "isn't the place where they would risk deceiving someone — here it's always "
 "better to have allies."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1856
+#: src-ru/data/events_nebula.xml.rawclobber:1890
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_BOARDING_AVATAR_TEXT\"]/text[1]"
@@ -2385,7 +2405,7 @@ msgstr ""
 "materialize on your ship with terrible sounds. The crew is hastily preparing"
 " to fend them off."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1857
+#: src-ru/data/events_nebula.xml.rawclobber:1891
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_BOARDING_AVATAR_TEXT\"]/text[2]"
@@ -2394,7 +2414,7 @@ msgstr ""
 "hold. Returning with the extraction, you suddenly realize that you brought "
 "several Avatars with you!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1858
+#: src-ru/data/events_nebula.xml.rawclobber:1892
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_BOARDING_AVATAR_TEXT\"]/text[3]"
@@ -2402,7 +2422,7 @@ msgstr ""
 "Avatars don't let you collect all the metal hanging around the beacon. Your "
 "crew's left in horror — ghosts are aboard the ship!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1867
+#: src-ru/data/events_nebula.xml.rawclobber:1901
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[1]"
@@ -2410,7 +2430,7 @@ msgstr ""
 "It's not known why, but Avatar ships are always accompanied by the sounds of"
 " a siren. Hearing it again, your team gets ready to fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1868
+#: src-ru/data/events_nebula.xml.rawclobber:1902
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[2]"
@@ -2419,7 +2439,7 @@ msgstr ""
 "attacking you! Broadcasting sirens to tear at the ears of enemies is their "
 "favorite tactic."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1869
+#: src-ru/data/events_nebula.xml.rawclobber:1903
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[3]"
@@ -2428,7 +2448,7 @@ msgstr ""
 "negotiations will be fruitless — they're unable to communicate with other "
 "races."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1870
+#: src-ru/data/events_nebula.xml.rawclobber:1904
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[4]"
@@ -2436,7 +2456,7 @@ msgstr ""
 "A siren's alarm is heard on your ship — Avatars are preparing to take it "
 "apart for spare parts. Ready the weapons for battle!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1871
+#: src-ru/data/events_nebula.xml.rawclobber:1905
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[5]"
@@ -2444,7 +2464,7 @@ msgstr ""
 "An Avatar battleship awaits careless travelers at this beacon. You have no "
 "choice but to prepare your defenses."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1872
+#: src-ru/data/events_nebula.xml.rawclobber:1906
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[6]"
@@ -2452,7 +2472,7 @@ msgstr ""
 "\"Not another goddamn siren!\" — yells a crewman in horror in the corner of "
 "their room. You calm your crew down and give the order to prepare to fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1873
+#: src-ru/data/events_nebula.xml.rawclobber:1907
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[7]"
@@ -2460,7 +2480,7 @@ msgstr ""
 "Near the beacon is a patrolling ship under AI control. Seeing you, it "
 "immediately goes on the offensive."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1874
+#: src-ru/data/events_nebula.xml.rawclobber:1908
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[8]"
@@ -2469,7 +2489,7 @@ msgstr ""
 " those damn ghosts!\" You already knew this by the terrible howl that "
 "rumbled throughout the ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1875
+#: src-ru/data/events_nebula.xml.rawclobber:1909
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[9]"
@@ -2478,7 +2498,7 @@ msgstr ""
 "order to leave it when suddenly an AI ship appears directly ahead. Prepare "
 "to fight!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1876
+#: src-ru/data/events_nebula.xml.rawclobber:1910
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"AVATAR_SHIPS_LIST\"]/text[10]"
@@ -2487,7 +2507,7 @@ msgstr ""
 "getting ready to attack. Your crew tries their hardest to block out the "
 "deafening sounds and focus on the battle at hand."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1887
+#: src-ru/data/events_nebula.xml.rawclobber:1921
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[1]"
@@ -2495,7 +2515,7 @@ msgstr ""
 "It's not known why, but Avatar ships are always accompanied by the sounds of"
 " a siren. Hearing it again, your team gets ready to fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1888
+#: src-ru/data/events_nebula.xml.rawclobber:1922
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[2]"
@@ -2504,7 +2524,7 @@ msgstr ""
 "attacking you! Broadcasting sirens to tear at the ears of enemies is their "
 "favorite tactic."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1889
+#: src-ru/data/events_nebula.xml.rawclobber:1923
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[3]"
@@ -2512,7 +2532,7 @@ msgstr ""
 "Another Avatar ship emerges from the nebula advancing directly towards you. "
 "You've no choice but to figure out how to take the fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1890
+#: src-ru/data/events_nebula.xml.rawclobber:1924
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[4]"
@@ -2521,7 +2541,7 @@ msgstr ""
 "negotiations will be fruitless — they're unable to communicate with other "
 "races."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1891
+#: src-ru/data/events_nebula.xml.rawclobber:1925
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[5]"
@@ -2529,7 +2549,7 @@ msgstr ""
 "A siren's alarm is heard on your ship — Avatars are preparing to take it "
 "apart for spare parts. Ready the weapons for battle!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1892
+#: src-ru/data/events_nebula.xml.rawclobber:1926
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[6]"
@@ -2537,7 +2557,7 @@ msgstr ""
 "An Avatar battleship awaits careless travelers at this beacon. You have no "
 "choice but to prepare your defenses."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1893
+#: src-ru/data/events_nebula.xml.rawclobber:1927
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[7]"
@@ -2545,7 +2565,7 @@ msgstr ""
 "\"Not another goddamn siren!\" — yells a crewman in horror in the corner of "
 "their room. You calm your crew down and give the order to prepare to fight."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1894
+#: src-ru/data/events_nebula.xml.rawclobber:1928
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[8]"
@@ -2554,7 +2574,7 @@ msgstr ""
 "you give the order to jump, when an Avatar cruiser emerges from the nebula "
 "and changes your plans."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1895
+#: src-ru/data/events_nebula.xml.rawclobber:1929
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[9]"
@@ -2562,7 +2582,7 @@ msgstr ""
 "Near the beacon is a patrolling ship under AI control. Seeing you, it "
 "immediately goes on the offensive."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1896
+#: src-ru/data/events_nebula.xml.rawclobber:1930
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[10]"
@@ -2570,7 +2590,7 @@ msgstr ""
 "The nebula is slightly dissipated in front of you, and there you see an "
 "Avatar ship coming at you in a frontal attack."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1897
+#: src-ru/data/events_nebula.xml.rawclobber:1931
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[11]"
@@ -2578,7 +2598,7 @@ msgstr ""
 "You can't make anything out in the nebula before you, when suddenly a siren "
 "is heard all over the ship. You've come under attack by Avatars!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1898
+#: src-ru/data/events_nebula.xml.rawclobber:1932
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[12]"
@@ -2587,7 +2607,7 @@ msgstr ""
 " those damn ghosts!\" You already knew this by the terrible howl that "
 "rumbled throughout the ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1899
+#: src-ru/data/events_nebula.xml.rawclobber:1933
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[13]"
@@ -2596,7 +2616,7 @@ msgstr ""
 "order to leave it when suddenly an AI ship appears directly ahead. Prepare "
 "to fight!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:1900
+#: src-ru/data/events_nebula.xml.rawclobber:1934
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[14]"
@@ -2605,7 +2625,7 @@ msgstr ""
 "of nebula. A crewman tearfully runs away from their post. You somehow manage"
 " to calm down the crew."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1901
+#: src-ru/data/events_nebula.xml.rawclobber:1935
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_AVATAR_SHIPS_LIST\"]/text[15]"
@@ -2614,14 +2634,14 @@ msgstr ""
 "getting ready to attack. Your crew tries their hardest to block out the "
 "deafening sounds and focus on the battle at hand."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1913
+#: src-ru/data/events_nebula.xml.rawclobber:1947
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_CREW_AVATAR\"]/event[1]/text"
 msgstr ""
 "There isn't a single Avatar left on the ship. You collect useful materials."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1917
+#: src-ru/data/events_nebula.xml.rawclobber:1951
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_CREW_AVATAR\"]/event[2]/text"
@@ -2629,7 +2649,7 @@ msgstr ""
 "There isn't a single Avatar left on the ship. You take all materials that "
 "look useful."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1921
+#: src-ru/data/events_nebula.xml.rawclobber:1955
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_CREW_AVATAR\"]/event[3]/text"
@@ -2637,7 +2657,7 @@ msgstr ""
 "With the Avatars gone, you can take fuel from their storage, and also "
 "collect all available scrap material."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1925
+#: src-ru/data/events_nebula.xml.rawclobber:1959
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_CREW_AVATAR\"]/event[4]/text"
@@ -2645,7 +2665,7 @@ msgstr ""
 "With the Avatars gone, you can take all the fuel from their storage, and "
 "also collect all available scrap material."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1929
+#: src-ru/data/events_nebula.xml.rawclobber:1963
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_CREW_AVATAR\"]/event[5]/text"
@@ -2653,7 +2673,7 @@ msgstr ""
 "You manage to kill off the entire Avatar crew. One of them can be brought "
 "back to life and reprogrammed to fight on your side."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1934
+#: src-ru/data/events_nebula.xml.rawclobber:1968
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_CREW_AVATAR\"]/event[6]/text"
@@ -2661,7 +2681,7 @@ msgstr ""
 "You find a unique Avatar weapon on their ship. With no one to stop you, you "
 "safely take it for yourself."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1946
+#: src-ru/data/events_nebula.xml.rawclobber:1980
 #, fuzzy
 msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/text"
 msgstr ""
@@ -2669,31 +2689,31 @@ msgstr ""
 "fell under attack by Avatars. They say that their ship is gaping with holes,"
 " and ask you for scrap to repair their hull, they don't mind how much."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1948
+#: src-ru/data/events_nebula.xml.rawclobber:1982
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[1]/text"
 msgstr "Give them 15 scrap."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1952
+#: src-ru/data/events_nebula.xml.rawclobber:1986
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[2]/text"
 msgstr "Give them 45 scrap."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1956
+#: src-ru/data/events_nebula.xml.rawclobber:1990
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[3]/text"
 msgstr "Finish off these losers."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1960
+#: src-ru/data/events_nebula.xml.rawclobber:1994
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[4]/text"
 msgstr "Decline and prepare to move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1962
+#: src-ru/data/events_nebula.xml.rawclobber:1996
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[4]/event/text"
@@ -2701,13 +2721,13 @@ msgstr ""
 "You know of course that the Slugs mend holes with repair gel. They won't "
 "fool you this time."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1966
+#: src-ru/data/events_nebula.xml.rawclobber:2000
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[@req=\"sensors\"]/text"
 msgstr "(Advanced Sensors) Scan their ship for damage."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1968
+#: src-ru/data/events_nebula.xml.rawclobber:2002
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[@req=\"sensors\"]/event/text"
@@ -2715,14 +2735,14 @@ msgstr ""
 "The sensors don't detect any damage on their ship. Realizing that their "
 "deception was uncovered, the Slugs go on the attack."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1974
+#: src-ru/data/events_nebula.xml.rawclobber:2008
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[@req=\"SLUG_GEL\"]/text"
 msgstr ""
 "(Slug Repair Gel) Share your gel with them to seal the holes in their ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1976
+#: src-ru/data/events_nebula.xml.rawclobber:2010
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[@req=\"SLUG_GEL\"]/event/text"
@@ -2730,7 +2750,7 @@ msgstr ""
 "They don't want to say where their gel went, but they gratefully accept your"
 " help."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1980
+#: src-ru/data/events_nebula.xml.rawclobber:2014
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP\"]/choice[@req=\"SLUG_GEL\"]/event/choice/event/text"
@@ -2738,7 +2758,7 @@ msgstr ""
 "Soon, their ship looks just like new. One of the Slugs wants to join your "
 "crew, carrying a few fuel cells on their back."
 
-#: src-ru/data/events_nebula.xml.rawclobber:1993
+#: src-ru/data/events_nebula.xml.rawclobber:2027
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_KILL_THEM\"]/event[1]/text"
@@ -2746,7 +2766,7 @@ msgstr ""
 "As it turns out, their ship isn't too badly damaged at all. They answer your"
 " aggression by firing a volley at you."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2000
+#: src-ru/data/events_nebula.xml.rawclobber:2034
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_KILL_THEM\"]/event[2]/text"
@@ -2754,7 +2774,7 @@ msgstr ""
 "As it turns out, their ship isn't too badly damaged at all. They're charging"
 " their weapons."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2008
+#: src-ru/data/events_nebula.xml.rawclobber:2042
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP_15\"]/event[1]/text"
@@ -2762,7 +2782,7 @@ msgstr ""
 "As soon as you give them the scrap, they hide in the nearest cloud of the "
 "nebula. Looks like you've been tricked."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2018
+#: src-ru/data/events_nebula.xml.rawclobber:2052
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP\"]/event[1]/text"
@@ -2770,27 +2790,27 @@ msgstr ""
 "Slugs take the scrap and quietly disappear into the nebula. When will you "
 "learn not to trust them?"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2024
+#: src-ru/data/events_nebula.xml.rawclobber:2058
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP\"]/event[2]/text"
 msgstr "They thank you and in response give you a ship augmentation."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2031
+#: src-ru/data/events_nebula.xml.rawclobber:2065
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP\"]/event[3]/text"
 msgstr ""
 "They thank you and in return give you a ship augmentation and some fuel."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2039
+#: src-ru/data/events_nebula.xml.rawclobber:2073
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP\"]/event[4]/text"
 msgstr ""
 "They thank you and in return give you a ship augmentation and some missiles."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2047
+#: src-ru/data/events_nebula.xml.rawclobber:2081
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP\"]/event[5]/text"
@@ -2798,7 +2818,7 @@ msgstr ""
 "They thank you and in return give you a ship augmentation and some drone "
 "parts."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2058
+#: src-ru/data/events_nebula.xml.rawclobber:2092
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP_2\"]/event[1]/text"
@@ -2806,27 +2826,27 @@ msgstr ""
 "Slugs take the scrap and quietly disappear into the nebula. When will you "
 "learn not to trust them?"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2064
+#: src-ru/data/events_nebula.xml.rawclobber:2098
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP_2\"]/event[2]/text"
 msgstr "They thank you and in response give you a ship augmentation."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2071
+#: src-ru/data/events_nebula.xml.rawclobber:2105
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP_2\"]/event[3]/text"
 msgstr ""
 "They thank you and in return give you a ship augmentation and some fuel."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2079
+#: src-ru/data/events_nebula.xml.rawclobber:2113
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP_2\"]/event[4]/text"
 msgstr ""
 "They thank you and in return give you a ship augmentation and some missiles."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2087
+#: src-ru/data/events_nebula.xml.rawclobber:2121
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"SLUG_SCRAP_HELP_2\"]/event[5]/text"
@@ -2834,7 +2854,7 @@ msgstr ""
 "They thank you and in return give you a ship augmentation and some drone "
 "parts."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2104
+#: src-ru/data/events_nebula.xml.rawclobber:2138
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_REBEL_HELP_LIST\"]/text[1]"
@@ -2843,7 +2863,7 @@ msgstr ""
 " Federation would answer their distress call. It's unknown what happened to "
 "them, but they're already charging up their weapons."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2105
+#: src-ru/data/events_nebula.xml.rawclobber:2139
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_REBEL_HELP_LIST\"]/text[2]"
@@ -2851,14 +2871,14 @@ msgstr ""
 "Either this Rebel ship actually needs help, or it was a trap — in any case, "
 "they don't deserve anything but death."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2106
+#: src-ru/data/events_nebula.xml.rawclobber:2140
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_REBEL_HELP_LIST\"]/text[3]"
 msgstr ""
 "The signal was a trap — a Rebel cruiser is waiting for you in this nebula!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2107
+#: src-ru/data/events_nebula.xml.rawclobber:2141
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_REBEL_HELP_LIST\"]/text[4]"
@@ -2866,7 +2886,7 @@ msgstr ""
 "The distress signal was transmitted by a Rebel cruiser, and you flew right "
 "into their trap. Prepare to fight!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2108
+#: src-ru/data/events_nebula.xml.rawclobber:2142
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//textList[@name=\"NEBULA_REBEL_HELP_LIST\"]/text[5]"
@@ -2874,7 +2894,7 @@ msgstr ""
 "It's not necessary to answer every distress call — this one's a Rebel "
 "ambush, and they're already moving in to attack."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2117
+#: src-ru/data/events_nebula.xml.rawclobber:2151
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_HELP2\"]/text"
@@ -2884,19 +2904,19 @@ msgstr ""
 "us out of here! We're lost in the nebula, and these damned ghosts are "
 "driving the crew crazy!\""
 
-#: src-ru/data/events_nebula.xml.rawclobber:2119
+#: src-ru/data/events_nebula.xml.rawclobber:2153
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_HELP2\"]/choice[1]/text"
 msgstr "Escort them to the nearest safe beacon."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2123
+#: src-ru/data/events_nebula.xml.rawclobber:2157
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_HELP2\"]/choice[2]/text"
 msgstr "Attack them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2125
+#: src-ru/data/events_nebula.xml.rawclobber:2159
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_REBEL_HELP2\"]/choice[2]/event/text"
@@ -2904,7 +2924,7 @@ msgstr ""
 "You have a short conversation with the Rebels — a couple of shots in their "
 "direction makes them remember which side you are fighting on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2134
+#: src-ru/data/events_nebula.xml.rawclobber:2168
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_REBEL_HELP22\"]/event[1]/text"
@@ -2912,7 +2932,7 @@ msgstr ""
 "They follow you to the next beacon and are safely moved away from that "
 "nebula. One of them wishes to join your crew."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2138
+#: src-ru/data/events_nebula.xml.rawclobber:2172
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_REBEL_HELP22\"]/event[2]/text"
@@ -2920,7 +2940,7 @@ msgstr ""
 "As soon as you fly towards them to show them the way, a volley from their "
 "weapons arrives from the stern. The treacherous Rebels deceived you!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2144
+#: src-ru/data/events_nebula.xml.rawclobber:2178
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"NEBULA_REBEL_HELP22\"]/event[3]/text"
@@ -2929,7 +2949,7 @@ msgstr ""
 " You fly away with a promise to tear them to shreds if they ever encounter "
 "you again."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2155
+#: src-ru/data/events_nebula.xml.rawclobber:2189
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/text"
@@ -2938,13 +2958,13 @@ msgstr ""
 "without fuel. They promise to pay with scrap if you help them get out of "
 "here."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2157
+#: src-ru/data/events_nebula.xml.rawclobber:2191
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[1]/text"
 msgstr "Give them 1 fuel."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2159
+#: src-ru/data/events_nebula.xml.rawclobber:2193
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[1]/event/text"
@@ -2952,37 +2972,37 @@ msgstr ""
 "You send them the fuel, and they immediately jump away! Once again, you have"
 " fallen for classic Slug bait..."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2166
+#: src-ru/data/events_nebula.xml.rawclobber:2200
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[2]/text"
 msgstr "Give them 5 fuel."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2168
+#: src-ru/data/events_nebula.xml.rawclobber:2202
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[2]/event/text"
 msgstr "You send them the fuel, and they give you scrap."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2176
+#: src-ru/data/events_nebula.xml.rawclobber:2210
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[3]/text"
 msgstr "Give them 10 fuel."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2178
+#: src-ru/data/events_nebula.xml.rawclobber:2212
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[3]/event/text"
 msgstr "You send them the fuel, and they give you scrap."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2186
+#: src-ru/data/events_nebula.xml.rawclobber:2220
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[4]/text"
 msgstr "Attack them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2188
+#: src-ru/data/events_nebula.xml.rawclobber:2222
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[4]/event/text"
@@ -2990,13 +3010,13 @@ msgstr ""
 "\"You'll regret that...\" — the last thing you hear before they cut "
 "communications."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2194
+#: src-ru/data/events_nebula.xml.rawclobber:2228
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[5]/text"
 msgstr "Decline and prepare to move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2196
+#: src-ru/data/events_nebula.xml.rawclobber:2230
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_HELP2\"]/choice[5]/event/text"
@@ -3004,40 +3024,40 @@ msgstr ""
 "You've never trusted the Slugs and see no reason to do so now, and give the "
 "order to make the next jump."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2205
+#: src-ru/data/events_nebula.xml.rawclobber:2239
 #, fuzzy
 msgid "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_DEAD\"]/text"
 msgstr ""
 "While you were jumping to the beacon, the distress signal was interrupted. "
 "Because of the dense nebula around, you can't pinpoint its source."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2207
+#: src-ru/data/events_nebula.xml.rawclobber:2241
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_DEAD\"]/choice[1]/text"
 msgstr "Move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2209
+#: src-ru/data/events_nebula.xml.rawclobber:2243
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_DEAD\"]/choice[1]/event/text"
 msgstr "There's nothing more you can do here, so you get ready to jump."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2217
+#: src-ru/data/events_nebula.xml.rawclobber:2251
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_DEAD\"]/choice[@req=\"sensors\""
 " and @lvl=\"2\"]/text"
 msgstr "(Improved Sensors) Scan the surroundings."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2221
+#: src-ru/data/events_nebula.xml.rawclobber:2255
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_SLUG_DEAD\"]/choice[@req=\"sensors\""
 " and @lvl=\"3\"]/text"
 msgstr "(Advanced Sensors) Scan the surroundings."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2228
+#: src-ru/data/events_nebula.xml.rawclobber:2262
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_SLUG_LOW\"]/event[1]/text"
@@ -3045,7 +3065,7 @@ msgstr ""
 "Your sensors aren't powerful enough to find anything here. Nothing remains, "
 "except to continue your mission and move on."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2231
+#: src-ru/data/events_nebula.xml.rawclobber:2265
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_SLUG_LOW\"]/event[2]/text"
@@ -3055,7 +3075,7 @@ msgstr ""
 "hull depressurized and blew right out into open space. You take everything "
 "you can from the broken ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2235
+#: src-ru/data/events_nebula.xml.rawclobber:2269
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_SLUG_LOW\"]/event[3]/text"
@@ -3065,7 +3085,7 @@ msgstr ""
 "hull depressurized and blew right out into open space. You take everything "
 "you can from the broken ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2242
+#: src-ru/data/events_nebula.xml.rawclobber:2276
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_SLUG_HIGH\"]/event[1]/text"
@@ -3075,7 +3095,7 @@ msgstr ""
 "hull depressurized and blew right out into open space. You take everything "
 "you can from the broken ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2246
+#: src-ru/data/events_nebula.xml.rawclobber:2280
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_SLUG_HIGH\"]/event[2]/text"
@@ -3085,7 +3105,7 @@ msgstr ""
 "hull depressurized and blew right out into open space. You take everything "
 "you can from the broken ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2250
+#: src-ru/data/events_nebula.xml.rawclobber:2284
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"DEAD_SLUG_HIGH\"]/event[3]/text"
@@ -3094,7 +3114,7 @@ msgstr ""
 "sole surviving Slug joins your crew, and you take everything you can from "
 "the broken ship."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2262
+#: src-ru/data/events_nebula.xml.rawclobber:2296
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP\"]/text"
@@ -3102,13 +3122,13 @@ msgstr ""
 "Surprisingly, the distress signal is transmitted by an Avatar ship! They "
 "don't hurry to attack you, but don't answer your hails either."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2264
+#: src-ru/data/events_nebula.xml.rawclobber:2298
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP\"]/choice[1]/text"
 msgstr "Attack them!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2266
+#: src-ru/data/events_nebula.xml.rawclobber:2300
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP\"]/choice[1]/event/text"
@@ -3116,24 +3136,24 @@ msgstr ""
 "Once you activate your weaponry, the Avatar ship comes to life and starts "
 "charging its own."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2273
+#: src-ru/data/events_nebula.xml.rawclobber:2307
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP\"]/choice[2]/text"
 msgstr "Leave them alone."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2275
+#: src-ru/data/events_nebula.xml.rawclobber:2309
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP\"]/choice[2]/event/text"
 msgstr "You decide not to run into trouble and prepare to jump away."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2279
+#: src-ru/data/events_nebula.xml.rawclobber:2313
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP\"]/choice[@req=\"ghost_crew\"]/text"
 msgstr "(Avatar Crewmember) Have your Avatar hail them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2286
+#: src-ru/data/events_nebula.xml.rawclobber:2320
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"AVATAR_HELP_REWARD\"]/event[1]/text"
@@ -3144,7 +3164,7 @@ msgstr ""
 "you a capsule with a weapon inside in gratitude. However, \"gratitude\" may "
 "not be the right word to use when referring to artificial intelligence."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2290
+#: src-ru/data/events_nebula.xml.rawclobber:2324
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//eventList[@name=\"AVATAR_HELP_REWARD\"]/event[2]/text"
@@ -3156,7 +3176,7 @@ msgstr ""
 "\"gratitude\" may not be the right word to use when referring to artificial "
 "intelligence."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2301
+#: src-ru/data/events_nebula.xml.rawclobber:2335
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AVATAR_HELP2\"]/text"
@@ -3164,14 +3184,14 @@ msgstr ""
 "The distress signal turned out to be a trap — you have to fight an AI ship "
 "right in the middle of a plasma storm!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2310
+#: src-ru/data/events_nebula.xml.rawclobber:2344
 #, fuzzy
 msgid "data/events_nebula.xml.rawclobber$//event[@name=\"AVATAR_HELP3\"]/text"
 msgstr ""
 "The distress call leads you straight into a pulsar, near which an AI ship is"
 " waiting for you. It's a trap!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2321
+#: src-ru/data/events_nebula.xml.rawclobber:2355
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/text"
@@ -3183,14 +3203,14 @@ msgstr ""
 "and mind controlling them. If you manage to damage the ship's AI very "
 "strongly, before their crew dies, they promise to thank you."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2323
+#: src-ru/data/events_nebula.xml.rawclobber:2357
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[1]/text"
 msgstr ""
 "A trade convoy, in this sector? That sounds far from the truth, attack them!"
 
-#: src-ru/data/events_nebula.xml.rawclobber:2325
+#: src-ru/data/events_nebula.xml.rawclobber:2359
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[1]/event/text"
@@ -3198,7 +3218,7 @@ msgstr ""
 "The civilians send curses your way, but are preparing to defend themselves, "
 "despite their damage."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2330
+#: src-ru/data/events_nebula.xml.rawclobber:2364
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[2]/text"
@@ -3206,7 +3226,7 @@ msgstr ""
 "Go to the captured ship and try to disable the AI with the help of several "
 "volleys."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2332
+#: src-ru/data/events_nebula.xml.rawclobber:2366
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[2]/event/text"
@@ -3215,19 +3235,19 @@ msgstr ""
 "support systems! You'll need to hurry and stop it while their ship still has"
 " oxygen."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2338
+#: src-ru/data/events_nebula.xml.rawclobber:2372
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[2]/event/choice/event/text"
 msgstr "The civilians begin to suffocate..."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2345
+#: src-ru/data/events_nebula.xml.rawclobber:2379
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[3]/text"
 msgstr "Don't interfere and get ready to fly away."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2347
+#: src-ru/data/events_nebula.xml.rawclobber:2381
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//event[@name=\"NEBULA_AI_KILLS_CIV\"]/choice[3]/event/text"
@@ -3236,7 +3256,7 @@ msgstr ""
 "into the nebula, and the civilians beside you patch up the holes in their "
 "hull."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2353
+#: src-ru/data/events_nebula.xml.rawclobber:2387
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/surrender/text"
@@ -3244,13 +3264,13 @@ msgstr ""
 "Apparently, the ship's AI disconnected and lost its control over the ship's "
 "systems and crew."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2356
+#: src-ru/data/events_nebula.xml.rawclobber:2390
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/surrender/choice[1]/text"
 msgstr "Cease fire."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2358
+#: src-ru/data/events_nebula.xml.rawclobber:2392
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/surrender/choice[1]/event/text"
@@ -3260,20 +3280,20 @@ msgstr ""
 "you with gratitude for saving their comrades and give you a weapon from "
 "their holds."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2365
+#: src-ru/data/events_nebula.xml.rawclobber:2399
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/surrender/choice[2]/text"
 msgstr "Continue firing."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2367
+#: src-ru/data/events_nebula.xml.rawclobber:2401
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/surrender/choice[2]/event/text"
 msgstr ""
 "Disassemble them for scrap metal — the only true solution to this situation."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2373
+#: src-ru/data/events_nebula.xml.rawclobber:2407
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/destroyed/text"
@@ -3282,7 +3302,7 @@ msgstr ""
 "not thank you for its obliteration. However, no one bothers you while you "
 "profit from its remains."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2377
+#: src-ru/data/events_nebula.xml.rawclobber:2411
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"AI_CIV_EVENT\"]/deadCrew/text"
@@ -3292,7 +3312,7 @@ msgstr ""
 "that could — though evidently not enough — and they fly away embittered, "
 "leaving you to collect everything of value from the captured ship. "
 
-#: src-ru/data/events_nebula.xml.rawclobber:2384
+#: src-ru/data/events_nebula.xml.rawclobber:2418
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/text"
@@ -3300,25 +3320,25 @@ msgstr ""
 "The civilians get in touch: \"I beg you, stop! We'll give you everything "
 "we've got! \""
 
-#: src-ru/data/events_nebula.xml.rawclobber:2386
+#: src-ru/data/events_nebula.xml.rawclobber:2420
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/text"
 msgstr "Cease fire."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2388
+#: src-ru/data/events_nebula.xml.rawclobber:2422
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/event/text"
 msgstr "They send you a container with cargo."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2391
+#: src-ru/data/events_nebula.xml.rawclobber:2425
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/event/choice[1]/text"
 msgstr "This is not enough, demand more."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2393
+#: src-ru/data/events_nebula.xml.rawclobber:2427
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/event/choice[1]/event/text"
@@ -3326,13 +3346,13 @@ msgstr ""
 "Again cursing you, they send a little scrap. It seems that they have nothing"
 " more for you to take, so you get ready to fly away."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2399
+#: src-ru/data/events_nebula.xml.rawclobber:2433
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/event/choice[2]/text"
 msgstr "Finish them off."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2401
+#: src-ru/data/events_nebula.xml.rawclobber:2435
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/event/choice[2]/event/text"
@@ -3341,25 +3361,25 @@ msgstr ""
 "crying. Well, what can you do, in these difficult times you have no other "
 "choice."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2405
+#: src-ru/data/events_nebula.xml.rawclobber:2439
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[1]/event/choice[3]/text"
 msgstr "Release them and fly away."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2413
+#: src-ru/data/events_nebula.xml.rawclobber:2447
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/surrender/choice[2]/text"
 msgstr "Continue firing."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2418
+#: src-ru/data/events_nebula.xml.rawclobber:2452
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/escape/text"
 msgstr "You register that their ship is charging their FTL Drive."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2421
+#: src-ru/data/events_nebula.xml.rawclobber:2455
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/gotaway/text"
@@ -3367,14 +3387,14 @@ msgstr ""
 "The ship jumped away somewhere into the depths of the nebula, and you don't "
 "risk pursuing them."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2424
+#: src-ru/data/events_nebula.xml.rawclobber:2458
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/destroyed/text"
 msgstr ""
 "The civilian ship explodes, and you collect the debris from its remains."
 
-#: src-ru/data/events_nebula.xml.rawclobber:2428
+#: src-ru/data/events_nebula.xml.rawclobber:2462
 #, fuzzy
 msgid ""
 "data/events_nebula.xml.rawclobber$//ship[@name=\"DAMAGED_CIV_EVENT\"]/deadCrew/text"

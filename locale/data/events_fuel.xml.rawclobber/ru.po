@@ -36,42 +36,47 @@ msgstr ""
 "Флот повстанцев всё прибывает. Возможно вам удастся выбить топливо из "
 "какого-нибудь корабля, чтобы сбежать..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:69
+#: src-ru/data/events_fuel.xml.rawclobber:68
+msgid ""
+"data/events_fuel.xml.rawclobber$/dummyroot/FTL/event[@name=\"NO_FUEL_FLEET_DLC_BAD\"]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:73
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[1]"
 msgstr ""
 "По каким-то причинам к маяку, на котором вы застряли, не прибыл ни один "
 "корабль повстанцев."
 
-#: src-ru/data/events_fuel.xml.rawclobber:70
+#: src-ru/data/events_fuel.xml.rawclobber:74
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[2]"
 msgstr ""
 "Вы удивлённо ещё раз проверяете сенсоры - повстанцев нет. Может быть они "
 "решили получше подготовиться, прежде чем взять вас?"
 
-#: src-ru/data/events_fuel.xml.rawclobber:71
+#: src-ru/data/events_fuel.xml.rawclobber:75
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"NO_FUEL_FLEET_DLC_BAD_TEXT\"]/text[3]"
 msgstr ""
 "Вблизи маяка довольно тихо, хотя вы фиксируете продвижение волны флота "
 "повстанцев. Это как минимум подозрительно..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:114
+#: src-ru/data/events_fuel.xml.rawclobber:118
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[1]"
 msgstr ""
 "Вы уверены, что если не привлекать внимания, то флот повстанцев обнаружит "
 "вас нескоро."
 
-#: src-ru/data/events_fuel.xml.rawclobber:115
+#: src-ru/data/events_fuel.xml.rawclobber:119
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[2]"
 msgstr ""
 "Так как аварийный маяк не был активирован, вы уверены, что флот повстанцев "
 "испытывает трудности в поисках вас. Это даст вам немного времени."
 
-#: src-ru/data/events_fuel.xml.rawclobber:116
+#: src-ru/data/events_fuel.xml.rawclobber:120
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[3]"
 msgstr ""
@@ -79,21 +84,21 @@ msgstr ""
 " в вашу сторону. Ваше решение не активировать аварийный маяк оказалось "
 "дальновидным."
 
-#: src-ru/data/events_fuel.xml.rawclobber:117
+#: src-ru/data/events_fuel.xml.rawclobber:121
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[4]"
 msgstr ""
 "Сканеры показывают, что флот повстанцев приостановил преследование. "
 "Временно."
 
-#: src-ru/data/events_fuel.xml.rawclobber:118
+#: src-ru/data/events_fuel.xml.rawclobber:122
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[5]"
 msgstr ""
 "Ваша интуиция капитана подсказывает, что повстанцы всё ещё не знают, где вас"
 " искать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:119
+#: src-ru/data/events_fuel.xml.rawclobber:123
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[6]"
 msgstr ""
@@ -101,7 +106,7 @@ msgstr ""
 "повстанцам будет сложно найти вас. Остаётся надеяться, что их замешательство"
 " продлится до того, как вы сможете найти топливо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:120
+#: src-ru/data/events_fuel.xml.rawclobber:124
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DELAY_LIST\"]/text[7]"
 msgstr ""
@@ -109,17 +114,22 @@ msgstr ""
 "Если бы вы могли достать немного топлива, то получили бы шанс увеличить "
 "дистанцию между вами и повстанцами..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:127
+#: src-ru/data/events_fuel.xml.rawclobber:130
+msgid ""
+"data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_NOTHING\"]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:135
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[1]"
 msgstr "В радиусе сканирования никого нет, и к маяку так никто и не прилетел."
 
-#: src-ru/data/events_fuel.xml.rawclobber:128
+#: src-ru/data/events_fuel.xml.rawclobber:136
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[2]"
 msgstr "Ваше ожидание не приводит ни к чему, кроме приближения флота..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:129
+#: src-ru/data/events_fuel.xml.rawclobber:137
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[3]"
 msgstr ""
@@ -127,69 +137,69 @@ msgstr ""
 "вплотную к вам, игнорируя все попытки выйти на связь, и вскоре совершает "
 "прыжок куда-то дальше."
 
-#: src-ru/data/events_fuel.xml.rawclobber:130
+#: src-ru/data/events_fuel.xml.rawclobber:138
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[4]"
 msgstr ""
 "Несколько кораблей пролетают неподалёку от вас по своим делам, но на попытки"
 " установить связь никто не реагирует."
 
-#: src-ru/data/events_fuel.xml.rawclobber:131
+#: src-ru/data/events_fuel.xml.rawclobber:139
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[5]"
 msgstr ""
 "Единственным кораблём в радиусе связи оказывается небольшое гражданское "
 "судно, но и оно, обнаружив вас, незамедлительно удаляется."
 
-#: src-ru/data/events_fuel.xml.rawclobber:132
+#: src-ru/data/events_fuel.xml.rawclobber:140
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[6]"
 msgstr ""
 "Ожидание скрашивает только метеоритный поток, мягко постукивая по вашим "
 "щитам и корпусу."
 
-#: src-ru/data/events_fuel.xml.rawclobber:133
+#: src-ru/data/events_fuel.xml.rawclobber:141
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[7]"
 msgstr ""
 "Вы начинаете задумываться, стоит ли включить аварийный маяк, рискуя выдать "
 "себя. Флот медленно приближается."
 
-#: src-ru/data/events_fuel.xml.rawclobber:134
+#: src-ru/data/events_fuel.xml.rawclobber:142
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[8]"
 msgstr "Вы созерцаете безразмерную пустоту космоса."
 
-#: src-ru/data/events_fuel.xml.rawclobber:135
+#: src-ru/data/events_fuel.xml.rawclobber:143
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[9]"
 msgstr ""
 "Продолжительное ожидание в пустоте приводит к напряжению внутри команды. "
 "Вокруг по-прежнему никого нет."
 
-#: src-ru/data/events_fuel.xml.rawclobber:136
+#: src-ru/data/events_fuel.xml.rawclobber:144
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[10]"
 msgstr "У вашего экипажа начинаются приступы клаустрофобии."
 
-#: src-ru/data/events_fuel.xml.rawclobber:137
+#: src-ru/data/events_fuel.xml.rawclobber:145
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_LIST\"]/text[11]"
 msgstr ""
 "Сканеры дальнего действия обнаруживают небольшое поселение, но его жители "
 "отказываются от каких-либо контактов."
 
-#: src-ru/data/events_fuel.xml.rawclobber:144
+#: src-ru/data/events_fuel.xml.rawclobber:152
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER\"]/choice[1]/text"
 msgstr "Охотно согласиться торговать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:148
+#: src-ru/data/events_fuel.xml.rawclobber:156
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER\"]/choice[2]/text"
 msgstr "Вежливо отказать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:153
+#: src-ru/data/events_fuel.xml.rawclobber:161
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[1]"
 msgstr ""
@@ -197,7 +207,7 @@ msgstr ""
 " просьбой о помощи. Они отвечают: «Возможно, мы могли бы совершить "
 "сделку...»"
 
-#: src-ru/data/events_fuel.xml.rawclobber:154
+#: src-ru/data/events_fuel.xml.rawclobber:162
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[2]"
 msgstr ""
@@ -205,7 +215,7 @@ msgstr ""
 "помощи каждому, и один, наконец, отвечает. «Я не смогу помочь безвозмездно, "
 "но, возможно, мы можем совершить выгодную сделку»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:155
+#: src-ru/data/events_fuel.xml.rawclobber:163
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[3]"
 msgstr ""
@@ -214,7 +224,7 @@ msgstr ""
 "поступайте опрометчиво. У нас есть телепортер на базе и отряд, готовый "
 "защищать нас»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:156
+#: src-ru/data/events_fuel.xml.rawclobber:164
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[4]"
 msgstr ""
@@ -222,7 +232,7 @@ msgstr ""
 "Почувствовав возможность поторговать, один корабль отделяется от флота, "
 "чтобы предложить вам обмен."
 
-#: src-ru/data/events_fuel.xml.rawclobber:157
+#: src-ru/data/events_fuel.xml.rawclobber:165
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_TEXT_LIST\"]/text[5]"
 msgstr ""
@@ -231,39 +241,39 @@ msgstr ""
 "контрабандисты, но они, кажется, настроены альтруистически и предлагают "
 "сделку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:161
+#: src-ru/data/events_fuel.xml.rawclobber:169
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/text"
 msgstr ""
 "Хотя отсутствие топливных элементов не позволяет вашему кораблю совершать "
 "прыжки, вы всё ещё можете использовать ваши импульсные двигатели. Желаете ли"
 " вы потратить некоторое время, исследуя близлежащие системы?"
 
-#: src-ru/data/events_fuel.xml.rawclobber:163
+#: src-ru/data/events_fuel.xml.rawclobber:171
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[1]/text"
 msgstr "Исследовать окрестности."
 
-#: src-ru/data/events_fuel.xml.rawclobber:167
+#: src-ru/data/events_fuel.xml.rawclobber:175
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[2]/text"
 msgstr "Остаться у маяка."
 
-#: src-ru/data/events_fuel.xml.rawclobber:173
+#: src-ru/data/events_fuel.xml.rawclobber:181
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/text"
 msgstr "Возле маяка вам попалось небольшое астероидное поле."
 
-#: src-ru/data/events_fuel.xml.rawclobber:175
+#: src-ru/data/events_fuel.xml.rawclobber:183
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[1]/text"
 msgstr "Приблизиться к астероидам и просканировать их."
 
-#: src-ru/data/events_fuel.xml.rawclobber:179
+#: src-ru/data/events_fuel.xml.rawclobber:187
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[2]/text"
 msgstr "Не рисковать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:184
+#: src-ru/data/events_fuel.xml.rawclobber:192
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/text"
 msgstr ""
@@ -271,113 +281,118 @@ msgstr ""
 "путешественников. FTL-приводы здесь почти никто не использует, и их запас "
 "топливных ячеек скромен, а цена высока. Но вариантов у вас нет..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:186
+#: src-ru/data/events_fuel.xml.rawclobber:194
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[1]/text"
 msgstr "Обменять 25 лома на 5 топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:188
+#: src-ru/data/events_fuel.xml.rawclobber:196
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[1]/event/text"
 msgstr "Вы с удовольствием совершаете сделку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:196
+#: src-ru/data/events_fuel.xml.rawclobber:204
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[2]/text"
 msgstr "Обменять 10 лома на 2 топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:198
+#: src-ru/data/events_fuel.xml.rawclobber:206
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[2]/event/text"
 msgstr ""
 "Этого топлива не хватит надолго, но вы с удовольствием совершаете сделку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:206
+#: src-ru/data/events_fuel.xml.rawclobber:214
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[3]/text"
 msgstr "Обменять 5 лома на 1 топливо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:208
+#: src-ru/data/events_fuel.xml.rawclobber:216
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[3]/event/text"
 msgstr ""
 "Этого топлива не хватит надолго, но по крайней мере вы сможете совершить "
 "прыжок к другому маяку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:216
+#: src-ru/data/events_fuel.xml.rawclobber:224
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[2]/choice[4]/text"
 msgstr "Отказаться от обмена."
 
-#: src-ru/data/events_fuel.xml.rawclobber:221
+#: src-ru/data/events_fuel.xml.rawclobber:229
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[3]/text"
 msgstr ""
 "Никто не отвечает на ваши позывные, и вы не обнаруживаете ничего "
 "примечательного."
 
-#: src-ru/data/events_fuel.xml.rawclobber:224
+#: src-ru/data/events_fuel.xml.rawclobber:231
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[3]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:236
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[4]/text"
 msgstr ""
 "Вы оказались в радиусе сканеров небольшого автоматического разведчика "
 "повстанцев!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:230
+#: src-ru/data/events_fuel.xml.rawclobber:242
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/text"
 msgstr ""
 "Приближается корабль. Они вас приветствуют и говорят: «Нужно топливо? Мы "
 "поможем, подготовьте ваш стыковочный узел»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:232
+#: src-ru/data/events_fuel.xml.rawclobber:244
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[1]/text"
 msgstr "С благодарностью принять предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:236
+#: src-ru/data/events_fuel.xml.rawclobber:248
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[2]/text"
 msgstr "Запретить им приближаться."
 
-#: src-ru/data/events_fuel.xml.rawclobber:240
+#: src-ru/data/events_fuel.xml.rawclobber:252
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[@req=\"sensors\"]/text"
 msgstr ""
 "(Продвинутые сенсоры) Прежде чем отвечать, провести тщательное сканирование "
 "с помощью сенсоров."
 
-#: src-ru/data/events_fuel.xml.rawclobber:244
+#: src-ru/data/events_fuel.xml.rawclobber:256
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_APPROACH\"]/choice[@req=\"ADV_SCANNERS\"]/text"
 msgstr ""
 "(Сканеры широкого охвата) Прежде чем отвечать, провести тщательное "
 "сканирование."
 
-#: src-ru/data/events_fuel.xml.rawclobber:250
+#: src-ru/data/events_fuel.xml.rawclobber:262
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[1]/text"
 msgstr ""
 "«Не растратьте снова всё топливо. Сейчас опасные времена. Кто знает, кто бы "
 "мог прилететь», — сказали они, перекачивая немного топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:257
+#: src-ru/data/events_fuel.xml.rawclobber:269
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/text"
 msgstr ""
 "Они приближаются и стыкуются с вашим кораблём. На борту они делают вам "
 "предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:260
+#: src-ru/data/events_fuel.xml.rawclobber:272
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/choice[1]/text"
 msgstr "Охотно согласиться торговать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:264
+#: src-ru/data/events_fuel.xml.rawclobber:276
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[2]/choice[2]/text"
 msgstr "Вежливо отказать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:269
+#: src-ru/data/events_fuel.xml.rawclobber:281
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[3]/text"
 msgstr ""
@@ -385,14 +400,14 @@ msgstr ""
 " безусловно поможем... Поможем избавить вас от этого хорошего корабля!» "
 "Датчики обнаруживают активацию скрытого телепорта. Вас берут на абордаж!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:274
+#: src-ru/data/events_fuel.xml.rawclobber:286
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_ACCEPT_LIST\"]/event[4]/text"
 msgstr ""
 "По мере того как они приближаются, вы обнаруживаете, что их орудия "
 "активированы. Кажется, их намерения враждебны!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:280
+#: src-ru/data/events_fuel.xml.rawclobber:292
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[1]/text"
 msgstr ""
@@ -401,19 +416,24 @@ msgstr ""
 "так, как они и сказали. Покидая вас, они добавили: «Будьте осторожны, "
 "друзья»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:287
+#: src-ru/data/events_fuel.xml.rawclobber:299
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[2]/text"
 msgstr "«Нельзя никому доверять в это время...» Корабль совершает прыжок."
 
-#: src-ru/data/events_fuel.xml.rawclobber:290
+#: src-ru/data/events_fuel.xml.rawclobber:301
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[2]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:306
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_DECLINE_LIST\"]/event[3]/text"
 msgstr ""
 "Они отвечают: «Не приближаться? А что вы нам сделаете, если всё-таки "
 "приблизимся?» Они включают орудия и летят к вам."
 
-#: src-ru/data/events_fuel.xml.rawclobber:296
+#: src-ru/data/events_fuel.xml.rawclobber:312
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[1]/text"
 msgstr ""
@@ -422,26 +442,26 @@ msgstr ""
 "этом: «Я помню времена, когда мы не были настолько параноидальны по "
 "отношению друг к другу... Будьте осторожны»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:302
+#: src-ru/data/events_fuel.xml.rawclobber:318
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/text"
 msgstr ""
 "Сенсоры замечают вооружённую команду, значительно лучше вооружённую, чем "
 "допустимо по закону для судов такого размера. Это, безусловно, ловушка."
 
-#: src-ru/data/events_fuel.xml.rawclobber:304
+#: src-ru/data/events_fuel.xml.rawclobber:320
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[1]/text"
 msgstr "Включить орудия и приготовиться к бою."
 
-#: src-ru/data/events_fuel.xml.rawclobber:310
+#: src-ru/data/events_fuel.xml.rawclobber:326
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/text"
 msgstr ""
 "(Маскировка) Замаскироваться и выйти из диапазона сканирования, прежде чем у"
 " них появится шанс взять вас на прицел."
 
-#: src-ru/data/events_fuel.xml.rawclobber:312
+#: src-ru/data/events_fuel.xml.rawclobber:328
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/event/text"
 msgstr ""
@@ -449,21 +469,26 @@ msgstr ""
 "диапазона сканирования, так как вы были всё ещё не в зоне поражения. В конце"
 " концов их корабль совершает прыжок."
 
-#: src-ru/data/events_fuel.xml.rawclobber:363
+#: src-ru/data/events_fuel.xml.rawclobber:330
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_APPROACH_SCAN_LIST\"]/event[2]/choice[@req=\"cloaking\"]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:383
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[1]"
 msgstr ""
 "Вы уверены, что если не привлекать внимания, то флот повстанцев обнаружит "
 "вас нескоро."
 
-#: src-ru/data/events_fuel.xml.rawclobber:364
+#: src-ru/data/events_fuel.xml.rawclobber:384
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[2]"
 msgstr ""
 "Так как аварийный маяк не был активирован, вы уверены, что флот повстанцев "
 "испытывает трудности, отслеживая вас. Это выиграет вам немного времени."
 
-#: src-ru/data/events_fuel.xml.rawclobber:365
+#: src-ru/data/events_fuel.xml.rawclobber:385
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[3]"
 msgstr ""
@@ -471,21 +496,21 @@ msgstr ""
 " в вашу сторону. Ваше решение не активировать аварийный маяк оказалось "
 "дальновидным."
 
-#: src-ru/data/events_fuel.xml.rawclobber:366
+#: src-ru/data/events_fuel.xml.rawclobber:386
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[4]"
 msgstr ""
 "Сканеры показывают, что флот повстанцев приостановил преследование. "
 "Временно."
 
-#: src-ru/data/events_fuel.xml.rawclobber:367
+#: src-ru/data/events_fuel.xml.rawclobber:387
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[5]"
 msgstr ""
 "Ваша интуиция капитана подсказывает, что повстанцы всё ещё не знают, где вас"
 " искать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:368
+#: src-ru/data/events_fuel.xml.rawclobber:388
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[6]"
 msgstr ""
@@ -493,7 +518,7 @@ msgstr ""
 "повстанцы попытаются найти вас. Вы можете только надеяться, что их "
 "замешательство продлится до того, как вы сможете найти топливо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:369
+#: src-ru/data/events_fuel.xml.rawclobber:389
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_FLEET_DISTRESS_LIST\"]/text[7]"
 msgstr ""
@@ -501,49 +526,54 @@ msgstr ""
 "Если бы вы могли достать немного топлива, то получили бы шанс увеличить "
 "дистанцию между вами и повстанцами..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:378
+#: src-ru/data/events_fuel.xml.rawclobber:397
+msgid ""
+"data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_NOTHING_DISTRESS\"]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:402
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[1]"
 msgstr ""
 "Как же всё-таки хорошо, что система жизнеобеспечения корабля не зависит от "
 "топливных элементов FTL."
 
-#: src-ru/data/events_fuel.xml.rawclobber:379
+#: src-ru/data/events_fuel.xml.rawclobber:403
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[2]"
 msgstr "Ничего не происходит. Ваши сообщения остаются без ответа."
 
-#: src-ru/data/events_fuel.xml.rawclobber:380
+#: src-ru/data/events_fuel.xml.rawclobber:404
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[3]"
 msgstr ""
 "Огни аварийного маяка — единственное видимое движение снаружи корабля."
 
-#: src-ru/data/events_fuel.xml.rawclobber:381
+#: src-ru/data/events_fuel.xml.rawclobber:405
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[4]"
 msgstr "Ни один корабль не совершил прыжок в этот сектор..."
 
-#: src-ru/data/events_fuel.xml.rawclobber:382
+#: src-ru/data/events_fuel.xml.rawclobber:406
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[5]"
 msgstr ""
 "Несколько пролетающих мимо кораблей, кажется, не обращают внимания на ваш "
 "сигнал бедствия, игнорируя все попытки связи."
 
-#: src-ru/data/events_fuel.xml.rawclobber:383
+#: src-ru/data/events_fuel.xml.rawclobber:407
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[6]"
 msgstr ""
 "Несколько гражданских кораблей находятся в диапазоне сканирования, но никто "
 "не отвечает на ваши вызовы."
 
-#: src-ru/data/events_fuel.xml.rawclobber:384
+#: src-ru/data/events_fuel.xml.rawclobber:408
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_NOTHING_DISTRESS_LIST\"]/text[7]"
 msgstr "В этой области давно никто не пролетал."
 
-#: src-ru/data/events_fuel.xml.rawclobber:389
+#: src-ru/data/events_fuel.xml.rawclobber:413
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/text"
 msgstr ""
@@ -551,66 +581,71 @@ msgstr ""
 "заправляет корабли за деньги. Бесплатное топливо доступно только в "
 "чрезвычайных ситуациях»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:391
+#: src-ru/data/events_fuel.xml.rawclobber:415
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[1]/text"
 msgstr "Запросить аварийный запас топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:395
+#: src-ru/data/events_fuel.xml.rawclobber:419
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[2]/text"
 msgstr "Купить 5 топлива за 25 лома."
 
-#: src-ru/data/events_fuel.xml.rawclobber:397
+#: src-ru/data/events_fuel.xml.rawclobber:421
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[2]/event/text"
 msgstr "«Автоматизированная заправка завершена»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:405
+#: src-ru/data/events_fuel.xml.rawclobber:429
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[3]/text"
 msgstr "Купить 2 топлива за 10 лома."
 
-#: src-ru/data/events_fuel.xml.rawclobber:407
+#: src-ru/data/events_fuel.xml.rawclobber:431
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[3]/event/text"
 msgstr "«Автоматизированная заправка завершена»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:415
+#: src-ru/data/events_fuel.xml.rawclobber:439
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_SELLER_DISTRESS\"]/choice[4]/text"
 msgstr "Атаковать автоматизированный корабль."
 
-#: src-ru/data/events_fuel.xml.rawclobber:424
+#: src-ru/data/events_fuel.xml.rawclobber:448
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[1]/text"
 msgstr ""
 "«Ваш корабль зарегистрирован как уже получавший разовый запас топлива в "
 "аварийной ситуации». Автоматический корабль улетает прочь."
 
-#: src-ru/data/events_fuel.xml.rawclobber:427
+#: src-ru/data/events_fuel.xml.rawclobber:450
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[1]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:455
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"AUTO_FUEL_SELLER_ZAPROS\"]/event[2]/text"
 msgstr "«Чрезвычайная ситуация подтверждена. Высылаю топливо»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:438
+#: src-ru/data/events_fuel.xml.rawclobber:466
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER_DISTRESS\"]/choice[1]/text"
 msgstr "Охотно согласиться торговать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:442
+#: src-ru/data/events_fuel.xml.rawclobber:470
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_TRADER_DISTRESS\"]/choice[2]/text"
 msgstr "Вежливо отказать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:447
+#: src-ru/data/events_fuel.xml.rawclobber:475
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[1]"
 msgstr ""
 "Торговое судно совершает прыжок в сектор, скорее всего, в ответ на ваш "
 "сигнал бедствия. Они приветствуют вас, предлагая обмен на топливо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:448
+#: src-ru/data/events_fuel.xml.rawclobber:476
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[2]"
 msgstr ""
@@ -618,7 +653,7 @@ msgstr ""
 "предполагаю, что у вас кончилось топливо? У нас самих его немного, но, "
 "возможно, мы сможем совершить обмен»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:449
+#: src-ru/data/events_fuel.xml.rawclobber:477
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[3]"
 msgstr ""
@@ -626,71 +661,86 @@ msgstr ""
 "«Закончилось топливо? Это хорошая возможность для нас обоих... Интересует "
 "обмен?»"
 
-#: src-ru/data/events_fuel.xml.rawclobber:450
+#: src-ru/data/events_fuel.xml.rawclobber:478
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_TRADER_DISTRESS_TEXT_LIST\"]/text[4]"
 msgstr ""
 "Корабль наёмников прибывает к маяку. «У нас есть немного лишнего топлива, и "
 "мы можем дать его вам... за некоторую цену»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:474
+#: src-ru/data/events_fuel.xml.rawclobber:502
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/text"
 msgstr ""
 "Они отвечают: «Учитывая то, что вы нуждаетесь, этот обмен для вас приемлем?»"
 
-#: src-ru/data/events_fuel.xml.rawclobber:476
+#: src-ru/data/events_fuel.xml.rawclobber:504
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/choice[1]/text"
 msgstr "Принять предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:480
+#: src-ru/data/events_fuel.xml.rawclobber:508
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[1]/choice[2]/text"
 msgstr "Отказаться снова."
 
-#: src-ru/data/events_fuel.xml.rawclobber:485
+#: src-ru/data/events_fuel.xml.rawclobber:513
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/text"
 msgstr ""
 "«Я не занимаюсь благотворительностью, знаете ли», — говорит капитан. — «Это "
 "моё последнее предложение»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:487
+#: src-ru/data/events_fuel.xml.rawclobber:515
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[1]/text"
 msgstr "Принять предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:491
+#: src-ru/data/events_fuel.xml.rawclobber:519
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/text"
 msgstr "Отказаться снова."
 
-#: src-ru/data/events_fuel.xml.rawclobber:493
+#: src-ru/data/events_fuel.xml.rawclobber:521
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/event/text"
 msgstr ""
 "Их капитан отключает связь, и без лишних слов его корабль готовится к "
 "прыжку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:498
+#: src-ru/data/events_fuel.xml.rawclobber:523
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[2]/choice[2]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:530
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[3]/text"
 msgstr ""
 "Прежде, чем они вас покидают, их капитан говорит: «Сожалею, но мы ничем не "
 "можем вам помочь»."
 
-#: src-ru/data/events_fuel.xml.rawclobber:523
+#: src-ru/data/events_fuel.xml.rawclobber:532
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT2\"]/event[3]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:559
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[1]/text"
 msgstr "Сжалившись над вами, они предлагают немного топлива бесплатно."
 
-#: src-ru/data/events_fuel.xml.rawclobber:529
+#: src-ru/data/events_fuel.xml.rawclobber:565
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[2]/text"
 msgstr "Они заканчивают разговор и готовятся совершить прыжок."
 
-#: src-ru/data/events_fuel.xml.rawclobber:557
+#: src-ru/data/events_fuel.xml.rawclobber:567
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_TRADER_PT3\"]/event[2]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:597
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[1]"
 msgstr ""
@@ -698,7 +748,7 @@ msgstr ""
 "приняли ваш сигнал бедствия, и можем помочь... Секундочку... Вы похоже... "
 "Так вы же тот самый корабль! Готовьтесь к смерти!»"
 
-#: src-ru/data/events_fuel.xml.rawclobber:558
+#: src-ru/data/events_fuel.xml.rawclobber:598
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[2]"
 msgstr ""
@@ -707,7 +757,7 @@ msgstr ""
 " разыскиваемый корабль выскакивает прямо у меня перед носом, и сам идёт мне "
 "в руки! Какой удачный день». Они заряжают орудия."
 
-#: src-ru/data/events_fuel.xml.rawclobber:559
+#: src-ru/data/events_fuel.xml.rawclobber:599
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[3]"
 msgstr ""
@@ -715,14 +765,14 @@ msgstr ""
 "прыжок корабль. Вы запускаете его сканирование и включаете боевую тревогу. "
 "Это истребитель повстанцев!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:560
+#: src-ru/data/events_fuel.xml.rawclobber:600
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_REBEL_ATTACK\"]/text[4]"
 msgstr ""
 "Корабль повстанцев совершает прыжок и выходит на связь: «Я знал, что когда-"
 "нибудь вы ошибётесь. Сдавайтесь немедленно!»"
 
-#: src-ru/data/events_fuel.xml.rawclobber:565
+#: src-ru/data/events_fuel.xml.rawclobber:605
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_REBEL_WARNING\"]/text"
 msgstr ""
@@ -730,7 +780,7 @@ msgstr ""
 "оказался автоматизированный разведчик повстанцев. Просканировав ваш корабль,"
 " он сразу же начинает заряжать двигатели, пытаясь избежать сражения."
 
-#: src-ru/data/events_fuel.xml.rawclobber:576
+#: src-ru/data/events_fuel.xml.rawclobber:616
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/text"
 msgstr ""
@@ -738,27 +788,32 @@ msgstr ""
 "коммуникационный канал, вам показалось, что они обсуждают ремонт, идущий у "
 "них на корабле."
 
-#: src-ru/data/events_fuel.xml.rawclobber:579
+#: src-ru/data/events_fuel.xml.rawclobber:619
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[1]/text"
 msgstr "Вызвать их."
 
-#: src-ru/data/events_fuel.xml.rawclobber:583
+#: src-ru/data/events_fuel.xml.rawclobber:623
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/text"
 msgstr "Пролететь мимо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:585
+#: src-ru/data/events_fuel.xml.rawclobber:625
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/event/text"
 msgstr "Они явно заняты, поскольку совершенно не замечают вашего корабля."
 
-#: src-ru/data/events_fuel.xml.rawclobber:589
+#: src-ru/data/events_fuel.xml.rawclobber:627
+msgid ""
+"data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[2]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:633
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/text"
 msgstr "(Ремонтник корпуса) Предложить им помощь в починке корпуса корабля."
 
-#: src-ru/data/events_fuel.xml.rawclobber:591
+#: src-ru/data/events_fuel.xml.rawclobber:635
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ENGI_DUBIOUS\"]/choice[@req=\"DRONES_SHIP_REPAIR\"]/event/text"
 msgstr ""
@@ -766,69 +821,79 @@ msgstr ""
 "заканчивает работу, они передают вам в качестве оплаты некоторое количество "
 "топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:601
+#: src-ru/data/events_fuel.xml.rawclobber:645
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[1]/text"
 msgstr ""
 "Инжи отвечают на ваш сигнал. «Идентификация: Федерация. Ошибка ввода/вывода "
 ": Федерация= [пусто]». Все дальнейшие сигналы остаются без ответа."
 
-#: src-ru/data/events_fuel.xml.rawclobber:604
+#: src-ru/data/events_fuel.xml.rawclobber:647
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[1]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:652
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[2]/text"
 msgstr ""
 "Корабль инжи не отвечает, но движется на перехват. Вы засекли "
 "электромагнитные сигналы от корабля — кто-то перепрограммировал его для боя!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:608
+#: src-ru/data/events_fuel.xml.rawclobber:656
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/text"
 msgstr ""
 "Инжи ответили на ваш сигнал. «Вам нужно: топливо. Нам нужно: металлолом. "
 "Провести обмен?»"
 
-#: src-ru/data/events_fuel.xml.rawclobber:610
+#: src-ru/data/events_fuel.xml.rawclobber:658
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[1]/text"
 msgstr "Совершить сделку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:612
+#: src-ru/data/events_fuel.xml.rawclobber:660
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[1]/event/text"
 msgstr "Вы совершаете обмен, и инжи уходят без единого слова."
 
-#: src-ru/data/events_fuel.xml.rawclobber:620
+#: src-ru/data/events_fuel.xml.rawclobber:668
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/text"
 msgstr "Отказаться."
 
-#: src-ru/data/events_fuel.xml.rawclobber:622
+#: src-ru/data/events_fuel.xml.rawclobber:670
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/event/text"
 msgstr "Инжи прерывают связь и продолжают полёт своим маршрутом."
 
-#: src-ru/data/events_fuel.xml.rawclobber:627
+#: src-ru/data/events_fuel.xml.rawclobber:672
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[3]/choice[2]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:679
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ENGI_DUBIOUS_LIST\"]/event[4]/text"
 msgstr ""
 "Узнав о вашей нужде, инжи соглашаются поделиться запасами топлива. "
 "Удивительно, насколько альтруистичными могут быть эти полуроботы."
 
-#: src-ru/data/events_fuel.xml.rawclobber:648
+#: src-ru/data/events_fuel.xml.rawclobber:700
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[1]"
 msgstr ""
 "Корабль мантисов приветствует вас: «Похоже, мы нашли бедных дураков, которым"
 " нужна помощь. Давайте, братья, \"поможем\" им!» Они направляются в атаку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:649
+#: src-ru/data/events_fuel.xml.rawclobber:701
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[2]"
 msgstr ""
 "Вскоре рядом появляется корабль, несомненно в ответ на ваш маяк. Однако "
 "легче вам не становится — у корабля дизайн мантисов. Готовьтесь к бою."
 
-#: src-ru/data/events_fuel.xml.rawclobber:650
+#: src-ru/data/events_fuel.xml.rawclobber:702
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[3]"
 msgstr ""
@@ -837,28 +902,28 @@ msgstr ""
 " Федерации. В тот день я был очень разочарован». Похоже, они здесь не для "
 "того, чтобы помочь."
 
-#: src-ru/data/events_fuel.xml.rawclobber:651
+#: src-ru/data/events_fuel.xml.rawclobber:703
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[4]"
 msgstr ""
 "Поблизости корабль мантисов выходит из прыжка. Сенсоры показывают наведённые"
 " орудия, и вся надежда на уход от боя исчезает."
 
-#: src-ru/data/events_fuel.xml.rawclobber:653
+#: src-ru/data/events_fuel.xml.rawclobber:705
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[5]"
 msgstr ""
 "Корабль мантисов приветствует вас: «Похоже, мы нашли бедных дураков, которым"
 " нужна помощь. Давайте, братья, \"поможем\" им!» Они направляются в атаку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:654
+#: src-ru/data/events_fuel.xml.rawclobber:706
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[6]"
 msgstr ""
 "Вскоре рядом появляется корабль, несомненно в ответ на ваш маяк. Однако "
 "легче вам не становится — у корабля дизайн мантисов. Готовьтесь к бою."
 
-#: src-ru/data/events_fuel.xml.rawclobber:655
+#: src-ru/data/events_fuel.xml.rawclobber:707
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[7]"
 msgstr ""
@@ -867,14 +932,14 @@ msgstr ""
 " Федерации. В тот день я был очень разочарован». Похоже, они здесь не для "
 "того, чтобы помочь."
 
-#: src-ru/data/events_fuel.xml.rawclobber:656
+#: src-ru/data/events_fuel.xml.rawclobber:708
 msgid ""
 "data/events_fuel.xml.rawclobber$//textList[@name=\"FUEL_ON_MANTIS_ATTACK\"]/text[8]"
 msgstr ""
 "Поблизости корабль мантисов выходит из прыжка. Сенсоры показывают наведённые"
 " орудия, и вся надежда на уход от боя исчезает."
 
-#: src-ru/data/events_fuel.xml.rawclobber:665
+#: src-ru/data/events_fuel.xml.rawclobber:717
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/text"
 msgstr ""
@@ -883,55 +948,60 @@ msgstr ""
 "размером, пока перед вами не появляется корма корабля роков, уничтоженного в"
 " какой-то давней битве."
 
-#: src-ru/data/events_fuel.xml.rawclobber:667
+#: src-ru/data/events_fuel.xml.rawclobber:719
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/text"
 msgstr "Отправить команду для исследований."
 
-#: src-ru/data/events_fuel.xml.rawclobber:669
+#: src-ru/data/events_fuel.xml.rawclobber:721
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/event/text"
 msgstr ""
 "Возможно, на борту осталось немного топлива. Небольшая команда отправляется "
 "на борт."
 
-#: src-ru/data/events_fuel.xml.rawclobber:671
+#: src-ru/data/events_fuel.xml.rawclobber:723
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[1]/event/choice/text"
 msgstr "Доложить о результатах!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:677
+#: src-ru/data/events_fuel.xml.rawclobber:729
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/text"
 msgstr "Пусть дрейфует."
 
-#: src-ru/data/events_fuel.xml.rawclobber:679
+#: src-ru/data/events_fuel.xml.rawclobber:731
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/event/text"
 msgstr ""
 "Рокам не нравится, когда чужаки подбирают их имущество, невзирая на их "
 "состояние, и вы, находясь на территории роков, не желаете рисковать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:683
+#: src-ru/data/events_fuel.xml.rawclobber:733
+msgid ""
+"data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[2]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:739
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[@req=\"LIFE_SCANNER\"]/text"
 msgstr "(Инфракрасный сканер) Запустить дополнительное сканирование."
 
-#: src-ru/data/events_fuel.xml.rawclobber:685
+#: src-ru/data/events_fuel.xml.rawclobber:741
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_WRECK\"]/choice[@req=\"LIFE_SCANNER\"]/event/text"
 msgstr ""
 "Корабль производит впечатление полностью безжизненного. Ваша команда, после "
 "недолгих поисков, находит несколько работающих топливных элементов."
 
-#: src-ru/data/events_fuel.xml.rawclobber:692
+#: src-ru/data/events_fuel.xml.rawclobber:748
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[1]/text"
 msgstr ""
 "Через некоторое время команда возвращается с запасом боеприпасов и лома — но"
 " топлива на борту уже давно нет."
 
-#: src-ru/data/events_fuel.xml.rawclobber:696
+#: src-ru/data/events_fuel.xml.rawclobber:752
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[2]/text"
 msgstr ""
@@ -940,7 +1010,7 @@ msgstr ""
 "загрузить местную телеметрию, а также расположение резервного склада с "
 "топливом! Ваша карта была обновлена."
 
-#: src-ru/data/events_fuel.xml.rawclobber:701
+#: src-ru/data/events_fuel.xml.rawclobber:757
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[3]/text"
 msgstr ""
@@ -948,7 +1018,7 @@ msgstr ""
 "только они подлетели к фрегату, его аварийная ячейка с топливом неожиданно "
 "проплыла мимо!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:705
+#: src-ru/data/events_fuel.xml.rawclobber:761
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/text"
 msgstr ""
@@ -957,12 +1027,12 @@ msgstr ""
 "выжившего члена экипажа фрегата, и он совершенно обезумел. Он требует, чтобы"
 " ему заплатили выкуп ломом в обмен на жизнь члена вашего экипажа!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:707
+#: src-ru/data/events_fuel.xml.rawclobber:763
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[1]/text"
 msgstr "Заплатить."
 
-#: src-ru/data/events_fuel.xml.rawclobber:709
+#: src-ru/data/events_fuel.xml.rawclobber:765
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[1]/event/text"
 msgstr ""
@@ -970,19 +1040,19 @@ msgstr ""
 "вашей команды, счастливых и благодарных. К сожалению, их благодарность не "
 "заправит FTL-приводы."
 
-#: src-ru/data/events_fuel.xml.rawclobber:716
+#: src-ru/data/events_fuel.xml.rawclobber:772
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/text"
 msgstr "Отказаться."
 
-#: src-ru/data/events_fuel.xml.rawclobber:718
+#: src-ru/data/events_fuel.xml.rawclobber:774
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/text"
 msgstr ""
 "Это непростое решение, но это нужно для Федерации и свободы всех остальных. "
 "Вы отправляетесь, пока не успели передумать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:724
+#: src-ru/data/events_fuel.xml.rawclobber:780
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
@@ -990,7 +1060,7 @@ msgstr ""
 "Перед тем как совершить прыжок вы проверяете клон-отсек, но не обнаруживаете"
 " никаких признаков активности."
 
-#: src-ru/data/events_fuel.xml.rawclobber:731
+#: src-ru/data/events_fuel.xml.rawclobber:787
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_WRECK_LIST\"]/event[4]/choice[2]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
@@ -998,31 +1068,31 @@ msgstr ""
 "Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
 "смерти всего экипажа."
 
-#: src-ru/data/events_fuel.xml.rawclobber:740
+#: src-ru/data/events_fuel.xml.rawclobber:796
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/text"
 msgstr ""
 "Любопытный корабль роков подлетел повнимательнее рассмотреть вас. Они "
 "игнорируют любые попытки приветствия."
 
-#: src-ru/data/events_fuel.xml.rawclobber:742
+#: src-ru/data/events_fuel.xml.rawclobber:798
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[1]/text"
 msgstr "Атаковать."
 
-#: src-ru/data/events_fuel.xml.rawclobber:744
+#: src-ru/data/events_fuel.xml.rawclobber:800
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[1]/event/text"
 msgstr ""
 "Роки не славятся своим великодушием. Вам нужно это топливо? Заслужите это "
 "топливо!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:749
+#: src-ru/data/events_fuel.xml.rawclobber:805
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/choice[2]/text"
 msgstr "Подождать и посмотреть."
 
-#: src-ru/data/events_fuel.xml.rawclobber:755
+#: src-ru/data/events_fuel.xml.rawclobber:811
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_CURIOUS_LIST\"]/event[1]/text"
 msgstr ""
@@ -1031,7 +1101,7 @@ msgstr ""
 "особо разговорчивы, но передают запасы топлива, после чего, мигнув огнями, "
 "улетают."
 
-#: src-ru/data/events_fuel.xml.rawclobber:761
+#: src-ru/data/events_fuel.xml.rawclobber:817
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_OFF_ROCK_CURIOUS_LIST\"]/event[2]/text"
 msgstr ""
@@ -1039,31 +1109,31 @@ msgstr ""
 "опасения подтвердились, когда они обнаружили ваши двигатели и "
 "телепортировали бомбу прямо к ним. Приготовиться к бою!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:768
+#: src-ru/data/events_fuel.xml.rawclobber:824
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/escape/text"
 msgstr "Похоже, они не хотят сражаться и пытаются скрыться."
 
-#: src-ru/data/events_fuel.xml.rawclobber:771
+#: src-ru/data/events_fuel.xml.rawclobber:827
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/gotaway/text"
 msgstr ""
 "Не сказав ни слова, корабль совершает прыжок. Вы надеетесь, что они ушли не "
 "за подкреплением."
 
-#: src-ru/data/events_fuel.xml.rawclobber:774
+#: src-ru/data/events_fuel.xml.rawclobber:830
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/destroyed/text"
 msgstr ""
 "Вы пытаетесь забрать как можно больше топлива из разбитых останков корабля."
 
-#: src-ru/data/events_fuel.xml.rawclobber:779
+#: src-ru/data/events_fuel.xml.rawclobber:835
 msgid ""
 "data/events_fuel.xml.rawclobber$//ship[@name=\"FUEL_OFF_ROCK_CURIOUS\"]/deadCrew/text"
 msgstr ""
 "Вы пытаетесь забрать как можно больше топлива из разбитых останков корабля."
 
-#: src-ru/data/events_fuel.xml.rawclobber:796
+#: src-ru/data/events_fuel.xml.rawclobber:852
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/text"
 msgstr ""
@@ -1071,34 +1141,39 @@ msgstr ""
 "тихонько про себя посмеивается. Должно быть из-за цен, которые он "
 "предлагает."
 
-#: src-ru/data/events_fuel.xml.rawclobber:799
+#: src-ru/data/events_fuel.xml.rawclobber:855
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[1]/text"
 msgstr "Заплатить 20 лома за 5 топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:803
+#: src-ru/data/events_fuel.xml.rawclobber:859
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/text"
 msgstr "Игнорировать это предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:805
+#: src-ru/data/events_fuel.xml.rawclobber:861
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/event/text"
 msgstr ""
 "Вы знаете, что лучше не иметь дел со слагом, которому, похоже, известно то, "
 "чего не знаете вы. Он прыгнул прочь с очередным смешком."
 
-#: src-ru/data/events_fuel.xml.rawclobber:809
+#: src-ru/data/events_fuel.xml.rawclobber:863
+msgid ""
+"data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[2]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:869
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[3]/text"
 msgstr "Атаковать их."
 
-#: src-ru/data/events_fuel.xml.rawclobber:813
+#: src-ru/data/events_fuel.xml.rawclobber:873
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[@req=\"slug_crew\"]/text"
 msgstr "(Член экипажа слаг) Попросите своего слага совершить покупку."
 
-#: src-ru/data/events_fuel.xml.rawclobber:815
+#: src-ru/data/events_fuel.xml.rawclobber:875
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_CHUCKLE\"]/choice[@req=\"slug_crew\"]/event/text"
 msgstr ""
@@ -1106,14 +1181,14 @@ msgstr ""
 "посмеиваться. Обмен, судя по всему, идёт гладко, хотя вы задаётесь вопросом,"
 " какая умственная борьба происходит телепатически между двумя слагами."
 
-#: src-ru/data/events_fuel.xml.rawclobber:825
+#: src-ru/data/events_fuel.xml.rawclobber:885
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/text"
 msgstr ""
 "Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как "
 "заключить сделку. Однако, вы совершаете обмен без происшествий."
 
-#: src-ru/data/events_fuel.xml.rawclobber:833
+#: src-ru/data/events_fuel.xml.rawclobber:893
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[1]/choice/event/text"
 msgstr ""
@@ -1121,19 +1196,19 @@ msgstr ""
 "он установил портативный телепортер в вашем грузовом отсеке. Прежде чем вы "
 "реагируете, его корабль успел скрыться."
 
-#: src-ru/data/events_fuel.xml.rawclobber:842
+#: src-ru/data/events_fuel.xml.rawclobber:902
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_CHUCKLE_LIST\"]/event[2]/text"
 msgstr ""
 "Вы сомневаетесь, что он заслуживает доверия, но у вас нет выбора, кроме как "
 "заключить сделку. Однако, вы совершаете обмен без происшествий."
 
-#: src-ru/data/events_fuel.xml.rawclobber:851
+#: src-ru/data/events_fuel.xml.rawclobber:911
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[1]/text"
 msgstr "Капитан слагов перестаёт смеяться и принимает ваш вызов."
 
-#: src-ru/data/events_fuel.xml.rawclobber:855
+#: src-ru/data/events_fuel.xml.rawclobber:915
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[2]/text"
 msgstr ""
@@ -1141,7 +1216,12 @@ msgstr ""
 "К сожалению, вы не в силах преследовать их в вашем текущем положении. "
 "Передав пару неприличных изображений на ваш коммуникатор, они уходят."
 
-#: src-ru/data/events_fuel.xml.rawclobber:860
+#: src-ru/data/events_fuel.xml.rawclobber:917
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_ON_SLUG_ATTACK_LIST\"]/event[2]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:924
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/text"
 msgstr ""
@@ -1149,42 +1229,42 @@ msgstr ""
 "честны, и я прошу об одном — не оскорбляйте меня их обсуждением!» Посмотрим-"
 "ка на его прайс-лист."
 
-#: src-ru/data/events_fuel.xml.rawclobber:863
+#: src-ru/data/events_fuel.xml.rawclobber:927
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[1]/text"
 msgstr "Купить 5 топлива за 50 лома."
 
-#: src-ru/data/events_fuel.xml.rawclobber:865
+#: src-ru/data/events_fuel.xml.rawclobber:929
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[1]/event/text"
 msgstr ""
 "Торговец выглядит шокировано. Вас не покидает чувство, что это первый "
 "случай, когда у него что-то купили по такой цене."
 
-#: src-ru/data/events_fuel.xml.rawclobber:873
+#: src-ru/data/events_fuel.xml.rawclobber:937
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[2]/text"
 msgstr "Купить 10 топлива за 95 лома. (ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ!)"
 
-#: src-ru/data/events_fuel.xml.rawclobber:875
+#: src-ru/data/events_fuel.xml.rawclobber:939
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[2]/event/text"
 msgstr ""
 "Торговец выглядит шокировано. Вас не покидает чувство, что это первый "
 "случай, когда у него что-то купили по такой цене."
 
-#: src-ru/data/events_fuel.xml.rawclobber:883
+#: src-ru/data/events_fuel.xml.rawclobber:947
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[3]/text"
 msgstr "Обсудить цены."
 
-#: src-ru/data/events_fuel.xml.rawclobber:885
+#: src-ru/data/events_fuel.xml.rawclobber:949
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_ON_SLUG_OVERPRICED\"]/choice[3]/event/text"
 msgstr ""
 "Вы предлагаете более разумную цену, но слаг возмущён! Он идёт в атаку!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:914
+#: src-ru/data/events_fuel.xml.rawclobber:978
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE\"]/event[1]/text"
 msgstr ""
@@ -1192,7 +1272,7 @@ msgstr ""
 "аварийный маяк. Хотя у них не так уж и много топлива, они признают, что вы —"
 " часть Федерации, и делятся с вами остатками топлива."
 
-#: src-ru/data/events_fuel.xml.rawclobber:922
+#: src-ru/data/events_fuel.xml.rawclobber:986
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/text"
 msgstr ""
@@ -1201,12 +1281,12 @@ msgstr ""
 "обмен, они вынуждены его предложить — их корпус повреждён, и им требуется "
 "лом для ремонта."
 
-#: src-ru/data/events_fuel.xml.rawclobber:924
+#: src-ru/data/events_fuel.xml.rawclobber:988
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[1]/text"
 msgstr "Обменять немного лома на топливо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:926
+#: src-ru/data/events_fuel.xml.rawclobber:990
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[1]/event/text"
 msgstr ""
@@ -1214,12 +1294,12 @@ msgstr ""
 "топливо. Они желают вам удачи в вашей миссии и заявляют о своей поддержке "
 "Федерации."
 
-#: src-ru/data/events_fuel.xml.rawclobber:934
+#: src-ru/data/events_fuel.xml.rawclobber:998
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/text"
 msgstr "(Член экипажа инжи) Договориться о лучшей сделке."
 
-#: src-ru/data/events_fuel.xml.rawclobber:936
+#: src-ru/data/events_fuel.xml.rawclobber:1000
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
@@ -1227,22 +1307,22 @@ msgstr ""
 " ремонт. Беженцы ворчат и спорят, но в конце концов признают, что ремонт им "
 "нужнее, чем топливо, и предлагают более выгодные условия сделки."
 
-#: src-ru/data/events_fuel.xml.rawclobber:939
+#: src-ru/data/events_fuel.xml.rawclobber:1003
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[1]/text"
 msgstr "Принять предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:948
+#: src-ru/data/events_fuel.xml.rawclobber:1012
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[2]/text"
-msgstr "Отказаться."
+msgstr "Отказаться и поговорить с экипажем."
 
-#: src-ru/data/events_fuel.xml.rawclobber:954
+#: src-ru/data/events_fuel.xml.rawclobber:1018
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/text"
 msgstr "(Член экипажа морф) Договориться о лучшей сделке."
 
-#: src-ru/data/events_fuel.xml.rawclobber:956
+#: src-ru/data/events_fuel.xml.rawclobber:1020
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/text"
 msgstr ""
@@ -1250,41 +1330,46 @@ msgstr ""
 " ремонт. Беженцы ворчат и спорят, но в конце концов признают, что ремонт им "
 "нужнее, чем топливо, и предлагают более выгодные условия сделки."
 
-#: src-ru/data/events_fuel.xml.rawclobber:958
+#: src-ru/data/events_fuel.xml.rawclobber:1022
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/choice[1]/text"
 msgstr "Принять предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:967
+#: src-ru/data/events_fuel.xml.rawclobber:1031
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"morph\"]/event/choice[2]/text"
-msgstr "Отказаться."
+msgstr "Отказаться и поговорить с экипажем."
 
-#: src-ru/data/events_fuel.xml.rawclobber:973
+#: src-ru/data/events_fuel.xml.rawclobber:1037
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[4]/text"
 msgstr "Отказаться от их предложения."
 
-#: src-ru/data/events_fuel.xml.rawclobber:977
+#: src-ru/data/events_fuel.xml.rawclobber:1041
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[5]/text"
 msgstr "Беспомощные беженцы — лёгкая добыча. Напасть на них."
 
-#: src-ru/data/events_fuel.xml.rawclobber:979
+#: src-ru/data/events_fuel.xml.rawclobber:1043
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[5]/event/text"
 msgstr ""
 "В панике, беженцы сразу сдаются, как только активируются ваши орудия. Они "
 "передают топливо и предметы снабжения в обмен на их жизни."
 
-#: src-ru/data/events_fuel.xml.rawclobber:987
+#: src-ru/data/events_fuel.xml.rawclobber:1051
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[1]/text"
 msgstr ""
 "Корабль беженцев прервал связь и молча прыгнул из системы, что является "
 "общепринятым знаком негативного отношения."
 
-#: src-ru/data/events_fuel.xml.rawclobber:990
+#: src-ru/data/events_fuel.xml.rawclobber:1053
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[1]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:1058
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/text"
 msgstr ""
@@ -1292,24 +1377,29 @@ msgstr ""
 "сильнее, чем кажется на первый взгляд. Практически умоляя, они предлагают "
 "новые, более выгодные, условия."
 
-#: src-ru/data/events_fuel.xml.rawclobber:992
+#: src-ru/data/events_fuel.xml.rawclobber:1060
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[1]/text"
 msgstr "Принять предложение."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1001
+#: src-ru/data/events_fuel.xml.rawclobber:1069
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/text"
 msgstr "Отказаться от их предложения снова."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1003
+#: src-ru/data/events_fuel.xml.rawclobber:1071
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/event/text"
 msgstr ""
 "Корабль беженцев прервал связь и молча прыгнул из системы, что является "
 "общепринятым знаком негативного отношения."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1010
+#: src-ru/data/events_fuel.xml.rawclobber:1073
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_REFUSE\"]/event[2]/choice[2]/event/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:1082
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/text"
 msgstr ""
@@ -1317,34 +1407,39 @@ msgstr ""
 "приняв сигнал вашего аварийного маяка. Хотя у них и самих мало горючего, они"
 " остро нуждаются в вооружении и готовы совершить соответствующий обмен."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1012
+#: src-ru/data/events_fuel.xml.rawclobber:1084
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/choice[1]/text"
 msgstr "Предложить несколько ракет за топливо."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1016
+#: src-ru/data/events_fuel.xml.rawclobber:1088
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_PIRATE\"]/choice[2]/text"
 msgstr "Отказаться от их предложения."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1023
+#: src-ru/data/events_fuel.xml.rawclobber:1095
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_ACCEPT\"]/event[1]/text"
 msgstr "Корабль беженцев совершает обмен и желает вам удачи в вашей миссии."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1030
+#: src-ru/data/events_fuel.xml.rawclobber:1102
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_ACCEPT\"]/event[2]/text"
 msgstr "Во время обмена корабль внезапно перешёл в нападение — это пираты!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1041
+#: src-ru/data/events_fuel.xml.rawclobber:1113
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[1]/text"
 msgstr ""
 "Корабль беженцев просит прощения, но им самим нужно топливо. Они желают вам "
 "всего хорошего, а затем исчезают из системы."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1044
+#: src-ru/data/events_fuel.xml.rawclobber:1115
+msgid ""
+"data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[1]/choice/text"
+msgstr "Поговорить с экипажем."
+
+#: src-ru/data/events_fuel.xml.rawclobber:1120
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[2]/text"
 msgstr ""
@@ -1353,21 +1448,21 @@ msgstr ""
 "как можно скорее, пока он не захвачен повстанцами, затем корабль совершает "
 "прыжок и исчезает в неизвестном направлении."
 
-#: src-ru/data/events_fuel.xml.rawclobber:1048
+#: src-ru/data/events_fuel.xml.rawclobber:1124
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[3]/text"
 msgstr ""
 "Расценив ваше нежелание как слабость, корабль беженцев вдруг ощетинился "
 "оружием — это пиратский корабль, поверивший, что нашёл лёгкую добычу!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1052
+#: src-ru/data/events_fuel.xml.rawclobber:1128
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"NO_FUEL_REFUGEE_PIRATE_REJECT\"]/event[4]/text"
 msgstr ""
 "Расценив ваше нежелание как слабость, корабль беженцев вдруг ощетинился "
 "оружием — это пиратский корабль, поверивший, что нашёл лёгкую добычу!"
 
-#: src-ru/data/events_fuel.xml.rawclobber:1060
+#: src-ru/data/events_fuel.xml.rawclobber:1136
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_FRIENDLY\"]/text"
 msgstr ""
