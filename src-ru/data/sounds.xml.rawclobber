@@ -183,6 +183,45 @@
 		<name>pony_hell_theme</name>
 		<explore>pony_hell_theme.ogg</explore>
 	</track>
+	<!-- 1.34 -->
+	<track>
+		<name>fishing_theme</name>
+		<explore>fishing_theme.ogg</explore>
+	</track>	
+	<track>
+		<name>Magman</name>
+		<explore>Magman_Explore.mp3</explore>
+		<combat>Magman_Battle.mp3</combat>
+	</track>	
+	<track>
+		<name>Mara</name>
+		<explore>Mara_Explore.mp3</explore>
+		<combat>Mara_Battle.mp3</combat>
+	</track>	
+	<track>
+		<name>Traders</name>
+		<explore>Traders_Explore.mp3</explore>
+		<combat>Traders_Battle.mp3</combat>
+	</track>	
+	<track>
+		<name>Plants</name>
+		<explore>Plants_Explore.mp3</explore>
+		<combat>Plants_Battle.mp3</combat>
+	</track>
+	<track>	
+		<name>Percussion</name>
+		<explore>Percussion_Explore.mp3</explore>
+		<combat>Percussion_Battle.mp3</combat>
+	</track>
+	<track>	
+		<name>Journey</name>
+		<explore>Journey_Explore.mp3</explore>
+		<combat>Journey_Battle.mp3</combat>
+	</track>
+	<track>	
+		<name>AlternativeLastStand</name>
+		<explore>AlternativeLastStand.mp3</explore>
+	</track>
 </music>
 
 <!-- Victory Sound -->
@@ -666,7 +705,7 @@
 <piro_launch3 volume="2">weapons/piro_3.wav</piro_launch3>
 <piro_hit volume="2">weapons/piro_hit.wav</piro_hit>
 
-<morph_crazy volume="4">aliens/morph_crazy.wav</morph_crazy><!-- 1.5 -->
+<morph_crazy volume="3">aliens/morph_crazy.wav</morph_crazy><!-- 1.5 --><!-- 1.34 -->
 
 <!-- 1.4 -->
 <moreInfoOn volume="10">ui/select_up1.wav</moreInfoOn>
@@ -755,5 +794,22 @@
 <soul_start_beacon_3 volume="8">weapons/soul_start_beacon_3.ogg</soul_start_beacon_3>
 <soul_start_beacon_4 volume="8">weapons/soul_start_beacon_4.ogg</soul_start_beacon_4>
 
+<!-- 1.34 -->																	
+<fishing_kluet_1 volume="8">ui/fishing_kluet_1.ogg</fishing_kluet_1>
+<fishing_kluet_2 volume="8">ui/fishing_kluet_2.ogg</fishing_kluet_2>
+<fishing_bulp_1 volume="8">ui/fishing_bulp_1.ogg</fishing_bulp_1>
+<fishing_fish_catch volume="8">ui/fishing_fish_catch.ogg</fishing_fish_catch>
+<fishing_udochka_up volume="8">ui/fishing_udochka_up.ogg</fishing_udochka_up>
+<fishing_fish_gone volume="8">ui/fishing_fish_gone.ogg</fishing_fish_gone>
+<fishing_sunduk_done volume="8">ui/fishing_sunduk_done.ogg</fishing_sunduk_done>
+<fishing_sunduk_appear volume="8">ui/fishing_sunduk_appear.ogg</fishing_sunduk_appear>
+<fishing_udochka_works volume="8">ui/fishing_udochka_works.ogg</fishing_udochka_works>
+<teleport_multi_works volume="8">ui/teleport_multi_works.ogg</teleport_multi_works>
+<turtle_resist volume="10">aliens/turtle_resist.ogg</turtle_resist>
+<egg_appears volume="10">aliens/egg_appears.ogg</egg_appears>
+<egg_open1 volume="10">aliens/egg_open1.ogg</egg_open1>
+<egg_open2 volume="10">aliens/egg_open2.ogg</egg_open2>
+<hal_reactor_free volume="10">ui/hal_reactor_free.ogg</hal_reactor_free> 
+<drone_creating volume="10">ui/drone_creating.ogg</drone_creating>
 
 </FTL>

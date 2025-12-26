@@ -121,14 +121,14 @@ Environmnt:
 
 <event name="START_BEACON_REBEL">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_rebel_sector" op="add" val="1"/>
 	<text load="START_BEACON_REBEL"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -619,7 +619,8 @@ Environmnt:
 	</event>
 	<event>
 		<text>Вы случайно задействовали ИИ судна. Его оружие сразу активировалось, готовьтесь к бою!</text>
-		<ship load="REBEL_AUTO" hostile="true"/>
+		<!-- <ship load="REBEL_AUTO" hostile="true"/> --><!-- 1.34 -->
+		<ship hostile="true"/><!-- 1.34 -->
 	</event>
 </eventList>
 <eventList name="BROKEN_REBEL_DRONE_SENSORS">
@@ -779,14 +780,14 @@ Environmnt:
 
 <event name="START_BEACON_ORDEN">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_orden_sector" op="add" val="1"/>
 	<text load="START_BEACON_ORDEN"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -1277,6 +1278,10 @@ Environmnt:
 		<text>(Член экипажа броненосец) Броненосец.</text>
 		<event load="BOOM_SHELL"/>
 	</choice>
+	<choice hidden="true" req="turtle"> <!-- 1.34 -->
+		<text>(Член экипажа панцерон) Панцерон.</text>
+		<event load="BOOM_TURTLE"/>
+	</choice>
 	<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 		<text>(Член экипажа слаг в панцире) Слаг в панцире.</text>
 		<event load="BOOM_ARM_SLUG"/>
@@ -1423,6 +1428,14 @@ Environmnt:
 	<text>Броненосец прикасается к детектору, и датчики ящика загораются красным цветом. В ту же секунду раздаётся взрыв, разносящий бедолагу в клочья!</text>
 	<damage amount="2" system="room" effect="fire"/>
 	<removeCrew class="shell">
+		<clone>true</clone>
+		<text>К счастью, клон-отсек успешно создаёт копию погибшего.</text>
+	</removeCrew>
+</event>
+<event name="BOOM_TURTLE"> <!-- 1.34 -->
+	<text>Броненосец прикасается к детектору, и датчики ящика загораются красным цветом. В ту же секунду раздаётся взрыв, разносящий бедолагу в клочья!</text>
+	<damage amount="2" system="room" effect="fire"/>
+	<removeCrew class="turtle">
 		<clone>true</clone>
 		<text>К счастью, клон-отсек успешно создаёт копию погибшего.</text>
 	</removeCrew>
@@ -1636,6 +1649,10 @@ Environmnt:
 	<choice hidden="true" req="shell"> <!-- 1.28 -->
 		<text>(Член экипажа броненосец) Броненосец.</text>
 		<event load="BOOM_SHELL"/>
+	</choice>
+	<choice hidden="true" req="turtle"> <!-- 1.28 -->
+		<text>(Член экипажа панцерон) Панцерон.</text>
+		<event load="BOOM_TURTLE"/>
 	</choice>
 	<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 		<text>(Член экипажа слаг в панцире) Слаг в панцире.</text>
@@ -3217,14 +3234,14 @@ Environmnt:
 
 <event name="START_BEACON_HAL">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_hal_sector" op="add" val="1"/>
 	<text load="START_BEACON_HAL"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -3271,43 +3288,24 @@ Environmnt:
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<surrender chance="0" min="9" max="9" load="HAL_DAMAGE"/><!-- 1.25 -->
 </ship>
-<eventList name="HAL_DAMAGE">
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
+<event name="HAL_REACTOR_FREE"> <!-- 1.34 -->
+	<loadEventList seeded="false" first="true" generate="false">
+		<event>
+			<status type="clear" target="enemy" system="reactor" amount="100"/>
+			<playSound>hal_reactor_free</playSound>
+		</event>
+	</loadEventList>
+</event>
+<eventList name="HAL_DAMAGE"> <!-- 1.34 -->
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL.</text>
 		<ship hostile="false"/>
@@ -5279,6 +5277,10 @@ Environmnt:
 				<text>(Член экипажа броненосец) Отправить броненосца.</text>
 				<event load="MONOLITH_SHELL"/>
 			</choice>
+			<choice hidden="true" req="turtle"><!-- 1.28 -->
+				<text>(Член экипажа панцерон) Отправить панцерона.</text>
+				<event load="MONOLITH_TURTLE"/>
+			</choice>
 			<choice hidden="true" req="slug_armored"><!-- 1.28 -->
 				<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
 				<event load="MONOLITH_ARM_SLUG"/>
@@ -5358,8 +5360,9 @@ Environmnt:
 		<text>Как только ваш член экипажа касается поверхности монолита, вы замечаете в трюме новое орудие.</text>
 		<weapon name="RANDOM"/>
 	</event>
-	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text>
+	<event><!-- 1.34 -->
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, человека Ордена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -5382,8 +5385,9 @@ Environmnt:
 		<text>Как только ваш член экипажа касается поверхности монолита, вы замечаете в трюме новое орудие.</text>
 		<weapon name="RANDOM"/>
 	</event>
-	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text>
+	<event><!-- 1.34 -->
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, человека Ордена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -5592,8 +5596,7 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
-		<weapon name="RANDOM"/>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -5617,8 +5620,7 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
-		<weapon name="RANDOM"/>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -5642,8 +5644,7 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
-		<weapon name="RANDOM"/>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -5667,8 +5668,7 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
-		<weapon name="RANDOM"/>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -5694,7 +5694,7 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, орхида это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 		<variable name="counter_usage_orchid" op="add" val="1"/>
 		<weapon name="RANDOM"/>
 	</event>
@@ -5722,7 +5722,32 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, броненосца это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
+		<reveal_map/>
+	</event>
+	<event>
+		<text>Как только ваш член экипажа приближается к монолиту, с противоположной его стороны вылетает призрачная копия вашего корабля. Зарядив FTL-привод, корабль-призрак устремляется в сторону повстанцев. Это должно их значительно задержать.</text>
+		<modifyPursuit amount="-3"/>
+	</event>
+</eventList>
+<eventList name="MONOLITH_TURTLE"><!-- 1.34 -->
+	<event>
+		<text>В маленьком челноке ваш член экипажа приближается к монолиту. Как только он касается поверхности, яркая вспышка распыляет его на молекулы...</text>
+		<removeCrew class="turtle">
+			<clone>false</clone>
+			<text>К сожалению, клонировать решительно нечего...</text>
+		</removeCrew>
+	</event>
+	<event>
+		<text>Как только ваш член экипажа касается поверхности монолита, вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
+	</event>
+	<event>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
@@ -5747,7 +5772,7 @@ Environmnt:
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, слага это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text><!-- 1.34 -->
 		<weapon name="RANDOM"/>
 	</event>
 	<event>
@@ -5824,8 +5849,9 @@ Environmnt:
 		<text>Как только ваш член экипажа касается поверхности монолита, вы замечаете в трюме новое орудие.</text>
 		<weapon name="RANDOM"/>
 	</event>
-	<event>
-		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита и возвращается обратно, беспокоясь за свою жизнь.</text>
+	<event><!-- 1.34 -->
+		<text>При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, аватара это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.</text>
+		<weapon name="RANDOM"/>
 	</event>
 	<event>
 		<text>Ваш член экипажа касается поверхности монолита и возвращается обратно, наполненный знаниями об этом секторе.</text>
@@ -6024,6 +6050,8 @@ Environmnt:
 	<event load="HOSTILE_OLD_PIRATE"/>
 	<event load="MENGI_FIGHT"/><!-- 1.27 -->
 	<event load="ORCHID_FIGHT"/><!-- 1.31 -->
+	<event load="MUSHROOM_FIGHT"/><!-- 1.34 -->	
+	<event load="TIMEKEEPER_FIGHT"/><!-- 1.34 -->	
 </eventList>
 
 <eventList name="DISTRESS_BEACON_BORDER">
@@ -6074,14 +6102,14 @@ Environmnt:
 
 <event name="START_BEACON_BORDER">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_gray_sector_meet" op="add" val="1"/><!-- 1.31 -->
 	<variable name="counter_meet_border_sector" op="add" val="1"/>
 	<text load="START_BEACON_BORDER"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="ENTER_BORDER"/>
@@ -6108,6 +6136,7 @@ Environmnt:
 	<event>
 		<text>Маяк входа контролируют повстанцы, у вас нет времени на использование усилений корабля!</text>
 		<ship load="REBEL" hostile="true"/>
+		<resetFtl/><!-- 1.34 -->
 	</event>
 	<event load="AUGMENTS_ON_START_BEACON"/>
 </eventList>
@@ -6245,9 +6274,15 @@ Environmnt:
 </ship>
 
 <event name="MUSHROOM_FIGHT"><!-- 1.33 -->
-	<text>На вас нападает корабль машрумов. Команда, к бою!</text>
+	<text load="MUSHROOM_FIGHT_TEXT"/><!-- 1.34 -->
 	<ship load="MUSHROOM_SHIPS_PARAMETERS" hostile="true"/>
 </event>
+<textList name="MUSHROOM_FIGHT_TEXT">
+	<text>Враждебный корабль противника выныривает из-за космической туманности, его облик подобен гигантскому грибу, сверкающему в темноте. Вы наводите орудия на судно машрумов, готовясь к немедленной атаке!</text>
+	<text>Сквозь звёздный фон появляется корабль расы машрумов, его непривычные контуры вызывают тревогу. Вы активируете орудийные системы и готовитесь к предстоящему бою.</text>
+	<text>Тишина космоса вдруг прерывается, когда мерцающий силуэт корабля машрумов появляется на радаре. Ваши навигационные панели гудят, а экраны заполняются алыми индикаторами угрозы – пора сражаться!</text>
+	<text>Внезапно перед вами вырастает во всей своей красе враждебный корабль машрумов. Его споры пронизывают пространство тонкими нитями. Вы поднимаете силовые щиты, готовясь к любым уловкам противника!</text>
+</textList>
 <ship name="MUSHROOM_SHIPS_PARAMETERS" auto_blueprint="MUSHROOM_SHIPS">
 	<destroyed load="DESTROYED_DEFAULT"/>
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
@@ -6256,6 +6291,20 @@ Environmnt:
 		<crewMember type="mushroom_b" prop="0.25"/>
 		<crewMember type="mushroom" prop="0.20"/>
 	</crew>
+</ship>
+
+<event name="TIMEKEEPER_FIGHT"><!-- 1.34 -->
+	<text load="TIMEKEEPER_FIGHT_TEXT"/>
+	<ship load="TIMEKEEPER_SHIPS_PARAMETERS" hostile="true"/>
+</event>
+<textList name="TIMEKEEPER_FIGHT_TEXT">
+	<text>Внезапно на экранах появляется светящийся корабль хранителей времени. Его антенны слабо мерцают, как дальние звёзды. Вы готовитесь к битве, ощущая, как время вокруг нас замедляется.</text>
+	<text>Корабль врага вырывается из искривлённого пространства. Сигнал о нападении заставляет команду броситься по своим местам, ведь хранители времени не знают пощады!</text>
+	<text>Враждебный корабль с огромными антеннами появляется на вашем радаре, объятый зловещим светом. Ваш экипаж на несколько секунд замирает, когда вы отдаёте приказ стрелять на поражение.</text>
+</textList>
+<ship name="TIMEKEEPER_SHIPS_PARAMETERS" auto_blueprint="TIMEKEEPER_SHIPS">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
 </ship>
 
 <event name="BORDER_SECTOR_TWO_FLEET_FIGHT"> 

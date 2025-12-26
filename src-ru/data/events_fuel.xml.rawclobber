@@ -64,6 +64,10 @@ Sector Specific:
 </textList>
 <event name="NO_FUEL_FLEET_DLC_BAD">
 	<text load="NO_FUEL_FLEET_DLC_BAD_TEXT"/>
+	<choice hidden="true"><!-- 1.34 -->
+		<text>Поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
 </event>
 <textList name="NO_FUEL_FLEET_DLC_BAD_TEXT">
 	<text>По каким-то причинам к маяку, на котором вы застряли, не прибыл ни один корабль повстанцев.</text>
@@ -122,6 +126,10 @@ Beacon Off.....
 
 <event name="FUEL_NOTHING">
 	<text load="FUEL_NOTHING_LIST"/>
+	<choice hidden="true"><!-- 1.34 -->
+		<text>Поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
 </event>
 <textList name="FUEL_NOTHING_LIST">
 	<text>В радиусе сканирования никого нет, и к маяку так никто и не прилетел.</text>
@@ -158,14 +166,14 @@ Beacon Off.....
 </textList>
 	
 <event name="FUEL_EXPLORE">
-	<text>Хотя отсутствие топливных элементов не позволяет вашему кораблю совершать прыжки, вы всё ещё можете использовать ваши импульсные двигатели. Желаете ли вы потратить некоторое время, исследуя близлежащие системы?</text>
+	<text>Команда предлагает использовать малые маневровые импульсные двигатели корабля, чтобы исследовать близлежащее пространство. Желаете ли вы потратить некоторое время на это?</text><!-- 1.34 -->
 	<choice hidden="true">
 		<text>Исследовать окрестности.</text>
 		<event load="FUEL_EXPLORE_LIST"/>  
 	</choice>
-	<choice>
-		<text>Остаться у маяка.</text>
-		<event/>
+	<choice hidden="true"><!-- 1.34 -->
+		<text>Остаться у маяка и поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="FUEL_EXPLORE_LIST">
@@ -175,9 +183,9 @@ Beacon Off.....
 			<text>Приблизиться к астероидам и просканировать их.</text>
 			<event load="ASTEROID_EXPLORE_RESULTS"/>
 		</choice>
-		<choice>
-			<text>Не рисковать.</text>
-			<event/>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Не рисковать и поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
 		</choice>
 	</event>
 	<event>
@@ -212,13 +220,17 @@ Beacon Off.....
 				</item_modify>
 			</event>
 		</choice>
-		<choice>
-			<text>Отказаться от обмена.</text>
-			<event/>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Отказаться от обмена и поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
 		</choice>
 	</event>
 	<event>
 		<text>Никто не отвечает на ваши позывные, и вы не обнаруживаете ничего примечательного.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 	<event>
 		<text>Вы оказались в радиусе сканеров небольшого автоматического разведчика повстанцев!</text>
@@ -285,6 +297,10 @@ Beacon Off.....
 	</event>
 	<event>
 		<text>«Нельзя никому доверять в это время...» Корабль совершает прыжок.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 	<event>
 		<text>Они отвечают: «Не приближаться? А что вы нам сделаете, если всё-таки приблизимся?» Они включают орудия и летят к вам.</text>
@@ -310,6 +326,10 @@ Beacon Off.....
 			<text>(Маскировка) Замаскироваться и выйти из диапазона сканирования, прежде чем у них появится шанс взять вас на прицел.</text>
 			<event>
 				<text>Ваша высокотехнологичная система маскировки позволяет легко выйти из диапазона сканирования, так как вы были всё ещё не в зоне поражения. В конце концов их корабль совершает прыжок.</text>
+				<choice hidden="true"><!-- 1.34 -->
+					<text>Поговорить с экипажем.</text>
+					<event load="TALK_WITH_CREW"/>
+				</choice>
 			</event>
 		</choice>
 	</event>		
@@ -373,6 +393,10 @@ Beacon On!!!!
 
 <event name="FUEL_NOTHING_DISTRESS">
 	<text load="FUEL_NOTHING_DISTRESS_LIST"/>
+	<choice hidden="true"><!-- 1.34 -->
+		<text>Поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
 </event>
 <textList name="FUEL_NOTHING_DISTRESS_LIST">
 	<text>Как же всё-таки хорошо, что система жизнеобеспечения корабля не зависит от топливных элементов FTL.</text>
@@ -422,6 +446,10 @@ Beacon On!!!!
 <eventList name="AUTO_FUEL_SELLER_ZAPROS">
 	<event>
 		<text>«Ваш корабль зарегистрирован как уже получавший разовый запас топлива в аварийной ситуации». Автоматический корабль улетает прочь.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 	<event>
 		<text>«Чрезвычайная ситуация подтверждена. Высылаю топливо».</text>
@@ -491,11 +519,19 @@ Beacon On!!!!
 			<text>Отказаться снова.</text>
 			<event>
 				<text>Их капитан отключает связь, и без лишних слов его корабль готовится к прыжку.</text>
+				<choice hidden="true"><!-- 1.34 -->
+					<text>Поговорить с экипажем.</text>
+					<event load="TALK_WITH_CREW"/>
+				</choice>
 			</event>
 		</choice>
 	</event>
 	<event>
 		<text>Прежде, чем они вас покидают, их капитан говорит: «Сожалею, но мы ничем не можем вам помочь».</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 </eventList>
 <eventList name="FUEL_TRADER_LOW_LIST">
@@ -527,6 +563,10 @@ Beacon On!!!!
 	</event>
 	<event>
 		<text>Они заканчивают разговор и готовятся совершить прыжок.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 </eventList>
 <!--END NO_FUEL_TRADER STUFF-->	
@@ -583,6 +623,10 @@ Beacon On!!!!
 		<text>Пролететь мимо.</text>
 		<event>
 			<text>Они явно заняты, поскольку совершенно не замечают вашего корабля.</text>
+			<choice hidden="true"><!-- 1.34 -->
+				<text>Поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true" req="DRONES_SHIP_REPAIR">
@@ -598,7 +642,11 @@ Beacon On!!!!
 </event>
 <eventList name="FUEL_OFF_ENGI_DUBIOUS_LIST">
 	<event>
-		<text>Инжи отвечают на ваш сигнал. «Идентификация: Федерация. Ошибка ввода/вывода : Федерация= [пусто]». Все дальнейшие сигналы остаются без ответа.</text>
+		<text>Инжи отвечают на ваш сигнал. «Идентификация: Федерация. Ошибка ввода/вывода : Федерация=[пусто]». Все дальнейшие сигналы остаются без ответа.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 	<event>	
 		<text>Корабль инжи не отвечает, но движется на перехват. Вы засекли электромагнитные сигналы от корабля — кто-то перепрограммировал его для боя!</text>
@@ -620,6 +668,10 @@ Beacon On!!!!
 			<text>Отказаться.</text>
 			<event>
 				<text>Инжи прерывают связь и продолжают полёт своим маршрутом.</text>
+				<choice hidden="true"><!-- 1.34 -->
+					<text>Поговорить с экипажем.</text>
+					<event load="TALK_WITH_CREW"/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -677,6 +729,10 @@ Beacon On!!!!
 		<text>Пусть дрейфует.</text>
 		<event>
 			<text>Рокам не нравится, когда чужаки подбирают их имущество, невзирая на их состояние, и вы, находясь на территории роков, не желаете рисковать.</text>
+			<choice hidden="true"><!-- 1.34 -->
+				<text>Поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true" req="LIFE_SCANNER"> <!--DLC-->
@@ -708,8 +764,8 @@ Beacon On!!!!
 			<event>
 				<text>Несмотря на своё... нездоровое состояние, рок сдержал слово и вернул членов вашей команды, счастливых и благодарных. К сожалению, их благодарность не заправит FTL-приводы.</text>  <!-- JUSTIN — TO DO — I don't like this one since you don't know who's being ransomed -->
 				<item_modify >
-					<item type="scrap" min="-40" max="-25"/>
-				</item_modify>
+					<item type="scrap" min="-15" max="-5"/>
+				</item_modify><!-- 1.34 -->
 			</event>
 		</choice>
 		<choice>
@@ -803,6 +859,10 @@ Beacon On!!!!
 		<text>Игнорировать это предложение.</text>
 		<event>
 			<text>Вы знаете, что лучше не иметь дел со слагом, которому, похоже, известно то, чего не знаете вы. Он прыгнул прочь с очередным смешком.</text>
+			<choice hidden="true"><!-- 1.34 -->
+				<text>Поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
 		</event>
 	</choice>
 	<choice hidden="true"> <!-- 1.29 -->
@@ -853,6 +913,10 @@ Beacon On!!!!
 	</event>
 	<event>
 		<text>Слаги отлетают на некоторое расстояние от вас, всё так же противно хихикая. К сожалению, вы не в силах преследовать их в вашем текущем положении. Передав пару неприличных изображений на ваш коммуникатор, они уходят.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 </eventList>
 
@@ -944,9 +1008,9 @@ Beacon On!!!!
 					</item_modify>
 				</event>
 			</choice>
-			<choice>
-				<text>Отказаться.</text>
-				<event/>
+			<choice hidden="true"><!-- 1.34 -->
+				<text>Отказаться и поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
 	</choice>
@@ -963,9 +1027,9 @@ Beacon On!!!!
 					</item_modify>
 				</event>
 			</choice>
-			<choice>
-				<text>Отказаться.</text>
-				<event/>
+			<choice hidden="true"><!-- 1.34 -->
+				<text>Отказаться и поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
 			</choice>
 		</event>
 	</choice>
@@ -985,6 +1049,10 @@ Beacon On!!!!
 <eventList name="NO_FUEL_REFUGEE_REFUSE">
 	<event>
 		<text>Корабль беженцев прервал связь и молча прыгнул из системы, что является общепринятым знаком негативного отношения.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 	<event>
 		<text>Беженцы крайне расстроены вашим отказом — похоже, их корабль повреждён сильнее, чем кажется на первый взгляд. Практически умоляя, они предлагают новые, более выгодные, условия.</text>
@@ -1001,6 +1069,10 @@ Beacon On!!!!
 			<text>Отказаться от их предложения снова.</text>
 			<event>
 				<text>Корабль беженцев прервал связь и молча прыгнул из системы, что является общепринятым знаком негативного отношения.</text>
+				<choice hidden="true"><!-- 1.34 -->
+					<text>Поговорить с экипажем.</text>
+					<event load="TALK_WITH_CREW"/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -1039,6 +1111,10 @@ Beacon On!!!!
 <eventList name="NO_FUEL_REFUGEE_PIRATE_REJECT">
 	<event>
 		<text>Корабль беженцев просит прощения, но им самим нужно топливо. Они желают вам всего хорошего, а затем исчезают из системы.</text>
+		<choice hidden="true"><!-- 1.34 -->
+			<text>Поговорить с экипажем.</text>
+			<event load="TALK_WITH_CREW"/>
+		</choice>
 	</event>
 	<event>
 		<text>Чувствуя ваши сомнения, корабль беженцев, тем не менее, расстаётся с небольшим количеством топлива. Он предупреждает, чтобы вы покинули сектор как можно скорее, пока он не захвачен повстанцами, затем корабль совершает прыжок и исчезает в неизвестном направлении.</text>

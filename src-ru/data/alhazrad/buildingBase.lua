@@ -459,19 +459,19 @@ local function Init()
     local portrait
     if port == 1 then
        portrait = portrait1
-       traderName = "Генри Кван"--traderName1
+       traderName = Hyperspace.Text:GetText('trader_name1')--"Генри Кван"--traderName1
     end
     if port == 2 then
        portrait = portrait2
-       traderName = "Бетани Джонс"--traderName2
+       traderName = Hyperspace.Text:GetText('trader_name2')--"Бетани Джонс"--traderName2
     end
     if port == 3 then
        portrait = portrait3
-       traderName = "Адам"--traderName3
+       traderName = Hyperspace.Text:GetText('trader_name3')--"Адам"--traderName3
     end
     if port == 4 then
        portrait = portrait4
-       traderName = "Абэ Исаму"--traderName4
+       traderName = Hyperspace.Text:GetText('trader_name4')--"Абэ Исаму"--traderName4
     end  
 
     local currentX = 704

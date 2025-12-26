@@ -2009,7 +2009,7 @@
 	<loadEventList seeded="false" first="true" generate="false">
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="3"/>
 		<event req="pony_status" lvl="2">
-			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.0" maxTime="5.0"/>
+			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.3" maxTime="5.0"/><!-- 1.34 -->
 		</event>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="1"/>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="0"/>
@@ -2022,7 +2022,7 @@
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="3"/>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="2"/>
 		<event req="pony_status" lvl="1">
-			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.0" maxTime="5.0"/>
+			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.3" maxTime="5.0"/><!-- 1.34 -->
 		</event>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="0"/>
 		<event/>
@@ -2064,7 +2064,7 @@
 	<loadEventList seeded="false" first="true" generate="false">
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="3"/>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="2"/>
-		<event req="pony_status" lvl="1"><triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="3.4" maxTime="4.4"/></event>
+		<event req="pony_status" lvl="1"><triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="3.6" maxTime="4.4"/></event><!-- 1.34 -->
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="0"/>
 		<event/>
 	</loadEventList>
@@ -4778,12 +4778,12 @@
 <event name="EVENT_PONY_UPDATES2">
 	<clearBackgroundObject name="UPDATES_PROGRESS_BAR1"/>
 	<backgroundObject load="UPDATES_PROGRESS_BAR2"/>
-	<triggeredEvent name="TRG_UPD" event="EVENT_PONY_UPDATES3" seeded="false" clearOnJump="true" minTime="100.0" maxTime="100.0"/>
+	<triggeredEvent name="TRG_UPD" event="EVENT_PONY_UPDATES3" seeded="false" clearOnJump="true" minTime="50.0" maxTime="50.0"/><!-- 1.34 -->
 </event>
 <event name="EVENT_PONY_UPDATES3">
 	<clearBackgroundObject name="UPDATES_PROGRESS_BAR2"/>
 	<backgroundObject load="UPDATES_PROGRESS_BAR3"/>
-	<triggeredEvent name="TRG_UPD" event="EVENT_PONY_UPDATES4" seeded="false" clearOnJump="true" minTime="490.0" maxTime="490.0"/>
+	<triggeredEvent name="TRG_UPD" event="EVENT_PONY_UPDATES4" seeded="false" clearOnJump="true" minTime="99.0" maxTime="99.0"/><!-- 1.34 -->
 </event>
 <event name="EVENT_PONY_UPDATES4">
 	<metaVariable name="pony_game_lvl" op="set" val="1"/>

@@ -655,7 +655,7 @@ Special:
 		
 <ship name="SQUAT_REFUEL_STATION" auto_blueprint="SHIPS_REBEL">
 	<destroyed>
-		<text>Корабль развалился, и вы быстро собрали всё полезное, что от него осталось.</text>
+		<text>Корабль разваливается, и вы быстро собрали всё полезное, что от него осталось.</text><!-- 1.34 -->
 		<autoReward level="LOW">standard</autoReward>
 		<choice hidden="true">
 			<text id="continue"/>
@@ -1952,6 +1952,11 @@ Special:
 		<name>W_LASER_HULL_1_UPGRADED</name>
 		<name>W_LASER_HULL_2_UPGRADED</name>
 	</weaponOverride>
+</ship>
+
+<ship name="TURTLE_SHIP" auto_blueprint="SHIPS_TURTLE"><!-- 1.34 -->
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_SHELL"/>
 </ship>
 
 <event name="DEAD_CREW_SHELL">

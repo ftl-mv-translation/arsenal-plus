@@ -10076,6 +10076,14 @@ ENGINEER ANIMATIONS
 	<time>1.0</time>
 </anim>
 
+<!-- 1.34 -->
+
+<animSheet name="river_mark" w="35" h="35" fw="35" fh="35">people/river_mark.png</animSheet>
+<anim name="river_mark">
+	<sheet>river_mark</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
 <!-- ORCHID LEGENDARY -->
 
 <animSheet name="orchid_legendary" w="350" h="490" fw="35" fh="35">people/orchid_legendary_base.png</animSheet>
@@ -16258,70 +16266,79 @@ MORPH ANIMATIONS
 
 <!--
 	PWER DRAIN DRONE ANIMATIONS 
--->
+--> <!-- 1.34 -->
 <animSheet name="depleter" w="280" h="105" fw="35" fh="35">people/depleter_base.png</animSheet>
 <animSheet name="depleter_death" w="320" h="32" fh="32" fw="32">effects/explosion1_strip10.png</animSheet>
-
 <anim name="depleter_death_right">
 	<sheet>depleter_death</sheet>
 	<desc length="10" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
-
 <anim name="depleter_death_left">
 	<sheet>depleter_death</sheet>
 	<desc length="10" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
-
 <anim name="depleter_walk_down">
 	<sheet>depleter</sheet>
 	<desc length="4" x="0" y="2"/>
 	<time>1.0</time>
 </anim>
-
 <anim name="depleter_walk_right">
 	<sheet>depleter</sheet>
 	<desc length="4" x="4" y="2"/>
 	<time>1.0</time>
 </anim>
-
 <anim name="depleter_walk_up">
 	<sheet>depleter</sheet>
 	<desc length="4" x="0" y="1"/>
 	<time>1.0</time>
 </anim>
-
 <anim name="depleter_walk_left">
 	<sheet>depleter</sheet>
 	<desc length="4" x="4" y="1"/>
 	<time>1.0</time>
 </anim>
-
-
 <anim name="depleter_power_down">
 	<sheet>depleter</sheet>
 	<desc length="4" x="0" y="0"/>
 	<time>1.0</time>
 </anim>
-
 <anim name="depleter_power_up">
 	<sheet>depleter</sheet>
 	<desc length="4" x="4" y="0"/>
 	<time>1.0</time>
 </anim>
-
-
 <anim name="depleter_portrait">
 	<sheet>depleter</sheet>
 	<desc length="1" x="0" y="2"/>
 	<time>1</time>
 </anim>
-
 <anim name="depleter_fly">
 	<sheet>depleter</sheet>
 	<desc length="1" x="0" y="2"/>
 	<time>1</time>
+</anim>
+
+<anim name="depleter_shoot_down">
+	<sheet>depleter</sheet>
+	<desc length="1" x="0" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="depleter_shoot_right">
+	<sheet>depleter</sheet>
+	<desc length="1" x="4" y="2"/>
+	<time>1.0</time>
+</anim>
+<anim name="depleter_shoot_up">
+	<sheet>depleter</sheet>
+	<desc length="1" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="depleter_shoot_left">
+	<sheet>depleter</sheet>
+	<desc length="1" x="3" y="1"/>
+	<time>1.0</time>
 </anim>
 
 <!--
@@ -21782,8 +21799,8 @@ MORPH ANIMATIONS
 
 <!-- полоски загрузки обновлений пони -->
 <animSheet name="updates_progress_bar1" w="2600" h="23" fw="260" fh="23">pony/updates_progress_bar1.png</animSheet><anim name="updates_progress_bar1"><sheet>updates_progress_bar1</sheet><desc length="10" x="0" y="0"/><time>10</time></anim>
-<animSheet name="updates_progress_bar2" w="2600" h="23" fw="260" fh="23">pony/updates_progress_bar2.png</animSheet><anim name="updates_progress_bar2"><sheet>updates_progress_bar2</sheet><desc length="10" x="0" y="0"/><time>100</time></anim>
-<animSheet name="updates_progress_bar3" w="2600" h="23" fw="260" fh="23">pony/updates_progress_bar3.png</animSheet><anim name="updates_progress_bar3"><sheet>updates_progress_bar3</sheet><desc length="10" x="0" y="0"/><time>500</time></anim>
+<animSheet name="updates_progress_bar2" w="2600" h="23" fw="260" fh="23">pony/updates_progress_bar2.png</animSheet><anim name="updates_progress_bar2"><sheet>updates_progress_bar2</sheet><desc length="10" x="0" y="0"/><time>50</time></anim><!-- was 100 --><!-- 1.34 -->
+<animSheet name="updates_progress_bar3" w="2600" h="23" fw="260" fh="23">pony/updates_progress_bar3.png</animSheet><anim name="updates_progress_bar3"><sheet>updates_progress_bar3</sheet><desc length="10" x="0" y="0"/><time>100</time></anim><!-- was 500 --><!-- 1.34 -->
 
 <!-- кнопки в настройках -->
 <animSheet name="button_return_on" w="80" h="50" fw="80" fh="50">pony/button_return_on.png</animSheet><anim name="button_return_on"><sheet>button_return_on</sheet><desc length="1" x="0" y="0"/><time>1</time></anim>
@@ -22856,7 +22873,7 @@ MORPH ANIMATIONS
 <anim name="osa_repair">
 	<sheet>osa</sheet>
 	<desc length="9" x="0" y="8"/>
-	<time>1.0</time>
+	<time>0.8</time><!-- 1.34 -->
 </anim>
 <anim name="osa_punch_up">
 	<sheet>osa</sheet>
@@ -22979,7 +22996,7 @@ MORPH ANIMATIONS
 <anim name="osae_repair">
 	<sheet>osae</sheet>
 	<desc length="9" x="0" y="8"/>
-	<time>1.0</time>
+	<time>0.8</time><!-- 1.34 -->
 </anim>
 <anim name="osae_punch_up">
 	<sheet>osae</sheet>
@@ -23027,6 +23044,657 @@ MORPH ANIMATIONS
 	<sheet>stun_computer2</sheet>
 	<desc length="7" x="0" y="0"/>
 	<time>0.7</time>
+</anim>
+
+<!-- 1.34 -->
+
+<animSheet name="blocker_1" w="108" h="19" fw="18" fh="19">people/blocker_1.png</animSheet>
+<anim name="blocker_1">
+	<sheet>blocker_1</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+<animSheet name="blocker_2" w="108" h="19" fw="18" fh="19">people/blocker_2.png</animSheet>
+<anim name="blocker_2">
+	<sheet>blocker_2</sheet>
+	<desc length="6" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+
+<animSheet name="keeper_legendary" w="315" h="455" fw="35" fh="35">people/keeper_legendary_base.png</animSheet>
+<anim name="keeper_legendary_clone">
+	<sheet>keeper_legendary</sheet>
+	<desc length="6" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_death_right">
+	<sheet>keeper_legendary</sheet>
+	<desc length="6" x="3" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_death_left">
+	<sheet>keeper_legendary</sheet>
+	<desc length="5" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_walk_down">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_walk_right">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_walk_up">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_walk_left">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_shoot_down">
+	<sheet>keeper_legendary</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_shoot_right">
+	<sheet>keeper_legendary</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_shoot_up">
+	<sheet>keeper_legendary</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_shoot_left">
+	<sheet>keeper_legendary</sheet>
+	<desc length="3" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_fire_down">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_fire_right">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_fire_up">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_fire_left">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_repair">
+	<sheet>keeper_legendary</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_punch_up">
+	<sheet>keeper_legendary</sheet>
+	<desc length="6" x="3" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_punch_down">
+	<sheet>keeper_legendary</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="keeper_legendary_teleport">
+	<sheet>keeper_legendary</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="keeper_legendary_type_right">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_type_left">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_type_up">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_type_down">
+	<sheet>keeper_legendary</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="keeper_legendary_portrait">
+	<sheet>keeper_legendary</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ba_beam_vilka_g" w="340" h="60" fw="34" fh="60">weapons/ba_beam_vilka_g.png</animSheet>
+<weaponAnim name="ba_beam_vilka_g">
+	<sheet>ba_beam_vilka_g</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="19" y="23"/>
+	<mountPoint x="5" y="40"/>
+	<chargeImage>weapons/ba_beam_vilka_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="ba_beam_vilka_v" w="340" h="60" fw="34" fh="60">weapons/ba_beam_vilka_v.png</animSheet>
+<weaponAnim name="ba_beam_vilka_v">
+	<sheet>ba_beam_vilka_v</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="19" y="23"/>
+	<mountPoint x="5" y="40"/>
+	<chargeImage>weapons/ba_beam_vilka_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="ba_beam_prism" w="480" h="110" fw="40" fh="110">weapons/ba_beam_prism.png</animSheet>
+<weaponAnim name="ba_beam_prism">
+	<sheet>ba_beam_prism</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>10</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="24" y="20"/>
+	<mountPoint x="4" y="88"/>
+	<chargeImage>weapons/ba_beam_prism_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="ba_beam_hit_prism" w="400" h="100" fw="100" fh="100">weapons/ba_beam_hit_prism.png</animSheet>
+<anim name="ba_beam_hit_prism">
+	<sheet>ba_beam_hit_prism</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.4</time>
+</anim>
+
+
+<!-- GUS RACE -->
+<animSheet name="gus" w="280" h="490" fw="35" fh="35">people/gus_base.png</animSheet>
+<anim name="gus_clone">
+	<sheet>gus</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_death_right">
+	<sheet>gus</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_death_left">
+	<sheet>gus</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_walk_down">
+	<sheet>gus</sheet>
+	<desc length="4" x="0" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_walk_right">
+	<sheet>gus</sheet>
+	<desc length="4" x="4" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_walk_up">
+	<sheet>gus</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_walk_left">
+	<sheet>gus</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_shoot_down">
+	<sheet>gus</sheet>
+	<desc length="3" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_shoot_right">
+	<sheet>gus</sheet>
+	<desc length="3" x="3" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_shoot_up">
+	<sheet>gus</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_shoot_left">
+	<sheet>gus</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_fire_down">
+	<sheet>gus</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_fire_right">
+	<sheet>gus</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_fire_up">
+	<sheet>gus</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_fire_left">
+	<sheet>gus</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_repair">
+	<sheet>gus</sheet>
+	<desc length="4" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_punch_up">
+	<sheet>gus</sheet>
+	<desc length="6" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_punch_down">
+	<sheet>gus</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="gus_teleport">
+	<sheet>gus</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="gus_type_right">
+	<sheet>gus</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_type_left">
+	<sheet>gus</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_type_up">
+	<sheet>gus</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_type_down">
+	<sheet>gus</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="gus_portrait">
+	<sheet>gus</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+
+<animSheet name="gusq" w="280" h="490" fw="35" fh="35">people/gusq_base.png</animSheet>
+<anim name="gusq_clone">
+	<sheet>gusq</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_death_right">
+	<sheet>gusq</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_death_left">
+	<sheet>gusq</sheet>
+	<desc length="8" x="0" y="2"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_walk_down">
+	<sheet>gusq</sheet>
+	<desc length="4" x="0" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_walk_right">
+	<sheet>gusq</sheet>
+	<desc length="4" x="4" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_walk_up">
+	<sheet>gusq</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_walk_left">
+	<sheet>gusq</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_shoot_down">
+	<sheet>gusq</sheet>
+	<desc length="3" x="0" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_shoot_right">
+	<sheet>gusq</sheet>
+	<desc length="3" x="3" y="11"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_shoot_up">
+	<sheet>gusq</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_shoot_left">
+	<sheet>gusq</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_fire_down">
+	<sheet>gusq</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_fire_right">
+	<sheet>gusq</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_fire_up">
+	<sheet>gusq</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_fire_left">
+	<sheet>gusq</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_repair">
+	<sheet>gusq</sheet>
+	<desc length="4" x="3" y="0"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_punch_up">
+	<sheet>gusq</sheet>
+	<desc length="6" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_punch_down">
+	<sheet>gusq</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="gusq_teleport">
+	<sheet>gusq</sheet>
+	<desc length="9" x="0" y="3"/>
+	<time>0.5</time>
+</anim>
+<anim name="gusq_type_right">
+	<sheet>gusq</sheet>
+	<desc length="4" x="0" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_type_left">
+	<sheet>gusq</sheet>
+	<desc length="4" x="4" y="5"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_type_up">
+	<sheet>gusq</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_type_down">
+	<sheet>gusq</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="gusq_portrait">
+	<sheet>gusq</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="ba_missiles_tau" w="360" h="70" fw="30" fh="70">weapons/ba_missiles_tau.png</animSheet>
+<weaponAnim name="ba_missiles_tau">
+	<sheet>ba_missiles_tau</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>10</chargedFrame>
+	<fireFrame>11</fireFrame>
+	<firePoint  x="17" y="32"/>
+	<mountPoint x="3" y="50"/>
+	<chargeImage>weapons/ba_missiles_tau_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="missile_tau" w="160" h="80" fw="32" fh="80">weapons/missile_tau.png</animSheet>
+<anim name="missile_tau">
+	<sheet>missile_tau</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+<animSheet name="ba_missiles_asin" w="2385" h="70" fw="45" fh="70">weapons/ba_missiles_asin.png</animSheet>
+<weaponAnim name="ba_missiles_asin">
+	<sheet>ba_missiles_asin</sheet>
+	<desc length="53" x="0" y="0"/>
+	<chargedFrame>51</chargedFrame>
+	<fireFrame>52</fireFrame>
+	<firePoint  x="32" y="40"/>
+	<mountPoint x="3" y="52"/>
+	<chargeImage>weapons/ba_missiles_asin_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="missile_asin" w="160" h="80" fw="32" fh="80">weapons/missile_asin.png</animSheet>
+<anim name="missile_asin">
+	<sheet>missile_asin</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+
+<animSheet name="temp_crew" w="70" h="35" fw="35" fh="35">effects/icon_temp_crew.png</animSheet>
+<anim name="temp_crew">
+	<sheet>temp_crew</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>0.5</time>
+</anim>
+
+<!-- TURTLE -->
+<animSheet name="turtle" w="315" h="455" fw="35" fh="35">people/turtle_base.png</animSheet>
+<anim name="turtle_clone">
+	<sheet>turtle</sheet>
+	<desc length="6" x="0" y="1"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_death_right">
+	<sheet>turtle</sheet>
+	<desc length="7" x="2" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_walk_down">
+	<sheet>turtle</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_walk_right">
+	<sheet>turtle</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_walk_up">
+	<sheet>turtle</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_walk_left">
+	<sheet>turtle</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_shoot_down">
+	<sheet>turtle</sheet>
+	<desc length="3" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_shoot_right">
+	<sheet>turtle</sheet>
+	<desc length="3" x="3" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_shoot_up">
+	<sheet>turtle</sheet>
+	<desc length="3" x="6" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_shoot_left">
+	<sheet>turtle</sheet>
+	<desc length="3" x="6" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_fire_down">
+	<sheet>turtle</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_fire_right">
+	<sheet>turtle</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_fire_up">
+	<sheet>turtle</sheet>
+	<desc length="4" x="0" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_fire_left">
+	<sheet>turtle</sheet>
+	<desc length="4" x="4" y="8"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_repair">
+	<sheet>turtle</sheet>
+	<desc length="9" x="0" y="7"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_punch_up">
+	<sheet>turtle</sheet>
+	<desc length="6" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_punch_down">
+	<sheet>turtle</sheet>
+	<desc length="6" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="turtle_teleport">
+	<sheet>turtle</sheet>
+	<desc length="9" x="0" y="2"/>
+	<time>0.5</time>
+</anim>
+<anim name="turtle_type_right">
+	<sheet>turtle</sheet>
+	<desc length="4" x="0" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_type_left">
+	<sheet>turtle</sheet>
+	<desc length="4" x="4" y="4"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_type_up">
+	<sheet>turtle</sheet>
+	<desc length="4" x="0" y="3"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_type_down">
+	<sheet>turtle</sheet>
+	<desc length="4" x="4" y="3"/>
+	<time>0.75</time>
+</anim>
+<anim name="turtle_portrait">
+	<sheet>turtle</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!-- EGG -->
+<animSheet name="egg" w="315" h="455" fw="35" fh="35">people/egg_base.png</animSheet>
+<anim name="egg_walk_down">
+	<sheet>egg</sheet>
+	<desc length="1" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="egg_death_right">
+	<sheet>egg</sheet>
+	<desc length="7" x="2" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="egg_teleport">
+	<sheet>egg</sheet>
+	<desc length="9" x="0" y="2"/>
+	<time>0.5</time>
+</anim>
+<anim name="egg_portrait">
+	<sheet>egg</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<animSheet name="drone_launcher" w="410" h="74" fw="41" fh="74">weapons/drone_launcher.png</animSheet>
+<weaponAnim name="drone_launcher">
+	<sheet>drone_launcher</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="20" y="30"/>
+	<mountPoint x="6" y="48"/>
+	<chargeImage>weapons/drone_launcher_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="enemy_turtle_thruster1" w="144" h="48" fw="36" fh="48">thrusters_enemy/enemy_turtle_thruster1.png</animSheet>
+<anim name="enemy_turtle_thruster1">
+	<sheet>enemy_turtle_thruster1</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.4</time>
+</anim>
+
+<animSheet name="silv_ba_heavyx_1" w="240" h="80" fw="30" fh="80">weapons/silv_ba_heavyx_1.png</animSheet>
+<weaponAnim name="silv_ba_heavyx_1">
+	<sheet>silv_ba_heavyx_1</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>4</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="17" y="13"/>
+	<mountPoint x="3" y="56"/>
+	<chargeImage>weapons/ba_heavyx_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="laser_heavyxxxl" w="200" h="22" fw="50" fh="22">weapons/laser_heavyxxxl.png</animSheet>
+<anim name="laser_heavyxxxl">
+	<sheet>laser_heavyxxxl</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="skilled_green" w="70" h="35" fw="35" fh="35">effects/icon_skilled_green.png</animSheet>
+<anim name="skilled_green">
+	<sheet>skilled_green</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="skilled_yellow" w="70" h="35" fw="35" fh="35">effects/icon_skilled_yellow.png</animSheet>
+<anim name="skilled_yellow">
+	<sheet>skilled_yellow</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1.0</time>
 </anim>
 
 </FTL>

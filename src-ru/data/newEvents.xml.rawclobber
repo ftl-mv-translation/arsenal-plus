@@ -151,7 +151,7 @@
 	<event load="REBEL_HELPERS"/>
 	<event load="ROGUE_REBEL"/>
 	<event load="SHELL_FIGHT"/>
-	<event load="SHELL_FIGHT"/>
+	<event load="TURTLE_FIGHT"/><!-- 1.34 -->
 </eventList>
 
 
@@ -311,6 +311,18 @@
 	<event load="QUEST_CONSTRUCTIONYARD"/>
 </eventList>
 
+<eventList name="QUESTS_1"> <!-- 1.34 -->
+	<event load="QUEST_ESCORT"/>
+	<event load="MERCHANT_REQUEST"/>
+	<event load="FEDERATION_PLANET_SIGNAL"/>
+	<event load="MERCENARY_WORK_START"/>
+	<event load="QUEST_MANTIS_INVASION_START"/>
+	<event load="QUEST_CREWDEAD_START"/>
+	<event load="QUEST_CONSTRUCTIONYARD"/>
+	<!-- add -->
+	<event load="EVENT_GUS"/>
+	<event load="EVENT_GUS"/>
+</eventList>
 
 <eventList name="HOSTILE_BOARDING">
 	<event load="STATION_SICK"/>

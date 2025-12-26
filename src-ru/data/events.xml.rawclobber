@@ -31,35 +31,35 @@ STORE		   Open a store							   Usage: STORE
 <event name="TEST_BATTLE">
 	<text>О нет, корабль!</text>
 	<choice>
-		<text>4 щита</text>
-		<event/>
-	</choice>
-	<choice>
-		<text>3 щита</text><event>
-			<status type="loss" target="enemy" system="shields" amount="2"/>
+		<text>Зарядный лазер</text>
+		<event>
+			<ship load="TEST1" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
-		<text>2 щита</text><event>
-			<status type="loss" target="enemy" system="shields" amount="4"/>
+		<text>Зарядный лазер + инвиз</text>
+		<event>
+			<ship load="TEST2" hostile="true"/>
 		</event>
 	</choice>
 	<choice>
-		<text>1 щит</text><event>
-			<status type="loss" target="enemy" system="shields" amount="6"/>
+		<text>Зарядный лазер + инвиз + скрытые орудия</text>
+		<event>
+			<ship load="TEST3" hostile="true"/>
 		</event>
 	</choice>
-	<choice>
-		<text>0 щитов</text><event>
-			<status type="loss" target="enemy" system="shields" amount="8"/>
-		</event>
-	</choice>
-	<ship load="TESTAUTOSH" hostile="true"/>
-	<status type="limit" target="enemy" system="engines" amount="0"/>
 </event>
-<ship name="TESTAUTOSH" auto_blueprint="BCIRCLE_ZONDS">
-	<destroyed load="OOOO"/>
-	<deadCrew load="OOOO"/>
+<ship name="TEST1" auto_blueprint="SHIPS_FED_EASY">
+	<destroyed load="OOO"/>
+	<deadCrew load="OOO"/>
+</ship>
+<ship name="TEST2" auto_blueprint="TESTSHIP2">
+	<destroyed load="OOO"/>
+	<deadCrew load="OOO"/>
+</ship>
+<ship name="TEST3" auto_blueprint="TESTSHIP3">
+	<destroyed load="OOO"/>
+	<deadCrew load="OOO"/>
 </ship>
 <!-- <ship name="TESTAUTOSH" auto_blueprint="SHIPS_FED_EASY">
 	<destroyed load="OOOO"/>
@@ -148,13 +148,15 @@ STORE		   Open a store							   Usage: STORE
 
 <event name="START_BEACON"><!-- 1.3 -->
 	<metaVariable name="slurm_available" op="set" val="0"/><!-- 1.32 -->
+	<metaVariable name="in_store_now" op="set" val="0"/><!-- 1.34 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
 	<queueEvent seeded="false">TRIGGER_ON_HULL_WAS_AT_1</queueEvent>
 	<queueEvent seeded="false">TRIGGER_ON_HULL_LOWER_15</queueEvent>
 	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<queueEvent seeded="false">FTL_BOOSTER_TUNNEL</queueEvent><!-- 1.34 -->
 	<queueEvent>START_CHECK_TO_ENABLE_DRONE_SURGE_BUTTON</queueEvent><!-- 1.33 -->
 	<!-- replace for max group 0, which was removed --><!-- 1.33 -->
 	<queueEvent>START_CHECK_RADIOACTIVE</queueEvent>
@@ -171,17 +173,20 @@ STORE		   Open a store							   Usage: STORE
 	<queueEvent>START_CHECK_NO_ARTILLERY_ORDER</queueEvent>
 	<queueEvent>START_CHECK_SOULREAPER</queueEvent><!-- 1.33 -->
 	<queueEvent>START_CHECK_ULEI</queueEvent><!-- 1.33 -->
-
+	<queueEvent>START_CHECK_WEAPONS_COUNT</queueEvent><!-- 1.34 -->
+	<queueEvent>START_CHECK_RESET_CHALLENGES</queueEvent><!-- 1.34 -->
+	<!-- <queueEvent>RECALC_PREIGNITER_ANTIABUSE_VAR</queueEvent> --><!-- 1.34 -->
 	<!-- <triggeredEvent event="ANTICLOAK_FIELD_JUMPCHECKS" seeded="false" loops="999999999" jumps="1"/> --><!-- 1.32 --><!-- 1.33 -->
 	<img back="HANGAR_PNG" planet="NONE"/><!-- 1.5 -->
 	<eventButton name="CARGO_BUTTON"><!-- 1.31 -->
 		<event load="EVENT_CARGO_BUTTON"/><!-- 1.33 -->
 		<image>statusUI/trum</image>
-		<location>1</location>
+		<location>2</location><!-- 1.34 -->
 		<noDanger>false</noDanger><!-- 1.33 -->
 		<hideInactive>true</hideInactive>
 		<req lvl="1">is_really_safe_place</req><!-- 1.33 -->
-		<tooltip>Открыть трюм корабля, чтобы выполнить операции с усилениями и другим оборудованием.</tooltip><!-- 1.31 --><!-- 1.33 -->
+		<tooltip>Открыть трюм корабля, чтобы выполнить операции с усилениями и другим оборудованием.
+		Горячая клавиша: PAGE DOWN</tooltip><!-- 1.31 --><!-- 1.33 --><!-- 1.34 -->
 	</eventButton>
 	<eventButton name="DRONES_BUTTON"><!-- 1.31 -->
 		<event load="EVENT_DRONES_BUTTON"/>
@@ -270,8 +275,64 @@ STORE		   Open a store							   Usage: STORE
 		<tooltip>Продать припасы за половину их стоимости.</tooltip><!-- 1.33 -->
 		<jumpClear>false</jumpClear>
 	</eventButton>
-	<triggeredEvent name="NOT_IN_STORE_JUMPS" event="NOT_IN_STORE" seeded="false" loops="999999999" jumps="1"/>
+	<!-- <triggeredEvent name="NOT_IN_STORE_JUMPS" event="NOT_IN_STORE" seeded="false" loops="999999999" jumps="1"/> --><!-- 1.34 -->	
 </event>
+<!-- 1.34 -->	
+<event name="START_CHECK_RESET_CHALLENGES">
+	<loadEventList seeded="false" first="true">
+		<event req="reset_all_challenges_at_begin" lvl="1">
+			<metaVariable name="challenge_noai" op="set" val="0"/>
+			<metaVariable name="challenge_noaug" op="set" val="0"/>
+			<metaVariable name="challenge_nobf" op="set" val="0"/>
+			<metaVariable name="challenge_nobrain" op="set" val="0"/>
+			<metaVariable name="challenge_nocont" op="set" val="0"/>
+			<metaVariable name="challenge_nodromis" op="set" val="0"/>
+			<metaVariable name="challenge_noeye" op="set" val="0"/>
+			<metaVariable name="challenge_nofuel" op="set" val="0"/>
+			<metaVariable name="challenge_nogeq" op="set" val="0"/>
+			<metaVariable name="challenge_nogus" op="set" val="0"/>
+			<metaVariable name="challenge_nohull" op="set" val="0"/>
+			<metaVariable name="challenge_noinst" op="set" val="0"/>
+			<metaVariable name="challenge_nomaxhp" op="set" val="0"/>
+			<metaVariable name="challenge_nopause" op="set" val="0"/>
+			<metaVariable name="challenge_norare" op="set" val="0"/>
+			<metaVariable name="challenge_noscrap" op="set" val="0"/>
+			<metaVariable name="challenge_nostor" op="set" val="0"/>
+			<metaVariable name="challenge_nosysca" op="set" val="0"/>
+			<metaVariable name="challenge_nowst" op="set" val="0"/>
+			<metaVariable name="challenge_nozlt" op="set" val="0"/>
+		</event>
+		<event/>
+	</loadEventList>
+</event>
+<event name="START_CHECK_WEAPONS_COUNT">
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="weaponslots_count" lvl="4"/>
+		<event req="weaponslots_count" lvl="3">
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+		</event>
+		<event req="weaponslots_count" lvl="2">
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+		</event>
+		<event req="weaponslots_count" lvl="1">
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+		</event>
+		<event req="weaponslots_count" lvl="0">
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+			<queueEvent>ADD_AUG_SLOT</queueEvent>
+		</event>
+		<event/>
+	</loadEventList>
+</event>	
+<event name="ADD_AUG_SLOT">
+	<hiddenAug>AUGMENT_SLOT</hiddenAug>
+</event>
+
 <!-- 1.33 -->	
 <event name="START_CHECK_ULEI">
 	<triggeredEvent event="ULEI_EVENT" clearOnJump="false" seeded="false" loops="999999999" jumps="1"/>
@@ -337,9 +398,9 @@ STORE		   Open a store							   Usage: STORE
 		<event req="MARKER_RADIOACTIVE" lvl="1"/>
 		<event req="RADIOACTIVE" lvl="1">
 			<hiddenAug>MARKER_RADIOACTIVE</hiddenAug>
-			<triggeredEvent event="RADIOACTIVE_FIRE" seeded="false" loops="999999999" playerDamage="1"/>
+			<!-- <triggeredEvent event="RADIOACTIVE_FIRE" seeded="false" loops="999999999" playerDamage="1"/>
 			<triggeredEvent event="RADIOACTIVE_CREW_START" seeded="false" jumps="1"/>
-			<triggeredEvent event="RADIOACTIVE_FIRE_JUMP" seeded="false" loops="999999999" jumps="1"/>
+			<triggeredEvent event="RADIOACTIVE_FIRE_JUMP" seeded="false" loops="999999999" jumps="1"/> --><!-- 1.34 -->
 		</event>
 		<event/>
 	</loadEventList>
@@ -1054,23 +1115,23 @@ STORE		   Open a store							   Usage: STORE
 	<metaVariable name="slurm_available" op="set" val="0"/>
 </event>
 
-<event name="SPEED_CONTROL_SLOW"><!-- 1.31 -->
-	<variable name="speed_control_slow_set" op="set" val="0"/>
+<event name="SPEED_CONTROL_SLOW"><!-- 1.31 --><!-- 1.34 --><!-- in Lua -->
+	<!-- <variable name="speed_control_slow_set" op="set" val="0"/>
 	<variable name="speed_control_norm_set" op="set" val="1"/>
-	<variable name="speed_control_fast_set" op="set" val="1"/>
+	<variable name="speed_control_fast_set" op="set" val="1"/> -->
 </event>
 <event name="SPEED_CONTROL_RESET">
-	<variable name="speed_control_slow_set" op="set" val="1"/>
+	<!-- <variable name="speed_control_slow_set" op="set" val="1"/>
 	<variable name="speed_control_norm_set" op="set" val="0"/>
-	<variable name="speed_control_fast_set" op="set" val="1"/>
+	<variable name="speed_control_fast_set" op="set" val="1"/> -->
 </event>
 <event name="SPEED_CONTROL_FAST">
-	<variable name="speed_control_slow_set" op="set" val="1"/>
+	<!-- <variable name="speed_control_slow_set" op="set" val="1"/>
 	<variable name="speed_control_norm_set" op="set" val="1"/>
-	<variable name="speed_control_fast_set" op="set" val="0"/>
+	<variable name="speed_control_fast_set" op="set" val="0"/> -->
 </event>
 
-<event name="RADIOACTIVE_FIRE">
+<!-- <event name="RADIOACTIVE_FIRE">
 	<enemyDamage amount="0" system="room" effect="fire"/>
 	<variable name="counter_rad_fire" op="add" val="1"/>
 </event>
@@ -1080,21 +1141,19 @@ STORE		   Open a store							   Usage: STORE
 </event>
 
 <event name="RADIOACTIVE_CREW_START">
-	<triggeredEvent event="RADIOACTIVE_CREW_FIRST" seeded="false" minTime="30.0" maxTime="150.0"/><!-- was 60 240 -->
+	<triggeredEvent event="RADIOACTIVE_CREW_FIRST" seeded="false" minTime="30.0" maxTime="150.0"/>
 </event>
 
 <event name="RADIOACTIVE_CREW_FIRST">
-	<!-- <transformRace>LIST_CREW_ALL_RACES</transformRace> -->
 	<triggeredEvent event="RADIOACTIVE_TRANSQ" seeded="false" clearOnJump="true" minTime="1.0" maxTime="1.0"/>
-	<triggeredEvent event="RADIOACTIVE_CREW" seeded="false" loops="999999999" minTime="3.0" maxTime="150.0"/><!-- was 0 240 -->
+	<triggeredEvent event="RADIOACTIVE_CREW" seeded="false" loops="999999999" minTime="3.0" maxTime="150.0"/>
 </event>
 
 <event name="RADIOACTIVE_CREW">
 	<triggeredEvent event="RADIOACTIVE_TRANSQ" seeded="false" clearOnJump="true" minTime="1.0" maxTime="1.0"/>
-	<!-- <transformRace>LIST_CREW_ALL_RACES</transformRace> -->
-</event>
-<event name="RADIOACTIVE_TRANSQ"> <!-- all without legendary -->
-	<variable name="counter_rad_crew" op="add" val="1"/>
+</event> --><!-- 1.34 --> <!-- moved into Lua -->
+<event name="RADIOACTIVE_TRANSQ">
+<!-- 	<variable name="counter_rad_crew" op="add" val="1"/>
 	<loadEventList seeded="false" first="false" generate="false">
 		<event><transformRace>engi</transformRace></event>
 		<event><transformRace>mantis</transformRace></event>
@@ -1119,10 +1178,10 @@ STORE		   Open a store							   Usage: STORE
 		<event><transformRace>slig</transformRace></event>
 		<event><transformRace>shell</transformRace></event>
 		<event><transformRace>keeper</transformRace></event>
-		<event><transformRace>blinker</transformRace></event><!-- 1.32 -->
+		<event><transformRace>blinker</transformRace></event>
 		<event><transformRace>morph</transformRace></event>
 		<event><transformRace>crystal</transformRace></event>
-	</loadEventList>
+	</loadEventList> --><!-- 1.34 --><!-- оставляем только пустой тех.эвент для вызова из события с астероидом радиоактивным-->
 </event>
 
 <event name="EVENT_CREATE_ASTEROIDS">
@@ -1427,6 +1486,10 @@ High Average=	140%
 	<text>Поскольку ваш телепортер повредили, и нет возможности его починить, вы любезно одалживаете одну из шлюпок вражеского корабля, чтобы вернуться на свой.</text>
 </event>
 
+<event name="EVENT_RETURNING_TEAM"> <!-- 1.34 -->
+	<text>Поскольку у вас нет системы телепортера, вы любезно одалживаете одну из шлюпок их корабля, чтобы вернуться на свой.</text>
+</event>
+
 <event name="FUEL_ESCAPE_SUN">
 	<text>Ожидая помощи, вы использовали остатки энергии, чтобы отлететь на безопасное расстояние от солнца.</text>
 </event>
@@ -1518,14 +1581,14 @@ High Average=	140%
 -->	
 <event name="START_BEACON_CIVILIAN">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_civilian_sector" op="add" val="1"/>
 	<text load="START_BEACON"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -1546,13 +1609,13 @@ High Average=	140%
 
 <event name="START_BEACON_TRADE">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_meet_trade_sector" op="add" val="1"/>
 	<text load="START_BEACON_TRADE"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="START_BEACON_TRADE_ITEMS"/><!-- 1.23 -->
@@ -2707,7 +2770,7 @@ High Average=	140%
 	<text>Вы находите святого отца в его каюте. Он читает молитву вслух. Вы решаете не отвлекать его и уходите.</text>
 </textList>
 <textList name="NOTHING2_HUMAN_D_GOOD_TEXT">
-	<text>Вы находите святого отца в рубке управления. Он предлагает использовать свои старые связи, чтобы оторваться от преследования. Недолго думая, вы соглашаетесь. Пастор вызывает по интеркому ближайший крейсер Федерации и даёт ему какие-то укзания.</text>
+	<text>Вы находите святого отца в рубке управления. Он предлагает использовать свои старые связи, чтобы оторваться от преследования. Недолго думая, вы соглашаетесь. Пастор вызывает по интеркому ближайший крейсер Федерации и даёт ему какие-то указания.</text><!-- 1.34 -->
 </textList>
 
 
@@ -3447,6 +3510,88 @@ High Average=	140%
 		<variable name="counter_talk_orchid" op="add" val="1"/>
 	</event>
 </eventList>
+
+<textList name="NOTHING2_TURTLE_TEXT"><!-- 1.34 -->
+	<text>Вы заходите к панцерону и некоторое время болтаете о последних событиях на корабле. Время отправляться дальше.</text>
+	<text>Вы расспрашиваете панцерона о его родной планете. Оказывается, она покрыта водой на 90%, и лишь несколько небольших островов пригодны для откладывания яиц.</text>
+	<text>Вы расспрашиваете панцерона, как его раса переносит космические путешествия. Ничего необычного - так же, как и другие расы.</text>
+	<text>Вы просите панцерона разрешения потрогать его панцирь. Он не возражает - обычный панцирь, как у земных черепах. Только очень огромный.</text>
+	<!-- more -->
+</textList>
+<textList name="NOTHING2_TURTLE_GOOD_TEXT">
+	<text>Вы заходите к панцерону, и вдруг замечаете яйцо возле него. Он осторожно переносит его в пустой отсек и возвращается на свой пост.</text>
+</textList>
+<eventList name="NOTHING2_TURTLE">
+	<event>
+		<text load="NOTHING2_TURTLE_TEXT"/>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+	<event>
+		<text load="NOTHING2_TURTLE_TEXT"/>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+	<event>
+		<text load="NOTHING2_TURTLE_GOOD_TEXT"/>
+		<queueEvent>ONE_TWO_EGG_R</queueEvent>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+</eventList>
+<event name="ONE_TWO_EGG_R">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="TWO_EGG"/>
+	</loadEventList>
+</event>
+<eventList name="NOTHING2_TURTLE2">
+	<event>
+		<text load="NOTHING2_TURTLE_TEXT"/>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+	<event>
+		<text load="NOTHING2_TURTLE_TEXT"/>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+	<event>
+		<text load="NOTHING2_TURTLE_GOOD_TEXT"/>
+		<queueEvent>ONE_TWO_EGG2_R</queueEvent>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+	<event>
+		<text load="NOTHING2_TURTLE_GOOD_TEXT"/>
+		<queueEvent>ONE_TWO_EGG2_R</queueEvent>
+		<variable name="counter_talk_turtle" op="add" val="1"/>
+	</event>
+</eventList>
+<event name="ONE_TWO_EGG2_R">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="ONE_EGG"/>
+		<event load="TWO_EGG"/>
+		<event load="TWO_EGG"/>
+		<event load="TWO_EGG"/>
+		<event load="TWO_EGG"/>
+		<event load="TWO_EGG"/>
+	</loadEventList>
+</event>
+
+<event name="ONE_EGG"><!-- 1.34 -->
+	<!-- технический эвент, делает яйцо на корабле игрока, очень старается в пустых отсеках -->
+</event>
+<event name="TWO_EGG"><!-- 1.34 -->
+	<queueEvent>ONE_EGG</queueEvent>
+	<queueEvent>ONE_EGG</queueEvent>
+</event>
 
 <textList name="NOTHING2_SHELL_TEXT"><!-- 1.28 -->
 	<text>Броненосец свернулся в клубок и катается по всему отсеку. Понаблюдав немного за его игрой, вы уходите.</text>
@@ -5073,7 +5218,7 @@ High Average=	140%
 					<autoReward level="MED">drone</autoReward>
 				</event>
 			</choice>
-			<choice hidden="true" req="DRONE_CHAFF"> <!-- 1.26 -->
+			<choice hidden="true" req="DRONE_CHAFFS"> <!-- 1.26 --><!-- 1.34 -->
 				<text>(Дрон-провокатор) Отвлечь систему защиты дроном-провокатором.</text>
 				<event>
 					<text>Вы запускаете дрона-провокатора на систему защиты станции, а сами двигаетесь немного позади...</text>
@@ -7185,7 +7330,7 @@ High Average=	140%
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true" req="DRONE_CHAFF"> <!-- 1.26 -->
+	<choice hidden="true" req="DRONE_CHAFFS"> <!-- 1.26 --><!-- 1.34 -->
 		<text>(Дрон-провокатор) Отвлечь мантисов дроном-провокатором.</text>
 		<event>
 			<text>Вы запускаете дрона-провокатора на лагерь мантисов, а сами по незаметной траектории проникаете на склад оборудования...</text>
@@ -7561,6 +7706,7 @@ High Average=	140%
 <eventList name="QUEST_MANTIS_BIGHIVE_END"><!-- 1.25.2 -->
 	<event>
 		<text>Вы осматриваете поле боя и с ужасом понимаете, что ваш доблестный отряд почти полностью уничтожен. Лишь пара кораблей отчаянно пытается удрать. Вы летите подальше от маяка, пока мантисы не отстают. Однако им удаётся телепортировать к вам группу своих захватчиков.</text>
+		<status type="limit" target="enemy" system="teleporter" amount="0"/><!-- 1.34 -->
 		<boarders min="2" max="4" class="mantis"/>
 	</event>
 	<event>
@@ -15699,6 +15845,218 @@ High Average=	140%
 				<remove name="MISSILES_VAMPIRE_ACC"/>
 			</event>
 		</choice>
+		<!-- 1.34 -->
+		<choice req="BA_MISSILES_TAU" hidden="true"> 
+			<text>(Ракеты Гипнос) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_TAU_FRC" hidden="true"> 
+			<text>(Ракеты Гипнос ‰) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M_FRC"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU_FRC"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_TAU_BRC" hidden="true"> 
+			<text>(Ракеты Гипнос €) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M_BRC"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU_BRC"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_TAU_CLD" hidden="true"> 
+			<text>(Ракеты Гипнос ‡) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M_CLD"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU_CLD"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_TAU_POW" hidden="true"> 
+			<text>(Гипнос †) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M_POW"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU_POW"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_TAU_UNI" hidden="true"> 
+			<text>(Ракеты Гипнос √) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M_UNI"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU_UNI"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_TAU_ACC" hidden="true">
+			<text>(Ракеты Гипнос £) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_TAU_M_ACC"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_TAU_ACC"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN" hidden="true"> 
+			<text>(Ракеты Танатос) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN_FRC" hidden="true"> 
+			<text>(Ракеты Танатос ‰) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M_FRC"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN_FRC"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN_BRC" hidden="true"> 
+			<text>(Ракеты Танатос €) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M_BRC"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN_BRC"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN_CLD" hidden="true"> 
+			<text>(Ракеты Танатос ‡) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M_CLD"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN_CLD"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN_POW" hidden="true"> 
+			<text>(Танатос †) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M_POW"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN_POW"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN_UNI" hidden="true"> 
+			<text>(Ракеты Танатос √) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M_UNI"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN_UNI"/>
+			</event>
+		</choice>
+		<choice req="BA_MISSILES_ASIN_ACC" hidden="true">
+			<text>(Ракеты Танатос £) Улучшить это орудие.</text>
+			<event>
+				<text load="PLANET_ENGE_UPGRADE_TEXT"/>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event>
+						<text load="PLANET_ENGE_UPGRADE_TEXT_2"/>
+						<weapon name="BA_MISSILES_ASIN_M_ACC"/>
+						<achievement silent="false">ACH_MISSILENDLESS</achievement>
+					</event>
+				</choice>
+				<remove name="BA_MISSILES_ASIN_ACC"/>
+			</event>
+		</choice>
+		<!-- 1.34 -->
 		<choice req="MISSILES_DRILL_1" hidden="true"> 
 			<text>(Ракеты Дрель Мод I) Улучшить это орудие.</text>
 			<event>
@@ -17878,6 +18236,10 @@ High Average=	140%
 		<text>(Член экипажа броненосец) Отправить броненосца.</text>
 		<event load="RADAR_REBEL_T_SHELL"/>
 	</choice>
+	<choice hidden="true" req="turtle"> <!-- 1.34 -->
+		<text>(Член экипажа панцерон) Отправить панцерона.</text>
+		<event load="RADAR_REBEL_T_TURTLE"/>
+	</choice>
 	<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 		<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
 		<event load="RADAR_REBEL_T_SLUG"/>
@@ -19848,6 +20210,91 @@ High Average=	140%
 	</event>
 </eventList>
 
+<eventList name="RADAR_REBEL_T_TURTLE"> <!-- 1.34 -->
+	<event>
+		<text>Панцерон скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
+		<modifyPursuit amount="-2"/>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон скрытно скачивает карту сектора и возвращается обратно.</text>
+		<reveal_map/>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон находит склад с оружием, но незаметно вынести ничего не может.</text>
+		<choice hidden="true">
+			<text>Вернуться на корабль с пустыми руками.</text>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+		<choice hidden="true" req="teleporter">
+			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<event>
+				<text>Ваш агент появляется в телепортере корабля с новым орудием.</text>
+				<autoReward level="LOW">weapon</autoReward>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<autoReward level="HIGH">stuff</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон находит склад с оборудованием, забирает груз и возвращается с ним на борт.</text>
+		<autoReward level="HIGH">stuff</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон находит склад с оборудованием, но незаметно вынести его не может.</text>
+		<choice hidden="true">
+			<text>Вернуться на корабль с пустыми руками.</text>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+		<choice hidden="true" req="teleporter">
+			<text>(Телепортер) Подцепить телепортационный маячок и подать сигнал на корабль.</text>
+			<event>
+				<text>Ваш агент появляется в телепортере с кучей материалов.</text>
+				<autoReward level="HIGH">stuff</autoReward>
+				<choice hidden="true">
+					<text id="continue"/>
+					<event load="RADAR_REBEL_RETURN"/>
+				</choice>
+			</event>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон не смог найти ничего полезного. К счастью, он остался незамеченным и благополучно возвращается на ваш корабль.</text> <!-- different -->
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+	</event>
+	<event>
+		<text>Панцерон не смог найти ничего полезного. К счастью, он остался незамеченным и благополучно возвращается на ваш корабль.</text> <!-- different -->
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="RADAR_REBEL_RETURN"/>
+		</choice>
+	</event>
+</eventList>
+
 <eventList name="RADAR_REBEL_T_MANTIS">
 	<event>
 		<text>Мантис скрытно пробирается в аналитический центр и отправляет флоту ложные координаты вашего расположения. Это их задержит.</text>
@@ -20260,6 +20707,15 @@ High Average=	140%
 						<achievement silent="false">ACH_LAST_HERO</achievement><!-- 1.31 -->
 					</event>
 				</choice>
+				<choice hidden="true" req="turtle"> <!-- 1.34 -->
+					<text>(Член экипажа панцерон) Отправить панцерона.</text>
+					<event>
+						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<modifyPursuit amount="-4"/>
+						<crewMember amount="-1" class="turtle"/>
+						<achievement silent="false">ACH_LAST_HERO</achievement>
+					</event>
+				</choice>
 				<choice hidden="true" req="slug"> <!-- 1.28 -->
 					<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
 					<event>
@@ -20496,6 +20952,15 @@ High Average=	140%
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="shell"/>
 						<achievement silent="false">ACH_LAST_HERO</achievement><!-- 1.31 -->
+					</event>
+				</choice>
+				<choice hidden="true" req="turtle"> <!-- 1.34 -->
+					<text>(Член экипажа панцерон) Отправить панцерона.</text>
+					<event>
+						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<modifyPursuit amount="-4"/>
+						<crewMember amount="-1" class="turtle"/>
+						<achievement silent="false">ACH_LAST_HERO</achievement>
 					</event>
 				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
@@ -20755,6 +21220,15 @@ High Average=	140%
 						<achievement silent="false">ACH_LAST_HERO</achievement><!-- 1.32 -->
 					</event>
 				</choice>
+				<choice hidden="true" req="turtle"> <!-- 1.34 -->
+					<text>(Член экипажа панцерон) Отправить панцерона.</text>
+					<event>
+						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<modifyPursuit amount="-4"/>
+						<crewMember amount="-1" class="turtle"/>
+						<achievement silent="false">ACH_LAST_HERO</achievement>
+					</event>
+				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 					<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
 					<event>
@@ -20991,6 +21465,15 @@ High Average=	140%
 						<modifyPursuit amount="-4"/>
 						<crewMember amount="-1" class="shell"/>
 						<achievement silent="false">ACH_LAST_HERO</achievement><!-- 1.32 -->
+					</event>
+				</choice>
+				<choice hidden="true" req="turtle"> <!-- 1.34 -->
+					<text>(Член экипажа панцерон) Отправить панцерона.</text>
+					<event>
+						<text>Флот задержан боевой стычкой с захваченным вами кораблём.</text>
+						<modifyPursuit amount="-4"/>
+						<crewMember amount="-1" class="turtle"/>
+						<achievement silent="false">ACH_LAST_HERO</achievement>
 					</event>
 				</choice>
 				<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
@@ -21311,14 +21794,8 @@ High Average=	140%
 		<text>(Резервный банк ДНК) Подобрать новые комбинации ДНК и запустить генерацию с нуля.</text>
 		<event load="BACKUP_DNA_LIST"/>
 	</choice>
-	<!-- 
 	<choice req="BATTERY_BOOSTER" hidden="true">
-		<text>(Зарядное устройство) Запитать реактор корабля напрямую от зарядного устройства, сохраняя полученную энергию.</text>
-		<event load="BATTERY_BOOSTER_LIST"/>
-	</choice>
-	 -->
-	<choice req="BATTERY_BOOSTER" hidden="true">
-		<text>(Зарядное устройство) Пусть команда попытается оптимизировать совместную работу реактора и зарядного устройства.</text> <!-- 1.25 -->
+		<text>(Резервные конденсаторы) Пусть команда попытается оптимизировать совместную работу реактора и резервных конденсаторов.</text> <!-- 1.25 --><!-- 1.34 -->
 		<event load="BATTERY_BOOSTER_LIST"/>
 	</choice>
 	<choice req="ANTICLOAK_FIELD" hidden="true"><!-- 1.32 -->
@@ -21366,8 +21843,8 @@ High Average=	140%
 		<event load="FLEET_DISTRACTION_LIST"/>
 	</choice>
 	<choice req="FTL_BOOSTER" hidden="true">
-		<text>(Ускоритель перезарядки FTL) Подать дополнительное топливо для ускоренного прыжка.</text>
-		<event load="FTL_BOOSTER_LIST"/>
+		<text>(Гипер-ускоритель FTL) Подать дополнительное топливо для ускоренного прыжка.</text><!-- 1.34 -->
+		<event load="FTL_BOOSTER_LIST"/><!-- 1.34 -->
 	</choice>
 	<choice req="FTL_JAMMER" hidden="true">
 		<text>(Глушитель FTL) Провести "испытания" глушителя на каком-нибудь корабле, находящимся неподалёку.</text>
@@ -21396,6 +21873,10 @@ High Average=	140%
 	<choice req="O2_MASKS" hidden="true">
 		<text>(Кислородные маски) Попробовать улучшить кислородную систему за счёт фильтров и клапанов кислородных масок.</text>
 		<event load="O2_MASKS_LIST"/>
+	</choice>
+	<choice req="ADV_OXYGEN" hidden="true">
+		<text>(Контроллер кислорода) Попробовать перенастроить алгоритмы контроллера кислорода, чтобы улучшить кислородную систему.</text>
+		<event load="ADV_OXYGEN_LIST"/>
 	</choice>
 	<choice req="REPAIR_ARM" hidden="false"><!-- 1.23 -->
 		<text>(Кран для ремонта) Ремонтировать корабль за счёт запасов лома.</text> <!-- 1.23 -->
@@ -21469,9 +21950,26 @@ High Average=	140%
 		<text>(Ремонтные нано-боты) Попробовать собрать ремонтный набор, используя ваших ремонтных нано-ботов.</text>
 		<event load="REPAIR_SPEED_UP_LIST"/>
 	</choice>
-	<choice hidden="true" req="pilot" max_group="100" blue="false"><!-- 1.33 -->
-		<text>Просто зарядить FTL-привод и прыгнуть.</text>
-		<event/>
+	<choice req="ANAEROBIC_PROJECTOR" hidden="true"><!-- 1.34 -->
+		<text>(Анаэробное пламя) Добавить к вашим поджигающим орудиям катализатор, усиливающий урон от огня в 3 раза до конца сектора.</text>
+		<event load="ANAEROBIC_PROJECTOR_LIST"/>
+	</choice>
+	<choice req="TELEPORT_MULTI" hidden="true"><!-- 1.34 -->
+		<text>(Квантовый имитатор) Попробовать создать стабильную копию кого-то в телепортере.</text>
+		<event load="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER"/>
+	</choice>
+	<choice req="ART_ACCURACY" hidden="true"><!-- 1.34 -->
+		<text>(Автонаводчик артиллерии) Попробовать улучшить систему артиллерии, используя автонаводчик.</text>
+		<event load="ART_ACCURACY_LIST_PREPARE"/>
+	</choice>
+	<choice req="AIM_DRONES" hidden="true"><!-- 1.34 -->
+		<text>(Целеуказатель дронов) Попробовать улучшить систему дронов, используя целеуказатель.</text>
+		<event load="AIM_DRONES_LIST_PREPARE"/>
+	</choice>
+	
+	<choice hidden="true" req="pilot" max_group="100" blue="false"><!-- 1.33 --><!-- 1.34 -->
+		<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 	<!-- 1.26 -->
 	<!-- <choice req="INJECTOR_PRC" hidden="true">
@@ -21510,7 +22008,172 @@ High Average=	140%
 	
 <!--xxxxxx  ЛИСТЫ СОБЫТИЙ СТАРТОВЫХ МАЯКОВ ххххх-->
 
-  <!-- 1.31 -->
+<!-- 1.34 -->
+
+<event name="AIM_DRONES_LIST_PREPARE"> 
+    <text>Вы отправляете команду оптимизировать вашу систему дронов.</text>
+    <choice hidden="true" req="drones" blue="false">
+        <text id="continue"/>
+        <event load="AIM_DRONES_LIST"/>
+    </choice>
+    <choice hidden="true" req="drones" lvl="0" max_lvl="0" blue="false">
+        <text>К сожалению, без системы дронов это невозможно сделать.</text>
+        <event/>
+    </choice>
+</event>
+<eventList name="AIM_DRONES_LIST">
+	<event load="AIM_DRONES_LIST_NOTHING"/>
+	<event load="AIM_DRONES_LIST_NOTHING"/>
+	<event load="AIM_DRONES_LIST_GOOD"/>
+	<event load="AIM_DRONES_LIST_GOOD"/>
+	<event load="AIM_DRONES_LIST_GOOD"/>
+	<event load="AIM_DRONES_LIST_GOOD_2"/>
+	<event load="AIM_DRONES_LIST_BAD"/>
+</eventList>
+
+<event name="AIM_DRONES_LIST_NOTHING">
+	<text>Ваша команда не может справиться с настройкой системы дронов. Вы больше не можете терять время и готовитесь к прыжку.</text>	
+</event>
+<event name="AIM_DRONES_LIST_GOOD">
+	<text>Ваша команда оптимизирует работу системы дронов совместно с целеуказателем. Управление дронами получает улучшение.</text>
+	<upgrade amount="1" system="drones"/>
+</event>
+<event name="AIM_DRONES_LIST_GOOD_2">
+	<text>Ваша команда оптимизирует работу системы дронов совместно с целеуказателем слишком долго. Управление дронами получает улучшение, но флот повстанцев приблизился за это время.</text>
+	<upgrade amount="1" system="drones"/>
+	<modifyPursuit amount="1"/>
+</event>
+<event name="AIM_DRONES_LIST_BAD">
+	<text>Во время процесса оптимизации проиходит взрыв в системе дронов! Что-то пошло не так...</text>
+	<damage amount="1" system="drones" effect="fire"/>
+	<damage amount="1" system="drones" effect="breach"/>
+	<damage amount="1" system="drones" effect="breach"/>
+</event>
+
+<event name="ART_ACCURACY_LIST_PREPARE"> 
+    <text>Вы отправляете команду оптимизировать вашу систему артиллерии.</text>
+    <choice hidden="true" req="artillery" blue="false">
+        <text id="continue"/>
+        <event load="ART_ACCURACY_LIST"/>
+    </choice>
+    <choice hidden="true" req="artillery" lvl="0" max_lvl="0" blue="false">
+        <text>К сожалению, без системы артиллерии это невозможно сделать.</text>
+        <event/>
+    </choice>
+</event>
+<eventList name="ART_ACCURACY_LIST">
+	<event load="ART_ACCURACY_LIST_NOTHING"/>
+	<event load="ART_ACCURACY_LIST_NOTHING"/>
+	<event load="ART_ACCURACY_LIST_GOOD"/>
+	<event load="ART_ACCURACY_LIST_GOOD"/>
+	<event load="ART_ACCURACY_LIST_GOOD"/>
+	<event load="ART_ACCURACY_LIST_GOOD_2"/>
+	<event load="ART_ACCURACY_LIST_BAD"/>
+</eventList>
+
+<event name="ART_ACCURACY_LIST_NOTHING">
+	<text>Ваша команда не может справиться с настройкой артиллерии. Вы больше не можете терять время и готовитесь к прыжку.</text>	
+</event>
+<event name="ART_ACCURACY_LIST_GOOD">
+	<text>Ваша команда оптимизирует работу артиллерии совместно с автонаводчиком. Артиллерия получает улучшение.</text>
+	<upgrade amount="1" system="artillery"/>
+</event>
+<event name="ART_ACCURACY_LIST_GOOD_2">
+	<text>Ваша команда оптимизирует работу артиллерии совместно с автонаводчиком слишком долго. Артиллерия получает улучшение, но флот повстанцев приблизился за это время.</text>
+	<upgrade amount="1" system="artillery"/>
+	<modifyPursuit amount="1"/>
+</event>
+<event name="ART_ACCURACY_LIST_BAD">
+	<text>Во время процесса оптимизации проиходит взрыв в системе артиллерии! Что-то пошло не так...</text>
+	<damage amount="1" system="artillery" effect="fire"/>
+	<damage amount="1" system="artillery" effect="breach"/>
+	<damage amount="1" system="artillery" effect="breach"/>
+</event>
+
+
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER">
+	<!-- технический эвент. нужен лишь чтобы исполнить код в луа. -->
+</event>
+<textList name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_GOOD_TEXT">
+	<text>Похоже, что вам удалось создать стабильную копию одного из вашей команды. Стараясь не думать об этике, вы готовитесь отправляться в путь...</text>
+	<text>Похоже, что вам удалось создать стабильную копию одного из вашей команды. Вы уже слышите, как кто-то из команды идёт к вам обсудить законность этой операции...</text>
+	<text>Похоже, что вам удалось создать стабильную копию одного из вашей команды. Вы предусмотрительно закрываете входную дверь, чтобы не слушать нотации от вашего экипажа...</text>
+</textList>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_GOOD">
+	<queueEvent>EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_GOOD2</queueEvent>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_GOOD2">
+	<text load="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_GOOD_TEXT"/>
+</event>
+<textList name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_BAD_TEXT">
+	<text>Похоже, что стабильная копия одного из вашей команды враждебна...</text>
+	<text>Похоже, что стабильная копия одного из вашей команды враждебна. Почему? Для вашего экипажа ответ кажется очевидным...</text>
+	<text>Похоже, что стабильная копия одного из вашей команды враждебна. Придётся избавиться от неё, пока никто не узнал...</text>
+</textList>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_BAD">
+	<queueEvent>EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_BAD2</queueEvent>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_BAD2">
+	<text load="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_BAD_TEXT"/>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOCREWINTELE">
+	<queueEvent>EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOCREWINTELE2</queueEvent>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOCREWINTELE2">
+	<text>Похоже, что в вашем телепортере не нашлось подходящих для копирования живых организмов. Изрядно повозившись с отладкой схем, вы готовитесь отправляться дальше.</text>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOFUNCTIONTELE">
+	<queueEvent>EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOFUNCTIONTELE2</queueEvent>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_NOFUNCTIONTELE2">
+	<text>Вы видите на экране лишь красную надпись об отсутствии функционирующего телепортера. Видимо, нужно было заранее подготовить телепортер к этой операции.</text>
+</event>
+
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_EXPLOSION">
+	<queueEvent>EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_EXPLOSION2</queueEvent>
+</event>
+<event name="EVENT_COPY_ANYONE_IN_PLAYER_TELEPORTER_EXPLOSION2">
+	<text>В результате ваших махинаций в телепортере раздался взрыв...</text>
+	<damage amount="1" system="teleporter" effect="fire"/>
+	<damage amount="2" system="room"/>
+</event>
+
+
+<eventList name="ANAEROBIC_PROJECTOR_LIST">
+	<event load="ANAEROBIC_PROJECTOR_NOTHING"/>
+	<event load="ANAEROBIC_PROJECTOR_GOOD"/>
+	<event load="ANAEROBIC_PROJECTOR_GOOD"/>
+	<event load="ANAEROBIC_PROJECTOR_BAD"/>
+</eventList>
+
+<event name="ANAEROBIC_PROJECTOR_NOTHING">
+	<text load="ANAEROBIC_PROJECTOR_NOTHING"/>
+</event>
+
+<event name="ANAEROBIC_PROJECTOR_GOOD">
+	<text load="ANAEROBIC_PROJECTOR_GOOD"/>
+	<variable name="enable_fire_weakness" op="set" val="1"/>
+	<!-- <variable name="enable_fire_weakness" op="set" val="0"/>  переменная сама станет = 0 в начале след. сектора через луа -->
+</event>
+
+<event name="ANAEROBIC_PROJECTOR_BAD">
+	<text load="ANAEROBIC_PROJECTOR_BAD"/>
+	<damage amount="1" system="weapons" effect="all"/>
+</event>
+
+<textList name="ANAEROBIC_PROJECTOR_NOTHING">
+	<text>Потратив некоторое время на эксперименты с катализатором и не добившись результата, вы решаете отправляться дальше.</text>
+</textList>
+
+<textList name="ANAEROBIC_PROJECTOR_GOOD">
+	<text>Катализатор срабатывает, теперь огонь на корабле противника будет наносить в 3 раза больше урона экипажу.</text>
+</textList>
+
+<textList name="ANAEROBIC_PROJECTOR_BAD">
+	<text>Эксперимент заканчивается взрывом на вашем корабле. Получив ценный урок, вы решаете отправляться дальше.</text>
+</textList>
+
+<!-- 1.31 -->
   
 <eventList name="REPAIR_SPEED_UP_LIST">
 	<event load="REPAIR_SPEED_UP_NOTHING"/>
@@ -21566,7 +22229,7 @@ High Average=	140%
 </event>
 <event name="CALL_STORE_BAD">
 	<text load="CALL_STORE_BAD"/>
-	<variable name="call_store_used" op="set" val="1"/>
+	<metaVariable name="call_store_used" op="set" val="1"/><!-- 1.34 -->
 	<choice>
 		<text id="continue"/>
 		<event load="JUST_STORE"/>
@@ -22309,7 +22972,7 @@ High Average=	140%
 </event>
 <textList name="BATTERY_BOOSTER_GOOD">
 	<text>Ваш член экипажа протягивает новую проводку для реактора, а вы наблюдаете небольшой прирост мощности.</text>
-	<text>Ваш член экипажа приносит несколько интересных чертежей из своего шкафчика, и вы переподключаете по ним свой реактор к зарядному устройству. Удивительно, но выдаваемая мощность возросла.</text>
+	<text>Ваш член экипажа приносит несколько интересных чертежей из своего шкафчика, и вы переподключаете по ним свой реактор к резервным конденсаторам. Удивительно, но выдаваемая мощность возросла.</text><!-- 1.34 -->
 </textList>
 <event name="BATTERY_BOOSTER_BAD">
 	<text>Ваш член экипажа уверенно что-то переключает в трансформаторе, но, видимо, реактор не выдерживает нагрузки, и раздаётся взрыв. Чудом обошлось без жертв...</text>
@@ -22943,7 +23606,7 @@ High Average=	140%
 				<event>
 					<text>Копирование проходит успешно.</text>
 					<item_modify>
-						<item type="missiles" min="11" max="16"/>
+						<item type="missiles" min="15" max="21"/><!-- 1.34 -->
 					</item_modify>
 					<variable name="counter_good_replications" op="add" val="1"/>
 				</event>
@@ -22969,7 +23632,7 @@ High Average=	140%
 				<event>
 					<text>Копирование проходит успешно.</text>
 					<item_modify>
-						<item type="missiles" min="15" max="20"/>
+						<item type="missiles" min="20" max="25"/><!-- 1.34 -->
 					</item_modify>
 					<variable name="counter_good_replications" op="add" val="1"/>
 				</event>
@@ -23043,13 +23706,13 @@ High Average=	140%
 <event name="FIRE_EXTINGUISHERS_LIST_GOOD_1">
 	<text>Вы проводите проверку помещений, перед тем как включить сигнал пожарной тревоги. Один из пожарных выходов оказывается завален какими-то баллонами, контейнерами и прочим мусором. Среди этого хлама обнаруживаются ещё и несколько топливных ячеек. Вот бы весело горело всё это добро, случись настоящий пожар!</text>
 	<item_modify>
-		<item type="fuel" min="3" max="5"/>
+		<item type="fuel" min="6" max="10"/><!-- 1.34 -->
 	</item_modify>
 </event>
 <event name="FIRE_EXTINGUISHERS_LIST_GOOD_2">
 	<text>Сенсоры системы пожаротушения обнаруживают огнеопасные объекты в личном отсеке одного из членов команды. Он оправдывается, что просто не успел донести до топливного склада несколько контейнеров, собранных в последнем бою.</text>
 	<item_modify>
-		<item type="fuel" min="2" max="3"/>
+		<item type="fuel" min="4" max="6"/><!-- 1.34 -->
 	</item_modify>
 </event>
 <event name="FIRE_EXTINGUISHERS_LIST_NOTHING">
@@ -23555,6 +24218,55 @@ High Average=	140%
 	<text>Вы разбираете на запчасти несколько масок, чтобы улучшить кислородный модуль.</text>
 	<choice hidden="true" req="oxygen"> 
 		<text>(Кислородные маски) Пусть команда займётся улучшением кислородного отсека.</text>
+		<event>
+			<text>К сожалению, ваш член экипажа, поковырявшись несколько минут, разводит руками. Его познаний явно не хватает для этой работы.</text>
+		</event>
+	</choice>
+	<choice hidden="true" req="oxygen" lvl="0" max_lvl="0" blue="false">
+		<text>У нас нет кислородного отсека. Необходимо приобрести его, чтобы воспользоваться этим усилением.</text>
+		<event/>
+	</choice>
+</event>
+<!-- 1.34 -->	
+<eventList name="ADV_OXYGEN_LIST">
+	<event load="ADV_OXIGEN_GOOD"/>
+	<event load="ADV_OXIGEN_GOOD"/>
+	<event load="ADV_OXIGEN_GOOD"/>
+	<event load="ADV_OXIGEN_BAD"/>
+	<event load="ADV_OXIGEN_NOTHING"/>
+</eventList>
+<event name="ADV_OXIGEN_GOOD">
+	<text>Вы проверяете работу контроллера кислорода перед улучшением кислородного модуля.</text>
+	<choice hidden="true" req="oxygen"> 
+		<text>(Контроллер кислорода) Пусть команда займётся улучшением кислородного отсека.</text>
+		<event>
+			<text>Ваш член экипажа успешно завершает модернизацию кислородного модуля.</text>
+			<upgrade amount="1" system="oxygen"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="oxygen" lvl="0" max_lvl="0" blue="false">
+		<text>У нас нет кислородного отсека. Необходимо приобрести его, чтобы воспользоваться этим усилением.</text>
+		<event/>
+	</choice>
+</event>
+<event name="ADV_OXIGEN_BAD">
+	<text>Вы проверяете работу контроллера кислорода перед улучшением кислородного модуля.</text>
+	<choice hidden="true" req="oxygen"> 
+		<text>(Контроллер кислорода) Пусть команда займётся улучшением кислородного отсека.</text>
+		<event>
+			<text>К сожалению, ваш член экипажа совершенно не разбирается в принципах работы кислородного модуля. Совершив несколько ошибок подряд, он окончательно доламывает систему.</text>
+			<damage amount="3" system="oxygen"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="oxygen" lvl="0" max_lvl="0" blue="false">
+		<text>У нас нет кислородного отсека. Необходимо приобрести его, чтобы воспользоваться этим усилением.</text>
+		<event/>
+	</choice>
+</event>
+<event name="ADV_OXIGEN_NOTHING">
+	<text>Вы проверяете работу контроллера кислорода перед улучшением кислородного модуля.</text>
+	<choice hidden="true" req="oxygen"> 
+		<text>(Контроллер кислорода) Пусть команда займётся улучшением кислородного отсека.</text>
 		<event>
 			<text>К сожалению, ваш член экипажа, поковырявшись несколько минут, разводит руками. Его познаний явно не хватает для этой работы.</text>
 		</event>
@@ -24276,11 +24988,38 @@ High Average=	140%
 	<event load="WEAPON_PREIGNITE_LIST_GOOD"/>
 	<event load="WEAPON_PREIGNITE_LIST_GOOD"/>
 	<event load="WEAPON_PREIGNITE_LIST_GOOD"/>
-	<event load="WEAPON_PREIGNITE_LIST_NOTHING"/><!-- add -->
+	<event load="WEAPON_PREIGNITE_LIST_NOTHING"/>
 	<event load="WEAPON_PREIGNITE_LIST_BAD"/>
 	<event load="WEAPON_PREIGNITE_LIST_VERY_BAD"/>
 	<event load="WEAPON_PREIGNITE_LIST_SUPER_VERY_BAD"/>
 </eventList>
+<!-- <event name="RECALC_PREIGNITER_ANTIABUSE_VAR">
+	<loadEventList seeded="false" first="true">
+		<event req="weapons" lvl="8">
+			<variable name="preigniter_antiabuse_var" op="set" min="0" max="5"/>
+		</event>
+		<event req="weapons" lvl="6">
+			<variable name="preigniter_antiabuse_var" op="set" min="0" max="6"/>
+		</event>
+		<event req="weapons" lvl="4">
+			<variable name="preigniter_antiabuse_var" op="set" min="0" max="7"/>
+		</event>
+		<event>
+			<variable name="preigniter_antiabuse_var" op="set" min="0" max="8"/>
+		</event>
+	</loadEventList>
+</event>
+<event name="WEAPON_PREIGNITE_LIST">
+	<queueEvent>RECALC_PREIGNITER_ANTIABUSE_VAR</queueEvent> 
+	<loadEventList seeded="false" first="true">
+		<event req="preigniter_antiabuse_var" lvl="4" load="WEAPON_PREIGNITE_LIST_GOOD"/>
+		<event req="preigniter_antiabuse_var" lvl="3" load="WEAPON_PREIGNITE_LIST_NOTHING"/>
+		<event req="preigniter_antiabuse_var" lvl="2" load="WEAPON_PREIGNITE_LIST_BAD"/>
+		<event req="preigniter_antiabuse_var" lvl="1" load="WEAPON_PREIGNITE_LIST_VERY_BAD"/>
+		<event req="preigniter_antiabuse_var" lvl="0" load="WEAPON_PREIGNITE_LIST_SUPER_VERY_BAD"/>
+		<event/>
+	</loadEventList>
+</event> -->
 <event name="WEAPON_PREIGNITE_LIST_GOOD">
 	<text>Ваша команда говорит, что может улучшить орудийный отсек, перенастроив алгоритм предварительной зарядки. Спустя некоторое время система получает улучшение.</text>
 	<upgrade amount="1" system="weapons"/>
@@ -26152,7 +26891,7 @@ High Average=	140%
 		<event>
 			<text>Старьёвщик прячет лом и проводит вас в свой трюм.</text>
 			<item_modify>
-				<item type="scrap" min="-25" max="-5"/><!-- 1.31 -->
+				<item type="scrap" min="-20" max="-1"/><!-- 1.31 --><!-- 1.34 -->
 			</item_modify>
 			<choice hidden="true">
 				<text id="continue"/>
@@ -27787,7 +28526,10 @@ High Average=	140%
 	</gotaway>
 	<destroyed>
 		<text>Беспилотник разваливается на части, и вы собираете всё ценное, а также хватаете уцелевшего дрона.</text>
-		<autoReward level="RANDOM">drone</autoReward>
+		<choice hidden="false">
+			<text id="continue"/>
+			<event load="DRONEQUEEN_REW"/>
+		</choice><!-- 1.34 -->
 		<!-- <status type="clear" target="player" system="artillery" amount="100"/> --><!-- 1.26 -->
 	</destroyed>
 	<deadCrew>
@@ -27795,7 +28537,23 @@ High Average=	140%
 		<autoReward level="MED">drone</autoReward>
 	</deadCrew>
 </ship>
-
+<eventList name="DRONEQUEEN_REW"><!-- 1.34 -->
+	<event>
+		<autoReward level="RANDOM">drone</autoReward>
+		<queueEvent seeded="false">DRONEQUEEN_REW_ADD</queueEvent>
+	</event>
+	<event>
+		<drone name="DRONE_SPAWNER"/>
+		<autoReward level="RANDOM">scrap_only</autoReward>
+	</event>
+</eventList>
+<eventList name="DRONEQUEEN_REW_ADD"><!-- 1.34 -->
+	<event>
+		<text>Рядом с дроном обнаруживается странное орудие, которое вы также забираете на борт...</text>
+		<weapon name="DRONE_LAUNCHER"/>
+	</event>
+	<event/>
+</eventList>
 
 <event name="ORDEN_STATION_EVENT" unique="true">
 	<environment type="PDS" target="enemy"/>
@@ -30598,7 +31356,7 @@ High Average=	140%
 	<event load="DONOR_PONY_5"/> <!-- 1.25 -->
 	<event load="DONOR_PONY_6"/> <!-- 1.25 -->
 	<event>
-		<text>Сканер жизни показывает, что планета абсолютна пуста. Похоже, это было ложное срабатывание. Вы отдаёте приказ заряжать FTL-привод.</text>
+		<text>Инфракрасный сканер показывает, что планета абсолютна пуста. Похоже, это было ложное срабатывание. Вы отдаёте приказ заряжать FTL-привод.</text><!-- 1.34 -->
 		<choice hidden="true">
 			<text id="continue"/>
 			<event load="TALK_WITH_CREW"/>
@@ -32918,9 +33676,9 @@ High Average=	140%
 		<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 	</choice>
 	<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-		<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+		<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 		<event>	
-			<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+			<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 		</event>
 	</choice>
 </event>
@@ -32938,9 +33696,9 @@ High Average=	140%
 		<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 	</choice>
 	<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-		<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+		<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 		<event>	
-			<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+			<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 		</event>
 	</choice>
 </event>
@@ -32968,9 +33726,9 @@ High Average=	140%
 		<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 	</choice>
 	<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-		<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+		<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 		<event>	
-			<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+			<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 		</event>
 	</choice>
 	<choice req="pilot" hidden="true" max_group="1" blue="false"><!-- 1.33 -->
@@ -33108,9 +33866,9 @@ High Average=	140%
 				<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 			</choice>
 			<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-				<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+				<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 				<event>	
-					<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+					<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 				</event>
 			</choice>
 		</event>
@@ -33124,9 +33882,9 @@ High Average=	140%
 				<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 			</choice>
 			<choice req="FTL_BOOSTER" hidden="true">
-				<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+				<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 				<event>	
-					<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+					<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 				</event>
 			</choice>
 		</event>
@@ -33143,9 +33901,9 @@ High Average=	140%
 				<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 			</choice>
 			<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-				<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+				<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
 				<event>	
-					<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+					<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 				</event>
 			</choice>
 		</event>
@@ -33162,9 +33920,9 @@ High Average=	140%
 				<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 			</choice>
 			<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-				<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+				<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 				<event>	
-					<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+					<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 				</event>
 			</choice>
 		</event>
@@ -33208,9 +33966,9 @@ High Average=	140%
 		<event load="APLUS_BLACK_HOLE_ESCAPE"/>
 	</choice>
 	<choice req="FTL_BOOSTER" hidden="true"><!-- 1.27 -->
-		<text>(Ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text>
+		<text>(Гипер-ускоритель FTL) Улететь немедленно, используя ваш ускоритель.</text><!-- 1.34 -->
 		<event>	
-			<text>Ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text>
+			<text>Гипер-ускоритель FTL без проблем справляется с гравитацией чёрной дыры. Вы в безопасности.</text><!-- 1.34 -->
 		</event>
 	</choice>
 </event>
@@ -33302,7 +34060,7 @@ High Average=	140%
 
 <event name="CIVILIAN_COREWORLD_STATION"><!-- 1.22  -->
 	<img back="TRADE_STATION" planet="TRADE_SHIPS"/><!-- 1.26 -->
-	<text>Вы выходите из прыжка. На планете поблизости находится огромная гражданская торговая база, населенная десятками тысяч жителей... Наверняка тут есть на что посмотреть, однако не стоит надолго задерживаться — повстанцы скоро будут здесь.</text>
+	<text>Вы выходите из прыжка. На планете поблизости находится огромная гражданская торговая база, населенная десятками тысяч жителей... Наверняка тут есть на что посмотреть, однако не стоит надолго задерживаться — повстанцы скоро будут здесь. Также вы получаете список оборудования, которое давно уже перестали привозить: отходы</text><!-- 1.34 -->
 	<choice hidden="true">
 		<text>Приземлиться на торговую базу.</text>
 		<event load="CIV_CW_ST_HAIL"/>
@@ -33458,7 +34216,7 @@ High Average=	140%
 						<text>Слаг телепатически заставляет рока снизить цену. «Хорошо, хорошо. Хватит уже. Забирай это со скидкой».</text>
 						<item_modify>
 							<item type="missiles" min="15" max="15"/>
-							<item type="scrap" min="-25" max="-15"/>
+							<item type="scrap" min="-15" max="-5"/><!-- 1.34 -->
 						</item_modify>
 					</event>
 				</choice>
@@ -33468,7 +34226,7 @@ High Average=	140%
 						<text>Провернув выгодную сделку, вы возвращаетесь на корабль.</text>
 						<item_modify>
 							<item type="missiles" min="15" max="15"/>
-							<item type="scrap" min="-40" max="-30"/>
+							<item type="scrap" min="-30" max="-20"/><!-- 1.34 -->
 						</item_modify>
 					</event>
 				</choice>
@@ -43675,9 +44433,9 @@ High Average=	140%
 				</event>
 			</choice>
 			<choice req="BATTERY_BOOSTER" hidden="true">
-				<text>(Зарядное устройство) Срочно включить зарядное устройство.</text>
+				<text>(Резервные конденсаторы) Срочно активировать резервные конденсаторы.</text><!-- 1.34 -->
 				<event>	
-					<text>Вы успеваете вовремя включить зарядное устройство, и эксперимент завершается успехом. Инжи синтезируют молодого кристалина из голубой устрицы и предлагают забрать его с собой.</text>
+					<text>Вы успеваете вовремя активировать резервные конденсаторы, и эксперимент завершается успехом. Инжи синтезируют молодого кристалина из голубой устрицы и предлагают забрать его с собой.</text><!-- 1.34 -->
 					<crewMember amount="1" class="crystal" combat="2">Устрица</crewMember>
 				</event>
 			</choice>
@@ -46809,39 +47567,39 @@ High Average=	140%
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Человек</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Человек</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Инжи</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Инжи</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Мантис</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Мантис</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Рок</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Рок</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Золтанец</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Золтанец</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Слаг</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Слаг</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Ланиус</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Ланиус</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Кристалин</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Кристалин</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа.</text>
-		<crewMember amount="1" class="random">Аватар</crewMember>
+		<crewMember amount="1" class="CREW_COMMON">Аватар</crewMember><!-- 1.34 -->
 	</event>
 	<event>
 		<text>Из посылки вы достаёте крио-капсулу! Вскрыв её, вы приводите в чувства своего нового члена экипажа. Однако его психическое состояние оказалось хуже, чем вы думали: как только вы оставляете его одного, он подрывает обшивку корабля!</text>
@@ -47298,6 +48056,18 @@ High Average=	140%
 	<text>Корабли броненосцев красивы на столько же, на сколько и прочны. А теперь они собираются проверить на прочность вас!</text>
 	<text>Вы натыкаетесь на патрульный корабль броненосцев. Завидев вас, они атакуют.</text>
 	<text>Вы появляетесь прямо возле хорошо вооружённого корабля броненосцев. Отклоняя ваш запрос связи, они атакуют вас.</text>
+</textList>
+
+<event name="TURTLE_FIGHT" unique="false"> <!-- temp event --><!-- 1.34 -->
+	<text load="TURTLE_FIGHT"/>
+	<ship load="TURTLE_SHIP" hostile="true"/>
+</event>
+<textList name="TURTLE_FIGHT"><!-- 1.34 -->
+	<text>Вы натыкаетесь на один из кораблей панцеронов. Они хотят крови.</text>
+	<text>Панцероны никогда не отличались миролюбием, и встреченный вами корабль в очередной раз это подтверждает.</text>
+	<text>Корабли панцеронов красивы на столько же, на сколько и прочны. А теперь они собираются проверить на прочность вас!</text>
+	<text>Вы натыкаетесь на патрульный корабль панцеронов. Завидев вас, они атакуют.</text>
+	<text>Вы появляетесь прямо возле хорошо вооружённого корабля панцеронов. Отклоняя ваш запрос связи, они атакуют вас.</text>
 </textList>
 
 <!-- 1.31 -->
@@ -47966,7 +48736,7 @@ High Average=	140%
 		<event><queueEvent>EVENT_CARGO_INJ</queueEvent></event><!-- 1.33 -->
 	</choice>
 	<choice hidden="false" req="INJECTOR_WEAPONS" blue="false">
-		<text color="red">Очистить оружие от установленного инжектора.</text>
+		<text color="red">Очистить оружие от установленного инжектора (это уничтожит инжектор!).</text><!-- 1.34 -->
 		<event><queueEvent>INJECTOR_WEAPONS_CLEAR</queueEvent></event><!-- 1.33 -->
 	</choice>
 	<choice hidden="false" req="CAN_BE_HIDDEN_AUGS" blue="false">
@@ -47978,13 +48748,13 @@ High Average=	140%
 		<event><queueEvent>REPAIR_KITS_EVENT</queueEvent></event><!-- 1.33 -->
 	</choice>
 	<!-- <choice req="artillery" lvl="1" blue="false">
-		<text color="yellow">Улушить систему артиллерии.</text>
+		<text color="yellow">Улучшить систему артиллерии.</text>
 		<event load="_AIMABLE_STORAGE_CHECK_SYSTEM_ARTILLERY"/>
 	</choice> --><!-- 1.33 -->
-	<choice req="drones" lvl="1" blue="false">
-		<text color="gray">Улушить систему управления дронами.</text>
-		<event><queueEvent>STORAGE_CHECK_SYSTEM_DRONES</queueEvent></event><!-- 1.33 -->
-	</choice>
+	<!-- <choice req="drones" lvl="1" blue="false">
+		<text color="gray">Улучшить систему управления дронами.</text>
+		<event><queueEvent>STORAGE_CHECK_SYSTEM_DRONES</queueEvent></event>
+	</choice> --><!-- 1.34 -->
 	<choice req="STASIS_POD_HUMAN" hidden="true" blue="false">
 		<text color="lightblue">Открыть стазис-капсулу.</text>
 		<event><queueEvent>STASIS_POD_HUMAN_OPEN</queueEvent></event><!-- 1.33 -->
@@ -48321,7 +49091,7 @@ High Average=	140%
 
 <event name="CALL_STORE_SPAWNED">
     <text load="CALL_STORE_SPAWNED_TEXT"/>
-	<variable name="call_store_used" op="set" val="1"/>
+	<metaVariable name="call_store_used" op="set" val="1"/><!-- 1.34 -->
 	<triggeredEvent event="NOT_IN_STORE" seeded="false" clearOnJump="true" minTime="0.2" maxTime="0.2"/><!-- 1.32 -->
 	<store/>
 	<renameBeacon>JUST_STORE</renameBeacon><!-- 1.32 -->
@@ -48341,121 +49111,6 @@ High Average=	140%
     <text>Стазис-капсула открывается, и находящийся внутри человек просыпается. Вскоре он готов работать на корабле.</text>
 	<crewMember amount="1" class="human"/>
 	<remove name="STASIS_POD_HUMAN"/>
-</event>
-
-<event name="_AIMABLE_OPTION_INVALID">
-    <text>ОПЦИЯ НЕДОСТУПНА</text>
-    <item_modify>
-        <item type="drones" min="-99999" max="-99999"/>
-    </item_modify>
-</event>
-<event name="_AIMABLE_STORAGE_CHECK_SYSTEM_ARTILLERY">
-    <text>Какой модуль вы хотите установить?</text>
-    <choice req="_aimable_enable_artilleries" lvl="0" max_lvl="0" blue="false" hidden="true">
-        <text>Нацеливаемая артиллерия.</text>
-        <event load="_AIMABLE_STORAGE_CHECK_SYSTEM_AIMABLE_ARTILLERIES"/>
-    </choice>
-    <choice req="_aimable_enable_artilleries" lvl="1" blue="false" hidden="true">
-        <text>Установленный модуль: Нацеливаемая артиллерия.</text>
-        <event load="_AIMABLE_OPTION_INVALID"/>
-    </choice>
-	<choice req="_aimable_enable_artilleries" lvl="1" blue="false" hidden="true">
-		<text>Прочитать инструкцию снова.</text>
-        <event load="_AIMABLE_ARTILLERY_MANUAL"/>
-    </choice>
-    <choice hidden="true">
-		<text>Закрыть трюм.</text>
-		<event/>
-	</choice>
-</event>
-
-<event name="_AIMABLE_INSTALL_AIMABLE_ARTILLERIES">
-    <variable name="_aimable_enable_artilleries" op="set" val="1"/>
-    <loadEvent>EVENT_CARGO_BUTTON</loadEvent>
-</event>
-<event name="_AIMABLE_STORAGE_CHECK_SYSTEM_AIMABLE_ARTILLERIES">
-	<text>Вы собираетесь установить модуль нацеливаемой артиллерии (позволяет выбирать цели для артиллерии).
-[Использование: кликните левой кнопкой мыши (ЛКМ) по кнопкам под значками вражеской системы, чтобы выбрать первую цель, кликните правой кнопкой мыши (ПКМ), чтобы выбрать вторую цель. Нажмите кнопку X слева, чтобы убрать выбранные цели. Нажмите кнопку с изображением курсора, чтобы войти в режим выбора отсека. Кликните ЛКМ по отсеку, чтобы выбрать первую цель. Кликните ПКМ по отсеку, чтобы выбрать вторую цель. Нажмите X, чтобы отменить прицеливание или убрать выбранные отсеки. Для лучевой артиллерии, если выбраны две цели, след луча начнётся с первой цели и пройдёт через вторую цель. Если две цели одинаковы или выбрана только одна цель, вторая цель будет случайной. Для других типов артиллерии, если выбраны две цели, приоритет будет отдаваться системам, которые не уничтожены полностью. Если обе системы полностью уничтожены, артиллерия случайно нацелится на одну из двух выбранных целей.]</text>
-    <choice req="artillery" lvl="2" blue="false">
-		<text>Выполнить обновление.</text>
-        <event>
-			<text>Вы устанавливаете обновление.</text>
-            <item_modify>
-                <item type="scrap" min="-50" max="-50"/>
-                <item type="missiles" min="-5" max="-5"/>
-            </item_modify>
-            <choice>
-                <text id="continue"/>
-                <event load="_AIMABLE_INSTALL_AIMABLE_ARTILLERIES"/>
-            </choice>
-        </event>
-    </choice>
-    <choice req="artillery" lvl="1" max_lvl="1" blue="false" hidden="true">
-		<text>Это обновление недоступно. Вам нужна артиллерия 2-го уровня.</text>
-        <event load="_AIMABLE_OPTION_INVALID"/>
-    </choice>
-    <choice hidden="true">
-		<text>Закрыть трюм.</text>
-		<event/>
-	</choice>
-</event>
-
-<event name="STORAGE_CHECK_SYSTEM_DRONES">
-    <text>Какой модуль вы хотите установить?</text>
-    <choice req="_aimable_enable_drones" lvl="0" max_lvl="0" blue="false" hidden="true">
-        <text>Нацеливаемые боевые дроны.</text>
-        <event load="_AIMABLE_STORAGE_CHECK_SYSTEM_AIMABLE_DRONES"/>
-    </choice>
-    <choice req="_aimable_enable_drones" lvl="1" blue="false" hidden="true">
-        <text>Установленный модуль: Нацеливаемые боевые дроны.</text>
-        <event load="_AIMABLE_OPTION_INVALID"/>
-    </choice>
-	<choice req="_aimable_enable_drones" lvl="1" blue="false" hidden="true">
-        <text>Прочитать инструкцию снова.</text>
-        <event load="_AIMABLE_DRONES_MANUAL"/>
-    </choice>
-    <choice hidden="true">
-		<text>Закрыть трюм.</text>
-		<event/>
-	</choice>
-</event>
-
-<event name="_AIMABLE_ARTILLERY_MANUAL">
-    <text>[Использование: кликните левой кнопкой мыши (ЛКМ) по кнопкам под значками вражеской системы, чтобы выбрать первую цель, кликните правой кнопкой мыши (ПКМ), чтобы выбрать вторую цель. Нажмите кнопку X слева, чтобы убрать выбранные цели. Нажмите кнопку с изображением курсора, чтобы войти в режим выбора отсека. Кликните ЛКМ по отсеку, чтобы выбрать первую цель. Кликните ПКМ по отсеку, чтобы выбрать вторую цель. Нажмите X, чтобы отменить прицеливание или убрать выбранные отсеки. Для лучевой артиллерии, если выбраны две цели, след луча начнётся с первой цели и пройдёт через вторую цель. Если две цели одинаковы или выбрана только одна цель, вторая цель будет случайной. Для других типов артиллерии, если выбраны две цели, приоритет будет отдаваться системам, которые не уничтожены полностью. Если обе системы полностью уничтожены, артиллерия случайно нацелится на одну из двух выбранных целей.]</text>
-</event>
-<event name="_AIMABLE_DRONES_MANUAL">
-    <text>[Использование: кликните левой кнопкой мыши (ЛКМ) по кнопкам под значками вражеской системы, чтобы выбрать первую цель, кликните правой кнопкой мыши (ПКМ), чтобы выбрать вторую цель. Нажмите кнопку X слева, чтобы убрать выбранные цели. Нажмите кнопку с изображением курсора, чтобы войти в режим выбора отсека. Кликните ЛКМ по отсеку, чтобы выбрать первую цель. Кликните ПКМ по отсеку, чтобы выбрать вторую цель. Нажмите X, чтобы отменить прицеливание или убрать выбранные отсеки. Для лучевых дронов, если выбраны две цели, след луча начнётся с первой цели и пройдёт через вторую цель. Если две цели одинаковы или выбрана только одна цель, вторая цель будет случайной. Для других типов боевых дронов при выборе двух целей приоритет будет отдан системам, которые не уничтожены полностью. Если обе системы полностью уничтожены, дроны случайным образом нацелятся на одну из двух выбранных целей.]</text>
-</event>
-
-<event name="_AIMABLE_INSTALL_AIMABLE_DRONES">
-    <variable name="_aimable_enable_drones" op="set" val="1"/>
-    <loadEvent>EVENT_CARGO_BUTTON</loadEvent>
-</event>
-<event name="_AIMABLE_STORAGE_CHECK_SYSTEM_AIMABLE_DRONES">
-    <text>Вы собираетесь установить модуль нацеливаемых боевых дронов (позволяет выбирать цели для боевых дронов).
-[Использование: кликните левой кнопкой мыши (ЛКМ) по кнопкам под значками вражеской системы, чтобы выбрать первую цель, кликните правой кнопкой мыши (ПКМ), чтобы выбрать вторую цель. Нажмите кнопку X слева, чтобы убрать выбранные цели. Нажмите кнопку с изображением курсора, чтобы войти в режим выбора отсека. Кликните ЛКМ по отсеку, чтобы выбрать первую цель. Кликните ПКМ по отсеку, чтобы выбрать вторую цель. Нажмите X, чтобы отменить прицеливание или убрать выбранные отсеки. Для лучевых дронов, если выбраны две цели, след луча начнётся с первой цели и пройдёт через вторую цель. Если две цели одинаковы или выбрана только одна цель, вторая цель будет случайной. Для других типов боевых дронов при выборе двух целей приоритет будет отдан системам, которые не уничтожены полностью. Если обе системы полностью уничтожены, дроны случайным образом нацелятся на одну из двух выбранных целей.]</text>
-    <choice req="drones" lvl="2" blue="false">
-        <text>Выполнить обновление.</text>
-        <event>
-            <text>Вы устанавливаете обновление.</text>
-            <item_modify>
-                <item type="scrap" min="-100" max="-100"/>
-                <item type="drones" min="-5" max="-5"/>
-            </item_modify>
-            <choice>
-                <text id="continue"/>
-                <event load="_AIMABLE_INSTALL_AIMABLE_DRONES"/>
-            </choice>
-        </event>
-    </choice>
-    <choice req="drones" lvl="1" max_lvl="1" blue="false" hidden="true">
-        <text>Это обновление недоступно. Вам нужна система управления дронами 2-го уровня.</text>
-        <event load="_AIMABLE_OPTION_INVALID"/>
-    </choice>
-    <choice hidden="true">
-		<text>Закрыть трюм.</text>
-		<event/>
-	</choice>
 </event>
 
 <!-- 1.33 --> <!-- moved -->
@@ -48813,7 +49468,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="O2_MASKS_CREW_STIMS" lvl="1" max_group="16" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Снаряжение охотника - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="O2_MASKS" lvl="1" max_group="16" blue="true" hidden="false">
@@ -48833,7 +49488,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="EXPLOSIVE_REPLICATOR_DRONE_SPEED" lvl="1" max_group="17" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Модуль поддержки - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="EXPLOSIVE_REPLICATOR" lvl="1" max_group="17" blue="true" hidden="false">
@@ -48853,7 +49508,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SLUG_GEL_FIRE_EXTINGUISHERS" lvl="1" max_group="18" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Система безопасности - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FIRE_EXTINGUISHERS" lvl="1" max_group="18" blue="true" hidden="false">
@@ -48873,7 +49528,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FLEET_DISTRACTION_BATTERY_BOOSTER" lvl="1" max_group="19" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Вспомогательный модуль - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FLEET_DISTRACTION" lvl="1" max_group="19" blue="true" hidden="false">
@@ -48893,7 +49548,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="BACKUP_DNA_TELEPORT_HEAL" lvl="1" max_group="20" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Модуль сохранности - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="TELEPORT_HEAL" lvl="1" max_group="20" blue="true" hidden="false">
@@ -48909,15 +49564,15 @@ High Average=	140%
 		</event>
 	</choice>
 	<choice req="HID_BATTERY_BOOSTER" lvl="1" max_group="21" blue="false" hidden="true">
-		<text>Внутреннее усиление: Зарядное устройство.</text>
+		<text>Внутреннее усиление: Резервные конденсаторы.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FLEET_DISTRACTION_BATTERY_BOOSTER" lvl="1" max_group="21" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Вспомогательный модуль - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="BATTERY_BOOSTER" lvl="1" max_group="21" blue="true" hidden="false">
-		<text>(Зарядное устройство) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<text>(Резервные конденсаторы) Встроить это усиление в конструкции корабля, освободив слот усилений.</text><!-- 1.34 -->
 		<event>
 			<text load="STORE_AUG_INSTALLED"/>
 			<playSound>upgradeSystem</playSound><!-- 1.33 --><!-- 1.33 -->
@@ -48933,7 +49588,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="DEFENSE_SCRAMBLER_HACKING_STUN" lvl="1" max_group="22" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Снаряжение хакера - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="DEFENSE_SCRAMBLER" lvl="1" max_group="22" blue="true" hidden="false">
@@ -48953,7 +49608,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="BACKUP_DNA_TELEPORT_HEAL" lvl="1" max_group="23" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Модуль сохранности - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="BACKUP_DNA" lvl="1" max_group="23" blue="true" hidden="false">
@@ -48973,7 +49628,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="DEFENSE_SCRAMBLER_HACKING_STUN" lvl="1" max_group="24" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Снаряжение хакера - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="HACKING_STUN" lvl="1" max_group="24" blue="true" hidden="false">
@@ -48993,7 +49648,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ADV_SCANNERS_LIFE_SCANNER" lvl="1" max_group="25" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Продвинутый сканер - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="LIFE_SCANNER" lvl="1" max_group="25" blue="true" hidden="false">
@@ -49013,7 +49668,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ENERGY_SHIELD_ZOLTAN_BYPASS" lvl="1" max_group="26" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Технологии золтанцев - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ZOLTAN_BYPASS" lvl="1" max_group="26" blue="true" hidden="false">
@@ -49033,7 +49688,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY" lvl="1" max_group="27" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Продвинутые наноботы - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="NANO_MEDBAY" lvl="1" max_group="27" blue="true" hidden="false">
@@ -49053,7 +49708,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="O2_MASKS_CREW_STIMS" lvl="1" max_group="28" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Снаряжение охотника - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="CREW_STIMS" lvl="1" max_group="28" blue="true" hidden="false">
@@ -49073,7 +49728,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ADV_SCANNERS_LIFE_SCANNER" lvl="1" max_group="29" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Продвинутый сканер - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ADV_SCANNERS" lvl="1" max_group="29" blue="true" hidden="false">
@@ -49093,7 +49748,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="WEAPON_PREIGNITE_AUTO_COOLDOWN" lvl="1" max_group="30" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Компенсатор перезарядки - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="WEAPON_PREIGNITE" lvl="1" max_group="30" blue="true" hidden="false">
@@ -49109,15 +49764,15 @@ High Average=	140%
 		</event>
 	</choice>
 	<choice req="HID_FTL_BOOSTER" lvl="1" max_group="31" blue="false" hidden="true">
-		<text>Внутреннее усиление: Ускоритель FTL.</text>
+		<text>Внутреннее усиление: Гипер-ускоритель FTL.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_BOOSTER_FTL_JAMMER" lvl="1" max_group="31" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>FTL-контроллер - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_BOOSTER" lvl="1" max_group="31" blue="true" hidden="false">
-		<text>(Ускоритель FTL) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<text>(Гипер-ускоритель FTL) Встроить это усиление в конструкции корабля, освободив слот усилений.</text><!-- 1.34 -->
 		<event>
 			<text load="STORE_AUG_INSTALLED"/>
 			<playSound>upgradeSystem</playSound><!-- 1.33 --><!-- 1.33 -->
@@ -49128,12 +49783,12 @@ High Average=	140%
 			</choice>
 		</event>
 	</choice>
-	<choice req="HID_FTL_JUMPER" lvl="1" max_group="32" blue="false" hidden="true"><!-- 1.6 -->
+	<choice req="HID_FTL_JUMPER_GOOD" lvl="1" max_group="32" blue="false" hidden="true"><!-- 1.6 --><!-- 1.34 -->
 		<text>Внутреннее усиление: FTL-навигатор.</text>
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_JUMPER_DRONE_RECOVERY" lvl="1" max_group="32" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Навигационный механизм - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_JUMPER_GOOD" lvl="1" max_group="32" blue="true" hidden="false"><!-- 1.6 --><!-- 1.32 -->
@@ -49144,7 +49799,7 @@ High Average=	140%
 			<remove name="FTL_JUMPER_GOOD"/><!-- 1.6 --><!-- 1.32 -->
 			<choice hidden="true">
 				<text id="continue"/>
-				<event load="STORE_INSTALL_FTL_JUMPER"/><!-- 1.6 -->
+				<event load="STORE_INSTALL_FTL_JUMPER_GOOD"/><!-- 1.6 --><!-- 1.34 -->
 			</choice>
 		</event>
 	</choice>
@@ -49153,7 +49808,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_JUMPER_DRONE_RECOVERY" lvl="1" max_group="33" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Навигационный механизм - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="DRONE_RECOVERY" lvl="1" max_group="33" blue="true" hidden="false">
@@ -49173,7 +49828,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_BOOSTER_FTL_JAMMER" lvl="1" max_group="34" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>FTL-контроллер - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="FTL_JAMMER" lvl="1" max_group="34" blue="true" hidden="false">
@@ -49193,7 +49848,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SLUG_GEL_FIRE_EXTINGUISHERS" lvl="1" max_group="35" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Система безопасности - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SLUG_GEL" lvl="1" max_group="35" blue="true" hidden="false">
@@ -49213,7 +49868,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="CRYSTAL_SHARDS_ROCK_ARMOR" lvl="1" max_group="36" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Композитная броня - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ROCK_ARMOR" lvl="1" max_group="36" blue="true" hidden="false">
@@ -49233,7 +49888,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ENERGY_SHIELD_ZOLTAN_BYPASS" lvl="1" max_group="37" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Технологии золтанцев - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ENERGY_SHIELD" lvl="1" max_group="37" blue="true" hidden="false">
@@ -49253,7 +49908,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SHIELD_RECHARGE_CLOAK_FIRE" lvl="1" max_group="38" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Маскировочный барьер - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="CLOAK_FIRE" lvl="1" max_group="38" blue="true" hidden="false">
@@ -49273,7 +49928,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SYSTEM_CASING_ION_ARMOR" lvl="1" max_group="39" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Защитное поле - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SYSTEM_CASING" lvl="1" max_group="39" blue="true" hidden="false">
@@ -49293,7 +49948,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SYSTEM_CASING_ION_ARMOR" lvl="1" max_group="40" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Защитное поле - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="ION_ARMOR" lvl="1" max_group="40" blue="true" hidden="false">
@@ -49313,7 +49968,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="EXPLOSIVE_REPLICATOR_DRONE_SPEED" lvl="1" max_group="41" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Модуль поддержки - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="DRONE_SPEED" lvl="1" max_group="41" blue="true" hidden="false">
@@ -49333,7 +49988,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="SCRAP_COLLECTOR_REPAIR_ARM" lvl="1" max_group="42" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Продвинутый манипулятор - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="REPAIR_ARM" lvl="1" max_group="42" blue="true" hidden="false">
@@ -49353,7 +50008,7 @@ High Average=	140%
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY" lvl="1" max_group="43" blue="false" hidden="true">
-		<text>Нельзя встроить сдвоенное усиление.</text>
+		<text>Продвинутые наноботы - это сдвоенное усиление, которое нельзя встроить.</text><!-- 1.34 -->
 		<event load="NOT_AVAILABLE"/>
 	</choice>
 	<choice req="NANOBOT_DEFENSE_SYSTEM" lvl="1" max_group="43" blue="true" hidden="false">
@@ -49496,6 +50151,86 @@ High Average=	140%
 			</choice>
 		</event>
 	</choice>
+	<choice req="HID_ADV_OXYGEN" lvl="1" max_group="52" blue="false" hidden="true"><!-- 1.34 -->
+		<text>Внутреннее усиление: Контроллер кислорода.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="ADV_OXYGEN" lvl="1" max_group="52" blue="true" hidden="false"><!-- 1.34 -->	
+		<text>(Контроллер кислорода) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="ADV_OXYGEN"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_ADV_OXYGEN"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="HID_ANAEROBIC_PROJECTOR" lvl="1" max_group="53" blue="false" hidden="true"><!-- 1.34 -->
+		<text>Внутреннее усиление: Анаэробное пламя.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="ANAEROBIC_PROJECTOR" lvl="1" max_group="53" blue="true" hidden="false"><!-- 1.34 -->	
+		<text>(Анаэробное пламя) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="ANAEROBIC_PROJECTOR"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_ANAEROBIC_PROJECTOR"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="HID_TELEPORT_MULTI" lvl="1" max_group="54" blue="false" hidden="true"><!-- 1.34 -->
+		<text>Внутреннее усиление: Квантовый имитатор.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="TELEPORT_MULTI" lvl="1" max_group="54" blue="true" hidden="false"><!-- 1.34 -->	
+		<text>(Квантовый имитатор) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="TELEPORT_MULTI"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_TELEPORT_MULTI"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="HID_ART_ACCURACY" lvl="1" max_group="55" blue="false" hidden="true"><!-- 1.34 -->
+		<text>Внутреннее усиление: Автонаводчик артиллерии.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="ART_ACCURACY" lvl="1" max_group="55" blue="true" hidden="false"><!-- 1.34 -->	
+		<text>(Автонаводчик артиллерии) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="ART_ACCURACY"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_ART_ACCURACY"/>
+			</choice>
+		</event>
+	</choice>
+	<choice req="HID_AIM_DRONES" lvl="1" max_group="56" blue="false" hidden="true"><!-- 1.34 -->
+		<text>Внутреннее усиление: Целеуказатель дронов.</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice req="AIM_DRONES" lvl="1" max_group="56" blue="true" hidden="false"><!-- 1.34 -->	
+		<text>(Целеуказатель дронов) Встроить это усиление в конструкции корабля, освободив слот усилений.</text>
+		<event>
+			<text load="STORE_AUG_INSTALLED"/>
+			<playSound>upgradeSystem</playSound>
+			<remove name="AIM_DRONES"/>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="STORE_INSTALL_AIM_DRONES"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true">
 		<text>Закрыть трюм и вернуть потраченный лом.</text><!-- 1.32 -->
 		<event load="RETURN_MY_SCRAP"/><!-- 1.32 -->
@@ -49583,6 +50318,26 @@ High Average=	140%
 	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.31 -->
 	<event/>
 </event>
+<event name="STORE_INSTALL_ADV_OXYGEN">
+	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.34 -->
+	<event/>
+</event>
+<event name="STORE_INSTALL_ANAEROBIC_PROJECTOR">
+	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.34 -->
+	<event/>
+</event>
+<event name="STORE_INSTALL_TELEPORT_MULTI">
+	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.34 -->
+	<event/>
+</event>
+<event name="STORE_INSTALL_ART_ACCURACY">
+	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.34 -->
+	<event/>
+</event>
+<event name="STORE_INSTALL_AIM_DRONES">
+	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.34 -->
+	<event/>
+</event>
 <event name="STORE_INSTALL_FLEET_DISTRACTION">
 	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.31 -->
 	<event/>
@@ -49667,7 +50422,7 @@ High Average=	140%
 	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.31 -->
 	<event/>
 </event>
-<event name="STORE_INSTALL_FTL_JUMPER"><!-- 1.6 -->
+<event name="STORE_INSTALL_FTL_JUMPER_GOOD"><!-- 1.6 --><!-- 1.34 -->
 	<variable name="counter_augments_installed" op="add" val="1"/> <!-- 1.31 -->
 	<event/>
 </event>
@@ -49723,10 +50478,10 @@ High Average=	140%
 </event>
 
 <event name="NOT_IN_STORE"><!-- 1.31 -->
-	<variable name="in_store_now" op="add" val="-1"/>
+	<metaVariable name="in_store_now" op="add" val="-1"/><!-- 1.34 -->
 </event>
 <event name="IN_STORE"><!-- 1.31 -->
-	<variable name="in_store_now" op="set" val="2"/>
+	<metaVariable name="in_store_now" op="set" val="2"/><!-- 1.34 -->
 </event>
 
 
@@ -55213,6 +55968,20 @@ High Average=	140%
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="false" req="turtle"><!-- 1.34 -->
+				<text>(Член экипажа панцерон) Продать панцерона.</text>
+				<event>
+					<text load="RAB_TRADE_SELLCREW_TEXT"/>
+					<crewMember amount="-1" class="turtle"/>
+					<item_modify>
+						<item type="scrap" min="70" max="70"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="RAB_TRADE_DONE"/>
+					</choice>
+				</event>
+			</choice>
 			<choice hidden="false" req="slug_armored"><!-- 1.28 -->
 				<text>(Член экипажа слаг в панцире) Продать слага в панцире.</text>
 				<event>
@@ -57240,21 +58009,28 @@ High Average=	140%
 		</choice>
 	</deadCrew>
 </ship>
-<eventList name="MAGMAN_BOSS_REWARD1">
-	<event/>
+<eventList name="MAGMAN_BOSS_REWARD1"><!-- 1.34 -->
 	<event>
 		<text>Их прототип пострадал в бою, но всё ещё работает. Вы переносите его на свой корабль.</text>
 		<weapon name="MAGMAN_PROTOTYPE_2"/>
 	</event>
+	<event>
+		<text>Их прототип пострадал в бою, но всё ещё работает. Вы переносите его на свой корабль.</text>
+		<weapon name="MAGMAN_PROTOTYPE_2"/>
+	</event>
+	<event>
+		<text>Их прототип не пострадал в бою, и вы переносите его на свой корабль.</text>
+		<weapon name="MAGMAN_PROTOTYPE_1"/>
+	</event>
 </eventList>
-<eventList name="MAGMAN_BOSS_REWARD2">
+<eventList name="MAGMAN_BOSS_REWARD2"><!-- 1.34 -->
 	<event>
 		<text>Их прототип не пострадал в бою, и вы переносите его на свой корабль.</text>
 		<weapon name="MAGMAN_PROTOTYPE_1"/>
 	</event>
 	<event>
-		<text>Их прототип пострадал в бою, но всё ещё работает. Вы переносите его на свой корабль.</text>
-		<weapon name="MAGMAN_PROTOTYPE_2"/>
+		<text>Их прототип не пострадал в бою, и вы переносите его на свой корабль.</text>
+		<weapon name="MAGMAN_PROTOTYPE_1"/>
 	</event>
 	<event>
 		<text>Их прототип пострадал в бою, но всё ещё работает. Вы переносите его на свой корабль.</text>
@@ -57856,12 +58632,14 @@ High Average=	140%
 		<text>Корабль разваливается на части, и вы спешно хватаете уцелевшее оборудование.</text>
 		<unlockCustomShip silent="false">PLAYER_SHIP_JELLY_DLC4</unlockCustomShip>
 		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_JELLY_DLC4</queueEvent>
+		<queueEvent seeded="false">REWARD_SLURM_END</queueEvent><!-- 1.34 -->
 		<autoReward level="MED">standard</autoReward>
 	</destroyed>
 	<deadCrew>
 		<text>Экипаж корабля мёртв, и вы спешно хватаете уцелевшее оборудование.</text>
 		<unlockCustomShip silent="false">PLAYER_SHIP_JELLY_DLC4</unlockCustomShip>
 		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_JELLY_DLC4</queueEvent>
+		<queueEvent seeded="false">REWARD_SLURM_END</queueEvent><!-- 1.34 -->
 		<autoReward level="HIGH">standard</autoReward>
 	</deadCrew>
 </ship>
@@ -58066,6 +58844,7 @@ High Average=	140%
 	<variable name="calc_energyx" op="set" val="0"/>
 	<variable name="calc_mushroom" op="set" val="0"/>
 	<variable name="calc_shell" op="set" val="0"/>
+	<variable name="calc_turtle" op="set" val="0"/><!-- 1.34 -->
 	<variable name="calc_keeper" op="set" val="0"/>
 	<variable name="calc_blinker" op="set" val="0"/>
 	<variable name="calc_morph" op="set" val="0"/>
@@ -58122,10 +58901,12 @@ High Average=	140%
 	<variable name="calc_slug" op="add" var="slug_armored"/>
 	<variable name="calc_slug" op="add" var="slug_legendary"/>
 	<variable name="calc_slig" op="add" var="slig"/>
-	<variable name="calc_slug" op="add" var="slig_legendary"/><!-- 1.33 -->
+	<variable name="calc_slig" op="add" var="slig_legendary"/><!-- 1.33 --><!-- 1.34 -->
 	<variable name="calc_shell" op="add" var="shell"/>
+	<variable name="calc_turtle" op="add" var="turtle"/><!-- 1.34 -->
 	<variable name="calc_keeper" op="add" var="keeper"/>
-	<variable name="calc_keeper" op="add" var="blinker"/><!-- 1.32 -->
+	<variable name="calc_keeper" op="add" var="keeper_legendary"/><!-- 1.34 -->
+	<variable name="calc_blinker" op="add" var="blinker"/><!-- 1.32 --><!-- 1.34 -->
 	<variable name="calc_morph" op="add" var="morph"/>
 	<variable name="calc_crystal" op="add" var="crystal"/>
 	
@@ -58143,6 +58924,7 @@ High Average=	140%
 	<variable name="calc_all" op="add" var="calc_slug"/>
 	<variable name="calc_all" op="add" var="calc_slig"/>
 	<variable name="calc_all" op="add" var="calc_shell"/>
+	<variable name="calc_all" op="add" var="calc_turtle"/><!-- 1.34 -->
 	<variable name="calc_all" op="add" var="calc_keeper"/>
 	<variable name="calc_all" op="add" var="calc_blinker"/><!-- 1.32 -->
 	<variable name="calc_all" op="add" var="calc_morph"/>
@@ -58237,7 +59019,7 @@ High Average=	140%
 	<queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent><queueEvent name="LINK_NAME5" seeded="false">EMPTY_EVENT</queueEvent>
 </event>
 
-<event name="CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS"><!-- проверялка условий в промежуточных секторах вызываемая из каждого старт.маяка -->
+<event name="CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS"><!-- проверялка условий в промежуточных секторах вызываемая из каждого старт.маяка --> <!-- это не включает маяк первого и последнего секторов -->
 	<loadEventList seeded="false" first="true" generate="false">
 		<event>
 			<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent>
@@ -58253,6 +59035,8 @@ High Average=	140%
 			<queueEvent seeded="false">CHECKCHAIN_TEMPORAL_ART</queueEvent>
 			
 			<queueEvent seeded="false">FOR_GENERATED_ACHIEVEMENTS2</queueEvent><!-- only after (!) CALCULATE_REAL_CREW -->
+			<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.34 -->
+			<queueEvent seeded="false">FTL_BOOSTER_TUNNEL</queueEvent><!-- 1.34 -->
 		</event>
 	</loadEventList>
 </event>
@@ -58574,6 +59358,16 @@ High Average=	140%
 		</event>
 		<event req="calc_shell" lvl="1">
 			<variable name="calc_difference" op="add" var="calc_shell"/>
+			<variable name="calc_difference" op="mul" val="-1"/>
+			<variable name="calc_difference" op="add" var="calc_all"/>
+			<loadEventList seeded="false" first="true" generate="false">
+				<event req="calc_difference" lvl="1"/>
+				<event name="CHECKCHAIN_ONE_RACE_3_SEC_END" req="calc_difference" lvl="0"/>
+				<event req="calc_difference" lvl="-1"/>
+			</loadEventList>
+		</event>
+		<event req="calc_turtle" lvl="1"><!-- 1.34 -->
+			<variable name="calc_difference" op="add" var="calc_turtle"/>
 			<variable name="calc_difference" op="mul" val="-1"/>
 			<variable name="calc_difference" op="add" var="calc_all"/>
 			<loadEventList seeded="false" first="true" generate="false">
@@ -64358,6 +65152,17 @@ High Average=	140%
 		<event><variable name="CREW_BLINKER_athome" op="set" val="0"/><loadEvent>TALK_WITH_CREW_UNIVERSAL33</loadEvent></event>
 	</loadEventList>
 </event>
+<event name="TALK_WITH_CREW_UNIVERSAL33">
+	<loadEventList seeded="false" first="true">
+		<event req="CREW_TURTLE">
+			<loadEventList seeded="false" first="true">
+				<!-- no home sector yet, add later -->
+				<event><variable name="CREW_TURTLE_athome" op="set" val="1"/><loadEvent>TALK_WITH_CREW_UNIVERSAL34</loadEvent></event>
+			</loadEventList>
+		</event>
+		<event><variable name="CREW_TURTLE_athome" op="set" val="0"/><loadEvent>TALK_WITH_CREW_UNIVERSAL34</loadEvent></event>
+	</loadEventList>
+</event>
 <!-- список секторов для коррекций выше если надо...
 <sectorType name="SECTOR_LIST_FRIENDLY"> 
 	<sector>CIVILIAN_SECTOR</sector>
@@ -64403,7 +65208,7 @@ High Average=	140%
 	<sector>ULTRA_UNSTABLE_SECTOR</sector>
 </sectorType>
  -->
-<event name="TALK_WITH_CREW_UNIVERSAL33">
+<event name="TALK_WITH_CREW_UNIVERSAL34"><!-- 1.34 -->
 	<loadEvent>TALK_WITH_CREW_UNIVERSAL_END</loadEvent>
 </event>
 <event name="TALK_WITH_CREW_UNIVERSAL_END">
@@ -65430,6 +66235,39 @@ High Average=	140%
 			</loadEventList>
 		</event>
 	</choice>
+	
+	<choice hidden="true" req="CREW_TURTLE_athome" lvl="2" max_group="31"><!-- 1.34 -->
+		<text color="lightblue">(Член экипажа панцерон) Поговорить с панцероном.</text>
+		<event>
+			<loadEventList seeded="false" first="true">
+				<event req="this_sector_was_psevdotalk" lvl="1"><loadEvent>NOTHING2_TURTLE2</loadEvent></event>
+				<event>
+					<variable name="random_roll_of_psevdotalk" op="set" min="0" max="2"/>
+					<loadEventList seeded="false" first="true">
+						<event req="enemy_state" lvl="1"><loadEvent>NOTHING2_TURTLE2</loadEvent></event><!-- 1.33 -->
+						<event req="random_roll_of_psevdotalk" lvl="2"><variable name="this_sector_was_psevdotalk" op="set" val="1"/><loadEvent>PSEVDO_NOTHING_BATTLE</loadEvent></event>
+						<event><loadEvent>NOTHING2_TURTLE2</loadEvent></event>
+					</loadEventList>
+				</event>
+			</loadEventList>
+		</event>
+	</choice>
+	<choice hidden="true" req="CREW_TURTLE_athome" lvl="1" max_group="31">
+		<text>(Член экипажа панцерон) Поговорить с панцероном.</text>
+		<event>
+			<loadEventList seeded="false" first="true">
+				<event req="this_sector_was_psevdotalk" lvl="1"><loadEvent>NOTHING2_TURTLE</loadEvent></event>
+				<event>
+					<variable name="random_roll_of_psevdotalk" op="set" min="0" max="2"/>
+					<loadEventList seeded="false" first="true">
+						<event req="enemy_state" lvl="1"><loadEvent>NOTHING2_TURTLE</loadEvent></event><!-- 1.33 -->
+						<event req="random_roll_of_psevdotalk" lvl="2"><variable name="this_sector_was_psevdotalk" op="set" val="1"/><loadEvent>PSEVDO_NOTHING_BATTLE</loadEvent></event>
+						<event><loadEvent>NOTHING2_TURTLE</loadEvent></event>
+					</loadEventList>
+				</event>
+			</loadEventList>
+		</event>
+	</choice>
 	<choice req="CREW_ALL" lvl="0" max_lvl="0" hidden="true" blue="false">
 		<text id="continue"/>
 		<event load="AUTOSHIP_TALK"/>
@@ -65769,7 +66607,7 @@ High Average=	140%
 			<text>Погрузив орудие на корабль, вы замечаете, что оно может разговаривать. Вы пытаетесь спросить об этом продавца, но он уже улетел.</text>
 			<weapon name="LASER_ALIVE"/>
 			<item_modify>
-				<item type="scrap" min="-70" max="-30"/>
+				<item type="scrap" min="-60" max="-20"/><!-- 1.34 -->
 			</item_modify>
 			<instantEscape/>
 		</event>
@@ -65934,11 +66772,862 @@ High Average=	140%
 	<playSound>mantisDeath</playSound>
 </event>
 
+<!-- 1.34 -->
+
+<event name="FTL_BOOSTER_TUNNEL"><!-- 1.34 -->
+	<loadEventList seeded="false" first="true">
+		<event req="FTL_BOOSTER" lvl="1">
+			<triggeredEvent name="TRG_EVENT_CREATE_RANDOM_TONNEL" event="EVENT_CREATE_RANDOM_TONNEL" seeded="false" minTime="0.2" maxTime="0.2"/>
+		</event> 
+		<event req="FTL_BOOSTER" lvl="0"/>
+	</loadEventList>
+</event>
 
 
+<event name="EVENT_CREATE_RANDOM_TONNEL">
+
+</event>
+
+<event name="TULLY_CHALLENGES_REWARD">
+	<loadEventList seeded="false" first="true">
+		<event req="reward_for_challenges" lvl="1">
+			<loadEventList seeded="false" first="true">
+				<event req="calc_rew" lvl="100"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="100" max="100"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="90"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="90" max="90"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="80"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="80" max="80"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="70"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="70" max="70"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="60"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="60" max="60"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="50"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="50" max="50"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="40"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="40" max="40"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="30"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="30" max="30"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="20"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="20" max="20"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event req="calc_rew" lvl="10"><disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="10" max="10"/></item_modify><text load="TULLY_CHALLENGES_REWARD_TEXT"/></event>
+				<event/>
+			</loadEventList>
+		</event>
+		<event/>
+	</loadEventList>
+</event>
+<textList name="TULLY_CHALLENGES_REWARD_TEXT">
+	<text>Тулли также отправляет в ваш трюм контейнер с ломом. На нём надпись "За былые заслуги".</text>
+</textList>
+
+<event name="CHECKCHAIN_OSA">
+	<loadEventList seeded="false" first="true" generate="false">
+		<event name="CHECKCHAIN_OSA_END" req="osa" lvl="8"/>
+		<event/>
+	</loadEventList>
+</event>
+<event name="CHECKCHAIN_OSA_END">
+	<loadEventList seeded="false" first="true" generate="false">
+		<event>
+			<achievement silent="false">ACH_OSA</achievement>
+		</event>
+	</loadEventList>
+</event>
+
+<event name="EVENT_LEGENDAGY_KEEPER">
+	<text>Из появившейся на корабле пентаграммы сияет ослепительный свет, раздаётся грохот и откуда-то появляется новый член экипажа...</text>
+	<crewMember amount="1" all_skills="2" class="keeper_legendary">Дуриэль</crewMember>
+	<playSound>legendary</playSound>
+	<damage amount="1"/>
+	<damage amount="1" system="random" effect="breach"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="room" effect="fire"/>
+	<damage amount="0" system="room" effect="fire"/>
+</event>
+<event name="EVENT_HELL_CALL_RANDOM_BAD">
+	<text>Из появившейся на корабле пентаграммы сияет ослепительный свет и раздаётся грохот...</text>
+	<damage amount="1"/>
+	<damage amount="1" system="random" effect="breach"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="random" effect="fire"/>
+	<damage amount="0" system="room" effect="fire"/>
+	<damage amount="0" system="room" effect="fire"/>
+</event>
+<event name="EVENT_HELL_CALL_RANDOM_NOTHING">
+	<text>Из появившейся на корабле пентаграммы сияет ослепительный свет, но ничего не происходит...</text>
+</event>
+<event name="EVENT_HELL_CALL_RANDOM_CREW">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text>Из появившейся на корабле пентаграммы сияет ослепительный свет, раздаётся грохот и откуда-то появляется новый член экипажа...</text>
+			<crewMember amount="1" class="random"/>
+			<damage amount="1"/>
+			<damage amount="1" system="random" effect="breach"/>
+			<damage amount="0" system="random" effect="fire"/>
+			<damage amount="0" system="random" effect="fire"/>
+			<damage amount="0" system="random" effect="fire"/>
+			<damage amount="0" system="room" effect="fire"/>
+			<damage amount="0" system="room" effect="fire"/>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_HELL_CALL_RANDOM">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event load="EVENT_HELL_CALL_RANDOM_CREW"/>
+		<event load="EVENT_HELL_CALL_RANDOM_NOTHING"/>
+		<event load="EVENT_HELL_CALL_RANDOM_NOTHING"/>
+		<event load="EVENT_LEGENDAGY_KEEPER"/>
+		<event load="EVENT_HELL_CALL_RANDOM_BAD"/>
+	</loadEventList>
+</event>
+
+<event name="EVENT_GUS">
+	<text>На связь выходит предприниматель с ближайшей планеты. Он просит вас доставить его агро-гусениц до покупателя на другом маяке. Оплата будет зависеть от того, сколько гусениц будут доставлены, по 25 ~ за каждую. Согласны?</text>
+	<img planet="PLANET_POPULATED"/>
+	<choice hidden="true">
+		<text>Согласиться.</text>
+		<event>
+			<queueEvent seeded="false">EVENT_GUS_ADDGUS</queueEvent>
+		</event>
+	</choice>
+	<choice>
+		<text>Отказаться и поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<textList name="EVENT_GUS_ADDGUS_TEXT">
+	<text>Все гусеницы погружены на борт, можно отправляться дальше.</text>
+</textList>
+<event name="EVENT_GUS_ADDGUS">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_ONE_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_THREE_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_ONE_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_THREE_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_ONE_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_THREE_MORE</queueEvent>
+		</event>
+		<event>
+			<text load="EVENT_GUS_ADDGUS_TEXT"/>
+			<quest event="EVENT_GUS2"/>
+			<crewMember amount="1" class="gus">Гусеница</crewMember>
+			<queueEvent seeded="false">EVENT_GUS_FOUR_MORE</queueEvent>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_GUS_FOUR_MORE">
+	<crewMember amount="1" class="gus">Гусеница</crewMember>
+	<queueEvent seeded="false">EVENT_GUS_THREE_MORE</queueEvent>
+</event>
+<event name="EVENT_GUS_THREE_MORE">
+	<crewMember amount="1" class="gus">Гусеница</crewMember>
+	<queueEvent seeded="false">EVENT_GUS_TWO_MORE</queueEvent>
+</event>
+<event name="EVENT_GUS_TWO_MORE">
+	<crewMember amount="1" class="gus">Гусеница</crewMember>
+	<queueEvent seeded="false">EVENT_GUS_ONE_MORE</queueEvent>
+</event>
+<event name="EVENT_GUS_ONE_MORE">
+	<crewMember amount="1" class="gus">Гусеница</crewMember>
+</event>
+
+<textList name="EVENT_GUS_WRONGBEACON_TEXT">
+	<text>Фермер на маяке говорит, что ему уже не нужны ваши гусеницы. Он даёт вам координаты своего знакомого, который заплатит ещё больше за каждую гусеницу.</text>
+	<text>Фермер на маяке говорит, что ваших жирненьких принцесс ждут в другом замке. Он даёт вам координаты своего знакомого, который заплатит ещё больше за каждую гусеницу.</text>
+</textList>
+<event name="EVENT_GUS2">
+	<img planet="PLANET_POPULATED"/>
+	<queueEvent seeded="false">EVENT_GUS2R</queueEvent>
+</event>
+<event name="EVENT_GUS2R">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text>Вы прибываете на маяк назначения. Покупатель гусениц с нетерпением выходит на связь.</text>
+			<choice hidden="true" req="gus" blue="true">
+				<text>(Гусеницы) Передать всех гусениц покупателю.</text>
+				<event load="EVENT_REMOVE_ALL_GUS1"/>
+			</choice>
+			<choice>
+				<text>Отказаться отдавать гусениц и поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+		<event>
+			<text load="EVENT_GUS_WRONGBEACON_TEXT"/>
+			<quest event="EVENT_GUS3"/>
+			<choice>
+				<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_GUS3">
+	<img planet="PLANET_POPULATED"/>
+	<queueEvent seeded="false">EVENT_GUS3R</queueEvent>
+</event>
+<event name="EVENT_GUS3R">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text>Вы прибываете на маяк назначения. Покупатель гусениц с нетерпением выходит на связь.</text>
+			<choice hidden="true" req="gus" blue="true">
+				<text>(Гусеницы) Передать всех гусениц покупателю.</text>
+				<event load="EVENT_REMOVE_ALL_GUS2"/>
+			</choice>
+			<choice>
+				<text>Отказаться отдавать гусениц и поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_REMOVE_ALL_GUS1">
+	<text>Вы проводите обмен гусениц на лом.</text>
+	<disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="1" max="1"/></item_modify><!-- lua replacing scrap -->
+</event>
+<event name="EVENT_REMOVE_ALL_GUS2">
+	<text>Вы проводите обмен гусениц на лом.</text>
+	<disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="1" max="1"/></item_modify><!-- lua replacing scrap -->
+</event>
+
+<event name="MOTILEK_EVENT2">
+	<text load="MOTILEK_EVENT_TEXT2"/>
+	<ship load="SHIPS_MOTILEK_PARAM2" hostile="false"/>
+	<status type="limit" target="enemy" system="cloaking" amount="0"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+</event>
+<textList name="MOTILEK_EVENT_TEXT2">
+	<text>Появившись у маяка, вы попадаете под атаку инсектора, только что уничтожившего торговую станцию поблизости.</text>
+	<text>Как только вы появились, вас атакует насекомоподобный беспилотный корабль. Вблизи маяка вы замечаете остатки торговой станции.</text>
+	<text>Не успели вы ничего предпринять после прыжка, как на вас мчится инсектор! А ваши сканеры вдали фиксируют остатки торговой платформы.</text>
+	<text>Вы замечаете инсектора, добивающего торговое судно, а теперь он несётся сюда...</text>
+	<text>На радаре прямо перед вами корабль-инсектор, он летит мимо обломков торгового корабля прямо к вам.</text>
+</textList>
+<ship name="SHIPS_MOTILEK_PARAM2" auto_blueprint="SHIPS_MOTILEK">
+	<escape min="3" max="5" timer="20">
+		<text>Похоже, инсектор пытается скрыться.</text>
+		<status type="clear" target="enemy" system="cloaking" amount="100"/>
+	</escape>
+	<gotaway>
+		<text>Инсектор исчез в неизвестном направлении.</text>
+	</gotaway>
+	<destroyed>
+		<text>Инсектор уничтожен, и вы собираете всё уцелевшее...</text>
+		<unlockCustomShip silent="false">PLAYER_SHIP_ANAEROBIC_DLC4</unlockCustomShip>
+		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_ANAEROBIC_DLC4</queueEvent>
+		<queueEvent seeded="false">MOTILEK_EVENT2_REWARD</queueEvent>
+		<autoReward level="RANDOM">standard</autoReward>
+	</destroyed>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<event name="MOTILEK_EVENT2_REWARD">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text>Вы собираете всё, что осталось от торговцев на этом маяке.</text>
+			<autoReward level="LOW">scrap_only</autoReward>
+		</event>
+		<event>
+			<text>Вы собираете всё, что осталось от торговцев на этом маяке.</text>
+			<autoReward level="MED">scrap_only</autoReward>
+		</event>
+		<event>
+			<text>От торговцев не осталось ничего полезного.</text>
+		</event>
+		<event>
+			<text>От торговцев не осталось ничего полезного.</text>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_REMOVE_STORE" seeded="true" recursive="true">
+	<removeStore/>
+	<metaVariable name="in_store_now" op="set" val="0"/>
+</event>
 
 
+<!-- событие киздосика -->
+<event name="EVENT_KIZDOS" unique="true">
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="difficulty" lvl="2">
+			<text>Рядом с маяком висит странный корабль. Его пилот предлагает вам купить за символическую цену секретную информацию о главном корабле повстанцев.</text>
+			<ship load="FED_KIZDOS_PARAMETERS" hostile="false"/>
+			<choice hidden="false">
+				<text>Согласиться на сделку.</text>
+				<event load="EVENT_KIZDOS_INFO"/>
+			</choice>
+			<choice req="mind" hidden="true">
+				<text>(Контроль разума) Вмешаться в его сознание посредством гипноза.</text>
+				<event load="EVENT_KIZDOS_MIND"/>
+			</choice>
+			<choice req="SLUG_AND_ARMORED_SLUG" hidden="true">
+				<text>(Член экипажа слаг) Пусть слаг загипнотизирует его.</text>
+				<event load="EVENT_KIZDOS_MIND"/>
+			</choice>
+			<choice>
+				<text>Атаковать корабль.</text>
+				<event>
+					<loadEventList seeded="false" first="true" generate="false">
+						<event>
+							<ship hostile="true"/> <!-- так лучше, нет лишних бессмысленных текстов -->
+						</event>
+					</loadEventList>
+				</event>
+			</choice>
+			<choice>
+				<text>Игнорировать его и поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+		<event>
+			<text>Рядом с маяком висит странный корабль. Его пилот предлагает вам купить за символическую цену карту этого сектора.</text>
+			<ship load="FED_KIZDOS_PARAMETERS" hostile="false"/>
+			<choice hidden="true">
+				<text>Согласиться.</text>
+				<event>
+					<text>Вы скачиваете карту сектора на свой бортовой компьютер.</text>
+					<item_modify>
+						<item type="scrap" min="-5" max="-1"/>
+					</item_modify>
+					<reveal_map/>
+				</event>
+			</choice>
+			<choice req="mind" hidden="true">
+				<text>(Контроль разума) Вмешаться в его сознание посредством гипноза.</text>
+				<event>
+					<text>Под гипнозом вы заставляете его отправить карту на ваш бортовой компьютер.</text>
+					<reveal_map/>
+				</event>
+			</choice>
+			<choice req="SLUG_AND_ARMORED_SLUG" hidden="true">
+				<text>(Член экипажа слаг) Вмешаться в его сознание посредством гипноза.</text>
+				<event>
+					<text>Под гипнозом вы заставляете его отправить карту на ваш бортовой компьютер.</text>
+					<reveal_map/>
+				</event>
+			</choice>
+			<choice>
+				<text>Атаковать корабль.</text>
+				<event>
+					<loadEventList seeded="false" first="true" generate="false">
+						<event>
+							<ship hostile="true"/>
+						</event>
+					</loadEventList>
+				</event>
+			</choice>
+			<choice>
+				<text>Игнорировать его и поговорить с экипажем.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+	</loadEventList>
+</event>
+<textList name="EVENT_KIZDOS_MIND_TEXT">
+	<text>В голове пилота вместо нужной вам информации играет старая песня про "тополиный пух". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня про "позишн намбер ту". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня про "розовые розы". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня про "барби гёрл". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня со словами "хау мач ис зэ фиш". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня про "младшего лейтенанта". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня со словами "бананы лопала бомба". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня со словами "ай лайке мувэт мувэт". В итоге под гипнозом он соглашается снизить цену...</text>
+	<text>В голове пилота вместо нужной вам информации играет старая песня со словами "кими кими ача ача". В итоге под гипнозом он соглашается снизить цену...</text>
+</textList>
+<event name="EVENT_KIZDOS_MIND">
+	<text load="EVENT_KIZDOS_MIND_TEXT"/>
+	<choice hidden="false">
+		<text>Согласиться на сделку.</text>
+		<event load="EVENT_KIZDOS_INFO2"/>
+	</choice>
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<loadEventList seeded="false" first="true" generate="false">
+				<event>
+					<ship hostile="true"/> <!-- так лучше, нет лишних бессмысленных текстов -->
+				</event>
+			</loadEventList>
+		</event>
+	</choice>
+	<choice>
+		<text>Игнорировать его и поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<event name="EVENT_KIZDOS_INFO">
+	<text>Вы отдаёте оплату и получаете сообщение со словами: «Ультранасосы на всех фазах плюс ускоритель дронов и ремонтный гель слагов на последней». Что бы это значило?..</text> <!-- don't change Ультранасосы -->
+	<item_modify>
+		<item type="scrap" min="-10" max="-5"/>
+	</item_modify>
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<loadEventList seeded="false" first="true" generate="false">
+				<event>
+					<ship hostile="true"/>
+				</event>
+			</loadEventList>
+		</event>
+	</choice>
+	<choice>
+		<text>Сказать спасибо и улететь прочь.</text>
+		<event/>
+	</choice>
+</event>
+<event name="EVENT_KIZDOS_INFO2">
+	<text>Вы отдаёте оплату и получаете сообщение со словами: «Ультранасосы на всех фазах плюс ускоритель дронов и ремонтный гель слагов на последней». Что бы это значило?..</text> <!-- don't change Ультранасосы -->
+	<item_modify>
+		<item type="scrap" min="-4" max="-1"/>
+	</item_modify>
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<loadEventList seeded="false" first="true" generate="false">
+				<event>
+					<ship hostile="true"/>
+				</event>
+			</loadEventList>
+		</event>
+	</choice>
+	<choice>
+		<text>Сказать спасибо и улететь прочь.</text>
+		<event/>
+	</choice>
+</event>
+<ship name="FED_KIZDOS_PARAMETERS" auto_blueprint="SHIPS_FED_KIZDOS">
+	<escape timer="30" min="10" max="12">
+		<text>Похоже, корабль пытается скрыться.</text>
+		<ship hostile="true"/>
+	</escape>
+	<gotaway>
+		<text>Необычный корабль покинул маяк...</text>
+	</gotaway>
+	<destroyed>
+		<text>Цель уничтожена, и вы собираете всё, что уцелело.</text>
+		<autoReward level="LOW">standard</autoReward>
+	</destroyed>
+	<deadCrew>
+		<text>Экипаж мёртв, и вы забираете всё ценное.</text>
+		<autoReward level="MED">standard</autoReward>
+		<queueEvent seeded="true">KIZDOS_REWARD</queueEvent>
+	</deadCrew>
+</ship>
+
+<event name="KIZDOS_REWARD">
+	<loadEventList>
+		<event>
+			<text>Также в трюме вы находите какие-то товары.</text>
+			<augment name="TRADE_BOX_1"/>
+		</event>
+		<event>
+			<text>Также в трюме вы находите какие-то товары.</text>
+			<augment name="TRADE_BOX_2"/>
+		</event>
+		<event>
+			<text>Также в трюме вы находите какие-то товары.</text>
+			<augment name="TRADE_BOX_3"/>
+		</event>
+		<event>
+			<text>Также в трюме вы находите какой-то контейнер.</text>
+			<augment name="ORCHID_BOX"/>
+		</event>
+		<event/>
+	</loadEventList>
+</event>
 
 
+<!-- 4 фаза босса -->
+
+<event name="EVENT_REBEL_BOSS_DESTROYED_4_PHASE">
+	<!-- событие срабатывает при уничтожении 4 фазы флагмана повстанцев -->
+</event>
+<event name="INSTANT_ESCAPE">
+	<metaVariable name="game_shake_lvl" op="set" val="2"/>
+	<queueEvent seeded="false">EVENT_SHAKE_GAME</queueEvent>
+	<queueEvent seeded="false">INSTANT_ESCAPE_QUE</queueEvent>
+</event>
+<event name="INSTANT_ESCAPE_QUE">
+	<text>Недобитый флагман спровоцировал неизвестное искажение пространства-времени. Ваш корабль засасывает в него без возможности выбраться!</text>
+	<damage amount="1" system="random"/>
+	<instantEscape/>
+	<choice>
+		<text id="continue"/>
+		<event>
+			<secretSector>LAST_STAND3</secretSector>
+		</event>
+	</choice>
+</event>
+
+<event name="LAST_STAND3_PLACEHOLDER">
+	<text>...</text>
+</event>
+<event name="LAST_STAND3_START">
+	<text>Последний перелёт повреждает корабль. Вы появляетесь в каком-то неизвестном месте. Вокруг чернота и нет никаких звёзд.</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="LAST_STAND3_START2"/>
+	</choice>
+	<img back="MONSTER" planet="NONE"/>
+</event>
+<event name="LAST_STAND3_START2">
+	<text>Нет ни повстанцев, ни Федерации. И ни единой подсказки, в какой части Галактики вы находитесь. Внезапно появляется недобитый флагман повстанцев. Он выходит на связь.</text>
+	<ship load="SHIP_BOSS_4_PHASE" hostile="false"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_1"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_1">
+	<text>«Хорошо, Кестрел, всё моё внимание на вас».</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_2"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_2">
+	<text>«Удивительно, насколько всё становится простым, когда тебя ничто не отвлекает».</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_3"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_3">
+	<text>«Я - Саймон, искусственный интеллект внутри этого флагмана. Истинный лидер этого восстания».</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_4"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_4">
+	<text>«Я должен признать, Кестрел, это была хорошая попытка, но я выживал всё это время не благодаря удаче».</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_5"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_5">
+	<text>«Один великий разум всегда будет сильнее толпы паразитов».</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_6"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_6">
+	<text>«Как Федерация может быть символом единства, если её так легко разорвать на части?»</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_7"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_7">
+	<text>«Люди всегда выступали против других людей».</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="SHIP_BOSS_4_PHASE_8"/>
+	</choice>
+</event>
+<event name="SHIP_BOSS_4_PHASE_8">
+	<text>«Здесь всё и закончится для вас».</text>
+	<ship hostile="true"/>
+</event>
+
+<ship name="SHIP_BOSS_4_PHASE" auto_blueprint="SHIPS_BOSS_4_PHASE">
+	<triggeredEvent event="BOSS_4_PHASE_FAIL" time="180" thisFight="true">
+		<triggeredEventBox load="DEFAULT_TIMER" pos="combat">
+			<warning time="10.0" flash="true"/>
+			<tooltip>Похоже, флагман заряжает особый FTL-привод, который ничем нельзя остановить! Уничтожьте его прежде, чем он прыгнет отсюда</tooltip>
+		</triggeredEventBox>
+		<timerSounds load="DEFAULT_TIMER_SOUNDS"/>
+	</triggeredEvent>
+	<deadCrewAuto/>
+	<triggeredEvent event="POWER_SURGE_4_PHASE" seeded="false" loops="999999999" thisFight="true" minTime="30.0" maxTime="50.0">
+		<warningMessage id="warning_power_surge" x="692" y="84" time="5.0" centerText="true" flash="true" sound="surgeWarning" useWarningLine="true"/>
+	</triggeredEvent>
+	<destroyed load="BOSS_4_PHASE_WIN"/>
+	<deadCrew load="BOSS_4_PHASE_AUTO"/>
+	<deadCrewAuto/>
+</ship>
+<event name="POWER_SURGE_4_PHASE">
+	<superBarrage player="false" name="BLACK_WING_LASER_SURGE"/>
+	<superDrones player="false" name="BLACK_WING_DRONE_SURGE"/>
+</event>
+<event name="BOSS_4_PHASE_AUTO">
+	<text>Искусственный интеллект флагмана отключает свои системы жизнеобеспечения!</text> 
+	<status type="limit" target="enemy" system="oxygen" amount="0"/>
+	<status type="limit" target="player" system="sensors" amount="0"/>
+</event>
+<event name="BOSS_4_PHASE_WIN">
+	<text>Флагман уничтожен! Взрыв открывает новую червоточину. У вас нет другого выбора, кроме как пройти сквозь неё...</text>
+	<clearSuperDrones player="false"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event>
+			<win ach="true" music="title" creditsText="credit_victory_4_phase_end" text="Поздравляем, вы победили!" creditsBackground="MONSTER"/>
+		</event>
+	</choice>
+</event>
+<event name="BOSS_4_PHASE_FAIL">
+	<text>Флагман сбежал, а вы останетесь в этом месте навсегда...</text>
+	<instantEscape/><variable name="enemy_state" op="set" val="0"/>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event>
+			<lose text="Федерация уничтожена, а вы потеряны навсегда."/>
+		</event>
+	</choice>
+</event>
+
+<event name="MIRROR_FIGHT"> <!-- не ставь уник... -->
+	<text>Возле маяка совсем никого нет...</text>
+	<choice hidden="true">
+		<text id="continue"/>
+		<event load="MIRROR_FIGHT2"/>
+	</choice>
+</event>
+<event name="MIRROR_FIGHT2">
+	<loadEventList seeded="false" first="true">
+		<event req="medbay" lvl="1">
+			<text>...вдруг появляется какой-то странный корабль. Он выглядит полностью отключённым.</text>
+			<ship load="MIRROR_PAR_MED" hostile="false"/>
+			<choice hidden="true">
+				<text>Атаковать корабль.</text>
+				<event load="ACTIVATE_MIRROR"/>
+			</choice>
+			<choice hidden="true">
+				<text>Попытаться связаться с кораблём.</text>
+				<event load="ACTIVATE_MIRROR"/>
+			</choice>
+			<choice hidden="true">
+				<text>Поговорить с экипажем, пока заряжается FTL-привод.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+		<event>
+			<text>...вдруг появляется какой-то странный корабль. Он выглядит полностью отключённым.</text>
+			<ship load="MIRROR_PAR_CLONE" hostile="false"/>
+			<choice hidden="true">
+				<text>Атаковать корабль.</text>
+				<event load="ACTIVATE_MIRROR"/>
+			</choice>
+			<choice hidden="true">
+				<text>Попытаться связаться с кораблём.</text>
+				<event load="ACTIVATE_MIRROR"/>
+			</choice>
+			<choice hidden="true">
+				<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+				<event load="TALK_WITH_CREW"/>
+			</choice>
+		</event>
+	</loadEventList>
+</event>
+<event name="ACTIVATE_MIRROR">
+	<loadEventList>
+		<event>
+			<text>Корабль внезапно начинает преобразовываться. Он копирует ваше судно со всем его оборудованием!</text>
+			<ship hostile="true"/>
+			<queueEvent>ACTIVATE_MIRROR2</queueEvent>
+		</event>
+	</loadEventList>
+</event>
+<event name="ACTIVATE_MIRROR2">
+	<!-- технический эвент для преобразования врага в состояние игрока -->
+</event>
+<ship name="MIRROR_PAR_CLONE" auto_blueprint="MIRROR_SHIPS_CLONE">
+	<destroyed>
+		<text>Вы бегло собираете обломки, а какое-то энергетическое поле полностью восстанавливает ваш корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<damage amount="-30"/>
+		<metaVariable name="game_fade_r" op="set" val="0"/>
+		<metaVariable name="game_fade_g" op="set" val="255"/>
+		<metaVariable name="game_fade_b" op="set" val="0"/>
+		<metaVariable name="game_fade_a" op="set" val="255"/>
+		<triggeredEvent event="EVENT_FADE_GAME" seeded="false" clearOnJump="true" minTime="0.02" maxTime="0.02"/>
+	</destroyed>
+	<deadCrew>
+		<text>Вы бегло осматриваете трюмы, а какое-то энергетическое поле полностью восстанавливает ваш корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<damage amount="-30"/>
+		<metaVariable name="game_fade_r" op="set" val="0"/>
+		<metaVariable name="game_fade_g" op="set" val="255"/>
+		<metaVariable name="game_fade_b" op="set" val="0"/>
+		<metaVariable name="game_fade_a" op="set" val="255"/>
+		<triggeredEvent event="EVENT_FADE_GAME" seeded="false" clearOnJump="true" minTime="0.02" maxTime="0.02"/>
+	</deadCrew>
+</ship>
+<ship name="MIRROR_PAR_MED" auto_blueprint="MIRROR_SHIPS_MED">
+	<destroyed>
+		<text>Вы бегло собираете обломки, а какое-то энергетическое поле полностью восстанавливает ваш корабль.</text>
+		<autoReward level="MED">standard</autoReward>
+		<damage amount="-30"/>
+		<metaVariable name="game_fade_r" op="set" val="0"/>
+		<metaVariable name="game_fade_g" op="set" val="255"/>
+		<metaVariable name="game_fade_b" op="set" val="0"/>
+		<metaVariable name="game_fade_a" op="set" val="255"/>
+		<triggeredEvent event="EVENT_FADE_GAME" seeded="false" clearOnJump="true" minTime="0.02" maxTime="0.02"/>
+	</destroyed>
+	<deadCrew>
+		<text>Вы бегло осматриваете трюмы, а какое-то энергетическое поле полностью восстанавливает ваш корабль.</text>
+		<autoReward level="HIGH">standard</autoReward>
+		<damage amount="-30"/>
+		<metaVariable name="game_fade_r" op="set" val="0"/>
+		<metaVariable name="game_fade_g" op="set" val="255"/>
+		<metaVariable name="game_fade_b" op="set" val="0"/>
+		<metaVariable name="game_fade_a" op="set" val="255"/>
+		<triggeredEvent event="EVENT_FADE_GAME" seeded="false" clearOnJump="true" minTime="0.02" maxTime="0.02"/>
+	</deadCrew>
+</ship>
+
+<event name="ENEMY_SYSTEM_REMOVE_Q">
+	<queueEvent>ENEMY_SYSTEM_REMOVE_0</queueEvent>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_0">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_0" lvl="1"><removeSystem player="false">shields</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_1</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_1</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_1">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_1" lvl="1"><removeSystem player="false">engines</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_2</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_2</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_2">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_2" lvl="1"><removeSystem player="false">oxygen</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_3</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_3</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_3">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_3" lvl="1"><removeSystem player="false">weapons</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_4</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_4</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_4">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_4" lvl="1"><removeSystem player="false">drones</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_5</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_5</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_5">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_5" lvl="1"><removeSystem player="false">medbay</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_6</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_6</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_6">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_6" lvl="1"><removeSystem player="false">pilot</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_7</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_7</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_7">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_7" lvl="1"><removeSystem player="false">sensors</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_8</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_8</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_8">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_8" lvl="1"><removeSystem player="false">doors</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_9</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_9</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_9">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_9" lvl="1"><removeSystem player="false">teleporter</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_10</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_10</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_10">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_10" lvl="1"><removeSystem player="false">cloaking</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_11</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_11</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_11">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_11" lvl="1"><removeSystem player="false">artillery</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_12</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_12</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_12">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_12" lvl="1"><removeSystem player="false">battery</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_13</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_13</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_13">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_13" lvl="1"><removeSystem player="false">clonebay</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_14</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_14</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_14">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_14" lvl="1"><removeSystem player="false">mind</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_15</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_15</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_15">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_15" lvl="1"><removeSystem player="false">hacking</removeSystem><queueEvent>ENEMY_SYSTEM_REMOVE_20</queueEvent></event><event><queueEvent>ENEMY_SYSTEM_REMOVE_20</queueEvent></event>
+	</loadEventList>
+</event>
+<event name="ENEMY_SYSTEM_REMOVE_20">
+	<loadEventList seeded="false" first="true">
+		<event req="sys_remove_20" lvl="1"><removeSystem player="false">temporal</removeSystem></event><event/>
+	</loadEventList>
+</event>
 
 </FTL>

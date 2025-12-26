@@ -106,14 +106,14 @@ Special
 
 <event name="START_BEACON_MANTIS">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_red_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_mantis_sector" op="add" val="1"/>
 	<text load="START_BEACON_MANTIS"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -262,9 +262,9 @@ Special
 			</choice>
 		</event>
 	</choice>
-	<choice hidden="true">
-		<text>Вы не играете с шулерами. Приготовиться к прыжку.</text>
-		<event/>
+	<choice><!-- 1.34 -->
+		<text>Вы не играете с шулерами. Поговорить с экипажем, пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <eventList name="MANTIS_GAMBLE_BLUE">

@@ -137,14 +137,14 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="START_BEACON_ENGI">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_engi_sector" op="add" val="1"/>
 	<text load="START_BEACON_ENGI"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -3320,14 +3320,14 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 
 <event name="START_BEACON_MORPH">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_morph_sector" op="add" val="1"/>
 	<text load="START_BEACON_MORPH"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -5902,6 +5902,23 @@ Date: 03/12/18
 					</choice>
 				</event>
 			</choice>
+			<choice req="turtle" hidden="true"><!-- 1.28 -->
+				<text>(Панцерон) Пожертвовать члена экипажа.</text>
+				<event>
+					<text>Морфы рады провести несколько опытов с бомбами и панцероном. Находясь под впечатлением от полученных результатов, они дают вам припасы.</text>
+					<crewMember amount="-1" class="turtle"/>
+					<item_modify>
+						<item type="fuel" min="3" max="7"/>
+						<item type="drones" min="2" max="5"/>
+						<item type="missiles" min="1" max="3"/>
+						<item type="scrap" min="50" max="50"/>
+					</item_modify>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="MENGI_LIFEFORM_EXPERIMENT_EVENT_END"/>
+					</choice>
+				</event>
+			</choice>
 			<choice req="slug_armored" hidden="true"><!-- 1.28 -->
 				<text>(Слаг в панцире) Пожертвовать члена экипажа.</text>
 				<event>
@@ -6944,7 +6961,11 @@ Date: 03/12/18
 				<text>(Член экипажа человек Ордена) Отправить человека.</text>
 				<event load="MORPH_SYSREPATBEACON_ORDER_FEM"/>
 			</choice>
-			<choice hidden="true" req="engi">
+			<choice hidden="true" max_group="3" req="engi"><!-- 1.34 -->
+				<text>(Член экипажа инжи) Отправить инжи.</text>
+				<event load="MORPH_SYSREPATBEACON_ENG"/>
+			</choice>
+			<choice hidden="true" max_group="3" req="engi_legendary"><!-- 1.34 -->
 				<text>(Член экипажа инжи) Отправить инжи.</text>
 				<event load="MORPH_SYSREPATBEACON_ENG"/>
 			</choice>
@@ -6999,6 +7020,10 @@ Date: 03/12/18
 			<choice hidden="true" req="shell"> <!-- 1.28 -->
 				<text>(Член экипажа броненосец) Отправить броненосца.</text>
 				<event load="MORPH_SYSREPATBEACON_SHELL"/>
+			</choice>
+			<choice hidden="true" req="turtle"> <!-- 1.34 -->
+				<text>(Член экипажа панцерон) Отправить панцерона.</text>
+				<event load="MORPH_SYSREPATBEACON_TURTLE"/>
 			</choice>
 			<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 				<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
@@ -7341,6 +7366,22 @@ Date: 03/12/18
 		</removeCrew>
 	</event>
 </eventList>
+<eventList name="MORPH_SYSREPATBEACON_TURTLE"> <!-- 1.34 -->
+	<event>
+		<text>Панцерон аккуратно разрезает провода, освобождает ремонтника с боеголовками и грузит это всё в трюм.</text>
+		<drone name="MORPH_REPAIR"/>
+		<item_modify>
+			<item type="missiles" min="5" max="10"/>
+		</item_modify>
+	</event>
+	<event>
+		<text>Панцерон неудачно отрезает какой-то провод, и раздаётся мощнейший взрыв.</text>
+		<removeCrew class="turtle">
+			<clone>true</clone>
+			<text>К счастью, клон вашего члена экипажа уже готов.</text>
+		</removeCrew>
+	</event>
+</eventList>
 <eventList name="MORPH_SYSREPATBEACON_ANA"> 
 	<event>
 		<text>Ланиус аккуратно разрезает провода, освобождает ремонтника с боеголовками и грузит это всё в трюм.</text>
@@ -7650,7 +7691,7 @@ Date: 03/12/18
 		<event load="NEBULA_REPAIRMENGI_BATT"/>
 	</choice>
 	<choice hidden="false">
-		<text>Купить зарядное устройство.</text> 
+		<text>Купить резервные конденсаторы.</text><!-- 1.34 --> 
 		<event load="NEBULA_REPAIRMENGI_BOOSTER"/>
 	</choice>
 	<choice hidden="true">
@@ -7716,13 +7757,13 @@ Date: 03/12/18
 	</choice>
 </event>
 <event name="NEBULA_REPAIRMENGI_BATT">
-	<text>Морфы устанавливают батарею на ваш корабль и дают понять, что у них есть ещё и зарядное устройство. Желаете взять?</text>
+	<text>Морфы устанавливают батарею на ваш корабль и дают понять, что у них есть ещё и резервные конденсаторы. Желаете взять?</text><!-- 1.34 -->
 	<system name="battery"/>
 	<item_modify>
 		<item type="scrap" min="-30" max="-20"/>
 	</item_modify>
 	<choice hidden="false">
-		<text>Купить зарядное устройство.</text> 
+		<text>Купить резервные конденсаторы.</text> <!-- 1.34 -->
 		<event>
 			<text>Морфы отдают вам оборудование и забирают лом.</text>
 			<augment name="BATTERY_BOOSTER"/>
@@ -7737,7 +7778,7 @@ Date: 03/12/18
 	</choice>
 </event>
 <event name="NEBULA_REPAIRMENGI_BOOSTER">
-	<text>Морфы устанавливают зарядное устройство на ваш корабль и дают понять, что у них есть ещё и резервная батарея. Желаете взять?</text>
+	<text>Морфы устанавливают резервные конденсаторы на ваш корабль и дают понять, что у них есть ещё и резервная батарея. Желаете взять?</text><!-- 1.34 -->
 	<augment name="BATTERY_BOOSTER"/>
 	<item_modify>
 		<item type="scrap" min="-25" max="-15"/>
@@ -7779,7 +7820,7 @@ Date: 03/12/18
 		<event load="NEBULA_REPAIRMENGI_BATT"/>
 	</choice>
 	<choice hidden="false">
-		<text>Купить зарядное устройство.</text> 
+		<text>Купить резервные конденсаторы.</text> <!-- 1.34 -->
 		<event load="NEBULA_REPAIRMENGI_BOOSTER"/>
 	</choice>
 	<choice hidden="true">
@@ -8133,6 +8174,7 @@ Date: 03/12/18
 	<event load="ORCHID_SLUG_TAUNT"/>
 	<event load="VEGGIE_SLIG"/> <!-- 1.31 --> <!-- by Argonaute -->
 	<event load="EVENT_ORCHANTIS"/> <!-- 1.33 -->
+	<event load="EVENT_FISHING"/> <!-- 1.34 -->
 </eventList>
 <eventList name="HOSTILE_ORCHID">
 	<event load="ORCHID_FIGHT"/>
@@ -8516,14 +8558,14 @@ Date: 03/12/18
 
 <event name="START_BEACON_ORCHID">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_orchid_sector" op="add" val="1"/>
 	<text load="START_BEACON_ORCHID"/><!-- 1.31 -->
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -8849,9 +8891,9 @@ Date: 03/12/18
 			</item_modify>
 		</event>
 	</choice>
-	<choice hidden="true">
-		<text>Отказаться и покинуть систему.</text>
-		<event/>
+	<choice hidden="true"><!-- 1.34 -->
+		<text>Отказаться и поговорить с командой до зарядки FTL-привода.</text>
+		<event load="TALK_WITH_CREW"/>
 	</choice>
 </event>
 <ship auto_blueprint="SHIPS_PIRATE" name="ORCHID_SLAVES_SHIP">
@@ -9085,8 +9127,21 @@ Date: 03/12/18
 				<text>Открыть огонь!</text>
 				<event>
 					<text>Вы стреляете по кораблю слагов, но они ловко уклоняются. Капитан слагов посылает сообщение о бедствии на соседнюю планету орхидов, утверждая, что на него напали пираты. К вашему удивлению, орхиды открывают огонь из всех орудий планетарной обороны по вашему кораблю. Все это было частью коварного плана слагов.</text>
-					<ship hostile="true"/>
-					<environment target="player" type="PDS"/>
+					<choice req="orchid" hidden="true">
+						<text>(Орхид) Пусть орхид объяснит сородичам, что слаги пытаются использовать их.</text>
+						<event>
+							<text>Орхиды с планеты, выслушав вашего орхида, наводят ПКБ на слагов.</text>
+							<ship hostile="true"/>
+							<environment target="enemy" type="PDS"/>
+						</event>
+					</choice>
+					<choice req="orchid" lvl="0" max_lvl="0" blue="false" hidden="true">
+						<text id="continue"/>
+						<event>							
+							<ship hostile="true"/>
+							<environment target="player" type="PDS"/>
+						</event>
+					</choice>
 				</event>
 			</choice>
 			<choice hidden="true">
@@ -9626,6 +9681,10 @@ Date: 03/12/18
 	<destroyed>
 		<text>Корабль уничтожен, и вы собираете всё, что уцелело.</text>
 		<autoReward level="LOW">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="ORCHANTIS_SCOUT_DESTROYED"/>
+		</choice>
 	</destroyed>
 	<deadCrew>
 		<text>Корабль захвачен, и вы собираете всё, что уцелело.</text>
@@ -9653,6 +9712,17 @@ Date: 03/12/18
 		<text>Выбросить записи.</text>
 		<event/>
 	</choice>
+</event>
+<event name="ORCHANTIS_SCOUT_DESTROYED">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text>...уже собираясь улетать, вы боковым зрением замечаете небольшой контейнер и забираете его на борт.</text>
+			<augment name="ORCHID_BOX"/>
+		</event>
+		<event/>
+		<event/>
+		<event/>
+	</loadEventList>
 </event>
 <event name="EVENT_ORCHANTIS_BIOSTORAGE">
 	<text>Прибыв на маяк, вы засекаете сигнал с планеты. Разведка показала, что это брошенный органический склад орхидов. Очень странно, что их корабли избегают это место и, кажется, игнорируют сигнал.</text>
@@ -9707,5 +9777,122 @@ Date: 03/12/18
 		<achievement silent="false">ACH_CRAZY</achievement>
 	</event>
 </eventList>
+
+<!-- 1.34 -->
+
+<event name="EVENT_FISHING" unique="true">
+	<text>Возле маяка вы видите обитаемую планету. Кто-то из команды говорит, что знает это место - тут можно спуститься на поверхность и порыбачить.</text>
+	<img back="BG_DARK" planet="FISH_PLANET"/>
+	<choice hidden="true">
+		<text>Спуститься и порыбачить.</text>
+		<event>
+			<variable name="fishing_beacon" op="set" val="1"/>
+			<variable name="fishing_remaining" op="set" val="3"/>
+			<playMusic>fishing_theme</playMusic>
+			<triggeredEvent name="PLAY_SECTOR_THEME_AFTER_JUMP" event="PLAY_SECTOR_THEME" seeded="false" loops="1" jumps="1"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Игнорировать и поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<event name="EVENT_CATCH_FISH_SUNDUK_CHECK">
+	<loadEventList seeded="false" first="true">
+		<event req="fishing_sunduk_reward" lvl="1"><queueEvent>EVENT_CATCH_FISH_SUNDUK_REW</queueEvent></event>
+		<event/>
+	</loadEventList>
+</event>
+<event name="EVENT_CATCH_FISH_SUNDUK_REW">
+	<loadEventList seeded="false" first="false">
+		<event>
+			<text>...вскрыв пойманный сундук, вы находите в нём несколько деталей дронов.</text>
+			<item_modify><item type="drones" min="2" max="5"/></item_modify>
+		</event>
+		<event>
+			<text>...вскрыв пойманный сундук, вы находите в нём несколько боеголовок.</text>
+			<item_modify><item type="missiles" min="2" max="5"/></item_modify>
+		</event>
+		<event>
+			<text>...вскрыв пойманный сундук, вы находите в нём немного топливных ячеек.</text>
+			<item_modify><item type="fuel" min="2" max="5"/></item_modify>
+		</event>
+		<event>
+			<text>...вскрыв пойманный сундук, вы находите в нём немного лома.</text>
+			<disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="15" max="25"/></item_modify>
+		</event>
+		<event>
+			<text>...вскрыв пойманный сундук, вы находите в нём заржавевшее оружие.</text>
+			<weapon name="WEAPONS_FISHING"/>
+		</event>
+		<event>
+			<text>...вскрыв пойманный сундук, вы находите оружие с радужным осколком внутри.</text>
+			<weapon name="BA_BEAM_PRISM_MAIN"/>
+		</event>
+		<event>
+			<text>...вскрыв пойманный сундук, вы не находите в нём ничего полезного.</text>
+		</event>
+	</loadEventList>
+</event>
+<event name="EVENT_CATCH_FISH_0">
+	<text>Вы поймали голавля.</text>
+	<hiddenAug>FISH_BUFF_0</hiddenAug>
+	<variable name="installed_FISH_BUFF_0" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_1">
+	<text>Вы поймали дораду.</text>
+	<hiddenAug>FISH_BUFF_1</hiddenAug>
+	<variable name="installed_FISH_BUFF_1" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_2">
+	<text>Вы поймали альбакора.</text>
+	<hiddenAug>FISH_BUFF_2</hiddenAug>
+	<variable name="installed_FISH_BUFF_2" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_3">
+	<text>Вы поймали cкорпионового карпа.</text>
+	<hiddenAug>FISH_BUFF_3</hiddenAug>
+	<variable name="installed_FISH_BUFF_3" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_4">
+	<text>Вы поймали тигровую форель.</text>
+	<hiddenAug>FISH_BUFF_4</hiddenAug>
+	<variable name="installed_FISH_BUFF_4" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_5">
+	<text>Вы поймали сомика.</text>
+	<hiddenAug>FISH_BUFF_5</hiddenAug>
+	<variable name="installed_FISH_BUFF_5" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_6">
+	<text>Вы поймали тиляпию.</text>
+	<hiddenAug>FISH_BUFF_6</hiddenAug>
+	<variable name="installed_FISH_BUFF_6" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_7">
+	<text>Вы поймали щуку.</text>
+	<hiddenAug>FISH_BUFF_7</hiddenAug>
+	<variable name="installed_FISH_BUFF_7" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_8">
+	<text>Вы поймали барабульку.</text>
+	<hiddenAug>FISH_BUFF_8</hiddenAug>
+	<variable name="installed_FISH_BUFF_8" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
+<event name="EVENT_CATCH_FISH_9">
+	<text>Вы поймали солнечника.</text>
+	<hiddenAug>FISH_BUFF_9</hiddenAug>
+	<variable name="installed_FISH_BUFF_9" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
 
 </FTL>

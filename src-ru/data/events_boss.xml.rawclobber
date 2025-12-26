@@ -152,11 +152,11 @@ Items:
 <!-- the first time you arrive at the base, before the rebel fleet arrives -->
 <event name="LAST_STAND_START">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
-	<text>Вы прибываете на форпост возле базы Федерации. Ваши коды доступа позволяют вам пройти начальную охрану, и офицер устанавливает прямое соединение с боевым командным центром на базе. Адмирал Тулли первым начинает разговор: «Почему такая важность?! Кто вы?»</text> <!-- 1.28 --> <!-- it was wrong translate into Russian -->
+	<queueEvent seeded="false">FTL_BOOSTER_TUNNEL</queueEvent><!-- 1.34 -->
 	<queueEvent seeded="false">CALCULATE_REAL_CREW</queueEvent> <!-- 1.31 -->
 	<queueEvent seeded="false">CHECKCHAIN_7_HUMAN</queueEvent>
 	<queueEvent seeded="false">CHECKCHAIN_TULLY_FOOD</queueEvent>
@@ -200,50 +200,103 @@ Items:
 	<queueEvent seeded="false">CHECKCHAIN_BUDGET_BUILD</queueEvent><!-- 1.32 -->
 	<queueEvent seeded="false">CHECKCHAIN_DIPLOMATIC_MISSION</queueEvent><!-- 1.32 -->
 	<queueEvent seeded="false">CHECKCHAIN_DEAD_CARGO</queueEvent> <!-- 1.33 -->
-	
-	<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="0" max_group="1" blue="false"> <!-- 1.25.1 --> <!-- 1.28 -->
-		<text>Изложить суть вашего задания.</text>
-		<event>
-			<text>Ваши объяснения встречаются возгласами цинизма и недоверия среди офицеров. Генерал Турзил из отряда инжи высказывается первым: «Служба разведки подтверждает потенциальную возможность противодействия технологиям повстанцев. Либо рискнём всем, либо потеряем всё».</text>
-			<choice hidden="true" req="TULLY_BOX" lvl="0" blue="false" max_group="1"> <!-- 1.28 -->
-				<text>Объяснить слабости вражеского флота и флагмана повстанцев.</text>
+	<queueEvent seeded="false">TULLY_CHALLENGES_REWARD</queueEvent><!-- 1.34 -->
+	<queueEvent seeded="false">CHECKCHAIN_OSA</queueEvent><!-- 1.34 -->
+	<loadEventList seeded="true" first="true" generate="false"><!-- 1.34 --> <!-- Added special music for the Phase 4 challenge -->
+		<event req="challenge_nobf" lvl="1">
+			<playMusic>AlternativeLastStand</playMusic>
+			<text>Вы прибываете на форпост возле базы Федерации. Ваши коды доступа позволяют вам пройти начальную охрану, и офицер устанавливает прямое соединение с боевым командным центром на базе. Адмирал Тулли первым начинает разговор: «Почему такая важность?! Кто вы?»</text> <!-- 1.28 --> <!-- it was wrong translate into Russian -->
+			<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="0" max_group="1" blue="false"> <!-- 1.25.1 --> <!-- 1.28 -->
+				<text>Изложить суть вашего задания.</text>
 				<event>
-					<text>Тулли отвечает: «Решено. Повстанцы прибудут с минуты на минуту. Мы будем делать всё от нас зависящее, чтобы удержать их корабли, но вы должны уничтожить флагман».</text>
-					<choice hidden="true">
-						<text id="continue"/>
-						<event load="LAST_STAND_START_RANDOOM_III"/>
-					</choice>
-				</event>
-			</choice>
-			<choice hidden="true" req="TULLY_BOX" max_group="1"> <!-- 1.26.2 --> <!-- 1.28 -->
-				<text>(Контейнер для Тулли) Сказать адмиралу, что у вас есть для него посылка.</text>
-				<event>
-					<text>Вы говорите, что у вас есть контейнер, адресованный адмиралу. Лицо Тулли не выражает эмоций, но он велит вам оставить контейнер на форпосте и отдаёт какие-то распоряжения старшему офицеру.</text>
-					<remove name="TULLY_BOX"/>
-					<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
-					<choice hidden="true">
-						<text id="continue"/>
+					<text>Ваши объяснения встречаются возгласами цинизма и недоверия среди офицеров. Генерал Турзил из отряда инжи высказывается первым: «Служба разведки подтверждает потенциальную возможность противодействия технологиям повстанцев. Либо рискнём всем, либо потеряем всё».</text>
+					<choice hidden="true" req="TULLY_BOX" lvl="0" blue="false" max_group="1"> <!-- 1.28 -->
+						<text>Объяснить слабости вражеского флота и флагмана повстанцев.</text>
 						<event>
-							<text>Через некоторое время он проводит вас к скрытому ремонтному доку, где ваш корабль основательно подготавливают к вашей последней цели — любой ценой защитить базу Федерации.</text>
-							<item_modify>
-								<item type="fuel" min="10" max="10"/>
-								<item type="missiles" min="15" max="15"/>
-								<item type="drones" min="10" max="10"/>
-								<item type="scrap" min="75" max="75"/>
-							</item_modify>
-							<augment name="TULLY_AUG"/><!-- 1.23 -->
-							<damage amount="-30"/>
-							<reveal_map/>
+							<text>Тулли отвечает: «Решено. Повстанцы прибудут с минуты на минуту. Мы будем делать всё от нас зависящее, чтобы удержать их корабли, но вы должны уничтожить флагман».</text>
+							<choice hidden="true">
+								<text id="continue"/>
+								<event load="LAST_STAND_START_RANDOOM_III"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="TULLY_BOX" max_group="1"> <!-- 1.26.2 --> <!-- 1.28 -->
+						<text>(Контейнер для Тулли) Сказать адмиралу, что у вас есть для него посылка.</text>
+						<event>
+							<text>Вы говорите, что у вас есть контейнер, адресованный адмиралу. Лицо Тулли не выражает эмоций, но он велит вам оставить контейнер на форпосте и отдаёт какие-то распоряжения старшему офицеру.</text>
+							<remove name="TULLY_BOX"/>
+							<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
+							<choice hidden="true">
+								<text id="continue"/>
+								<event>
+									<text>Через некоторое время он проводит вас к скрытому ремонтному доку, где ваш корабль основательно подготавливают к вашей последней цели — любой ценой защитить базу Федерации.</text>
+									<item_modify>
+										<item type="fuel" min="10" max="10"/>
+										<item type="missiles" min="15" max="15"/>
+										<item type="drones" min="10" max="10"/>
+										<item type="scrap" min="75" max="75"/>
+									</item_modify>
+									<augment name="TULLY_AUG"/><!-- 1.23 -->
+									<damage amount="-30"/>
+									<reveal_map/>
+								</event>
+							</choice>
 						</event>
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="1" max_group="1" blue="false"> <!-- 1.25.1 --><!-- 1.28 -->
+				<text>Изложить суть вашего задания.</text>
+				<event load="FEDERATION_BASE_RANDDD"/>
+			</choice>
 		</event>
-	</choice>
-	<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="1" max_group="1" blue="false"> <!-- 1.25.1 --><!-- 1.28 -->
-		<text>Изложить суть вашего задания.</text>
-		<event load="FEDERATION_BASE_RANDDD"/>
-	</choice>
+		<event>
+			<text>Вы прибываете на форпост возле базы Федерации. Ваши коды доступа позволяют вам пройти начальную охрану, и офицер устанавливает прямое соединение с боевым командным центром на базе. Адмирал Тулли первым начинает разговор: «Почему такая важность?! Кто вы?»</text> <!-- 1.28 --> <!-- it was wrong translate into Russian -->
+			<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="0" max_group="1" blue="false"> <!-- 1.25.1 --> <!-- 1.28 -->
+				<text>Изложить суть вашего задания.</text>
+				<event>
+					<text>Ваши объяснения встречаются возгласами цинизма и недоверия среди офицеров. Генерал Турзил из отряда инжи высказывается первым: «Служба разведки подтверждает потенциальную возможность противодействия технологиям повстанцев. Либо рискнём всем, либо потеряем всё».</text>
+					<choice hidden="true" req="TULLY_BOX" lvl="0" blue="false" max_group="1"> <!-- 1.28 -->
+						<text>Объяснить слабости вражеского флота и флагмана повстанцев.</text>
+						<event>
+							<text>Тулли отвечает: «Решено. Повстанцы прибудут с минуты на минуту. Мы будем делать всё от нас зависящее, чтобы удержать их корабли, но вы должны уничтожить флагман».</text>
+							<choice hidden="true">
+								<text id="continue"/>
+								<event load="LAST_STAND_START_RANDOOM_III"/>
+							</choice>
+						</event>
+					</choice>
+					<choice hidden="true" req="TULLY_BOX" max_group="1"> <!-- 1.26.2 --> <!-- 1.28 -->
+						<text>(Контейнер для Тулли) Сказать адмиралу, что у вас есть для него посылка.</text>
+						<event>
+							<text>Вы говорите, что у вас есть контейнер, адресованный адмиралу. Лицо Тулли не выражает эмоций, но он велит вам оставить контейнер на форпосте и отдаёт какие-то распоряжения старшему офицеру.</text>
+							<remove name="TULLY_BOX"/>
+							<achievement silent="false">ACH_CONTAINER</achievement><!-- 1.31 -->
+							<choice hidden="true">
+								<text id="continue"/>
+								<event>
+									<text>Через некоторое время он проводит вас к скрытому ремонтному доку, где ваш корабль основательно подготавливают к вашей последней цели — любой ценой защитить базу Федерации.</text>
+									<item_modify>
+										<item type="fuel" min="10" max="10"/>
+										<item type="missiles" min="15" max="15"/>
+										<item type="drones" min="10" max="10"/>
+										<item type="scrap" min="75" max="75"/>
+									</item_modify>
+									<augment name="TULLY_AUG"/><!-- 1.23 -->
+									<damage amount="-30"/>
+									<reveal_map/>
+								</event>
+							</choice>
+						</event>
+					</choice>
+				</event>
+			</choice>
+			<choice hidden="true" req="ORDER_HUMAN_AND_HUMAN" lvl="1" max_group="1" blue="false"> <!-- 1.25.1 --><!-- 1.28 -->
+				<text>Изложить суть вашего задания.</text>
+				<event load="FEDERATION_BASE_RANDDD"/>
+			</choice>
+		</event>
+	</loadEventList>
 	<fleet>fed</fleet>
 </event>
 <eventList name="FEDERATION_BASE_RANDDD"> <!-- 1.25.1 -->

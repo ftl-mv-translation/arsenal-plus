@@ -1168,14 +1168,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 <!-- Structure-->
 <event name="START_BEACON_SLUG">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_slug_sector" op="add" val="1"/>
 	<text load="START_BEACON_SLUG"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -2032,6 +2032,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event load="NEUTRAL_HACKER"/>
 	<event load="EVENT_FED_DAMAGEDGOHOME"/><!-- 1.25 -->
 	<event load="RADIOACTIVE_MINING"/><!-- 1.25 -->
+	<event load="MIRROR_FIGHT"/><!-- 1.34 -->
 </eventList>
 
 <eventList name="NEBULA_STORM_NEUTRAL_UNSTABLE">
@@ -2044,14 +2045,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="START_BEACON_UNSTABLE"> 
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_unstable_sector" op="add" val="1"/>
 	<text load="START_BEACON_UNSTABLE"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true"> <!-- 1.26 -->
 		<text id="continue"/>
 		<event>
@@ -2697,6 +2698,17 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 					</choice>
 				</event>
 			</choice>
+			<choice hidden="true" req="turtle"><!-- 1.28 -->
+				<text>(Член экипажа панцерон) Отправить панцерона.</text>
+				<event>
+					<text>Вы направляете своего члена экипажа к странному артефакту. Со странным звуком его затягивает внутрь, и всё затихает.</text>
+					<crewMember amount="-1" class="turtle"/>
+					<choice hidden="true">
+						<text id="continue"/>
+						<event load="NEBULA_STORM_SLUG_CONVERTER_OF_SOUL_RANDOMCREATURE"/>
+					</choice>
+				</event>
+			</choice>
 			<choice hidden="true" req="anaerobic">
 				<text>(Член экипажа ланиус) Отправить ланиуса.</text>
 				<event>
@@ -2850,6 +2862,11 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event>
 		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
 		<crewMember amount="1" class="shell" all_skills="1">Изуал</crewMember>
+		<autoReward level="LOW">scrap_only</autoReward>
+	</event>
+	<event><!-- 1.34 -->
+		<text>Внезапно из артефакта вываливается склизкий кокон, и из него вылезает ваш новый член экипажа... Слаги делают какие-то замеры и дают немного лома в благодарность.</text>
+		<crewMember amount="1" class="turtle" all_skills="1">Изуал</crewMember>
 		<autoReward level="LOW">scrap_only</autoReward>
 	</event>
 	<event>
@@ -4058,14 +4075,14 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 
 <event name="START_BEACON_SLURM">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_slurm_sector" op="add" val="1"/>
 	<text load="START_BEACON_SLURM"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="SLURM_FUEL"/>
@@ -4255,7 +4272,8 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<loadEventList seeded="true" first="false" generate="false">
 		<event load="NEBULA_STORE_SLURM2"/>
 		<event load="NEBULA_STORE_SLURM3"/>
-		<event load="NEBULA_STORE_SLURM4"/>		
+		<event load="NEBULA_STORE_SLURM4"/>	
+		<event load="NEBULA_STORE_SLURM5"/>		<!-- 1.34 -->
 	</loadEventList>
 </event>
 
@@ -4303,6 +4321,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Вы прибываете на торговую станцию слёрмов. В углу стоит столик с покером, от которого с руганью отползает слёрм. Похоже, что он проиграл последние деньги.</text>
 	<text>Слёрмы испытывают страсть к азартным играм. Ничего удивительного в том, что вы находите столик с покером в очередном магазине.</text>
 </textList>
+
+<event name="NEBULA_STORE_SLURM5"><!-- 1.34 -->
+	<queueEvent seeded="true">NEBULA_JUST_STORE</queueEvent>
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text load="NEBULA_STORE_SLURM5"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/>
+	<variable name="poker_store" op="set" val="1"/>
+	<choice hidden="false">
+		<text>Подойти к дилеру.</text>
+		<event load="3_BOXES"/>
+	</choice>	
+	<choice hidden="true">
+		<text>Просто посмотреть товары.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="NEBULA_STORE_SLURM5"><!-- 1.34 -->
+	<text>Вы прибываете на торговую станцию слёрмов. Старый слёрм предлагает вам сыграть в три шкатулки перед покупками.</text>
+	<text>Вы прибываете на торговую станцию слёрмов. В углу стоит столик с тремя шкатулками, от которого с руганью отползает слёрм. Похоже, что он проиграл последние деньги.</text>
+	<text>Слёрмы испытывают страсть к азартным играм. Ничего удивительного в том, что вы находите столик с тремя шкатулками в очередном магазине.</text>
+</textList>
+
 
 <event name="NEBULA_STORE_SLURM2"><!-- 1.32 -->
 	<queueEvent seeded="true">NEBULA_JUST_STORE</queueEvent>
@@ -6926,6 +6967,17 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 					<weapon name="SLURMBARRELS"/>
 				</event>
 			</choice>
+			<choice hidden="true" req="turtle"> <!-- 1.34 -->
+				<text>(Член экипажа панцерон) Отдать панцерона.</text>
+				<event>
+					<text>Вашего члена экипажа запихивают в котёл, и некоторое время спустя вы получаете от слёрмов оплату и часть свежего слёрма в бочке...</text>
+					<crewMember amount="-1" class="turtle"/>
+					<item_modify>
+						<item type="scrap" min="55" max="55"/>
+					</item_modify>
+					<weapon name="SLURMBARRELS"/>
+				</event>
+			</choice>
 			<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 				<text>(Член экипажа слаг в панцире) Отдать слага в панцире.</text>
 				<event>
@@ -7141,6 +7193,67 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 							</item_modify>
 						</event>
 					</choice>
+					<!-- 1.34 -->
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-60" max="-40"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-60" max="-40"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-60" max="-40"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-60" max="-40"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-60" max="-40"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-60" max="-40"/>
+							</item_modify>
+						</event>
+					</choice>
 					<choice hidden="true">
 						<text>Отказаться от предложений.</text>
 						<event/>
@@ -7190,6 +7303,67 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 							</item_modify>
 						</event>
 					</choice>
+					<!-- 1.34 -->
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-50" max="-30"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-50" max="-30"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-50" max="-30"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-50" max="-30"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-50" max="-30"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-50" max="-30"/>
+							</item_modify>
+						</event>
+					</choice>
 					<choice hidden="true">
 						<text>Отказаться от предложений.</text>
 						<event/>
@@ -7236,6 +7410,67 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 							<weapon name="RANDOM"/>
 							<item_modify>
 								<item type="scrap" min="-40" max="-20"/><!-- 1.27 -->
+							</item_modify>
+						</event>
+					</choice>
+					<!-- 1.34 -->
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-20"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-20"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-20"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-20"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-20"/>
+							</item_modify>
+						</event>
+					</choice>
+					<choice hidden="false">
+						<text>Заказать данное орудие.</text>
+						<event>
+							<text>Вы оплачиваете производство орудия и некоторое время спустя забираете готовый экземпляр.</text>
+							<weapon name="RANDOM"/>
+							<item_modify>
+								<item type="scrap" min="-40" max="-20"/>
 							</item_modify>
 						</event>
 					</choice>
@@ -12997,6 +13232,18 @@ TJ - Топливная ячейка.			2
 				<status type="clear" target="enemy" system="teleporter" amount="100"/>
 			</event>
 		</choice>
+		<choice hidden="true" req="turtle"> <!-- 1.34 -->
+			<text>(Член экипажа панцерон) Отправить панцерона.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT"/>
+				<removeCrew class="turtle">
+					<clone>true</clone>
+					<text>Клон сварившегося в слёрме члена экипажа выходит из клон-отсека с жаждой отомстить за обман.</text>
+				</removeCrew>
+				<ship hostile="true"/>
+				<status type="clear" target="enemy" system="teleporter" amount="100"/>
+			</event>
+		</choice>
 		<choice hidden="true" req="slug_armored"> <!-- 1.28 -->
 			<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
 			<event>
@@ -13215,6 +13462,13 @@ TJ - Топливная ячейка.			2
 				<autoReward level="HIGH">standard</autoReward>
 			</event>
 		</choice>
+		<choice hidden="true" req="turtle"><!-- 1.34 -->
+			<text>(Член экипажа панцерон) Отправить панцерона.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="HIGH">standard</autoReward>
+			</event>
+		</choice>
 		<choice hidden="true" req="slug_armored"><!-- 1.28 -->
 			<text>(Член экипажа слаг в панцире) Отправить слага в панцире.</text>
 			<event>
@@ -13361,6 +13615,13 @@ TJ - Топливная ячейка.			2
 		</choice>
 		<choice hidden="true" req="shell"><!-- 1.28 -->
 			<text>(Член экипажа броненосец) Отправить броненосца.</text>
+			<event>
+				<text load="EVENT_SLURM_RISK_TEXT2"/>
+				<autoReward level="MED">standard</autoReward>
+			</event>
+		</choice>
+		<choice hidden="true" req="turtle"><!-- 1.34 -->
+			<text>(Член экипажа панцерон) Отправить панцерона.</text>
 			<event>
 				<text load="EVENT_SLURM_RISK_TEXT2"/>
 				<autoReward level="MED">standard</autoReward>
@@ -15054,5 +15315,1241 @@ TJ - Топливная ячейка.			2
 		<name>SLURMGUNS</name>
 	</weaponOverride>
 </ship>
+<!-- 1.34 -->
+<event name="3_BOXES">
+	<text>Старый слёрм зазывает: «Подходи, не сссстесссняйсссся! Хочешь пошшшевелить мозгами? Угадаешшшь, в какой шшшкатулке лом, получишшшь в 3 раза большшше!»</text>
+	<choice hidden="false">
+		<text>Начать новую игру в три шкатулки.</text>
+		<event load="START_3_BOXES"/>
+	</choice>
+	<choice hidden="true">
+		<text>Мы передумали.</text>
+		<event/>
+	</choice>
+</event>
+
+<event name="START_3_BOXES">
+	<item_modify>
+		<item type="scrap" min="-20" max="-20"/>
+	</item_modify>
+	<queueEvent seeded="false">START_3_BOXES_RANDOM</queueEvent>
+</event>
+
+<event name="START_3_BOXES_RANDOM">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event load="START_3_BOXES_RANDOM_01"/>
+		<event load="START_3_BOXES_RANDOM_02"/>
+		<event load="START_3_BOXES_RANDOM_03"/>	
+		<event load="START_3_BOXES_RANDOM_04"/>
+		<event load="START_3_BOXES_RANDOM_05"/>
+		<event load="START_3_BOXES_RANDOM_06"/>
+		<event load="START_3_BOXES_RANDOM_07"/>
+		<event load="START_3_BOXES_RANDOM_08"/>
+		<event load="START_3_BOXES_RANDOM_09"/>
+		<event load="START_3_BOXES_RANDOM_10"/>
+		<event load="START_3_BOXES_RANDOM_11"/>
+		<event load="START_3_BOXES_RANDOM_12"/>
+		<event load="START_3_BOXES_RANDOM_13"/>	
+		<event load="START_3_BOXES_RANDOM_14"/>
+		<event load="START_3_BOXES_RANDOM_15"/>
+		<event load="START_3_BOXES_RANDOM_16"/>
+		<event load="START_3_BOXES_RANDOM_17"/>
+		<event load="START_3_BOXES_RANDOM_18"/>
+		<event load="START_3_BOXES_RANDOM_19"/>
+		<event load="START_3_BOXES_RANDOM_20"/>
+		<event load="START_3_BOXES_RANDOM_21"/>
+		<event load="START_3_BOXES_RANDOM_22"/>
+		<event load="START_3_BOXES_RANDOM_23"/>	
+		<event load="START_3_BOXES_RANDOM_24"/>
+		<event load="START_3_BOXES_RANDOM_25"/>
+		<event load="START_3_BOXES_RANDOM_26"/>
+		<event load="START_3_BOXES_RANDOM_27"/>
+		<event load="START_3_BOXES_RANDOM_28"/>
+		<event load="START_3_BOXES_RANDOM_29"/>
+		<event load="START_3_BOXES_RANDOM_30"/>
+		<event load="START_3_BOXES_RANDOM_31"/>
+		<event load="START_3_BOXES_RANDOM_32"/>
+		<event load="START_3_BOXES_RANDOM_33"/>	
+		<event load="START_3_BOXES_RANDOM_34"/>
+		<event load="START_3_BOXES_RANDOM_35"/>
+		<event load="START_3_BOXES_RANDOM_36"/>
+		<event load="START_3_BOXES_RANDOM_37"/>
+		<event load="START_3_BOXES_RANDOM_38"/>
+		<event load="START_3_BOXES_RANDOM_39"/>
+		<event load="START_3_BOXES_RANDOM_40"/>
+		<event load="START_3_BOXES_RANDOM_41"/>
+		<event load="START_3_BOXES_RANDOM_42"/>
+		<event load="START_3_BOXES_RANDOM_43"/>	
+		<event load="START_3_BOXES_RANDOM_44"/>
+		<event load="START_3_BOXES_RANDOM_45"/>
+		<event load="START_3_BOXES_RANDOM_46"/>
+		<event load="START_3_BOXES_RANDOM_47"/>
+		<event load="START_3_BOXES_RANDOM_48"/>
+		<event load="START_3_BOXES_RANDOM_49"/>
+		<event load="START_3_BOXES_RANDOM_50"/>
+		<event load="START_3_BOXES_RANDOM_51"/>
+		<event load="START_3_BOXES_RANDOM_52"/>
+		<event load="START_3_BOXES_RANDOM_53"/>	
+		<event load="START_3_BOXES_RANDOM_54"/>
+		<event load="START_3_BOXES_RANDOM_55"/>
+		<event load="START_3_BOXES_RANDOM_56"/>
+		<event load="START_3_BOXES_RANDOM_57"/>
+		<event load="START_3_BOXES_RANDOM_58"/>
+		<event load="START_3_BOXES_RANDOM_59"/>
+		<event load="START_3_BOXES_RANDOM_60"/>
+		<event load="START_3_BOXES_RANDOM_61"/>
+		<event load="START_3_BOXES_RANDOM_62"/>
+		<event load="START_3_BOXES_RANDOM_63"/>	
+		<event load="START_3_BOXES_RANDOM_64"/>
+		<event load="START_3_BOXES_RANDOM_65"/>
+		<event load="START_3_BOXES_RANDOM_66"/>
+		<event load="START_3_BOXES_RANDOM_67"/>
+		<event load="START_3_BOXES_RANDOM_68"/>
+		<event load="START_3_BOXES_RANDOM_69"/>
+		<event load="START_3_BOXES_RANDOM_70"/>
+		<event load="START_3_BOXES_RANDOM_71"/>
+		<event load="START_3_BOXES_RANDOM_72"/>
+		<event load="START_3_BOXES_RANDOM_73"/>	
+		<event load="START_3_BOXES_RANDOM_74"/>
+		<event load="START_3_BOXES_RANDOM_75"/>
+	</loadEventList>
+</event>
+<event name="3_BOXES_LOSE">
+	<text>Шкатулка пуста - вы проиграли! Старый слёрм противно хихикает и уползает в бар за выпивкой.</text>
+</event>
+<event name="3_BOXES_WIN">
+	<text>В шкатулке лом - вы выиграли! Старый слёрм матерится и уползает в бар за выпивкой.</text>
+	<item_modify>
+		<item type="scrap" min="60" max="60"/>
+	</item_modify>
+</event>
+<textList name="START_3_BOXES_RULES">
+	<text>Перед вами три шкатулки - [style[color:5f97ff]]синяя[[/style]], [style[color:f1f1f1]]белая[[/style]] и [style[color:454545]]чёрная[[/style]]. В одной из них находится лом, две другие - пусты. По крайней мере на одной из шкатулок написано истинное утверждение, и по крайней мере на одной - ложное. В какой шкатулке лом?</text>
+</textList>
+<event name="START_3_BOXES_RANDOM_01">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Шкатулка рядом с этой шкатулкой содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Обе шкатулки рядом с этой шкатулкой содержат ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Утверждение в шкатулке рядом с этой шкатулкой истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_02">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Шкатулка рядом с этой шкатулкой содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>[пусто].</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">В шкатулке рядом с этой находится ложное утверждение.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_03">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Все три утверждения ложны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Два утверждения ложны.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в шкатулке с ложным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_04">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Шкатулки рядом с этой шкатулкой содержат ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Шкатулки рядом с этой шкатулкой содержат ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Шкатулки рядом с этой шкатулкой содержат ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_05">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Каждая шкатулка чёрная.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Каждая шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Утверждение на одной из других двух шкатулок было бы истинным, если бы вы заменили слово "каждая" словом "эта".</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_06">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Одно из других утверждений ложно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Вы откроете эту шкатулку, и она окажется пустой.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_07">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Одна из других надписей - ложь.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Одна из других шкатулок содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Если вы замените слово "одна" в других двух утверждениях на "обе", то они оба будут ложными.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_08">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Одна из других двух шкатулок ложна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Вы откроете эту шкатулку, и она окажется пустой.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_09">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Только одна шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Только одна шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в белой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_10">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Только одна шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Чёрная шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_11">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Только одна шкатулка рядом с этой шкатулкой ложна и она содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Только одна шкатулка рядом с этой шкатулкой ложна и она содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Только одна шкатулка рядом с этой шкатулкой ложна и она содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_12">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Только одно утверждение ложно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Только одно утверждение истинно.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в шкатулке с ложным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_13">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Чёрная шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в истинной шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_14">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Шкатулка рядом с этой шкатулкой ложна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Шкатулка рядом с этой шкатулкой истинна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Шкатулка рядом с этой шкатулкой содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_15">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Пустые шкатулки обе истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Пустые шкатулки обе ложны.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Это не пустая шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_16">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в шкатулке с ложным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка ложна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Белая шкатулка ложна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_17">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в шкатулке с утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>[пусто].</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">На белой шкатулке нет утверждения.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_18">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в белой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Утверждения со словом "белой" всегда истинны.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Утверждение на белой шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_19">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ не находится в шкатулке с истинным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Утверждение на синей шкатулке так же истинно, как и это утверждение.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ не находится в шкатулке с истинным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_20">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ не находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Это утверждение так же истинно, как и утверждение на чёрной шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в белой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_21">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ не находится в шкатулке с уникальным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Это утверждение уникально.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ не находится в шкатулке с уникальным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_22">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ не находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка истинна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_23">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Есть два ложных утверждения.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Это единственное истинное утверждение.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Белая шкатулка пуста.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_24">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка пуста.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Шкатулка с ложным утверждением пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Есть два ложных утверждения.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_25">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка не пуста.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Эта шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Все утверждения, содержащие слово "~", ложны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_26">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка не синяя.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Каждое утверждение со словом "синий" ложно.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Чёрная шкатулка и синяя шкатулка пустые.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_27">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка - средняя шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в средней шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Эта шкатулка - средняя шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_28">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Вы находитесь у магазина.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Эта шкатулка пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_29">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Вы откроете эту шкатулку и найдёте её пустой.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>В истинной шкатулке содержится ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Эта шкатулка и белая шкатулка обе ложны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_30">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Только одно утверждение истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Шкатулка рядом с этой шкатулкой истинна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Шкатулка рядом с этой шкатулкой содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_31">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Шкатулка, отображающая слово истина, является ложной.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Шкатулка, отображающая слово ~, пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Белая шкатулка - истина и не имеет ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_32">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Чёрная шкатулка ложна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Чёрная шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">В ложной шкатулке находится ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_33">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Чёрная шкатулка не пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Утверждение на чёрной шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">В шкатулке с ложным утверждением находится ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_34">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в другой шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Истина на другой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Слова "другой шкатулке" находится на другой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_35">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в белой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Только одна шкатулка показывает истинное утверждение.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_36">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>[пусто].</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в шкатулке с утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_37">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ не находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Утверждения на других двух шкатулках истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_38">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в единственной шкатулке с истинным утверждением.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Одна из других шкатулок истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в единственной шкатулке с ложным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_39">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в белой шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>В шкатулке с ложным утверждением находится ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Утверждение на белой шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_40">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в этой шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Это утверждение совершенно бесполезно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в синей шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_41">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ не находится в белой шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ не находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_42">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Истинные шкатулки обе пустые.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Ложные шкатулки обе истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в синей шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_43">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Есть только одно истинное утверждение.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в шкатулке с ложным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Есть два истинных утверждения.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_44">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка - чёрная шкатулка.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Эта шкатулка - синяя шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Шкатулка, которая утверждает, что она чёрная, содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_45">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка - белая шкатулка.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Эта шкатулка - чёрная шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_46">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Утверждение этой шкатулки одновременно истинно и ложно.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка содержит ~, если её утверждение ложно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Это утверждение так же истинно, как и утверждение белой шкатулки.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_47">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Это синяя шкатулка.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка пуста.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_48">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Это утверждение появляется на другой шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка пуста.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Это утверждение появляется на другой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_49">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Только одно утверждение - истина.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ в одной ложной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Второе утверждение - истина.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_50">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">В шкатулке с ложным утверждением находится ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Утверждение на синей шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_51">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится как в чёрной, так и в белой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится как в синей, так и в чёрной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ не находится в белой или синей шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_52">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Чёрная шкатулка содержит ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Эта шкатулка и синяя шкатулка пустые.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Все три шкатулки пустые.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_53">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Чёрная шкатулка чёрная.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Чёрная шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Чёрная шкатулка пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_54">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Пустые шкатулки обе истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Это не пустая шкатулка.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_55">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Пустые шкатулки обе имеют истинные утверждения.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка имеет истинное утверждение.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Эта шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_56">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Это утверждение совершенно бесполезно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Эта шкатулка и синяя шкатулка - обе ложны.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_57">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в чёрной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Каждое утверждение со словом "чёрной" ложно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в синей шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_58">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в шкатулке со словом "синяя" на ней.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>[пусто].</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в шкатулке, которая действительно синяя.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_59">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в ложной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в ложной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Только одна из других шкатулок ложна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_60">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в единственной истинной шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Только одно утверждение истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Синяя шкатулка содержит ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_61">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в белой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Другие два утверждения оба истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ не находится в синей шкатулке~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_62">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в шкатулке рядом с этой шкатулкой.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в синей шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_63">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">~ не находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в этой шкатулке.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Белая шкатулка истинна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_64">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Другие две шкатулки истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Другие две шкатулки синие.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Другие две шкатулки пустые.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_65">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Утверждение на этой шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Утверждение на этой шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Шкатулки, которые утверждают, что они истинны, содержат ~.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_66">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Белая шкатулка пуста.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Синяя шкатулка ложна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Пустые шкатулки обе имеют ложные утверждения.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_67">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Белая шкатулка истинна.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Другие две шкатулки ложны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Другие две шкатулки пустые.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_68">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Здесь четыре шкатулки.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Здесь только одна шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в истинной шкатулке.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_69">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Здесь три шкатулки.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Две шкатулки здесь пустые.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Эта шкатулка - одна из двух пустых шкатулок.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_70">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Есть две истинные шкатулки.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Есть две пустые шкатулки.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Эта шкатулка пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_71">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Эта шкатулка и белая шкатулка обе пустые.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Эта шкатулка и синяя шкатулка обе пустые.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Другие два утверждения имеют идентичную формулировку.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_72">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Это чёрная шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Это чёрная шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Чёрная шкатулка не пуста.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_73">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Это единственная истинная шкатулка.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>~ находится в другой шкатулке с истинным утверждением.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Одна из других шкатулок истинна.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_74">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">Два из этих утверждений истинны.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>Утверждение на синей шкатулке истинно.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">~ находится в шкатулке с истинным утверждением.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
+<event name="START_3_BOXES_RANDOM_75">
+	<text load="START_3_BOXES_RULES"/>
+	<choice hidden="true">
+		<text color="blue">В этой шкатулке содержится ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text>В этой шкатулке не содержится ~.</text>
+		<event load="3_BOXES_LOSE"/>
+	</choice>
+	<choice hidden="true">
+		<text color="black">Другие 2 шкатулки истинны.</text>
+		<event load="3_BOXES_WIN"/>
+	</choice>
+</event>
 
 </FTL>

@@ -146,7 +146,7 @@ STRUCTURE SECTORS
 		<name id="sectorname_STANDARD_SPACE" short="sectorname_short_STANDARD_SPACE"/>
 	</nameList>
 	<trackList>
-		<!-- <track>ntr</track> --> <!-- music test -->
+		<!-- <track>Journey</track> --> <!-- music test -->
 		<track>civilian</track>
 		<track>infinity</track>
 		<track>cosmos</track>
@@ -154,6 +154,9 @@ STRUCTURE SECTORS
 		<track>milkyway</track>
 		<track>lostship</track>
 	</trackList>
+	<rarityList><!-- 1.34 -->
+		<blueprint name="turtle" rarity="5"/>	
+	</rarityList>
 	<startEvent>START_BEACON</startEvent>
 	<event name="STORE_REBELSIDE" min="1" max="1"/>	
 	<!-- <event name="STORE" min="2" max="3"/> --><!-- 1.25 -->
@@ -165,7 +168,7 @@ STRUCTURE SECTORS
 	<event name="DISTRESS_BEACON" min="1" max="2"/>
 	<!-- <event name="HOSTILE_CIVILIAN" min="3" max="5"/> --><!-- 1.26 --><!-- 1.27 -->
 	<event name="NEBULA_FIRST_SECTOR" min="0" max="4"/> <!-- 1.26 -->
-	<event name="QUESTS" min="1" max="1"/>
+	<event name="QUESTS_1" min="1" max="1"/><!-- 1.34 -->
 	<event name="HOSTILE111" min="5" max="7"/><!-- 1.26 --><!-- 1.27 -->
 	<event name="HOSTILE_BOARDING" min="0" max="0"/>
 </sectorDescription>
@@ -201,16 +204,25 @@ STRUCTURE SECTORS
 		<name>???</name>
 	</nameList>
 	<trackList>
-		<track>laststand</track>
+		<track>AlternativeLastStand</track>
 	</trackList>
 	<startEvent>LAST_STAND2_START</startEvent>
 	<event name="LAST_STAND2_PLACEHOLDER" min="999" max="999"/>
 	<noExit/>
 </sectorDescription>
 
-
-
-
+<!-- 1.34 -->
+<sectorDescription name="LAST_STAND3" unique="true">   
+	<nameList>
+		<name>???</name>
+	</nameList>
+	<trackList>
+		<track>AlternativeLastStand</track>
+	</trackList>
+	<startEvent>LAST_STAND3_START</startEvent>
+	<event name="LAST_STAND3_PLACEHOLDER" min="999" max="999"/>
+	<noExit/>
+</sectorDescription>
 
 
 
@@ -223,6 +235,7 @@ CIVILIAN SECTORS
 		<name id="sectorname_ORCHID_SECTOR" short="sectorname_short_ORCHID_SECTOR"/>
 	</nameList>
 	<trackList>
+		<track>Plants</track><!-- 1.34 -->
 		<track>milkyway</track>
 		<track>cosmos</track>
 		<track>lostship</track>
@@ -237,6 +250,7 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="crystal" rarity="0"/>
 		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		
 		<blueprint name="KERNEL_1" rarity="1"/>
 		<blueprint name="KERNEL_2" rarity="2"/>
@@ -300,6 +314,9 @@ CIVILIAN SECTORS
 		<blueprint name="MISSILES_VAMPIRE" rarity="0"/>
 		<blueprint name="MISSILES_DRILL_1" rarity="0"/>
 		<blueprint name="MISSILES_DRILL_2" rarity="0"/>
+		<!-- 1.34 -->
+		<blueprint name="BA_MISSILES_TAU" rarity="0"/>
+		<blueprint name="BA_MISSILES_ASIN" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_ORCHID</startEvent>
 	<event name="STORE_ORCHID" min="2" max="3"/>
@@ -316,6 +333,7 @@ CIVILIAN SECTORS
 		<name id="sectorname_ORCHID_HOME" short="sectorname_short_ORCHID_HOME"/>
 	</nameList>
 	<trackList>
+		<track>Plants</track><!-- 1.34 -->
 		<track>milkyway</track>
 		<track>cosmos</track>
 		<track>lostship</track>
@@ -330,6 +348,7 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="crystal" rarity="0"/>
 		<blueprint name="anaerobic" rarity="0"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		
 		<blueprint name="KERNEL_1" rarity="1"/>
 		<blueprint name="KERNEL_2" rarity="2"/>
@@ -420,6 +439,9 @@ CIVILIAN SECTORS
 		<track>milkyway</track>
 		<track>lostship</track>
 	</trackList>
+	<rarityList><!-- 1.34 -->
+		<blueprint name="turtle" rarity="5"/>	
+	</rarityList>
 	<startEvent>START_BEACON_CIVILIAN</startEvent>
 	<event name="STORE" min="2" max="3"/>
 	<event name="ITEMS" min="2" max="3"/>
@@ -440,6 +462,7 @@ CIVILIAN SECTORS
 		<name id="sectorname_TRADE_SECTOR" short="sectorname_short_TRADE_SECTOR"/>
 	</nameList>
 	<trackList>
+		<track>Traders</track><!-- 1.34 -->
 		<track>civilian</track>
 		<track>infinity</track>		
 		<track>cosmos</track>
@@ -449,7 +472,10 @@ CIVILIAN SECTORS
 	</trackList>
 	<rarityList><!-- 1.32 -->
 		<blueprint name="DRONE_IONBEAM" rarity="1"/>
-		<blueprint name="DRONE_SHIELD_PLAYER" rarity="1"/><!-- 1.33 -->
+		<blueprint name="DRONE_SHIELD_PLAYER" rarity="1"/><!-- 1.33 -->	
+		<blueprint name="BIOPRESERVER" rarity="1"/><!-- 1.34 -->	
+		<blueprint name="DRONE_SPAWNER" rarity="1"/><!-- 1.34 -->
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_TRADE</startEvent>
 	<!-- <event name="STORE" min="4" max="4"/> --> <!-- 1.23 -->
@@ -489,6 +515,7 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_ENGI</startEvent>
 	<event name="STORE_ENGI" min="2" max="3"/>
@@ -520,6 +547,7 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		<!-- 1.26.4 -->
 		<blueprint name="SILV_BEAM_1" rarity="5"/>
 		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
@@ -534,6 +562,7 @@ CIVILIAN SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_ENGI</startEvent>
 	<priorityEvent name="ENGI_VIRUS" min="1" max="1" priority="0"/>
@@ -556,6 +585,7 @@ CIVILIAN SECTORS
 		<name id="sectorname_MORPH_SECTOR" short="sectorname_short_MORPH_SECTOR"/>
 	</nameList>
 	<trackList>
+		<track>Mara</track><!-- 1.34 -->
 		<track>engi</track>
 		<track>calm</track>
 		<track>cosmos</track>
@@ -568,6 +598,7 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		<blueprint name="MORPHGUN_R" rarity="3"/>
 		<blueprint name="MORPHGUN_Z" rarity="3"/>
 		<blueprint name="MORPHGUN_M" rarity="3"/>
@@ -594,6 +625,7 @@ CIVILIAN SECTORS
 		<name id="sectorname_MORPH_HOME" short="sectorname_short_MORPH_HOME"/>
 	</nameList>
 	<trackList>
+		<track>Mara</track><!-- 1.34 -->
 		<track>engi</track>
 		<track>calm</track>
 		<track>cosmos</track>
@@ -606,6 +638,7 @@ CIVILIAN SECTORS
 		<blueprint name="slug" rarity="0"/>
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		<blueprint name="MORPHGUN_R" rarity="3"/>
 		<blueprint name="MORPHGUN_Z" rarity="3"/>
 		<blueprint name="MORPHGUN_M" rarity="3"/>
@@ -623,6 +656,7 @@ CIVILIAN SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="morph" rarity="1"/>
 		<blueprint name="engi" rarity="0"/>
 		<blueprint name="energy_w" rarity="4"/>
@@ -681,11 +715,11 @@ HOSTILE SECTORS
 		<name id="sectorname_REBEL_SECTOR_MINIBOSS" short="sectorname_short_REBEL_SECTOR_MINIBOSS"/>
 	</nameList>
 	<trackList>
-		<!-- <track>darkflow</track> -->
-		<track>colonial</track>
+		<track>Percussion</track><!-- 1.34 -->
+		<!-- <track>colonial</track>
 		<track>wasteland</track>
 		<track>hacking</track>
-		<track>lostship</track>
+		<track>lostship</track> -->
 	</trackList>
 	<rarityList><!-- 1.26.4 -->		
 		<blueprint name="SILV_BEAM_1" rarity="5"/>
@@ -701,6 +735,7 @@ HOSTILE SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_REBEL</startEvent>
 	<event name="FLAGSHIP_CONSTRUCTION" min="1" max="1"/>
@@ -779,18 +814,21 @@ HOSTILE SECTORS
 		<blueprint name="mushroom_b" rarity="3"/><!-- 1.31 -->
 		<blueprint name="mushroom_f" rarity="3"/><!-- 1.31 -->
 		<blueprint name="blinker" rarity="1"/><!-- 1.32 -->
+		<blueprint name="turtle" rarity="1"/><!-- 1.34 -->
+		<blueprint name="egg" rarity="1"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_BORDER</startEvent>
 	<event name="STORE_BORDER" min="1" max="2"/>
 	<event name="ITEMS_BORDER" min="1" max="2"/>
 	<event name="DECEPTICON_EVENT" min="1" max="1"/><!-- 1.25 -->
+	<event name="EVENT_KIZDOS" min="1" max="1"/><!-- 1.34 -->
 	<event name="HOSTILE_BORDER" min="5" max="7"/><!-- 1.25 -->
 	<event name="HOSTILE_BORDER_ALIEN" min="3" max="4"/>
 	<event name="DISTRESS_BEACON_BORDER" min="1" max="2"/>
 	<event name="NEBULA_BORDER" min="0" max="4"/>
 	<event name="NOTHING_BORDER" min="0" max="1"/>
 	<event name="QUESTS_BORDER" min="1" max="2"/>
-	<event name="NEUTRAL_BORDER" min="4" max="5"/>
+	<event name="NEUTRAL_BORDER" min="3" max="4"/><!-- 1.34 -->
 </sectorDescription>
 
 <sectorDescription name="ORDEN_SECTOR_MINIBOSS" minSector="4" unique="true">
@@ -842,6 +880,7 @@ HOSTILE SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="order_human" rarity="1"/>
 		<blueprint name="order_female" rarity="1"/>
 		<blueprint name="human" rarity="0"/>
@@ -959,6 +998,7 @@ HOSTILE SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_HAL</startEvent>
 	<event name="HAL_BOSS_FIGHT" min="1" max="1"/>
@@ -1036,6 +1076,7 @@ HOSTILE SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="0"/>
 		<blueprint name="magman_a" rarity="5"/><!-- 1.31 -->
 		<blueprint name="magman_b" rarity="5"/><!-- 1.31 -->
@@ -1261,6 +1302,7 @@ NEBULA SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="0"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
@@ -1326,6 +1368,7 @@ NEBULA SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
 		<blueprint name="PREIGNITE_CREW_GUN_2" rarity="5"/>
@@ -1499,6 +1542,7 @@ NEBULA SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
@@ -1568,6 +1612,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="rock" rarity="4"/>
 		<blueprint name="human" rarity="3"/>
 		<blueprint name="energy_w" rarity="1"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTAN</startEvent>
 	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
@@ -1599,6 +1644,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="slug" rarity="4"/>
 		<blueprint name="rock" rarity="4"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		<!-- 1.26.4 -->
 		<blueprint name="SILV_BEAM_1" rarity="5"/>
 		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
@@ -1613,6 +1659,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="1"/>
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTAN</startEvent>
@@ -1638,9 +1685,10 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 	<name id="sectorname_ZOLTON_SECTOR" short="sectorname_short_ZOLTON_SECTOR"/>
 	</nameList>
 	<trackList>
+		<track>Journey</track><!-- 1.34 -->
 		<track>cosmos</track>
 		<track>calm</track>
-		<track>zoltan</track>
+		<!-- <track>zoltan</track> --><!-- 1.34 -->
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="2"/>
@@ -1649,6 +1697,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="slug" rarity="4"/>
 		<blueprint name="rock" rarity="4"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		<!-- zolton weapons -->
 		<blueprint name="EP_BA_BEAM_BARDICHE" rarity="2"/>
 		<blueprint name="EP_BA_BEAM_BO" rarity="3"/>
@@ -1780,9 +1829,10 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<name id="sectorname_ZOLTON_HOME" short="sectorname_short_ZOLTON_HOME"/>
 	</nameList>
 	<trackList>
+		<track>Journey</track><!-- 1.34 -->
 		<track>cosmos</track>
 		<track>calm</track>
-		<track>zoltan</track>
+		<!-- <track>zoltan</track> --><!-- 1.34 -->
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="2"/>
@@ -1791,6 +1841,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="slug" rarity="4"/>
 		<blueprint name="rock" rarity="4"/>
 		<blueprint name="human" rarity="3"/>
+		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
 		<!-- zolton weapons -->
 		<blueprint name="EP_BA_BEAM_BARDICHE" rarity="2"/>
 		<blueprint name="EP_BA_BEAM_BO" rarity="3"/>
@@ -1902,6 +1953,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energyx" rarity="1"/>
 		<blueprint name="energyx_w" rarity="1"/>
 		<blueprint name="energy" rarity="0"/>
@@ -1993,6 +2045,7 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="3"/>
 		<blueprint name="magman_a" rarity="5"/><!-- 1.31 -->
 		<blueprint name="magman_b" rarity="5"/><!-- 1.31 -->
@@ -2111,7 +2164,7 @@ HIDDEN SECTORS
 		<blueprint name="LASER_STANDARD_2" rarity="0"/>
 		<blueprint name="BA_LASER_WAR_1" rarity="0"/><!-- 1.26 -->
 		<blueprint name="BA_LASER_WAR_2" rarity="0"/><!-- 1.26 -->
-		<blueprint name="BA_LASER_WAR_3" rarity="0"/><!-- 1.26 -->
+		<!-- <blueprint name="BA_LASER_WAR_3" rarity="0"/> --><!-- 1.26 --><!-- 1.34 -->
 		<blueprint name="BA_LASER_AUTO_1" rarity="0"/>
 		<blueprint name="LASER_DUAL_1" rarity="0"/>
 		<blueprint name="REPAIR_OLD" rarity="0"/>
@@ -2306,6 +2359,7 @@ HIDDEN SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="0"/>
 		<blueprint name="LOCK_BEAM" rarity="3"/>
 		<blueprint name="BLOOD_LASER_1" rarity="0"/>
@@ -2418,6 +2472,7 @@ HIDDEN SECTORS
 		<blueprint name="SILV_MISSILES_BURST" rarity="5"/>
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
+		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="0"/>
 	</rarityList>
 	<startEvent>START_BEACON_LANIUS</startEvent>
@@ -2435,4 +2490,5 @@ HIDDEN SECTORS
 	<event name="QUESTS_LANIUS" min="1" max="1"/>
 	<event name="NEUTRAL_LANIUS" min="5" max="6"/>
 </sectorDescription>
+
 </FTL>

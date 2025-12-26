@@ -87,14 +87,14 @@ Storm Environment:
 
 <event name="START_BEACON_NEBULA">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_nebula_sector" op="add" val="1"/>
 	<text load="START_BEACON_NEBULA"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -417,7 +417,185 @@ Storm Environment:
 	</event>
 </eventList>
 
-		
+<event name="NEBULA_WEAPONS_TRADER" unique="true"><!-- 1.34 --> <!-- reworked -->
+	<variable name="counter_meet_nebula" op="add" val="1"/>
+	<variable name="nwt_liarness" op="set" min="0" max="2"/>
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="nwt_liarness" lvl="2"><queueEvent>NEBULA_WEAPONS_TRADER_LIAR</queueEvent></event>
+		<event req="nwt_liarness" lvl="1"><queueEvent>NEBULA_WEAPONS_TRADER_NORMAL</queueEvent></event>
+		<event><queueEvent>NEBULA_WEAPONS_TRADER_NORMAL</queueEvent></event> 
+	</loadEventList>
+</event>
+<event name="NEBULA_WEAPONS_TRADER_NORMAL">
+	<text>Нелегальный торговец оружием плетёт вам что-то невнятное об опасностях, таящихся в туманностях, после чего навязчиво пытается толкнуть вам свой товар.</text>
+	<ship load="PIRATE_NEIZ" hostile="false"/>
+	<environment type="nebula"/>
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false">
+		<text>Приобрести неизвестное оружие за 35 лома.</text>
+		<event load="NEBULA_WEAPONS_TRADER_GOODRES"/>
+	</choice>
+	<choice hidden="false" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="true">
+		<text>(Член экипажа слаг) Ваш слаг предвидит результат сделки...</text>
+		<event load="NEBULA_WEAPONS_TRADER_GOODRES"/>
+	</choice>
+	<choice>
+		<text>Игнорировать корабль.</text>
+		<event/>
+	</choice>
+	<choice req="mind" hidden="true">
+		<text>(Контроль разума) Убедите его совершить более выгодную сделку.</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST2"/>
+	</choice>
+</event>
+<event name="NEBULA_WEAPONS_TRADER_LIAR">
+	<text>Нелегальный торговец оружием плетёт вам что-то невнятное об опасностях, таящихся в туманностях, после чего навязчиво пытается толкнуть вам свой товар.</text>
+	<ship load="PIRATE_NEIZ" hostile="false"/>
+	<environment type="nebula"/>
+	<choice>
+		<text>Атаковать корабль.</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false">
+		<text>Приобрести неизвестное оружие за 35 лома.</text>
+		<event load="NEBULA_WEAPONS_TRADER_BADRES"/>
+	</choice>
+	<choice hidden="false" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="true">
+		<text>(Член экипажа слаг) Ваш слаг предвидит результат сделки...</text>
+		<event load="NEBULA_WEAPONS_TRADER_BADRES"/>			
+	</choice>
+	<choice>
+		<text>Игнорировать корабль.</text>
+		<event/>
+	</choice>
+	<choice req="mind" hidden="true">
+		<text>(Контроль разума) Убедите его совершить более выгодную сделку.</text>
+		<event load="NEBULA_WEAPONS_TRADER_LIST2"/>
+	</choice>
+</event>
+<event name="NEBULA_WEAPONS_TRADER_VERYGOODRES">
+	<text>Вы покупаете оружие и благодарите его за помощь.</text>
+	<item_modify>
+		<item type="scrap" min="-25" max="-25"/>
+	</item_modify>
+	<weapon name="RANDOM"/>
+</event>
+<event name="NEBULA_WEAPONS_TRADER_GOODRES">
+	<text>Вы пересылаете лом и получаете оружие взамен. Будем надеяться, оно того стоит.</text>
+	<item_modify>
+		<item type="scrap" min="-35" max="-35"/>
+	</item_modify>
+	<weapon name="RANDOM"/>
+</event>
+<event name="NEBULA_WEAPONS_TRADER_BADRES">
+	<text>Вы пересылаете лом, но он не соблюдает соглашение: «Я же говорил, что это опасные места!»</text>
+	<item_modify>
+		<item type="scrap" min="-35" max="-35"/>
+	</item_modify>
+	<choice>
+		<text>Атаковать корабль!</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Получив ценный урок, двинуться дальше.</text>
+		<event/>
+	</choice>
+</event>
+<eventList name="NEBULA_WEAPONS_TRADER_LIST2">
+	<event load="NEBULA_WEAPONS_TRADER_BEZSKIDKI"/>
+	<event>
+		<text>Будучи "убеждённым" в необходимости помочь, он рассказывает, что его предложение было враньём, а они сами собирались напасть на ваш корабль. К тому времени, как он пришёл в себя, вы уже подготовились к бою.</text>
+		<ship hostile="true"/>
+	</event>
+	<event load="NEBULA_WEAPONS_TRADER_SKIDKA"/>
+</eventList>
+<event name="NEBULA_WEAPONS_TRADER_BEZSKIDKI">
+	<text>Будучи "убеждённым" в необходимости помочь, он снижает цену и описывает оружие. Однако он постепенно приходит в себя и отказывается от скидки. Он явно не может понять, почему он вообще предложил вам скидку.</text>
+	<choice>
+		<text>Купить оружие.</text>
+		<event load="NEBULA_WEAPONS_TRADER_GOODRES"/>
+	</choice>
+	<choice>
+		<text>Мы передумали, атаковать их!</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Отказаться.</text>
+		<event>
+			<text>Вы благодарите его за предложение и готовитесь двигаться дальше.</text>
+		</event>
+	</choice>
+</event>
+<event name="NEBULA_WEAPONS_TRADER_SKIDKA">
+	<text>Он соглашается сделать небольшую скидку и показывает вам оружие.</text>
+	<choice>
+		<text>Купить оружие.</text>
+		<event load="NEBULA_WEAPONS_TRADER_VERYGOODRES"/>
+	</choice>
+	<choice>
+		<text>Мы передумали, атаковать их!</text>
+		<event>
+			<ship hostile="true"/>
+		</event>
+	</choice>
+	<choice>
+		<text>Отказаться.</text>
+		<event>
+			<text>Вы благодарите его за предложение и готовитесь двигаться дальше.</text>
+		</event>
+	</choice>
+</event>
+<ship name="PIRATE_NEIZ" auto_blueprint="SHIPS_PIRATE">
+	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
+	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew>
+		<text>Вы забираете всё ценное с корабля и ищете то самое "неизвестное орудие".</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice hidden="true">
+			<text id="continue"/>
+			<event load="NEIZ_END"/>
+		</choice>
+	</deadCrew>
+</ship>
+<event name="NEIZ_END">
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="nwt_liarness" lvl="2"><queueEvent>NEIZ_END_LIAR</queueEvent></event>
+		<event req="nwt_liarness" lvl="1"><queueEvent>NEIZ_END_NORMAL_PRE</queueEvent></event>
+		<event><queueEvent>NEIZ_END_NORMAL_PRE</queueEvent></event> 
+	</loadEventList>
+</event>
+<event name="NEIZ_END_NORMAL_PRE">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event><queueEvent>NEIZ_END_NORMAL_DESTROYED</queueEvent></event>
+		<event><queueEvent>NEIZ_END_NORMAL</queueEvent></event>
+		<event><queueEvent>NEIZ_END_NORMAL</queueEvent></event> 
+	</loadEventList>
+</event>
+<event name="NEIZ_END_NORMAL_DESTROYED">
+	<text>Спустя некоторое время орудие находится, но оно не подлежит восстановлению...</text>
+</event>
+<event name="NEIZ_END_NORMAL">
+	<text>Спустя некоторое время орудие находится, и это оказалось...</text>
+	<weapon name="RANDOM"/>
+</event>
+<event name="NEIZ_END_LIAR">
+	<text>А нет никакого орудия, вас просто пытались обмануть.</text>
+</event>		
 		
 <event name="NEBULA_LOST_SHIP" unique="true">
 	<text>Тяжело повреждённый корабль Федерации прячется в туманности около этого маяка. Прежде чем вы успеваете вступить с ним в контакт, он исчезает в туманности.</text>
@@ -483,150 +661,6 @@ Storm Environment:
 	</event>
 </eventList>
 
-<event name="NEBULA_WEAPONS_TRADER" unique="true">
-	<text>Нелегальный торговец оружием плетёт вам что-то невнятное об опасностях, таящихся в туманностях, после чего навязчиво пытается толкнуть вам свой товар.</text>
-	<environment type="nebula"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
-	<ship load="PIRATE_NEIZ" hostile="false"/>
-	<choice>
-		<text>Атаковать корабль.</text>
-		<event>
-			<ship hostile="true"/>
-		</event>
-	</choice>
-	<choice hidden="true" req="SLUG_AND_ARMORED_SLUG" lvl="0" max_group="0" blue="false"> <!-- 1.22 --> <!-- 1.25 --><!-- 1.28 -->
-		<text>Приобрести неизвестное оружие за 35 лома.</text>
-		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
-	</choice>
-	<choice hidden="false" req="SLUG_AND_ARMORED_SLUG" lvl="1" max_group="0" blue="true"> <!-- 1.25 --><!-- 1.28 -->
-		<text>(Член экипажа слаг) Ваш слаг предвидит результат сделки...</text>
-		<event load="NEBULA_WEAPONS_TRADER_LIST"/>
-	</choice>
-	<choice>
-		<text>Игнорировать корабль.</text>
-		<event/>
-	</choice>
-	<choice req="mind" hidden="true"> <!--DLC-->
-		<text>(Контроль разума) Убедите его совершить более выгодную сделку.</text>
-		<event load="NEBULA_WEAPONS_TRADER_LIST2"/>
-	</choice>
-</event>
-<eventList name="NEBULA_WEAPONS_TRADER_LIST">
-	<event>
-		<text>Вы пересылаете лом и получаете оружие взамен. Будем надеяться, оно того стоит.</text>
-		<item_modify>
-			<item type="scrap" min="-35" max="-35"/><!-- 1.21 +below -->
-		</item_modify>
-		<weapon name="RANDOM"/>
-	</event>
-	<event>
-		<text>Вы пересылаете лом и получаете оружие взамен. Будем надеяться, оно того стоит.</text>
-		<item_modify>
-			<item type="scrap" min="-35" max="-35"/>
-		</item_modify>
-		<weapon name="RANDOM"/>
-	</event>
-	<event>
-		<text>Вы пересылаете лом, но он не соблюдает соглашение: «Я же говорил, что это опасные места!»</text>
-		<item_modify>
-			<item type="scrap" min="-35" max="-35"/>
-		</item_modify>
-		<choice>
-			<text>Атаковать корабль!</text>
-			<event>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice>
-			<text>Получив ценный урок, двинуться дальше.</text>
-			<event/>
-		</choice>
-	</event>
-</eventList>
-<eventList name="NEBULA_WEAPONS_TRADER_LIST2"> <!--DLC-->
-	<event>
-		<text>Будучи "убеждённым" в необходимости помочь, он снижает цену и описывает оружие. Однако он постепенно приходит в себя и отказывается от скидки. Он явно не может понять, почему он вообще предложил вам скидку.</text>
-		<choice>
-			<text>Купить оружие.</text>
-			<event>
-				<text>Вы покупаете оружие и благодарите его за помощь.</text>
-				<item_modify>
-					<item type="scrap" min="-35" max="-35"/>
-				</item_modify>
-				<weapon name="RANDOM"/>
-			</event>
-		</choice>
-		<choice><!-- 1.31 -->
-			<text>Мы передумали, атаковать их!</text>
-			<event>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice>
-			<text>Отказаться.</text>
-			<event>
-				<text>Вы благодарите его за предложение и готовитесь двигаться дальше.</text>
-			</event>
-		</choice>
-	</event>
-	<event>
-		<text>Будучи "убеждённым" в необходимости помочь, он рассказывает, что его предложение было враньём, а они сами собирались напасть на ваш корабль. К тому времени, как он пришёл в себя, вы уже подготовились к бою.</text>
-		<ship hostile="true"/>
-	</event>
-	<event>
-		<text>Он соглашается сделать небольшую скидку и показывает вам оружие.</text>
-		<choice>
-			<text>Купить оружие.</text>
-			<event>
-				<text>Вы покупаете оружие и благодарите его за помощь.</text>
-				<item_modify>
-					<item type="scrap" min="-25" max="-25"/>
-				</item_modify>
-				<weapon name="RANDOM"/>
-			</event>
-		</choice>
-		<choice><!-- 1.31 -->
-			<text>Мы передумали, атаковать их!</text>
-			<event>
-				<ship hostile="true"/>
-			</event>
-		</choice>
-		<choice>
-			<text>Отказаться.</text>
-			<event>
-				<text>Вы благодарите его за предложение и готовитесь двигаться дальше.</text>
-			</event>
-		</choice>
-	</event>
-</eventList>
-
-<ship name="PIRATE_NEIZ" auto_blueprint="SHIPS_PIRATE">
-	<surrender  chance="0.5" min="3" max="4" load="PIRATE_SURRENDER"/>
-	<escape  chance="0.5" min="2" max="4" load="PIRATE_ESCAPE"/>
-	<destroyed load="DESTROYED_DEFAULT"/>
-	<gotaway>
-		<text>Пиратский корабль совершил прыжок.</text>
-	</gotaway>
-	<!-- <deadCrew load="DEAD_CREW_DEFAULT"/> --><!-- 1.28 -->
-	<deadCrew>
-		<text>Вы забираете всё ценное с корабля и ищете то самое "неизвестное орудие".</text>
-		<autoReward level="MED">standard</autoReward>
-		<choice hidden="true">
-			<text id="continue"/>
-			<event load="NEIZ_END"/>
-		</choice>
-	</deadCrew>
-</ship>
-
-<eventList name="NEIZ_END">
-	<event>
-		<text>А нет никакого орудия, вас просто пытались обмануть.</text>
-	</event>
-	<event>
-		<text>Спустя некоторое время орудие находится, и это оказалось...</text>
-		<weapon name="RANDOM"/>
-	</event>
-</eventList>
 
 <event name="NEBULA_ROCK_RACIST" unique="true">
 	<text>Бронированный транспортник роков неподалёку от вас, похоже, потерял ориентацию в пространстве, но когда вы приветствуете их, они с подозрением отвечают: «К какой бы форме жизни вы ни принадлежали, вы нам отвратительны. Нам не нужна помощь. Уходите. Немедленно».</text>
@@ -1770,14 +1804,14 @@ Storm Environment:
 
 <event name="START_BEACON_AVATAR">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_violet_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_avatar_sector" op="add" val="1"/>
 	<text load="START_BEACON_AVATAR"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>

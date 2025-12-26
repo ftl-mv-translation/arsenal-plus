@@ -5485,10 +5485,21 @@
 		</event>
 	</loadEventList>
 </event>
-<event name="POKER_ENEMY_SURRENDER">
+<!-- <event name="POKER_ENEMY_SURRENDER">
 	<queueEvent>DISABLE_CHECK_BUTTON</queueEvent>
 	<queueEvent>DISABLE_RISE_BUTTON</queueEvent>
 	<queueEvent>DISABLE_PAS_BUTTON</queueEvent>
+	<queueEvent>POKER_ENEMY_SURRENDER2</queueEvent>
+</event> -->
+<event name="POKER_ENEMY_SURRENDER"><!-- 1.34 -->
+	<variable name="card_poker_hiddencard" op="set" val="0"/>
+	<clearBackgroundObject name="RUBASHKA_E1"/>
+	<clearBackgroundObject name="RUBASHKA_E2"/>
+	<queueEvent>DISABLE_CHECK_BUTTON</queueEvent>
+	<queueEvent>DISABLE_RISE_BUTTON</queueEvent>
+	<queueEvent>DISABLE_PAS_BUTTON</queueEvent>
+	<queueEvent>POKER_CARD_E1</queueEvent>
+	<queueEvent>POKER_CARD_E2</queueEvent>
 	<queueEvent>POKER_ENEMY_SURRENDER2</queueEvent>
 </event>
 <event name="POKER_ENEMY_SURRENDER2">

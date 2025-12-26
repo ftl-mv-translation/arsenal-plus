@@ -151,14 +151,14 @@ shield research center — jams shields
 
 <event name="START_BEACON_ZOLTAN">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_zoltan_sector" op="add" val="1"/>
 	<text load="START_BEACON_ZOLTAN"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -1168,14 +1168,14 @@ shield research center — jams shields
 
 <event name="START_BEACON_ZOLTON">
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_green_sector_meet" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="counter_meet_zolton_sector" op="add" val="1"/>
 	<text load="START_BEACON_ZOLTON"/>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event load="AUGMENTS_ON_START_BEACON"/>
@@ -2028,6 +2028,16 @@ shield research center — jams shields
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="turtle" blue="false"><!-- 1.34 -->
+		<text>Панцерон.</text>
+		<event>
+			<text>Панцерон со страхом лезет внутрь огромной установки...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_TURTLE"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="slug_armored" blue="false"><!-- 1.28 -->
 		<text>Слаг в панцире.</text>
 		<event>
@@ -2602,6 +2612,20 @@ shield research center — jams shields
 		<crewMember amount="-1" class="shell"/>
 	</event>
 </eventList>
+<eventList name="EVENT_QMULTI_CREW_TURTLE"><!-- 1.34 -->
+	<event>
+		<text>..."КВАНТОВЫЙ УМНОЖИТЕЛЬ" испускает яркую вспышку, и из него выходят 2 панцерона. Один — ваш старый член экипажа, а второй — его квантовое отражение.</text>
+		<crewMember amount="1" class="turtle">Квант</crewMember>
+	</event>
+	<event>
+		<text>..."КВАНТОВЫЙ УМНОЖИТЕЛЬ" испускает яркую вспышку, и из него выходят 2 панцерона. Один — ваш старый член экипажа, а второй — его квантовое отражение.</text>
+		<crewMember amount="1" class="turtle">Квант</crewMember>
+	</event>
+	<event>
+		<text>..."КВАНТОВЫЙ УМНОЖИТЕЛЬ" испускает яркую вспышку куда-то в небо, и, подойдя к нему, вы не находите никаких следов вашего члена экипажа. Похоже, что-то пошло не так.</text>
+		<crewMember amount="-1" class="turtle"/>
+	</event>
+</eventList>
 <eventList name="EVENT_QMULTI_CREW_ARM_SLUG"><!-- 1.28 -->
 	<event>
 		<text>..."КВАНТОВЫЙ УМНОЖИТЕЛЬ" испускает яркую вспышку, и из него выходят 2 слага в панцире. Один — ваш старый член экипажа, а второй — его квантовое отражение.</text>
@@ -3161,6 +3185,16 @@ shield research center — jams shields
 			</choice>
 		</event>
 	</choice>
+	<choice hidden="true" req="turtle" blue="false"><!-- 1.34 -->
+		<text>Панцерон.</text>
+		<event>
+			<text>Панцерон со страхом лезет внутрь огромной установки...</text>
+			<choice hidden="true">
+				<text id="continue"/>
+				<event load="EVENT_QMULTI_CREW_TURTLE_OK"/>
+			</choice>
+		</event>
+	</choice>
 	<choice hidden="true" req="slug_armored" blue="false"><!-- 1.28 -->
 		<text>Слаг в панцире.</text>
 		<event>
@@ -3457,6 +3491,12 @@ shield research center — jams shields
 	<event>
 		<text>..."КВАНТОВЫЙ УМНОЖИТЕЛЬ" испускает яркую вспышку, и из него выходят 2 броненосца. Один — ваш старый член экипажа, а второй — его квантовое отражение.</text>
 		<crewMember amount="1" class="shell">Квант</crewMember>
+	</event>
+</eventList>
+<eventList name="EVENT_QMULTI_CREW_TURTLE_OK"><!-- 1.34 -->
+	<event>
+		<text>..."КВАНТОВЫЙ УМНОЖИТЕЛЬ" испускает яркую вспышку, и из него выходят 2 панцерона. Один — ваш старый член экипажа, а второй — его квантовое отражение.</text>
+		<crewMember amount="1" class="turtle">Квант</crewMember>
 	</event>
 </eventList>
 <eventList name="EVENT_QMULTI_CREW_ARM_SLUG_OK"><!-- 1.28 -->

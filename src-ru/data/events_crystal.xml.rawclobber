@@ -92,14 +92,14 @@ Special
 	<text>Вы оказываетесь в секторе, незарегистрированном ни в одном звёздном реестре. Странные кристаллические корабли видны повсюду. Интересно, как вас здесь встретят.</text> <!-- 1.21 -->
 	<achievement silent="false">ACH_CRYSTAL_SECTOR</achievement><!-- 1.31 -->
 	<variable name="elite_x_destroyed" op="set" val="0"/>  <!-- 1.31 -->
-	<variable name="call_store_used" op="set" val="0"/>  <!-- 1.31 -->
+	<metaVariable name="call_store_used" op="set" val="0"/><!-- 1.34 -->  <!-- 1.31 -->
 	<variable name="counter_number_of_sector" op="add" val="1"/> <!-- 1.31 -->
 	<variable name="this_sector_was_psevdotalk" op="set" val="0"/><!-- 1.32 -->
 	<variable name="counter_meet_crystal_sector" op="add" val="1"/>
 	<queueEvent seeded="true">CALCULATE_REAL_CREW</queueEvent>
 	<queueEvent seeded="true">CHECKCHAIN_ONLY_CRYSTAL</queueEvent>
 	<queueEvent seeded="true">CHECKCHAIN_MAKE_ALL_INTERSECTOR_CHECKS</queueEvent> <!-- 1.31 -->
-	<queueEvent seeded="false">TRICOLOR_MAP</queueEvent><!-- 1.32 -->
+	<!-- <queueEvent seeded="false">TRICOLOR_MAP</queueEvent> --><!-- 1.32 --><!-- 1.34 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
