@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-26 12:44+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-05-26 21:22+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "dataevents_zoltanxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13.3\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:168
 #, fuzzy
@@ -1017,13 +1017,12 @@ msgstr ""
 "unable to retrieve them."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:717
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_CREW_SCAN_LIST\"]/event[2]/choice[1]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:723
 #, fuzzy
@@ -1077,27 +1076,24 @@ msgstr ""
 "galaxy. You prepare to jump."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:764
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[1]/text"
 msgstr ""
-"Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша"
-" миссия принесла вам великие битвы и великие поражения. Это облегчит вашу "
-"боль...» Несколькими минутами позже вы находите ремонтное оборудование на "
-"корабле!"
+"As you approach, an ancient alien voice speaks to you: \"Your mission has "
+"brought you great battles, and great losses. This will help ease the pain.\" "
+"A few minutes later someone reports medical equipment has appeared on the "
+"ship!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:768
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[2]/text"
 msgstr ""
-"Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша"
-" миссия принесла вам великие битвы и великие поражения. Это облегчит вашу "
-"боль...» Несколькими минутами позже вы находите ремонтное оборудование на "
-"корабле!"
+"As you approach, an ancient alien voice speaks to you: \"Your mission has "
+"brought you great battles, and great losses. This will help ease the pain.\" "
+"A few minutes later someone reports repair equipment has appeared on the "
+"ship!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:772
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[3]/text"
 msgstr ""
@@ -1106,71 +1102,65 @@ msgstr ""
 "eliminated for your illegal presence at this beacon.\" Battle Stations!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:776
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[4]/text"
 msgstr ""
-"Вы осторожно приближаетесь к Глазу. И он, видимо, почувствовал ваши мысли, "
-"поскольку в вашем трюме неизвестно откуда появилась куча лома!"
+"You cautiously approach the Eye. The Eye, whatever it is, must sense as much "
+"because the next thing you know out of nowhere a heap of scrap appears in "
+"your hold!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:780
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[5]/text"
 msgstr ""
-"Как только вы приближаетесь к Глазу, калейдоскоп цветов заполняет экран, и "
-"один из вашего экипажа начинает быстро молодеть, в итоге исчезая в пустоте. "
-"Будем надеяться, он таким образом переступил пределы физического "
-"существования, а не просто исчез в небытие..."
+"As you approach, a kaleidoscope of colors fills the viewscreen and one of "
+"your crew begins to age rapidly in reverse, eventually disappearing into "
+"nothingness. Let's hope they've transcended physical existence, and not just "
+"been forced out of it..."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:786
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[5]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
-"Вы проверяете клон-отсек, но он бездействует. Последствия того, что "
-"произошло с членом вашего экипажа, необратимы."
+"You check your Cloning Bay but it lies dormant. Whatever just happened to "
+"your crewmember must be irreversible."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:793
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[5]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
+"As your ship is solely under the control of AI, you need not fear the death "
+"of any crew."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:798
 #, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[6]/text"
 msgstr ""
-"Вы приближаетесь к Глазу и вглядываетесь в него. Неожиданно вы замечаете "
-"стазис-капсулу, летящую в вашем направлении. Вы отдаёте приказ поймать её и "
-"доставить на корабль. В капсуле находился кристалин, который после "
-"пробуждения готов служить вам."
+"You approach the Eye and stare into it. Out of nowhere, you see an escape "
+"pod flying right at you. You give the order to catch and deliver it onto the "
+"ship. Inside the pod lies a sleeping Crystal, who upon waking, is ready to "
+"serve you."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:802
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[7]/text"
 msgstr ""
 "Approaching the Eye, you peer into it. A bright beam momentarily connects "
-"your ship with the Eye, and a young Zoltan appears near the cockpit."
+"your ship with the Eye, and a young Zoltan appears in the cockpit."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:806
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[8]/text"
 msgstr ""
 "You approach the Great Eye, and suddenly it begins to glow with a green "
 "aura. Radiance starts to move your ship and forms a barrier around it. Much "
-"to your surprise, you realize that it is a Zoltan Shield! You thank fate and"
-" prepare for departure."
+"to your surprise, you realize that it is a Zoltan Shield! You thank fate and "
+"prepare for departure."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:810
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[9]/text"
 msgstr ""
@@ -1179,14 +1169,13 @@ msgstr ""
 "You've got to get out of here!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:819
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[10]/text"
 msgstr ""
-"Вы разворачиваете корабль в сторону Глаза и отдаёте команду приблизиться. "
-"Как только до него остаются считанные метры, он неожиданно разрывается на "
-"тысячи осколков! Значительная часть их вонзилась в обшивку вашего корабля, "
-"превратив его в решето."
+"You turn the ship towards the Eye and instruct your crew to approach it. As "
+"soon as you move just a few meters, it suddenly shatters into a thousand "
+"pieces! A considerable portion of them get jammed in your ship's hull, "
+"turning your ship into a sieve."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:852
 #, fuzzy
@@ -1199,17 +1188,15 @@ msgstr ""
 "caught up by a decent amount."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:856
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[12]/text"
 msgstr ""
-"Как только вы приближаетесь к Глазу, мощнейшая вспышка прорезает "
-"пространство в направлении флота повстанцев. Телепатически Глаз дал вам "
-"понять, что ваши преследователи теперь полностью дезорганизованы и не скоро "
-"догонят вас."
+"As soon as you get closer to the Eye, a powerful flash cuts through space "
+"towards the Rebel Fleet. Telepathically, the Eye gives you the understanding "
+"that your pursuers are now completely disorganized and will not catch up "
+"with you anytime soon."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:860
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[13]/text"
 msgstr ""
@@ -1218,29 +1205,25 @@ msgstr ""
 "for unsuspecting travelers like you. You prepare to fight back."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:864
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[14]/text"
 msgstr ""
-"You approach the Great Eye and aim all your sensors on it. Suddenly, the Eye"
-" begin to vibrate — from it splits off a small splinter that starts flying "
-"in your direction. You give the order to charge your weapons, but the "
-"splinter changes shape and turns into a weapon! You pick it up and prepare "
-"to leave."
+"You approach the Great Eye and aim all your sensors on it. Suddenly, the Eye "
+"begin to vibrate — from it splits off a small splinter that starts flying in "
+"your direction. You give the order to charge your weapons, but the splinter "
+"changes shape and turns into a weapon! You pick it up and prepare to leave."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:868
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[15]/text"
 msgstr ""
 "You approach the Great Eye, and it begins to glow with black light. "
 "Something strange begins to happen in your engine compartment — your fuel "
-"tanks strongly vibrate and heat up. Fearing an explosion, you give the order"
-" to drain part of the fuel. It seems that worked, and the Eye returns back "
-"to normal."
+"tanks strongly vibrate and heat up. Fearing an explosion, you give the order "
+"to drain part of the fuel. It seems that worked, and the Eye returns back to "
+"normal."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:874
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[16]/text"
 msgstr ""
@@ -2196,13 +2179,8 @@ msgid ""
 msgstr "Their ship doesn't look intimidating, so you decide to attack."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1462
-#, fuzzy
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_BOARDERS\"]/text"
 msgstr ""
-"Патрульный корабль золтонцев на этом маяке настаивает на досмотре ваших "
-"трюмов. Вы пускаете на борт группу золтонцев, и в груде неучтённого лома они"
-" находят запрещённое оборудование! Вам некогда объяснять им, что такое "
-"ржавый холодильник... К бою!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1470
 #, fuzzy
@@ -8919,22 +8897,14 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5584
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_REACT\"]/event[2]/text"
 msgstr ""
-"Вы полностью отключаете реактор своего судна. Светящийся шар в ответ "
-"успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали "
-"всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5589
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_REACT\"]/event[3]/text"
 msgstr ""
-"Вы полностью отключаете реактор своего судна. Светящийся шар в ответ "
-"успокаивается, а реактор вашего корабля начинает улучшаться под воздействием"
-" какой-то силы извне! Похоже, вы сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5596
 msgid ""
@@ -8942,22 +8912,14 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5600
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_ATK\"]/event[2]/text"
 msgstr ""
-"Вы показываете боевую мощь своего корабля. Светящийся шар в ответ "
-"успокаивается, а на борту у вас оказывается груда лома. Похоже, вы сделали "
-"всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5604
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_ATK\"]/event[3]/text"
 msgstr ""
-"Вы показываете боевую мощь своего корабля. Светящийся шар в ответ "
-"успокаивается, а реактор вашего корабля начинает улучшаться под воздействием"
-" какой-то силы извне! Похоже, вы сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5610
 msgid ""
@@ -8965,22 +8927,14 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5614
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_WHO\"]/event[2]/text"
 msgstr ""
-"Вы быстро рассказываете о своей миссии в коммуникатор. Светящийся шар в "
-"ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы "
-"сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5618
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_WHO\"]/event[3]/text"
 msgstr ""
-"Вы быстро рассказываете о своей миссии в коммуникатор. Светящийся шар в "
-"ответ успокаивается, а реактор вашего корабля начинает улучшаться под "
-"воздействием какой-то силы извне! Похоже, вы сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5624
 msgid ""
@@ -8988,22 +8942,14 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5629
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_WEAP\"]/event[2]/text"
 msgstr ""
-"Вы полностью отключаете орудийную систему своего судна. Светящийся шар в "
-"ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, вы "
-"сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5634
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_WEAP\"]/event[3]/text"
 msgstr ""
-"Вы полностью отключаете орудийную систему своего судна. Светящийся шар в "
-"ответ успокаивается, а реактор вашего корабля начинает улучшаться под "
-"воздействием какой-то силы извне! Похоже, вы сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5641
 msgid ""
@@ -9011,22 +8957,14 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5646
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_ENG\"]/event[2]/text"
 msgstr ""
-"Вы гасите мощность работы двигателей до минимального значения. Светящийся "
-"шар в ответ успокаивается, а на борту у вас оказывается груда лома. Похоже, "
-"вы сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5651
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_BLINK_X2_WIN_ENG\"]/event[3]/text"
 msgstr ""
-"Вы гасите мощность работы двигателей до минимального значения. Светящийся "
-"шар в ответ успокаивается, а реактор вашего корабля начинает улучшаться под "
-"воздействием какой-то силы извне! Похоже, вы сделали всё правильно!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5661
 #, fuzzy
@@ -9038,10 +8976,9 @@ msgstr ""
 "payment if you agree to help."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5665
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_PLANET_IN_DANGER\"]/choice[1]/text"
-msgstr "Согласиться помочь им."
+msgstr ""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5669
 #, fuzzy
@@ -9759,29 +9696,19 @@ msgstr ""
 "ready to jump."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6103
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_ZTR_RAND\"]/event[1]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль и уже собирается "
-"уходить, как вдруг реактор в трюме от резонанса начинает дребезжать и "
-"привлекает его внимание!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6109
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_ZTR_RAND\"]/event[2]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего "
-"подозрительного, уходит."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6113
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_ZTR_RAND\"]/event[2]/choice/event/text"
 msgstr ""
-"Вы доставляете товар на планету, и местные жители щедро оплачивают вашу "
-"работу."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6125
 #, fuzzy
@@ -9811,40 +9738,24 @@ msgid ""
 msgstr "Try to escape."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6141
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_GIP_RAND\"]/event[1]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он "
-"слишком близко подходит к клетке с гигантскими пауками и случайно наступает "
-"на лапу одному из них. Паук в ярости заливает кислотой голову золтонца, "
-"отчего тот умирает на месте! Патрульный корабль золтонцев готовится "
-"уничтожить \"проклятых контрабандистов\", то есть вас."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6146
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_GIP_RAND\"]/event[2]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он "
-"обнаруживает, что гигантские пауки сорвали брезент и пытаются выбраться из "
-"клетки! Золтонец тут же вызывает подкрепление и атакует вас."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6152
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_GIP_RAND\"]/event[3]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего "
-"подозрительного, уходит."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6156
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_GIP_RAND\"]/event[3]/choice/event/text"
 msgstr ""
-"Вы доставляете товар на планету, и местные жители щедро оплачивают вашу "
-"работу."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6168
 #, fuzzy
@@ -9874,46 +9785,29 @@ msgid ""
 msgstr "Try to escape."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6185
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS_RAND\"]/event[1]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль. Зайдя в трюм, он "
-"видит, что спрятанные урановые стержни нагрелись и вызвали возгорание! "
-"Золтонец тут же вызывает подкрепление и атакует вас."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6192
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS_RAND\"]/event[2]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего "
-"подозрительного, уходит. Когда он ушёл, вы замечаете, что урановые стержни "
-"раскалились и вызвали небольшой пожар! Надо скорее от них избавляться..."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6197
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS_RAND\"]/event[2]/choice/event/text"
 msgstr ""
-"Вы доставляете товар на планету, и местные жители щедро оплачивают вашу "
-"работу."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6203
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS_RAND\"]/event[3]/text"
 msgstr ""
-"Золтонец-инспектор внимательно осматривает ваш корабль и, не найдя ничего "
-"подозрительного, уходит."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6207
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS_RAND\"]/event[3]/choice/event/text"
 msgstr ""
-"Вы доставляете товар на планету, и местные жители щедро оплачивают вашу "
-"работу."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6217
 #, fuzzy
@@ -9924,12 +9818,9 @@ msgstr ""
 "planet."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6222
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"SHIPS_ENERGYX_PARAMETR22\"]/destroyed/choice/event/text"
 msgstr ""
-"Вы доставляете товар на планету, и местные жители щедро оплачивают вашу "
-"работу."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6228
 #, fuzzy
@@ -9940,12 +9831,9 @@ msgstr ""
 "planet."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6233
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"SHIPS_ENERGYX_PARAMETR22\"]/deadCrew/choice/event/text"
 msgstr ""
-"Вы доставляете товар на планету, и местные жители щедро оплачивают вашу "
-"работу."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6242
 #, fuzzy
@@ -10036,181 +9924,96 @@ msgstr ""
 "galaxy. You prepare to jump."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6318
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[1]/text"
 msgstr ""
-"Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша"
-" миссия принесла вам великие битвы и великие поражения. Это облегчит вашу "
-"боль...» Несколькими минутами позже вы находите ремонтное оборудование на "
-"корабле!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6322
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[2]/text"
 msgstr ""
-"Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша"
-" миссия принесла вам великие битвы и великие поражения. Это облегчит вашу "
-"боль...» Несколькими минутами позже вы находите ремонтное оборудование на "
-"корабле!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6326
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[3]/text"
 msgstr ""
-"Вы приближаетесь к Глазу и ждёте, но ничего не происходит. Внезапно из FTL-"
-"прыжка поблизости выходит корабль золтонцев: «За незаконное нахождение на "
-"данном маяке вы будете ликвидированы»."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6331
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[4]/text"
 msgstr ""
-"Вы осторожно приближаетесь к Глазу. И он, видимо, почувствовал ваши мысли, "
-"поскольку в вашем трюме неизвестно откуда появилась куча лома!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6335
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[5]/text"
 msgstr ""
-"Как только вы приближаетесь к Глазу, калейдоскоп цветов заполняет экран, и "
-"один из вашего экипажа начинает быстро молодеть, в итоге исчезая в пустоте. "
-"Будем надеяться, он таким образом переступил пределы физического "
-"существования, а не просто исчез в небытие..."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6341
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[5]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
 msgstr ""
-"Вы проверяете клон-отсек, но он бездействует. Последствия того, что "
-"произошло с членом вашего экипажа, необратимы."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6348
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[5]/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
-"Так как ваш корабль находится под управлением ИИ, вам не следует опасаться "
-"смерти всего экипажа."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6353
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[6]/text"
 msgstr ""
-"Вы приближаетесь к Глазу и вглядываетесь в него. Неожиданно вы замечаете "
-"стазис-капсулу, летящую в вашем направлении. Вы отдаёте приказ поймать её и "
-"доставить на корабль. В капсуле находился кристалин, который после "
-"пробуждения готов служить вам."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6357
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[7]/text"
 msgstr ""
-"Приблизившись к Глазу, вы вглядываетесь в него. Яркий луч на мгновение "
-"соединяет ваш корабль с Глазом, и на борту вашего корабля появляется новый "
-"член экипажа."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6361
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[8]/text"
 msgstr ""
-"Вы приближаетесь к Великому Золтонскому Глазу, и он внезапно начинает "
-"светиться зелёной аурой. Сияние переходит на ваш корабль и образует вокруг "
-"него барьер. С удивлением вы понимаете, что это золтанский щит! Вы "
-"благодарите судьбу и готовитесь к отлёту."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6365
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[9]/text"
 msgstr ""
-"Вы приближаетесь к Великому Золтонскому Глазу, и он начинает светиться ярким"
-" красным светом. Вместе с этим температура начинает стремительно "
-"подниматься, и вот уже ваш корабль объят пламенем! Нужно срочно убираться "
-"отсюда!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6374
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[10]/text"
 msgstr ""
-"Вы разворачиваете корабль в сторону Глаза и отдаёте команду приблизиться. "
-"Как только до него остаются считанные метры, он неожиданно разрывается на "
-"тысячи осколков! Значительная часть их вонзилась в обшивку вашего корабля, "
-"превратив его в решето."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6407
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[11]/text"
 msgstr ""
-"Как только вы приближаетесь к Глазу, мощнейшая вспышка прорезает "
-"пространство в направлении флота повстанцев. Телепатически Глаз дал вам "
-"понять, что ваши преследователи теперь полностью дезорганизованы и не скоро "
-"догонят вас."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6411
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[12]/text"
 msgstr ""
-"Вы приближаетесь к Великому Золтонскому Глазу, но внезапно раздаются звуки "
-"телепортирующейся команды и несколько взрывов! Похоже, что он оказался "
-"приманкой для таких доверчивых путешественников, как вы. Вы готовитесь "
-"отбиваться."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6417
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[13]/text"
 msgstr ""
-"Вы приближаетесь к Великому Золтонскому Глазу и наводите все сенсоры на "
-"него. Внезапно Глаз начинает вибрировать, от него откалывается небольшой "
-"осколок и летит в вашу сторону. Вы отдаёте приказ заряжать орудия, но "
-"осколок меняет очертания и превращается в оружие! Вы подбираете его и "
-"готовитесь к отлёту."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6421
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[14]/text"
 msgstr ""
-"Вы приближаетесь к Великому Золтонскому Глазу и наводите все сенсоры на "
-"него. Внезапно Глаз начинает вибрировать, от него откалывается небольшой "
-"осколок и летит в вашу сторону. Вы отдаёте приказ заряжать орудия, но "
-"осколок меняет очертания и превращается в оружие! Вы подбираете его и "
-"готовитесь к отлёту."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6425
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[15]/text"
 msgstr ""
-"Вы приближаетесь к Великому Золтонскому Глазу, и он начинает светиться "
-"чёрным светом. Что-то странное начинает происходить в вашем двигательном "
-"отсеке — топливные баки сильно вибрируют и нагреваются. Опасаясь взрыва, вы "
-"отдаёте приказ слить часть топлива. Кажется, это сработало, и монолит снова "
-"вернулся в обычное состояние."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6431
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTON_EYE_LIST\"]/event[16]/text"
 msgstr ""
-"Вы подлетаете ближе, и Великий Золтонский Глаз начинает сиять чистым белым "
-"светом. Этот свет накрывает ваш корабль, и вы с удивлением наблюдаете, как "
-"исчезают все повреждения корпуса. Вы благодарите судьбу и отправляетесь к "
-"следующему маяку."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6440
 #, fuzzy
