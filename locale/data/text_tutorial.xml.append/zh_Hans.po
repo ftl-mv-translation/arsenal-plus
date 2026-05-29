@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-29 14:30+0000\n"
+"PO-Revision-Date: 2026-05-29 16:29+0000\n"
 "Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datatext_tutorialxmlappend/zh_Hans/>\n"
@@ -19,212 +19,300 @@ msgstr "你的星舰“红隼号”是游戏中所有事件的中心。"
 #: src-ru/data/text_tutorial.xml.append:6
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_2\"]"
 msgstr ""
+"屏幕下方的圆形图标代表您飞船的主要系统。\\n\\n系统使用反应堆能量（箭头所指）"
+"。"
 
 #: src-ru/data/text_tutorial.xml.append:7
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_3\"]"
-msgstr ""
+msgstr "这是您飞船的子系统。\\n\\n与系统不同，它们不需要反应堆能量。"
 
 #: src-ru/data/text_tutorial.xml.append:8
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_4_PC\"]"
-msgstr ""
+msgstr "将鼠标悬停在任何系统图标上，可获取更多信息。\\n\\n对应的舱室会高亮显示。"
 
 #: src-ru/data/text_tutorial.xml.append:9
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_SHIP_INTRO_5\"]"
 msgstr ""
+"舰体值、护盾状态和资源指示器位于左上角。\\n\\n如果舰体值降为零，您的飞船将会"
+"爆炸。"
 
 #: src-ru/data/text_tutorial.xml.append:10
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_POWER_SYSTEM_1\"]"
 msgstr ""
+"该出发了，但引擎似乎未通电。\\n\\n绿色表示系统已通电。白色表示系统未通电，无"
+"法为飞船提供任何增益！"
 
 #: src-ru/data/text_tutorial.xml.append:11
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_POWER_SYSTEM_2_PC\"]"
 msgstr ""
+"左键点击引擎图标，将部分反应堆能量分配给引擎。\\n\\n尽量让重要系统保持完全通"
+"电。右键点击可使系统断电。"
 
 #: src-ru/data/text_tutorial.xml.append:12
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_POWER_SYSTEM_2_IPAD\"]"
 msgstr ""
+"向上拖动引擎系统图标，将反应堆能量重新分配给引擎。\\n\\n尽量让系统保持完全通"
+"电。向下拖动可使系统断电，以便重新分配能量。"
 
 #: src-ru/data/text_tutorial.xml.append:13
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_IPAD_TOOLTIPS_IPAD\"]"
 msgstr ""
+"将图标向右拖放到系统上，可打开其信息面板（如箭头所示）。\\n\\n这将为您提供关"
+"于其用途和状态的更详细说明。"
 
 #: src-ru/data/text_tutorial.xml.append:14
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_1\"]"
 msgstr ""
+"哦不！引擎舱受到了2点系统伤害！图标变红，表示已损坏。\\n\\n舰体也受到了2点伤"
+"害。"
 
 #: src-ru/data/text_tutorial.xml.append:15
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_2_PC\"]"
 msgstr ""
+"您的船员无法维修舰体，但可以修理引擎！\\n\\n左键点击一名船员进行选择。按住左"
+"键并在飞船上框选可选中所有船员。请选择船员以继续。"
 
 #: src-ru/data/text_tutorial.xml.append:16
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_2_IPAD\"]"
 msgstr ""
+"您的船员无法维修舰体，但可以修理引擎！\\n\\n轻点船员进行选择。轻点屏幕并在飞"
+"船上框选可选中所有船员。请选择船员以继续。"
 
 #: src-ru/data/text_tutorial.xml.append:17
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_3_PC\"]"
-msgstr ""
+msgstr "选择船员后，右键点击您想让他们去的地方。\\n\\n将所选船员派往引擎舱。"
 
 #: src-ru/data/text_tutorial.xml.append:18
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_3_IPAD\"]"
-msgstr ""
+msgstr "选择船员后，轻点您想让他们去的地方。\\n\\n将所选船员派往引擎舱。"
 
 #: src-ru/data/text_tutorial.xml.append:19
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_4\"]"
 msgstr ""
+"船员会自动维修所在舱室的系统、灭火、修补破洞并与登舰者战斗。\\n\\n敌人、缺氧"
+"和火焰会对船员造成伤害。"
 
 #: src-ru/data/text_tutorial.xml.append:20
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_5\"]"
 msgstr ""
+"很好，引擎已修好！\\n\\n请注意，修复后的系统会自动恢复到最后一次通电时的能量"
+"等级。"
 
 #: src-ru/data/text_tutorial.xml.append:21
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_5_5\"]"
 msgstr ""
+"某些系统可由船员操作，这会为系统提供少量加成。船员会自动操作其所在舱室中未损"
+"坏的系统。\\n\\n系统指示器上方的轮廓图标表示该系统当前是否正在被操作。"
 
 #: src-ru/data/text_tutorial.xml.append:22
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_IPAD_1_IPAD\"]"
 msgstr ""
+"哦不！您的气闸舱起火了！您可以派船员去灭火，但也可以利用气闸的优势。\\n\\n点"
+"击右下角的门控系统图标来控制飞船的舱门。"
 
 #: src-ru/data/text_tutorial.xml.append:23
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_IPAD_2_IPAD\"]"
 msgstr ""
+"点击舱门可将其打开或关闭。在舱门上滑动可快速打开（或关闭）多道门。\\n\\n请尝"
+"试现在打开气闸。"
 
 #: src-ru/data/text_tutorial.xml.append:24
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_PC_1_PC\"]"
 msgstr ""
+"哦不！舱室起火了！您可以派船员去灭火，也可以利用气闸的优势。\\n\\n左键点击舱"
+"门将其打开。"
 
 #: src-ru/data/text_tutorial.xml.append:25
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_FIRE_END\"]"
 msgstr ""
+"打开舱门后，氧气泄漏，火被扑灭。\\n\\n舱室缺氧时会变成粉红色。当泄漏被修复后"
+"，氧气系统会逐渐恢复氧气水平。"
 
 #: src-ru/data/text_tutorial.xml.append:26
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_6\"]"
 msgstr ""
+"现在引擎已修好，火已扑灭，是时候超光速跃迁到下一个地点了。跃迁需要驾驶舱内有"
+"飞行员。"
 
 #: src-ru/data/text_tutorial.xml.append:27
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_7_PC\"]"
 msgstr ""
+"每次跃迁消耗1单位燃料。没有燃料则无法跃迁。跃迁还需要飞行员和已通电的引擎。\\"
+"n\\n点击“跃迁”按钮继续。"
 
 #: src-ru/data/text_tutorial.xml.append:28
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_DAMAGE_SYSTEM_7_IPAD\"]"
 msgstr ""
+"每次跃迁消耗1单位燃料。没有燃料则无法跃迁。跃迁还需要飞行员和已通电的引擎。\\"
+"n\\n点击“跃迁”按钮继续。"
 
 #: src-ru/data/text_tutorial.xml.append:29
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_STAR_MAP_1_PC\"]"
 msgstr ""
+"这是信标地图。飞船图标表示您当前的位置。将光标悬停在地点上可获取更多信息。\\"
+"n\\n左键点击相邻的信标以跃迁至该处。"
 
 #: src-ru/data/text_tutorial.xml.append:30
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_STAR_MAP_1_IPAD\"]"
 msgstr ""
+"这是信标地图。飞船标记表示您当前的位置。\\n\\n点击地点可获取更多信息。\\n\\n"
+"选择一个相邻的地点，然后点击“跃迁”以移动到那里。"
 
 #: src-ru/data/text_tutorial.xml.append:31
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_0_PC\"]"
 msgstr ""
+"欢迎进入战斗！您可以随时按空格键或中键暂停游戏，以制定策略、下达命令或重新分"
+"配能量。\\n\\n请尝试暂停游戏。"
 
 #: src-ru/data/text_tutorial.xml.append:32
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_0_IPAD\"]"
 msgstr ""
+"欢迎进入战斗！点击暂停按钮可随时暂停游戏，以制定策略、下达命令或重新分配能量"
+"。\\n\\n请尝试现在暂停游戏。"
 
 #: src-ru/data/text_tutorial.xml.append:33
 msgid ""
 "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_IPAD_0_IPAD\"]"
 msgstr ""
+"注意，您当前聚焦于一艘飞船。点击任意飞船即可转移焦点并放大该飞船。\\n\\n准备"
+"就绪后，点击武器系统以准备战斗。"
 
 #: src-ru/data/text_tutorial.xml.append:34
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_1_PC\"]"
 msgstr ""
+"战斗需要为武器通电。所需能量显示在武器槽中（如下所示）。\\n\\n左键点击将其通"
+"电（通电后的武器会变为白色）。右键点击可将武器断电。"
 
 #: src-ru/data/text_tutorial.xml.append:35
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_1_IPAD\"]"
 msgstr ""
+"战斗需要为武器通电。所需能量显示在武器上。\\n\\n点击武器将其通电（通电后的武"
+"器会高亮为白色）。点击“关闭”可将武器断电。"
 
 #: src-ru/data/text_tutorial.xml.append:36
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_2_PC\"]"
 msgstr ""
+"左键点击已通电的武器，然后瞄准敌方飞船的舱室并点击。也可使用快捷键1-4。\\n武"
+"器完全充能后会开火。请确保游戏未处于暂停状态。"
 
 #: src-ru/data/text_tutorial.xml.append:37
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_2_IPAD\"]"
 msgstr ""
+"现在武器已通电。再次点击武器以启用瞄准，然后将瞄准器对准敌方飞船的舱室并点击"
+"。\\n武器准备就绪后会开火。请确保游戏未处于暂停状态（通过右下角按钮切换）。"
 
 #: src-ru/data/text_tutorial.xml.append:38
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_3\"]"
 msgstr ""
+"哦不！您的双联激光无法击穿海盗的2级护盾，但幸运的是，敌人也无法击穿您的护盾"
+"。\\n\\n（注意：护盾系统中每2格能量可为您提供1层护盾）"
 
 #: src-ru/data/text_tutorial.xml.append:39
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4\"]"
 msgstr ""
+"月神导弹会自动装备到空槽位。发射它会消耗弹药库存，但导弹能穿透所有敌方护盾"
+"。\\n\\n使用导弹破坏护盾系统，然后再使用激光。"
 
 #: src-ru/data/text_tutorial.xml.append:40
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4_5\"]"
 msgstr ""
+"注意，当敌方系统受损或损毁时，其图标会变为橙色或红色。\\n\\n对红色系统重复攻"
+"击不会造成额外系统伤害，但仍会造成舰体伤害。将其舰体值降至零，它们就会爆炸。"
 
 #: src-ru/data/text_tutorial.xml.append:41
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4_6_PC\"]"
 msgstr ""
+"如果您需要提醒各敌方系统图标的含义，可以将鼠标悬停在底部栏的绿色符号上。\\n\\"
+"n明智地选择目标，武器和护盾通常是不错的选择。现在击败海盗吧！"
 
 #: src-ru/data/text_tutorial.xml.append:42
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_4_6_IPAD\"]"
 msgstr ""
+"如果您需要提醒各敌方系统图标的含义，可以用手指长按底部栏的绿色符号。\\n\\n明"
+"智地选择您的目标，尽管武器和护盾通常是不错的选择。"
 
 #: src-ru/data/text_tutorial.xml.append:43
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_1_PC\"]"
 msgstr ""
+"如果武器系统或无人机系统中没有空位，武器和无人机会被添加到您的货舱中。\\n\\n"
+"左键点击飞船图标按钮，即可装备您的新武器。"
 
 #: src-ru/data/text_tutorial.xml.append:44
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_1_IPAD\"]"
 msgstr ""
+"如果武器系统或无人机系统中没有空位，武器和无人机会被添加到您的货舱中。\\n\\n"
+"点击飞船信息按钮，即可装备您的新武器。"
 
 #: src-ru/data/text_tutorial.xml.append:45
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_2_PC\"]"
 msgstr ""
+"这是您的装备界面。将鼠标悬停在武器、无人机和增强部件上可查看详细信息。\\n\\n"
+"选择并拖动新武器“战戟光束”替换掉月神导弹。然后点击“接受”。"
 
 #: src-ru/data/text_tutorial.xml.append:46
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_INVENTORY_2_IPAD\"]"
 msgstr ""
+"这是您的装备界面。点击武器、无人机或增强部件可查看更详细的信息。\\n\\n点击并"
+"拖动您的新武器“战戟光束”到月神导弹上进行替换。然后点击“接受”。"
 
 #: src-ru/data/text_tutorial.xml.append:47
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_COMBAT_5\"]"
 msgstr ""
+"哎呀，您的武器系统（最大能量2）升级不足，无法支持新武器（需要能量3）。\\n\\n"
+"打开您的飞船界面，让我们来解决这个问题。"
 
 #: src-ru/data/text_tutorial.xml.append:48
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_1\"]"
 msgstr ""
+"这是升级界面。您可以查看系统的详细信息，并花费废料来升级它们。\\n\\n您也可以"
+"在菜单底部升级反应堆，这对于保持所有系统完全通电非常重要。"
 
 #: src-ru/data/text_tutorial.xml.append:49
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_1_2_PC\"]"
-msgstr ""
+msgstr "左键点击您的武器系统进行升级。然后点击“接受”关闭窗口。"
 
 #: src-ru/data/text_tutorial.xml.append:50
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_1_2_IPAD\"]"
 msgstr ""
+"点击您的武器系统以选中它，然后点击右侧的“升级”按钮，花费废料来升级该系统。\\"
+"n\\n完成后点击“接受”关闭升级界面。"
 
 #: src-ru/data/text_tutorial.xml.append:51
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_2_PC\"]"
 msgstr ""
+"现在为您的新武器通电。\\n\\n您可能需要关闭其他武器以腾出能量（右键点击可关闭"
+"武器）。"
 
 #: src-ru/data/text_tutorial.xml.append:52
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_2_IPAD\"]"
 msgstr ""
+"现在测试您的新武器。\\n\\n您可能需要关闭其他武器以腾出能量（点击“关闭”可关闭"
+"其他武器）。"
 
 #: src-ru/data/text_tutorial.xml.append:53
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_3_PC\"]"
 msgstr ""
+"最后提示：可以用鼠标在武器面板内拖动武器。\\n\\n如果武器系统受损，武器将按照"
+"安装顺序依次断电（最右边的会先断电）。"
 
 #: src-ru/data/text_tutorial.xml.append:54
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_UPGRADES_3_IPAD\"]"
 msgstr ""
+"最后提示：您可以在武器系统面板中通过点击拖动来重新排列武器。\\n\\n如果您的武"
+"器系统受损，武器将从上到下依次断电。"
 
 #: src-ru/data/text_tutorial.xml.append:55
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DONE_1_PC\"]"
-msgstr ""
+msgstr "入门教程到此结束。祝你好运。\\n\\n点击“下一步”完成教程。"
 
 #: src-ru/data/text_tutorial.xml.append:56
 msgid "data/text_tutorial.xml.append$//text[@name=\"tutorial_DONE_1_IPAD\"]"
-msgstr ""
+msgstr "入门教程到此结束。祝你好运。\\n\\n点击“下一步”完成本教程。"
