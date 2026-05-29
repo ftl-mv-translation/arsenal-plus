@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-29 14:30+0000\n"
+"PO-Revision-Date: 2026-05-29 16:29+0000\n"
 "Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_bossxmlrawclobber/zh_Hans/>\n"
@@ -21,103 +21,116 @@ msgstr ""
 #: src-ru/data/events_boss.xml.rawclobber:90
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[1]/text"
-msgstr ""
+msgstr "月球可靠地隐藏了你的飞船。"
 
 #: src-ru/data/events_boss.xml.rawclobber:93
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[2]/text"
-msgstr ""
+msgstr "月球可靠地隐藏了你的飞船。"
 
 #: src-ru/data/events_boss.xml.rawclobber:109
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[3]/text"
-msgstr ""
+msgstr "叛军飞船还是追踪到了你！准备战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:113
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[4]/text"
-msgstr ""
+msgstr "叛军无人机侦察机还是追踪到了你！准备战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:117
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[5]/text"
-msgstr ""
+msgstr "叛军精英飞船还是追踪到了你！准备战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:121
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[6]/text"
 msgstr ""
+"一艘小型穿梭机从基地向你靠近，随即发来通信：“我们知道你的任务，我们的舰长想帮"
+"助你！”"
 
 #: src-ru/data/events_boss.xml.rawclobber:122
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[6]/crewMember"
-msgstr ""
+msgstr "卢米尼斯"
 
 #: src-ru/data/events_boss.xml.rawclobber:125
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[7]/text"
 msgstr ""
+"一架小型维修无人机从基地向你靠近，它修理了你的飞船并传来一条短讯：“目前我们能"
+"帮的只有这些了。祝你好运！”"
 
 #: src-ru/data/events_boss.xml.rawclobber:129
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[8]/text"
-msgstr ""
+msgstr "基地的一艘小型穿梭机给你送来了一些补给。目前他们能帮的只有这些了。"
 
 #: src-ru/data/events_boss.xml.rawclobber:136
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_CONT_LIST\"]/event[9]/text"
-msgstr ""
+msgstr "一艘基地的运输船向你靠近，他们送来了额外的武器！"
 
 #: src-ru/data/events_boss.xml.rawclobber:143
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_BASE_REBEL\"]/destroyed/text"
-msgstr ""
+msgstr "你收集了叛军飞船的残骸，准备保卫基地。"
 
 #: src-ru/data/events_boss.xml.rawclobber:147
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_BASE_REBEL\"]/deadCrew/text"
-msgstr ""
+msgstr "你搜刮了叛军飞船的货舱，准备保卫基地。"
 
 #: src-ru/data/events_boss.xml.rawclobber:208
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/text"
 msgstr ""
+"你抵达联邦基地附近的哨站。你的权限代码让你通过了初步安检，一名军官接通了基地"
+"作战指挥中心的直连。塔利上将首先开口道：“什么事这么紧急？！你是谁？”"
 
 #: src-ru/data/events_boss.xml.rawclobber:210
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "阐述你任务的核心内容。"
 
 #: src-ru/data/events_boss.xml.rawclobber:212
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"你的解释引来了军官们冷嘲热讽和不信任的呼声。半械族部队的图尔齐尔将军首先发言"
+"：“情报部门已确认，存在对抗叛军技术的潜在可能性。要么赌上一切，要么失去一切。"
+"”"
 
 #: src-ru/data/events_boss.xml.rawclobber:214
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "解释敌方舰队和叛军旗舰的弱点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:216
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and @lvl=\"0\"]/event/text"
 msgstr ""
+"塔利回答：“就这么定了。叛军随时会到。我们会竭尽全力拖住他们的飞船，但你必须摧"
+"毁旗舰。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:224
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and not(@lvl)]/text"
-msgstr ""
+msgstr "（给塔利的容器）告诉上将你有一个给他的包裹。"
 
 #: src-ru/data/events_boss.xml.rawclobber:226
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and not(@lvl)]/event/text"
 msgstr ""
+"你告诉上将你有一个给他的容器。塔利面无表情，但命令你把容器留在哨站，并向一名"
+"高级军官交代了些事情。"
 
 #: src-ru/data/events_boss.xml.rawclobber:232
 msgid ""
@@ -125,53 +138,64 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and "
 "not(@lvl)]/event/choice/event/text"
 msgstr ""
+"过了一会儿，他带你来到一个隐蔽的维修船坞，在那里你的飞船被彻底整备，以迎接你"
+"的最终目标——不惜一切代价保卫联邦基地。"
 
 #: src-ru/data/events_boss.xml.rawclobber:249
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[1]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "阐述你任务的核心内容。"
 
 #: src-ru/data/events_boss.xml.rawclobber:254
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/text"
 msgstr ""
+"你抵达联邦基地附近的哨站。你的权限代码让你通过了初步安检，一名军官接通了基地"
+"作战指挥中心的直连。塔利上将首先开口道：“什么事这么紧急？！你是谁？”"
 
 #: src-ru/data/events_boss.xml.rawclobber:256
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "阐述你任务的核心内容。"
 
 #: src-ru/data/events_boss.xml.rawclobber:258
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"你的解释引来了军官们冷嘲热讽和不信任的呼声。半械族部队的图尔齐尔将军首先发言"
+"：“情报部门已确认，存在对抗叛军技术的潜在可能性。要么赌上一切，要么失去一切。"
+"”"
 
 #: src-ru/data/events_boss.xml.rawclobber:260
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "解释敌方舰队和叛军旗舰的弱点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:262
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and @lvl=\"0\"]/event/text"
 msgstr ""
+"塔利回答：“就这么定了。叛军随时会到。我们会竭尽全力拖住他们的飞船，但你必须摧"
+"毁旗舰。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:270
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and not(@lvl)]/text"
-msgstr ""
+msgstr "（给塔利的容器）告诉上将你有一个给他的包裹。"
 
 #: src-ru/data/events_boss.xml.rawclobber:272
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and not(@lvl)]/event/text"
 msgstr ""
+"你告诉上将你有一个给他的容器。塔利面无表情，但命令你把容器留在哨站，并向一名"
+"高级军官交代了些事情。"
 
 #: src-ru/data/events_boss.xml.rawclobber:278
 msgid ""
@@ -179,540 +203,612 @@ msgid ""
 " and @lvl=\"0\"]/event/choice[@req=\"TULLY_BOX\" and "
 "not(@lvl)]/event/choice/event/text"
 msgstr ""
+"过了一会儿，他带你来到一个隐蔽的维修船坞，在那里你的飞船被彻底整备，以迎接你"
+"的最终目标——不惜一切代价保卫联邦基地。"
 
 #: src-ru/data/events_boss.xml.rawclobber:295
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"LAST_STAND_START\"]/loadEventList/event[2]/choice[@req=\"ORDER_HUMAN_AND_HUMAN\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "阐述你任务的核心内容。"
 
 #: src-ru/data/events_boss.xml.rawclobber:304
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/text"
 msgstr ""
+"你的解释引来了军官们冷嘲热讽和不信任的呼声。半械族部队的图尔齐尔将军首先发言"
+"：“情报部门已确认，存在对抗叛军技术的潜在可能性。要么赌上一切，要么失去一切。"
+"”"
 
 #: src-ru/data/events_boss.xml.rawclobber:306
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "解释敌方舰队和叛军旗舰的弱点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:308
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"塔利回答：“就这么定了。叛军随时会到。我们会竭尽全力拖住他们的飞船，但你必须摧"
+"毁旗舰。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:316
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
 " and not(@lvl)]/text"
-msgstr ""
+msgstr "（给塔利的容器）告诉上将你有一个给他的包裹。"
 
 #: src-ru/data/events_boss.xml.rawclobber:318
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
 " and not(@lvl)]/event/text"
 msgstr ""
+"你告诉上将你有一个给他的容器。塔利面无表情，但命令你把容器留在哨站，并向一名"
+"高级军官交代了些事情。"
 
 #: src-ru/data/events_boss.xml.rawclobber:324
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[1]/choice[@req=\"TULLY_BOX\""
 " and not(@lvl)]/event/choice/event/text"
 msgstr ""
+"过了一会儿，他带你来到一个隐蔽的维修船坞，在那里你的飞船被彻底整备，以迎接你"
+"的最终目标——不惜一切代价保卫联邦基地。"
 
 #: src-ru/data/events_boss.xml.rawclobber:340
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/text"
 msgstr ""
+"你的解释引来了军官们冷嘲热讽和不信任的呼声。半械族部队的图尔齐尔将军突然注意"
+"到你船员中的一个人：“我们必须相信他们。这个人曾为半械族和超能族的联合体立下大"
+"功。”塔利再次让你发言，并下令为你开放商店。"
 
 #: src-ru/data/events_boss.xml.rawclobber:342
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "解释敌方舰队和叛军旗舰的弱点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:344
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"塔利回答：“就这么定了。叛军随时会到。我们会竭尽全力拖住他们的飞船，但你必须摧"
+"毁旗舰。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:352
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
 " and not(@lvl)]/text"
-msgstr ""
+msgstr "（给塔利的容器）告诉上将你有一个给他的包裹。"
 
 #: src-ru/data/events_boss.xml.rawclobber:354
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
 " and not(@lvl)]/event/text"
 msgstr ""
+"你告诉上将你有一个给他的容器。塔利面无表情，但命令你把容器留在哨站，并向一名"
+"高级军官交代了些事情。"
 
 #: src-ru/data/events_boss.xml.rawclobber:360
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"FEDERATION_BASE_RANDDD\"]/event[2]/choice[@req=\"TULLY_BOX\""
 " and not(@lvl)]/event/choice/event/text"
 msgstr ""
+"过了一会儿，他带你来到一个隐蔽的维修船坞，在那里你的飞船被彻底整备，以迎接你"
+"的最终目标——不惜一切代价保卫联邦基地。"
 
 #: src-ru/data/events_boss.xml.rawclobber:382
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/text"
 msgstr ""
+"“你所在的哨站可以为你提供维修或少量补给，本星系内还有其他维修站可以协助你。祝"
+"你好运。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:384
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[1]/text"
-msgstr ""
+msgstr "请求燃料和部分维修。[10 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:386
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[1]/event/text"
-msgstr ""
+msgstr "哨站的工程师加满了你的燃料箱并修复了舰体损伤。"
 
 #: src-ru/data/events_boss.xml.rawclobber:394
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[2]/text"
-msgstr ""
+msgstr "请求燃料和弹药。"
 
 #: src-ru/data/events_boss.xml.rawclobber:396
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[2]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你提供了一套弹药并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:404
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[3]/text"
-msgstr ""
+msgstr "请求燃料和无人机部件。"
 
 #: src-ru/data/events_boss.xml.rawclobber:406
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[3]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你发送了一套无人机部件并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:414
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[4]/text"
-msgstr ""
+msgstr "请求完全维修。[30 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:416
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[1]/choice[4]/event/text"
-msgstr ""
+msgstr "哨站的工程师对你的飞船舰体进行了完全维修。"
 
 #: src-ru/data/events_boss.xml.rawclobber:423
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/text"
 msgstr ""
+"“你所在的哨站可以为你提供维修或少量补给，本星系内还有其他维修站可以协助你。祝"
+"你好运。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:425
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "请求燃料和无人机部件。"
 
 #: src-ru/data/events_boss.xml.rawclobber:427
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[1]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你发送了一套无人机部件并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:435
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[2]/text"
-msgstr ""
+msgstr "请求完全维修。[30 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:437
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[2]/event/text"
-msgstr ""
+msgstr "哨站的工程师对你的飞船舰体进行了完全维修。"
 
 #: src-ru/data/events_boss.xml.rawclobber:442
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[3]/text"
-msgstr ""
+msgstr "请求用于升级飞船的废料。"
 
 #: src-ru/data/events_boss.xml.rawclobber:444
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[3]/event/text"
-msgstr ""
+msgstr "哨站将其所有能找到的废料储备都交给你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:451
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[4]/text"
-msgstr ""
+msgstr "请求各类补给各一点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:453
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[2]/choice[4]/event/text"
-msgstr ""
+msgstr "哨站祝你好运，并交给你一套补给品。"
 
 #: src-ru/data/events_boss.xml.rawclobber:465
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/text"
 msgstr ""
+"“你所在的哨站可以为你提供维修或少量补给，本星系内还有其他维修站可以协助你。祝"
+"你好运。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:467
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "请求用于升级飞船的废料。"
 
 #: src-ru/data/events_boss.xml.rawclobber:469
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[1]/event/text"
-msgstr ""
+msgstr "哨站将其所有能找到的废料储备都交给你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:476
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "请求各类补给各一点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:478
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[2]/event/text"
-msgstr ""
+msgstr "哨站祝你好运，并交给你一套补给品。"
 
 #: src-ru/data/events_boss.xml.rawclobber:488
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[3]/text"
-msgstr ""
+msgstr "请求燃料和部分维修。[10 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:490
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[3]/event/text"
-msgstr ""
+msgstr "哨站的工程师加满了你的燃料箱并修复了舰体损伤。"
 
 #: src-ru/data/events_boss.xml.rawclobber:498
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[4]/text"
-msgstr ""
+msgstr "请求燃料和弹药。"
 
 #: src-ru/data/events_boss.xml.rawclobber:500
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_III\"]/event[3]/choice[4]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你提供了一套弹药并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:512
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/text"
 msgstr ""
+"“你所在的哨站可以为你提供维修或少量补给，本星系内还有其他维修站可以协助你。祝"
+"你好运。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:514
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[1]/text"
-msgstr ""
+msgstr "请求燃料和部分维修。[10 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:516
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[1]/event/text"
-msgstr ""
+msgstr "哨站的工程师加满了你的燃料箱并修复了舰体损伤。"
 
 #: src-ru/data/events_boss.xml.rawclobber:528
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[2]/text"
-msgstr ""
+msgstr "请求燃料和弹药。"
 
 #: src-ru/data/events_boss.xml.rawclobber:530
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[2]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你提供了一套弹药并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:542
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[3]/text"
-msgstr ""
+msgstr "请求燃料和无人机部件。"
 
 #: src-ru/data/events_boss.xml.rawclobber:544
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[3]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你发送了一套无人机部件并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:556
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[4]/text"
-msgstr ""
+msgstr "请求完全维修。[30 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:558
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[1]/choice[4]/event/text"
-msgstr ""
+msgstr "哨站的工程师对你的飞船舰体进行了完全维修。"
 
 #: src-ru/data/events_boss.xml.rawclobber:569
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/text"
 msgstr ""
+"“你所在的哨站可以为你提供维修或少量补给，本星系内还有其他维修站可以协助你。祝"
+"你好运。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:571
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "请求燃料和无人机部件。"
 
 #: src-ru/data/events_boss.xml.rawclobber:573
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[1]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你发送了一套无人机部件并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:585
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[2]/text"
-msgstr ""
+msgstr "请求完全维修。[30 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:587
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[2]/event/text"
-msgstr ""
+msgstr "哨站的工程师对你的飞船舰体进行了完全维修。"
 
 #: src-ru/data/events_boss.xml.rawclobber:596
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[3]/text"
-msgstr ""
+msgstr "请求用于升级飞船的废料。"
 
 #: src-ru/data/events_boss.xml.rawclobber:598
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[3]/event/text"
-msgstr ""
+msgstr "哨站将其所有能找到的废料储备都交给你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:609
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[4]/text"
-msgstr ""
+msgstr "请求各类补给各一点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:611
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[2]/choice[4]/event/text"
-msgstr ""
+msgstr "哨站祝你好运，并交给你一套补给品。"
 
 #: src-ru/data/events_boss.xml.rawclobber:627
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/text"
 msgstr ""
+"“你所在的哨站可以为你提供维修或少量补给，本星系内还有其他维修站可以协助你。祝"
+"你好运。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:629
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "请求用于升级飞船的废料。"
 
 #: src-ru/data/events_boss.xml.rawclobber:631
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[1]/event/text"
-msgstr ""
+msgstr "哨站将其所有能找到的废料储备都交给你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:642
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "请求各类补给各一点。"
 
 #: src-ru/data/events_boss.xml.rawclobber:644
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[2]/event/text"
-msgstr ""
+msgstr "哨站祝你好运，并交给你一套补给品。"
 
 #: src-ru/data/events_boss.xml.rawclobber:658
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[3]/text"
-msgstr ""
+msgstr "请求燃料和部分维修。[10 $]"
 
 #: src-ru/data/events_boss.xml.rawclobber:660
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[3]/event/text"
-msgstr ""
+msgstr "哨站的工程师加满了你的燃料箱并修复了舰体损伤。"
 
 #: src-ru/data/events_boss.xml.rawclobber:672
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[4]/text"
-msgstr ""
+msgstr "请求燃料和弹药。"
 
 #: src-ru/data/events_boss.xml.rawclobber:674
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"LAST_STAND_START_RANDOOM_IIII\"]/event[3]/choice[4]/event/text"
-msgstr ""
+msgstr "哨站的工程师向你提供了一套弹药并加满了燃料箱。"
 
 #: src-ru/data/events_boss.xml.rawclobber:689
 msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_AUTOMATED\"]/text"
-msgstr ""
+msgstr "这艘船似乎配备了先进的AI系统。现在船员已死，AI接管了控制权。"
 
 #: src-ru/data/events_boss.xml.rawclobber:700
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_AUTOMATED\"]/choice/event/text"
 msgstr ""
+"旗舰的人工智能关闭了自身的生命维持系统，并启动了一直隐藏的干扰发生器，导致你"
+"的传感器失效，并使飞船的反应堆效能降低！"
 
 #: src-ru/data/events_boss.xml.rawclobber:709
 msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_DESTROYED\"]/text"
-msgstr ""
+msgstr "爆炸的冲击波摇晃着你的飞船，你如释重负地松了口气。你做到了。联邦得救了……"
 
 #: src-ru/data/events_boss.xml.rawclobber:713
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_DESTROYED\"]/choice/event/text"
 msgstr ""
+"感谢游玩！请注意，这仍然是测试版，我们尚未将其完善。我们论坛上的用户会留下反"
+"馈，告诉我们你是如何获胜的吧。谢谢！"
 
 #: src-ru/data/events_boss.xml.rawclobber:720
 msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_ESCAPED\"]/text"
-msgstr ""
+msgstr "就在你开始占据上风时，敌人跃迁离开了。现在还不能放松——必须继续战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:731
 msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_TEXT_1\"]/text"
-msgstr ""
+msgstr "它来了……叛军旗舰。如果你能摧毁这个怪物，联邦就有机会存活。没有退路了！"
 
 #: src-ru/data/events_boss.xml.rawclobber:735
 msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_TEXT_2\"]/text"
 msgstr ""
+"你与旗舰并驾齐驱，发现它在之前的战斗中严重受损。扫描显示，它将大部分能量重新"
+"分配给了无人机。准备战斗。"
 
 #: src-ru/data/events_boss.xml.rawclobber:739
 msgid "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_TEXT_3\"]/text"
 msgstr ""
+"真不明白这艘船受了这么重的伤怎么还能继续战斗。看样子，它的舰长正将能量输送到"
+"传送装置和……某个超级武器？做好最坏的打算……"
 
 #: src-ru/data/events_boss.xml.rawclobber:746
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_REPAIR_STATION_REBEL\"]/event[1]/text"
-msgstr ""
+msgstr "必须在叛军出现之前尽快离开。你正准备跃迁。"
 
 #: src-ru/data/events_boss.xml.rawclobber:750
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_REPAIR_STATION_REBEL\"]/event[2]/text"
 msgstr ""
+"你维修花费了太多时间，叛军追上了你！必须尽快离开这里！空间站人员尽其所能，用"
+"反舰炮台向敌人开火，协助你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:774
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[1]"
 msgstr ""
+"这个信标附近有一个移动维修平台。经过简短通讯后，调度员确认了你的权限，并批准"
+"为你进行维修和补给。"
 
 #: src-ru/data/events_boss.xml.rawclobber:775
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[2]"
-msgstr ""
+msgstr "一座由半械族民用船坞改建的军事补给站，向你提供维修和补给。"
 
 #: src-ru/data/events_boss.xml.rawclobber:776
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[3]"
 msgstr ""
+"通信器里的声音建议你前往附近配备维修站的联邦基地。但当你发送了任务的优先级代"
+"码后，他们立刻拿起工具，修好了你的飞船，之后还给你运送了补给。"
 
 #: src-ru/data/events_boss.xml.rawclobber:777
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[4]"
 msgstr ""
+"前方的空间站正在维修受损飞船。你的指挥验证代码让他们确信，修理你的飞船刻不容"
+"缓。"
 
 #: src-ru/data/events_boss.xml.rawclobber:778
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_REPAIR_STATION\"]/text[5]"
 msgstr ""
+"附近有一个被遗弃的贸易空间站。一些联邦工程师将这个船坞改为军用维修站。他们提"
+"出可以修理你的飞船。"
 
 #: src-ru/data/events_boss.xml.rawclobber:792
 msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[1]"
-msgstr ""
+msgstr "虽然这个星区仍在联邦控制下，但一架小型侦察机溜过了舰队防线。你攻击它。"
 
 #: src-ru/data/events_boss.xml.rawclobber:793
 msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[2]"
 msgstr ""
+"长距扫描仪显示本星系内没有大型战舰。等等……超光速痕迹表明，一架叛军侦察机刚刚"
+"在附近退出跃迁！"
 
 #: src-ru/data/events_boss.xml.rawclobber:794
 msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[3]"
 msgstr ""
+"传感器显示，叛军正在最近行星的月球背面建立一个前沿信标。更重要的是，附近有很"
+"多船只经过，准备战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:795
 msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[4]"
 msgstr ""
+"尽管这个星区有民用空间站，但联邦飞船明显不足。你看到一支小型轰炸机中队正与叛"
+"军侦察机交战，便赶去支援。"
 
 #: src-ru/data/events_boss.xml.rawclobber:796
 msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[5]"
-msgstr ""
+msgstr "你刚一抵达信标，叛军侦察机就向你发起攻击。准备武器！"
 
 #: src-ru/data/events_boss.xml.rawclobber:797
 msgid "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT\"]/text[6]"
 msgstr ""
+"扫描该区域后，你只发现一艘小型贸易船。但靠近后，你看到的不是贸易船，而是一架"
+"叛军侦察机的轮廓！你再次启动扫描，发现它的识别码是伪造的！你发起攻击。"
 
 #: src-ru/data/events_boss.xml.rawclobber:805
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[1]/choice[1]/text"
-msgstr ""
+msgstr "准备与叛军飞船战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:807
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[1]/choice[1]/event/text"
-msgstr ""
+msgstr "你前去拦截。"
 
 #: src-ru/data/events_boss.xml.rawclobber:813
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[1]/choice[2]/text"
-msgstr ""
+msgstr "没时间了，准备跃迁。"
 
 #: src-ru/data/events_boss.xml.rawclobber:815
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[1]/choice[2]/event/text"
-msgstr ""
+msgstr "你试图不去理会战争的恐怖，专注于战斗任务。"
 
 #: src-ru/data/events_boss.xml.rawclobber:822
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[2]/choice[1]/text"
-msgstr ""
+msgstr "准备与叛军飞船战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:824
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[2]/choice[1]/event/text"
-msgstr ""
+msgstr "你前去拦截。"
 
 #: src-ru/data/events_boss.xml.rawclobber:830
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[2]/choice[2]/text"
-msgstr ""
+msgstr "没时间了，准备跃迁。"
 
 #: src-ru/data/events_boss.xml.rawclobber:832
 msgid ""
 "data/events_boss.xml.rawclobber$//event[@name=\"BOSS_SCOUT_RESCUE\"]/loadEventList/event[2]/choice[2]/event/text"
-msgstr ""
+msgstr "你试图不去理会战争的恐怖，专注于战斗任务。"
 
 #: src-ru/data/events_boss.xml.rawclobber:839
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE1\"]/text[1]"
 msgstr ""
+"子弹从你的舷窗旁飞过，紧随其后的是叛军侦察机，正在追击一艘受损的巡洋舰。我们"
+"要干预吗？"
 
 #: src-ru/data/events_boss.xml.rawclobber:840
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE1\"]/text[2]"
 msgstr ""
+"几艘大型运输船正被一支叛军轰炸机中队追击。一架轰炸机成功穿过防空火力，准备在"
+"庞大但脆弱的运输船队中制造混乱。还有时间上前摧毁它。"
 
 #: src-ru/data/events_boss.xml.rawclobber:841
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE1\"]/text[3]"
 msgstr ""
+"一艘民用船只在联邦加密频道上发送求救信号。它们正被叛军侦察机追击。你要回应吗"
+"？"
 
 #: src-ru/data/events_boss.xml.rawclobber:844
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE2\"]/text[1]"
-msgstr ""
+msgstr "一个联邦小型殖民地似乎遭到了叛军侦察机的攻击。你要去保护他们吗？"
 
 #: src-ru/data/events_boss.xml.rawclobber:845
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_SCOUT_RESCUE2\"]/text[2]"
 msgstr ""
+"附近一场小型战斗机之间的战斗正激烈进行。似乎是为了争夺一座空间站。联邦的飞船"
+"似乎正在快速损失。要去帮忙吗？"
 
 #: src-ru/data/events_boss.xml.rawclobber:849
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[1]/text"
-msgstr ""
+msgstr "你救下的人们是从冲突区域逃出来的难民。他们向你表达了诚挚的感谢。"
 
 #: src-ru/data/events_boss.xml.rawclobber:852
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[2]/text"
 msgstr ""
+"他们向你致意：“谢谢！这点东西不算什么，但我们可以在你奔赴战场之前帮你修复部分"
+"损伤。祝你好运！”"
 
 #: src-ru/data/events_boss.xml.rawclobber:856
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[3]/text"
 msgstr ""
+"幸存者发来信息：“感谢你的帮助。我们不知道还能撑多久。收下我们的补给吧——我们很"
+"可能用不上了。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:860
 msgid ""
 "data/events_boss.xml.rawclobber$//eventList[@name=\"BOSS_SCOUT_RESCUE_LIST\"]/event[4]/text"
 msgstr ""
+"你通过联邦加密频道收到一条信息：“感谢你的帮助，舰长。我们正在为你设立一个紧急"
+"维修站。”"
 
 #: src-ru/data/events_boss.xml.rawclobber:873
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/gotaway/text"
-msgstr ""
+msgstr "敌人超光速跃迁离开了，你与其受害者建立通信。"
 
 #: src-ru/data/events_boss.xml.rawclobber:880
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/destroyed/text"
-msgstr ""
+msgstr "叛军飞船已被摧毁，现在可以联系它原本的受害者了。"
 
 #: src-ru/data/events_boss.xml.rawclobber:883
 msgid ""
@@ -722,7 +818,7 @@ msgstr "联系幸存者们。"
 #: src-ru/data/events_boss.xml.rawclobber:888
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_SCOUT_RESCUE\"]/deadCrew/text"
-msgstr ""
+msgstr "摧毁叛军飞船后，你迅速收集了所有可能的战利品，并与其受害者建立联系。"
 
 #: src-ru/data/events_boss.xml.rawclobber:891
 msgid ""
@@ -733,168 +829,208 @@ msgstr "联系幸存者们。"
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[1]"
 msgstr ""
+"你抵达信标处，看到一系列联邦的航母和无畏舰。这个星系一定非常重要，才会部署如"
+"此庞大的舰队。"
 
 #: src-ru/data/events_boss.xml.rawclobber:914
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[2]"
-msgstr ""
+msgstr "这里有几支联邦舰队和大量残骸。看来这里发生过一些小规模战斗。"
 
 #: src-ru/data/events_boss.xml.rawclobber:915
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[3]"
-msgstr ""
+msgstr "几艘不同的重型飞船被留下保护附近的联邦定居点。该定居点似乎正在撤离中。"
 
 #: src-ru/data/events_boss.xml.rawclobber:916
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[4]"
 msgstr ""
+"信标周围有一支联邦重型舰船的大编队。传感器亮起红光，检测到导弹系统正锁定我们"
+"的飞船。但当你发送了飞船识别码后，它们就不再理会你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:917
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[5]"
 msgstr ""
+"一支联邦战斗机大队正在附近月球周围交战，而它们的母舰则在远处待命。它们一定是"
+"遭遇了一队叛军侦察机。"
 
 #: src-ru/data/events_boss.xml.rawclobber:919
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[6]"
 msgstr ""
+"你抵达信标处，看到一系列联邦的航母和无畏舰。这个星系一定非常重要，才会部署如"
+"此庞大的舰队。"
 
 #: src-ru/data/events_boss.xml.rawclobber:920
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[7]"
-msgstr ""
+msgstr "这里有几支联邦舰队和大量残骸。看来这里发生过一些小规模战斗。"
 
 #: src-ru/data/events_boss.xml.rawclobber:921
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[8]"
-msgstr ""
+msgstr "几艘不同的重型飞船被留下保护附近的联邦定居点。该定居点似乎正在撤离中。"
 
 #: src-ru/data/events_boss.xml.rawclobber:922
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[9]"
 msgstr ""
+"信标周围有一支联邦重型舰船的大编队。传感器亮起红光，检测到导弹系统正锁定我们"
+"的飞船。但当你发送了飞船识别码后，它们就不再理会你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:923
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_FED\"]/text[10]"
 msgstr ""
+"一支联邦战斗机大队正在附近月球周围交战，而它们的母舰则在远处待命。它们一定是"
+"遭遇了一队叛军侦察机。"
 
 #: src-ru/data/events_boss.xml.rawclobber:933
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[1]"
-msgstr ""
+msgstr "传感器显示附近有一场大规模战斗，但你周围却很安静。你试图躲藏起来，远离战斗。"
 
 #: src-ru/data/events_boss.xml.rawclobber:934
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[2]"
 msgstr ""
+"到达后，你看到两支舰队正在互相猛攻。传感器的读数因杀戮的规模而爆表。你静静地"
+"等待超光速引擎充能，知道唯一能帮上忙的方式就是完成你的任务。"
 
 #: src-ru/data/events_boss.xml.rawclobber:935
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[3]"
 msgstr ""
+"战斗在远处激烈进行。传感器探测到大量逃生舱，但你不能停下来帮忙。你的任务更重"
+"要。"
 
 #: src-ru/data/events_boss.xml.rawclobber:936
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[4]"
-msgstr ""
+msgstr "附近有战斗在激烈进行。尽管你很想帮忙，但你记得任务的重要性。"
 
 #: src-ru/data/events_boss.xml.rawclobber:937
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[5]"
 msgstr ""
+"你不需要高级传感器也能看出这里正在发生战斗。你平静地望着舷窗外，等待跃迁。你"
+"无法在这场战斗中提供帮助。"
 
 #: src-ru/data/events_boss.xml.rawclobber:938
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH\"]/text[6]"
 msgstr ""
+"两支舰队正在互相炮击。幸运的是，你的飞船没有引起它们的兴趣。你正准备进行下一"
+"次跃迁。"
 
 #: src-ru/data/events_boss.xml.rawclobber:952
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[1]"
 msgstr ""
+"你抵达了激战的中心。双方都损失惨重。一支小型中队从旁飞过，其中一架战斗机脱离"
+"阵位，向你驶来。"
 
 #: src-ru/data/events_boss.xml.rawclobber:953
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[2]"
 msgstr ""
+"附近有两支舰队在交战。你试图绕开战斗，保持在武器射程之外，但一架叛军侦察机发"
+"现了你，并向你移动。"
 
 #: src-ru/data/events_boss.xml.rawclobber:954
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[3]"
 msgstr ""
+"很难说附近的战斗中谁占了上风。在你还没来得及弄清楚之前，其中一架战斗机就发现"
+"了你并发起了攻击。"
 
 #: src-ru/data/events_boss.xml.rawclobber:955
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[4]"
-msgstr ""
+msgstr "远处破坏的规模令人惊愕。不幸的是，你作为旁观者的立场没持续多久！"
 
 #: src-ru/data/events_boss.xml.rawclobber:956
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[5]"
-msgstr ""
+msgstr "远处的破坏令人印象深刻。然而，当传感器显示你受到攻击威胁时，你回过神来。"
 
 #: src-ru/data/events_boss.xml.rawclobber:957
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BOTH_FIGHT\"]/text[6]"
-msgstr ""
+msgstr "你没时间担心附近的战斗了。更何况，战斗本身正在非常迅速地逼近你。"
 
 #: src-ru/data/events_boss.xml.rawclobber:971
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[1]"
 msgstr ""
+"你预料到了叛军，但没想到他们的舰队能壮大得这么快。你的扫描仪还没来得及记录完"
+"所有敌舰，附近的一架战斗机就发起了攻击。"
 
 #: src-ru/data/events_boss.xml.rawclobber:972
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[2]"
 msgstr ""
+"这个星系充满了叛军战舰。幸运的是，你的飞船识别码被伪装成了民用运输船。重型战"
+"舰无视了你，但一架小型战斗机正带着预热好的武器逼近！"
 
 #: src-ru/data/events_boss.xml.rawclobber:973
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[3]"
 msgstr ""
+"抵达后，你与一队叛军部队正面遭遇，他们正在包围最近的行星并投送登陆部队。一架"
+"小型侦察机向你驶来。准备战斗！"
 
 #: src-ru/data/events_boss.xml.rawclobber:974
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[4]"
 msgstr ""
+"抵达后，你发现一片巨大的残骸云——一场殊死搏斗的后果。战场上只剩下叛军飞船，它"
+"们正转向你这边。准备迎击。"
 
 #: src-ru/data/events_boss.xml.rawclobber:975
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[5]"
-msgstr ""
+msgstr "子弹从你身旁飞过，舰载计算机记录到大量武器正瞄准你的飞船。立即进行闪避机动！"
 
 #: src-ru/data/events_boss.xml.rawclobber:976
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[6]"
 msgstr ""
+"曾经辉煌的一组空间站，如今更像是附近卫星周围的一圈小型碎片带。这景象令人恐惧"
+"，但现在不是哀悼死者的时候，敌人正在逼近！"
 
 #: src-ru/data/events_boss.xml.rawclobber:977
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_REBEL\"]/text[7]"
 msgstr ""
+"联邦似乎给了叛军一记重击。周围许多飞船被摧毁或击伤。然而，叛军数量上的优势迫"
+"使联邦剩余部队加速撤退。幸运的是，你也能及时离开。"
 
 #: src-ru/data/events_boss.xml.rawclobber:981
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_REBEL\"]/destroyed/text"
-msgstr ""
+msgstr "没时间搜索所有残骸了，他们的舰队还在附近。准备跃迁！"
 
 #: src-ru/data/events_boss.xml.rawclobber:985
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_REBEL\"]/deadCrew/text"
-msgstr ""
+msgstr "没时间搜索敌方飞船了，但你的船员还是设法带走了一些东西。准备跃迁。"
 
 #: src-ru/data/events_boss.xml.rawclobber:997
 msgid ""
 "data/events_boss.xml.rawclobber$//textList[@name=\"BOSS_FLEETS_BLACK_REBEL\"]/text"
 msgstr ""
+"一艘涂装奇怪的叛军飞船在这个信标处拦截了你。你注意到它的武装非常精良……看来他"
+"们的武器系统带有强化钛合金涂层！"
 
 #: src-ru/data/events_boss.xml.rawclobber:1001
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_BLACK_REBEL\"]/destroyed/text"
-msgstr ""
+msgstr "飞船解体了，你匆忙抓取完好的设备。"
 
 #: src-ru/data/events_boss.xml.rawclobber:1005
 msgid ""
 "data/events_boss.xml.rawclobber$//ship[@name=\"BOSS_FLEETS_BLACK_REBEL\"]/deadCrew/text"
-msgstr ""
+msgstr "飞船船员已死，你匆忙抓取完好的设备。"
