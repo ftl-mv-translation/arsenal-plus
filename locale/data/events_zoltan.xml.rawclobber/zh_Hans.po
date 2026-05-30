@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-30 15:37+0000\n"
+"PO-Revision-Date: 2026-05-30 16:44+0000\n"
 "Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_zoltanxmlrawclobber/zh_Hans/>\n"
@@ -531,26 +531,37 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_PIRATE\"]/text[6]"
 msgstr ""
+"“警告，附近所有飞船：我们正遭到攻击！”频率属于附近某处的佐尔坦飞船。你开始根"
+"据信号追踪它。他们似乎将你的干预视为跃迁的信号。懦夫。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:501
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_PIRATE\"]/text[7]"
 msgstr ""
+"你刚一出现，就与一艘正在紧急重启超光速推进器的佐尔坦飞船打了个照面。在跃迁前"
+"的最后几秒，他们的船长劝你不要冒险插手。但现在为时已晚——他们的敌人正朝你冲来"
+"！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:502
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_PIRATE\"]/text[8]"
 msgstr ""
+"尽管采取了各种预防措施，海盗们还是开始在整个星区恐吓佐尔坦的本地定居点。其中"
+"一个海盗发现了你的飞船，并开始攻击。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:503
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_PIRATE\"]/text[9]"
 msgstr ""
+"一艘带有海盗标志的飞船要求你投降。这个可怕的年代，连佐尔坦都遭受海盗之苦。你"
+"怀疑是否有人会同情这些蠢货。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:504
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_PIRATE\"]/text[10]"
 msgstr ""
+"你撞见一艘海盗船正在抢劫一艘小型佐尔坦巡洋舰。他们发现了你，并在你的超光速推"
+"进器充能完成之前就向你发动了攻击。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:508
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTAN_MANTIS\"]/text"
@@ -792,7 +803,7 @@ msgstr "不幸的是，你的船员被毫发无伤地带走了，所以你的克
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_CREW_SCAN_LIST\"]/event[2]/choice[1]/event/choice[@req=\"CREW_ALL\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "由于你的飞船由人工智能控制，你无需担心全体船员的死亡。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:723
 msgid ""
@@ -838,11 +849,15 @@ msgstr "你的任务是拯救联邦，而不是在整个银河系寻找奇迹。
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[1]/text"
 msgstr ""
+"你一靠近，一个古老的外星声音对你说：“你的使命为你带来了伟大的战斗和伟大的失败"
+"。这将减轻你的痛苦……”几分钟后，你在船上发现了一套维修设备！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:768
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[2]/text"
 msgstr ""
+"你一靠近，一个古老的外星声音对你说：“你的使命为你带来了伟大的战斗和伟大的失败"
+"。这将减轻你的痛苦……”几分钟后，你在船上发现了一套维修设备！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:772
 msgid ""
@@ -855,17 +870,21 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[4]/text"
 msgstr ""
+"你小心地靠近圣眼。它似乎感应到了你的想法，因为你的货舱里不知从哪里出现了一大"
+"堆废料！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:780
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[5]/text"
 msgstr ""
+"你一靠近圣眼，万花筒般的色彩就充满了屏幕，你的一名船员开始迅速变年轻，最终消"
+"失在虚空中。希望他因此超越了肉体存在的界限，而不仅仅是化为乌有……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:786
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[5]/choice[@req=\"CREW_ALL\""
 " and not(@lvl)]/event/removeCrew/text"
-msgstr ""
+msgstr "你检查了克隆舱，但它没有启动。那名船员所遭遇的后果是不可逆的。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:793
 msgid ""
@@ -877,6 +896,8 @@ msgstr "由于你的飞船由人工智能控制，你无需担心全体船员的
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[6]/text"
 msgstr ""
+"你靠近圣眼，凝视着它。突然你注意到一个静止舱正朝你飞来。你下令抓住它并带回船"
+"上。舱里有一名水晶族，醒来后愿意为你效劳。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:802
 msgid ""
@@ -1150,7 +1171,7 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:1035
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_PEACE_QUEST_REWARD\"]/event[1]/unlockShip"
-msgstr ""
+msgstr "佐尔坦巡洋舰已解锁并加入舰库！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1040
 msgid ""
@@ -1184,11 +1205,15 @@ msgstr "我们不接受投降！"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_SURRENDER\"]/text[1]"
 msgstr ""
+"“当然，当然，你们已经充分展示了你们物种的暴力倾向，干得好，没话说。也许我们付"
+"点钱，你们就会去祸害别人？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1067
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_SURRENDER\"]/text[2]"
 msgstr ""
+"敌舰发出通讯。视频屏幕上可以看到他们的舰桥因设备故障而火花四溅——可以推测他们"
+"想投降。接受他们的提议吗？"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1068
 msgid ""
@@ -1224,7 +1249,7 @@ msgstr "接受交易。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1084
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_SURRENDER\"]/choice[2]/text"
-msgstr ""
+msgstr "我们不接受投降！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1090
 msgid ""
@@ -1257,12 +1282,14 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:1094
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTON_SURRENDER\"]/text[5]"
-msgstr ""
+msgstr "“我们推测，你们物种的智力与你们的蛮力成正比。我们投降。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1095
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTON_SURRENDER\"]/text[6]"
 msgstr ""
+"“你打败了我们。要是你们物种能投入同样多的精力来改善银河系，而不是增强军力就好"
+"了……”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1185
 msgid ""
@@ -1449,7 +1476,7 @@ msgstr "飞船爆炸，留下少量有用的废料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1296
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DESTROYED_DEFAULT_AUTO_ZOLTON\"]/event[2]/text"
-msgstr ""
+msgstr "飞船爆炸，留下一些有用的废料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1300
 msgid ""
@@ -1459,7 +1486,7 @@ msgstr "飞船爆炸，留下一些有用的废料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1304
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DESTROYED_DEFAULT_AUTO_ZOLTON\"]/event[4]/text"
-msgstr ""
+msgstr "飞船爆炸，留下一些有用的废料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1308
 msgid ""
@@ -1513,7 +1540,7 @@ msgstr "接受交易。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1349
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"CON_SURRENDER\"]/choice[2]/text"
-msgstr ""
+msgstr "我们不接受投降！"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1355
 msgid ""
@@ -1558,7 +1585,7 @@ msgstr "攻击对方。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1399
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"CON_NEUTRAL\"]/choice[2]/text"
-msgstr ""
+msgstr "飞越而过。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1401
 msgid ""
@@ -1622,7 +1649,7 @@ msgstr "飞越而过。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1438
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_NEUTRAL\"]/choice[2]/event/text"
-msgstr ""
+msgstr "你现在有更重要的事情要做。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1447
 msgid ""
@@ -1723,7 +1750,7 @@ msgstr "往里面扔导弹。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1509
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI\"]/choice[2]/text"
-msgstr ""
+msgstr "往里面扔燃料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1513
 msgid ""
@@ -1738,7 +1765,7 @@ msgstr "往里面扔废料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1521
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI\"]/choice[@req=\"CREW_ALL\"]/text"
-msgstr ""
+msgstr "往里面扔一名船员。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1525
 msgid ""
@@ -1748,12 +1775,12 @@ msgstr "（蛞蝓族船员）与你的蛞蝓商量。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1529
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI\"]/choice[7]/text"
-msgstr ""
+msgstr "尽快离开这个地方。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1531
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI\"]/choice[7]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1539
 msgid ""
@@ -1768,7 +1795,7 @@ msgstr "蛞蝓预感到装置会正常运作。你在考虑往里面放什么。
 #: src-ru/data/events_zoltan.xml.rawclobber:1545
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SLUG_ITS_OK\"]/choice[1]/text"
-msgstr ""
+msgstr "往里面扔导弹。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1549
 msgid ""
@@ -1778,12 +1805,12 @@ msgstr "往里面扔燃料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1553
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SLUG_ITS_OK\"]/choice[3]/text"
-msgstr ""
+msgstr "往里面扔无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1557
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SLUG_ITS_OK\"]/choice[4]/text"
-msgstr ""
+msgstr "往里面扔废料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1561
 msgid ""
@@ -1798,12 +1825,12 @@ msgstr "尽快离开这个地方。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1567
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SLUG_ITS_OK\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1572
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/text"
-msgstr ""
+msgstr "扔多少枚导弹？"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1574
 msgid ""
@@ -1813,12 +1840,12 @@ msgstr "1枚导弹。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1576
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[1]/event/text"
-msgstr ""
+msgstr "你将一枚导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1587
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[2]/text"
-msgstr ""
+msgstr "5枚导弹。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1589
 msgid ""
@@ -1828,12 +1855,12 @@ msgstr "你将导弹扔进“量子倍增器”的入口……"
 #: src-ru/data/events_zoltan.xml.rawclobber:1600
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[3]/text"
-msgstr ""
+msgstr "10枚导弹。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1602
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1613
 msgid ""
@@ -1843,7 +1870,7 @@ msgstr "15枚导弹。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1615
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1626
 msgid ""
@@ -1853,22 +1880,22 @@ msgstr "20枚导弹。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1628
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1639
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1640
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1644
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL\"]/text"
-msgstr ""
+msgstr "扔多少燃料？"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1646
 msgid ""
@@ -1898,7 +1925,7 @@ msgstr "10单位燃料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1674
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1685
 msgid ""
@@ -1908,7 +1935,7 @@ msgstr "15单位燃料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1687
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1698
 msgid ""
@@ -1918,27 +1945,27 @@ msgstr "20单位燃料。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1700
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1711
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1712
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1716
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/text"
-msgstr ""
+msgstr "扔多少无人机部件？"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1718
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[1]/text"
-msgstr ""
+msgstr "1个无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1720
 msgid ""
@@ -1958,52 +1985,52 @@ msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 #: src-ru/data/events_zoltan.xml.rawclobber:1744
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[3]/text"
-msgstr ""
+msgstr "10个无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1746
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1757
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[4]/text"
-msgstr ""
+msgstr "15个无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1759
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1770
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[5]/text"
-msgstr ""
+msgstr "20个无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1772
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1783
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1784
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1788
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/text"
-msgstr ""
+msgstr "扔多少废料？"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1790
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[1]/text"
-msgstr ""
+msgstr "10单位。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1792
 msgid ""
@@ -2013,7 +2040,7 @@ msgstr "你将废料扔进“量子倍增器”的入口……"
 #: src-ru/data/events_zoltan.xml.rawclobber:1803
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[2]/text"
-msgstr ""
+msgstr "25单位。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1805
 msgid ""
@@ -2028,27 +2055,27 @@ msgstr "40单位。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1818
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1829
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[4]/text"
-msgstr ""
+msgstr "55单位。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1831
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1842
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[5]/text"
-msgstr ""
+msgstr "70单位。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1844
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1855
 msgid ""
@@ -2058,12 +2085,12 @@ msgstr "什么也不扔。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1856
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1860
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/text"
-msgstr ""
+msgstr "你船员中的谁要爬进“量子倍增器”的入口？"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1862
 msgid ""
@@ -2078,32 +2105,32 @@ msgstr "人类恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:1872
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"order_human\"]/text"
-msgstr ""
+msgstr "秩序人类。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1874
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"order_human\"]/event/text"
-msgstr ""
+msgstr "人类恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1882
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"order_female\"]/text"
-msgstr ""
+msgstr "秩序人类。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1884
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"order_female\"]/event/text"
-msgstr ""
+msgstr "人类恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1892
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"engi\"]/text"
-msgstr ""
+msgstr "半械族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1894
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"engi\"]/event/text"
-msgstr ""
+msgstr "半械族冷漠地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1902
 msgid ""
@@ -2113,17 +2140,17 @@ msgstr "模物族。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1904
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"morph\"]/event/text"
-msgstr ""
+msgstr "模物族冷漠地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1912
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energy\"]/text"
-msgstr ""
+msgstr "佐尔坦。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1914
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energy\"]/event/text"
-msgstr ""
+msgstr "佐尔坦恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1922
 msgid ""
@@ -2133,32 +2160,32 @@ msgstr "佐尔坦。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1924
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energy_w\"]/event/text"
-msgstr ""
+msgstr "佐尔坦恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1932
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energyx\"]/text"
-msgstr ""
+msgstr "佐尔顿。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1934
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energyx\"]/event/text"
-msgstr ""
+msgstr "佐尔顿恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1942
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energyx_w\"]/text"
-msgstr ""
+msgstr "佐尔顿。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1944
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"energyx_w\"]/event/text"
-msgstr ""
+msgstr "佐尔顿恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1952
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"rock\"]/text"
-msgstr ""
+msgstr "岩石族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1954
 msgid ""
@@ -2183,7 +2210,7 @@ msgstr "守护者。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1974
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"keeper\"]/event/text"
-msgstr ""
+msgstr "守护者恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1982
 msgid ""
@@ -2193,7 +2220,7 @@ msgstr "年轻的菇人。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1984
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"mushroom_f\"]/event/text"
-msgstr ""
+msgstr "菇人恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1992
 msgid ""
@@ -2203,17 +2230,17 @@ msgstr "成熟的菇人。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1994
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"mushroom_b\"]/event/text"
-msgstr ""
+msgstr "菇人恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2002
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"mushroom\"]/text"
-msgstr ""
+msgstr "年老的菇人。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2004
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"mushroom\"]/event/text"
-msgstr ""
+msgstr "菇人恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2012
 msgid ""
@@ -2223,7 +2250,7 @@ msgstr "兰花族。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2014
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"orchid\"]/event/text"
-msgstr ""
+msgstr "兰花族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2022
 msgid ""
@@ -2238,32 +2265,32 @@ msgstr "甲壳族恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:2032
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"turtle\"]/text"
-msgstr ""
+msgstr "装甲族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2034
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"turtle\"]/event/text"
-msgstr ""
+msgstr "装甲族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2042
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"slug_armored\"]/text"
-msgstr ""
+msgstr "甲壳蛞蝓。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2044
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"slug_armored\"]/event/text"
-msgstr ""
+msgstr "蛞蝓恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2052
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"slug\"]/text"
-msgstr ""
+msgstr "蛞蝓族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2054
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"slug\"]/event/text"
-msgstr ""
+msgstr "蛞蝓族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2062
 msgid ""
@@ -2273,17 +2300,17 @@ msgstr "蛞蝓蠕虫。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2064
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"slig\"]/event/text"
-msgstr ""
+msgstr "蛞蝓蠕虫恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2072
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"mantis\"]/text"
-msgstr ""
+msgstr "螳螂族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2074
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"mantis\"]/event/text"
-msgstr ""
+msgstr "螳螂族冷漠地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2082
 msgid ""
@@ -2303,27 +2330,27 @@ msgstr "水晶族。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2094
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"crystal\"]/event/text"
-msgstr ""
+msgstr "水晶族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2102
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"ghost\"]/text"
-msgstr ""
+msgstr "化身。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2104
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"ghost\"]/event/text"
-msgstr ""
+msgstr "化身冷漠地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2112
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[26]/text"
-msgstr ""
+msgstr "谁也不去！离开这个地方。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2113
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[26]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2119
 msgid ""
@@ -2345,27 +2372,29 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2132
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_5\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2136
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_5\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2140
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_5\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一枚导弹也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2145
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_10\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2149
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_10\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2153
 msgid ""
@@ -2377,7 +2406,7 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2158
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_15\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2162
 msgid ""
@@ -2388,21 +2417,25 @@ msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_15\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一枚导弹也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2171
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_20\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2175
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_20\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2179
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_20\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一枚导弹也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2184
 msgid ""
@@ -2424,12 +2457,12 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2197
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_5\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2201
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_5\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2205
 msgid ""
@@ -2441,37 +2474,41 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2210
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_10\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2214
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_10\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2218
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_10\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一点燃料也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2223
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_15\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2227
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_15\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2231
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_15\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一点燃料也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2236
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_20\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2240
 msgid ""
@@ -2482,6 +2519,8 @@ msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_20\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一点燃料也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2249
 msgid ""
@@ -2503,7 +2542,7 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2262
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_5\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2266
 msgid ""
@@ -2514,46 +2553,52 @@ msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_5\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一个无人机部件也没找到。"
+"似乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2275
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_10\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2279
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_10\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2283
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_10\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一个无人机部件也没找到。"
+"似乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2288
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_15\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2292
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_15\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2296
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_15\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一个无人机部件也没找到。"
+"似乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2301
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_20\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2305
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_20\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2309
 msgid ""
@@ -2582,42 +2627,46 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2327
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_25\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2331
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_25\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2335
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_25\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一点废料也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2340
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_40\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2344
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_40\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2348
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_40\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一点废料也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2353
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_55\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2357
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_55\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2361
 msgid ""
@@ -2629,17 +2678,19 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2366
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_70\"]/event[1]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2370
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_70\"]/event[2]/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2374
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_70\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却一点废料也没找到。似乎出"
+"了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2379
 msgid ""
@@ -2657,21 +2708,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_HUMAN\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2384
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_HUMAN\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2387
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_HUMAN\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2393
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_HUMAN\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2394
 msgid ""
@@ -2682,21 +2739,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_HUMAN\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2398
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_HUMAN\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2401
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_HUMAN\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2407
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_FEMALE\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2408
 msgid ""
@@ -2713,17 +2776,21 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2412
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_FEMALE\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2415
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_FEMALE\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2421
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENGI\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个半械族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2422
 msgid ""
@@ -2740,12 +2807,14 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2426
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENGI\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2429
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENGI\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2435
 msgid ""
@@ -2763,21 +2832,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MORPH\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个模物族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2440
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MORPH\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2443
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MORPH\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2449
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔坦。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2450
 msgid ""
@@ -2788,21 +2863,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔坦。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2454
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2457
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2463
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY_W\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔坦。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2464
 msgid ""
@@ -2813,21 +2894,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY_W\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔坦。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2468
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY_W\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2471
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY_W\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2477
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔顿。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2478
 msgid ""
@@ -2838,21 +2925,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔顿。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2482
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2485
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2491
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX_W\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔顿。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2492
 msgid ""
@@ -2869,12 +2962,14 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2496
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX_W\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2499
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX_W\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2505
 msgid ""
@@ -2892,21 +2987,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ROCK\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个岩石族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2510
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ROCK\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2513
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ROCK\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2519
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MAGMAN\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个熔岩族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2520
 msgid ""
@@ -2917,21 +3018,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MAGMAN\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个熔岩族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2524
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MAGMAN\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2527
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MAGMAN\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2533
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_KEEPER\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个守护者。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2534
 msgid ""
@@ -2942,16 +3049,20 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_KEEPER\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个守护者。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2538
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_KEEPER\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2541
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_KEEPER\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2547
 msgid ""
@@ -2969,21 +3080,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_F\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2552
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_F\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2555
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_F\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2561
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_B\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2562
 msgid ""
@@ -2994,21 +3111,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_B\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2566
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_B\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2569
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_B\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2575
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2576
 msgid ""
@@ -3025,17 +3148,21 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2580
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2583
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2589
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORCHID\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个兰花族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2590
 msgid ""
@@ -3046,21 +3173,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORCHID\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个兰花族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2594
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORCHID\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2597
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORCHID\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2603
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SHELL\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个甲壳族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2604
 msgid ""
@@ -3077,17 +3210,21 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2608
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SHELL\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2611
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SHELL\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2617
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_TURTLE\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个装甲族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2618
 msgid ""
@@ -3098,21 +3235,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_TURTLE\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个装甲族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2622
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_TURTLE\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2625
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_TURTLE\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2631
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ARM_SLUG\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个甲壳蛞蝓。一个是你的老船员，另一个"
+"是他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2632
 msgid ""
@@ -3129,17 +3272,21 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2636
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ARM_SLUG\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2639
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ARM_SLUG\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2645
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MANTIS\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个螳螂族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2646
 msgid ""
@@ -3150,16 +3297,20 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MANTIS\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个螳螂族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2650
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MANTIS\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2653
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MANTIS\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2659
 msgid ""
@@ -3177,16 +3328,20 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLUG\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中爬出两个蛞蝓族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2664
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLUG\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2667
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLUG\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2673
 msgid ""
@@ -3204,21 +3359,27 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中爬出两个蛞蝓蠕虫。一个是你的老船员，另一个"
+"是他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2678
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2681
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2687
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_CRYSTAL\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个水晶族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2688
 msgid ""
@@ -3235,7 +3396,7 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2692
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_CRYSTAL\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2695
 msgid ""
@@ -3248,36 +3409,44 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ANAEROBIC\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个食铁族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2702
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ANAEROBIC\"]/event[1]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2705
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ANAEROBIC\"]/event[2]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个食铁族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2706
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ANAEROBIC\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2709
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ANAEROBIC\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2715
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_GHOST\"]/event[1]/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个化身。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2716
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_GHOST\"]/event[1]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2719
 msgid ""
@@ -3289,12 +3458,14 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:2720
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_GHOST\"]/event[2]/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2723
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_GHOST\"]/event[3]/text"
 msgstr ""
+"……“量子倍增器”向天空发出一道明亮的闪光，你走近它，却找不到任何船员的踪迹。似"
+"乎出了什么问题。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2729
 msgid ""
@@ -3304,7 +3475,7 @@ msgstr "扔多少枚导弹？"
 #: src-ru/data/events_zoltan.xml.rawclobber:2731
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[1]/text"
-msgstr ""
+msgstr "1枚导弹。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2733
 msgid ""
@@ -3319,7 +3490,7 @@ msgstr "5枚导弹。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2746
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[2]/event/text"
-msgstr ""
+msgstr "你将导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2757
 msgid ""
@@ -3329,22 +3500,22 @@ msgstr "10枚导弹。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2759
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2770
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[4]/text"
-msgstr ""
+msgstr "15枚导弹。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2772
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将导弹扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2783
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[5]/text"
-msgstr ""
+msgstr "20枚导弹。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2785
 msgid ""
@@ -3354,12 +3525,12 @@ msgstr "你将导弹扔进“量子倍增器”的入口……"
 #: src-ru/data/events_zoltan.xml.rawclobber:2796
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2797
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_MISS_OK\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2801
 msgid ""
@@ -3369,17 +3540,17 @@ msgstr "扔多少燃料？"
 #: src-ru/data/events_zoltan.xml.rawclobber:2803
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[1]/text"
-msgstr ""
+msgstr "1单位燃料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2805
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[1]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2816
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[2]/text"
-msgstr ""
+msgstr "5单位燃料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2818
 msgid ""
@@ -3389,42 +3560,42 @@ msgstr "你将燃料扔进“量子倍增器”的入口……"
 #: src-ru/data/events_zoltan.xml.rawclobber:2829
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[3]/text"
-msgstr ""
+msgstr "10单位燃料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2831
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2842
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[4]/text"
-msgstr ""
+msgstr "15单位燃料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2844
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2855
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[5]/text"
-msgstr ""
+msgstr "20单位燃料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2857
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将燃料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2868
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2869
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_FUEL_OK\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2873
 msgid ""
@@ -3439,17 +3610,17 @@ msgstr "1个无人机部件。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2877
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[1]/event/text"
-msgstr ""
+msgstr "你将一个无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2888
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[2]/text"
-msgstr ""
+msgstr "5个无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2890
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[2]/event/text"
-msgstr ""
+msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2901
 msgid ""
@@ -3459,7 +3630,7 @@ msgstr "10个无人机部件。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2903
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2914
 msgid ""
@@ -3479,17 +3650,17 @@ msgstr "20个无人机部件。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2929
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将无人机部件扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2940
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2941
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_DRPR_OK\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2945
 msgid ""
@@ -3504,7 +3675,7 @@ msgstr "10单位。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2949
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[1]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2960
 msgid ""
@@ -3514,17 +3685,17 @@ msgstr "25单位。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2962
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[2]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2973
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[3]/text"
-msgstr ""
+msgstr "40单位。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2975
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2986
 msgid ""
@@ -3534,7 +3705,7 @@ msgstr "55单位。"
 #: src-ru/data/events_zoltan.xml.rawclobber:2988
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2999
 msgid ""
@@ -3544,17 +3715,17 @@ msgstr "70单位。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3001
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你将废料扔进“量子倍增器”的入口……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3012
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[6]/text"
-msgstr ""
+msgstr "什么也不扔。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3013
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_SCRP_OK\"]/choice[6]/event/text"
-msgstr ""
+msgstr "你返回轨道，准备启程。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3017
 msgid ""
@@ -3564,12 +3735,12 @@ msgstr "你船员中的谁要爬进“量子倍增器”的入口？"
 #: src-ru/data/events_zoltan.xml.rawclobber:3019
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"human\"]/text"
-msgstr ""
+msgstr "人类。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3021
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"human\"]/event/text"
-msgstr ""
+msgstr "人类恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3029
 msgid ""
@@ -3579,17 +3750,17 @@ msgstr "秩序教团人类。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3031
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"order_human\"]/event/text"
-msgstr ""
+msgstr "人类恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3039
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"order_female\"]/text"
-msgstr ""
+msgstr "秩序人类。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3041
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"order_female\"]/event/text"
-msgstr ""
+msgstr "人类恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3049
 msgid ""
@@ -3604,7 +3775,7 @@ msgstr "半械族冷漠地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3059
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"morph\"]/text"
-msgstr ""
+msgstr "模物族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3061
 msgid ""
@@ -3614,17 +3785,17 @@ msgstr "模物族冷漠地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3069
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"energy\"]/text"
-msgstr ""
+msgstr "佐尔坦。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3071
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"energy\"]/event/text"
-msgstr ""
+msgstr "佐尔坦恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3079
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"energy_w\"]/text"
-msgstr ""
+msgstr "佐尔坦。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3081
 msgid ""
@@ -3634,12 +3805,12 @@ msgstr "佐尔坦恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3089
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"energyx\"]/text"
-msgstr ""
+msgstr "佐尔顿。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3091
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"energyx\"]/event/text"
-msgstr ""
+msgstr "佐尔顿恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3099
 msgid ""
@@ -3659,22 +3830,22 @@ msgstr "岩石族。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3111
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"rock\"]/event/text"
-msgstr ""
+msgstr "岩石族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3119
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "熔岩族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3121
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"magman\"]/event/text"
-msgstr ""
+msgstr "熔岩族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3129
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"keeper\"]/text"
-msgstr ""
+msgstr "守护者。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3131
 msgid ""
@@ -3684,22 +3855,22 @@ msgstr "守护者恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3139
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"mushroom_f\"]/text"
-msgstr ""
+msgstr "年轻的菇人。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3141
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"mushroom_f\"]/event/text"
-msgstr ""
+msgstr "菇人恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3149
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"mushroom_b\"]/text"
-msgstr ""
+msgstr "成熟的菇人。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3151
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"mushroom_b\"]/event/text"
-msgstr ""
+msgstr "菇人恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3159
 msgid ""
@@ -3714,7 +3885,7 @@ msgstr "菇人恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3169
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"orchid\"]/text"
-msgstr ""
+msgstr "兰花族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3171
 msgid ""
@@ -3724,12 +3895,12 @@ msgstr "兰花族恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3179
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"shell\"]/text"
-msgstr ""
+msgstr "甲壳族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3181
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"shell\"]/event/text"
-msgstr ""
+msgstr "甲壳族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3189
 msgid ""
@@ -3749,7 +3920,7 @@ msgstr "甲壳蛞蝓。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3201
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"slug_armored\"]/event/text"
-msgstr ""
+msgstr "蛞蝓族恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3209
 msgid ""
@@ -3764,7 +3935,7 @@ msgstr "蛞蝓族恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3219
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"slig\"]/text"
-msgstr ""
+msgstr "蛞蝓蠕虫。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3221
 msgid ""
@@ -3784,17 +3955,17 @@ msgstr "螳螂族冷漠地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3239
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"anaerobic\"]/text"
-msgstr ""
+msgstr "食铁族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3241
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"anaerobic\"]/event/text"
-msgstr ""
+msgstr "食铁族冷漠地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3249
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"crystal\"]/text"
-msgstr ""
+msgstr "水晶族。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3251
 msgid ""
@@ -3824,107 +3995,109 @@ msgstr "你返回轨道，准备启程。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3276
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_1_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3282
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_5_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3288
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_10_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3294
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_15_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3300
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_MISS_20_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，导弹成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3306
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_1_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3312
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_5_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3318
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_10_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3324
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_15_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3330
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_FUEL_20_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，燃料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3336
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_1_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3342
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_5_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3348
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_10_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3354
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_15_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3360
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_DRPR_20_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，无人机部件成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3366
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_10_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3372
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_25_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3378
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_40_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3384
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_55_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3390
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_SCRP_70_OK\"]/event/text"
-msgstr ""
+msgstr "……“量子倍增器”发出明亮的闪光，废料成功复制了。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3396
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_HUMAN_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3397
 msgid ""
@@ -3935,6 +4108,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_HUMAN_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3403
 msgid ""
@@ -3945,6 +4120,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ORDER_FEMALE_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个人类。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3409
 msgid ""
@@ -3955,6 +4132,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENGI_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个半械族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3415
 msgid ""
@@ -3965,6 +4144,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MORPH_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个模物族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3421
 msgid ""
@@ -3975,6 +4156,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGY_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔坦。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3427
 msgid ""
@@ -3997,6 +4180,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔顿。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3439
 msgid ""
@@ -4007,6 +4192,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ENERGYX_W_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个佐尔顿。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3445
 msgid ""
@@ -4017,6 +4204,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ROCK_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个岩石族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3451
 msgid ""
@@ -4051,6 +4240,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_F_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3469
 msgid ""
@@ -4061,6 +4252,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_B_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3475
 msgid ""
@@ -4071,6 +4264,8 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MUSHROOM_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个菇人。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3481
 msgid ""
@@ -4093,11 +4288,13 @@ msgstr "量子"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SHELL_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个甲壳族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3493
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SHELL_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3498
 msgid ""
@@ -4109,17 +4306,19 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:3499
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_TURTLE_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3504
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ARM_SLUG_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个甲壳蛞蝓。一个是你的老船员，另一个"
+"是他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3505
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ARM_SLUG_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3510
 msgid ""
@@ -4131,37 +4330,43 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:3511
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_MANTIS_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3516
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLUG_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中爬出两个蛞蝓族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3517
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLUG_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3522
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中爬出两个蛞蝓蠕虫。一个是你的老船员，另一个"
+"是他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3523
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3528
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_CRYSTAL_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个水晶族。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3529
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_CRYSTAL_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3534
 msgid ""
@@ -4173,17 +4378,19 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:3535
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_ANAEROBIC_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3540
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_GHOST_OK\"]/event/text"
 msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中走出两个化身。一个是你的老船员，另一个是他"
+"的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3541
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_GHOST_OK\"]/event/crewMember"
-msgstr ""
+msgstr "量子"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3548
 msgid ""
@@ -4237,36 +4444,42 @@ msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3586
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/choice[@req=\"oxygen\" and @lvl=\"0\"]/event/text"
 msgstr ""
+"……这时佐尔顿说：“我们没想到飞船会对生命体如此不友好……”尽管如此，他们还是给了"
+"你一些废料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3595
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/choice[@req=\"oxygen\" and @lvl=\"1\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们原本期望更多，但至少你船上有氧气。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3604
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3613
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3624
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3628
 msgid ""
@@ -4284,19 +4497,21 @@ msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3655
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3666
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3670
 msgid ""
@@ -4314,13 +4529,15 @@ msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3697
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
 msgstr ""
+"……这时佐尔顿说：“谢谢！你的飞船装备非常精良。我们获得了所有必要的数据。这是报"
+"酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3708
 msgid ""
@@ -4347,23 +4564,29 @@ msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"3\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
 msgstr ""
+"……这时佐尔顿说：“谢谢！你的飞船装备非常精良。我们获得了所有必要的数据。这是报"
+"酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3739
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M1\"]/choice[@req=\"medbay\""
 " and @lvl=\"3\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
 msgstr ""
+"……这时佐尔顿说：“谢谢！我们从没见过装备如此精良的飞船！我们获得了所有必要的数"
+"据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3749
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/text"
-msgstr ""
+msgstr "佐尔顿与你的飞船对接，将一些仪器搬到你的船上。你盯着他们……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3753
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3757
 msgid ""
@@ -4383,91 +4606,99 @@ msgstr "……这时佐尔顿说：“谢谢！我们原本期望更多，但至
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3784
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"0\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3795
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3799
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/choice[@req=\"oxygen\" and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“我们注意到你的飞船不太适合居住。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3808
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/choice[@req=\"oxygen\" and @lvl=\"1\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3817
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3826
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"1\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3837
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3841
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/choice[@req=\"oxygen\" and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3850
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/choice[@req=\"oxygen\" and @lvl=\"1\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3859
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/choice[@req=\"oxygen\" and @lvl=\"2\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3868
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"2\"]/event/choice[@req=\"oxygen\" and @lvl=\"3\"]/event/text"
 msgstr ""
+"……这时佐尔顿说：“谢谢！你的飞船装备非常精良。我们获得了所有必要的数据。这是报"
+"酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3879
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"3\"]/event/text"
 msgstr ""
+"……佐尔顿在你的飞船里走动并进行测量。超光速推进器已充能完毕，你正打算请他们快"
+"一点……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3883
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"3\"]/event/choice[@req=\"oxygen\" and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3892
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ZOLTON_RESEARCH_M2\"]/choice[@req=\"medbay\""
 " and @lvl=\"3\"]/event/choice[@req=\"oxygen\" and @lvl=\"1\"]/event/text"
-msgstr ""
+msgstr "……这时佐尔顿说：“谢谢！我们获得了所有必要的数据。这是报酬，祝一路顺风。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3901
 msgid ""
@@ -4488,17 +4719,17 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:3931
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[1]/text"
-msgstr ""
+msgstr "船上没有任何生命迹象。你从那里取走了有用的材料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3935
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[2]/text"
-msgstr ""
+msgstr "船上没有任何生命迹象。你从那里取走了所有有用的材料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3939
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[3]/text"
-msgstr ""
+msgstr "船上没有任何生命迹象。你从那里取走了所有有用的材料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3943
 msgid ""
@@ -4515,12 +4746,12 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:3949
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[5]/choice[1]/text"
-msgstr ""
+msgstr "让他加入队伍。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3951
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[5]/choice[1]/event/text"
-msgstr ""
+msgstr "前囚犯开始履行他的新职责。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3956
 msgid ""
@@ -4530,12 +4761,12 @@ msgstr "将他送到最近的空间站。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3958
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[5]/choice[2]/event/text"
-msgstr ""
+msgstr "为了报答救命之恩，他把自己所有未被抢走的值钱物品都给了你。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3965
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_ENERGYX\"]/event[6]/text"
-msgstr ""
+msgstr "你在他们的飞船上发现了一件独特武器。没人能阻止你，你可以把它装到自己船上。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3973
 msgid ""
@@ -4569,7 +4800,7 @@ msgstr "走私者对你的攻击行为做出回应，开始给武器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4014
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"UWB_JUST_BUY\"]/text"
-msgstr ""
+msgstr "走私者的所有武器看起来都一模一样，所以你随手拿了一个。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4018
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"UWB_JUST_BUY_WIN\"]/text"
@@ -4593,7 +4824,7 @@ msgstr "船上没有任何生命迹象。你从那里取走了有用的材料。
 #: src-ru/data/events_zoltan.xml.rawclobber:4037
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_CON\"]/event[2]/text"
-msgstr ""
+msgstr "船上没有任何生命迹象。你从那里取走了所有有用的材料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4041
 msgid ""
@@ -4603,12 +4834,14 @@ msgstr "船上没有任何生命迹象。你从那里取走了所有有用的材
 #: src-ru/data/events_zoltan.xml.rawclobber:4045
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_CON\"]/event[4]/text"
-msgstr ""
+msgstr "船员已死，你可以从他们的仓库中拿走燃料。还可以收集所有可用的废料。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4049
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_CON\"]/event[5]/text"
 msgstr ""
+"现在他们的飞船已清理干净，你进行了搜索。最后你发现了一名囚犯，他提议加入你的"
+"船员队伍。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4051
 msgid ""
@@ -4623,7 +4856,7 @@ msgstr "前囚犯开始履行他的新职责。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4058
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"DEAD_CREW_CON\"]/event[5]/choice[2]/text"
-msgstr ""
+msgstr "将他送到最近的空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4060
 msgid ""
@@ -4696,12 +4929,12 @@ msgstr "你注意到他们的超光速推进器正在充能。看来他们想逃
 #: src-ru/data/events_zoltan.xml.rawclobber:4117
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"FED_DANGERSCAN_PARAM\"]/gotaway/text"
-msgstr ""
+msgstr "飞船朝未知方向进行了超光速跃迁……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4120
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"FED_DANGERSCAN_PARAM\"]/destroyed/text"
-msgstr ""
+msgstr "你迅速收集了爆炸后幸存的一切。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4124
 msgid ""
@@ -4712,21 +4945,23 @@ msgstr "飞船船员已被消灭，你搜刮了货舱。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[1]/text"
 msgstr ""
+"[扫描：25%] 你靠近到可以开始扫描的距离，并着手工作。你飞船的仪器因过载而失灵"
+"，所有设备都在剧烈摇晃和颠簸。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4135
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[1]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4139
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[1]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4141
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[1]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4146
 msgid ""
@@ -4738,7 +4973,7 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:4150
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4154
 msgid ""
@@ -4748,92 +4983,102 @@ msgstr "停止扫描。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4156
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[2]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4161
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[3]/text"
 msgstr ""
+"[扫描：25%] 你靠近到可以开始扫描的距离，并着手工作。你飞船的仪器因过载而失灵"
+"，所有设备都在剧烈摇晃和颠簸。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4166
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4170
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4172
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[3]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4177
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[4]/text"
 msgstr ""
+"[扫描：25%] 你靠近到可以开始扫描的距离，并着手工作。你飞船的仪器因过载而失灵"
+"，所有设备都在剧烈摇晃和颠簸。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4180
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[4]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4184
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[4]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4186
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_1\"]/event[4]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4193
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[1]/text"
 msgstr ""
+"[扫描：50%] 你无视危险环境，继续工作。与此同时，你身后某个邻近舱室传来爆炸声…"
+"…"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4197
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[1]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4201
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[1]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4203
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[1]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4208
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[2]/text"
 msgstr ""
+"[扫描：50%] 你无视危险环境，继续工作。与此同时，你身后某个邻近舱室传来爆炸声…"
+"…"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4211
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4215
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[2]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4217
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[2]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4222
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[3]/text"
 msgstr ""
+"[扫描：50%] 你无视危险环境，继续工作。与此同时，你身后某个邻近舱室传来爆炸声…"
+"…"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4226
 msgid ""
@@ -4843,12 +5088,12 @@ msgstr "继续扫描。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4230
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4232
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[3]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4237
 msgid ""
@@ -4860,57 +5105,57 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:4240
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[4]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4244
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[4]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4246
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_2\"]/event[4]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4253
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[1]/text"
-msgstr ""
+msgstr "[扫描：75%] 你继续扫描异常点。只差一点点了，你的飞船一定能撑过这场考验。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4257
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[1]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4261
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[1]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4263
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[1]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4268
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[2]/text"
-msgstr ""
+msgstr "[扫描：75%] 你继续扫描异常点。只差一点点了，你的飞船一定能撑过这场考验。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4273
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4277
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[2]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4279
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[2]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4284
 msgid ""
@@ -4920,32 +5165,32 @@ msgstr "[扫描：75%] 你继续扫描异常点。只差一点点了，你的飞
 #: src-ru/data/events_zoltan.xml.rawclobber:4287
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4291
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4293
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[3]/choice[2]/event/text"
-msgstr ""
+msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器充能。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4298
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[4]/text"
-msgstr ""
+msgstr "[扫描：75%] 你继续扫描异常点。只差一点点了，你的飞船一定能撑过这场考验。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4301
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[4]/choice[1]/text"
-msgstr ""
+msgstr "继续扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4305
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_3\"]/event[4]/choice[2]/text"
-msgstr ""
+msgstr "停止扫描。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4307
 msgid ""
@@ -4956,16 +5201,20 @@ msgstr "你决定不再冒险，飞到安全距离后开始为超光速推进器
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_4\"]/event[1]/text"
 msgstr ""
+"[扫描：100%] 你飞到远离异常点的安全距离，并将扫描结果传给联邦飞船。心怀感激的"
+"科学家们给了你一大堆贵重设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4318
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_4\"]/event[1]/choice/text"
-msgstr ""
+msgstr "提醒他们修理你的飞船。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4323
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_4\"]/event[2]/text"
 msgstr ""
+"[扫描：100%] 你飞到远离异常点的安全距离，并将扫描结果传给联邦飞船。心怀感激的"
+"科学家们给了你一大堆贵重设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4328
 msgid ""
@@ -4976,11 +5225,13 @@ msgstr "提醒他们修理你的飞船。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_4\"]/event[3]/text"
 msgstr ""
+"[扫描：100%] 你飞到远离异常点的安全距离，并将扫描结果传给联邦飞船。心怀感激的"
+"科学家们给了你一大堆贵重设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4338
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_4\"]/event[3]/choice/text"
-msgstr ""
+msgstr "提醒他们修理你的飞船。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4343
 msgid ""
@@ -4992,47 +5243,63 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:4349
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_4\"]/event[4]/choice/text"
-msgstr ""
+msgstr "提醒他们修理你的飞船。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4357
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[1]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4361
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[2]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4365
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[3]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4369
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[4]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4373
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[5]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4377
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[6]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4381
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[7]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4385
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_FED_DANGERSCAN_REPAIR\"]/event[8]/text"
 msgstr ""
+"“啊，对，当然……”他们派了几个维修无人机过来，而你正在扑灭飞船上的火灾和修补破"
+"洞。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4389
 msgid ""
@@ -5084,7 +5351,7 @@ msgstr "说你没有护盾系统，请求安装一个。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4422
 msgid ""
@@ -5096,37 +5363,37 @@ msgstr "询问升级护盾的价格。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"3\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4430
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"4\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4434
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"5\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4438
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"6\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4442
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"7\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4446
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS\"]/choice[@req=\"shields\""
 " and @lvl=\"8\"]/text"
-msgstr ""
+msgstr "询问升级护盾的价格。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4448
 msgid ""
@@ -5172,17 +5439,17 @@ msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4482
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_0\"]/choice[2]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4484
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_0\"]/choice[2]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4489
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_1\"]/text"
-msgstr ""
+msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以接受吗？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4491
 msgid ""
@@ -5192,17 +5459,17 @@ msgstr "安装2级护盾系统。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4493
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_1\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4501
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_1\"]/choice[2]/text"
-msgstr ""
+msgstr "安装3级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4503
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_1\"]/choice[2]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4511
 msgid ""
@@ -5227,17 +5494,17 @@ msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4531
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_1\"]/choice[5]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4533
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_1\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4538
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_2\"]/text"
-msgstr ""
+msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以接受吗？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4540
 msgid ""
@@ -5247,17 +5514,17 @@ msgstr "安装3级护盾系统。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4542
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_2\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4550
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_2\"]/choice[2]/text"
-msgstr ""
+msgstr "安装4级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4552
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_2\"]/choice[2]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4560
 msgid ""
@@ -5282,17 +5549,17 @@ msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4580
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_2\"]/choice[5]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4582
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_2\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4587
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_3\"]/text"
-msgstr ""
+msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以接受吗？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4589
 msgid ""
@@ -5302,17 +5569,17 @@ msgstr "安装4级护盾系统。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4591
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_3\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4599
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_3\"]/choice[2]/text"
-msgstr ""
+msgstr "安装5级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4601
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_3\"]/choice[2]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4609
 msgid ""
@@ -5337,12 +5604,12 @@ msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4629
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_3\"]/choice[5]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4631
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_3\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4636
 msgid ""
@@ -5352,17 +5619,17 @@ msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以
 #: src-ru/data/events_zoltan.xml.rawclobber:4638
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[1]/text"
-msgstr ""
+msgstr "安装5级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4640
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4648
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[2]/text"
-msgstr ""
+msgstr "安装6级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4650
 msgid ""
@@ -5372,7 +5639,7 @@ msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4658
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[3]/text"
-msgstr ""
+msgstr "安装7级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4660
 msgid ""
@@ -5382,82 +5649,82 @@ msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4668
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[4]/text"
-msgstr ""
+msgstr "安装8级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4670
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[4]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4678
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[5]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4680
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_4\"]/choice[5]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4685
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/text"
-msgstr ""
+msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以接受吗？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4687
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[1]/text"
-msgstr ""
+msgstr "安装6级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4689
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4697
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[2]/text"
-msgstr ""
+msgstr "安装7级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4699
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[2]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4707
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[3]/text"
-msgstr ""
+msgstr "安装8级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4709
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[3]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4717
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[4]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4719
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_5\"]/choice[4]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4724
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_6\"]/text"
-msgstr ""
+msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以接受吗？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4726
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_6\"]/choice[1]/text"
-msgstr ""
+msgstr "安装7级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4728
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_6\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4736
 msgid ""
@@ -5467,7 +5734,7 @@ msgstr "安装8级护盾系统。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4738
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_6\"]/choice[2]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4746
 msgid ""
@@ -5477,27 +5744,27 @@ msgstr "拒绝升级。"
 #: src-ru/data/events_zoltan.xml.rawclobber:4748
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_6\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你感谢佐尔顿的热情接待，然后飞离了空间站。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4753
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_7\"]/text"
-msgstr ""
+msgstr "“这是我们可以对你的护盾进行的操作。这笔交易可以接受吗？”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4755
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_7\"]/choice[1]/text"
-msgstr ""
+msgstr "安装8级护盾系统。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4757
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_7\"]/choice[1]/event/text"
-msgstr ""
+msgstr "佐尔顿安装了所需设备，并收走了他们的报酬。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4765
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_ENERGYX_BS_SHIELD_7\"]/choice[2]/text"
-msgstr ""
+msgstr "拒绝升级。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4767
 msgid ""
@@ -5530,7 +5797,7 @@ msgstr "走私者向你展示了他们的商品。我们该怎么办？"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_CONTRABAND\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/event/choice[1]/text"
-msgstr ""
+msgstr "购买这件武器。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4798
 msgid ""
@@ -5542,7 +5809,7 @@ msgstr "购买这件武器。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_CONTRABAND\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/event/choice[2]/event/text"
-msgstr ""
+msgstr "你付了钱，拿走了武器。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4805
 msgid ""
@@ -5555,18 +5822,20 @@ msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_CONTRABAND\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/event/choice[3]/event/text"
 msgstr ""
+"你决定必须制止非法武器供应。走私者才不管卖给谁，而叛军一旦联系上他们只会变得"
+"更加强大。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4812
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_CONTRABAND\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/event/choice[4]/text"
-msgstr ""
+msgstr "拒绝购买并飞走。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4814
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_CONTRABAND\"]/choice[@req=\"SLUG_AND_ARMORED_SLUG\""
 " and @lvl=\"0\"]/event/choice[4]/event/text"
-msgstr ""
+msgstr "你切断了通讯频道，准备跃迁。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4820
 msgid ""
@@ -5577,6 +5846,8 @@ msgstr "攻击对方。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_CONTRABAND\"]/choice[3]/event/text"
 msgstr ""
+"你决定必须制止非法武器供应。走私者才不管卖给谁，而叛军一旦联系上他们只会变得"
+"更加强大。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:4827
 msgid ""
@@ -9223,7 +9494,7 @@ msgstr "你决定用武力夺取……"
 #: src-ru/data/events_zoltan.xml.rawclobber:7706
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/text"
-msgstr ""
+msgstr "……雇佣兵向你提议一个“非常划算”的交易。船员们持怀疑态度，但决定权在你。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7708
 msgid ""
@@ -9233,7 +9504,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7710
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7718
 msgid ""
@@ -9248,17 +9519,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7724
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7729
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"human_crew\"]/text"
-msgstr ""
+msgstr "（人类船员）让人类提议进行另一项交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7731
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"human_crew\"]/event/text"
-msgstr ""
+msgstr "走私者稍加思索后同意了，并提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7733
 msgid ""
@@ -9268,7 +9539,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7735
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"human_crew\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7743
 msgid ""
@@ -9283,17 +9554,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7749
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"human_crew\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7756
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr ""
+msgstr "（人类船员）让人类提议进行另一项交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7758
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/text"
-msgstr ""
+msgstr "走私者稍加思索后同意了，并提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7760
 msgid ""
@@ -9303,7 +9574,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7762
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7770
 msgid ""
@@ -9318,17 +9589,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7776
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7783
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"slug_crew\"]/text"
-msgstr ""
+msgstr "（蛞蝓族船员）让蛞蝓说服他们提供替代交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7785
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"slug_crew\"]/event/text"
-msgstr ""
+msgstr "蛞蝓用催眠术影响雇佣兵一段时间，他们提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7787
 msgid ""
@@ -9338,7 +9609,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7789
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"slug_crew\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7797
 msgid ""
@@ -9353,12 +9624,12 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7803
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[7]/choice[@req=\"slug_crew\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7811
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/text"
-msgstr ""
+msgstr "……雇佣兵向你提议一个“非常划算”的交易。船员们持怀疑态度，但决定权在你。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7813
 msgid ""
@@ -9368,7 +9639,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7815
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7823
 msgid ""
@@ -9383,17 +9654,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7829
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7834
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"human_crew\"]/text"
-msgstr ""
+msgstr "（人类船员）让人类提议进行另一项交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7836
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"human_crew\"]/event/text"
-msgstr ""
+msgstr "走私者稍加思索后同意了，并提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7838
 msgid ""
@@ -9403,7 +9674,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7840
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"human_crew\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7848
 msgid ""
@@ -9418,17 +9689,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7854
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"human_crew\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7861
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr ""
+msgstr "（人类船员）让人类提议进行另一项交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7863
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/text"
-msgstr ""
+msgstr "走私者稍加思索后同意了，并提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7865
 msgid ""
@@ -9438,7 +9709,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7867
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7875
 msgid ""
@@ -9453,17 +9724,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7881
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7888
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"slug_crew\"]/text"
-msgstr ""
+msgstr "（蛞蝓族船员）让蛞蝓说服他们提供替代交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7890
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"slug_crew\"]/event/text"
-msgstr ""
+msgstr "蛞蝓用催眠术影响雇佣兵一段时间，他们提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7892
 msgid ""
@@ -9473,7 +9744,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7894
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"slug_crew\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7902
 msgid ""
@@ -9488,12 +9759,12 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7908
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[8]/choice[@req=\"slug_crew\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7916
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/text"
-msgstr ""
+msgstr "……雇佣兵向你提议一个“非常划算”的交易。船员们持怀疑态度，但决定权在你。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7918
 msgid ""
@@ -9503,7 +9774,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7920
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7928
 msgid ""
@@ -9518,17 +9789,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7934
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7939
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"human_crew\"]/text"
-msgstr ""
+msgstr "（人类船员）让人类提议进行另一项交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7941
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"human_crew\"]/event/text"
-msgstr ""
+msgstr "走私者稍加思索后同意了，并提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7943
 msgid ""
@@ -9538,7 +9809,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7945
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"human_crew\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7953
 msgid ""
@@ -9553,17 +9824,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7959
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"human_crew\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7966
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"CREW_ORDER_HUMAN\"]/text"
-msgstr ""
+msgstr "（人类船员）让人类提议进行另一项交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7968
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/text"
-msgstr ""
+msgstr "走私者稍加思索后同意了，并提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7970
 msgid ""
@@ -9573,7 +9844,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7972
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7980
 msgid ""
@@ -9588,17 +9859,17 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7986
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"CREW_ORDER_HUMAN\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7993
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"slug_crew\"]/text"
-msgstr ""
+msgstr "（蛞蝓族船员）让蛞蝓说服他们提供替代交易。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7995
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"slug_crew\"]/event/text"
-msgstr ""
+msgstr "蛞蝓用催眠术影响雇佣兵一段时间，他们提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7997
 msgid ""
@@ -9608,7 +9879,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7999
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"slug_crew\"]/event/choice[1]/event/text"
-msgstr ""
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:8007
 msgid ""
@@ -9623,7 +9894,7 @@ msgstr "攻击他。"
 #: src-ru/data/events_zoltan.xml.rawclobber:8013
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[9]/choice[@req=\"slug_crew\"]/event/choice[3]/event/text"
-msgstr ""
+msgstr "你决定用武力夺取……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:8023
 msgid ""
@@ -9633,7 +9904,7 @@ msgstr "看起来飞船试图逃跑！"
 #: src-ru/data/events_zoltan.xml.rawclobber:8026
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"SHIPS_PIRATE_GONEAWAY\"]/gotaway/text"
-msgstr ""
+msgstr "飞船进行了超光速跃迁……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:8035
 msgid ""
