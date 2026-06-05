@@ -1,9 +1,16 @@
 #
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-06-05 17:43+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
+"Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
+"datablueprintsxmlrawclobber/en/>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/blueprints.xml.rawclobber:169
 msgid ""
@@ -4705,10 +4712,13 @@ msgid ""
 msgstr "Artillery"
 
 #: src-ru/data/blueprints.xml.rawclobber:15054
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"artillery\"]/desc"
 msgstr ""
-"Installs a signature superweapon that fires on its own, determined by your ship's class.\n"
-"\tAt level 2, manual targeting is available for purchase (from the HOLD menu)."
+"Installs a signature superweapon that fires on its own, determined by your "
+"ship's class.\n"
+"\tAt level 2, manual targeting is available for purchase (from the HOLD menu)"
+"."
 
 #: src-ru/data/blueprints.xml.rawclobber:15068
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"engines\"]/title"
@@ -4735,6 +4745,7 @@ msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"drones\"]/title"
 msgstr "Drone Control"
 
 #: src-ru/data/blueprints.xml.rawclobber:15118
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"drones\"]/desc"
 msgstr ""
 "Powers all of the ship's drones. Drones are automated robots that perform "
@@ -5005,6 +5016,7 @@ msgid ""
 msgstr "Safety Teleport"
 
 #: src-ru/data/blueprints.xml.rawclobber:15396
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/desc"
 msgstr ""
@@ -5063,10 +5075,14 @@ msgid ""
 msgstr "Infrared Scanner"
 
 #: src-ru/data/blueprints.xml.rawclobber:15445
+#, fuzzy
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/desc"
 msgstr ""
-"Detects the location of any life forms, even when sensors are weak or absent.\n"
-"\tProvides information about the enemy ship's evasion, O2 levels and remaining number of consumables. Also allows ship sensors to function in nebulae."
+"Detects the location of any life forms, even when sensors are weak or "
+"absent.\n"
+"\tProvides information about the enemy ship's evasion, O2 levels and "
+"remaining number of consumables. Also allows ship sensors to function in "
+"nebulae."
 
 #: src-ru/data/blueprints.xml.rawclobber:15454
 msgid ""
@@ -5074,6 +5090,7 @@ msgid ""
 msgstr "Super Shield Bypass"
 
 #: src-ru/data/blueprints.xml.rawclobber:15455
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ZOLTAN_BYPASS\"]/desc"
 msgstr ""
@@ -5127,6 +5144,7 @@ msgid ""
 msgstr "Automated Reloader"
 
 #: src-ru/data/blueprints.xml.rawclobber:15504
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_COOLDOWN\"]/desc"
 msgstr "Cooldown between artillery and weapon shots is improved by 25%."
@@ -5322,6 +5340,7 @@ msgstr ""
 "\tOpen the HOLD menu to activate it."
 
 #: src-ru/data/blueprints.xml.rawclobber:15693
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_DOWN\"]/title"
 msgstr "Anti-Repair Nanobots"
@@ -5347,6 +5366,7 @@ msgid ""
 msgstr "Repair Controller"
 
 #: src-ru/data/blueprints.xml.rawclobber:15714
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP_AND_DOWN\"]/desc"
 msgstr ""
@@ -7407,6 +7427,7 @@ msgid ""
 msgstr "Inflicts half as much damage in combat"
 
 #: src-ru/data/blueprints.xml.rawclobber:18555
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/desc"
 msgstr ""
@@ -21149,6 +21170,7 @@ msgid ""
 msgstr "Morph-М"
 
 #: src-ru/data/blueprints.xml.rawclobber:45117
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M\"]/desc"
 msgstr ""
@@ -21166,6 +21188,7 @@ msgid ""
 msgstr "Morph-R"
 
 #: src-ru/data/blueprints.xml.rawclobber:45147
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R\"]/desc"
 msgstr ""
@@ -21183,6 +21206,7 @@ msgid ""
 msgstr "Morph-S"
 
 #: src-ru/data/blueprints.xml.rawclobber:45177
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S\"]/desc"
 msgstr ""
@@ -21200,6 +21224,7 @@ msgid ""
 msgstr "Morph-Z"
 
 #: src-ru/data/blueprints.xml.rawclobber:45207
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z\"]/desc"
 msgstr ""
@@ -35733,11 +35758,13 @@ msgid ""
 msgstr "This hellish beam ignites fires and damages crew."
 
 #: src-ru/data/blueprints.xml.rawclobber:74782
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_FIRE_2_CLD\"]/title"
 msgstr "Fire Beam Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:74783
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_FIRE_2_CLD\"]/short"
 msgstr "Fire Beam II ‡"
@@ -37138,11 +37165,13 @@ msgstr ""
 " in or out of the room, damaging and stunning crew."
 
 #: src-ru/data/blueprints.xml.rawclobber:77150
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_FRC\"]/title"
 msgstr "Small Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:77151
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_FRC\"]/short"
 msgstr "Small B. ‰"
@@ -52963,6 +52992,7 @@ msgid ""
 msgstr "Morph-М ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:109000
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_CLD\"]/desc"
 msgstr ""
@@ -52980,6 +53010,7 @@ msgid ""
 msgstr "Morph-М †"
 
 #: src-ru/data/blueprints.xml.rawclobber:109030
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_POW\"]/desc"
 msgstr ""
@@ -52997,6 +53028,7 @@ msgid ""
 msgstr "Morph-М √"
 
 #: src-ru/data/blueprints.xml.rawclobber:109060
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_UNI\"]/desc"
 msgstr ""
@@ -53014,6 +53046,7 @@ msgid ""
 msgstr "Morph-R ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:109090
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_FRC\"]/desc"
 msgstr ""
@@ -53031,6 +53064,7 @@ msgid ""
 msgstr "Morph-R ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:109120
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_CLD\"]/desc"
 msgstr ""
@@ -53048,6 +53082,7 @@ msgid ""
 msgstr "Morph-R †"
 
 #: src-ru/data/blueprints.xml.rawclobber:109150
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_POW\"]/desc"
 msgstr ""
@@ -53065,6 +53100,7 @@ msgid ""
 msgstr "Morph-R √"
 
 #: src-ru/data/blueprints.xml.rawclobber:109180
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_UNI\"]/desc"
 msgstr ""
@@ -53082,6 +53118,7 @@ msgid ""
 msgstr "Morph-S €"
 
 #: src-ru/data/blueprints.xml.rawclobber:109210
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_BRC\"]/desc"
 msgstr ""
@@ -53099,6 +53136,7 @@ msgid ""
 msgstr "Morph-S ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:109240
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_CLD\"]/desc"
 msgstr ""
@@ -53116,6 +53154,7 @@ msgid ""
 msgstr "Morph-S †"
 
 #: src-ru/data/blueprints.xml.rawclobber:109270
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_POW\"]/desc"
 msgstr ""
@@ -53133,6 +53172,7 @@ msgid ""
 msgstr "Morph-S √"
 
 #: src-ru/data/blueprints.xml.rawclobber:109300
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_UNI\"]/desc"
 msgstr ""
@@ -53150,6 +53190,7 @@ msgid ""
 msgstr "Morph-Z ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:109330
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_CLD\"]/desc"
 msgstr ""
@@ -53167,6 +53208,7 @@ msgid ""
 msgstr "Morph-Z †"
 
 #: src-ru/data/blueprints.xml.rawclobber:109361
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_POW\"]/desc"
 msgstr ""
@@ -53184,6 +53226,7 @@ msgid ""
 msgstr "Morph-Z √"
 
 #: src-ru/data/blueprints.xml.rawclobber:109392
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_UNI\"]/desc"
 msgstr ""
@@ -88200,6 +88243,7 @@ msgid ""
 msgstr "Annihilator"
 
 #: src-ru/data/blueprints.xml.rawclobber:176321
+#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/desc"
 msgstr ""
