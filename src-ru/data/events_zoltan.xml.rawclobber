@@ -52,6 +52,7 @@ shield research center — jams shields
 	<event load="REBEL"/>
 	<event load="REBEL_AUTO"/>
 	<event load="REBEL_PULSAR"/>
+	<event load="OXYGEN_FIGHT"/><!-- 1.35 -->
 </eventList>
 
 <eventList name="NEUTRAL_ZOLTAN">
@@ -761,7 +762,7 @@ shield research center — jams shields
 </event>
 <eventList name="ZOLTAN_EYE_LIST">
 	<event>
-		<text>Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша миссия принесла вам великие битвы и великие поражения. Это облегчит вашу боль...» Несколькими минутами позже вы находите ремонтное оборудование на корабле!</text>
+		<text>Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша миссия принесла вам великие битвы и великие поражения. Это облегчит вашу боль...» Несколькими минутами позже вы находите исцеляющее оборудование на корабле!</text><!-- 1.35 --> <!-- thanks blizz -->
 		<weapon name="WEAPONS_BOMB_HEAL"/>
 	</event>
 	<event>
@@ -876,10 +877,10 @@ shield research center — jams shields
 	</event>
 </eventList>
 
-<event name="NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE" unique="true">  <!-- can also use this with other sectors?-->
+<!-- <event name="NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE" unique="true">
 	<text>Вы выследили два пиратских корабля, что притаились в туманности неподалёку. Они не догадываются о вашем присутствии. Вы имеете возможность просканировать по меньшей мере их груз — один транспортирует топливо, второй — боеприпасы. Под воздействием космического шторма их начинает слегка относить друг от друга в разные стороны.</text>
 	<environment type="storm"/>
-	<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
+	<variable name="counter_meet_nebula" op="add" val="1"/>
 	<choice hidden="true">
 		<text>Захватить корабль с топливом.</text>
 		<event>
@@ -900,9 +901,151 @@ shield research center — jams shields
 			<text>Иногда осторожность — лучшая часть доблести.</text>
 		</event>
 	</choice>
+</event> --><!-- 1.35 -->
+
+<event name="NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE" unique="true">
+	<text>Вы выследили два пиратских корабля, что притаились в туманности неподалёку. Они не догадываются о вашем присутствии. Вы имеете возможность незаметно просканировать их.</text>
+	<environment type="storm"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Просканировать их.</text>
+		<event load="NEBULA_STORM_ZOLTAN_SUPPLY_LIST"/>
+	</choice>
+	<choice hidden="true">
+		<text>Дать им уйти и поговорить с экипажем.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
 </event>
-
-
+<eventList name="NEBULA_STORM_ZOLTAN_SUPPLY_LIST"> 
+	<event>
+		<text>Сканирование показало, что один транспортирует топливо, второй — боеприпасы. Под воздействием космического шторма их начинает слегка относить друг от друга в разные стороны.</text>
+		<choice hidden="true">
+			<text>Захватить корабль с топливом.</text>
+			<event>
+				<text>Вы подлетаете к кораблю с топливом и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
+				<ship load="NEBULA_STORM_PIRATE_SUPPLY_FUEL" hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Захватить корабль с боеприпасами.</text>
+			<event>
+				<text>Вы подлетаете к кораблю с боеприпасами и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
+				<ship load="NEBULA_STORM_PIRATE_SUPPLY_AMMO" hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Дать им уйти.</text>
+			<event>
+				<text>Иногда осторожность — лучшая часть доблести.</text>
+			</event>	
+		</choice>
+	</event>
+	<event>
+		<text>Сканирование показало, что один транспортирует детали дронов, второй — боеприпасы. Под воздействием космического шторма их начинает слегка относить друг от друга в разные стороны.</text>
+		<choice hidden="true">
+			<text>Захватить корабль с деталями дронов.</text>
+			<event>
+				<text>Вы подлетаете к кораблю с деталями дронов и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
+				<ship load="NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS" hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Захватить корабль с боеприпасами.</text>
+			<event>
+				<text>Вы подлетаете к кораблю с боеприпасами и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
+				<ship load="NEBULA_STORM_PIRATE_SUPPLY_AMMO" hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Дать им уйти.</text>
+			<event>
+				<text>Иногда осторожность — лучшая часть доблести.</text>
+			</event>	
+		</choice>
+	</event>
+	<event>
+		<text>Сканирование показало, что один транспортирует топливо, второй — детали дронов. Под воздействием космического шторма их начинает слегка относить друг от друга в разные стороны.</text>
+		<choice hidden="true">
+			<text>Захватить корабль с топливом.</text>
+			<event>
+				<text>Вы подлетаете к кораблю с топливом и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
+				<ship load="NEBULA_STORM_PIRATE_SUPPLY_FUEL" hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Захватить корабль с деталями дронов.</text>
+			<event>
+				<text>Вы подлетаете к кораблю с деталями дронов и вступаете с ним в схватку (хорошо бы, победив, ещё и не развалить его на кусочки).</text>
+				<ship load="NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS" hostile="true"/>
+			</event>
+		</choice>
+		<choice hidden="true">
+			<text>Дать им уйти.</text>
+			<event>
+				<text>Иногда осторожность — лучшая часть доблести.</text>
+			</event>	
+		</choice>
+	</event>
+</eventList>
+<ship name="NEBULA_STORM_PIRATE_SUPPLY_FUEL" auto_blueprint="SHIPS_FED_TRBARREL_P">
+	<escape timer="100" min="30" max="30" load="PIRATE_ESCAPE"/>
+	<destroyed>
+		<text>Корабль уничтожен, и только скудные контейнеры с топливом можно достать из обломков до того, как стихнет ионный шторм, и вам придётся прыгать дальше.</text>
+		<autoReward level="MED">fuel</autoReward>
+	</destroyed>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew>
+		<text>Поскольку корабль ещё цел, есть шанс собрать большую часть топливных запасов прежде, чем утихнет ионный шторм, и наступит время лететь дальше.</text>
+		<autoReward level="HIGH">scrap_only</autoReward>
+		<item_modify>
+			<item type="fuel" min="5" max="7"/>
+		</item_modify>
+	</deadCrew>
+</ship>
+<ship name="NEBULA_STORM_PIRATE_SUPPLY_AMMO" auto_blueprint="SHIPS_FED_TRBOX_P">
+	<escape timer="100" min="30" max="30" load="PIRATE_ESCAPE"/>
+	<destroyed>
+		<text>Корабль уничтожен, вы можете взять лишь небольшую часть ящиков с боеприпасами до того, как начнётся ионный шторм, и совершить прыжок.</text>
+		<autoReward level="MED">missiles</autoReward>
+		<unlockCustomShip silent="false">PLAYER_SHIP_FED_DLC4_2</unlockCustomShip>
+		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_FED_DLC4_2</queueEvent>
+	</destroyed>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew>
+		<text>Поскольку корабль ещё цел, есть шанс собрать большую часть боеприпасов прежде, чем утихнет ионный шторм, и наступит время лететь дальше.</text>
+		<autoReward level="HIGH">scrap_only</autoReward>
+		<unlockCustomShip silent="false">PLAYER_SHIP_FED_DLC4_2</unlockCustomShip>
+		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_FED_DLC4_2</queueEvent>
+		<item_modify>
+			<item type="missiles" min="10" max="15"/>
+		</item_modify>
+	</deadCrew>
+</ship>
+<ship name="NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS" auto_blueprint="SHIPS_FED_TRBOX_P">
+	<escape timer="100" min="30" max="30" load="PIRATE_ESCAPE"/>
+	<destroyed>
+		<text>Корабль уничтожен, вы можете взять лишь небольшую часть ящиков с деталями дронов до того, как начнётся ионный шторм, и совершить прыжок.</text>
+		<autoReward level="MED">droneparts_only</autoReward>
+		<unlockCustomShip silent="false">PLAYER_SHIP_FED_DLC4_2</unlockCustomShip>
+		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_FED_DLC4_2</queueEvent>
+	</destroyed>
+	<gotaway>
+		<text>Пиратский корабль совершил прыжок.</text>
+	</gotaway>
+	<deadCrew>
+		<text>Поскольку корабль ещё цел, есть шанс собрать детали дронов прежде, чем утихнет ионный шторм, и наступит время лететь дальше.</text>
+		<autoReward level="HIGH">scrap_only</autoReward>
+		<unlockCustomShip silent="false">PLAYER_SHIP_FED_DLC4_2</unlockCustomShip>
+		<queueEvent seeded="false">CHECKCHAIN_PLAYER_SHIP_FED_DLC4_2</queueEvent>
+		<item_modify>
+			<item type="drones" min="7" max="10"/>
+		</item_modify>
+	</deadCrew>
+</ship>
 
 
 		
@@ -1029,7 +1172,20 @@ shield research center — jams shields
 		</event>
 	</choice>
 </event>
-<eventList name="ZOLTAN_PEACE_QUEST_REWARD"><!-- 1.31 -->
+<event name="ZOLTAN_PEACE_QUEST_REWARD"><!-- 1.35 -->
+	<loadEventList seeded="false" first="true">
+		<event req="ENERGY_SHIELD">
+			<text>«Конечно, ваши методы жестоки и в основном неэффективны, но вы, похоже, говорили от чистого сердца. Если ваш корабль представляет готовность Федерации к компромиссам, то мы сделаем всё, что возможно, чтобы помочь в этом нелёгком деле. Я лично помогу вам».</text>
+			<achievement silent="false">ACH_ENERGY_LEGENDARY</achievement>
+			<autoReward level="HIGH">standard</autoReward>
+			<unlockShip id="7">Крейсер золтанцев был разблокирован и добавлен в ангар!</unlockShip>
+			<crewMember amount="1" class="energy_legendary" all_skills="2">Посланник</crewMember>
+			<playSound>legendary</playSound>
+		</event>
+		<event name="ZOLTAN_PEACE_QUEST_REWARD2"/>
+	</loadEventList>
+</event>
+<eventList name="ZOLTAN_PEACE_QUEST_REWARD2"><!-- 1.35 -->
 	<event>
 		<text>«Конечно, ваши методы жестоки и в основном неэффективны, но вы, похоже, говорили от чистого сердца. Если ваш корабль представляет готовность Федерации к компромиссам, то мы сделаем всё, что возможно, чтобы помочь в этом нелёгком деле. Это должно помочь в выполнении вашего задания».</text>
 		<unlockShip id="7">Крейсер золтанцев был разблокирован и добавлен в ангар!</unlockShip>
@@ -1045,7 +1201,6 @@ shield research center — jams shields
 		<playSound>legendary</playSound>
 	</event>
 </eventList>
-	
 
 <event name="ZOLTAN_SURRENDER"><!-- 1.26 -->
 	<text load="ZOLTAN_SURRENDER"/>
@@ -1111,6 +1266,7 @@ shield research center — jams shields
 	<event load="EVENT_DONT_CLOAK_WITH_ZOLTONS"/>
 	<event load="EVENT_CON_VS_AUTOSHIP"/>
 	<event load="EVENT_ZOLTON_VS_CON"/>
+	<event load="OXYGEN_FIGHT"/><!-- 1.35 -->
 </eventList>
 
 <eventList name="NEUTRAL_ZOLTON">
@@ -1283,9 +1439,10 @@ shield research center — jams shields
 
 <ship name="AUTO_ZOLTON_SHIP" auto_blueprint="SHIPS_ENERGYX_AUTO"> 
 	<destroyed load="DESTROYED_DEFAULT_AUTO_ZOLTON"/>
-	<weaponOverride count="1">
+	<deadCrew load="DEAD_CREW_ENERGYX"/><!-- 1.35 -->
+	<!-- <weaponOverride count="1">
 		<name>WEAPONS_ZOLTON_OVRRD</name>
-	</weaponOverride>
+	</weaponOverride> --><!-- 1.35 -->
 </ship>
 <eventList name="DESTROYED_DEFAULT_AUTO_ZOLTON">
 	<event>
@@ -6251,17 +6408,17 @@ shield research center — jams shields
 		<text id="continue"/><!-- 1.26.5 -->
 		<event>
 			<text>...внезапно рядом выходит из прыжка золтонский корабль с явно враждебными намерениями! Без каких-либо объяснений они мчатся в атаку, а вы замечаете, что ваш отсек маскировки блокируется какими-то электромагнитными разрядами!</text>
-			<status type="limit" target="player" system="cloaking" amount="0"/>
+			<!-- <status type="limit" target="player" system="cloaking" amount="0"/> --><!-- 1.35 -->
 			<status type="divide" target="enemy" system="reactor" amount="2"/> <!-- 1.32 --> <!-- 1.26.4 -->
 			<ship load="SHIPS_ENERGYX_STANDART" hostile="true"/>
 		</event>		
 	</choice>
 </event>
-<ship name="SHIPS_ENERGYX_STANDART" auto_blueprint="SHIPS_ENERGYX">
+<ship name="SHIPS_ENERGYX_STANDART" auto_blueprint="SHIPS_ENERGYX_AC">
 	<destroyed>
 		<text>Вы быстро собираете всё то, что уцелело после взрыва.</text>
 		<autoReward level="LOW">standard</autoReward>
-		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<!-- <status type="clear" target="player" system="cloaking" amount="100"/> --><!-- 1.35 -->
 		<choice hidden="true">
 			<text id="continue"/><!-- 1.26.5 -->
 			<event load="EVENT_DONT_CLOAK_WITH_ZOLTONS_X2REW"/>		
@@ -6270,7 +6427,7 @@ shield research center — jams shields
 	<deadCrew>
 		<text>Экипаж корабля уничтожен. Вы обчищаете их трюмы.</text>
 		<autoReward level="MED">standard</autoReward>
-		<status type="clear" target="player" system="cloaking" amount="100"/>
+		<!-- <status type="clear" target="player" system="cloaking" amount="100"/> --><!-- 1.35 -->
 		<choice hidden="true">
 			<text id="continue"/><!-- 1.26.5 -->
 			<event load="EVENT_DONT_CLOAK_WITH_ZOLTONS_X2REW"/>		
@@ -9271,8 +9428,8 @@ shield research center — jams shields
 			<crewMember amount="1" all_skills="2" class="energyx_legendary">Момино</crewMember>
 			<playSound>legendary</playSound>
 			<achievement silent="false">ACH_ENERGYX_LEGENDARY</achievement>
-			<clearTriggeredEvent name="SUPERSHIELD_PLUS_JUMPS"/>
-			<triggeredEvent name="SUPERSHIELD_PLUS_JUMPS" event="SUPERSHIELD_PLUS" seeded="false" loops="999999999" jumps="1"/>
+			<!-- <clearTriggeredEvent name="SUPERSHIELD_PLUS_JUMPS"/>
+			<triggeredEvent name="SUPERSHIELD_PLUS_JUMPS" event="SUPERSHIELD_PLUS" seeded="false" loops="999999999" jumps="1"/> -->
 		</event>
 	</choice>
 </event>

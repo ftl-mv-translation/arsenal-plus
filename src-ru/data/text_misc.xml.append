@@ -915,10 +915,10 @@
 
 <!-- System level info -->
 
-<text name="artillery_1">перезарядка 1.25x‡</text><!-- 1.26 -->
-<text name="artillery_2">перезарядка 1x‡</text><!-- 1.26 -->
-<text name="artillery_3">перезарядка 0.75x‡</text><!-- 1.26 -->
-<text name="artillery_4">перезарядка 0.5x‡</text><!-- 1.26 -->
+<text name="artillery_1">Перезарядка 1.25x‡</text><!-- 1.26 --><!-- 1.35 -->
+<text name="artillery_2">Перезарядка 1x‡</text><!-- 1.26 --><!-- 1.35 -->
+<text name="artillery_3">Перезарядка 0.75x‡</text><!-- 1.26 --><!-- 1.35 -->
+<text name="artillery_4">Перезарядка 0.5x‡</text><!-- 1.26 --><!-- 1.35 -->
 
 <text name="door_1">Обычные двери</text>
 <text name="door_2">Укреплённые двери</text>
@@ -930,7 +930,7 @@
 <text name="pilot_3">Автопилот: 80% уворота</text>
 
 <text name="sensor_1">Интерьер вашего корабля</text>
-<text name="sensor_2">Интерьер корабля врага</text>
+<text name="sensor_2">Интерьер корабля врага, щиты+</text><!-- 1.35 -->
 <text name="sensor_3">|, }, уворот, О2 и орудия врага</text><!-- 1.31 -->
 <text name="sensor_4">Энергия корабля врага</text>
 
@@ -1591,7 +1591,7 @@
 
 <text name="additional_testing">Благодарность за ценный вклад:</text><!-- Thanks for assets: --><!-- 1.26.6 -->
 <text name="family_friends">Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\side\,
-DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod and ROGUE AI CRUISERS mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Woona и другие</text> <!-- 1.28 --><!-- 1.27 --><!-- 1.27.1 --><!-- 1.30.1 --><!-- 1.32 --><!-- text overflow here -->
+DarkGamer, DemiSir, Evil PepperPlayz, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe, LordTrilobite, MantisManMike, NarnKar, Noobjuice, PLIOU, R4V3-0N (from GO BALLISTIC! 2.0 mod and ROGUE AI CRUISERS mod), Sleeper Service, TaxiService, Twinge, madhatter, slowriderxcorps, speedoflight, splette, Svirepyj, Woona и другие</text> <!-- 1.28 --><!-- 1.27 --><!-- 1.27.1 --><!-- 1.30.1 --><!-- 1.32 --><!-- 1.35 --><!-- text overflow here -->
 
 <text name="credits_loc_riotloc"></text><!-- 1.30.1 -->
 <text name="credits_loc_project"></text><!-- 1.30.1 -->
@@ -1751,11 +1751,11 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 
 <text name="credits_hyperspace_project">Проект Hyperspace</text>
 <text name="credits_hyperspace_developed_by">Разработчики:</text>
-<text name="credits_hyperspace_developed_names">TheSwiftTiger, Winderps, ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93,\nMr. Doom (Nasa62), Chrono Vortex, Pepson, ranhai, sillysandvich</text><!-- 1.32 --><!-- 1.33 -->
+<text name="credits_hyperspace_developed_names">TheSwiftTiger, Amyseni (Winderps), ih8ih8sn0w, Admiral Billy, laszlogasd, mathchamp93, Mr. Doom (Nasa62), Chrono Vortex, Pepson, ranhai, sillysandvich, The Dumb Dino</text><!-- 1.32 --><!-- 1.33 --><!-- 1.35 -->
 <text name="credits_hyperspace_art">Дополнительный арт:</text>
 <text name="credits_hyperspace_art_names">SaltyFriedRice</text>
 <text name="credits_hyperspace_contributors">Дополнительное сотрудничество:</text>
-<text name="credits_hyperspace_contributors_names">Arc, bamalf, BlizzArchonJ, Choosechee, codyfun, _Kilburn, Kix, kokoro, Masala, nedsociety, Paradigm, PDTM, slowriderxcorps, The Dumb Dino, Vertaalfout, BobThePotat0, Gabriel Cooper, Fishhh, neopryne, Alder, Julk, bibo38, DeserPrinter\nFTL Multiverse Team</text><!-- 1.33 -->
+<text name="credits_hyperspace_contributors_names">Arc, bamalf, BlizzArchonJ, Choosechee, codyfun, zerofreed, _Kilburn, Kix, kokoro, Masala, nedsociety, Paradigm, PDTM, slowriderxcorps, The Dumb Dino, Vertaalfout, BobThePotat0, Gabriel Cooper, Fishhh, neopryne, Alder, Julk, bibo38, DeserPrinter \nкоманда FTL Multiverse</text><!-- 1.33 --><!-- 1.35 -->
 <text name="credits_hyperspace_loc">Переводчики Hyperspace:</text>
 <text name="credits_hyperspace_loc_fr">На французский язык:</text>
 <text name="credits_hyperspace_loc_fr_names">Pepson</text>
@@ -1935,10 +1935,16 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 <text name="lua_chall_nozlt_off">У кораблей противников стандартные для них усиления.</text>
 <text name="lua_chall_norare_on">Редкое оборудование встречается существенно реже.</text>
 <text name="lua_chall_norare_off">Всё оборудование встречается как обычно.</text>
+<text name="lua_chall_nocrg_on">У вашего корабля больше нет трюма (после первого прыжка).</text><!-- 1.35 -->
+<text name="lua_chall_nocrg_off">У вашего корабля стандартный трюм.</text><!-- 1.35 -->
 <text name="lua_chall_noeye_on">Обзор карты существенно снижен. Информации о маяках нет.</text>
 <text name="lua_chall_noeye_off">Карта видна как обычно.</text>
 <text name="lua_chall_nocont_on">Союзный экипаж нельзя контролировать, но не волнуйтесь: они знают, что им делать!</text>
 <text name="lua_chall_nocont_off">Экипаж управляется как обычно.</text>
+<text name="lua_chall_noexp_on">Все враги будут иметь опытный экипаж.</text><!-- 1.35 -->
+<text name="lua_chall_noexp_off">На сложном уровне иногда будут попадаться враги с опытным экипажем.</text><!-- 1.35 -->
+<text name="lua_chall_nobuh_on">После первого прыжка экипаж начнёт пьянку, что существенно снизит точность ваших залпов.</text><!-- 1.35 -->
+<text name="lua_chall_nobuh_off">Ваш экипаж не будет пить алкогольные напитки в полёте.</text><!-- 1.35 -->
 <text name="lua_chall_noai_on">Все враги будут иметь продвинутый ИИ (в том числе боссы).</text>
 <text name="lua_chall_noai_off">На сложном уровне иногда будут попадаться враги с продвинутым ИИ (кроме боссов).</text>
 <text name="lua_chall_nohull_on">Корпус корабля не может иметь более 10 единиц прочности (после отбытия со стартового маяка).</text>
@@ -1949,9 +1955,16 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 <text name="lua_chall_nogus_off">Особый экипаж не будет добавлен после прыжка.</text>
 <text name="lua_chall_nostor_on">Нашествие инсекторов! Почти все магазины сожрали инсекторы, в том числе автоматические магазины торгового буя.</text>
 <text name="lua_chall_nostor_off">Магазины встречаются как обычно.</text>
-<text name="lua_chall_nowst_on">Каждый прыжок орудия будут заменены на случайные с той же энергией.</text>
-<text name="lua_chall_nowst_off">Орудия не меняются каждый прыжок.</text>
-<text name="lua_chall_resetchall_on">Все испытания будут отключены в новом полёте.</text>
+<text name="lua_chall_nowst_on">Каждый прыжок или ожидание на маяке орудия будут заменены на случайные с той же энергией.</text><!-- 1.35 -->
+<text name="lua_chall_nowst_off">Орудия не меняются во время прыжков или ожидания на маяке.</text>
+<text name="lua_chall_noevd_on">Все противники будут иметь повышенную точность.</text><!-- 1.35 -->
+<text name="lua_chall_noevd_off">Враги будут иметь обычную точность.</text><!-- 1.35 -->
+<text name="lua_chall_noorc_on">За вами устроит погоню фрегат орхидов, не надейтесь убежать.</text><!-- 1.35 -->
+<text name="lua_chall_noorc_off">Никаких дополнительных погонь.</text><!-- 1.35 -->
+<text name="lua_curse_orchid_shase_very">За вами устроил погоню фрегат орхидов, и он не отстанет...</text><!-- 1.35 -->
+<text name="lua_chall_notxt_on">После первого прыжка текст событий заменяется на абракадабру.</text><!-- 1.35 -->
+<text name="lua_chall_notxt_off">Текст событий будет в порядке.</text><!-- 1.35 -->
+<text name="lua_chall_resetchall_on">Все испытания будут отключены в новом полёте.</text><!-- 1.35 -->
 <text name="lua_chall_resetchall_off">Все испытания сохранят своё состояние в новом полёте.</text>
 <text name="lua_chall_rew_on">Вы будете получать награду ломом за пройденные испытания.</text>
 <text name="lua_chall_rew_off">Награда за пройденные испытания отключена.</text>
@@ -1989,6 +2002,79 @@ DarkGamer, DemiSir, Fotos, GianTell, Gigaxp, Harpuae, Katabatic, kokoro, Laythe,
 Голубой: 1 ионного урона
 Синий: запирание
 Фиолетовый: 90% пробоины</text>
+<!-- 1.35 -->
+<text name="lua_enemy_has_nechet_shield">Противник имеет нечётный уровень системы щитов.</text>
+<text name="lua_copy_this_weapon">Скопировать это орудие.</text>
+<text name="lua_copyed_weapon">Орудие успешно скопировано. Можно его подключать.\n</text>
 
+<!-- Some keywords from events that change dynamically through Lua -->
+<text name="lua_event_text_marker_1">одолеть</text>
+<text name="lua_event_text_marker_2">Ультранасосы</text>
+<text name="lua_event_text_marker_3">и гель слизней </text>
+<text name="lua_event_text_marker_4">ускоритель дронов и </text>
+<text name="lua_event_text_marker_5">на последней</text>
+<text name="lua_event_text_marker_6">на последних двух из четырёх фаз</text>
+<text name="lua_event_text_marker_7">отходы</text>
+<text name="lua_event_text_marker_8">Кестрел</text>
+<text name="lua_event_text_marker_9">на последней, а ещё какие-то загадочные изменения в артиллерии</text>
+<text name="lua_event_text_marker_10">на последних двух из четырёх фаз, а ещё какие-то загадочные изменения в артиллерии</text>
+<text name="lua_event_text_marker_artillery">артиллерия</text>
+<text name="lua_event_text_marker_artillery_remover">артиллерию</text>
+<text name="lua_not_avaiable_install_artillery">Установить артиллерию (достигнут лимит систем).</text>
+<text name="lua_not_ship_install_artillery">Установить артиллерию (на вашем корабле не предусмотрена).</text>
+
+<text name="lua_pe_ready">Запуск волны, уничтожающей снаряды. Горячая клавиша: DELETE</text>
+<text name="lua_pe_wait_cooldown">Нельзя использовать: дождитесь перезарядки.</text>
+<text name="lua_pe_needed_jump">Нельзя использовать: для перезарядки нужен FTL-прыжок.</text>
+<text name="lua_event_text_marker_anaerobic">Анаэробное</text>
+<text name="lua_event_text_anaerobic_choice_replacer">(Анаэробное пламя) Катализатор, усиливающий урон от огня, всё ещё активен.</text>
+<text name="lua_reward_coefficients_zero">Награды боеприпасами и деталями дронов не снижены.</text>
+<text name="lua_reward_coeff_msls">Награды боеприпасами снижены на VAL%, поскольку они не использовались в сражениях.</text>
+<text name="lua_reward_coeff_drns">Награды деталями дронов снижены на VAL%, поскольку они не использовались в сражениях.</text>
+<text name="lua_reward_coeff_msls_zero">Награды боеприпасами не снижены.</text>
+<text name="lua_reward_coeff_drns_zero">Награды деталями дронов не снижены.</text>
+<text name="lua_ai_ship">Этот корабль имеет внутренний искуственный интеллект. Если весь экипаж погибнет, это не завершит полёт.</text>
+<text name="lua_tip_shop_is_close">Магазин на ближайшем маяке отправил приветственное сообщение.</text>
+<text name="alas_friendly">Ваш защитный дрон-отражатель: \nПеренаправляет лазерные снаряды в противника. Будет работать, пока не будет уничтожен, или вы не совершите прыжок.</text>
+<text name="alas_enemy">Дрон-отражатель: \nПеренаправляет лазерные снаряды в ваш корабль. Может быть отключён повреждением вражеской системы управления дронами.</text>
+<text name="lua_dps_switcher">Показать/спрятать счётчик урона в секунду.</text>
+<text name="lua_dps_sim">Урон в секунду для одновременного залпа из всех орудий.</text>
+<text name="lua_dps_auto">Урон в секунду для авто-огня.</text>
+<text name="lua_danger_oxygen">Вы находитесь в плотном газовом пространстве. Снаружи корабля пригодная для дыхания атмосфера.</text>
+<text name="lua_legendary_egg_name">Ори</text>
+<text name="lua_shots_for_charge">Выстрелов за заряд: </text>
+<text name="lua_mc_tip_auto">Контроль разума в авто-режиме для защиты экипажа на своём корабле от вражеского контроля разума.</text>
+<text name="lua_mc_tip_hand">Контроль разума не использует авто-режим.</text>
+<text name="needed_change_language">Внимание! Смените в настройках язык на "Русский (Arsenal +)"</text>
+
+<text name="lua_onoff_glif_panel">Вкл./выкл. панель управления Глифганом.</text>
+<text name="lua_clear_glif_panel">Очистить все глифы.</text>
+<text name="lua_tip_glif">Информация об этом орудии недоступна.</text>
+<text name="lua_clear_glif_panel_no">Нет глифов для очистки.</text>
+<text name="lua_info_acc">Модификатор точности</text>
+<text name="lua_info_iondamage">Ионный урон</text>
+<text name="lua_info_crewdamage">Урон по экипажу</text>
+<text name="lua_info_sysdamage">Урон по системам</text>
+<text name="lua_info_hulldamage">Урон по корпусу</text>
+<text name="lua_info_shots">Выстрелов за заряд</text>
+<text name="lua_info_cooldown">Время зарядки</text>
+<text name="lua_info_sec">сек.</text>
+<text name="lua_info_charact">Характеристики</text>
+<text name="lua_info_power">Требует энергии</text>
+<text name="lua_info_speed">Скорость снаряда</text>
+<text name="lua_info_resetcd">После выстрела перезарядится на</text>
+<text name="lua_info_freeze">Запирает целевой отсек</text>
+<text name="lua_info_hullbst">x2 урона по пустым отсекам</text>
+<text name="lua_info_stun">Оглушение</text>
+<text name="lua_info_sp">Пробивает щитов</text>
+<text name="lua_info_fc">Шанс возгорания</text>
+<text name="lua_info_bc">Шанс пробить корпус</text>
+<text name="lua_info_copycdnext">При выстреле зарядит орудие справа до уровня своего времени перезарядки</text>
+<text name="lua_info_stealcrew">Снаряд при попадании телепортирует экипаж в отсеке на другой корабль</text>
+<text name="lua_info_blood">Снаряд при попадании вызывает кровотечение</text>
+<text name="lua_info_erosion">Снаряд при попадании вызывает эрозию</text>
+
+<text name="lua_switch_screams_on">Уволенный экипаж будет выброшен в космос.</text>
+<text name="lua_switch_screams_off">Уволенный экипаж отправится на мини-челноке к ближайшей планете или станции.</text>
 
 </FTL>

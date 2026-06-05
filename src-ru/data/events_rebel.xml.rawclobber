@@ -54,6 +54,7 @@ Environmnt:
 	<event load="REBEL_AUTO_PDS"/>
 	<event load="MOTILEK_EVENT"/>
 	<event load="DRONE_FIELD_REBEL"/><!-- 1.31 -->
+	<event load="AUTO_WITH_HIDDEN_OSAE_EVENT"/><!-- 1.35 -->
 </eventList>
 
 
@@ -732,6 +733,7 @@ Environmnt:
 	<event load="ORDEN_VS_REBEL_VS_YOU"/>
 	<event load="HOSTILE_ORDEN_EMPTYFUEL_PIRATE"/>
 	<event load="MOTILEK_EVENT"/><!-- 1.26 -->
+	<event load="EVENT_DRUNK_FIGHT"/><!-- 1.35 -->
 </eventList>
 
 <eventList name="BOARDERS_ORDEN">
@@ -940,6 +942,20 @@ Environmnt:
 	<text planet="HI_TECH_PLANET_FOR_HAOS">Прямо на вас мчится один из кораблей Ордена. А с прыжковой станции поблизости вам телепортируют абордажную группу!</text>
 	<text planet="HI_TECH_PLANET_FOR_HAOS">С вами связывается капитан корабля еретиков: «Я сожгу твоё корыто дотла во имя богов Хаоса!!! И даже не пытайся сбежать!» Тем временем раздаются звуки телепортации.</text>
 </textList>
+
+<event name="EVENT_DRUNK_FIGHT" unique="true"><!-- 1.35 -->
+	<text load="DRUNK_FIGHT_TEXT"/>
+	<ship load="DRUNK_FIGHT_PARAM" hostile="true"/>
+</event>
+<textList name="DRUNK_FIGHT_TEXT">
+	<text>Возле маяка пролетает враждебный пиратский корабль. Вы замечаете, что его экипаж как-то странно себя ведёт...</text>
+	<text>Появившись у маяка, вы попадаете под атаку пирата. Похоже, что его экипаж пьян!</text>
+	<text>Вы замечаете агрессивный пиратский корабль рядом с вами. Вы видите в коммуникатор, как его команда пьёт водку!</text>
+</textList>
+<ship name="DRUNK_FIGHT_PARAM" auto_blueprint="CIV_GLORY_PIRATE_SHIPS">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
 
 <event name="ORDEN_FIGHT">
 	<text load="ORDEN_FIGHT_TEXT"/>
@@ -3786,49 +3802,22 @@ Environmnt:
 	<surrender chance="0" min="9" max="9" load="HAL_DAMAGE_ROCK_IS_DEAD"/><!-- 1.25 -->
 </ship>
 
-<eventList name="HAL_DAMAGE_ROCK_IS_DEAD">
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
+<eventList name="HAL_DAMAGE_ROCK_IS_DEAD"> <!-- 1.35 -->
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL. К сожалению, пока вы сражались, все роки погибли. Их корпус получил слишком много пробоин, и бедолаги задохнулись без кислорода. Нужно отправляться дальше...</text>
 		<ship hostile="false"/>
-		<autoReward level="HIGH">scrap_only</autoReward> <!-- 1.25.1 -->
+		<autoReward level="HIGH">scrap_only</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
-	</event>	
+	</event>
 </eventList>
 
 <eventList name="HAL_ROCK_DEFEAT_HAL_ROCK_HAIL">
@@ -3904,50 +3893,24 @@ Environmnt:
 	<surrender chance="0" min="9" max="9" load="HAL_DAMAGE_ROCK_IS_GONE"/><!-- 1.25 -->
 </ship>
 
-<eventList name="HAL_DAMAGE_ROCK_IS_GONE">
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
+<eventList name="HAL_DAMAGE_ROCK_IS_GONE"> <!-- 1.35 -->
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL. Роки же, воспользовавшись суматохой боя, благоразумно покинули это место.</text>
 		<ship hostile="false"/>
 		<autoReward level="RANDOM">scrap_only</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
-	</event>	
+	</event>		
 </eventList>
+
 
 <eventList name="HAL_ROCK_DEFEAT_LOOK">
 	<event>
@@ -4003,52 +3966,23 @@ Environmnt:
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<surrender chance="0" min="9" max="9" load="HAL_DAMAGE_ROCK_IS_LOSE"/><!-- 1.25 -->
 </ship>
-
-<eventList name="HAL_DAMAGE_ROCK_IS_LOSE">
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
+<eventList name="HAL_DAMAGE_ROCK_IS_LOSE"> <!-- 1.35 -->
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Вы собираете припасы с обоих кораблей и находите в трюме беспилотника рабочую схему дрона HAL.</text>
 		<ship hostile="false"/>
 		<autoReward level="HIGH">stuff</autoReward>
 		<drone name="DRONES_COMBAT_HAL"/>
-	</event>
+	</event>	
 </eventList>
-
 
 <event name="HAL_ANGAR" unique="true">
 	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
@@ -4693,43 +4627,16 @@ Environmnt:
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<surrender chance="0" min="9" max="9" load="HAL_SHIP_HACKME_DAMAGE"/>
 </ship>
-<eventList name="HAL_SHIP_HACKME_DAMAGE">
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
+<eventList name="HAL_SHIP_HACKME_DAMAGE"> <!-- 1.35 -->
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Системы вашего корабля приходят в норму, а ваша команда разбирает беспилотник на лом и находит в трюме рабочую схему дрона HAL.</text>
 		<ship hostile="false"/>
@@ -4753,7 +4660,6 @@ Environmnt:
 		<status type="clear" target="player" system="artillery" amount="100"/>
 	</event>	
 </eventList>
-
 
 <event name="DISTRESS_HAL_FED" unique="true">
 	<distressBeacon/>
@@ -4785,43 +4691,16 @@ Environmnt:
 	<deadCrew load="DEAD_CREW_DEFAULT"/>
 	<surrender chance="0" min="9" max="9" load="HAL_DAMAGE_DISTRESS"/><!-- 1.25 -->
 </ship>
-<eventList name="HAL_DAMAGE_DISTRESS">
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
-	<event>
-		<text>Похоже, что бортовой компьютер HAL активизировал резервные цепи питания.</text>
-		<status type="clear" target="enemy" system="reactor" amount="100"/>
-	</event>
+<eventList name="HAL_DAMAGE_DISTRESS"> <!-- 1.35 -->
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
+	<event load="HAL_REACTOR_FREE"/>
 	<event>
 		<text>Неожиданно бортовой компьютер HAL отключается, и беспилотник зависает. Вы выжидаете некоторое время, но, кажется, всё в порядке. Ваша команда разбирает их корабль на лом и находит в трюме рабочую схему дрона HAL.</text>
 		<ship hostile="false"/>
@@ -7393,5 +7272,24 @@ Environmnt:
 		<name>PREIGNITE_WEAPONS</name>
 	</weaponOverride>
 </ship>
+
+<event name="AUTO_WITH_HIDDEN_OSAE_EVENT"><!-- 1.35 -->
+	<text load="REBEL_AUTO"/>
+	<ship load="AUTO_WITH_HIDDEN_OSAE_PARAM" hostile="true"/>
+</event>
+<ship name="AUTO_WITH_HIDDEN_OSAE_PARAM" auto_blueprint="SHIPS_AUTO">
+	<destroyed load="DESTROYED_DEFAULT"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/>
+</ship>
+<event name="AUTO_WITH_HIDDEN_OSAE_1">
+	<loadEventList seeded="false" first="false" generate="false">
+		<event>
+			<text>Внезапно из беспилотника начинают вылезать враждебные осы!</text>
+		</event>
+		<event>
+			<text>Похоже, что вы потревожили скрытый улей внутри беспилотника, теперь из него лезут враждебные осы!</text>
+		</event>
+	</loadEventList>
+</event>
 
 </FTL>

@@ -231,7 +231,7 @@ Distress:
 									<achievement silent="false">ACH_SLUG_LEGENDARY</achievement>
 									<playSound>legendary</playSound>
 									<crewMember amount="1" all_skills="2" class="slug_legendary">Скряга</crewMember>
-									<triggeredEvent name="SCRAP_PLUS_JUMPS" event="SCRAP_PLUS" seeded="false" loops="999999999" jumps="1"/>
+									<!-- <triggeredEvent name="SCRAP_PLUS_JUMPS" event="SCRAP_PLUS" seeded="false" loops="999999999" jumps="1"/> --><!-- 1.35 -->
 								</event>
 							</choice>
 							<choice hidden="true"> 
@@ -4274,6 +4274,7 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<event load="NEBULA_STORE_SLURM3"/>
 		<event load="NEBULA_STORE_SLURM4"/>	
 		<event load="NEBULA_STORE_SLURM5"/>		<!-- 1.34 -->
+		<event load="NEBULA_STORE_SLURM6"/>		<!-- 1.35 -->
 	</loadEventList>
 </event>
 
@@ -4344,6 +4345,26 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<text>Слёрмы испытывают страсть к азартным играм. Ничего удивительного в том, что вы находите столик с тремя шкатулками в очередном магазине.</text>
 </textList>
 
+<event name="NEBULA_STORE_SLURM6"><!-- 1.35 -->
+	<queueEvent seeded="true">NEBULA_JUST_STORE</queueEvent>
+	<img back="BACKGROUND" planet="PLANET_POPULATED"/>
+	<text load="NEBULA_STORE_SLURM6"/>
+	<environment type="nebula"/>
+	<variable name="counter_meet_nebula" op="add" val="1"/>
+	<choice hidden="true">
+		<text>Подойти к слот-машине.</text>
+		<event load="SLOT_MACHINE_ON"/>
+	</choice>
+	<choice hidden="true">
+		<text>Просто посмотреть товары.</text>
+		<event/>
+	</choice>
+</event>
+<textList name="NEBULA_STORE_SLURM6">
+	<text>Вы прибываете на торговую станцию слёрмов. Старый слёрм предлагает вам сыграть в слот-машину перед покупками.</text>
+	<text>Вы прибываете на торговую станцию слёрмов. В углу стоит слот-машина, от которой с руганью отползает слёрм. Похоже, что он проиграл последние деньги.</text>
+	<text>Слёрмы испытывают страсть к азартным играм. Ничего удивительного в том, что вы находите слот-машину в очередном магазине.</text>
+</textList>
 
 <event name="NEBULA_STORE_SLURM2"><!-- 1.32 -->
 	<queueEvent seeded="true">NEBULA_JUST_STORE</queueEvent>
@@ -4932,7 +4953,11 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 	<event load="SLURM_777_AVTOMAT_KLIN"/>	<event load="SLURM_777_AVTOMAT_KLIN"/>	<event load="SLURM_777_AVTOMAT_KLIN"/>	<event load="SLURM_777_AVTOMAT_KLIN"/>
 </eventList>
 
-<event name="PONY_GAME_EVENT">
+<event name="PONY_GAME_EVENT"> <!-- 1.35 -->
+	<event/>
+</event>
+
+<event name="PONY_GAME_EVENT_2">
 	<text>Вы покупаете жетон и кидаете его в автомат. На пыльном экране показывается голова пони и меню из следующих кнопок:</text>
 	<item_modify>
 		<item type="scrap" min="-1" max="-1"/>
@@ -5346,13 +5371,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5363,7 +5404,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо к летучей мыши, и она его кусает. Вы видите, как пони слабеет после укуса и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо к летучей мыши, и она его кусает. Вы видите, как пони слабеет после укуса и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5373,7 +5422,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони ускоряется, перебирая ногами всё быстрее, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони слабеет и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони ускоряется, перебирая ногами всё быстрее, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони слабеет и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5384,13 +5441,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо в болото и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо в болото и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в болото и вызывает огромное облако пара. Ничего не видя, он попадает в вязкое место и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в болото и вызывает огромное облако пара. Ничего не видя, он попадает в вязкое место и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5405,19 +5478,43 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо в пасть дракону. Чудовище крайне удивлено, но прожёвывает и глотает этот подарок судьбы. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо в пасть дракону. Чудовище крайне удивлено, но прожёвывает и глотает этот подарок судьбы. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в дракона, но не прожигает его крепкую чешую. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в дракона, но не прожигает его крепкую чешую. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони смело бежит вперёд, и дракон изящно разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони смело бежит вперёд, и дракон изящно разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5432,13 +5529,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5449,7 +5562,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо к летучей мыши, и она его кусает. Вы видите, как пони слабеет после укуса и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо к летучей мыши, и она его кусает. Вы видите, как пони слабеет после укуса и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5459,7 +5580,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони ускоряется, перебирая ногами всё быстрее, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони слабеет и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони ускоряется, перебирая ногами всё быстрее, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони слабеет и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5470,13 +5599,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо в болото и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо в болото и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в болото и вызывает огромное облако пара. Ничего не видя, он попадает в вязкое место и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в болото и вызывает огромное облако пара. Ничего не видя, он попадает в вязкое место и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5501,13 +5646,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в дракона, но лазер отражается от блестящей чешуи в небо. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в дракона, но лазер отражается от блестящей чешуи в небо. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони смело бежит вперёд, но не успевает проскочить между ног дракона, и тот разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони смело бежит вперёд, но не успевает проскочить между ног дракона, и тот разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5518,7 +5679,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони со всех сил пытается перепрыгнуть забор, но установка на его спине слишком тяжела. Он врезается в забор и застревает в нём. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони со всех сил пытается перепрыгнуть забор, но установка на его спине слишком тяжела. Он врезается в забор и застревает в нём. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5528,7 +5697,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони пытается ускориться, но лазерная установка слишком тяжела. Он врезается в забор и после удара он замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается ускориться, но лазерная установка слишком тяжела. Он врезается в забор и после удара он замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5539,7 +5716,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони пытается прыгнуть, но, из-за веса лазерной установки на спине, приземлившись ломает себе все четыре ноги. Летучая мышь пьёт кровь беспомощного пони, пока тот не может сдвинуться с места. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается прыгнуть, но, из-за веса лазерной установки на спине, приземлившись ломает себе все четыре ноги. Летучая мышь пьёт кровь беспомощного пони, пока тот не может сдвинуться с места. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5549,7 +5734,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони пытается убежать с тяжёлой лазерной установкой на спине, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони быстро слабеет и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается убежать с тяжёлой лазерной установкой на спине, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони быстро слабеет и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5560,19 +5753,43 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони неловко прыгает прямо в болото и быстро уходит на дно вместе с лазерной установкой. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони неловко прыгает прямо в болото и быстро уходит на дно вместе с лазерной установкой. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в болото и вызывает огромнейшее облако пара. Ничего не видя, он попадает в вязкое место, беспомощно застревает и быстро уходит на дно вместе с лазерной установкой. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в болото и вызывает огромнейшее облако пара. Ничего не видя, он попадает в вязкое место, беспомощно застревает и быстро уходит на дно вместе с лазерной установкой. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони пытается перебежать болото, но попадает в вязкое место, беспомощно застревает и быстро уходит на дно вместе с лазерной установкой. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается перебежать болото, но попадает в вязкое место, беспомощно застревает и быстро уходит на дно вместе с лазерной установкой. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5581,7 +5798,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони неловко прыгает и под весом установки ломает себе все 4 ноги! Дракон крайне удивлен, но всё же съедает незадачливого пони. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони неловко прыгает и под весом установки ломает себе все 4 ноги! Дракон крайне удивлен, но всё же съедает незадачливого пони. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5597,7 +5822,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони смело бежит вперёд, но не успевает проскочить между ног дракона, и тот разрывает его на части. И хотя при этом субатомный взрыв лазерной установки убивает дракона, вам от этого не легче,- пони уже не вернуть. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони смело бежит вперёд, но не успевает проскочить между ног дракона, и тот разрывает его на части. И хотя при этом субатомный взрыв лазерной установки убивает дракона, вам от этого не легче,- пони уже не вернуть. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5667,7 +5900,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо на летучую мышь, но внезапно она превращается в забор, и пони застревает в воздухе. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо на летучую мышь, но внезапно она превращается в забор, и пони застревает в воздухе. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5686,13 +5927,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает и, приземлившись, застревает в текстурах поля. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает и, приземлившись, застревает в текстурах поля. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером куда-то за горизонт без видимого эффекта. Внезапно он останавливается на месте. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером куда-то за горизонт без видимого эффекта. Внезапно он останавливается на месте. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5707,13 +5964,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает и, приземлившись, застревает в текстурах поля. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает и, приземлившись, застревает в текстурах поля. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером куда-то за горизонт без видимого эффекта. Внезапно он останавливается на месте. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером куда-то за горизонт без видимого эффекта. Внезапно он останавливается на месте. Спустя минуту вместо поля загружается болото. Пони ещё жив, но выбраться не может. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5783,25 +6056,57 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>УДАР</text>
 			<event>
-				<text>Пони хмурит брови и идёт на таран! От удара в забор, пони замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони хмурит брови и идёт на таран! От удара в забор, пони замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ПОДКАТ</text>
 			<event>
-				<text>Пони пытается сделать подкат под забор, но застревает между нижних прутьев. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается сделать подкат под забор, но застревает между нижних прутьев. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5813,12 +6118,28 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 			<text>ПРЫЖОК</text>
 			<event>
 				<text>Пони как-то неловко прыгает на зеркало, и у вас становится две половинки пони. Они не очень долго бегут отдельно друг от друга, и на экране появляется надпись "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и из него струится лазерный поток прямо в зеркало! Отражённый луч сжигает пони в пыль. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и из него струится лазерный поток прямо в зеркало! Отражённый луч сжигает пони в пыль. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5832,7 +6153,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПОДКАТ</text>
 			<event>
-				<text>Пони пытается сделать подкат, но под острым зеркалом проскальзывает лишь 50 процентов пони. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается сделать подкат, но под острым зеркалом проскальзывает лишь 50 процентов пони. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5847,25 +6176,57 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и лазерным потоком жжёт каменного голема! Это не наносит ровно никакого вреда, и голем расплющивает пони своей огромной рукой. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и лазерным потоком жжёт каменного голема! Это не наносит ровно никакого вреда, и голем расплющивает пони своей огромной рукой. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони ускоряет свой бег, но голем мощнейшим ударом ноги отправляет пони в полёт за горизонт. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони ускоряет свой бег, но голем мощнейшим ударом ноги отправляет пони в полёт за горизонт. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>УДАР</text>
 			<event>
-				<text>Пони группируется и сильнейшим ударом головы таранит голема! Хотя черепа пони славятся особой прочностью, в этом случае каменный голем побеждает. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони группируется и сильнейшим ударом головы таранит голема! Хотя черепа пони славятся особой прочностью, в этом случае каменный голем побеждает. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ПОДКАТ</text>
 			<event>
-				<text>Пони пытается сделать подкат, но голем ловко его расплющивает огромной ногой. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони пытается сделать подкат, но голем ловко его расплющивает огромной ногой. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -5876,25 +6237,57 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает и насаживается на один из висящих у потолка сталактитов. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает и насаживается на один из висящих у потолка сталактитов. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и лазерным потоком жжёт ледяную пещеру. От этого потолок пещеры обрушивается и заваливает пони. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и лазерным потоком жжёт ледяную пещеру. От этого потолок пещеры обрушивается и заваливает пони. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони ускоряет свой бег. От громкого топота копыт сталактиты начинают падать, один за другим, и давят бедного пони! ИГРА ОКОНЧЕНА.</text>
+				<text>Пони ускоряет свой бег. От громкого топота копыт сталактиты начинают падать, один за другим, и давят бедного пони! "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>УДАР</text>
 			<event>
-				<text>Пони группируется и сильнейшим ударом сбивает несколько сталактитов! От вибрации потолок пещеры обрушивается и заваливает пони. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони группируется и сильнейшим ударом сбивает несколько сталактитов! От вибрации потолок пещеры обрушивается и заваливает пони. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -5972,19 +6365,43 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо в пасть дракону. Чудовище крайне удивлено, но прожёвывает и глотает этот подарок судьбы. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо в пасть дракону. Чудовище крайне удивлено, но прожёвывает и глотает этот подарок судьбы. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в дракона, но не прожигает его крепкую чешую. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в дракона, но не прожигает его крепкую чешую. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони смело бежит вперёд, и дракон умело разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони смело бежит вперёд, и дракон умело разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -6019,19 +6436,43 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони открывает рот и из него струится лазерный поток прямо в забор! Однако, забор остаётся целым и пони, врезавшись в него, падает замертво. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони уверенно ускоряется, перебирая ногами всё быстрее, и с силой врезается головой в забор. После этого удара он замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ШИПЫ</text>
 			<event>
-				<text>Пони покрывается слоем шипов и с силой врезается головой в забор. После этого удара он замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони покрывается слоем шипов и с силой врезается головой в забор. После этого удара он замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -6042,7 +6483,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо к летучей мыши, и она его кусает. Вы видите как пони слабеет после укуса и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо к летучей мыши, и она его кусает. Вы видите как пони слабеет после укуса и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -6052,13 +6501,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони ускоряется, перебирая ногами всё быстрее, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони слабеет и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони ускоряется, перебирая ногами всё быстрее, но летучая мышь его догоняет и кусает за заднюю ногу. После укуса пони слабеет и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ШИПЫ</text>
 			<event>
-				<text>Пони покрывается слоем шипов, однако, летучая мышь кусает его за ногу. После укуса пони слабеет и замертво падает на землю. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони покрывается слоем шипов, однако, летучая мышь кусает его за ногу. После укуса пони слабеет и замертво падает на землю. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -6069,13 +6534,29 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо в болото и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо в болото и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в болото и вызывает огромное облако пара. Ничего не видя, он попадает в вязкое место и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в болото и вызывает огромное облако пара. Ничего не видя, он попадает в вязкое место и беспомощно застревает. Пони ещё жив, но выбраться не может, и грустно смотрит вам в глаза. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
@@ -6085,7 +6566,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ШИПЫ</text>
 			<event>
-				<text>Пони покрывается слоем шипов, однако, попадает в вязкое место болота и беспомощно застревает. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони покрывается слоем шипов, однако, попадает в вязкое место болота и беспомощно застревает. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -6096,25 +6585,57 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		<choice hidden="true">
 			<text>ПРЫЖОК</text>
 			<event>
-				<text>Пони прыгает прямо в пасть дракону. Чудовище крайне удивлено, но прожёвывает и глотает этот подарок судьбы. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони прыгает прямо в пасть дракону. Чудовище крайне удивлено, но прожёвывает и глотает этот подарок судьбы. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ВЫСТРЕЛ</text>
 			<event>
-				<text>Пони стреляет лазером в дракона, но не прожигает его крепкую чешую. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони стреляет лазером в дракона, но не прожигает его крепкую чешую. Разъярённое чудовище набрасывается на милого пони и разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>БЕГ</text>
 			<event>
-				<text>Пони смело бежит вперёд, и дракон изящно разрывает его на части. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони смело бежит вперёд, и дракон изящно разрывает его на части. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 		<choice hidden="true">
 			<text>ШИПЫ</text>
 			<event>
-				<text>Пони покрывается слоем шипов, однако, дракон испепеляет его своим огненным дыханием. ИГРА ОКОНЧЕНА.</text>
+				<text>Пони покрывается слоем шипов, однако, дракон испепеляет его своим огненным дыханием. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 			</event>
 		</choice>
 	</event>
@@ -6144,7 +6665,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</choice>
 	</event>
 	<event>
-		<text>Пони в нерешимости стоит перед забором, а потом убегает за пределы экрана. ИГРА ОКОНЧЕНА.</text>
+		<text>Пони в нерешимости стоит перед забором, а потом убегает за пределы экрана. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 	</event>
 </eventList>
 <eventList name="PONY_GAME_START_Z3">
@@ -6163,7 +6692,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</choice>
 	</event>
 	<event>
-		<text>Увидев летучую мышь, пони пытается притвориться мёртвым. После её укуса, притворяться ему уже не приходится. ИГРА ОКОНЧЕНА.</text>
+		<text>Увидев летучую мышь, пони пытается притвориться мёртвым. После её укуса, притворяться ему уже не приходится. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 	</event>
 </eventList>
 <eventList name="PONY_GAME_START_Z4">
@@ -6182,7 +6719,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</choice>
 	</event>
 	<event>
-		<text>Пони прыгает прямо в болото и радостно топчет копытами, пока не исчезает в пучине. ИГРА ОКОНЧЕНА.</text>
+		<text>Пони прыгает прямо в болото и радостно топчет копытами, пока не исчезает в пучине. "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 	</event>
 </eventList>
 <eventList name="PONY_GAME_START_Z5">
@@ -6201,7 +6746,15 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</choice>
 	</event>
 	<event>
-		<text>Наполненный решимостью, пони бежит прямо в пасть дракону... ИГРА ОКОНЧЕНА.</text>
+		<text>Наполненный решимостью, пони бежит прямо в пасть дракону... "ИГРА ОКОНЧЕНА".</text>
+				<choice hidden="false">
+					<text>Потратить ещё один жетон на новую игру.</text>
+					<event load="PONY_GAME_EVENT"/>
+				</choice>
+				<choice hidden="true">
+					<text>Отойти от автомата.</text>
+					<event/>
+				</choice>
 	</event>
 </eventList> <!-- END OF LINE=Z= -->
 
@@ -6569,16 +7122,12 @@ At the locaton is a tough fight that you need to stay away from.  If you have cl
 		</choice>
 	</event>
 </eventList>
-<eventList name="REWARD_SLURM_END">
+<eventList name="REWARD_SLURM_END"><!-- 1.35 -->
 	<event>
 		<text>Вы осматриваете обломки в поисках слёрма, но ни один контейнер не уцелел в бою...</text>
 	</event>
 	<event>
-		<text>Вы осматриваете обломки в поисках слёрма и находите одну уцелевшую бочку. Так как ценность представляет только достаточно перебродивший слёрм, необходимо проверить его готовность.</text>
-		<choice hidden="true">
-			<text>Аккуратно вскрыть бочку.</text>
-			<event load="OPEN_BARREL"/>
-		</choice>
+		<text>Вы осматриваете обломки в поисках слёрма, но ни один контейнер не уцелел в бою...</text>
 	</event>
 	<event>
 		<text>Вы осматриваете обломки в поисках слёрма и находите одну уцелевшую бочку. Так как ценность представляет только достаточно перебродивший слёрм, необходимо проверить его готовность.</text>
@@ -14275,6 +14824,13 @@ TJ - Топливная ячейка.			2
 			<text>Вы соглашаетесь и слёрмы платят небольшой аванс за охрану.</text>
 			<autoReward level="LOW">scrap_only</autoReward>
 			<quest event="EVENT_SLURM_ESCORT_POINT"/>
+		</event>
+	</choice>	
+	<choice req="FTL_JUMPER_GOOD" hidden="true"> <!-- 1.35 -->
+		<text>(FTL-навигатор) Отправить им данные безопасного маршрута.</text>
+		<event>
+			<text>Они благодарят вас и передают бочонок свежего слёрма.</text>
+			<weapon name="SLURMBARRELS"/>
 		</event>
 	</choice>
 	<choice hidden="true">

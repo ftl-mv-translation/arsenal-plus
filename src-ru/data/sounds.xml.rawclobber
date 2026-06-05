@@ -3,7 +3,7 @@
 <!-- Copyright (c) 2012 by Subset Games. All rights reserved -->
 <FTL>
 <!-- music tracks -->
-<music> <!-- 1.26 --> <!-- all music converted to ogg 128 kbs/44kHz, old ogg's too (to reduce files size)-->
+<music> <!-- 1.26 --> <!-- all music converted to ogg 128 kbs/44kHz, old ogg's too (to reduce files size)--><!-- 1.35 --><!-- Loudness Normalization -->
 	<track>
 		<name>civilian</name>
 		<explore>bp_MUS_CivilEXPLORE.ogg</explore>
@@ -39,6 +39,11 @@
 		<explore>bp_MUS_MantisEXPLORE.ogg</explore>
 		<combat>bp_MUS_MantisBATTLE.ogg</combat>
 	</track>
+	<track><!-- 1.35 -->
+		<name>hive</name>
+		<explore>Hive_explore.ogg</explore>
+		<combat>Hive_battle.ogg</combat>
+	</track>
 	<track>
 		<name>deepspace</name>
 		<explore>bp_MUS_DeepspaceEXPLORE.ogg</explore>
@@ -57,12 +62,22 @@
 	<track>
 		<name>avatar</name>
 		<explore>bp_MUS_HorrorEXPLORE.ogg</explore>
-		<combat>bp_MUS_HorrorBATTLE.ogg</combat> <!-- 1.25 --> <!-- new mp3 -->
+		<combat>bp_MUS_HorrorBATTLE.ogg</combat> <!-- 1.25 --> <!-- new ogg -->
 	</track>
 	<track>
 		<name>avatar2</name>
 		<explore>bp_MUS_HorrorEXPLORE2.ogg</explore>
-		<combat>bp_MUS_HorrorBATTLE2.ogg</combat> <!-- 1.25 --> <!-- new mp3 -->
+		<combat>bp_MUS_HorrorBATTLE2.ogg</combat> <!-- 1.25 --> <!-- new ogg -->
+	</track>
+	<track><!-- 1.35 -->
+		<name>avatar3</name>
+		<explore>Avatars_Explore.ogg</explore>
+		<combat>Avatars_Battle.ogg</combat>
+	</track>
+	<track><!-- 1.35 -->
+		<name>avatar4</name>
+		<explore>Lake Explore.ogg</explore>
+		<combat>Lake Battle.ogg</combat>
 	</track>
 	<track>
 		<name>zoltan</name>
@@ -190,37 +205,68 @@
 	</track>	
 	<track>
 		<name>Magman</name>
-		<explore>Magman_Explore.mp3</explore>
-		<combat>Magman_Battle.mp3</combat>
+		<explore>Magman_Explore.ogg</explore>
+		<combat>Magman_Battle.ogg</combat>
 	</track>	
 	<track>
 		<name>Mara</name>
-		<explore>Mara_Explore.mp3</explore>
-		<combat>Mara_Battle.mp3</combat>
+		<explore>Mara_Explore.ogg</explore>
+		<combat>Mara_Battle.ogg</combat>
 	</track>	
 	<track>
 		<name>Traders</name>
-		<explore>Traders_Explore.mp3</explore>
-		<combat>Traders_Battle.mp3</combat>
+		<explore>Traders_Explore.ogg</explore>
+		<combat>Traders_Battle.ogg</combat>
 	</track>	
 	<track>
 		<name>Plants</name>
-		<explore>Plants_Explore.mp3</explore>
-		<combat>Plants_Battle.mp3</combat>
+		<explore>Plants_Explore.ogg</explore>
+		<combat>Plants_Battle.ogg</combat>
 	</track>
 	<track>	
 		<name>Percussion</name>
-		<explore>Percussion_Explore.mp3</explore>
-		<combat>Percussion_Battle.mp3</combat>
+		<explore>Percussion_Explore.ogg</explore>
+		<combat>Percussion_Battle.ogg</combat>
 	</track>
 	<track>	
 		<name>Journey</name>
-		<explore>Journey_Explore.mp3</explore>
-		<combat>Journey_Battle.mp3</combat>
+		<explore>Journey_Explore.ogg</explore>
+		<combat>Journey_Battle.ogg</combat>
 	</track>
 	<track>	
 		<name>AlternativeLastStand</name>
-		<explore>AlternativeLastStand.mp3</explore>
+		<explore>AlternativeLastStand.ogg</explore>
+	</track>
+	<!-- 1.35 -->	
+	<track>
+		<name>industry</name>
+		<explore>Industry_Explore.ogg</explore>
+		<combat>Industry_Battle.ogg</combat>
+	</track>	
+	<track>
+		<name>rebels</name>
+		<explore>Rebels_Explore.ogg</explore>
+		<combat>Rebels_Battle.ogg</combat>
+	</track>	
+	<track>
+		<name>nemesis</name>
+		<explore>Nemesis_Explore.ogg</explore>
+		<combat>Nemesis_Battle.ogg</combat>
+	</track>	
+	<track>
+		<name>robot</name>
+		<explore>Robot_explore.ogg</explore>
+		<combat>Robot_battle.ogg</combat>
+	</track>	
+	<track>
+		<name>anaerobic</name>
+		<explore>Anaerobic_explore.ogg</explore>
+		<combat>Anaerobic_battle.ogg</combat>
+	</track>
+	<track>
+		<name>rock2</name>
+		<explore>Rock_explore.ogg</explore>
+		<combat>Rock_battle.ogg</combat>
 	</track>
 </music>
 
@@ -789,6 +835,7 @@
 <soul_catch_1 volume="8">weapons/soul_catch_1.ogg</soul_catch_1>
 <soul_catch_2 volume="8">weapons/soul_catch_2.ogg</soul_catch_2>
 <soul_catch_multi volume="8">weapons/soul_catch_multi.ogg</soul_catch_multi>
+<soul_catch_full volume="8">weapons/soul_catch_full.ogg</soul_catch_full><!-- 1.35 -->
 <soul_start_beacon_1 volume="8">weapons/soul_start_beacon_1.ogg</soul_start_beacon_1>
 <soul_start_beacon_2 volume="8">weapons/soul_start_beacon_2.ogg</soul_start_beacon_2>
 <soul_start_beacon_3 volume="8">weapons/soul_start_beacon_3.ogg</soul_start_beacon_3>
@@ -811,5 +858,20 @@
 <egg_open2 volume="10">aliens/egg_open2.ogg</egg_open2>
 <hal_reactor_free volume="10">ui/hal_reactor_free.ogg</hal_reactor_free> 
 <drone_creating volume="10">ui/drone_creating.ogg</drone_creating>
+<!-- 1.35 -->	
+<reflect_projectile volume="10">ui/reflect_projectile.wav</reflect_projectile>
+<pds_accuracy volume="10">ui/pds_accuracy.ogg</pds_accuracy>
+<clear_points_on_map volume="1">ui/clear_points_on_map.ogg</clear_points_on_map>
+<set_point_on_map volume="1">ui/set_point_on_map.ogg</set_point_on_map>
+<resend_proj volume="10">ui/resend_proj.ogg</resend_proj>
+<shop_is_close volume="10">ui/shop_is_close.ogg</shop_is_close>
+<slot_mashine_brocken volume="10">ui/slot_mashine_brocken.ogg</slot_mashine_brocken>
+<slot_mashine_push volume="10">ui/slot_mashine_push.ogg</slot_mashine_push>
+<slot_mashine_win volume="10">ui/slot_mashine_win.ogg</slot_mashine_win>
+<slot_mashine_roll volume="10">ui/slot_mashine_roll.ogg</slot_mashine_roll>
+<weapon_charge_up volume="6">weapons/weapon_charge_up.ogg</weapon_charge_up>
+<chelnok_otpravka volume="10">aliens/chelnok_otpravka.ogg</chelnok_otpravka>
+<woman_scream1 volume="7">aliens/woman_scream1.ogg</woman_scream1>
+<woman_scream2 volume="7">aliens/woman_scream2.ogg</woman_scream2>
 
 </FTL>

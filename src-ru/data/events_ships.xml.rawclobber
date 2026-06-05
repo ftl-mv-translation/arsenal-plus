@@ -318,23 +318,23 @@ Special:
 
 
 
-<ship name="NEBULA_STORM_PIRATE_SUPPLY_FUEL" auto_blueprint="SHIPS_FED_TRBARREL_P"> <!-- 1.25.1 --><!-- was SHIPS_PIRATE -->
-	<escape  timer="100" min="30" max="30" load="PIRATE_ESCAPE"/> <!-- 1.25.1 -->
+<!-- <ship name="NEBULA_STORM_PIRATE_SUPPLY_FUEL" auto_blueprint="SHIPS_FED_TRBARREL_P">
+	<escape  timer="100" min="30" max="30" load="PIRATE_ESCAPE"/>
 	<destroyed>
 		<text>Корабль уничтожен, и только скудные контейнеры с топливом можно достать из обломков до того, как стихнет ионный шторм, и вам придётся прыгать дальше.</text>
-		<autoReward level="MED">fuel</autoReward> <!-- 1.26.1 -->
+		<autoReward level="MED">fuel</autoReward>
 	</destroyed>
 	<gotaway>
 		<text>Пиратский корабль совершил прыжок.</text>
 	</gotaway>
 	<deadCrew>
 		<text>Поскольку корабль ещё цел, есть шанс собрать большую часть топливных запасов прежде, чем утихнет ионный шторм, и наступит время лететь дальше.</text>
-		<autoReward level="HIGH">scrap_only</autoReward> <!-- 1.26.1 -->
-		<item_modify> <!-- 1.26.1 -->
+		<autoReward level="HIGH">scrap_only</autoReward>
+		<item_modify> 
 			<item type="fuel" min="5" max="7"/>
 		</item_modify>
 	</deadCrew>
-</ship>
+</ship> --><!-- 1.35 -->
 
 
 
@@ -798,6 +798,13 @@ Special:
 			<item type="fuel" min="1" max="1"/>
 		</item_modify>
 	</deadCrew>
+	<weaponOverride count="1"><!-- 1.35 -->
+		<name>PDS_AIMER</name>
+		<name>WEAPONS_REBEL</name>
+		<name>WEAPONS_REBEL</name>
+		<name>WEAPONS_REBEL</name>
+		<name>WEAPONS_REBEL</name>
+	</weaponOverride>
 </ship>
 
 
@@ -1956,10 +1963,10 @@ Special:
 
 <ship name="TURTLE_SHIP" auto_blueprint="SHIPS_TURTLE"><!-- 1.34 -->
 	<destroyed load="DESTROYED_DEFAULT"/>
-	<deadCrew load="DEAD_CREW_SHELL"/>
+	<deadCrew load="DEAD_CREW_DEFAULT"/><!-- 1.35 -->
 </ship>
 
-<event name="DEAD_CREW_SHELL">
+<!-- <event name="DEAD_CREW_SHELL">
 	<text load="DEAD_CREW_SHELL_TEXT"/>
 	<choice req="slug_crew" lvl="0" hidden="true" max_group="0" blue="false">
 		<text id="continue"/>
@@ -1969,13 +1976,18 @@ Special:
 		<text id="continue"/>
 		<event load="DEAD_CREW_SHELL_WITH_SLUG"/>
 	</choice>
+</event> --><!-- 1.35 -->
+<event name="DEAD_CREW_SHELL"><!-- 1.35 -->
+	<loadEventList seeded="false" first="true" generate="true">
+		<event req="slug_crew" lvl="1" load="DEAD_CREW_SHELL_WITH_SLUG"/>
+		<event load="DEAD_CREW_DEFAULT"/>
+	</loadEventList>
 </event>
-
-<textList name="DEAD_CREW_SHELL_TEXT">
+<!-- <textList name="DEAD_CREW_SHELL_TEXT">
 	<text>Последний раненый броненосец издаёт противный писк и умирает...</text>
 	<text>Раненый броненосец катается в муках по кораблю, и вы хладнокровно его добиваете.</text>
 	<text>Смертельно раненый капитан броненосцев отчаянно верещит, но вскоре затихает...</text>
-</textList>
+</textList> --><!-- 1.35 -->
 
 <eventList name="DEAD_CREW_SHELL_WITH_SLUG">
 	<event>

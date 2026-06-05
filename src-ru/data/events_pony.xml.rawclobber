@@ -2009,7 +2009,7 @@
 	<loadEventList seeded="false" first="true" generate="false">
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="3"/>
 		<event req="pony_status" lvl="2">
-			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.3" maxTime="5.0"/><!-- 1.34 -->
+			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="5.3" maxTime="5.5"/><!-- 1.35 -->
 		</event>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="1"/>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="0"/>
@@ -2022,7 +2022,7 @@
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="3"/>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="2"/>
 		<event req="pony_status" lvl="1">
-			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.3" maxTime="5.0"/><!-- 1.34 -->
+			<triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="5.3" maxTime="5.5"/><!-- 1.35 -->
 		</event>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="0"/>
 		<event/>
@@ -2064,7 +2064,7 @@
 	<loadEventList seeded="false" first="true" generate="false">
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="3"/>
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="2"/>
-		<event req="pony_status" lvl="1"><triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="3.6" maxTime="4.4"/></event><!-- 1.34 -->
+		<event req="pony_status" lvl="1"><triggeredEvent name="TRG_MAINCYCLE_PONY" event="EVENT_PONY_PLAY2" seeded="false" minTime="4.8" maxTime="5.0"/></event><!-- 1.35 -->
 		<event load="EVENT_PONY_DEAD" req="pony_status" lvl="0"/>
 		<event/>
 	</loadEventList>

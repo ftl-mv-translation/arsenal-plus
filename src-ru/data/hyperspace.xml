@@ -15,7 +15,7 @@
     <version>^0.9.2</version> A major match, allows minor & patch to be changed (upwards) but not major, in this case 0.10.0 would match as would 0.9.5 but not 1.0.0.
     If you fail to specify a match character and just do <version>0.9.2</version> this will be considered the same as `^` above but will also generate a warning message in FTL_HS.log.
 -->  
-<version>^1.20.0</version><!-- 1.32 --><!-- 1.33 --><!-- 1.34 -->
+<version>^1.22.2</version><!-- 1.32 --><!-- 1.33 --><!-- 1.34 --><!-- 1.35 -->
 
 <!-- Hyperspace defaults
 
@@ -221,7 +221,7 @@ If the "oxygen" attribute is omitted, then the value will be auto-generated: 0.0
 <altCreditSystem enabled="true"/> <!-- If enabled, the game will use the XML credits over the hardcoded vanilla ones. Also fixes the empty crew section on auto ships --><!-- 1.31 -->
 
 
-<dismissSound enabled="true" sound="crewLoss"/> <!-- 1.31 -->
+<dismissSound enabled="true" sound="silence"/> <!-- крик конкретного выброшенного экипажа теперь запускается через луа, тут заглушка --> <!-- 1.31 --><!-- 1.35 -->
 
 <oxygenWithoutSystem enabled="true"/> <!-- If enabled, the game will allow oxygen to function without a system --><!-- 1.33 -->
 
@@ -340,6 +340,9 @@ ionDelayInitial: if defined, determines how long the drone takes to trigger the 
 
 <controllableIonDroneFix enabled="true" ionDelay="6" ionDelayInitial="6"/><!-- 1.32 -->
 
+<!--Unpowered drones can be stunned and destroyed by enemy ion projectiles if enabled.-->
+
+<droneIonDodgeFix enabled="true"/><!-- 1.35 -->
 
 <!-- Custom title screen
 Changes the background and logo and moves the FTL logo slightly -->
@@ -417,6 +420,8 @@ If the chance attribute is set to 1 or above, every time the main menu is loaded
 		<splashImage x="5" y="5" center="false">053</splashImage>
 		<splashImage x="5" y="5" center="false">054</splashImage>
 		<splashImage x="5" y="5" center="false">055</splashImage>
+		<!-- 1.35 -->
+		<splashImage x="5" y="5" center="false">056</splashImage>
     </splashImages>
 </titleScreen>
 
@@ -477,6 +482,8 @@ If the chance attribute is set to 1 or above, every time the main menu is loaded
 Не забыть улучшить систему сенсоров
 1.33
 Осторожно! Игра в Arsenal+ вызывает привычку нажимать ALT для ускорения всех загрузок на компьютере
+1.35
+Присоединяйтесь к нашему дискорду, или я выдам вам улей
  -->
 
 <!-- Allows the renaming of the player ship while in a run -->
@@ -915,11 +922,42 @@ Syntax ->
 	<shipIcons><!-- 1.4 -->
         <normalPos x="1242" y="451"/><!-- 1.32 -->
         <bossPos x="1235" y="456"/><!-- 1.32 -->
+		<!-- 1.35 -->
+		<shipIcon>
+			<name>icon_ion_resonator</name>
+			<tooltip>Ионный резонатор
+			Добавляет урон по системам всем ионным орудиям без урона по системам или корпусу.</tooltip>
+		</shipIcon>	
+		<shipIcon>
+			<name>icon_antihacker</name>
+			<tooltip>Сетевой экран:
+			Не позволяет активировать вражеский дрон-взломщик.</tooltip>
+		</shipIcon>
+		<shipIcon>
+			<name>icon_drunk_crew</name>
+			<tooltip>Мини-бар дяди Мо:
+			Экипаж корабля сильно пьян. Точность выстрелов существенно снижена, если на корабле есть активный экипаж.</tooltip>
+		</shipIcon>
+		<shipIcon>
+			<name>icon_desshield</name>
+			<tooltip>Щит-дезинтегратор
+			Щиты нейтрализуют без потери мощности все лазеры, мусор, астероиды и, частично, фазовые ионные снаряды. Становится невозможно поднять более 1 слоя щита.</tooltip>
+		</shipIcon>
+		<shipIcon>
+			<name>icon_bonus_shield</name>
+			<tooltip>Дополнительный слой щита
+			На этот корабль установлено оборудование для поддержания 5 слоёв щита.</tooltip>
+		</shipIcon>
+		<shipIcon>
+			<name>icon_bonus_shield_plus</name>
+			<tooltip>Дополнительные слои щита
+			На этот корабль установлено оборудование для поддержания 6 слоёв щита.</tooltip>
+		</shipIcon>
 		<!-- 1.34 -->
 		<shipIcon>
             <name>icon_environment_amp</name>
 			<tooltip>Разрушающее окружение
-			Вакуум наносит 1х урона врагам на вашем корабле (независимо от расы). Огонь наносит 1.5х урона врагам на их корабле (независимо от расы).</tooltip>
+			Вакуум наносит 1х урона врагам на этом корабле (независимо от расы). Огонь наносит 1.5х урона врагам на их корабле (независимо от расы).</tooltip><!-- 1.35 -->
         </shipIcon>
 		<shipIcon>
             <name>icon_o2_masks_crew_stims</name>
@@ -1043,8 +1081,8 @@ Syntax ->
         </shipIcon>
 		<shipIcon>
             <name>icon_repair_speed_down</name>
-            <tooltip>Ремонтные анти-боты:
-			Замедляют скорость ремонта вражеских систем на 50%.</tooltip>
+            <tooltip>Анти-ремонтные боты:
+			Замедляют скорость ремонта вражеских систем на 50%.</tooltip><!-- 1.35 -->
         </shipIcon>
 		<shipIcon>
 			<name>icon_teleport_multi</name>
@@ -1075,7 +1113,7 @@ Syntax ->
 		<shipIcon>
             <name>icon_life_scanner</name>
             <tooltip>Инфракрасный сканер:
-			Обнаруживает любые формы жизни, даже когда сенсоры не работают.</tooltip><!-- 1.33 -->
+			Обнаруживает любые формы жизни, даже когда сенсоры не работают. Орудия заряжаются во время вражеской маскировки, но с пониженной скоростью.</tooltip><!-- 1.33 --><!-- 1.35 -->
         </shipIcon>
 		<shipIcon>
             <name>icon_scrap_collector</name>
@@ -1222,11 +1260,15 @@ Syntax ->
             <tooltip>Карманные телепорты:
 			Экипаж теперь перемещается по своему кораблю с помощью карманных телепортов.</tooltip>
         </shipIcon>
-				
+		<shipIcon>
+            <name>icon_accuracy_boost</name>
+            <tooltip>Корректор наведения:
+			Уклонение противника снижено на 15% за счёт продвинутой системы наведения.</tooltip>
+        </shipIcon>	
 		<shipIcon>
             <name>icon_auto_cooldown</name>
             <tooltip>Авто-перезарядчик:
-			Задержка между выстрелами орудий и артиллерии снижена на 25%.</tooltip>
+			Задержка между выстрелами орудий и артиллерии снижена на 20%.</tooltip><!-- 1.35 -->
         </shipIcon>
 		<shipIcon>
             <name>icon_slug_gel</name>
@@ -1276,7 +1318,7 @@ Syntax ->
 		<shipIcon>
             <name>icon_zoltan_bypass</name>
             <tooltip>Обход суперщита:
-			Позволяет работать через суперщит телепортации экипажа, бомбам и управлению разумом.</tooltip>
+			Позволяет работать через суперщит телепортации экипажа, бомбам и управлению разумом. Суперщит противника ограничен 3 единицами.</tooltip> <!-- 1.35 -->
         </shipIcon>
 		<shipIcon>
             <name>icon_shield_recharge</name>
@@ -1306,7 +1348,7 @@ Syntax ->
 		<shipIcon>
             <name>icon_hacking_stun</name>
             <tooltip>Парализующий модуль:
-			Защищает союзный экипаж на вашем корабле от оглушения. Оглушение врагов на их корабле длится в 2 раза дольше. Взлом системы также временно парализует экипаж в отсеке.</tooltip><!-- 1.31 -->
+			Защищает союзный экипаж на этом корабле от оглушения. Оглушение врагов на их корабле длится в 2 раза дольше. Взлом системы также временно парализует экипаж в отсеке.</tooltip><!-- 1.31 --><!-- 1.35 -->
         </shipIcon>
 		<shipIcon>
             <name>icon_ion_armor</name>
@@ -5185,6 +5227,15 @@ Syntax ->
 			</room>
 		</rooms>
 	</customShip>
+	<customShip name="ROCK_JAIL"><!-- 1.35 -->
+		<rooms>
+			<room id="3"> <!--doors-->
+				<roomAnim renderLayer="0">resist_1x2</roomAnim>
+				<sysDamageResistChance>100</sysDamageResistChance>
+				<ionDamageResistChance>100</ionDamageResistChance>
+			</room>
+		</rooms>
+	</customShip>
 </ships>
 
 <!-- Custom Thruster Animations
@@ -5257,6 +5308,8 @@ Syntax ->
 		<isTelepathic>false</isTelepathic>                                               If true, resists mind control and can see into adjacent rooms (slug).
 		<resistsMindControl>false</resistsMindControl>                                   If true, resists mind control if the stat is enabled globally (slug).
 		<fireDamageMultiplier>1.0</fireDamageMultiplier>                                 Modifier for damage taken in rooms on fire.
+		<persDamageMultiplier>1.0</persDamageMultiplier>                                 Modifier for damage taken from sources of <persDamage> with positive values. These are weapons and crew powers that deal crew damage directly.
+		<persHealMultiplier>1.0</persHealMultiplier>                                     Modifier for healing from sources of <persDamage> with negative values. These are weapons and crew powers that heal crew directly.
 		<stunMultiplier>1.0</stunMultiplier>                                             Modifier for stun duration. Lower value is stunned for a shorter duration.
 		<canPhaseThroughDoors>false</canPhaseThroughDoors>                               If true, ignores doors.
 		<healSpeed>1.0</healSpeed>                                                       Modifier for healing from non-true healing effects.
@@ -5549,6 +5602,8 @@ Syntax ->
 				<detectsLifeforms>false</detectsLifeforms>
 				<isTelepathic>false</isTelepathic>
 				<fireDamageMultiplier>1</fireDamageMultiplier>
+				<persDamageMultiplier>1.0</persDamageMultiplier>
+				<persHealMultiplier>1.0</persHealMultiplier>
 				<suffocationModifier>1</suffocationModifier>
 				<damageTakenMultiplier>1</damageTakenMultiplier>
 				<allDamageTakenMultiplier>1</allDamageTakenMultiplier>                             Modifier to damage from all sources (anything that would reduce health).
@@ -6813,6 +6868,9 @@ Syntax ->
 			<jumpCooldown>full</jumpCooldown>
 			<req type="enemy">
 				<enemyShip/><!--тут по результатам тестов имеется ввиду вражеский для этого члена экипажа -->
+				<extraConditions type="and">
+					<mindControlled>false</mindControlled>
+				</extraConditions><!-- 1.35 -->
 			</req>
 			<activateWhenReady enemiesOnly="true">true</activateWhenReady>
 			<friendlyFire>true</friendlyFire>
@@ -7115,6 +7173,9 @@ Syntax ->
             <buttonText>ЛОВУШКА</buttonText>
             <tooltip>Готово: Взломать шлюзы и выпустить отравляющий газ в текущем отсеке. [30 ‡]</tooltip>
             <cooldownColor r="100" g="210" b="100"/>
+			<req type="player"><!-- 1.35 -->
+				<notMindControlled/>
+			</req>
         </powerEffect>
     </race>
 	<race name="human_bam"><!-- 1.32 -->
@@ -7227,7 +7288,7 @@ Syntax ->
 		<powerEffect name="passive_hot">
 			<priority>1</priority>
 			<cooldown>15</cooldown>
-			<jumpCooldown>reset</jumpCooldown>
+			<jumpCooldown>full</jumpCooldown><!-- 1.35 -->
 			<powerSounds>
 				<powerSound>fireBomb</powerSound>
 			</powerSounds>
@@ -7383,6 +7444,53 @@ Syntax ->
 			<shootingSound>mantisSpit2</shootingSound>
 			<shootingSound>mantisSpit3</shootingSound>
 		</shootingSounds>
+    </race>
+	<race name="turtle_legendary"><!-- 1.35 -->
+		<maxHealth>100</maxHealth>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<damageMultiplier>0.25</damageMultiplier>
+		<damageTakenMultiplier>0.6</damageTakenMultiplier>
+		<deathSounds>
+			<deathSound>shellDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+    </race>
+	<race name="egg_legendary"><!-- 1.35 -->
+		<lowHealthThreshold>0.1</lowHealthThreshold>
+		<noWarning>true</noWarning>
+		<essential>999</essential>
+		<maxHealth>25</maxHealth>
+		<moveSpeedMultiplier>0.0</moveSpeedMultiplier>
+		<fireRepairMultiplier>0.0</fireRepairMultiplier>
+		<crewSlots>0.0</crewSlots>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canRepair>false</canRepair>
+		<canMan>false</canMan>
+        <canSuffocate>false</canSuffocate>
+		<noAI>true</noAI>
+		<controllable>false</controllable>
+		<selectable>false</selectable>
+		<canTeleport>true</canTeleport>
+		<noClone>true</noClone>
+		<resistsMindControl>true</resistsMindControl>
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		<powerEffect name="trans_to_turtle">
+			<transformRace>turtle_legendary</transformRace>
+			<hideCooldown>true</hideCooldown>
+			<hideButton>true</hideButton>
+			<cooldown>0</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<cooldownColor r="127" g="0" b="0"/>
+			<buttonText>ВЫЛУПИТЬСЯ</buttonText>
+            <tooltip>...</tooltip>
+		</powerEffect>
     </race>
 	<race name="slug_armored">
 		<damageTakenMultiplier>0.5</damageTakenMultiplier>
@@ -7739,6 +7847,35 @@ Syntax ->
 			<cooldownColor r="113" g="120" b="255"/>
 		</powerEffect>
 	</race>
+	<race name="alien_in_box"><!-- 1.35 -->
+		<lowHealthThreshold>0.1</lowHealthThreshold>
+		<noWarning>true</noWarning>
+		<essential>999</essential>
+		<maxHealth>35</maxHealth>
+		<healSpeed>0.0</healSpeed>
+		<persHealMultiplier>0.0</persHealMultiplier>
+		<moveSpeedMultiplier>0.0</moveSpeedMultiplier>
+		<fireRepairMultiplier>0.0</fireRepairMultiplier>
+		<fireDamageMultiplier>0.0</fireDamageMultiplier>
+		<crewSlots>0.0</crewSlots>
+		<canFight>false</canFight>
+		<canSabotage>false</canSabotage>
+		<canRepair>false</canRepair>
+		<canMan>false</canMan>
+        <canSuffocate>false</canSuffocate>
+		<noAI>true</noAI>
+		<controllable>false</controllable>
+		<selectable>false</selectable>
+		<canTeleport>false</canTeleport>
+		<noClone>true</noClone>
+		<resistsMindControl>true</resistsMindControl>
+		<deathSounds>
+			<deathSound>alien_wounded</deathSound>
+		</deathSounds>
+		<deathEffect>
+			<event load="EVENT_ADD_ALIEN_IN_HULL"/>
+		</deathEffect>
+    </race>
 	<race name="blinker"><!-- 1.32 -->
 		<canFight>false</canFight>
 		<canSuffocate>false</canSuffocate>
@@ -7923,6 +8060,9 @@ Syntax ->
 			<stun>6</stun>
 			<ion>3</ion>
 		</powerEffect>
+		<passiveStatBoosts><!-- 1.35 -->
+			<statBoost name="damageMultiplier" load="engiLegendaryVulnerability"/>
+		</passiveStatBoosts>
 	</race>
 	
 	<race name="boarder_ftl_disabler"><!-- 1.32 -->
@@ -8203,6 +8343,26 @@ Syntax ->
 			<statBoost name="damageMultiplier" load="engiLegendaryVulnerability"/>
 		</passiveStatBoosts>
 	</race>
+	<race name="deionizator"><!-- 1.35 -->
+		<canMan>false</canMan>
+		<canFight>false</canFight>
+		<canRepair>false</canRepair>
+		<canSabotage>false</canSabotage>
+		<canSuffocate>false</canSuffocate>
+		<stunMultiplier>0</stunMultiplier>
+		<healSpeed>0.5</healSpeed>
+		<maxHealth>150</maxHealth>
+		<droneMoveFromManningSlot>true</droneMoveFromManningSlot>
+		<droneAI>
+			<returnToDroneRoom/>
+		</droneAI>
+		<canBurn>false</canBurn>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<controllable>true</controllable>
+		<passiveStatBoosts>
+			<statBoost name="damageMultiplier" load="engiLegendaryVulnerability"/>
+		</passiveStatBoosts>
+	</race>
 </crew>
 
 <!-- Custom drones
@@ -8224,6 +8384,10 @@ Syntax ->
 -->
 
 <drones>
+	<drone name="DEIONIZATOR"><!-- 1.35 -->
+		<crewBlueprint>deionizator</crewBlueprint>
+		<tooltipName>Деионизатор</tooltipName>
+	</drone>
 	<drone name="BOARDER_FTL_DISABLER"><!-- 1.32 -->
 		<crewBlueprint>boarder_ftl_disabler</crewBlueprint>
 		<tooltipName>FTL-разрядчик</tooltipName>
@@ -8383,6 +8547,26 @@ Syntax ->
 -->
 
 <augments>
+	<!-- 1.35 -->
+	<aug name="ION_RESONATOR">
+		<icon ship="enemy">icon_ion_resonator</icon>
+    </aug>
+	<aug name="ANTIHACKER"> 
+		<icon ship="enemy">icon_antihacker</icon>
+	</aug>
+	<aug name="DRUNK_CREW"> 
+		<icon ship="enemy">icon_drunk_crew</icon>
+	</aug>
+	<aug name="DESSHIELD">
+		<locked/>
+		<icon ship="enemy">icon_desshield</icon>
+    </aug>
+	<aug name="BONUS_SHIELD">
+		<icon ship="enemy">icon_bonus_shield</icon>
+    </aug>
+	<aug name="BONUS_SHIELD_PLUS">
+		<icon ship="enemy">icon_bonus_shield_plus</icon>
+    </aug>
 	<!-- 1.34 -->
 	<aug name="ANAEROBIC_PROJECTOR">
 		<icon ship="enemy">icon_anaerobic_projector</icon>
@@ -8392,7 +8576,7 @@ Syntax ->
 	</aug>
 	<aug name="ADV_OXYGEN">
 		<icon ship="enemy">icon_adv_oxygen</icon>
-		<statBoosts>
+		<!-- <statBoosts>
 			<statBoost name="oxygenChangeSpeed">
 				<boostType>FLAT</boostType>
 				<amount>0.8</amount>
@@ -8446,7 +8630,7 @@ Syntax ->
 					<alien/>
 				</blackList>
 			</statBoost>
-		</statBoosts>
+		</statBoosts> --><!-- 1.35 -->
 	</aug>	
 	<aug name="FISH_BUFF_0">
     	<statBoosts>
@@ -8467,7 +8651,7 @@ Syntax ->
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<amount>1.1</amount>
+				<amount>1.2</amount><!-- 1.35 -->
 				<priority>0</priority>
 			</statBoost>
 		</statBoosts>
@@ -8491,7 +8675,7 @@ Syntax ->
 				<shipTarget>ALL</shipTarget>
 				<crewTarget>ALLIES</crewTarget>
 				<droneTarget>CREW</droneTarget>
-				<amount>1.1</amount>
+				<amount>1.2</amount><!-- 1.35 -->
 				<priority>0</priority>
 			</statBoost>
 		</statBoosts>
@@ -8567,8 +8751,8 @@ Syntax ->
 	<aug name="FISH_BUFF_9">
         <statBoosts>
             <statBoost name="powerRechargeMultiplier">
-                <boostType>SET</boostType>
-                <amount>1.3</amount>
+                <boostType>MULT</boostType><!-- 1.35 -->
+                <amount>0.7</amount><!-- 1.35 -->
                 <shipTarget>ALL</shipTarget>
                 <crewTarget>ALLIES</crewTarget>
                 <droneTarget>CREW</droneTarget>
@@ -8576,6 +8760,48 @@ Syntax ->
             </statBoost>
         </statBoosts>
     </aug>	
+	<aug name="FISH_BUFF_10"><!-- 1.35 -->
+        <statBoosts>
+			<statBoost name="maxHealth">
+				<boostType>FLAT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>10</amount>
+				<priority>1003</priority>
+			</statBoost>
+		</statBoosts>
+       	<statBoosts>
+			<statBoost name="moveSpeedMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>1.1</amount>
+				<priority>1002</priority>
+			</statBoost>
+		</statBoosts>
+    	<statBoosts>
+			<statBoost name="damageMultiplier">
+				<boostType>MULT</boostType>
+				<shipTarget>ALL</shipTarget>
+				<crewTarget>ALLIES</crewTarget>
+				<droneTarget>CREW</droneTarget>
+				<amount>1.1</amount>
+				<priority>1001</priority>
+			</statBoost>
+		</statBoosts>
+		<statBoosts>
+            <statBoost name="allDamageTakenMultiplier">
+                <boostType>MULT</boostType>
+                <amount>0.9</amount>
+                <shipTarget>ALL</shipTarget>
+                <crewTarget>ALLIES</crewTarget>
+                <droneTarget>CREW</droneTarget>
+                <priority>1000</priority>
+            </statBoost>
+        </statBoosts>
+    </aug>
 	
 	<aug name="POCKET_TELEPORTS"><!-- 1.32 -->
     	<statBoosts>
@@ -9039,7 +9265,7 @@ Syntax ->
 					<req type="enemy">
 						<aiDisabled/>
 					</req>
-					<jumpCooldown>continue</jumpCooldown>
+					<jumpCooldown>full</jumpCooldown><!-- 1.35 -->
 					<powerSounds>
 						<powerSound>morph_crazy</powerSound>
 					</powerSounds>
@@ -9230,6 +9456,12 @@ Syntax ->
     </aug>
 	<aug name="HID_ANAEROBIC_PROJECTOR"><!-- 1.34 -->
 		<function name="ANAEROBIC_PROJECTOR" useForReqs="true"/>
+	</aug>
+	<aug name="HID_ION_RESONATOR"><!-- 1.35 -->
+		<function name="ION_RESONATOR" useForReqs="true"/>
+	</aug>
+	<aug name="HID_ANTIHACKER"><!-- 1.35 -->
+		<function name="ANTIHACKER" useForReqs="true"/>
 	</aug>
 	<aug name="HID_TELEPORT_MULTI"><!-- 1.34 -->
 		<function name="TELEPORT_MULTI" useForReqs="true"/>
@@ -9503,7 +9735,7 @@ Syntax ->
     </aug>
 	<aug name="WEAPON_PREIGNITE_AUTO_COOLDOWN">
     	<function name="WEAPON_PREIGNITE"/>
-		<function name="AUTO_COOLDOWN" value="0.33"/><!-- 1.34 -->
+		<function name="AUTO_COOLDOWN" value="0.25"/><!-- 1.35 -->
 		<icon ship="enemy">icon_weapon_preignite_auto_cooldown</icon><!-- 1.34 -->
     </aug>
 	<aug name="SHIELD_RECHARGE_CLOAK_FIRE">
@@ -10470,6 +10702,48 @@ Syntax ->
 	<bossShip>BS_MANTIS_OUTPOST</bossShip>
 	<bossShip>BS_MANTIS_OUTPOST2</bossShip>
 	<bossShip>BOSS_4_PHASE</bossShip>
+	<!-- 1.35 -->
+	<bossShip>BS_ROCK_OUTPOST</bossShip>
+	<bossShip>BS_CIRCLE_EW</bossShip>
+	<bossShip>BS_ENERGY_CHECKPOINT</bossShip>
+	<bossShip>BS_JELLY_CHECKPOINT</bossShip>
+	<bossShip>BS_ANAEROBIC_HIVE</bossShip>
+	<bossShip>C_REBEL_EW_CRUISER</bossShip>
+	<bossShip>C_REBEL_EW_CRUISER_2</bossShip>
+	<bossShip>BS_OUTLAW_OUTPOST</bossShip>
+	<bossShip>BS_AI_OUTPOST</bossShip>
+	<bossShip>LANIUS_X_1</bossShip>
+	<bossShip>BS_OUTLAW_ASTEROID</bossShip>
+	<bossShip>CIV_GLORY_FLAGSHIP</bossShip>
+	<bossShip>CIV_GLORY_FLAGSHIP_2</bossShip>
+	<bossShip>CIV_GLORY_FLAGSHIP_3</bossShip>
+	<bossShip>HAL_BOSS</bossShip>
+	<bossShip>PIRATE_BOSS</bossShip>
+	<bossShip>PIRATE_BOSS_O2</bossShip>
+	<bossShip>PIRATE_BOSS_FIR</bossShip>
+	<bossShip>PIRATE_BOSS_HEA</bossShip>
+	<bossShip>PIRATE_BOSS_BYP</bossShip>
+	<bossShip>PIRATE_BOSS_CRE</bossShip>
+	<bossShip>PIRATE_BOSS_SHI</bossShip>
+	<bossShip>PIRATE_BOSS_GEL</bossShip>
+	<bossShip>PIRATE_BOSS_ROC</bossShip>
+	<bossShip>PIRATE_BOSS_ENE</bossShip>
+	<bossShip>PIRATE_BOSS_SYS</bossShip>
+	<bossShip>PIRATE_BOSS_ION</bossShip>
+	<bossShip>JELLY_HACK_BOSS</bossShip>
+	<bossShip>OLD_PIRATE_DREDNOUT_1</bossShip>
+	<bossShip>OLD_PIRATE_DREDNOUT_2</bossShip>
+	<bossShip>OLD_PIRATE_DREDNOUT_3</bossShip>
+	<bossShip>BS_CRYSTAL_STATION</bossShip>
+	<bossShip>FED_STATION</bossShip>
+	<bossShip>FED_STATION2</bossShip>
+	<bossShip>REBEL_MINIBOSS</bossShip>
+	<bossShip>BS_ENERGYX</bossShip>
+	<bossShip>CON_LEADER</bossShip>
+	<bossShip>ENERGYX_STATION_M</bossShip>
+	<bossShip>CON_STATION</bossShip>
+	<bossShip>MAGMAN_BOSS1</bossShip>
+	<bossShip>MAGMAN_BOSS2</bossShip>
 	<!-- 1.33 -->
 	<backgroundObject name="BACKGROUND_COLD_FIELD">
 		<layer z="1">asteroids</layer>
@@ -20901,6 +21175,10 @@ Syntax ->
 		<name>rock</name>
 		<name>rock_legendary</name>
 	</req>
+	<req name="turtle_crew" type="any"><!-- 1.35 -->
+		<name>turtle</name>
+		<name>turtle_legendary</name>
+	</req>
 	<req name="energy_crew" type="any">
 		<name>energy</name>
 		<name>energy_w</name>
@@ -20994,6 +21272,9 @@ Syntax ->
 	<!-- RIP here code --><!-- 1.32 -->
 	<event name="AUGMENTS_ON_START_BEACON"> <!-- 1.4 -->
 		<loadEvent>AUGMENTS_ON_START_BEACON_2</loadEvent>
+	</event>	
+	<event name="PONY_GAME_EVENT"> <!-- 1.35 -->
+		<loadEvent>PONY_GAME_EVENT_2</loadEvent>
 	</event>	
 	<event name="PIRATE_STATION_CROPS">
 		<checkCargo/>
@@ -21286,6 +21567,12 @@ Syntax ->
 	</event>
 	<event name="STORE_INSTALL_ANAEROBIC_PROJECTOR"><!-- 1.34 -->
 		<hiddenAug>HID_ANAEROBIC_PROJECTOR</hiddenAug>
+	</event>
+	<event name="STORE_INSTALL_ION_RESONATOR"><!-- 1.35 -->
+		<hiddenAug>HID_ION_RESONATOR</hiddenAug>
+	</event>
+	<event name="STORE_INSTALL_ANTIHACKER"><!-- 1.35 -->
+		<hiddenAug>HID_ANTIHACKER</hiddenAug>
 	</event>
 	<event name="STORE_INSTALL_TELEPORT_MULTI"><!-- 1.34 -->
 		<hiddenAug>HID_TELEPORT_MULTI</hiddenAug>
@@ -21929,6 +22216,13 @@ Syntax ->
 			<color r="250" g="252" b="46" a="1"/>
 			<unvisitedTooltip>Другой фермер хочет купить гусениц.</unvisitedTooltip>
 			<visitedTooltip>Другой фермер хочет купить гусениц. Посещено.</visitedTooltip>
+		</beaconType>
+	</event>
+	<event name="EVENT_ALIEN_IN_BOX2" recursive="true"><!-- 1.35 -->
+		<beaconType id="map_icon_quest" hideVanillaLabel="true" global="true">
+			<color r="250" g="252" b="46" a="1"/>
+			<unvisitedTooltip>Место назначения для доставки контейнера с ксеноморфом.</unvisitedTooltip>
+			<visitedTooltip>Место назначения для доставки контейнера с ксеноморфом. Посещено.</visitedTooltip>
 		</beaconType>
 	</event>
 
@@ -23621,6 +23915,30 @@ Syntax ->
 	<metaVariable name="challenge_nozlt_win0" op="set" val="0"/>
 	<metaVariable name="challenge_nozlt_win1" op="set" val="0"/>
 	<metaVariable name="challenge_nozlt_win2" op="set" val="0"/>
+	<metaVariable name="challenge_noexp" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noexp_win0" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noexp_win1" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noexp_win2" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nocrg" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nocrg_win0" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nocrg_win1" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nocrg_win2" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nobuh" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nobuh_win0" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nobuh_win1" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_nobuh_win2" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noevd" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noevd_win0" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noevd_win1" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noevd_win2" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noorc" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noorc_win0" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noorc_win1" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_noorc_win2" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_notxt_win0" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_notxt_win1" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="challenge_notxt_win2" op="set" val="0"/><!-- 1.35 -->	
+	
 	<metaVariable name="reward_for_challenges" op="set" val="1"/>
 	<metaVariable name="weaponslots_count" op="set" val="0"/>
 	<variable name="drones_shooted_at_one_run" op="set" val="0"/>
@@ -23628,7 +23946,8 @@ Syntax ->
 	
 	<metaVariable name="reset_all_challenges_at_begin" op="set" val="1"/>
 	<variable name="calc_rew" op="set" val="0"/>
-	<variable name="fishing_beacon" op="set" val="0"/>
+	<metaVariable name="installed_AUG_SLOT" op="set" val="0"/><!-- 1.35 -->
+	<metaVariable name="fishing_beacon" op="set" val="0"/><!-- 1.35 -->
 	<variable name="fishing_remaining" op="set" val="0"/>
 	<variable name="fishing_sunduk_reward" op="set" val="0"/>
 	<variable name="ritual_is_done" op="set" val="0"/>
@@ -26396,12 +26715,68 @@ Example in form of the Vanilla credits rewritten in XML:
 			<count min="0" max="12"/>
 			<price>3</price>
 		</resource>
-		<category type="WEAPONS" group="13">
+		<category type="WEAPONS" group="13"><!-- 1.35 -->
 			<customTitle>ОБОРУДОВАНИЕ</customTitle>
-			<groupChance>25</groupChance>
+			<groupChance>15</groupChance>
+			<item>
+                <blueprint>WEAPON_ITEMS_NO_RARE</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS_NO_RARE</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS" group="13"><!-- 1.35 -->
+			<customTitle>ОБОРУДОВАНИЕ</customTitle>
+			<groupChance>3</groupChance>
 			<item>
                 <blueprint>CAPSULE_FED</blueprint>
 				<price min="15" max="40"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS_NO_RARE</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS" group="13"><!-- 1.35 -->
+			<customTitle>ОБОРУДОВАНИЕ</customTitle>
+			<groupChance>3</groupChance>
+			<item>
+                <blueprint>BARREL_FUEL</blueprint>
+				<price min="10" max="30"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS_NO_RARE</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
+			</item>
+		</category>
+		<category type="WEAPONS" group="13"><!-- 1.35 -->
+			<customTitle>ОБОРУДОВАНИЕ</customTitle>
+			<groupChance>4</groupChance>
+			<item>
+                <blueprint>CAPSULE_FED</blueprint>
+				<price min="15" max="40"/>
+			</item>
+			<item>
+                <blueprint>BARREL_FUEL</blueprint>
+				<price min="10" max="30"/>
+			</item>
+			<item>
+                <blueprint>WEAPON_ITEMS_NO_RARE</blueprint>
+				<modifier min="0.8" max="1.1" flat="false"/>
 			</item>
 		</category>
 		<category type="DRONES" group="12">
@@ -26529,49 +26904,49 @@ Example in form of the Vanilla credits rewritten in XML:
 		<category type="AUGMENTS" group="8">
 			<groupChance>15</groupChance>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="AUGMENTS" group="8">
 			<groupChance>40</groupChance>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="AUGMENTS" group="7">
 			<groupChance>15</groupChance>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="AUGMENTS" group="7">
 			<groupChance>40</groupChance>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="AUGMENTS" group="7">
@@ -26590,127 +26965,127 @@ Example in form of the Vanilla credits rewritten in XML:
 		<category type="SYSTEMS" group="6">
 			<groupChance>15</groupChance>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="SYSTEMS" group="6">
 			<groupChance>40</groupChance>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="SYSTEMS" group="5">
 			<groupChance>15</groupChance>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.8" max="1.1" flat="false"/>
+				<modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>
 		<category type="SYSTEMS" group="5">
 			<groupChance>40</groupChance>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 			<item>
-				<modifier min="0.9" max="1.1" flat="false"/>
+				<modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
 			</item>
 		</category>		
 		<category type="WEAPONS" group="4">
 			<allowDuplicates/>
 			<groupChance>15</groupChance>
             <item>
-                <modifier min="0.8" max="1.3" flat="false"/>
+                <modifier min="0.8" max="1.4" flat="false"/><!-- 1.35 -->
             </item> 
 			<item>
-                <modifier min="0.8" max="1.3" flat="false"/>
+                <modifier min="0.8" max="1.4" flat="false"/><!-- 1.35 -->
             </item>    			
             <item>
-                <modifier min="0.8" max="1.3" flat="false"/>
+                <modifier min="0.8" max="1.4" flat="false"/><!-- 1.35 -->
             </item>
         </category>
 		<category type="WEAPONS" group="4">
 			<allowDuplicates/>
 			<groupChance>40</groupChance>
             <item>
-                <modifier min="0.9" max="1.3" flat="false"/>
+                <modifier min="0.9" max="1.4" flat="false"/><!-- 1.35 -->
             </item> 
 			<item>
-                <modifier min="0.9" max="1.3" flat="false"/>
+                <modifier min="0.9" max="1.4" flat="false"/><!-- 1.35 -->
             </item>    			
             <item>
-                <modifier min="0.9" max="1.3" flat="false"/>
+                <modifier min="0.9" max="1.4" flat="false"/><!-- 1.35 -->
             </item>
         </category>
 		<category type="WEAPONS" group="3">
 			<allowDuplicates/>
 			<groupChance>15</groupChance>
             <item>
-                <modifier min="0.8" max="1.2" flat="false"/>
+                <modifier min="0.8" max="1.3" flat="false"/><!-- 1.35 -->
             </item> 
 			<item>
-                <modifier min="0.8" max="1.2" flat="false"/>
+                <modifier min="0.8" max="1.3" flat="false"/><!-- 1.35 -->
             </item>    			
             <item>
-                <modifier min="0.8" max="1.2" flat="false"/>
+                <modifier min="0.8" max="1.3" flat="false"/><!-- 1.35 -->
             </item>
         </category>
 		<category type="WEAPONS" group="3">
 			<allowDuplicates/>
 			<groupChance>40</groupChance>
             <item>
-                <modifier min="0.9" max="1.2" flat="false"/>
+                <modifier min="0.9" max="1.3" flat="false"/><!-- 1.35 -->
             </item> 
 			<item>
-                <modifier min="0.9" max="1.2" flat="false"/>
+                <modifier min="0.9" max="1.3" flat="false"/><!-- 1.35 -->
             </item>    			
             <item>
-                <modifier min="0.9" max="1.2" flat="false"/>
+                <modifier min="0.9" max="1.3" flat="false"/><!-- 1.35 -->
             </item>
         </category>
 		<category type="WEAPONS" group="2">
 			<allowDuplicates/>
 			<groupChance>15</groupChance>
             <item>
-                <modifier min="0.8" max="1.1" flat="false"/>
+                <modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
             </item> 
 			<item>
-                <modifier min="0.8" max="1.1" flat="false"/>
+                <modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
             </item>    			
             <item>
-                <modifier min="0.8" max="1.1" flat="false"/>
+                <modifier min="0.8" max="1.2" flat="false"/><!-- 1.35 -->
             </item>
         </category>
 		<category type="WEAPONS" group="2">
 			<allowDuplicates/>
 			<groupChance>40</groupChance>
             <item>
-                <modifier min="0.9" max="1.1" flat="false"/>
+                <modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
             </item> 
 			<item>
-                <modifier min="0.9" max="1.1" flat="false"/>
+                <modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
             </item>    			
             <item>
-                <modifier min="0.9" max="1.1" flat="false"/>
+                <modifier min="0.9" max="1.2" flat="false"/><!-- 1.35 -->
             </item>
         </category>
 		<category type="WEAPONS" group="2">
@@ -27941,6 +28316,7 @@ Note: it is recommended you make a folder like `data/scripts/` or `scripts/` but
 	<script>data/vertex_module/tags/stealth.lua</script>
     
     <script>data/vertex_module/xmlDataRead.lua</script>
+    <script>data/vertex_module/xmlEventDataRead.lua</script>
 	<script>data/vertex_module/misc/shipBlueprints.lua</script>
 	
 	<script>aux-weapons.lua</script>
@@ -27956,7 +28332,7 @@ Note: it is recommended you make a folder like `data/scripts/` or `scripts/` but
 	<!-- 1.32 -->
 	<script>data/alhazrad/buildingBase.lua</script>
 	<script>data/alhazrad/worrior.lua</script>
-	<script>data/alhazrad/arsenalVersion.lua</script>
+	<!-- <script>data/alhazrad/arsenalVersion.lua</script> --><!-- 1.35 -->
 	<script>data/alhazrad/drawImage.lua</script>
 	<!-- <script>data/alhazrad/speedManager.lua</script> --><!-- 1.34 -->
 	
@@ -28402,6 +28778,15 @@ See data/names.xml and data/text-<langcode>.xml files in the vanilla data for re
 				<variable name="soulreaper_count_of_upgrades" amount="19"/>
 				<multiDifficulty>true</multiDifficulty>
 			</achievement>
+			<achievement name="ACH_GLIF_GUN"> <!-- events.xml.rawclobber вставить туда, где выдаём первый раз <weapon name="ACH_GLIF_GUN"/> --><!-- 1.35 -->
+				<name>Глифы</name> <!-- <achievement silent="false">ACH_GLIF_GUN</achievement> -->
+				<secretName>???</secretName>
+				<description>Получить особенное орудие-глифган.</description>
+				<secretDescription>???</secretDescription>
+				<icon>ach_glif_gun</icon>
+				<lockImage>ach_glif_gun_locked</lockImage>
+				<multiDifficulty>true</multiDifficulty>
+			</achievement>
 			<achievement name="ACH_ANNIHILATOR"><!-- 1.33 --> <!-- events.xml.rawclobber <weapon name="BEAM_ANNIHILATOR"/> -->
 				<name>Тотальная аннигиляция!</name> <!-- <achievement silent="false">ACH_ANNIHILATOR</achievement> -->
 				<secretName>???</secretName>
@@ -28541,7 +28926,7 @@ See data/names.xml and data/text-<langcode>.xml files in the vanilla data for re
 			<achievement name="ACH_MAX_SPEED"><!-- lua -->
 				<name>Максимальный разгон</name>
 				<secretName>???</secretName>
-				<description>Иметь 3 автоперезарядчика и лёгкий предзажигатель (компенсатор зарядки тоже подойдёт).</description>
+				<description>Иметь 4 ед. оборудования, ускоряющего перезарядку орудий (автоперезарядчики, лёгкий предзажигатель, компенсатор зарядки).</description><!-- 1.35 -->
 				<icon>ach_max_speed</icon>
 				<lockImage>ach_max_speed_locked</lockImage>
 				<multiDifficulty>true</multiDifficulty>
@@ -28673,7 +29058,12 @@ See data/names.xml and data/text-<langcode>.xml files in the vanilla data for re
 				<icon>ach_mantisage</icon>
 				<lockImage>ach_mantisage_locked</lockImage>
 				<multiDifficulty>true</multiDifficulty>
-			</achievement>
+			</achievement>		
+		</section>
+	</page>
+
+	<page><!-- 1.34 -->
+		<section text="Особые достижения++:" hidden="false">
 			<achievement name="ACH_DONTNEEDIT"><!-- lua -->
 				<name>Спасибо, не надо!</name>
 				<secretName>???</secretName>
@@ -28681,12 +29071,7 @@ See data/names.xml and data/text-<langcode>.xml files in the vanilla data for re
 				<icon>ach_dontneedit</icon>
 				<lockImage>ach_dontneedit_locked</lockImage>
 				<multiDifficulty>true</multiDifficulty>
-			</achievement>		
-		</section>
-	</page>
-
-	<page><!-- 1.34 -->
-		<section text="Особые достижения++:" hidden="false">
+			</achievement>
 			<achievement name="ACH_DRONE_SHOOTER"><!-- lua --><!-- 1.34 -->
 				<name>Дронобой</name>
 				<secretName>???</secretName>
@@ -28710,6 +29095,14 @@ See data/names.xml and data/text-<langcode>.xml files in the vanilla data for re
 				<description>Победить с 3-мя испытаниями одновременно.</description>
 				<icon>ach_3_challenge</icon>
 				<lockImage>ach_3_challenge_locked</lockImage>
+				<multiDifficulty>true</multiDifficulty>
+			</achievement>
+			<achievement name="ACH_SUNDUK"><!-- events_engi EVENT_CATCH_FISH_SUNDUK_CHECK --><!-- 1.35 -->
+				<name>Сундук</name>
+				<secretName>???</secretName>
+				<description>Выловить сундук вместе с рыбой.</description>
+				<icon>ach_sunduk</icon>
+				<lockImage>ach_sunduk_locked</lockImage>
 				<multiDifficulty>true</multiDifficulty>
 			</achievement>
 		</section>

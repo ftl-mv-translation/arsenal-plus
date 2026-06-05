@@ -51,7 +51,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event load="ENGI_MONSTER"/>
 	<event load="ENGI_SURRENDER"/>
 	
-	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE_ENGI"/><!-- 1.35 -->
 	<event load="FIND_WEAPON"/>
 	<event load="REFUEL_STATION"/>
 </eventList>
@@ -69,6 +69,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event load="PIRATE_SUN"/>
 	<event load="PIRATE_NO_ESCAPE"/>
 	<event load="PIRATE_PULSAR"/>
+	<event load="OXYGEN_FIGHT"/><!-- 1.35 -->
 </eventList>
 
 
@@ -100,6 +101,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<event load="ENGI_EVO"/><!-- 1.23 -->
 	
 	<event load="ENGI_HARDPOINT"/>
+	<event load="EVENT_MEET_ARTILLERY_MASTERS"/><!-- 1.35 -->
 </eventList>
 
 <eventList name="DISTRESS_BEACON_ENGI">
@@ -966,7 +968,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 					<choice hidden="true">
 						<text id="continue"/>
 						<event>
-							<text>Инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают уникальное усиление.</text>
+							<text>Инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают усиление.</text><!-- 1.35 -->
 							<autoReward level="LOW">standard</autoReward>
 							<augment name="DRONE_SPEED"/>
 						</event>
@@ -989,7 +991,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 							<choice hidden="true">
 								<text id="continue"/>
 								<event>
-									<text>Инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают уникальное усиление.</text>
+									<text>Инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают усиление.</text><!-- 1.35 -->
 									<augment name="DRONE_SPEED"/>
 								</event>
 							</choice>
@@ -1013,7 +1015,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 							<choice hidden="true">
 								<text id="continue"/>
 								<event>
-									<text>Инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают уникальное усиление.</text>
+									<text>Инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают усиление.</text><!-- 1.35 -->
 									<augment name="DRONE_SPEED"/>
 								</event>
 							</choice>
@@ -1024,7 +1026,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 			<choice req="anaerobic_crew" hidden="true">
 				<text>(Член экипажа ланиус) Ваш ланиус отчаянно жестикулирует.</text>
 				<event>
-					<text>Удивительно, но ланиус, похоже, знает, в каком из компьютеров вирус и... начинает поглощать терминал. Происходит выброс кислорода, и корабль инжи выключает орудия, более не ощущая наличия вируса на борту. Инжи посылают запчасти для починки повреждённого компьютера, а также уникальное усиление в качестве награды за уничтожение вируса.</text>
+					<text>Удивительно, но ланиус, похоже, знает, в каком из компьютеров вирус и... начинает поглощать терминал. Происходит выброс кислорода, и корабль инжи выключает орудия, более не ощущая наличия вируса на борту. Инжи посылают запчасти для починки повреждённого компьютера, а также усиление в качестве награды за уничтожение вируса.</text><!-- 1.35 -->
 					<autoReward level="MEDIUM">scrap_only</autoReward>
 					<augment name="DRONE_SPEED"/>
 				</event>
@@ -1052,7 +1054,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<ship load="ENGI_VIRUS_SHIP" hostile="true"/>
 	</event>
 	<event>
-		<text>Обнуление ядра двигателя и щитов позволяет вовремя локализировать угрозу. Опасное заражение предотвращено, а инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают уникальное усиление.</text>
+		<text>Обнуление ядра двигателя и щитов позволяет вовремя локализировать угрозу. Опасное заражение предотвращено, а инжи благодарят вас за удаление вируса и готовятся к прыжку. В качестве награды они предлагают усиление.</text><!-- 1.35 -->
 		<autoReward level="LOW">standard</autoReward>
 		<augment name="DRONE_SPEED"/>
 	</event>
@@ -3273,6 +3275,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 	<!-- standard events -->
 	<event load="REBEL"/>
 	<event load="REBEL_AUTO"/>
+	<event load="OXYGEN_FIGHT"/><!-- 1.35 -->
 </eventList>
 
 <eventList name="NEBULA_MORPH">
@@ -3433,6 +3436,7 @@ Idea — make an event where you're fighting to save an engi ship but theres man
 		<environment type="storm"/>
 		<variable name="counter_meet_nebula" op="add" val="1"/> <!-- 1.31 -->
 		<ship hostile="false"/>
+		<instantEscape/><!-- 1.35 -->
 	</event>
 </eventList>
 
@@ -8179,6 +8183,7 @@ Date: 03/12/18
 <eventList name="HOSTILE_ORCHID">
 	<event load="ORCHID_FIGHT"/>
 	<event load="ORCHID_FIGHT"/>
+	<event load="OXYGEN_FIGHT"/><!-- 1.35 -->
 	<event load="ORCHID_PIRATE_FIGHT"/>
 	<event load="ORCHID_ROCK_FIGHT"/>
 	<event load="ORCHID_MANTIS_FIGHT"/>
@@ -8349,6 +8354,7 @@ Date: 03/12/18
 	<text load="MOTILEK_RED_EVENT_TEXT"/>
 	<ship load="SHIPS_MOTILEK_RED_PARAM" hostile="false"/>
 	<status type="limit" target="enemy" system="cloaking" amount="0"/>
+	<metaVariable name="disable_ai_control_cloaking" op="set" val="1"/> <!-- 1.35 -->
 	<choice hidden="true">
 		<text id="continue"/>
 		<event>
@@ -9127,15 +9133,15 @@ Date: 03/12/18
 				<text>Открыть огонь!</text>
 				<event>
 					<text>Вы стреляете по кораблю слагов, но они ловко уклоняются. Капитан слагов посылает сообщение о бедствии на соседнюю планету орхидов, утверждая, что на него напали пираты. К вашему удивлению, орхиды открывают огонь из всех орудий планетарной обороны по вашему кораблю. Все это было частью коварного плана слагов.</text>
-					<choice req="orchid" hidden="true">
-						<text>(Орхид) Пусть орхид объяснит сородичам, что слаги пытаются использовать их.</text>
+					<choice req="CREW_ORCHID" hidden="true"><!-- 1.35 -->
+						<text>(Член экипажа орхид) Пусть орхид объяснит сородичам, что слаги пытаются использовать их.</text><!-- 1.35 -->
 						<event>
 							<text>Орхиды с планеты, выслушав вашего орхида, наводят ПКБ на слагов.</text>
 							<ship hostile="true"/>
 							<environment target="enemy" type="PDS"/>
 						</event>
 					</choice>
-					<choice req="orchid" lvl="0" max_lvl="0" blue="false" hidden="true">
+					<choice req="CREW_ORCHID" lvl="0" max_lvl="0" blue="false" hidden="true"><!-- 1.35 -->
 						<text id="continue"/>
 						<event>							
 							<ship hostile="true"/>
@@ -9730,10 +9736,10 @@ Date: 03/12/18
 		<text>Забрать всё со склада.</text>
 		<event load="EVENT_ORCHANTIS_BIOSTORAGE_1"/>
 	</choice>
-	<choice req="orchid" lvl="1" blue="false" hidden="true">
+	<choice req="CREW_ORCHID" lvl="1" blue="false" hidden="true">
 		<text>Орхид в вашей команде тревожно качает листвой. Он даёт понять, что это место проклято, и его не стоит трогать.</text>
 		<event load="NOT_AVAILABLE"/>
-	</choice>
+	</choice><!-- 1.35 -->
 	<choice hidden="true">
 		<text>Не трогать склад и поговорить с экипажем.</text>
 		<event load="TALK_WITH_CREW"/>
@@ -9786,7 +9792,7 @@ Date: 03/12/18
 	<choice hidden="true">
 		<text>Спуститься и порыбачить.</text>
 		<event>
-			<variable name="fishing_beacon" op="set" val="1"/>
+			<metaVariable name="fishing_beacon" op="set" val="1"/><!-- 1.35 -->
 			<variable name="fishing_remaining" op="set" val="3"/>
 			<playMusic>fishing_theme</playMusic>
 			<triggeredEvent name="PLAY_SECTOR_THEME_AFTER_JUMP" event="PLAY_SECTOR_THEME" seeded="false" loops="1" jumps="1"/>
@@ -9799,33 +9805,37 @@ Date: 03/12/18
 </event>
 <event name="EVENT_CATCH_FISH_SUNDUK_CHECK">
 	<loadEventList seeded="false" first="true">
-		<event req="fishing_sunduk_reward" lvl="1"><queueEvent>EVENT_CATCH_FISH_SUNDUK_REW</queueEvent></event>
+		<event req="fishing_sunduk_reward" lvl="1">
+			<achievement silent="false">ACH_SUNDUK</achievement><!-- 1.35 -->
+			<metaVariable name="fishing_random_sunduk_rew" op="set" min="0" max="6"/><!-- 1.35 --> <!-- ввёл спец.переменную для рандома... -->
+			<queueEvent>EVENT_CATCH_FISH_SUNDUK_REW</queueEvent>
+		</event>
 		<event/>
 	</loadEventList>
 </event>
-<event name="EVENT_CATCH_FISH_SUNDUK_REW">
-	<loadEventList seeded="false" first="false">
-		<event>
+<event name="EVENT_CATCH_FISH_SUNDUK_REW"><!-- 1.35 -->
+	<loadEventList seeded="false" first="true" generate="false">
+		<event req="fishing_random_sunduk_rew" lvl="6">
 			<text>...вскрыв пойманный сундук, вы находите в нём несколько деталей дронов.</text>
 			<item_modify><item type="drones" min="2" max="5"/></item_modify>
 		</event>
-		<event>
+		<event req="fishing_random_sunduk_rew" lvl="5">
 			<text>...вскрыв пойманный сундук, вы находите в нём несколько боеголовок.</text>
 			<item_modify><item type="missiles" min="2" max="5"/></item_modify>
 		</event>
-		<event>
+		<event req="fishing_random_sunduk_rew" lvl="4">
 			<text>...вскрыв пойманный сундук, вы находите в нём немного топливных ячеек.</text>
 			<item_modify><item type="fuel" min="2" max="5"/></item_modify>
 		</event>
-		<event>
+		<event req="fishing_random_sunduk_rew" lvl="3">
 			<text>...вскрыв пойманный сундук, вы находите в нём немного лома.</text>
 			<disableScrapAugments/><disableScrapScore/><item_modify><item type="scrap" min="15" max="25"/></item_modify>
 		</event>
-		<event>
+		<event req="fishing_random_sunduk_rew" lvl="2">
 			<text>...вскрыв пойманный сундук, вы находите в нём заржавевшее оружие.</text>
 			<weapon name="WEAPONS_FISHING"/>
 		</event>
-		<event>
+		<event req="fishing_random_sunduk_rew" lvl="1">
 			<text>...вскрыв пойманный сундук, вы находите оружие с радужным осколком внутри.</text>
 			<weapon name="BA_BEAM_PRISM_MAIN"/>
 		</event>
@@ -9894,5 +9904,145 @@ Date: 03/12/18
 	<variable name="installed_FISH_BUFF_9" op="set" val="1"/>
 	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
 </event>
+<event name="EVENT_CATCH_FISH_10"><!-- 1.35 -->
+	<text>Вы поймали полуночного карпа.</text>
+	<hiddenAug>FISH_BUFF_10</hiddenAug>
+	<variable name="installed_FISH_BUFF_10" op="set" val="1"/>
+	<queueEvent>EVENT_CATCH_FISH_SUNDUK_CHECK</queueEvent>
+</event>
 
+<!-- 1.35 -->
+
+<event name="EVENT_MEET_ARTILLERY_MASTERS" unique="true">
+	<repair/>
+	<text>Небольшая станция инжи возле маяка предлагает вам свои услуги. Вывеска гласит, что тут могут установить артиллерийскую систему на ваш корабль или отремонтировать.</text>
+	<choice hidden="true" req="artillery" lvl="1" max_group="0" blue="false">
+		<text>Установить артиллерию (уже установлено).</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice hidden="false" req="artillery" lvl="0" max_group="0" blue="false">
+		<text>Установить артиллерию артиллерия.</text><!-- артиллерия lua marker -->
+		<event>
+			<text>Инжи быстро устанавливают требуемую систему.</text>
+			<item_modify>
+				<item type="scrap" min="-20" max="-5"/>
+			</item_modify>
+			<queueEvent>INSTALL_ART</queueEvent>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Запросить половинный ремонт корабля.</text>
+		<event>
+			<text>Дроны станции кружат вокруг корабля и ремонтируют повреждения. После этого станция желает счастливого пути.</text>
+			<damage amount="-15"/>
+			<item_modify>
+				<item type="scrap" min="-7" max="-2"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice hidden="false">
+		<text>Запросить полный ремонт корабля.</text>
+		<event>
+			<text>Дроны станции кружат вокруг корабля и ремонтируют все повреждения. После этого станция желает счастливого пути.</text>
+			<damage amount="-30"/>
+			<item_modify>
+				<item type="scrap" min="-15" max="-8"/>
+			</item_modify>
+		</event>
+	</choice>
+	<choice req="engi_crew" hidden="true">
+		<text>(Член экипажа инжи) Запросить бесплатное обслуживание согласно протоколу 52.34.</text>
+		<event>
+			<text>Они отвечают: «Принято. Восстановление Федерации: высший приоритет. Восстанавливаем корпус и предлагаем установку артиллерии».</text><!-- 1.25 -->
+			<variable name="counter_usage_engi" op="add" val="1"/>
+			<damage amount="-30"/>
+			<choice hidden="true" req="artillery" lvl="1" max_group="0" blue="false">
+				<text>Установить артиллерию (уже установлено).</text>
+				<event load="NOT_AVAILABLE"/>
+			</choice>
+			<choice hidden="false" req="artillery" lvl="0" max_group="0" blue="false">
+				<text>Установить артиллерию артиллерия.</text><!-- артиллерия lua marker -->
+				<event>
+					<text>Инжи быстро устанавливают требуемую систему.</text>
+					<item_modify>
+						<item type="scrap" min="-20" max="-5"/>
+					</item_modify>
+					<queueEvent>INSTALL_ART</queueEvent>
+				</event>
+			</choice>			
+			<choice hidden="true">
+				<text>Артиллерия не требуется.</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+	<choice hidden="true">
+		<text>Поговорить с экипажем пока заряжается FTL-привод.</text>
+		<event load="TALK_WITH_CREW"/>
+	</choice>
+</event>
+<event name="INSTALL_ART">
+	<system name="artillery" lvl="1"/>
+</event>
+
+<eventList name="FIND_DRONE_ENGI"><!-- 1.35 -->
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE"/>
+	<event load="FIND_DRONE_UNIQUE"/>
+</eventList>
+
+<event name="FIND_DRONE_UNIQUE">
+	<text load="FIND_DRONE_UNIQUE"/>
+	<drone name="UNIVERSAL_DRONES"/>
+</event>
+<textList name="FIND_DRONE_UNIQUE">
+	<text>Когда вы просите ближайшую станцию инжи о помощи, они присылают вам необычную схему дрона!</text>
+	<text>Небольшое научно-исследовательское судно инжи маневрирует от атак корабля мантисов. Вы двигаетесь им навстречу, но после быстрого сканирования вашего корабля мантисы отступают. Инжи предлагают вам необычную схему дрона в качестве благодарности за ваше своевременное прибытие.</text>
+	<text>Вы обнаружили покинутую добывающую станцию на луне. Быстрое сканирование показывает, что здесь нет никаких форм жизни. Так или иначе, вы находите пригодную для использования схему необычного дрона...</text>
+</textList>
+
+<event name="EVENT_ADD_INNER_AI" unique="true">
+	<text>Возле маяка рядом со станцией робототехников кружит пиратский корабль. Завидев вас, он переключает цель.</text>
+	<ship load="EVENT_ADD_INNER_AI_PARAM" hostile="true"/>
+	<variable name="double_reward_event_station" op="set" val="1"/>
+</event>
+<ship name="EVENT_ADD_INNER_AI_PARAM" auto_blueprint="SHIPS_PIRATE">
+	<destroyed>
+		<text>Вы собираете уцелевшие после сражения обломки...</text>
+		<autoReward level="LOW">standard</autoReward>
+		<choice>
+			<text id="continue"/>
+			<event load="EVENT_ADD_INNER_AI_TO_SHIP"/>
+		</choice>
+	</destroyed>
+	<deadCrew>
+		<text>Вы бегло обчищаете содержимое трюма корабля...</text>
+		<autoReward level="MED">standard</autoReward>
+		<choice>
+			<text id="continue"/>
+			<event load="EVENT_ADD_INNER_AI_TO_SHIP"/>
+		</choice>
+	</deadCrew>
+</ship>
+<event name="EVENT_ADD_INNER_AI_TO_SHIP">
+	<text>Робототехники благодарят вас, хотя они не могут многого предложить, они готовы установить резервный искуственный интеллект на ваш корабль.</text>
+	<choice hidden="true" req="prinuditelno_autoship" lvl="1" max_group="0" blue="false">
+		<text>Пусть загрузят резервный ИИ (корабль уже имеет ИИ).</text>
+		<event load="NOT_AVAILABLE"/>
+	</choice>
+	<choice hidden="false" req="prinuditelno_autoship" lvl="0" max_group="0" blue="false">
+		<text>Пусть загрузят резервный ИИ.</text>
+		<event load="EVENT_ADD_INNER_AI_TO_SHIP_PROCESS"/>
+	</choice>
+	<choice hidden="true">
+		<text>Отказаться.</text>
+		<event>
+			<text>Вы благодарите их, но сейчас это не требуется. Время идти дальше.</text>
+		</event>
+	</choice>
+</event>
+<event name="EVENT_ADD_INNER_AI_TO_SHIP_PROCESS">
+	<text>Загрузка проходит успешно, и вы готовитесь отправляться дальше.</text>
+</event>
 </FTL>

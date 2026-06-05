@@ -1352,6 +1352,7 @@ unlock — Asked to prove the federation is worth of rock fighters — follow hi
 </ship>
 <!-- 1.33 -->
 <event name="ULTRA_SUN_FIGHT">
+	<customEnvironment>ultra_sun</customEnvironment><!-- 1.35 -->											 
 	<text load="ULTRA_SUN_FIGHT_TEXT"/>
 	<!-- <triggeredEvent name="CLEAR_TRIGGERS_US_CLEAR" event="CLEAR_TRIGGERS_US" jumps="1"/>
 	<variable name="danger_ultra_sun" op="set" val="1"/>

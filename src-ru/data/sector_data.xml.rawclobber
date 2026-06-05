@@ -146,7 +146,7 @@ STRUCTURE SECTORS
 		<name id="sectorname_STANDARD_SPACE" short="sectorname_short_STANDARD_SPACE"/>
 	</nameList>
 	<trackList>
-		<!-- <track>Journey</track> --> <!-- music test -->
+		<!-- <track>industry</track> --><!-- music test -->
 		<track>civilian</track>
 		<track>infinity</track>
 		<track>cosmos</track>
@@ -516,6 +516,9 @@ CIVILIAN SECTORS
 		<blueprint name="rock" rarity="0"/>
 		<blueprint name="human" rarity="3"/>
 		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
+		<blueprint name="DRONE_UNIX" rarity="5"/><!-- 1.35 -->
+		<blueprint name="DE_DRONE_DEFENSE_UNIVERSAL_2" rarity="4"/><!-- 1.35 -->
+		<blueprint name="DE_DRONE_DEFENSE_UNIVERSAL_1" rarity="3"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_ENGI</startEvent>
 	<event name="STORE_ENGI" min="2" max="3"/>
@@ -534,10 +537,10 @@ CIVILIAN SECTORS
 		<name id="sectorname_ENGI_HOME" short="sectorname_short_ENGI_HOME"/>
 	</nameList>
 	<trackList>
-		<track>engi</track>
-		<track>calm</track>
+		<track>robot</track><!-- 1.35 -->
+		<!-- <track>calm</track>
 		<track>cosmos</track>
-		<track>hacking</track>
+		<track>hacking</track> --><!-- 1.35 -->
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="1"/>
@@ -563,9 +566,13 @@ CIVILIAN SECTORS
 		<blueprint name="SILV_MISSILES_HYDRA" rarity="5"/>
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
 		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
+		<blueprint name="DRONE_UNIX" rarity="5"/><!-- 1.35 -->
+		<blueprint name="DE_DRONE_DEFENSE_UNIVERSAL_2" rarity="4"/><!-- 1.35 -->
+		<blueprint name="DE_DRONE_DEFENSE_UNIVERSAL_1" rarity="3"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_ENGI</startEvent>
 	<priorityEvent name="ENGI_VIRUS" min="1" max="1" priority="0"/>
+	<event name="EVENT_ADD_INNER_AI" min="1" max="1"/><!-- 1.35 -->
 	<event name="CIRCLE_PRO_EVENT" min="1" max="1"/>
 	<event name="REPAIR_ENGI_HOME" min="1" max="1"/>
 	<event name="ENGI_UNLOCK_1" min="1" max="1"/>
@@ -576,7 +583,7 @@ CIVILIAN SECTORS
 	<event name="DISTRESS_BEACON_ENGI" min="1" max="3"/>
 	<event name="QUESTS_ENGI" min="1" max="1"/>
 	<event name="NEUTRAL_ENGI" min="5" max="7"/>
-	<event name="HOSTILE_ENGI" min="5" max="7"/>
+	<event name="HOSTILE_ENGI" min="4" max="6"/><!-- 1.35 -->
 </sectorDescription>
 
 
@@ -690,6 +697,7 @@ HOSTILE SECTORS
 		<name id="sectorname_PIRATE_SECTOR" short="sectorname_short_PIRATE_SECTOR"/>
 	</nameList>
 	<trackList>
+		<track>industry</track><!-- 1.35 -->
 		<track>colonial</track>
 		<track>void</track>
 		<track>lostship</track>
@@ -759,7 +767,7 @@ HOSTILE SECTORS
 		<name id="sectorname_REBEL_SECTOR" short="sectorname_short_REBEL_SECTOR"/>
 	</nameList>
 	<trackList>
-		<!-- <track>darkflow</track> -->
+		<track>rebels</track><!-- 1.35 -->
 		<track>colonial</track>
 		<track>wasteland</track>
 		<track>hacking</track>
@@ -1050,10 +1058,10 @@ HOSTILE SECTORS
 		<name id="sectorname_MANTIS_HOME" short="sectorname_short_MANTIS_HOME"/>
 	</nameList>
 	<trackList>
-		<track>mantis</track>
+		<track>hive</track><!-- 1.35 -->
 		<!-- <track>blackhole</track> -->
-		<track>debris</track>
-		<track>void</track>
+		<!-- <track>debris</track> --><!-- 1.35 -->
+		<!-- <track>void</track> --><!-- 1.35 -->
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="3"/>
@@ -1142,6 +1150,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_SLURM</startEvent>
 	<event name="SLURM_BOSS_EVENT" min="1" max="1"/>
@@ -1196,6 +1207,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_NEBULA</startEvent>
 	<event name="META_TRADER_2" min="1" max="1"/><!-- 1.32 -->
@@ -1213,6 +1227,8 @@ NEBULA SECTORS
 		<name id="sectorname_AVATAR_SECTOR" short="sectorname_short_AVATAR_SECTOR"/>
 	</nameList>
 	<trackList>
+		<track>avatar3</track><!-- 1.35 -->
+		<track>avatar4</track><!-- 1.35 -->
 		<track>void2</track><!-- 1.27.1 -->
 		<track>avatar</track>
 	</trackList>
@@ -1246,6 +1262,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_AVATAR</startEvent>
 	<event name="TUMAN_OFF_AVATAR" min="1" max="3"/>
@@ -1309,6 +1328,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 	</rarityList>
 	<priorityEvent name="NEBULA_AI_CORE" min="1" max="1" priority="0"/>
 	<startEvent>START_BEACON_AVATAR</startEvent>
@@ -1375,6 +1397,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 	</rarityList>
 	<priorityEvent name="NEBULA_LEG_STORE_SLUG" min="1" max="1" priority="0"/><!-- 1.31 -->
 	<startEvent>START_BEACON_SLUG</startEvent>
@@ -1431,6 +1456,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_MISSILES_AREM" rarity="2"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_2" rarity="3"/><!-- 1.32 -->
 		<blueprint name="PREIGNITE_MISSILES_AREM_3" rarity="4"/><!-- 1.32 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_SLUG</startEvent>
 	<event name="STORE" min="0" max="1"/>
@@ -1478,6 +1506,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
 		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
 		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 		
 		<blueprint name="energy_w" rarity="4"/>
 		<blueprint name="PREIGNITE_CREW_GUN_1" rarity="5"/>
@@ -1528,6 +1559,9 @@ NEBULA SECTORS
 		<blueprint name="PREIGNITE_PLASMA_IMPULSE_1" rarity="2"/><!-- 1.23 -->
 		<blueprint name="PREIGNITE_PLASMA_IMPULSE_2" rarity="3"/><!-- 1.23 -->
 		<blueprint name="PREIGNITE_PLASMA_IMPULSE_3" rarity="4"/><!-- 1.23 -->
+		<blueprint name="PREIGNITE_BLOOD_1" rarity="2"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_2" rarity="3"/><!-- 1.35 -->
+		<blueprint name="PREIGNITE_BLOOD_3" rarity="4"/><!-- 1.35 -->
 		<!-- 1.26.4 -->
 		<blueprint name="SILV_BEAM_1" rarity="5"/>
 		<blueprint name="SILV_BOMB_BREACH_3" rarity="5"/>
@@ -1613,6 +1647,8 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="human" rarity="3"/>
 		<blueprint name="energy_w" rarity="1"/>
 		<blueprint name="turtle" rarity="5"/><!-- 1.34 -->
+		<blueprint name="ZOLT_LASER_BURST_1" rarity="4"/><!-- 1.35 -->
+		<blueprint name="ZOLT_LASER_BURST_2" rarity="5"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTAN</startEvent>
 	<event name="ZOLTAN_CREW_STUDY" min="1" max="1"/>
@@ -1661,6 +1697,8 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="SILV_SHOTGUN" rarity="5"/>
 		<blueprint name="SILV_LASER_SUPER_HEAVY_1" rarity="5"/><!-- 1.34 -->
 		<blueprint name="energy_w" rarity="1"/>
+		<blueprint name="ZOLT_LASER_BURST_1" rarity="4"/><!-- 1.35 -->
+		<blueprint name="ZOLT_LASER_BURST_2" rarity="5"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTAN</startEvent>
 	<event name="ZOLTAN_PRO_EVENT" min="1" max="1"/>
@@ -1808,6 +1846,8 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="energyx_w" rarity="1"/>
 		<blueprint name="energy" rarity="0"/>
 		<blueprint name="energy_w" rarity="0"/>
+		<blueprint name="ZOLT_LASER_BURST_1" rarity="4"/><!-- 1.35 -->
+		<blueprint name="ZOLT_LASER_BURST_2" rarity="5"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTON</startEvent>
 	<event name="STORE_ZOLTON" min="2" max="3"/>
@@ -1958,6 +1998,8 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<blueprint name="energyx_w" rarity="1"/>
 		<blueprint name="energy" rarity="0"/>
 		<blueprint name="energy_w" rarity="0"/>
+		<blueprint name="ZOLT_LASER_BURST_1" rarity="4"/><!-- 1.35 -->
+		<blueprint name="ZOLT_LASER_BURST_2" rarity="5"/><!-- 1.35 -->
 	</rarityList>
 	<startEvent>START_BEACON_ZOLTON</startEvent>
 	<event name="ZOLTON_PEACE" min="1" max="1"/><!-- 1.32 -->
@@ -2019,10 +2061,10 @@ make this have the unique map exploring (cant see all nodes, slow rebel movement
 		<name id="sectorname_ROCK_HOME" short="sectorname_short_ROCK_HOME"/>
 	</nameList>
 	<trackList>
-		<track>rock</track>
-		<!-- <track>rock2</track> -->
+		<track>rock2</track><!-- 1.35 -->
+		<!-- <track>rock2</track>
 		<track>ramble</track>
-		<track>wasteland</track>
+		<track>wasteland</track> -->
 	</trackList>
 	<rarityList><!-- 1.22 -->
 		<blueprint name="engi" rarity="0"/>
@@ -2147,6 +2189,8 @@ HIDDEN SECTORS
 		<blueprint name="DE_DRONE_LIGHT_1" rarity="0"/>
 		<blueprint name="DEFENSE_1_OLD" rarity="0"/>
 		<blueprint name="SHOTGUN" rarity="0"/>
+		<blueprint name="SHOTGUN_RAND1" rarity="0"/><!-- 1.35 -->
+		<blueprint name="SHOTGUN_RAND2" rarity="0"/><!-- 1.35 -->	
 		<blueprint name="LASER_CHAIN_1" rarity="0"/>
 		<blueprint name="LASER_CHAIN_2" rarity="0"/>
 		<blueprint name="LASER_CHAIN_LONG_1" rarity="0"/><!-- 1.26 -->
@@ -2437,10 +2481,10 @@ HIDDEN SECTORS
 		<name id="sectorname_LANIUS_SECTOR_HOME" short="sectorname_short_LANIUS_SECTOR_HOME"/>
 	</nameList>
 	<trackList>
-		<track>shrike</track>
-		<track>solar</track>
+		<track>anaerobic</track><!-- 1.35 -->
+		<!-- <track>solar</track>
 		<track>deepspace</track>
-		<track>wasteland</track>
+		<track>wasteland</track> --><!-- 1.35 -->
 	</trackList>
 	<rarityList>
 		<blueprint name="engi" rarity="0"/>
