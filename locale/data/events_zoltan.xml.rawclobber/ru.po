@@ -971,7 +971,7 @@ msgid ""
 msgstr ""
 "Как только вы приблизились, древний инопланетный голос говорит с вами: «Ваша"
 " миссия принесла вам великие битвы и великие поражения. Это облегчит вашу "
-"боль...» Несколькими минутами позже вы находите ремонтное оборудование на "
+"боль...» Несколькими минутами позже вы находите исцеляющее оборудование на "
 "корабле!"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:769
@@ -1124,20 +1124,18 @@ msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/text"
 msgstr ""
 "Вы выследили два пиратских корабля, что притаились в туманности неподалёку. "
-"Они не догадываются о вашем присутствии. Вы имеете возможность "
-"просканировать по меньшей мере их груз — один транспортирует топливо, второй"
-" — боеприпасы. Под воздействием космического шторма их начинает слегка "
-"относить друг от друга в разные стороны."
+"Они не догадываются о вашем присутствии. Вы имеете возможность незаметно "
+"просканировать их."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:911
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/choice[1]/text"
-msgstr "Захватить корабль с топливом."
+msgstr "Просканировать их."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:915
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/choice[2]/text"
-msgstr "Захватить корабль с боеприпасами."
+msgstr "Дать им уйти и поговорить с экипажем."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:921
 msgid ""
@@ -1198,8 +1196,8 @@ msgstr "Захватить корабль с деталями дронов."
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/choice[1]/event/text"
 msgstr ""
-"Вы подлетаете к кораблю с топливом и вступаете с ним в схватку (хорошо бы, "
-"победив, ещё и не развалить его на кусочки)."
+"Вы подлетаете к кораблю с деталями дронов и вступаете с ним в схватку "
+"(хорошо бы, победив, ещё и не развалить его на кусочки)."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:953
 msgid ""
@@ -1252,8 +1250,8 @@ msgstr "Захватить корабль с деталями дронов."
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/choice[2]/event/text"
 msgstr ""
-"Вы подлетаете к кораблю с топливом и вступаете с ним в схватку (хорошо бы, "
-"победив, ещё и не развалить его на кусочки)."
+"Вы подлетаете к кораблю с деталями дронов и вступаете с ним в схватку "
+"(хорошо бы, победив, ещё и не развалить его на кусочки)."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:983
 msgid ""
@@ -1307,8 +1305,8 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS\"]/destroyed/text"
 msgstr ""
-"Корабль уничтожен, вы можете взять лишь небольшую часть ящиков с "
-"боеприпасами до того, как начнётся ионный шторм, и совершить прыжок."
+"Корабль уничтожен, вы можете взять лишь небольшую часть ящиков с деталями "
+"дронов до того, как начнётся ионный шторм, и совершить прыжок."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1037
 msgid ""
