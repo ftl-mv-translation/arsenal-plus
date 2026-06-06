@@ -473,6 +473,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[90]/tooltip"
 msgstr ""
+"Backup Capacitors:\n"
+"\t\t\tWeapons hardly discharge when power is cut. Accelerates battery subsystem recharge by 4 times."
 
 #: src-ru/data/hyperspace.xml:1385
 msgid ""
@@ -540,7 +542,7 @@ msgstr "Reach sector 8 without a Weapons Control system installed."
 
 #: src-ru/data/hyperspace.xml:1608
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BARRELBOX\"]/name"
-msgstr "The Heist"
+msgstr "Robbery"
 
 #: src-ru/data/hyperspace.xml:1609
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BARRELBOX\"]/secretName"
@@ -550,7 +552,7 @@ msgstr "???"
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BARRELBOX\"]/description"
 msgstr ""
-"Capture Federation long-haulers with barrels and containers (can be done in "
+"Capture Federation truckers with barrels and containers (can be done in "
 "different games)."
 
 #: src-ru/data/hyperspace.xml:1616
@@ -564,8 +566,8 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:1618
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CRITICAL\"]/description"
 msgstr ""
-"Successfully collect everything of value from a marauder's victim with your "
-"engines in critical condition."
+"Successfully collect all valuables from a marauder victim with the engine in"
+" critical condition."
 
 #: src-ru/data/hyperspace.xml:1624
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CHUMA\"]/name"
@@ -2044,11 +2046,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3286
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PARALIZER\"]/description"
-msgstr "Collect 3 Stun Prods on starting beacons in one game."
+msgstr "Collect 3 paralyzers at starting beacons in 1 game."
 
 #: src-ru/data/hyperspace.xml:3293
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SLURM_BARREL\"]/name"
-msgstr "As You Wish, Your Highness"
+msgstr "As you wish, Your Highness"
 
 #: src-ru/data/hyperspace.xml:3294
 msgid ""
@@ -2059,12 +2061,12 @@ msgstr "???"
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SLURM_BARREL\"]/description"
 msgstr ""
-"You must keep a barrel of Slerm on the ship in every sector for the queen. "
+"You must keep a barrel of Slurm on the ship in every sector for the queen. "
 "Long flights dry out her skin..."
 
 #: src-ru/data/hyperspace.xml:3301
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_SLIGSLUG\"]/name"
-msgstr "Disgusting Relatives"
+msgstr "Disgusting relatives"
 
 #: src-ru/data/hyperspace.xml:3302
 msgid ""
@@ -2074,11 +2076,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3303
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_SLIGSLUG\"]/description"
-msgstr "DO NOT bring Slerms and Slugs to Admiral Tully."
+msgstr "Do NOT bring Slurms and Slugs to Admiral Tully."
 
 #: src-ru/data/hyperspace.xml:3342
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_ASTEROID\"]/name"
-msgstr "Path Through the Rocks"
+msgstr "Path through stones"
 
 #: src-ru/data/hyperspace.xml:3343
 msgid ""
@@ -2088,11 +2090,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3344
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_ASTEROID\"]/description"
-msgstr "Visit 10 beacons with asteroid fields in one game."
+msgstr "Visit 10 beacons with asteroid fields in 1 game."
 
 #: src-ru/data/hyperspace.xml:3351
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_DOORS_SYS\"]/name"
-msgstr "Doors Are Useless"
+msgstr "Airlocks are useless"
 
 #: src-ru/data/hyperspace.xml:3352
 msgid ""
@@ -2102,12 +2104,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3353
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_DOORS_SYS\"]/description"
-msgstr "Arrive in sector 8 without a Doors subsystem."
+msgstr "Upon arrival in the 8th sector, do not have an airlock subsystem."
 
 #: src-ru/data/hyperspace.xml:3359
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ROCKFLAGMAN_HELP\"]/name"
-msgstr "Rock = Friend"
+msgstr "Rock = friend"
 
 #: src-ru/data/hyperspace.xml:3360
 msgid ""
@@ -2117,11 +2119,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3361
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ROCKFLAGMAN_HELP\"]/description"
-msgstr "Receive friendly assistance from the Rock Flagship."
+msgstr "Receive friendly help from the Rock flagship."
 
 #: src-ru/data/hyperspace.xml:3399
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BIG_CREW\"]/name"
-msgstr "No Room to Swing a Cat"
+msgstr "No room to swing a cat"
 
 #: src-ru/data/hyperspace.xml:3400
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BIG_CREW\"]/secretName"
@@ -2130,11 +2132,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3401
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_BIG_CREW\"]/description"
 msgstr ""
-"Arrive in sector 8 with 15 (or more) crew members of any race on board."
+"Upon arrival in the 8th sector, have 15 (or more) crew members of any type "
+"on board."
 
 #: src-ru/data/hyperspace.xml:3407
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_CREW\"]/name"
-msgstr "Full Autopilot"
+msgstr "Full autopilot"
 
 #: src-ru/data/hyperspace.xml:3408
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_CREW\"]/secretName"
@@ -2157,8 +2160,8 @@ msgstr "???"
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_OXYMEDCLON\"]/description"
 msgstr ""
-"Destroy the Rebel Flagship's crew without having an Oxygen system, Medbay, "
-"or Clone Bay."
+"Destroy the crew of the Rebel flagship without having an oxygen system, "
+"medbay, or clone bay."
 
 #: src-ru/data/hyperspace.xml:3469
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_ANAEROBIC\"]/name"
@@ -2172,11 +2175,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3471
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_ANAEROBIC\"]/description"
-msgstr "Arrive in the last sector with only Lanius on board."
+msgstr "Arrive in the last sector having only Lanius on board."
 
 #: src-ru/data/hyperspace.xml:3477
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HARVESTER\"]/name"
-msgstr "HARVESTER UNDER ATTACK!"
+msgstr "HARVESTER ATTACKED!"
 
 #: src-ru/data/hyperspace.xml:3478
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HARVESTER\"]/secretName"
@@ -2186,11 +2189,11 @@ msgstr "???"
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_HARVESTER\"]/description"
 msgstr ""
-"Encounter the giant creature in an Engi sector with a Scrap Recovery Arm."
+"Encounter a giant creature in an Engi sector with a scrap recovery arm."
 
 #: src-ru/data/hyperspace.xml:3485
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SCRAP\"]/name"
-msgstr "Need More Scrap"
+msgstr "Need more scrap"
 
 #: src-ru/data/hyperspace.xml:3486
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SCRAP\"]/secretName"
@@ -2202,7 +2205,7 @@ msgstr "Reach the last sector with 700 (or more) scrap in the hold."
 
 #: src-ru/data/hyperspace.xml:3539
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PREIGNITER\"]/name"
-msgstr "Didn't Even Squeak"
+msgstr "Didn't even get to squeak"
 
 #: src-ru/data/hyperspace.xml:3540
 msgid ""
@@ -2212,12 +2215,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3541
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_PREIGNITER\"]/description"
-msgstr "Disintegrate a crew member with a pre-igniter."
+msgstr "Vaporize a crew member with a pre-igniter."
 
 #: src-ru/data/hyperspace.xml:3547
 msgid ""
 "data/hyperspace.xml$//ship[@name=\"PLAYER_SHIP_CRYSTAL_DLC3\"]/achievement[@name=\"ACH_SHIP_USAGE_ENGI\"]/name"
-msgstr "A Rare Creature"
+msgstr "Rare creature"
 
 #: src-ru/data/hyperspace.xml:3548
 msgid ""
@@ -2227,11 +2230,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3549
 msgid ""
 "data/hyperspace.xml$//ship[@name=\"PLAYER_SHIP_CRYSTAL_DLC3\"]/achievement[@name=\"ACH_SHIP_USAGE_ENGI\"]/description"
-msgstr "Use Crystal blue options in dialogues 5 times in one game."
+msgstr "Use Crystal blue dialogue options 5 times in 1 game."
 
 #: src-ru/data/hyperspace.xml:3556
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CRYSTAL_BARREL\"]/name"
-msgstr "Now with Crystal Flavor!"
+msgstr "Now with Crystal flavor!"
 
 #: src-ru/data/hyperspace.xml:3557
 msgid ""
@@ -2241,11 +2244,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3558
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_CRYSTAL_BARREL\"]/description"
-msgstr "Boil your Crystal crew member in a cauldron to get Slerm."
+msgstr "Boil your Crystal in a cauldron to get Slurm."
 
 #: src-ru/data/hyperspace.xml:3596
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ANAERORCHID\"]/name"
-msgstr "Oxygen Balance"
+msgstr "Oxygen balance"
 
 #: src-ru/data/hyperspace.xml:3597
 msgid ""
@@ -2256,12 +2259,11 @@ msgstr "???"
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ANAERORCHID\"]/description"
 msgstr ""
-"Arrive in the last sector with an equal number of Lanius and Orchids on "
-"board."
+"Arrive in the last sector with equal numbers of Lanius and Orchids on board."
 
 #: src-ru/data/hyperspace.xml:3604
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_USAGE_ORCHID\"]/name"
-msgstr "The Plant Works!"
+msgstr "The plant works!"
 
 #: src-ru/data/hyperspace.xml:3605
 msgid ""
@@ -2271,11 +2273,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3606
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_USAGE_ORCHID\"]/description"
-msgstr "Use Orchid blue options in dialogues 5 times in one game."
+msgstr "Use Orchid blue dialogue options 5 times in 1 game."
 
 #: src-ru/data/hyperspace.xml:3613
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_GOOD_REPL\"]/name"
-msgstr "Efficient Replication"
+msgstr "Effective replication"
 
 #: src-ru/data/hyperspace.xml:3614
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_GOOD_REPL\"]/secretName"
@@ -2284,12 +2286,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3615
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_GOOD_REPL\"]/description"
-msgstr "Successfully replicate missiles 3 times in one game."
+msgstr "Successfully replicate missiles 3 times in 1 game."
 
 #: src-ru/data/hyperspace.xml:3655
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_MISSILEDRONES\"]/name"
-msgstr "The Gas Corroded Everything..."
+msgstr "Everything corroded by gas..."
 
 #: src-ru/data/hyperspace.xml:3656
 msgid ""
@@ -2299,7 +2301,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3657
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_MISSILEDRONES\"]/description"
-msgstr "Arrive in the last sector without missiles or drone parts."
+msgstr "Upon arrival in the last sector, have no missiles or drone parts."
 
 #: src-ru/data/hyperspace.xml:3663
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_SHELL_GAS\"]/name"
@@ -2316,7 +2318,7 @@ msgstr "Obtain corrosive gas with 300% efficiency."
 
 #: src-ru/data/hyperspace.xml:3671
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LOW_ENGINES_SYS\"]/name"
-msgstr "We're Not in a Hurry..."
+msgstr "We're in no rush..."
 
 #: src-ru/data/hyperspace.xml:3672
 msgid ""
@@ -2326,11 +2328,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3673
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_LOW_ENGINES_SYS\"]/description"
-msgstr "Have an Engines system no higher than level 2 in the last sector."
+msgstr "Have the engine system at level 2 or lower in the last sector."
 
 #: src-ru/data/hyperspace.xml:3712
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MICELIUM\"]/name"
-msgstr "Thorough Control"
+msgstr "Careful control"
 
 #: src-ru/data/hyperspace.xml:3713
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MICELIUM\"]/secretName"
@@ -2338,12 +2340,12 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3714
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MICELIUM\"]/description"
-msgstr "Check the state of the mycelium 6 times in one game."
+msgstr "Check the state of the mycelium 6 times in a game."
 
 #: src-ru/data/hyperspace.xml:3721
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_TALK_WITH_MUSHROOMS\"]/name"
-msgstr "I'm Not an Addict"
+msgstr "I'm not a druggie"
 
 #: src-ru/data/hyperspace.xml:3722
 msgid ""
@@ -2353,12 +2355,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3723
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_TALK_WITH_MUSHROOMS\"]/description"
-msgstr "Never talk to the Mushrooms in your crew before the last sector."
+msgstr "Never talk to Mushrums in the crew until the last sector."
 
 #: src-ru/data/hyperspace.xml:3729
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_HACK_NO_DRONES\"]/name"
-msgstr "Robophobia"
+msgstr "Fear of robots"
 
 #: src-ru/data/hyperspace.xml:3730
 msgid ""
@@ -2368,11 +2370,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3731
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NO_HACK_NO_DRONES\"]/description"
-msgstr "Arrive in the last sector without Hacking or Drone Control systems."
+msgstr "Upon arrival in the last sector, have no hacking or drone systems."
 
 #: src-ru/data/hyperspace.xml:3770
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MAGMAN_ART\"]/name"
-msgstr "Magmen Artillery"
+msgstr "Engi artillery"
 
 #: src-ru/data/hyperspace.xml:3771
 msgid ""
@@ -2382,11 +2384,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3772
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MAGMAN_ART\"]/description"
-msgstr "Have a level 4 Artillery system at the start of any sector."
+msgstr "At the start of any sector, have level 4 artillery."
 
 #: src-ru/data/hyperspace.xml:3778
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_MAGMAN\"]/name"
-msgstr "Lava Party"
+msgstr "Lava party"
 
 #: src-ru/data/hyperspace.xml:3779
 msgid ""
@@ -2396,11 +2398,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3780
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_ONLY_MAGMAN\"]/description"
-msgstr "Arrive in the last sector with only Magmen on board."
+msgstr "Arrive in the last sector with only Engi on board."
 
 #: src-ru/data/hyperspace.xml:3786
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_FIRESTOPPER\"]/name"
-msgstr "Fire Extinguisher"
+msgstr "Fire extinguisher"
 
 #: src-ru/data/hyperspace.xml:3787
 msgid ""
@@ -2410,11 +2412,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3788
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_FIRESTOPPER\"]/description"
-msgstr "Use a Magman to extinguish a fire on a station."
+msgstr "Put out a fire on a station using an Engi."
 
 #: src-ru/data/hyperspace.xml:3827
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TIMEMAX\"]/name"
-msgstr "Time Flies!"
+msgstr "Time flies!"
 
 #: src-ru/data/hyperspace.xml:3828
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TIMEMAX\"]/secretName"
@@ -2422,7 +2424,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3829
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TIMEMAX\"]/description"
-msgstr "Have a level 3 Time Manipulator by the start of sector 3."
+msgstr "By the beginning of the 3rd sector, have a level 3 time manipulator."
 
 #: src-ru/data/hyperspace.xml:3835
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NECHETNI_SYS\"]/name"
@@ -2436,8 +2438,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3837
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_NECHETNI_SYS\"]/description"
-msgstr ""
-"By the last sector, all existing systems must have an odd-numbered level."
+msgstr "By the last sector, all systems must be at an odd level."
 
 #: src-ru/data/hyperspace.xml:3843
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TEMPORAL_ART\"]/name"
@@ -2451,11 +2452,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3845
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_TEMPORAL_ART\"]/description"
-msgstr "Have a level 4 Artillery system at the start of any sector."
+msgstr "At the start of any sector, have level 4 artillery."
 
 #: src-ru/data/hyperspace.xml:3884
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_FIRE\"]/name"
-msgstr "Radioactive Flame"
+msgstr "Radioactive flame"
 
 #: src-ru/data/hyperspace.xml:3885
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_FIRE\"]/secretName"
@@ -2463,12 +2464,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3886
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_FIRE\"]/description"
-msgstr ""
-"Cause a fire on an enemy ship 20 times using your ship's radioactivity."
+msgstr "Cause 20 fires on enemy ships using ship radioactivity."
 
 #: src-ru/data/hyperspace.xml:3894
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_PULSAR\"]/name"
-msgstr "Another Pulsation"
+msgstr "Another pulsation"
 
 #: src-ru/data/hyperspace.xml:3895
 msgid ""
@@ -2478,11 +2478,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:3896
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_MEET_PULSAR\"]/description"
-msgstr "Visit 3 beacons near pulsars in one game."
+msgstr "Visit 3 beacons near pulsars in 1 game."
 
 #: src-ru/data/hyperspace.xml:3903
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_CREW\"]/name"
-msgstr "Genetic Trickster"
+msgstr "Genetic trickster"
 
 #: src-ru/data/hyperspace.xml:3904
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_CREW\"]/secretName"
@@ -2490,7 +2490,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:3905
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_RAD_CREW\"]/description"
-msgstr "Have your crew changed by radiation 15 times."
+msgstr "Change crew due to radiation 15 times."
 
 #: src-ru/data/hyperspace.xml:3924
 msgid ""
@@ -2505,7 +2505,7 @@ msgstr "Kazaac"
 #: src-ru/data/hyperspace.xml:3977
 msgid ""
 "data/hyperspace.xml$//customShip[@name=\"PLAYER_SHIP_JELLY_DLC1_3\"]/crew/slug_legendary/@name"
-msgstr "Miser"
+msgstr "Scrooge"
 
 #: src-ru/data/hyperspace.xml:4231
 msgid "data/hyperspace.xml$//customShip[@name=\"FED_KIZDOS\"]/crew/human[1]/@name"
@@ -2552,7 +2552,7 @@ msgstr "Spike"
 #: src-ru/data/hyperspace.xml:6150
 msgid ""
 "data/hyperspace.xml$//race[@name=\"egg\"]/powerEffect[@name=\"trans_to_turtle\"]/buttonText"
-msgstr ""
+msgstr "HATCH"
 
 #: src-ru/data/hyperspace.xml:6151
 msgid ""
@@ -2569,7 +2569,7 @@ msgstr "DECAY"
 
 #: src-ru/data/hyperspace.xml:6594
 msgid "data/hyperspace.xml$//race[@name=\"anaerobic\"]/powerEffect/tooltip"
-msgstr "Ready: Self-destruct to be revived in the Clone Bay. [20 ‡]"
+msgstr "Ready: Self-destruct to resurrect in the Clone Bay. [20 ‡]"
 
 #: src-ru/data/hyperspace.xml:6642
 msgid ""
@@ -2591,7 +2591,7 @@ msgstr "DECAY"
 #: src-ru/data/hyperspace.xml:6661
 msgid ""
 "data/hyperspace.xml$//race[@name=\"anaerobic_legendary\"]/powerEffect[2]/tooltip"
-msgstr "Ready: Self-destruct to be revived in the Clone Bay. [20 ‡]"
+msgstr "Ready: Self-destruct to resurrect in the Clone Bay. [20 ‡]"
 
 #: src-ru/data/hyperspace.xml:6773
 msgid ""
@@ -2616,20 +2616,19 @@ msgstr "Ghost0.2"
 #: src-ru/data/hyperspace.xml:6878
 msgid ""
 "data/hyperspace.xml$//powerEffect[@name=\"lady_legendary_power\"]/buttonText"
-msgstr ""
+msgstr "T-BOMB"
 
 #: src-ru/data/hyperspace.xml:6879
 msgid "data/hyperspace.xml$//powerEffect[@name=\"lady_legendary_power\"]/tooltip"
-msgstr ""
+msgstr "Ready: Plant a timed bomb. [30 ‡]"
 
 #: src-ru/data/hyperspace.xml:7022
 msgid "data/hyperspace.xml$//race[@name=\"human_s\"]/powerEffect/buttonText"
-msgstr "HEAL"
+msgstr "HEALING"
 
 #: src-ru/data/hyperspace.xml:7023
 msgid "data/hyperspace.xml$//race[@name=\"human_s\"]/powerEffect/tooltip"
-msgstr ""
-"Ready: Heal yourself and all allies in this room for 50 health. [30 ‡]"
+msgstr "Ready: Heal self and all allies in this room for 50 health. [30 ‡]"
 
 #: src-ru/data/hyperspace.xml:7173
 msgid "data/hyperspace.xml$//race[@name=\"human_kba\"]/powerEffect/buttonText"
@@ -2638,7 +2637,7 @@ msgstr "TRAP"
 #: src-ru/data/hyperspace.xml:7174
 msgid "data/hyperspace.xml$//race[@name=\"human_kba\"]/powerEffect/tooltip"
 msgstr ""
-"Ready: Hack the doors and release poison gas in the current room. [30 ‡]"
+"Ready: Hack airlocks and release toxic gas in the current room. [30 ‡]"
 
 #: src-ru/data/hyperspace.xml:7206
 msgid "data/hyperspace.xml$//race[@name=\"human_bam\"]/powerEffect/buttonText"
@@ -2654,7 +2653,7 @@ msgstr "NEUROSHOCK"
 
 #: src-ru/data/hyperspace.xml:7243
 msgid "data/hyperspace.xml$//race[@name=\"human_alh\"]/powerEffect/tooltip"
-msgstr "Ready: Mental damage to enemies under mind control. [30 ‡]"
+msgstr "Ready: Mental damage to mind-controlled enemies. [30 ‡]"
 
 #: src-ru/data/hyperspace.xml:7299
 msgid "data/hyperspace.xml$//powerEffect[@name=\"passive_hot\"]/buttonText"
@@ -2662,7 +2661,7 @@ msgstr "ARSON"
 
 #: src-ru/data/hyperspace.xml:7300
 msgid "data/hyperspace.xml$//powerEffect[@name=\"passive_hot\"]/tooltip"
-msgstr "A fire starts in the Magman's room every 15 seconds. [15 ‡]"
+msgstr "A fire starts in the room with an Engi every 15 seconds. [15 ‡]"
 
 #: src-ru/data/hyperspace.xml:7310
 msgid "data/hyperspace.xml$//powerEffect[@name=\"active_cold\"]/buttonText"
@@ -2670,7 +2669,7 @@ msgstr "COLD"
 
 #: src-ru/data/hyperspace.xml:7311
 msgid "data/hyperspace.xml$//powerEffect[@name=\"active_cold\"]/tooltip"
-msgstr "Switch Magman to cooling mode."
+msgstr "Switch Engi to cooling mode."
 
 #: src-ru/data/hyperspace.xml:7345
 msgid "data/hyperspace.xml$//powerEffect[@name=\"active_hot\"]/buttonText"
@@ -2678,12 +2677,12 @@ msgstr "HEAT"
 
 #: src-ru/data/hyperspace.xml:7346
 msgid "data/hyperspace.xml$//powerEffect[@name=\"active_hot\"]/tooltip"
-msgstr "Switch Magman to heating mode."
+msgstr "Switch Engi to heating mode."
 
 #: src-ru/data/hyperspace.xml:7491
 msgid ""
 "data/hyperspace.xml$//race[@name=\"egg_legendary\"]/powerEffect[@name=\"trans_to_turtle\"]/buttonText"
-msgstr ""
+msgstr "HATCH"
 
 #: src-ru/data/hyperspace.xml:7492
 msgid ""
@@ -2697,7 +2696,7 @@ msgstr "REVERSE"
 
 #: src-ru/data/hyperspace.xml:7797
 msgid "data/hyperspace.xml$//race[@name=\"keeper_legendary\"]/powerEffect/tooltip"
-msgstr "Ready: Make your enemies move backward in time. [30 ‡]"
+msgstr "Ready: Force your enemies to move back in time. [30 ‡]"
 
 #: src-ru/data/hyperspace.xml:7845
 msgid "data/hyperspace.xml$//race[@name=\"keeper\"]/powerEffect/buttonText"
@@ -2705,7 +2704,7 @@ msgstr "REVERSE"
 
 #: src-ru/data/hyperspace.xml:7846
 msgid "data/hyperspace.xml$//race[@name=\"keeper\"]/powerEffect/tooltip"
-msgstr "Ready: Make your enemies move backward in time. [30 ‡]"
+msgstr "Ready: Force your enemies to move back in time. [30 ‡]"
 
 #: src-ru/data/hyperspace.xml:8098
 msgid ""
@@ -2715,7 +2714,7 @@ msgstr "..."
 #: src-ru/data/hyperspace.xml:8099
 msgid ""
 "data/hyperspace.xml$//race[@name=\"boarder_ftl_disabler\"]/powerEffect/tooltip"
-msgstr "Disrupt FTL drive charging"
+msgstr "Disrupt FTL charge"
 
 #: src-ru/data/hyperspace.xml:8314
 msgid "data/hyperspace.xml$//race[@name=\"battle_hal\"]/powerEffect/buttonText"
@@ -2727,7 +2726,7 @@ msgstr "Periodically disrupt enemies mind"
 
 #: src-ru/data/hyperspace.xml:8389
 msgid "data/hyperspace.xml$//drone[@name=\"DEIONIZATOR\"]/tooltipName"
-msgstr "De-ionizer"
+msgstr "Deionizer"
 
 #: src-ru/data/hyperspace.xml:8393
 msgid "data/hyperspace.xml$//drone[@name=\"BOARDER_FTL_DISABLER\"]/tooltipName"
@@ -2735,27 +2734,27 @@ msgstr "FTL Discharger"
 
 #: src-ru/data/hyperspace.xml:8397
 msgid "data/hyperspace.xml$//drone[@name=\"BATTERY_DRONE\"]/tooltipName"
-msgstr "Battery Drone Mk I"
+msgstr "Battery Drone Mod I"
 
 #: src-ru/data/hyperspace.xml:8401
 msgid "data/hyperspace.xml$//drone[@name=\"BATTERY_DRONE_R\"]/tooltipName"
-msgstr "Battery Drone Mk I"
+msgstr "Battery Drone Mod I"
 
 #: src-ru/data/hyperspace.xml:8405
 msgid "data/hyperspace.xml$//drone[@name=\"BATTERY_DRONE_2\"]/tooltipName"
-msgstr "Battery Drone Mk II"
+msgstr "Battery Drone Mod II"
 
 #: src-ru/data/hyperspace.xml:8409
 msgid "data/hyperspace.xml$//drone[@name=\"MANNING_DRONE\"]/tooltipName"
-msgstr "Operator Drone Mk I"
+msgstr "Manager Drone Mod I"
 
 #: src-ru/data/hyperspace.xml:8413
 msgid "data/hyperspace.xml$//drone[@name=\"MANNING_DRONE_R\"]/tooltipName"
-msgstr "Operator Drone Mk I"
+msgstr "Manager Drone Mod I"
 
 #: src-ru/data/hyperspace.xml:8417
 msgid "data/hyperspace.xml$//drone[@name=\"MANNING_DRONE_2\"]/tooltipName"
-msgstr "Operator Drone Mk II"
+msgstr "Manager Drone Mod II"
 
 #: src-ru/data/hyperspace.xml:8421
 msgid "data/hyperspace.xml$//drone[@name=\"HAL_REPAIR\"]/tooltipName"
@@ -2767,19 +2766,19 @@ msgstr "Morphs repairman"
 
 #: src-ru/data/hyperspace.xml:8429
 msgid "data/hyperspace.xml$//drone[@name=\"DE_REPAIR_2\"]/tooltipName"
-msgstr "Sturdy Repair Drone"
+msgstr "Sturdy Repairer"
 
 #: src-ru/data/hyperspace.xml:8433
 msgid "data/hyperspace.xml$//drone[@name=\"DE_REPAIR_2_R\"]/tooltipName"
-msgstr "Sturdy Repair Drone"
+msgstr "Sturdy Repairer"
 
 #: src-ru/data/hyperspace.xml:8437
 msgid "data/hyperspace.xml$//drone[@name=\"DE_REPAIR_4\"]/tooltipName"
-msgstr "Fast Repair Drone"
+msgstr "Fast Repairer"
 
 #: src-ru/data/hyperspace.xml:8441
 msgid "data/hyperspace.xml$//drone[@name=\"DE_REPAIR_4_R\"]/tooltipName"
-msgstr "Fast Repair Drone"
+msgstr "Fast Repairer"
 
 #: src-ru/data/hyperspace.xml:8445
 msgid "data/hyperspace.xml$//drone[@name=\"DE_BATTLE_2\"]/tooltipName"
@@ -2807,11 +2806,11 @@ msgstr "Improve.Boarding drone"
 
 #: src-ru/data/hyperspace.xml:8469
 msgid "data/hyperspace.xml$//drone[@name=\"DE_BOARDER_4\"]/tooltipName"
-msgstr "Fast Boarding Drone"
+msgstr "Fast Boarder"
 
 #: src-ru/data/hyperspace.xml:8473
 msgid "data/hyperspace.xml$//drone[@name=\"DE_BOARDER_4_R\"]/tooltipName"
-msgstr "Fast Boarding Drone"
+msgstr "Fast Boarder"
 
 #: src-ru/data/hyperspace.xml:8478
 msgid "data/hyperspace.xml$//drone[@name=\"BIOPRESERVER\"]/tooltipName"
@@ -2819,7 +2818,7 @@ msgstr "Bio-Guardian"
 
 #: src-ru/data/hyperspace.xml:8483
 msgid "data/hyperspace.xml$//drone[@name=\"DEPLETER_DRONE\"]/tooltipName"
-msgstr "Suppressor"
+msgstr "Silencer"
 
 #: src-ru/data/hyperspace.xml:8487
 msgid "data/hyperspace.xml$//drone[@name=\"HAL_BATTLE\"]/tooltipName"
@@ -2831,64 +2830,64 @@ msgstr "Fighter HAL"
 
 #: src-ru/data/hyperspace.xml:8495
 msgid "data/hyperspace.xml$//drone[@name=\"BOARDER_IONFIRE\"]/tooltipName"
-msgstr "Fire-Ion Boarding Drone"
+msgstr "Fire-Ion Boarder"
 
 #: src-ru/data/hyperspace.xml:10788
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"LOOTBOX\"]/tooltip"
 msgstr ""
-"There's something inside these crates. You need to empty them for new "
+"There is something inside these crates. They need to be freed for new "
 "supplies."
 
 #: src-ru/data/hyperspace.xml:10789
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"LOOTBOX\"]/inactiveTooltip"
 msgstr ""
-"There's something inside these crates. You need to empty them for new "
+"There is something inside these crates. They need to be freed for new "
 "supplies. Cannot be opened while in danger."
 
 #: src-ru/data/hyperspace.xml:10803
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"LOOTBOX_EMPTY\"]/inactiveTooltip"
 msgstr ""
-"These crates are currently empty. The crew of 'Serenity' will store "
-"additional supplies here that they manage to acquire during the flight."
+"These crates are currently empty. The \"Serenity\" crew will store "
+"additional supplies found during the flight here."
 
 #: src-ru/data/hyperspace.xml:10814
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"SLURMBOX\"]/tooltip"
 msgstr ""
-"The Slerm in this chamber is ready to be loaded into the hold. A new batch "
-"will start brewing immediately after."
+"Slurm in this chamber is ready to be loaded into the hold. A new batch will "
+"start brewing immediately after."
 
 #: src-ru/data/hyperspace.xml:10815
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"SLURMBOX\"]/inactiveTooltip"
 msgstr ""
-"The Slerm in this chamber is ready to be loaded into the hold. A new batch "
-"will start brewing immediately after. Cannot be loaded while in danger."
+"Slurm in this chamber is ready to be loaded into the hold. A new batch will "
+"start brewing immediately after. Cannot be loaded while in danger."
 
 #: src-ru/data/hyperspace.xml:10829
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"SLURMBOX_EMPTY\"]/inactiveTooltip"
 msgstr ""
-"Slerm is brewing in this cooling chamber. The Slerm will be ready when the "
-"light indicators in the room turn green."
+"Slurm is brewing in this cooling chamber. Slurm will be ready when the light"
+" indicators in the room turn green."
 
 #: src-ru/data/hyperspace.xml:10851
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"CHECK_BUTTON_ENABLED\"]/tooltip"
-msgstr "Call and continue the game."
+msgstr "Do not raise the bet and continue the game."
 
 #: src-ru/data/hyperspace.xml:10874
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"RISE_BUTTON_ENABLED\"]/tooltip"
-msgstr "Raise and continue the game."
+msgstr "Raise the bet and continue the game."
 
 #: src-ru/data/hyperspace.xml:10897
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"PAS_BUTTON_ENABLED\"]/tooltip"
-msgstr "Fold and forfeit the game."
+msgstr "Fold and refuse to continue the game."
 
 #: src-ru/data/hyperspace.xml:10919
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"TOP_POKER_BANK\"]/tooltip"
-msgstr "Current game pot. Winner takes all."
+msgstr "Current game pot. The winner takes all."
 
 #: src-ru/data/hyperspace.xml:10929
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"TOP_CHIPS\"]/tooltip"
@@ -2920,12 +2919,12 @@ msgstr "Start over."
 #: src-ru/data/hyperspace.xml:11155
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"DOBOR_BUTTON_ENABLED\"]/tooltip"
-msgstr "Hit."
+msgstr "Take another card."
 
 #: src-ru/data/hyperspace.xml:11179
 msgid ""
 "data/hyperspace.xml$//backgroundObject[@name=\"STOP_BUTTON_ENABLED\"]/tooltip"
-msgstr "Stand."
+msgstr "Finish drawing cards."
 
 #: src-ru/data/hyperspace.xml:22133
 msgid ""
@@ -2940,42 +2939,42 @@ msgstr "Location of the mad Zoltan scientist. Visited."
 #: src-ru/data/hyperspace.xml:22140
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_00\"]/beaconType/unvisitedTooltip"
-msgstr "Equipment warehouse. Threat level: 00."
+msgstr "Equipment stash. Threat level: 00."
 
 #: src-ru/data/hyperspace.xml:22141
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_00\"]/beaconType/visitedTooltip"
-msgstr "Equipment warehouse. Threat level: 00. Visited."
+msgstr "Equipment stash. Threat level: 00. Visited."
 
 #: src-ru/data/hyperspace.xml:22147
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_01\"]/beaconType/unvisitedTooltip"
-msgstr "Equipment warehouse. Threat level: 01."
+msgstr "Equipment stash. Threat level: 01."
 
 #: src-ru/data/hyperspace.xml:22148
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_01\"]/beaconType/visitedTooltip"
-msgstr "Equipment warehouse. Threat level: 01. Visited."
+msgstr "Equipment stash. Threat level: 01. Visited."
 
 #: src-ru/data/hyperspace.xml:22154
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_10\"]/beaconType/unvisitedTooltip"
-msgstr "Equipment warehouse. Threat level: 10."
+msgstr "Equipment stash. Threat level: 10."
 
 #: src-ru/data/hyperspace.xml:22155
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_10\"]/beaconType/visitedTooltip"
-msgstr "Equipment warehouse. Threat level: 10. Visited."
+msgstr "Equipment stash. Threat level: 10. Visited."
 
 #: src-ru/data/hyperspace.xml:22161
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_11\"]/beaconType/unvisitedTooltip"
-msgstr "Equipment warehouse. Threat level: 11."
+msgstr "Equipment stash. Threat level: 11."
 
 #: src-ru/data/hyperspace.xml:22162
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SHIPRADAR2_RAND_11\"]/beaconType/visitedTooltip"
-msgstr "Equipment warehouse. Threat level: 11. Visited."
+msgstr "Equipment stash. Threat level: 11. Visited."
 
 #: src-ru/data/hyperspace.xml:22168
 msgid ""
@@ -3000,32 +2999,32 @@ msgstr "Destination of the escorted vessel. Visited."
 #: src-ru/data/hyperspace.xml:22182
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MERCHANT_DELIVER\"]/beaconType/unvisitedTooltip"
-msgstr "Delivery location for the drone parts cargo."
+msgstr "Drone parts cargo delivery point."
 
 #: src-ru/data/hyperspace.xml:22183
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MERCHANT_DELIVER\"]/beaconType/visitedTooltip"
-msgstr "Delivery location for the drone parts cargo. Visited."
+msgstr "Drone parts cargo delivery point. Visited."
 
 #: src-ru/data/hyperspace.xml:22189
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MERCHANT_INVESTIGATE\"]/beaconType/unvisitedTooltip"
-msgstr "Location of the lost cargo."
+msgstr "Lost cargo location."
 
 #: src-ru/data/hyperspace.xml:22190
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MERCHANT_INVESTIGATE\"]/beaconType/visitedTooltip"
-msgstr "Location of the lost cargo. Visited."
+msgstr "Lost cargo location. Visited."
 
 #: src-ru/data/hyperspace.xml:22196
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MERCHANT_INVESTIGATE_DELIVER\"]/beaconType/unvisitedTooltip"
-msgstr "Destination for the lost cargo delivery."
+msgstr "Destination for delivering lost cargo."
 
 #: src-ru/data/hyperspace.xml:22197
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MERCHANT_INVESTIGATE_DELIVER\"]/beaconType/visitedTooltip"
-msgstr "Destination for the lost cargo delivery. Visited."
+msgstr "Destination for delivering lost cargo. Visited."
 
 #: src-ru/data/hyperspace.xml:22203
 msgid ""
@@ -3040,32 +3039,32 @@ msgstr "Federation outpost under attack. Visited."
 #: src-ru/data/hyperspace.xml:22210
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_GUS2\"]/beaconType/unvisitedTooltip"
-msgstr ""
+msgstr "Farmer wants to buy caterpillars."
 
 #: src-ru/data/hyperspace.xml:22211
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_GUS2\"]/beaconType/visitedTooltip"
-msgstr ""
+msgstr "Farmer wants to buy caterpillars. Visited."
 
 #: src-ru/data/hyperspace.xml:22217
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_GUS3\"]/beaconType/unvisitedTooltip"
-msgstr ""
+msgstr "Another farmer wants to buy caterpillars."
 
 #: src-ru/data/hyperspace.xml:22218
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_GUS3\"]/beaconType/visitedTooltip"
-msgstr ""
+msgstr "Another farmer wants to buy caterpillars. Visited."
 
 #: src-ru/data/hyperspace.xml:22224
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/beaconType/unvisitedTooltip"
-msgstr ""
+msgstr "Destination for delivering a xenomorph container."
 
 #: src-ru/data/hyperspace.xml:22225
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/beaconType/visitedTooltip"
-msgstr ""
+msgstr "Destination for delivering a xenomorph container. Visited."
 
 #: src-ru/data/hyperspace.xml:22232
 msgid ""
@@ -3090,32 +3089,32 @@ msgstr "Mantis military camp. Visited."
 #: src-ru/data/hyperspace.xml:22247
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_MANTIS_BIGHIVE\"]/beaconType/unvisitedTooltip"
-msgstr "Attack on the Mantis camp."
+msgstr "Attack on Mantis camp."
 
 #: src-ru/data/hyperspace.xml:22248
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_MANTIS_BIGHIVE\"]/beaconType/visitedTooltip"
-msgstr "Attack on the Mantis camp. Visited."
+msgstr "Attack on Mantis camp. Visited."
 
 #: src-ru/data/hyperspace.xml:22254
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_CREWDEAD\"]/beaconType/unvisitedTooltip"
-msgstr "Ship that must be captured intact."
+msgstr "Ship to be captured intact."
 
 #: src-ru/data/hyperspace.xml:22255
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_CREWDEAD\"]/beaconType/visitedTooltip"
-msgstr "Ship that must be captured intact. Visited."
+msgstr "Ship to be captured intact. Visited."
 
 #: src-ru/data/hyperspace.xml:22261
 msgid ""
 "data/hyperspace.xml$//event[@name=\"DONOR_MANTIS_CHASE2\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis ship jump point."
+msgstr "Mantis ship exit point."
 
 #: src-ru/data/hyperspace.xml:22262
 msgid ""
 "data/hyperspace.xml$//event[@name=\"DONOR_MANTIS_CHASE2\"]/beaconType/visitedTooltip"
-msgstr "Mantis ship jump point. Visited."
+msgstr "Mantis ship exit point. Visited."
 
 #: src-ru/data/hyperspace.xml:22268
 msgid ""
@@ -3130,12 +3129,12 @@ msgstr "Location of the secret stash. Visited."
 #: src-ru/data/hyperspace.xml:22275
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BLACK_ZOLTAN_2\"]/beaconType/unvisitedTooltip"
-msgstr "Location of the ship that visited the space-bot."
+msgstr "Location of the ship that visited the cosmobot."
 
 #: src-ru/data/hyperspace.xml:22276
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BLACK_ZOLTAN_2\"]/beaconType/visitedTooltip"
-msgstr "Location of the ship that visited the space-bot. Visited."
+msgstr "Location of the ship that visited the cosmobot. Visited."
 
 #: src-ru/data/hyperspace.xml:22282
 msgid ""
@@ -3160,32 +3159,32 @@ msgstr "Pirate base hidden in an asteroid. Visited."
 #: src-ru/data/hyperspace.xml:22296
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRAT_SPAS_ESC\"]/beaconType/unvisitedTooltip"
-msgstr "Possible location of the stolen Engi ship."
+msgstr "Possible location of the hijacked Engi ship."
 
 #: src-ru/data/hyperspace.xml:22297
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRAT_SPAS_ESC\"]/beaconType/visitedTooltip"
-msgstr "Possible location of the stolen Engi ship. Visited."
+msgstr "Possible location of the hijacked Engi ship. Visited."
 
 #: src-ru/data/hyperspace.xml:22303
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRAT_SPAS_ESC_TRUE\"]/beaconType/unvisitedTooltip"
-msgstr "Location of the stolen Engi ship."
+msgstr "Location of the hijacked Engi ship."
 
 #: src-ru/data/hyperspace.xml:22304
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRAT_SPAS_ESC_TRUE\"]/beaconType/visitedTooltip"
-msgstr "Location of the stolen Engi ship. Visited."
+msgstr "Location of the hijacked Engi ship. Visited."
 
 #: src-ru/data/hyperspace.xml:22310
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PLANET_ENGE_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Engi lost in a snowstorm on this planet."
+msgstr "Engi got lost in a snowstorm on this planet."
 
 #: src-ru/data/hyperspace.xml:22311
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PLANET_ENGE_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Engi lost in a snowstorm on this planet. Visited."
+msgstr "Engi got lost in a snowstorm on this planet. Visited."
 
 #: src-ru/data/hyperspace.xml:22317
 msgid ""
@@ -3231,13 +3230,13 @@ msgstr "Zoltan scientists will thank you here for your help. Visited."
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE\"]/beaconType/unvisitedTooltip"
 msgstr ""
-"Coordinates of a secret location, found in a hidden safe on an Orchid ship."
+"Coordinates of a secret place found in a hidden safe on the Orchid ship."
 
 #: src-ru/data/hyperspace.xml:22346
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_ORCHANTIS_BIOSTORAGE\"]/beaconType/visitedTooltip"
 msgstr ""
-"Coordinates of a secret location, found in a hidden safe on an Orchid ship. "
+"Coordinates of a secret place found in a hidden safe on the Orchid ship. "
 "Visited."
 
 #: src-ru/data/hyperspace.xml:22352
@@ -3253,122 +3252,122 @@ msgstr "Secret Federation center. Visited."
 #: src-ru/data/hyperspace.xml:22359
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_2_B\"]/beaconType/unvisitedTooltip"
-msgstr "Probable jump point of the pirate ship."
+msgstr "Likely exit point for the pirate ship."
 
 #: src-ru/data/hyperspace.xml:22360
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_2_B\"]/beaconType/visitedTooltip"
-msgstr "Probable jump point of the pirate ship. Visited."
+msgstr "Likely exit point for the pirate ship. Visited."
 
 #: src-ru/data/hyperspace.xml:22366
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_2\"]/beaconType/unvisitedTooltip"
-msgstr "Jump point of the pirate ship."
+msgstr "Pirate ship jump exit point."
 
 #: src-ru/data/hyperspace.xml:22367
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_2\"]/beaconType/visitedTooltip"
-msgstr "Jump point of the pirate ship. Visited."
+msgstr "Pirate ship jump exit point. Visited."
 
 #: src-ru/data/hyperspace.xml:22373
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_BASE\"]/beaconType/unvisitedTooltip"
-msgstr "Destination of the pirate ship."
+msgstr "Pirate ship destination."
 
 #: src-ru/data/hyperspace.xml:22374
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_BASE\"]/beaconType/visitedTooltip"
-msgstr "Destination of the pirate ship. Visited."
+msgstr "Pirate ship destination. Visited."
 
 #: src-ru/data/hyperspace.xml:22380
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_3_B\"]/beaconType/unvisitedTooltip"
-msgstr "Probable jump point of the pirate ship."
+msgstr "Likely exit point for the pirate ship."
 
 #: src-ru/data/hyperspace.xml:22381
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_3_B\"]/beaconType/visitedTooltip"
-msgstr "Probable jump point of the pirate ship. Visited."
+msgstr "Likely exit point for the pirate ship. Visited."
 
 #: src-ru/data/hyperspace.xml:22387
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_3\"]/beaconType/unvisitedTooltip"
-msgstr "Jump point of the pirate ship."
+msgstr "Pirate ship jump exit point."
 
 #: src-ru/data/hyperspace.xml:22388
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_3\"]/beaconType/visitedTooltip"
-msgstr "Jump point of the pirate ship. Visited."
+msgstr "Pirate ship jump exit point. Visited."
 
 #: src-ru/data/hyperspace.xml:22394
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_4_B\"]/beaconType/unvisitedTooltip"
-msgstr "Probable jump point of the pirate ship."
+msgstr "Likely exit point for the pirate ship."
 
 #: src-ru/data/hyperspace.xml:22395
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_4_B\"]/beaconType/visitedTooltip"
-msgstr "Probable jump point of the pirate ship. Visited."
+msgstr "Likely exit point for the pirate ship. Visited."
 
 #: src-ru/data/hyperspace.xml:22401
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_4\"]/beaconType/unvisitedTooltip"
-msgstr "Jump point of the pirate ship."
+msgstr "Pirate ship jump exit point."
 
 #: src-ru/data/hyperspace.xml:22402
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_CHICKEN_AWAY_4\"]/beaconType/visitedTooltip"
-msgstr "Jump point of the pirate ship. Visited."
+msgstr "Pirate ship jump exit point. Visited."
 
 #: src-ru/data/hyperspace.xml:22408
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_FED_HUNT\"]/beaconType/unvisitedTooltip"
-msgstr "The merchant who tricked a Slug."
+msgstr "Trader who cheated the Slug."
 
 #: src-ru/data/hyperspace.xml:22409
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_FED_HUNT\"]/beaconType/visitedTooltip"
-msgstr "The merchant who tricked a Slug. Visited."
+msgstr "Trader who cheated the Slug. Visited."
 
 #: src-ru/data/hyperspace.xml:22415
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[214]/beaconType/unvisitedTooltip"
-msgstr "A trading post from your crew member's memories."
+msgstr "Trading post from your crew member's memories."
 
 #: src-ru/data/hyperspace.xml:22416
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[214]/beaconType/visitedTooltip"
-msgstr "A trading post from your crew member's memories. Visited."
+msgstr "Trading post from your crew member's memories. Visited."
 
 #: src-ru/data/hyperspace.xml:22422
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[215]/beaconType/unvisitedTooltip"
-msgstr "A trading post from your crew member's memories."
+msgstr "Trading post from your crew member's memories."
 
 #: src-ru/data/hyperspace.xml:22423
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[215]/beaconType/visitedTooltip"
-msgstr "A trading post from your crew member's memories. Visited."
+msgstr "Trading post from your crew member's memories. Visited."
 
 #: src-ru/data/hyperspace.xml:22429
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[216]/beaconType/unvisitedTooltip"
-msgstr "A trading post from your crew member's memories."
+msgstr "Trading post from your crew member's memories."
 
 #: src-ru/data/hyperspace.xml:22430
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[216]/beaconType/visitedTooltip"
-msgstr "A trading post from your crew member's memories. Visited."
+msgstr "Trading post from your crew member's memories. Visited."
 
 #: src-ru/data/hyperspace.xml:22436
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_VS_FED_HUNT_1\"]/beaconType/unvisitedTooltip"
-msgstr "Target coordinates given to you by the pirate ship."
+msgstr "Target coordinates given to you by a pirate ship."
 
 #: src-ru/data/hyperspace.xml:22437
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PIRATE_VS_FED_HUNT_1\"]/beaconType/visitedTooltip"
-msgstr "Target coordinates given to you by the pirate ship. Visited."
+msgstr "Target coordinates given to you by a pirate ship. Visited."
 
 #: src-ru/data/hyperspace.xml:22443
 msgid ""
@@ -3382,511 +3381,511 @@ msgstr "Beacon coordinates given to you by the rescued civilians. Visited."
 
 #: src-ru/data/hyperspace.xml:22450
 msgid "data/hyperspace.xml$//event[@name=\"111110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22451
 msgid "data/hyperspace.xml$//event[@name=\"111110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22457
 msgid "data/hyperspace.xml$//event[@name=\"111101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22458
 msgid "data/hyperspace.xml$//event[@name=\"111101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22464
 msgid "data/hyperspace.xml$//event[@name=\"111100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22465
 msgid "data/hyperspace.xml$//event[@name=\"111100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22471
 msgid "data/hyperspace.xml$//event[@name=\"111011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22472
 msgid "data/hyperspace.xml$//event[@name=\"111011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22478
 msgid "data/hyperspace.xml$//event[@name=\"111010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22479
 msgid "data/hyperspace.xml$//event[@name=\"111010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22485
 msgid "data/hyperspace.xml$//event[@name=\"111001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22486
 msgid "data/hyperspace.xml$//event[@name=\"111001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22492
 msgid "data/hyperspace.xml$//event[@name=\"111000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22493
 msgid "data/hyperspace.xml$//event[@name=\"111000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22499
 msgid "data/hyperspace.xml$//event[@name=\"110111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22500
 msgid "data/hyperspace.xml$//event[@name=\"110111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22506
 msgid "data/hyperspace.xml$//event[@name=\"110110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22507
 msgid "data/hyperspace.xml$//event[@name=\"110110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22513
 msgid "data/hyperspace.xml$//event[@name=\"110101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22514
 msgid "data/hyperspace.xml$//event[@name=\"110101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22520
 msgid "data/hyperspace.xml$//event[@name=\"110100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22521
 msgid "data/hyperspace.xml$//event[@name=\"110100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22527
 msgid "data/hyperspace.xml$//event[@name=\"110011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22528
 msgid "data/hyperspace.xml$//event[@name=\"110011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22534
 msgid "data/hyperspace.xml$//event[@name=\"110010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22535
 msgid "data/hyperspace.xml$//event[@name=\"110010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22541
 msgid "data/hyperspace.xml$//event[@name=\"110001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22542
 msgid "data/hyperspace.xml$//event[@name=\"110001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22548
 msgid "data/hyperspace.xml$//event[@name=\"110000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22549
 msgid "data/hyperspace.xml$//event[@name=\"110000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22555
 msgid "data/hyperspace.xml$//event[@name=\"101111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22556
 msgid "data/hyperspace.xml$//event[@name=\"101111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22562
 msgid "data/hyperspace.xml$//event[@name=\"101110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22563
 msgid "data/hyperspace.xml$//event[@name=\"101110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22569
 msgid "data/hyperspace.xml$//event[@name=\"101101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22570
 msgid "data/hyperspace.xml$//event[@name=\"101101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22576
 msgid "data/hyperspace.xml$//event[@name=\"101100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22577
 msgid "data/hyperspace.xml$//event[@name=\"101100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22583
 msgid "data/hyperspace.xml$//event[@name=\"101011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22584
 msgid "data/hyperspace.xml$//event[@name=\"101011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22590
 msgid "data/hyperspace.xml$//event[@name=\"101010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22591
 msgid "data/hyperspace.xml$//event[@name=\"101010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22597
 msgid "data/hyperspace.xml$//event[@name=\"101001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22598
 msgid "data/hyperspace.xml$//event[@name=\"101001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22604
 msgid "data/hyperspace.xml$//event[@name=\"101000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22605
 msgid "data/hyperspace.xml$//event[@name=\"101000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22611
 msgid "data/hyperspace.xml$//event[@name=\"100111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22612
 msgid "data/hyperspace.xml$//event[@name=\"100111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22618
 msgid "data/hyperspace.xml$//event[@name=\"100110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22619
 msgid "data/hyperspace.xml$//event[@name=\"100110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22625
 msgid "data/hyperspace.xml$//event[@name=\"100101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22626
 msgid "data/hyperspace.xml$//event[@name=\"100101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22632
 msgid "data/hyperspace.xml$//event[@name=\"100100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22633
 msgid "data/hyperspace.xml$//event[@name=\"100100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22639
 msgid "data/hyperspace.xml$//event[@name=\"100011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22640
 msgid "data/hyperspace.xml$//event[@name=\"100011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22646
 msgid "data/hyperspace.xml$//event[@name=\"100010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22647
 msgid "data/hyperspace.xml$//event[@name=\"100010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22653
 msgid "data/hyperspace.xml$//event[@name=\"100001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22654
 msgid "data/hyperspace.xml$//event[@name=\"100001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22660
 msgid "data/hyperspace.xml$//event[@name=\"100000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22661
 msgid "data/hyperspace.xml$//event[@name=\"100000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22667
 msgid "data/hyperspace.xml$//event[@name=\"011111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22668
 msgid "data/hyperspace.xml$//event[@name=\"011111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22674
 msgid "data/hyperspace.xml$//event[@name=\"011110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22675
 msgid "data/hyperspace.xml$//event[@name=\"011110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22681
 msgid "data/hyperspace.xml$//event[@name=\"011101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22682
 msgid "data/hyperspace.xml$//event[@name=\"011101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22688
 msgid "data/hyperspace.xml$//event[@name=\"011100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22689
 msgid "data/hyperspace.xml$//event[@name=\"011100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22695
 msgid "data/hyperspace.xml$//event[@name=\"011011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22696
 msgid "data/hyperspace.xml$//event[@name=\"011011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22702
 msgid "data/hyperspace.xml$//event[@name=\"011010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22703
 msgid "data/hyperspace.xml$//event[@name=\"011010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22709
 msgid "data/hyperspace.xml$//event[@name=\"011001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22710
 msgid "data/hyperspace.xml$//event[@name=\"011001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22716
 msgid "data/hyperspace.xml$//event[@name=\"011000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22717
 msgid "data/hyperspace.xml$//event[@name=\"011000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22723
 msgid "data/hyperspace.xml$//event[@name=\"010111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22724
 msgid "data/hyperspace.xml$//event[@name=\"010111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22730
 msgid "data/hyperspace.xml$//event[@name=\"010110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22731
 msgid "data/hyperspace.xml$//event[@name=\"010110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22737
 msgid "data/hyperspace.xml$//event[@name=\"010101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22738
 msgid "data/hyperspace.xml$//event[@name=\"010101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22744
 msgid "data/hyperspace.xml$//event[@name=\"010100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22745
 msgid "data/hyperspace.xml$//event[@name=\"010100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22751
 msgid "data/hyperspace.xml$//event[@name=\"010011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22752
 msgid "data/hyperspace.xml$//event[@name=\"010011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22758
 msgid "data/hyperspace.xml$//event[@name=\"010010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22759
 msgid "data/hyperspace.xml$//event[@name=\"010010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22765
 msgid "data/hyperspace.xml$//event[@name=\"010001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22766
 msgid "data/hyperspace.xml$//event[@name=\"010001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22772
 msgid "data/hyperspace.xml$//event[@name=\"010000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22773
 msgid "data/hyperspace.xml$//event[@name=\"010000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22779
 msgid "data/hyperspace.xml$//event[@name=\"001111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22780
 msgid "data/hyperspace.xml$//event[@name=\"001111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22786
 msgid "data/hyperspace.xml$//event[@name=\"001110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22787
 msgid "data/hyperspace.xml$//event[@name=\"001110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22793
 msgid "data/hyperspace.xml$//event[@name=\"001101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22794
 msgid "data/hyperspace.xml$//event[@name=\"001101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22800
 msgid "data/hyperspace.xml$//event[@name=\"001100\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22801
 msgid "data/hyperspace.xml$//event[@name=\"001100\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22807
 msgid "data/hyperspace.xml$//event[@name=\"001011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22808
 msgid "data/hyperspace.xml$//event[@name=\"001011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22814
 msgid "data/hyperspace.xml$//event[@name=\"001010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22815
 msgid "data/hyperspace.xml$//event[@name=\"001010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22821
 msgid "data/hyperspace.xml$//event[@name=\"001001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22822
 msgid "data/hyperspace.xml$//event[@name=\"001001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22828
 msgid "data/hyperspace.xml$//event[@name=\"001000\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22829
 msgid "data/hyperspace.xml$//event[@name=\"001000\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22835
 msgid "data/hyperspace.xml$//event[@name=\"000111\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22836
 msgid "data/hyperspace.xml$//event[@name=\"000111\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22842
 msgid "data/hyperspace.xml$//event[@name=\"000110\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22843
 msgid "data/hyperspace.xml$//event[@name=\"000110\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22849
 msgid "data/hyperspace.xml$//event[@name=\"000101\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22850
 msgid "data/hyperspace.xml$//event[@name=\"000101\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22856
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[277]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22857
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[277]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22863
 msgid "data/hyperspace.xml$//event[@name=\"000011\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22864
 msgid "data/hyperspace.xml$//event[@name=\"000011\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22870
 msgid "data/hyperspace.xml$//event[@name=\"000010\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22871
 msgid "data/hyperspace.xml$//event[@name=\"000010\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22877
 msgid "data/hyperspace.xml$//event[@name=\"000001\"]/beaconType/unvisitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay."
+msgstr "Beacon coordinates received from a binary relay."
 
 #: src-ru/data/hyperspace.xml:22878
 msgid "data/hyperspace.xml$//event[@name=\"000001\"]/beaconType/visitedTooltip"
-msgstr "Beacon coordinates obtained from a binary relay. Visited."
+msgstr "Beacon coordinates received from a binary relay. Visited."
 
 #: src-ru/data/hyperspace.xml:22884
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_VS_LANIUS_FOTON_QUEST_1\"]/beaconType/unvisitedTooltip"
-msgstr "Slugs are offering to hunt Lanius here."
+msgstr "Slugs propose hunting Lanius here."
 
 #: src-ru/data/hyperspace.xml:22885
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_VS_LANIUS_FOTON_QUEST_1\"]/beaconType/visitedTooltip"
-msgstr "Slugs are offering to hunt Lanius here. Visited."
+msgstr "Slugs propose hunting Lanius here. Visited."
 
 #: src-ru/data/hyperspace.xml:22891
 msgid ""
@@ -3901,192 +3900,192 @@ msgstr "Slugs were planning to hunt Lanius here. Visited."
 #: src-ru/data/hyperspace.xml:22898
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_STEAL_PIRATE_MEET_1\"]/beaconType/unvisitedTooltip"
-msgstr "The pirate saved from the Slugs will reward you here."
+msgstr "A pirate rescued from Slugs will reward you here."
 
 #: src-ru/data/hyperspace.xml:22899
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_STEAL_PIRATE_MEET_1\"]/beaconType/visitedTooltip"
-msgstr "The pirate saved from the Slugs will reward you here. Visited."
+msgstr "A pirate rescued from Slugs will reward you here. Visited."
 
 #: src-ru/data/hyperspace.xml:22905
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_QUEST_HUNT_ENGI_EVENT_TARGET\"]/beaconType/unvisitedTooltip"
-msgstr "The Mantis need an Engi slave."
+msgstr "Mantis need an Engi slave."
 
 #: src-ru/data/hyperspace.xml:22906
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_QUEST_HUNT_ENGI_EVENT_TARGET\"]/beaconType/visitedTooltip"
-msgstr "The Mantis need an Engi slave. Visited."
+msgstr "Mantis need an Engi slave. Visited."
 
 #: src-ru/data/hyperspace.xml:22912
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_AGB_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "A sealed container needs to be delivered here."
+msgstr "A sealed container must be delivered here."
 
 #: src-ru/data/hyperspace.xml:22913
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_AGB_QUEST\"]/beaconType/visitedTooltip"
-msgstr "A sealed container needs to be delivered here. Visited."
+msgstr "A sealed container must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:22919
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_GGA_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "A sealed container needs to be delivered here."
+msgstr "A sealed container must be delivered here."
 
 #: src-ru/data/hyperspace.xml:22920
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_GGA_QUEST\"]/beaconType/visitedTooltip"
-msgstr "A sealed container needs to be delivered here. Visited."
+msgstr "A sealed container must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:22926
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_BAG_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "A sealed container needs to be delivered here."
+msgstr "A sealed container must be delivered here."
 
 #: src-ru/data/hyperspace.xml:22927
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_BAG_QUEST\"]/beaconType/visitedTooltip"
-msgstr "A sealed container needs to be delivered here. Visited."
+msgstr "A sealed container must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:22933
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_BAB_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "A sealed container needs to be delivered here."
+msgstr "A sealed container must be delivered here."
 
 #: src-ru/data/hyperspace.xml:22934
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_BAB_QUEST\"]/beaconType/visitedTooltip"
-msgstr "A sealed container needs to be delivered here. Visited."
+msgstr "A sealed container must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:22940
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_GAB_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "A sealed container needs to be delivered here."
+msgstr "A sealed container must be delivered here."
 
 #: src-ru/data/hyperspace.xml:22941
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_FED_TRANSPORT_FREON_TARGET_GAB_QUEST\"]/beaconType/visitedTooltip"
-msgstr "A sealed container needs to be delivered here. Visited."
+msgstr "A sealed container must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:22947
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_BOSS_SECOND\"]/beaconType/unvisitedTooltip"
-msgstr "A large Mantis ship is jumping in here."
+msgstr "A large Mantis ship jumps in here."
 
 #: src-ru/data/hyperspace.xml:22948
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_BOSS_SECOND\"]/beaconType/visitedTooltip"
-msgstr "A large Mantis ship is jumping in here. Visited."
+msgstr "A large Mantis ship jumps in here. Visited."
 
 #: src-ru/data/hyperspace.xml:22954
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_1TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 1."
+msgstr "Mantis maturity test. Goal 1."
 
 #: src-ru/data/hyperspace.xml:22955
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_1TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 1. Visited."
+msgstr "Mantis maturity test. Goal 1. Visited."
 
 #: src-ru/data/hyperspace.xml:22961
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_2TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 2."
+msgstr "Mantis maturity test. Goal 2."
 
 #: src-ru/data/hyperspace.xml:22962
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_2TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 2. Visited."
+msgstr "Mantis maturity test. Goal 2. Visited."
 
 #: src-ru/data/hyperspace.xml:22968
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_3TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 3."
+msgstr "Mantis maturity test. Goal 3."
 
 #: src-ru/data/hyperspace.xml:22969
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_3TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 3. Visited."
+msgstr "Mantis maturity test. Goal 3. Visited."
 
 #: src-ru/data/hyperspace.xml:22975
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_4TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 4."
+msgstr "Mantis maturity test. Goal 4."
 
 #: src-ru/data/hyperspace.xml:22976
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_4TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 4. Visited."
+msgstr "Mantis maturity test. Goal 4. Visited."
 
 #: src-ru/data/hyperspace.xml:22982
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_5TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 5."
+msgstr "Mantis maturity test. Goal 5."
 
 #: src-ru/data/hyperspace.xml:22983
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_5TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 5. Visited."
+msgstr "Mantis maturity test. Goal 5. Visited."
 
 #: src-ru/data/hyperspace.xml:22989
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_6TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 6."
+msgstr "Mantis maturity test. Goal 6."
 
 #: src-ru/data/hyperspace.xml:22990
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_6TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 6. Visited."
+msgstr "Mantis maturity test. Goal 6. Visited."
 
 #: src-ru/data/hyperspace.xml:22996
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_7TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 7."
+msgstr "Mantis Maturity Test. Goal 7."
 
 #: src-ru/data/hyperspace.xml:22997
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_7TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 7. Visited."
+msgstr "Mantis Maturity Test. Goal 7. Visited."
 
 #: src-ru/data/hyperspace.xml:23003
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_8TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 8."
+msgstr "Mantis Maturity Test. Goal 8."
 
 #: src-ru/data/hyperspace.xml:23004
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_8TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 8. Visited."
+msgstr "Mantis Maturity Test. Goal 8. Visited."
 
 #: src-ru/data/hyperspace.xml:23010
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_9TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 9."
+msgstr "Mantis Maturity Test. Goal 9."
 
 #: src-ru/data/hyperspace.xml:23011
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_9TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 9. Visited."
+msgstr "Mantis Maturity Test. Goal 9. Visited."
 
 #: src-ru/data/hyperspace.xml:23017
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_10TARGET_ROCK\"]/beaconType/unvisitedTooltip"
-msgstr "Mantis maturity test. Target 10."
+msgstr "Mantis Maturity Test. Goal 10."
 
 #: src-ru/data/hyperspace.xml:23018
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_10TARGET_ROCK\"]/beaconType/visitedTooltip"
-msgstr "Mantis maturity test. Target 10. Visited."
+msgstr "Mantis Maturity Test. Goal 10. Visited."
 
 #: src-ru/data/hyperspace.xml:23024
 msgid ""
 "data/hyperspace.xml$//event[@name=\"CIV_CW_ST_DRINKERS_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Drunk Enrique told you about some warehouse here."
+msgstr "Drunken Enrique told you about some warehouse here."
 
 #: src-ru/data/hyperspace.xml:23025
 msgid ""
 "data/hyperspace.xml$//event[@name=\"CIV_CW_ST_DRINKERS_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Drunk Enrique told you about some warehouse here. Visited."
+msgstr "Drunken Enrique told you about some warehouse here. Visited."
 
 #: src-ru/data/hyperspace.xml:23031
 msgid ""
@@ -4211,12 +4210,12 @@ msgstr "A Federation drone will deliver what you requested here. Visited."
 #: src-ru/data/hyperspace.xml:23115
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_FED_DAMAGEDGOHOME_Q\"]/beaconType/unvisitedTooltip"
-msgstr "An Avatar needs to be escorted to this base."
+msgstr "You need to escort an Avatar to this base."
 
 #: src-ru/data/hyperspace.xml:23116
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_FED_DAMAGEDGOHOME_Q\"]/beaconType/visitedTooltip"
-msgstr "An Avatar needs to be escorted to this base. Visited."
+msgstr "You need to escort an Avatar to this base. Visited."
 
 #: src-ru/data/hyperspace.xml:23122
 msgid ""
@@ -4251,62 +4250,62 @@ msgstr "One of the Rebel bases the Engi mentioned. Visited."
 #: src-ru/data/hyperspace.xml:23143
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ENGI_UNLOCK_3\"]/beaconType/unvisitedTooltip"
-msgstr "Coordinates of the stolen technology."
+msgstr "Coordinates of stolen technology."
 
 #: src-ru/data/hyperspace.xml:23144
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ENGI_UNLOCK_3\"]/beaconType/visitedTooltip"
-msgstr "Coordinates of the stolen technology. Visited."
+msgstr "Coordinates of stolen technology. Visited."
 
 #: src-ru/data/hyperspace.xml:23157
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_CRYSTAL_EVENTQ\"]/beaconType/unvisitedTooltip"
-msgstr "Coordinates of the 'cold world'."
+msgstr "Coordinates of the \"cold world\"."
 
 #: src-ru/data/hyperspace.xml:23158
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_CRYSTAL_EVENTQ\"]/beaconType/visitedTooltip"
-msgstr "Coordinates of the 'cold world'. Visited."
+msgstr "Coordinates of the \"cold world\". Visited."
 
 #: src-ru/data/hyperspace.xml:23164
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[320]/beaconType/unvisitedTooltip"
-msgstr "Delivery location for the repair drones."
+msgstr "Repair drone delivery site."
 
 #: src-ru/data/hyperspace.xml:23165
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[320]/beaconType/visitedTooltip"
-msgstr "Delivery location for the repair drones. Visited."
+msgstr "Repair drone delivery site. Visited."
 
 #: src-ru/data/hyperspace.xml:23171
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_SCANNING_EVENT2\"]/beaconType/unvisitedTooltip"
-msgstr "Delivery location for the Morph analyzer."
+msgstr "Morph analyzer delivery site."
 
 #: src-ru/data/hyperspace.xml:23172
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_SCANNING_EVENT2\"]/beaconType/visitedTooltip"
-msgstr "Delivery location for the Morph analyzer. Visited."
+msgstr "Morph analyzer delivery site. Visited."
 
 #: src-ru/data/hyperspace.xml:23179
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_HUNT2_EVENT\"]/beaconType/unvisitedTooltip"
-msgstr "Slugs are offering to get Morph weapons here."
+msgstr "Slugs offer to obtain morph weapons here."
 
 #: src-ru/data/hyperspace.xml:23180
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_HUNT2_EVENT\"]/beaconType/visitedTooltip"
-msgstr "Slugs are offering to get Morph weapons here. Visited."
+msgstr "Slugs offer to obtain morph weapons here. Visited."
 
 #: src-ru/data/hyperspace.xml:23186
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_HUNT3_EVENT\"]/beaconType/unvisitedTooltip"
-msgstr "Slugs are offering to get Morph weapons here."
+msgstr "Slugs offer to obtain morph weapons here."
 
 #: src-ru/data/hyperspace.xml:23187
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MENGI_HUNT3_EVENT\"]/beaconType/visitedTooltip"
-msgstr "Slugs are offering to get Morph weapons here. Visited."
+msgstr "Slugs offer to obtain morph weapons here. Visited."
 
 #: src-ru/data/hyperspace.xml:23193
 msgid ""
@@ -4411,42 +4410,42 @@ msgstr "Zoltans ask to deliver a gift for the Orchids here. Visited."
 #: src-ru/data/hyperspace.xml:23263
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/beaconType/unvisitedTooltip"
-msgstr "Orchids ask to deliver a biologically valuable cargo here."
+msgstr "Orchids ask to deliver biologically valuable cargo here."
 
 #: src-ru/data/hyperspace.xml:23264
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS_HOMEWORLD\"]/beaconType/visitedTooltip"
-msgstr "Orchids ask to deliver a biologically valuable cargo here. Visited."
+msgstr "Orchids ask to deliver biologically valuable cargo here. Visited."
 
 #: src-ru/data/hyperspace.xml:23270
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_NAMED_THIEF_STASH\"]/beaconType/unvisitedTooltip"
-msgstr "KazaaakplethKilik's stash."
+msgstr "Kazaakplethkilik's stash."
 
 #: src-ru/data/hyperspace.xml:23271
 msgid ""
 "data/hyperspace.xml$//event[@name=\"MANTIS_NAMED_THIEF_STASH\"]/beaconType/visitedTooltip"
-msgstr "KazaaakplethKilik's stash. Visited."
+msgstr "Kazaakplethkilik's stash. Visited."
 
 #: src-ru/data/hyperspace.xml:23277
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BURST_SLUG\"]/beaconType/unvisitedTooltip"
-msgstr "Coordinates of the stolen Burst Lasers."
+msgstr "Coordinates of stolen pulse lasers."
 
 #: src-ru/data/hyperspace.xml:23278
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BURST_SLUG\"]/beaconType/visitedTooltip"
-msgstr "Coordinates of the stolen Burst Lasers. Visited."
+msgstr "Coordinates of stolen pulse lasers. Visited."
 
 #: src-ru/data/hyperspace.xml:23284
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ORDEN_AUTOSHIP_QUEST_LIST\"]/beaconType/unvisitedTooltip"
-msgstr "Coordinates of the elimination site."
+msgstr "Coordinates of the liquidation site."
 
 #: src-ru/data/hyperspace.xml:23285
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ORDEN_AUTOSHIP_QUEST_LIST\"]/beaconType/visitedTooltip"
-msgstr "Coordinates of the elimination site. Visited."
+msgstr "Coordinates of the liquidation site. Visited."
 
 #: src-ru/data/hyperspace.xml:23291
 msgid ""
@@ -4461,152 +4460,152 @@ msgstr "Fanatics are attacking a civilian convoy here. Visited."
 #: src-ru/data/hyperspace.xml:23298
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_FINDTHEORDEN_50\"]/beaconType/unvisitedTooltip"
-msgstr "A damaged Order ship is likely here."
+msgstr "A battered Order ship is likely located here."
 
 #: src-ru/data/hyperspace.xml:23299
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_FINDTHEORDEN_50\"]/beaconType/visitedTooltip"
-msgstr "A damaged Order ship is likely here. Visited."
+msgstr "A battered Order ship is likely located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23305
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_FINDTHEORDEN_100\"]/beaconType/unvisitedTooltip"
-msgstr "A damaged Order ship is here."
+msgstr "A battered Order ship is located here."
 
 #: src-ru/data/hyperspace.xml:23306
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ROCK_FINDTHEORDEN_100\"]/beaconType/visitedTooltip"
-msgstr "A damaged Order ship is here. Visited."
+msgstr "A battered Order ship is located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23312
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_FINDTHEROCK_50\"]/beaconType/unvisitedTooltip"
-msgstr "A damaged Rock ship is likely here."
+msgstr "A battered Rock ship is likely located here."
 
 #: src-ru/data/hyperspace.xml:23313
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_FINDTHEROCK_50\"]/beaconType/visitedTooltip"
-msgstr "A damaged Rock ship is likely here. Visited."
+msgstr "A battered Rock ship is likely located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23319
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_FINDTHEROCK_100\"]/beaconType/unvisitedTooltip"
-msgstr "A damaged Rock ship is here."
+msgstr "A battered Rock ship is located here."
 
 #: src-ru/data/hyperspace.xml:23320
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUESTS_ORDEN_TWO_WEAK_RABBITS_ORDENSHIP_FINDTHEROCK_100\"]/beaconType/visitedTooltip"
-msgstr "A damaged Rock ship is here. Visited."
+msgstr "A battered Rock ship is located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23326
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ORDEN_QUEST_ESCORT_ARRIVE\"]/beaconType/unvisitedTooltip"
-msgstr "Civilians are requesting an escort to a repair caravan."
+msgstr "Civilians request an escort to a repair convoy."
 
 #: src-ru/data/hyperspace.xml:23327
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ORDEN_QUEST_ESCORT_ARRIVE\"]/beaconType/visitedTooltip"
-msgstr "Civilians are requesting an escort to a repair caravan. Visited."
+msgstr "Civilians request an escort to a repair convoy. Visited."
 
 #: src-ru/data/hyperspace.xml:23333
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ASTEROID_I_FORGOT_YOU_MAN_2\"]/beaconType/unvisitedTooltip"
-msgstr "A captain is requesting an escort after an ion storm."
+msgstr "A captain requests an escort after an ion storm."
 
 #: src-ru/data/hyperspace.xml:23334
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ASTEROID_I_FORGOT_YOU_MAN_2\"]/beaconType/visitedTooltip"
-msgstr "A captain is requesting an escort after an ion storm. Visited."
+msgstr "A captain requests an escort after an ion storm. Visited."
 
 #: src-ru/data/hyperspace.xml:23340
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_HAL_FED_NOFUEL\"]/beaconType/unvisitedTooltip"
-msgstr "A ship out of fuel is requesting an escort."
+msgstr "A ship without fuel requests an escort."
 
 #: src-ru/data/hyperspace.xml:23341
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_HAL_FED_NOFUEL\"]/beaconType/visitedTooltip"
-msgstr "A ship out of fuel is requesting an escort. Visited."
+msgstr "A ship without fuel requests an escort. Visited."
 
 #: src-ru/data/hyperspace.xml:23347
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_HAL_FED_NOFUEL2\"]/beaconType/unvisitedTooltip"
-msgstr "A ship out of fuel is requesting an escort."
+msgstr "A ship without fuel requests an escort."
 
 #: src-ru/data/hyperspace.xml:23348
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_HAL_FED_NOFUEL2\"]/beaconType/visitedTooltip"
-msgstr "A ship out of fuel is requesting an escort. Visited."
+msgstr "A ship without fuel requests an escort. Visited."
 
 #: src-ru/data/hyperspace.xml:23354
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_ESCORT_ARRIVE_HAL\"]/beaconType/unvisitedTooltip"
-msgstr "A ship with damaged FTL navigation is requesting an escort."
+msgstr "A ship with damaged FTL navigation requests an escort."
 
 #: src-ru/data/hyperspace.xml:23355
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_ESCORT_ARRIVE_HAL\"]/beaconType/visitedTooltip"
-msgstr "A ship with damaged FTL navigation is requesting an escort. Visited."
+msgstr "A ship with damaged FTL navigation requests an escort. Visited."
 
 #: src-ru/data/hyperspace.xml:23361
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_NEED_HELP_DOCK_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Repair yard coordinates."
+msgstr "Coordinates of a repair shipyard."
 
 #: src-ru/data/hyperspace.xml:23362
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_NEED_HELP_DOCK_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Repair yard coordinates. Visited."
+msgstr "Coordinates of a repair shipyard. Visited."
 
 #: src-ru/data/hyperspace.xml:23368
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_NEED_HELP_TRADERS_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Trading station coordinates."
+msgstr "Coordinates of a trading station."
 
 #: src-ru/data/hyperspace.xml:23369
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_NEED_HELP_TRADERS_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Trading station coordinates. Visited."
+msgstr "Coordinates of a trading station. Visited."
 
 #: src-ru/data/hyperspace.xml:23375
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_BATTLE_HELP_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Site of a large-scale battle."
+msgstr "Site of a massive battle."
 
 #: src-ru/data/hyperspace.xml:23376
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_BATTLE_HELP_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Site of a large-scale battle. Visited."
+msgstr "Site of a massive battle. Visited."
 
 #: src-ru/data/hyperspace.xml:23382
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_PIRATE_LASERS_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "A hurried arms dealer will give you the goods here."
+msgstr "A hurried weapons dealer will transfer your items here."
 
 #: src-ru/data/hyperspace.xml:23383
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_PIRATE_LASERS_QUEST\"]/beaconType/visitedTooltip"
-msgstr "A hurried arms dealer will give you the goods here. Visited."
+msgstr "A hurried weapons dealer will transfer your items here. Visited."
 
 #: src-ru/data/hyperspace.xml:23389
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_PIRATE_BEAMS_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Site of a large-scale battle."
+msgstr "Site of a massive battle."
 
 #: src-ru/data/hyperspace.xml:23390
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_PIRATE_BEAMS_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Site of a large-scale battle. Visited."
+msgstr "Site of a massive battle. Visited."
 
 #: src-ru/data/hyperspace.xml:23396
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_PIRATE_IONS_QUEST\"]/beaconType/unvisitedTooltip"
-msgstr "Site of a large-scale battle."
+msgstr "Site of a massive battle."
 
 #: src-ru/data/hyperspace.xml:23397
 msgid ""
 "data/hyperspace.xml$//event[@name=\"BORDER_PIRATE_IONS_QUEST\"]/beaconType/visitedTooltip"
-msgstr "Site of a large-scale battle. Visited."
+msgstr "Site of a massive battle. Visited."
 
 #: src-ru/data/hyperspace.xml:23403
 msgid ""
@@ -4631,62 +4630,62 @@ msgstr "Numa 5. Visited."
 #: src-ru/data/hyperspace.xml:23417
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ROCK_UNLOCK2\"]/beaconType/unvisitedTooltip"
-msgstr "A Rock assault ship has arranged to meet you here."
+msgstr "A Rock assault ship has set up a meeting here."
 
 #: src-ru/data/hyperspace.xml:23418
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ROCK_UNLOCK2\"]/beaconType/visitedTooltip"
-msgstr "A Rock assault ship has arranged to meet you here. Visited."
+msgstr "A Rock assault ship has set up a meeting here. Visited."
 
 #: src-ru/data/hyperspace.xml:23424
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ROCK_UNLOCK3\"]/beaconType/unvisitedTooltip"
-msgstr "A Rock assault ship has arranged to meet you here."
+msgstr "A Rock assault ship has set up a meeting here."
 
 #: src-ru/data/hyperspace.xml:23425
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ROCK_UNLOCK3\"]/beaconType/visitedTooltip"
-msgstr "A Rock assault ship has arranged to meet you here. Visited."
+msgstr "A Rock assault ship has set up a meeting here. Visited."
 
 #: src-ru/data/hyperspace.xml:23431
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_UNLOCK_1\"]/beaconType/unvisitedTooltip"
-msgstr "Coordinates of the Slug mobile platform."
+msgstr "Coordinates of a mobile Slug platform."
 
 #: src-ru/data/hyperspace.xml:23432
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLUG_UNLOCK_1\"]/beaconType/visitedTooltip"
-msgstr "Coordinates of the Slug mobile platform. Visited."
+msgstr "Coordinates of a mobile Slug platform. Visited."
 
 #: src-ru/data/hyperspace.xml:23438
 msgid ""
 "data/hyperspace.xml$//event[@name=\"NEBULA_QUEST_SLUG_PIRATE_TRAP2\"]/beaconType/unvisitedTooltip"
-msgstr "Slugs are planning to attack a pirate ship here."
+msgstr "Slugs are preparing to attack a pirate ship here."
 
 #: src-ru/data/hyperspace.xml:23439
 msgid ""
 "data/hyperspace.xml$//event[@name=\"NEBULA_QUEST_SLUG_PIRATE_TRAP2\"]/beaconType/visitedTooltip"
-msgstr "Slugs are planning to attack a pirate ship here. Visited."
+msgstr "Slugs are preparing to attack a pirate ship here. Visited."
 
 #: src-ru/data/hyperspace.xml:23445
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SECRET_WORD_ABADOTH\"]/beaconType/unvisitedTooltip"
-msgstr "Coordinates of a place a dead man told you about."
+msgstr "Coordinates of the place the dead man told you about."
 
 #: src-ru/data/hyperspace.xml:23446
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SECRET_WORD_ABADOTH\"]/beaconType/visitedTooltip"
-msgstr "Coordinates of a place a dead man told you about. Visited."
+msgstr "Coordinates of the place the dead man told you about. Visited."
 
 #: src-ru/data/hyperspace.xml:23452
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PEACEFUL_MAN_RANDOM_SKLAD\"]/beaconType/unvisitedTooltip"
-msgstr "There should be a very rich abandoned warehouse here."
+msgstr "An incredibly wealthy abandoned warehouse should be here."
 
 #: src-ru/data/hyperspace.xml:23453
 msgid ""
 "data/hyperspace.xml$//event[@name=\"PEACEFUL_MAN_RANDOM_SKLAD\"]/beaconType/visitedTooltip"
-msgstr "There should be a very rich abandoned warehouse here. Visited."
+msgstr "An incredibly wealthy abandoned warehouse should be here. Visited."
 
 #: src-ru/data/hyperspace.xml:23459
 msgid ""
@@ -4701,239 +4700,241 @@ msgstr "There should be a wormhole to the Crystal world here. Visited."
 #: src-ru/data/hyperspace.xml:23466
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_4_BARRELS_POINT\"]/beaconType/unvisitedTooltip"
-msgstr "Barrels of Slerm should be brought here."
+msgstr "Barrels of Slurm must be brought here."
 
 #: src-ru/data/hyperspace.xml:23467
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_4_BARRELS_POINT\"]/beaconType/visitedTooltip"
-msgstr "Barrels of Slerm should be brought here. Visited."
+msgstr "Barrels of Slurm must be brought here. Visited."
 
 #: src-ru/data/hyperspace.xml:23473
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_JS_CV_ZP\"]/beaconType/unvisitedTooltip"
-msgstr "A recipe for brewing Slerm needs to be taken here."
+msgstr "A recipe for brewing Slurm must be taken here."
 
 #: src-ru/data/hyperspace.xml:23474
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_JS_CV_ZP\"]/beaconType/visitedTooltip"
-msgstr "A recipe for brewing Slerm needs to be taken here. Visited."
+msgstr "A recipe for brewing Slurm must be taken here. Visited."
 
 #: src-ru/data/hyperspace.xml:23480
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_GZ_TJ_OM\"]/beaconType/unvisitedTooltip"
-msgstr "A recipe for brewing special Slerm should be delivered here."
+msgstr "A recipe for brewing special Slurm must be delivered here."
 
 #: src-ru/data/hyperspace.xml:23481
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_GZ_TJ_OM\"]/beaconType/visitedTooltip"
-msgstr "A recipe for brewing special Slerm should be delivered here. Visited."
+msgstr "A recipe for brewing special Slurm must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:23487
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_SK_DN_KS\"]/beaconType/unvisitedTooltip"
-msgstr "A recipe for brewing special Slerm should be delivered here."
+msgstr "A recipe for brewing special Slurm must be delivered here."
 
 #: src-ru/data/hyperspace.xml:23488
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_SK_DN_KS\"]/beaconType/visitedTooltip"
-msgstr "A recipe for brewing special Slerm should be delivered here. Visited."
+msgstr "A recipe for brewing special Slurm must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:23494
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_MA_NB_GS\"]/beaconType/unvisitedTooltip"
-msgstr "A recipe for brewing special Slerm should be delivered here."
+msgstr "A recipe for brewing special Slurm must be delivered here."
 
 #: src-ru/data/hyperspace.xml:23495
 msgid ""
 "data/hyperspace.xml$//event[@name=\"SLURM_RECEPT_MA_NB_GS\"]/beaconType/visitedTooltip"
-msgstr "A recipe for brewing special Slerm should be delivered here. Visited."
+msgstr "A recipe for brewing special Slurm must be delivered here. Visited."
 
 #: src-ru/data/hyperspace.xml:23501
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_1\"]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23502
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_1\"]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23508
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_2\"]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23509
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_2\"]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23515
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[370]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23516
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[370]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23522
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[371]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23523
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/events/event[371]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23529
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_4\"]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23530
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_4\"]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23536
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_5\"]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23537
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_5\"]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23543
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_6\"]/beaconType/unvisitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here."
+msgstr "Bio-material for Slurm must be obtained here."
 
 #: src-ru/data/hyperspace.xml:23544
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_BOARDING_6\"]/beaconType/visitedTooltip"
-msgstr "Biomaterial for the Slerms needs to be obtained here. Visited."
+msgstr "Bio-material for Slurm must be obtained here. Visited."
 
 #: src-ru/data/hyperspace.xml:23550
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_STORAGE_PEREHVAT\"]/beaconType/unvisitedTooltip"
-msgstr "Interception point. Hostile Slerms are here."
+msgstr "Intercept point. Hostile Slurms are located here."
 
 #: src-ru/data/hyperspace.xml:23551
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_STORAGE_PEREHVAT\"]/beaconType/visitedTooltip"
-msgstr "Interception point. Hostile Slerms are here. Visited."
+msgstr "Intercept point. Hostile Slurms are located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23557
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_STORAGE_PEREHVAT_2\"]/beaconType/unvisitedTooltip"
-msgstr "Interception point. Hostile Slerms are here."
+msgstr "Intercept point. Hostile Slurms are located here."
 
 #: src-ru/data/hyperspace.xml:23558
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_STORAGE_PEREHVAT_2\"]/beaconType/visitedTooltip"
-msgstr "Interception point. Hostile Slerms are here. Visited."
+msgstr "Intercept point. Hostile Slurms are located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23564
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_STORAGE_PEREHVAT_3\"]/beaconType/unvisitedTooltip"
-msgstr "Interception point. Hostile Slerms are here."
+msgstr "Intercept point. Hostile Slurms are located here."
 
 #: src-ru/data/hyperspace.xml:23565
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_STORAGE_PEREHVAT_3\"]/beaconType/visitedTooltip"
-msgstr "Interception point. Hostile Slerms are here. Visited."
+msgstr "Intercept point. Hostile Slurms are located here. Visited."
 
 #: src-ru/data/hyperspace.xml:23571
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_ESCORT_POINT\"]/beaconType/unvisitedTooltip"
-msgstr "Slerms are requesting an escort to these coordinates."
+msgstr "Slurms request an escort to these coordinates."
 
 #: src-ru/data/hyperspace.xml:23572
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_SLURM_ESCORT_POINT\"]/beaconType/visitedTooltip"
-msgstr "Slerms are requesting an escort to these coordinates. Visited."
+msgstr "Slurms request an escort to these coordinates. Visited."
 
 #: src-ru/data/hyperspace.xml:23578
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ZOLTAN_QUEST_PRIMITIVES\"]/beaconType/unvisitedTooltip"
-msgstr "A planet with primitive life forms is located here."
+msgstr "There is a planet with primitive life forms here."
 
 #: src-ru/data/hyperspace.xml:23579
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ZOLTAN_QUEST_PRIMITIVES\"]/beaconType/visitedTooltip"
-msgstr "A planet with primitive life forms is located here. Visited."
+msgstr "There is a planet with primitive life forms here. Visited."
 
 #: src-ru/data/hyperspace.xml:23585
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ZOLTAN_PEACE_QUEST2\"]/beaconType/unvisitedTooltip"
-msgstr "A peaceful Zoltan vessel gave coordinates of its 'brethren'."
+msgstr "A peaceful Zoltan vessel provided coordinates for its \"kin\"."
 
 #: src-ru/data/hyperspace.xml:23586
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ZOLTAN_PEACE_QUEST2\"]/beaconType/visitedTooltip"
-msgstr "A peaceful Zoltan vessel gave coordinates of its 'brethren'. Visited."
+msgstr "A peaceful Zoltan vessel provided coordinates for its \"kin\". Visited."
 
 #: src-ru/data/hyperspace.xml:23592
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ZOLTON_PLANET_IN_DANGER2\"]/beaconType/unvisitedTooltip"
-msgstr "An elite Rebel is attacking a Zolton planet."
+msgstr "An elite Rebel is attacking a Zoltan planet."
 
 #: src-ru/data/hyperspace.xml:23593
 msgid ""
 "data/hyperspace.xml$//event[@name=\"ZOLTON_PLANET_IN_DANGER2\"]/beaconType/visitedTooltip"
-msgstr "An elite Rebel is attacking a Zolton planet. Visited."
+msgstr "An elite Rebel is attacking a Zoltan planet. Visited."
 
 #: src-ru/data/hyperspace.xml:23599
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_CON_TRANSPORTTOPLANET_ZTR\"]/beaconType/unvisitedTooltip"
-msgstr "Contraband needs to be delivered to the planet at these coordinates."
+msgstr "Smuggled goods must be delivered to the planet at these coordinates."
 
 #: src-ru/data/hyperspace.xml:23600
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_CON_TRANSPORTTOPLANET_ZTR\"]/beaconType/visitedTooltip"
 msgstr ""
-"Contraband needs to be delivered to the planet at these coordinates. "
+"Smuggled goods must be delivered to the planet at these coordinates. "
 "Visited."
 
 #: src-ru/data/hyperspace.xml:23606
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_CON_TRANSPORTTOPLANET_GIP\"]/beaconType/unvisitedTooltip"
-msgstr "Contraband needs to be delivered to the planet at these coordinates."
+msgstr "Smuggled goods must be delivered to the planet at these coordinates."
 
 #: src-ru/data/hyperspace.xml:23607
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_CON_TRANSPORTTOPLANET_GIP\"]/beaconType/visitedTooltip"
 msgstr ""
-"Contraband needs to be delivered to the planet at these coordinates. "
+"Smuggled goods must be delivered to the planet at these coordinates. "
 "Visited."
 
 #: src-ru/data/hyperspace.xml:23613
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS\"]/beaconType/unvisitedTooltip"
-msgstr "Contraband needs to be delivered to the planet at these coordinates."
+msgstr "Smuggled goods must be delivered to the planet at these coordinates."
 
 #: src-ru/data/hyperspace.xml:23614
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_CON_TRANSPORTTOPLANET_RUS\"]/beaconType/visitedTooltip"
 msgstr ""
-"Contraband needs to be delivered to the planet at these coordinates. "
+"Smuggled goods must be delivered to the planet at these coordinates. "
 "Visited."
 
 #: src-ru/data/hyperspace.xml:23620
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/beaconType/unvisitedTooltip"
-msgstr "A cargo ship with construction materials got lost somewhere here."
+msgstr ""
+"A cargo ship carrying building materials was lost somewhere around here."
 
 #: src-ru/data/hyperspace.xml:23621
 msgid ""
 "data/hyperspace.xml$//event[@name=\"QUEST_CONSTRUCTIONYARD_LIST\"]/beaconType/visitedTooltip"
 msgstr ""
-"A cargo ship with construction materials got lost somewhere here. Visited."
+"A cargo ship carrying building materials was lost somewhere around here. "
+"Visited."
 
 #: src-ru/data/hyperspace.xml:24321
 msgid "data/hyperspace.xml$//triggeredEventBox[@name=\"DEFAULT_TIMER\"]/tooltip"
@@ -5244,7 +5245,7 @@ msgstr "Zoltan Eye"
 
 #: src-ru/data/hyperspace.xml:28369
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_EYE_1\"]/description"
-msgstr "Find the most ancient object in the Zoltan Homeworlds."
+msgstr "Find the most ancient object in the Zoltan homeworld."
 
 #: src-ru/data/hyperspace.xml:28375
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_EYE_2\"]/name"
@@ -5252,7 +5253,7 @@ msgstr "Second Eye"
 
 #: src-ru/data/hyperspace.xml:28376
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_EYE_2\"]/description"
-msgstr "Find the most ancient object in the Zolton Homeworlds."
+msgstr "Find the most ancient object in the Zoltan homeworld."
 
 #: src-ru/data/hyperspace.xml:28382
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CONTAINER\"]/name"
@@ -5260,7 +5261,7 @@ msgstr "Surprisingly Useful"
 
 #: src-ru/data/hyperspace.xml:28383
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CONTAINER\"]/description"
-msgstr "Give the container to Admiral Tully."
+msgstr "Hand over the container to Admiral Tully."
 
 #: src-ru/data/hyperspace.xml:28384
 msgid ""
@@ -5269,11 +5270,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28390
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GOOD_LASER\"]/name"
-msgstr "A Lucky Dig"
+msgstr "Lucky Excavation"
 
 #: src-ru/data/hyperspace.xml:28391
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GOOD_LASER\"]/description"
-msgstr "Find a really good weapon among the junk."
+msgstr "Find a genuinely good weapon among the junk."
 
 #: src-ru/data/hyperspace.xml:28392
 msgid ""
@@ -5282,11 +5283,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28398
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEVIL_DEAL\"]/name"
-msgstr "A Good Deal"
+msgstr "Profitable Deal"
 
 #: src-ru/data/hyperspace.xml:28399
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEVIL_DEAL\"]/description"
-msgstr "Sign a dubious contract with an invisible creature."
+msgstr "Sign a dubious contract with an invisible entity."
 
 #: src-ru/data/hyperspace.xml:28400
 msgid ""
@@ -5295,11 +5296,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28406
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEVIL_DEAL2\"]/name"
-msgstr "A Better Deal"
+msgstr "More Profitable Deal"
 
 #: src-ru/data/hyperspace.xml:28407
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEVIL_DEAL2\"]/description"
-msgstr "The invisible creature signs its own contract."
+msgstr "The invisible entity signs its own contract."
 
 #: src-ru/data/hyperspace.xml:28408
 msgid ""
@@ -5308,7 +5309,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28414
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_FUEL_TANKER\"]/name"
-msgstr "Fuel Tanker"
+msgstr "Fuel Truck"
 
 #: src-ru/data/hyperspace.xml:28415
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_FUEL_TANKER\"]/secretName"
@@ -5348,7 +5349,7 @@ msgstr "Find the legendary Lanius."
 
 #: src-ru/data/hyperspace.xml:28438
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ORCHID_LEGENDARY\"]/name"
-msgstr "Vanda"
+msgstr "Wanda"
 
 #: src-ru/data/hyperspace.xml:28439
 msgid ""
@@ -5362,7 +5363,7 @@ msgstr "Find the legendary Orchid."
 
 #: src-ru/data/hyperspace.xml:28446
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HUMAN_LEGENDARY\"]/name"
-msgstr "Vichgan"
+msgstr "Witchgun"
 
 #: src-ru/data/hyperspace.xml:28447
 msgid ""
@@ -5426,7 +5427,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28480
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_ROCK_LEGENDARY\"]/description"
-msgstr "Find the legendary Rockman."
+msgstr "Find the legendary Rock."
 
 #: src-ru/data/hyperspace.xml:28486
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ENERGY_LEGENDARY\"]/name"
@@ -5454,7 +5455,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28496
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_ENERGYX_LEGENDARY\"]/description"
-msgstr "Find the legendary Zolton."
+msgstr "Find the legendary Zoltan."
 
 #: src-ru/data/hyperspace.xml:28502
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ORDER_LEGENDARY\"]/name"
@@ -5472,7 +5473,7 @@ msgstr "Find the legendary Order Human."
 
 #: src-ru/data/hyperspace.xml:28510
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SLUG_LEGENDARY\"]/name"
-msgstr "Miser"
+msgstr "Scrooge"
 
 #: src-ru/data/hyperspace.xml:28511
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SLUG_LEGENDARY\"]/secretName"
@@ -5494,11 +5495,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28520
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SLIG_LEGENDARY\"]/description"
-msgstr "Find the legendary Slerm."
+msgstr "Find the legendary Slurm."
 
 #: src-ru/data/hyperspace.xml:28526
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_KEEPER_LEGENDARY\"]/name"
-msgstr ""
+msgstr "Duriel"
 
 #: src-ru/data/hyperspace.xml:28527
 msgid ""
@@ -5508,16 +5509,16 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28528
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_KEEPER_LEGENDARY\"]/description"
-msgstr ""
+msgstr "Find the legendary Guardian."
 
 #: src-ru/data/hyperspace.xml:28534
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_INSIDE_MONSTER\"]/name"
-msgstr "They Can't Stand Us Here!"
+msgstr "We Are Not Welcome Here!"
 
 #: src-ru/data/hyperspace.xml:28535
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_INSIDE_MONSTER\"]/description"
-msgstr "End up inside a living organism."
+msgstr "Find yourself inside a living organism."
 
 #: src-ru/data/hyperspace.xml:28536
 msgid ""
@@ -5530,7 +5531,7 @@ msgstr "Is It Because I'm Black?"
 
 #: src-ru/data/hyperspace.xml:28543
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ELITE_X\"]/description"
-msgstr "Destroy the Black-Wing."
+msgstr "Destroy the Black Wing."
 
 #: src-ru/data/hyperspace.xml:28544
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ELITE_X\"]/secretDescription"
@@ -5576,7 +5577,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28574
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_WIRECUTTER\"]/name"
-msgstr "Cut the Wire, Quick!"
+msgstr "Cut the wire quickly!"
 
 #: src-ru/data/hyperspace.xml:28575
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_WIRECUTTER\"]/description"
@@ -5622,7 +5623,7 @@ msgstr "Auction"
 
 #: src-ru/data/hyperspace.xml:28600
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_AUCTION\"]/description"
-msgstr "Win at the Slerm auction."
+msgstr "Win at a Slurm auction."
 
 #: src-ru/data/hyperspace.xml:28601
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_AUCTION\"]/secretDescription"
@@ -5634,7 +5635,7 @@ msgstr "Victory-Colored Pants"
 
 #: src-ru/data/hyperspace.xml:28608
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHTANI\"]/description"
-msgstr "Bet on the Mantis with the right colored pants and win."
+msgstr "Bet on the Mantis in the right pants and win."
 
 #: src-ru/data/hyperspace.xml:28609
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHTANI\"]/secretDescription"
@@ -5646,7 +5647,7 @@ msgstr "Nano-Regen"
 
 #: src-ru/data/hyperspace.xml:28616
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_NANOREGEN\"]/description"
-msgstr "Obtain the nano-regenerator."
+msgstr "Obtain a nano-regenerator."
 
 #: src-ru/data/hyperspace.xml:28617
 msgid ""
@@ -5659,7 +5660,7 @@ msgstr "Wrong Ions"
 
 #: src-ru/data/hyperspace.xml:28624
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ION_VULKAN\"]/description"
-msgstr "Find a fake Ion Volcano in a scrapyard."
+msgstr "Find a replica of an Ion Vulcan at a junkyard."
 
 #: src-ru/data/hyperspace.xml:28625
 msgid ""
@@ -5668,7 +5669,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28631
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MINIBOSS\"]/name"
-msgstr "Test Successful"
+msgstr "Testing Was Successful"
 
 #: src-ru/data/hyperspace.xml:28632
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MINIBOSS\"]/secretName"
@@ -5689,7 +5690,7 @@ msgstr "Level 80 Defense"
 
 #: src-ru/data/hyperspace.xml:28641
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEFENSE_UNI\"]/description"
-msgstr "Obtain a unique defense drone in an Engi sector."
+msgstr "Obtain a unique defense drone in the Engi sector."
 
 #: src-ru/data/hyperspace.xml:28642
 msgid ""
@@ -5719,7 +5720,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28658
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TRUE_GREED\"]/description"
-msgstr "Disassemble 29 hull points with Slug gel at once."
+msgstr "Dismantle 29 hull units with Slug gel at once."
 
 #: src-ru/data/hyperspace.xml:28664
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MATH\"]/name"
@@ -5735,7 +5736,7 @@ msgstr "Solve a math problem."
 
 #: src-ru/data/hyperspace.xml:28672
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HALCYON\"]/name"
-msgstr "A Familiar Place"
+msgstr "Familiar Place"
 
 #: src-ru/data/hyperspace.xml:28673
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HALCYON\"]/secretName"
@@ -5763,7 +5764,7 @@ msgstr "Win the lottery."
 
 #: src-ru/data/hyperspace.xml:28689
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BLINK\"]/name"
-msgstr "A Shot to the Balls"
+msgstr "Ball Buster"
 
 #: src-ru/data/hyperspace.xml:28690
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BLINK\"]/secretName"
@@ -5771,7 +5772,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28691
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BLINK\"]/description"
-msgstr "Destroy the glowing sphere."
+msgstr "Destroy the glowing orb."
 
 #: src-ru/data/hyperspace.xml:28692
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BLINK\"]/secretDescription"
@@ -5779,7 +5780,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28698
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GIVE_FUEL_WRONG\"]/name"
-msgstr "My Mistake!"
+msgstr "I Messed Up!"
 
 #: src-ru/data/hyperspace.xml:28699
 msgid ""
@@ -5797,7 +5798,7 @@ msgstr "Special Achievements+:"
 
 #: src-ru/data/hyperspace.xml:28713
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ZOLTAN_TLDR\"]/name"
-msgstr "Blah, Blah, Blah!"
+msgstr "Blah-Blah-Blah!"
 
 #: src-ru/data/hyperspace.xml:28714
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ZOLTAN_TLDR\"]/secretName"
@@ -5805,7 +5806,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28715
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ZOLTAN_TLDR\"]/description"
-msgstr "Read the Zoltan wartime codex."
+msgstr "Read the Zoltan Wartime Codex."
 
 #: src-ru/data/hyperspace.xml:28722
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CRAZY\"]/name"
@@ -5817,11 +5818,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28724
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CRAZY\"]/description"
-msgstr "Receive the Orchid curse"
+msgstr "Receive the Orchid Curse."
 
 #: src-ru/data/hyperspace.xml:28730
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_LAST_HERO\"]/name"
-msgstr "The Last Hero"
+msgstr "Last Hero"
 
 #: src-ru/data/hyperspace.xml:28731
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_LAST_HERO\"]/secretName"
@@ -5829,11 +5830,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28732
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_LAST_HERO\"]/description"
-msgstr "Send the crew to certain death in the Rebel wave."
+msgstr "Send the crew to certain death in a Rebel wave."
 
 #: src-ru/data/hyperspace.xml:28738
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_LONGJUMP\"]/name"
-msgstr "Pressed into My Seat!"
+msgstr "Pressed Into the Seat!"
 
 #: src-ru/data/hyperspace.xml:28739
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_LONGJUMP\"]/secretName"
@@ -5841,11 +5842,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28740
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_LONGJUMP\"]/description"
-msgstr "Make a jump using 5 or more units of fuel."
+msgstr "Perform a jump using 5 or more units of fuel."
 
 #: src-ru/data/hyperspace.xml:28746
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEMONTAZH\"]/name"
-msgstr "It Was Just Taking Up Space!"
+msgstr "Just Taking Up Space!"
 
 #: src-ru/data/hyperspace.xml:28747
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEMONTAZH\"]/secretName"
@@ -5857,7 +5858,7 @@ msgstr "Dismantle any system on your ship."
 
 #: src-ru/data/hyperspace.xml:28754
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER\"]/name"
-msgstr "Soulsplitter?"
+msgstr "Soul-Killer?"
 
 #: src-ru/data/hyperspace.xml:28755
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER\"]/secretName"
@@ -5865,7 +5866,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28756
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER\"]/description"
-msgstr "Obtain a special plant-weapon."
+msgstr "Obtain a special plant weapon."
 
 #: src-ru/data/hyperspace.xml:28757
 msgid ""
@@ -5874,7 +5875,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28763
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER2\"]/name"
-msgstr "Soulsplitter!"
+msgstr "Soul-Killer!"
 
 #: src-ru/data/hyperspace.xml:28764
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER2\"]/secretName"
@@ -5882,7 +5883,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28765
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER2\"]/description"
-msgstr "Obtain a special plant-weapon again at the start of a run."
+msgstr "Re-obtain the special plant weapon at the start of a flight."
 
 #: src-ru/data/hyperspace.xml:28766
 msgid ""
@@ -5899,7 +5900,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28774
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SOULREAPER3\"]/description"
-msgstr "Grow the plant-weapon to its maximum size."
+msgstr "Grow the plant weapon to maximum size."
 
 #: src-ru/data/hyperspace.xml:28775
 msgid ""
@@ -5908,7 +5909,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28782
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GLIF_GUN\"]/name"
-msgstr ""
+msgstr "Glyphs"
 
 #: src-ru/data/hyperspace.xml:28783
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GLIF_GUN\"]/secretName"
@@ -5916,7 +5917,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28784
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GLIF_GUN\"]/description"
-msgstr ""
+msgstr "Obtain the special glyph-gun."
 
 #: src-ru/data/hyperspace.xml:28785
 msgid ""
@@ -5947,11 +5948,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28801
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_REPAIR_SHOTGUN_3\"]/description"
-msgstr "Repair a Flak Mk III."
+msgstr "Repair the Flak Mod III."
 
 #: src-ru/data/hyperspace.xml:28807
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SELL_40_MISSILES\"]/name"
-msgstr "We Have Plenty of This Stuff!"
+msgstr "We've Got Plenty of This Stuff!"
 
 #: src-ru/data/hyperspace.xml:28808
 msgid ""
@@ -5961,7 +5962,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28809
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SELL_40_MISSILES\"]/description"
-msgstr "Sell 40 ammo at once on the black market using a replicator."
+msgstr "Sell 40 munitions on the black market at once using a replicator."
 
 #: src-ru/data/hyperspace.xml:28815
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_PROJEATER\"]/name"
@@ -5973,8 +5974,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28817
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_PROJEATER\"]/description"
-msgstr ""
-"Destroy 20 projectiles with a single activation of the Shot Disruptor."
+msgstr "Destroy 20 projectiles in one use of the projectile annihilator."
 
 #: src-ru/data/hyperspace.xml:28824
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MISSILENDLESS\"]/name"
@@ -5998,7 +5998,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28834
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_FATAL_ERROR\"]/description"
-msgstr "Your human blew up while disarming a mine."
+msgstr "Your crew member was blown up while defusing a mine."
 
 #: src-ru/data/hyperspace.xml:28835
 msgid ""
@@ -6016,11 +6016,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28843
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_GET_WEAPON_RDY\"]/description"
-msgstr "Obtain a weapon with a heating injector."
+msgstr "Obtain a weapon with a pre-heater injector."
 
 #: src-ru/data/hyperspace.xml:28850
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_PAY_DAN\"]/name"
-msgstr "The Yoke Again?"
+msgstr "Yoke Again?"
 
 #: src-ru/data/hyperspace.xml:28851
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_PAY_DAN\"]/secretName"
@@ -6040,7 +6040,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28860
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CARD_DECK\"]/description"
-msgstr "Find a deck of cards for playing blackjack."
+msgstr "Find a deck of cards for Blackjack."
 
 #: src-ru/data/hyperspace.xml:28867
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CARD_DECK2\"]/name"
@@ -6052,11 +6052,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28869
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_CARD_DECK2\"]/description"
-msgstr "Find a deck of cards for playing poker."
+msgstr "Find a deck of cards for Poker."
 
 #: src-ru/data/hyperspace.xml:28876
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TRUE_END\"]/name"
-msgstr "The Black Lord"
+msgstr "Dark Lord"
 
 #: src-ru/data/hyperspace.xml:28877
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TRUE_END\"]/secretName"
@@ -6081,11 +6081,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28889
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DEAD_CARGO\"]/description"
-msgstr "Bring a stasis pod to sector 8."
+msgstr "Bring a Stasis Pod to Sector 8."
 
 #: src-ru/data/hyperspace.xml:28895
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BAD_BEGIN\"]/name"
-msgstr "Failed to Launch"
+msgstr "Didn't Take Off"
 
 #: src-ru/data/hyperspace.xml:28896
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BAD_BEGIN\"]/secretName"
@@ -6109,7 +6109,7 @@ msgstr "Create a breach in every room of an enemy ship."
 
 #: src-ru/data/hyperspace.xml:28911
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHILO_MILO\"]/name"
-msgstr "A Pointless Exchange"
+msgstr "Trade One for Another"
 
 #: src-ru/data/hyperspace.xml:28912
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHILO_MILO\"]/secretName"
@@ -6129,11 +6129,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28921
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MUSHROOM_KID\"]/description"
-msgstr "Receive a young Mushroom from an old one."
+msgstr "Obtain a young Mushroom from an old one."
 
 #: src-ru/data/hyperspace.xml:28927
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MAX_SPEED\"]/name"
-msgstr "Maximum Overclock"
+msgstr "Maximum Acceleration"
 
 #: src-ru/data/hyperspace.xml:28928
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MAX_SPEED\"]/secretName"
@@ -6142,10 +6142,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:28929
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MAX_SPEED\"]/description"
 msgstr ""
+"Equip 4 items that speed up weapon reload (Auto-loaders, Lightweight Pre-"
+"igniters, Charge Compensators)."
 
 #: src-ru/data/hyperspace.xml:28935
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TWOJUMPS\"]/name"
-msgstr "Straight Through!"
+msgstr "Stitched Through!"
 
 #: src-ru/data/hyperspace.xml:28936
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TWOJUMPS\"]/secretName"
@@ -6153,7 +6155,8 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28937
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TWOJUMPS\"]/description"
-msgstr "Visit only 2 beacons in a sector - the start and exit beacons."
+msgstr ""
+"Visit only 2 beacons in a sector - the starting beacon and the exit beacon."
 
 #: src-ru/data/hyperspace.xml:28943
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BAD_END\"]/name"
@@ -6165,11 +6168,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28945
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_BAD_END\"]/description"
-msgstr "Break your ship in sector 7 or 8."
+msgstr "Break your ship in Sector 7 or 8."
 
 #: src-ru/data/hyperspace.xml:28951
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_NEW_SHIP\"]/name"
-msgstr "We're Flying This Now"
+msgstr "Flying the Rest on This"
 
 #: src-ru/data/hyperspace.xml:28952
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_NEW_SHIP\"]/secretName"
@@ -6181,7 +6184,7 @@ msgstr "Lose your ship while having boarders on an enemy ship."
 
 #: src-ru/data/hyperspace.xml:28959
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_NO_PAUSE\"]/name"
-msgstr "Quick One"
+msgstr "Quick Fellow"
 
 #: src-ru/data/hyperspace.xml:28960
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_NO_PAUSE\"]/secretName"
@@ -6201,7 +6204,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28969
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GO_AWAY\"]/description"
-msgstr "Jettison a crew member into space."
+msgstr "Eject a crew member into space."
 
 #: src-ru/data/hyperspace.xml:28975
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HIT_CLOAKED\"]/name"
@@ -6213,7 +6216,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28977
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HIT_CLOAKED\"]/description"
-msgstr "Hit an enemy while it's cloaked."
+msgstr "Hit an enemy while they are cloaked."
 
 #: src-ru/data/hyperspace.xml:28983
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ILLBEBACK\"]/name"
@@ -6225,11 +6228,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28985
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ILLBEBACK\"]/description"
-msgstr "Escape during a fight without finishing off the enemy."
+msgstr "Flee during a fight without finishing the enemy."
 
 #: src-ru/data/hyperspace.xml:28991
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_THISISFINE\"]/name"
-msgstr "It's Getting Hot in Here!"
+msgstr "Getting Hot in Here!"
 
 #: src-ru/data/hyperspace.xml:28992
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_THISISFINE\"]/secretName"
@@ -6237,11 +6240,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:28993
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_THISISFINE\"]/description"
-msgstr "Have more than 15 fires on the ship at once."
+msgstr "Have more than 15 fires burning on the ship at once."
 
 #: src-ru/data/hyperspace.xml:28999
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HARDSELECT\"]/name"
-msgstr "A Tough Choice!"
+msgstr "Tough Choice!"
 
 #: src-ru/data/hyperspace.xml:29000
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HARDSELECT\"]/secretName"
@@ -6249,11 +6252,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29001
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HARDSELECT\"]/description"
-msgstr "Encounter a fork leading to two identical sectors."
+msgstr "Reach a fork in the road before two identical sectors."
 
 #: src-ru/data/hyperspace.xml:29007
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ANCHOR\"]/name"
-msgstr "Becalmed!"
+msgstr "Calm!"
 
 #: src-ru/data/hyperspace.xml:29008
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_ANCHOR\"]/secretName"
@@ -6273,11 +6276,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29017
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_HEAVYWEAP\"]/description"
-msgstr "Power 3 or more weapons of 3 or more energy simultaneously."
+msgstr "Power 3 weapons requiring 3 or more energy simultaneously."
 
 #: src-ru/data/hyperspace.xml:29023
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_WINFULLHP\"]/name"
-msgstr "Flawless Victory!"
+msgstr "Clean Victory!"
 
 #: src-ru/data/hyperspace.xml:29024
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_WINFULLHP\"]/secretName"
@@ -6285,7 +6288,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29025
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_WINFULLHP\"]/description"
-msgstr "Defeat the final boss with full hull."
+msgstr "Defeat the final boss while maintaining full hull."
 
 #: src-ru/data/hyperspace.xml:29031
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_JUMPEDWITH\"]/name"
@@ -6297,7 +6300,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29033
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_JUMPEDWITH\"]/description"
-msgstr "Lose a boarder due to an enemy jump."
+msgstr "Lose a boarder to an enemy jump."
 
 #: src-ru/data/hyperspace.xml:29039
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_STARTWEAPONS\"]/name"
@@ -6309,11 +6312,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29041
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_STARTWEAPONS\"]/description"
-msgstr "Arrive at the final boss with starting weapons."
+msgstr "Arrive at the final boss with starting guns."
 
 #: src-ru/data/hyperspace.xml:29047
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUPERSHIELDCREW\"]/name"
-msgstr ""
+msgstr "That Won't Help You!"
 
 #: src-ru/data/hyperspace.xml:29048
 msgid ""
@@ -6323,7 +6326,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29049
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_SUPERSHIELDCREW\"]/description"
-msgstr ""
+msgstr "Kill enemy crew through a Zoltan shield without taking it down."
 
 #: src-ru/data/hyperspace.xml:29055
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MANTISAGE\"]/name"
@@ -6335,15 +6338,15 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29057
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_MANTISAGE\"]/description"
-msgstr "Complete the Mantis maturity test fully."
+msgstr "Complete the Mantis Maturity Test in full."
 
 #: src-ru/data/hyperspace.xml:29066
 msgid "data/hyperspace.xml$/dummyroot/FTL/achievements/page[3]/section/@text"
-msgstr ""
+msgstr "Special Achievements++:"
 
 #: src-ru/data/hyperspace.xml:29068
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DONTNEEDIT\"]/name"
-msgstr "Thanks, But No Thanks!"
+msgstr "Thanks, No Thanks!"
 
 #: src-ru/data/hyperspace.xml:29069
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DONTNEEDIT\"]/secretName"
@@ -6351,11 +6354,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29070
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DONTNEEDIT\"]/description"
-msgstr "Sell back the free drone received with the Drone Control system."
+msgstr "Sell back a free drone received with a drone system."
 
 #: src-ru/data/hyperspace.xml:29076
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DRONE_SHOOTER\"]/name"
-msgstr ""
+msgstr "Drone Buster"
 
 #: src-ru/data/hyperspace.xml:29077
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DRONE_SHOOTER\"]/secretName"
@@ -6363,11 +6366,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29078
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_DRONE_SHOOTER\"]/description"
-msgstr ""
+msgstr "Shoot down 10 drones with ship weapons in one game."
 
 #: src-ru/data/hyperspace.xml:29085
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_OSA\"]/name"
-msgstr ""
+msgstr "Wasp's Nest"
 
 #: src-ru/data/hyperspace.xml:29086
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_OSA\"]/secretName"
@@ -6375,11 +6378,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29087
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_OSA\"]/description"
-msgstr ""
+msgstr "Have 8 or more friendly wasps on board at the start of Sector 8."
 
 #: src-ru/data/hyperspace.xml:29093
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_3_CHALLENGE\"]/name"
-msgstr ""
+msgstr "This Is Impossible..."
 
 #: src-ru/data/hyperspace.xml:29094
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_3_CHALLENGE\"]/secretName"
@@ -6387,11 +6390,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29095
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_3_CHALLENGE\"]/description"
-msgstr ""
+msgstr "Win with 3 challenges active simultaneously."
 
 #: src-ru/data/hyperspace.xml:29101
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUNDUK\"]/name"
-msgstr ""
+msgstr "Chest"
 
 #: src-ru/data/hyperspace.xml:29102
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUNDUK\"]/secretName"
@@ -6399,15 +6402,15 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29103
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUNDUK\"]/description"
-msgstr ""
+msgstr "Catch a chest while fishing."
 
 #: src-ru/data/hyperspace.xml:29112
 msgid "data/hyperspace.xml$/dummyroot/FTL/achievements/page[4]/section/@text"
-msgstr "Single Game Challenges:"
+msgstr "Single-Game Challenges:"
 
 #: src-ru/data/hyperspace.xml:29114
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_REBEL_WAVER\"]/name"
-msgstr "Stop Poking the Bear!"
+msgstr "Stop Teasing the Geese!"
 
 #: src-ru/data/hyperspace.xml:29115
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_REBEL_WAVER\"]/secretName"
@@ -6415,7 +6418,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29116
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_REBEL_WAVER\"]/description"
-msgstr "Enter the Rebel wave 10 times in a single game."
+msgstr "Enter a Rebel wave 10 times in one game."
 
 #: src-ru/data/hyperspace.xml:29123
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_INJECTOR_MASTER\"]/name"
@@ -6429,7 +6432,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29125
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_INJECTOR_MASTER\"]/description"
-msgstr "Inject 5 weapons in a single game."
+msgstr "Inject 5 weapons in one game."
 
 #: src-ru/data/hyperspace.xml:29132
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_AUGMENTS_MASTER\"]/name"
@@ -6443,11 +6446,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29134
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_AUGMENTS_MASTER\"]/description"
-msgstr "Embed 7 augmentations into the ship's structure in a single game."
+msgstr "Integrate 7 augments into the ship's structure in one game."
 
 #: src-ru/data/hyperspace.xml:29141
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_TRUE_ULTRAGREED\"]/name"
-msgstr "Please, Stop..."
+msgstr "Please, Enough..."
 
 #: src-ru/data/hyperspace.xml:29142
 msgid ""
@@ -6457,11 +6460,11 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29143
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_TRUE_ULTRAGREED\"]/description"
-msgstr "Disassemble 150 hull points with Slug gel in a single game."
+msgstr "Dismantle 150 hull units with Slug gel in one game."
 
 #: src-ru/data/hyperspace.xml:29150
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_RED_WAY\"]/name"
-msgstr "The Red Path"
+msgstr "Red Path"
 
 #: src-ru/data/hyperspace.xml:29151
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_RED_WAY\"]/secretName"
@@ -6469,11 +6472,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29152
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_RED_WAY\"]/description"
-msgstr "Visit 6 red sectors in a single game."
+msgstr "Visit 6 red sectors in one game."
 
 #: src-ru/data/hyperspace.xml:29159
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_VIOLET_WAY\"]/name"
-msgstr "The Purple Path"
+msgstr "Purple Path"
 
 #: src-ru/data/hyperspace.xml:29160
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_VIOLET_WAY\"]/secretName"
@@ -6481,11 +6484,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29161
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_VIOLET_WAY\"]/description"
-msgstr "Visit 6 purple sectors in a single game."
+msgstr "Visit 6 purple sectors in one game."
 
 #: src-ru/data/hyperspace.xml:29168
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GREEN_WAY\"]/name"
-msgstr "The Green Path"
+msgstr "Green Path"
 
 #: src-ru/data/hyperspace.xml:29169
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GREEN_WAY\"]/secretName"
@@ -6493,7 +6496,7 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29170
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GREEN_WAY\"]/description"
-msgstr "Visit 7 green sectors in a single game."
+msgstr "Visit 7 green sectors in one game."
 
 #: src-ru/data/hyperspace.xml:29180
 msgid "data/hyperspace.xml$/dummyroot/FTL/achievements/page[5]/section/@text"
@@ -6501,7 +6504,7 @@ msgstr "Meta-Achievements:"
 
 #: src-ru/data/hyperspace.xml:29183
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL1\"]/name"
-msgstr "Hard Disassembly I"
+msgstr "Hard Dismantling I"
 
 #: src-ru/data/hyperspace.xml:29184
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL1\"]/secretName"
@@ -6509,11 +6512,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29185
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL1\"]/description"
-msgstr "Disassemble 200 hull points with Slug gel across all games."
+msgstr "Dismantle 200 hull units with Slug gel across all games."
 
 #: src-ru/data/hyperspace.xml:29192
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL2\"]/name"
-msgstr "Hard Disassembly II"
+msgstr "Hard Dismantling II"
 
 #: src-ru/data/hyperspace.xml:29193
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL2\"]/secretName"
@@ -6521,11 +6524,11 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29194
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL2\"]/description"
-msgstr "Disassemble 500 hull points with Slug gel across all games."
+msgstr "Dismantle 500 hull units with Slug gel across all games."
 
 #: src-ru/data/hyperspace.xml:29201
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL3\"]/name"
-msgstr "Hard Disassembly III"
+msgstr "Hard Dismantling III"
 
 #: src-ru/data/hyperspace.xml:29202
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL3\"]/secretName"
@@ -6533,12 +6536,12 @@ msgstr "???"
 
 #: src-ru/data/hyperspace.xml:29203
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_META_SLUGGEL3\"]/description"
-msgstr "Disassemble 1000 hull points with Slug gel across all games."
+msgstr "Dismantle 1000 hull units with Slug gel across all games."
 
 #: src-ru/data/hyperspace.xml:29210
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_BLACKWING_KILLED1\"]/name"
-msgstr "Wing Lover I"
+msgstr "Wings Fan I"
 
 #: src-ru/data/hyperspace.xml:29211
 msgid ""
@@ -6548,12 +6551,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29212
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_BLACKWING_KILLED1\"]/description"
-msgstr "Destroy Black-Wing ships 5 times across all games."
+msgstr "Destroy Black Wing ships 5 times across all games."
 
 #: src-ru/data/hyperspace.xml:29219
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_BLACKWING_KILLED2\"]/name"
-msgstr "Wing Lover II"
+msgstr "Wings Fan II"
 
 #: src-ru/data/hyperspace.xml:29220
 msgid ""
@@ -6563,12 +6566,12 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29221
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_BLACKWING_KILLED2\"]/description"
-msgstr "Destroy Black-Wing ships 10 times across all games."
+msgstr "Destroy Black Wing ships 10 times across all games."
 
 #: src-ru/data/hyperspace.xml:29228
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_BLACKWING_KILLED3\"]/name"
-msgstr "Wing Lover III"
+msgstr "Wings Fan III"
 
 #: src-ru/data/hyperspace.xml:29229
 msgid ""
@@ -6578,7 +6581,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29230
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_BLACKWING_KILLED3\"]/description"
-msgstr "Destroy Black-Wing ships 30 times across all games."
+msgstr "Destroy Black Wing ships 30 times across all games."
 
 #: src-ru/data/hyperspace.xml:29237
 msgid ""
@@ -6593,7 +6596,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29239
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_MEET_REBEL_WAVE1\"]/description"
-msgstr "Dive into the Rebel wave 50 times across all games."
+msgstr "Dive into a Rebel wave 50 times across all games."
 
 #: src-ru/data/hyperspace.xml:29246
 msgid ""
@@ -6608,7 +6611,7 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29248
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_MEET_REBEL_WAVE2\"]/description"
-msgstr "Dive into the Rebel wave 300 times across all games."
+msgstr "Dive into a Rebel wave 300 times across all games."
 
 #: src-ru/data/hyperspace.xml:29255
 msgid ""
@@ -6623,4 +6626,4 @@ msgstr "???"
 #: src-ru/data/hyperspace.xml:29257
 msgid ""
 "data/hyperspace.xml$//achievement[@name=\"ACH_META_MEET_REBEL_WAVE3\"]/description"
-msgstr "Dive into the Rebel wave 1000 times across all games."
+msgstr "Dive into a Rebel wave 1000 times across all games."

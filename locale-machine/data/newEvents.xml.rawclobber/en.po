@@ -8,8 +8,8 @@ msgstr ""
 #: src-ru/data/newEvents.xml.rawclobber:359
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[1]"
 msgstr ""
-"TIP: Accuracy Injector - enemy evasion for a weapon with this injector is "
-"reduced by 100. When using cloaking, the enemy still has a small chance to "
+"TIP: Accuracy Injector — enemy evasion against weapons with this injector is"
+" reduced by 100. Using cloaking, the enemy still has a small chance to "
 "evade."
 
 #: src-ru/data/newEvents.xml.rawclobber:361
@@ -399,6 +399,10 @@ msgstr ""
 #: src-ru/data/newEvents.xml.rawclobber:423
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[59]"
 msgstr ""
+"TIP: Injectors — Injector augments can improve your weapon parameters. Keep "
+"in mind that their application is single-use; you cannot upgrade an already "
+"upgraded weapon or a weapon that is not compatible with that specific "
+"injector."
 
 #: src-ru/data/newEvents.xml.rawclobber:424
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"TIPS_LIST\"]/text[60]"
@@ -634,17 +638,19 @@ msgstr ""
 #: src-ru/data/newEvents.xml.rawclobber:627
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[4]/event/text"
-msgstr ""
+msgstr "You pay the training fee."
 
 #: src-ru/data/newEvents.xml.rawclobber:635
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TAVERN_HIRE\"]/choice[5]/text"
-msgstr ""
+msgstr "Just talk to the crew before the FTL drive charges."
 
 #: src-ru/data/newEvents.xml.rawclobber:641
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"TEACH_RANDOM_CREW_ALL_SKILLS\"]/text"
 msgstr ""
+"It seems that one of your crew members is now perfectly trained in all "
+"skills. This should come in handy..."
 
 #: src-ru/data/newEvents.xml.rawclobber:645
 msgid ""
@@ -1707,7 +1713,7 @@ msgstr "Explore the battlefield."
 #: src-ru/data/newEvents.xml.rawclobber:1448
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"WRECKAGE_EVENT\"]/choice[6]/text"
-msgstr "Ignore the wreckage and continue on."
+msgstr "Ignore the debris and continue the flight."
 
 #: src-ru/data/newEvents.xml.rawclobber:1453
 msgid "data/newEvents.xml.rawclobber$//textList[@name=\"WRECKAGE_TEXT\"]/text[1]"
@@ -1746,29 +1752,29 @@ msgstr ""
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[1]/text"
 msgstr ""
-"You scan the battlefield, but there's little left here. Disappointed, you "
-"prepare to jump."
+"You scan the battlefield, but little is left here. Disappointed, you prepare"
+" to jump."
 
 #: src-ru/data/newEvents.xml.rawclobber:1475
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[2]/text"
 msgstr ""
-"You scan the battlefield, but there's little left here. Disappointed, you "
-"prepare to jump."
+"You scan the battlefield, but little is left here. Disappointed, you prepare"
+" to jump."
 
 #: src-ru/data/newEvents.xml.rawclobber:1481
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[3]/text"
 msgstr ""
-"You scan the battlefield, but there's little left here. Disappointed, you "
-"prepare to jump."
+"You scan the battlefield, but little is left here. Disappointed, you prepare"
+" to jump."
 
 #: src-ru/data/newEvents.xml.rawclobber:1487
 msgid ""
 "data/newEvents.xml.rawclobber$//eventList[@name=\"WRECKAGE_INVESTIGATE\"]/event[4]/text"
 msgstr ""
-"You scan the battlefield, but there's little left here. Disappointed, you "
-"prepare to jump."
+"You scan the battlefield, but little is left here. Disappointed, you prepare"
+" to jump."
 
 #: src-ru/data/newEvents.xml.rawclobber:1493
 msgid ""
@@ -2611,7 +2617,7 @@ msgstr ""
 #: src-ru/data/newEvents.xml.rawclobber:2093
 msgid ""
 "data/newEvents.xml.rawclobber$//event[@name=\"CONFUSED_MANTIS\"]/choice[1]/event/choice[@req=\"orchid_crew\"]/text"
-msgstr "(Orchid Crew) The Orchid can pacify it with its pollen."
+msgstr "(Orchid crew member) The Orchid can calm him with its pollen."
 
 #: src-ru/data/newEvents.xml.rawclobber:2095
 msgid ""

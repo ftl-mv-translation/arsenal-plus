@@ -1508,8 +1508,8 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:467
 msgid "data/text_misc.xml.append$//text[@name=\"tip_shield\"]"
 msgstr ""
-"Tip: The Shield Drone generates a super shield while powered. The more "
-"active super shields there are, the longer this drone's cooldown."
+"Tip: Shield Drone generates a super shield while powered. The more active "
+"super shields there are, the longer this drone's recharge time."
 
 #: src-ru/data/text_misc.xml.append:469
 msgid "data/text_misc.xml.append$//text[@name=\"tip_boarding\"]"
@@ -4300,23 +4300,23 @@ msgstr "Arsenal +"
 
 #: src-ru/data/text_misc.xml.append:1349
 msgid "data/text_misc.xml.append$//text[@name=\"shields_4\"]"
-msgstr "5 shield barriers"
+msgstr "5 defense barriers"
 
 #: src-ru/data/text_misc.xml.append:1350
 msgid "data/text_misc.xml.append$//text[@name=\"shields_5\"]"
-msgstr "6 shield barriers"
+msgstr "6 defense barriers"
 
 #: src-ru/data/text_misc.xml.append:1351
 msgid "data/text_misc.xml.append$//text[@name=\"shields_6\"]"
-msgstr "7 shield barriers"
+msgstr "7 defense barriers"
 
 #: src-ru/data/text_misc.xml.append:1352
 msgid "data/text_misc.xml.append$//text[@name=\"shields_7\"]"
-msgstr "8 shield barriers"
+msgstr "8 defense barriers"
 
 #: src-ru/data/text_misc.xml.append:1354
 msgid "data/text_misc.xml.append$/dummyroot/FTL/text[1001]"
-msgstr "Your ship can only have \\1 augmentations installed."
+msgstr "Your ship can only be equipped with \\1 augments."
 
 #: src-ru/data/text_misc.xml.append:1355
 msgid "data/text_misc.xml.append$//text[@name=\"shot_limit\"]"
@@ -4328,7 +4328,7 @@ msgstr "Shots: \\1"
 
 #: src-ru/data/text_misc.xml.append:1357
 msgid "data/text_misc.xml.append$//text[@name=\"warning_shot_limit\"]"
-msgstr "NO SHOTS LEFT"
+msgstr "NO MORE SHOTS"
 
 #: src-ru/data/text_misc.xml.append:1359
 msgid "data/text_misc.xml.append$//text[@name=\"transfer_save_dialog\"]"
@@ -5587,15 +5587,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1782
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa1\"]"
-msgstr ""
+msgstr "Nectar"
 
 #: src-ru/data/text_misc.xml.append:1783
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa2\"]"
-msgstr ""
+msgstr "Sweet"
 
 #: src-ru/data/text_misc.xml.append:1784
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa3\"]"
-msgstr ""
+msgstr "Stripes"
 
 #: src-ru/data/text_misc.xml.append:1785
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa4\"]"
@@ -5603,59 +5603,59 @@ msgstr "Hornet"
 
 #: src-ru/data/text_misc.xml.append:1786
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa5\"]"
-msgstr ""
+msgstr "Buzz"
 
 #: src-ru/data/text_misc.xml.append:1787
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa6\"]"
-msgstr ""
+msgstr "Jojo"
 
 #: src-ru/data/text_misc.xml.append:1788
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa7\"]"
-msgstr ""
+msgstr "Stinger"
 
 #: src-ru/data/text_misc.xml.append:1789
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa8\"]"
-msgstr ""
+msgstr "Zu"
 
 #: src-ru/data/text_misc.xml.append:1790
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa9\"]"
-msgstr ""
+msgstr "Bee"
 
 #: src-ru/data/text_misc.xml.append:1791
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa10\"]"
-msgstr ""
+msgstr "Bite"
 
 #: src-ru/data/text_misc.xml.append:1792
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa11\"]"
-msgstr ""
+msgstr "Buzzak"
 
 #: src-ru/data/text_misc.xml.append:1793
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa12\"]"
-msgstr ""
+msgstr "Electra"
 
 #: src-ru/data/text_misc.xml.append:1794
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa13\"]"
-msgstr ""
+msgstr "Electron"
 
 #: src-ru/data/text_misc.xml.append:1795
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa14\"]"
-msgstr ""
+msgstr "Buzzy"
 
 #: src-ru/data/text_misc.xml.append:1796
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa15\"]"
-msgstr ""
+msgstr "Drone"
 
 #: src-ru/data/text_misc.xml.append:1797
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa16\"]"
-msgstr ""
+msgstr "Honeybadger"
 
 #: src-ru/data/text_misc.xml.append:1798
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa17\"]"
-msgstr ""
+msgstr "Whiz"
 
 #: src-ru/data/text_misc.xml.append:1799
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa18\"]"
-msgstr ""
+msgstr "Slime"
 
 #: src-ru/data/text_misc.xml.append:1800
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa19\"]"
@@ -5663,202 +5663,237 @@ msgstr "Sting"
 
 #: src-ru/data/text_misc.xml.append:1801
 msgid "data/text_misc.xml.append$//text[@name=\"lua_osa20\"]"
-msgstr ""
+msgstr "Buzzoni"
 
 #: src-ru/data/text_misc.xml.append:1802
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR10\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 33%."
 
 #: src-ru/data/text_misc.xml.append:1803
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR20\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 66%."
 
 #: src-ru/data/text_misc.xml.append:1804
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR30\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 100%."
 
 #: src-ru/data/text_misc.xml.append:1805
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR40\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 133%."
 
 #: src-ru/data/text_misc.xml.append:1806
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR50\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 166%."
 
 #: src-ru/data/text_misc.xml.append:1807
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR60\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 200%."
 
 #: src-ru/data/text_misc.xml.append:1808
 msgid "data/text_misc.xml.append$//text[@name=\"lua_AUTO_REPAIR70\"]"
 msgstr ""
+"Automatically repairs damaged ship systems, similar to drone ships. Repair "
+"speed 233%."
 
 #: src-ru/data/text_misc.xml.append:1809
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b1\"]"
-msgstr ""
+msgstr "Reduce energy consumption."
 
 #: src-ru/data/text_misc.xml.append:1810
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b2\"]"
-msgstr ""
+msgstr "Reduce cooldown."
 
 #: src-ru/data/text_misc.xml.append:1811
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b3\"]"
-msgstr ""
+msgstr "Increase projectile count."
 
 #: src-ru/data/text_misc.xml.append:1812
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b4\"]"
-msgstr ""
+msgstr "Increase total projectile damage."
 
 #: src-ru/data/text_misc.xml.append:1813
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b5\"]"
-msgstr ""
+msgstr "Increase system damage."
 
 #: src-ru/data/text_misc.xml.append:1814
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b6\"]"
-msgstr ""
+msgstr "Increase crew damage."
 
 #: src-ru/data/text_misc.xml.append:1815
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b7\"]"
-msgstr ""
+msgstr "Increase ion damage."
 
 #: src-ru/data/text_misc.xml.append:1816
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b8\"]"
-msgstr ""
+msgstr "Increase shield penetration."
 
 #: src-ru/data/text_misc.xml.append:1817
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b9\"]"
-msgstr ""
+msgstr "Increase breach chance."
 
 #: src-ru/data/text_misc.xml.append:1818
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b10\"]"
-msgstr ""
+msgstr "Increase fire chance."
 
 #: src-ru/data/text_misc.xml.append:1819
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b11\"]"
-msgstr ""
+msgstr "Add lockdown effect."
 
 #: src-ru/data/text_misc.xml.append:1820
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b12\"]"
-msgstr ""
+msgstr "Add double damage effect to empty rooms."
 
 #: src-ru/data/text_misc.xml.append:1821
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b13\"]"
-msgstr ""
+msgstr "Increase soul storage capacity."
 
 #: src-ru/data/text_misc.xml.append:1822
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_quit\"]"
-msgstr ""
+msgstr "Close Soul Reaper control panel."
 
 #: src-ru/data/text_misc.xml.append:1823
 msgid "data/text_misc.xml.append$//text[@name=\"lua_alien\"]"
-msgstr ""
+msgstr "Alien"
 
 #: src-ru/data/text_misc.xml.append:1824
 msgid "data/text_misc.xml.append$//text[@name=\"lua_speed_disabled\"]"
-msgstr ""
+msgstr "Acceleration disabled. To enable, press `"
 
 #: src-ru/data/text_misc.xml.append:1825
 msgid "data/text_misc.xml.append$//text[@name=\"lua_controlled_by_crew\"]"
-msgstr ""
+msgstr "Manned: 25% faster recharge"
 
 #: src-ru/data/text_misc.xml.append:1826
 msgid "data/text_misc.xml.append$//text[@name=\"lua_notcontrolled_by_crew\"]"
-msgstr ""
+msgstr "Unmanned: standard recharge"
 
 #: src-ru/data/text_misc.xml.append:1827
 msgid "data/text_misc.xml.append$//text[@name=\"lua_explode_hackdrone\"]"
-msgstr ""
+msgstr "Detonate your boarding drone."
 
 #: src-ru/data/text_misc.xml.append:1828
 msgid "data/text_misc.xml.append$//text[@name=\"lua_notexplode_hackdrone\"]"
-msgstr ""
+msgstr "Cannot detonate your boarding drone right now."
 
 #: src-ru/data/text_misc.xml.append:1829
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_dronemode_on\"]"
 msgstr ""
+"Toggle ship drone mode.\\nCurrent: "
+"[style[color:33FF33FF]]Automatic[[/style]]"
 
 #: src-ru/data/text_misc.xml.append:1830
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_dronemode_off\"]"
 msgstr ""
+"Toggle ship drone mode.\\nCurrent: [style[color:FFFF33FF]]Manual[[/style]]"
 
 #: src-ru/data/text_misc.xml.append:1831
 msgid "data/text_misc.xml.append$//text[@name=\"lua_additional_augplace\"]"
 msgstr ""
+"This ship has fewer weapon slots, but more augment and drone slots. Extra "
+"augment slots:"
 
 #: src-ru/data/text_misc.xml.append:1832
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inner_aug\"]"
-msgstr ""
+msgstr "Built-in augment:"
 
 #: src-ru/data/text_misc.xml.append:1833
 msgid "data/text_misc.xml.append$//text[@name=\"lua_needed_help_ship\"]"
-msgstr ""
+msgstr "A nearby ship requires assistance."
 
 #: src-ru/data/text_misc.xml.append:1834
 msgid "data/text_misc.xml.append$//text[@name=\"lua_needed_help_station\"]"
-msgstr ""
+msgstr "A nearby station or settlement requires assistance."
 
 #: src-ru/data/text_misc.xml.append:1835
 msgid "data/text_misc.xml.append$//text[@name=\"lua_advanced_ai\"]"
 msgstr ""
+"This enemy has an advanced targeting system. Shields, engines, weapons, "
+"wounded crew, and active cloning bays will be targeted more frequently."
 
 #: src-ru/data/text_misc.xml.append:1836
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_player_missing\"]"
 msgstr ""
+"Your weapons are cursed. Hit chance reduced by 50%. Beacons remaining:"
 
 #: src-ru/data/text_misc.xml.append:1837
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_enemy_hitting\"]"
-msgstr ""
+msgstr "Your ship is cursed. Evasion reduced by 50%. Beacons remaining:"
 
 #: src-ru/data/text_misc.xml.append:1838
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_enemy_firing\"]"
 msgstr ""
+"Any enemy projectile that has a fire chance will ignite fire guaranteed. "
+"Beacons remaining:"
 
 #: src-ru/data/text_misc.xml.append:1839
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase\"]"
-msgstr ""
+msgstr "An Orchid frigate is pursuing you. Beacons remaining:"
 
 #: src-ru/data/text_misc.xml.append:1840
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_cold\"]"
 msgstr ""
+"You are in a very cold place. Occasionally ship rooms will freeze and hull "
+"will breach."
 
 #: src-ru/data/text_misc.xml.append:1841
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_crystals\"]"
 msgstr ""
+"You are in a crystal field. Crystals will periodically hit your ship. "
+"Crystals penetrate 1 layer of shields."
 
 #: src-ru/data/text_misc.xml.append:1842
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_nanites\"]"
 msgstr ""
+"You are in a nanite cloud. Systems will periodically take erosion damage."
 
 #: src-ru/data/text_misc.xml.append:1843
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_radiation\"]"
 msgstr ""
+"You are under intense radiation. Equipment is holding, but consequences for "
+"the crew may be unpredictable..."
 
 #: src-ru/data/text_misc.xml.append:1844
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_wild_drones\"]"
 msgstr ""
+"You are near a group of wild drones. Occasionally they will attempt to "
+"attack any nearby ships."
 
 #: src-ru/data/text_misc.xml.append:1845
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_ultra_sun\"]"
 msgstr ""
+"You are under very high temperatures. Fires on the ship are almost "
+"inevitable."
 
 #: src-ru/data/text_misc.xml.append:1846
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_soulreaper_panel\"]"
-msgstr ""
+msgstr "Toggle Soul Reaper control panel."
 
 #: src-ru/data/text_misc.xml.append:1847
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_up_limit\"]"
-msgstr ""
+msgstr "Upgrade limit reached."
 
 #: src-ru/data/text_misc.xml.append:1848
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_no_soul\"]"
-msgstr ""
+msgstr "Not enough souls."
 
 #: src-ru/data/text_misc.xml.append:1849
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_desc\"]"
 msgstr ""
 "This weapon devours the souls of destroyed ships. Must be in a weapon slot "
-"at the moment of explosion (does not work in the rebel wave). Cannot be "
-"improved by injectors."
+"at the moment of the explosion (does not work during rebel waves). Cannot be"
+" upgraded with injectors."
 
 #: src-ru/data/text_misc.xml.append:1850
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_charact\"]"
@@ -5866,7 +5901,7 @@ msgstr "Characteristics:"
 
 #: src-ru/data/text_misc.xml.append:1851
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_req_pow\"]"
-msgstr ""
+msgstr "Requires energy:"
 
 #: src-ru/data/text_misc.xml.append:1852
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_noreq_pow\"]"
@@ -5874,43 +5909,43 @@ msgstr "It does not require nutrition"
 
 #: src-ru/data/text_misc.xml.append:1853
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_cooldown\"]"
-msgstr ""
+msgstr "Cooldown:"
 
 #: src-ru/data/text_misc.xml.append:1854
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_sec\"]"
-msgstr ""
+msgstr "sec."
 
 #: src-ru/data/text_misc.xml.append:1855
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_shots\"]"
-msgstr ""
+msgstr "Shots per charge:"
 
 #: src-ru/data/text_misc.xml.append:1856
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagehull\"]"
-msgstr ""
+msgstr "Hull damage:"
 
 #: src-ru/data/text_misc.xml.append:1857
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagesys\"]"
-msgstr ""
+msgstr "System damage:"
 
 #: src-ru/data/text_misc.xml.append:1858
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damagecrew\"]"
-msgstr ""
+msgstr "Crew damage:"
 
 #: src-ru/data/text_misc.xml.append:1859
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_damageion\"]"
-msgstr ""
+msgstr "Ion damage:"
 
 #: src-ru/data/text_misc.xml.append:1860
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_spierce\"]"
-msgstr ""
+msgstr "Shield piercing:"
 
 #: src-ru/data/text_misc.xml.append:1861
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_bc\"]"
-msgstr ""
+msgstr "Breach chance:"
 
 #: src-ru/data/text_misc.xml.append:1862
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_fc\"]"
-msgstr ""
+msgstr "Fire chance:"
 
 #: src-ru/data/text_misc.xml.append:1863
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_lockroom\"]"
@@ -5922,71 +5957,73 @@ msgstr "Double damage on compartments without systems"
 
 #: src-ru/data/text_misc.xml.append:1865
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_capacity\"]"
-msgstr ""
+msgstr "Soul container capacity:"
 
 #: src-ru/data/text_misc.xml.append:1866
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_soulreapername\"]"
-msgstr "Soulreaver"
+msgstr "Soul Eater"
 
 #: src-ru/data/text_misc.xml.append:1867
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_crystals\"]"
-msgstr ""
+msgstr "Ice field detected."
 
 #: src-ru/data/text_misc.xml.append:1868
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_cold\"]"
-msgstr ""
+msgstr "Ultra-low temperature area detected."
 
 #: src-ru/data/text_misc.xml.append:1869
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_wild_drones\"]"
-msgstr ""
+msgstr "Aggressive drones detected."
 
 #: src-ru/data/text_misc.xml.append:1870
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_nanites\"]"
-msgstr ""
+msgstr "Nanite cloud detected."
 
 #: src-ru/data/text_misc.xml.append:1871
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_radiation\"]"
-msgstr ""
+msgstr "Strong radioactive radiation detected."
 
 #: src-ru/data/text_misc.xml.append:1872
 msgid "data/text_misc.xml.append$//text[@name=\"lua_det_danger_ultra_sun\"]"
-msgstr ""
+msgstr "Ultra-high temperature area detected."
 
 #: src-ru/data/text_misc.xml.append:1873
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj\"]"
 msgstr ""
+"You remove the injector from your weapon. You can now install a different "
+"injector."
 
 #: src-ru/data/text_misc.xml.append:1874
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_PRC\"]"
-msgstr ""
+msgstr "Remove penetration injector."
 
 #: src-ru/data/text_misc.xml.append:1875
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_BRC\"]"
-msgstr ""
+msgstr "Remove breach injector."
 
 #: src-ru/data/text_misc.xml.append:1876
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_CLD\"]"
-msgstr ""
+msgstr "Remove cooldown injector."
 
 #: src-ru/data/text_misc.xml.append:1877
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_FRC\"]"
-msgstr ""
+msgstr "Remove fire injector."
 
 #: src-ru/data/text_misc.xml.append:1878
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_POW\"]"
-msgstr ""
+msgstr "Remove energy injector."
 
 #: src-ru/data/text_misc.xml.append:1879
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_UNI\"]"
-msgstr ""
+msgstr "Remove universal injector."
 
 #: src-ru/data/text_misc.xml.append:1880
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_ACC\"]"
-msgstr ""
+msgstr "Remove accuracy injector."
 
 #: src-ru/data/text_misc.xml.append:1881
 msgid "data/text_misc.xml.append$//text[@name=\"lua_remove_inj_RDY\"]"
-msgstr ""
+msgstr "Remove heating injector."
 
 #: src-ru/data/text_misc.xml.append:1882
 msgid "data/text_misc.xml.append$//text[@name=\"lua_inj_add1\"]"
@@ -6009,15 +6046,15 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1886
 msgid "data/text_misc.xml.append$//text[@name=\"lua_battle_ship_cost\"]"
-msgstr ""
+msgstr "Ship combat value:"
 
 #: src-ru/data/text_misc.xml.append:1887
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cargo_ship_cost\"]"
-msgstr ""
+msgstr "Ship value with cargo:"
 
 #: src-ru/data/text_misc.xml.append:1888
 msgid "data/text_misc.xml.append$//text[@name=\"lua_max_win\"]"
-msgstr ""
+msgstr "Max winning streak:"
 
 #: src-ru/data/text_misc.xml.append:1889
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_win\"]"
@@ -6025,7 +6062,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1890
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_sector_rew\"]"
-msgstr ""
+msgstr "Current income per sector:"
 
 #: src-ru/data/text_misc.xml.append:1891
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cur_count\"]"
@@ -6033,31 +6070,34 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1893
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_unknown\"]"
-msgstr ""
+msgstr "Not enough data for flight assessment... Keep flying!"
 
 #: src-ru/data/text_misc.xml.append:1894
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_known\"]"
-msgstr ""
+msgstr "Your current flight success rate is:"
 
 #: src-ru/data/text_misc.xml.append:1895
 msgid "data/text_misc.xml.append$//text[@name=\"lua_effectivity_info\"]"
 msgstr ""
+"(Based on the average income obtained from previous flights, at the start of"
+" this sector or at the end of the sector if the sector map was opened at the"
+" exit beacon)"
 
 #: src-ru/data/text_misc.xml.append:1897
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_easy\"]"
-msgstr ""
+msgstr "Sector stats for Easy mode"
 
 #: src-ru/data/text_misc.xml.append:1898
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_normal\"]"
-msgstr ""
+msgstr "Sector stats for Normal mode"
 
 #: src-ru/data/text_misc.xml.append:1899
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_hard\"]"
-msgstr ""
+msgstr "Sector stats for Hard mode"
 
 #: src-ru/data/text_misc.xml.append:1900
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_poppyhatty\"]"
-msgstr ""
+msgstr "Number   Avg.Income   Visited"
 
 #: src-ru/data/text_misc.xml.append:1901
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_nodata\"]"
@@ -6065,23 +6105,27 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1902
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_clearstat\"]"
-msgstr ""
+msgstr "Clear flight statistics"
 
 #: src-ru/data/text_misc.xml.append:1903
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_clearconfirm\"]"
-msgstr ""
+msgstr "Confirm clearing flight statistics"
 
 #: src-ru/data/text_misc.xml.append:1904
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_recon\"]"
 msgstr ""
+"Toggle sector income stat recording\\n[style[color:86c946]]Recording "
+"enabled[[/style]]"
 
 #: src-ru/data/text_misc.xml.append:1905
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_recoff\"]"
 msgstr ""
+"Toggle sector income stat recording\\n[style[color:d93130]]Recording "
+"disabled[[/style]]"
 
 #: src-ru/data/text_misc.xml.append:1906
 msgid "data/text_misc.xml.append$//text[@name=\"lua_statistic_fly\"]"
-msgstr ""
+msgstr "FLIGHT STATISTICS"
 
 #: src-ru/data/text_misc.xml.append:1907
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name1\"]"
@@ -6089,7 +6133,7 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:1908
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name2\"]"
-msgstr ""
+msgstr "Bethany Jones"
 
 #: src-ru/data/text_misc.xml.append:1909
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name3\"]"
@@ -6097,327 +6141,356 @@ msgstr "Adam"
 
 #: src-ru/data/text_misc.xml.append:1910
 msgid "data/text_misc.xml.append$//text[@name=\"trader_name4\"]"
-msgstr ""
+msgstr "Abe Isamu"
 
 #: src-ru/data/text_misc.xml.append:1911
 msgid "data/text_misc.xml.append$//text[@name=\"lua_nousedtacticalpause\"]"
-msgstr ""
+msgstr "Tactical pause was not used in this flight."
 
 #: src-ru/data/text_misc.xml.append:1912
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_infousage\"]"
 msgstr ""
+"In this menu at the starting beacon, you can select additional elements that"
+" make the game more difficult.\\n[style[color:86c946]]Changes are currently "
+"allowed.[[/style]]"
 
 #: src-ru/data/text_misc.xml.append:1913
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_infousage2\"]"
 msgstr ""
+"In this menu at the starting beacon, you can select additional elements that"
+" make the game more difficult.\\n[style[color:d93130]]Changes are currently "
+"disabled.[[/style]]"
 
 #: src-ru/data/text_misc.xml.append:1914
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_help\"]"
 msgstr ""
+"For every completed challenge, Tully will give you 10 ~ at the start\\nof "
+"the 8th sector in every subsequent flight (100 ~ maximum)."
 
 #: src-ru/data/text_misc.xml.append:1915
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_is_active_any\"]"
-msgstr ""
+msgstr "Warning! There are active challenges! Be careful!"
 
 #: src-ru/data/text_misc.xml.append:1916
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nopause_on\"]"
-msgstr ""
+msgstr "Tactical pause and slow-motion are disabled in this flight."
 
 #: src-ru/data/text_misc.xml.append:1917
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nopause_off\"]"
-msgstr ""
+msgstr "Tactical pause and slow-motion are active in this flight."
 
 #: src-ru/data/text_misc.xml.append:1918
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nofuel_on\"]"
-msgstr ""
+msgstr "Each jump will consume 1 extra unit of fuel (if available)."
 
 #: src-ru/data/text_misc.xml.append:1919
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nofuel_off\"]"
-msgstr ""
+msgstr "Each jump consumes the standard amount of fuel."
 
 #: src-ru/data/text_misc.xml.append:1920
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobrain_on\"]"
-msgstr ""
+msgstr "Crew loses all skills due to ship jumps."
 
 #: src-ru/data/text_misc.xml.append:1921
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobrain_off\"]"
-msgstr ""
+msgstr "Crew does not lose skills due to ship jumps."
 
 #: src-ru/data/text_misc.xml.append:1922
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noaug_on\"]"
 msgstr ""
+"All non-built-in ship augments (except non-removable ones) will be lost upon"
+" jumping."
 
 #: src-ru/data/text_misc.xml.append:1923
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noaug_off\"]"
-msgstr ""
+msgstr "Ship augments are retained in their slots as usual."
 
 #: src-ru/data/text_misc.xml.append:1924
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noinst_on\"]"
-msgstr ""
+msgstr "Embedding augments into the ship hull is disabled."
 
 #: src-ru/data/text_misc.xml.append:1925
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noinst_off\"]"
-msgstr ""
+msgstr "Embedding augments into the ship hull works as usual."
 
 #: src-ru/data/text_misc.xml.append:1926
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nomaxhp_on\"]"
-msgstr ""
+msgstr "Your crew has only half of their usual health."
 
 #: src-ru/data/text_misc.xml.append:1927
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nomaxhp_off\"]"
-msgstr ""
+msgstr "Crew has standard health."
 
 #: src-ru/data/text_misc.xml.append:1928
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noscrap_on\"]"
-msgstr ""
+msgstr "Scrap obtained in events is reduced by 50%."
 
 #: src-ru/data/text_misc.xml.append:1929
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noscrap_off\"]"
-msgstr ""
+msgstr "You receive the standard amount of scrap in events."
 
 #: src-ru/data/text_misc.xml.append:1930
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nosysca_on\"]"
 msgstr ""
+"Almost all enemy ships will be additionally equipped with Titanium System "
+"Casing."
 
 #: src-ru/data/text_misc.xml.append:1931
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nosysca_off\"]"
-msgstr ""
+msgstr "Enemy ships have their standard augments."
 
 #: src-ru/data/text_misc.xml.append:1932
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nodromis_on\"]"
-msgstr ""
+msgstr "All drone parts and missiles disappear from the hold upon jumping."
 
 #: src-ru/data/text_misc.xml.append:1933
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nodromis_off\"]"
-msgstr ""
+msgstr "Drone parts and missiles remain in their places upon jumps."
 
 #: src-ru/data/text_misc.xml.append:1934
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nozlt_on\"]"
 msgstr ""
+"Almost all enemy ships will be additionally equipped with a Zoltan Shield."
 
 #: src-ru/data/text_misc.xml.append:1935
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nozlt_off\"]"
-msgstr ""
+msgstr "Enemy ships have their standard augments."
 
 #: src-ru/data/text_misc.xml.append:1936
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_norare_on\"]"
-msgstr ""
+msgstr "Rare equipment is encountered significantly less often."
 
 #: src-ru/data/text_misc.xml.append:1937
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_norare_off\"]"
-msgstr ""
+msgstr "All equipment is encountered as usual."
 
 #: src-ru/data/text_misc.xml.append:1938
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_on\"]"
-msgstr ""
+msgstr "Your ship no longer has a cargo hold (after the first jump)."
 
 #: src-ru/data/text_misc.xml.append:1939
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_off\"]"
-msgstr ""
+msgstr "Your ship has a standard cargo hold."
 
 #: src-ru/data/text_misc.xml.append:1940
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_on\"]"
 msgstr ""
+"Map view is significantly reduced. There is no information about beacons."
 
 #: src-ru/data/text_misc.xml.append:1941
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_off\"]"
-msgstr ""
+msgstr "Map is visible as usual."
 
 #: src-ru/data/text_misc.xml.append:1942
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocont_on\"]"
 msgstr ""
+"Allied crew cannot be controlled, but don't worry: they know what to do!"
 
 #: src-ru/data/text_misc.xml.append:1943
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocont_off\"]"
-msgstr ""
+msgstr "Crew is controlled as usual."
 
 #: src-ru/data/text_misc.xml.append:1944
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_on\"]"
-msgstr ""
+msgstr "All enemies will have an experienced crew."
 
 #: src-ru/data/text_misc.xml.append:1945
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_off\"]"
-msgstr ""
+msgstr "On Hard mode, enemies with experienced crew will occasionally appear."
 
 #: src-ru/data/text_misc.xml.append:1946
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_on\"]"
 msgstr ""
+"After the first jump, the crew will start drinking, which will significantly"
+" reduce your volley accuracy."
 
 #: src-ru/data/text_misc.xml.append:1947
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_off\"]"
-msgstr ""
+msgstr "Your crew will not consume alcoholic beverages during the flight."
 
 #: src-ru/data/text_misc.xml.append:1948
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_on\"]"
-msgstr ""
+msgstr "All enemies will have advanced AI (including bosses)."
 
 #: src-ru/data/text_misc.xml.append:1949
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_off\"]"
 msgstr ""
+"On Hard mode, enemies with advanced AI will occasionally appear (except "
+"bosses)."
 
 #: src-ru/data/text_misc.xml.append:1950
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nohull_on\"]"
-msgstr ""
+msgstr "Ship hull cannot exceed 10 HP (after leaving the starting beacon)."
 
 #: src-ru/data/text_misc.xml.append:1951
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nohull_off\"]"
-msgstr ""
+msgstr "Ship hull has standard durability."
 
 #: src-ru/data/text_misc.xml.append:1952
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogeq_on\"]"
 msgstr ""
+"When entering a new sector, the most expensive drone or weapon will be "
+"removed."
 
 #: src-ru/data/text_misc.xml.append:1953
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogeq_off\"]"
-msgstr ""
+msgstr "Equipment is retained as usual when entering a new sector."
 
 #: src-ru/data/text_misc.xml.append:1954
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogus_on\"]"
 msgstr ""
+"After the first jump, a hungry royal figure will appear on the ship, who "
+"must be kept alive until the end. Feeds exclusively on scrap."
 
 #: src-ru/data/text_misc.xml.append:1955
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nogus_off\"]"
-msgstr ""
+msgstr "Special crew will not be added after the jump."
 
 #: src-ru/data/text_misc.xml.append:1956
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_on\"]"
 msgstr ""
+"Insector infestation! Almost all shops have been devoured by insector, "
+"including automatic stores at trade beacons."
 
 #: src-ru/data/text_misc.xml.append:1957
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_off\"]"
-msgstr ""
+msgstr "Shops appear as usual."
 
 #: src-ru/data/text_misc.xml.append:1958
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_on\"]"
 msgstr ""
+"Each jump or wait at a beacon will replace weapons with random ones of the "
+"same energy cost."
 
 #: src-ru/data/text_misc.xml.append:1959
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_off\"]"
-msgstr ""
+msgstr "Weapons do not change during jumps or while waiting at a beacon."
 
 #: src-ru/data/text_misc.xml.append:1960
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_on\"]"
-msgstr ""
+msgstr "All enemies will have increased accuracy."
 
 #: src-ru/data/text_misc.xml.append:1961
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_off\"]"
-msgstr ""
+msgstr "Enemies will have normal accuracy."
 
 #: src-ru/data/text_misc.xml.append:1962
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_on\"]"
-msgstr ""
+msgstr "An Orchid frigate will hunt you, don't hope to escape."
 
 #: src-ru/data/text_misc.xml.append:1963
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_off\"]"
-msgstr ""
+msgstr "No additional pursuits."
 
 #: src-ru/data/text_misc.xml.append:1964
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase_very\"]"
-msgstr ""
+msgstr "An Orchid frigate is pursuing you, and it won't back off..."
 
 #: src-ru/data/text_misc.xml.append:1965
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_on\"]"
-msgstr ""
+msgstr "After the first jump, event text is replaced with gibberish."
 
 #: src-ru/data/text_misc.xml.append:1966
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_off\"]"
-msgstr ""
+msgstr "Event text will be normal."
 
 #: src-ru/data/text_misc.xml.append:1967
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_on\"]"
-msgstr ""
+msgstr "All challenges will be disabled in the new flight."
 
 #: src-ru/data/text_misc.xml.append:1968
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_off\"]"
-msgstr ""
+msgstr "All challenges will retain their state in the new flight."
 
 #: src-ru/data/text_misc.xml.append:1969
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_rew_on\"]"
-msgstr ""
+msgstr "You will receive scrap rewards for completed challenges."
 
 #: src-ru/data/text_misc.xml.append:1970
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_rew_off\"]"
-msgstr ""
+msgstr "Rewards for completed challenges are disabled."
 
 #: src-ru/data/text_misc.xml.append:1971
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobf_on\"]"
-msgstr ""
+msgstr "The Rebel Flagship battle will have an extra phase."
 
 #: src-ru/data/text_misc.xml.append:1972
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobf_off\"]"
-msgstr ""
+msgstr "The Rebel Flagship battle will proceed as usual."
 
 #: src-ru/data/text_misc.xml.append:1973
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_easy\"]"
-msgstr ""
+msgstr "(Completed on Easy mode)"
 
 #: src-ru/data/text_misc.xml.append:1974
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_med\"]"
-msgstr ""
+msgstr "(Completed on Normal mode)"
 
 #: src-ru/data/text_misc.xml.append:1975
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_hard\"]"
-msgstr ""
+msgstr "(Completed on Hard mode)"
 
 #: src-ru/data/text_misc.xml.append:1976
 msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_auto\"]"
-msgstr ""
+msgstr "Artillery will fire automatically after charging into a random room."
 
 #: src-ru/data/text_misc.xml.append:1977
 msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_hand\"]"
-msgstr ""
+msgstr "Artillery will fire in manual mode at the selected room."
 
 #: src-ru/data/text_misc.xml.append:1978
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_tip\"]"
 msgstr ""
+"Button for casting the line, hooking, and reeling in fish (HotKey: RIGHT "
+"CTRL)."
 
 #: src-ru/data/text_misc.xml.append:1979
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_aug_main_name\"]"
-msgstr ""
+msgstr "Fish aromas (affect crew)."
 
 #: src-ru/data/text_misc.xml.append:1980
 msgid "data/text_misc.xml.append$//text[@name=\"lua_cancel_mindcontrol\"]"
-msgstr ""
+msgstr "Cancel mind control effect."
 
 #: src-ru/data/text_misc.xml.append:1981
 msgid "data/text_misc.xml.append$//text[@name=\"lua_nocancel_mindcontrol\"]"
-msgstr ""
+msgstr "Cannot cancel mind control effect right now."
 
 #: src-ru/data/text_misc.xml.append:1982
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fire_weakness\"]"
-msgstr ""
+msgstr "Crew on enemy ships (including allied) take triple fire damage."
 
 #: src-ru/data/text_misc.xml.append:1983
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_weap\"]"
-msgstr ""
+msgstr "A weapon was dropped here:"
 
 #: src-ru/data/text_misc.xml.append:1984
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_drone\"]"
-msgstr ""
+msgstr "A drone schematic was dropped here:"
 
 #: src-ru/data/text_misc.xml.append:1985
 msgid "data/text_misc.xml.append$//text[@name=\"lua_here_wasted_aug\"]"
-msgstr ""
+msgstr "An augment was dropped here:"
 
 #: src-ru/data/text_misc.xml.append:1986
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sector_scaner_active\"]"
-msgstr ""
+msgstr "Sector scanner active!"
 
 #: src-ru/data/text_misc.xml.append:1987
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_0\"]"
-msgstr ""
+msgstr "Ship power level: Trough."
 
 #: src-ru/data/text_misc.xml.append:1988
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_1\"]"
-msgstr ""
+msgstr "Ship power level: Cruiser."
 
 #: src-ru/data/text_misc.xml.append:1989
 msgid "data/text_misc.xml.append$//text[@name=\"lua_strong_2\"]"
-msgstr ""
+msgstr "Ship power level: Dreadnought."
 
 #: src-ru/data/text_misc.xml.append:1990
 msgid "data/text_misc.xml.append$//text[@name=\"lua_waiting_with_fuel\"]"
-msgstr ""
+msgstr "Toggle wait mode at beacon."
 
 #: src-ru/data/text_misc.xml.append:1991
 msgid "data/text_misc.xml.append$//text[@name=\"credit_victory_4_phase_end\"]"
@@ -6426,78 +6499,100 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:1992
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_aim_drones\"]"
 msgstr ""
+"Left-click to select the first target, right-click for the second. The X "
+"button on the left cancels targets. The cursor icon button toggles room "
+"selection mode. For beam drones, if two targets are selected, the beam trace"
+" will start from the first target and pass through the second. If the "
+"targets are identical or only one is selected, the second target will be "
+"random. For other combat drones, if two targets are selected, priority is "
+"given to systems that are not fully destroyed. If both systems are fully "
+"destroyed, drones will randomly target one of the two selected targets."
 
 #: src-ru/data/text_misc.xml.append:1993
 msgid "data/text_misc.xml.append$//text[@name=\"lua_capsule\"]"
 msgstr ""
+"Your ship has a life pod that can be used to delay the pursuing fleet."
 
 #: src-ru/data/text_misc.xml.append:1994
 msgid "data/text_misc.xml.append$//text[@name=\"lua_engi_monster_text_replacer\"]"
 msgstr ""
+"It seems the monster is quieting down, and hostile microorganisms have "
+"stopped attacking you. Calming down, you look around and find fuel near the "
+"beacon. Time to get out of here..."
 
 #: src-ru/data/text_misc.xml.append:1995
 msgid "data/text_misc.xml.append$//text[@name=\"lua_draw\"]"
 msgstr ""
+"Toggle route drawing mode on the sector map (use right-click on the map to "
+"add points)."
 
 #: src-ru/data/text_misc.xml.append:1996
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_draw\"]"
-msgstr ""
+msgstr "Clear drawn points."
 
 #: src-ru/data/text_misc.xml.append:1998
 msgid "data/text_misc.xml.append$//text[@name=\"tip_rainbow_beam\"]"
 msgstr ""
+"Red: 1 normal damage\n"
+"Orange: 90% fire\n"
+"Yellow: 45 anti-personnel damage\n"
+"Green: full ally healing\n"
+"Light blue: 1 ion damage\n"
+"Blue: lockdown\n"
+"Purple: 90% breach"
 
 #: src-ru/data/text_misc.xml.append:2006
 msgid "data/text_misc.xml.append$//text[@name=\"lua_enemy_has_nechet_shield\"]"
-msgstr ""
+msgstr "Enemy has an odd-numbered shield system level."
 
 #: src-ru/data/text_misc.xml.append:2007
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copy_this_weapon\"]"
-msgstr ""
+msgstr "Copy this weapon."
 
 #: src-ru/data/text_misc.xml.append:2008
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copyed_weapon\"]"
-msgstr ""
+msgstr "Weapon successfully copied. It can now be connected.\\n"
 
 #: src-ru/data/text_misc.xml.append:2011
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_1\"]"
-msgstr ""
+msgstr "overcome"
 
 #: src-ru/data/text_misc.xml.append:2012
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_2\"]"
-msgstr ""
+msgstr "Ultra-pumps"
 
 #: src-ru/data/text_misc.xml.append:2013
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_3\"]"
-msgstr ""
+msgstr "and slug gel"
 
 #: src-ru/data/text_misc.xml.append:2014
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_4\"]"
-msgstr ""
+msgstr "drone accelerator and"
 
 #: src-ru/data/text_misc.xml.append:2015
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_5\"]"
-msgstr ""
+msgstr "at the last"
 
 #: src-ru/data/text_misc.xml.append:2016
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_6\"]"
-msgstr ""
+msgstr "at the last two of four phases"
 
 #: src-ru/data/text_misc.xml.append:2017
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_7\"]"
-msgstr ""
+msgstr "waste"
 
 #: src-ru/data/text_misc.xml.append:2018
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_8\"]"
-msgstr ""
+msgstr "Kestrel"
 
 #: src-ru/data/text_misc.xml.append:2019
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_9\"]"
-msgstr ""
+msgstr "at the last, and some mysterious changes in artillery"
 
 #: src-ru/data/text_misc.xml.append:2020
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_10\"]"
 msgstr ""
+"at the last two of four phases, and some mysterious changes in artillery"
 
 #: src-ru/data/text_misc.xml.append:2021
 msgid ""
@@ -6507,158 +6602,168 @@ msgstr ""
 #: src-ru/data/text_misc.xml.append:2022
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery_remover\"]"
-msgstr ""
+msgstr "artillery"
 
 #: src-ru/data/text_misc.xml.append:2023
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_not_avaiable_install_artillery\"]"
-msgstr ""
+msgstr "Install artillery (system limit reached)."
 
 #: src-ru/data/text_misc.xml.append:2024
 msgid "data/text_misc.xml.append$//text[@name=\"lua_not_ship_install_artillery\"]"
-msgstr ""
+msgstr "Install artillery (not supported on your ship)."
 
 #: src-ru/data/text_misc.xml.append:2026
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_ready\"]"
-msgstr "Launch a projectile-destroying wave. Hotkey: DELETE"
+msgstr "Launch a wave that destroys projectiles. HotKey: DELETE"
 
 #: src-ru/data/text_misc.xml.append:2027
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_wait_cooldown\"]"
-msgstr ""
+msgstr "Cannot use: wait for recharge."
 
 #: src-ru/data/text_misc.xml.append:2028
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_needed_jump\"]"
-msgstr ""
+msgstr "Cannot use: requires an FTL jump to recharge."
 
 #: src-ru/data/text_misc.xml.append:2029
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_anaerobic\"]"
-msgstr ""
+msgstr "Anaerobic"
 
 #: src-ru/data/text_misc.xml.append:2030
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_anaerobic_choice_replacer\"]"
-msgstr ""
+msgstr "(Anaerobic Fire) Catalyst increasing fire damage is still active."
 
 #: src-ru/data/text_misc.xml.append:2031
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coefficients_zero\"]"
-msgstr ""
+msgstr "Ammo and drone part rewards are not reduced."
 
 #: src-ru/data/text_misc.xml.append:2032
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls\"]"
-msgstr ""
+msgstr "Ammo rewards reduced by VAL% because they were not used in combat."
 
 #: src-ru/data/text_misc.xml.append:2033
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns\"]"
 msgstr ""
+"Drone part rewards reduced by VAL% because they were not used in combat."
 
 #: src-ru/data/text_misc.xml.append:2034
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls_zero\"]"
-msgstr ""
+msgstr "Ammo rewards are not reduced."
 
 #: src-ru/data/text_misc.xml.append:2035
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns_zero\"]"
-msgstr ""
+msgstr "Drone part rewards are not reduced."
 
 #: src-ru/data/text_misc.xml.append:2036
 msgid "data/text_misc.xml.append$//text[@name=\"lua_ai_ship\"]"
 msgstr ""
+"This ship has an internal AI. If the entire crew dies, it will not end the "
+"flight."
 
 #: src-ru/data/text_misc.xml.append:2037
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_shop_is_close\"]"
-msgstr ""
+msgstr "The shop at the nearest beacon sent a welcome message."
 
 #: src-ru/data/text_misc.xml.append:2038
 msgid "data/text_misc.xml.append$//text[@name=\"alas_friendly\"]"
 msgstr ""
+"Your Defense Reflector Drone: \\nRedirects laser projectiles at the enemy. "
+"Will function until destroyed or until you jump."
 
 #: src-ru/data/text_misc.xml.append:2039
 msgid "data/text_misc.xml.append$//text[@name=\"alas_enemy\"]"
 msgstr ""
+"Reflector Drone: \\nRedirects laser projectiles at your ship. Can be "
+"disabled by damaging enemy drone control."
 
 #: src-ru/data/text_misc.xml.append:2040
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_switcher\"]"
-msgstr ""
+msgstr "Show/hide DPS counter."
 
 #: src-ru/data/text_misc.xml.append:2041
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_sim\"]"
-msgstr ""
+msgstr "DPS for simultaneous volley of all weapons."
 
 #: src-ru/data/text_misc.xml.append:2042
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_auto\"]"
-msgstr ""
+msgstr "DPS for auto-fire."
 
 #: src-ru/data/text_misc.xml.append:2043
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_oxygen\"]"
 msgstr ""
+"You are in a dense gas space. Outside the ship is a breathable atmosphere."
 
 #: src-ru/data/text_misc.xml.append:2044
 msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_egg_name\"]"
-msgstr ""
+msgstr "Ori"
 
 #: src-ru/data/text_misc.xml.append:2045
 msgid "data/text_misc.xml.append$//text[@name=\"lua_shots_for_charge\"]"
-msgstr ""
+msgstr "Shots per charge:"
 
 #: src-ru/data/text_misc.xml.append:2046
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_auto\"]"
 msgstr ""
+"Mind control in auto-mode to protect your ship's crew from enemy mind "
+"control."
 
 #: src-ru/data/text_misc.xml.append:2047
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_hand\"]"
-msgstr ""
+msgstr "Mind control is not in auto-mode."
 
 #: src-ru/data/text_misc.xml.append:2048
 msgid "data/text_misc.xml.append$//text[@name=\"needed_change_language\"]"
-msgstr ""
+msgstr "Attention! Change the language in settings to \"Russian (Arsenal +)\""
 
 #: src-ru/data/text_misc.xml.append:2050
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_glif_panel\"]"
-msgstr ""
+msgstr "Toggle Glyph-gun control panel."
 
 #: src-ru/data/text_misc.xml.append:2051
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel\"]"
-msgstr ""
+msgstr "Clear all glyphs."
 
 #: src-ru/data/text_misc.xml.append:2052
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_glif\"]"
-msgstr ""
+msgstr "Information about this weapon is unavailable."
 
 #: src-ru/data/text_misc.xml.append:2053
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel_no\"]"
-msgstr ""
+msgstr "No glyphs to clear."
 
 #: src-ru/data/text_misc.xml.append:2054
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_acc\"]"
-msgstr ""
+msgstr "Accuracy modifier"
 
 #: src-ru/data/text_misc.xml.append:2055
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_iondamage\"]"
-msgstr ""
+msgstr "Ion damage"
 
 #: src-ru/data/text_misc.xml.append:2056
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_crewdamage\"]"
-msgstr ""
+msgstr "Crew damage"
 
 #: src-ru/data/text_misc.xml.append:2057
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sysdamage\"]"
-msgstr ""
+msgstr "System damage"
 
 #: src-ru/data/text_misc.xml.append:2058
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hulldamage\"]"
-msgstr ""
+msgstr "Hull damage"
 
 #: src-ru/data/text_misc.xml.append:2059
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_shots\"]"
-msgstr ""
+msgstr "Shots per charge"
 
 #: src-ru/data/text_misc.xml.append:2060
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_cooldown\"]"
-msgstr ""
+msgstr "Cooldown"
 
 #: src-ru/data/text_misc.xml.append:2061
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sec\"]"
-msgstr ""
+msgstr "sec."
 
 #: src-ru/data/text_misc.xml.append:2062
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_charact\"]"
@@ -6666,23 +6771,23 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:2063
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_power\"]"
-msgstr ""
+msgstr "Requires energy"
 
 #: src-ru/data/text_misc.xml.append:2064
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_speed\"]"
-msgstr ""
+msgstr "Projectile speed"
 
 #: src-ru/data/text_misc.xml.append:2065
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_resetcd\"]"
-msgstr ""
+msgstr "After firing, recharges by"
 
 #: src-ru/data/text_misc.xml.append:2066
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_freeze\"]"
-msgstr ""
+msgstr "Locks target room"
 
 #: src-ru/data/text_misc.xml.append:2067
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hullbst\"]"
-msgstr ""
+msgstr "x2 damage to empty rooms"
 
 #: src-ru/data/text_misc.xml.append:2068
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stun\"]"
@@ -6690,36 +6795,37 @@ msgstr "Stunning"
 
 #: src-ru/data/text_misc.xml.append:2069
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sp\"]"
-msgstr ""
+msgstr "Shield piercing"
 
 #: src-ru/data/text_misc.xml.append:2070
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_fc\"]"
-msgstr ""
+msgstr "Fire chance"
 
 #: src-ru/data/text_misc.xml.append:2071
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bc\"]"
-msgstr ""
+msgstr "Breach chance"
 
 #: src-ru/data/text_misc.xml.append:2072
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_copycdnext\"]"
-msgstr ""
+msgstr "Upon firing, charges weapon to the right to the level of its cooldown"
 
 #: src-ru/data/text_misc.xml.append:2073
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stealcrew\"]"
-msgstr ""
+msgstr "Projectile teleports crew in the room to the other ship upon hit"
 
 #: src-ru/data/text_misc.xml.append:2074
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_blood\"]"
-msgstr ""
+msgstr "Projectile causes bleeding upon hit"
 
 #: src-ru/data/text_misc.xml.append:2075
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_erosion\"]"
-msgstr ""
+msgstr "Projectile causes erosion upon hit"
 
 #: src-ru/data/text_misc.xml.append:2077
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_on\"]"
-msgstr ""
+msgstr "Fired crew will be ejected into space."
 
 #: src-ru/data/text_misc.xml.append:2078
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_off\"]"
 msgstr ""
+"Fired crew will head to the nearest planet or station via mini-shuttle."

@@ -1142,6 +1142,9 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[1]/text"
 msgstr ""
+"Scanning showed that one is transporting fuel, the second is transporting "
+"ammunition. Under the influence of the space storm, they are starting to "
+"drift slightly apart in different directions."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:923
 msgid ""
@@ -1181,11 +1184,14 @@ msgstr "Sometimes caution is the best part of the valor."
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/text"
 msgstr ""
+"Scanning showed that one is transporting drone parts, the second is "
+"transporting ammunition. Under the influence of the space storm, they are "
+"starting to drift slightly apart in different directions."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:946
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "Capture the ship with drone parts."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:948
 msgid ""
@@ -1218,6 +1224,9 @@ msgstr "Sometimes caution is the best part of the valor."
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/text"
 msgstr ""
+"Scanning showed that one is transporting fuel, the second is transporting "
+"drone parts. Under the influence of the space storm, they are starting to "
+"drift slightly apart in different directions."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:969
 msgid ""
@@ -1234,7 +1243,7 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:976
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "Capture the ship with drone parts."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:978
 msgid ""
@@ -1304,6 +1313,8 @@ msgstr "A pirate ship made a jump."
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS\"]/deadCrew/text"
 msgstr ""
+"Since the ship is still intact, there is a chance to collect drone parts "
+"before the ion storm subsides and it's time to fly on."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1062
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTAN_BOARDERS\"]/text"
@@ -2725,7 +2736,7 @@ msgstr "The battleship climbs into a huge installation with fear ..."
 #: src-ru/data/events_zoltan.xml.rawclobber:2189
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"turtle\"]/text"
-msgstr ""
+msgstr "Panceron."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2191
 msgid ""
@@ -4532,7 +4543,7 @@ msgstr "The battleship climbs into a huge installation with fear ..."
 #: src-ru/data/events_zoltan.xml.rawclobber:3346
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"turtle\"]/text"
-msgstr ""
+msgstr "Panceron."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3348
 msgid ""
@@ -8437,14 +8448,14 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:6096
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_OXYGEN_PLEASE\"]/choice[@req=\"orchid_crew\"]/text"
-msgstr "(Orchid Crew) Let the Orchid replenish their oxygen supplies."
+msgstr "(Crew member Orchid) Let the Orchid replenish their oxygen supplies."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6098
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_OXYGEN_PLEASE\"]/choice[@req=\"orchid_crew\"]/event/text"
 msgstr ""
-"The Orchid fills their ship's rooms with oxygen. The grateful Zoltons drop "
-"you a container with resources and head to their settlement."
+"The Orchid fills their ship's compartments with oxygen. The grateful Zoltans"
+" toss you a container with resources and head to their settlement."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:6104
 msgid ""
@@ -12711,33 +12722,33 @@ msgstr ""
 #: src-ru/data/events_zoltan.xml.rawclobber:9415
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_PEACE\"]/text"
 msgstr ""
-"A small Zolton scout is at this beacon. They contact you: 'Don't be so quick"
-" to attack us, look - we are unarmed. You must make a small donation to use "
-"this jump beacon. Maintenance, you know, isn't cheap.'"
+"A small Zoltan scout is at this beacon. They contact you: \"Don't be in a "
+"hurry to attack us, look - we are unarmed. You must make a small donation to"
+" use this jump beacon. Maintenance, you know, isn't cheap.\""
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9418
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_PEACE\"]/choice[1]/text"
-msgstr "Attack the insolent fools."
+msgstr "Attack the insolent ones."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9420
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_PEACE\"]/choice[1]/event/text"
 msgstr ""
-"They're trying to say something else, but you're no longer listening..."
+"They are trying to say something else, but you're not listening anymore..."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9425
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_PEACE\"]/choice[2]/text"
-msgstr "Discuss the size of the toll."
+msgstr "Discuss the fee size."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9427
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTON_PEACE\"]/choice[2]/event/text"
 msgstr ""
-"They continue: 'Alright, that was a test. We see now that you are friendly. "
-"Allow our officer to accompany you.' They send a pod to you, and soon a "
-"young Zolton with a golden ribbon is on board."
+"They continue: \"Alright, that was a test. Now we see that you are friendly."
+" Allow our officer to accompany you.\" They send a capsule to you, and soon "
+"a young Zoltan with a gold ribbon is on board your ship."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9428
 msgid ""
@@ -12778,12 +12789,12 @@ msgstr ""
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"ZOLTON_SPECIAL\"]/destroyed/text"
 msgstr ""
-"You feel a pang of guilt as you search the wreckage. But they asked for it, "
-"didn't they?..."
+"You feel some guilt while searching the wreckage. But they asked for it, "
+"didn't they?.."
 
 #: src-ru/data/events_zoltan.xml.rawclobber:9458
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"ZOLTON_SPECIAL\"]/deadCrew/text"
 msgstr ""
-"You feel a pang of guilt as you loot their ship. But they asked for it, "
-"didn't they?..."
+"You feel some guilt while looting their ship. But they asked for it, didn't "
+"they?.."
