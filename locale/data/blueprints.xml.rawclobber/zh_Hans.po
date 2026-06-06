@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-06 04:36+0000\n"
+"PO-Revision-Date: 2026-06-06 10:09+0000\n"
 "Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datablueprintsxmlrawclobber/zh_Hans/>\n"
@@ -1682,26 +1682,30 @@ msgstr "化身的强大武器弥补了这艘舰船的所有缺点。不过，雇
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC1\"]/unlock"
 msgstr ""
+"要解锁这艘化身巡洋舰，你需要使用任意一艘位于第一排（A、B、C 三种型号）的星舰"
+"击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6306
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC1_2\"]/class"
-msgstr ""
+msgstr "秩序教团巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:6307
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC1_2\"]/name"
-msgstr ""
+msgstr "神之指"
 
 #: src-ru/data/blueprints.xml.rawclobber:6308
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC1_2\"]/desc"
 msgstr ""
+"这艘教团巡洋舰已为联邦的需求进行了改装。其基础武器配置可能会发生变化，请提前"
+"在机库中确认！"
 
 #: src-ru/data/blueprints.xml.rawclobber:6309
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC1_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶化身巡洋舰抵达第 5 星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6412
 msgid ""
@@ -1711,17 +1715,17 @@ msgstr "水晶巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:6413
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC1\"]/name"
-msgstr ""
+msgstr "冷冻晶"
 
 #: src-ru/data/blueprints.xml.rawclobber:6414
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC1\"]/desc"
-msgstr ""
+msgstr "这种舰船改装曾被水晶族积极用于探索高活性恒星系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6415
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC1\"]/unlock"
-msgstr ""
+msgstr "你需要使用任意一艘位第二排（A、B、C 三种型号）的星舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6495
 msgid ""
@@ -1731,17 +1735,17 @@ msgstr "水晶巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:6496
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC1_2\"]/name"
-msgstr ""
+msgstr "蓝宝石号"
 
 #: src-ru/data/blueprints.xml.rawclobber:6497
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC1_2\"]/desc"
-msgstr ""
+msgstr "这艘舰船存在一系列有争议的设计方案，因而极少被水晶族使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6498
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC1_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶水晶巡洋舰抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6585
 msgid ""
@@ -1751,12 +1755,12 @@ msgstr "水晶武器"
 #: src-ru/data/blueprints.xml.rawclobber:6586
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P\"]/title"
-msgstr ""
+msgstr "封锁水晶炮II"
 
 #: src-ru/data/blueprints.xml.rawclobber:6587
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P\"]/short"
-msgstr ""
+msgstr "封锁水晶II"
 
 #: src-ru/data/blueprints.xml.rawclobber:6588
 msgid ""
@@ -1767,6 +1771,8 @@ msgstr "强大的水晶武器，能使整个舱室结晶化。造成船体破舱
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P\"]/tooltip"
 msgstr ""
+"发射一枚水晶，造成2点伤害；穿透1层护盾；在船体上留下破舱；封锁舱室；伤害并眩"
+"晕船员。可被1级防御无人机拦截。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6626
 msgid ""
@@ -1776,12 +1782,12 @@ msgstr "水晶武器"
 #: src-ru/data/blueprints.xml.rawclobber:6627
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P\"]/title"
-msgstr ""
+msgstr "封锁水晶炮I"
 
 #: src-ru/data/blueprints.xml.rawclobber:6628
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P\"]/short"
-msgstr ""
+msgstr "封锁水晶I"
 
 #: src-ru/data/blueprints.xml.rawclobber:6629
 msgid ""
@@ -1792,56 +1798,58 @@ msgstr "发射穿透性水晶，封锁舱室。可被 1 级防御无人机击落
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P\"]/tooltip"
 msgstr ""
+"单发攻击，造成1点伤害。中等概率击穿船体。穿透1层护盾。封锁舱室。可被1级防御无"
+"人机拦截。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6667
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_CRYSTAL_HEAVY_PLAYER\"]/title"
-msgstr ""
+msgstr "重型水晶无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:6668
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_CRYSTAL_HEAVY_PLAYER\"]/short"
-msgstr ""
+msgstr "重型无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:6669
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_CRYSTAL_HEAVY_PLAYER\"]/desc"
-msgstr ""
+msgstr "这架无人机搭载了改良弹药，使用可穿透1层护盾的大型水晶攻击敌人。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6682
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_HEAVY_DRONE_CRYSTAL_PLAYER\"]/title"
-msgstr ""
+msgstr "重型水晶I"
 
 #: src-ru/data/blueprints.xml.rawclobber:6683
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_HEAVY_DRONE_CRYSTAL_PLAYER\"]/short"
-msgstr ""
+msgstr "重型水晶I"
 
 #: src-ru/data/blueprints.xml.rawclobber:6684
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_HEAVY_DRONE_CRYSTAL_PLAYER\"]/desc"
-msgstr ""
+msgstr "一种特殊的射弹武器，发射威力强大且可穿透护盾的水晶。可被防御无人机拦截。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6685
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_HEAVY_DRONE_CRYSTAL_PLAYER\"]/tooltip"
-msgstr ""
+msgstr "单发攻击，造成2点伤害。低概率击穿船体。穿透1层护盾。可被1级防御无人机拦截。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6722
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2\"]/class"
-msgstr ""
+msgstr "海盗运输船"
 
 #: src-ru/data/blueprints.xml.rawclobber:6723
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2\"]/name"
-msgstr ""
+msgstr "铁匠"
 
 #: src-ru/data/blueprints.xml.rawclobber:6724
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2\"]/desc"
-msgstr ""
+msgstr "这伙亡命之徒愿意不惜一切代价保卫联邦。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6725
 msgid ""
@@ -1856,7 +1864,7 @@ msgstr "海盗空间站"
 #: src-ru/data/blueprints.xml.rawclobber:6804
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2_2\"]/name"
-msgstr ""
+msgstr "改进献祭号"
 
 #: src-ru/data/blueprints.xml.rawclobber:6805
 msgid ""
@@ -1866,17 +1874,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:6806
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这一次，这座装备了小行星巨炮的传奇海盗空间站站在了联邦一边。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6885
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2_3\"]/class"
-msgstr ""
+msgstr "叛军无畏舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:6886
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2_3\"]/name"
-msgstr ""
+msgstr "莱因哈特号"
 
 #: src-ru/data/blueprints.xml.rawclobber:6887
 msgid ""
@@ -1886,22 +1894,22 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:6888
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC2_3\"]/desc"
-msgstr ""
+msgstr "这艘无畏舰在恶战中被缴获，现在属于联邦"
 
 #: src-ru/data/blueprints.xml.rawclobber:6966
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2\"]/class"
-msgstr ""
+msgstr "恩吉巨炮舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:6967
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2\"]/name"
-msgstr ""
+msgstr "无花果号"
 
 #: src-ru/data/blueprints.xml.rawclobber:6968
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2\"]/desc"
-msgstr ""
+msgstr "这艘小型火力支援舰在开局时装备相当不错。"
 
 #: src-ru/data/blueprints.xml.rawclobber:6969
 msgid ""
@@ -1911,17 +1919,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7048
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2_2\"]/class"
-msgstr ""
+msgstr "恩吉连体巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7049
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2_2\"]/name"
-msgstr ""
+msgstr "连体号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7050
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这艘舰船实际上是两艘船为了某种特殊目的而连接在一起的。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7051
 msgid ""
@@ -1931,17 +1939,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7132
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2_3\"]/class"
-msgstr ""
+msgstr "恩吉猎杀舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7133
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2_3\"]/name"
-msgstr ""
+msgstr "芒果号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7134
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC2_3\"]/desc"
-msgstr ""
+msgstr "这堆破铜烂铁是螳螂族猎杀舰与恩吉侦察舰相撞后的产物。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7135
 msgid ""
@@ -1951,17 +1959,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7216
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2\"]/class"
-msgstr ""
+msgstr "联邦运输舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7217
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2\"]/name"
-msgstr ""
+msgstr "阵风号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7218
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2\"]/desc"
-msgstr ""
+msgstr "尽管体型小巧，这艘运输船却完全有能力摧毁任何舰船——只要弹药充足的话。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7219
 msgid ""
@@ -1971,17 +1979,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7299
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2_2\"]/class"
-msgstr ""
+msgstr "掠夺舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7300
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2_2\"]/name"
-msgstr ""
+msgstr "局外人"
 
 #: src-ru/data/blueprints.xml.rawclobber:7301
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2_2\"]/desc"
-msgstr ""
+msgstr "掠夺者们在战斗中依靠其快速的武器。有时敌人甚至来不及开出一枪。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7302
 msgid ""
@@ -1991,17 +1999,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7382
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2_3\"]/class"
-msgstr ""
+msgstr "秩序教团旗舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7383
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2_3\"]/name"
-msgstr ""
+msgstr "燃烧号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7384
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC2_3\"]/desc"
-msgstr ""
+msgstr "在夺取这艘舰船时，其中一门巨炮被意外损坏，现已无法使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7385
 msgid ""
@@ -2011,37 +2019,41 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7460
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_CIVILIAN_PLUS\"]/title"
-msgstr ""
+msgstr "秩序教团强化光束巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:7461
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_CIVILIAN_PLUS\"]/short"
-msgstr ""
+msgstr "秩序教团强化光束"
 
 #: src-ru/data/blueprints.xml.rawclobber:7462
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_CIVILIAN_PLUS\"]/desc"
 msgstr ""
+"充能一道缓慢的光束，可穿透所有护盾，对系统造成2点伤害，对船员造成30点伤害。可"
+"能点燃舱室。[33 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:7463
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_CIVILIAN_PLUS\"]/tooltip"
 msgstr ""
+"充能一道缓慢的光束，可穿透所有护盾，对系统造成2点伤害，对船员造成30点伤害。可"
+"能点燃舱室。[34 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:7491
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2\"]/class"
-msgstr ""
+msgstr "佐尔坦巨炮舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7492
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2\"]/name"
-msgstr ""
+msgstr "浮夸号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7493
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2\"]/desc"
-msgstr ""
+msgstr "这艘舰船的佐尔坦护盾确保了链式武器的安全加速与巨炮的充能。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7494
 msgid ""
@@ -2051,37 +2063,37 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7573
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ZOLTAN_PLAYER\"]/title"
-msgstr ""
+msgstr "光束巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:7574
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ZOLTAN_PLAYER\"]/short"
-msgstr ""
+msgstr "光束"
 
 #: src-ru/data/blueprints.xml.rawclobber:7575
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ZOLTAN_PLAYER\"]/desc"
-msgstr ""
+msgstr "充能一道缓慢而强大的光束，对每个舱室造成1点伤害。穿透任意层数的护盾。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:7576
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ZOLTAN_PLAYER\"]/tooltip"
-msgstr ""
+msgstr "充能一道缓慢而强大的光束，对每个舱室造成1点伤害。穿透任意层数的护盾。[42 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:7597
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2_2\"]/class"
-msgstr ""
+msgstr "佐尔坦无畏舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7598
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2_2\"]/name"
-msgstr ""
+msgstr "复合号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7599
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这艘无畏舰拥有强大的战斗力，但内部防御薄弱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7600
 msgid ""
@@ -2091,17 +2103,19 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7681
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2_3\"]/class"
-msgstr ""
+msgstr "佐尔坦移动实验室"
 
 #: src-ru/data/blueprints.xml.rawclobber:7682
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2_3\"]/name"
-msgstr ""
+msgstr "疯狂科学号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7683
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC2_3\"]/desc"
 msgstr ""
+"一位疯狂的佐尔坦科学家的实验室，装备了一门巨大的巨炮。建议提前确保为其备足弹"
+"药。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7684
 msgid ""
@@ -2116,7 +2130,7 @@ msgstr "星辰粉碎者"
 #: src-ru/data/blueprints.xml.rawclobber:7758
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER\"]/short"
-msgstr ""
+msgstr "粉碎者"
 
 #: src-ru/data/blueprints.xml.rawclobber:7759
 msgid ""
@@ -2126,7 +2140,7 @@ msgstr "星辰粉碎者"
 #: src-ru/data/blueprints.xml.rawclobber:7760
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER\"]/desc"
-msgstr ""
+msgstr "这门巨大的巨炮每次齐射消耗3发导弹。无视所有护盾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7761
 msgid ""
@@ -2136,17 +2150,19 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:7792
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2\"]/class"
-msgstr ""
+msgstr "螳螂猎杀舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7793
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2\"]/name"
-msgstr ""
+msgstr "猎手号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7794
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2\"]/desc"
 msgstr ""
+"这艘有前景的登舰作战舰在招募到登舰小队之前，依赖穿甲激光作战。配备改良型引擎"
+"。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7795
 msgid ""
@@ -2156,17 +2172,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7873
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2_2\"]/class"
-msgstr ""
+msgstr "海盗猎杀舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7874
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2_2\"]/name"
-msgstr ""
+msgstr "野性猎手号"
 
 #: src-ru/data/blueprints.xml.rawclobber:7875
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这艘舰船装备了破片激光，用以加速登舰作战的进程。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7876
 msgid ""
@@ -2176,7 +2192,7 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:7956
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2_3\"]/class"
-msgstr ""
+msgstr "皇家突击舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:7957
 msgid ""
@@ -2196,17 +2212,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8039
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2\"]/class"
-msgstr ""
+msgstr "蛞蝓猎杀舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8040
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2\"]/name"
-msgstr ""
+msgstr "黑鸭号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8041
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2\"]/desc"
-msgstr ""
+msgstr "这些蛞蝓曾经抢劫过一座生产改进型爆裂激光的空间站。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8042
 msgid ""
@@ -2216,17 +2232,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8121
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2_2\"]/class"
-msgstr ""
+msgstr "蛞蝓巨炮舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8122
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2_2\"]/name"
-msgstr ""
+msgstr "毒咒师号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8123
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这艘巨炮支援舰旨在快速消灭敌方船员。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8124
 msgid ""
@@ -2236,17 +2252,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8202
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2_3\"]/class"
-msgstr ""
+msgstr "蛞蝓压制舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8203
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2_3\"]/name"
-msgstr ""
+msgstr "三色号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8204
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC2_3\"]/desc"
-msgstr ""
+msgstr "那根曾用于制造干扰、引发敌方船员幻觉的巨大天线，已被改装成了瘫痪型巨炮。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8205
 msgid ""
@@ -2256,37 +2272,37 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8285
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRICOLOR_ART\"]/title"
-msgstr ""
+msgstr "瘫痪巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:8286
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRICOLOR_ART\"]/short"
-msgstr ""
+msgstr "瘫痪巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:8287
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRICOLOR_ART\"]/desc"
-msgstr ""
+msgstr "这门巨炮将敌方全体船员打入深度昏厥。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:8288
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRICOLOR_ART\"]/tooltip"
-msgstr ""
+msgstr "这门巨炮将敌方全体船员打入深度昏厥。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:8326
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2\"]/class"
-msgstr ""
+msgstr "岩石海盗舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8327
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2\"]/name"
-msgstr ""
+msgstr "粉碎者"
 
 #: src-ru/data/blueprints.xml.rawclobber:8328
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2\"]/desc"
-msgstr ""
+msgstr "岩石族向来钟爱火焰登舰战术。这些海盗也不例外。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8329
 msgid ""
@@ -2296,17 +2312,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8408
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2_2\"]/class"
-msgstr ""
+msgstr "岩石族护卫舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8409
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2_2\"]/name"
-msgstr ""
+msgstr "隐秘号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8410
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这艘强大的舰船偏好依靠隐形进行规避，同时为其独特的巨炮充能。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8411
 msgid ""
@@ -2316,17 +2332,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8490
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2_3\"]/class"
-msgstr ""
+msgstr "小行星巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8491
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2_3\"]/name"
-msgstr ""
+msgstr "改造号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8492
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC2_3\"]/desc"
-msgstr ""
+msgstr "这艘在小行星内部建造的舰船，对船员来说并不宜居，但其防御与武器都相当出色。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8493
 msgid ""
@@ -2336,17 +2352,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8572
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2\"]/class"
-msgstr ""
+msgstr "黑客无畏舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8573
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2\"]/name"
-msgstr ""
+msgstr "魔兽号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8574
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2\"]/desc"
-msgstr ""
+msgstr "尽管拥有强大的火力，但这艘舰船在某些辅助系统方面存在明显不足。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8575
 msgid ""
@@ -2356,17 +2372,19 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8655
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2_2\"]/class"
-msgstr ""
+msgstr "自动舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8656
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2_2\"]/name"
-msgstr ""
+msgstr "太空船"
 
 #: src-ru/data/blueprints.xml.rawclobber:8657
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2_2\"]/desc"
 msgstr ""
+"这艘舰船没有船员，完全由AI操控。不过，你可以在旅途中雇佣船员，只是别忘了安装"
+"氧气系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8658
 msgid ""
@@ -2376,17 +2394,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8737
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2_3\"]/class"
-msgstr ""
+msgstr "HAL巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8738
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2_3\"]/name"
-msgstr ""
+msgstr "HAL 3001"
 
 #: src-ru/data/blueprints.xml.rawclobber:8739
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC2_3\"]/desc"
-msgstr ""
+msgstr "其中一架HAL无人机已成功重新编程，为联邦所用。这艘舰船配备了随机的HAL无人机。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8740
 msgid ""
@@ -2411,27 +2429,27 @@ msgstr "HAL之眼"
 #: src-ru/data/blueprints.xml.rawclobber:8820
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_EYE_PLAYER\"]/desc"
-msgstr ""
+msgstr "搭载HAL分析系统。造成相位离子伤害，对船员造成伤害。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:8821
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_EYE_PLAYER\"]/tooltip"
-msgstr ""
+msgstr "搭载HAL分析系统。造成相位离子伤害，对船员造成伤害。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:8866
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC2\"]/class"
-msgstr ""
+msgstr "奇怪的舰船"
 
 #: src-ru/data/blueprints.xml.rawclobber:8867
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC2\"]/name"
-msgstr ""
+msgstr "未确定"
 
 #: src-ru/data/blueprints.xml.rawclobber:8868
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC2\"]/desc"
-msgstr ""
+msgstr "这艘奇怪的舰船实际上是水晶族轰炸机的一个变种。而且是一个武装极其精良的变种。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8869
 msgid ""
@@ -2441,17 +2459,19 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:8950
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC2_2\"]/class"
-msgstr ""
+msgstr "水晶族无畏舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:8951
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC2_2\"]/name"
-msgstr ""
+msgstr "冰晶号"
 
 #: src-ru/data/blueprints.xml.rawclobber:8952
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC2_2\"]/desc"
 msgstr ""
+"这艘水晶族秘密舰船装备了反人员原型武器。战斗结束后，敌方舰船通常看起来像块奶"
+"酪。"
 
 #: src-ru/data/blueprints.xml.rawclobber:8953
 msgid ""
@@ -2461,17 +2481,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:9032
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC2\"]/class"
-msgstr ""
+msgstr "食铁无畏舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:9033
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC2\"]/name"
-msgstr ""
+msgstr "利刃号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9034
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC2\"]/desc"
-msgstr ""
+msgstr "这艘无畏舰额外装备了反人员原型武器。遗憾的是，它们略有损坏。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9035
 msgid ""
@@ -2481,17 +2501,17 @@ msgstr "在游戏中击败这艘舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:9115
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC2_2\"]/class"
-msgstr ""
+msgstr "化身无畏舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:9116
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC2_2\"]/name"
-msgstr ""
+msgstr "幽灵旅途号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9117
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC2_2\"]/desc"
-msgstr ""
+msgstr "这艘舰船并不适合需要呼吸空气的种族，但化身并不太在意这一点。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9118
 msgid ""
@@ -2506,52 +2526,52 @@ msgstr "联邦星舰"
 #: src-ru/data/blueprints.xml.rawclobber:9199
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3\"]/name"
-msgstr ""
+msgstr "安赫拉达"
 
 #: src-ru/data/blueprints.xml.rawclobber:9200
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3\"]/desc"
-msgstr ""
+msgstr "这艘创新型巡洋舰由联邦专门研发，用于压制拥有先进护盾的目标。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9281
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_2\"]/class"
-msgstr ""
+msgstr "秩序教团巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:9282
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_2\"]/name"
-msgstr ""
+msgstr "火焰风暴"
 
 #: src-ru/data/blueprints.xml.rawclobber:9283
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_2\"]/desc"
-msgstr ""
+msgstr "这艘秩序教团巡洋舰配备了等离子武器，以最快速度焚毁敌方舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9284
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶联邦巡洋舰A型抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9363
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_3\"]/class"
-msgstr ""
+msgstr "走私者巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:9364
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_3\"]/name"
-msgstr ""
+msgstr "走私者号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9365
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_3\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰的武器快速且难以预测，出发前请确认具体信息！"
 
 #: src-ru/data/blueprints.xml.rawclobber:9366
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶秩序教团巡洋舰B型抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9520
 msgid ""
@@ -2561,27 +2581,27 @@ msgstr "工程师巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:9521
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3\"]/name"
-msgstr ""
+msgstr "均衡号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9522
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3\"]/desc"
-msgstr ""
+msgstr "这艘恩吉巡洋舰依赖于其导弹无人机，并使用先进效应器进行防御。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9523
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3\"]/unlock"
-msgstr ""
+msgstr "需要使用秩序教团巡洋舰、走私者巡洋舰或联邦巡洋舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9607
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0\"]/title"
-msgstr ""
+msgstr "离子效应器+"
 
 #: src-ru/data/blueprints.xml.rawclobber:9608
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0\"]/short"
-msgstr ""
+msgstr "效应器+"
 
 #: src-ru/data/blueprints.xml.rawclobber:9609
 msgid ""
@@ -2591,7 +2611,7 @@ msgstr "离子发射器"
 #: src-ru/data/blueprints.xml.rawclobber:9611
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0\"]/desc"
-msgstr ""
+msgstr "改良型离子发射器，无视护盾，可使系统瘫痪。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9612
 msgid ""
@@ -2606,17 +2626,17 @@ msgstr "工程师巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:9649
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3_2\"]/name"
-msgstr ""
+msgstr "梦之铸号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9650
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3_2\"]/desc"
-msgstr ""
+msgstr "这些恩吉知道如何正确运用变色龙无人机的非凡能力……"
 
 #: src-ru/data/blueprints.xml.rawclobber:9651
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶恩吉巡洋舰A型抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9732
 msgid ""
@@ -2626,37 +2646,37 @@ msgstr "工程师巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:9733
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3_3\"]/name"
-msgstr ""
+msgstr "紧张号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9734
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3_3\"]/desc"
-msgstr ""
+msgstr "这艘舰船偏好使用替代性防御手段，而非常规护盾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9735
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶恩吉巡洋舰B型抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9818
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3\"]/class"
-msgstr ""
+msgstr "黑翼巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:9819
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3\"]/name"
-msgstr ""
+msgstr "黑鸟号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9820
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰配备了强化钛合金镀层，用于保护其武器系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9821
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3\"]/unlock"
-msgstr ""
+msgstr "你需要使用任意一艘恩吉巡洋舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9899
 msgid ""
@@ -2666,177 +2686,177 @@ msgstr "海盗星舰"
 #: src-ru/data/blueprints.xml.rawclobber:9900
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_2\"]/name"
-msgstr ""
+msgstr "黑色郁金香号"
 
 #: src-ru/data/blueprints.xml.rawclobber:9901
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_2\"]/desc"
-msgstr ""
+msgstr "这是海盗有史以来建造的最强大的舰船之一。舰上搭载了随机的巨炮。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9902
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶黑翼巡洋舰B型抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:9993
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER\"]/title"
-msgstr ""
+msgstr "巨炮激光"
 
 #: src-ru/data/blueprints.xml.rawclobber:9994
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER\"]/short"
-msgstr ""
+msgstr "巨炮激光"
 
 #: src-ru/data/blueprints.xml.rawclobber:9995
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER\"]/desc"
-msgstr ""
+msgstr "发射2发巨大炮弹，每发造成6点伤害，无视2层护盾。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:9996
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER\"]/tooltip"
-msgstr ""
+msgstr "发射2发巨大炮弹，每发造成6点伤害，无视2层护盾。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10031
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HULL\"]/title"
-msgstr ""
+msgstr "破舰激光巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10032
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HULL\"]/short"
-msgstr ""
+msgstr "破舰激光巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10033
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HULL\"]/desc"
-msgstr ""
+msgstr "发射3发穿透型破舰炮弹。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10034
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HULL\"]/tooltip"
-msgstr ""
+msgstr "发射3发穿透型破舰炮弹。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10069
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HEAVY\"]/title"
-msgstr ""
+msgstr "重型激光巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10070
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HEAVY\"]/short"
-msgstr ""
+msgstr "重型激光巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10071
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HEAVY\"]/desc"
-msgstr ""
+msgstr "发射3发穿透型重型激光炮弹。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10072
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_LASER_HEAVY\"]/tooltip"
-msgstr ""
+msgstr "发射3发穿透型重型激光炮弹。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10106
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BOMB\"]/title"
-msgstr ""
+msgstr "炸弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10107
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BOMB\"]/short"
-msgstr ""
+msgstr "炸弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10108
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BOMB\"]/desc"
-msgstr ""
+msgstr "传送3枚高爆炸弹。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10109
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BOMB\"]/tooltip"
-msgstr ""
+msgstr "传送3枚高爆炸弹。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10135
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MINES\"]/title"
-msgstr ""
+msgstr "空雷巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10136
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MINES\"]/short"
-msgstr ""
+msgstr "空雷巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10137
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MINES\"]/desc"
-msgstr ""
+msgstr "发射3枚空雷。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10138
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MINES\"]/tooltip"
-msgstr ""
+msgstr "发射3枚空雷。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10172
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_BREACH\"]/title"
-msgstr ""
+msgstr "穿甲导弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10173
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_BREACH\"]/short"
-msgstr ""
+msgstr "穿甲导弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10174
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_BREACH\"]/desc"
-msgstr ""
+msgstr "发射2发穿甲导弹，每发造成4点伤害。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10175
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_BREACH\"]/tooltip"
-msgstr ""
+msgstr "发射2发穿甲导弹，每发造成4点伤害。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10207
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_FIRE\"]/title"
-msgstr ""
+msgstr "火焰导弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10208
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_FIRE\"]/short"
-msgstr ""
+msgstr "火焰导弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10209
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_FIRE\"]/desc"
-msgstr ""
+msgstr "发射2发火焰导弹，每发造成3点伤害。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10210
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_FIRE\"]/tooltip"
-msgstr ""
+msgstr "发射2发火焰导弹，每发造成3点伤害。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10242
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_HULL\"]/title"
-msgstr ""
+msgstr "破舰导弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10243
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_HULL\"]/short"
-msgstr ""
+msgstr "破舰导弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10244
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_HULL\"]/desc"
-msgstr ""
+msgstr "发射3发破舰导弹，每发造成2点伤害。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10245
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_MISSILES_HULL\"]/tooltip"
-msgstr ""
+msgstr "发射3发破舰导弹，每发造成2点伤害。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10279
 msgid ""
@@ -2851,72 +2871,74 @@ msgstr "光点"
 #: src-ru/data/blueprints.xml.rawclobber:10281
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BEAM_FOCUS\"]/desc"
-msgstr ""
+msgstr "发射光点，造成7点伤害，击穿船体。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10282
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BEAM_FOCUS\"]/tooltip"
-msgstr ""
+msgstr "发射光点，造成7点伤害，击穿船体。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10306
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BEAM_HULL\"]/title"
-msgstr ""
+msgstr "破舰光束巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10307
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BEAM_HULL\"]/short"
-msgstr ""
+msgstr "破舰光束巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:10308
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BEAM_HULL\"]/desc"
-msgstr ""
+msgstr "发射破舰光束，穿透所有护盾。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10309
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_PLAYER_BEAM_HULL\"]/tooltip"
-msgstr ""
+msgstr "发射破舰光束，穿透所有护盾。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10331
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_3\"]/class"
-msgstr ""
+msgstr "HAL 原型舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:10332
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_3\"]/name"
-msgstr ""
+msgstr "复仇女神号"
 
 #: src-ru/data/blueprints.xml.rawclobber:10333
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_3\"]/desc"
 msgstr ""
+"这是HAL舰船的首批原型之一。最初，HAL舰船是由人类驾驶的，因此舰上配备了所有人"
+"类所需的生存条件。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10334
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶海盗巡洋舰抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10413
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_NEMESIS\"]/title"
-msgstr ""
+msgstr "复仇女神火焰光束"
 
 #: src-ru/data/blueprints.xml.rawclobber:10414
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_NEMESIS\"]/short"
-msgstr ""
+msgstr "复仇女神"
 
 #: src-ru/data/blueprints.xml.rawclobber:10415
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_NEMESIS\"]/desc"
-msgstr ""
+msgstr "这道光束对系统和船员造成伤害，并引发火灾。穿透所有护盾。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10416
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_NEMESIS\"]/tooltip"
-msgstr ""
+msgstr "这道光束对系统和船员造成伤害，并引发火灾。穿透所有护盾。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:10444
 msgid ""
@@ -2926,17 +2948,19 @@ msgstr "佐尔坦人巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:10445
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3\"]/name"
-msgstr ""
+msgstr "米洛号"
 
 #: src-ru/data/blueprints.xml.rawclobber:10446
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3\"]/desc"
 msgstr ""
+"Al`Hazrad 船长凭借这艘巡洋舰，以一连串残酷的胜利征服了整整一个星系。最终，只"
+"有他那位满头碧发的妻子 Milory 能够平息他的狂热。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10447
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3\"]/unlock"
-msgstr ""
+msgstr "需要使用黑翼巡洋舰、海盗巡洋舰或HAL舰船原型击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10527
 msgid ""
@@ -2946,17 +2970,19 @@ msgstr "佐尔坦人巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:10528
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3_2\"]/name"
-msgstr ""
+msgstr "卢娜·Pi"
 
 #: src-ru/data/blueprints.xml.rawclobber:10529
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3_2\"]/desc"
 msgstr ""
+"这艘舰船由最出色的佐尔坦工程师调校，在Bamalf船长私人船坞中建造。它以船长妻子"
+"的名字命名——卢娜·Pi。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10530
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要使用佐尔坦巡洋舰A抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10616
 msgid ""
@@ -2966,17 +2992,19 @@ msgstr "佐尔坦人巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:10617
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3_3\"]/name"
-msgstr ""
+msgstr "樱桃号"
 
 #: src-ru/data/blueprints.xml.rawclobber:10618
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3_3\"]/desc"
 msgstr ""
+"KBA3u 船长进行了数百次复杂的改装，将这艘巡洋舰打磨至完美，然后将其送给了他的"
+"挚爱 Cherry。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10619
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要使用佐尔坦巡洋舰B抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10699
 msgid ""
@@ -2986,17 +3014,17 @@ msgstr "螳螂巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:10700
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3\"]/name"
-msgstr ""
+msgstr "蹂躏号"
 
 #: src-ru/data/blueprints.xml.rawclobber:10701
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3\"]/desc"
-msgstr ""
+msgstr "这艘舰船采用了一种另类的船员治疗方式——通过登舰作战。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10702
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3\"]/unlock"
-msgstr ""
+msgstr "需要使用任意一艘佐尔坦人巡洋舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10780
 msgid ""
@@ -3006,17 +3034,17 @@ msgstr "螳螂巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:10781
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3_2\"]/name"
-msgstr ""
+msgstr "奥里斯号"
 
 #: src-ru/data/blueprints.xml.rawclobber:10782
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3_2\"]/desc"
-msgstr ""
+msgstr "定时炸弹帮助这艘舰船的小型登舰小队占领敌方船只。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10783
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要使用螳螂巡洋舰A抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10861
 msgid ""
@@ -3026,17 +3054,17 @@ msgstr "螳螂巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:10862
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3_3\"]/name"
-msgstr ""
+msgstr "惩戒号"
 
 #: src-ru/data/blueprints.xml.rawclobber:10863
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3_3\"]/desc"
-msgstr ""
+msgstr "通用型螳螂人巡洋舰，既能占领也能摧毁敌方舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10864
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要使用螳螂巡洋舰B抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10942
 msgid ""
@@ -3046,77 +3074,79 @@ msgstr "蛞蝓星舰"
 #: src-ru/data/blueprints.xml.rawclobber:10943
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3\"]/name"
-msgstr ""
+msgstr "鬼机灵"
 
 #: src-ru/data/blueprints.xml.rawclobber:10944
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3\"]/desc"
-msgstr ""
+msgstr "蛞蝓热衷于点燃敌方舰船，而等离子无人机则完美地胜任了这一任务。"
 
 #: src-ru/data/blueprints.xml.rawclobber:10945
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3\"]/unlock"
-msgstr ""
+msgstr "驾驶螳螂巡洋舰击败旗舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:11026
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_2\"]/class"
-msgstr ""
+msgstr "黑客巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:11027
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_2\"]/name"
-msgstr ""
+msgstr "雪龙号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11028
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_2\"]/desc"
-msgstr ""
+msgstr "这艘先进黑客巡洋舰额外配备了穿透型生化光束。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11029
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要使用蛞蝓巡洋舰A抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11108
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_3\"]/class"
-msgstr ""
+msgstr "蛞蝓母舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:11109
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_3\"]/name"
-msgstr ""
+msgstr "沃穆隆号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11110
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_3\"]/desc"
-msgstr ""
+msgstr "蛞蝓小女皇的运载舰，依据独一无二的蓝图建造，仅此一艘。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11111
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要使用蛞蝓巡洋舰B抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11191
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3\"]/class"
-msgstr ""
+msgstr "岩石矿船"
 
 #: src-ru/data/blueprints.xml.rawclobber:11192
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3\"]/name"
-msgstr ""
+msgstr "阿波菲斯号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11193
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3\"]/desc"
 msgstr ""
+"古老的岩石族采矿船，直接在一颗小行星内部建造。系统数量有限，但防御出色，并配"
+"备了起重机。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11194
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3\"]/unlock"
-msgstr ""
+msgstr "你需要使用蛞蝓巡洋舰、黑客巡洋舰或蛞蝓母舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11275
 msgid ""
@@ -3126,17 +3156,17 @@ msgstr "岩石巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:11276
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3_2\"]/name"
-msgstr ""
+msgstr "泰坦号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11277
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3_2\"]/desc"
-msgstr ""
+msgstr "这艘强大的岩石人巡洋舰配备了用于捕获舰船的重型光束巨炮。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11278
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶岩石采矿船抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11359
 msgid ""
@@ -3146,112 +3176,116 @@ msgstr "岩石巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:11360
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3_3\"]/name"
-msgstr ""
+msgstr "琥珀好"
 
 #: src-ru/data/blueprints.xml.rawclobber:11361
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3_3\"]/desc"
-msgstr ""
+msgstr "岩石族与水晶族舰船之间的过渡形态。配备纵火治疗炸弹，用以简化登舰作战。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11362
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶岩石巡洋舰B型抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11441
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3\"]/class"
-msgstr ""
+msgstr "幽灵巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:11442
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3\"]/name"
-msgstr ""
+msgstr "光谱号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11443
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰在一个不稳定的星区中坠毁，全体船员的意识都被转移到了化身之中。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11444
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3\"]/unlock"
-msgstr ""
+msgstr "需要使用采矿船或任意岩石巡洋舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11527
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_2\"]/class"
-msgstr ""
+msgstr "化身巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:11528
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_2\"]/name"
-msgstr ""
+msgstr "阿瓦隆号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11529
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_2\"]/desc"
-msgstr ""
+msgstr "对化身核心的进一步改进催生了这艘巡洋舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11530
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "驾驶幽灵巡洋舰抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11611
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"AI_CORE_CRYSTAL_PLAYER\"]/title"
-msgstr ""
+msgstr "化身炸弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:11612
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"AI_CORE_CRYSTAL_PLAYER\"]/short"
-msgstr ""
+msgstr "化身炸弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:11613
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"AI_CORE_CRYSTAL_PLAYER\"]/desc"
 msgstr ""
+"传送3枚反人员炸弹，使船员陷入深度昏厥。每枚对船员造成60点伤害，对系统造成4点"
+"伤害，并有中等概率击穿船体。[40 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:11614
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"AI_CORE_CRYSTAL_PLAYER\"]/tooltip"
 msgstr ""
+"传送3枚反人员炸弹，每枚对船员造成60点伤害，对系统造成4点伤害，并有中等概率击"
+"穿船体。[41 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:11643
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_3\"]/class"
-msgstr ""
+msgstr "自动战舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:11644
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_3\"]/name"
-msgstr ""
+msgstr "霸天虎号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11645
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_3\"]/desc"
-msgstr ""
+msgstr "这架无人机是为消灭盘踞在边境星区的霸天虎而研发的。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11646
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_DLC3_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶化身巡洋舰B型抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11722
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3P\"]/title"
-msgstr ""
+msgstr "战斗离子无人机+"
 
 #: src-ru/data/blueprints.xml.rawclobber:11723
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3P\"]/short"
-msgstr ""
+msgstr "离子无人机+"
 
 #: src-ru/data/blueprints.xml.rawclobber:11724
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3P\"]/desc"
-msgstr ""
+msgstr "先进离子无人机，能耗更低。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11738
 msgid ""
@@ -3261,17 +3295,17 @@ msgstr "食铁星舰"
 #: src-ru/data/blueprints.xml.rawclobber:11739
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC3\"]/name"
-msgstr ""
+msgstr "收集者号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11740
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC3\"]/desc"
-msgstr ""
+msgstr "食铁族研发这艘巡洋舰，是为了从捕获的舰船中获取最大数量的废料。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11741
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC3\"]/unlock"
-msgstr ""
+msgstr "需要使用任意一个来自第一排、且所有型号（A、B和C型）都已击败旗舰的舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11820
 msgid ""
@@ -3281,17 +3315,17 @@ msgstr "食铁星舰"
 #: src-ru/data/blueprints.xml.rawclobber:11821
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC3_2\"]/name"
-msgstr ""
+msgstr "格式化号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11822
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC3_2\"]/desc"
-msgstr ""
+msgstr "破解护盾、再用光束切割敌人的战术从未失手，而这艘舰船正是这一法则的绝佳证明。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11823
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶食铁巡洋舰A型抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11905
 msgid ""
@@ -3301,17 +3335,17 @@ msgstr "水晶巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:11906
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC3\"]/name"
-msgstr ""
+msgstr "紫水晶号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11907
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC3\"]/desc"
-msgstr ""
+msgstr "水晶族崇尚能穿透护盾的武器，因此他们将‘武士刀’装备到了自己的舰船上。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11908
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC3\"]/unlock"
-msgstr ""
+msgstr "需要使用任意一个来自第二排、且所有型号（A、B和C型）都已击败旗舰的舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11988
 msgid ""
@@ -3321,137 +3355,144 @@ msgstr "水晶巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:11989
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC3_2\"]/name"
-msgstr ""
+msgstr "锆石号"
 
 #: src-ru/data/blueprints.xml.rawclobber:11990
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC3_2\"]/desc"
-msgstr ""
+msgstr "尽管完全没有武器，这艘舰船却仍为战斗做了充分准备。"
 
 #: src-ru/data/blueprints.xml.rawclobber:11991
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_DLC3_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶水晶巡洋舰抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12073
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE\"]/class"
-msgstr ""
+msgstr "放射性HAL原型舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12074
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE\"]/name"
-msgstr ""
+msgstr "放射性复仇女神"
 
 #: src-ru/data/blueprints.xml.rawclobber:12075
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE\"]/desc"
-msgstr ""
+msgstr "我们检测到您的舰船散发出令人不安的辐射，或许您该去检查一下？"
 
 #: src-ru/data/blueprints.xml.rawclobber:12076
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE\"]/unlock"
-msgstr ""
+msgstr "需要使用任意一艘时流巡洋舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12152
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_2\"]/class"
-msgstr ""
+msgstr "放射性HAL原型舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12153
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_2\"]/name"
-msgstr ""
+msgstr "放射性复仇女神"
 
 #: src-ru/data/blueprints.xml.rawclobber:12154
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_2\"]/desc"
-msgstr ""
+msgstr "我们检测到您的舰船散发出令人不安的辐射，或许您该去检查一下？"
 
 #: src-ru/data/blueprints.xml.rawclobber:12155
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶HAL原型舰A型抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12230
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_3\"]/class"
-msgstr ""
+msgstr "放射性HAL原型舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12231
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_3\"]/name"
-msgstr ""
+msgstr "放射性复仇女神"
 
 #: src-ru/data/blueprints.xml.rawclobber:12232
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_3\"]/desc"
-msgstr ""
+msgstr "我们检测到您的舰船散发出令人不安的辐射，或许您该去检查一下？"
 
 #: src-ru/data/blueprints.xml.rawclobber:12233
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_KESTREL_RADIOACTIVE_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶HAL原型舰B型抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12312
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY\"]/class"
-msgstr ""
+msgstr "萤火虫号运输船"
 
 #: src-ru/data/blueprints.xml.rawclobber:12313
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY\"]/name"
-msgstr ""
+msgstr "宁静号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12314
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY\"]/desc"
 msgstr ""
+"银河系最臭名昭著的走私者们的传奇舰船。‘萤火虫’号运输船是一系列多用途中型运输"
+"船。这些舰船配备了大功率尾部引擎、垂直起降发动机、中央货物区，以及抬高的前部"
+"舱段——其中设有船员舱室与舰桥。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12315
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY\"]/unlock"
-msgstr ""
+msgstr "需要使用任意一艘放射性HAL巡洋舰击败旗舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12389
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_2\"]/class"
-msgstr ""
+msgstr "开发者巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12390
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_2\"]/name"
-msgstr ""
+msgstr "军械库"
 
 #: src-ru/data/blueprints.xml.rawclobber:12391
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_2\"]/desc"
 msgstr ""
+"Arsenal——工程学思维的高科技奇迹。其强大的武器（需单独购买）与导航系统使其在与"
+"敌交锋中几乎坚不可摧，而独特的船体设计则为其提供了最优化的攻击防护。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12392
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_2\"]/unlock"
-msgstr ""
+msgstr "驾驶‘萤火虫’号运输船抵达第5星区"
 
 #: src-ru/data/blueprints.xml.rawclobber:12459
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_3\"]/class"
-msgstr ""
+msgstr "战士巡洋舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12460
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_3\"]/name"
-msgstr ""
+msgstr "战士号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12461
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_3\"]/desc"
 msgstr ""
+"这艘巡洋舰配备了一台先进的冷冻舱，专门设计用于在接近绝对零度的温度下，合成一"
+"道美味又营养的菜肴——‘蛞蝓’。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12462
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_SERENITY_3\"]/unlock"
-msgstr ""
+msgstr "需要驾驶军械库巡洋舰抵达第8星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12540
 msgid ""
@@ -3461,17 +3502,19 @@ msgstr "红隼巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12541
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ARBOLER\"]/name"
-msgstr ""
+msgstr "概念舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12542
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ARBOLER\"]/unlock"
-msgstr ""
+msgstr "需要使用任意一个来自第二排、且所有型号（A、B和C型）都已击败旗舰的舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12543
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ARBOLER\"]/desc"
 msgstr ""
+"这个级别的舰船几年前就已从联邦退役。在它能够重新投入战斗之前，还需要进行一系"
+"列改装与升级。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12616
 msgid ""
@@ -3481,17 +3524,19 @@ msgstr "红隼巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12617
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ARBOLER_2\"]/name"
-msgstr ""
+msgstr "无人概念舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:12618
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ARBOLER_2\"]/unlock"
-msgstr ""
+msgstr "需要驾驶Arboler巡洋舰A型抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12619
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ARBOLER_2\"]/desc"
 msgstr ""
+"这个级别的无人舰船几年前就已从联邦退役。在它能够重新投入战斗之前，还需要进行"
+"一系列改装与升级。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12692
 msgid ""
@@ -3501,7 +3546,7 @@ msgstr "红隼巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12693
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD\"]/name"
-msgstr ""
+msgstr "红隼号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12694
 msgid ""
@@ -3516,17 +3561,17 @@ msgstr "红隼巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12760
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_2\"]/name"
-msgstr ""
+msgstr "赤尾号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12761
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_2\"]/unlock"
-msgstr ""
+msgstr "完成‘红隼’号巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12762
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_2\"]/desc"
-msgstr ""
+msgstr "这艘这艘改良的红隼是一位激光武器迷制造的"
 
 #: src-ru/data/blueprints.xml.rawclobber:12840
 msgid ""
@@ -3536,17 +3581,19 @@ msgstr "红隼巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12841
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_3\"]/name"
-msgstr ""
+msgstr "雨燕号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12842
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_3\"]/desc"
-msgstr ""
+msgstr "这种型号经海盗改造，可利用最新发现的科技，可以克隆损失的船员并使敌方眩晕。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12843
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_HARD_3\"]/unlock"
 msgstr ""
+"在启用游戏附加内容的情况下，驾驶‘红隼’巡洋舰B型抵达第8星区，即可解锁这艘舰船"
+"。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12917
 msgid ""
@@ -3556,17 +3603,17 @@ msgstr "工程师巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12918
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE\"]/name"
-msgstr ""
+msgstr "环面号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12919
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE\"]/unlock"
-msgstr ""
+msgstr "需要驾驶任意型号的‘红隼’巡洋舰抵达第5星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12920
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE\"]/desc"
-msgstr ""
+msgstr "虽然它看起来像组合的垃圾，但这种精心的设计的战舰拥有发达的无人机和离子武器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12971
 msgid ""
@@ -3576,17 +3623,17 @@ msgstr "工程师巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:12972
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_2\"]/name"
-msgstr ""
+msgstr "旋涡号"
 
 #: src-ru/data/blueprints.xml.rawclobber:12973
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_2\"]/unlock"
-msgstr ""
+msgstr "完成恩吉巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:12974
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_2\"]/desc"
-msgstr ""
+msgstr "这艘战舰人员配备严重不足，依靠无人机保持战舰运转"
 
 #: src-ru/data/blueprints.xml.rawclobber:13049
 msgid ""
@@ -3596,17 +3643,17 @@ msgstr "工程师巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13050
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_3\"]/name"
-msgstr ""
+msgstr "四棱号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13051
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_3\"]/unlock"
-msgstr ""
+msgstr "在启用游戏附加内容的情况下，驾驶恩吉巡洋舰B型抵达第8星区，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13052
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CIRCLE_3\"]/desc"
-msgstr ""
+msgstr "恩吉快速适应突然涌现的黑客技术，这艘战舰是其中的研究成果"
 
 #: src-ru/data/blueprints.xml.rawclobber:13116
 msgid ""
@@ -3616,17 +3663,17 @@ msgstr "联邦星舰"
 #: src-ru/data/blueprints.xml.rawclobber:13117
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED\"]/name"
-msgstr ""
+msgstr "鱼鹰号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13118
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED\"]/unlock"
-msgstr ""
+msgstr "一直有传言称叛军要塞中在制造先进战舰……"
 
 #: src-ru/data/blueprints.xml.rawclobber:13119
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰最新的联邦技术；一种穿透护盾的先进光束武器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13177
 msgid ""
@@ -3636,17 +3683,17 @@ msgstr "联邦星舰"
 #: src-ru/data/blueprints.xml.rawclobber:13178
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_2\"]/name"
-msgstr ""
+msgstr "尼索斯号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13179
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_2\"]/unlock"
-msgstr ""
+msgstr "完成联邦巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13180
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_2\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰配备了升级的巨炮系统，严重依赖光束武器"
 
 #: src-ru/data/blueprints.xml.rawclobber:13256
 msgid ""
@@ -3656,17 +3703,19 @@ msgstr "联邦星舰"
 #: src-ru/data/blueprints.xml.rawclobber:13257
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_3\"]/name"
-msgstr ""
+msgstr "军舰鸟号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13258
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_3\"]/unlock"
-msgstr ""
+msgstr "在启用游戏附加内容的情况下，驾驶联邦巡洋舰B型抵达第8星区，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13259
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_FED_3\"]/desc"
 msgstr ""
+"配备了破片巨炮武器和改进型克隆仓，只有自杀倾向最高的船员才会选择驾驶这艘巡洋"
+"舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13333
 msgid ""
@@ -3676,17 +3725,17 @@ msgstr "佐尔坦人巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13334
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY\"]/name"
-msgstr ""
+msgstr "裁决者号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13335
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY\"]/unlock"
-msgstr ""
+msgstr "向佐尔坦人学习，有时外交也会起作用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13336
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY\"]/desc"
-msgstr ""
+msgstr "佐尔坦的先进护盾技术使这艘巡洋舰在每场战斗中都占据优势。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13403
 msgid ""
@@ -3696,17 +3745,17 @@ msgstr "佐尔坦人巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13404
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_2\"]/name"
-msgstr ""
+msgstr "诺特号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13405
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_2\"]/unlock"
-msgstr ""
+msgstr "完成佐尔坦巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13406
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_2\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰开局护盾系统有缺陷，所以必须依靠其超级护盾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13481
 msgid ""
@@ -3716,17 +3765,21 @@ msgstr "佐尔坦人巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13482
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_3\"]/name"
-msgstr ""
+msgstr "切伦科夫号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13483
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_3\"]/unlock"
 msgstr ""
+"在启用游戏附加内容的情况下，驾驶佐尔坦巡洋舰B型抵达第8星区，即可解锁这艘舰船"
+"。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13484
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ENERGY_3\"]/desc"
 msgstr ""
+"这艘巡洋舰的设计师不愿意花钱买一个像样的反应堆，相反，它依赖于其佐尔坦船员和"
+"备用电池。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13561
 msgid ""
@@ -3736,12 +3789,12 @@ msgstr "螳螂巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13562
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS\"]/name"
-msgstr ""
+msgstr "毒蜥蜴号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13563
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS\"]/unlock"
-msgstr ""
+msgstr "这艘战舰为螳螂大盗卡扎卡所有，你必须“说服”他帮你。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13564
 msgid ""
@@ -3756,17 +3809,17 @@ msgstr "螳螂巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13625
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_2\"]/name"
-msgstr ""
+msgstr "蛇怪号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13626
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_2\"]/unlock"
-msgstr ""
+msgstr "完成螳螂巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13627
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_2\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰鼓励派遣大规模的等登舰部队并维持强大的防御。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13697
 msgid ""
@@ -3776,17 +3829,17 @@ msgstr "螳螂巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13698
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_3\"]/name"
-msgstr ""
+msgstr "忒修斯号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13699
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_3\"]/unlock"
-msgstr ""
+msgstr "在启用游戏附加内容的情况下，驾驶螳螂巡洋舰B型抵达第8星区，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13700
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_3\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰配备大型传送器和阻挠敌方船员的武器，在强大登舰部队手中颇为致命"
 
 #: src-ru/data/blueprints.xml.rawclobber:13763
 msgid ""
@@ -3796,17 +3849,17 @@ msgstr "蛞蝓星舰"
 #: src-ru/data/blueprints.xml.rawclobber:13764
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY\"]/name"
-msgstr ""
+msgstr "水母号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13765
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY\"]/unlock"
-msgstr ""
+msgstr "蛞蝓应该对这艘现代巡洋舰有所了解。或许你能‘说服’他们开口。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13766
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰专为星云内部使用而设计，缺少传感器，转而依赖于蛞蝓族的诡计和狡猾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13820
 msgid ""
@@ -3816,17 +3869,17 @@ msgstr "蛞蝓星舰"
 #: src-ru/data/blueprints.xml.rawclobber:13821
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_2\"]/name"
-msgstr ""
+msgstr "风暴行者"
 
 #: src-ru/data/blueprints.xml.rawclobber:13822
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_2\"]/unlock"
-msgstr ""
+msgstr "完成蛞蝓巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13823
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_2\"]/desc"
-msgstr ""
+msgstr "这艘登舰巡洋舰没有医疗设施，必须小心管理其爆炸物以维持船员的生命。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13889
 msgid ""
@@ -3836,17 +3889,17 @@ msgstr "蛞蝓星舰"
 #: src-ru/data/blueprints.xml.rawclobber:13890
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_3\"]/name"
-msgstr ""
+msgstr "蛞蝓号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13891
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_3\"]/unlock"
-msgstr ""
+msgstr "在启用游戏附加内容的情况下，驾驶蛞蝓巡洋舰B型抵达第8星区，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13892
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_JELLY_3\"]/desc"
-msgstr ""
+msgstr "蛞蝓通常擅长误导和操纵。通过黑客和心灵控制系统，这艘巡洋舰印证了这一事实。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13968
 msgid ""
@@ -3856,17 +3909,17 @@ msgstr "岩石巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:13969
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK\"]/name"
-msgstr ""
+msgstr "堡垒号"
 
 #: src-ru/data/blueprints.xml.rawclobber:13970
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK\"]/unlock"
-msgstr ""
+msgstr "向岩石人证明，你配得上获得这艘强大的巡洋舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:13971
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK\"]/desc"
-msgstr ""
+msgstr "与其设计师类似，这个超级密闭的庞然大物使用蛮力来压到敌人。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14040
 msgid ""
@@ -3876,17 +3929,17 @@ msgstr "岩石巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:14041
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_2\"]/name"
-msgstr ""
+msgstr "西瓦号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14042
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_2\"]/unlock"
-msgstr ""
+msgstr "完成岩石巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14043
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_2\"]/desc"
-msgstr ""
+msgstr "由于没有气闸，这艘巡洋舰必须完全依赖其岩石族船员来灭火。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14105
 msgid ""
@@ -3896,17 +3949,17 @@ msgstr "岩石巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:14106
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_3\"]/name"
-msgstr ""
+msgstr "玻陨石号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14107
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_3\"]/unlock"
-msgstr ""
+msgstr "在启用游戏附加内容的情况下，驾驶岩石巡洋舰B型抵达第8星区，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14108
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ROCK_3\"]/desc"
-msgstr ""
+msgstr "与水晶族取得联系后，作为姊妹物种外交特伦的一部分，这艘巡洋舰被提供给联邦。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14191
 msgid ""
@@ -3916,17 +3969,17 @@ msgstr "隐形星舰"
 #: src-ru/data/blueprints.xml.rawclobber:14192
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH\"]/name"
-msgstr ""
+msgstr "恐鹑号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14193
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH\"]/unlock"
-msgstr ""
+msgstr "这艘舰船建造于恩吉领地的中心。你需要帮助他们，但他们只信任自己的同类。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14194
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH\"]/desc"
-msgstr ""
+msgstr "这艘巡洋舰有恩吉为联邦建造，旨在用隐形技术和机动性穿插敌后作战。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14249
 msgid ""
@@ -3941,12 +3994,14 @@ msgstr "DA-SR 12"
 #: src-ru/data/blueprints.xml.rawclobber:14251
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_2\"]/unlock"
-msgstr ""
+msgstr "完成隐形巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14252
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_2\"]/desc"
 msgstr ""
+"设计如同一门玻璃大炮，这艘星舰很难上手。如果隐形系统可以运转足够长的时间来为"
+"武器充能，则没有舰船可以承受其威力。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14339
 msgid ""
@@ -3956,17 +4011,19 @@ msgstr "隐形星舰"
 #: src-ru/data/blueprints.xml.rawclobber:14340
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_3\"]/name"
-msgstr ""
+msgstr "西蒙 H"
 
 #: src-ru/data/blueprints.xml.rawclobber:14341
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_3\"]/unlock"
-msgstr ""
+msgstr "在启用游戏附加内容的情况下，驾驶隐形巡洋舰B型抵达第8星区，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14342
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_STEALTH_3\"]/desc"
 msgstr ""
+"这艘巡洋舰是恩吉实验的一部分，旨在制造超能护盾节能版本。不幸的是，这需要拆除"
+"隐形系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14424
 msgid ""
@@ -3976,17 +4033,17 @@ msgstr "水晶巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:14425
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL\"]/name"
-msgstr ""
+msgstr "布拉菲晶格"
 
 #: src-ru/data/blueprints.xml.rawclobber:14426
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL\"]/unlock"
-msgstr ""
+msgstr "前往银河系中一个失落已久的星区，去寻找这艘强大的舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14427
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL\"]/desc"
-msgstr ""
+msgstr "这艘强大的巡洋舰由失落的水晶生物的秘密技术提供动力。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14492
 msgid ""
@@ -3996,17 +4053,19 @@ msgstr "水晶巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:14493
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_2\"]/name"
-msgstr ""
+msgstr "红玛瑙号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14494
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_2\"]/unlock"
-msgstr ""
+msgstr "完成水晶巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14495
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_CRYSTAL_2\"]/desc"
 msgstr ""
+"他们独特的物种能力使水晶族非常擅长登舰。这艘巡洋舰正是为这种突袭作战而设计的"
+"。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14566
 msgid ""
@@ -4016,17 +4075,19 @@ msgstr "食铁星舰"
 #: src-ru/data/blueprints.xml.rawclobber:14567
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC\"]/name"
-msgstr ""
+msgstr "锋刃号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14568
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC\"]/unlock"
-msgstr ""
+msgstr "解锁除‘红隼’巡洋舰之外的4艘舰船，即可开启这艘战舰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14569
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC\"]/desc"
 msgstr ""
+"锋利的刀状结构使食铁族的舰船颇为壮观。这艘巡洋舰经过改造，可以支持联邦的其他"
+"物种"
 
 #: src-ru/data/blueprints.xml.rawclobber:14653
 msgid ""
@@ -4036,22 +4097,24 @@ msgstr "食铁星舰"
 #: src-ru/data/blueprints.xml.rawclobber:14654
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_2\"]/name"
-msgstr ""
+msgstr "伯劳鸟号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14655
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_2\"]/unlock"
-msgstr ""
+msgstr "完成食铁巡洋舰的 2/3 个成就，即可解锁这艘舰船。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14656
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_ANAEROBIC_2\"]/desc"
 msgstr ""
+"食铁族的物种能力使他们成为可怕的狭小空间战斗人员，再配合心灵控制系统后，这艘"
+"巡洋舰的实力不容小觑。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14744
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"TUTORIAL_PIRATE\"]/class"
-msgstr ""
+msgstr "海盗"
 
 #: src-ru/data/blueprints.xml.rawclobber:14761
 msgid ""
@@ -4061,21 +4124,21 @@ msgstr "红隼号巡洋舰"
 #: src-ru/data/blueprints.xml.rawclobber:14762
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_TUTORIAL\"]/name"
-msgstr ""
+msgstr "红隼号"
 
 #: src-ru/data/blueprints.xml.rawclobber:14797
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"IMPOSSIBLE_PIRATE\"]/class"
-msgstr ""
+msgstr "传奇海盗"
 
 #: src-ru/data/blueprints.xml.rawclobber:14824
 msgid "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"DEFAULT\"]/class"
-msgstr ""
+msgstr "叛军劫掠舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:14849
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"BOSS_SPECIAL\"]/class"
-msgstr ""
+msgstr "未完工的旗舰"
 
 #: src-ru/data/blueprints.xml.rawclobber:14901
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"clonebay\"]/title"
@@ -4084,6 +4147,8 @@ msgstr "克隆舱"
 #: src-ru/data/blueprints.xml.rawclobber:14902
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"clonebay\"]/desc"
 msgstr ""
+"自动克隆阵亡的船员，但有技能惩罚。每次跃迁通过克隆治疗船员，无需消耗电力。克"
+"隆仓每有一级就会使舰船上敌方登舰者的速度降低11%。按住右键可调整克隆顺序。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14915
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"hacking\"]/title"
@@ -4091,7 +4156,7 @@ msgstr "黑客"
 
 #: src-ru/data/blueprints.xml.rawclobber:14916
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"hacking\"]/desc"
-msgstr ""
+msgstr "可封锁、暂时关闭或干扰系统的工作。启动需要使用无人机部件。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14929
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"battery\"]/title"
@@ -4099,7 +4164,7 @@ msgstr "备用电池"
 
 #: src-ru/data/blueprints.xml.rawclobber:14930
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"battery\"]/desc"
-msgstr ""
+msgstr "在30秒内提升反应堆能量输出。升级可增加容量。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14943
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"mind\"]/title"
@@ -4107,25 +4172,25 @@ msgstr "心灵控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:14944
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"mind\"]/desc"
-msgstr ""
+msgstr "暂时将敌人转化为盟友。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14958
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"oxygen\"]/title"
-msgstr ""
+msgstr "氧气"
 
 #: src-ru/data/blueprints.xml.rawclobber:14959
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"oxygen\"]/desc"
-msgstr ""
+msgstr "维持舰船上的氧气浓度。升级可提高失压后的恢复速度。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14973
 msgid ""
 "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"teleporter\"]/title"
-msgstr ""
+msgstr "传送"
 
 #: src-ru/data/blueprints.xml.rawclobber:14974
 msgid ""
 "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"teleporter\"]/desc"
-msgstr ""
+msgstr "允许将船员传送到敌方舰船上。"
 
 #: src-ru/data/blueprints.xml.rawclobber:14988
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"cloaking\"]/title"
@@ -4133,15 +4198,17 @@ msgstr "隐形"
 
 #: src-ru/data/blueprints.xml.rawclobber:14989
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"cloaking\"]/desc"
-msgstr ""
+msgstr "使您的舰船进入隐形状态，提升60%的闪避率，并阻止敌方舰船的武器锁定。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15003
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"pilot\"]/title"
-msgstr ""
+msgstr "驾驶"
 
 #: src-ru/data/blueprints.xml.rawclobber:15004
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"pilot\"]/desc"
 msgstr ""
+"允许舰船进行超光速跃迁，并在有驾驶员时进行闪避。升级后增加自动驾驶系统，可在"
+"无驾驶员时进行闪避。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15017
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"medbay\"]/title"
@@ -4150,14 +4217,16 @@ msgstr "医疗舱"
 #: src-ru/data/blueprints.xml.rawclobber:15018
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"medbay\"]/desc"
 msgstr ""
+"治疗医疗舱内所有船员。升级可提高治疗速度。每级已通电的医疗舱使舰上船员速度提"
+"升11%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15032
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"shields\"]/title"
-msgstr ""
+msgstr "护盾"
 
 #: src-ru/data/blueprints.xml.rawclobber:15033
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"shields\"]/desc"
-msgstr ""
+msgstr "为护盾提供能量。每额外一层护盾可阻挡一次攻击。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15053
 msgid ""
@@ -4175,18 +4244,20 @@ msgstr "引擎"
 #: src-ru/data/blueprints.xml.rawclobber:15069
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"engines\"]/desc"
 msgstr ""
+"为超光速引擎提供动力，并使舰船能够进行闪避。升级可提高闪避概率和引擎的充能速"
+"度。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15088
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"weapons\"]/title"
-msgstr ""
+msgstr "武器控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:15089
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"weapons\"]/desc"
-msgstr ""
+msgstr "为舰上所有武器提供运行支持。升级后可同时为更多武器供能。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15117
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"drones\"]/title"
-msgstr ""
+msgstr "无人机控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:15118
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"drones\"]/desc"
@@ -4202,41 +4273,41 @@ msgstr "显示己方星舰内部，并提供关于敌方舰船的信息。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15151
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"doors\"]/title"
-msgstr ""
+msgstr "舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:15152
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"doors\"]/desc"
-msgstr ""
+msgstr "远程控制舱门。升级后，舱门将更有效地阻挡火势蔓延与敌方登舰人员的移动。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15175
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HYPERJUMP\"]/title"
-msgstr ""
+msgstr "超空间跃迁"
 
 #: src-ru/data/blueprints.xml.rawclobber:15176
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HYPERJUMP\"]/desc"
-msgstr ""
+msgstr "允许在通过第7星区后跃迁至遥远星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15184
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TRICOLOR_AUG\"]/title"
-msgstr ""
+msgstr "雷达"
 
 #: src-ru/data/blueprints.xml.rawclobber:15185
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TRICOLOR_AUG\"]/desc"
-msgstr ""
+msgstr "显示星区地图。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15193
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/title"
-msgstr ""
+msgstr "灵魂囚笼"
 
 #: src-ru/data/blueprints.xml.rawclobber:15194
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SOUL_MAGNIT\"]/desc"
-msgstr ""
+msgstr "这个装置的用途尚不明确，但至少它值一些废料。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15203
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARTILLERY_ORDER\"]/title"
-msgstr ""
+msgstr "巨炮瞄准系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:15204
 msgid ""
@@ -4251,114 +4322,126 @@ msgstr "星区扫描仪"
 #: src-ru/data/blueprints.xml.rawclobber:15213
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SECTOR_SCANNER\"]/desc"
-msgstr ""
+msgstr "能够显示星区的确切类型，即使该星区不紧邻当前所在星区。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15222
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_REPAIR\"]/title"
-msgstr ""
+msgstr "自动修复系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:15223
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_REPAIR\"]/desc"
 msgstr ""
+"自动修复舰船的受损系统，如同无人舰船那样。基础修复速度为 33%。可进行改进与内"
+"置。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15232
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"PROJECTILE_EATER\"]/title"
-msgstr ""
+msgstr "射弹摧毁系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:15233
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"PROJECTILE_EATER\"]/desc"
 msgstr ""
+"一种可手动激活的闪光装置，能将附近战场上的所有射弹分解为基本粒子。每次超光速"
+"跃迁后重新充能。可进行改进与内置。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15242
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ACCURACY_BOOST\"]/title"
-msgstr ""
+msgstr "制导修正器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15243
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ACCURACY_BOOST\"]/desc"
-msgstr ""
+msgstr "凭借的先进武器导航系统，敌方闪避率降低15%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15252
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANTICLOAK_FIELD\"]/title"
-msgstr ""
+msgstr "反隐形力场"
 
 #: src-ru/data/blueprints.xml.rawclobber:15253
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANTICLOAK_FIELD\"]/desc"
-msgstr ""
+msgstr "中断敌方舰船的隐形状态。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15262
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"POCKET_TELEPORTS\"]/title"
-msgstr ""
+msgstr "便携传送器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15263
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"POCKET_TELEPORTS\"]/desc"
-msgstr ""
+msgstr "船员现在使用便携传送器在舰船上移动。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15272
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SERENITY_AUG\"]/title"
-msgstr ""
+msgstr "附加船员舱"
 
 #: src-ru/data/blueprints.xml.rawclobber:15273
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SERENITY_AUG\"]/desc"
-msgstr ""
+msgstr "提供4个额外的船员槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15283
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_PRC\"]/title"
-msgstr ""
+msgstr "穿透增幅器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15284
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_PRC\"]/desc"
 msgstr ""
+"使所选武器的护盾穿透属性效果提升1级。若无实际效果则无法使用。一次性消耗品。在"
+"货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15292
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_FRC\"]/title"
-msgstr ""
+msgstr "火焰增幅器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15293
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_FRC\"]/desc"
 msgstr ""
+"使所选武器的点火概率提升40%。若原武器无点火效果或效果无效则无法使用。一次性消"
+"耗品。在货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15301
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_BRC\"]/title"
-msgstr ""
+msgstr "穿甲增幅器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15302
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_BRC\"]/desc"
 msgstr ""
+"使所选武器的破舱概率提升40%。若原武器无破舱效果或效果无效则无法使用。一次性消"
+"耗品。在货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15310
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_CLD\"]/title"
-msgstr ""
+msgstr "装填增幅器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15311
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_CLD\"]/desc"
 msgstr ""
+"使所选武器的装填时间缩短25%。若无实际效果则无法使用。一次性消耗品。在货舱菜单"
+"中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15319
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_POW\"]/title"
-msgstr ""
+msgstr "能量增幅器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15320
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_POW\"]/desc"
-msgstr ""
+msgstr "使所选武器的能耗降低1点。无法将能耗降至0。一次性消耗品。在货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15329
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_UNI\"]/title"
-msgstr ""
+msgstr "通用增幅器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15330
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_UNI\"]/desc"
@@ -9270,7 +9353,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:23283
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"BOSS_ION_STOCK\"]/title"
-msgstr ""
+msgstr "战斗离子无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:23284
 msgid ""
@@ -15759,12 +15842,12 @@ msgstr "相位离子武器的炮弹能穿透护盾，并同时电离护盾与系
 #: src-ru/data/blueprints.xml.rawclobber:37766
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1\"]/title"
-msgstr ""
+msgstr "离子效应器I"
 
 #: src-ru/data/blueprints.xml.rawclobber:37767
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1\"]/short"
-msgstr ""
+msgstr "效应器I"
 
 #: src-ru/data/blueprints.xml.rawclobber:37768
 msgid ""
@@ -15779,12 +15862,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:37807
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2\"]/title"
-msgstr ""
+msgstr "离子效应器II"
 
 #: src-ru/data/blueprints.xml.rawclobber:37808
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2\"]/short"
-msgstr ""
+msgstr "效应器II"
 
 #: src-ru/data/blueprints.xml.rawclobber:37810
 msgid ""
@@ -15799,12 +15882,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:37848
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3\"]/title"
-msgstr ""
+msgstr "重型离子效应器"
 
 #: src-ru/data/blueprints.xml.rawclobber:37849
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3\"]/short"
-msgstr ""
+msgstr "重型效应器"
 
 #: src-ru/data/blueprints.xml.rawclobber:37851
 msgid ""
@@ -15819,12 +15902,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:37889
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE\"]/title"
-msgstr ""
+msgstr "自适应离子效应器"
 
 #: src-ru/data/blueprints.xml.rawclobber:37890
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE\"]/short"
-msgstr ""
+msgstr "自适应效应器"
 
 #: src-ru/data/blueprints.xml.rawclobber:37892
 msgid ""
@@ -20835,7 +20918,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:48092
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON\"]/title"
-msgstr ""
+msgstr "星辰毁灭者"
 
 #: src-ru/data/blueprints.xml.rawclobber:48093
 msgid ""
@@ -21185,7 +21268,7 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:48878
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FR_BOSS_EFFECTOR\"]/title"
-msgstr ""
+msgstr "离子效应器"
 
 #: src-ru/data/blueprints.xml.rawclobber:48879
 msgid ""
@@ -39881,12 +39964,12 @@ msgstr "相位离子武器的炮弹能穿透护盾，并同时电离护盾与系
 #: src-ru/data/blueprints.xml.rawclobber:90769
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_CLD\"]/title"
-msgstr ""
+msgstr "离子效应器I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:90770
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_CLD\"]/short"
-msgstr ""
+msgstr "效应器I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:90771
 msgid ""
@@ -39901,12 +39984,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:90809
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_POW\"]/title"
-msgstr ""
+msgstr "离子效应器I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:90810
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_POW\"]/short"
-msgstr ""
+msgstr "效应器I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:90811
 msgid ""
@@ -39921,12 +40004,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:90851
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_CLD\"]/title"
-msgstr ""
+msgstr "离子效应器II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:90852
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_CLD\"]/short"
-msgstr ""
+msgstr "效应器II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:90854
 msgid ""
@@ -39941,12 +40024,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:90891
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_POW\"]/title"
-msgstr ""
+msgstr "离子效应器II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:90892
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_POW\"]/short"
-msgstr ""
+msgstr "效应器II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:90894
 msgid ""
@@ -39961,12 +40044,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:90932
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_CLD\"]/title"
-msgstr ""
+msgstr "重型离子效应器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:90933
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_CLD\"]/short"
-msgstr ""
+msgstr "重型效应器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:90935
 msgid ""
@@ -39981,12 +40064,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:90972
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_POW\"]/title"
-msgstr ""
+msgstr "重型离子效应器 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:90973
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_POW\"]/short"
-msgstr ""
+msgstr "重型效应器 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:90975
 msgid ""
@@ -40001,12 +40084,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:91013
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_CLD\"]/title"
-msgstr ""
+msgstr "自适应离子效应器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:91014
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_CLD\"]/short"
-msgstr ""
+msgstr "自适应效应器 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:91016
 msgid ""
@@ -40021,12 +40104,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:91058
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_POW\"]/title"
-msgstr ""
+msgstr "自适应离子效应器 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:91059
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_POW\"]/short"
-msgstr ""
+msgstr "自适应效应器 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:91061
 msgid ""
@@ -50686,12 +50769,12 @@ msgstr "发射穿透性水晶，封锁舱室。可被 1 级防御无人机击落
 #: src-ru/data/blueprints.xml.rawclobber:112338
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_FRC\"]/title"
-msgstr ""
+msgstr "星辰粉碎者 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:112339
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_FRC\"]/short"
-msgstr ""
+msgstr "碎星者 ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:112340
 msgid ""
@@ -50706,12 +50789,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:112372
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_BRC\"]/title"
-msgstr ""
+msgstr "星辰粉碎者 €"
 
 #: src-ru/data/blueprints.xml.rawclobber:112373
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_BRC\"]/short"
-msgstr ""
+msgstr "碎星者 €"
 
 #: src-ru/data/blueprints.xml.rawclobber:112374
 msgid ""
@@ -50726,12 +50809,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:112406
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_CLD\"]/title"
-msgstr ""
+msgstr "星辰粉碎者 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:112407
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_CLD\"]/short"
-msgstr ""
+msgstr "碎星者 ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:112408
 msgid ""
@@ -50746,12 +50829,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:112440
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_POW\"]/title"
-msgstr ""
+msgstr "星辰粉碎者 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:112441
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_POW\"]/short"
-msgstr ""
+msgstr "碎星者 †"
 
 #: src-ru/data/blueprints.xml.rawclobber:112442
 msgid ""
@@ -50766,12 +50849,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:112474
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_CLD\"]/title"
-msgstr ""
+msgstr "离子效应器+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:112475
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_CLD\"]/short"
-msgstr ""
+msgstr "效应器+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:112476
 msgid ""
@@ -50781,7 +50864,7 @@ msgstr "离子发射器"
 #: src-ru/data/blueprints.xml.rawclobber:112478
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_CLD\"]/desc"
-msgstr ""
+msgstr "改良型离子发射器，无视护盾，可使系统瘫痪。"
 
 #: src-ru/data/blueprints.xml.rawclobber:112518
 msgid ""
@@ -56436,12 +56519,12 @@ msgstr "相位离子武器的炮弹能穿透护盾，并同时电离护盾与系
 #: src-ru/data/blueprints.xml.rawclobber:125351
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_UNI\"]/title"
-msgstr ""
+msgstr "离子效应器√"
 
 #: src-ru/data/blueprints.xml.rawclobber:125352
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_UNI\"]/short"
-msgstr ""
+msgstr "效应器√"
 
 #: src-ru/data/blueprints.xml.rawclobber:125353
 msgid ""
@@ -56456,12 +56539,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:125391
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_UNI\"]/title"
-msgstr ""
+msgstr "离子效应器II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125392
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_UNI\"]/short"
-msgstr ""
+msgstr "效应器II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125394
 msgid ""
@@ -56476,12 +56559,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:125431
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_UNI\"]/title"
-msgstr ""
+msgstr "重型离子效应器 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125432
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_UNI\"]/short"
-msgstr ""
+msgstr "重型效应器 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125434
 msgid ""
@@ -56496,12 +56579,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:125471
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_UNI\"]/title"
-msgstr ""
+msgstr "自适应离子效应器 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125472
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_UNI\"]/short"
-msgstr ""
+msgstr "自适应效应器 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125474
 msgid ""
@@ -59261,12 +59344,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:130964
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_UNI\"]/title"
-msgstr ""
+msgstr "星辰粉碎者 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130965
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_UNI\"]/short"
-msgstr ""
+msgstr "碎星者 √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130966
 msgid ""
@@ -59286,12 +59369,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:130999
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_UNI\"]/title"
-msgstr ""
+msgstr "离子效应器+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:131000
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_UNI\"]/short"
-msgstr ""
+msgstr "效应器+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:131001
 msgid ""
@@ -59301,7 +59384,7 @@ msgstr "离子发射器"
 #: src-ru/data/blueprints.xml.rawclobber:131003
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_UNI\"]/desc"
-msgstr ""
+msgstr "改良型离子发射器，无视护盾，可使系统瘫痪。"
 
 #: src-ru/data/blueprints.xml.rawclobber:131004
 msgid ""
@@ -61086,12 +61169,12 @@ msgstr "这件自适应武器已预热完毕。"
 #: src-ru/data/blueprints.xml.rawclobber:134727
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_RDY\"]/title"
-msgstr ""
+msgstr "自适应离子效应器 ^"
 
 #: src-ru/data/blueprints.xml.rawclobber:134728
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_RDY\"]/short"
-msgstr ""
+msgstr "自适应效应器 ^"
 
 #: src-ru/data/blueprints.xml.rawclobber:134730
 msgid ""
@@ -67961,12 +68044,12 @@ msgstr "水晶武器"
 #: src-ru/data/blueprints.xml.rawclobber:150734
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_ACC\"]/title"
-msgstr ""
+msgstr "封锁水晶炮II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:150735
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_ACC\"]/short"
-msgstr ""
+msgstr "封锁水晶II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:150736
 msgid ""
@@ -67986,12 +68069,12 @@ msgstr "水晶武器"
 #: src-ru/data/blueprints.xml.rawclobber:150776
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_ACC\"]/title"
-msgstr ""
+msgstr "封锁水晶炮I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:150777
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_ACC\"]/short"
-msgstr ""
+msgstr "封锁水晶I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:150778
 msgid ""
@@ -69003,7 +69086,7 @@ msgstr "充能缓慢的无人机，持续以离子脉冲攻击敌方舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:152262
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_2\"]/title"
-msgstr ""
+msgstr "重型战斗离子无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:152263
 msgid ""
@@ -69018,7 +69101,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:152279
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3\"]/title"
-msgstr ""
+msgstr "战斗离子无人机II"
 
 #: src-ru/data/blueprints.xml.rawclobber:152280
 msgid ""
@@ -69043,7 +69126,7 @@ msgstr "离子无人机"
 #: src-ru/data/blueprints.xml.rawclobber:152331
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_ION_V3\"]/title"
-msgstr ""
+msgstr "战斗离子无人机III"
 
 #: src-ru/data/blueprints.xml.rawclobber:152332
 msgid ""
@@ -69068,7 +69151,7 @@ msgstr "离子无人机"
 #: src-ru/data/blueprints.xml.rawclobber:152384
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_ION_V4\"]/title"
-msgstr ""
+msgstr "战斗离子无人机IV"
 
 #: src-ru/data/blueprints.xml.rawclobber:152385
 msgid ""
@@ -70133,12 +70216,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:154485
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_ANTI_DRONE_EFFECTOR\"]/title"
-msgstr ""
+msgstr "离子效应器无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:154486
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_ANTI_DRONE_EFFECTOR\"]/short"
-msgstr ""
+msgstr "离子效应无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:154487
 msgid ""
@@ -71583,7 +71666,7 @@ msgstr "充能缓慢的无人机，持续以离子脉冲攻击敌方舰船。"
 #: src-ru/data/blueprints.xml.rawclobber:156530
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_2_R\"]/title"
-msgstr ""
+msgstr "重型战斗离子无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:156531
 msgid ""
@@ -71598,7 +71681,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:156546
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_ION_3_R\"]/title"
-msgstr ""
+msgstr "战斗离子无人机II"
 
 #: src-ru/data/blueprints.xml.rawclobber:156547
 msgid ""
@@ -71613,7 +71696,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:156562
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_ION_V3_R\"]/title"
-msgstr ""
+msgstr "战斗离子无人机III"
 
 #: src-ru/data/blueprints.xml.rawclobber:156563
 msgid ""
@@ -71628,7 +71711,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:156578
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_ION_V4_R\"]/title"
-msgstr ""
+msgstr "战斗离子无人机IV"
 
 #: src-ru/data/blueprints.xml.rawclobber:156579
 msgid ""
@@ -72122,12 +72205,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:157306
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_ANTI_DRONE_EFFECTOR_R\"]/title"
-msgstr ""
+msgstr "离子效应器无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:157307
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_ANTI_DRONE_EFFECTOR_R\"]/short"
-msgstr ""
+msgstr "离子效应无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:157308
 msgid ""
