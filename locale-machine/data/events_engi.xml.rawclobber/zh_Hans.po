@@ -8112,83 +8112,91 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:9908
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_CATCH_FISH_10\"]/text"
-msgstr ""
+msgstr "You caught a Midnight Carp."
 
 #: src-ru/data/events_engi.xml.rawclobber:9918
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/text"
 msgstr ""
+"A small Engi station near the beacon offers its services. A sign states they"
+" can install an artillery system on your ship or perform repairs."
 
 #: src-ru/data/events_engi.xml.rawclobber:9920
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"artillery\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "Install artillery (already installed)."
 
 #: src-ru/data/events_engi.xml.rawclobber:9924
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Install artillery."
 
 #: src-ru/data/events_engi.xml.rawclobber:9926
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "The Engi quickly install the required system."
 
 #: src-ru/data/events_engi.xml.rawclobber:9934
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[3]/text"
-msgstr ""
+msgstr "Request a partial hull repair."
 
 #: src-ru/data/events_engi.xml.rawclobber:9936
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[3]/event/text"
 msgstr ""
+"The station's drones swarm around the ship and repair damages. Afterward, "
+"the station wishes you a safe journey."
 
 #: src-ru/data/events_engi.xml.rawclobber:9944
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[4]/text"
-msgstr ""
+msgstr "Request a full hull repair."
 
 #: src-ru/data/events_engi.xml.rawclobber:9946
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[4]/event/text"
 msgstr ""
+"The station's drones swarm around the ship and repair all damages. "
+"Afterward, the station wishes you a safe journey."
 
 #: src-ru/data/events_engi.xml.rawclobber:9954
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
+msgstr "(Engi crew member) Request free service per protocol 52.34."
 
 #: src-ru/data/events_engi.xml.rawclobber:9956
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/text"
 msgstr ""
+"They reply: \"Accepted. Federation restoration: top priority. Repairing hull"
+" and offering artillery installation.\""
 
 #: src-ru/data/events_engi.xml.rawclobber:9960
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[@req=\"artillery\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "Install artillery (already installed)."
 
 #: src-ru/data/events_engi.xml.rawclobber:9964
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Install artillery."
 
 #: src-ru/data/events_engi.xml.rawclobber:9966
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "The Engi quickly install the required system."
 
 #: src-ru/data/events_engi.xml.rawclobber:9974
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[3]/text"
-msgstr ""
+msgstr "Artillery not required."
 
 #: src-ru/data/events_engi.xml.rawclobber:9980
 msgid ""
@@ -8199,6 +8207,8 @@ msgstr "在 FTL 驱动器充能期间与船员交谈。"
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"FIND_DRONE_UNIQUE\"]/text[1]"
 msgstr ""
+"When you ask the nearest Engi station for help, they send you an unusual "
+"drone blueprint!"
 
 #: src-ru/data/events_engi.xml.rawclobber:10001
 msgid ""
@@ -8213,33 +8223,37 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:10006
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI\"]/text"
 msgstr ""
+"A pirate ship circles near a robotics station at the beacon. Upon seeing "
+"you, it switches targets."
 
 #: src-ru/data/events_engi.xml.rawclobber:10012
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"EVENT_ADD_INNER_AI_PARAM\"]/destroyed/text"
-msgstr ""
+msgstr "You collect the debris remaining after the battle..."
 
 #: src-ru/data/events_engi.xml.rawclobber:10020
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"EVENT_ADD_INNER_AI_PARAM\"]/deadCrew/text"
-msgstr ""
+msgstr "You quickly loot the contents of the ship's hold..."
 
 #: src-ru/data/events_engi.xml.rawclobber:10029
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/text"
 msgstr ""
+"The roboticists thank you; although they can't offer much, they are ready to"
+" install a backup AI on your ship."
 
 #: src-ru/data/events_engi.xml.rawclobber:10031
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/choice[@req=\"prinuditelno_autoship\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "Load backup AI (ship already has AI)."
 
 #: src-ru/data/events_engi.xml.rawclobber:10035
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/choice[@req=\"prinuditelno_autoship\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "Load backup AI."
 
 #: src-ru/data/events_engi.xml.rawclobber:10039
 msgid ""
@@ -8249,9 +8263,9 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:10041
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/choice[3]/event/text"
-msgstr ""
+msgstr "You thank them, but it isn't required now. Time to move on."
 
 #: src-ru/data/events_engi.xml.rawclobber:10046
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP_PROCESS\"]/text"
-msgstr ""
+msgstr "Loading is successful, and you prepare to move on."

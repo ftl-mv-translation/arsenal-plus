@@ -4145,7 +4145,7 @@ msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:15054
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"artillery\"]/desc"
-msgstr ""
+msgstr "The artillery type depends on the ship class it is installed on."
 
 #: src-ru/data/blueprints.xml.rawclobber:15068
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"engines\"]/title"
@@ -4170,6 +4170,8 @@ msgstr "无人机管理"
 #: src-ru/data/blueprints.xml.rawclobber:15118
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"drones\"]/desc"
 msgstr ""
+"Powers all ship drones. Drones are automated robots capable of attacking "
+"enemy ships, repairing systems, etc."
 
 #: src-ru/data/blueprints.xml.rawclobber:15137
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"sensors\"]/title"
@@ -4406,6 +4408,9 @@ msgstr "安全传送器"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/desc"
 msgstr ""
+"Fully heals crew upon teleporting. Automatically retrieves allied crew from "
+"an enemy ship when it explodes or leaves the combat zone. Does not require a"
+" powered teleporter to function."
 
 #: src-ru/data/blueprints.xml.rawclobber:15405
 msgid ""
@@ -4452,6 +4457,10 @@ msgstr "红外扫描仪"
 #: src-ru/data/blueprints.xml.rawclobber:15445
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/desc"
 msgstr ""
+"Detects all life forms, even when ship sensors are weak or offline. Provides"
+" info on enemy evasion, O2 levels, and remaining supplies. Allows ship "
+"sensors to function in nebulae. Weapons charge during enemy cloaking, albeit"
+" at a reduced speed."
 
 #: src-ru/data/blueprints.xml.rawclobber:15454
 msgid ""
@@ -4462,6 +4471,8 @@ msgstr "超级护盾旁路"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ZOLTAN_BYPASS\"]/desc"
 msgstr ""
+"Allows crew teleporters, bombs, and mind control to bypass Super Shields. "
+"Enemy Super Shield is capped at 3 layers."
 
 #: src-ru/data/blueprints.xml.rawclobber:15464
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANO_MEDBAY\"]/title"
@@ -4506,7 +4517,7 @@ msgstr "自动重装器"
 #: src-ru/data/blueprints.xml.rawclobber:15504
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_COOLDOWN\"]/desc"
-msgstr ""
+msgstr "Weapon and artillery cooldown delay is reduced by 20%."
 
 #: src-ru/data/blueprints.xml.rawclobber:15513
 msgid ""
@@ -4667,7 +4678,7 @@ msgstr "每扇区可召唤一次自动贸易舰。在货舱菜单中使用。"
 #: src-ru/data/blueprints.xml.rawclobber:15693
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_DOWN\"]/title"
-msgstr ""
+msgstr "Anti-Repair Drones"
 
 #: src-ru/data/blueprints.xml.rawclobber:15694
 msgid ""
@@ -4693,6 +4704,8 @@ msgstr "维修控制器"
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP_AND_DOWN\"]/desc"
 msgstr ""
+"This augment provides the effects of both repair drones and anti-repair "
+"drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:15723
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ORCHID_BOX\"]/title"
@@ -5164,7 +5177,7 @@ msgstr "鲷鱼香"
 
 #: src-ru/data/blueprints.xml.rawclobber:16180
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_1\"]/desc"
-msgstr ""
+msgstr "Smoked Dorade (+20% movement speed)."
 
 #: src-ru/data/blueprints.xml.rawclobber:16187
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_2\"]/title"
@@ -5180,7 +5193,7 @@ msgstr "蝎鲤香"
 
 #: src-ru/data/blueprints.xml.rawclobber:16196
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_3\"]/desc"
-msgstr ""
+msgstr "Smoked Scorpion Carp (+20% repair speed)."
 
 #: src-ru/data/blueprints.xml.rawclobber:16203
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_4\"]/title"
@@ -5233,11 +5246,13 @@ msgstr "熏太阳鱼（能力充能速度+30%）。"
 #: src-ru/data/blueprints.xml.rawclobber:16251
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_10\"]/title"
-msgstr ""
+msgstr "Scent of the Midnight Carp"
 
 #: src-ru/data/blueprints.xml.rawclobber:16252
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_10\"]/desc"
 msgstr ""
+"Smoked Midnight Carp (+10 Max Health, +10% damage, -10% damage taken, +10% "
+"movement speed)."
 
 #: src-ru/data/blueprints.xml.rawclobber:16266
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"fuel\"]/title"
@@ -5267,6 +5282,8 @@ msgstr "适用于任何导弹型武器的多用途弹药。"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/desc"
 msgstr ""
+"A legendary Panzeron. Its arrival was predicted by the ancient scrolls of "
+"the wisest Panzerons."
 
 #: src-ru/data/blueprints.xml.rawclobber:16297
 msgid ""
@@ -5282,6 +5299,8 @@ msgstr "装甲兽"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[1]"
 msgstr ""
+"Effectively absorbs system damage, sacrificing its own health to protect the"
+" system."
 
 #: src-ru/data/blueprints.xml.rawclobber:16302
 msgid ""
@@ -5291,17 +5310,20 @@ msgstr "移动速度80%"
 #: src-ru/data/blueprints.xml.rawclobber:16303
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "Takes 40% less damage in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:16304
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "Crew damage taken is reduced by four times."
 
 #: src-ru/data/blueprints.xml.rawclobber:16320
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg_legendary\"]/desc"
 msgstr ""
+"Golden Panzeron Egg. Needs protection, and if you believe hard enough, one "
+"day it will hatch. A warm-blooded ally nearby increases hatching chances, "
+"while a vacuum decreases them."
 
 #: src-ru/data/blueprints.xml.rawclobber:16323
 msgid ""
@@ -5344,6 +5366,7 @@ msgstr "装甲兽"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/powerList/power[1]"
 msgstr ""
+"Absorbs system damage, sacrificing its own health to protect the system."
 
 #: src-ru/data/blueprints.xml.rawclobber:16353
 msgid ""
@@ -5363,6 +5386,9 @@ msgstr "受到的船员伤害减半"
 #: src-ru/data/blueprints.xml.rawclobber:16409
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/desc"
 msgstr ""
+"Panzeron Egg. Needs protection, and if you believe hard enough, one day it "
+"will hatch. A warm-blooded ally nearby increases hatching chances, while a "
+"vacuum decreases them."
 
 #: src-ru/data/blueprints.xml.rawclobber:16412
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/title"
@@ -5574,31 +5600,33 @@ msgstr "自动能力：静电"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/desc"
 msgstr ""
+"Probably the most dangerous creature in the galaxy, kept behind reinforced "
+"acid-resistant glass."
 
 #: src-ru/data/blueprints.xml.rawclobber:16619
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/title"
-msgstr ""
+msgstr "Xenomorph in a container"
 
 #: src-ru/data/blueprints.xml.rawclobber:16620
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/short"
-msgstr ""
+msgstr "Xenomorph in a container"
 
 #: src-ru/data/blueprints.xml.rawclobber:16623
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/powerList/power[1]"
-msgstr ""
+msgstr "Fireproof"
 
 #: src-ru/data/blueprints.xml.rawclobber:16624
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/powerList/power[2]"
-msgstr ""
+msgstr "Does not require oxygen"
 
 #: src-ru/data/blueprints.xml.rawclobber:16625
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/powerList/power[3]"
-msgstr ""
+msgstr "Extremely fragile"
 
 #: src-ru/data/blueprints.xml.rawclobber:16635
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"morph\"]/desc"
@@ -6605,6 +6633,9 @@ msgstr "受到的船员伤害减半"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/desc"
 msgstr ""
+"Legendary Engi. Assembled by a virus from a nanite cloud, this Engi has "
+"enhanced repair and firefighting skills and deals massive damage to "
+"functional enemy walking drones in melee combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:18558
 msgid ""
@@ -13553,6 +13584,9 @@ msgstr "传送炸弹"
 #: src-ru/data/blueprints.xml.rawclobber:32526
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE\"]/desc"
 msgstr ""
+"Teleporting bomb; sends everyone in the room to the other ship, stunning "
+"them slightly. Can be used on your own ship. Cannot be upgraded with "
+"injectors. Does not teleport drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:32557
 msgid ""
@@ -19498,6 +19532,9 @@ msgstr "传送炸弹"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE_E1\"]/desc"
 msgstr ""
+"Teleporting bomb; sends everyone in the room to the other ship, stunning "
+"them slightly. Can be used on your own ship. Cannot be upgraded with "
+"injectors. Does not teleport drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:44825
 msgid ""
@@ -19513,6 +19550,9 @@ msgstr "传送炸弹"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE_E2\"]/desc"
 msgstr ""
+"Teleporting bomb; sends everyone in the room to the other ship, stunning "
+"them slightly. Can be used on your own ship. Cannot be upgraded with "
+"injectors. Does not teleport drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:44859
 msgid ""
@@ -19528,6 +19568,9 @@ msgstr "传送炸弹"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE_E3\"]/desc"
 msgstr ""
+"Teleporting bomb; sends everyone in the room to the other ship, stunning "
+"them slightly. Can be used on your own ship. Cannot be upgraded with "
+"injectors. Does not teleport drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:44893
 msgid ""
@@ -19543,6 +19586,9 @@ msgstr "传送炸弹"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_TELE_E4\"]/desc"
 msgstr ""
+"Teleporting bomb; sends everyone in the room to the other ship, stunning "
+"them slightly. Can be used on your own ship. Cannot be upgraded with "
+"injectors. Does not teleport drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:44927
 msgid ""
@@ -32889,12 +32935,12 @@ msgstr "这种地狱般的光束会引发火灾并伤害船员。"
 #: src-ru/data/blueprints.xml.rawclobber:74782
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_FIRE_2_CLD\"]/title"
-msgstr ""
+msgstr "Fire Beam Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:74783
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_FIRE_2_CLD\"]/short"
-msgstr ""
+msgstr "Fire Beam II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:74784
 msgid ""
@@ -34179,7 +34225,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:77151
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_FRC\"]/short"
-msgstr ""
+msgstr "Small Bomb ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:77153
 msgid ""
@@ -49285,6 +49331,9 @@ msgstr "变体-M √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_M_UNI\"]/desc"
 msgstr ""
+"Sends three projectiles through a parallel dimension (targeting only works "
+"for the first). Projectiles return to our dimension when approaching the "
+"target."
 
 #: src-ru/data/blueprints.xml.rawclobber:109088
 msgid ""
@@ -49345,6 +49394,9 @@ msgstr "变体-R √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_R_UNI\"]/desc"
 msgstr ""
+"Sends three projectiles through a parallel dimension (targeting only works "
+"for the first). Projectiles return to our dimension when approaching the "
+"target."
 
 #: src-ru/data/blueprints.xml.rawclobber:109208
 msgid ""
@@ -49405,6 +49457,9 @@ msgstr "变体-S √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_S_UNI\"]/desc"
 msgstr ""
+"Sends three projectiles through a parallel dimension (targeting only works "
+"for the first). Projectiles return to our dimension when approaching the "
+"target."
 
 #: src-ru/data/blueprints.xml.rawclobber:109328
 msgid ""
@@ -49450,6 +49505,9 @@ msgstr "变体-Z √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"MORPHGUN_Z_UNI\"]/desc"
 msgstr ""
+"Sends three projectiles through a parallel dimension (targeting only works "
+"for the first). Projectiles return to our dimension when approaching the "
+"target."
 
 #: src-ru/data/blueprints.xml.rawclobber:109421
 msgid ""
@@ -71231,6 +71289,9 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"SHIP_REPAIR\"]/desc"
 msgstr ""
+"Automatically repairs 3 to 5 hull points. Requires drone parts to launch. "
+"Uses 2 parts for a full repair but can launch for partial repair if only 1 "
+"drone part remains."
 
 #: src-ru/data/blueprints.xml.rawclobber:155693
 msgid ""
@@ -71261,6 +71322,8 @@ msgstr "水晶修复无人机"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"SHIP_REPAIR_CRYSTAL\"]/desc"
 msgstr ""
+"Automatically repairs 3 to 5 hull points. Requires drone parts to launch. "
+"Uses 1 drone part."
 
 #: src-ru/data/blueprints.xml.rawclobber:155728
 msgid ""
@@ -72234,7 +72297,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157034
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157048
 msgid ""
@@ -72249,7 +72312,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157050
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON2\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157064
 msgid ""
@@ -72264,7 +72327,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157066
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON3\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157080
 msgid ""
@@ -72279,7 +72342,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157082
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON4\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157096
 msgid ""
@@ -72294,7 +72357,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157098
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON5\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157112
 msgid ""
@@ -72309,7 +72372,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157114
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON6\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157128
 msgid ""
@@ -72324,7 +72387,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157130
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON7\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157144
 msgid ""
@@ -72339,7 +72402,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157146
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON8\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157160
 msgid ""
@@ -72354,7 +72417,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157162
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON9\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157176
 msgid ""
@@ -72369,7 +72432,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157178
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON10\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157192
 msgid ""
@@ -72384,7 +72447,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157194
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON11\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157208
 msgid ""
@@ -72399,7 +72462,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157210
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON12\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157224
 msgid ""
@@ -72414,7 +72477,7 @@ msgstr "变色龙"
 #: src-ru/data/blueprints.xml.rawclobber:157226
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"COMBATDRONE_HAMELEON13\"]/desc"
-msgstr ""
+msgstr "This beam drone changes its beam type every jump."
 
 #: src-ru/data/blueprints.xml.rawclobber:157266
 msgid ""
@@ -73000,6 +73063,9 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"SHIP_REPAIR_R\"]/desc"
 msgstr ""
+"Automatically repairs 3 to 5 hull points. Requires drone parts to launch. "
+"Uses 2 parts for a full repair but can launch for partial repair if only 1 "
+"drone part remains."
 
 #: src-ru/data/blueprints.xml.rawclobber:157967
 msgid ""
@@ -73060,6 +73126,8 @@ msgstr "修复包 $10"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REPAIR_KIT_10\"]/desc"
 msgstr ""
+"Mobile repair kit, can repair 10 hull points. Single-use. Used in the CARGO "
+"menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:158047
 msgid ""
@@ -73075,6 +73143,8 @@ msgstr "修复包 $15"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REPAIR_KIT_15\"]/desc"
 msgstr ""
+"Mobile repair kit, can repair 15 hull points. Single-use. Used in the CARGO "
+"menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:158077
 msgid ""
@@ -73090,6 +73160,8 @@ msgstr "修复包 $20"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"REPAIR_KIT_20\"]/desc"
 msgstr ""
+"Mobile repair kit, can repair 20 hull points. Single-use. Used in the CARGO "
+"menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:158109
 msgid ""
@@ -79456,6 +79528,11 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"LIGHT_PRE_IGNITER\"]/desc"
 msgstr ""
+"This unique pre-igniter resembles the original prototype developed by "
+"Jackson Newman, but occupies a weapon slot instead of an augment slot. The "
+"weapon to its right is fully charged after an FTL jump or wait, and all "
+"weapon cooldowns are accelerated by 20% while the light pre-igniter is "
+"equipped."
 
 #: src-ru/data/blueprints.xml.rawclobber:175113
 msgid ""
@@ -80077,6 +80154,8 @@ msgstr "湮灭"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/desc"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to "
+"the host ship's weapon system and can deal up to 1 hull damage per volley."
 
 #: src-ru/data/blueprints.xml.rawclobber:176322
 msgid ""
@@ -80087,6 +80166,26 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/descriptionOverride"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to the host ship's weapon system and can deal up to 1 hull damage per volley.\n"
+"\n"
+"Stats:\n"
+"Power Required: 4\n"
+"Charge Time: 27s\n"
+"\n"
+"Beam Length: 82\n"
+"Beam Speed: 3\n"
+"\n"
+"Hull Damage: 6\n"
+"System Damage: 6\n"
+"Crew Damage: 90\n"
+"\n"
+"Weapon Break Chance: 100%\n"
+"Weapon Damage: 1\n"
+"Hull Damage Chance: 50%\n"
+"Hull Damage: 1\n"
+"Breach/Fire in Weapons Chance: 100%\n"
+"\n"
+"Purchase/Sell Price: 300~/150~"
 
 #: src-ru/data/blueprints.xml.rawclobber:176365
 msgid ""
@@ -80642,6 +80741,8 @@ msgstr "湮灭 ™"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_PRC\"]/desc"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to "
+"the host ship's weapon system and can deal up to 1 hull damage per volley."
 
 #: src-ru/data/blueprints.xml.rawclobber:177733
 msgid ""
@@ -80652,6 +80753,27 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_PRC\"]/descriptionOverride"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to the host ship's weapon system and can deal up to 1 hull damage per volley.\n"
+"\n"
+"Stats:\n"
+"Power Required: 4\n"
+"Charge Time: 27s\n"
+"\n"
+"Beam Length: 82\n"
+"Beam Speed: 3\n"
+"\n"
+"Hull Damage: 6\n"
+"System Damage: 6\n"
+"Crew Damage: 90\n"
+"Shield Piercing: 1\n"
+"\n"
+"Weapon Break Chance: 100%\n"
+"Weapon Damage: 1\n"
+"Hull Damage Chance: 50%\n"
+"Hull Damage: 1\n"
+"Breach/Fire in Weapons Chance: 100%\n"
+"\n"
+"Purchase/Sell Price: 300~/150~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177778
 msgid ""
@@ -80667,6 +80789,8 @@ msgstr "湮灭 ‡"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_CLD\"]/desc"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to "
+"the host ship's weapon system and can deal up to 1 hull damage per volley."
 
 #: src-ru/data/blueprints.xml.rawclobber:177781
 msgid ""
@@ -80677,6 +80801,26 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_CLD\"]/descriptionOverride"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to the host ship's weapon system and can deal up to 1 hull damage per volley.\n"
+"\n"
+"Stats:\n"
+"Power Required: 4\n"
+"Charge Time: 20.25s\n"
+"\n"
+"Beam Length: 82\n"
+"Beam Speed: 3\n"
+"\n"
+"Hull Damage: 6\n"
+"System Damage: 6\n"
+"Crew Damage: 90\n"
+"\n"
+"Weapon Break Chance: 100%\n"
+"Weapon Damage: 1\n"
+"Hull Damage Chance: 50%\n"
+"Hull Damage: 1\n"
+"Breach/Fire in Weapons Chance: 100%\n"
+"\n"
+"Purchase/Sell Price: 300~/150~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177825
 msgid ""
@@ -80692,6 +80836,8 @@ msgstr "湮灭 †"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_POW\"]/desc"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to "
+"the host ship's weapon system and can deal up to 1 hull damage per volley."
 
 #: src-ru/data/blueprints.xml.rawclobber:177828
 msgid ""
@@ -80702,6 +80848,26 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_POW\"]/descriptionOverride"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to the host ship's weapon system and can deal up to 1 hull damage per volley.\n"
+"\n"
+"Stats:\n"
+"Power Required: 3\n"
+"Charge Time: 27s\n"
+"\n"
+"Beam Length: 82\n"
+"Beam Speed: 3\n"
+"\n"
+"Hull Damage: 6\n"
+"System Damage: 6\n"
+"Crew Damage: 90\n"
+"\n"
+"Weapon Break Chance: 100%\n"
+"Weapon Damage: 1\n"
+"Hull Damage Chance: 50%\n"
+"Hull Damage: 1\n"
+"Breach/Fire in Weapons Chance: 100%\n"
+"\n"
+"Purchase/Sell Price: 300~/150~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177872
 msgid ""
@@ -80717,6 +80883,8 @@ msgstr "湮灭 √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_UNI\"]/desc"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to "
+"the host ship's weapon system and can deal up to 1 hull damage per volley."
 
 #: src-ru/data/blueprints.xml.rawclobber:177875
 msgid ""
@@ -80727,6 +80895,26 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR_UNI\"]/descriptionOverride"
 msgstr ""
+"This weapon deals monstrous damage. Every shot inevitably causes damage to the host ship's weapon system and can deal up to 1 hull damage per volley.\n"
+"\n"
+"Stats:\n"
+"Power Required: 4\n"
+"Charge Time: 27s\n"
+"\n"
+"Beam Length: 102\n"
+"Beam Speed: 3.75\n"
+"\n"
+"Hull Damage: 6\n"
+"System Damage: 6\n"
+"Crew Damage: 90\n"
+"\n"
+"Weapon Break Chance: 100%\n"
+"Weapon Damage: 1\n"
+"Hull Damage Chance: 50%\n"
+"Hull Damage: 1\n"
+"Breach/Fire in Weapons Chance: 100%\n"
+"\n"
+"Purchase/Sell Price: 300~/150~"
 
 #: src-ru/data/blueprints.xml.rawclobber:177948
 msgid ""
@@ -84172,6 +84360,9 @@ msgstr "无人机发射器"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"DRONE_LAUNCHER\"]/desc"
 msgstr ""
+"Launches a temporary autonomous combat drone based on a random drone "
+"blueprint from your cargo. Requires a drone in cargo but does not require a "
+"drone system or drone parts. Cannot be upgraded with injectors."
 
 #: src-ru/data/blueprints.xml.rawclobber:184349
 msgid ""
@@ -84316,130 +84507,145 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184622
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BARREL_FUEL\"]/title"
-msgstr ""
+msgstr "Fuel Tank"
 
 #: src-ru/data/blueprints.xml.rawclobber:184623
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BARREL_FUEL\"]/short"
-msgstr ""
+msgstr "Fuel Tank"
 
 #: src-ru/data/blueprints.xml.rawclobber:184624
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BARREL_FUEL\"]/desc"
 msgstr ""
+"Used fuel tank. Can be opened to extract leftover fuel, then recycled for "
+"scrap. Used in the CARGO menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:184652
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ION_RESONATOR\"]/title"
-msgstr ""
+msgstr "Ion Resonator"
 
 #: src-ru/data/blueprints.xml.rawclobber:184653
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ION_RESONATOR\"]/desc"
 msgstr ""
+"Adds system damage to all ion weapons that lack system or hull damage."
 
 #: src-ru/data/blueprints.xml.rawclobber:184663
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MISTICAL_AUG\"]/title"
-msgstr ""
+msgstr "Mysterious Container"
 
 #: src-ru/data/blueprints.xml.rawclobber:184664
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MISTICAL_AUG\"]/desc"
 msgstr ""
+"This container holds an augment. Zoltan sealed it with an energy lock that "
+"only opens during a jump. Requires a Zoltan on board to perform the breach. "
+"Warning: may cause prolonged crew stunning."
 
 #: src-ru/data/blueprints.xml.rawclobber:184673
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANTIHACKER\"]/title"
-msgstr ""
+msgstr "Network Shield"
 
 #: src-ru/data/blueprints.xml.rawclobber:184674
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANTIHACKER\"]/desc"
-msgstr ""
+msgstr "Prevents enemy hacking drones from activating."
 
 #: src-ru/data/blueprints.xml.rawclobber:184683
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRUNK_CREW\"]/title"
-msgstr ""
+msgstr "Uncle Moe's Mini-bar"
 
 #: src-ru/data/blueprints.xml.rawclobber:184684
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRUNK_CREW\"]/desc"
 msgstr ""
+"The crew is heavily intoxicated. Accuracy is significantly reduced if there "
+"is active crew on the ship."
 
 #: src-ru/data/blueprints.xml.rawclobber:184693
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DESSHIELD\"]/title"
-msgstr ""
+msgstr "Shield Disintegrator"
 
 #: src-ru/data/blueprints.xml.rawclobber:184694
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DESSHIELD\"]/desc"
 msgstr ""
+"Shields neutralize all lasers, debris, asteroids, and partially phase ion "
+"projectiles without losing power. It becomes impossible to raise more than 1"
+" layer of shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:184704
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"COPY_MASHINE\"]/title"
-msgstr ""
+msgstr "Weapon Printer"
 
 #: src-ru/data/blueprints.xml.rawclobber:184705
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"COPY_MASHINE\"]/short"
-msgstr ""
+msgstr "W. Printer"
 
 #: src-ru/data/blueprints.xml.rawclobber:184706
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"COPY_MASHINE\"]/desc"
-msgstr ""
+msgstr "Can copy almost any weapon. Single-use. Used in the CARGO menu."
 
 #: src-ru/data/blueprints.xml.rawclobber:184735
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_AIMER\"]/flavorType"
-msgstr ""
+msgstr "ASB Tracker"
 
 #: src-ru/data/blueprints.xml.rawclobber:184736
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_AIMER\"]/title"
-msgstr ""
+msgstr "ASB Tracker"
 
 #: src-ru/data/blueprints.xml.rawclobber:184737
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_AIMER\"]/short"
-msgstr ""
+msgstr "ASB Tracker"
 
 #: src-ru/data/blueprints.xml.rawclobber:184738
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_AIMER\"]/desc"
 msgstr ""
+"Anti-Ship Battery targeter. If enabled, ASB shots are guaranteed to hit the "
+"enemy. Does not change the ASB's target."
 
 #: src-ru/data/blueprints.xml.rawclobber:184765
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"4K_VISOR\"]/flavorType"
-msgstr ""
+msgstr "BC Detector"
 
 #: src-ru/data/blueprints.xml.rawclobber:184766
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"4K_VISOR\"]/title"
-msgstr ""
+msgstr "BC Detector"
 
 #: src-ru/data/blueprints.xml.rawclobber:184767
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"4K_VISOR\"]/short"
-msgstr ""
+msgstr "BC Detector"
 
 #: src-ru/data/blueprints.xml.rawclobber:184768
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"4K_VISOR\"]/desc"
 msgstr ""
+"Identifies and marks Black Wing ship signatures on the map. Works from "
+"either cargo or weapon slots."
 
 #: src-ru/data/blueprints.xml.rawclobber:184795
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BONUS_SHIELD\"]/title"
-msgstr ""
+msgstr "Extra Shield Layer"
 
 #: src-ru/data/blueprints.xml.rawclobber:184796
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BONUS_SHIELD\"]/desc"
-msgstr ""
+msgstr "Equipment is installed on this ship to support 5 layers of shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:184805
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BONUS_SHIELD_PLUS\"]/title"
-msgstr ""
+msgstr "Extra Shield Layers"
 
 #: src-ru/data/blueprints.xml.rawclobber:184806
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BONUS_SHIELD_PLUS\"]/desc"
-msgstr ""
+msgstr "Equipment is installed on this ship to support 6 layers of shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:184817
 msgid ""
@@ -84455,6 +84661,13 @@ msgstr "去离子器"
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DEIONIZATOR\"]/desc"
 msgstr ""
+"Removes ionization from the system in its room at the cost of its own health. Ability disables at low health. Regenerates in the drone bay at a reduced speed.\n"
+"\n"
+"Controllable\n"
+"Health: 150\n"
+"Cannot be stunned\n"
+"Regeneration speed: 0.5 HP/sec\n"
+"Movement speed: 90%"
 
 #: src-ru/data/blueprints.xml.rawclobber:184833
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"deionizator\"]/desc"
@@ -84473,32 +84686,38 @@ msgstr "去离子器"
 #: src-ru/data/blueprints.xml.rawclobber:184847
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_ALAS\"]/title"
-msgstr ""
+msgstr "Reflector Drone Mark I"
 
 #: src-ru/data/blueprints.xml.rawclobber:184848
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_ALAS\"]/short"
-msgstr ""
+msgstr "Reflector I"
 
 #: src-ru/data/blueprints.xml.rawclobber:184849
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_ALAS\"]/desc"
 msgstr ""
+"Intercepts incoming non-ion laser projectiles with damage up to 3 and "
+"redirects them back at the enemy. Reflect chance for 0/1/2/3 damage: "
+"80/70/40/10%."
 
 #: src-ru/data/blueprints.xml.rawclobber:184865
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_ALAS2\"]/title"
-msgstr ""
+msgstr "Reflector Drone Mark II"
 
 #: src-ru/data/blueprints.xml.rawclobber:184866
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_ALAS2\"]/short"
-msgstr ""
+msgstr "Reflector II"
 
 #: src-ru/data/blueprints.xml.rawclobber:184867
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DE_DRONE_DEFENSE_ALAS2\"]/desc"
 msgstr ""
+"Intercepts incoming non-ion laser projectiles with damage up to 3 and "
+"redirects them back at the enemy. Reflect chance for 0/1/2/3 damage: "
+"100/90/60/30%."
 
 #: src-ru/data/blueprints.xml.rawclobber:184880
 msgid ""
@@ -84523,17 +84742,17 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184914
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RRRRR\"]/title"
-msgstr ""
+msgstr "Unstable Flak"
 
 #: src-ru/data/blueprints.xml.rawclobber:184915
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RRRRR\"]/short"
-msgstr ""
+msgstr "U. Flak"
 
 #: src-ru/data/blueprints.xml.rawclobber:184917
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RRRRR\"]/desc"
-msgstr ""
+msgstr "Generic projectile for unstable flaks."
 
 #: src-ru/data/blueprints.xml.rawclobber:184956
 msgid ""
@@ -84543,12 +84762,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:184958
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I"
 
 #: src-ru/data/blueprints.xml.rawclobber:184959
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1\"]/short"
-msgstr ""
+msgstr "U. Flak I"
 
 #: src-ru/data/blueprints.xml.rawclobber:184961
 msgid ""
@@ -84559,6 +84778,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 10s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185017
 msgid ""
@@ -84568,12 +84803,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185019
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II"
 
 #: src-ru/data/blueprints.xml.rawclobber:185020
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2\"]/short"
-msgstr ""
+msgstr "U. Flak II"
 
 #: src-ru/data/blueprints.xml.rawclobber:185022
 msgid ""
@@ -84584,6 +84819,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 12s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185078
 msgid ""
@@ -84593,12 +84844,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185080
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III"
 
 #: src-ru/data/blueprints.xml.rawclobber:185081
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3\"]/short"
-msgstr ""
+msgstr "U. Flak III"
 
 #: src-ru/data/blueprints.xml.rawclobber:185083
 msgid ""
@@ -84613,12 +84864,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185125
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_PRC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:185126
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_PRC\"]/short"
-msgstr ""
+msgstr "U. Flak I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:185128
 msgid ""
@@ -84629,6 +84880,23 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_PRC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 10s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"Shield Piercing: 1\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185185
 msgid ""
@@ -84638,12 +84906,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185187
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_BRC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:185188
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_BRC\"]/short"
-msgstr ""
+msgstr "U. Flak I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:185190
 msgid ""
@@ -84654,6 +84922,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_BRC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 10s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 50%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185246
 msgid ""
@@ -84663,12 +84947,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185248
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_CLD\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:185249
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_CLD\"]/short"
-msgstr ""
+msgstr "U. Flak I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:185251
 msgid ""
@@ -84679,6 +84963,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_CLD\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 7.5s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185307
 msgid ""
@@ -84688,12 +84988,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185309
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_POW\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:185310
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_POW\"]/short"
-msgstr ""
+msgstr "U. Flak I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:185312
 msgid ""
@@ -84704,6 +85004,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_POW\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 1\n"
+"Charge: 10s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185368
 msgid ""
@@ -84713,12 +85029,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185370
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_UNI\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:185371
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_UNI\"]/short"
-msgstr ""
+msgstr "U. Flak I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:185373
 msgid ""
@@ -84729,6 +85045,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_UNI\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 10s\n"
+"\n"
+"Shrapnel Radius: 30\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185429
 msgid ""
@@ -84738,12 +85070,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185431
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_ACC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:185432
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_ACC\"]/short"
-msgstr ""
+msgstr "U. Flak I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:185434
 msgid ""
@@ -84754,6 +85086,23 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND1_ACC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 1-5 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 10s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 1-5\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Accuracy Modifier: 100\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185492
 msgid ""
@@ -84763,12 +85112,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185494
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_PRC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:185495
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_PRC\"]/short"
-msgstr ""
+msgstr "U. Flak II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:185497
 msgid ""
@@ -84779,6 +85128,23 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_PRC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 12s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"Shield Piercing: 1\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185554
 msgid ""
@@ -84788,12 +85154,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185556
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_BRC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II €"
 
 #: src-ru/data/blueprints.xml.rawclobber:185557
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_BRC\"]/short"
-msgstr ""
+msgstr "U. Flak II €"
 
 #: src-ru/data/blueprints.xml.rawclobber:185559
 msgid ""
@@ -84804,6 +85170,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_BRC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 12s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 50%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185615
 msgid ""
@@ -84813,12 +85195,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185617
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_CLD\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:185618
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_CLD\"]/short"
-msgstr ""
+msgstr "U. Flak II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:185620
 msgid ""
@@ -84829,6 +85211,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_CLD\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 9s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185676
 msgid ""
@@ -84838,12 +85236,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185678
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_POW\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:185679
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_POW\"]/short"
-msgstr ""
+msgstr "U. Flak II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:185681
 msgid ""
@@ -84854,6 +85252,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_POW\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 1\n"
+"Charge: 12s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185737
 msgid ""
@@ -84863,12 +85277,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185739
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_UNI\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:185740
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_UNI\"]/short"
-msgstr ""
+msgstr "U. Flak II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:185742
 msgid ""
@@ -84879,6 +85293,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_UNI\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 12s\n"
+"\n"
+"Shrapnel Radius: 30\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185798
 msgid ""
@@ -84888,12 +85318,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185800
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_ACC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:185801
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_ACC\"]/short"
-msgstr ""
+msgstr "U. Flak II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:185803
 msgid ""
@@ -84904,6 +85334,23 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND2_ACC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 2-6 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 12s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 2-6\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Accuracy Modifier: 100\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 80~/40~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185861
 msgid ""
@@ -84913,12 +85360,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185863
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_PRC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:185864
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_PRC\"]/short"
-msgstr ""
+msgstr "U. Flak III ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:185866
 msgid ""
@@ -84929,6 +85376,23 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_PRC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 3-7 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 14s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 3-7\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"Shield Piercing: 1\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 95~/47~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185923
 msgid ""
@@ -84938,12 +85402,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185925
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_BRC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III €"
 
 #: src-ru/data/blueprints.xml.rawclobber:185926
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_BRC\"]/short"
-msgstr ""
+msgstr "U. Flak III €"
 
 #: src-ru/data/blueprints.xml.rawclobber:185928
 msgid ""
@@ -84954,6 +85418,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_BRC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 3-7 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 14s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 3-7\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 50%\n"
+"\n"
+"Price: 95~/47~"
 
 #: src-ru/data/blueprints.xml.rawclobber:185984
 msgid ""
@@ -84963,12 +85443,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:185986
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_CLD\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:185987
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_CLD\"]/short"
-msgstr ""
+msgstr "U. Flak III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:185989
 msgid ""
@@ -84979,6 +85459,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_CLD\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 3-7 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 10.5s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 3-7\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 95~/47~"
 
 #: src-ru/data/blueprints.xml.rawclobber:186045
 msgid ""
@@ -84988,12 +85484,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:186047
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_POW\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III †"
 
 #: src-ru/data/blueprints.xml.rawclobber:186048
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_POW\"]/short"
-msgstr ""
+msgstr "U. Flak III †"
 
 #: src-ru/data/blueprints.xml.rawclobber:186050
 msgid ""
@@ -85004,6 +85500,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_POW\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 3-7 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 1\n"
+"Charge: 14s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 3-7\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 95~/47~"
 
 #: src-ru/data/blueprints.xml.rawclobber:186106
 msgid ""
@@ -85013,12 +85525,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:186108
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_UNI\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:186109
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_UNI\"]/short"
-msgstr ""
+msgstr "U. Flak III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:186111
 msgid ""
@@ -85029,6 +85541,22 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_UNI\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 3-7 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 14s\n"
+"\n"
+"Shrapnel Radius: 30\n"
+"Shots: 3-7\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 95~/47~"
 
 #: src-ru/data/blueprints.xml.rawclobber:186167
 msgid ""
@@ -85038,12 +85566,12 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:186169
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_ACC\"]/title"
-msgstr ""
+msgstr "Unstable Flak Mark III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:186170
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_ACC\"]/short"
-msgstr ""
+msgstr "U. Flak III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:186172
 msgid ""
@@ -85054,16 +85582,33 @@ msgstr ""
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHOTGUN_RAND3_ACC\"]/descriptionOverride"
 msgstr ""
+"Fires shrapnel over a random area, dealing 3-7 damage. Good for stripping shields, but aiming is difficult.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 14s\n"
+"\n"
+"Shrapnel Radius: 42\n"
+"Shots: 3-7\n"
+"\n"
+"Hull Dmg: 1\n"
+"Sys Dmg: 1\n"
+"Crew Dmg: 15\n"
+"\n"
+"Accuracy Modifier: 100\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 95~/47~"
 
 #: src-ru/data/blueprints.xml.rawclobber:186234
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_ION_BEAM\"]/title"
-msgstr ""
+msgstr "Boss Ion Beam"
 
 #: src-ru/data/blueprints.xml.rawclobber:186235
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_ION_BEAM\"]/short"
-msgstr ""
+msgstr "Boss Ion Beam"
 
 #: src-ru/data/blueprints.xml.rawclobber:186236
 msgid ""
@@ -85298,422 +85843,492 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:186786
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I"
 
 #: src-ru/data/blueprints.xml.rawclobber:186787
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I"
 
 #: src-ru/data/blueprints.xml.rawclobber:186788
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:186823
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II"
 
 #: src-ru/data/blueprints.xml.rawclobber:186824
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II"
 
 #: src-ru/data/blueprints.xml.rawclobber:186825
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:186860
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_PRC\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:186861
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_PRC\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:186862
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_PRC\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:186896
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_FRC\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:186897
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_FRC\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:186898
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_FRC\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:186932
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_CLD\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:186933
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_CLD\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:186934
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_CLD\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:186968
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_POW\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:186969
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_POW\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:186970
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_POW\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187004
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_UNI\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187005
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_UNI\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187006
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_UNI\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187042
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_ACC\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187043
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_ACC\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187044
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_1_ACC\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187079
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_PRC\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:187080
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_PRC\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:187081
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_PRC\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187115
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_FRC\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:187116
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_FRC\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:187117
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_FRC\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187151
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_CLD\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:187152
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_CLD\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:187153
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_CLD\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187187
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_POW\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:187188
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_POW\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:187189
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_POW\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187223
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_UNI\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187224
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_UNI\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187225
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_UNI\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187261
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_ACC\"]/title"
-msgstr ""
+msgstr "Zoltan Pulse Laser Mark II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187262
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_ACC\"]/short"
-msgstr ""
+msgstr "Zoltan Pulse Laser II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187263
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLT_LASER_BURST_2_ACC\"]/desc"
 msgstr ""
+"This pulse laser modification fires an additional projectile for every "
+"Zoltan or Zoltone in the weapon room."
 
 #: src-ru/data/blueprints.xml.rawclobber:187299
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I"
 
 #: src-ru/data/blueprints.xml.rawclobber:187300
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1\"]/short"
-msgstr ""
+msgstr "Streaming Laser I"
 
 #: src-ru/data/blueprints.xml.rawclobber:187301
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187335
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II"
 
 #: src-ru/data/blueprints.xml.rawclobber:187336
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2\"]/short"
-msgstr ""
+msgstr "Streaming Laser II"
 
 #: src-ru/data/blueprints.xml.rawclobber:187337
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187372
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_PRC\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:187373
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_PRC\"]/short"
-msgstr ""
+msgstr "Streaming Laser I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:187374
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_PRC\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187408
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_FRC\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:187409
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_FRC\"]/short"
-msgstr ""
+msgstr "Streaming Laser I ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:187410
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_FRC\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187444
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_CLD\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:187445
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_CLD\"]/short"
-msgstr ""
+msgstr "Streaming Laser I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:187446
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_CLD\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187480
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_POW\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:187481
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_POW\"]/short"
-msgstr ""
+msgstr "Streaming Laser I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:187482
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_POW\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187516
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_UNI\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187517
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_UNI\"]/short"
-msgstr ""
+msgstr "Streaming Laser I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187518
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_UNI\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187554
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_ACC\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187555
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_ACC\"]/short"
-msgstr ""
+msgstr "Streaming Laser I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187556
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_1_ACC\"]/desc"
 msgstr ""
+"This pulse laser modification has a 25% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187591
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_PRC\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:187592
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_PRC\"]/short"
-msgstr ""
+msgstr "Streaming Laser II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:187593
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_PRC\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187627
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_FRC\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:187628
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_FRC\"]/short"
-msgstr ""
+msgstr "Streaming Laser II ‰"
 
 #: src-ru/data/blueprints.xml.rawclobber:187629
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_FRC\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187663
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_CLD\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:187664
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_CLD\"]/short"
-msgstr ""
+msgstr "Streaming Laser II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:187665
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_CLD\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187699
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_POW\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:187700
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_POW\"]/short"
-msgstr ""
+msgstr "Streaming Laser II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:187701
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_POW\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187735
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_UNI\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187736
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_UNI\"]/short"
-msgstr ""
+msgstr "Streaming Laser II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187737
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_UNI\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187773
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_ACC\"]/title"
-msgstr ""
+msgstr "Streaming Pulse Laser Mark II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187774
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_ACC\"]/short"
-msgstr ""
+msgstr "Streaming Laser II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:187775
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HYBRYD_LASER_BURST_2_ACC\"]/desc"
 msgstr ""
+"This pulse laser modification has a 28% chance to immediately restore 80% "
+"charge after firing. If the weapon system is ionized, recharge is "
+"guaranteed."
 
 #: src-ru/data/blueprints.xml.rawclobber:187810
 msgid ""
@@ -85723,17 +86338,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:187812
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark I"
 
 #: src-ru/data/blueprints.xml.rawclobber:187813
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1\"]/short"
-msgstr ""
+msgstr "Blood RAM I"
 
 #: src-ru/data/blueprints.xml.rawclobber:187814
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:187856
 msgid ""
@@ -85743,17 +86360,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:187858
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark II"
 
 #: src-ru/data/blueprints.xml.rawclobber:187859
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2\"]/short"
-msgstr ""
+msgstr "Blood RAM II"
 
 #: src-ru/data/blueprints.xml.rawclobber:187860
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:187902
 msgid ""
@@ -85763,17 +86382,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:187904
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark III"
 
 #: src-ru/data/blueprints.xml.rawclobber:187905
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3\"]/short"
-msgstr ""
+msgstr "Blood RAM III"
 
 #: src-ru/data/blueprints.xml.rawclobber:187906
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:187949
 msgid ""
@@ -85783,17 +86404,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:187951
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_BRC\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:187952
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_BRC\"]/short"
-msgstr ""
+msgstr "Blood RAM I €"
 
 #: src-ru/data/blueprints.xml.rawclobber:187953
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_BRC\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:187995
 msgid ""
@@ -85803,17 +86426,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:187997
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_UNI\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187998
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_UNI\"]/short"
-msgstr ""
+msgstr "Blood RAM I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:187999
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_UNI\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188041
 msgid ""
@@ -85823,17 +86448,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188043
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_ACC\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:188044
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_ACC\"]/short"
-msgstr ""
+msgstr "Blood RAM I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:188045
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_1_ACC\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188088
 msgid ""
@@ -85843,17 +86470,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188090
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_BRC\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark II €"
 
 #: src-ru/data/blueprints.xml.rawclobber:188091
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_BRC\"]/short"
-msgstr ""
+msgstr "Blood RAM II €"
 
 #: src-ru/data/blueprints.xml.rawclobber:188092
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_BRC\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188134
 msgid ""
@@ -85863,17 +86492,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188136
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_UNI\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:188137
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_UNI\"]/short"
-msgstr ""
+msgstr "Blood RAM II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:188138
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_UNI\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188180
 msgid ""
@@ -85883,17 +86514,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188182
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_ACC\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:188183
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_ACC\"]/short"
-msgstr ""
+msgstr "Blood RAM II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:188184
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_2_ACC\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188227
 msgid ""
@@ -85903,17 +86536,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188229
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_BRC\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark III €"
 
 #: src-ru/data/blueprints.xml.rawclobber:188230
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_BRC\"]/short"
-msgstr ""
+msgstr "Blood RAM III €"
 
 #: src-ru/data/blueprints.xml.rawclobber:188231
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_BRC\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188273
 msgid ""
@@ -85923,17 +86558,19 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188275
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_UNI\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:188276
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_UNI\"]/short"
-msgstr ""
+msgstr "Blood RAM III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:188277
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_UNI\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188319
 msgid ""
@@ -85943,151 +86580,267 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:188321
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_ACC\"]/title"
-msgstr ""
+msgstr "Blood RAM Mark III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:188322
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_ACC\"]/short"
-msgstr ""
+msgstr "Blood RAM III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:188323
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PREIGNITE_BLOOD_3_ACC\"]/desc"
 msgstr ""
+"Fires a volley of sharp needles that pierce the hull and cause bleeding. "
+"Cannot reload in combat."
 
 #: src-ru/data/blueprints.xml.rawclobber:188368
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR\"]/title"
-msgstr ""
+msgstr "Grappling Beam"
 
 #: src-ru/data/blueprints.xml.rawclobber:188369
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR\"]/short"
-msgstr ""
+msgstr "Grappling Beam"
 
 #: src-ru/data/blueprints.xml.rawclobber:188370
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR\"]/desc"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system "
+"damage if it hits a room with a system."
 
 #: src-ru/data/blueprints.xml.rawclobber:188374
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR\"]/descriptionOverride"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system damage if it hits a room with a system.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 15s\n"
+"\n"
+"Beam Length: 120\n"
+"Beam Speed: 9\n"
+"\n"
+"Hull Dmg: 0/2\n"
+"Sys Dmg: 2\n"
+"Crew Dmg: 30\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 60~/30~"
 
 #: src-ru/data/blueprints.xml.rawclobber:188409
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_PRC\"]/title"
-msgstr ""
+msgstr "Grappling Beam ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:188410
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_PRC\"]/short"
-msgstr ""
+msgstr "Grappling Beam ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:188411
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_PRC\"]/desc"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system "
+"damage if it hits a room with a system."
 
 #: src-ru/data/blueprints.xml.rawclobber:188415
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_PRC\"]/descriptionOverride"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system damage if it hits a room with a system.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 15s\n"
+"\n"
+"Beam Length: 120\n"
+"Beam Speed: 9\n"
+"\n"
+"Hull Dmg: 0/2\n"
+"Sys Dmg: 2\n"
+"Crew Dmg: 30\n"
+"Shield Piercing: 1\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 60~/30~"
 
 #: src-ru/data/blueprints.xml.rawclobber:188450
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_BRC\"]/title"
-msgstr ""
+msgstr "Grappling Beam €"
 
 #: src-ru/data/blueprints.xml.rawclobber:188451
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_BRC\"]/short"
-msgstr ""
+msgstr "Grappling Beam €"
 
 #: src-ru/data/blueprints.xml.rawclobber:188452
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_BRC\"]/desc"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system "
+"damage if it hits a room with a system."
 
 #: src-ru/data/blueprints.xml.rawclobber:188456
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_BRC\"]/descriptionOverride"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system damage if it hits a room with a system.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 15s\n"
+"\n"
+"Beam Length: 120\n"
+"Beam Speed: 9\n"
+"\n"
+"Hull Dmg: 0/2\n"
+"Sys Dmg: 2\n"
+"Crew Dmg: 30\n"
+"\n"
+"Breach Chance: 50%\n"
+"\n"
+"Price: 60~/30~"
 
 #: src-ru/data/blueprints.xml.rawclobber:188490
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_CLD\"]/title"
-msgstr ""
+msgstr "Grappling Beam ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:188491
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_CLD\"]/short"
-msgstr ""
+msgstr "Grappling Beam ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:188492
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_CLD\"]/desc"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system "
+"damage if it hits a room with a system."
 
 #: src-ru/data/blueprints.xml.rawclobber:188496
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_CLD\"]/descriptionOverride"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system damage if it hits a room with a system.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 11.25s\n"
+"\n"
+"Beam Length: 120\n"
+"Beam Speed: 9\n"
+"\n"
+"Hull Dmg: 0/2\n"
+"Sys Dmg: 2\n"
+"Crew Dmg: 30\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 60~/30~"
 
 #: src-ru/data/blueprints.xml.rawclobber:188530
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_POW\"]/title"
-msgstr ""
+msgstr "Grappling Beam †"
 
 #: src-ru/data/blueprints.xml.rawclobber:188531
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_POW\"]/short"
-msgstr ""
+msgstr "Grappling Beam †"
 
 #: src-ru/data/blueprints.xml.rawclobber:188532
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_POW\"]/desc"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system "
+"damage if it hits a room with a system."
 
 #: src-ru/data/blueprints.xml.rawclobber:188536
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_POW\"]/descriptionOverride"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system damage if it hits a room with a system.\n"
+"\n"
+"Stats:\n"
+"Power: 1\n"
+"Charge: 15s\n"
+"\n"
+"Beam Length: 120\n"
+"Beam Speed: 9\n"
+"\n"
+"Hull Dmg: 0/2\n"
+"Sys Dmg: 2\n"
+"Crew Dmg: 30\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 60~/30~"
 
 #: src-ru/data/blueprints.xml.rawclobber:188570
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_UNI\"]/title"
-msgstr ""
+msgstr "Grappling Beam √"
 
 #: src-ru/data/blueprints.xml.rawclobber:188571
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_UNI\"]/short"
-msgstr ""
+msgstr "Grappling Beam √"
 
 #: src-ru/data/blueprints.xml.rawclobber:188572
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_UNI\"]/desc"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system "
+"damage if it hits a room with a system."
 
 #: src-ru/data/blueprints.xml.rawclobber:188576
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_BAGOR_UNI\"]/descriptionOverride"
 msgstr ""
+"This beam deals 2 hull damage if it hits an empty room, but only 2 system damage if it hits a room with a system.\n"
+"\n"
+"Stats:\n"
+"Power: 2\n"
+"Charge: 15s\n"
+"\n"
+"Beam Length: 150\n"
+"Beam Speed: 11.25\n"
+"\n"
+"Hull Dmg: 0/2\n"
+"Sys Dmg: 2\n"
+"Crew Dmg: 30\n"
+"\n"
+"Breach Chance: 10%\n"
+"\n"
+"Price: 60~/30~"
 
 #: src-ru/data/blueprints.xml.rawclobber:188611
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"GLIF_GUN\"]/title"
-msgstr ""
+msgstr "Glyphgun"
 
 #: src-ru/data/blueprints.xml.rawclobber:188612
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"GLIF_GUN\"]/short"
-msgstr ""
+msgstr "Glyphgun"
 
 #: src-ru/data/blueprints.xml.rawclobber:188614
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"GLIF_GUN\"]/desc"
 msgstr ""
+"Firing is determined by entered symbol patterns. Cannot be injected. "
+"Restores 1 damaged grid cell upon entering a new sector if in a weapon slot."
 
 #: src-ru/data/blueprints.xml.rawclobber:188615
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"GLIF_GUN\"]/descriptionOverride"
 msgstr ""
+"Firing is determined by entered symbol patterns. Cannot be injected. Restores 1 damaged grid cell upon entering a new sector if in a weapon slot.\n"
+"\n"
+"Price: 60~/30~"

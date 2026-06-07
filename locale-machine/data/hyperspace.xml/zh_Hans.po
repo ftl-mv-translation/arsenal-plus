@@ -16,18 +16,26 @@ msgstr ""
 #: src-ru/data/hyperspace.xml:938
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[3]/tooltip"
 msgstr ""
+"Uncle Moe's Mini-bar:\n"
+"\t\t\tShip crew is heavily intoxicated. Accuracy is significantly reduced if active crew is on board."
 
 #: src-ru/data/hyperspace.xml:943
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[4]/tooltip"
 msgstr ""
+"Shield Disintegrator\n"
+"\t\t\tShields neutralize all lasers, debris, asteroids, and partially phase ion projectiles without power loss. Raising more than 1 layer of shield becomes impossible."
 
 #: src-ru/data/hyperspace.xml:948
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[5]/tooltip"
 msgstr ""
+"Extra Shield Layer\n"
+"\t\t\tEquipment is installed to support 5 shield layers."
 
 #: src-ru/data/hyperspace.xml:953
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[6]/tooltip"
 msgstr ""
+"Extra Shield Layers\n"
+"\t\t\tEquipment is installed to support 6 shield layers."
 
 #: src-ru/data/hyperspace.xml:959
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[7]/tooltip"
@@ -201,6 +209,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[32]/tooltip"
 msgstr ""
+"Anti-Repair Drones:\n"
+"\t\t\tSlow enemy system repair speed by 50%."
 
 #: src-ru/data/hyperspace.xml:1089
 msgid ""
@@ -241,6 +251,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[38]/tooltip"
 msgstr ""
+"Infrared Scanner:\n"
+"\t\t\tDetects any life forms even when sensors are offline. Weapons charge during enemy cloaking at a reduced speed."
 
 #: src-ru/data/hyperspace.xml:1120
 msgid ""
@@ -439,11 +451,15 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[68]/tooltip"
 msgstr ""
+"Targeting Corrector:\n"
+"\t\t\tEnemy evasion reduced by 15% via advanced targeting."
 
 #: src-ru/data/hyperspace.xml:1270
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[69]/tooltip"
 msgstr ""
+"Auto-Reloader:\n"
+"\t\t\tWeapon and artillery cooldown delay reduced by 20%."
 
 #: src-ru/data/hyperspace.xml:1275
 msgid ""
@@ -512,6 +528,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[79]/tooltip"
 msgstr ""
+"Super Shield Bypass:\n"
+"\t\t\tAllows crew teleporters, bombs, and mind control to bypass Super Shields. Enemy Super Shield capped at 3 layers."
 
 #: src-ru/data/hyperspace.xml:1325
 msgid ""
@@ -552,6 +570,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[85]/tooltip"
 msgstr ""
+"Paralyzing Module:\n"
+"\t\t\tProtects allied crew from stunning on this ship. Enemy stunning on their ship lasts 2x longer. System hacking also paralyzes crew in the room."
 
 #: src-ru/data/hyperspace.xml:1355
 msgid ""
@@ -3123,12 +3143,12 @@ msgstr "另一位农民想买毛毛虫。（已访问）"
 #: src-ru/data/hyperspace.xml:22224
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/beaconType/unvisitedTooltip"
-msgstr ""
+msgstr "Destination for Xenomorph container delivery."
 
 #: src-ru/data/hyperspace.xml:22225
 msgid ""
 "data/hyperspace.xml$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/beaconType/visitedTooltip"
-msgstr ""
+msgstr "Destination for Xenomorph container delivery. Visited."
 
 #: src-ru/data/hyperspace.xml:22232
 msgid ""
@@ -5961,7 +5981,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:28782
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GLIF_GUN\"]/name"
-msgstr ""
+msgstr "Glyphs"
 
 #: src-ru/data/hyperspace.xml:28783
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GLIF_GUN\"]/secretName"
@@ -5969,7 +5989,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:28784
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_GLIF_GUN\"]/description"
-msgstr ""
+msgstr "Obtain the special weapon, Glyphgun."
 
 #: src-ru/data/hyperspace.xml:28785
 msgid ""
@@ -6443,7 +6463,7 @@ msgstr "同时开启3个挑战模式获胜。"
 
 #: src-ru/data/hyperspace.xml:29101
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUNDUK\"]/name"
-msgstr ""
+msgstr "Chest"
 
 #: src-ru/data/hyperspace.xml:29102
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUNDUK\"]/secretName"
@@ -6451,7 +6471,7 @@ msgstr ""
 
 #: src-ru/data/hyperspace.xml:29103
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SUNDUK\"]/description"
-msgstr ""
+msgstr "Catch a chest along with the fish."
 
 #: src-ru/data/hyperspace.xml:29112
 msgid "data/hyperspace.xml$/dummyroot/FTL/achievements/page[4]/section/@text"

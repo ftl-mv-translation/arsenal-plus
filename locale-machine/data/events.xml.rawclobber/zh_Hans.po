@@ -4847,10 +4847,13 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:6051
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_FUEL_TANK\"]/text[1]"
 msgstr ""
+"Arriving in the system, you spot a Federation ship nearby. Scanners show no "
+"crew, and the only finding on board is a sealed fuel tank. No traces or "
+"clues explaining the crew's disappearance are found."
 
 #: src-ru/data/events.xml.rawclobber:6052
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_FUEL_TANK\"]/text[2]"
-msgstr ""
+msgstr "A fuel tank drifts directly ahead. You carefully bring it aboard."
 
 #: src-ru/data/events.xml.rawclobber:6053
 msgid "data/events.xml.rawclobber$//textList[@name=\"FREE_FUEL_TANK\"]/text[3]"
@@ -7468,7 +7471,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:8578
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PLAGUE_LIST\"]/event[3]/choice[@req=\"CREW_ORCHID\"]/text"
-msgstr ""
+msgstr "(Orchid crew member) Infuse it with orchid pollen."
 
 #: src-ru/data/events.xml.rawclobber:8580
 msgid ""
@@ -7556,7 +7559,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:8649
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"DONOR_PLAGUE_LIST_2\"]/event[2]/choice[@req=\"CREW_ORCHID\"]/text"
-msgstr ""
+msgstr "(Orchid crew member) Infuse it with orchid pollen."
 
 #: src-ru/data/events.xml.rawclobber:8651
 msgid ""
@@ -18211,7 +18214,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:21869
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"HIVE\"]/text"
-msgstr ""
+msgstr "(Hive) Try to get rid of the hive."
 
 #: src-ru/data/events.xml.rawclobber:21873
 msgid ""
@@ -18277,6 +18280,8 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"ANTIHACKER\"]/text"
 msgstr ""
+"(Network Shield) Use knowledge of hacking system vulnerabilities to improve "
+"your own hacker."
 
 #: src-ru/data/events.xml.rawclobber:21925
 msgid ""
@@ -18357,6 +18362,7 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"AUGMENTS_ON_START_BEACON_2\"]/choice[@req=\"ION_RESONATOR\"]/text"
 msgstr ""
+"(Ion Resonator) Assemble an ion weapon using scrap and the ion resonator."
 
 #: src-ru/data/events.xml.rawclobber:21989
 msgid ""
@@ -18497,56 +18503,79 @@ msgstr "在 FTL 引擎充能期间与船员交谈。"
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_GOOD_TEXT\"]/text[1]"
 msgstr ""
+"You manage to carefully and discreetly detach the hive and silently push it "
+"into space. It's no longer your problem..."
 
 #: src-ru/data/events.xml.rawclobber:22144
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_GOOD_TEXT\"]/text[2]"
 msgstr ""
+"Your crew discreetly cuts the hive's attachments and casts it into space. "
+"You hope the hive burns up in the nearest star..."
 
 #: src-ru/data/events.xml.rawclobber:22145
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_GOOD_TEXT\"]/text[3]"
 msgstr ""
+"Your crew silently detaches the hive and sends it adrift into space. The "
+"wasps don't notice a thing..."
 
 #: src-ru/data/events.xml.rawclobber:22153
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_GOOD_AND_BAD_TEXT\"]/text[1]"
 msgstr ""
+"You manage to carefully and discreetly detach the hive and silently push it "
+"into space. Admittedly, you had to cut out part of the ship's hull..."
 
 #: src-ru/data/events.xml.rawclobber:22154
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_GOOD_AND_BAD_TEXT\"]/text[2]"
 msgstr ""
+"Your crew discreetly cuts the hive's attachments and casts it into space. "
+"You had to cut out structural components along with the hive, but it was "
+"worth it..."
 
 #: src-ru/data/events.xml.rawclobber:22155
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_GOOD_AND_BAD_TEXT\"]/text[3]"
 msgstr ""
+"Your crew detaches the hive and sends it adrift into space. Unfortunately, "
+"the ship was damaged in the process, but at least the wasps didn't notice..."
 
 #: src-ru/data/events.xml.rawclobber:22164
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_NOTHING_TEXT\"]/text[1]"
 msgstr ""
+"You attempt to detach the hive, but a wasp crawls out and looks at you. "
+"Better luck next time before things get worse..."
 
 #: src-ru/data/events.xml.rawclobber:22165
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_NOTHING_TEXT\"]/text[2]"
 msgstr ""
+"Your crew tries to access the ship's structure, but it's too noisy to sneak "
+"up on the hive."
 
 #: src-ru/data/events.xml.rawclobber:22166
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_NOTHING_TEXT\"]/text[3]"
 msgstr ""
+"You sneak up on the hive, but the wasps are too active to safely detach "
+"it..."
 
 #: src-ru/data/events.xml.rawclobber:22172
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_BAD_TEXT\"]/text[1]"
 msgstr ""
+"Your crew pulls on the hive clumsily, slamming it against the ship's wall. "
+"Disturbed, angry wasps swarm out onto the ship!"
 
 #: src-ru/data/events.xml.rawclobber:22173
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"TRY_TO_REMOVE_HIVE_BAD_TEXT\"]/text[2]"
 msgstr ""
+"Just as you start sawing through the hive's attachments, you lock eyes with "
+"a wasp. An enraged buzzing swarm spills into the ship's rooms!"
 
 #: src-ru/data/events.xml.rawclobber:22215
 msgid "data/events.xml.rawclobber$//event[@name=\"AIM_DRONES_LIST_PREPARE\"]/text"
@@ -19226,15 +19255,19 @@ msgstr "你的团队试图弄清去掩蔽场的工作原理，但一无所获。
 #: src-ru/data/events.xml.rawclobber:23218
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ANTIHACKER_PREPARE\"]/loadEventList/event[2]/text"
-msgstr ""
+msgstr "No hacking system on board."
 
 #: src-ru/data/events.xml.rawclobber:23229
 msgid "data/events.xml.rawclobber$//event[@name=\"ANTIHACKER_LIST_GOOD\"]/text"
 msgstr ""
+"Your crew reconfigures the Network Shield, allowing your own hacking system "
+"to be improved."
 
 #: src-ru/data/events.xml.rawclobber:23233
 msgid "data/events.xml.rawclobber$//event[@name=\"ANTIHACKER_LIST_BAD\"]/text"
 msgstr ""
+"Your crew reconfigures the Network Shield to improve hacking, but something "
+"goes wrong—there's an explosion!"
 
 #: src-ru/data/events.xml.rawclobber:23237
 msgid "data/events.xml.rawclobber$//event[@name=\"ANTIHACKER_LIST_NOTHING\"]/text"
@@ -20060,46 +20093,48 @@ msgstr "你在组装过程中犯了错，所有材料都浪费了。"
 #: src-ru/data/events.xml.rawclobber:24261
 msgid "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_PREPARE\"]/text"
 msgstr ""
+"You weigh various options for assembling an ion weapon. Higher costs lead to"
+" higher success rates."
 
 #: src-ru/data/events.xml.rawclobber:24263
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_PREPARE\"]/choice[1]/text"
-msgstr ""
+msgstr "Spend ~"
 
 #: src-ru/data/events.xml.rawclobber:24267
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_PREPARE\"]/choice[2]/text"
-msgstr ""
+msgstr "Spend ~"
 
 #: src-ru/data/events.xml.rawclobber:24271
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_PREPARE\"]/choice[3]/text"
-msgstr ""
+msgstr "Spend ~"
 
 #: src-ru/data/events.xml.rawclobber:24275
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_PREPARE\"]/choice[4]/text"
-msgstr ""
+msgstr "We have no spare scrap; prepare for jump."
 
 #: src-ru/data/events.xml.rawclobber:24281
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_COST_LIST_LOW\"]/text"
-msgstr ""
+msgstr "You spend scrap and begin assembly..."
 
 #: src-ru/data/events.xml.rawclobber:24291
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_COST_LIST_MED\"]/text"
-msgstr ""
+msgstr "You spend scrap and begin assembly..."
 
 #: src-ru/data/events.xml.rawclobber:24301
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_COST_LIST_HIGH\"]/text"
-msgstr ""
+msgstr "You spend scrap and begin assembly..."
 
 #: src-ru/data/events.xml.rawclobber:24328
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ION_RESONATOR_LIST_LOW_GOOD\"]/text"
-msgstr ""
+msgstr "You successfully assemble an ion weapon."
 
 #: src-ru/data/events.xml.rawclobber:24332
 msgid ""
@@ -20606,6 +20641,7 @@ msgstr "废料回收吊臂抓住了飘过的一枚空燃料仓。聊胜于无。
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"SCRAP_COLLECTOR_LIST_GOOD_6\"]/text"
 msgstr ""
+"The scrap collection crane grabs a passing fuel tank. Might come in handy!"
 
 #: src-ru/data/events.xml.rawclobber:24923
 msgid ""
@@ -23220,6 +23256,8 @@ msgstr "从这堆废品中，你设法找到了唯一一件完好的武器，你
 #: src-ru/data/events.xml.rawclobber:27258
 msgid "data/events.xml.rawclobber$//event[@name=\"RUHLAD_BUY_RUHLAD3\"]/text"
 msgstr ""
+"You find no functional lasers, but there is some curious equipment here that"
+" you take."
 
 #: src-ru/data/events.xml.rawclobber:27263
 msgid "data/events.xml.rawclobber$//event[@name=\"RUHLAD_BUY_DVA\"]/text"
@@ -32900,6 +32938,7 @@ msgstr "表示你没有。"
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"ENGI_HATER\"]/choice[@req=\"mantis_legendary\"]/text"
 msgstr ""
+"(Kazaakplethkilik crew member) Let Kazaakplethkilik answer them himself."
 
 #: src-ru/data/events.xml.rawclobber:34315
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_HATER\"]/choice[3]/text"
@@ -32926,6 +32965,7 @@ msgstr "我们不进行谈判。我们的力量在于武器的火力，而不是
 #: src-ru/data/events.xml.rawclobber:34337
 msgid "data/events.xml.rawclobber$//event[@name=\"ENGI_HATER_KAZ\"]/text"
 msgstr ""
+"Upon seeing their idol, several Mantis express a desire to join your crew."
 
 #: src-ru/data/events.xml.rawclobber:34417
 msgid ""
@@ -33128,7 +33168,7 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:34590
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"CIV_CW_ST_BAR\"]/event[1]/choice[4]/text"
-msgstr ""
+msgstr "Approach the slot machine."
 
 #: src-ru/data/events.xml.rawclobber:34595
 msgid ""
@@ -40828,6 +40868,10 @@ msgstr "平民交给你珍贵的补给品并飞走了。"
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"PIRATE_AC1_RES\"]/event[13]/choice[2]/event/choice/event/loadEventList/event[2]/text"
 msgstr ""
+"Among the scrap, you find a strange weapon. It seems to be operated via a "
+"special touchscreen panel. You turn on the screen, and a glyph flashes for a"
+" few seconds. You try to memorize the pattern—surely it must mean "
+"something..."
 
 #: src-ru/data/events.xml.rawclobber:47682
 msgid ""
@@ -41428,10 +41472,12 @@ msgstr "无视声音，在 FTL 引擎充能前与船员交谈。"
 #: src-ru/data/events.xml.rawclobber:48211
 msgid "data/events.xml.rawclobber$//event[@name=\"DECLINE_DEVIL\"]/text"
 msgstr ""
+"You ignore the voice, but it persists. A wheel of fortune appears before "
+"you, and the voice offers a free spin to cheer everyone up."
 
 #: src-ru/data/events.xml.rawclobber:48213
 msgid "data/events.xml.rawclobber$//event[@name=\"DECLINE_DEVIL\"]/choice[1]/text"
-msgstr ""
+msgstr "Spin the wheel."
 
 #: src-ru/data/events.xml.rawclobber:48217
 msgid "data/events.xml.rawclobber$//event[@name=\"DECLINE_DEVIL\"]/choice[2]/text"
@@ -41440,15 +41486,17 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:48222
 msgid "data/events.xml.rawclobber$//event[@name=\"ROLL_DEVIL_BARABAN\"]/text"
 msgstr ""
+"The wheel spins, and your weapons start turning into something else! The "
+"voice laughs, fading away..."
 
 #: src-ru/data/events.xml.rawclobber:48230
 msgid "data/events.xml.rawclobber$//event[@name=\"COPY_WEAPON_IN_SLOTS\"]/text"
-msgstr ""
+msgstr "Which weapon do you want to copy?"
 
 #: src-ru/data/events.xml.rawclobber:48232
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"COPY_WEAPON_IN_SLOTS\"]/choice/text"
-msgstr ""
+msgstr "Don't copy anything."
 
 #: src-ru/data/events.xml.rawclobber:48238
 msgid "data/events.xml.rawclobber$//event[@name=\"NEBULA_DEVIL_EVENT_R1\"]/text"
@@ -41534,6 +41582,9 @@ msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_WEAPON_TRAP_EVENT\"]/choice[@req=\"weapons\""
 " and @lvl=\"16\"]/event/text"
 msgstr ""
+"As soon as you load the weapon onto the ship, the weapon system sparks, but "
+"maintains power due to its massive level! Slugs hiding nearby are surprised "
+"but attack anyway!"
 
 #: src-ru/data/events.xml.rawclobber:48379
 msgid ""
@@ -41558,6 +41609,8 @@ msgid ""
 "data/events.xml.rawclobber$//event[@name=\"NEBULA_WEAPON_TRAP_EVENT\"]/choice[@req=\"weapons\""
 " and @lvl=\"0\"]/event/text"
 msgstr ""
+"As soon as you load the weapon onto the ship, Slugs hiding nearby attack "
+"you!"
 
 #: src-ru/data/events.xml.rawclobber:48396
 msgid ""
@@ -41907,6 +41960,8 @@ msgstr "驾驶员说他厌倦了他的胶囊，不久后出现在船上，而胶
 msgid ""
 "data/events.xml.rawclobber$//eventList[@name=\"EVENT_CAPSULE_2_TALK_ABOUT_SHIP\"]/event[2]/text"
 msgstr ""
+"After inspecting the ship, the pilot says it is indeed more comfortable than"
+" his pod; he soon joins your crew, and the pod is sent for scrap."
 
 #: src-ru/data/events.xml.rawclobber:48686
 msgid ""
@@ -42398,12 +42453,12 @@ msgstr "使用维修包进行船体维修。"
 #: src-ru/data/events.xml.rawclobber:49187
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"BARREL_FUEL\"]/text"
-msgstr ""
+msgstr "Open the fuel tank."
 
 #: src-ru/data/events.xml.rawclobber:49191
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_BUTTON\"]/choice[@req=\"COPY_MASHINE\"]/text"
-msgstr ""
+msgstr "Copy a weapon in a weapon slot."
 
 #: src-ru/data/events.xml.rawclobber:49203
 msgid ""
@@ -42457,37 +42512,49 @@ msgstr "关闭货舱。"
 
 #: src-ru/data/events.xml.rawclobber:49245
 msgid "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_USE\"]/text"
-msgstr ""
+msgstr "You open the fuel tank..."
 
 #: src-ru/data/events.xml.rawclobber:49255
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_RANDOM\"]/loadEventList/event[1]/text"
 msgstr ""
+"...and drain the remaining fuel into the ship's tank, then send the empty "
+"tank to scrap."
 
 #: src-ru/data/events.xml.rawclobber:49262
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_RANDOM\"]/loadEventList/event[2]/text"
 msgstr ""
+"...and drain the remaining fuel into the ship's tank, then send the empty "
+"tank to scrap."
 
 #: src-ru/data/events.xml.rawclobber:49269
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_RANDOM\"]/loadEventList/event[3]/text"
 msgstr ""
+"...and drain the remaining fuel into the ship's tank, then send the empty "
+"tank to scrap."
 
 #: src-ru/data/events.xml.rawclobber:49276
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_RANDOM\"]/loadEventList/event[4]/text"
 msgstr ""
+"...and drain the remaining fuel into the ship's tank, then send the empty "
+"tank to scrap."
 
 #: src-ru/data/events.xml.rawclobber:49283
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_RANDOM\"]/loadEventList/event[5]/text"
 msgstr ""
+"...and drain the remaining fuel into the ship's tank, then send the empty "
+"tank to scrap."
 
 #: src-ru/data/events.xml.rawclobber:49290
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"BARREL_FUEL_RANDOM\"]/loadEventList/event[6]/text"
 msgstr ""
+"...and drain the remaining fuel into the ship's tank, then send the empty "
+"tank to scrap."
 
 #: src-ru/data/events.xml.rawclobber:49300
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_CARGO_INJ\"]/text"
@@ -43562,22 +43629,26 @@ msgstr "（无人机目标锁定器）将此插件集成到飞船结构中，释
 #: src-ru/data/events.xml.rawclobber:50734
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_ION_RESONATOR\"]/text"
-msgstr ""
+msgstr "Internal Augment: Ion Resonator."
 
 #: src-ru/data/events.xml.rawclobber:50738
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"ION_RESONATOR\"]/text"
 msgstr ""
+"(Ion Resonator) Integrate this augment into the ship's structure, freeing an"
+" augment slot."
 
 #: src-ru/data/events.xml.rawclobber:50750
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"HID_ANTIHACKER\"]/text"
-msgstr ""
+msgstr "Internal Augment: Network Shield."
 
 #: src-ru/data/events.xml.rawclobber:50754
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"STORE_INSTALL_AUGS\"]/choice[@req=\"ANTIHACKER\"]/text"
 msgstr ""
+"(Network Shield) Integrate this augment into the ship's structure, freeing "
+"an augment slot."
 
 #: src-ru/data/events.xml.rawclobber:50766
 msgid ""
@@ -52778,6 +52849,8 @@ msgstr "你成功组装了一件新武器！"
 #: src-ru/data/events.xml.rawclobber:63918
 msgid "data/events.xml.rawclobber$//event[@name=\"STATION_UPGRAID\"]/text"
 msgstr ""
+"\"Excellent! By your next visit, our station will be larger and able to "
+"offer new products.\""
 
 #: src-ru/data/events.xml.rawclobber:64096
 msgid ""
@@ -53238,46 +53311,65 @@ msgstr "在信标附近，你发现了一个熟悉的贸易站。安倍勇感谢
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_1\"]/text"
 msgstr ""
+"\"...the selection isn't very rich yet, but perhaps these resources will be "
+"useful to you.\""
 
 #: src-ru/data/events.xml.rawclobber:65027
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_2\"]/text"
 msgstr ""
+"\"...by the way, a new weapon department has opened, and we've managed to "
+"lower prices on supplies and repairs.\""
 
 #: src-ru/data/events.xml.rawclobber:65030
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_3\"]/text"
 msgstr ""
+"\"...by the way, a new department for drone blueprints recently opened at "
+"this station.\""
 
 #: src-ru/data/events.xml.rawclobber:65033
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_4\"]/text"
 msgstr ""
+"\"...by the way, our augment department is now available, as well as drone "
+"sales and a discount on all weapons.\""
 
 #: src-ru/data/events.xml.rawclobber:65036
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_5\"]/text"
 msgstr ""
+"\"...by the way, we now have mercenaries, and repairs have become cheaper.\""
 
 #: src-ru/data/events.xml.rawclobber:65039
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_6\"]/text"
 msgstr ""
+"\"...by the way, I now sell systems, and supplies and drone blueprints have "
+"become even cheaper, plus we have weapons on sale.\""
 
 #: src-ru/data/events.xml.rawclobber:65042
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_7\"]/text"
 msgstr ""
+"\"...by the way, since the last station update, I'm selling systems and "
+"augments at a discount.\""
 
 #: src-ru/data/events.xml.rawclobber:65045
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_8\"]/text"
 msgstr ""
+"\"...by the way, thanks to your donations, I can sell drone blueprints and "
+"weapons at a discount; also, check out our cheap mercenaries and reduced-"
+"price repairs.\""
 
 #: src-ru/data/events.xml.rawclobber:65048
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"META_TRADER_TEXT_KSTATI_LVL_9\"]/text"
 msgstr ""
+"\"...by the way, systems on my station are even cheaper now. A little more "
+"investment, and I can provide more weapons, drones, and augments on sale, as"
+" well as mystic weapons and fuel at wholesale prices.\""
 
 #: src-ru/data/events.xml.rawclobber:65218
 msgid ""
@@ -54602,22 +54694,34 @@ msgstr "你草草检查了货舱，一股能量场完全修复了你的飞船。
 #: src-ru/data/events.xml.rawclobber:68227
 msgid "data/events.xml.rawclobber$//textList[@name=\"OXYGEN_FIGHT_TEXT\"]/text[1]"
 msgstr ""
+"A dense, breathable gaseous atmosphere surrounds the beacon. Yet, even here,"
+" you manage to encounter a hostile pirate..."
 
 #: src-ru/data/events.xml.rawclobber:68228
 msgid "data/events.xml.rawclobber$//textList[@name=\"OXYGEN_FIGHT_TEXT\"]/text[2]"
 msgstr ""
+"The beacon is surrounded by a dense gas cloud. Surprisingly, it doesn't "
+"dissipate, and it's breathable. An unexpectedly arriving pirate spoils the "
+"joy of your discovery."
 
 #: src-ru/data/events.xml.rawclobber:68229
 msgid "data/events.xml.rawclobber$//textList[@name=\"OXYGEN_FIGHT_TEXT\"]/text[3]"
 msgstr ""
+"Someone built an oxygen-rich atmosphere around this beacon. It seems you "
+"aren't the only one interested in this place—you spot a hostile ship!"
 
 #: src-ru/data/events.xml.rawclobber:68230
 msgid "data/events.xml.rawclobber$//textList[@name=\"OXYGEN_FIGHT_TEXT\"]/text[4]"
 msgstr ""
+"You don't often find an oxygenated environment in space. Unfortunately, this"
+" place has also attracted pirates—a fight is unavoidable."
 
 #: src-ru/data/events.xml.rawclobber:68257
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_ALIEN_IN_BOX\"]/text"
 msgstr ""
+"You receive a message from a research station on a nearby planet. Scientists"
+" are asking you to deliver a dangerous creature for a generous reward. Is it"
+" worth it?"
 
 #: src-ru/data/events.xml.rawclobber:68260
 msgid ""
@@ -54633,6 +54737,9 @@ msgstr ""
 msgid ""
 "data/events.xml.rawclobber$//textList[@name=\"EVENT_ALIEN_IN_BOX_ADD_TEXT\"]/text"
 msgstr ""
+"The creature turns out to be a Xenomorph that the scientists somehow managed"
+" to trap in a specially designed container. The container is loaded aboard; "
+"you can now continue."
 
 #: src-ru/data/events.xml.rawclobber:68275
 msgid ""
@@ -54642,33 +54749,40 @@ msgstr ""
 #: src-ru/data/events.xml.rawclobber:68281
 msgid "data/events.xml.rawclobber$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/text"
 msgstr ""
+"You arrive at the destination beacon. The scientist expecting the Xenomorph "
+"hails you."
 
 #: src-ru/data/events.xml.rawclobber:68283
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/choice[@req=\"alien_in_box\"]/text"
-msgstr ""
+msgstr "(Xenomorph in container) Hand over the Xenomorph."
 
 #: src-ru/data/events.xml.rawclobber:68287
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/choice[@req=\"alien_count_inside_hull\"]/text"
-msgstr ""
+msgstr "(Xenomorph) Ask the scientists to catch all Xenomorphs on the ship."
 
 #: src-ru/data/events.xml.rawclobber:68291
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/choice[@req=\"alien_on_ship\"]/text"
-msgstr ""
+msgstr "(Xenomorph) Ask the scientists to catch all Xenomorphs on the ship."
 
 #: src-ru/data/events.xml.rawclobber:68295
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_ALIEN_IN_BOX2\"]/choice[4]/text"
-msgstr ""
+msgstr "Tell him you have no one else and talk to the crew."
 
 #: src-ru/data/events.xml.rawclobber:68300
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_REMOVE_ALL_ALIEN_IN_BOX\"]/text"
 msgstr ""
+"You unload the Xenomorph container, and the scientist gives you a large pile"
+" of scrap."
 
 #: src-ru/data/events.xml.rawclobber:68312
 msgid ""
 "data/events.xml.rawclobber$//event[@name=\"EVENT_REMOVE_ALL_ALIEN_TOTALLY\"]/text"
 msgstr ""
+"The scientists successfully clear the ship of Xenomorphs, but only give you "
+"a small reward. It was a lot of effort to extract Xenomorphs not from the "
+"special container..."
