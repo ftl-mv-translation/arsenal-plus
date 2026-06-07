@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:43+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-06-07 07:36+0000\n"
+"Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
 "Language: en\n"
@@ -54865,10 +54865,9 @@ msgstr ""
 "shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:112372
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_BRC\"]/title"
-msgstr "Star Crusher"
+msgstr "Star Crusher €"
 
 #: src-ru/data/blueprints.xml.rawclobber:112373
 msgid ""
@@ -54945,17 +54944,17 @@ msgid ""
 msgstr "Effector Mark II+ ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:112476
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_CLD\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:112478
 #, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_CLD\"]/desc"
 msgstr ""
-"Улучшенный ионный излучатель, игнорирует щиты и выводит системы из строя."
+"Fast ion emitter that quickly generates ion fields, disabling systems.\n"
+"\tThis custom-built version is slightly faster and requires only 1 power."
 
 #: src-ru/data/blueprints.xml.rawclobber:112518
 #, fuzzy
@@ -57238,10 +57237,9 @@ msgstr ""
 "This charging flak weapon can inflict up to 8 damage when fully charged."
 
 #: src-ru/data/blueprints.xml.rawclobber:116982
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_1_UNI\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:116983
 #, fuzzy
@@ -57264,10 +57262,9 @@ msgstr ""
 "damage but are likely to start fires and pierce one shield bubble."
 
 #: src-ru/data/blueprints.xml.rawclobber:117024
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_2_UNI\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:117025
 #, fuzzy
@@ -57290,10 +57287,9 @@ msgstr ""
 "damage but are likely to start fires and pierce one shield bubble."
 
 #: src-ru/data/blueprints.xml.rawclobber:117066
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_3_UNI\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:117067
 #, fuzzy
@@ -57336,51 +57332,43 @@ msgstr ""
 "bubbles."
 
 #: src-ru/data/blueprints.xml.rawclobber:117136
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_UNI\"]/title"
-msgstr "Stunner Mark I √"
+msgstr "Paralyzer Mark I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117138
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_UNI\"]/short"
-msgstr "Stunner I √"
+msgstr "Paralyzer I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117139
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_UNI\"]/flavorType"
-msgstr "Stunner"
+msgstr "Paralyzer"
 
 #: src-ru/data/blueprints.xml.rawclobber:117140
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_UNI\"]/desc"
 msgstr ""
-"This experimental field generator ignores shields and may stun a large group"
-" of enemies."
+"This experimental field generator ignores shields and may stun a large group "
+"of enemies."
 
 #: src-ru/data/blueprints.xml.rawclobber:117178
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_UNI\"]/title"
-msgstr "Stunner Mark II √"
+msgstr "Paralyzer Mark II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117180
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_UNI\"]/short"
-msgstr "Stunner II √"
+msgstr "Paralyzer II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117181
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_UNI\"]/flavorType"
-msgstr "Stunner"
+msgstr "Paralyzer"
 
 #: src-ru/data/blueprints.xml.rawclobber:117182
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_UNI\"]/desc"
 msgstr ""
@@ -57388,36 +57376,32 @@ msgstr ""
 "of the enemy ship."
 
 #: src-ru/data/blueprints.xml.rawclobber:117220
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_UNI\"]/title"
-msgstr "Stunner Mark III √"
+msgstr "Paralyzer Mark III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117222
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_UNI\"]/short"
-msgstr "Stunner III √"
+msgstr "Paralyzer III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117223
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_UNI\"]/flavorType"
-msgstr "Stunner"
+msgstr "Paralyzer"
 
 #: src-ru/data/blueprints.xml.rawclobber:117224
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_UNI\"]/desc"
 msgstr ""
-"This advanced field generator ignores shields and may stun the entire crew of the enemy ship.\n"
-"Can keep enemy crew locked in stun thanks to its fast cooldown."
+"This advanced field generator ignores shields and may stun the entire crew "
+"of the enemy ship.\n"
+"\tCan keep enemy crew locked in stun thanks to its fast cooldown."
 
 #: src-ru/data/blueprints.xml.rawclobber:117263
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_LIGHT_1_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117264
 #, fuzzy
@@ -57441,10 +57425,9 @@ msgstr ""
 "its predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:117301
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_LIGHT_2_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117302
 #, fuzzy
@@ -57468,10 +57451,9 @@ msgstr ""
 "its predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:117339
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117340
 #, fuzzy
@@ -57486,18 +57468,16 @@ msgid ""
 msgstr "Lockdown Pulse I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117342
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_UNI\"]/desc"
 msgstr ""
-"Стреляет проникающим кристаллом, создающим непроходимый барьер. Сбивается "
-"защитными дронами 1 уровня."
+"Fires a shield piercing crystal that creates an impassable barrier. Can be "
+"shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:117379
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117380
 #, fuzzy
@@ -57512,13 +57492,11 @@ msgid ""
 msgstr "Lockdown Pulse II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117382
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_UNI\"]/desc"
 msgstr ""
-"Мощное кристальное оружие, кристаллизует целый отсек. Создаёт бреши, "
-"запирает двери, оглушает и повреждает экипаж. Сбивается защитными дронами 1 "
-"уровня."
+"Fires a heavy shield piercing stun-crystal that creates an impassable "
+"barrier. Can be shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:117418
 #, fuzzy
@@ -57533,10 +57511,9 @@ msgid ""
 msgstr "Crystal Burst I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117420
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_BURST_1_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117422
 #, fuzzy
@@ -57559,10 +57536,9 @@ msgid ""
 msgstr "Crystal Burst II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117458
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_BURST_2_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117459
 #, fuzzy
@@ -57585,10 +57561,9 @@ msgid ""
 msgstr "Crystal Heavy I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117497
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_HEAVY_1_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117498
 #, fuzzy
@@ -57611,10 +57586,9 @@ msgid ""
 msgstr "Crystal Heavy II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:117535
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_HEAVY_2_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117536
 #, fuzzy
@@ -57647,10 +57621,9 @@ msgstr ""
 " room they hit on their way out."
 
 #: src-ru/data/blueprints.xml.rawclobber:117612
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_VULKAN_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:117613
 #, fuzzy
@@ -62330,10 +62303,9 @@ msgid ""
 msgstr "Effector Mark I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125353
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_1_UNI\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:125355
 #, fuzzy
@@ -62354,10 +62326,9 @@ msgid ""
 msgstr "Effector Mark II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125394
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_2_UNI\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:125395
 #, fuzzy
@@ -62379,10 +62350,9 @@ msgid ""
 msgstr "Heavy Effector √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125434
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_3_UNI\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:125435
 #, fuzzy
@@ -62405,10 +62375,9 @@ msgid ""
 msgstr "A-Effector √"
 
 #: src-ru/data/blueprints.xml.rawclobber:125474
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_UNI\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:125475
 #, fuzzy
@@ -62753,7 +62722,6 @@ msgstr ""
 " and the target system. May start a fire."
 
 #: src-ru/data/blueprints.xml.rawclobber:126270
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_BEAM_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62771,15 +62739,13 @@ msgid ""
 msgstr "Zolton Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126274
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_BEAM_1_UNI\"]/desc"
 msgstr ""
-"Experimental adaptive beam weapon. Requires 30 missiles in the hold to "
-"function."
+"Experimental adaptive beam weapon.\n"
+"\tRequires 30 missiles in the hold to function."
 
 #: src-ru/data/blueprints.xml.rawclobber:126300
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_BEAM_2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62797,15 +62763,13 @@ msgid ""
 msgstr "Zolton Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126304
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_BEAM_2_UNI\"]/desc"
 msgstr ""
-"Experimental adaptive beam weapon. Requires 30 missiles in the hold to "
-"function. Damaged."
+"Experimental adaptive beam weapon. Damaged.\n"
+"\tRequires 30 missiles in the hold to function."
 
 #: src-ru/data/blueprints.xml.rawclobber:126331
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62823,13 +62787,11 @@ msgid ""
 msgstr "Zolton Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126335
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_1_UNI\"]/desc"
 msgstr "Experimental adaptive missile platform."
 
 #: src-ru/data/blueprints.xml.rawclobber:126375
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62847,61 +62809,51 @@ msgid ""
 msgstr "Zolton Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126379
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_2_UNI\"]/desc"
 msgstr "Experimental adaptive missile platform. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126418
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:126420
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_UNI\"]/title"
-msgstr "Slurm Prototype √"
+msgstr "Slig Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126421
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_UNI\"]/short"
-msgstr "Slurm Prototype √"
+msgstr "Slig Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126423
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_UNI\"]/desc"
 msgstr "Experimental anti-personnel weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126459
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:126461
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_2_UNI\"]/title"
-msgstr "Slurm Prototype √"
+msgstr "Slig Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126462
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_2_UNI\"]/short"
-msgstr "Slurm Prototype √"
+msgstr "Slig Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126464
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_2_UNI\"]/desc"
 msgstr "Experimental anti-personnel weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126501
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_LIGHT_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62919,13 +62871,11 @@ msgid ""
 msgstr "LC Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126505
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_LIGHT_UNI\"]/desc"
 msgstr "Experimental anti-personnel weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126534
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62943,13 +62893,11 @@ msgid ""
 msgstr "HC Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126537
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY_UNI\"]/desc"
 msgstr "Experimental burst armor-piercing weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126578
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_LIGHT2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62967,13 +62915,11 @@ msgid ""
 msgstr "LC Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126582
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_LIGHT2_UNI\"]/desc"
 msgstr "Experimental anti-personnel weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126611
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -62991,7 +62937,6 @@ msgid ""
 msgstr "HC Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126614
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY2_UNI\"]/desc"
 msgstr "Experimental burst armor-piercing weapon. Damaged."
@@ -63003,7 +62948,6 @@ msgid ""
 msgstr "Human Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126655
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63015,13 +62959,11 @@ msgid ""
 msgstr "Human Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126657
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_1_UNI\"]/desc"
 msgstr "Experimental missile weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126694
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63039,13 +62981,11 @@ msgid ""
 msgstr "Human Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126697
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_12_UNI\"]/desc"
 msgstr "Experimental missile weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126734
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63063,13 +63003,11 @@ msgid ""
 msgstr "Lanius Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126737
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_1_UNI\"]/desc"
 msgstr "Experimental armor-piercing weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126778
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63087,13 +63025,11 @@ msgid ""
 msgstr "Lanius Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126781
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_12_UNI\"]/desc"
 msgstr "Experimental armor-piercing weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126822
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63111,13 +63047,11 @@ msgid ""
 msgstr "Rock Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126826
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY_UNI\"]/desc"
 msgstr "Experimental plasma weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126861
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63135,13 +63069,11 @@ msgid ""
 msgstr "Rock Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126865
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY2_UNI\"]/desc"
 msgstr "Experimental plasma weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126900
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_IMPACT_ION_BEAM_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63159,13 +63091,11 @@ msgid ""
 msgstr "Engi Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126903
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_IMPACT_ION_BEAM_1_UNI\"]/desc"
 msgstr "Experimental ion beam weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:126935
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_IMPACT_ION_BEAM_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63183,13 +63113,11 @@ msgid ""
 msgstr "Engi Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126938
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_IMPACT_ION_BEAM_12_UNI\"]/desc"
 msgstr "Experimental ion beam weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:126970
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AUTOCANNON_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63207,13 +63135,11 @@ msgid ""
 msgstr "Avatar Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:126973
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AUTOCANNON_1_UNI\"]/desc"
 msgstr "Experimental armor-piercing beam weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:127000
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AUTOCANNON_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63231,13 +63157,11 @@ msgid ""
 msgstr "Avatar Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127003
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AUTOCANNON_12_UNI\"]/desc"
 msgstr "Experimental armor-piercing beam weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:127030
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63255,13 +63179,11 @@ msgid ""
 msgstr "Zoltan Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127034
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_1_UNI\"]/desc"
 msgstr "Experimental laser ion cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:127071
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63279,13 +63201,11 @@ msgid ""
 msgstr "Zoltan Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127075
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_12_UNI\"]/desc"
 msgstr "Experimental laser ion cannon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:127112
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63303,13 +63223,11 @@ msgid ""
 msgstr "Slug Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127115
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_1_UNI\"]/desc"
 msgstr "Experimental armor-piercing laser cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:127150
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63327,13 +63245,11 @@ msgid ""
 msgstr "Slug Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127153
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_12_UNI\"]/desc"
 msgstr "Experimental armor-piercing laser cannon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:127188
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63349,13 +63265,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:127191
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_1_UNI\"]/desc"
 msgstr "Experimental burst ion weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:127227
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_12_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63371,7 +63285,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:127230
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_12_UNI\"]/desc"
 msgstr "Experimental burst ion weapon. Damaged."
@@ -63421,7 +63334,6 @@ msgstr ""
 "to accumulate up to 3 volleys. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:127358
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_1_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63439,13 +63351,11 @@ msgid ""
 msgstr "HAL Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127362
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_1_UNI\"]/desc"
 msgstr "Experimental phase ion weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:127406
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_2_UNI\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -63463,7 +63373,6 @@ msgid ""
 msgstr "HAL Prototype √"
 
 #: src-ru/data/blueprints.xml.rawclobber:127410
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_2_UNI\"]/desc"
 msgstr "Experimental phase ion weapon. Damaged."
@@ -65181,19 +65090,18 @@ msgid ""
 msgstr "Ion Blast+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130637
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ION_BLAST_1B_UNI\"]/desc"
 msgstr ""
-"Эта улучшенная модификация ионного бластера может пробить обшивку корабля."
+"This improved modification of the Ion Blaster Mark I has a chance to cause a "
+"breach."
 
 #: src-ru/data/blueprints.xml.rawclobber:130638
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ION_BLAST_1B_UNI\"]/tooltip"
 msgstr ""
-"Выпускает один заряд, наносящий 1 единицу ионного повреждения. Может "
-"поражать и отключать как щиты, так и системы."
+"Fires a single charge that deals 1 unit of ion damage. Can disable both "
+"shields and systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:130679
 #, fuzzy
@@ -65208,18 +65116,17 @@ msgid ""
 msgstr "Hasta Beam+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130681
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_HASTA_P_UNI\"]/desc"
 msgstr ""
-"Это устаревшие лучевое оружие модифицировано модулем проникновения сквозь "
-"слабые щиты."
+"This compact beam weapon is slightly shorter than its successor, the Mini "
+"Beam.\n"
+"\tRefitted with a module that grants it weak shield piercing capability."
 
 #: src-ru/data/blueprints.xml.rawclobber:130682
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_HASTA_P_UNI\"]/tooltip"
-msgstr "Наносит 1 урона на отсек."
+msgstr "Deals 1 damage per room hit."
 
 #: src-ru/data/blueprints.xml.rawclobber:130703
 #, fuzzy
@@ -65238,14 +65145,14 @@ msgstr "Frigg+ √"
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_MINES_MEDIUM_P_UNI\"]/desc"
 msgstr ""
-"Продвинутый миномёт, наносит больше урона, чем обычный, а также повреждает и"
-" системы, и корпус корабля."
+"This mine launcher has been rebuilt from the ground up to gain the system "
+"damage capability of its missile brethren."
 
 #: src-ru/data/blueprints.xml.rawclobber:130706
 #, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_MINES_MEDIUM_P_UNI\"]/tooltip"
-msgstr "Запускает 1 мину; наносит 3 урона корпусу; игнорирует щиты."
+msgstr "Launches 1 mine; deals 3 hull and system damage; ignores shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:130741
 #, fuzzy
@@ -65260,12 +65167,9 @@ msgid ""
 msgstr "S. Bomb+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130744
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1P_UNI\"]/desc"
-msgstr ""
-"Эта бомба заряжается быстрее, чем обычная. Может применяться на вашем "
-"корабле."
+msgstr "The loading mechanism of this Small Bomb has been optimized for speed."
 
 #: src-ru/data/blueprints.xml.rawclobber:130772
 #, fuzzy
@@ -65280,25 +65184,21 @@ msgid ""
 msgstr "Mini Artil. √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130774
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_LASER_ARTILLERY_MINI_UNI\"]/desc"
-msgstr ""
-"Этот лазер имеет пониженные боевые характеристики, но заряжается быстрее."
+msgstr "This artillery laser has reduced combat stats but charges up faster."
 
 #: src-ru/data/blueprints.xml.rawclobber:130775
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_LASER_ARTILLERY_MINI_UNI\"]/tooltip"
 msgstr ""
-"Стреляет 1 снарядом, наносит 3 урона сквозь 2 слоя щитов. Может вызвать "
-"возгорание и пробить корпус."
+"Fires 1 projectile that deals 3 damage and pierces 2 shield bubbles. May "
+"start fires and breach hull."
 
 #: src-ru/data/blueprints.xml.rawclobber:130811
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_PLUS_UNI\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:130812
 #, fuzzy
@@ -65313,19 +65213,17 @@ msgid ""
 msgstr "Plasma+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130815
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_PLUS_UNI\"]/desc"
 msgstr ""
-"Стреляет сгустком плазмы, с большой вероятностью вызывающей возгорание. Эта "
-"улучшенная модификация наносит дополнительный урон экипажу."
+"Fires a small cluster of superheated plasma. The plasma rounds don't deal "
+"damage but are likely to start fires and pierce 1 shield bubble.\n"
+"\tThis improved version deals additional crew damage."
 
 #: src-ru/data/blueprints.xml.rawclobber:130816
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_PLUS_UNI\"]/tooltip"
-msgstr ""
-"Стреляет плазмой по небольшой случайной области. Высокий шанс возгорания."
+msgstr "Fires a small cluster of plasma at a random area. High chance of fire."
 
 #: src-ru/data/blueprints.xml.rawclobber:130855
 #, fuzzy
@@ -65340,25 +65238,22 @@ msgid ""
 msgstr "Pernach Beam+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130857
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_PERNACH_P_UNI\"]/desc"
 msgstr ""
-"Улучшенная модификация Пернача с уменьшенным временем перезарядки и "
-"сниженным потреблением энергии."
+"Improved version of the Pernach Beam gaining a reduction in charge time and "
+"power consumption."
 
 #: src-ru/data/blueprints.xml.rawclobber:130858
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_BEAM_PERNACH_P_UNI\"]/tooltip"
 msgstr ""
-"Точечное лучевое оружие, наносит 2 урона с небольшим шансом пробить отсек."
+"Point beam weapon that deals 2 damage with a low chance to cause a breach."
 
 #: src-ru/data/blueprints.xml.rawclobber:130882
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:130883
 #, fuzzy
@@ -65373,28 +65268,24 @@ msgid ""
 msgstr "Lockdown Pulse II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130885
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_UNI\"]/desc"
 msgstr ""
-"Мощное кристальное оружие, кристаллизует целый отсек. Создаёт бреши, "
-"запирает двери, оглушает и повреждает экипаж. Сбивается защитными дронами 1 "
-"уровня."
+"Fires a heavy shield piercing stun-crystal that creates an impassable "
+"barrier. Can be shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:130886
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_UNI\"]/tooltip"
 msgstr ""
-"Стреляет кристаллом, наносящим 2 урона; проникает сквозь 1 слой щитов; "
-"оставляет пробоины в корпусе; запирает отсек; повреждает и оглушает экипаж. "
-"Уязвим к защитным дронам 1 уровня."
+"Fires a crystal that deals 2 damage; pierces 1 layer of shields; leaves "
+"holes in hull; locks the targeted room; damages and stuns crew. Vulnerable "
+"to level 1 defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:130923
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_UNI\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:130924
 #, fuzzy
@@ -65409,20 +65300,19 @@ msgid ""
 msgstr "Lockdown Pulse I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130926
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_UNI\"]/desc"
 msgstr ""
-"Стреляет проникающим кристаллом, создающим непроходимый барьер. Сбивается "
-"защитными дронами 1 уровня."
+"Fires a shield piercing crystal that creates an impassable barrier. Can be "
+"shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:130927
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_UNI\"]/tooltip"
 msgstr ""
-"Стреляет 1 раз, 1 урона. Средний шанс пробить корпус. Проникает сквозь 1 "
-"слой щитов. Запирает отсек. Уязвим к защитным дронам 1 уровня."
+"Fires 1 shot, 1 damage. Medium chance to breach the hull. Pierces through 1 "
+"layer of shields. Locks the targeted room. Vulnerable to level 1 defense "
+"drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:130964
 #, fuzzy
@@ -65437,18 +65327,16 @@ msgid ""
 msgstr "Star Crusher √"
 
 #: src-ru/data/blueprints.xml.rawclobber:130966
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_UNI\"]/flavorType"
-msgstr "Звёздный крушитель"
+msgstr "Star Crusher"
 
 #: src-ru/data/blueprints.xml.rawclobber:130967
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"JADE_CANNON_PLAYER_UNI\"]/desc"
 msgstr ""
-"Эта огромная пушка тратит по 3 ракетных снаряда за залп. Игнорирует все "
-"щиты."
+"This huge weapon expends 3 missile projectiles per volley. Ignores all "
+"shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:130968
 msgid ""
@@ -65468,17 +65356,16 @@ msgid ""
 msgstr "Effector Mark II+ √"
 
 #: src-ru/data/blueprints.xml.rawclobber:131001
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_UNI\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:131003
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_0_UNI\"]/desc"
 msgstr ""
-"Улучшенный ионный излучатель, игнорирует щиты и выводит системы из строя."
+"Fast ion emitter that quickly generates ion fields, disabling systems.\n"
+"\tThis custom-built version is slightly faster and requires only 1 power."
 
 #: src-ru/data/blueprints.xml.rawclobber:131004
 msgid ""
@@ -67246,10 +67133,9 @@ msgid ""
 msgstr "This chain weapon is already fully spooled up."
 
 #: src-ru/data/blueprints.xml.rawclobber:134081
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_VULKAN_RDY\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:134082
 #, fuzzy
@@ -67628,10 +67514,9 @@ msgid ""
 msgstr "A-Effector ^"
 
 #: src-ru/data/blueprints.xml.rawclobber:134730
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_EFFECTOR_ADAPTIVE_RDY\"]/flavorType"
-msgstr "Ионный излучатель"
+msgstr "Ion Emitter"
 
 #: src-ru/data/blueprints.xml.rawclobber:134731
 #, fuzzy
@@ -67640,7 +67525,6 @@ msgid ""
 msgstr "This adaptive weapon is already fully spooled up."
 
 #: src-ru/data/blueprints.xml.rawclobber:134767
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_BEAM_1_RDY\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -67664,7 +67548,6 @@ msgid ""
 msgstr "This adaptive weapon is already fully spooled up."
 
 #: src-ru/data/blueprints.xml.rawclobber:134793
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_BEAM_2_RDY\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -67688,7 +67571,6 @@ msgid ""
 msgstr "This adaptive weapon is already fully spooled up."
 
 #: src-ru/data/blueprints.xml.rawclobber:134820
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_1_RDY\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -67712,7 +67594,6 @@ msgid ""
 msgstr "This adaptive weapon is already fully spooled up."
 
 #: src-ru/data/blueprints.xml.rawclobber:134859
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_2_RDY\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -69809,10 +69690,9 @@ msgstr ""
 "This charging flak weapon can inflict up to 8 damage when fully charged."
 
 #: src-ru/data/blueprints.xml.rawclobber:139315
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_1_ACC\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:139316
 msgid ""
@@ -69833,10 +69713,9 @@ msgstr ""
 "damage but are likely to start fires and pierce one shield bubble."
 
 #: src-ru/data/blueprints.xml.rawclobber:139358
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_2_ACC\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:139359
 msgid ""
@@ -69857,10 +69736,9 @@ msgstr ""
 "damage but are likely to start fires and pierce one shield bubble."
 
 #: src-ru/data/blueprints.xml.rawclobber:139401
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_3_ACC\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:139402
 msgid ""
@@ -69883,45 +69761,41 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:139444
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_ACC\"]/title"
-msgstr ""
+msgstr "Paralyzer Mark I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:139446
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_ACC\"]/short"
-msgstr ""
+msgstr "Paralyzer I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:139447
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_ACC\"]/flavorType"
-msgstr "Stunner"
+msgstr "Paralyzer"
 
 #: src-ru/data/blueprints.xml.rawclobber:139448
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_1_ACC\"]/desc"
 msgstr ""
-"This experimental field generator ignores shields and may stun a large group"
-" of enemies."
+"This experimental field generator ignores shields and may stun a large group "
+"of enemies."
 
 #: src-ru/data/blueprints.xml.rawclobber:139487
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_ACC\"]/title"
-msgstr ""
+msgstr "Paralyzer Mark II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:139489
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_ACC\"]/short"
-msgstr ""
+msgstr "Paralyzer II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:139490
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_ACC\"]/flavorType"
-msgstr "Stunner"
+msgstr "Paralyzer"
 
 #: src-ru/data/blueprints.xml.rawclobber:139491
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_2_ACC\"]/desc"
 msgstr ""
@@ -69931,32 +69805,30 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:139530
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_ACC\"]/title"
-msgstr ""
+msgstr "Paralyzer Mark III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:139532
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_ACC\"]/short"
-msgstr ""
+msgstr "Paralyzer III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:139533
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_ACC\"]/flavorType"
-msgstr "Stunner"
+msgstr "Paralyzer"
 
 #: src-ru/data/blueprints.xml.rawclobber:139534
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_STUNGUN_3_ACC\"]/desc"
 msgstr ""
-"This advanced field generator ignores shields and may stun the entire crew of the enemy ship.\n"
-"Can keep enemy crew locked in stun thanks to its fast cooldown."
+"This advanced field generator ignores shields and may stun the entire crew "
+"of the enemy ship.\n"
+"\tCan keep enemy crew locked in stun thanks to its fast cooldown."
 
 #: src-ru/data/blueprints.xml.rawclobber:139574
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_LIGHT_1_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139575
 msgid ""
@@ -69978,10 +69850,9 @@ msgstr ""
 "its predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:139613
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_LIGHT_2_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139614
 msgid ""
@@ -70003,10 +69874,9 @@ msgstr ""
 "its predecessor."
 
 #: src-ru/data/blueprints.xml.rawclobber:139652
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139653
 msgid ""
@@ -70019,18 +69889,16 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:139655
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_ACC\"]/desc"
 msgstr ""
-"Стреляет проникающим кристаллом, создающим непроходимый барьер. Сбивается "
-"защитными дронами 1 уровня."
+"Fires a shield piercing crystal that creates an impassable barrier. Can be "
+"shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:139693
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139694
 msgid ""
@@ -70043,13 +69911,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:139696
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_ACC\"]/desc"
 msgstr ""
-"Мощное кристальное оружие, кристаллизует целый отсек. Создаёт бреши, "
-"запирает двери, оглушает и повреждает экипаж. Сбивается защитными дронами 1 "
-"уровня."
+"Fires a heavy shield piercing stun-crystal that creates an impassable "
+"barrier. Can be shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:139733
 msgid ""
@@ -70062,10 +69928,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:139735
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_BURST_1_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139737
 #, fuzzy
@@ -70086,10 +69951,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:139774
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_BURST_2_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139775
 #, fuzzy
@@ -70110,10 +69974,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:139814
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_HEAVY_1_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139815
 #, fuzzy
@@ -70134,10 +69997,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:139853
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_HEAVY_2_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139854
 #, fuzzy
@@ -70168,10 +70030,9 @@ msgstr ""
 " room they hit on their way out."
 
 #: src-ru/data/blueprints.xml.rawclobber:139932
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_VULKAN_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:139933
 msgid ""
@@ -70756,11 +70617,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:141185
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_1_ACC\"]/desc"
 msgstr ""
-"Это орудие стреляет зёрнами огромных растений с родной планеты орхидов."
+"This weapon uses kernels of giant plants from Orchid home planet as "
+"ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:141223
 msgid ""
@@ -70773,10 +70634,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:141225
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_2_ACC\"]/desc"
-msgstr "Эта модель зерномёта выпускает 2 снаряда за один залп."
+msgstr "This kernel launcher fires two projectiles in one volley."
 
 #: src-ru/data/blueprints.xml.rawclobber:141263
 msgid ""
@@ -70789,11 +70649,9 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:141265
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_CHAIN_ACC\"]/desc"
-msgstr ""
-"Единственное, что может остановить это орудие - недостаток боеприпасов."
+msgstr "The only thing that can stop this weapon is lack of ammunition."
 
 #: src-ru/data/blueprints.xml.rawclobber:141307
 #, fuzzy
@@ -72344,11 +72202,12 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:144292
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_1_M_ACC\"]/desc"
 msgstr ""
-"Это орудие стреляет зёрнами огромных растений с родной планеты орхидов."
+"This weapon uses kernels of giant plants from Orchid home planet as "
+"ammunition.\n"
+"\tThis duplicated version of the original doesn't require ammo."
 
 #: src-ru/data/blueprints.xml.rawclobber:144329
 msgid ""
@@ -72361,10 +72220,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:144331
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_2_M_ACC\"]/desc"
-msgstr "Эта модель зерномёта выпускает 2 снаряда за один залп."
+msgstr ""
+"This kernel launcher fires two projectiles in one volley.\n"
+"\tThis duplicated version of the original doesn't require ammo."
 
 #: src-ru/data/blueprints.xml.rawclobber:144368
 msgid ""
@@ -72377,12 +72237,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:144370
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"KERNEL_CHAIN_M_ACC\"]/desc"
 msgstr ""
-"Единственное, что может остановить это орудие - недостаток боеприпасов "
-"(нет)."
+"The only thing that could stop this weapon was a lack of ammunition — this "
+"duplicated version of the original doesn't require ammo."
 
 #: src-ru/data/blueprints.xml.rawclobber:144411
 #, fuzzy
@@ -73050,7 +72909,6 @@ msgstr ""
 " and the target system. May start a fire."
 
 #: src-ru/data/blueprints.xml.rawclobber:146013
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ORCHID_PROTOTYPE_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73066,13 +72924,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146018
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ORCHID_PROTOTYPE_1_ACC\"]/desc"
 msgstr "Experimental missile weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146062
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ORCHID_PROTOTYPE_2_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73088,13 +72944,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146067
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ORCHID_PROTOTYPE_2_ACC\"]/desc"
 msgstr "Experimental missile weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146112
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73110,13 +72964,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146116
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_1_ACC\"]/desc"
 msgstr "Experimental adaptive missile platform."
 
 #: src-ru/data/blueprints.xml.rawclobber:146156
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_2_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73132,13 +72984,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146160
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PROTOTYPE_ZOLTON_MISSILE_2_ACC\"]/desc"
 msgstr "Experimental adaptive missile platform. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146199
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73154,13 +73004,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146204
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_ACC\"]/desc"
 msgstr "Experimental anti-personnel weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146241
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_2_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73176,13 +73024,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146246
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURMS_PROTOTYPE_2_ACC\"]/desc"
 msgstr "Experimental anti-personnel weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146284
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73198,13 +73044,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146287
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY_ACC\"]/desc"
 msgstr "Experimental burst armor-piercing weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146329
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY2_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73220,7 +73064,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146332
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_PRO_HEAVY2_ACC\"]/desc"
 msgstr "Experimental burst armor-piercing weapon. Damaged."
@@ -73231,7 +73074,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146374
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73242,13 +73084,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146376
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_1_ACC\"]/desc"
 msgstr "Experimental missile weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146414
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_12_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73264,13 +73104,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146417
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_AEGON_ROCKET_12_ACC\"]/desc"
 msgstr "Experimental missile weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146455
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73286,13 +73124,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146458
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_1_ACC\"]/desc"
 msgstr "Experimental armor-piercing weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146500
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_12_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73308,13 +73144,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146503
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_TRIPLE_BLASTER_12_ACC\"]/desc"
 msgstr "Experimental armor-piercing weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146545
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73330,13 +73164,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146549
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY_ACC\"]/desc"
 msgstr "Experimental plasma weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146585
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY2_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73352,13 +73184,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146589
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SOLAR_BARRAGE_ARRAY2_ACC\"]/desc"
 msgstr "Experimental plasma weapon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146625
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73374,13 +73204,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146629
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_1_ACC\"]/desc"
 msgstr "Experimental laser ion cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146667
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_12_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73396,13 +73224,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146671
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PLASMA_RAILCANNON_12_ACC\"]/desc"
 msgstr "Experimental laser ion cannon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146709
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73418,13 +73244,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146712
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_1_ACC\"]/desc"
 msgstr "Experimental armor-piercing laser cannon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146747
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_12_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73440,13 +73264,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146750
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_PERFORATOR_12_ACC\"]/desc"
 msgstr "Experimental armor-piercing laser cannon. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146785
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73462,13 +73284,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146788
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_1_ACC\"]/desc"
 msgstr "Experimental burst ion weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:146825
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_12_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73484,7 +73304,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146828
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"OMICRON_OMNI_CANNON2_12_ACC\"]/desc"
 msgstr "Experimental burst ion weapon. Damaged."
@@ -73534,7 +73353,6 @@ msgstr ""
 "to accumulate up to 3 volleys. Damaged."
 
 #: src-ru/data/blueprints.xml.rawclobber:146959
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_1_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73550,13 +73368,11 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:146963
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_1_ACC\"]/desc"
 msgstr "Experimental phase ion weapon."
 
 #: src-ru/data/blueprints.xml.rawclobber:147008
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_2_ACC\"]/flavorType"
 msgstr "Experimental Weapon"
@@ -73572,7 +73388,6 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:147012
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"HAL_PROTOTYPE_2_ACC\"]/desc"
 msgstr "Experimental phase ion weapon. Damaged."
@@ -75338,19 +75153,18 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:150569
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ION_BLAST_1B_ACC\"]/desc"
 msgstr ""
-"Эта улучшенная модификация ионного бластера может пробить обшивку корабля."
+"This improved modification of the Ion Blaster Mark I has a chance to cause a "
+"breach."
 
 #: src-ru/data/blueprints.xml.rawclobber:150570
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ION_BLAST_1B_ACC\"]/tooltip"
 msgstr ""
-"Выпускает один заряд, наносящий 1 единицу ионного повреждения. Может "
-"поражать и отключать как щиты, так и системы."
+"Fires a single charge that deals 1 unit of ion damage. Can disable both "
+"shields and systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:150611
 msgid ""
@@ -75363,18 +75177,16 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:150613
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_MINES_MEDIUM_P_ACC\"]/desc"
 msgstr ""
-"Продвинутый миномёт, наносит больше урона, чем обычный, а также повреждает и"
-" системы, и корпус корабля."
+"This mine launcher has been rebuilt from the ground up to gain the system "
+"damage capability of its missile brethren."
 
 #: src-ru/data/blueprints.xml.rawclobber:150614
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_MINES_MEDIUM_P_ACC\"]/tooltip"
-msgstr "Запускает 1 мину; наносит 3 урона корпусу; игнорирует щиты."
+msgstr "Launches 1 mine; deals 3 hull and system damage; ignores shields."
 
 #: src-ru/data/blueprints.xml.rawclobber:150650
 msgid ""
@@ -75387,25 +75199,21 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:150652
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_LASER_ARTILLERY_MINI_ACC\"]/desc"
-msgstr ""
-"Этот лазер имеет пониженные боевые характеристики, но заряжается быстрее."
+msgstr "This artillery laser has reduced combat stats but charges up faster."
 
 #: src-ru/data/blueprints.xml.rawclobber:150653
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_LASER_ARTILLERY_MINI_ACC\"]/tooltip"
 msgstr ""
-"Стреляет 1 снарядом, наносит 3 урона сквозь 2 слоя щитов. Может вызвать "
-"возгорание и пробить корпус."
+"Fires 1 projectile that deals 3 damage and pierces 2 shield bubbles. May "
+"start fires and breach hull."
 
 #: src-ru/data/blueprints.xml.rawclobber:150688
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_PLUS_ACC\"]/flavorType"
-msgstr "Плазменный снаряд"
+msgstr "Plasma Projectile"
 
 #: src-ru/data/blueprints.xml.rawclobber:150689
 msgid ""
@@ -75418,25 +75226,22 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:150692
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_PLUS_ACC\"]/desc"
 msgstr ""
-"Стреляет сгустком плазмы, с большой вероятностью вызывающей возгорание. Эта "
-"улучшенная модификация наносит дополнительный урон экипажу."
+"Fires a small cluster of superheated plasma. The plasma rounds don't deal "
+"damage but are likely to start fires and pierce 1 shield bubble.\n"
+"\tThis improved version deals additional crew damage."
 
 #: src-ru/data/blueprints.xml.rawclobber:150693
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_PLASMA_PLUS_ACC\"]/tooltip"
-msgstr ""
-"Стреляет плазмой по небольшой случайной области. Высокий шанс возгорания."
+msgstr "Fires a small cluster of plasma at a random area. High chance of fire."
 
 #: src-ru/data/blueprints.xml.rawclobber:150733
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:150734
 msgid ""
@@ -75449,28 +75254,24 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:150736
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_ACC\"]/desc"
 msgstr ""
-"Мощное кристальное оружие, кристаллизует целый отсек. Создаёт бреши, "
-"запирает двери, оглушает и повреждает экипаж. Сбивается защитными дронами 1 "
-"уровня."
+"Fires a heavy shield piercing stun-crystal that creates an impassable "
+"barrier. Can be shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:150737
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_2_P_ACC\"]/tooltip"
 msgstr ""
-"Стреляет кристаллом, наносящим 2 урона; проникает сквозь 1 слой щитов; "
-"оставляет пробоины в корпусе; запирает отсек; повреждает и оглушает экипаж. "
-"Уязвим к защитным дронам 1 уровня."
+"Fires a crystal that deals 2 damage; pierces 1 layer of shields; leaves "
+"holes in hull; locks the targeted room; damages and stuns crew. Vulnerable "
+"to level 1 defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:150775
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_ACC\"]/flavorType"
-msgstr "Кристальное оружие"
+msgstr "Crystal Weapon"
 
 #: src-ru/data/blueprints.xml.rawclobber:150776
 msgid ""
@@ -75483,20 +75284,19 @@ msgid ""
 msgstr ""
 
 #: src-ru/data/blueprints.xml.rawclobber:150778
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_ACC\"]/desc"
 msgstr ""
-"Стреляет проникающим кристаллом, создающим непроходимый барьер. Сбивается "
-"защитными дронами 1 уровня."
+"Fires a shield piercing crystal that creates an impassable barrier. Can be "
+"shot down by basic defense drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:150779
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BA_CRYSTAL_HEAVY_LOCKDOWN_1_P_ACC\"]/tooltip"
 msgstr ""
-"Стреляет 1 раз, 1 урона. Средний шанс пробить корпус. Проникает сквозь 1 "
-"слой щитов. Запирает отсек. Уязвим к защитным дронам 1 уровня."
+"Fires 1 shot, 1 damage. Medium chance to breach the hull. Pierces through 1 "
+"layer of shields. Locks the targeted room. Vulnerable to level 1 defense "
+"drones."
 
 #: src-ru/data/blueprints.xml.rawclobber:150821
 #, fuzzy
@@ -92957,7 +92757,7 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:186339
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_MISSILES_BREACH\"]/title"
-msgstr ""
+msgstr "Breach Missiles"
 
 #: src-ru/data/blueprints.xml.rawclobber:186340
 msgid ""
@@ -93015,7 +92815,6 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:186478
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_SHOTGUN\"]/title"
 msgstr "Flak"
@@ -93031,7 +92830,6 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:186520
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_MISSILES_SWARM\"]/title"
 msgstr "Missile Battery"
@@ -93064,7 +92862,7 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:186593
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_BOMB\"]/title"
-msgstr ""
+msgstr "Explosive Bombs"
 
 #: src-ru/data/blueprints.xml.rawclobber:186594
 msgid ""
@@ -93092,7 +92890,6 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:186645
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_BEAM_FIRE\"]/title"
 msgstr "Fire Beam"
@@ -93110,7 +92907,7 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:186675
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_BEAM_FOCUS\"]/title"
-msgstr ""
+msgstr "Point Beam"
 
 #: src-ru/data/blueprints.xml.rawclobber:186676
 msgid ""
@@ -93138,7 +92935,6 @@ msgid ""
 msgstr "..."
 
 #: src-ru/data/blueprints.xml.rawclobber:186744
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"FRS_BOSS_EFFECTOR\"]/title"
 msgstr "Effector"
