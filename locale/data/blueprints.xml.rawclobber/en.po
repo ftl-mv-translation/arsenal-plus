@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-08 05:00+0000\n"
+"PO-Revision-Date: 2026-06-08 07:21+0000\n"
 "Last-Translator: Blizz Archon J <blizzarchon@gmail.com>\n"
 "Language-Team: English <https://weblate.hyperq.be/projects/arsenal-plus/"
 "datablueprintsxmlrawclobber/en/>\n"
@@ -88046,18 +88046,17 @@ msgid ""
 msgstr "Deals 6 damage per room hit."
 
 #: src-ru/data/blueprints.xml.rawclobber:176324
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BEAM_ANNIHILATOR\"]/descriptionOverride"
 msgstr ""
 "This weapon deals absolutely colossal damage. Each swipe inevitably damages "
-"your own weapons system and sometimes your hull.\n"
+"your own weapons system and sometimes 1 point of your hull.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 4\n"
 "\tCharge Time: 27 seconds\n"
 "\t\n"
-"\tBeam Length: 19\n"
+"\tBeam Length: 82\n"
 "\tBeam Speed: 3\n"
 "\t\n"
 "\tHull Damage: 6\n"
@@ -88069,8 +88068,6 @@ msgstr ""
 "\tOwn Hull Damage Chance: 50%\n"
 "\tOwn Hull Damage: 1\n"
 "\tBreach/Fire Chance in Weapons: 100%\n"
-"\t\n"
-"\tFire Chance: 100%\n"
 "\t\n"
 "\tBuy/Sell Price: 300~/150~"
 
@@ -88897,19 +88894,20 @@ msgid ""
 msgstr "Ricochet I"
 
 #: src-ru/data/blueprints.xml.rawclobber:178466
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 1 other random system."
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system."
 
 #: src-ru/data/blueprints.xml.rawclobber:178469
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 1 other random system.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -88925,7 +88923,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 45~/22~"
+"\tBuy/Sell Price: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178517
 msgid ""
@@ -88938,19 +88936,20 @@ msgid ""
 msgstr "Ricochet II"
 
 #: src-ru/data/blueprints.xml.rawclobber:178519
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 2 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:178522
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -88966,7 +88965,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 65~/32~"
+"\tBuy/Sell Price: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178570
 msgid ""
@@ -88979,23 +88978,24 @@ msgid ""
 msgstr "Ricochet III"
 
 #: src-ru/data/blueprints.xml.rawclobber:178572
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 3 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:178575
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
-"\tCharge Time: 12 seconds\n"
+"\tCharge Time: 14 seconds\n"
 "\t\n"
 "\tShots Per Charge: 1\n"
 "\t\n"
@@ -89020,19 +89020,20 @@ msgid ""
 msgstr "Ricochet I ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:178626
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_PRC\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 1 other random system."
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system."
 
 #: src-ru/data/blueprints.xml.rawclobber:178629
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_PRC\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 1 other random system.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89049,7 +89050,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 45~/22~"
+"\tBuy/Sell Price: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178678
 msgid ""
@@ -89062,19 +89063,20 @@ msgid ""
 msgstr "Ricochet I ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:178680
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_CLD\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 1 other random system."
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system."
 
 #: src-ru/data/blueprints.xml.rawclobber:178683
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_CLD\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 1 other random system.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89090,7 +89092,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 45~/22~"
+"\tBuy/Sell Price: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178731
 msgid ""
@@ -89103,19 +89105,20 @@ msgid ""
 msgstr "Ricochet I †"
 
 #: src-ru/data/blueprints.xml.rawclobber:178733
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_POW\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 1 other random system."
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system."
 
 #: src-ru/data/blueprints.xml.rawclobber:178736
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_POW\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 1 other random system.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 1\n"
@@ -89131,7 +89134,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 45~/22~"
+"\tBuy/Sell Price: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178784
 msgid ""
@@ -89144,19 +89147,20 @@ msgid ""
 msgstr "Ricochet I √"
 
 #: src-ru/data/blueprints.xml.rawclobber:178786
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_UNI\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 1 other random system."
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system."
 
 #: src-ru/data/blueprints.xml.rawclobber:178789
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_UNI\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 1 other random system.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89172,7 +89176,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 45~/22~"
+"\tBuy/Sell Price: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178838
 msgid ""
@@ -89185,19 +89189,20 @@ msgid ""
 msgstr "Ricochet I £"
 
 #: src-ru/data/blueprints.xml.rawclobber:178840
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_ACC\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 1 other random system."
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system."
 
 #: src-ru/data/blueprints.xml.rawclobber:178843
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_1_ACC\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 1 other random system.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 1 "
+"other random system.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89214,7 +89219,7 @@ msgstr ""
 "\tAccuracy Modifier: 100%\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 45~/22~"
+"\tBuy/Sell Price: 25~/12~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178893
 msgid ""
@@ -89227,19 +89232,20 @@ msgid ""
 msgstr "Ricochet II ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:178895
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_PRC\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 2 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:178898
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_PRC\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89256,7 +89262,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 65~/32~"
+"\tBuy/Sell Price: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:178947
 msgid ""
@@ -89269,19 +89275,20 @@ msgid ""
 msgstr "Ricochet II ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:178949
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_CLD\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 2 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:178952
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_CLD\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89297,7 +89304,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 65~/32~"
+"\tBuy/Sell Price: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179000
 msgid ""
@@ -89310,19 +89317,20 @@ msgid ""
 msgstr "Ricochet II †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179002
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_POW\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 2 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179005
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_POW\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 1\n"
@@ -89338,7 +89346,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 65~/32~"
+"\tBuy/Sell Price: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179053
 msgid ""
@@ -89351,19 +89359,20 @@ msgid ""
 msgstr "Ricochet II √"
 
 #: src-ru/data/blueprints.xml.rawclobber:179055
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_UNI\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 2 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179058
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_UNI\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89379,7 +89388,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 65~/32~"
+"\tBuy/Sell Price: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179107
 msgid ""
@@ -89392,19 +89401,20 @@ msgid ""
 msgstr "Ricochet II £"
 
 #: src-ru/data/blueprints.xml.rawclobber:179109
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_ACC\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 2 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179112
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_2_ACC\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 2 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89421,7 +89431,7 @@ msgstr ""
 "\tAccuracy Modifier: 100%\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 65~/32~"
+"\tBuy/Sell Price: 45~/22~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179162
 msgid ""
@@ -89434,23 +89444,24 @@ msgid ""
 msgstr "Ricochet III ™"
 
 #: src-ru/data/blueprints.xml.rawclobber:179164
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_PRC\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 3 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179167
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_PRC\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
-"\tCharge Time: 12 seconds\n"
+"\tCharge Time: 14 seconds\n"
 "\t\n"
 "\tShots Per Charge: 1\n"
 "\t\n"
@@ -89459,7 +89470,7 @@ msgstr ""
 "\tCrew Damage: 15\n"
 "\tShield Piercing: 1\n"
 "\t\n"
-"\tRicochets: 2\n"
+"\tRicochets: 3\n"
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
@@ -89476,19 +89487,20 @@ msgid ""
 msgstr "Ricochet III ‡"
 
 #: src-ru/data/blueprints.xml.rawclobber:179218
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_CLD\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 3 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179221
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_CLD\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 3 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
@@ -89504,7 +89516,7 @@ msgstr ""
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
-"\tBuy/Sell Price: 85~/42~"
+"\tBuy/Sell Price: 65~/32~"
 
 #: src-ru/data/blueprints.xml.rawclobber:179269
 msgid ""
@@ -89517,23 +89529,24 @@ msgid ""
 msgstr "Ricochet III †"
 
 #: src-ru/data/blueprints.xml.rawclobber:179271
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_POW\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 3 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179274
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_POW\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 1\n"
-"\tCharge Time: 12 seconds\n"
+"\tCharge Time: 14 seconds\n"
 "\t\n"
 "\tShots Per Charge: 1\n"
 "\t\n"
@@ -89541,7 +89554,7 @@ msgstr ""
 "\tSystem Damage: 1\n"
 "\tCrew Damage: 15\n"
 "\t\n"
-"\tRicochets: 2\n"
+"\tRicochets: 3\n"
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
@@ -89558,23 +89571,24 @@ msgid ""
 msgstr "Ricochet III √"
 
 #: src-ru/data/blueprints.xml.rawclobber:179324
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_UNI\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 3 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179327
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_UNI\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
-"\tCharge Time: 12 seconds\n"
+"\tCharge Time: 14 seconds\n"
 "\t\n"
 "\tShots Per Charge: 1\n"
 "\t\n"
@@ -89582,7 +89596,7 @@ msgstr ""
 "\tSystem Damage: 1\n"
 "\tCrew Damage: 30\n"
 "\t\n"
-"\tRicochets: 2\n"
+"\tRicochets: 3\n"
 "\t\n"
 "\tBreach Chance: 100%\n"
 "\t\n"
@@ -89599,23 +89613,24 @@ msgid ""
 msgstr "Ricochet III £"
 
 #: src-ru/data/blueprints.xml.rawclobber:179378
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_ACC\"]/desc"
 msgstr ""
 "Releases a rebounding energy sphere. After piercing through the target's "
-"hull, it ricochets around inside and damages 3 other random systems."
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems."
 
 #: src-ru/data/blueprints.xml.rawclobber:179381
-#, fuzzy
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"RICOCHET_GUN_3_ACC\"]/descriptionOverride"
 msgstr ""
-"Releases a rebounding energy sphere. After piercing through the target's hull, it ricochets around inside and damages 2 other random systems.\n"
+"Releases a rebounding energy sphere. After piercing through the target's "
+"hull, it ricochets around inside, breaching and dealing system damage to 3 "
+"other random systems.\n"
 "\t\n"
 "\tStats:\n"
 "\tRequired Power: 2\n"
-"\tCharge Time: 12 seconds\n"
+"\tCharge Time: 14 seconds\n"
 "\t\n"
 "\tShots Per Charge: 1\n"
 "\t\n"
@@ -89623,7 +89638,7 @@ msgstr ""
 "\tSystem Damage: 1\n"
 "\tCrew Damage: 15\n"
 "\t\n"
-"\tRicochets: 2\n"
+"\tRicochets: 3\n"
 "\t\n"
 "\tAccuracy Modifier: 100%\n"
 "\tBreach Chance: 100%\n"
