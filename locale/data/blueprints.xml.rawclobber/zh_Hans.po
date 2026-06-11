@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-07 03:36+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"PO-Revision-Date: 2026-06-11 14:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datablueprintsxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -2206,7 +2206,7 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:7958
 msgid ""
 "data/blueprints.xml.rawclobber$//shipBlueprint[@name=\"PLAYER_SHIP_MANTIS_DLC2_3\"]/desc"
-msgstr ""
+msgstr "卡扎卡普莱特基利克的表弟的飞船——克察赫克特尔卡茨，配备了强大的突击武器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:7959
 msgid ""
@@ -4239,7 +4239,7 @@ msgstr "巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:15054
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"artillery\"]/desc"
-msgstr ""
+msgstr "巨炮的类型取决于它将安装在哪一类飞船上。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15068
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"engines\"]/title"
@@ -4266,6 +4266,8 @@ msgstr "无人机控制"
 #: src-ru/data/blueprints.xml.rawclobber:15118
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"drones\"]/desc"
 msgstr ""
+"为所有舰载无人机提供电力。无人机是能够攻击敌方飞船、维修系统等的自动化机器人"
+"。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15137
 msgid "data/blueprints.xml.rawclobber$//systemBlueprint[@name=\"sensors\"]/title"
@@ -4461,79 +4463,81 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:15345
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_ACC\"]/title"
-msgstr ""
+msgstr "精度注射器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15346
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"INJECTOR_ACC\"]/desc"
-msgstr ""
+msgstr "增加所选武器的命中率（+100）。对炸弹和光束无效。在货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15355
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"O2_MASKS\"]/title"
-msgstr ""
+msgstr "氧气面罩"
 
 #: src-ru/data/blueprints.xml.rawclobber:15356
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"O2_MASKS\"]/desc"
-msgstr ""
+msgstr "队伍几乎不受窒息伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15365
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"EXPLOSIVE_REPLICATOR\"]/title"
-msgstr ""
+msgstr "导弹复制器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15366
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"EXPLOSIVE_REPLICATOR\"]/desc"
-msgstr ""
+msgstr "使用导弹的武器有75%的几率不消耗导弹。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15375
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FIRE_EXTINGUISHERS\"]/title"
-msgstr ""
+msgstr "灭火系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:15376
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FIRE_EXTINGUISHERS\"]/desc"
-msgstr ""
+msgstr "自动扑灭飞船上的火灾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15385
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FLEET_DISTRACTION\"]/title"
-msgstr ""
+msgstr "诱饵浮标"
 
 #: src-ru/data/blueprints.xml.rawclobber:15386
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FLEET_DISTRACTION\"]/desc"
-msgstr ""
+msgstr "在星区开始时留下一个虚假信号，将叛军延迟1次跃迁。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15395
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/title"
-msgstr ""
+msgstr "安全传送器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15396
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_HEAL\"]/desc"
 msgstr ""
+"传送时完全治疗队伍。在飞船爆炸或离开战场时，自动将友方船员从敌方飞船召回。无"
+"需传送器通电即可工作。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15405
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BATTERY_BOOSTER\"]/title"
-msgstr ""
+msgstr "备用蓄电器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15406
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BATTERY_BOOSTER\"]/desc"
-msgstr ""
+msgstr "武器在断电时几乎不会失能。将电池子系统的充能速度提高4倍。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15415
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DEFENSE_SCRAMBLER\"]/title"
-msgstr ""
+msgstr "干扰发生器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15416
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DEFENSE_SCRAMBLER\"]/desc"
-msgstr ""
+msgstr "扰乱敌方防御无人机的瞄准，并瘫痪敌方护盾无人机。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15425
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA\"]/title"
@@ -4541,246 +4545,261 @@ msgstr "备份基因库"
 
 #: src-ru/data/blueprints.xml.rawclobber:15426
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA\"]/desc"
-msgstr ""
+msgstr "即使克隆舱关闭或损坏，你的船员也不会死亡。船员在克隆时不再失去经验。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15435
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HACKING_STUN\"]/title"
-msgstr ""
+msgstr "瘫痪模块"
 
 #: src-ru/data/blueprints.xml.rawclobber:15436
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HACKING_STUN\"]/desc"
 msgstr ""
+"保护你飞船上的友方船员免受击晕。对敌方飞船上的击晕效果持续时间加倍。系统黑客"
+"攻击也会暂时瘫痪舱室内的船员。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15444
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/title"
-msgstr ""
+msgstr "红外扫描仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:15445
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"LIFE_SCANNER\"]/desc"
 msgstr ""
+"即使在舰载传感器微弱或缺失时，也能探测到任何生命形式。提供关于敌方闪避率、氧"
+"气水平和剩余消耗品数量的信息。允许舰载传感器在星云中工作。在敌方隐形期间，武"
+"器仍可充能，但速度降低。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15454
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ZOLTAN_BYPASS\"]/title"
-msgstr ""
+msgstr "超级护盾通道"
 
 #: src-ru/data/blueprints.xml.rawclobber:15455
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ZOLTAN_BYPASS\"]/desc"
-msgstr ""
+msgstr "允许船员传送、炸弹和心灵控制透过超级护盾工作。敌方超级护盾限制为3层。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15464
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANO_MEDBAY\"]/title"
-msgstr ""
+msgstr "半械族纳米医疗机器人"
 
 #: src-ru/data/blueprints.xml.rawclobber:15465
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANO_MEDBAY\"]/desc"
 msgstr ""
+"即使在医疗舱外，也能治疗自己飞船上的船员。需要医疗舱才能工作。治疗效果取决于"
+"医疗舱中的能量等级。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15474
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CREW_STIMS\"]/title"
-msgstr ""
+msgstr "螳螂信息素"
 
 #: src-ru/data/blueprints.xml.rawclobber:15475
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CREW_STIMS\"]/desc"
-msgstr ""
+msgstr "你队伍的移动速度显著提高。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15484
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SCRAP_COLLECTOR\"]/title"
-msgstr ""
+msgstr "废料收集臂"
 
 #: src-ru/data/blueprints.xml.rawclobber:15485
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SCRAP_COLLECTOR\"]/desc"
-msgstr ""
+msgstr "允许从任何来源收集的废料增加15%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15494
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_SCANNERS\"]/title"
-msgstr ""
+msgstr "广域扫描仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:15495
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_SCANNERS\"]/desc"
-msgstr ""
+msgstr "在星图上收集附近信标的额外信息，并显示商店的位置。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15503
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_COOLDOWN\"]/title"
-msgstr ""
+msgstr "自动装填器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15504
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUTO_COOLDOWN\"]/desc"
-msgstr ""
+msgstr "武器和巨炮的射击间隔减少20%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15513
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHIELD_RECHARGE\"]/title"
-msgstr ""
+msgstr "护盾充能加速器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15514
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHIELD_RECHARGE\"]/desc"
-msgstr ""
+msgstr "护盾充能速度提高50%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15523
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"WEAPON_PREIGNITE\"]/title"
-msgstr ""
+msgstr "武器预热器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15524
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"WEAPON_PREIGNITE\"]/desc"
-msgstr ""
+msgstr "武器在战斗开始前就完成首次充能。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15532
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_BOOSTER\"]/title"
-msgstr ""
+msgstr "超光速加速器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15533
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_BOOSTER\"]/desc"
 msgstr ""
+"提供快速的超光速驱动器充能。在星区开始时找到一条额外的超光速隧道，连接两个遥"
+"远的信标。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15542
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER\"]/title"
-msgstr ""
+msgstr "超光速导航仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:15543
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER\"]/desc"
-msgstr ""
+msgstr "过时的导航仪。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15551
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRONE_RECOVERY\"]/title"
-msgstr ""
+msgstr "无人机回收臂"
 
 #: src-ru/data/blueprints.xml.rawclobber:15552
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRONE_RECOVERY\"]/desc"
 msgstr ""
+"跃迁时，所有仍在飞行的、未被摧毁的战斗无人机将被转换回无人机部件。也为幸存的"
+"黑客无人机回收一个部件。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15560
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JAMMER\"]/title"
-msgstr ""
+msgstr "超光速干扰器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15561
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JAMMER\"]/desc"
-msgstr ""
+msgstr "将敌方飞船计算超光速跃迁所需的时间加倍。锁定敌方引擎1格。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15570
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"STASIS_POD\"]/title"
-msgstr ""
+msgstr "破损的休眠舱"
 
 #: src-ru/data/blueprints.xml.rawclobber:15571
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"STASIS_POD\"]/desc"
-msgstr ""
+msgstr "这个奇怪的异星造物几乎无法运作。它没有实际用途，但也许有人能修好它。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15580
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SLUG_GEL\"]/title"
-msgstr ""
+msgstr "蛞蝓族修复凝胶"
 
 #: src-ru/data/blueprints.xml.rawclobber:15581
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SLUG_GEL\"]/desc"
-msgstr ""
+msgstr "一种粘稠的凝胶，可自动修复飞船船体上的破洞。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15590
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ROCK_ARMOR\"]/title"
-msgstr ""
+msgstr "岩石族船体镀层"
 
 #: src-ru/data/blueprints.xml.rawclobber:15591
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ROCK_ARMOR\"]/desc"
-msgstr ""
+msgstr "改进型装甲，有33%的几率将受到的船体伤害降为零（被击中的系统仍会受损）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15600
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ENERGY_SHIELD\"]/title"
-msgstr ""
+msgstr "超能族护盾"
 
 #: src-ru/data/blueprints.xml.rawclobber:15601
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ENERGY_SHIELD\"]/desc"
-msgstr ""
+msgstr "未知技术制造出的几乎无法穿透的护盾。只有超光速驱动器的能量爆发才能为其充能。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15610
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CLOAK_FIRE\"]/title"
-msgstr ""
+msgstr "隐藏武器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15611
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CLOAK_FIRE\"]/desc"
-msgstr ""
+msgstr "允许在隐形模式下射击而不中断隐形。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15621
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SYSTEM_CASING\"]/title"
-msgstr ""
+msgstr "钛合金镀层"
 
 #: src-ru/data/blueprints.xml.rawclobber:15622
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SYSTEM_CASING\"]/desc"
-msgstr ""
+msgstr "飞船的所有系统都有涂层，有33%的几率在受到攻击时抵消伤害（船体仍会受损）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15631
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ION_ARMOR\"]/title"
-msgstr ""
+msgstr "反向离子场"
 
 #: src-ru/data/blueprints.xml.rawclobber:15632
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ION_ARMOR\"]/desc"
-msgstr ""
+msgstr "保护你的飞船免受离子伤害，有75%的几率完全抵消离子伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15641
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRONE_SPEED\"]/title"
-msgstr ""
+msgstr "无人机加速器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15642
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DRONE_SPEED\"]/desc"
 msgstr ""
+"所有步行无人机的移动速度提高250%，其伤害/维修速度提高100%。外部无人机的工作速"
+"度提高100%（护盾无人机除外）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15651
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_ARM\"]/title"
-msgstr ""
+msgstr "维修臂"
 
 #: src-ru/data/blueprints.xml.rawclobber:15652
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_ARM\"]/desc"
 msgstr ""
+"每次收集废料时修复你的船体，但收集的废料数量减少10%。当船体满时，废料收集不会"
+"减少。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15661
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CRYSTAL_SHARDS\"]/title"
-msgstr ""
+msgstr "水晶复仇"
 
 #: src-ru/data/blueprints.xml.rawclobber:15662
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CRYSTAL_SHARDS\"]/desc"
-msgstr ""
+msgstr "每当你的飞船受到伤害，有30%的几率碎裂出一块碎片飞向你的敌人。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15671
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TULLY_BOX\"]/title"
-msgstr ""
+msgstr "塔利专用容器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15672
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TULLY_BOX\"]/desc"
-msgstr ""
+msgstr "这个容器是锁着的。上面写着：“致塔利上将”。也许你能找到收件人。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15683
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CALL_STORE\"]/title"
-msgstr ""
+msgstr "贸易浮标"
 
 #: src-ru/data/blueprints.xml.rawclobber:15684
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CALL_STORE\"]/desc"
-msgstr ""
+msgstr "每个星区可召唤一次自动贸易船。在货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15693
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_DOWN\"]/title"
-msgstr ""
+msgstr "反维修机器人"
 
 #: src-ru/data/blueprints.xml.rawclobber:15694
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_DOWN\"]/desc"
-msgstr ""
+msgstr "使敌方系统的维修速度降低50%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15703
 msgid ""
@@ -4790,424 +4809,436 @@ msgstr "纳米修复机"
 #: src-ru/data/blueprints.xml.rawclobber:15704
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP\"]/desc"
-msgstr ""
+msgstr "使你方系统的维修速度提高50%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15713
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP_AND_DOWN\"]/title"
-msgstr ""
+msgstr "维修控制器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15714
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"REPAIR_SPEED_UP_AND_DOWN\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供维修机器人和反维修机器人的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15723
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ORCHID_BOX\"]/title"
-msgstr ""
+msgstr "兰花族容器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15724
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ORCHID_BOX\"]/desc"
-msgstr ""
+msgstr "这个容器是锁着的。里面装有各种植物、种子和孢子的生物样本。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15733
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER\"]/title"
-msgstr ""
+msgstr "类固醇"
 
 #: src-ru/data/blueprints.xml.rawclobber:15734
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER\"]/desc"
-msgstr ""
+msgstr "使你全体船员的生命值增加5。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15742
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_2\"]/title"
-msgstr ""
+msgstr "类固醇"
 
 #: src-ru/data/blueprints.xml.rawclobber:15743
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_2\"]/desc"
-msgstr ""
+msgstr "使你全体船员的生命值增加15。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15751
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_3\"]/title"
-msgstr ""
+msgstr "类固醇"
 
 #: src-ru/data/blueprints.xml.rawclobber:15752
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_3\"]/desc"
-msgstr ""
+msgstr "使你全体船员的生命值增加25。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15760
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_4\"]/title"
-msgstr ""
+msgstr "类固醇"
 
 #: src-ru/data/blueprints.xml.rawclobber:15761
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_4\"]/desc"
-msgstr ""
+msgstr "使你全体船员的生命值增加35，战斗伤害增加5%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15769
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_5\"]/title"
-msgstr ""
+msgstr "类固醇"
 
 #: src-ru/data/blueprints.xml.rawclobber:15770
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HP_BOOSTER_5\"]/desc"
-msgstr ""
+msgstr "使你全体船员的生命值增加45，战斗伤害增加10%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15778
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT\"]/title"
-msgstr ""
+msgstr "防护服"
 
 #: src-ru/data/blueprints.xml.rawclobber:15779
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT\"]/desc"
-msgstr ""
+msgstr "使你全体船员受到的所有伤害降低5%。移动速度降低15%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15787
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_2\"]/title"
-msgstr ""
+msgstr "防护服"
 
 #: src-ru/data/blueprints.xml.rawclobber:15788
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_2\"]/desc"
-msgstr ""
+msgstr "使你全体船员受到的所有伤害降低10%。移动速度降低15%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15796
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_3\"]/title"
-msgstr ""
+msgstr "防护服"
 
 #: src-ru/data/blueprints.xml.rawclobber:15797
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_3\"]/desc"
-msgstr ""
+msgstr "使你全体船员受到的所有伤害降低15%。移动速度降低15%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15805
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_4\"]/title"
-msgstr ""
+msgstr "防护服"
 
 #: src-ru/data/blueprints.xml.rawclobber:15806
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_4\"]/desc"
-msgstr ""
+msgstr "使你全体船员受到的所有伤害降低20%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15814
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_5\"]/title"
-msgstr ""
+msgstr "防护服"
 
 #: src-ru/data/blueprints.xml.rawclobber:15815
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ARMOR_SUIT_5\"]/desc"
-msgstr ""
+msgstr "使你全体船员受到的所有伤害降低25%。移动速度提高15%。免疫火焰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15823
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MAGMAN_EXTINGUISHERS\"]/title"
-msgstr ""
+msgstr "冷却剂"
 
 #: src-ru/data/blueprints.xml.rawclobber:15824
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MAGMAN_EXTINGUISHERS\"]/desc"
-msgstr ""
+msgstr "过时的灭火系统。自动扑灭飞船上的火灾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15833
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MUSHROOM_REPAIR\"]/title"
-msgstr ""
+msgstr "菌丝体"
 
 #: src-ru/data/blueprints.xml.rawclobber:15834
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MUSHROOM_REPAIR\"]/desc"
 msgstr ""
+"使你的队伍移动速度提高25%，并在每次跃迁后修复1点飞船船体。当船体满时，可能产"
+"生一个年轻的蘑菇族。此增强部件无法从飞船上移除。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15843
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BOARDER_RECOVERY\"]/title"
-msgstr ""
+msgstr "无人机回收臂"
 
 #: src-ru/data/blueprints.xml.rawclobber:15844
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BOARDER_RECOVERY\"]/desc"
-msgstr ""
+msgstr "跃迁时，所有未被摧毁的登舰无人机将被转换回无人机部件。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15852
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/title"
-msgstr ""
+msgstr "神经操纵器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15853
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MIND_ORDER\"]/desc"
 msgstr ""
+"使友方免疫心灵控制，并完全控制被心灵控制的敌人，控制时间延长50%。被控制敌人的"
+"所有能力变为友方效果。需要船上已通电的心灵控制系统才能工作。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15861
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER_GOOD\"]/title"
-msgstr ""
+msgstr "超光速导航仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:15862
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER_GOOD\"]/desc"
-msgstr ""
+msgstr "允许你的飞船跃迁到任何信标，但会消耗额外燃料。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15871
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANOBOT_DEFENSE_SYSTEM\"]/title"
-msgstr ""
+msgstr "防御纳米机器人"
 
 #: src-ru/data/blueprints.xml.rawclobber:15872
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANOBOT_DEFENSE_SYSTEM\"]/desc"
-msgstr ""
+msgstr "持续攻击你飞船上的敌方登舰者。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15881
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS\"]/title"
-msgstr ""
+msgstr "腐蚀性气体"
 
 #: src-ru/data/blueprints.xml.rawclobber:15882
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS\"]/desc"
-msgstr ""
+msgstr "有害气体对船上的外来者造成伤害。同时，你的船员完全免疫该气体。效率100%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15891
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_2\"]/title"
-msgstr ""
+msgstr "腐蚀性气体"
 
 #: src-ru/data/blueprints.xml.rawclobber:15892
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_2\"]/desc"
-msgstr ""
+msgstr "有害气体对船上的外来者造成伤害。同时，你的船员完全免疫该气体。效率150%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15901
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_3\"]/title"
-msgstr ""
+msgstr "腐蚀性气体"
 
 #: src-ru/data/blueprints.xml.rawclobber:15902
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_3\"]/desc"
-msgstr ""
+msgstr "有害气体对船上的外来者造成伤害。同时，你的船员完全免疫该气体。效率200%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15911
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_4\"]/title"
-msgstr ""
+msgstr "腐蚀性气体"
 
 #: src-ru/data/blueprints.xml.rawclobber:15912
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_4\"]/desc"
-msgstr ""
+msgstr "有害气体对船上的外来者造成伤害。同时，你的船员完全免疫该气体。效率250%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15921
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_5\"]/title"
-msgstr ""
+msgstr "腐蚀性气体"
 
 #: src-ru/data/blueprints.xml.rawclobber:15922
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHELL_GAS_5\"]/desc"
-msgstr ""
+msgstr "有害气体对船上的外来者造成伤害。同时，你的船员完全免疫该气体。效率300%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15931
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"O2_MASKS_CREW_STIMS\"]/title"
-msgstr ""
+msgstr "猎人装备"
 
 #: src-ru/data/blueprints.xml.rawclobber:15932
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"O2_MASKS_CREW_STIMS\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供氧气面罩和螳螂信息素的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15939
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY\"]/title"
-msgstr ""
+msgstr "高级纳米机器人"
 
 #: src-ru/data/blueprints.xml.rawclobber:15940
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"NANOBOT_DEFENSE_SYSTEM_NANO_MEDBAY\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供防御纳米机器人和半械族纳米医疗机器人的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15948
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ENERGY_SHIELD_ZOLTAN_BYPASS\"]/title"
-msgstr ""
+msgstr "超能族技术"
 
 #: src-ru/data/blueprints.xml.rawclobber:15949
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ENERGY_SHIELD_ZOLTAN_BYPASS\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供超能族护盾和超级护盾通道的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15956
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SLUG_GEL_FIRE_EXTINGUISHERS\"]/title"
-msgstr ""
+msgstr "安全系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:15957
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SLUG_GEL_FIRE_EXTINGUISHERS\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供蛞蝓族修复凝胶和灭火系统的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15964
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CRYSTAL_SHARDS_ROCK_ARMOR\"]/title"
-msgstr ""
+msgstr "复合装甲"
 
 #: src-ru/data/blueprints.xml.rawclobber:15965
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CRYSTAL_SHARDS_ROCK_ARMOR\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供水晶族复仇和岩石族船体镀层的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15972
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SYSTEM_CASING_ION_ARMOR\"]/title"
-msgstr ""
+msgstr "防护场"
 
 #: src-ru/data/blueprints.xml.rawclobber:15973
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SYSTEM_CASING_ION_ARMOR\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供钛合金镀层和反向离子场的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15980
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER_DRONE_RECOVERY\"]/title"
-msgstr ""
+msgstr "导航机制"
 
 #: src-ru/data/blueprints.xml.rawclobber:15981
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_JUMPER_DRONE_RECOVERY\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供超光速导航仪和无人机回收臂的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15988
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_BOOSTER_FTL_JAMMER\"]/title"
-msgstr ""
+msgstr "超光速控制器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15989
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FTL_BOOSTER_FTL_JAMMER\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供超光速加速器和超光速干扰器的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:15996
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"WEAPON_PREIGNITE_AUTO_COOLDOWN\"]/title"
-msgstr ""
+msgstr "装填补偿器"
 
 #: src-ru/data/blueprints.xml.rawclobber:15997
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"WEAPON_PREIGNITE_AUTO_COOLDOWN\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供武器预热器和自动装填器的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16004
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHIELD_RECHARGE_CLOAK_FIRE\"]/title"
-msgstr ""
+msgstr "隐形屏障"
 
 #: src-ru/data/blueprints.xml.rawclobber:16005
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SHIELD_RECHARGE_CLOAK_FIRE\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供护盾充能加速器和隐形武器的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16012
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_SCANNERS_LIFE_SCANNER\"]/title"
-msgstr ""
+msgstr "高级扫描仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:16013
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_SCANNERS_LIFE_SCANNER\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供广域扫描仪和红外扫描仪的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16020
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SCRAP_COLLECTOR_REPAIR_ARM\"]/title"
-msgstr ""
+msgstr "高级操纵器"
 
 #: src-ru/data/blueprints.xml.rawclobber:16021
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"SCRAP_COLLECTOR_REPAIR_ARM\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供废料收集臂和维修臂的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16028
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA_TELEPORT_HEAL\"]/title"
-msgstr ""
+msgstr "保全模块"
 
 #: src-ru/data/blueprints.xml.rawclobber:16029
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"BACKUP_DNA_TELEPORT_HEAL\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供备用基因库和安全传送器的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16036
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DEFENSE_SCRAMBLER_HACKING_STUN\"]/title"
-msgstr ""
+msgstr "黑客装备"
 
 #: src-ru/data/blueprints.xml.rawclobber:16037
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"DEFENSE_SCRAMBLER_HACKING_STUN\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供干扰发生器和瘫痪模块的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16044
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FLEET_DISTRACTION_BATTERY_BOOSTER\"]/title"
-msgstr ""
+msgstr "辅助模块"
 
 #: src-ru/data/blueprints.xml.rawclobber:16045
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FLEET_DISTRACTION_BATTERY_BOOSTER\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供诱饵浮标和备用蓄电器的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16052
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"EXPLOSIVE_REPLICATOR_DRONE_SPEED\"]/title"
-msgstr ""
+msgstr "支援模块"
 
 #: src-ru/data/blueprints.xml.rawclobber:16053
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"EXPLOSIVE_REPLICATOR_DRONE_SPEED\"]/desc"
-msgstr ""
+msgstr "此增强部件同时提供导弹复制器和无人机加速器的效果。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16060
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MORPH_STABILIZER\"]/title"
-msgstr ""
+msgstr "模物族稳定器"
 
 #: src-ru/data/blueprints.xml.rawclobber:16061
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MORPH_STABILIZER\"]/desc"
-msgstr ""
+msgstr "允许你控制处于短路状态的模物族。将短路持续时间延长三倍。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16070
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"RADIOACTIVE\"]/title"
-msgstr ""
+msgstr "放射性"
 
 #: src-ru/data/blueprints.xml.rawclobber:16071
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"RADIOACTIVE\"]/desc"
 msgstr ""
+"每次你受到伤害时，释放出一阵辐射，点燃敌方飞船。同时对你的队伍也有一些无法解"
+"释的影响。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16080
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MARKER_RADIOACTIVE\"]/title"
-msgstr ""
+msgstr "放射性"
 
 #: src-ru/data/blueprints.xml.rawclobber:16081
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"MARKER_RADIOACTIVE\"]/desc"
 msgstr ""
+"每次你受到伤害时，释放出一阵辐射，点燃敌方飞船。同时对你的队伍也有一些无法解"
+"释的影响。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16090
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ENVIRONMENT_AMP\"]/title"
-msgstr ""
+msgstr "毁灭性环境"
 
 #: src-ru/data/blueprints.xml.rawclobber:16091
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ENVIRONMENT_AMP\"]/desc"
 msgstr ""
+"真空对你飞船上的敌人造成1倍伤害（无视种族）。火焰对敌方飞船上的敌人造成1.5倍"
+"伤害（无视种族）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16101
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"WEAPONS_FIREBOOSTER\"]/title"
-msgstr ""
+msgstr "加速热能模块"
 
 #: src-ru/data/blueprints.xml.rawclobber:16102
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"WEAPONS_FIREBOOSTER\"]/desc"
 msgstr ""
+"该装置为武器工作创造最佳条件，使其充能速度提高50%。副作用和工作条件为持续起火"
+"。[style[color:FF0000FF]]注意，此增强部件无法移除！[[/style]]"
 
 #: src-ru/data/blueprints.xml.rawclobber:16111
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"TELEPORT_RECALL\"]/title"
-msgstr ""
+msgstr "应急传送器"
 
 #: src-ru/data/blueprints.xml.rawclobber:16112
 msgid ""
@@ -5217,150 +5248,152 @@ msgstr "如果敌方战舰即将跃迁或被摧毁，舰上的船员将被自动
 #: src-ru/data/blueprints.xml.rawclobber:16119
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUGMENT_SLOT\"]/title"
-msgstr ""
+msgstr "增强部件扩展器"
 
 #: src-ru/data/blueprints.xml.rawclobber:16120
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"AUGMENT_SLOT\"]/desc"
-msgstr ""
+msgstr "该模块允许在飞船上增加1个额外的增强部件槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16129
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CARGO_SLOT\"]/title"
-msgstr ""
+msgstr "货舱扩展器"
 
 #: src-ru/data/blueprints.xml.rawclobber:16130
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"CARGO_SLOT\"]/desc"
-msgstr ""
+msgstr "该模块允许在飞船上增加12个额外的货舱槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16139
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HIVE\"]/title"
-msgstr ""
+msgstr "蜂巢"
 
 #: src-ru/data/blueprints.xml.rawclobber:16140
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"HIVE\"]/desc"
-msgstr ""
+msgstr "里面有什么东西在蠕动，不时发出嗡嗡声。货舱里弥漫着甜甜的花蜜香味。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16151
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANAEROBIC_PROJECTOR\"]/title"
-msgstr ""
+msgstr "厌氧火焰"
 
 #: src-ru/data/blueprints.xml.rawclobber:16152
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ANAEROBIC_PROJECTOR\"]/desc"
-msgstr ""
+msgstr "敌方飞船上的火灾不会因缺氧而熄灭。目标船体不再因系统烧毁而受到伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16161
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_OXYGEN\"]/title"
-msgstr ""
+msgstr "氧气控制器"
 
 #: src-ru/data/blueprints.xml.rawclobber:16162
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"ADV_OXYGEN\"]/desc"
 msgstr ""
+"自动从有敌人和火灾的舱室抽走氧气，并向有友方船员的舱室注入氧气。抽气和注入速"
+"度取决于氧气模块中的能量等级。抽气对厌氧种族无效。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16171
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_0\"]/title"
-msgstr ""
+msgstr "雅罗鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16172
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_0\"]/desc"
-msgstr ""
+msgstr "熏雅罗鱼（+15最大生命值）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16179
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_1\"]/title"
-msgstr ""
+msgstr "鲷鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16180
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_1\"]/desc"
-msgstr ""
+msgstr "熏鲷鱼（+20%移动速度）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16187
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_2\"]/title"
-msgstr ""
+msgstr "长鳍金枪鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16188
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_2\"]/desc"
-msgstr ""
+msgstr "熏长鳍金枪鱼（+10%伤害）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16195
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_3\"]/title"
-msgstr ""
+msgstr "蝎子鲤鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16196
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_3\"]/desc"
-msgstr ""
+msgstr "熏蝎子鲤鱼（+20%维修速度）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16203
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_4\"]/title"
-msgstr ""
+msgstr "虎鳟鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16204
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_4\"]/desc"
-msgstr ""
+msgstr "熏虎鳟鱼（蛞蝓族视野）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16211
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_5\"]/title"
-msgstr ""
+msgstr "鲶鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16212
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_5\"]/desc"
-msgstr ""
+msgstr "熏鲶鱼（-50%窒息伤害）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16219
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_6\"]/title"
-msgstr ""
+msgstr "罗非鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16220
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_6\"]/desc"
-msgstr ""
+msgstr "熏罗非鱼（+50%克隆速度，+50%治疗速度）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16227
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_7\"]/title"
-msgstr ""
+msgstr "梭鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16228
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_7\"]/desc"
-msgstr ""
+msgstr "熏梭鱼（-50%击晕时间）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16235
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_8\"]/title"
-msgstr ""
+msgstr "红鲻鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16236
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_8\"]/desc"
-msgstr ""
+msgstr "熏红鲻鱼（-10%受到伤害）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16243
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_9\"]/title"
-msgstr ""
+msgstr "翻车鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16244
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_9\"]/desc"
-msgstr ""
+msgstr "熏翻车鱼（+30%技能充能速度）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16251
 msgid ""
 "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_10\"]/title"
-msgstr ""
+msgstr "午夜鲤鱼香味"
 
 #: src-ru/data/blueprints.xml.rawclobber:16252
 msgid "data/blueprints.xml.rawclobber$//augBlueprint[@name=\"FISH_BUFF_10\"]/desc"
-msgstr ""
+msgstr "熏午夜鲤鱼（+10最大生命值，+10%伤害，-10%受到伤害，+10%移动速度）。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16266
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"fuel\"]/title"
-msgstr ""
+msgstr "超光速燃料"
 
 #: src-ru/data/blueprints.xml.rawclobber:16267
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"fuel\"]/desc"
-msgstr ""
+msgstr "为你的超光速驱动器提供燃料。每次跃迁消耗1单位燃料。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16274
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"drones\"]/title"
-msgstr ""
+msgstr "无人机部件"
 
 #: src-ru/data/blueprints.xml.rawclobber:16275
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"drones\"]/desc"
-msgstr ""
+msgstr "允许你根据所选蓝图建造无人机。每次使用消耗一个无人机部件。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16282
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"missiles\"]/title"
@@ -5368,57 +5401,59 @@ msgstr "弹药"
 
 #: src-ru/data/blueprints.xml.rawclobber:16283
 msgid "data/blueprints.xml.rawclobber$//itemBlueprint[@name=\"missiles\"]/desc"
-msgstr ""
+msgstr "多功能弹药，适用于任何导弹类型武器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16294
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/desc"
-msgstr ""
+msgstr "传说中的甲壳族。其出现早已被最睿智的甲壳族古老卷轴所预言。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16297
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/title"
-msgstr ""
+msgstr "甲壳族"
 
 #: src-ru/data/blueprints.xml.rawclobber:16298
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/short"
-msgstr ""
+msgstr "甲壳族"
 
 #: src-ru/data/blueprints.xml.rawclobber:16301
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "有效吸收系统伤害，牺牲自身生命值以保护系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:16302
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度为80%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16303
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "战斗中受到伤害减少40%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16304
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "船员伤害降低至四分之一"
 
 #: src-ru/data/blueprints.xml.rawclobber:16320
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg_legendary\"]/desc"
 msgstr ""
+"甲壳族的金蛋。需要保护，并且只要你坚信，它总有一天会孵化。附近的温血盟友增加"
+"孵化几率，真空则降低。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16323
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg_legendary\"]/title"
-msgstr ""
+msgstr "金蛋"
 
 #: src-ru/data/blueprints.xml.rawclobber:16324
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg_legendary\"]/short"
-msgstr ""
+msgstr "金蛋"
 
 #: src-ru/data/blueprints.xml.rawclobber:16327
 msgid ""
@@ -5428,56 +5463,58 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:16328
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "无法控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16329
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "无法克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16345
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/desc"
-msgstr ""
+msgstr "这只聪明的爬行类后代有着坚固的背盾。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16348
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/title"
-msgstr ""
+msgstr "甲壳族"
 
 #: src-ru/data/blueprints.xml.rawclobber:16349
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/short"
-msgstr ""
+msgstr "甲壳族"
 
 #: src-ru/data/blueprints.xml.rawclobber:16352
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/powerList/power[1]"
-msgstr ""
+msgstr "吸收系统伤害，牺牲自身生命值以保护系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:16353
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度为80%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16354
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/powerList/power[3]"
-msgstr ""
+msgstr "战斗中受到伤害减少20%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16355
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"turtle\"]/powerList/power[4]"
-msgstr ""
+msgstr "船员伤害减半"
 
 #: src-ru/data/blueprints.xml.rawclobber:16409
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/desc"
 msgstr ""
+"甲壳族的蛋。需要保护，并且只要你坚信，它总有一天会孵化。附近的温血盟友增加孵"
+"化几率，真空则降低。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16412
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/title"
-msgstr ""
+msgstr "蛋"
 
 #: src-ru/data/blueprints.xml.rawclobber:16413
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/short"
-msgstr ""
+msgstr "蛋"
 
 #: src-ru/data/blueprints.xml.rawclobber:16416
 msgid ""
@@ -5487,128 +5524,132 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:16417
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/powerList/power[2]"
-msgstr ""
+msgstr "无法控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16418
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"egg\"]/powerList/power[3]"
-msgstr ""
+msgstr "无法克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16472
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/desc"
 msgstr ""
+"一种爱好和平的农业昆虫。主要因其甜味分泌物而被养殖。每天能吃掉多达一吨的植物"
+"性食物。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16473
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/title"
-msgstr ""
+msgstr "毛虫"
 
 #: src-ru/data/blueprints.xml.rawclobber:16474
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/short"
-msgstr ""
+msgstr "毛虫"
 
 #: src-ru/data/blueprints.xml.rawclobber:16479
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/powerList/power[1]"
-msgstr ""
+msgstr "生命值高，但受到所有伤害增加"
 
 #: src-ru/data/blueprints.xml.rawclobber:16480
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/powerList/power[2]"
-msgstr ""
+msgstr "无法维修、灭火、操控系统和战斗"
 
 #: src-ru/data/blueprints.xml.rawclobber:16481
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/powerList/power[3]"
-msgstr ""
+msgstr "移动速度慢60%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16482
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/powerList/power[4]"
-msgstr ""
+msgstr "无法控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16483
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/powerList/power[5]"
-msgstr ""
+msgstr "无法克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16484
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gus\"]/powerList/power[6]"
-msgstr ""
+msgstr "比地球上的牛还笨"
 
 #: src-ru/data/blueprints.xml.rawclobber:16531
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/desc"
 msgstr ""
+"一种爱好和平的农业昆虫。主要因其甜味分泌物而被养殖。每天能吃掉多达一吨的植物"
+"性食物。王室个体。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16532
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/title"
-msgstr ""
+msgstr "毛虫"
 
 #: src-ru/data/blueprints.xml.rawclobber:16533
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/short"
-msgstr ""
+msgstr "毛虫"
 
 #: src-ru/data/blueprints.xml.rawclobber:16537
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[1]"
-msgstr ""
+msgstr "每次跃迁消耗废料"
 
 #: src-ru/data/blueprints.xml.rawclobber:16538
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值高，但受到所有伤害增加"
 
 #: src-ru/data/blueprints.xml.rawclobber:16539
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[3]"
-msgstr ""
+msgstr "无法维修、灭火、操控系统和战斗"
 
 #: src-ru/data/blueprints.xml.rawclobber:16540
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[4]"
-msgstr ""
+msgstr "移动速度慢60%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16541
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[5]"
-msgstr ""
+msgstr "无法控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16542
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[6]"
-msgstr ""
+msgstr "无法克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16543
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"gusq\"]/powerList/power[7]"
-msgstr ""
+msgstr "比地球上的牛还笨"
 
 #: src-ru/data/blueprints.xml.rawclobber:16560
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/desc"
-msgstr ""
+msgstr "这种非智慧生物在手册中被列为船体寄生虫。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16563
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/title"
-msgstr ""
+msgstr "黄蜂"
 
 #: src-ru/data/blueprints.xml.rawclobber:16564
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/short"
-msgstr ""
+msgstr "黄蜂"
 
 #: src-ru/data/blueprints.xml.rawclobber:16567
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/powerList/power[1]"
-msgstr ""
+msgstr "在电相阶段仅受火焰和电击伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:16568
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/powerList/power[2]"
-msgstr ""
+msgstr "偏好待在无系统的舱室"
 
 #: src-ru/data/blueprints.xml.rawclobber:16569
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/powerList/power[3]"
-msgstr ""
+msgstr "不呼吸，击晕时间×2"
 
 #: src-ru/data/blueprints.xml.rawclobber:16570
 msgid ""
@@ -5618,44 +5659,44 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:16571
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/powerList/power[5]"
-msgstr ""
+msgstr "无法控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16572
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/powerList/power[6]"
-msgstr ""
+msgstr "无法克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16573
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osa\"]/powerList/power[7]"
-msgstr ""
+msgstr "自动技能：电击"
 
 #: src-ru/data/blueprints.xml.rawclobber:16586
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/desc"
-msgstr ""
+msgstr "这种非智慧生物在手册中被列为船体寄生虫。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16589
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/title"
-msgstr ""
+msgstr "黄蜂"
 
 #: src-ru/data/blueprints.xml.rawclobber:16590
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/short"
-msgstr ""
+msgstr "黄蜂"
 
 #: src-ru/data/blueprints.xml.rawclobber:16593
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/powerList/power[1]"
-msgstr ""
+msgstr "在电相阶段仅受火焰和电击伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:16594
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/powerList/power[2]"
-msgstr ""
+msgstr "偏好待在无系统的舱室"
 
 #: src-ru/data/blueprints.xml.rawclobber:16595
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/powerList/power[3]"
-msgstr ""
+msgstr "不呼吸，击晕时间×2"
 
 #: src-ru/data/blueprints.xml.rawclobber:16596
 msgid ""
@@ -5665,51 +5706,51 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:16597
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/powerList/power[5]"
-msgstr ""
+msgstr "无法控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16598
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/powerList/power[6]"
-msgstr ""
+msgstr "无法克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16599
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"osae\"]/powerList/power[7]"
-msgstr ""
+msgstr "自动技能：电击"
 
 #: src-ru/data/blueprints.xml.rawclobber:16616
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/desc"
-msgstr ""
+msgstr "可能是银河系中最危险的生物，被关在加固的耐酸玻璃后面。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16619
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/title"
-msgstr ""
+msgstr "容器中的异形"
 
 #: src-ru/data/blueprints.xml.rawclobber:16620
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/short"
-msgstr ""
+msgstr "容器中的异形"
 
 #: src-ru/data/blueprints.xml.rawclobber:16623
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/powerList/power[1]"
-msgstr ""
+msgstr "不燃烧"
 
 #: src-ru/data/blueprints.xml.rawclobber:16624
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/powerList/power[2]"
-msgstr ""
+msgstr "不需要氧气"
 
 #: src-ru/data/blueprints.xml.rawclobber:16625
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"alien_in_box\"]/powerList/power[3]"
-msgstr ""
+msgstr "非常脆弱"
 
 #: src-ru/data/blueprints.xml.rawclobber:16635
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"morph\"]/desc"
-msgstr ""
+msgstr "这种因短路而失去理智的半械族变种，行为常常出格。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16638
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"morph\"]/title"
@@ -5727,88 +5768,88 @@ msgstr "维修与灭火速度提升50%。"
 #: src-ru/data/blueprints.xml.rawclobber:16643
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"morph\"]/powerList/power[2]"
-msgstr ""
+msgstr "船员伤害降低25%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16644
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"morph\"]/powerList/power[3]"
-msgstr ""
+msgstr "短路期间大幅提升自身属性"
 
 #: src-ru/data/blueprints.xml.rawclobber:16645
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"morph\"]/powerList/power[4]"
-msgstr ""
+msgstr "自动技能：短路"
 
 #: src-ru/data/blueprints.xml.rawclobber:16682
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/desc"
-msgstr ""
+msgstr "斯露姆是蛞蝓族中一个相当肥胖的变种，这归咎于他们对特殊饮料的热爱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16683
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/title"
-msgstr ""
+msgstr "斯露姆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16684
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/short"
-msgstr ""
+msgstr "斯露姆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16689
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/powerList/power[1]"
-msgstr ""
+msgstr "速度降低至70%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16690
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命恢复"
 
 #: src-ru/data/blueprints.xml.rawclobber:16691
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/powerList/power[3]"
-msgstr ""
+msgstr "心灵感应看到附近舱室的一切"
 
 #: src-ru/data/blueprints.xml.rawclobber:16692
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig\"]/powerList/power[4]"
-msgstr ""
+msgstr "免疫精神控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16820
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/desc"
-msgstr ""
+msgstr "传说中的斯露姆。这个大桶里发现的贪吃鬼，喝了太多斯露姆，获得了不寻常的能力。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16821
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/title"
-msgstr ""
+msgstr "斯露姆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16822
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/short"
-msgstr ""
+msgstr "斯露姆"
 
 #: src-ru/data/blueprints.xml.rawclobber:16827
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "速度降低至50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:16828
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "持续恢复生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:16829
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "无需传感器，即使在星云中也能心灵感应看到所有舱室"
 
 #: src-ru/data/blueprints.xml.rawclobber:16830
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slig_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "免疫精神控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:16853
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy\"]/desc"
-msgstr ""
+msgstr "超能族是半械族的盟友。他们与生俱来的能量可以为飞船系统供电。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16854
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy\"]/title"
@@ -5821,21 +5862,21 @@ msgstr "佐尔坦"
 #: src-ru/data/blueprints.xml.rawclobber:16860
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy\"]/powerList/power[1]"
-msgstr ""
+msgstr "为所在舱室提供不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:16861
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至80"
 
 #: src-ru/data/blueprints.xml.rawclobber:16862
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时对敌人造成15点伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:16948
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_w\"]/desc"
-msgstr ""
+msgstr "超能族是半械族的盟友。他们与生俱来的能量可以为飞船系统供电。"
 
 #: src-ru/data/blueprints.xml.rawclobber:16949
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_w\"]/title"
@@ -5848,21 +5889,21 @@ msgstr "佐尔坦"
 #: src-ru/data/blueprints.xml.rawclobber:16955
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_w\"]/powerList/power[1]"
-msgstr ""
+msgstr "为所在舱室提供不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:16956
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_w\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至80"
 
 #: src-ru/data/blueprints.xml.rawclobber:16957
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_w\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时对敌人造成15点伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17012
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx\"]/desc"
-msgstr ""
+msgstr "超能族是超能族的近亲。他们与生俱来的能量可以为飞船系统供电。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17013
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx\"]/title"
@@ -5875,17 +5916,17 @@ msgstr "佐尔敦"
 #: src-ru/data/blueprints.xml.rawclobber:17019
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx\"]/powerList/power[1]"
-msgstr ""
+msgstr "为所在舱室提供不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:17020
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至80"
 
 #: src-ru/data/blueprints.xml.rawclobber:17021
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时对敌方系统造成3点离子伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17085
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_w\"]/desc"
@@ -5902,49 +5943,49 @@ msgstr "佐尔敦"
 #: src-ru/data/blueprints.xml.rawclobber:17092
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_w\"]/powerList/power[1]"
-msgstr ""
+msgstr "为所在舱室提供不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:17093
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_w\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至80"
 
 #: src-ru/data/blueprints.xml.rawclobber:17094
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_w\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时对敌方系统造成3点离子伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17155
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/desc"
-msgstr ""
+msgstr "蘑菇族是一种有智慧的菌类生命体。它们天生具有攻击性，但仍能与兰花族和睦相处。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17156
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/title"
-msgstr ""
+msgstr "蘑菇族（老年）"
 
 #: src-ru/data/blueprints.xml.rawclobber:17157
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/short"
-msgstr ""
+msgstr "蘑菇族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17162
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/powerList/power[1]"
-msgstr ""
+msgstr "移动速度降低至50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17163
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/powerList/power[2]"
-msgstr ""
+msgstr "拥有专家级技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:17164
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/powerList/power[3]"
-msgstr ""
+msgstr "克隆时不损失经验"
 
 #: src-ru/data/blueprints.xml.rawclobber:17165
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/powerList/power[4]"
-msgstr ""
+msgstr "仅受到10%的窒息伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17166
 msgid ""
@@ -5954,44 +5995,44 @@ msgstr "免疫眩晕"
 #: src-ru/data/blueprints.xml.rawclobber:17167
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/powerList/power[6]"
-msgstr ""
+msgstr "死亡时用孢子击晕敌人"
 
 #: src-ru/data/blueprints.xml.rawclobber:17168
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom\"]/powerList/power[7]"
-msgstr ""
+msgstr "技能：致盲孢子"
 
 #: src-ru/data/blueprints.xml.rawclobber:17184
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/desc"
-msgstr ""
+msgstr "蘑菇族是一种有智慧的菌类生命体。它们天生具有攻击性，但仍能与兰花族和睦相处。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17185
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/title"
-msgstr ""
+msgstr "蘑菇族（成年）"
 
 #: src-ru/data/blueprints.xml.rawclobber:17186
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/short"
-msgstr ""
+msgstr "蘑菇族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17191
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/powerList/power[1]"
-msgstr ""
+msgstr "移动速度降低至50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17192
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/powerList/power[2]"
-msgstr ""
+msgstr "拥有高级技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:17193
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/powerList/power[3]"
-msgstr ""
+msgstr "克隆时不损失经验"
 
 #: src-ru/data/blueprints.xml.rawclobber:17194
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/powerList/power[4]"
-msgstr ""
+msgstr "仅受到10%的窒息伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17195
 msgid ""
@@ -6001,39 +6042,39 @@ msgstr "免疫眩晕"
 #: src-ru/data/blueprints.xml.rawclobber:17196
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/powerList/power[6]"
-msgstr ""
+msgstr "死亡时用孢子击晕敌人"
 
 #: src-ru/data/blueprints.xml.rawclobber:17197
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_b\"]/powerList/power[7]"
-msgstr ""
+msgstr "技能：致盲孢子"
 
 #: src-ru/data/blueprints.xml.rawclobber:17213
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/desc"
-msgstr ""
+msgstr "蘑菇族是一种有智慧的菌类生命体。它们天生具有攻击性，但仍能与兰花族和睦相处。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17214
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/title"
-msgstr ""
+msgstr "蘑菇族（年轻）"
 
 #: src-ru/data/blueprints.xml.rawclobber:17215
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/short"
-msgstr ""
+msgstr "蘑菇族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17220
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/powerList/power[1]"
-msgstr ""
+msgstr "移动速度降低至50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17222
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/powerList/power[2]"
-msgstr ""
+msgstr "克隆时不损失经验"
 
 #: src-ru/data/blueprints.xml.rawclobber:17223
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/powerList/power[3]"
-msgstr ""
+msgstr "仅受到10%的窒息伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17224
 msgid ""
@@ -6043,12 +6084,12 @@ msgstr "免疫眩晕"
 #: src-ru/data/blueprints.xml.rawclobber:17225
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mushroom_f\"]/powerList/power[5]"
-msgstr ""
+msgstr "死亡时用孢子击晕敌人"
 
 #: src-ru/data/blueprints.xml.rawclobber:17241
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human_legendary\"]/desc"
-msgstr ""
+msgstr "传说中的教团狂热分子。身着个人防护服，热爱火焰。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17244
 msgid ""
@@ -6063,31 +6104,31 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:17248
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "受到所有伤害降低25%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17249
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度提高15%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17250
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "免疫火焰"
 
 #: src-ru/data/blueprints.xml.rawclobber:17251
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "完全不擅长灭火"
 
 #: src-ru/data/blueprints.xml.rawclobber:17252
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "快速从附近舱室传播火焰"
 
 #: src-ru/data/blueprints.xml.rawclobber:17277
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human\"]/desc"
-msgstr ""
+msgstr "教团狂热分子。身穿防火制服，配备先进灭火器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17280
 msgid ""
@@ -6102,17 +6143,17 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:17284
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human\"]/powerList/power[1]"
-msgstr ""
+msgstr "受到火焰伤害降低50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17285
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_human\"]/powerList/power[2]"
-msgstr ""
+msgstr "快速灭火"
 
 #: src-ru/data/blueprints.xml.rawclobber:17377
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_female\"]/desc"
-msgstr ""
+msgstr "教团狂热分子。身穿防火制服，配备先进灭火器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17380
 msgid ""
@@ -6127,123 +6168,123 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:17384
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_female\"]/powerList/power[1]"
-msgstr ""
+msgstr "受到火焰伤害降低50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17385
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"order_female\"]/powerList/power[2]"
-msgstr ""
+msgstr "快速灭火"
 
 #: src-ru/data/blueprints.xml.rawclobber:17459
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/desc"
-msgstr ""
+msgstr "熔岩族是岩石族的远房表亲，比岩石族快得多，也更残忍。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17460
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/title"
-msgstr ""
+msgstr "熔岩族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17461
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/short"
-msgstr ""
+msgstr "熔岩族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17466
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/powerList/power[1]"
-msgstr ""
+msgstr "从火焰中治疗"
 
 #: src-ru/data/blueprints.xml.rawclobber:17467
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/powerList/power[2]"
-msgstr ""
+msgstr "快速灭火"
 
 #: src-ru/data/blueprints.xml.rawclobber:17468
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时引发火灾"
 
 #: src-ru/data/blueprints.xml.rawclobber:17469
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/powerList/power[4]"
-msgstr ""
+msgstr "技能1：在“加热”模式下，每10秒在所在舱室引发一次火灾"
 
 #: src-ru/data/blueprints.xml.rawclobber:17470
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_a\"]/powerList/power[5]"
-msgstr ""
+msgstr "技能2：在“冷却”模式下，使所在舱室内的所有人（包括自己）减速20%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17522
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/desc"
-msgstr ""
+msgstr "熔岩族是岩石族的远房表亲，比岩石族快得多，也更残忍。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17523
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/title"
-msgstr ""
+msgstr "熔岩族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17524
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/short"
-msgstr ""
+msgstr "熔岩族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17529
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/powerList/power[1]"
-msgstr ""
+msgstr "从火焰中治疗"
 
 #: src-ru/data/blueprints.xml.rawclobber:17530
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/powerList/power[2]"
-msgstr ""
+msgstr "快速灭火"
 
 #: src-ru/data/blueprints.xml.rawclobber:17531
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时引发火灾"
 
 #: src-ru/data/blueprints.xml.rawclobber:17532
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/powerList/power[4]"
-msgstr ""
+msgstr "技能1：在“加热”模式下，每10秒在所在舱室引发一次火灾"
 
 #: src-ru/data/blueprints.xml.rawclobber:17533
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"magman_b\"]/powerList/power[5]"
-msgstr ""
+msgstr "技能2：在“冷却”模式下，使所在舱室内的所有人（包括自己）减速20%"
 
 #: src-ru/data/blueprints.xml.rawclobber:17585
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/title"
-msgstr ""
+msgstr "兰花族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17586
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/short"
-msgstr ""
+msgstr "兰花族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17587
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/desc"
-msgstr ""
+msgstr "这些植物生命体与地球上的植物没有多少共同点，但它们同样擅长向空气中释放氧气。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17592
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/powerList/power[1]"
-msgstr ""
+msgstr "生成氧气"
 
 #: src-ru/data/blueprints.xml.rawclobber:17593
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/powerList/power[2]"
-msgstr ""
+msgstr "受到火焰伤害增加4倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17594
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/powerList/power[3]"
-msgstr ""
+msgstr "灭火速度慢2倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17595
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/powerList/power[4]"
-msgstr ""
+msgstr "为所在舱室的盟友提供15生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:17596
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid\"]/powerList/power[5]"
-msgstr ""
+msgstr "治疗所在舱室的盟友，每秒0.5生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:17597
 msgid ""
@@ -6253,42 +6294,44 @@ msgstr "免疫眩晕"
 #: src-ru/data/blueprints.xml.rawclobber:17635
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/title"
-msgstr ""
+msgstr "兰花族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17636
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/short"
-msgstr ""
+msgstr "兰花族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17637
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/desc"
 msgstr ""
+"传说中的兰花族。从火灾中被救出，这株兰花能瞬间让周围充满氧气。其治疗能力也高"
+"于普通兰花族。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17642
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "生成氧气"
 
 #: src-ru/data/blueprints.xml.rawclobber:17643
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "受到火焰伤害增加8倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17644
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "灭火速度慢4倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17645
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "为所在舱室的盟友提供30生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:17646
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"orchid_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "治疗所在舱室的盟友，每秒2.5生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:17647
 msgid ""
@@ -6297,121 +6340,121 @@ msgstr "免疫眩晕"
 
 #: src-ru/data/blueprints.xml.rawclobber:17670
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/title"
-msgstr ""
+msgstr "甲壳族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17671
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/short"
-msgstr ""
+msgstr "甲壳族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17672
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/desc"
-msgstr ""
+msgstr "周身被坚固的甲壳保护，甲壳族仅在缺氧时才变得脆弱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17677
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/powerList/power[1]"
-msgstr ""
+msgstr "生命值降低至90"
 
 #: src-ru/data/blueprints.xml.rawclobber:17678
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/powerList/power[2]"
-msgstr ""
+msgstr "战斗中受到伤害减半"
 
 #: src-ru/data/blueprints.xml.rawclobber:17679
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/powerList/power[3]"
-msgstr ""
+msgstr "受到窒息伤害加倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17680
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"shell\"]/powerList/power[4]"
-msgstr ""
+msgstr "击晕时间缩短一半"
 
 #: src-ru/data/blueprints.xml.rawclobber:17704
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/title"
-msgstr ""
+msgstr "甲壳蛞蝓族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17705
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/short"
-msgstr ""
+msgstr "甲壳蛞蝓族"
 
 #: src-ru/data/blueprints.xml.rawclobber:17706
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/desc"
-msgstr ""
+msgstr "身披从被杀死的甲壳族身上夺取的甲壳，这只蛞蝓族失去了探测生命形态的能力。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17711
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/powerList/power[1]"
-msgstr ""
+msgstr "扫描附近舱室"
 
 #: src-ru/data/blueprints.xml.rawclobber:17712
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/powerList/power[2]"
-msgstr ""
+msgstr "免疫精神控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:17713
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/powerList/power[3]"
-msgstr ""
+msgstr "战斗中受到伤害减半"
 
 #: src-ru/data/blueprints.xml.rawclobber:17714
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_armored\"]/powerList/power[4]"
-msgstr ""
+msgstr "击晕时间缩短一半"
 
 #: src-ru/data/blueprints.xml.rawclobber:17746
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper\"]/title"
-msgstr ""
+msgstr "守护者"
 
 #: src-ru/data/blueprints.xml.rawclobber:17747
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper\"]/short"
-msgstr ""
+msgstr "守护者"
 
 #: src-ru/data/blueprints.xml.rawclobber:17748
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper\"]/desc"
-msgstr ""
+msgstr "几乎不需要氧气的守护者，拥有将时间之力反噬敌人的能力。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17753
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper\"]/powerList/power[1]"
-msgstr ""
+msgstr "仅受到3%的窒息伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17754
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper\"]/powerList/power[2]"
-msgstr ""
+msgstr "技能：逆转"
 
 #: src-ru/data/blueprints.xml.rawclobber:17785
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper_legendary\"]/title"
-msgstr ""
+msgstr "守护者"
 
 #: src-ru/data/blueprints.xml.rawclobber:17786
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper_legendary\"]/short"
-msgstr ""
+msgstr "守护者"
 
 #: src-ru/data/blueprints.xml.rawclobber:17787
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper_legendary\"]/desc"
-msgstr ""
+msgstr "传说中的守护者。通过魔法仪式召唤而来，这位守护者几乎对所有伤害来源都免疫。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17792
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "仅受到3%的任何来源伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:17793
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"keeper_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "技能：逆转"
 
 #: src-ru/data/blueprints.xml.rawclobber:17806
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human\"]/desc"
-msgstr ""
+msgstr "普通人类。没什么特别的。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17809
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human\"]/title"
@@ -6424,11 +6467,11 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:17813
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human\"]/powerList/power"
-msgstr ""
+msgstr "技能提升速度快一倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17967
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_d\"]/desc"
-msgstr ""
+msgstr "德里亚尔“帕斯特”布克——“宁静号”上的乘客，船员们的朋友和精神导师。"
 
 #: src-ru/data/blueprints.xml.rawclobber:17970
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_d\"]/title"
@@ -6441,16 +6484,19 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:17974
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_d\"]/powerList/power[1]"
-msgstr ""
+msgstr "技能提升速度快一倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:17975
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_d\"]/powerList/power[2]"
-msgstr ""
+msgstr "降低所在舱室内盟友在战斗中受到的伤害10%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18020
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_s\"]/desc"
 msgstr ""
+"西蒙·谭放弃了在中央行星奥西里斯担任首席创伤外科医生的生活，前往联盟学院救出妹"
+"妹瑞弗·谭，并在此过程中成为了被通缉的逃犯。现在他在“宁静号”上担任船医，并试图"
+"治愈瑞弗。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18023
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_s\"]/title"
@@ -6463,16 +6509,18 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:18027
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_s\"]/powerList/power[1]"
-msgstr ""
+msgstr "技能提升速度快一倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18028
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_s\"]/powerList/power[2]"
-msgstr ""
+msgstr "技能：治疗自己和盟友50点生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:18071
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_j\"]/desc"
 msgstr ""
+"简·科布——人类，也被称为“坎顿英雄”。受雇于马尔科姆·雷诺兹舰长的雇佣兵，在“宁静"
+"号”上帮助他进行走私活动。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18074
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_j\"]/title"
@@ -6490,11 +6538,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18079
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_j\"]/powerList/power[2]"
-msgstr ""
+msgstr "容易学习武器操控和肉搏技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:18122
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_w\"]/desc"
 msgstr ""
+"霍班“沃什”沃什本——“宁静号”的飞行员，这是一艘由马尔科姆·雷诺兹指挥的走私船。与"
+"飞船的大副佐伊·阿莱恩·沃什本结婚。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18125
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_w\"]/title"
@@ -6512,11 +6562,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18130
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_w\"]/powerList/power[2]"
-msgstr ""
+msgstr "容易学习驾驶系统操作"
 
 #: src-ru/data/blueprints.xml.rawclobber:18173
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_m\"]/desc"
 msgstr ""
+"马尔科姆“梅尔”雷诺兹——人类。“宁静号”这艘萤火虫级运输船的船长。在统一战争期间"
+"，梅尔为独立派作战，是参加并幸存于宁静谷战役的最高级别“棕衫军”。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18176
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_m\"]/title"
@@ -6534,11 +6586,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18181
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_m\"]/powerList/power[2]"
-msgstr ""
+msgstr "容易学习驾驶系统操作和肉搏技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:18224
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_m2\"]/desc"
 msgstr ""
+"马尔科姆“梅尔”雷诺兹——人类。“宁静号”这艘萤火虫级运输船的船长。在统一战争期间"
+"，梅尔为独立派作战，是参加并幸存于宁静谷战役的最高级别“棕衫军”。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18227
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_m2\"]/title"
@@ -6556,11 +6610,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18232
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_m2\"]/powerList/power[2]"
-msgstr ""
+msgstr "容易学习驾驶系统操作和肉搏技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:18275
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_z\"]/desc"
 msgstr ""
+"佐伊·阿莱恩·沃什本——棕衫军，在统一战争期间曾在马尔科姆·雷诺兹中士麾下服役。继"
+"续在他的飞船“宁静号”上担任大副。是飞行员霍班·沃什本的妻子。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18278
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_z\"]/title"
@@ -6578,11 +6634,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18283
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_z\"]/powerList/power[2]"
-msgstr ""
+msgstr "容易学习肉搏技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:18326
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_i\"]/desc"
 msgstr ""
+"伊娜拉·塞拉——伴侣，向马尔科姆·雷诺兹船长租用一艘穿梭机，与“宁静号”的船员们一"
+"同旅行。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18329
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_i\"]/title"
@@ -6600,11 +6658,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18334
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_i\"]/powerList/power[2]"
-msgstr ""
+msgstr "使所在舱室内盟友在战斗中造成的伤害提高10%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18377
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_k\"]/desc"
 msgstr ""
+"凯雯内特·李“凯莉”弗莱——“宁静号”的机械师。她是一位杰出的工程师，对机器有着天生"
+"的直觉，尽管没有接受过正规教育。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18380
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_k\"]/title"
@@ -6622,11 +6682,13 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18385
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_k\"]/powerList/power[2]"
-msgstr ""
+msgstr "容易学习引擎操控和维修技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:18428
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_r\"]/desc"
 msgstr ""
+"瑞弗·谭——西蒙·谭医生的妹妹，与他一起在“宁静号”上找到了避难所。在政府实验中被"
+"部分改造成不稳定的精神武器。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18431
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_r\"]/title"
@@ -6643,7 +6705,7 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:18436
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_r\"]/powerList/power[1]"
-msgstr ""
+msgstr "无法成为敌方船员的目标"
 
 #: src-ru/data/blueprints.xml.rawclobber:18437
 msgid ""
@@ -6653,12 +6715,14 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18438
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"human_r\"]/powerList/power[3]"
-msgstr ""
+msgstr "容易学习肉搏技能"
 
 #: src-ru/data/blueprints.xml.rawclobber:18463
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"lady_legendary\"]/desc"
 msgstr ""
+"传说中的人类。一位患有多重人格障碍的年轻女子，能够通过平行维度传送至百米开外"
+"。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18466
 msgid ""
@@ -6673,7 +6737,7 @@ msgstr "人类"
 #: src-ru/data/blueprints.xml.rawclobber:18470
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"lady_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "通过传送移动"
 
 #: src-ru/data/blueprints.xml.rawclobber:18471
 msgid ""
@@ -6683,63 +6747,65 @@ msgstr "能力提升速度翻倍"
 #: src-ru/data/blueprints.xml.rawclobber:18472
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"lady_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "技能：设置定时炸弹"
 
 #: src-ru/data/blueprints.xml.rawclobber:18515
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi\"]/desc"
-msgstr ""
+msgstr "不清楚半械族是否有有机成分，还是完全是机械生命。但他们以卓越的工程师而闻名。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18518
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi\"]/title"
-msgstr ""
+msgstr "半械族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18519
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi\"]/short"
-msgstr ""
+msgstr "半械族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18522
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi\"]/powerList/power[1]"
-msgstr ""
+msgstr "维修和灭火速度快一倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18523
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi\"]/powerList/power[2]"
-msgstr ""
+msgstr "船员伤害减半"
 
 #: src-ru/data/blueprints.xml.rawclobber:18555
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/desc"
 msgstr ""
+"传说中的半械族。由纳米云病毒组装而成，这只半械族拥有更强的维修和灭火能力，并"
+"在肉搏战中对敌方行动步兵无人机造成巨大伤害。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18558
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/title"
-msgstr ""
+msgstr "半械族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18559
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/short"
-msgstr ""
+msgstr "半械族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18562
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "维修和灭火速度快5倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18563
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "对无人机伤害提高10倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18564
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"engi_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "船员伤害降低至四分之一"
 
 #: src-ru/data/blueprints.xml.rawclobber:18577
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis\"]/desc"
-msgstr ""
+msgstr "螳螂族对个体生命的漠视将他们塑造成了一个残忍好战的种族。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18578
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis\"]/title"
@@ -6752,21 +6818,21 @@ msgstr "螳螂"
 #: src-ru/data/blueprints.xml.rawclobber:18584
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis\"]/powerList/power[1]"
-msgstr ""
+msgstr "船员伤害提高50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18585
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度快20%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18586
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis\"]/powerList/power[3]"
-msgstr ""
+msgstr "维修和灭火速度慢一倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18649
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_mad\"]/desc"
-msgstr ""
+msgstr "螳螂族对个体生命的漠视将他们塑造成了一个残忍好战的种族。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18650
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_mad\"]/title"
@@ -6779,22 +6845,24 @@ msgstr "螳螂"
 #: src-ru/data/blueprints.xml.rawclobber:18656
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_mad\"]/powerList/power[1]"
-msgstr ""
+msgstr "船员伤害提高1.5倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18657
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_mad\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度快20%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18658
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_mad\"]/powerList/power[3]"
-msgstr ""
+msgstr "维修和灭火速度慢2倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18674
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_legendary\"]/desc"
 msgstr ""
+"传说中的螳螂族。这位螳螂族领袖在一场艰苦的战斗中被击败，获救后为联邦服务。拥"
+"有不可思议的力量，能迅速消灭敌人并破坏他们的设备。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18675
 msgid ""
@@ -6809,178 +6877,182 @@ msgstr "螳螂"
 #: src-ru/data/blueprints.xml.rawclobber:18681
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "船员伤害提高3倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18682
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "对敌方系统伤害提高3倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18683
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "移动速度快50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18684
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"mantis_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "维修和灭火速度慢4倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:18700
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug\"]/desc"
-msgstr ""
+msgstr "心灵感应的蛞蝓族在全银河系都不受欢迎，因为他们倾向于偷窃和试图操纵他人。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18701
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug\"]/title"
-msgstr ""
+msgstr "蛞蝓族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18702
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug\"]/short"
-msgstr ""
+msgstr "蛞蝓族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18707
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug\"]/powerList/power[1]"
-msgstr ""
+msgstr "无需传感器，通过心灵感应看到相邻舱室和活着的生物"
 
 #: src-ru/data/blueprints.xml.rawclobber:18708
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug\"]/powerList/power[2]"
-msgstr ""
+msgstr "免疫精神控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:18874
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/desc"
 msgstr ""
+"传说中的蛞蝓族。一位渴望冒险的贪婪商人。像斯露姆一样能恢复生命值，但效果较弱"
+"且无延迟。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18875
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/title"
-msgstr ""
+msgstr "蛞蝓族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18876
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/short"
-msgstr ""
+msgstr "蛞蝓族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18881
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "每次跃迁带来1到9点废料"
 
 #: src-ru/data/blueprints.xml.rawclobber:18882
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "恢复生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:18883
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "无需传感器，通过心灵感应看到相邻舱室和活着的生物"
 
 #: src-ru/data/blueprints.xml.rawclobber:18884
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"slug_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "免疫精神控制"
 
 #: src-ru/data/blueprints.xml.rawclobber:18913
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/desc"
-msgstr ""
+msgstr "来自威拉彻斯IV的岩石族十分罕见，以其坚韧而闻名。"
 
 #: src-ru/data/blueprints.xml.rawclobber:18914
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/title"
-msgstr ""
+msgstr "岩石族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18915
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/short"
-msgstr ""
+msgstr "岩石族"
 
 #: src-ru/data/blueprints.xml.rawclobber:18920
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/powerList/power[1]"
-msgstr ""
+msgstr "免疫火焰"
 
 #: src-ru/data/blueprints.xml.rawclobber:18921
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/powerList/power[2]"
-msgstr ""
+msgstr "击晕时间缩短一半"
 
 #: src-ru/data/blueprints.xml.rawclobber:18922
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/powerList/power[3]"
-msgstr ""
+msgstr "移动速度慢40%"
 
 #: src-ru/data/blueprints.xml.rawclobber:18923
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock\"]/powerList/power[4]"
-msgstr ""
+msgstr "生命值提高至150"
 
 #: src-ru/data/blueprints.xml.rawclobber:19079
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/desc"
 msgstr ""
+"传说中的岩石族。这位未能成为大巴西利斯克妻子的岩石族女性被你救下，她拥有异常"
+"强健的体魄和对击晕的抗性。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19080
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/title"
-msgstr ""
+msgstr "岩石族"
 
 #: src-ru/data/blueprints.xml.rawclobber:19081
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/short"
-msgstr ""
+msgstr "岩石族"
 
 #: src-ru/data/blueprints.xml.rawclobber:19086
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "免疫火焰"
 
 #: src-ru/data/blueprints.xml.rawclobber:19087
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度慢60%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19088
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "生命值提高至450"
 
 #: src-ru/data/blueprints.xml.rawclobber:19089
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"rock_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "击晕时间缩短至四分之一"
 
 #: src-ru/data/blueprints.xml.rawclobber:19117
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/desc"
-msgstr ""
+msgstr "岩石族的远古祖先。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19118
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/title"
-msgstr ""
+msgstr "水晶族"
 
 #: src-ru/data/blueprints.xml.rawclobber:19119
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/short"
-msgstr ""
+msgstr "水晶族"
 
 #: src-ru/data/blueprints.xml.rawclobber:19124
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/powerList/power[1]"
-msgstr ""
+msgstr "窒息伤害降低50%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19125
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/powerList/power[2]"
-msgstr ""
+msgstr "移动速度慢20%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19126
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/powerList/power[3]"
-msgstr ""
+msgstr "生命值提高至125"
 
 #: src-ru/data/blueprints.xml.rawclobber:19127
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"crystal\"]/powerList/power[4]"
-msgstr ""
+msgstr "技能：封锁舱室"
 
 #: src-ru/data/blueprints.xml.rawclobber:19151
 msgid ""
@@ -6996,31 +7068,35 @@ msgstr "佐尔敦"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_legendary\"]/desc"
 msgstr ""
+"传说中的超能族。这位对你和平解决争端感到满意的超能族军官加入了你的队伍。他拥"
+"有巨大的内在能量，能够在跃迁时为超级护盾充能，并在死后深度离子化敌方系统。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19158
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "为所在舱室提供不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:19159
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至40"
 
 #: src-ru/data/blueprints.xml.rawclobber:19160
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时对敌方系统造成10点离子伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19161
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energyx_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "每次超光速跃迁后，即使在没有超能族增强部件的飞船上，也能恢复5点超能族护盾"
 
 #: src-ru/data/blueprints.xml.rawclobber:19179
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_legendary\"]/desc"
 msgstr ""
+"传说中的超能族。对你的处理方式印象深刻的超能族舰长加入了你的队伍。他拥有巨大"
+"的内在能量，能够有效地为舱室供电，或在死后重创敌方队伍。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19180
 msgid ""
@@ -7035,21 +7111,21 @@ msgstr "佐尔坦"
 #: src-ru/data/blueprints.xml.rawclobber:19186
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "完全为所在舱室提供不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:19187
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至40"
 
 #: src-ru/data/blueprints.xml.rawclobber:19188
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"energy_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "死亡时对敌人造成90点伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19204
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/desc"
-msgstr ""
+msgstr "这些厌氧生物看起来相当友好。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19205
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/title"
@@ -7062,37 +7138,37 @@ msgstr "食铁族"
 #: src-ru/data/blueprints.xml.rawclobber:19211
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/powerList/power[1]"
-msgstr ""
+msgstr "技能：自毁以在克隆舱复活"
 
 #: src-ru/data/blueprints.xml.rawclobber:19212
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/powerList/power[2]"
-msgstr ""
+msgstr "吸收舱室中的氧气"
 
 #: src-ru/data/blueprints.xml.rawclobber:19213
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/powerList/power[3]"
-msgstr ""
+msgstr "不因缺氧而受伤"
 
 #: src-ru/data/blueprints.xml.rawclobber:19214
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/powerList/power[4]"
-msgstr ""
+msgstr "移动速度为85%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19215
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/powerList/power[5]"
-msgstr ""
+msgstr "使所在舱室内的敌人移动速度减慢30%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19216
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic\"]/powerList/power[6]"
-msgstr ""
+msgstr "技能：自毁以在克隆舱复活"
 
 #: src-ru/data/blueprints.xml.rawclobber:19263
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/desc"
-msgstr ""
+msgstr "传说中的食铁族。这些厌氧生物看起来相当友好。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19264
 msgid ""
@@ -7107,93 +7183,93 @@ msgstr "食铁族"
 #: src-ru/data/blueprints.xml.rawclobber:19270
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/powerList/power[1]"
-msgstr ""
+msgstr "吸收舱室中的氧气"
 
 #: src-ru/data/blueprints.xml.rawclobber:19271
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "在真空中恢复生命值，但受到氧气伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19272
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "移动速度为85%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19273
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "使所在舱室内的敌人移动速度减慢30%"
 
 #: src-ru/data/blueprints.xml.rawclobber:19274
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "技能1：自毁以在克隆舱复活"
 
 #: src-ru/data/blueprints.xml.rawclobber:19275
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"anaerobic_legendary\"]/powerList/power[6]"
-msgstr ""
+msgstr "技能2：引爆当前舱室，造成1点系统伤害并产生破洞"
 
 #: src-ru/data/blueprints.xml.rawclobber:19290
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/desc"
-msgstr ""
+msgstr "纯净的活体能量，汇聚成一个稳定的球体。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19293
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/title"
-msgstr ""
+msgstr "闪灵"
 
 #: src-ru/data/blueprints.xml.rawclobber:19294
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/short"
-msgstr ""
+msgstr "闪灵"
 
 #: src-ru/data/blueprints.xml.rawclobber:19297
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[1]"
-msgstr ""
+msgstr "生命值降低至50"
 
 #: src-ru/data/blueprints.xml.rawclobber:19298
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[2]"
-msgstr ""
+msgstr "每秒恢复3点生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:19299
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[3]"
-msgstr ""
+msgstr "为所在舱室的系统提供4点不可离子化的能量"
 
 #: src-ru/data/blueprints.xml.rawclobber:19300
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[4]"
-msgstr ""
+msgstr "移动速度快一倍"
 
 #: src-ru/data/blueprints.xml.rawclobber:19301
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[5]"
-msgstr ""
+msgstr "不呼吸"
 
 #: src-ru/data/blueprints.xml.rawclobber:19302
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[6]"
-msgstr ""
+msgstr "不能战斗，但可以破坏系统"
 
 #: src-ru/data/blueprints.xml.rawclobber:19303
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[7]"
-msgstr ""
+msgstr "无法被克隆"
 
 #: src-ru/data/blueprints.xml.rawclobber:19304
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[8]"
-msgstr ""
+msgstr "击晕对其是致命的"
 
 #: src-ru/data/blueprints.xml.rawclobber:19305
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"blinker\"]/powerList/power[9]"
-msgstr ""
+msgstr "死亡时对附近的敌人造成60点伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19314
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost\"]/desc"
-msgstr ""
+msgstr "这个完全有意识的全息图由先进的人工智能管理。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19317
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost\"]/title"
@@ -7206,17 +7282,17 @@ msgstr "化身"
 #: src-ru/data/blueprints.xml.rawclobber:19321
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost\"]/powerList/power[1]"
-msgstr ""
+msgstr "免疫窒息和火焰伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19322
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost\"]/powerList/power[2]"
-msgstr ""
+msgstr "生命值降低至50"
 
 #: src-ru/data/blueprints.xml.rawclobber:19323
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost\"]/powerList/power[3]"
-msgstr ""
+msgstr "穿透舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:19324
 msgid ""
@@ -7226,12 +7302,14 @@ msgstr "维修与灭火速度提升50%。"
 #: src-ru/data/blueprints.xml.rawclobber:19325
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost\"]/powerList/power[5]"
-msgstr ""
+msgstr "占用0.5个船员槽位"
 
 #: src-ru/data/blueprints.xml.rawclobber:19380
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost10_legendary\"]/desc"
 msgstr ""
+"传说中的化身。在化身核心中找到，这个被重新编程的机器人在受到致命伤害时能够自"
+"我分裂。不占用飞船上的船员槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19383
 msgid ""
@@ -7251,22 +7329,22 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:19388
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost10_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "死亡时一分为二，最大生命值减少10"
 
 #: src-ru/data/blueprints.xml.rawclobber:19389
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost10_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "免疫窒息和火焰伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19390
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost10_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "生命值降低至50"
 
 #: src-ru/data/blueprints.xml.rawclobber:19391
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost10_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "穿透舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:19392
 msgid ""
@@ -7277,6 +7355,8 @@ msgstr "维修与灭火速度提升50%。"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost08_legendary\"]/desc"
 msgstr ""
+"传说中的化身。在化身核心中找到，这个被重新编程的机器人在受到致命伤害时能够自"
+"我分裂。不占用飞船上的船员槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19437
 msgid ""
@@ -7296,22 +7376,22 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:19442
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost08_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "死亡时一分为二，最大生命值减少10"
 
 #: src-ru/data/blueprints.xml.rawclobber:19443
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost08_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "免疫窒息和火焰伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19444
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost08_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "生命值降低至40"
 
 #: src-ru/data/blueprints.xml.rawclobber:19445
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost08_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "穿透舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:19446
 msgid ""
@@ -7322,6 +7402,8 @@ msgstr "维修与灭火速度提升50%。"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost06_legendary\"]/desc"
 msgstr ""
+"传说中的化身。在化身核心中找到，这个被重新编程的机器人在受到致命伤害时能够自"
+"我分裂。不占用飞船上的船员槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19491
 msgid ""
@@ -7341,22 +7423,22 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:19496
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost06_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "死亡时一分为二，最大生命值减少10"
 
 #: src-ru/data/blueprints.xml.rawclobber:19497
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost06_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "免疫窒息和火焰伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19498
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost06_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "生命值降低至30"
 
 #: src-ru/data/blueprints.xml.rawclobber:19499
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost06_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "穿透舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:19500
 msgid ""
@@ -7367,6 +7449,8 @@ msgstr "维修与灭火速度提升50%。"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost04_legendary\"]/desc"
 msgstr ""
+"传说中的化身。在化身核心中找到，这个被重新编程的机器人在受到致命伤害时能够自"
+"我分裂。不占用飞船上的船员槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19545
 msgid ""
@@ -7386,22 +7470,22 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:19550
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost04_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "死亡时一分为二，最大生命值减少10"
 
 #: src-ru/data/blueprints.xml.rawclobber:19551
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost04_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "免疫窒息和火焰伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19552
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost04_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "生命值降低至20"
 
 #: src-ru/data/blueprints.xml.rawclobber:19553
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost04_legendary\"]/powerList/power[5]"
-msgstr ""
+msgstr "穿透舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:19554
 msgid ""
@@ -7412,6 +7496,8 @@ msgstr "维修与灭火速度提升50%。"
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost02_legendary\"]/desc"
 msgstr ""
+"传说中的化身。在化身核心中找到，这个被重新编程的机器人在受到致命伤害时能够自"
+"我分裂。不占用飞船上的船员槽位。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19599
 msgid ""
@@ -7431,17 +7517,17 @@ msgstr "不占用船员槽位。"
 #: src-ru/data/blueprints.xml.rawclobber:19604
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost02_legendary\"]/powerList/power[2]"
-msgstr ""
+msgstr "免疫窒息和火焰伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19605
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost02_legendary\"]/powerList/power[3]"
-msgstr ""
+msgstr "生命值降低至10"
 
 #: src-ru/data/blueprints.xml.rawclobber:19606
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"ghost02_legendary\"]/powerList/power[4]"
-msgstr ""
+msgstr "穿透舱门"
 
 #: src-ru/data/blueprints.xml.rawclobber:19607
 msgid ""
@@ -7450,7 +7536,7 @@ msgstr "维修与灭火速度提升50%。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19673
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"boulder\"]/desc"
-msgstr ""
+msgstr "一大块岩石。难以摧毁，但会随时间失去生命值。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19674
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"boulder\"]/title"
@@ -7463,12 +7549,12 @@ msgstr "巨石"
 #: src-ru/data/blueprints.xml.rawclobber:19680
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"boulder\"]/powerList/power[1]"
-msgstr ""
+msgstr "仅受到25%的伤害"
 
 #: src-ru/data/blueprints.xml.rawclobber:19681
 msgid ""
 "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"boulder\"]/powerList/power[2]"
-msgstr ""
+msgstr "每秒失去1点生命值"
 
 #: src-ru/data/blueprints.xml.rawclobber:19687
 msgid "data/blueprints.xml.rawclobber$//crewBlueprint[@name=\"battle\"]/desc"
@@ -7497,17 +7583,17 @@ msgstr "维修无人机"
 #: src-ru/data/blueprints.xml.rawclobber:19711
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK_ATK\"]/title"
-msgstr ""
+msgstr "轻型攻击无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:19712
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK_ATK\"]/short"
-msgstr ""
+msgstr "轻.攻."
 
 #: src-ru/data/blueprints.xml.rawclobber:19713
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK_ATK\"]/desc"
-msgstr ""
+msgstr "用激光在被攻击的飞船上制造混乱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19726
 msgid ""
@@ -7522,17 +7608,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19754
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK_DEF\"]/title"
-msgstr ""
+msgstr "轻型防御无人机"
 
 #: src-ru/data/blueprints.xml.rawclobber:19755
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK_DEF\"]/short"
-msgstr ""
+msgstr "轻.防."
 
 #: src-ru/data/blueprints.xml.rawclobber:19756
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK_DEF\"]/desc"
-msgstr ""
+msgstr "用精确的激光摧毁任何射弹。非常出色。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19769
 msgid ""
@@ -7547,12 +7633,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19792
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK_WEAPON\"]/title"
-msgstr ""
+msgstr "超能族之光"
 
 #: src-ru/data/blueprints.xml.rawclobber:19793
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK_WEAPON\"]/short"
-msgstr ""
+msgstr "超能族之光"
 
 #: src-ru/data/blueprints.xml.rawclobber:19795
 msgid ""
@@ -7562,17 +7648,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19825
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK2_ATK\"]/title"
-msgstr ""
+msgstr "攻击无人机2型"
 
 #: src-ru/data/blueprints.xml.rawclobber:19826
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK2_ATK\"]/short"
-msgstr ""
+msgstr "攻击2"
 
 #: src-ru/data/blueprints.xml.rawclobber:19827
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK2_ATK\"]/desc"
-msgstr ""
+msgstr "用激光在被攻击的飞船上制造混乱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19840
 msgid ""
@@ -7587,17 +7673,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19869
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK2_DEF\"]/title"
-msgstr ""
+msgstr "防御无人机2型"
 
 #: src-ru/data/blueprints.xml.rawclobber:19870
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK2_DEF\"]/short"
-msgstr ""
+msgstr "防御2"
 
 #: src-ru/data/blueprints.xml.rawclobber:19871
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK2_DEF\"]/desc"
-msgstr ""
+msgstr "用精确的激光摧毁任何射弹。非常出色。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19884
 msgid ""
@@ -7612,12 +7698,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19907
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK2_WEAPON\"]/title"
-msgstr ""
+msgstr "超能族之光2型"
 
 #: src-ru/data/blueprints.xml.rawclobber:19908
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK2_WEAPON\"]/short"
-msgstr ""
+msgstr "超能族之光2型"
 
 #: src-ru/data/blueprints.xml.rawclobber:19910
 msgid ""
@@ -7627,17 +7713,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19940
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK3_ATK\"]/title"
-msgstr ""
+msgstr "攻击无人机3型"
 
 #: src-ru/data/blueprints.xml.rawclobber:19941
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK3_ATK\"]/short"
-msgstr ""
+msgstr "攻击3"
 
 #: src-ru/data/blueprints.xml.rawclobber:19942
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK3_ATK\"]/desc"
-msgstr ""
+msgstr "用激光在被攻击的飞船上制造混乱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19955
 msgid ""
@@ -7652,17 +7738,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:19984
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK3_DEF\"]/title"
-msgstr ""
+msgstr "防御无人机3型"
 
 #: src-ru/data/blueprints.xml.rawclobber:19985
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK3_DEF\"]/short"
-msgstr ""
+msgstr "防御3"
 
 #: src-ru/data/blueprints.xml.rawclobber:19986
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK3_DEF\"]/desc"
-msgstr ""
+msgstr "用精确的激光摧毁任何射弹。非常出色。"
 
 #: src-ru/data/blueprints.xml.rawclobber:19999
 msgid ""
@@ -7677,12 +7763,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20022
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK3_WEAPON\"]/title"
-msgstr ""
+msgstr "超能族之光3型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20023
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK3_WEAPON\"]/short"
-msgstr ""
+msgstr "超能族之光3型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20025
 msgid ""
@@ -7692,17 +7778,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20056
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK4_ATK\"]/title"
-msgstr ""
+msgstr "攻击无人机4型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20057
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK4_ATK\"]/short"
-msgstr ""
+msgstr "攻击4"
 
 #: src-ru/data/blueprints.xml.rawclobber:20058
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK4_ATK\"]/desc"
-msgstr ""
+msgstr "用激光在被攻击的飞船上制造混乱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20071
 msgid ""
@@ -7717,17 +7803,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20100
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK4_DEF\"]/title"
-msgstr ""
+msgstr "防御无人机4型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20101
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK4_DEF\"]/short"
-msgstr ""
+msgstr "防御4"
 
 #: src-ru/data/blueprints.xml.rawclobber:20102
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK4_DEF\"]/desc"
-msgstr ""
+msgstr "用精确的激光摧毁任何射弹。非常出色。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20115
 msgid ""
@@ -7742,12 +7828,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20138
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK4_WEAPON\"]/title"
-msgstr ""
+msgstr "超能族之光4型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20139
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK4_WEAPON\"]/short"
-msgstr ""
+msgstr "超能族之光4型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20141
 msgid ""
@@ -7757,17 +7843,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20171
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK5_ATK\"]/title"
-msgstr ""
+msgstr "攻击无人机5型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20172
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK5_ATK\"]/short"
-msgstr ""
+msgstr "攻击5"
 
 #: src-ru/data/blueprints.xml.rawclobber:20173
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK5_ATK\"]/desc"
-msgstr ""
+msgstr "用激光在被攻击的飞船上制造混乱。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20186
 msgid ""
@@ -7782,17 +7868,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20218
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK5_DEF\"]/title"
-msgstr ""
+msgstr "防御无人机5型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20219
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK5_DEF\"]/short"
-msgstr ""
+msgstr "防御5"
 
 #: src-ru/data/blueprints.xml.rawclobber:20220
 msgid ""
 "data/blueprints.xml.rawclobber$//droneBlueprint[@name=\"DRONE_BLINK5_DEF\"]/desc"
-msgstr ""
+msgstr "用精确的激光摧毁任何射弹。非常出色。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20233
 msgid ""
@@ -7807,12 +7893,12 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20258
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK5_WEAPON\"]/title"
-msgstr ""
+msgstr "超能族之光5型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20259
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ZOLTAN_BLINK5_WEAPON\"]/short"
-msgstr ""
+msgstr "超能族之光5型"
 
 #: src-ru/data/blueprints.xml.rawclobber:20261
 msgid ""
@@ -7822,17 +7908,17 @@ msgstr "..."
 #: src-ru/data/blueprints.xml.rawclobber:20292
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CAPSULE_FED\"]/title"
-msgstr ""
+msgstr "逃生舱"
 
 #: src-ru/data/blueprints.xml.rawclobber:20293
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CAPSULE_FED\"]/short"
-msgstr ""
+msgstr "逃生舱"
 
 #: src-ru/data/blueprints.xml.rawclobber:20294
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CAPSULE_FED\"]/desc"
-msgstr ""
+msgstr "联邦逃生舱。可以分散叛军的追击。一次性使用。在货舱菜单中使用。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20324
 msgid ""
@@ -7847,7 +7933,7 @@ msgstr "蛞蝓桶"
 #: src-ru/data/blueprints.xml.rawclobber:20326
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURM_BARREL_1\"]/desc"
-msgstr ""
+msgstr "装满绿色斯露姆的小桶。不是武器。受商人青睐。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20354
 msgid ""
@@ -7862,7 +7948,7 @@ msgstr "蛞蝓桶"
 #: src-ru/data/blueprints.xml.rawclobber:20356
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURM_BARREL_2\"]/desc"
-msgstr ""
+msgstr "装满绿色斯露姆的大桶。不是武器。受商人青睐。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20384
 msgid ""
@@ -7877,7 +7963,7 @@ msgstr "蛞蝓桶"
 #: src-ru/data/blueprints.xml.rawclobber:20386
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURM_BARREL_3\"]/desc"
-msgstr ""
+msgstr "装满稀有紫色斯露姆的小桶。不是武器。受商人青睐。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20414
 msgid ""
@@ -7892,15 +7978,15 @@ msgstr "蛞蝓桶"
 #: src-ru/data/blueprints.xml.rawclobber:20416
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SLURM_BARREL_4\"]/desc"
-msgstr ""
+msgstr "装满稀有紫色斯露姆的大桶。不是武器。受商人青睐。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20444
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_SHOT\"]/title"
-msgstr ""
+msgstr "P.T.S. SHOT"
 
 #: src-ru/data/blueprints.xml.rawclobber:20445
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_SHOT\"]/short"
-msgstr ""
+msgstr "P.T.S. SHOT"
 
 #: src-ru/data/blueprints.xml.rawclobber:20446
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_SHOT\"]/desc"
@@ -7909,27 +7995,27 @@ msgstr "开发人员信息"
 #: src-ru/data/blueprints.xml.rawclobber:20447
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"PDS_SHOT\"]/tooltip"
-msgstr ""
+msgstr "YOU SHOULD NEVER SEE THIS."
 
 #: src-ru/data/blueprints.xml.rawclobber:20482
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_MMM1\"]/title"
-msgstr ""
+msgstr "小型炸弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:20483
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_MMM1\"]/short"
-msgstr ""
+msgstr "小型炸弹巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:20485
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_MMM1\"]/desc"
-msgstr ""
+msgstr "发射一枚小型炸弹，有20%的几率引发火灾。[13 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:20486
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_MMM1\"]/tooltip"
-msgstr ""
+msgstr "发射一枚小型炸弹，有20%的几率引发火灾。[13 ‡]"
 
 #: src-ru/data/blueprints.xml.rawclobber:20514
 msgid ""
@@ -7944,86 +8030,90 @@ msgstr ""
 #: src-ru/data/blueprints.xml.rawclobber:20517
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"BOMB_1_MMM2\"]/desc"
-msgstr ""
+msgstr "仅限敌人"
 
 #: src-ru/data/blueprints.xml.rawclobber:20547
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ROCK_X\"]/title"
-msgstr ""
+msgstr "岩石族导弹巨炮 X"
 
 #: src-ru/data/blueprints.xml.rawclobber:20548
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ROCK_X\"]/short"
-msgstr ""
+msgstr "岩.导.巨.X"
 
 #: src-ru/data/blueprints.xml.rawclobber:20549
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ROCK_X\"]/desc"
-msgstr ""
+msgstr "不起眼的导弹发射器。在战斗中提供帮助，无需消耗弹药。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20550
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_ROCK_X\"]/tooltip"
-msgstr ""
+msgstr "不起眼的导弹发射器。在战斗中提供帮助，无需消耗弹药。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20585
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRAINING_COMPLEX\"]/flavorType"
-msgstr ""
+msgstr "训练综合体"
 
 #: src-ru/data/blueprints.xml.rawclobber:20586
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRAINING_COMPLEX\"]/title"
-msgstr ""
+msgstr "训练综合体"
 
 #: src-ru/data/blueprints.xml.rawclobber:20587
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRAINING_COMPLEX\"]/short"
-msgstr ""
+msgstr "训练综合体"
 
 #: src-ru/data/blueprints.xml.rawclobber:20588
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"TRAINING_COMPLEX\"]/desc"
 msgstr ""
+"程序-神经综合体。能在短时间内训练射手操作武器系统。需要将训练综合体的瞄准器对"
+"准任何敌对目标。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20615
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR\"]/flavorType"
-msgstr ""
+msgstr "定向扫描仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:20616
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR\"]/title"
-msgstr ""
+msgstr "定向扫描仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:20617
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR\"]/short"
-msgstr ""
+msgstr "扫描仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:20619
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR\"]/desc"
 msgstr ""
+"该设备即使在飞船传感器不工作时，也能显示任何舱室的图像。可以扫描你飞船上的舱"
+"室。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20652
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR2\"]/flavorType"
-msgstr ""
+msgstr "模物族分析仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:20653
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR2\"]/title"
-msgstr ""
+msgstr "模物族分析仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:20654
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR2\"]/short"
-msgstr ""
+msgstr "分析仪"
 
 #: src-ru/data/blueprints.xml.rawclobber:20656
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"SHIPRADAR2\"]/desc"
-msgstr ""
+msgstr "专为在超光速驱动器充能期间进行深空扫描而设计。可以显示任何舱室的图像。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20688
 msgid ""
@@ -8037,17 +8127,17 @@ msgstr "水晶碎片"
 
 #: src-ru/data/blueprints.xml.rawclobber:20690
 msgid "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"CRYSTAL_1\"]/desc"
-msgstr ""
+msgstr "没人应该看到这个描述。"
 
 #: src-ru/data/blueprints.xml.rawclobber:20730
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_MAGMAN\"]/title"
-msgstr ""
+msgstr "火焰巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:20731
 msgid ""
 "data/blueprints.xml.rawclobber$//weaponBlueprint[@name=\"ARTILLERY_MAGMAN\"]/short"
-msgstr ""
+msgstr "火焰巨炮"
 
 #: src-ru/data/blueprints.xml.rawclobber:20732
 msgid ""
