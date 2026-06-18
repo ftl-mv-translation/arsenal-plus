@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:44+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-06-18 16:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_fuelxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -194,7 +194,7 @@ msgstr "探索周围区域。"
 #: src-ru/data/events_fuel.xml.rawclobber:192
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_EXPLORE\"]/choice[2]/text"
-msgstr ""
+msgstr "留在信标处。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:198
 msgid ""
@@ -209,7 +209,7 @@ msgstr "靠近小行星并扫描它们。"
 #: src-ru/data/events_fuel.xml.rawclobber:204
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_EXPLORE_LIST\"]/event[1]/choice[2]/text"
-msgstr ""
+msgstr "不冒险。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:209
 msgid ""
@@ -231,10 +231,9 @@ msgid ""
 msgstr "探索周围区域。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:225
-#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"FUEL_EXPLORE\"]/choice[2]/text"
-msgstr "留在信标处并与船员交谈。"
+msgstr "留在信标处。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:231
 msgid ""
@@ -247,10 +246,9 @@ msgid ""
 msgstr "靠近小行星并扫描它们。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:237
-#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"FUEL_EXPLORE_LIST\"]/event[1]/choice[2]/text"
-msgstr "不冒险，与船员交谈。"
+msgstr "不冒险。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:242
 msgid ""
@@ -303,11 +301,10 @@ msgid ""
 msgstr "你进入了叛军小型自动侦察机的扫描范围！"
 
 #: src-ru/data/events_fuel.xml.rawclobber:289
-#, fuzzy
 msgid "data/events_fuel.xml.rawclobber$//event[@name=\"STUFF_APPROACH\"]/text"
 msgstr ""
-"一艘船正在靠近。他们向你打招呼并说：“需要燃料吗？我们会帮忙，准备好你的对接端"
-"口。”"
+"一艘飞船正在靠近。他们向你发出问候：“需要补给吗？我们可以帮忙，请准备好你的对"
+"接端口。”"
 
 #: src-ru/data/events_fuel.xml.rawclobber:291
 msgid ""
@@ -387,6 +384,8 @@ msgstr "随着他们靠近，你发现他们的武器已通电。看来他们意
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_ACCEPT_LIST\"]/event[1]/text"
 msgstr ""
+"“可别再一下子把补给全耗光了。现在可是乱世，谁知道会有什么人飞过来。”他们说着"
+"，递给了你一些补给。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:368
 msgid ""
@@ -414,12 +413,11 @@ msgid ""
 msgstr "随着他们靠近，你发现他们的武器已通电。看来他们意图敌对！"
 
 #: src-ru/data/events_fuel.xml.rawclobber:391
-#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_DECLINE_LIST\"]/event[1]/text"
 msgstr ""
-"“请放心，我们没有恶意。你看，我们正在给你输送燃料。”一艘小船按他们所说的那样"
-"对接并卸下一些燃料。离开时他们补充道：“小心点，朋友们。”"
+"“请放心，我们绝无恶意。你看，我们正在给你们发送补给。”一艘小型飞船按照他们所"
+"说的那样，对接后卸下了一些补给。离开时，他们补充道：“朋友们，多保重。”"
 
 #: src-ru/data/events_fuel.xml.rawclobber:396
 msgid ""
@@ -472,11 +470,10 @@ msgid ""
 msgstr "你的高科技隐形系统让你轻松脱离扫描范围，因为你仍在他们的射程之外。最终他们的飞船跃迁离开了。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:447
-#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//eventList[@name=\"STUFF_APPROACH_SCAN_LIST\"]/event[1]/text"
 msgstr ""
-"传感器显示他们的船上没有军事装备。你允许他们对接，他们给了你一些燃料，同时说"
+"传感器显示他们的船上没有军事装备。你允许他们对接，他们给了你一些补给，同时说"
 "道：“我记得过去我们彼此之间还没有这么偏执……多加小心。”"
 
 #: src-ru/data/events_fuel.xml.rawclobber:451
@@ -1112,10 +1109,9 @@ msgid ""
 msgstr "接受交易。"
 
 #: src-ru/data/events_fuel.xml.rawclobber:1156
-#, fuzzy
 msgid ""
 "data/events_fuel.xml.rawclobber$//event[@name=\"NO_FUEL_REFUGEE_DAMAGED\"]/choice[@req=\"engi_crew\"]/event/choice[2]/text"
-msgstr "拒绝。"
+msgstr "拒绝"
 
 #: src-ru/data/events_fuel.xml.rawclobber:1162
 msgid ""
