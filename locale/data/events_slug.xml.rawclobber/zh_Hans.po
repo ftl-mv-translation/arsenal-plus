@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:44+0000\n"
+"PO-Revision-Date: 2026-06-18 16:36+0000\n"
 "Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_slugxmlrawclobber/zh_Hans/>\n"
@@ -345,7 +345,7 @@ msgstr "你启动机动引擎，迅速驶离空间站。一艘飞船快速上前
 #: src-ru/data/events_slug.xml.rawclobber:445
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"NEBULA_SLUG_HULLFIX_REQUEST\"]/event[1]/text"
-msgstr "“啊啊啊。一位商业伙伴。只需50废料，我们就能把您的飞船修理10点。”"
+msgstr "“啊啊啊。一位商业伙伴。只需50废料，我们就能给您的飞船修理10点舰体。”"
 
 #: src-ru/data/events_slug.xml.rawclobber:447
 msgid ""
@@ -482,7 +482,9 @@ msgstr "很明显，你遇到的那些蛞蝓觉得碰上了一个香饽饽。他
 #: src-ru/data/events_slug.xml.rawclobber:573
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_SLUG_FIGHT\"]/text[3]"
-msgstr "“恳请您，外来者阁下，我们手无寸铁，正在寻找避难所。”"
+msgstr ""
+"蛞蝓族的客船发来问候：“请～～问，尊敬的外星阁下，我们手无寸铁，正在寻求庇护。"
+"”你小心翼翼地靠近，随后他们的武器立刻从船体外壳下弹了出来！"
 
 #: src-ru/data/events_slug.xml.rawclobber:574
 msgid ""
@@ -1138,7 +1140,9 @@ msgstr "你抵达了蛞蝓族星云。这些有害的心灵感应生物狡猾透
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"START_BEACON_SLUG\"]/text[7]"
 msgstr ""
-"刚一进入这个星区，你就注意到船体旁边有一件完美的武器。你船员们的眼睛闪烁着喜悦的光芒，驾驶员还拿出了一瓶超能族朗姆酒。然而，打开扫描仪后，你只看到一颗小行星。难道这又是那些狡猾蛞蝓族的催眠把戏？"
+"刚一进入这个星区，你就注意到船体旁边有一件完美的武器。你船员们的眼睛闪烁着喜"
+"悦的光芒，驾驶员还拿出了一瓶超能族朗姆酒。然而，打开扫描仪后，你只看到一颗小"
+"行星。难道这又是那些狡猾蛞蝓族的催眠把戏？..."
 
 #: src-ru/data/events_slug.xml.rawclobber:1192
 msgid ""
@@ -1612,7 +1616,7 @@ msgstr "（化身船员）献祭一名化身。"
 #: src-ru/data/events_slug.xml.rawclobber:1648
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"CLONE_JELLY_SACRIFICE\"]/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "（熔岩族船员）献祭熔岩族。"
 
 #: src-ru/data/events_slug.xml.rawclobber:1656
 msgid ""
@@ -2445,7 +2449,7 @@ msgstr "你派你的船员前往那个奇怪的造物。在一阵奇怪的声音
 #: src-ru/data/events_slug.xml.rawclobber:2613
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"NEBULA_STORM_SLUG_CONVERTER_OF_SOUL\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "（熔岩族船员）派遣熔岩族。"
 
 #: src-ru/data/events_slug.xml.rawclobber:2615
 msgid ""
@@ -2485,7 +2489,7 @@ msgstr "你派你的船员前往那个奇怪的造物。在一阵奇怪的声音
 #: src-ru/data/events_slug.xml.rawclobber:2657
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"NEBULA_STORM_SLUG_CONVERTER_OF_SOUL\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"mushroom\"]/text"
-msgstr "（老年蘑菇族船员）派蘑菇族去"
+msgstr "（老年蘑菇族船员）派蘑菇族去。"
 
 #: src-ru/data/events_slug.xml.rawclobber:2659
 msgid ""
@@ -3613,7 +3617,7 @@ msgstr "..你队伍中的所有化身都消失了，什么都没留下，只剩�
 #: src-ru/data/events_slug.xml.rawclobber:3824
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT\"]/text[1]"
-msgstr "……一道明亮的闪电划破船舱的黑暗，将你们的一个化身蒸发掉了！……"
+msgstr "……一道明亮的闪电划破船舱的黑暗，将你们的一个化身蒸发掉了！......"
 
 #: src-ru/data/events_slug.xml.rawclobber:3825
 msgid ""
@@ -3628,7 +3632,7 @@ msgstr "……又一道电流沿着飞船外壳窜过，将一个化身分解了
 #: src-ru/data/events_slug.xml.rawclobber:3829
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT2\"]/text[1]"
-msgstr "……从附近稀薄气体云中传来的电脉冲刺穿太空虚空，直接击中了化身！……"
+msgstr "......从附近稀薄气体云中传来的电脉冲刺穿太空虚空，直接击中了化身！......"
 
 #: src-ru/data/events_slug.xml.rawclobber:3830
 msgid ""
@@ -3648,22 +3652,24 @@ msgstr "……你的化身试图恢复飞船系统运行，但控制台传来的
 #: src-ru/data/events_slug.xml.rawclobber:3835
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT3\"]/text[2]"
-msgstr "……闪电穿透飞船的绝缘层，击杀了你的化身！……"
+msgstr "......闪电穿透飞船的绝缘层，击杀了你的化身！......"
 
 #: src-ru/data/events_slug.xml.rawclobber:3836
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT3\"]/text[3]"
-msgstr "……一个明亮的白色光球沿着飞船走廊飞驰，撞上化身，然后爆炸了！……"
+msgstr "......一个明亮的白色光球沿着飞船走廊飞驰，撞上化身，然后爆炸了！......"
 
 #: src-ru/data/events_slug.xml.rawclobber:3839
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT4\"]/text[1]"
-msgstr "……你的化身决定往舷窗外看看风暴是否平息，却被一道致命的闪电击中！……"
+msgstr "......你的化身决定往舷窗外看看风暴是否平息，却被一道致命的闪电击中！......."
 
 #: src-ru/data/events_slug.xml.rawclobber:3840
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT4\"]/text[2]"
-msgstr "……你队伍中的某人开始陷入绝望，你的化身走过去安慰他，却被一道致命的高压电击中！……"
+msgstr ""
+"......你队伍中的某人开始陷入绝望，你的化身走过去安慰他，却被一道致命的高压电"
+"击中！......"
 
 #: src-ru/data/events_slug.xml.rawclobber:3841
 msgid ""
@@ -3678,7 +3684,7 @@ msgstr "……一个发光能量球几乎瞬间穿透飞船，又一个化身不
 #: src-ru/data/events_slug.xml.rawclobber:3845
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_EVENT_KILLAVATAR_TEXT5\"]/text[2]"
-msgstr "……又一道闪电击中了你的化身！……"
+msgstr "......又一道闪电击中了你的化身！......"
 
 #: src-ru/data/events_slug.xml.rawclobber:3848
 msgid ""
@@ -3882,7 +3888,9 @@ msgstr "你觉得最好还是别管他们。"
 #: src-ru/data/events_slug.xml.rawclobber:4092
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"START_BEACON_SLURM\"]/text[1]"
-msgstr "这个星区居住着一群有着相当不寻常爱好的蛞蝓族。他们酿造一种叫做“斯露姆”的特殊混合物。谁知道他们为什么要这么做呢？……"
+msgstr ""
+"这个星区居住着一群有着相当不寻常爱好的蛞蝓族。他们酿造一种叫做“斯露姆”的特殊"
+"混合物。谁知道他们为什么要这么做呢？..."
 
 #: src-ru/data/events_slug.xml.rawclobber:4093
 msgid ""
@@ -4146,7 +4154,7 @@ msgstr "斯露姆族对赌博充满热情。你在另一家商店里又看到一
 #: src-ru/data/events_slug.xml.rawclobber:4355
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"NEBULA_STORE_SLURM6\"]/choice[1]/text"
-msgstr ""
+msgstr "走向老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:4359
 msgid ""
@@ -4154,24 +4162,21 @@ msgid ""
 msgstr "只是看看商品。"
 
 #: src-ru/data/events_slug.xml.rawclobber:4364
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_STORE_SLURM6\"]/text[1]"
-msgstr "你抵达了斯露姆族贸易空间站。一个老斯露姆族建议你在购物前先玩一局扑克。"
+msgstr "你抵达了斯露姆贸易空间站。一个老斯露姆建议你在购物前先去玩一下老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:4365
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_STORE_SLURM6\"]/text[2]"
 msgstr ""
-"你抵达了斯露姆族贸易空间站。角落里有一台老虎机，一个斯露姆族正骂骂咧咧地从机"
-"器边走开。看来他输光了最后的钱。"
+"你抵达了斯露姆贸易空间站。角落里有一台老虎机，一个斯露姆正骂骂咧咧地从机器边"
+"走开。看来他输光了最后的钱。"
 
 #: src-ru/data/events_slug.xml.rawclobber:4366
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"NEBULA_STORE_SLURM6\"]/text[3]"
-msgstr "斯露姆族对赌博充满热情。你在另一家商店里又看到一台老虎机，一点也不奇怪。"
+msgstr "斯露姆对赌博充满热情。你在另一家商店里又看到一台老虎机，一点也不奇怪。"
 
 #: src-ru/data/events_slug.xml.rawclobber:4376
 msgid ""
@@ -5115,22 +5120,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5374
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[2]/event/text"
 msgstr ""
 "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
-"。游戏结束。"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5376
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5380
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5386
 msgid ""
@@ -5138,22 +5142,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5388
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[3]/event/text"
 msgstr ""
 "小马自信地加速，双腿越来越快地交替，然后一头猛烈地撞上了栅栏。撞击之后，他倒"
-"地身亡。游戏结束。"
+"地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5390
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5394
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5403
 msgid ""
@@ -5166,22 +5169,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5407
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X2\"]/event/choice[1]/event/text"
 msgstr ""
-"小马直接跳向蝙蝠，被蝙蝠咬了一口。你看到小马被咬后变得虚弱，倒地身亡。游戏结"
-"束。"
+"小马直接跳向蝙蝠，被蝙蝠咬了一口。你看到小马被咬后变得虚弱，倒地身亡。“游 戏 "
+"结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5409
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5413
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5419
 msgid ""
@@ -5194,22 +5196,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5425
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X2\"]/event/choice[3]/event/text"
 msgstr ""
 "小马加速，双腿越来越快地交替，但蝙蝠追上了他，咬住了他的后腿。被咬之后，小马"
-"变得虚弱，倒地身亡。游戏结束。"
+"变得虚弱，倒地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5427
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X2\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5431
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X2\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5440
 msgid ""
@@ -5222,22 +5223,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5444
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X3\"]/event/choice[1]/event/text"
 msgstr ""
 "小马直接跳进了沼泽，无助地陷了进去。小马还活着，但无法脱身，悲伤地看着你的眼"
-"睛。游戏结束。"
+"睛。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5446
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X3\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5450
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X3\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5456
 msgid ""
@@ -5245,22 +5245,22 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5458
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X3\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向沼泽发射激光，激起一团巨大的蒸汽云。由于什么也看不见，他陷入了一片泥泞"
-"之地，无助地卡住了。小马还活着，但无法脱身，悲伤地看着你的眼睛。游戏结束。"
+"之地，无助地卡住了。小马还活着，但无法脱身，悲伤地看着你的眼睛。“游 戏 结 束”"
+"。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5460
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X3\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5464
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X3\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5470
 msgid ""
@@ -5278,22 +5278,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5481
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[1]/event/text"
 msgstr ""
-"小马直接跳进了龙的嘴里。怪兽极为惊讶，但还是咀嚼并吞下了这份命运馈赠的礼物。"
-"游戏结束。"
+"小马直接跳进了龙的嘴里。怪兽极为惊讶，但还是咀嚼并吞下了这份命运馈赠的礼物。“"
+"游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5483
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5487
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5493
 msgid ""
@@ -5301,22 +5300,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5495
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向龙发射激光，但未能穿透它坚硬的鳞片。被激怒的怪兽扑向可爱的小马，将他撕"
-"成了碎片。游戏结束。"
+"成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5497
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5501
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5507
 msgid ""
@@ -5324,20 +5322,19 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5509
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[3]/event/text"
-msgstr "小马勇敢地向前冲，龙优雅地将他撕成了碎片。游戏结束。"
+msgstr "小马勇敢地向前冲，龙优雅地将他撕成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5511
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5515
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_X4\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5524
 msgid ""
@@ -5355,22 +5352,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5532
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[2]/event/text"
 msgstr ""
 "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
-"。游戏结束。"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5534
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5538
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5544
 msgid ""
@@ -5378,22 +5374,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5546
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[3]/event/text"
 msgstr ""
 "小马自信地加速，双腿越来越快地交替，然后一头猛烈地撞上了栅栏。撞击之后，他倒"
-"地身亡。游戏结束。"
+"地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5548
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5552
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5561
 msgid ""
@@ -5406,22 +5401,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5565
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F2\"]/event/choice[1]/event/text"
 msgstr ""
-"小马直接跳向蝙蝠，被蝙蝠咬了一口。你看到小马被咬后变得虚弱，倒地身亡。游戏结"
-"束。"
+"小马直接跳向蝙蝠，被蝙蝠咬了一口。你看到小马被咬后变得虚弱，倒地身亡。“游 戏 "
+"结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5567
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5571
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5577
 msgid ""
@@ -5434,22 +5428,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5583
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F2\"]/event/choice[3]/event/text"
 msgstr ""
 "小马加速，双腿越来越快地交替，但蝙蝠追上了他，咬住了他的后腿。被咬之后，小马"
-"变得虚弱，倒地身亡。游戏结束。"
+"变得虚弱，倒地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5585
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F2\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5589
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F2\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5598
 msgid ""
@@ -5462,22 +5455,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5602
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F3\"]/event/choice[1]/event/text"
 msgstr ""
 "小马直接跳进了沼泽，无助地陷了进去。小马还活着，但无法脱身，悲伤地看着你的眼"
-"睛。游戏结束。"
+"睛。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5604
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F3\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5608
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F3\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5614
 msgid ""
@@ -5485,22 +5477,22 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5616
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F3\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向沼泽发射激光，激起一团巨大的蒸汽云。由于什么也看不见，他陷入了一片泥泞"
-"之地，无助地卡住了。小马还活着，但无法脱身，悲伤地看着你的眼睛。游戏结束。"
+"之地，无助地卡住了。小马还活着，但无法脱身，悲伤地看着你的眼睛。“游 戏 结 束”"
+"。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5618
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F3\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5622
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F3\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5628
 msgid ""
@@ -5528,22 +5520,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5649
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F4\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向龙发射激光，但激光被它闪亮的鳞片反射到了天空。被激怒的怪兽扑向可爱的小"
-"马，将他撕成了碎片。游戏结束。"
+"马，将他撕成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5651
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F4\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5655
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F4\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5661
 msgid ""
@@ -5551,20 +5542,19 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5663
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F4\"]/event/choice[3]/event/text"
-msgstr "小马勇敢地向前冲，但未能及时从龙的腿间穿过，龙将他撕成了碎片。游戏结束。"
+msgstr "小马勇敢地向前冲，但未能及时从龙的腿间穿过，龙将他撕成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5665
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F4\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5669
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_F4\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5678
 msgid ""
@@ -5577,22 +5567,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5682
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L\"]/event/choice[1]/event/text"
 msgstr ""
-"小马竭尽全力想跳过栅栏，但他背上的装置太重了。他撞上了栅栏，卡在了上面。游戏"
-"结束。"
+"小马竭尽全力想跳过栅栏，但他背上的装置太重了。他撞上了栅栏，卡在了上面。“游 "
+"戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5684
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5688
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5694
 msgid ""
@@ -5605,20 +5594,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5700
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L\"]/event/choice[3]/event/text"
-msgstr "小马试图加速，但激光装置太重了。他撞上了栅栏，撞击之后倒地身亡。游戏结束。"
+msgstr ""
+"小马试图加速，但激光装置太重了。他撞上了栅栏，撞击之后倒地身亡。“游 戏 结 束”"
+"。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5702
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5706
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5715
 msgid ""
@@ -5631,22 +5621,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5719
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L2\"]/event/choice[1]/event/text"
 msgstr ""
 "小马试图跳跃，但由于背上激光装置的重量，落地时摔断了四条腿。蝙蝠吸食着无助小"
-"马的血液，而小马无法动弹。游戏结束。"
+"马的血液，而小马无法动弹。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5721
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5725
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5731
 msgid ""
@@ -5659,22 +5648,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5737
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L2\"]/event/choice[3]/event/text"
 msgstr ""
 "小马试图背着沉重的激光装置逃跑，但蝙蝠追上了他，咬住了他的后腿。被咬之后，小"
-"马迅速变得虚弱，倒地身亡。游戏结束。"
+"马迅速变得虚弱，倒地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5739
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L2\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5743
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L2\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5752
 msgid ""
@@ -5687,20 +5675,19 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5756
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[1]/event/text"
-msgstr "小马笨拙地直接跳进沼泽，连同激光装置一起迅速沉入水底。游戏结束。"
+msgstr "小马笨拙地直接跳进沼泽，连同激光装置一起迅速沉入水底。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5758
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5762
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5768
 msgid ""
@@ -5708,22 +5695,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5770
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[2]/event/text"
 msgstr ""
 "小马向沼泽发射激光，激起一团巨大的蒸汽云。由于什么也看不见，他陷入了一片泥泞"
-"之地，无助地卡住，并连同激光装置一起迅速沉入水底。游戏结束。"
+"之地，无助地卡住，并连同激光装置一起迅速沉入水底。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5772
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5776
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5782
 msgid ""
@@ -5731,22 +5717,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5784
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[3]/event/text"
 msgstr ""
 "小马试图跑过沼泽，但陷入了一片泥泞之地，无助地卡住，并连同激光装置一起迅速沉"
-"入水底。游戏结束。"
+"入水底。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5786
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5790
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[1]/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5797
 msgid ""
@@ -5759,22 +5744,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5801
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[2]/choice[1]/event/text"
 msgstr ""
 "小马笨拙地跳起，在装置的重量下摔断了全部4条腿！巨龙极为惊讶，但还是吃掉了这只"
-"倒霉的小马。游戏结束。"
+"倒霉的小马。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5803
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[2]/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5807
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[2]/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5813
 msgid ""
@@ -5792,23 +5776,22 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:5825
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[2]/choice[3]/event/text"
 msgstr ""
 "小马勇敢地向前冲，但未能及时从龙的腿间穿过，龙将他撕成了碎片。尽管激光装置随"
-"之发生的亚原子爆炸杀死了巨龙，但这对你来说毫无慰藉，小马已经回不来了。游戏结"
-"束。"
+"之发生的亚原子爆炸杀死了巨龙，但这对你来说毫无慰藉，小马已经回不来了。“游 戏 "
+"结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5827
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[2]/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5831
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_L3\"]/event[2]/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5840
 msgid ""
@@ -5891,20 +5874,19 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5903
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V2\"]/event/choice[1]/event/text"
-msgstr "小马直接跳向蝙蝠，但蝙蝠突然变成了栅栏，小马卡在了空中。游戏结束。"
+msgstr "小马直接跳向蝙蝠，但蝙蝠突然变成了栅栏，小马卡在了空中。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5905
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5909
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5915
 msgid ""
@@ -5927,22 +5909,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5930
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3\"]/event/choice[1]/event/text"
 msgstr ""
 "小马跳起来，落地时卡在了地面的纹理中。过了一分钟，田野被加载成了一片沼泽。小"
-"马还活着，但无法脱身。游戏结束。"
+"马还活着，但无法脱身。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5932
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5936
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5942
 msgid ""
@@ -5950,22 +5931,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5944
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向地平线某处发射激光，没有可见效果。他突然停在原地。过了一分钟，田野被加"
-"载成了一片沼泽。小马还活着，但无法脱身。游戏结束。"
+"载成了一片沼泽。小马还活着，但无法脱身。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5946
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5950
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5956
 msgid ""
@@ -5983,22 +5963,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:5967
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3-2\"]/event/choice[1]/event/text"
 msgstr ""
 "小马跳起来，落地时卡在了地面的纹理中。过了一分钟，田野被加载成了一片沼泽。小"
-"马还活着，但无法脱身。游戏结束。"
+"马还活着，但无法脱身。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5969
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3-2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5973
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3-2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5979
 msgid ""
@@ -6006,22 +5985,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:5981
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3-2\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向地平线某处发射激光，没有可见效果。他突然停在原地。过了一分钟，田野被加"
-"载成了一片沼泽。小马还活着，但无法脱身。游戏结束。"
+"载成了一片沼泽。小马还活着，但无法脱身。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5983
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3-2\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5987
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_V3-2\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:5993
 msgid ""
@@ -6109,22 +6087,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6059
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[2]/event/text"
 msgstr ""
 "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
-"。游戏结束。"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6061
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6065
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6071
 msgid ""
@@ -6132,22 +6109,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6073
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[3]/event/text"
 msgstr ""
 "小马自信地加速，双腿越来越快地交替，然后一头猛烈地撞上了栅栏。撞击之后，他倒"
-"地身亡。游戏结束。"
+"地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6075
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6079
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6085
 msgid ""
@@ -6155,20 +6131,19 @@ msgid ""
 msgstr "横扫"
 
 #: src-ru/data/events_slug.xml.rawclobber:6087
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[4]/event/text"
-msgstr "小马皱起眉头，发起了冲撞！撞击栅栏后，小马倒地身亡。游戏结束。"
+msgstr "小马皱起眉头，发起了冲撞！撞击栅栏后，小马倒地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6089
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6093
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6099
 msgid ""
@@ -6176,20 +6151,19 @@ msgid ""
 msgstr "滑铲"
 
 #: src-ru/data/events_slug.xml.rawclobber:6101
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[5]/event/text"
-msgstr "小马试图滑铲穿过栅栏，但卡在了下边的栏杆之间。游戏结束。"
+msgstr "小马试图滑铲穿过栅栏，但卡在了下边的栏杆之间。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6103
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[5]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6107
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N\"]/event/choice[5]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6116
 msgid ""
@@ -6209,12 +6183,12 @@ msgstr "小马有点笨拙地跳向镜子，你得到了两半小马。它们没
 #: src-ru/data/events_slug.xml.rawclobber:6122
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6126
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6132
 msgid ""
@@ -6222,20 +6196,19 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6134
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[2]/event/text"
-msgstr "小马张开嘴，一道激光流直射向镜子！反射的光束将小马烧成了灰烬。游戏结束。"
+msgstr "小马张开嘴，一道激光流直射向镜子！反射的光束将小马烧成了灰烬。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6136
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6140
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6146
 msgid ""
@@ -6253,20 +6226,19 @@ msgid ""
 msgstr "滑铲"
 
 #: src-ru/data/events_slug.xml.rawclobber:6156
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[5]/event/text"
-msgstr "小马试图滑铲，但在锋利的镜子下，只有百分之五十的小马滑了过去。游戏结束。"
+msgstr "小马试图滑铲，但在锋利的镜子下，只有百分之五十的小马滑了过去。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6158
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[5]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6162
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N2\"]/event/choice[5]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6171
 msgid ""
@@ -6284,22 +6256,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6179
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[2]/event/text"
 msgstr ""
 "小马张开嘴，用激光束灼烧石魔像！这完全没造成任何伤害，魔像用巨大的手掌将小马"
-"拍扁。游戏结束。"
+"拍扁。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6181
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6185
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6191
 msgid ""
@@ -6307,20 +6278,19 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6193
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[3]/event/text"
-msgstr "小马加快奔跑，但魔像用一记猛烈的踢腿将小马踢飞到了地平线之外。游戏结束。"
+msgstr "小马加快奔跑，但魔像用一记猛烈的踢腿将小马踢飞到了地平线之外。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6195
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6199
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6205
 msgid ""
@@ -6328,22 +6298,21 @@ msgid ""
 msgstr "横扫"
 
 #: src-ru/data/events_slug.xml.rawclobber:6207
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[4]/event/text"
 msgstr ""
 "小马蜷缩身体，用头部猛烈地冲撞魔像！尽管小马的头骨以特别坚固著称，但这次石魔"
-"像赢了。游戏结束。"
+"像赢了。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6209
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6213
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6219
 msgid ""
@@ -6351,20 +6320,19 @@ msgid ""
 msgstr "滑铲"
 
 #: src-ru/data/events_slug.xml.rawclobber:6221
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[5]/event/text"
-msgstr "小马试图滑铲，但魔像灵活地用巨大的脚将他踩扁。游戏结束。"
+msgstr "小马试图滑铲，但魔像灵活地用巨大的脚将他踩扁。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6223
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[5]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6227
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N3\"]/event/choice[5]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6236
 msgid ""
@@ -6377,20 +6345,19 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:6240
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[1]/event/text"
-msgstr "小马跳起来，被悬挂在天花板上的一个钟乳石刺穿了。游戏结束。"
+msgstr "小马跳起来，被悬挂在天花板上的一个钟乳石刺穿了。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6242
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6246
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6252
 msgid ""
@@ -6398,20 +6365,19 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6254
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[2]/event/text"
-msgstr "小马张开嘴，用激光束灼烧冰洞。洞顶因此坍塌，将小马埋住了。游戏结束。"
+msgstr "小马张开嘴，用激光束灼烧冰洞。洞顶因此坍塌，将小马埋住了。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6256
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6260
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6266
 msgid ""
@@ -6419,22 +6385,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6268
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[3]/event/text"
 msgstr ""
-"小马加快奔跑。马蹄声震得钟乳石一个接一个掉落，砸在了可怜的小马身上！游戏结束"
-"。"
+"小马加快奔跑。马蹄声震得钟乳石一个接一个掉落，砸在了可怜的小马身上！“游 戏 "
+"结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6270
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6274
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6280
 msgid ""
@@ -6442,22 +6407,21 @@ msgid ""
 msgstr "横扫"
 
 #: src-ru/data/events_slug.xml.rawclobber:6282
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[4]/event/text"
 msgstr ""
-"小马蜷缩身体，用猛烈的撞击打掉了几个钟乳石！震动导致洞顶坍塌，将小马埋住了。"
-"游戏结束。"
+"小马蜷缩身体，用猛烈的撞击打掉了几个钟乳石！震动导致洞顶坍塌，将小马埋住了。“"
+"游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6284
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6288
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N4\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6294
 msgid ""
@@ -6550,22 +6514,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:6368
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[1]/event/text"
 msgstr ""
-"小马直接跳进了龙的嘴里。怪兽极为惊讶，但还是咀嚼并吞下了这份命运馈赠的礼物。"
-"游戏结束。"
+"小马直接跳进了龙的嘴里。怪兽极为惊讶，但还是咀嚼并吞下了这份命运馈赠的礼物。“"
+"游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6370
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6374
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6380
 msgid ""
@@ -6573,22 +6536,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6382
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向龙发射激光，但未能穿透它坚硬的鳞片。被激怒的怪兽扑向可爱的小马，将他撕"
-"成了碎片。游戏结束。"
+"成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6384
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6388
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6394
 msgid ""
@@ -6596,20 +6558,19 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6396
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[3]/event/text"
-msgstr "小马勇敢地向前冲，龙熟练地将他撕成了碎片。游戏结束。"
+msgstr "小马勇敢地向前冲，龙熟练地将他撕成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6398
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6402
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_N6\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6408
 msgid ""
@@ -6647,22 +6608,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6439
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[2]/event/text"
 msgstr ""
 "小马张开嘴，一道激光流直射向栅栏！然而，栅栏完好无损，小马撞上栅栏，倒地身亡"
-"。游戏结束。"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6441
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6445
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6451
 msgid ""
@@ -6670,22 +6630,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6453
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[3]/event/text"
 msgstr ""
 "小马自信地加速，双腿越来越快地交替，然后一头猛烈地撞上了栅栏。撞击之后，他倒"
-"地身亡。游戏结束。"
+"地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6455
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6459
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6465
 msgid ""
@@ -6693,22 +6652,21 @@ msgid ""
 msgstr "尖刺"
 
 #: src-ru/data/events_slug.xml.rawclobber:6467
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[4]/event/text"
 msgstr ""
-"小马覆盖上一层尖刺，然后一头猛烈地撞上了栅栏。撞击之后，他倒地身亡。游戏结束"
-"。"
+"小马覆盖上一层尖刺，然后一头猛烈地撞上了栅栏。撞击之后，他倒地身亡。“游 戏 "
+"结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6469
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6473
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6482
 msgid ""
@@ -6721,22 +6679,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:6486
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[1]/event/text"
 msgstr ""
-"小马直接跳向蝙蝠，被蝙蝠咬了一口。你看到小马被咬后变得虚弱，倒地身亡。游戏结"
-"束。"
+"小马直接跳向蝙蝠，被蝙蝠咬了一口。你看到小马被咬后变得虚弱，倒地身亡。“游 戏 "
+"结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6488
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6492
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6498
 msgid ""
@@ -6749,22 +6706,21 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6504
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[3]/event/text"
 msgstr ""
 "小马加速，双腿越来越快地交替，但蝙蝠追上了他，咬住了他的后腿。被咬之后，小马"
-"变得虚弱，倒地身亡。游戏结束。"
+"变得虚弱，倒地身亡。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6506
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6510
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6516
 msgid ""
@@ -6772,22 +6728,21 @@ msgid ""
 msgstr "尖刺"
 
 #: src-ru/data/events_slug.xml.rawclobber:6518
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[4]/event/text"
 msgstr ""
 "小马覆盖上一层尖刺，然而，蝙蝠咬住了他的腿。被咬之后，小马变得虚弱，倒地身亡"
-"。游戏结束。"
+"。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6520
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6524
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S2\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6533
 msgid ""
@@ -6800,22 +6755,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:6537
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[1]/event/text"
 msgstr ""
 "小马直接跳进了沼泽，无助地陷了进去。小马还活着，但无法脱身，悲伤地看着你的眼"
-"睛。游戏结束。"
+"睛。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6539
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6543
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6549
 msgid ""
@@ -6823,22 +6777,22 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6551
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向沼泽发射激光，激起一团巨大的蒸汽云。由于什么也看不见，他陷入了一片泥泞"
-"之地，无助地卡住了。小马还活着，但无法脱身，悲伤地看着你的眼睛。游戏结束。"
+"之地，无助地卡住了。小马还活着，但无法脱身，悲伤地看着你的眼睛。“游 戏 结 束”"
+"。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6553
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6557
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6563
 msgid ""
@@ -6851,20 +6805,21 @@ msgid ""
 msgstr "尖刺"
 
 #: src-ru/data/events_slug.xml.rawclobber:6569
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[4]/event/text"
-msgstr "小马覆盖上一层尖刺，然而，他陷入了沼泽的泥泞之地，无助地卡住了。游戏结束。"
+msgstr ""
+"小马覆盖上一层尖刺，然而，他陷入了沼泽的泥泞之地，无助地卡住了。“游 戏 结 束”"
+"。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6571
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6575
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S3\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6584
 msgid ""
@@ -6877,22 +6832,21 @@ msgid ""
 msgstr "跳跃"
 
 #: src-ru/data/events_slug.xml.rawclobber:6588
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[1]/event/text"
 msgstr ""
-"小马直接跳进了龙的嘴里。怪兽极为惊讶，但还是咀嚼并吞下了这份命运馈赠的礼物。"
-"游戏结束。"
+"小马直接跳进了龙的嘴里。怪兽极为惊讶，但还是咀嚼并吞下了这份命运馈赠的礼物。“"
+"游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6590
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[1]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6594
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[1]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6600
 msgid ""
@@ -6900,22 +6854,21 @@ msgid ""
 msgstr "射击"
 
 #: src-ru/data/events_slug.xml.rawclobber:6602
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[2]/event/text"
 msgstr ""
 "小马向龙发射激光，但未能穿透它坚硬的鳞片。被激怒的怪兽扑向可爱的小马，将他撕"
-"成了碎片。游戏结束。"
+"成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6604
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[2]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6608
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[2]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6614
 msgid ""
@@ -6923,20 +6876,19 @@ msgid ""
 msgstr "奔跑"
 
 #: src-ru/data/events_slug.xml.rawclobber:6616
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[3]/event/text"
-msgstr "小马勇敢地向前冲，龙优雅地将他撕成了碎片。游戏结束。"
+msgstr "小马勇敢地向前冲，龙优雅地将他撕成了碎片。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6618
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[3]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6622
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[3]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6628
 msgid ""
@@ -6944,20 +6896,19 @@ msgid ""
 msgstr "尖刺"
 
 #: src-ru/data/events_slug.xml.rawclobber:6630
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[4]/event/text"
-msgstr "小马覆盖上一层尖刺，然而，龙用火焰吐息将他烧成了灰烬。游戏结束。"
+msgstr "小马覆盖上一层尖刺，然而，龙用火焰吐息将他烧成了灰烬。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6632
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[4]/event/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6636
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_S4\"]/event/choice[4]/event/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6645
 msgid ""
@@ -6990,20 +6941,19 @@ msgid ""
 msgstr "跳跃/射击/奔跑（小马信任模式）"
 
 #: src-ru/data/events_slug.xml.rawclobber:6668
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z2\"]/event[3]/text"
-msgstr "小马犹豫地站在栅栏前，然后跑出了屏幕。游戏结束。"
+msgstr "小马犹豫地站在栅栏前，然后跑出了屏幕。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6670
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z2\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6674
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z2\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6681
 msgid ""
@@ -7026,20 +6976,19 @@ msgid ""
 msgstr "跳跃/射击/奔跑（小马信任模式）"
 
 #: src-ru/data/events_slug.xml.rawclobber:6695
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z3\"]/event[3]/text"
-msgstr "看到蝙蝠后，小马试图装死。被咬之后，他就不用再装了。游戏结束。"
+msgstr "看到蝙蝠后，小马试图装死。被咬之后，他就不用再装了。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6697
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z3\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6701
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z3\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6708
 msgid ""
@@ -7062,20 +7011,19 @@ msgid ""
 msgstr "跳跃/射击/奔跑（小马信任模式）"
 
 #: src-ru/data/events_slug.xml.rawclobber:6722
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z4\"]/event[3]/text"
-msgstr "小马直接跳进沼泽，高兴地用蹄子踩踏，直到消失在深渊中。游戏结束。"
+msgstr "小马直接跳进沼泽，高兴地用蹄子踩踏，直到消失在深渊中。“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6724
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z4\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6728
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z4\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6735
 msgid ""
@@ -7088,20 +7036,19 @@ msgid ""
 msgstr "小马做出了唯一正确的决定——他没有被龙发现，而是沿着杂草丛生的羊肠小道绕过了它。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6749
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z5\"]/event[3]/text"
-msgstr "下定决心的小马直接跑进了龙的嘴里……游戏结束。"
+msgstr "下定决心的小马直接跑进了龙的嘴里……“游 戏 结 束”。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6751
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z5\"]/event[3]/choice[1]/text"
-msgstr ""
+msgstr "再花一枚代币玩一局。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6755
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"PONY_GAME_START_Z5\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "离开老虎机。"
 
 #: src-ru/data/events_slug.xml.rawclobber:6762
 msgid "data/events_slug.xml.rawclobber$//event[@name=\"SLURM_BOSS_EVENT\"]/text"
@@ -7839,10 +7786,9 @@ msgid ""
 msgstr "你的船员被塞进锅里，过了一会，你从斯露姆那里得到了报酬和一桶新鲜斯露姆……"
 
 #: src-ru/data/events_slug.xml.rawclobber:7442
-#, fuzzy
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"NEBULA_SLURM_PLANET_TRADER\"]/choice[@req=\"CREW_ALL\"]/event/choice[@req=\"magman\"]/text"
-msgstr "（岩浆族船员）交出岩浆族。"
+msgstr "（熔岩族船员）交出熔岩族。"
 
 #: src-ru/data/events_slug.xml.rawclobber:7444
 msgid ""
@@ -8715,7 +8661,7 @@ msgstr "“……嗯，姑且信你……他还说什么了？……”"
 #: src-ru/data/events_slug.xml.rawclobber:8330
 msgid ""
 "data/events_slug.xml.rawclobber$//textList[@name=\"SLURM_RECEPT_TEXT1\"]/text[3]"
-msgstr "“……我就知道！快点，快点！还说什么了？……”"
+msgstr "“……我就知道！快，快点！还有呢？……”"
 
 #: src-ru/data/events_slug.xml.rawclobber:8333
 msgid ""
@@ -14860,7 +14806,7 @@ msgstr "在斯露姆里煮过的船员的克隆体从克隆舱走出来，渴望
 #: src-ru/data/events_slug.xml.rawclobber:13700
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"EVENT_SLURM_RISK_YES\"]/event[1]/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "（熔岩族船员）派遣熔岩族。"
 
 #: src-ru/data/events_slug.xml.rawclobber:13705
 msgid ""
@@ -15085,7 +15031,7 @@ msgstr "（岩石族船员）派岩石族去。"
 #: src-ru/data/events_slug.xml.rawclobber:13965
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"EVENT_SLURM_RISK_YES\"]/event[2]/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "（熔岩族船员）派遣熔岩族。"
 
 #: src-ru/data/events_slug.xml.rawclobber:13972
 msgid ""
@@ -15205,7 +15151,7 @@ msgstr "（岩石族船员）派岩石族去。"
 #: src-ru/data/events_slug.xml.rawclobber:14123
 msgid ""
 "data/events_slug.xml.rawclobber$//eventList[@name=\"EVENT_SLURM_RISK_YES\"]/event[3]/choice[@req=\"magman\"]/text"
-msgstr ""
+msgstr "（熔岩族船员）派遣熔岩族。"
 
 #: src-ru/data/events_slug.xml.rawclobber:14130
 msgid ""
@@ -16009,12 +15955,12 @@ msgstr "你同意了，斯露姆支付了一小笔押金作为保护费。"
 #: src-ru/data/events_slug.xml.rawclobber:14830
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"EVENT_SLURM_ESCORT\"]/choice[@req=\"FTL_JUMPER_GOOD\"]/text"
-msgstr ""
+msgstr "（超光速导航仪）给他们发送安全航线的数据。"
 
 #: src-ru/data/events_slug.xml.rawclobber:14832
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"EVENT_SLURM_ESCORT\"]/choice[@req=\"FTL_JUMPER_GOOD\"]/event/text"
-msgstr ""
+msgstr "他们感谢你，并递给你一桶新鲜斯露姆。"
 
 #: src-ru/data/events_slug.xml.rawclobber:14837
 msgid ""
@@ -16888,7 +16834,7 @@ msgstr "这个盒子旁边的盒子装有 ~。"
 #: src-ru/data/events_slug.xml.rawclobber:16007
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"START_3_BOXES_RANDOM_02\"]/choice[2]/text"
-msgstr "[空]"
+msgstr "[空]。"
 
 #: src-ru/data/events_slug.xml.rawclobber:16011
 msgid ""
@@ -17113,7 +17059,7 @@ msgstr "~ 在带有陈述的盒子里。"
 #: src-ru/data/events_slug.xml.rawclobber:16232
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"START_3_BOXES_RANDOM_17\"]/choice[2]/text"
-msgstr "[空]"
+msgstr "[空]。"
 
 #: src-ru/data/events_slug.xml.rawclobber:16236
 msgid ""
@@ -17398,7 +17344,7 @@ msgstr "~ 在黑色盒子里。"
 #: src-ru/data/events_slug.xml.rawclobber:16517
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"START_3_BOXES_RANDOM_36\"]/choice[2]/text"
-msgstr "[空]"
+msgstr "[空]。"
 
 #: src-ru/data/events_slug.xml.rawclobber:16521
 msgid ""
@@ -17728,7 +17674,7 @@ msgstr "~ 在带有“蓝色”一词的盒子里。"
 #: src-ru/data/events_slug.xml.rawclobber:16847
 msgid ""
 "data/events_slug.xml.rawclobber$//event[@name=\"START_3_BOXES_RANDOM_58\"]/choice[2]/text"
-msgstr "[空]"
+msgstr "[空]。"
 
 #: src-ru/data/events_slug.xml.rawclobber:16851
 msgid ""
