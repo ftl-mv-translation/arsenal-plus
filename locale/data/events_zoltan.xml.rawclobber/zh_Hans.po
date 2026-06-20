@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:43+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-06-20 05:56+0000\n"
+"Last-Translator: OXKHA（红月） <2280614500@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_zoltanxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -694,7 +694,6 @@ msgid ""
 msgstr "你的任务是拯救联邦，而不是在整个银河系寻找奇迹。你准备跃迁。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:765
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"ZOLTAN_EYE_LIST\"]/event[1]/text"
 msgstr ""
@@ -794,7 +793,6 @@ msgid ""
 msgstr "你靠近一些，先知圣眼开始发出纯净的白光。这道光笼罩了你的飞船，你惊讶地发现所有舰体损伤都消失了。你感谢命运，前往下一个信标。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:907
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/text"
 msgstr ""
@@ -803,13 +801,11 @@ msgstr ""
 "漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:911
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/choice[1]/text"
 msgstr "确保燃料供应。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:915
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_CHOICE\"]/choice[2]/text"
 msgstr "确保弹药供应。"
@@ -818,6 +814,8 @@ msgstr "确保弹药供应。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[1]/text"
 msgstr ""
+"扫描显示一艘运输燃料，另一艘运输弹药。在太空风暴的影响下，他们开始相互略微漂"
+"离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:923
 msgid ""
@@ -853,17 +851,18 @@ msgstr "有时谨慎是勇气最好的部分。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/text"
 msgstr ""
+"扫描显示一艘运输无人机部件，另一艘运输弹药。在太空风暴的影响下，他们开始相互"
+"略微漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:946
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/choice[1]/text"
-msgstr ""
+msgstr "确保无人机部件供应。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:948
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[2]/choice[1]/event/text"
-msgstr "你飞向那艘运燃料的飞船，并与它展开战斗（最好赢了之后还能别把它打碎）。"
+msgstr "你飞向那艘运无人机部件的飞船，并与它展开战斗（最好赢了之后还能别把它打碎）。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:953
 msgid ""
@@ -889,6 +888,8 @@ msgstr "有时谨慎是勇气最好的部分。"
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/text"
 msgstr ""
+"扫描显示一艘运输燃料，另一艘运输无人机部件。在太空风暴的影响下，他们开始相互"
+"略微漂离。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:969
 msgid ""
@@ -903,13 +904,12 @@ msgstr "你飞向那艘运燃料的飞船，并与它展开战斗（最好赢了
 #: src-ru/data/events_zoltan.xml.rawclobber:976
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/choice[2]/text"
-msgstr ""
+msgstr "确保无人机部件供应。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:978
-#, fuzzy
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"NEBULA_STORM_ZOLTAN_SUPPLY_LIST\"]/event[3]/choice[2]/event/text"
-msgstr "你飞向那艘运燃料的飞船，并与它展开战斗（最好赢了之后还能别把它打碎）。"
+msgstr "你飞向那艘运无人机部件的飞船，并与它展开战斗（最好赢了之后还能别把它打碎）。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:983
 msgid ""
@@ -939,7 +939,7 @@ msgstr "既然飞船还完好，你有机会在离子风暴平息、必须继续
 #: src-ru/data/events_zoltan.xml.rawclobber:1010
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_AMMO\"]/destroyed/text"
-msgstr ""
+msgstr "飞船被摧毁，你只能在离子风暴开始之前拿走一小部分弹药箱，然后跃迁离开。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1016
 msgid ""
@@ -949,12 +949,12 @@ msgstr "海盗船跃迁离开了。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1019
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_AMMO\"]/deadCrew/text"
-msgstr ""
+msgstr "既然飞船还完好，你有机会在离子风暴平息、必须继续前进之前，收集到大部分弹药。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1031
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS\"]/destroyed/text"
-msgstr ""
+msgstr "飞船被摧毁，你只能在离子风暴开始之前拿走一小部分无人机部件箱，然后跃迁离开。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1037
 msgid ""
@@ -964,7 +964,7 @@ msgstr "海盗船跃迁离开了。"
 #: src-ru/data/events_zoltan.xml.rawclobber:1040
 msgid ""
 "data/events_zoltan.xml.rawclobber$//ship[@name=\"NEBULA_STORM_PIRATE_SUPPLY_DRONEPARTS\"]/deadCrew/text"
-msgstr ""
+msgstr "既然飞船还完好，你有机会在离子风暴平息、必须继续前进之前，收集无人机部件。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:1062
 msgid "data/events_zoltan.xml.rawclobber$//event[@name=\"ZOLTAN_BOARDERS\"]/text"
@@ -2161,7 +2161,7 @@ msgstr "蛞蝓族恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:2219
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW\"]/choice[@req=\"slig\"]/text"
-msgstr "蛞蝓蠕虫。"
+msgstr "斯鲁姆。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2221
 msgid ""
@@ -3046,7 +3046,9 @@ msgstr "……“量子倍增器”向天空发出一道明亮的闪光，你走
 #: src-ru/data/events_zoltan.xml.rawclobber:2830
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_QMULTI_CREW_SLIG\"]/event[1]/text"
-msgstr "……“量子倍增器”发出明亮的闪光，从中爬出两个蛞蝓蠕虫。一个是你的老船员，另一个是他的量子镜像。"
+msgstr ""
+"……“量子倍增器”发出明亮的闪光，从中爬出两个斯鲁姆。一个是你的老船员，另一个是"
+"他的量子镜像。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:2831
 msgid ""
@@ -3421,7 +3423,7 @@ msgstr "人类恐惧地爬进巨大的装置内部……"
 #: src-ru/data/events_zoltan.xml.rawclobber:3186
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"order_human\"]/text"
-msgstr "秩序教团人类。"
+msgstr "秩序人类。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3188
 msgid ""
@@ -3616,7 +3618,7 @@ msgstr "蛞蝓蠕虫。"
 #: src-ru/data/events_zoltan.xml.rawclobber:3378
 msgid ""
 "data/events_zoltan.xml.rawclobber$//event[@name=\"EVENT_QMULTI_CREW_OK\"]/choice[@req=\"slig\"]/event/text"
-msgstr "蛞蝓蠕虫恐惧地爬进巨大的装置内部……"
+msgstr "斯鲁姆恐惧地爬进巨大的装置内部……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:3386
 msgid ""
@@ -6127,7 +6129,9 @@ msgstr "……“刻立 示展 你 的 量力 。 果如 你 法无 明证 己�
 #: src-ru/data/events_zoltan.xml.rawclobber:5523
 msgid ""
 "data/events_zoltan.xml.rawclobber$//textList[@name=\"ZOLTAN_BLINK_X2_RANDOM_TEXT_ATK\"]/text[3]"
-msgstr "……“维三 命生 式形 。 你 有 力能 护保 己自 吗 ？ 向 河银系 的 等高 物造 明证 ， 你 非并 无毫 手还力之 。”"
+msgstr ""
+"……“维三 命生 式形 。 你 有 力能 护保 己自 吗 ？ 向 河银系 的 等高 物造 明证 "
+"， 你 非并 无毫 还手力之 。”"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:5524
 msgid ""
@@ -8033,7 +8037,7 @@ msgstr "你决定用武力夺取……"
 #: src-ru/data/events_zoltan.xml.rawclobber:7338
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[2]/text"
-msgstr "……雇佣兵向你提出一个“非常划算”的交易。船员们持怀疑态度，但决定权在你。"
+msgstr "……雇佣兵向你提议一个“非常划算”的交易。船员们持怀疑态度，但决定权在你。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7340
 msgid ""
@@ -8273,7 +8277,7 @@ msgstr "（蛞蝓族船员）让蛞蝓说服他们提出替代交易。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7522
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[3]/choice[@req=\"slug_crew\"]/event/text"
-msgstr "蛞蝓用催眠术影响雇佣兵一段时间，他们提出了一些其他的东西……"
+msgstr "蛞蝓用催眠术影响雇佣兵一段时间，他们提议了别的东西……"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7524
 msgid ""
@@ -8618,7 +8622,7 @@ msgstr "成交。"
 #: src-ru/data/events_zoltan.xml.rawclobber:7787
 msgid ""
 "data/events_zoltan.xml.rawclobber$//eventList[@name=\"EVENT_TRADE_FUMIDR_R\"]/event[6]/choice[@req=\"human_crew\"]/event/choice[1]/event/text"
-msgstr "你把宝贵的资源交给雇佣兵，然后拿走了设备。"
+msgstr "你给了雇佣兵宝贵的资源，拿走了设备。"
 
 #: src-ru/data/events_zoltan.xml.rawclobber:7795
 msgid ""
