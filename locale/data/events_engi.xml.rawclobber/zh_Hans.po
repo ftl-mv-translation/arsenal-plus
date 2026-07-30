@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:44+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-07-30 09:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_engixmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -916,7 +916,6 @@ msgstr ""
 "你需要时间，病毒十分狡猾，但你逐渐将其压制到一个无用的子系统中，它开始疯狂地对你进行言语攻击。你将子系统弹出飞船，并用一轮齐射击哑了这个小二进制罪犯。"
 
 #: src-ru/data/events_engi.xml.rawclobber:971
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"hacking\""
 " and @lvl=\"1\"]/event/choice/event/text"
@@ -941,7 +940,6 @@ msgid ""
 msgstr "几分钟后，病毒“觉醒”了，并与你飞船的计算系统整合（褒义），开始修复舰体并尝试优化反应堆。"
 
 #: src-ru/data/events_engi.xml.rawclobber:994
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"hacking\""
 " and @lvl=\"2\"]/event/choice/event/choice/event/text"
@@ -966,7 +964,6 @@ msgid ""
 msgstr "几分钟后，病毒“觉醒”了，并与你飞船的计算系统整合（褒义），开始修复舰体并尝试优化反应堆。"
 
 #: src-ru/data/events_engi.xml.rawclobber:1018
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"hacking\""
 " and @lvl=\"3\"]/event/choice/event/choice/event/text"
@@ -978,7 +975,6 @@ msgid ""
 msgstr "（食铁族船员）你的食铁族疯狂地打着手势。"
 
 #: src-ru/data/events_engi.xml.rawclobber:1029
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ENGI_VIRUS\"]/choice/event/choice[@req=\"anaerobic_crew\"]/event/text"
 msgstr ""
@@ -1007,7 +1003,6 @@ msgid ""
 msgstr "重置引擎和护盾核心毫无用处……你逐渐在武器系统中抓住了病毒，正准备清除，但半械族过于担忧，发起了攻击！"
 
 #: src-ru/data/events_engi.xml.rawclobber:1057
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//eventList[@name=\"ENGI_VIRUS_CLEAN\"]/event[2]/text"
 msgstr ""
@@ -7430,7 +7425,6 @@ msgstr ""
 "你朝蛞蝓族飞船开火，但它们灵巧地躲开了。蛞蝓族船长向附近的兰花族行星发送求救信息，声称遭到了海盗袭击。令你惊讶的是，兰花族用所有行星防御武器向你的飞船开火。这一切都是蛞蝓族阴险计划的一部分。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9137
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_SLUG_TAUNT\"]/choice[1]/event/choice[1]/event/choice[@req=\"CREW_ORCHID\""
 " and not(@lvl)]/text"
@@ -8234,96 +8228,97 @@ msgstr "你钓到一条翻车鱼。"
 #: src-ru/data/events_engi.xml.rawclobber:9908
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_CATCH_FISH_10\"]/text"
-msgstr ""
+msgstr "你钓到了一条午夜鲤鱼。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9918
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/text"
 msgstr ""
+"信标附近的一座小型半械族空间站向你提供服务。招牌上写着他们可以为你安装巨炮系"
+"统或进行修复。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9920
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"artillery\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "安装巨炮（已安装）。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9924
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "安装巨炮系统。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9926
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "半械族迅速安装了所需的系统。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9934
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[3]/text"
-msgstr ""
+msgstr "请求半修复飞船。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9936
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[3]/event/text"
-msgstr ""
+msgstr "空间站的无人机环绕飞船飞行，修复了损伤。之后空间站祝你一路顺风。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9944
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[4]/text"
-msgstr ""
+msgstr "请求完全修复飞船。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9946
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[4]/event/text"
-msgstr ""
+msgstr "空间站的无人机环绕飞船飞行，修复了所有损伤。之后空间站祝你一路顺风。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9954
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/text"
-msgstr ""
+msgstr "（半械族船员）根据协议52.34请求免费维护。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9956
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/text"
-msgstr ""
+msgstr "他们回答：「收到。联邦重建：最高优先级。正在修复舰体并建议安装巨炮。」"
 
 #: src-ru/data/events_engi.xml.rawclobber:9960
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[@req=\"artillery\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "安装巨炮（已安装）。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9964
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "安装巨炮系统。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9966
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[@req=\"artillery\""
 " and @lvl=\"0\"]/event/text"
-msgstr ""
+msgstr "半械族迅速安装了所需的系统。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9974
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[@req=\"engi_crew\"]/event/choice[3]/text"
-msgstr ""
+msgstr "不需要巨炮。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9980
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[6]/text"
-msgstr ""
+msgstr "在FTL驱动器充能时与船员交谈。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10000
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"FIND_DRONE_UNIQUE\"]/text[1]"
-msgstr ""
+msgstr "当你向最近的半械族空间站请求帮助时，他们发来了一份独特的无人机蓝图！"
 
 #: src-ru/data/events_engi.xml.rawclobber:10001
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"FIND_DRONE_UNIQUE\"]/text[2]"
 msgstr ""
@@ -8331,7 +8326,6 @@ msgstr ""
 "后，螳螂族撤退了。半械族给了你一份无人机蓝图，作为对你及时赶到的感谢。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10002
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"FIND_DRONE_UNIQUE\"]/text[3]"
 msgstr ""
@@ -8340,34 +8334,36 @@ msgstr ""
 
 #: src-ru/data/events_engi.xml.rawclobber:10006
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI\"]/text"
-msgstr ""
+msgstr "信标附近的机器人技术站旁，一艘海盗船正在盘旋。看到你后，它转移了目标。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10012
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"EVENT_ADD_INNER_AI_PARAM\"]/destroyed/text"
-msgstr ""
+msgstr "你收集了战斗中幸存的残骸……"
 
 #: src-ru/data/events_engi.xml.rawclobber:10020
 msgid ""
 "data/events_engi.xml.rawclobber$//ship[@name=\"EVENT_ADD_INNER_AI_PARAM\"]/deadCrew/text"
-msgstr ""
+msgstr "你迅速搜刮了飞船货舱内的物品……"
 
 #: src-ru/data/events_engi.xml.rawclobber:10029
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/text"
 msgstr ""
+"机器人技师感谢了你，尽管他们能提供的不多，但他们准备在你的飞船上安装一个备用"
+"人工智能。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10031
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/choice[@req=\"prinuditelno_autoship\""
 " and @lvl=\"1\"]/text"
-msgstr ""
+msgstr "加载备用AI（飞船已有AI）。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10035
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/choice[@req=\"prinuditelno_autoship\""
 " and @lvl=\"0\"]/text"
-msgstr ""
+msgstr "加载备用AI。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10039
 msgid ""
@@ -8377,9 +8373,9 @@ msgstr "拒绝。"
 #: src-ru/data/events_engi.xml.rawclobber:10041
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/choice[3]/event/text"
-msgstr ""
+msgstr "你感谢了他们，但目前不需要。是时候继续前进了。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10046
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP_PROCESS\"]/text"
-msgstr ""
+msgstr "加载成功，你准备继续出发。"
