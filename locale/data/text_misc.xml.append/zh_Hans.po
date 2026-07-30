@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-06-05 17:43+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-07-30 03:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datatext_miscxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -2225,7 +2225,7 @@ msgstr "敌方1级防御无人机：\\n击落导弹、水雷、碎片、小行�
 
 #: src-ru/data/text_misc.xml.append:759
 msgid "data/text_misc.xml.append$//text[@name=\"defense_enemy\"]"
-msgstr "你的2级防御无人机：\\n击落任何射弹。在被摧毁或你跃迁前一直工作。"
+msgstr "你的1级防御无人机：\\n击落任何射弹。在被摧毁或你跃迁前一直工作。"
 
 #: src-ru/data/text_misc.xml.append:761
 msgid "data/text_misc.xml.append$//text[@name=\"defense_2_friendly\"]"
@@ -2698,22 +2698,18 @@ msgid "data/text_misc.xml.append$//text[@name=\"defense_all_enemy\"]"
 msgstr "敌方防御无人机：\\n击落所有射弹和无人机。可通过损坏敌方飞船的无人机控制系统来使其失效。"
 
 #: src-ru/data/text_misc.xml.append:918
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_1\"]"
 msgstr "装填速度 1.25倍‡"
 
 #: src-ru/data/text_misc.xml.append:919
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_2\"]"
 msgstr "装填速度 1倍‡"
 
 #: src-ru/data/text_misc.xml.append:920
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_3\"]"
 msgstr "装填速度 0.75倍‡"
 
 #: src-ru/data/text_misc.xml.append:921
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"artillery_4\"]"
 msgstr "装填速度 0.5倍‡"
 
@@ -2750,9 +2746,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"sensor_1\"]"
 msgstr "你的飞船内部"
 
 #: src-ru/data/text_misc.xml.append:933
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_2\"]"
-msgstr "敌方飞船内部"
+msgstr "敌方飞船内部，护盾+"
 
 #: src-ru/data/text_misc.xml.append:934
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_3\"]"
@@ -4669,7 +4664,6 @@ msgid "data/text_misc.xml.append$//text[@name=\"additional_testing\"]"
 msgstr "感谢宝贵贡献："
 
 #: src-ru/data/text_misc.xml.append:1593
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"family_friends\"]"
 msgstr ""
 "Alex Vinst, Anthonest, Arfy, Biohazard063, choosechee, Chrono Vortex, D:\\s"
@@ -5862,11 +5856,11 @@ msgstr "所有设备照常出现。"
 
 #: src-ru/data/text_misc.xml.append:1938
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_on\"]"
-msgstr ""
+msgstr "你的飞船在第一次跃迁后将不再拥有货舱。"
 
 #: src-ru/data/text_misc.xml.append:1939
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nocrg_off\"]"
-msgstr ""
+msgstr "你的飞船拥有标准货舱。"
 
 #: src-ru/data/text_misc.xml.append:1940
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noeye_on\"]"
@@ -5886,19 +5880,19 @@ msgstr "船员照常控制。"
 
 #: src-ru/data/text_misc.xml.append:1944
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_on\"]"
-msgstr ""
+msgstr "所有敌人都将拥有精英船员。"
 
 #: src-ru/data/text_misc.xml.append:1945
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noexp_off\"]"
-msgstr ""
+msgstr "在困难难度下，偶尔会遇到拥有精英船员的敌人。"
 
 #: src-ru/data/text_misc.xml.append:1946
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_on\"]"
-msgstr ""
+msgstr "第一次跃迁后，船员将开始饮酒，大幅降低你的齐射精度。"
 
 #: src-ru/data/text_misc.xml.append:1947
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nobuh_off\"]"
-msgstr ""
+msgstr "你的船员在飞行中不会饮用酒精饮料。"
 
 #: src-ru/data/text_misc.xml.append:1948
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noai_on\"]"
@@ -5941,42 +5935,40 @@ msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nostor_off\"]"
 msgstr "商店照常出现。"
 
 #: src-ru/data/text_misc.xml.append:1958
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_on\"]"
 msgstr "每次跃迁，武器将被替换为消耗相同能量的随机武器。"
 
 #: src-ru/data/text_misc.xml.append:1959
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_off\"]"
 msgstr "武器不会在每次跃迁时更换。"
 
 #: src-ru/data/text_misc.xml.append:1960
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_on\"]"
-msgstr ""
+msgstr "所有敌人都将拥有提高的命中精度。"
 
 #: src-ru/data/text_misc.xml.append:1961
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_off\"]"
-msgstr ""
+msgstr "敌人将拥有普通命中精度。"
 
 #: src-ru/data/text_misc.xml.append:1962
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_on\"]"
-msgstr ""
+msgstr "兰花族护卫舰将追击你，别想着逃跑。"
 
 #: src-ru/data/text_misc.xml.append:1963
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noorc_off\"]"
-msgstr ""
+msgstr "没有额外的追击。"
 
 #: src-ru/data/text_misc.xml.append:1964
 msgid "data/text_misc.xml.append$//text[@name=\"lua_curse_orchid_shase_very\"]"
-msgstr ""
+msgstr "兰花族护卫舰已开始追击你，它不会放弃……"
 
 #: src-ru/data/text_misc.xml.append:1965
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_on\"]"
-msgstr ""
+msgstr "第一次跃迁后，事件文本将被替换为乱码。"
 
 #: src-ru/data/text_misc.xml.append:1966
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notxt_off\"]"
-msgstr ""
+msgstr "事件文本将恢复正常。"
 
 #: src-ru/data/text_misc.xml.append:1967
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_resetchall_on\"]"
@@ -6113,58 +6105,57 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:2006
 msgid "data/text_misc.xml.append$//text[@name=\"lua_enemy_has_nechet_shield\"]"
-msgstr ""
+msgstr "敌人拥有奇数级别的护盾系统。"
 
 #: src-ru/data/text_misc.xml.append:2007
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copy_this_weapon\"]"
-msgstr ""
+msgstr "复制此武器。"
 
 #: src-ru/data/text_misc.xml.append:2008
 msgid "data/text_misc.xml.append$//text[@name=\"lua_copyed_weapon\"]"
-msgstr ""
+msgstr "武器复制成功。可以装备使用。"
 
 #: src-ru/data/text_misc.xml.append:2011
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_1\"]"
-msgstr ""
+msgstr "击败"
 
 #: src-ru/data/text_misc.xml.append:2012
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_2\"]"
-msgstr ""
+msgstr "超级泵"
 
 #: src-ru/data/text_misc.xml.append:2013
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_3\"]"
-msgstr ""
+msgstr "和黏液凝胶"
 
 #: src-ru/data/text_misc.xml.append:2014
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_4\"]"
-msgstr ""
+msgstr "无人机加速器和"
 
 #: src-ru/data/text_misc.xml.append:2015
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_5\"]"
-msgstr ""
+msgstr "在最后一阶段"
 
 #: src-ru/data/text_misc.xml.append:2016
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_6\"]"
-msgstr ""
+msgstr "在四个阶段的最后两个阶段"
 
 #: src-ru/data/text_misc.xml.append:2017
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_7\"]"
-msgstr ""
+msgstr "废物"
 
 #: src-ru/data/text_misc.xml.append:2018
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_8\"]"
-msgstr ""
+msgstr "红隼"
 
 #: src-ru/data/text_misc.xml.append:2019
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_9\"]"
-msgstr ""
+msgstr "在最后阶段，还有一些神秘的巨炮变化"
 
 #: src-ru/data/text_misc.xml.append:2020
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_10\"]"
-msgstr ""
+msgstr "在四个阶段的最后两个阶段，还有一些神秘的巨炮变化"
 
 #: src-ru/data/text_misc.xml.append:2021
-#, fuzzy
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery\"]"
 msgstr "巨炮"
@@ -6172,96 +6163,98 @@ msgstr "巨炮"
 #: src-ru/data/text_misc.xml.append:2022
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_artillery_remover\"]"
-msgstr ""
+msgstr "巨炮"
 
 #: src-ru/data/text_misc.xml.append:2023
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_not_avaiable_install_artillery\"]"
-msgstr ""
+msgstr "安装巨炮（已达到系统上限）。"
 
 #: src-ru/data/text_misc.xml.append:2024
 msgid "data/text_misc.xml.append$//text[@name=\"lua_not_ship_install_artillery\"]"
-msgstr ""
+msgstr "安装巨炮（你的飞船未配备此功能）。"
 
 #: src-ru/data/text_misc.xml.append:2026
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_ready\"]"
 msgstr "发射摧毁弹丸的波动。快捷键：DELETE"
 
 #: src-ru/data/text_misc.xml.append:2027
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_wait_cooldown\"]"
 msgstr "无法使用：请等待重新装填"
 
 #: src-ru/data/text_misc.xml.append:2028
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pe_needed_jump\"]"
 msgstr "无法使用：需要超光速跃迁来重新装填"
 
 #: src-ru/data/text_misc.xml.append:2029
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_anaerobic\"]"
-msgstr ""
+msgstr "厌氧"
 
 #: src-ru/data/text_misc.xml.append:2030
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"lua_event_text_anaerobic_choice_replacer\"]"
-msgstr ""
+msgstr "（厌氧烈焰）增强火焰伤害的催化剂仍然有效。"
 
 #: src-ru/data/text_misc.xml.append:2031
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coefficients_zero\"]"
-msgstr ""
+msgstr "弹药和无人机零件奖励未减少。"
 
 #: src-ru/data/text_misc.xml.append:2032
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls\"]"
-msgstr ""
+msgstr "弹药奖励降低了VAL%，因为它们在战斗中没有被使用。"
 
 #: src-ru/data/text_misc.xml.append:2033
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns\"]"
-msgstr ""
+msgstr "无人机零件奖励降低了VAL%，因为它们在战斗中没有被使用。"
 
 #: src-ru/data/text_misc.xml.append:2034
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_msls_zero\"]"
-msgstr ""
+msgstr "弹药奖励未减少。"
 
 #: src-ru/data/text_misc.xml.append:2035
 msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns_zero\"]"
-msgstr ""
+msgstr "无人机零件奖励未减少。"
 
 #: src-ru/data/text_misc.xml.append:2036
 msgid "data/text_misc.xml.append$//text[@name=\"lua_ai_ship\"]"
-msgstr ""
+msgstr "这艘飞船搭载了内部人工智能。即使全体船员阵亡，航行也不会结束。"
 
 #: src-ru/data/text_misc.xml.append:2037
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_shop_is_close\"]"
-msgstr ""
+msgstr "最近信标处的商店已发送欢迎信息。"
 
 #: src-ru/data/text_misc.xml.append:2038
 msgid "data/text_misc.xml.append$//text[@name=\"alas_friendly\"]"
 msgstr ""
+"你的防御反射无人机：\n"
+"将激光射弹反射回敌人。将持续工作直到被摧毁或你进行跃迁。"
 
 #: src-ru/data/text_misc.xml.append:2039
 msgid "data/text_misc.xml.append$//text[@name=\"alas_enemy\"]"
 msgstr ""
+"反射无人机：\n"
+"将激光射弹反射向你的飞船。可通过破坏敌方无人机控制系统来关闭。"
 
 #: src-ru/data/text_misc.xml.append:2040
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_switcher\"]"
-msgstr ""
+msgstr "显示/隐藏每秒伤害计数器。"
 
 #: src-ru/data/text_misc.xml.append:2041
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_sim\"]"
-msgstr ""
+msgstr "所有武器齐射时的每秒伤害。"
 
 #: src-ru/data/text_misc.xml.append:2042
 msgid "data/text_misc.xml.append$//text[@name=\"lua_dps_auto\"]"
-msgstr ""
+msgstr "自动开火时的每秒伤害。"
 
 #: src-ru/data/text_misc.xml.append:2043
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_oxygen\"]"
-msgstr ""
+msgstr "你处于稠密的气体空间中。飞船外部存在可供呼吸的大气。"
 
 #: src-ru/data/text_misc.xml.append:2044
 msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_egg_name\"]"
-msgstr ""
+msgstr "奥里"
 
 #: src-ru/data/text_misc.xml.append:2045
 msgid "data/text_misc.xml.append$//text[@name=\"lua_shots_for_charge\"]"
@@ -6269,63 +6262,57 @@ msgstr "每次充能射击次数："
 
 #: src-ru/data/text_misc.xml.append:2046
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_auto\"]"
-msgstr ""
+msgstr "自动模式下的心灵控制，用于保护本船船员免受敌方心灵控制。"
 
 #: src-ru/data/text_misc.xml.append:2047
 msgid "data/text_misc.xml.append$//text[@name=\"lua_mc_tip_hand\"]"
-msgstr ""
+msgstr "心灵控制不使用自动模式。"
 
 #: src-ru/data/text_misc.xml.append:2048
 msgid "data/text_misc.xml.append$//text[@name=\"needed_change_language\"]"
-msgstr ""
+msgstr "注意！请在设置中将语言切换为\"中文（Arsenal +）\""
 
 #: src-ru/data/text_misc.xml.append:2050
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_glif_panel\"]"
-msgstr ""
+msgstr "开/关符文控制面板。"
 
 #: src-ru/data/text_misc.xml.append:2051
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel\"]"
-msgstr ""
+msgstr "清除所有符文。"
 
 #: src-ru/data/text_misc.xml.append:2052
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_glif\"]"
-msgstr ""
+msgstr "此武器的信息不可用。"
 
 #: src-ru/data/text_misc.xml.append:2053
 msgid "data/text_misc.xml.append$//text[@name=\"lua_clear_glif_panel_no\"]"
-msgstr ""
+msgstr "没有需要清除的符文。"
 
 #: src-ru/data/text_misc.xml.append:2054
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_acc\"]"
-msgstr ""
+msgstr "精度修正"
 
 #: src-ru/data/text_misc.xml.append:2055
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_iondamage\"]"
 msgstr "离子伤害："
 
 #: src-ru/data/text_misc.xml.append:2056
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_crewdamage\"]"
 msgstr "船员伤害："
 
 #: src-ru/data/text_misc.xml.append:2057
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sysdamage\"]"
 msgstr "系统伤害："
 
 #: src-ru/data/text_misc.xml.append:2058
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hulldamage\"]"
 msgstr "船体伤害："
 
 #: src-ru/data/text_misc.xml.append:2059
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_shots\"]"
 msgstr "每次充能射击次数："
 
 #: src-ru/data/text_misc.xml.append:2060
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_cooldown\"]"
 msgstr "充能时间："
 
@@ -6334,70 +6321,65 @@ msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sec\"]"
 msgstr "秒"
 
 #: src-ru/data/text_misc.xml.append:2062
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_charact\"]"
 msgstr "属性："
 
 #: src-ru/data/text_misc.xml.append:2063
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_power\"]"
 msgstr "需要能量："
 
 #: src-ru/data/text_misc.xml.append:2064
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_speed\"]"
-msgstr ""
+msgstr "射弹速度"
 
 #: src-ru/data/text_misc.xml.append:2065
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_resetcd\"]"
-msgstr ""
+msgstr "射击后重新装填至"
 
 #: src-ru/data/text_misc.xml.append:2066
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_freeze\"]"
-msgstr ""
+msgstr "锁定目标舱室"
 
 #: src-ru/data/text_misc.xml.append:2067
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_hullbst\"]"
-msgstr ""
+msgstr "对空舱室造成2倍伤害"
 
 #: src-ru/data/text_misc.xml.append:2068
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stun\"]"
 msgstr "击晕"
 
 #: src-ru/data/text_misc.xml.append:2069
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_sp\"]"
 msgstr "护盾穿透："
 
 #: src-ru/data/text_misc.xml.append:2070
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_fc\"]"
-msgstr "起火几率："
+msgstr "起火概率："
 
 #: src-ru/data/text_misc.xml.append:2071
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bc\"]"
-msgstr "破舱几率："
+msgstr "破舱概率："
 
 #: src-ru/data/text_misc.xml.append:2072
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_copycdnext\"]"
-msgstr ""
+msgstr "射击时将右侧武器充能达到自身的装填时间水平"
 
 #: src-ru/data/text_misc.xml.append:2073
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_stealcrew\"]"
-msgstr ""
+msgstr "命中时传送舱室内的船员到另一艘飞船"
 
 #: src-ru/data/text_misc.xml.append:2074
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_blood\"]"
-msgstr ""
+msgstr "命中时造成流血效果"
 
 #: src-ru/data/text_misc.xml.append:2075
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_erosion\"]"
-msgstr ""
+msgstr "命中时造成侵蚀效果"
 
 #: src-ru/data/text_misc.xml.append:2077
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_on\"]"
-msgstr ""
+msgstr "被解雇的船员将被抛入太空。"
 
 #: src-ru/data/text_misc.xml.append:2078
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_off\"]"
-msgstr ""
+msgstr "被解雇的船员将乘坐小型穿梭机前往最近的行星或空间站。"
