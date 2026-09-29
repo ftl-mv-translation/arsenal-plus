@@ -9,13 +9,13 @@ msgstr ""
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"GOT_DECK\"]/loadEventList/event[2]/text"
 msgstr ""
-"\"Luck is on your sside today. Take this deck of cardss, you can entertain yoursself in your free time.\"\n"
-"\n"
-"Deck of cards for blackjack obtained! You can use it in the CARGO menu."
+"\"Luck is on your ssside today. Take this deck of cards, you can amuse yourssself in your free time.\"\n"
+"\t\t\t\n"
+"\t\t\tDeck of Blackjack cards acquired! You can use it in the CARGO menu."
 
 #: src-ru/data/events_cards.xml.rawclobber:26
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"BJ\"]/text"
-msgstr "\"Come closer, don't be shy! Wanna play blackjack?\""
+msgstr "\"Step right up, don't be shy! Wanna play a game of blackjack?\""
 
 #: src-ru/data/events_cards.xml.rawclobber:28
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"BJ\"]/choice[1]/text"
@@ -31,7 +31,7 @@ msgstr "We changed our minds."
 
 #: src-ru/data/events_cards.xml.rawclobber:50
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"BJ_CARGO2\"]/text"
-msgstr "Play blackjack? You will need chips for the game, replacing scrap."
+msgstr "Play blackjack? You will need chips instead of scrap to play."
 
 #: src-ru/data/events_cards.xml.rawclobber:52
 msgid ""
@@ -63,13 +63,13 @@ msgstr "Discard the deck of cards."
 #: src-ru/data/events_cards.xml.rawclobber:72
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BJ_CARGO2\"]/choice[5]/event/text"
-msgstr "Are you sure? You can win the deck again from the Slurms."
+msgstr "Are you sure? You can win the deck back from the Slurms later."
 
 #: src-ru/data/events_cards.xml.rawclobber:74
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BJ_CARGO2\"]/choice[5]/event/choice[1]/text"
 msgstr ""
-"Discard the cards; our mission is too important to waste time on gambling."
+"Discard the cards, our mission is too important to waste time on gambling."
 
 #: src-ru/data/events_cards.xml.rawclobber:81
 msgid ""
@@ -85,17 +85,18 @@ msgstr "Cancel."
 msgid ""
 "data/events_cards.xml.rawclobber$//textList[@name=\"RULES_BLACK_JACK\"]/text"
 msgstr ""
-"The goal of the game is to beat the dealer by having more points than them. "
-"Number cards are worth their face value, J-Q-K are 10 points, and A is 1 or "
-"11. You cannot exceed 21 points—that is a bust. Both the player and dealer "
-"are dealt 2 cards face up. If the player gets 21 points in the first two "
-"cards (\"blackjack\") and the dealer has less, the player gets a 1.5x "
-"payout. If the dealer has blackjack and the player doesn't, the player "
-"loses. If no one has blackjack, the player can hit until they bust (loss, "
-"bet goes to dealer) or decide to stop. Then the dealer draws cards to at "
-"least 17 points (even if they already have more than the player) until they "
-"bust or reach 17. Points are compared, and the bet goes to the one with the "
-"highest total. In all tie cases, the bet is returned."
+"The goal of the game is to beat the dealer by scoring more points than them."
+" Number cards are worth their face value, J-Q-K are worth 10 points, and A "
+"is worth 1 or 11. Exceeding 21 points results in a bust (loss). Two cards "
+"are dealt face up to both the player and the dealer. If the player's first "
+"two cards total 21 (\"blackjack\") and the dealer's do not, the player wins "
+"1.5x their bet. If the dealer has blackjack and the player does not, the "
+"player loses. If neither has blackjack, the player is prompted to draw cards"
+" one by one until they bust (a loss, bets go to the dealer) or decide to "
+"stand. Then the dealer draws cards up to at least 17 points (even if they "
+"already have more than the player) until they bust or reach 17. Points are "
+"compared, and the bets go to whoever has the higher score. In all cases of a"
+" tie, bets are returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:106
 msgid ""
@@ -111,8 +112,8 @@ msgstr "Back."
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"START_BLACK_JACK_GAME\"]/loadEventList/event[1]/text"
 msgstr ""
-"To play blackjack, you must place a bet. How many chips are you willing to "
-"bet?"
+"You must place a bet to play blackjack. How many chips are you willing to "
+"wager?"
 
 #: src-ru/data/events_cards.xml.rawclobber:134
 msgid ""
@@ -156,8 +157,8 @@ msgstr "Back."
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"START_BLACK_JACK_GAME\"]/loadEventList/event[2]/text"
 msgstr ""
-"To play blackjack, you must place a bet. How much scrap are you willing to "
-"bet?"
+"You must place a bet to play blackjack. How much scrap are you willing to "
+"wager?"
 
 #: src-ru/data/events_cards.xml.rawclobber:179
 msgid ""
@@ -183,181 +184,181 @@ msgstr "Back."
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[1]/text"
 msgstr ""
-"You and the dealer both have blackjack—it's a tie! The bet is returned!"
+"You and the dealer both have blackjack — it's a push! Your bet is returned!"
 
 #: src-ru/data/events_cards.xml.rawclobber:247
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You and the dealer both have blackjack—it's a tie! The bet is returned!"
+"You and the dealer both have blackjack — it's a push! Your bet is returned!"
 
 #: src-ru/data/events_cards.xml.rawclobber:253
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[3]/text"
 msgstr ""
-"You and the dealer both have blackjack—it's a tie! The bet is returned!"
+"You and the dealer both have blackjack — it's a push! Your bet is returned!"
 
 #: src-ru/data/events_cards.xml.rawclobber:264
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[1]/text"
 msgstr ""
-"You and the dealer both have blackjack—it's a tie! The bet is returned!"
+"You and the dealer both have blackjack — it's a push! Your bet is returned!"
 
 #: src-ru/data/events_cards.xml.rawclobber:272
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[2]/text"
 msgstr ""
-"You and the dealer both have blackjack—it's a tie! The bet is returned!"
+"You and the dealer both have blackjack — it's a push! Your bet is returned!"
 
 #: src-ru/data/events_cards.xml.rawclobber:280
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[3]/text"
 msgstr ""
-"You and the dealer both have blackjack—it's a tie! The bet is returned!"
+"You and the dealer both have blackjack — it's a push! Your bet is returned!"
 
 #: src-ru/data/events_cards.xml.rawclobber:297
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You have blackjack—you won 1.5x your bet!"
+msgstr "You have blackjack — you win 1.5x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:304
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[2]/text"
-msgstr "You have blackjack—you won 1.5x your bet!"
+msgstr "You have blackjack — you win 1.5x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:311
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[3]/text"
-msgstr "You have blackjack—you won 1.5x your bet!"
+msgstr "You have blackjack — you win 1.5x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:323
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[1]/text"
-msgstr "You have blackjack—you won 1.5x your bet!"
+msgstr "You have blackjack — you win 1.5x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:332
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[2]/text"
-msgstr "You have blackjack—you won 1.5x your bet!"
+msgstr "You have blackjack — you win 1.5x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:341
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[3]/text"
-msgstr "You have blackjack—you won 1.5x your bet!"
+msgstr "You have blackjack — you win 1.5x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:359
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_CARD_IS_PLAYER_HAS_BLACK_JACK_AT_START\"]/loadEventList/event[2]/text"
-msgstr "The dealer has blackjack—you lost!"
+msgstr "The dealer has blackjack — you lose!"
 
 #: src-ru/data/events_cards.xml.rawclobber:437
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "Dealer bust! You won 2x your bet!"
+msgstr "Dealer busts! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:444
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[2]/text"
-msgstr "Dealer bust! You won 2x your bet!"
+msgstr "Dealer busts! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:451
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[3]/text"
-msgstr "Dealer bust! You won 2x your bet!"
+msgstr "Dealer busts! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:463
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[1]/text"
-msgstr "Dealer bust! You won 2x your bet!"
+msgstr "Dealer busts! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:472
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[2]/text"
-msgstr "Dealer bust! You won 2x your bet!"
+msgstr "Dealer busts! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:481
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[3]/text"
-msgstr "Dealer bust! You won 2x your bet!"
+msgstr "Dealer busts! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:504
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You have more points! You won 2x your bet!"
+msgstr "You have more points! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:511
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[2]/text"
-msgstr "You have more points! You won 2x your bet!"
+msgstr "You have more points! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:518
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/loadEventList/event[3]/text"
-msgstr "You have more points! You won 2x your bet!"
+msgstr "You have more points! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:530
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[1]/text"
-msgstr "You have more points! You won 2x your bet!"
+msgstr "You have more points! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:539
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[2]/text"
-msgstr "You have more points! You won 2x your bet!"
+msgstr "You have more points! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:548
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[2]/loadEventList/event[3]/text"
-msgstr "You have more points! You won 2x your bet!"
+msgstr "You have more points! You win 2x your bet!"
 
 #: src-ru/data/events_cards.xml.rawclobber:566
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "Tie! Your bet is returned."
+msgstr "Tie! Your bet has been returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:571
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[2]/text"
-msgstr "Tie! Your bet is returned."
+msgstr "Tie! Your bet has been returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:576
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[3]/text"
-msgstr "Tie! Your bet is returned."
+msgstr "Tie! Your bet has been returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:586
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[1]/text"
-msgstr "Tie! Your bet is returned."
+msgstr "Tie! Your bet has been returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:593
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[2]/text"
-msgstr "Tie! Your bet is returned."
+msgstr "Tie! Your bet has been returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:600
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[2]/loadEventList/event[3]/text"
-msgstr "Tie! Your bet is returned."
+msgstr "Tie! Your bet has been returned."
 
 #: src-ru/data/events_cards.xml.rawclobber:612
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"BEGIN_DEALER_PHASE3\"]/loadEventList/event[2]/loadEventList/event[3]/text"
-msgstr "The dealer has more points and wins! Your bet goes to them."
+msgstr "The dealer has more points and wins! Your bet goes to him."
 
 #: src-ru/data/events_cards.xml.rawclobber:2822
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"CHECK_PLAYER_PEREBOR\"]/loadEventList/event[1]/text"
-msgstr "You bust! You lost, and your bet goes to the dealer!"
+msgstr "You busted! You lose, and your bet goes to the dealer!"
 
 #: src-ru/data/events_cards.xml.rawclobber:4114
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"POKER_CARGO2\"]/text"
-msgstr "Play poker? You will need chips, replacing scrap."
+msgstr "Play poker? You will need chips instead of scrap to play."
 
 #: src-ru/data/events_cards.xml.rawclobber:4116
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_CARGO2\"]/choice[1]/text"
-msgstr "Start a new poker game."
+msgstr "Start a new game of poker."
 
 #: src-ru/data/events_cards.xml.rawclobber:4122
 msgid ""
@@ -384,13 +385,13 @@ msgstr "Discard the deck of cards."
 #: src-ru/data/events_cards.xml.rawclobber:4136
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_CARGO2\"]/choice[5]/event/text"
-msgstr "Are you sure? You can win the deck again from the Slurms."
+msgstr "Are you sure? You can win the deck back from the Slurms later."
 
 #: src-ru/data/events_cards.xml.rawclobber:4138
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_CARGO2\"]/choice[5]/event/choice[1]/text"
 msgstr ""
-"Discard the cards; our mission is too important to waste time on gambling."
+"Discard the cards, our mission is too important to waste time on gambling."
 
 #: src-ru/data/events_cards.xml.rawclobber:4145
 msgid ""
@@ -405,11 +406,12 @@ msgstr "Cancel."
 #: src-ru/data/events_cards.xml.rawclobber:4165
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"POKER\"]/text"
 msgstr ""
-"You sit down at the poker table. The Slurm next to you slurps contentedly."
+"You sit down at the poker table. The nearby Slurm makes a content squelching"
+" noise."
 
 #: src-ru/data/events_cards.xml.rawclobber:4167
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"POKER\"]/choice[1]/text"
-msgstr "Start a new poker game."
+msgstr "Start a new game of poker."
 
 #: src-ru/data/events_cards.xml.rawclobber:4171
 msgid "data/events_cards.xml.rawclobber$//event[@name=\"POKER\"]/choice[2]/text"
@@ -422,18 +424,18 @@ msgstr "Leave away."
 #: src-ru/data/events_cards.xml.rawclobber:4182
 msgid "data/events_cards.xml.rawclobber$//textList[@name=\"RULES_POKER\"]/text"
 msgstr ""
-"The goal of the game is to beat the dealer by having a better hand combination. There are 10 combinations in increasing order of strength:\n"
-"1. High Card (strongest card in hand - A)\n"
-"2. Pair (2 cards of same rank - 88)\n"
-"3. Two Pair (2 cards of same rank, 2 of another - QQ55)\n"
-"4. Three of a Kind (3 cards of same rank - KKK)\n"
+"The goal of the game is to beat the dealer by getting a better card hand than theirs. There are 10 hands ranked from lowest to highest:\n"
+"1. High Card (highest card in hand - A)\n"
+"2. One Pair (2 cards of the same rank - 88)\n"
+"3. Two Pair (2 cards of one rank and 2 of another - QQ55)\n"
+"4. Three of a Kind (3 cards of the same rank - KKK)\n"
 "5. Straight (5 consecutive cards - 10JQKA)\n"
 "6. Flush (5 cards of the same suit)\n"
-"7. Full House (3 cards of same rank, 2 of another - JJ777)\n"
-"8. Four of a Kind (4 cards of same rank - JJJJ)\n"
+"7. Full House (3 cards of one rank and 2 of another - JJ777)\n"
+"8. Four of a Kind (4 cards of the same rank - JJJJ)\n"
 "9. Straight Flush (5 consecutive cards of the same suit - 56789)\n"
 "10. Royal Flush (5 consecutive cards 10JQKA of the same suit)\n"
-"An Ace can act as a 1 for straights (A2345, but not QKA23). At the start, 2 cards are dealt to the dealer, 2 to the player, and 5 shared (3 face up). The player can call, raise, or fold. The dealer responds, raises, or folds, and the next card is revealed. If the player didn't raise, the dealer can, requiring the player to call to continue. The cycle repeats until all cards are revealed. If combinations are tied, the high cards in them are compared. If they are equal, kickers are compared. Winner takes the pot. In case of a tie, the pot is split."
+"An Ace can count as 1 for straights (A2345, but not QKA23). At the start of the game, 2 cards are dealt to the dealer, 2 to the player, and 5 community cards (3 of which are revealed immediately). The player can check, raise, or fold. The dealer responds, raises, or folds, and the next community card is revealed. If the player checks, the dealer may raise, in which case the player must also raise to continue. The loop repeats until all cards are revealed. In case of matching hand ranks, the highest card in the hand is compared. If hand ranks and high cards match, kickers are compared. The winner takes the pot. In a tie, the pot is split."
 
 #: src-ru/data/events_cards.xml.rawclobber:4199
 msgid ""
@@ -448,18 +450,18 @@ msgstr "Back."
 #: src-ru/data/events_cards.xml.rawclobber:4227
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"START_POKER_GAME\"]/loadEventList/event[1]/text"
-msgstr "To play poker, you must place an initial ante of 20 chips."
+msgstr "Playing poker requires an ante of 20 chips."
 
 #: src-ru/data/events_cards.xml.rawclobber:4229
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"START_POKER_GAME\"]/loadEventList/event[1]/choice[1]/text"
-msgstr "Place 20 chips."
+msgstr "Contribute 20 chips."
 
 #: src-ru/data/events_cards.xml.rawclobber:4233
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"START_POKER_GAME\"]/loadEventList/event[1]/choice[@req=\"chips_taken\""
 " and @lvl=\"20\"]/text"
-msgstr "Place 20 chips."
+msgstr "Contribute 20 chips."
 
 #: src-ru/data/events_cards.xml.rawclobber:4240
 msgid ""
@@ -469,7 +471,7 @@ msgstr "Back."
 #: src-ru/data/events_cards.xml.rawclobber:4247
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"START_POKER_GAME\"]/loadEventList/event[2]/text"
-msgstr "To play poker, you must place an initial ante of 20~."
+msgstr "Playing poker requires an ante of 20~."
 
 #: src-ru/data/events_cards.xml.rawclobber:4249
 msgid ""
@@ -485,216 +487,209 @@ msgstr "Back."
 msgid ""
 "data/events_cards.xml.rawclobber$//textList[@name=\"POKER_DILER_OHRENEL_TEXT\"]/text[1]"
 msgstr ""
-"It seems the dealer is very confident in their cards. They raise. Now you "
+"The dealer seems very confident in his cards. He raises the bet. Now you "
 "must call or fold."
 
 #: src-ru/data/events_cards.xml.rawclobber:5389
 msgid ""
 "data/events_cards.xml.rawclobber$//textList[@name=\"POKER_DILER_OHRENEL_TEXT\"]/text[2]"
-msgstr "The dealer thinks they will win. They raise. Call or fold?"
+msgstr "The dealer thinks he'll win. He raises. Call or fold?"
 
 #: src-ru/data/events_cards.xml.rawclobber:5390
 msgid ""
 "data/events_cards.xml.rawclobber$//textList[@name=\"POKER_DILER_OHRENEL_TEXT\"]/text[3]"
-msgstr "The dealer brazenly raises. Now you can only call or fold."
+msgstr "The dealer brazenly raises the bet. Now you can only call or fold."
 
 #: src-ru/data/events_cards.xml.rawclobber:5391
 msgid ""
 "data/events_cards.xml.rawclobber$//textList[@name=\"POKER_DILER_OHRENEL_TEXT\"]/text[4]"
 msgstr ""
-"The dealer raises. Maybe they are just bluffing and hoping you will fold."
+"The dealer raises the bet. He might just be bluffing and hoping you'll fold."
 
 #: src-ru/data/events_cards.xml.rawclobber:5392
 msgid ""
 "data/events_cards.xml.rawclobber$//textList[@name=\"POKER_DILER_OHRENEL_TEXT\"]/text[5]"
 msgstr ""
-"The dealer is out of line—they're raising. Is it a bluff or better to fold?"
+"The dealer has gone too far, he's raising the bet. Is it a bluff or should "
+"you fold?"
 
 #: src-ru/data/events_cards.xml.rawclobber:5512
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_ENEMY_SURRENDER2\"]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You raise, but the dealer decides to fold. You take the entire pot."
+msgstr ""
+"You raise the bet, but the dealer decides to fold. You take the entire pot."
 
 #: src-ru/data/events_cards.xml.rawclobber:5517
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_ENEMY_SURRENDER2\"]/loadEventList/event[1]/loadEventList/event[2]/text"
-msgstr "You raise, but the dealer decides to fold. You take the entire pot."
+msgstr ""
+"You raise the bet, but the dealer decides to fold. You take the entire pot."
 
 #: src-ru/data/events_cards.xml.rawclobber:5522
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_ENEMY_SURRENDER2\"]/loadEventList/event[1]/loadEventList/event[3]/text"
-msgstr "You raise, but the dealer decides to fold. You take the entire pot."
+msgstr ""
+"You raise the bet, but the dealer decides to fold. You take the entire pot."
 
 #: src-ru/data/events_cards.xml.rawclobber:5532
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_ENEMY_SURRENDER2\"]/loadEventList/event[2]/loadEventList/event[1]/text"
-msgstr "You raise, but the dealer decides to fold. You take the entire pot."
+msgstr ""
+"You raise the bet, but the dealer decides to fold. You take the entire pot."
 
 #: src-ru/data/events_cards.xml.rawclobber:5536
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_ENEMY_SURRENDER2\"]/loadEventList/event[2]/loadEventList/event[2]/text"
-msgstr "You raise, but the dealer decides to fold. You take the entire pot."
+msgstr ""
+"You raise the bet, but the dealer decides to fold. You take the entire pot."
 
 #: src-ru/data/events_cards.xml.rawclobber:5540
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_ENEMY_SURRENDER2\"]/loadEventList/event[2]/loadEventList/event[3]/text"
-msgstr "You raise, but the dealer decides to fold. You take the entire pot."
+msgstr ""
+"You raise the bet, but the dealer decides to fold. You take the entire pot."
 
 #: src-ru/data/events_cards.xml.rawclobber:9138
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[1]/text"
-msgstr "You lost. The dealer has a royal flush. They take the entire pot!"
+msgstr "You lost. The dealer has a royal flush. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9145
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has a straight flush with a high card. They take the "
-"entire pot!"
+msgstr "You lost. The dealer has a straight flush. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9147
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has a straight flush with a kicker. They take the "
-"entire pot!"
+"You lost. The dealer has a straight flush with a kicker. He takes the entire"
+" pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9151
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[2]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has a straight flush. They take the entire pot!"
+msgstr "You lost. The dealer has a straight flush. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9160
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[3]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has four of a kind with a high card. They take the "
-"entire pot!"
+msgstr "You lost. The dealer has four of a kind. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9162
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[3]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has four of a kind with a kicker. They take the entire "
+"You lost. The dealer has four of a kind with a kicker. He takes the entire "
 "pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9166
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[3]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has four of a kind. They take the entire pot!"
+msgstr "You lost. The dealer has four of a kind. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9175
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[4]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has a full house with a high card. They take the entire"
-" pot!"
+msgstr "You lost. The dealer has a full house. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9177
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[4]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has a full house with a kicker. They take the entire "
+"You lost. The dealer has a full house with a kicker. He takes the entire "
 "pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9181
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[4]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has a full house. They take the entire pot!"
+msgstr "You lost. The dealer has a full house. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9190
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[5]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has a flush with a high card. They take the entire pot!"
+msgstr "You lost. The dealer has a flush. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9192
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[5]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has a flush with a kicker. They take the entire pot!"
+"You lost. The dealer has a flush with a kicker. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9196
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[5]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has a flush. They take the entire pot!"
+msgstr "You lost. The dealer has a flush. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9205
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[6]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has a straight with a high card. They take the entire "
-"pot!"
+msgstr "You lost. The dealer has a straight. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9207
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[6]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has a straight with a kicker. They take the entire pot!"
+"You lost. The dealer has a straight with a kicker. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9211
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[6]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has a straight. They take the entire pot!"
+msgstr "You lost. The dealer has a straight. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9220
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[7]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has three of a kind with a high card. They take the "
-"entire pot!"
+msgstr "You lost. The dealer has three of a kind. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9222
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[7]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has three of a kind with a kicker. They take the entire"
-" pot!"
+"You lost. The dealer has three of a kind with a kicker. He takes the entire "
+"pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9226
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[7]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has three of a kind. They take the entire pot!"
+msgstr "You lost. The dealer has three of a kind. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9235
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[8]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has two pair with a high card. They take the entire "
-"pot!"
+msgstr "You lost. The dealer has two pair. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9237
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[8]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has two pair with a kicker. They take the entire pot!"
+"You lost. The dealer has two pair with a kicker. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9241
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[8]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has two pair. They take the entire pot!"
+msgstr "You lost. The dealer has two pair. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9250
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[9]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You lost. The dealer has a pair with a high card. They take the entire pot!"
+msgstr "You lost. The dealer has a pair. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9252
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[9]/loadEventList/event[1]/loadEventList/event[2]/text"
 msgstr ""
-"You lost. The dealer has a pair with a kicker. They take the entire pot!"
+"You lost. The dealer has a pair with a kicker. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9256
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[9]/loadEventList/event[2]/text"
-msgstr "You lost. The dealer has a pair. They take the entire pot!"
+msgstr "You lost. The dealer has a pair. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9261
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_LOSE\"]/loadEventList/event[10]/text"
-msgstr "You lost. The dealer has a high card. They take the entire pot!"
+msgstr "You lost. The dealer has a high card. He takes the entire pot!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9264
 msgid ""
@@ -709,8 +704,7 @@ msgstr "You won. You have a royal flush. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9296
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[2]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr ""
-"You won. You have a straight flush with a high card. The pot is yours!"
+msgstr "You won. You have a straight flush. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9298
 msgid ""
@@ -725,7 +719,7 @@ msgstr "You won. You have a straight flush. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9311
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[3]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have four of a kind with a high card. The pot is yours!"
+msgstr "You won. You have four of a kind. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9313
 msgid ""
@@ -740,7 +734,7 @@ msgstr "You won. You have four of a kind. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9326
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[4]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have a full house with a high card. The pot is yours!"
+msgstr "You won. You have a full house. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9328
 msgid ""
@@ -755,7 +749,7 @@ msgstr "You won. You have a full house. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9341
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[5]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have a flush with a high card. The pot is yours!"
+msgstr "You won. You have a flush. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9343
 msgid ""
@@ -770,7 +764,7 @@ msgstr "You won. You have a flush. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9356
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[6]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have a straight with a high card. The pot is yours!"
+msgstr "You won. You have a straight. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9358
 msgid ""
@@ -785,7 +779,7 @@ msgstr "You won. You have a straight. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9371
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[7]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have three of a kind with a high card. The pot is yours!"
+msgstr "You won. You have three of a kind. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9373
 msgid ""
@@ -800,7 +794,7 @@ msgstr "You won. You have three of a kind. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9386
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[8]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have two pair with a high card. The pot is yours!"
+msgstr "You won. You have two pair. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9388
 msgid ""
@@ -815,7 +809,7 @@ msgstr "You won. You have two pair. The pot is yours!"
 #: src-ru/data/events_cards.xml.rawclobber:9401
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"POKER_WIN\"]/loadEventList/event[9]/loadEventList/event[1]/loadEventList/event[1]/text"
-msgstr "You won. You have a pair with a high card. The pot is yours!"
+msgstr "You won. You have a pair. The pot is yours!"
 
 #: src-ru/data/events_cards.xml.rawclobber:9403
 msgid ""
@@ -850,6 +844,6 @@ msgstr "You folded. The dealer takes the entire pot."
 msgid ""
 "data/events_cards.xml.rawclobber$//event[@name=\"GOT_DECK2\"]/loadEventList/event[2]/text"
 msgstr ""
-"\"Luck is on your sside today. Take this deck of cardss, you can entertain yoursself in your free time.\"\n"
-"\n"
-"Deck of cards for poker obtained! You can use it in the CARGO menu."
+"\"Luck is on your ssside today. Take this deck of cards, you can amuse yourssself in your free time.\"\n"
+"\t\t\t\n"
+"\t\t\tDeck of poker cards acquired! You can use it in the CARGO menu."
