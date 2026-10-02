@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: circle217 <3545024352@qq.com>\n"
+"PO-Revision-Date: 2026-10-02 11:36+0000\n"
+"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datatext_miscxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -1345,7 +1345,9 @@ msgstr "提示：如果敌人至少有一层护盾，这些光束不会造成伤
 
 #: src-ru/data/text_misc.xml.append:415
 msgid "data/text_misc.xml.append$//text[@name=\"tip_ex_beams\"]"
-msgstr "提示：超能族光束比同类光束长50%，但如果货舱中导弹少于30枚则无法发射。它们也更容易引发火灾或造成破洞。"
+msgstr ""
+"提示：超能族光束比同类光束长50%，但如果货舱中导弹少于30枚则无法发射。它们也更"
+"容易引发火灾或造成破舱。"
 
 #: src-ru/data/text_misc.xml.append:417
 msgid "data/text_misc.xml.append$//text[@name=\"tip_sys_beams\"]"
@@ -3259,7 +3261,7 @@ msgstr "提示：位于货舱中。要使用，请将其拖拽至空闲的无人
 
 #: src-ru/data/text_misc.xml.append:1122
 msgid "data/text_misc.xml.append$//text[@name=\"tip_weapon_drag\"]"
-msgstr "提示：位于货舱中。要使用或查看起火/破洞几率，请将其拖拽至空闲的武器槽位。"
+msgstr "提示：位于货舱中。要使用或查看起火/破舱几率，请将其拖拽至空闲的武器槽位。"
 
 #: src-ru/data/text_misc.xml.append:1123
 msgid "data/text_misc.xml.append$//text[@name=\"tip_deionizator\"]"
@@ -3854,7 +3856,7 @@ msgstr "未就绪：正在维修系统"
 #: src-ru/data/text_misc.xml.append:1290
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach\"]"
-msgstr "未就绪：正在修补破洞"
+msgstr "未就绪：正在修补破舱"
 
 #: src-ru/data/text_misc.xml.append:1291
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting\"]"
@@ -3922,7 +3924,7 @@ msgstr "未就绪：未在维修系统"
 #: src-ru/data/text_misc.xml.append:1307
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"power_not_ready_repairing_breach_false\"]"
-msgstr "未就绪：未在修补破洞"
+msgstr "未就绪：未在修补破舱"
 
 #: src-ru/data/text_misc.xml.append:1308
 msgid "data/text_misc.xml.append$//text[@name=\"power_not_ready_fighting_false\"]"
@@ -5446,7 +5448,7 @@ msgstr "增加护盾穿透数量。"
 
 #: src-ru/data/text_misc.xml.append:1840
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b9\"]"
-msgstr "增加破洞几率。"
+msgstr "增加破舱几率。"
 
 #: src-ru/data/text_misc.xml.append:1841
 msgid "data/text_misc.xml.append$//text[@name=\"lua_sr_b10\"]"
@@ -5538,7 +5540,7 @@ msgstr "一艘兰花族护卫舰正在追击你。剩余信标数："
 
 #: src-ru/data/text_misc.xml.append:1863
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_cold\"]"
-msgstr "你身处极寒之地。飞船的舱室会周期性冻结，船体也会出现破洞。"
+msgstr "你身处极寒之地。飞船的舱室会周期性冻结，船体也会出现破舱。"
 
 #: src-ru/data/text_misc.xml.append:1864
 msgid "data/text_misc.xml.append$//text[@name=\"lua_danger_crystals\"]"
@@ -6181,7 +6183,7 @@ msgstr ""
 "绿色：完全治疗盟友\n"
 "青色：1点离子伤害\n"
 "蓝色：锁舱\n"
-"紫色：90%几率破洞"
+"紫色：90%几率破舱"
 
 #: src-ru/data/text_misc.xml.append:2032
 msgid "data/text_misc.xml.append$//text[@name=\"lua_enemy_has_nechet_shield\"]"
