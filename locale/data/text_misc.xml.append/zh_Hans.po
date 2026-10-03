@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-02 11:36+0000\n"
+"PO-Revision-Date: 2026-10-03 15:36+0000\n"
 "Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datatext_miscxmlappend/zh_Hans/>\n"
@@ -3266,6 +3266,8 @@ msgstr "提示：位于货舱中。要使用或查看起火/破舱几率，请�
 #: src-ru/data/text_misc.xml.append:1123
 msgid "data/text_misc.xml.append$//text[@name=\"tip_deionizator\"]"
 msgstr ""
+"提示：可能有助于对抗敌方的离子武器，或加速舰船系统的充能。在短时间的战斗中表"
+"现更佳。"
 
 #: src-ru/data/text_misc.xml.append:1125
 msgid "data/text_misc.xml.append$//text[@name=\"required_power\"]"
@@ -4913,14 +4915,16 @@ msgstr "这是你飞船上的最后一个系统槽位。\\n你确定吗？"
 #: src-ru/data/text_misc.xml.append:1682
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_crash\"]"
 msgstr ""
+"在上一次游戏过程中检测到 Hyperspace的故障。\\n\\n你是否希望使用你保存的数据和"
+"日志创建一个错误报告？"
 
 #: src-ru/data/text_misc.xml.append:1683
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_bug\"]"
-msgstr ""
+msgstr "你是否希望使用你保存的数据和日志创建一个错误报告？"
 
 #: src-ru/data/text_misc.xml.append:1684
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_create\"]"
-msgstr ""
+msgstr "创建错误报告"
 
 #: src-ru/data/text_misc.xml.append:1685
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_skip\"]"
@@ -4928,49 +4932,51 @@ msgstr "否"
 
 #: src-ru/data/text_misc.xml.append:1686
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_where\"]"
-msgstr ""
+msgstr "错误报告已成功创建！\\n\\n你想把这个报告发送到哪里？"
 
 #: src-ru/data/text_misc.xml.append:1687
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_discord\"]"
-msgstr ""
+msgstr "报告到 Discord"
 
 #: src-ru/data/text_misc.xml.append:1688
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_github\"]"
-msgstr ""
+msgstr "在 GitHub 上创建问题"
 
 #: src-ru/data/text_misc.xml.append:1689
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"confirm_report_instructions_discord\"]"
-msgstr ""
+msgstr "请在 FTL: Arsenal+ 的 Discord 服务器上报告此错误。\\n\\n错误报告位置：\\n\\1"
 
 #: src-ru/data/text_misc.xml.append:1690
 msgid ""
 "data/text_misc.xml.append$//text[@name=\"confirm_report_instructions_github\"]"
 msgstr ""
+"请在 GitHub 上创建问题，地址为：\\n"
+"github.com/FTL-Hyperspace/FTL-Hyperspace/issues\\n\\n错误报告位置：\\n\\1"
 
 #: src-ru/data/text_misc.xml.append:1691
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_view\"]"
-msgstr ""
+msgstr "打开错误报告文件夹"
 
 #: src-ru/data/text_misc.xml.append:1692
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_done\"]"
-msgstr ""
+msgstr "跳过"
 
 #: src-ru/data/text_misc.xml.append:1693
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_failed\"]"
-msgstr ""
+msgstr "未能创建错误报告。\\n\\n请检查日志以获取详细信息。"
 
 #: src-ru/data/text_misc.xml.append:1694
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_report_failed_okay\"]"
-msgstr ""
+msgstr "ОК"
 
 #: src-ru/data/text_misc.xml.append:1697
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_supergrid\"]"
-msgstr ""
+msgstr "高级节点视图：显示信标地图上的所有连接。"
 
 #: src-ru/data/text_misc.xml.append:1699
 msgid "data/text_misc.xml.append$//text[@name=\"tooltip_bugreport\"]"
-msgstr ""
+msgstr "点击报告错误。"
 
 #: src-ru/data/text_misc.xml.append:1701
 msgid "data/text_misc.xml.append$//text[@name=\"confirm_buy_medbay\"]"
@@ -6065,11 +6071,11 @@ msgstr "与叛军旗舰的战斗照常进行。"
 
 #: src-ru/data/text_misc.xml.append:1996
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notmr_on\"]"
-msgstr ""
+msgstr "第一次跃迁后，每 5 分钟现实时间，舰船上的幽灵就会做一些不好的事情。"
 
 #: src-ru/data/text_misc.xml.append:1997
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_notmr_off\"]"
-msgstr ""
+msgstr "舰船上没有任何未安息的幽灵。"
 
 #: src-ru/data/text_misc.xml.append:1998
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_done_easy\"]"
@@ -6160,7 +6166,7 @@ msgstr "你的飞船上有一个逃生舱，可以用来延迟追击你的舰队
 
 #: src-ru/data/text_misc.xml.append:2019
 msgid "data/text_misc.xml.append$//text[@name=\"lua_barrel\"]"
-msgstr ""
+msgstr "你的舰船上有一个额外的燃料箱，可以用来获取燃料。"
 
 #: src-ru/data/text_misc.xml.append:2020
 msgid "data/text_misc.xml.append$//text[@name=\"lua_engi_monster_text_replacer\"]"
@@ -6366,7 +6372,7 @@ msgstr "清除所有符文。"
 
 #: src-ru/data/text_misc.xml.append:2078
 msgid "data/text_misc.xml.append$//text[@name=\"lua_lastclear_glif_panel\"]"
-msgstr ""
+msgstr "清除最后一个符文。"
 
 #: src-ru/data/text_misc.xml.append:2079
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_glif\"]"
@@ -6466,105 +6472,108 @@ msgstr "命中时造成侵蚀效果"
 
 #: src-ru/data/text_misc.xml.append:2104
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_evasion\"]"
-msgstr ""
+msgstr "舰船额外闪避"
 
 #: src-ru/data/text_misc.xml.append:2105
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_bomb\"]"
-msgstr ""
+msgstr "每次射击额外发射非制导炸弹"
 
 #: src-ru/data/text_misc.xml.append:2106
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_oxygen_fill\"]"
-msgstr ""
+msgstr "命中后将该舱室的氧气填充至 100%"
 
 #: src-ru/data/text_misc.xml.append:2107
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_spall\"]"
-msgstr ""
+msgstr "穿透所有护盾"
 
 #: src-ru/data/text_misc.xml.append:2108
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_asin\"]"
-msgstr ""
+msgstr "额外对所有舰载无人机、恩吉、模物恩吉和化身造成 30 点伤害 + 眩晕 3 秒。"
 
 #: src-ru/data/text_misc.xml.append:2109
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_tau\"]"
-msgstr ""
+msgstr "使驾驶舱离子化，并眩晕其中的船员 3 秒"
 
 #: src-ru/data/text_misc.xml.append:2110
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_empty_teleport\"]"
-msgstr ""
+msgstr "将友方船员从空舱室派出执行登舰攻击"
 
 #: src-ru/data/text_misc.xml.append:2111
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_spawn_mantis\"]"
-msgstr ""
+msgstr "射弹生成一只临时的友方螳螂"
 
 #: src-ru/data/text_misc.xml.append:2112
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_add_mc\"]"
-msgstr ""
+msgstr "控制舱室内的 1 名敌人"
 
 #: src-ru/data/text_misc.xml.append:2113
 msgid "data/text_misc.xml.append$//text[@name=\"lua_info_add_hack\"]"
-msgstr ""
+msgstr "入侵系统 5 秒"
 
 #: src-ru/data/text_misc.xml.append:2142
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_on\"]"
-msgstr "被解雇的船员将被抛入太空。"
+msgstr "被解雇的船员将被抛入太空"
 
 #: src-ru/data/text_misc.xml.append:2143
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_switch_screams_off\"]"
-msgstr "被解雇的船员将乘坐小型穿梭机前往最近的行星或空间站。"
+msgstr "被解雇的船员将乘坐小型穿梭机前往最近的行星或空间站"
 
 #: src-ru/data/text_misc.xml.append:2144
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_cloak_blocked\"]"
-msgstr ""
+msgstr "被敌方强化锁定"
 
 #: src-ru/data/text_misc.xml.append:2146
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pds_from_planet_marker\"]"
-msgstr ""
+msgstr "来自行星的反舰炮台"
 
 #: src-ru/data/text_misc.xml.append:2147
 msgid "data/text_misc.xml.append$//text[@name=\"lua_pds_fed_fleet\"]"
-msgstr ""
+msgstr "友方舰队的反舰炮台瞄准了你的敌人"
 
 #: src-ru/data/text_misc.xml.append:2149
 msgid "data/text_misc.xml.append$//text[@name=\"tip_mc_weapon\"]"
-msgstr ""
+msgstr "该武器无需心灵控制系统即可运作"
 
 #: src-ru/data/text_misc.xml.append:2151
 msgid "data/text_misc.xml.append$//text[@name=\"lua_annihilator_text_adder\"]"
 msgstr ""
+"看来旗舰装备了某种[style[color:ff6e6e]]巨大的光束武器[[/style]]，由三个组件构"
+"成。这解释了为什么你在这次航行中没有遇到它们……"
 
 #: src-ru/data/text_misc.xml.append:2153
 msgid "data/text_misc.xml.append$//text[@name=\"lua_show_ftl_timer_on\"]"
-msgstr ""
+msgstr "FTL 引擎充能计时器已启用"
 
 #: src-ru/data/text_misc.xml.append:2154
 msgid "data/text_misc.xml.append$//text[@name=\"lua_show_ftl_timer_off\"]"
-msgstr ""
+msgstr "FTL 引擎充能计时器已关闭"
 
 #: src-ru/data/text_misc.xml.append:2157
 msgid "data/text_misc.xml.append$//text[@name=\"lua_get_this_weapon\"]"
-msgstr ""
+msgstr "获得此武器。"
 
 #: src-ru/data/text_misc.xml.append:2158
 msgid "data/text_misc.xml.append$//text[@name=\"lua_container_broke\"]"
-msgstr ""
+msgstr "核心储存容器只剩下一个空壳……"
 
 #: src-ru/data/text_misc.xml.append:2159
 msgid "data/text_misc.xml.append$//text[@name=\"lua_install_core\"]"
-msgstr ""
+msgstr "你成功通过专用连接接口将核心安装到了武器中。\\n"
 
 #: src-ru/data/text_misc.xml.append:2161
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_marker_11\"]"
-msgstr ""
+msgstr "清空武器"
 
 #: src-ru/data/text_misc.xml.append:2163
 msgid "data/text_misc.xml.append$//text[@name=\"lua_tip_top\"]"
 msgstr ""
+"按 HOME 查看屏幕上舰船的战斗价值（括号内为携带货物的价值）以及你当前的每秒伤"
+"害。武器旁边有一个小“+”，如果需要可以常驻显示。\\n\\n按 END 查看星区编号和可"
+"能的废料奖励。\\n\\n按 INS 查看舱室编号。"
 
 #: src-ru/data/text_misc.xml.append:2165
 msgid "data/text_misc.xml.append$//text[@name=\"lua_flagman_sbezhal\"]"
-msgstr ""
+msgstr "你迅速将旗舰残存的部件装入货舱。"
 
 #: src-ru/data/text_misc.xml.append:2167
 msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_morph_name\"]"
@@ -6572,24 +6581,26 @@ msgstr ""
 
 #: src-ru/data/text_misc.xml.append:2169
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka0\"]"
-msgstr ""
+msgstr "而且他还在低声嘟囔着什么带有普通激光的超级武器。"
 
 #: src-ru/data/text_misc.xml.append:2170
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka1\"]"
-msgstr ""
+msgstr "而且他还在低声嘟囔着什么带有心灵控制的超级武器。"
 
 #: src-ru/data/text_misc.xml.append:2171
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka2\"]"
-msgstr ""
+msgstr "而且他还在低声嘟囔着什么带有空雷的超级武器。"
 
 #: src-ru/data/text_misc.xml.append:2172
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka3\"]"
-msgstr ""
+msgstr "而且他还在低声嘟囔着什么带有重型激光的超级武器。"
 
 #: src-ru/data/text_misc.xml.append:2174
 msgid "data/text_misc.xml.append$//text[@name=\"ce_tip_grenades\"]"
-msgstr ""
+msgstr "提示：榴弹发射器拥有灵活的瞄准系统。使用鼠标滚轮调整射程。"
 
 #: src-ru/data/text_misc.xml.append:2175
 msgid "data/text_misc.xml.append$//text[@name=\"tip_protector_beam\"]"
 msgstr ""
+"提示：将其放置在靠近重要系统的位置。按 BACKSPACE 显示无人机的工作半径。多个此"
+"类无人机只会轮流攻击。"
