@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-09-10 15:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-07 03:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_engixmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -156,26 +156,28 @@ msgstr "你等待半械族完成挖掘，然后将补给搬上飞船。"
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"PSEVDO_REPAIR_REBEL\"]/text"
 msgstr ""
+"你没有看到维修站，而是一艘充满敌意的飞船……“他来了，那个天真的联邦佬，还指望维"
+"修呢！给武器充能！”"
 
 #: src-ru/data/events_engi.xml.rawclobber:280
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ENGI_GIVE_MAX_HULL\"]/text"
-msgstr ""
+msgstr "信标附近基地里的半械族提出为你修理并强化飞船。"
 
 #: src-ru/data/events_engi.xml.rawclobber:282
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ENGI_GIVE_MAX_HULL\"]/choice[1]/text"
-msgstr ""
+msgstr "同意 [完全修复，+2最大舰体值]。"
 
 #: src-ru/data/events_engi.xml.rawclobber:286
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ENGI_GIVE_MAX_HULL\"]/choice[2]/text"
-msgstr ""
+msgstr "拒绝，并在超光速驱动器充能时与船员交谈。"
 
 #: src-ru/data/events_engi.xml.rawclobber:291
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ENGI_GIVE_MAX_HULL_OPERATOR02\"]/text"
-msgstr ""
+msgstr "半械族强化了飞船内部的部分承重结构，并焊接了几块新的。这应该会有帮助。"
 
 #: src-ru/data/events_engi.xml.rawclobber:299
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"ENGI_SURRENDER\"]/text"
@@ -7669,7 +7671,6 @@ msgid ""
 msgstr "问他们需要什么。"
 
 #: src-ru/data/events_engi.xml.rawclobber:9346
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"ORCHID_PEACEFULL_SCIENTISTS\"]/choice[1]/event/text"
 msgstr ""
@@ -8331,10 +8332,9 @@ msgid ""
 msgstr "不需要巨炮。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10010
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_MEET_ARTILLERY_MASTERS\"]/choice[6]/text"
-msgstr "在FTL驱动器充能时与船员交谈。"
+msgstr "在超光速驱动器充能时与船员交谈。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10030
 msgid ""
@@ -8350,7 +8350,9 @@ msgstr ""
 #: src-ru/data/events_engi.xml.rawclobber:10032
 msgid ""
 "data/events_engi.xml.rawclobber$//textList[@name=\"FIND_DRONE_UNIQUE\"]/text[3]"
-msgstr "你发现卫星上有一座被遗弃的采矿站。快速扫描显示这里没有任何生命体。不管怎样，你找到了一份可用的无人机蓝图！"
+msgstr ""
+"你在卫星上发现了一座被遗弃的采矿站。快速扫描显示这里没有任何生命形式。不管怎"
+"样，你找到了一张可用的不寻常无人机蓝图……"
 
 #: src-ru/data/events_engi.xml.rawclobber:10036
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI\"]/text"
@@ -8367,7 +8369,6 @@ msgid ""
 msgstr "你迅速搜刮了飞船货舱内的物品……"
 
 #: src-ru/data/events_engi.xml.rawclobber:10059
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_ADD_INNER_AI_TO_SHIP\"]/text"
 msgstr ""
@@ -8403,13 +8404,12 @@ msgstr "加载成功，你准备继续出发。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10082
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/text"
-msgstr ""
+msgstr "模物族飞船发来一条消息：“0？1？”"
 
 #: src-ru/data/events_engi.xml.rawclobber:10085
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[1]/text"
-msgstr "发送“10”。"
+msgstr "发送“0”。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10089
 msgid ""
@@ -8424,28 +8424,26 @@ msgstr "攻击对方。"
 #: src-ru/data/events_engi.xml.rawclobber:10095
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[3]/event/text"
-msgstr ""
+msgstr "模物族看到了你的行动，也准备投入战斗。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10100
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[4]/text"
-msgstr "什么都不碰，只是在超光速推进器充能时与船员交谈。"
+msgstr "不回应，并在超光速驱动器充能时与船员交谈。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10102
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH\"]/choice[4]/event/text"
-msgstr ""
+msgstr "没有收到回应，模物族开始为武器充能。现在不是谈话的时候！"
 
 #: src-ru/data/events_engi.xml.rawclobber:10108
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/text"
-msgstr ""
+msgstr "他们再次问道：“1？0？”"
 
 #: src-ru/data/events_engi.xml.rawclobber:10111
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[1]/text"
-msgstr "发送“10”。"
+msgstr "发送“0”。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10115
 msgid ""
@@ -8460,28 +8458,26 @@ msgstr "攻击对方。"
 #: src-ru/data/events_engi.xml.rawclobber:10121
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[3]/event/text"
-msgstr ""
+msgstr "模物族看到了你的行动，也准备投入战斗。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10126
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[4]/text"
-msgstr "什么都不碰，只是在超光速推进器充能时与船员交谈。"
+msgstr "不回应，并在超光速驱动器充能时与船员交谈。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10128
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_2\"]/choice[4]/event/text"
-msgstr ""
+msgstr "没有收到回应，模物族开始为武器充能。现在不是谈话的时候！"
 
 #: src-ru/data/events_engi.xml.rawclobber:10134
 msgid "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/text"
-msgstr ""
+msgstr "他们又问道：“0？”"
 
 #: src-ru/data/events_engi.xml.rawclobber:10137
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[1]/text"
-msgstr "发送“10”。"
+msgstr "发送“0”。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10141
 msgid ""
@@ -8496,40 +8492,43 @@ msgstr "攻击对方。"
 #: src-ru/data/events_engi.xml.rawclobber:10147
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[3]/event/text"
-msgstr ""
+msgstr "模物族看到了你的行动，也准备投入战斗。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10152
-#, fuzzy
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[4]/text"
-msgstr "什么都不碰，只是在超光速推进器充能时与船员交谈。"
+msgstr "不回应，并在超光速驱动器充能时与船员交谈。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10154
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_3\"]/choice[4]/event/text"
-msgstr ""
+msgstr "没有收到回应，模物族开始为武器充能。现在不是谈话的时候！"
 
 #: src-ru/data/events_engi.xml.rawclobber:10162
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_4\"]/loadEventList/event/text"
 msgstr ""
+"模物族给你发来一个由 ANSI 符号拼成的笑脸。同时，他们飞船上一名传奇模物族加入"
+"了你的队伍。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10163
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_4\"]/loadEventList/event/crewMember"
-msgstr ""
+msgstr "科罗特什"
 
 #: src-ru/data/events_engi.xml.rawclobber:10170
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_R\"]/loadEventList/event[1]/text"
-msgstr ""
+msgstr "尽管你做出了回应，模物族还是开始为武器充能。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10174
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_R\"]/loadEventList/event[2]/text"
 msgstr ""
+"模物族给你发来一个由 ANSI 符号拼成的笑脸。同时，他们飞船上一名传奇模物族加入"
+"了你的队伍。"
 
 #: src-ru/data/events_engi.xml.rawclobber:10175
 msgid ""
 "data/events_engi.xml.rawclobber$//event[@name=\"EVENT_LEG_MORPH_R\"]/loadEventList/event[2]/crewMember"
-msgstr ""
+msgstr "科罗特什"
