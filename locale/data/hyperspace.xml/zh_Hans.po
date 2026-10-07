@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-02 11:36+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"PO-Revision-Date: 2026-10-07 03:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datahyperspace-xml/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -13,33 +13,30 @@ msgstr ""
 "X-Generator: Weblate 5.17.1\n"
 
 #: src-ru/data/hyperspace.xml:962
-#, fuzzy
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[1]/tooltip"
 msgstr ""
-"离子谐振器\n"
-"\t\t\t使所有离子武器增加系统伤害，且不造成系统或舰体伤害。"
+"气闸蠕虫：\n"
+"\t\t\t当黑客无人机接入除门禁系统外的任何系统时，飞船的所有门将永久处于被入侵"
+"状态；当门禁系统缺失或被摧毁时，所有门将打开。"
 
 #: src-ru/data/hyperspace.xml:967
-#, fuzzy
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[2]/tooltip"
 msgstr ""
-"网络防火墙：\n"
-"\t\t\t禁用敌方黑客无人机。"
+"洗脑器：\n"
+"\t\t战斗开始时，永久夺取一名敌方船员的控制权。对最后一名船员无效。神经操纵器"
+"可阻止此增强部件的效果。"
 
 #: src-ru/data/hyperspace.xml:972
-#, fuzzy
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[3]/tooltip"
 msgstr ""
-"莫大叔迷你酒吧：\n"
-"\t\t\t星舰船员全员大醉。若有船员在岗，射击精度大幅降低。"
+"舰队反舰炮台支援：\n"
+"\t\t\t只要有可能，这艘飞船始终获得舰队反舰炮台的火力支援。"
 
 #: src-ru/data/hyperspace.xml:978
-#, fuzzy
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[4]/tooltip"
 msgstr ""
-"护盾分解器\n"
-"\t\t\t护盾在不消耗电量的情况下中和所有激光、碎屑、小行星以及部分相位离子弹。"
-"无法升起超过1层护盾。"
+"离子谐振器\n"
+"\t\t\t有75%的几率为所有无系统伤害或船体伤害的离子武器增加系统伤害。"
 
 #: src-ru/data/hyperspace.xml:983
 msgid "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[5]/tooltip"
@@ -499,12 +496,11 @@ msgstr ""
 "\t\t\t船员现在通过便携传送器在星舰内移动。"
 
 #: src-ru/data/hyperspace.xml:1315
-#, fuzzy
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[71]/tooltip"
 msgstr ""
-"隐藏武器：\n"
-"\t\t\t允许在隐形模式下射击而不中断隐形。"
+"装甲驾驶系统：\n"
+"\t\t\t驾驶系统和引擎无法被武器损坏，也无法被离子化。"
 
 #: src-ru/data/hyperspace.xml:1320
 msgid ""
@@ -692,6 +688,8 @@ msgstr ""
 msgid ""
 "data/hyperspace.xml$/dummyroot/FTL/ships/shipIcons/shipIcon[98]/tooltip"
 msgstr ""
+"符文恢复器：\n"
+"\t\t\t使符文炮受损节点的恢复速度提高一倍。"
 
 #: src-ru/data/hyperspace.xml:1614
 msgid "data/hyperspace.xml$//achievement[@name=\"ACH_SHIP_DOUBLE_TEST\"]/name"
@@ -2995,11 +2993,11 @@ msgstr "炎火战斗无人机"
 
 #: src-ru/data/hyperspace.xml:8653
 msgid "data/hyperspace.xml$//drone[@name=\"PROTECTOR_BEAM\"]/tooltipName"
-msgstr ""
+msgstr "光束防御者"
 
 #: src-ru/data/hyperspace.xml:8657
 msgid "data/hyperspace.xml$//drone[@name=\"PROTECTOR_BEAM2\"]/tooltipName"
-msgstr ""
+msgstr "光束防御者"
 
 #: src-ru/data/hyperspace.xml:10991
 msgid "data/hyperspace.xml$//backgroundObject[@name=\"LOOTBOX\"]/tooltip"
