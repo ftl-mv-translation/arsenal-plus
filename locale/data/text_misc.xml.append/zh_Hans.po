@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-03 15:36+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"PO-Revision-Date: 2026-10-07 03:36+0000\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/datatext_miscxmlappend/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -1104,9 +1104,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"scrap_stat\"]"
 msgstr "收集废料数"
 
 #: src-ru/data/text_misc.xml.append:338
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"crew_stat\"]"
-msgstr "雇佣船员数"
+msgstr "获得船员数"
 
 #: src-ru/data/text_misc.xml.append:339
 msgid "data/text_misc.xml.append$//text[@name=\"most_defeated_stat\"]"
@@ -1121,9 +1120,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"most_scrap_stat\"]"
 msgstr "最大收集废料数"
 
 #: src-ru/data/text_misc.xml.append:342
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"most_crew_stat\"]"
-msgstr "最大雇佣船员数"
+msgstr "最大获得船员数"
 
 #: src-ru/data/text_misc.xml.append:343
 msgid "data/text_misc.xml.append$//text[@name=\"total_defeated_stat\"]"
@@ -1138,9 +1136,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"total_scrap_stat\"]"
 msgstr "总收集废料数"
 
 #: src-ru/data/text_misc.xml.append:346
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"total_crew_stat\"]"
-msgstr "总雇佣船员数"
+msgstr "总获得船员数"
 
 #: src-ru/data/text_misc.xml.append:348
 msgid "data/text_misc.xml.append$//text[@name=\"crew_evasions\"]"
@@ -2755,9 +2752,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"sensor_2\"]"
 msgstr "敌方飞船内部，护盾+"
 
 #: src-ru/data/text_misc.xml.append:934
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_3\"]"
-msgstr "|, }, 闪避率, 氧气和敌方武器"
+msgstr "|、 }、闪避率、氧气、黑客入侵和武器"
 
 #: src-ru/data/text_misc.xml.append:935
 msgid "data/text_misc.xml.append$//text[@name=\"sensor_4\"]"
@@ -4576,9 +4572,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"gameover_blowup\"]"
 msgstr "最后一次爆炸对你来说是致命的，将你的飞船炸成了碎片。"
 
 #: src-ru/data/text_misc.xml.append:1553
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_fedbase\"]"
-msgstr "叛军飞船摧毁了联邦基地。一切都结束了，他们赢了。"
+msgstr "叛军旗舰摧毁了联邦基地。一切都结束了，他们赢了。"
 
 #: src-ru/data/text_misc.xml.append:1554
 msgid "data/text_misc.xml.append$//text[@name=\"gameover_tutorial\"]"
@@ -6017,9 +6012,8 @@ msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_nowst_off\"]"
 msgstr "武器不会在每次跃迁时更换。"
 
 #: src-ru/data/text_misc.xml.append:1983
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_on\"]"
-msgstr "所有敌人都将拥有提高的命中精度。"
+msgstr "所有敌人将拥有更高的命中率（命中率修正：+50）。"
 
 #: src-ru/data/text_misc.xml.append:1984
 msgid "data/text_misc.xml.append$//text[@name=\"lua_chall_noevd_off\"]"
@@ -6098,9 +6092,10 @@ msgid "data/text_misc.xml.append$//text[@name=\"lua_arty_tip_hand\"]"
 msgstr "巨炮将以手动模式向选定舱室射击。"
 
 #: src-ru/data/text_misc.xml.append:2003
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_tip\"]"
-msgstr "抛竿、刺鱼和收线的按钮（快捷键：RIGHT CTRL）。"
+msgstr ""
+"用于抛竿、刺鱼和收线的按钮（快捷键：RIGHT CTRL）。\\n\\n要钓到鱼，需将其保持"
+"在限定区域内，直到左侧的进度条填满。"
 
 #: src-ru/data/text_misc.xml.append:2004
 msgid "data/text_misc.xml.append$//text[@name=\"lua_fish_aug_main_name\"]"
@@ -6305,7 +6300,6 @@ msgid "data/text_misc.xml.append$//text[@name=\"lua_reward_coeff_drns_zero\"]"
 msgstr "无人机零件奖励未减少。"
 
 #: src-ru/data/text_misc.xml.append:2062
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_ai_ship\"]"
 msgstr "这艘飞船搭载了内部人工智能。即使全体船员阵亡，航行也不会结束。"
 
@@ -6362,7 +6356,6 @@ msgid "data/text_misc.xml.append$//text[@name=\"needed_change_language\"]"
 msgstr "注意！请在设置中将语言切换为\"中文（Arsenal +）\""
 
 #: src-ru/data/text_misc.xml.append:2076
-#, fuzzy
 msgid "data/text_misc.xml.append$//text[@name=\"lua_onoff_glif_panel\"]"
 msgstr "开/关符文控制面板。"
 
@@ -6577,7 +6570,7 @@ msgstr "你迅速将旗舰残存的部件装入货舱。"
 
 #: src-ru/data/text_misc.xml.append:2167
 msgid "data/text_misc.xml.append$//text[@name=\"lua_legendary_morph_name\"]"
-msgstr ""
+msgstr "科罗特什"
 
 #: src-ru/data/text_misc.xml.append:2169
 msgid "data/text_misc.xml.append$//text[@name=\"lua_event_text_vspishka0\"]"
