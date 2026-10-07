@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-10-07 03:36+0000\n"
-"Last-Translator: 土豆老年人 <2685455659@qq.com>\n"
+"Last-Translator: circle217 <3545024352@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://weblate.hyperq.be/"
 "projects/arsenal-plus/dataevents_rebelxmlrawclobber/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -306,6 +306,8 @@ msgstr "（传送器）直接传送到空间站，试图避免被发现。"
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"AUTO_DEFENSE_MAP\"]/choice[@req=\"teleporter\"]/event/loadEventList/event[1]/text"
 msgstr ""
+"登船后，你的船员成功访问并下载了远距离扫描仪档案中的信息，但这些信息你已经有"
+"了。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:350
 msgid ""
@@ -315,7 +317,7 @@ msgstr "登上空间站后，你的船员成功访问并下载了远程扫描仪
 #: src-ru/data/events_rebel.xml.rawclobber:361
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"AUTO_DEFENSE_MAP_SENSORS\"]/event[1]/loadEventList/event[1]/text"
-msgstr ""
+msgstr "你的先进传感器允许你远程加载空间站雷达的数据，只不过这些数据毫无用处。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:364
 msgid ""
@@ -430,6 +432,8 @@ msgstr "你成功黑入了他们的系统，并发送了关于你位置的虚假
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"DEFENSE_RADAR_LIST\"]/event[3]/loadEventList/event[1]/text"
 msgstr ""
+"软件防护措施太难绕过了。就在你准备断开连接时，你发现了一些未受保护的周边信标"
+"信息。你把所有数据弄混后发给了叛军。这能拖延他们一阵，够他们琢磨一阵子了。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:493
 msgid ""
@@ -559,7 +563,7 @@ msgstr "这艘船没有试图战斗，但你仍然探测到生命迹象。看来
 #: src-ru/data/events_rebel.xml.rawclobber:610
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"REBEL_TRANSPORT_CAPTURED\"]/event[3]/loadEventList/event[1]/text"
-msgstr ""
+msgstr "那艘飞船显然掌握着周边信标的信息。既然你已经有了，就直接把残骸拆成废料了。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:614
 msgid ""
@@ -594,7 +598,7 @@ msgstr "（先进传感器）远程扫描飞船。"
 #: src-ru/data/events_rebel.xml.rawclobber:650
 msgid ""
 "data/events_rebel.xml.rawclobber$//eventList[@name=\"DOWNLOAD_DRONE_DATA\"]/event[1]/loadEventList/event[1]/text"
-msgstr ""
+msgstr "飞船里没有任何有用的信息，不过倒是收集到了有价值的废料。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:654
 msgid ""
@@ -657,7 +661,6 @@ msgid ""
 msgstr "你在低频收到一条信息：“你们被包围了，就像你们在联邦最后的朋友一样。去死吧。”敌人已传送到你的船上！"
 
 #: src-ru/data/events_rebel.xml.rawclobber:838
-#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_ORDEN\"]/text[1]"
 msgstr ""
@@ -680,7 +683,6 @@ msgid ""
 msgstr "这个地方是混沌秩序教团星区。目前他们的首要任务是恢复昔日的权力和财富。与他们的强盗式冲突愈发频繁，他们也不会放过访客。"
 
 #: src-ru/data/events_rebel.xml.rawclobber:842
-#, fuzzy
 msgid ""
 "data/events_rebel.xml.rawclobber$//textList[@name=\"START_BEACON_ORDEN\"]/text[5]"
 msgstr "秩序教团拥有自己独特的技术。然而，进行贸易谈判可不是他们的作风……"
@@ -7580,3 +7582,5 @@ msgstr "看来你惊动了那艘自动飞船内部隐藏的蜂巢，现在敌对
 msgid ""
 "data/events_rebel.xml.rawclobber$//event[@name=\"PSEVDO_MAGAZIN_REBEL\"]/text"
 msgstr ""
+"信标处没有商店，你看到的是一艘叛军飞船……“哈哈，我就说他们会信这愚蠢的广告，各"
+"就各位！”"
