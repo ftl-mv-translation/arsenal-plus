@@ -1846,16 +1846,26 @@
       "done": true
     },
     "Бомбардировщик броненосцев": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Turtle Bomber"
+        }
+      },
       "deepl": "",
       "machine": "Bombardant of battleships",
-      "done": true
+      "done": false
     },
     "Истребитель броненосцев": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Turtle Fighter"
+        }
+      },
       "deepl": "",
       "machine": "The fighter of the battleships",
-      "done": true
+      "done": false
     },
     "Артиллерия магменов": {
       "advanced": {
@@ -1877,34 +1887,59 @@
       "done": false
     },
     "Разведчик магменов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Magmen Scout"
+        }
+      },
       "deepl": "",
       "machine": "Intelligence officer Magmenov",
-      "done": true
+      "done": false
     },
     "Штурмовик магменов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Magmen Assault"
+        }
+      },
       "deepl": "",
       "machine": "Steamer of Magmens",
-      "done": true
+      "done": false
     },
     "Истребитель магменов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Magmen Fighter"
+        }
+      },
       "deepl": "",
       "machine": "Fighter of Magmens",
-      "done": true
+      "done": false
     },
     "Поджигатель магменов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Magmen Pyromaniac"
+        }
+      },
       "deepl": "",
       "machine": "The arsonist of the Magmens",
-      "done": true
+      "done": false
     },
     "Шпион магменов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Magmen Spy"
+        }
+      },
       "deepl": "",
       "machine": "The spy of Magmens",
-      "done": true
+      "done": false
     },
     "Флагман магменов": {
       "advanced": {},
@@ -4054,10 +4089,15 @@
       "done": true
     },
     "Быстрый дрон, наносит урон только корпусу вражеского корабля осколочным лазером.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A fast drone that deals damage exclusively to the enemy hull using a shrapnel laser."
+        }
+      },
       "deepl": "",
       "machine": "A quick drone, causes damage only to the hull of an enemy ship with a fragmentation laser.",
-      "done": true
+      "done": false
     },
     "Крейсер аватаров": {
       "advanced": {},
@@ -4204,22 +4244,37 @@
       "done": true
     },
     "Тяжёлый кристальный дрон": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Heavy Crystal Drone"
+        }
+      },
       "deepl": "",
       "machine": "Heavy crystal drone",
-      "done": true
+      "done": false
     },
     "Т-кристалл": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "T-Crystal"
+        }
+      },
       "deepl": "",
       "machine": "T-CRISTAL",
-      "done": true
+      "done": false
     },
     "Этот дрон с модифицированными снарядами атакует врага проникающими сквозь 1 слой щита большими кристаллами.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "This drone uses modified projectiles to attack the enemy with large crystals that pierce through 1 layer of shields."
+        }
+      },
       "deepl": "",
       "machine": "This drone with modified shells attacks the enemy with large crystals penetrating through 1 layer of shield.",
-      "done": true
+      "done": false
     },
     "Heavy Crystal Mark I": {
       "advanced": {
@@ -4867,10 +4922,15 @@
       "done": true
     },
     "Крейсер чёрного крыла": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Black Wing Cruiser"
+        }
+      },
       "deepl": "",
       "machine": "The cruiser of the black wing",
-      "done": true
+      "done": false
     },
     "The Blackbird": {
       "advanced": {},
@@ -8649,10 +8709,15 @@
       "done": true
     },
     "Слёрм": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Slurm"
+        }
+      },
       "deepl": "",
       "machine": "Smallm",
-      "done": true
+      "done": false
     },
     "Скорость уменьшена до 70%": {
       "advanced": {},
@@ -11078,10 +11143,15 @@
       "done": true
     },
     "Мощный дрон, который постоянно атакует корабль противника.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A powerful drone that continuously attacks the enemy ship."
+        }
+      },
       "deepl": "",
       "machine": "A powerful drone that constantly attacks the enemy’s ship.",
-      "done": true
+      "done": false
     },
     "Боевой ионный дрон": {
       "advanced": {},
@@ -15119,10 +15189,15 @@
       "done": true
     },
     "Перезаряжается и срабатывает медленнее, чем малая, но наносит больше урона. Может применяться на вашем корабле.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Reloads and triggers slower than the small version, but deals more damage. Can be used on your own ship."
+        }
+      },
       "deepl": "",
       "machine": "It recharges and works slower than a small one, but applies more damage.It can be used on your ship.",
-      "done": true
+      "done": false
     },
     "Бомба с таймером": {
       "advanced": {},
@@ -15176,10 +15251,15 @@
       "done": true
     },
     "Телепортирующийся блок лечения, который мгновенно исцеляет всех дружественных членов экипажа в отсеке и с большой вероятностью вызывает пожар. Может применяться на вашем корабле.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A teleporting healing unit that instantly heals all friendly crew members in a room and has a high chance of causing a fire. Can be used on your own ship."
+        }
+      },
       "deepl": "",
       "machine": "A teleporting block of treatment, which instantly heals all friendly crew members in the compartment and is likely to cause a fire.It can be used on your ship.",
-      "done": true
+      "done": false
     },
     "Огненная бомба Мод I": {
       "advanced": {},
@@ -15194,10 +15274,15 @@
       "done": true
     },
     "Телепортирующееся взрывное устройство, наносящее повреждения экипажу. Высокий шанс возгорания. Может применяться на вашем корабле.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A teleporting explosive device that deals crew damage. High chance of fire. Can be used on your own ship."
+        }
+      },
       "deepl": "",
       "machine": "A teleporting explosive device causing damage to the crew.A high chance of fire.It can be used on your ship.",
-      "done": true
+      "done": false
     },
     "Огненная бомба Мод II": {
       "advanced": {},
@@ -15212,10 +15297,15 @@
       "done": true
     },
     "Телепортирующееся взрывное устройство, наносящее повреждения экипажу. Вызывает возгорание. Может применяться на вашем корабле.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A teleporting explosive device that deals crew damage. Causes fire. Can be used on your own ship."
+        }
+      },
       "deepl": "",
       "machine": "A teleporting explosive device causing damage to the crew.Causes a fire.It can be used on your ship.",
-      "done": true
+      "done": false
     },
     "Огненная бомба Мод III": {
       "advanced": {},
@@ -15230,10 +15320,15 @@
       "done": true
     },
     "Более медленная версия огнебомбы, но наносит больше урона экипажу и повреждает системы.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A slower version of the fire bomb, but deals more crew damage and damages systems."
+        }
+      },
       "deepl": "",
       "machine": "A slower version of the fire bombs, but inflicts more damage to the crew and damages the systems.",
-      "done": true
+      "done": false
     },
     "Огненная разрывная бомба": {
       "advanced": {},
@@ -15266,10 +15361,15 @@
       "done": true
     },
     "Телепортируемое взрывное устройство. Начинает пожар и парализует экипаж. Взрыв задержан на 10 секунд. Можно направить на собственный корабль.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A teleporting explosive device. Starts a fire and stuns the crew. Explosion is delayed by 10 seconds. Can be targeted at your own ship."
+        }
+      },
       "deepl": "",
       "machine": "Televiated explosive device.The fire starts and paralyzes the crew.The explosion was detained for 10 seconds.You can direct to your own ship.",
-      "done": true
+      "done": false
     },
     "Затяжная био-бомба": {
       "advanced": {},
@@ -15284,10 +15384,15 @@
       "done": true
     },
     "Телепортируемое взрывное устройство. Наносит большой урон экипажу. Взрыв задержан на 10 секунд. Можно направить на собственный корабль.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A teleporting explosive device. Deals heavy crew damage. Explosion is delayed by 10 seconds. Can be targeted at your own ship."
+        }
+      },
       "deepl": "",
       "machine": "Televiated explosive device.Causes great damage to the crew.The explosion was detained for 10 seconds.You can direct to your own ship.",
-      "done": true
+      "done": false
     },
     "Биологическая бомба": {
       "advanced": {},
@@ -16471,10 +16576,15 @@
       "done": true
     },
     "Шершень": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Hornet"
+        }
+      },
       "deepl": "",
       "machine": "Hornet",
-      "done": true
+      "done": false
     },
     "Легендарная Астерия.": {
       "advanced": {},
@@ -18947,16 +19057,26 @@
       "done": false
     },
     "Очень Большая Ракета": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Very Large Missile"
+        }
+      },
       "deepl": "",
       "machine": "Very large rocket",
-      "done": true
+      "done": false
     },
     "ОБР": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "VLM"
+        }
+      },
       "deepl": "",
       "machine": "Arr",
-      "done": true
+      "done": false
     },
     "Эта ракетная установка требует 10 боеприпасов на залп.": {
       "advanced": {},
@@ -47644,10 +47764,15 @@
       "done": true
     },
     "Боевой дрон, который постоянно атакует корабль противника небольшим лучевым оружием.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A combat drone that continuously attacks the enemy ship with a small beam weapon."
+        }
+      },
       "deepl": "",
       "machine": "The combat drone, which constantly attacks the enemy ship with a small radiation weapon.",
-      "done": true
+      "done": false
     },
     "Мини-луч": {
       "advanced": {},
@@ -49814,10 +49939,15 @@
       "done": false
     },
     "Сбивает вражеские ракеты, мины и астероиды. Перезарядка 1 секунда.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Shoots down enemy missiles, mines, and asteroids. 1 second cooldown."
+        }
+      },
       "deepl": "",
       "machine": "Knocks enemy missiles, mines and asteroids.Rebooting 1 second.",
-      "done": true
+      "done": false
     },
     "Защитный дрон Мод II": {
       "advanced": {},
@@ -50729,28 +50859,48 @@
       "done": true
     },
     "Лучевой дрон орхидов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "orchid Beam Drone"
+        }
+      },
       "deepl": "",
       "machine": "Radiation Dron of Orchids",
-      "done": true
+      "done": false
     },
     "Лучевой О": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Beam O."
+        }
+      },
       "deepl": "",
       "machine": "Radia about",
-      "done": true
+      "done": false
     },
     "Боевой дрон орхидов": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Orchid Combat Drone"
+        }
+      },
       "deepl": "",
       "machine": "The combat drone of orchids",
-      "done": true
+      "done": false
     },
     "Боевой О": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Combat O."
+        }
+      },
       "deepl": "",
       "machine": "Combat Fr.",
-      "done": true
+      "done": false
     },
     "Луч-хамелеон": {
       "advanced": {},
@@ -50805,10 +50955,15 @@
       "done": false
     },
     "Защитник О": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Defense O."
+        }
+      },
       "deepl": "",
       "machine": "Defender about",
-      "done": true
+      "done": false
     },
     "Быс. аборд.": {
       "advanced": {
@@ -80000,10 +80155,15 @@
       "done": true
     },
     "Это не ваши проблемы, пусть сами разбираются.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "That's not your problem; let them sort it out themselves."
+        }
+      },
       "deepl": "",
       "machine": "These are not your problems, let them understand themselves.",
-      "done": true
+      "done": false
     },
     "(Лучевое орудие) Аккуратно вырезать корабль.": {
       "advanced": {},
@@ -103228,10 +103388,15 @@
       "done": true
     },
     "Напасть на них!": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Attack them!"
+        }
+      },
       "deepl": "",
       "machine": "To attack them!",
-      "done": true
+      "done": false
     },
     "Затаиться и улететь прочь.": {
       "advanced": {},
@@ -119030,10 +119195,15 @@
       "done": true
     },
     "Сигнал бедствия исходит от небольшого судна золтанцев. Завидев вас, они выходят на связь: «Пожалуйста, вы должны нам помочь. Мы проводили испытания нового энергетического оружия, пробивающего все щиты. Испытания завершились успешно, но наш лидер, кажется, сошёл с ума после этого! Он и его друзья захватили лабораторию и грозятся разнести весь сектор! Нам еле удалось спастись, это было ужасно...»": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A distress signal is coming from a small Zoltan vessel. Spotting you, they hail: 'Please, you have to help us. We were testing a new energy weapon that pierces all shields. The tests were successful, but our leader seems to have gone mad afterwards! He and his friends seized the lab and are threatening to blow up the entire sector! We barely escaped, it was awful...'"
+        }
+      },
       "deepl": "",
       "machine": "The distress signal comes from the small vessel of the Zoltans.Seeing you, they get in touch: “Please, you must help us.We tested a new energy weapon that breaks all the shields.The tests ended successfully, but our leader seems to have been crazy after that!He and his friends captured the laboratory and threaten to smash the whole sector!We barely managed to escape, it was terrible ... \"",
-      "done": true
+      "done": false
     },
     "Согласиться помочь им.": {
       "advanced": {},
@@ -119042,16 +119212,26 @@
       "done": true
     },
     "Золтанцы передают вам координаты лаборатории. «Возьмите этот модуль FTL-навигатора. В случае успеха найдите нас с его помощью, и мы вас щедро отблагодарим». Вы обещаете сделать всё возможное.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "The Zoltans transmit the coordinates of the lab to you. 'Take this FTL navigation module. If successful, use it to find us, and we will reward you generously.' You promise to do your best."
+        }
+      },
       "deepl": "",
       "machine": "",
-      "done": true
+      "done": false
     },
     "Бедные учёные не ожидали такого поворота. А вы уже заряжаете орудия.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "The poor scientists did not expect this turn of events. And you are already charging your weapons."
+        }
+      },
       "deepl": "",
       "machine": "Poor scientists did not expect such a turn.And you are already charging tools.",
-      "done": true
+      "done": false
     },
     "Перед вами лаборатория безумного учёного. На связь они не выходят, вместо этого дуло огромной энерго-пушки разворачивается в вашу сторону. Ваша команда застывает в ужасе при её виде...": {
       "advanced": {},
@@ -119627,10 +119807,15 @@
       "done": true
     },
     "Отказать им.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Refuse them."
+        }
+      },
       "deepl": "",
       "machine": "Refuse them.",
-      "done": true
+      "done": false
     },
     "Вы извиняетесь, но у вас нет лишних боеприпасов.": {
       "advanced": {},
@@ -135300,10 +135485,15 @@
       "done": true
     },
     "Поняв, что сделка не состоится, корабль морфов отстыковывается и нападает на вас! Часть их команды остаётся у вас на борту и начинает крушить всё подряд.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Realizing the deal is off, the Morph ship undocks and attacks you! Part of their crew remains on board your ship and starts smashing everything in sight."
+        }
+      },
       "deepl": "",
       "machine": "Realizing that the deal will not take place, the ship of the morphs is plundered and attacks you!Part of their team remains on board and begins to destroy everything in a row.",
-      "done": true
+      "done": false
     },
     "«КРИТИЧЕСКАЯ ОШИБКА! НЕДОПУСТИМЫЙ СИНТАКСИС ВХОДНЫХ ДАННЫХ... ПЕРЕЗАП...» Похоже, вся команда морфов окончательно зависла. Вы отправляете экипаж в шлюпке на их корабль, время грабить!": {
       "advanced": {},
@@ -135534,28 +135724,48 @@
       "done": true
     },
     "Челнок врезается в астероид и взрывается. Корабль морфов вдруг становится агрессивным.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "The shuttle crashes into an asteroid and explodes. The Morph ship suddenly becomes aggressive."
+        }
+      },
       "deepl": "",
       "machine": "The shuttle crashes into an asteroid and explodes.The ship of morphs suddenly becomes aggressive.",
-      "done": true
+      "done": false
     },
     "Челнок успешно добирается до вас, и на борт поднимается новый член экипажа. А ваша команда быстро разбирает капсулу на лом.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "The shuttle successfully reaches you, and a new crew member comes aboard. Your crew quickly salvages the pod for scrap."
+        }
+      },
       "deepl": "",
       "machine": "The shuttle successfully gets to you, and a new crew member is climbing on board.And your team quickly disassembles a scrap capsule.",
-      "done": true
+      "done": false
     },
     "Ваш кран ловит капсулу, но при этом совершает неловкое движение, и корабль получает мощный удар в одну из несущих конструкций. На борт поднимается новый член экипажа, а команда быстро разбирает капсулу на лом.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Your crane catches the pod, but makes an awkward movement in the process, and the ship takes a heavy blow to one of the load-bearing structures. A new crew member comes aboard, and the team quickly salvages the pod for scrap."
+        }
+      },
       "deepl": "",
       "machine": "Your crane catches a capsule, but at the same time makes an awkward movement, and the ship receives a powerful blow to one of the supporting structures.A new crew member is climbing on board, and the team quickly disassembles a scrap capsule.",
-      "done": true
+      "done": false
     },
     "Ваш кран с лёгкостью ловит капсулу, и на борт поднимается новый член экипажа. А ваша команда быстро разбирает капсулу на лом.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Your crane easily catches the pod, and a new crew member comes aboard. Your team quickly salvages the pod for scrap."
+        }
+      },
       "deepl": "",
       "machine": "Your crane easily catches a capsule, and a new crew member rises aboard.And your team quickly disassembles a scrap capsule.",
-      "done": true
+      "done": false
     },
     "Прибыв на сигнал бедствия вы видите странный корабль. Настроившись на их частоту, вы ловите обрывок разговора двух людей: «Я же тебе говорил, наш план сработает! Мы получим кучу денег за этих преступников. — Да... И мы наконец сможем купить нормальную еду». Они атакуют вас!": {
       "advanced": {},
@@ -153880,10 +154090,15 @@
       "done": true
     },
     "При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, человека Ордена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Upon approaching, your crew member feels a sharp heat radiating from the monolith, though the Order human is unbothered. He touches the monolith, and a few seconds later you notice a new weapon in the cargo hold."
+        }
+      },
       "deepl": "",
       "machine": "",
-      "done": true
+      "done": false
     },
     "При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, рока это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.": {
       "advanced": {},
@@ -153892,10 +154107,15 @@
       "done": true
     },
     "При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, магмена это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Upon approaching, your crew member feels a sharp heat radiating from the monolith, though the Magmen is unbothered. He touches the monolith, and a few seconds later you notice a new weapon in the cargo hold."
+        }
+      },
       "deepl": "",
       "machine": "When the crew is approaching, it feels a sharp heating of the monolith, however, this does not bother Magmen.It touches the monolith, and after a few seconds you notice a new gun in the hold.",
-      "done": true
+      "done": false
     },
     "При приближении ваш член экипажа чувствует резкий нагрев монолита, однако, аватара это не беспокоит. Он касается монолита, и спустя несколько секунд вы замечаете в трюме новое орудие.": {
       "advanced": {},
@@ -156221,16 +156441,26 @@
       "done": true
     },
     "(Член экипажа орхид) Передать её вместе с небольшим свадебным подарком.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "(Orchid Crew Member) Hand it over along with a small wedding gift."
+        }
+      },
       "deepl": "",
       "machine": "(Member of the orchid crew) transfer it along with a small wedding gift.",
-      "done": true
+      "done": false
     },
     "Великий Василиск очень признателен вам за помощь в организации свадьбы и лично благодарит: «Настоящим я объявляю вас, капитан неизвестного корабля пришельцев, почётным гражданином Нумы-5. Позвольте мне представить этот скромный подарок».": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "The Great Basilisk is deeply grateful for your help in organizing the wedding and expresses his personal thanks: 'I hereby declare you, captain of the unknown alien ship, an honorary citizen of Numa-5. Please allow me to present this modest gift.'"
+        }
+      },
       "deepl": "",
       "machine": "The great basilisk is very grateful for your help in organizing the wedding and personally thanks: “I declare you, the captain of the unknown ship of the aliens, the honorary citizen of Numa-5.Let me present this modest gift. ”",
-      "done": true
+      "done": false
     },
     "Отказаться подчиниться.": {
       "advanced": {},
@@ -169057,16 +169287,26 @@
       "done": true
     },
     "Позволить им осмотреть свой трюм.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "Allow them to inspect your cargo hold."
+        }
+      },
       "deepl": "",
       "machine": "Let them examine their hold.",
-      "done": true
+      "done": false
     },
     "«...капитан, вам лучшшше быть более сссговорчивыми в чужих краях. Активировать противокорабельную батарею!..»": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "'...captain, you'd better be more cooooperative in foreign lands. Activate the anti-ship battery!..'"
+        }
+      },
       "deepl": "",
       "machine": "“... Captain, you better be more sincer in foreign lands.Activate an anti -ship battery! .. \"",
-      "done": true
+      "done": false
     },
     "Слёрмы долго рассматривают ваши документы и, наконец, заявляют: «...что это за убогая подделка?! Активировать противокорабельную батарею!..»": {
       "advanced": {},
@@ -169075,28 +169315,48 @@
       "done": true
     },
     "«...отлично, кажетссся у вассс всссё в порядке ссс \"документами\". Можете продолжить сссвой полёт».": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "'...excellent, it seemssss everything is in order with your \"docccuments\". You may continue your flight.'"
+        }
+      },
       "deepl": "",
       "machine": "“... excellent, it seems you are all right with the“ documents ”.You can continue the SSSVA flight. ”",
-      "done": true
+      "done": false
     },
     "«...капитан, мне кажется у вассс маловато \"документов\". Необходимо дополнительно провести осмотр вашшшего трюма...»": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "'...captain, it seems you have rather few \"docccuments\". We must conduct an additional inspection of your cargo hold...'"
+        }
+      },
       "deepl": "",
       "machine": "“... Captain, it seems to me that Vasss is not enough“ documents ”.You must additionally conduct an inspection of your hold ... \"",
-      "done": true
+      "done": false
     },
     "«...отлично, кажетссся у вассс всссё в порядке ссс \"документами\". Можете продолжить сссвой полёт. Также, сссогласссно нашим правилам, вам полагаетссся ссстандартное вооружение для защиты от вредителей».": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "'...excellent, it seemssss everything is in order with your \"docccuments\". You may continue your flight. Also, in acccordance with our rules, you are entitled to standard pest-defense weaponry.'"
+        }
+      },
       "deepl": "",
       "machine": "“... Excellent, Vass: the SSCO has been in the SCS order“ documents ”.You can continue the sassy flight.Also, Sssoglassno to our rules, you have been supposed to be ssstandal weapons to protect against pests. ”",
-      "done": true
+      "done": false
     },
     "«...отлично, кажетссся у вассс всссё в порядке ссс \"документами\". Можете продолжить сссвой полёт. Также сссогласссно нашим правилам, вам полагаетссся сссопровождение».": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "'...excellent, it seemssss everything is in order with your \"docccuments\". You may continue your flight. Also, in acccordance with our rules, an escort is provided.'"
+        }
+      },
       "deepl": "",
       "machine": "“... Excellent, Vass: the SSCO has been in the SCS order“ documents ”.You can continue the sassy flight.Also sessoglassno to our rules, you are supposed to have a sessor. ”",
-      "done": true
+      "done": false
     },
     "Слёрмы некоторое время рыскают по вашему трюму и утаскивают то, что по их словам, вам не понадобится в этом секторе...": {
       "advanced": {},
@@ -169862,16 +170122,26 @@
       "done": true
     },
     "Корабль слёрмов поблизости атакует вас, а тот, что вы сопровождали, отправляет группу захватчиков-слёрмов. Это ловушка!": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A nearby Slurm ship attacks you, and the one you were escorting deploys a boarding party of Slurms. It's a trap!"
+        }
+      },
       "deepl": "",
       "machine": "The ship of Slerurm nearby attacks you, and the one that you accompanied sends a group of grams invaders.This is a trap!",
-      "done": true
+      "done": false
     },
     "Группа кораблей слёрмов поблизости благодарят вас за сопровождение их соратника и неплохо снабжают вас материалами.": {
-      "advanced": {},
+      "advanced": {
+        "15": {
+          "model": "gemini-3.5-flash-lite",
+          "text": "A group of nearby Slurm ships thanks you for escorting their compatriot and supplies you generously with materials."
+        }
+      },
       "deepl": "",
       "machine": "A group of slaves nearby will thank you for accompanying their associate and supply you with materials well.",
-      "done": true
+      "done": false
     },
     "На небольшой станции у этого маяка слёрмы организовали аукцион...": {
       "advanced": {},
